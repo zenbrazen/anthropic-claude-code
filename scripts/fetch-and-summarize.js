@@ -48,9 +48,9 @@ async function summarizePaper(paper, categoryLabel) {
 
 Write two sections about this paper:
 
-SUMMARY: 2–3 sentences. What did the researchers do and find? Plain English only — no jargon.
+SUMMARY: 2–3 sentences. Lead with what was discovered or shown, not what was studied. Plain English only — no jargon. If the finding has a number, name it. If it has a counterintuitive angle, surface it. Never open with "Researchers studied," "This work explores," or similar. Use "could" and "might" only when the paper itself is genuinely speculative.
 
-WHY IT MATTERS: 2–4 sentences. What changes if this research is right? Who benefits? What does it connect to in everyday life?
+WHY IT MATTERS: 2–4 sentences. Explain the real-world consequence directly — don't open with "This matters because." If there's a concrete impact, state it. Bad: "This research could potentially lead to better outcomes." Good: "Cuts CO2 by 10% and nearly eliminates worst-case fuel waste."
 
 Paper title: ${paper.title}
 Authors: ${authorsStr}
