@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Plaine — arXiv, made readable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f1ebdc;
+    --bg-deep: #ebe3d0;
+    --ink: #1d1812;
+    --ink-soft: #3d3528;
+    --muted: #7a6b54;
+    --rule: #1d1812;
+    --accent: #9a3a2a;
+    --accent-soft: #c97a5d;
+    --icon-grey: #8c857a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.55;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(154, 58, 42, 0.04), transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(0, 0, 0, 0.03), transparent 40%);
+  }
+
+  .page { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+
+  .plane-symbol { display: none; }
+
+  .masthead { text-align: center; padding: 0 0 22px; border-bottom: 1px solid var(--rule); }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: clamp(40px, 9.4vw, 78px);
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    padding: 0 0 14px;
+  }
+
+  .title .letter { display: inline-block; text-transform: uppercase; font-variation-settings: 'opsz' 96; }
+
+  .title-plane { width: 0.62em; height: 0.62em; color: var(--icon-grey); transform: rotate(-12deg); flex-shrink: 0; }
+
+  .tagline {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--icon-grey);
+    margin-top: 18px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 4px 2px;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: border-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+
+  .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+  .entry { padding: 50px 0 44px; }
+  .entry.hidden { display: none; }
+
+  .entry-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  .category { color: var(--accent); font-weight: 500; }
+
+  .entry-title {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: clamp(26px, 5.2vw, 34px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+
+  .entry-plane {
+    width: 0.82em;
+    height: 0.82em;
+    color: var(--icon-grey);
+    margin-right: 0.34em;
+    vertical-align: -0.04em;
+    transform: rotate(-12deg);
+    display: inline-block;
+  }
+
+  .byline {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    border-bottom: 1px dotted var(--muted);
+  }
+
+  .byline .arxiv-id {
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  .entry-body {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    column-gap: 26px;
+    align-items: start;
+  }
+
+  .col-divider { background: var(--muted); opacity: 0.3; align-self: stretch; }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::before { content: ""; display: inline-block; width: 16px; height: 1px; background: var(--accent); }
+
+  .summary-text { font-size: 16.5px; font-weight: 600; line-height: 1.55; color: var(--ink); }
+  .matters-text { font-size: 16px; line-height: 1.6; color: var(--ink); }
+
+  .entry-footer {
+    margin-top: 32px;
+    padding-top: 18px;
+    border-top: 1px dotted var(--muted);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .read-link { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color 0.2s; }
+  .read-link:hover { color: var(--accent); }
+  .read-link::after { content: " →"; }
+
+  .stamp { color: var(--muted); font-size: 10px; }
+
+  .empty-state {
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    display: none;
+  }
+
+  .site-footer {
+    text-align: center;
+    padding: 40px 0 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  .site-footer em {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: block;
+    margin-top: 12px;
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 32px 18px 60px; }
+    body { font-size: 17px; }
+    .entry-meta { flex-direction: column; gap: 4px; }
+    .entry-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .nav { gap: 6px 12px; }
+    .title { font-size: 38px; letter-spacing: -0.02em; }
+    .entry-body { grid-template-columns: 1fr; row-gap: 28px; }
+    .col-divider { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<svg class="plane-symbol" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="plane" viewBox="0 0 24 24">
+    <path d="M22 2 L2 9 L11 13 Z" fill="currentColor" opacity="0.65"/>
+    <path d="M22 2 L11 13 L15 22 Z" fill="currentColor" opacity="1"/>
+  </symbol>
+</svg>
+
+<div class="page">
+
+  <header class="masthead">
+    <h1 class="title">
+      <span class="letter">P</span>
+      <span class="letter">A</span>
+      <span class="letter">P</span>
+      <span class="letter">E</span>
+      <span class="letter">R</span>
+      <svg class="title-plane" aria-hidden="true"><use href="#plane"/></svg>
+      <span class="letter">P</span>
+      <span class="letter">L</span>
+      <span class="letter">A</span>
+      <span class="letter">I</span>
+      <span class="letter">N</span>
+      <span class="letter">E</span>
+    </h1>
+    <p class="tagline">Fresh research, plain and simple / Updated twice daily</p>
+  </header>
+
+  <nav class="nav" id="cat-nav">
+    <a href="#" data-filter="all" class="active">All</a>
+    <a href="#" data-filter="AI">AI</a>
+    <a href="#" data-filter="Comp Sci">Comp Sci</a>
+    <a href="#" data-filter="Physics">Physics</a>
+    <a href="#" data-filter="Math">Math</a>
+    <a href="#" data-filter="Biology">Biology</a>
+    <a href="#" data-filter="Finance">Finance</a>
+    <a href="#" data-filter="Statistics">Statistics</a>
+    <a href="#" data-filter="Engineering">Engineering</a>
+    <a href="#" data-filter="Economics">Economics</a>
+  </nav>
+
+  <div id="entries">
+    
+  <article class="entry" data-category="AI" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Computer Science · cs.AI</span>
+      <span>Mar 17, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Transformers are Bayesian Networks
+    </h2>
+    <p class="byline">
+      Greg Coppola
+      <br><span class="arxiv-id">arXiv:2603.17063</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Transformers — the AI architecture behind every modern language model — work brilliantly, but nobody fully understands why. This paper argues there&#39;s a hidden, well-understood math machine inside: it&#39;s secretly doing belief propagation, a classical method for combining evidence to update beliefs. The author maps attention onto an AND gate, the feed-forward layer onto an OR gate, and proves it formally using Lean, a tool that double-checks every step.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">If transformers really are doing this specific kind of probabilistic reasoning under the hood, it gives us a much clearer lens for understanding and debugging them — instead of treating them as inscrutable black boxes, we could trace their thinking like a logic circuit. The most provocative claim is about hallucinations: the author argues these aren&#39;t a bug that bigger models will eventually fix, but a structural consequence of lacking grounding in defined facts. If he&#39;s right, the path to trustworthy AI requires hooking transformers up to verifiable knowledge bases — a meaningfully different direction than just training a larger model on more text.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2603.17063" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Mar 17, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" data-category="Engineering" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Engineering · eess.SP</span>
+      <span>Mar 18, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing
+    </h2>
+    <p class="byline">
+      Bora, Chalfant &amp; Chryssostomidis
+      <br><span class="arxiv-id">arXiv:2603.17319</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Cargo ships burn enormous fuel crossing oceans, yet most still pick routes using simple rules of thumb. Researchers built an AI system called PIER that learns smarter routes from years of real ship-tracking and ocean data. Tested on a year of Gulf of Mexico voyages, it cut CO2 emissions by about 10% on average — and nearly eliminated catastrophic trips, dropping voyages with 50%+ excess fuel burn from 1 in 20 to 1 in 200.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Shipping is responsible for around 3% of global greenhouse gas emissions, so even single-digit improvements scale to enormous absolute reductions in fuel use and CO2. The really interesting practical angle is that PIER doesn&#39;t depend on accurate weather forecasts — it keeps working using only what the ship can observe locally, making it deployable on real vessels today. The same approach should transfer cleanly to wildfire evacuation routes, aircraft trajectory planning, or autonomous vehicles operating in unmapped terrain.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2603.17319" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Mar 18, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" data-category="Biology" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Quantitative Biology · q-bio.NC</span>
+      <span>Apr 13, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Mental fatigue from prolonged thinking can throw off your physical balance
+    </h2>
+    <p class="byline">
+      Noé, Hachard, Ceyte, Bru &amp; Paillard
+      <br><span class="arxiv-id">arXiv:2604.22796</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Researchers wanted to know whether mental exhaustion makes you physically wobblier. Twenty healthy young adults stood on a force platform measuring tiny shifts in body sway, both with eyes open and closed, then completed a brutal 90-minute attention test before retesting. The finding wasn&#39;t a simple &quot;fatigue makes everyone wobble&quot; — distinct subgroups emerged, with some participants noticeably losing their balance after the cognitive marathon while others stayed perfectly steady.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Mental fatigue isn&#39;t just a productivity issue — for some people, it&#39;s a physical safety issue. That has real implications for jobs combining heavy cognitive work with physical movement: surgeons walking out of long operations, air traffic controllers ending shifts, truck drivers, soldiers, emergency responders. The bigger insight is the individual variation — population averages hide the people most genuinely at risk, and future workplace safety programs could screen for who&#39;s most vulnerable rather than assuming everyone reacts to mental exhaustion the same way.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2604.22796" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Apr 13, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" data-category="Economics" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Economics · econ.GN</span>
+      <span>Mar 31, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Industrial policy with network externalities: race to the bottom or win-win?
+    </h2>
+    <p class="byline">
+      Hashimzade &amp; Sun
+      <br><span class="arxiv-id">arXiv:2603.29542</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">When two countries pour subsidies into the same high-tech industry — chips, EVs, AI — does anyone actually win? The authors build an economic model to find out, and the answer hinges on two factors: how strongly the products benefit from network effects, and how similar the two countries&#39; offerings are. Near-identical substitutes lead to a wasteful race to the bottom; differentiated or complementary products with strong network effects can yield gains for both sides.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Industrial policy is back in fashion globally — the U.S. CHIPS Act, EU green subsidies, China&#39;s tech push — but this paper offers a nuanced framework: subsidies aren&#39;t automatically wasteful, but the win-win conditions are specific and easy to miss. The takeaway is that funding product innovation tends to outperform funding cheaper production of the same thing. And chasing identical markets head-to-head is usually the worst strategy of all, even when domestic political pressure pushes hard in that direction.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2603.29542" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Mar 31, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" data-category="Comp Sci" style="border-bottom: 6px double var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Computer Science · cs.LG</span>
+      <span>Mar 18, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>AI-assisted goal setting works — through felt social accountability
+    </h2>
+    <p class="byline">
+      Schimpf, Voigt &amp; Bohné
+      <br><span class="arxiv-id">arXiv:2603.17887</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Career coaching helps people pursue meaningful goals, but it&#39;s expensive and inaccessible to most. Researchers tested whether an AI chatbot could fill that role, running an experiment with 517 people split into three groups: AI coach, a written reflection questionnaire, or no support. Two weeks later, the AI group had made more goal progress than the no-support group — but didn&#39;t really beat the questionnaire. What it did better was make people feel socially accountable.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">This challenges the popular assumption that AI coaches help because they give smarter advice. The active ingredient seems to be the conversational format itself — talking to something rather than writing for yourself activates our deeply social brain. For anyone building habit-tracking, fitness, or therapy apps, that suggests a chatbot interface adds a meaningful motivational layer almost for free. It also raises an ethical question worth sitting with: if the benefit comes from felt accountability rather than real accountability, we&#39;re essentially engineering useful social illusions.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2603.17887" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Mar 18, 2026</span>
+    </div>
+  </article>
+  </div>
+  <div class="empty-state" id="empty-state">No papers in this category yet.</div>
+
+  <footer class="site-footer">
+    <div>Paper Plaine · Updated twice daily</div>
+    <div>Source · arXiv.org · Cornell University</div>
+    <em>&ldquo;Make it as simple as possible, but no simpler.&rdquo;</em>
+  </footer>
+
+</div>
+
+<script>
+  const nav = document.getElementById('cat-nav');
+  const entries = document.querySelectorAll('.entry');
+  const emptyState = document.getElementById('empty-state');
+
+  nav.addEventListener('click', e => {
+    const link = e.target.closest('a[data-filter]');
+    if (!link) return;
+    e.preventDefault();
+
+    nav.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+    link.classList.add('active');
+
+    const filter = link.dataset.filter;
+    let visible = 0;
+
+    entries.forEach(entry => {
+      const match = filter === 'all' || entry.dataset.category === filter;
+      entry.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    emptyState.style.display = visible === 0 ? 'block' : 'none';
+
+    const visibleEntries = [...entries].filter(e => !e.classList.contains('hidden'));
+    visibleEntries.forEach((e, i) => {
+      e.style.borderBottom = i === visibleEntries.length - 1
+        ? '6px double var(--rule)'
+        : '3px solid var(--rule)';
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "2603.17063",
+    "title": "Transformers are Bayesian Networks",
+    "authors": "Greg Coppola",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · cs.AI",
+    "published": "2026-03-17T00:00:00Z",
+    "publishedFormatted": "Mar 17, 2026",
+    "summary": "Transformers — the AI architecture behind every modern language model — work brilliantly, but nobody fully understands why. This paper argues there's a hidden, well-understood math machine inside: it's secretly doing belief propagation, a classical method for combining evidence to update beliefs. The author maps attention onto an AND gate, the feed-forward layer onto an OR gate, and proves it formally using Lean, a tool that double-checks every step.",
+    "whyItMatters": "If transformers really are doing this specific kind of probabilistic reasoning under the hood, it gives us a much clearer lens for understanding and debugging them — instead of treating them as inscrutable black boxes, we could trace their thinking like a logic circuit. The most provocative claim is about hallucinations: the author argues these aren't a bug that bigger models will eventually fix, but a structural consequence of lacking grounding in defined facts. If he's right, the path to trustworthy AI requires hooking transformers up to verifiable knowledge bases — a meaningfully different direction than just training a larger model on more text.",
+    "fetchedAt": "2026-03-17T12:00:00Z"
+  },
+  {
+    "id": "2603.17319",
+    "title": "Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing",
+    "authors": "Bora, Chalfant & Chryssostomidis",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering · eess.SP",
+    "published": "2026-03-18T00:00:00Z",
+    "publishedFormatted": "Mar 18, 2026",
+    "summary": "Cargo ships burn enormous fuel crossing oceans, yet most still pick routes using simple rules of thumb. Researchers built an AI system called PIER that learns smarter routes from years of real ship-tracking and ocean data. Tested on a year of Gulf of Mexico voyages, it cut CO2 emissions by about 10% on average — and nearly eliminated catastrophic trips, dropping voyages with 50%+ excess fuel burn from 1 in 20 to 1 in 200.",
+    "whyItMatters": "Shipping is responsible for around 3% of global greenhouse gas emissions, so even single-digit improvements scale to enormous absolute reductions in fuel use and CO2. The really interesting practical angle is that PIER doesn't depend on accurate weather forecasts — it keeps working using only what the ship can observe locally, making it deployable on real vessels today. The same approach should transfer cleanly to wildfire evacuation routes, aircraft trajectory planning, or autonomous vehicles operating in unmapped terrain.",
+    "fetchedAt": "2026-03-18T12:00:00Z"
+  },
+  {
+    "id": "2604.22796",
+    "title": "Mental fatigue from prolonged thinking can throw off your physical balance",
+    "authors": "Noé, Hachard, Ceyte, Bru & Paillard",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology · q-bio.NC",
+    "published": "2026-04-13T00:00:00Z",
+    "publishedFormatted": "Apr 13, 2026",
+    "summary": "Researchers wanted to know whether mental exhaustion makes you physically wobblier. Twenty healthy young adults stood on a force platform measuring tiny shifts in body sway, both with eyes open and closed, then completed a brutal 90-minute attention test before retesting. The finding wasn't a simple \"fatigue makes everyone wobble\" — distinct subgroups emerged, with some participants noticeably losing their balance after the cognitive marathon while others stayed perfectly steady.",
+    "whyItMatters": "Mental fatigue isn't just a productivity issue — for some people, it's a physical safety issue. That has real implications for jobs combining heavy cognitive work with physical movement: surgeons walking out of long operations, air traffic controllers ending shifts, truck drivers, soldiers, emergency responders. The bigger insight is the individual variation — population averages hide the people most genuinely at risk, and future workplace safety programs could screen for who's most vulnerable rather than assuming everyone reacts to mental exhaustion the same way.",
+    "fetchedAt": "2026-04-13T12:00:00Z"
+  },
+  {
+    "id": "2603.29542",
+    "title": "Industrial policy with network externalities: race to the bottom or win-win?",
+    "authors": "Hashimzade & Sun",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics · econ.GN",
+    "published": "2026-03-31T00:00:00Z",
+    "publishedFormatted": "Mar 31, 2026",
+    "summary": "When two countries pour subsidies into the same high-tech industry — chips, EVs, AI — does anyone actually win? The authors build an economic model to find out, and the answer hinges on two factors: how strongly the products benefit from network effects, and how similar the two countries' offerings are. Near-identical substitutes lead to a wasteful race to the bottom; differentiated or complementary products with strong network effects can yield gains for both sides.",
+    "whyItMatters": "Industrial policy is back in fashion globally — the U.S. CHIPS Act, EU green subsidies, China's tech push — but this paper offers a nuanced framework: subsidies aren't automatically wasteful, but the win-win conditions are specific and easy to miss. The takeaway is that funding product innovation tends to outperform funding cheaper production of the same thing. And chasing identical markets head-to-head is usually the worst strategy of all, even when domestic political pressure pushes hard in that direction.",
+    "fetchedAt": "2026-03-31T12:00:00Z"
+  },
+  {
+    "id": "2603.17887",
+    "title": "AI-assisted goal setting works — through felt social accountability",
+    "authors": "Schimpf, Voigt & Bohné",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science · cs.LG",
+    "published": "2026-03-18T00:00:00Z",
+    "publishedFormatted": "Mar 18, 2026",
+    "summary": "Career coaching helps people pursue meaningful goals, but it's expensive and inaccessible to most. Researchers tested whether an AI chatbot could fill that role, running an experiment with 517 people split into three groups: AI coach, a written reflection questionnaire, or no support. Two weeks later, the AI group had made more goal progress than the no-support group — but didn't really beat the questionnaire. What it did better was make people feel socially accountable.",
+    "whyItMatters": "This challenges the popular assumption that AI coaches help because they give smarter advice. The active ingredient seems to be the conversational format itself — talking to something rather than writing for yourself activates our deeply social brain. For anyone building habit-tracking, fitness, or therapy apps, that suggests a chatbot interface adds a meaningful motivational layer almost for free. It also raises an ethical question worth sitting with: if the benefit comes from felt accountability rather than real accountability, we're essentially engineering useful social illusions.",
+    "fetchedAt": "2026-03-18T12:00:00Z"
+  }
+]
