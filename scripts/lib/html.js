@@ -2,17 +2,18 @@ import fs from 'fs/promises';
 import path from 'path';
 
 export const PAPERS_PER_PAGE = 12;
+const DOMAIN = 'https://paperplaine.com';
 
 export const CATEGORIES = [
-  { label: 'AI',          slug: 'ai',          arxivCat: 'cs.AI',    displayCat: 'Computer Science · cs.AI' },
-  { label: 'Comp Sci',    slug: 'comp-sci',    arxivCat: 'cs.LG',    displayCat: 'Computer Science · cs.LG' },
-  { label: 'Physics',     slug: 'physics',     arxivCat: 'cond-mat', displayCat: 'Physics · cond-mat' },
-  { label: 'Math',        slug: 'math',        arxivCat: 'math.CO',  displayCat: 'Mathematics · math.CO' },
-  { label: 'Biology',     slug: 'biology',     arxivCat: 'q-bio.NC', displayCat: 'Quantitative Biology · q-bio.NC' },
-  { label: 'Finance',     slug: 'finance',     arxivCat: 'q-fin.GN', displayCat: 'Quantitative Finance · q-fin.GN' },
-  { label: 'Statistics',  slug: 'statistics',  arxivCat: 'stat.ML',  displayCat: 'Statistics · stat.ML' },
-  { label: 'Engineering', slug: 'engineering', arxivCat: 'eess.SP',  displayCat: 'Engineering · eess.SP' },
-  { label: 'Economics',   slug: 'economics',   arxivCat: 'econ.GN',  displayCat: 'Economics · econ.GN' },
+  { label: 'AI',          slug: 'ai',          arxivCat: 'cs.AI',    displayCat: 'Computer Science · cs.AI',     fullName: 'AI' },
+  { label: 'Comp Sci',    slug: 'comp-sci',    arxivCat: 'cs.LG',    displayCat: 'Computer Science · cs.LG',     fullName: 'Computer Science' },
+  { label: 'Physics',     slug: 'physics',     arxivCat: 'cond-mat', displayCat: 'Physics · cond-mat',           fullName: 'Physics' },
+  { label: 'Math',        slug: 'math',        arxivCat: 'math.CO',  displayCat: 'Mathematics · math.CO',        fullName: 'Mathematics' },
+  { label: 'Biology',     slug: 'biology',     arxivCat: 'q-bio.NC', displayCat: 'Quantitative Biology · q-bio.NC', fullName: 'Biology' },
+  { label: 'Finance',     slug: 'finance',     arxivCat: 'q-fin.GN', displayCat: 'Quantitative Finance · q-fin.GN', fullName: 'Finance' },
+  { label: 'Statistics',  slug: 'statistics',  arxivCat: 'stat.ML',  displayCat: 'Statistics · stat.ML',         fullName: 'Statistics' },
+  { label: 'Engineering', slug: 'engineering', arxivCat: 'eess.SP',  displayCat: 'Engineering · eess.SP',        fullName: 'Engineering' },
+  { label: 'Economics',   slug: 'economics',   arxivCat: 'econ.GN',  displayCat: 'Economics · econ.GN',          fullName: 'Economics' },
 ];
 
 export function escapeHtml(str) {
@@ -22,6 +23,74 @@ export function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
+}
+
+function getPageMeta(page, totalPages, activeSlug) {
+  const cat = CATEGORIES.find(c => c.slug === activeSlug);
+
+  if (cat) {
+    return {
+      title: `${cat.fullName} Research — Paper Plaine`,
+      description: `Recent ${cat.fullName.toLowerCase()} research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.`,
+      canonical: `${DOMAIN}/${cat.slug}`,
+    };
+  }
+
+  if (page === 1) {
+    return {
+      title: 'Paper Plaine — arXiv Research, Plain and Simple',
+      description: 'Fresh research from arXiv explained in plain English, updated twice daily. Covering AI, physics, math, biology, economics, and more.',
+      canonical: DOMAIN,
+    };
+  }
+
+  return {
+    title: `Archive, Page ${page} — Paper Plaine`,
+    description: `Page ${page} of the Paper Plaine archive — recent arXiv research explained in plain English.`,
+    canonical: `${DOMAIN}/page/${page}`,
+  };
+}
+
+function getJsonLd(papers, meta, page, totalPages, activeSlug) {
+  const hasPart = papers.map(p => ({
+    '@type': 'ScholarlyArticle',
+    headline: p.title,
+    author: p.authors,
+    url: `https://arxiv.org/abs/${p.id}`,
+    datePublished: p.published,
+    description: p.summary,
+    isPartOf: { '@type': 'WebSite', name: 'Paper Plaine', url: DOMAIN },
+  }));
+
+  const isHome = activeSlug === null && page === 1;
+
+  const graph = [
+    {
+      '@type': 'WebSite',
+      '@id': `${DOMAIN}/#website`,
+      name: 'Paper Plaine',
+      url: DOMAIN,
+      description: 'arXiv research papers explained in plain English, updated twice daily.',
+      inLanguage: 'en',
+    },
+    {
+      '@type': 'CollectionPage',
+      '@id': `${meta.canonical}#page`,
+      name: meta.title,
+      url: meta.canonical,
+      description: meta.description,
+      isPartOf: { '@id': `${DOMAIN}/#website` },
+      hasPart,
+      ...(isHome && {
+        breadcrumb: {
+          '@type': 'BreadcrumbList',
+          itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: DOMAIN }],
+        },
+      }),
+    },
+  ];
+
+  return JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
 }
 
 function renderEntry(paper, isLast) {
@@ -79,7 +148,7 @@ function renderPagination(page, totalPages, baseUrl) {
   ).join('');
 
   return `
-  <nav class="pagination">
+  <nav class="pagination" aria-label="Page navigation">
     ${newer}
     <div class="page-numbers">${nums}</div>
     ${older}
@@ -87,6 +156,14 @@ function renderPagination(page, totalPages, baseUrl) {
 }
 
 export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = null, baseUrl = '' } = {}) {
+  const meta = getPageMeta(page, totalPages, activeSlug);
+  const jsonLd = getJsonLd(papers, meta, page, totalPages, activeSlug);
+
+  const prevUrl = page > 1
+    ? (page === 2 ? (baseUrl || '/') : `${baseUrl || ''}/page/${page - 1}`)
+    : null;
+  const nextUrl = page < totalPages ? `${baseUrl || ''}/page/${page + 1}` : null;
+
   const navLinks = CATEGORIES.map(cat => {
     const active = cat.slug === activeSlug ? ' class="active"' : '';
     return `<a href="/${cat.slug}"${active}>${escapeHtml(cat.label)}</a>`;
@@ -103,7 +180,27 @@ export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = nu
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paper Plaine — arXiv, made readable</title>
+<title>${escapeHtml(meta.title)}</title>
+<meta name="description" content="${escapeHtml(meta.description)}">
+<link rel="canonical" href="${escapeHtml(meta.canonical)}">
+${prevUrl ? `<link rel="prev" href="${escapeHtml(DOMAIN + prevUrl)}">` : ''}
+${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paper Plaine">
+<meta property="og:title" content="${escapeHtml(meta.title)}">
+<meta property="og:description" content="${escapeHtml(meta.description)}">
+<meta property="og:url" content="${escapeHtml(meta.canonical)}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${escapeHtml(meta.title)}">
+<meta name="twitter:description" content="${escapeHtml(meta.description)}">
+
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">${jsonLd}</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -259,13 +356,13 @@ export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = nu
     </h1>
     <p class="tagline">Fresh research, plain and simple. Updated twice daily.</p>
   </header>
-  <nav class="nav">
+  <nav class="nav" aria-label="Categories">
     ${navLinks}
     ${archiveLink}
   </nav>
-  <div id="entries">
+  <main id="entries">
     ${entriesHTML}
-  </div>
+  </main>
   ${paginationHTML}
   <footer class="site-footer">
     <div>Paper Plaine &middot; Updated twice daily</div>
@@ -276,7 +373,56 @@ export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = nu
 </html>`;
 }
 
+function buildSitemap(urls) {
+  const items = urls.map(({ url, lastmod }) =>
+    `  <url>\n    <loc>${url}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''}\n  </url>`
+  ).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${items}\n</urlset>`;
+}
+
+function buildRobotsTxt() {
+  return `User-agent: *\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`;
+}
+
+function buildLlmsTxt(allPapers) {
+  const catLines = CATEGORIES
+    .filter(c => allPapers.some(p => p.categoryLabel === c.label))
+    .map(c => `- [${c.fullName}](${DOMAIN}/${c.slug}): Recent ${c.fullName.toLowerCase()} papers from arXiv, explained in plain English.`)
+    .join('\n');
+
+  const recentTitles = allPapers.slice(0, 5).map(p => `- "${p.title}" (arXiv:${p.id})`).join('\n');
+
+  return `# Paper Plaine
+
+> arXiv research papers explained in plain English, updated twice daily.
+
+Paper Plaine summarizes recent academic research from Cornell's arXiv database. Each paper receives a plain-English summary and a "why it matters" explanation. The site updates automatically at 7 AM and 7 PM UTC with new papers across 9 subject areas.
+
+## Categories
+
+${catLines}
+
+## Archive
+
+The full archive of all papers is paginated at 12 per page, starting at ${DOMAIN}.
+
+## Recent papers
+
+${recentTitles}
+
+## About
+
+- Source data: arXiv.org (Cornell University)
+- Summaries generated by: Claude AI (Anthropic)
+- Update frequency: Twice daily
+- Content license: summaries are original; linked papers are © their respective authors
+`;
+}
+
 export async function generateSite(allPapers, publicDir) {
+  const sitemapUrls = [];
+  const today = new Date().toISOString().split('T')[0];
+
   // Clean up old generated directories
   await fs.rm(path.join(publicDir, 'page'), { recursive: true, force: true });
   for (const cat of CATEGORIES) {
@@ -290,14 +436,16 @@ export async function generateSite(allPapers, publicDir) {
     const html = generateHTML(slice, { page, totalPages, activeSlug: null, baseUrl: '' });
     if (page === 1) {
       await fs.writeFile(path.join(publicDir, 'index.html'), html);
+      sitemapUrls.push({ url: DOMAIN, lastmod: today });
     } else {
       const dir = path.join(publicDir, 'page', String(page));
       await fs.mkdir(dir, { recursive: true });
       await fs.writeFile(path.join(dir, 'index.html'), html);
+      sitemapUrls.push({ url: `${DOMAIN}/page/${page}`, lastmod: today });
     }
   }
 
-  // Per-category pages (single page each for now)
+  // Per-category pages
   for (const cat of CATEGORIES) {
     const catPapers = allPapers.filter(p => p.categoryLabel === cat.label);
     if (catPapers.length === 0) continue;
@@ -305,8 +453,13 @@ export async function generateSite(allPapers, publicDir) {
     await fs.mkdir(dir, { recursive: true });
     const html = generateHTML(catPapers, { page: 1, totalPages: 1, activeSlug: cat.slug, baseUrl: `/${cat.slug}` });
     await fs.writeFile(path.join(dir, 'index.html'), html);
+    sitemapUrls.push({ url: `${DOMAIN}/${cat.slug}`, lastmod: today });
   }
 
-  const catCount = CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length;
-  return totalPages + catCount;
+  // sitemap.xml, robots.txt, llms.txt
+  await fs.writeFile(path.join(publicDir, 'sitemap.xml'), buildSitemap(sitemapUrls));
+  await fs.writeFile(path.join(publicDir, 'robots.txt'), buildRobotsTxt());
+  await fs.writeFile(path.join(publicDir, 'llms.txt'), buildLlmsTxt(allPapers));
+
+  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length;
 }

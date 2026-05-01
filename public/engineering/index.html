@@ -3,7 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paper Plaine — arXiv, made readable</title>
+<title>Engineering Research — Paper Plaine</title>
+<meta name="description" content="Recent engineering research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
+<link rel="canonical" href="https://paperplaine.com/engineering">
+
+
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paper Plaine">
+<meta property="og:title" content="Engineering Research — Paper Plaine">
+<meta property="og:description" content="Recent engineering research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
+<meta property="og:url" content="https://paperplaine.com/engineering">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Engineering Research — Paper Plaine">
+<meta name="twitter:description" content="Recent engineering research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
+
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/engineering#page","name":"Engineering Research — Paper Plaine","url":"https://paperplaine.com/engineering","description":"Recent engineering research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Experimental Performance of a 5G N78 Reconfigurable Intelligent Surface: From Controlled Measurements to Commercial Network Deployment","author":"Sefa Kayraklık, Samed Keşir, Batuhan Kaplan et al.","url":"https://arxiv.org/abs/2604.28044","datePublished":"2026-04-30T15:57:45Z","description":"Researchers built and tested a special device called a reconfigurable intelligent surface (RIS) that can redirect 5G wireless signals to improve coverage in hard-to-reach areas. Unlike most studies that only use computer simulations, they tested their prototype in real conditions—first in a lab, then outdoors, and finally in an actual working 5G network—and found it successfully boosted signal strength and restored service where it had been unavailable.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"LiDAR-based Dynamic Blockage Prediction: A Data-driven Approach for Learning Interactive Bayesian Models","author":"Saleemullah Memon, Ali Krayani, Pamela Zontone et al.","url":"https://arxiv.org/abs/2604.28040","datePublished":"2026-04-30T15:52:07Z","description":"Researchers developed a new computer system that predicts when a vehicle's LiDAR sensor (a device that uses laser pulses to detect objects) will be blocked or unable to see clearly. The system learns patterns from real-world driving data by building mathematical models of how sensors behave in normal conditions and in blockage situations, then uses those models to forecast problems before they happen.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing","author":"Bora, Chalfant & Chryssostomidis","url":"https://arxiv.org/abs/2603.17319","datePublished":"2026-03-18T00:00:00Z","description":"Cargo ships burn enormous fuel crossing oceans, yet most still pick routes using simple rules of thumb. Researchers built an AI system called PIER that learns smarter routes from years of real ship-tracking and ocean data. Tested on a year of Gulf of Mexico voyages, it cut CO2 emissions by about 10% on average — and nearly eliminated catastrophic trips, dropping voyages with 50%+ excess fuel burn from 1 in 20 to 1 in 200.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -159,7 +179,7 @@
     </h1>
     <p class="tagline">Fresh research, plain and simple. Updated twice daily.</p>
   </header>
-  <nav class="nav">
+  <nav class="nav" aria-label="Categories">
     <a href="/ai">AI</a>
     <a href="/comp-sci">Comp Sci</a>
     <a href="/physics">Physics</a>
@@ -171,7 +191,7 @@
     <a href="/economics">Economics</a>
     <a href="/" class="nav-archive">Archive</a>
   </nav>
-  <div id="entries">
+  <main id="entries">
     
   <article class="entry" style="border-bottom: 3px solid var(--rule);">
     <div class="entry-meta">
@@ -259,7 +279,7 @@
       <span class="stamp">Posted on arXiv · Mar 18, 2026</span>
     </div>
   </article>
-  </div>
+  </main>
   
   <footer class="site-footer">
     <div>Paper Plaine &middot; Updated twice daily</div>
