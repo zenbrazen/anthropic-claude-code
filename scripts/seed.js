@@ -29,7 +29,7 @@ function parseAtomFeed(xml) {
     const entry = match[1];
     const rawId = extractTag(entry, 'id') ?? '';
     const id = rawId.replace(/https?:\/\/arxiv\.org\/abs\//, '').replace(/v\d+$/, '').trim();
-    const title = (extractTag(entry, 'title') ?? '').replace(/\s+/g, ' ').trim();
+    const title = (extractTag(entry, 'title') ?? '').replace(/\$([^$]*)\$/g, '$1').replace(/\s+/g, ' ').trim();
     const abstract = (extractTag(entry, 'summary') ?? '').replace(/\s+/g, ' ').trim();
     const published = (extractTag(entry, 'published') ?? '').trim();
     const authors = [...entry.matchAll(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>[\s\S]*?<\/author>/g)].map(m => m[1].trim());
