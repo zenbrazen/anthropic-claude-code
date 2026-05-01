@@ -4,7 +4,8 @@
   "description": "arXiv research papers in plain language",
   "type": "module",
   "scripts": {
-    "fetch": "node scripts/fetch-and-summarize.js"
+    "fetch": "node scripts/fetch-and-summarize.js",
+    "seed": "node scripts/seed.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0"
