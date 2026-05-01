@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Plaine — arXiv, made readable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f1ebdc; --ink: #1d1812; --ink-soft: #3d3528;
+    --muted: #7a6b54; --rule: #1d1812; --accent: #9a3a2a; --icon-grey: #8c857a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: 'Newsreader', Georgia, serif; font-size: 18px; line-height: 1.55;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(154,58,42,.04), transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(0,0,0,.03), transparent 40%);
+  }
+  .page { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+  .plane-symbol { display: none; }
+
+  /* Masthead */
+  .masthead { text-align: center; padding: 0 0 22px; border-bottom: 1px solid var(--rule); }
+  .title {
+    display: flex; justify-content: space-between; align-items: center; width: 100%;
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800;
+    font-size: clamp(40px, 9.4vw, 78px); line-height: .95;
+    letter-spacing: -.01em; color: var(--ink); padding: 0 0 6px;
+  }
+  .title .letter { display: inline-block; text-transform: uppercase; font-variation-settings: 'opsz' 96; }
+  .title-plane { width: .62em; height: .62em; color: var(--icon-grey); transform: rotate(-12deg); flex-shrink: 0; }
+  .tagline {
+    font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
+    color: var(--icon-grey); max-width: 540px; margin-left: auto; margin-right: auto;
+  }
+
+  /* Nav */
+  .nav {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+    gap: 10px 14px; padding: 18px 0; border-bottom: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    text-transform: uppercase; letter-spacing: .1em;
+  }
+  .nav a {
+    color: var(--ink-soft); text-decoration: none; padding: 4px 2px;
+    border-bottom: 2px solid transparent; white-space: nowrap;
+    transition: border-color .2s, color .2s;
+  }
+  .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+  .nav-archive {
+    flex-basis: 100%; text-align: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  }
+
+  /* Entries */
+  .entry { padding: 50px 0 44px; }
+  .entry-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    text-transform: uppercase; letter-spacing: .16em; color: var(--muted); margin-bottom: 16px;
+  }
+  .category { color: var(--accent); font-weight: 500; }
+  .entry-title {
+    font-family: 'Newsreader', serif; font-weight: 600;
+    font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
+    letter-spacing: -.015em; color: var(--ink); margin-bottom: 14px;
+  }
+  .entry-plane {
+    width: .82em; height: .82em; color: var(--icon-grey);
+    margin-right: .34em; vertical-align: -.04em; transform: rotate(-12deg); display: inline-block;
+  }
+  .byline {
+    font-family: 'Newsreader', serif; font-style: italic; font-size: 15px;
+    color: var(--ink-soft); margin-bottom: 30px; padding-bottom: 18px;
+    border-bottom: 1px dotted var(--muted);
+  }
+  .byline .arxiv-id {
+    font-family: 'JetBrains Mono', monospace; font-style: normal;
+    font-size: 11px; color: var(--muted); letter-spacing: .05em;
+  }
+  .entry-body { display: grid; grid-template-columns: 1fr 1px 1fr; column-gap: 26px; align-items: start; }
+  .col-divider { background: var(--muted); opacity: .3; align-self: stretch; }
+  .section-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    text-transform: uppercase; letter-spacing: .2em; color: var(--accent);
+    margin-bottom: 10px; display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::before { content: ""; display: inline-block; width: 16px; height: 1px; background: var(--accent); }
+  .summary-text { font-size: 16.5px; font-weight: 600; line-height: 1.55; color: var(--ink); }
+  .matters-text { font-size: 16px; line-height: 1.6; color: var(--ink); }
+  .entry-footer {
+    margin-top: 32px; padding-top: 18px; border-top: 1px dotted var(--muted);
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .read-link { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .read-link:hover { color: var(--accent); }
+  .read-link::after { content: " →"; }
+  .stamp { color: var(--muted); font-size: 10px; }
+
+  /* Pagination */
+  .pagination {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 36px 0 0; border-top: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .page-nav { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .page-nav:hover { color: var(--accent); }
+  .page-nav--off { color: var(--muted); border-bottom: none; cursor: default; }
+  .page-numbers { display: flex; gap: 16px; }
+  .page-num { color: var(--muted); text-decoration: none; letter-spacing: .12em; }
+  .page-num:hover { color: var(--accent); }
+  .page-num--active { color: var(--ink); font-weight: 500; }
+
+  /* Footer */
+  .site-footer {
+    text-align: center; padding: 40px 0 0;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    text-transform: uppercase; letter-spacing: .2em; color: var(--muted); line-height: 1.8;
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 32px 18px 60px; }
+    body { font-size: 17px; }
+    .title { font-size: 38px; letter-spacing: -.02em; }
+    .nav { gap: 6px 12px; }
+    .entry-meta { flex-direction: column; gap: 4px; }
+    .entry-body { grid-template-columns: 1fr; row-gap: 28px; }
+    .col-divider { display: none; }
+    .entry-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .pagination { flex-direction: column; gap: 16px; align-items: center; }
+  }
+</style>
+</head>
+<body>
+<svg class="plane-symbol" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="plane" viewBox="0 0 24 24">
+    <path d="M22 2 L2 9 L11 13 Z" fill="currentColor" opacity="0.65"/>
+    <path d="M22 2 L11 13 L15 22 Z" fill="currentColor" opacity="1"/>
+  </symbol>
+</svg>
+<div class="page">
+  <header class="masthead">
+    <h1 class="title">
+      <span class="letter">P</span><span class="letter">A</span><span class="letter">P</span><span class="letter">E</span><span class="letter">R</span>
+      <svg class="title-plane" aria-hidden="true"><use href="#plane"/></svg>
+      <span class="letter">P</span><span class="letter">L</span><span class="letter">A</span><span class="letter">I</span><span class="letter">N</span><span class="letter">E</span>
+    </h1>
+    <p class="tagline">Fresh research, plain and simple / Updated twice daily</p>
+  </header>
+  <nav class="nav">
+    <a href="/ai">AI</a>
+    <a href="/comp-sci">Comp Sci</a>
+    <a href="/physics">Physics</a>
+    <a href="/math">Math</a>
+    <a href="/biology">Biology</a>
+    <a href="/finance">Finance</a>
+    <a href="/statistics">Statistics</a>
+    <a href="/engineering" class="active">Engineering</a>
+    <a href="/economics">Economics</a>
+    <a href="/" class="nav-archive">Archive</a>
+  </nav>
+  <div id="entries">
+    
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Engineering · eess.SP</span>
+      <span>Apr 30, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Experimental Performance of a 5G N78 Reconfigurable Intelligent Surface: From Controlled Measurements to Commercial Network Deployment
+    </h2>
+    <p class="byline">
+      Sefa Kayraklık, Samed Keşir, Batuhan Kaplan et al.
+      <br><span class="arxiv-id">arXiv:2604.28044</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Researchers built and tested a special device called a reconfigurable intelligent surface (RIS) that can redirect 5G wireless signals to improve coverage in hard-to-reach areas. Unlike most studies that only use computer simulations, they tested their prototype in real conditions—first in a lab, then outdoors, and finally in an actual working 5G network—and found it successfully boosted signal strength and restored service where it had been unavailable.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">This research shows that RIS technology could be a practical, cost-effective way to expand 5G coverage without building new cell towers, which is expensive and time-consuming. Better coverage means faster internet in rural areas, more reliable service in buildings, and fewer dead zones in cities. Since telecom companies are always looking for cheaper ways to improve their networks, this technology could reshape how 5G infrastructure is built and deployed worldwide.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2604.28044" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Apr 30, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Engineering · eess.SP</span>
+      <span>Apr 30, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>LiDAR-based Dynamic Blockage Prediction: A Data-driven Approach for Learning Interactive Bayesian Models
+    </h2>
+    <p class="byline">
+      Saleemullah Memon, Ali Krayani, Pamela Zontone et al.
+      <br><span class="arxiv-id">arXiv:2604.28040</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Researchers developed a new computer system that predicts when a vehicle&#39;s LiDAR sensor (a device that uses laser pulses to detect objects) will be blocked or unable to see clearly. The system learns patterns from real-world driving data by building mathematical models of how sensors behave in normal conditions and in blockage situations, then uses those models to forecast problems before they happen.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Self-driving cars and other autonomous vehicles depend heavily on LiDAR sensors to navigate safely, so predicting when these sensors might fail or get blocked—whether from dirt, weather, or other vehicles—could prevent accidents before they occur. This research also matters because the system can explain its predictions and adapt to new situations, making it easier for engineers and safety regulators to trust and improve autonomous vehicles. Additionally, the ability to anticipate sensor failures has applications beyond cars, including robots, drones, and other smart systems that operate in unpredictable environments.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2604.28040" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Apr 30, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 6px double var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Engineering · eess.SP</span>
+      <span>Mar 18, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing
+    </h2>
+    <p class="byline">
+      Bora, Chalfant &amp; Chryssostomidis
+      <br><span class="arxiv-id">arXiv:2603.17319</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Cargo ships burn enormous fuel crossing oceans, yet most still pick routes using simple rules of thumb. Researchers built an AI system called PIER that learns smarter routes from years of real ship-tracking and ocean data. Tested on a year of Gulf of Mexico voyages, it cut CO2 emissions by about 10% on average — and nearly eliminated catastrophic trips, dropping voyages with 50%+ excess fuel burn from 1 in 20 to 1 in 200.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Shipping is responsible for around 3% of global greenhouse gas emissions, so even single-digit improvements scale to enormous absolute reductions in fuel use and CO2. The really interesting practical angle is that PIER doesn&#39;t depend on accurate weather forecasts — it keeps working using only what the ship can observe locally, making it deployable on real vessels today. The same approach should transfer cleanly to wildfire evacuation routes, aircraft trajectory planning, or autonomous vehicles operating in unmapped terrain.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2603.17319" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Mar 18, 2026</span>
+    </div>
+  </article>
+  </div>
+  
+  <footer class="site-footer">
+    <div>Paper Plaine &middot; Updated twice daily</div>
+    <div>Source &middot; arXiv.org &middot; Cornell University</div>
+  </footer>
+</div>
+</body>
+</html>

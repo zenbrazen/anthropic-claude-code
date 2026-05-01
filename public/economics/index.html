@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Plaine — arXiv, made readable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f1ebdc; --ink: #1d1812; --ink-soft: #3d3528;
+    --muted: #7a6b54; --rule: #1d1812; --accent: #9a3a2a; --icon-grey: #8c857a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: 'Newsreader', Georgia, serif; font-size: 18px; line-height: 1.55;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(154,58,42,.04), transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(0,0,0,.03), transparent 40%);
+  }
+  .page { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+  .plane-symbol { display: none; }
+
+  /* Masthead */
+  .masthead { text-align: center; padding: 0 0 22px; border-bottom: 1px solid var(--rule); }
+  .title {
+    display: flex; justify-content: space-between; align-items: center; width: 100%;
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800;
+    font-size: clamp(40px, 9.4vw, 78px); line-height: .95;
+    letter-spacing: -.01em; color: var(--ink); padding: 0 0 6px;
+  }
+  .title .letter { display: inline-block; text-transform: uppercase; font-variation-settings: 'opsz' 96; }
+  .title-plane { width: .62em; height: .62em; color: var(--icon-grey); transform: rotate(-12deg); flex-shrink: 0; }
+  .tagline {
+    font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
+    color: var(--icon-grey); max-width: 540px; margin-left: auto; margin-right: auto;
+  }
+
+  /* Nav */
+  .nav {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+    gap: 10px 14px; padding: 18px 0; border-bottom: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    text-transform: uppercase; letter-spacing: .1em;
+  }
+  .nav a {
+    color: var(--ink-soft); text-decoration: none; padding: 4px 2px;
+    border-bottom: 2px solid transparent; white-space: nowrap;
+    transition: border-color .2s, color .2s;
+  }
+  .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+  .nav-archive {
+    flex-basis: 100%; text-align: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  }
+
+  /* Entries */
+  .entry { padding: 50px 0 44px; }
+  .entry-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    text-transform: uppercase; letter-spacing: .16em; color: var(--muted); margin-bottom: 16px;
+  }
+  .category { color: var(--accent); font-weight: 500; }
+  .entry-title {
+    font-family: 'Newsreader', serif; font-weight: 600;
+    font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
+    letter-spacing: -.015em; color: var(--ink); margin-bottom: 14px;
+  }
+  .entry-plane {
+    width: .82em; height: .82em; color: var(--icon-grey);
+    margin-right: .34em; vertical-align: -.04em; transform: rotate(-12deg); display: inline-block;
+  }
+  .byline {
+    font-family: 'Newsreader', serif; font-style: italic; font-size: 15px;
+    color: var(--ink-soft); margin-bottom: 30px; padding-bottom: 18px;
+    border-bottom: 1px dotted var(--muted);
+  }
+  .byline .arxiv-id {
+    font-family: 'JetBrains Mono', monospace; font-style: normal;
+    font-size: 11px; color: var(--muted); letter-spacing: .05em;
+  }
+  .entry-body { display: grid; grid-template-columns: 1fr 1px 1fr; column-gap: 26px; align-items: start; }
+  .col-divider { background: var(--muted); opacity: .3; align-self: stretch; }
+  .section-label {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    text-transform: uppercase; letter-spacing: .2em; color: var(--accent);
+    margin-bottom: 10px; display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::before { content: ""; display: inline-block; width: 16px; height: 1px; background: var(--accent); }
+  .summary-text { font-size: 16.5px; font-weight: 600; line-height: 1.55; color: var(--ink); }
+  .matters-text { font-size: 16px; line-height: 1.6; color: var(--ink); }
+  .entry-footer {
+    margin-top: 32px; padding-top: 18px; border-top: 1px dotted var(--muted);
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .read-link { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .read-link:hover { color: var(--accent); }
+  .read-link::after { content: " →"; }
+  .stamp { color: var(--muted); font-size: 10px; }
+
+  /* Pagination */
+  .pagination {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 36px 0 0; border-top: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .page-nav { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .page-nav:hover { color: var(--accent); }
+  .page-nav--off { color: var(--muted); border-bottom: none; cursor: default; }
+  .page-numbers { display: flex; gap: 16px; }
+  .page-num { color: var(--muted); text-decoration: none; letter-spacing: .12em; }
+  .page-num:hover { color: var(--accent); }
+  .page-num--active { color: var(--ink); font-weight: 500; }
+
+  /* Footer */
+  .site-footer {
+    text-align: center; padding: 40px 0 0;
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    text-transform: uppercase; letter-spacing: .2em; color: var(--muted); line-height: 1.8;
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 32px 18px 60px; }
+    body { font-size: 17px; }
+    .title { font-size: 38px; letter-spacing: -.02em; }
+    .nav { gap: 6px 12px; }
+    .entry-meta { flex-direction: column; gap: 4px; }
+    .entry-body { grid-template-columns: 1fr; row-gap: 28px; }
+    .col-divider { display: none; }
+    .entry-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .pagination { flex-direction: column; gap: 16px; align-items: center; }
+  }
+</style>
+</head>
+<body>
+<svg class="plane-symbol" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="plane" viewBox="0 0 24 24">
+    <path d="M22 2 L2 9 L11 13 Z" fill="currentColor" opacity="0.65"/>
+    <path d="M22 2 L11 13 L15 22 Z" fill="currentColor" opacity="1"/>
+  </symbol>
+</svg>
+<div class="page">
+  <header class="masthead">
+    <h1 class="title">
+      <span class="letter">P</span><span class="letter">A</span><span class="letter">P</span><span class="letter">E</span><span class="letter">R</span>
+      <svg class="title-plane" aria-hidden="true"><use href="#plane"/></svg>
+      <span class="letter">P</span><span class="letter">L</span><span class="letter">A</span><span class="letter">I</span><span class="letter">N</span><span class="letter">E</span>
+    </h1>
+    <p class="tagline">Fresh research, plain and simple / Updated twice daily</p>
+  </header>
+  <nav class="nav">
+    <a href="/ai">AI</a>
+    <a href="/comp-sci">Comp Sci</a>
+    <a href="/physics">Physics</a>
+    <a href="/math">Math</a>
+    <a href="/biology">Biology</a>
+    <a href="/finance">Finance</a>
+    <a href="/statistics">Statistics</a>
+    <a href="/engineering">Engineering</a>
+    <a href="/economics" class="active">Economics</a>
+    <a href="/" class="nav-archive">Archive</a>
+  </nav>
+  <div id="entries">
+    
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Economics · econ.GN</span>
+      <span>Apr 30, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Optimal Consumption and Investment with Energy-Efficiency Adoption
+    </h2>
+    <p class="byline">
+      Anthony Britto, Carlos Oliveira, Max Kleinebrahm
+      <br><span class="arxiv-id">arXiv:2604.28052</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Researchers built a mathematical model to understand when and why people invest in energy-efficient upgrades like better insulation or efficient heating systems. The model tracks how people make these decisions based on their wealth and financial conditions, and shows that while energy efficiency usually improves people&#39;s overall well-being, the actual energy savings are often smaller than expected because people tend to use more energy once they&#39;ve made their homes more efficient. The researchers also show how government subsidies can influence whether people adopt these upgrades and reduce overall energy consumption.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">This research helps governments design better incentive programs—like rebates for energy-efficient upgrades—by predicting which policies actually work to reduce energy use and improve people&#39;s finances. The finding that wealthier people are more likely to adopt energy efficiency reveals an inequality problem: poorer households may miss out on cost savings because they can&#39;t afford the upfront investment, even when subsidies exist. For climate and energy policy, understanding these real-world adoption patterns is crucial because energy-efficiency improvements are often cheaper than building new power plants, but only if people actually make and use them effectively.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2604.28052" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Apr 30, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Economics · econ.GN</span>
+      <span>Apr 29, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>The Signal Credibility Index for Prediction Markets: A Microstructure-Grounded Diagnostic with Weighted and Time-Varying Extensions
+    </h2>
+    <p class="byline">
+      Maksym Nechepurenko
+      <br><span class="arxiv-id">arXiv:2604.27041</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Researchers created a diagnostic tool called the Signal Credibility Index (SCI) that helps identify what&#39;s really driving price movements in prediction markets—distinguishing between genuine new information, temporary trading pressure, strategic positioning, or coordinated manipulation. The tool uses mathematical techniques to measure whether a price move reflects lasting belief changes or temporary noise, and the team tested it extensively with simulated trading scenarios to see when it works well and when it struggles.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Prediction markets are increasingly used to forecast everything from election outcomes to disease spread, so understanding whether price movements reflect real information or just trading games matters for trusting those forecasts. This work helps traders and market monitors spot manipulation and noise, which could make prediction markets more reliable as decision-making tools. The research also reveals an important limitation: the index is better at catching some types of fake coordination than others, meaning users need to know its blind spots. For anyone relying on prediction market prices to make real decisions, this tool provides a way to check whether those prices actually reflect genuine insights or just trading activity.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2604.27041" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Apr 29, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 6px double var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Economics · econ.GN</span>
+      <span>Mar 31, 2026</span>
+    </div>
+    <h2 class="entry-title">
+      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Industrial policy with network externalities: race to the bottom or win-win?
+    </h2>
+    <p class="byline">
+      Hashimzade &amp; Sun
+      <br><span class="arxiv-id">arXiv:2603.29542</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">When two countries pour subsidies into the same high-tech industry — chips, EVs, AI — does anyone actually win? The authors build an economic model to find out, and the answer hinges on two factors: how strongly the products benefit from network effects, and how similar the two countries&#39; offerings are. Near-identical substitutes lead to a wasteful race to the bottom; differentiated or complementary products with strong network effects can yield gains for both sides.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Industrial policy is back in fashion globally — the U.S. CHIPS Act, EU green subsidies, China&#39;s tech push — but this paper offers a nuanced framework: subsidies aren&#39;t automatically wasteful, but the win-win conditions are specific and easy to miss. The takeaway is that funding product innovation tends to outperform funding cheaper production of the same thing. And chasing identical markets head-to-head is usually the worst strategy of all, even when domestic political pressure pushes hard in that direction.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2603.29542" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Mar 31, 2026</span>
+    </div>
+  </article>
+  </div>
+  
+  <footer class="site-footer">
+    <div>Paper Plaine &middot; Updated twice daily</div>
+    <div>Source &middot; arXiv.org &middot; Cornell University</div>
+  </footer>
+</div>
+</body>
+</html>
