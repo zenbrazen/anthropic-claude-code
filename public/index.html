@@ -271,16 +271,16 @@
   </header>
 
   <nav class="nav" id="cat-nav">
-    <a href="#" data-filter="all" class="active">All</a>
-    <a href="#" data-filter="AI">AI</a>
-    <a href="#" data-filter="Comp Sci">Comp Sci</a>
-    <a href="#" data-filter="Physics">Physics</a>
-    <a href="#" data-filter="Math">Math</a>
-    <a href="#" data-filter="Biology">Biology</a>
-    <a href="#" data-filter="Finance">Finance</a>
-    <a href="#" data-filter="Statistics">Statistics</a>
-    <a href="#" data-filter="Engineering">Engineering</a>
-    <a href="#" data-filter="Economics">Economics</a>
+    <a href="/" data-filter="all" data-slug="">All</a>
+    <a href="/ai" data-filter="AI" data-slug="ai">AI</a>
+    <a href="/comp-sci" data-filter="Comp Sci" data-slug="comp-sci">Comp Sci</a>
+    <a href="/physics" data-filter="Physics" data-slug="physics">Physics</a>
+    <a href="/math" data-filter="Math" data-slug="math">Math</a>
+    <a href="/biology" data-filter="Biology" data-slug="biology">Biology</a>
+    <a href="/finance" data-filter="Finance" data-slug="finance">Finance</a>
+    <a href="/statistics" data-filter="Statistics" data-slug="statistics">Statistics</a>
+    <a href="/engineering" data-filter="Engineering" data-slug="engineering">Engineering</a>
+    <a href="/economics" data-filter="Economics" data-slug="economics">Economics</a>
   </nav>
 
   <div id="entries">
@@ -445,32 +445,45 @@
   const entries = document.querySelectorAll('.entry');
   const emptyState = document.getElementById('empty-state');
 
-  nav.addEventListener('click', e => {
-    const link = e.target.closest('a[data-filter]');
-    if (!link) return;
-    e.preventDefault();
+  const SLUG_TO_LABEL = {
+    'ai': 'AI', 'comp-sci': 'Comp Sci', 'physics': 'Physics',
+    'math': 'Math', 'biology': 'Biology', 'finance': 'Finance',
+    'statistics': 'Statistics', 'engineering': 'Engineering', 'economics': 'Economics'
+  };
 
-    nav.querySelectorAll('a').forEach(a => a.classList.remove('active'));
-    link.classList.add('active');
-
-    const filter = link.dataset.filter;
+  function applyFilter(filter) {
+    nav.querySelectorAll('a').forEach(a => a.classList.toggle('active', a.dataset.filter === filter));
     let visible = 0;
-
     entries.forEach(entry => {
       const match = filter === 'all' || entry.dataset.category === filter;
       entry.classList.toggle('hidden', !match);
       if (match) visible++;
     });
-
     emptyState.style.display = visible === 0 ? 'block' : 'none';
-
     const visibleEntries = [...entries].filter(e => !e.classList.contains('hidden'));
     visibleEntries.forEach((e, i) => {
       e.style.borderBottom = i === visibleEntries.length - 1
-        ? '6px double var(--rule)'
-        : '3px solid var(--rule)';
+        ? '6px double var(--rule)' : '3px solid var(--rule)';
     });
+  }
+
+  function filterFromPath() {
+    const slug = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+    return slug ? (SLUG_TO_LABEL[slug] || 'all') : 'all';
+  }
+
+  applyFilter(filterFromPath());
+
+  nav.addEventListener('click', e => {
+    const link = e.target.closest('a[data-filter]');
+    if (!link) return;
+    e.preventDefault();
+    const slug = link.dataset.slug;
+    history.pushState({}, '', slug ? '/' + slug : '/');
+    applyFilter(link.dataset.filter);
   });
+
+  window.addEventListener('popstate', () => applyFilter(filterFromPath()));
 </script>
 
 </body>

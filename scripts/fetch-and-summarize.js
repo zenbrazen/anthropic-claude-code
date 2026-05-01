@@ -10,15 +10,15 @@ const HTML_PATH = path.join(__dirname, '../public/index.html');
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const CATEGORIES = [
-  { label: 'AI',          arxivCat: 'cs.AI',    displayCat: 'Computer Science · cs.AI' },
-  { label: 'Comp Sci',    arxivCat: 'cs.LG',    displayCat: 'Computer Science · cs.LG' },
-  { label: 'Physics',     arxivCat: 'cond-mat', displayCat: 'Physics · cond-mat' },
-  { label: 'Math',        arxivCat: 'math.CO',  displayCat: 'Mathematics · math.CO' },
-  { label: 'Biology',     arxivCat: 'q-bio.NC', displayCat: 'Quantitative Biology · q-bio.NC' },
-  { label: 'Finance',     arxivCat: 'q-fin.GN', displayCat: 'Quantitative Finance · q-fin.GN' },
-  { label: 'Statistics',  arxivCat: 'stat.ML',  displayCat: 'Statistics · stat.ML' },
-  { label: 'Engineering', arxivCat: 'eess.SP',  displayCat: 'Engineering · eess.SP' },
-  { label: 'Economics',   arxivCat: 'econ.GN',  displayCat: 'Economics · econ.GN' },
+  { label: 'AI',          slug: 'ai',          arxivCat: 'cs.AI',    displayCat: 'Computer Science · cs.AI' },
+  { label: 'Comp Sci',    slug: 'comp-sci',    arxivCat: 'cs.LG',    displayCat: 'Computer Science · cs.LG' },
+  { label: 'Physics',     slug: 'physics',     arxivCat: 'cond-mat', displayCat: 'Physics · cond-mat' },
+  { label: 'Math',        slug: 'math',        arxivCat: 'math.CO',  displayCat: 'Mathematics · math.CO' },
+  { label: 'Biology',     slug: 'biology',     arxivCat: 'q-bio.NC', displayCat: 'Quantitative Biology · q-bio.NC' },
+  { label: 'Finance',     slug: 'finance',     arxivCat: 'q-fin.GN', displayCat: 'Quantitative Finance · q-fin.GN' },
+  { label: 'Statistics',  slug: 'statistics',  arxivCat: 'stat.ML',  displayCat: 'Statistics · stat.ML' },
+  { label: 'Engineering', slug: 'engineering', arxivCat: 'eess.SP',  displayCat: 'Engineering · eess.SP' },
+  { label: 'Economics',   slug: 'economics',   arxivCat: 'econ.GN',  displayCat: 'Economics · econ.GN' },
 ];
 
 const NAV_LABELS = CATEGORIES.map(c => c.label);
@@ -140,8 +140,8 @@ function renderEntry(paper, isLast) {
 }
 
 function generateHTML(papers) {
-  const navLinks = NAV_LABELS.map(label =>
-    `<a href="#" data-filter="${escapeHtml(label)}">${escapeHtml(label)}</a>`
+  const navLinks = CATEGORIES.map(cat =>
+    `<a href="/${cat.slug}" data-filter="${escapeHtml(cat.label)}" data-slug="${cat.slug}">${escapeHtml(cat.label)}</a>`
   ).join('\n    ');
 
   const entriesHTML = papers.map((p, i) => renderEntry(p, i === papers.length - 1)).join('\n');
@@ -476,7 +476,7 @@ function generateHTML(papers) {
   </header>
 
   <nav class="nav" id="cat-nav">
-    <a href="#" data-filter="all" class="active">All</a>
+    <a href="/" data-filter="all" data-slug="">All</a>
     ${navLinks}
   </nav>
 
@@ -498,36 +498,45 @@ function generateHTML(papers) {
   const entries = document.querySelectorAll('.entry');
   const emptyState = document.getElementById('empty-state');
 
-  nav.addEventListener('click', e => {
-    const link = e.target.closest('a[data-filter]');
-    if (!link) return;
-    e.preventDefault();
+  const SLUG_TO_LABEL = {
+    'ai': 'AI', 'comp-sci': 'Comp Sci', 'physics': 'Physics',
+    'math': 'Math', 'biology': 'Biology', 'finance': 'Finance',
+    'statistics': 'Statistics', 'engineering': 'Engineering', 'economics': 'Economics'
+  };
 
-    nav.querySelectorAll('a').forEach(a => a.classList.remove('active'));
-    link.classList.add('active');
-
-    const filter = link.dataset.filter;
+  function applyFilter(filter) {
+    nav.querySelectorAll('a').forEach(a => a.classList.toggle('active', a.dataset.filter === filter));
     let visible = 0;
-
     entries.forEach(entry => {
       const match = filter === 'all' || entry.dataset.category === filter;
       entry.classList.toggle('hidden', !match);
       if (match) visible++;
     });
-
     emptyState.style.display = visible === 0 ? 'block' : 'none';
-
-    // Re-apply double-border to last visible entry
-    entries.forEach(entry => entry.style.borderBottom = '');
     const visibleEntries = [...entries].filter(e => !e.classList.contains('hidden'));
-    if (visibleEntries.length > 0) {
-      visibleEntries.forEach((e, i) => {
-        e.style.borderBottom = i === visibleEntries.length - 1
-          ? '6px double var(--rule)'
-          : '3px solid var(--rule)';
-      });
-    }
+    visibleEntries.forEach((e, i) => {
+      e.style.borderBottom = i === visibleEntries.length - 1
+        ? '6px double var(--rule)' : '3px solid var(--rule)';
+    });
+  }
+
+  function filterFromPath() {
+    const slug = window.location.pathname.replace(/^\\//, '').replace(/\\/$/, '');
+    return slug ? (SLUG_TO_LABEL[slug] || 'all') : 'all';
+  }
+
+  applyFilter(filterFromPath());
+
+  nav.addEventListener('click', e => {
+    const link = e.target.closest('a[data-filter]');
+    if (!link) return;
+    e.preventDefault();
+    const slug = link.dataset.slug;
+    history.pushState({}, '', slug ? '/' + slug : '/');
+    applyFilter(link.dataset.filter);
   });
+
+  window.addEventListener('popstate', () => applyFilter(filterFromPath()));
 </script>
 
 </body>
