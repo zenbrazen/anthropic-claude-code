@@ -46,7 +46,9 @@ async function summarizePaper(paper, categoryLabel) {
       role: 'user',
       content: `You write for Paper Plaine, a website presenting academic research in plain English for general audiences.
 
-Write two sections about this paper:
+Write three sections about this paper:
+
+SUBTITLE: 8–12 words. A single plain-English phrase that captures what the paper is really about — written for a curious non-expert. Concrete and human, no jargon. It sits below the paper's formal title as a plain-language translation. Examples: "Designing agreements that hold up even when groups cheat together" · "Why Bitcoin's biggest theoretical sell-off probably wouldn't crash the market" · "Teaching self-driving cars to predict when their sensors will go dark."
 
 SUMMARY: 2–3 sentences. Lead with what was discovered or shown, not what was studied. Plain English only — no jargon. If the finding has a number, name it. If it has a counterintuitive angle, surface it. Never open with "Researchers studied," "This work explores," or similar. Use "could" and "might" only when the paper itself is genuinely speculative.
 
@@ -57,7 +59,7 @@ Authors: ${authorsStr}
 Category: ${categoryLabel}
 Abstract: ${paper.abstract}
 
-Respond ONLY with valid JSON: {"summary": "...", "whyItMatters": "..."}`
+Respond ONLY with valid JSON: {"subtitle": "...", "summary": "...", "whyItMatters": "..."}`
     }]
   });
   const jsonMatch = response.content[0].text.match(/\{[\s\S]*\}/);
@@ -94,14 +96,14 @@ async function run() {
 
       const candidate = candidates[0];
       console.log(`  Summarizing: ${candidate.title.slice(0, 70)}...`);
-      const { summary, whyItMatters } = await summarizePaper(candidate, cat.label);
+      const { subtitle, summary, whyItMatters } = await summarizePaper(candidate, cat.label);
       const authorsStr = candidate.authors.slice(0, 3).join(', ') + (candidate.authors.length > 3 ? ' et al.' : '');
 
       newPapers.push({
         id: candidate.id, title: candidate.title, authors: authorsStr,
         categoryLabel: cat.label, categoryDisplay: cat.displayCat,
         published: candidate.published, publishedFormatted: formatDate(candidate.published),
-        summary, whyItMatters, fetchedAt: new Date().toISOString(),
+        subtitle, summary, whyItMatters, fetchedAt: new Date().toISOString(),
       });
       existingIds.add(candidate.id);
       console.log(`  Done: ${cat.label}`);

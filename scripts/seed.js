@@ -47,18 +47,20 @@ async function summarizePaper(paper, categoryLabel) {
       role: 'user',
       content: `You write for Paper Plaine, a website presenting academic research in plain English for general audiences.
 
-Write two sections about this paper:
+Write three sections about this paper:
 
-SUMMARY: 2–3 sentences. What did the researchers do and find? Plain English only — no jargon.
+SUBTITLE: 8–12 words. A single plain-English phrase that captures what the paper is really about — written for a curious non-expert. Concrete and human, no jargon. It sits below the paper's formal title as a plain-language translation. Examples: "Designing agreements that hold up even when groups cheat together" · "Why Bitcoin's biggest theoretical sell-off probably wouldn't crash the market" · "Teaching self-driving cars to predict when their sensors will go dark."
 
-WHY IT MATTERS: 2–4 sentences. What changes if this research is right? Who benefits? What does it connect to in everyday life?
+SUMMARY: 2–3 sentences. Lead with what was discovered or shown, not what was studied. Plain English only — no jargon. If the finding has a number, name it. If it has a counterintuitive angle, surface it. Never open with "Researchers studied," "This work explores," or similar. Use "could" and "might" only when the paper itself is genuinely speculative.
+
+WHY IT MATTERS: 2–4 sentences. Explain the real-world consequence directly — don't open with "This matters because." If there's a concrete impact, state it. Bad: "This research could potentially lead to better outcomes." Good: "Cuts CO2 by 10% and nearly eliminates worst-case fuel waste."
 
 Paper title: ${paper.title}
 Authors: ${authorsStr}
 Category: ${categoryLabel}
 Abstract: ${paper.abstract}
 
-Respond ONLY with valid JSON: {"summary": "...", "whyItMatters": "..."}`
+Respond ONLY with valid JSON: {"subtitle": "...", "summary": "...", "whyItMatters": "..."}`
     }]
   });
   const jsonMatch = response.content[0].text.match(/\{[\s\S]*\}/);
@@ -95,14 +97,14 @@ async function run() {
 
       for (const candidate of candidates) {
         console.log(`  Summarizing: ${candidate.title.slice(0, 70)}...`);
-        const { summary, whyItMatters } = await summarizePaper(candidate, cat.label);
+        const { subtitle, summary, whyItMatters } = await summarizePaper(candidate, cat.label);
         const authorsStr = candidate.authors.slice(0, 3).join(', ') + (candidate.authors.length > 3 ? ' et al.' : '');
 
         newPapers.push({
           id: candidate.id, title: candidate.title, authors: authorsStr,
           categoryLabel: cat.label, categoryDisplay: cat.displayCat,
           published: candidate.published, publishedFormatted: formatDate(candidate.published),
-          summary, whyItMatters, fetchedAt: new Date().toISOString(),
+          subtitle, summary, whyItMatters, fetchedAt: new Date().toISOString(),
         });
         existingIds.add(candidate.id);
         await sleep(500);

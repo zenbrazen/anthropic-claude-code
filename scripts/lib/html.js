@@ -103,9 +103,8 @@ function renderEntry(paper, isLast) {
       <span class="category">${escapeHtml(paper.categoryDisplay)}</span>
       <span>${escapeHtml(paper.publishedFormatted)}</span>
     </div>
-    <h2 class="entry-title">
-      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>${escapeHtml(paper.title)}
-    </h2>
+    <h2 class="entry-title">${escapeHtml(paper.title)}</h2>
+    ${paper.subtitle ? `<p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>${escapeHtml(paper.subtitle)}</p>` : ''}
     <p class="byline">
       ${escapeHtml(paper.authors)}
       <br><span class="arxiv-id">arXiv:${escapeHtml(paper.id)}</span>
@@ -269,11 +268,15 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
   .entry-title {
     font-family: 'Newsreader', serif; font-weight: 600;
     font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
-    letter-spacing: -.015em; color: var(--ink); margin-bottom: 14px;
+    letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px;
+  }
+  .entry-subtitle {
+    font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
+    color: var(--icon-grey); margin-bottom: 14px; line-height: 1.3;
   }
   .entry-plane {
     width: .82em; height: .82em; color: var(--icon-grey);
-    margin-right: .34em; vertical-align: -.04em; transform: rotate(-12deg); display: inline-block;
+    margin-right: .34em; vertical-align: -.1em; transform: rotate(-12deg); display: inline-block;
   }
   .byline {
     font-family: 'Newsreader', serif; font-style: italic; font-size: 15px;

@@ -92,11 +92,15 @@
   .entry-title {
     font-family: 'Newsreader', serif; font-weight: 600;
     font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
-    letter-spacing: -.015em; color: var(--ink); margin-bottom: 14px;
+    letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px;
+  }
+  .entry-subtitle {
+    font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
+    color: var(--icon-grey); margin-bottom: 14px; line-height: 1.3;
   }
   .entry-plane {
     width: .82em; height: .82em; color: var(--icon-grey);
-    margin-right: .34em; vertical-align: -.04em; transform: rotate(-12deg); display: inline-block;
+    margin-right: .34em; vertical-align: -.1em; transform: rotate(-12deg); display: inline-block;
   }
   .byline {
     font-family: 'Newsreader', serif; font-style: italic; font-size: 15px;
@@ -198,9 +202,8 @@
       <span class="category">Statistics · stat.ML</span>
       <span>Apr 30, 2026</span>
     </div>
-    <h2 class="entry-title">
-      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Sequential Inference for Gaussian Processes: A Signal Processing Perspective
-    </h2>
+    <h2 class="entry-title">Sequential Inference for Gaussian Processes: A Signal Processing Perspective</h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Making smarter predictions when new data arrives one piece at a time</p>
     <p class="byline">
       Daniel Waxman, Fernando Llorente, Petar M. Djurić
       <br><span class="arxiv-id">arXiv:2604.28163</span>
@@ -227,9 +230,8 @@
       <span class="category">Statistics · stat.ML</span>
       <span>Apr 30, 2026</span>
     </div>
-    <h2 class="entry-title">
-      <svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning
-    </h2>
+    <h2 class="entry-title">Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning</h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Borrowing a classic statistics trick to train AI reasoning more cheaply</p>
     <p class="byline">
       Shijin Gong, Kai Ye, Jin Zhu et al.
       <br><span class="arxiv-id">arXiv:2604.28005</span>
