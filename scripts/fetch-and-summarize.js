@@ -83,10 +83,13 @@ async function run() {
   const selected = (pool.length >= 2 ? pool : CATEGORIES).sort(() => Math.random() - 0.5).slice(0, 2);
 
   const newPapers = [];
+  const cutoff = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
   for (const cat of selected) {
     try {
       console.log(`Fetching from ${cat.arxivCat}...`);
-      const candidates = (await fetchArxivPapers(cat.arxivCat, 25)).filter(p => !existingIds.has(p.id));
+      const candidates = (await fetchArxivPapers(cat.arxivCat, 25))
+        .filter(p => new Date(p.published) >= cutoff)
+        .filter(p => !existingIds.has(p.id));
       if (!candidates.length) { console.log(`  No new papers in ${cat.arxivCat}`); continue; }
 
       const candidate = candidates[0];

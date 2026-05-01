@@ -82,11 +82,15 @@ async function run() {
 
   const existingIds = new Set(papers.map(p => p.id));
   const newPapers = [];
+  const cutoff = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
 
   for (const cat of CATEGORIES) {
     console.log(`\nFetching ${PAPERS_PER_CATEGORY} papers from ${cat.arxivCat}...`);
     try {
-      const candidates = (await fetchArxivPapers(cat.arxivCat, 30)).filter(p => !existingIds.has(p.id)).slice(0, PAPERS_PER_CATEGORY);
+      const candidates = (await fetchArxivPapers(cat.arxivCat, 30))
+        .filter(p => new Date(p.published) >= cutoff)
+        .filter(p => !existingIds.has(p.id))
+        .slice(0, PAPERS_PER_CATEGORY);
       if (!candidates.length) { console.log(`  No new papers in ${cat.arxivCat}`); continue; }
 
       for (const candidate of candidates) {
