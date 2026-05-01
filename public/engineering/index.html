@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Recent engineering research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/engineering#page","name":"Engineering Research — Paper Plaine","url":"https://paperplaine.com/engineering","description":"Recent engineering research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Experimental Performance of a 5G N78 Reconfigurable Intelligent Surface: From Controlled Measurements to Commercial Network Deployment","author":"Sefa Kayraklık, Samed Keşir, Batuhan Kaplan et al.","url":"https://arxiv.org/abs/2604.28044","datePublished":"2026-04-30T15:57:45Z","description":"Researchers built and tested a special device called a reconfigurable intelligent surface (RIS) that can redirect 5G wireless signals to improve coverage in hard-to-reach areas. Unlike most studies that only use computer simulations, they tested their prototype in real conditions—first in a lab, then outdoors, and finally in an actual working 5G network—and found it successfully boosted signal strength and restored service where it had been unavailable.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"LiDAR-based Dynamic Blockage Prediction: A Data-driven Approach for Learning Interactive Bayesian Models","author":"Saleemullah Memon, Ali Krayani, Pamela Zontone et al.","url":"https://arxiv.org/abs/2604.28040","datePublished":"2026-04-30T15:52:07Z","description":"Researchers developed a new computer system that predicts when a vehicle's LiDAR sensor (a device that uses laser pulses to detect objects) will be blocked or unable to see clearly. The system learns patterns from real-world driving data by building mathematical models of how sensors behave in normal conditions and in blockage situations, then uses those models to forecast problems before they happen.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing","author":"Bora, Chalfant & Chryssostomidis","url":"https://arxiv.org/abs/2603.17319","datePublished":"2026-03-18T00:00:00Z","description":"Cargo ships burn enormous fuel crossing oceans, yet most still pick routes using simple rules of thumb. Researchers built an AI system called PIER that learns smarter routes from years of real ship-tracking and ocean data. Tested on a year of Gulf of Mexico voyages, it cut CO2 emissions by about 10% on average — and nearly eliminated catastrophic trips, dropping voyages with 50%+ excess fuel burn from 1 in 20 to 1 in 200.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/engineering#page","name":"Engineering Research — Paper Plaine","url":"https://paperplaine.com/engineering","description":"Recent engineering research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Experimental Performance of a 5G N78 Reconfigurable Intelligent Surface: From Controlled Measurements to Commercial Network Deployment","author":"Sefa Kayraklık, Samed Keşir, Batuhan Kaplan et al.","url":"https://paperplaine.com/papers/experimental-performance-of-a-5g-n78-reconfigurable-intelligent-surface-from","datePublished":"2026-04-30T15:57:45Z","description":"Researchers built and tested a special device called a reconfigurable intelligent surface (RIS) that can redirect 5G wireless signals to improve coverage in hard-to-reach areas. Unlike most studies that only use computer simulations, they tested their prototype in real conditions—first in a lab, then outdoors, and finally in an actual working 5G network—and found it successfully boosted signal strength and restored service where it had been unavailable.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"LiDAR-based Dynamic Blockage Prediction: A Data-driven Approach for Learning Interactive Bayesian Models","author":"Saleemullah Memon, Ali Krayani, Pamela Zontone et al.","url":"https://paperplaine.com/papers/lidar-based-dynamic-blockage-prediction-a-data-driven-approach-for-learning","datePublished":"2026-04-30T15:52:07Z","description":"Researchers developed a new computer system that predicts when a vehicle's LiDAR sensor (a device that uses laser pulses to detect objects) will be blocked or unable to see clearly. The system learns patterns from real-world driving data by building mathematical models of how sensors behave in normal conditions and in blockage situations, then uses those models to forecast problems before they happen.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing","author":"Bora, Chalfant & Chryssostomidis","url":"https://paperplaine.com/papers/physics-informed-reinforcement-learning-eliminates-catastrophic-fuel-waste-in","datePublished":"2026-03-18T00:00:00Z","description":"Cargo ships burn enormous fuel crossing oceans, yet most still pick routes using simple rules of thumb. Researchers built an AI system called PIER that learns smarter routes from years of real ship-tracking and ocean data. Tested on a year of Gulf of Mexico voyages, it cut CO2 emissions by about 10% on average — and nearly eliminated catastrophic trips, dropping voyages with 50%+ excess fuel burn from 1 in 20 to 1 in 200.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +94,8 @@
     font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
     letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px;
   }
+  .entry-title-link { color: inherit; text-decoration: none; transition: color .2s; }
+  .entry-title-link:hover { color: var(--accent); }
   .entry-subtitle {
     font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
     color: var(--icon-grey); margin-bottom: 14px; line-height: 1.3;
@@ -131,6 +133,15 @@
   .read-link:hover { color: var(--accent); }
   .read-link::after { content: " →"; }
   .stamp { color: var(--muted); font-size: 10px; }
+
+  /* Paper back-link */
+  .paper-back {
+    padding: 28px 0 0; display: flex; gap: 24px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .paper-back a { color: var(--ink-soft); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .paper-back a:hover { color: var(--accent); }
 
   /* Pagination */
   .pagination {
@@ -202,7 +213,7 @@
       <span class="category">Engineering · eess.SP</span>
       <span>Apr 30, 2026</span>
     </div>
-    <h2 class="entry-title">Experimental Performance of a 5G N78 Reconfigurable Intelligent Surface: From Controlled Measurements to Commercial Network Deployment</h2>
+    <h2 class="entry-title"><a href="/papers/experimental-performance-of-a-5g-n78-reconfigurable-intelligent-surface-from" class="entry-title-link">Experimental Performance of a 5G N78 Reconfigurable Intelligent Surface: From Controlled Measurements to Commercial Network Deployment</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>A programmable panel that bounces 5G signals into dead zones</p>
     <p class="byline">
       Sefa Kayraklık, Samed Keşir, Batuhan Kaplan et al.
@@ -230,7 +241,7 @@
       <span class="category">Engineering · eess.SP</span>
       <span>Apr 30, 2026</span>
     </div>
-    <h2 class="entry-title">LiDAR-based Dynamic Blockage Prediction: A Data-driven Approach for Learning Interactive Bayesian Models</h2>
+    <h2 class="entry-title"><a href="/papers/lidar-based-dynamic-blockage-prediction-a-data-driven-approach-for-learning" class="entry-title-link">LiDAR-based Dynamic Blockage Prediction: A Data-driven Approach for Learning Interactive Bayesian Models</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Teaching self-driving cars to predict when their laser sensors will go dark</p>
     <p class="byline">
       Saleemullah Memon, Ali Krayani, Pamela Zontone et al.
@@ -258,7 +269,7 @@
       <span class="category">Engineering · eess.SP</span>
       <span>Mar 18, 2026</span>
     </div>
-    <h2 class="entry-title">Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing</h2>
+    <h2 class="entry-title"><a href="/papers/physics-informed-reinforcement-learning-eliminates-catastrophic-fuel-waste-in" class="entry-title-link">Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>An AI navigator trained on real voyages that cuts ship fuel waste by 10%</p>
     <p class="byline">
       Bora, Chalfant &amp; Chryssostomidis
@@ -281,7 +292,6 @@
     </div>
   </article>
   </main>
-  
   <footer class="site-footer">
     <div>Paper Plaine &middot; Updated twice daily</div>
     <div>Source &middot; arXiv.org &middot; Cornell University</div>

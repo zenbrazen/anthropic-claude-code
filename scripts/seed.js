@@ -2,7 +2,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { CATEGORIES, generateSite } from './lib/html.js';
+import { CATEGORIES, generateSite, ensureSlugs } from './lib/html.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, '../data/papers.json');
@@ -117,6 +117,7 @@ async function run() {
   if (!newPapers.length) { console.log('\nNo new papers added.'); return; }
 
   papers = [...newPapers, ...papers].slice(0, 40);
+  ensureSlugs(papers);
   await fs.writeFile(DATA_PATH, JSON.stringify(papers, null, 2));
   console.log(`\nAdded ${newPapers.length} papers. Total: ${papers.length}`);
 

@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Recent statistics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/statistics#page","name":"Statistics Research — Paper Plaine","url":"https://paperplaine.com/statistics","description":"Recent statistics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Sequential Inference for Gaussian Processes: A Signal Processing Perspective","author":"Daniel Waxman, Fernando Llorente, Petar M. Djurić","url":"https://arxiv.org/abs/2604.28163","datePublished":"2026-04-30T17:48:09Z","description":"Researchers surveyed Gaussian processes—a flexible mathematical tool for modeling unpredictable patterns—with a focus on how to use them when data arrives one piece at a time rather than all at once. They organized recent techniques from a signal-processing angle and showed how these methods apply to real-world problems like predicting time series, spotting unusual patterns in data streams, and making decisions based on incoming information.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning","author":"Shijin Gong, Kai Ye, Jin Zhu et al.","url":"https://arxiv.org/abs/2604.28005","datePublished":"2026-04-30T15:27:34Z","description":"Researchers tackled a practical problem in training AI language models: how to improve their reasoning without using expensive methods. They borrowed an old statistical technique called kernel smoothing—which essentially finds patterns in small datasets by looking at how nearby points relate to each other—and applied it to estimate the quality of different reasoning paths the model generates. Their tests showed this approach works better than existing methods when you can only afford to sample a few reasoning attempts per question.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/statistics#page","name":"Statistics Research — Paper Plaine","url":"https://paperplaine.com/statistics","description":"Recent statistics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Sequential Inference for Gaussian Processes: A Signal Processing Perspective","author":"Daniel Waxman, Fernando Llorente, Petar M. Djurić","url":"https://paperplaine.com/papers/sequential-inference-for-gaussian-processes-a-signal-processing-perspective","datePublished":"2026-04-30T17:48:09Z","description":"Researchers surveyed Gaussian processes—a flexible mathematical tool for modeling unpredictable patterns—with a focus on how to use them when data arrives one piece at a time rather than all at once. They organized recent techniques from a signal-processing angle and showed how these methods apply to real-world problems like predicting time series, spotting unusual patterns in data streams, and making decisions based on incoming information.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning","author":"Shijin Gong, Kai Ye, Jin Zhu et al.","url":"https://paperplaine.com/papers/kernelized-advantage-estimation-from-nonparametric-statistics-to-llm-reasoning","datePublished":"2026-04-30T15:27:34Z","description":"Researchers tackled a practical problem in training AI language models: how to improve their reasoning without using expensive methods. They borrowed an old statistical technique called kernel smoothing—which essentially finds patterns in small datasets by looking at how nearby points relate to each other—and applied it to estimate the quality of different reasoning paths the model generates. Their tests showed this approach works better than existing methods when you can only afford to sample a few reasoning attempts per question.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +94,8 @@
     font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
     letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px;
   }
+  .entry-title-link { color: inherit; text-decoration: none; transition: color .2s; }
+  .entry-title-link:hover { color: var(--accent); }
   .entry-subtitle {
     font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
     color: var(--icon-grey); margin-bottom: 14px; line-height: 1.3;
@@ -131,6 +133,15 @@
   .read-link:hover { color: var(--accent); }
   .read-link::after { content: " →"; }
   .stamp { color: var(--muted); font-size: 10px; }
+
+  /* Paper back-link */
+  .paper-back {
+    padding: 28px 0 0; display: flex; gap: 24px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .paper-back a { color: var(--ink-soft); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .paper-back a:hover { color: var(--accent); }
 
   /* Pagination */
   .pagination {
@@ -202,7 +213,7 @@
       <span class="category">Statistics · stat.ML</span>
       <span>Apr 30, 2026</span>
     </div>
-    <h2 class="entry-title">Sequential Inference for Gaussian Processes: A Signal Processing Perspective</h2>
+    <h2 class="entry-title"><a href="/papers/sequential-inference-for-gaussian-processes-a-signal-processing-perspective" class="entry-title-link">Sequential Inference for Gaussian Processes: A Signal Processing Perspective</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Making smarter predictions when new data arrives one piece at a time</p>
     <p class="byline">
       Daniel Waxman, Fernando Llorente, Petar M. Djurić
@@ -230,7 +241,7 @@
       <span class="category">Statistics · stat.ML</span>
       <span>Apr 30, 2026</span>
     </div>
-    <h2 class="entry-title">Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning</h2>
+    <h2 class="entry-title"><a href="/papers/kernelized-advantage-estimation-from-nonparametric-statistics-to-llm-reasoning" class="entry-title-link">Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Borrowing a classic statistics trick to train AI reasoning more cheaply</p>
     <p class="byline">
       Shijin Gong, Kai Ye, Jin Zhu et al.
@@ -253,7 +264,6 @@
     </div>
   </article>
   </main>
-  
   <footer class="site-footer">
     <div>Paper Plaine &middot; Updated twice daily</div>
     <div>Source &middot; arXiv.org &middot; Cornell University</div>

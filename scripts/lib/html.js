@@ -25,6 +25,38 @@ export function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
+export function generateSlug(title, existingSlugs = new Set()) {
+  let base = title
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .trim()
+    .replace(/\s+/g, '-');
+  if (base.length > 80) {
+    base = base.slice(0, 80).replace(/-[^-]*$/, '');
+  }
+  if (!existingSlugs.has(base)) return base;
+  let n = 2;
+  while (existingSlugs.has(`${base}-${n}`)) n++;
+  return `${base}-${n}`;
+}
+
+export function ensureSlugs(papers) {
+  const used = new Set(papers.filter(p => p.slug).map(p => p.slug));
+  for (const p of papers) {
+    if (!p.slug) {
+      p.slug = generateSlug(p.title, used);
+      used.add(p.slug);
+    }
+  }
+}
+
+function truncateDesc(str, max = 155) {
+  if (str.length <= max) return str;
+  return str.slice(0, max).replace(/\s+\S*$/, '') + '…';
+}
+
 function getPageMeta(page, totalPages, activeSlug) {
   const cat = CATEGORIES.find(c => c.slug === activeSlug);
 
@@ -56,7 +88,7 @@ function getJsonLd(papers, meta, page, totalPages, activeSlug) {
     '@type': 'ScholarlyArticle',
     headline: p.title,
     author: p.authors,
-    url: `https://arxiv.org/abs/${p.id}`,
+    url: p.slug ? `${DOMAIN}/papers/${p.slug}` : `https://arxiv.org/abs/${p.id}`,
     datePublished: p.published,
     description: p.summary,
     isPartOf: { '@type': 'WebSite', name: 'Paper Plaine', url: DOMAIN },
@@ -93,117 +125,7 @@ function getJsonLd(papers, meta, page, totalPages, activeSlug) {
   return JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
 }
 
-function renderEntry(paper, isLast) {
-  const border = isLast
-    ? 'border-bottom: 6px double var(--rule);'
-    : 'border-bottom: 3px solid var(--rule);';
-  return `
-  <article class="entry" style="${border}">
-    <div class="entry-meta">
-      <span class="category">${escapeHtml(paper.categoryDisplay)}</span>
-      <span>${escapeHtml(paper.publishedFormatted)}</span>
-    </div>
-    <h2 class="entry-title">${escapeHtml(paper.title)}</h2>
-    ${paper.subtitle ? `<p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>${escapeHtml(paper.subtitle)}</p>` : ''}
-    <p class="byline">
-      ${escapeHtml(paper.authors)}
-      <br><span class="arxiv-id">arXiv:${escapeHtml(paper.id)}</span>
-    </p>
-    <div class="entry-body">
-      <div class="col-summary">
-        <div class="section-label">Summary</div>
-        <p class="summary-text">${escapeHtml(paper.summary)}</p>
-      </div>
-      <div class="col-divider"></div>
-      <div class="col-matters">
-        <div class="section-label">Why it matters</div>
-        <p class="matters-text">${escapeHtml(paper.whyItMatters)}</p>
-      </div>
-    </div>
-    <div class="entry-footer">
-      <a href="https://arxiv.org/abs/${escapeHtml(paper.id)}" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · ${escapeHtml(paper.publishedFormatted)}</span>
-    </div>
-  </article>`;
-}
-
-function renderPagination(page, totalPages, baseUrl) {
-  if (totalPages <= 1) return '';
-
-  const pageUrl = p => p === 1 ? (baseUrl || '/') : `${baseUrl || ''}/page/${p}`;
-
-  const newer = page > 1
-    ? `<a href="${pageUrl(page - 1)}" class="page-nav">← Newer</a>`
-    : `<span class="page-nav page-nav--off">← Newer</span>`;
-
-  const older = page < totalPages
-    ? `<a href="${pageUrl(page + 1)}" class="page-nav">Older →</a>`
-    : `<span class="page-nav page-nav--off">Older →</span>`;
-
-  const nums = Array.from({ length: totalPages }, (_, i) => i + 1).map(p =>
-    p === page
-      ? `<span class="page-num page-num--active">${p}</span>`
-      : `<a href="${pageUrl(p)}" class="page-num">${p}</a>`
-  ).join('');
-
-  return `
-  <nav class="pagination" aria-label="Page navigation">
-    ${newer}
-    <div class="page-numbers">${nums}</div>
-    ${older}
-  </nav>`;
-}
-
-export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = null, baseUrl = '' } = {}) {
-  const meta = getPageMeta(page, totalPages, activeSlug);
-  const jsonLd = getJsonLd(papers, meta, page, totalPages, activeSlug);
-
-  const prevUrl = page > 1
-    ? (page === 2 ? (baseUrl || '/') : `${baseUrl || ''}/page/${page - 1}`)
-    : null;
-  const nextUrl = page < totalPages ? `${baseUrl || ''}/page/${page + 1}` : null;
-
-  const navLinks = CATEGORIES.map(cat => {
-    const active = cat.slug === activeSlug ? ' class="active"' : '';
-    return `<a href="/${cat.slug}"${active}>${escapeHtml(cat.label)}</a>`;
-  }).join('\n    ');
-
-  const archiveActive = activeSlug === null ? ' active' : '';
-  const archiveLink = `<a href="/" class="nav-archive${archiveActive}">Archive</a>`;
-
-  const entriesHTML = papers.map((p, i) => renderEntry(p, i === papers.length - 1)).join('\n');
-  const paginationHTML = renderPagination(page, totalPages, baseUrl);
-
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${escapeHtml(meta.title)}</title>
-<meta name="description" content="${escapeHtml(meta.description)}">
-<link rel="canonical" href="${escapeHtml(meta.canonical)}">
-${prevUrl ? `<link rel="prev" href="${escapeHtml(DOMAIN + prevUrl)}">` : ''}
-${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Paper Plaine">
-<meta property="og:title" content="${escapeHtml(meta.title)}">
-<meta property="og:description" content="${escapeHtml(meta.description)}">
-<meta property="og:url" content="${escapeHtml(meta.canonical)}">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="${escapeHtml(meta.title)}">
-<meta name="twitter:description" content="${escapeHtml(meta.description)}">
-
-<!-- JSON-LD structured data -->
-<script type="application/ld+json">${jsonLd}</script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
+const CSS = `
   :root {
     --bg: #f1ebdc; --ink: #1d1812; --ink-soft: #3d3528;
     --muted: #7a6b54; --rule: #1d1812; --accent: #9a3a2a; --icon-grey: #8c857a;
@@ -270,6 +192,8 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
     font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
     letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px;
   }
+  .entry-title-link { color: inherit; text-decoration: none; transition: color .2s; }
+  .entry-title-link:hover { color: var(--accent); }
   .entry-subtitle {
     font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
     color: var(--icon-grey); margin-bottom: 14px; line-height: 1.3;
@@ -308,6 +232,15 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
   .read-link::after { content: " →"; }
   .stamp { color: var(--muted); font-size: 10px; }
 
+  /* Paper back-link */
+  .paper-back {
+    padding: 28px 0 0; display: flex; gap: 24px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .paper-back a { color: var(--ink-soft); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .paper-back a:hover { color: var(--accent); }
+
   /* Pagination */
   .pagination {
     display: flex; justify-content: space-between; align-items: center;
@@ -341,7 +274,46 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
     .entry-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
     .pagination { flex-direction: column; gap: 16px; align-items: center; }
   }
-</style>
+`;
+
+function buildPage({ title, description, canonical, prevUrl = null, nextUrl = null, jsonLd, activeSlug, ogType = 'website', mainHTML }) {
+  const navLinks = CATEGORIES.map(cat => {
+    const active = cat.slug === activeSlug ? ' class="active"' : '';
+    return `<a href="/${cat.slug}"${active}>${escapeHtml(cat.label)}</a>`;
+  }).join('\n    ');
+  const archiveActive = activeSlug === null ? ' active' : '';
+  const archiveLink = `<a href="/" class="nav-archive${archiveActive}">Archive</a>`;
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${escapeHtml(title)}</title>
+<meta name="description" content="${escapeHtml(description)}">
+<link rel="canonical" href="${escapeHtml(canonical)}">
+${prevUrl ? `<link rel="prev" href="${escapeHtml(DOMAIN + prevUrl)}">` : ''}
+${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
+
+<!-- Open Graph -->
+<meta property="og:type" content="${ogType}">
+<meta property="og:site_name" content="Paper Plaine">
+<meta property="og:title" content="${escapeHtml(title)}">
+<meta property="og:description" content="${escapeHtml(description)}">
+<meta property="og:url" content="${escapeHtml(canonical)}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="${escapeHtml(title)}">
+<meta name="twitter:description" content="${escapeHtml(description)}">
+
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">${jsonLd}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>${CSS}</style>
 </head>
 <body>
 <svg class="plane-symbol" xmlns="http://www.w3.org/2000/svg">
@@ -364,9 +336,8 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
     ${archiveLink}
   </nav>
   <main id="entries">
-    ${entriesHTML}
+    ${mainHTML}
   </main>
-  ${paginationHTML}
   <footer class="site-footer">
     <div>Paper Plaine &middot; Updated twice daily</div>
     <div>Source &middot; arXiv.org &middot; Cornell University</div>
@@ -374,6 +345,139 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
 </div>
 </body>
 </html>`;
+}
+
+function renderEntry(paper, isLast, { detail = false } = {}) {
+  const border = isLast
+    ? 'border-bottom: 6px double var(--rule);'
+    : 'border-bottom: 3px solid var(--rule);';
+  const titleContent = detail || !paper.slug
+    ? escapeHtml(paper.title)
+    : `<a href="/papers/${escapeHtml(paper.slug)}" class="entry-title-link">${escapeHtml(paper.title)}</a>`;
+  return `
+  <article class="entry" style="${border}">
+    <div class="entry-meta">
+      <span class="category">${escapeHtml(paper.categoryDisplay)}</span>
+      <span>${escapeHtml(paper.publishedFormatted)}</span>
+    </div>
+    <h2 class="entry-title">${titleContent}</h2>
+    ${paper.subtitle ? `<p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>${escapeHtml(paper.subtitle)}</p>` : ''}
+    <p class="byline">
+      ${escapeHtml(paper.authors)}
+      <br><span class="arxiv-id">arXiv:${escapeHtml(paper.id)}</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">${escapeHtml(paper.summary)}</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">${escapeHtml(paper.whyItMatters)}</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/${escapeHtml(paper.id)}" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · ${escapeHtml(paper.publishedFormatted)}</span>
+    </div>
+  </article>`;
+}
+
+function renderPagination(page, totalPages, baseUrl) {
+  if (totalPages <= 1) return '';
+
+  const pageUrl = p => p === 1 ? (baseUrl || '/') : `${baseUrl || ''}/page/${p}`;
+
+  const newer = page > 1
+    ? `<a href="${pageUrl(page - 1)}" class="page-nav">← Newer</a>`
+    : `<span class="page-nav page-nav--off">← Newer</span>`;
+
+  const older = page < totalPages
+    ? `<a href="${pageUrl(page + 1)}" class="page-nav">Older →</a>`
+    : `<span class="page-nav page-nav--off">Older →</span>`;
+
+  const nums = Array.from({ length: totalPages }, (_, i) => i + 1).map(p =>
+    p === page
+      ? `<span class="page-num page-num--active">${p}</span>`
+      : `<a href="${pageUrl(p)}" class="page-num">${p}</a>`
+  ).join('');
+
+  return `
+  <nav class="pagination" aria-label="Page navigation">
+    ${newer}
+    <div class="page-numbers">${nums}</div>
+    ${older}
+  </nav>`;
+}
+
+export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = null, baseUrl = '' } = {}) {
+  const meta = getPageMeta(page, totalPages, activeSlug);
+  const jsonLd = getJsonLd(papers, meta, page, totalPages, activeSlug);
+
+  const prevUrl = page > 1
+    ? (page === 2 ? (baseUrl || '/') : `${baseUrl || ''}/page/${page - 1}`)
+    : null;
+  const nextUrl = page < totalPages ? `${baseUrl || ''}/page/${page + 1}` : null;
+
+  const entriesHTML = papers.map((p, i) => renderEntry(p, i === papers.length - 1)).join('\n');
+  const paginationHTML = renderPagination(page, totalPages, baseUrl);
+
+  return buildPage({
+    title: meta.title,
+    description: meta.description,
+    canonical: meta.canonical,
+    prevUrl,
+    nextUrl,
+    jsonLd,
+    activeSlug,
+    ogType: 'website',
+    mainHTML: entriesHTML + paginationHTML,
+  });
+}
+
+export function generatePaperHTML(paper) {
+  const cat = CATEGORIES.find(c => c.label === paper.categoryLabel);
+  const description = truncateDesc(paper.summary);
+  const canonical = `${DOMAIN}/papers/${paper.slug}`;
+
+  const jsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': `${DOMAIN}/#website`,
+        name: 'Paper Plaine',
+        url: DOMAIN,
+        description: 'arXiv research papers explained in plain English, updated twice daily.',
+        inLanguage: 'en',
+      },
+      {
+        '@type': 'ScholarlyArticle',
+        '@id': `${canonical}#article`,
+        headline: paper.title,
+        description: paper.summary,
+        author: paper.authors,
+        url: `https://arxiv.org/abs/${paper.id}`,
+        datePublished: paper.published,
+        isPartOf: { '@id': `${DOMAIN}/#website` },
+      },
+    ],
+  });
+
+  const backLinks = cat
+    ? `<div class="paper-back"><a href="/${cat.slug}">← ${escapeHtml(cat.label)}</a><a href="/">Archive</a></div>`
+    : `<div class="paper-back"><a href="/">← Archive</a></div>`;
+
+  return buildPage({
+    title: `${paper.title} — Paper Plaine`,
+    description,
+    canonical,
+    jsonLd,
+    activeSlug: cat?.slug ?? null,
+    ogType: 'article',
+    mainHTML: backLinks + renderEntry(paper, true, { detail: true }),
+  });
 }
 
 function buildSitemap(urls) {
@@ -428,6 +532,7 @@ export async function generateSite(allPapers, publicDir) {
 
   // Clean up old generated directories
   await fs.rm(path.join(publicDir, 'page'), { recursive: true, force: true });
+  await fs.rm(path.join(publicDir, 'papers'), { recursive: true, force: true });
   for (const cat of CATEGORIES) {
     await fs.rm(path.join(publicDir, cat.slug), { recursive: true, force: true });
   }
@@ -459,10 +564,20 @@ export async function generateSite(allPapers, publicDir) {
     sitemapUrls.push({ url: `${DOMAIN}/${cat.slug}`, lastmod: today });
   }
 
+  // Per-paper pages
+  for (const paper of allPapers) {
+    if (!paper.slug) continue;
+    const dir = path.join(publicDir, 'papers', paper.slug);
+    await fs.mkdir(dir, { recursive: true });
+    await fs.writeFile(path.join(dir, 'index.html'), generatePaperHTML(paper));
+    sitemapUrls.push({ url: `${DOMAIN}/papers/${paper.slug}`, lastmod: today });
+  }
+
   // sitemap.xml, robots.txt, llms.txt
   await fs.writeFile(path.join(publicDir, 'sitemap.xml'), buildSitemap(sitemapUrls));
   await fs.writeFile(path.join(publicDir, 'robots.txt'), buildRobotsTxt());
   await fs.writeFile(path.join(publicDir, 'llms.txt'), buildLlmsTxt(allPapers));
 
-  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length;
+  const paperPageCount = allPapers.filter(p => p.slug).length;
+  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount;
 }

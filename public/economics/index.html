@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Recent economics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/economics#page","name":"Economics Research — Paper Plaine","url":"https://paperplaine.com/economics","description":"Recent economics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Optimal Consumption and Investment with Energy-Efficiency Adoption","author":"Anthony Britto, Carlos Oliveira, Max Kleinebrahm","url":"https://arxiv.org/abs/2604.28052","datePublished":"2026-04-30T15:59:43Z","description":"Researchers built a mathematical model to understand when and why people invest in energy-efficient upgrades like better insulation or efficient heating systems. The model tracks how people make these decisions based on their wealth and financial conditions, and shows that while energy efficiency usually improves people's overall well-being, the actual energy savings are often smaller than expected because people tend to use more energy once they've made their homes more efficient. The researchers also show how government subsidies can influence whether people adopt these upgrades and reduce overall energy consumption.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"The Signal Credibility Index for Prediction Markets: A Microstructure-Grounded Diagnostic with Weighted and Time-Varying Extensions","author":"Maksym Nechepurenko","url":"https://arxiv.org/abs/2604.27041","datePublished":"2026-04-29T17:19:45Z","description":"Researchers created a diagnostic tool called the Signal Credibility Index (SCI) that helps identify what's really driving price movements in prediction markets—distinguishing between genuine new information, temporary trading pressure, strategic positioning, or coordinated manipulation. The tool uses mathematical techniques to measure whether a price move reflects lasting belief changes or temporary noise, and the team tested it extensively with simulated trading scenarios to see when it works well and when it struggles.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Industrial policy with network externalities: race to the bottom or win-win?","author":"Hashimzade & Sun","url":"https://arxiv.org/abs/2603.29542","datePublished":"2026-03-31T00:00:00Z","description":"When two countries pour subsidies into the same high-tech industry — chips, EVs, AI — does anyone actually win? The authors build an economic model to find out, and the answer hinges on two factors: how strongly the products benefit from network effects, and how similar the two countries' offerings are. Near-identical substitutes lead to a wasteful race to the bottom; differentiated or complementary products with strong network effects can yield gains for both sides.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/economics#page","name":"Economics Research — Paper Plaine","url":"https://paperplaine.com/economics","description":"Recent economics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Optimal Consumption and Investment with Energy-Efficiency Adoption","author":"Anthony Britto, Carlos Oliveira, Max Kleinebrahm","url":"https://paperplaine.com/papers/optimal-consumption-and-investment-with-energy-efficiency-adoption","datePublished":"2026-04-30T15:59:43Z","description":"Researchers built a mathematical model to understand when and why people invest in energy-efficient upgrades like better insulation or efficient heating systems. The model tracks how people make these decisions based on their wealth and financial conditions, and shows that while energy efficiency usually improves people's overall well-being, the actual energy savings are often smaller than expected because people tend to use more energy once they've made their homes more efficient. The researchers also show how government subsidies can influence whether people adopt these upgrades and reduce overall energy consumption.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"The Signal Credibility Index for Prediction Markets: A Microstructure-Grounded Diagnostic with Weighted and Time-Varying Extensions","author":"Maksym Nechepurenko","url":"https://paperplaine.com/papers/the-signal-credibility-index-for-prediction-markets-a-microstructure-grounded","datePublished":"2026-04-29T17:19:45Z","description":"Researchers created a diagnostic tool called the Signal Credibility Index (SCI) that helps identify what's really driving price movements in prediction markets—distinguishing between genuine new information, temporary trading pressure, strategic positioning, or coordinated manipulation. The tool uses mathematical techniques to measure whether a price move reflects lasting belief changes or temporary noise, and the team tested it extensively with simulated trading scenarios to see when it works well and when it struggles.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Industrial policy with network externalities: race to the bottom or win-win?","author":"Hashimzade & Sun","url":"https://paperplaine.com/papers/industrial-policy-with-network-externalities-race-to-the-bottom-or-win-win","datePublished":"2026-03-31T00:00:00Z","description":"When two countries pour subsidies into the same high-tech industry — chips, EVs, AI — does anyone actually win? The authors build an economic model to find out, and the answer hinges on two factors: how strongly the products benefit from network effects, and how similar the two countries' offerings are. Near-identical substitutes lead to a wasteful race to the bottom; differentiated or complementary products with strong network effects can yield gains for both sides.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +94,8 @@
     font-size: clamp(26px, 5.2vw, 34px); line-height: 1.15;
     letter-spacing: -.015em; color: var(--ink); margin-bottom: 6px;
   }
+  .entry-title-link { color: inherit; text-decoration: none; transition: color .2s; }
+  .entry-title-link:hover { color: var(--accent); }
   .entry-subtitle {
     font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
     color: var(--icon-grey); margin-bottom: 14px; line-height: 1.3;
@@ -131,6 +133,15 @@
   .read-link:hover { color: var(--accent); }
   .read-link::after { content: " →"; }
   .stamp { color: var(--muted); font-size: 10px; }
+
+  /* Paper back-link */
+  .paper-back {
+    padding: 28px 0 0; display: flex; gap: 24px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em;
+  }
+  .paper-back a { color: var(--ink-soft); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .paper-back a:hover { color: var(--accent); }
 
   /* Pagination */
   .pagination {
@@ -202,7 +213,7 @@
       <span class="category">Economics · econ.GN</span>
       <span>Apr 30, 2026</span>
     </div>
-    <h2 class="entry-title">Optimal Consumption and Investment with Energy-Efficiency Adoption</h2>
+    <h2 class="entry-title"><a href="/papers/optimal-consumption-and-investment-with-energy-efficiency-adoption" class="entry-title-link">Optimal Consumption and Investment with Energy-Efficiency Adoption</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Why people rarely save as much energy as expected after upgrading their homes</p>
     <p class="byline">
       Anthony Britto, Carlos Oliveira, Max Kleinebrahm
@@ -230,7 +241,7 @@
       <span class="category">Economics · econ.GN</span>
       <span>Apr 29, 2026</span>
     </div>
-    <h2 class="entry-title">The Signal Credibility Index for Prediction Markets: A Microstructure-Grounded Diagnostic with Weighted and Time-Varying Extensions</h2>
+    <h2 class="entry-title"><a href="/papers/the-signal-credibility-index-for-prediction-markets-a-microstructure-grounded" class="entry-title-link">The Signal Credibility Index for Prediction Markets: A Microstructure-Grounded Diagnostic with Weighted and Time-Varying Extensions</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>A gauge for whether prediction market prices reflect real insight or just noise</p>
     <p class="byline">
       Maksym Nechepurenko
@@ -258,7 +269,7 @@
       <span class="category">Economics · econ.GN</span>
       <span>Mar 31, 2026</span>
     </div>
-    <h2 class="entry-title">Industrial policy with network externalities: race to the bottom or win-win?</h2>
+    <h2 class="entry-title"><a href="/papers/industrial-policy-with-network-externalities-race-to-the-bottom-or-win-win" class="entry-title-link">Industrial policy with network externalities: race to the bottom or win-win?</a></h2>
     <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>When two countries subsidize the same tech industry, who actually wins?</p>
     <p class="byline">
       Hashimzade &amp; Sun
@@ -281,7 +292,6 @@
     </div>
   </article>
   </main>
-  
   <footer class="site-footer">
     <div>Paper Plaine &middot; Updated twice daily</div>
     <div>Source &middot; arXiv.org &middot; Cornell University</div>
