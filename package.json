@@ -1,0 +1,12 @@
+{
+  "name": "paperplaine",
+  "version": "1.0.0",
+  "description": "arXiv research papers in plain language",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-and-summarize.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0"
+  }
+}
