@@ -25,7 +25,7 @@
   .plane-symbol { display: none; }
 
   /* Masthead */
-  .masthead { text-align: center; padding: 0 0 22px; border-bottom: 1px solid var(--rule); }
+  .masthead { text-align: center; padding: 0 0 56px; border-bottom: 1px solid var(--rule); }
   .title {
     display: flex; justify-content: space-between; align-items: center; width: 100%;
     font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800;
@@ -33,6 +33,7 @@
     letter-spacing: -.01em; color: var(--ink); padding: 0 0 6px;
   }
   .title .letter { display: inline-block; text-transform: uppercase; font-variation-settings: 'opsz' 96; }
+  .title .letter--grey { color: #888; }
   .title-plane { width: .62em; height: .62em; color: var(--icon-grey); transform: rotate(-12deg); flex-shrink: 0; }
   .tagline {
     font-family: 'Newsreader', serif; font-style: italic; font-size: 20px;
@@ -56,7 +57,9 @@
   .nav-archive {
     flex-basis: 100%; text-align: center;
     border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+    border-bottom: none !important;
   }
+  .nav-archive:hover { border-bottom: none !important; }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -152,9 +155,9 @@
     <h1 class="title">
       <span class="letter">P</span><span class="letter">A</span><span class="letter">P</span><span class="letter">E</span><span class="letter">R</span>
       <svg class="title-plane" aria-hidden="true"><use href="#plane"/></svg>
-      <span class="letter">P</span><span class="letter">L</span><span class="letter">A</span><span class="letter">I</span><span class="letter">N</span><span class="letter">E</span>
+      <span class="letter">P</span><span class="letter">L</span><span class="letter letter--grey">A</span><span class="letter letter--grey">I</span><span class="letter">N</span><span class="letter">E</span>
     </h1>
-    <p class="tagline">Fresh research, plain and simple / Updated twice daily</p>
+    <p class="tagline">Fresh research, plain and simple. Updated twice daily.</p>
   </header>
   <nav class="nav">
     <a href="/ai">AI</a>
