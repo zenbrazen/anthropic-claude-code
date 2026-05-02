@@ -21,6 +21,9 @@
 <meta name="twitter:title" content="Multisensory learning recruits visual neurons into an olfactory memory engram — Paper Plaine">
 <meta name="twitter:description" content="Researchers studying fruit flies discovered how the brain combines information from different senses—like sight and smell—to create stronger memories.…">
 
+<!-- RSS autodiscovery -->
+<link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
+
 <!-- JSON-LD structured data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/multisensory-learning-recruits-visual-neurons-into-an-olfactory-memory-engram#article","headline":"Multisensory learning recruits visual neurons into an olfactory memory engram","description":"Researchers studying fruit flies discovered how the brain combines information from different senses—like sight and smell—to create stronger memories. They found that when flies learned to associate a color with an odor (either as something good to approach or bad to avoid), their brains physically rewired neural connections so that visual neurons became part of the smell memory system, making the memory much more powerful and retrievable through either sense alone.","author":"Zeynep Okray, Nils Otto, Anna A. Cook et al.","url":"https://arxiv.org/abs/2604.28007","datePublished":"2026-04-30T15:28:58Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
 
@@ -74,12 +77,17 @@
   }
   .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
-  .nav-archive {
-    flex-basis: 100%; text-align: center;
-    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  .nav-bottom {
+    flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
+  }
+  .nav-archive { border-bottom: none !important; }
+  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss {
+    display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
   }
-  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss:hover { color: var(--accent); border-bottom: none !important; }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -204,7 +212,10 @@
     <a href="/statistics">Statistics</a>
     <a href="/engineering">Engineering</a>
     <a href="/economics">Economics</a>
-    <a href="/" class="nav-archive">Archive</a>
+    <div class="nav-bottom">
+    <a href="/" class="nav-archive">Archive/All</a>
+    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+  </div>
   </nav>
   <main id="entries">
     <div class="paper-back"><a href="/biology">← Biology</a><a href="/">Archive</a></div>

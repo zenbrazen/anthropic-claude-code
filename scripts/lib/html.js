@@ -172,12 +172,17 @@ const CSS = `
   }
   .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
-  .nav-archive {
-    flex-basis: 100%; text-align: center;
-    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  .nav-bottom {
+    flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
+  }
+  .nav-archive { border-bottom: none !important; }
+  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss {
+    display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
   }
-  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss:hover { color: var(--accent); border-bottom: none !important; }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -282,7 +287,10 @@ function buildPage({ title, description, canonical, prevUrl = null, nextUrl = nu
     return `<a href="/${cat.slug}"${active}>${escapeHtml(cat.label)}</a>`;
   }).join('\n    ');
   const archiveActive = activeSlug === null ? ' active' : '';
-  const archiveLink = `<a href="/" class="nav-archive${archiveActive}">Archive</a>`;
+  const bottomRow = `<div class="nav-bottom">
+    <a href="/" class="nav-archive${archiveActive}">Archive/All</a>
+    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+  </div>`;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -306,6 +314,9 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${escapeHtml(title)}">
 <meta name="twitter:description" content="${escapeHtml(description)}">
+
+<!-- RSS autodiscovery -->
+<link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="${DOMAIN}/feed.xml">
 
 <!-- JSON-LD structured data -->
 <script type="application/ld+json">${jsonLd}</script>
@@ -333,7 +344,7 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
   </header>
   <nav class="nav" aria-label="Categories">
     ${navLinks}
-    ${archiveLink}
+    ${bottomRow}
   </nav>
   <main id="entries">
     ${mainHTML}
@@ -491,6 +502,35 @@ function buildRobotsTxt() {
   return `User-agent: *\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`;
 }
 
+function buildRssFeed(allPapers) {
+  const items = allPapers.map(p => {
+    const link = p.slug ? `${DOMAIN}/papers/${p.slug}` : `https://arxiv.org/abs/${p.id}`;
+    const desc = `<![CDATA[<p>${p.summary}</p><p><strong>Why it matters:</strong> ${p.whyItMatters}</p>]]>`;
+    return `    <item>
+      <title>${escapeHtml(p.title)}</title>
+      <link>${link}</link>
+      <guid isPermaLink="true">${link}</guid>
+      <pubDate>${new Date(p.published).toUTCString()}</pubDate>
+      <author>${escapeHtml(p.authors)}</author>
+      <category>${escapeHtml(p.categoryLabel)}</category>
+      <description>${desc}</description>
+    </item>`;
+  }).join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paper Plaine</title>
+    <link>${DOMAIN}</link>
+    <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <atom:link href="${DOMAIN}/feed.xml" rel="self" type="application/rss+xml"/>
+${items}
+  </channel>
+</rss>`;
+}
+
 function buildLlmsTxt(allPapers) {
   const catLines = CATEGORIES
     .filter(c => allPapers.some(p => p.categoryLabel === c.label))
@@ -573,10 +613,11 @@ export async function generateSite(allPapers, publicDir) {
     sitemapUrls.push({ url: `${DOMAIN}/papers/${paper.slug}`, lastmod: today });
   }
 
-  // sitemap.xml, robots.txt, llms.txt
+  // sitemap.xml, robots.txt, llms.txt, feed.xml
   await fs.writeFile(path.join(publicDir, 'sitemap.xml'), buildSitemap(sitemapUrls));
   await fs.writeFile(path.join(publicDir, 'robots.txt'), buildRobotsTxt());
   await fs.writeFile(path.join(publicDir, 'llms.txt'), buildLlmsTxt(allPapers));
+  await fs.writeFile(path.join(publicDir, 'feed.xml'), buildRssFeed(allPapers));
 
   const paperPageCount = allPapers.filter(p => p.slug).length;
   return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount;

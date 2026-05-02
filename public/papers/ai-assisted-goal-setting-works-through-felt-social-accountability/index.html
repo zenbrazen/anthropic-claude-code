@@ -21,6 +21,9 @@
 <meta name="twitter:title" content="AI-assisted goal setting works — through felt social accountability — Paper Plaine">
 <meta name="twitter:description" content="Career coaching helps people pursue meaningful goals, but it&#39;s expensive and inaccessible to most. Researchers tested whether an AI chatbot could fill…">
 
+<!-- RSS autodiscovery -->
+<link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
+
 <!-- JSON-LD structured data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/ai-assisted-goal-setting-works-through-felt-social-accountability#article","headline":"AI-assisted goal setting works — through felt social accountability","description":"Career coaching helps people pursue meaningful goals, but it's expensive and inaccessible to most. Researchers tested whether an AI chatbot could fill that role, running an experiment with 517 people split into three groups: AI coach, a written reflection questionnaire, or no support. Two weeks later, the AI group had made more goal progress than the no-support group — but didn't really beat the questionnaire. What it did better was make people feel socially accountable.","author":"Schimpf, Voigt & Bohné","url":"https://arxiv.org/abs/2603.17887","datePublished":"2026-03-18T00:00:00Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
 
@@ -74,12 +77,17 @@
   }
   .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
-  .nav-archive {
-    flex-basis: 100%; text-align: center;
-    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  .nav-bottom {
+    flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
+  }
+  .nav-archive { border-bottom: none !important; }
+  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss {
+    display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
   }
-  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss:hover { color: var(--accent); border-bottom: none !important; }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -204,7 +212,10 @@
     <a href="/statistics">Statistics</a>
     <a href="/engineering">Engineering</a>
     <a href="/economics">Economics</a>
-    <a href="/" class="nav-archive">Archive</a>
+    <div class="nav-bottom">
+    <a href="/" class="nav-archive">Archive/All</a>
+    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+  </div>
   </nav>
   <main id="entries">
     <div class="paper-back"><a href="/comp-sci">← Comp Sci</a><a href="/">Archive</a></div>

@@ -21,6 +21,9 @@
 <meta name="twitter:title" content="AI Research — Paper Plaine">
 <meta name="twitter:description" content="Recent ai research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
 
+<!-- RSS autodiscovery -->
+<link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
+
 <!-- JSON-LD structured data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/ai#page","name":"AI Research — Paper Plaine","url":"https://paperplaine.com/ai","description":"Recent ai research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Computing Equilibrium beyond Unilateral Deviation","author":"Mingyang Liu, Gabriele Farina, Asuman Ozdaglar","url":"https://paperplaine.com/papers/computing-equilibrium-beyond-unilateral-deviation","datePublished":"2026-04-30T17:59:07Z","description":"Researchers studied how to find stable agreements in strategic situations (like games or negotiations) where groups of players might want to team up and break the rules together. Most existing solution concepts only prevent individual players from cheating alone, but ignore the risk that multiple players coordinate to cheat together. The team developed a new approach that doesn't require coalitions to have zero incentive to deviate (which often doesn't exist), but instead minimizes how much they could gain by deviating—and they proved their method is computationally efficient.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Synthetic Computers at Scale for Long-Horizon Productivity Simulation","author":"Tao Ge, Baolin Peng, Hao Cheng et al.","url":"https://paperplaine.com/papers/synthetic-computers-at-scale-for-long-horizon-productivity-simulation","datePublished":"2026-04-30T17:58:02Z","description":"Researchers created a method to build realistic computer environments at scale, complete with actual folder structures and documents, then had AI agents simulate months of productive work on these fake computers. By running 1,000 of these simulations—each lasting over 8 hours and involving thousands of interaction steps—they generated training data that significantly improved how well AI agents could handle real productivity tasks like navigating files, working with documents, and coordinating with others.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Transformers are Bayesian Networks","author":"Greg Coppola","url":"https://paperplaine.com/papers/transformers-are-bayesian-networks","datePublished":"2026-03-17T00:00:00Z","description":"Transformers — the AI architecture behind every modern language model — work brilliantly, but nobody fully understands why. This paper argues there's a hidden, well-understood math machine inside: it's secretly doing belief propagation, a classical method for combining evidence to update beliefs. The author maps attention onto an AND gate, the feed-forward layer onto an OR gate, and proves it formally using Lean, a tool that double-checks every step.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
 
@@ -74,12 +77,17 @@
   }
   .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
-  .nav-archive {
-    flex-basis: 100%; text-align: center;
-    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  .nav-bottom {
+    flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
+  }
+  .nav-archive { border-bottom: none !important; }
+  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss {
+    display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
   }
-  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss:hover { color: var(--accent); border-bottom: none !important; }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -204,7 +212,10 @@
     <a href="/statistics">Statistics</a>
     <a href="/engineering">Engineering</a>
     <a href="/economics">Economics</a>
-    <a href="/" class="nav-archive">Archive</a>
+    <div class="nav-bottom">
+    <a href="/" class="nav-archive">Archive/All</a>
+    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+  </div>
   </nav>
   <main id="entries">
     

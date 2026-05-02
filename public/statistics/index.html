@@ -21,6 +21,9 @@
 <meta name="twitter:title" content="Statistics Research — Paper Plaine">
 <meta name="twitter:description" content="Recent statistics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
 
+<!-- RSS autodiscovery -->
+<link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
+
 <!-- JSON-LD structured data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/statistics#page","name":"Statistics Research — Paper Plaine","url":"https://paperplaine.com/statistics","description":"Recent statistics research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Sequential Inference for Gaussian Processes: A Signal Processing Perspective","author":"Daniel Waxman, Fernando Llorente, Petar M. Djurić","url":"https://paperplaine.com/papers/sequential-inference-for-gaussian-processes-a-signal-processing-perspective","datePublished":"2026-04-30T17:48:09Z","description":"Researchers surveyed Gaussian processes—a flexible mathematical tool for modeling unpredictable patterns—with a focus on how to use them when data arrives one piece at a time rather than all at once. They organized recent techniques from a signal-processing angle and showed how these methods apply to real-world problems like predicting time series, spotting unusual patterns in data streams, and making decisions based on incoming information.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning","author":"Shijin Gong, Kai Ye, Jin Zhu et al.","url":"https://paperplaine.com/papers/kernelized-advantage-estimation-from-nonparametric-statistics-to-llm-reasoning","datePublished":"2026-04-30T15:27:34Z","description":"Researchers tackled a practical problem in training AI language models: how to improve their reasoning without using expensive methods. They borrowed an old statistical technique called kernel smoothing—which essentially finds patterns in small datasets by looking at how nearby points relate to each other—and applied it to estimate the quality of different reasoning paths the model generates. Their tests showed this approach works better than existing methods when you can only afford to sample a few reasoning attempts per question.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
 
@@ -74,12 +77,17 @@
   }
   .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
-  .nav-archive {
-    flex-basis: 100%; text-align: center;
-    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  .nav-bottom {
+    flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
+  }
+  .nav-archive { border-bottom: none !important; }
+  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss {
+    display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
   }
-  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss:hover { color: var(--accent); border-bottom: none !important; }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -204,7 +212,10 @@
     <a href="/statistics" class="active">Statistics</a>
     <a href="/engineering">Engineering</a>
     <a href="/economics">Economics</a>
-    <a href="/" class="nav-archive">Archive</a>
+    <div class="nav-bottom">
+    <a href="/" class="nav-archive">Archive/All</a>
+    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+  </div>
   </nav>
   <main id="entries">
     

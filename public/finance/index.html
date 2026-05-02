@@ -21,6 +21,9 @@
 <meta name="twitter:title" content="Finance Research — Paper Plaine">
 <meta name="twitter:description" content="Recent finance research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.">
 
+<!-- RSS autodiscovery -->
+<link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
+
 <!-- JSON-LD structured data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com/finance#page","name":"Finance Research — Paper Plaine","url":"https://paperplaine.com/finance","description":"Recent finance research from arXiv, explained in plain English. Updated twice daily on Paper Plaine.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"The Satoshi Overhang: Why the Bear Case is Bounded","author":"Karl T. Ulrich","url":"https://paperplaine.com/papers/the-satoshi-overhang-why-the-bear-case-is-bounded","datePublished":"2026-04-30T10:37:02Z","description":"A researcher analyzed what would happen to Bitcoin's price if Satoshi Nakamoto, Bitcoin's mysterious creator, ever sold the roughly 1.1 million bitcoins they're believed to own. The study found that even a complete sell-off would likely cause only a moderate price drop (somewhere between 5–15%), and based on 16 years of Satoshi's behavior, they're most likely to never sell at all—either out of ideological commitment or by permanently losing access to the coins.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"From Hypotheses to Factors: Constrained LLM Agents in Cryptocurrency Markets","author":"Yikuan Huang, Zheqi Fan, Kaiqi Hu et al.","url":"https://paperplaine.com/papers/from-hypotheses-to-factors-constrained-llm-agents-in-cryptocurrency-markets","datePublished":"2026-04-29T14:46:10Z","description":"Researchers created a system where AI language models act as scientific investigators to discover new trading strategies in cryptocurrency markets. The AI proposes testable ideas about what factors might predict price movements, tests them against historical data following strict rules, and documents both successes and failures. Their system found a strategy that made 44.55% annual returns on completely new data from 2024-2026, suggesting the approach can discover genuinely useful patterns rather than just getting lucky with past data.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}]}]}</script>
 
@@ -74,12 +77,17 @@
   }
   .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
-  .nav-archive {
-    flex-basis: 100%; text-align: center;
-    border-top: 1px dotted var(--muted); padding-top: 14px !important; margin-top: 4px;
+  .nav-bottom {
+    flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
+  }
+  .nav-archive { border-bottom: none !important; }
+  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss {
+    display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
   }
-  .nav-archive:hover { border-bottom: none !important; }
+  .nav-rss:hover { color: var(--accent); border-bottom: none !important; }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -204,7 +212,10 @@
     <a href="/statistics">Statistics</a>
     <a href="/engineering">Engineering</a>
     <a href="/economics">Economics</a>
-    <a href="/" class="nav-archive">Archive</a>
+    <div class="nav-bottom">
+    <a href="/" class="nav-archive">Archive/All</a>
+    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+  </div>
   </nav>
   <main id="entries">
     
