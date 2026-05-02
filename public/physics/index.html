@@ -188,6 +188,30 @@
     font-size: 13.5px; line-height: 1.35; color: var(--muted);
   }
 
+  /* About page */
+  .about-page { padding: 48px 0 0; }
+  .about-heading {
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800;
+    font-size: clamp(24px, 4vw, 34px); color: var(--ink); margin-bottom: 32px;
+    letter-spacing: -.01em;
+  }
+  .about-body p {
+    font-size: 18px; line-height: 1.7; color: var(--ink); margin-bottom: 22px;
+  }
+  .about-link { color: var(--ink); border-bottom: 1.5px solid var(--accent); text-decoration: none; padding-bottom: 1px; transition: color .2s; }
+  .about-link:hover { color: var(--accent); }
+  .about-contact {
+    margin-top: 48px; padding-top: 28px; border-top: 1px dotted var(--muted);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .about-email {
+    font-family: 'JetBrains Mono', monospace; font-size: 14px;
+    color: var(--ink); text-decoration: none; letter-spacing: .04em;
+    border-bottom: 1.5px solid var(--accent); padding-bottom: 2px;
+    align-self: flex-start; transition: color .2s;
+  }
+  .about-email:hover { color: var(--accent); }
+
   /* Empty category */
   .empty-cat {
     padding: 72px 0; text-align: center; color: var(--muted);
@@ -254,7 +278,7 @@
       <svg class="title-plane" aria-hidden="true"><use href="#plane"/></svg>
       <span class="letter">P</span><span class="letter">L</span><span class="letter letter--grey">A</span><span class="letter letter--grey">I</span><span class="letter">N</span><span class="letter">E</span>
     </h1>
-    <p class="tagline">Fresh research, plain and simple. Updated twice daily.</p>
+    <p class="tagline">Fresh research, simply explained. Updates twice daily.</p>
   </header>
   <nav class="nav" aria-label="Categories">
     <a href="/ai">AI</a>
@@ -276,10 +300,9 @@
   </main>
   <footer class="site-footer">
     <nav class="footer-nav" aria-label="Site links">
-      <a href="/about">About</a>
+      <a href="/about">About/Contact</a>
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
-      <a href="/contact">Contact</a>
     </nav>
     <div>Paper Plaine &middot; Updated twice daily</div>
     <div>Source &middot; arXiv.org &middot; Cornell University</div>
