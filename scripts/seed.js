@@ -9,7 +9,7 @@ const DATA_PATH = path.join(__dirname, '../data/papers.json');
 const PUBLIC_DIR = path.join(__dirname, '../public');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-const PAPERS_PER_CATEGORY = 2;
+const PAPERS_PER_CATEGORY = 4;
 
 async function fetchArxivPapers(category, count = 30) {
   const url = `https://export.arxiv.org/api/query?search_query=cat:${category}&sortBy=submittedDate&sortOrder=descending&max_results=${count}`;
@@ -116,7 +116,7 @@ async function run() {
 
   if (!newPapers.length) { console.log('\nNo new papers added.'); return; }
 
-  papers = [...newPapers, ...papers].slice(0, 40);
+  papers = [...newPapers, ...papers].slice(0, 80);
   ensureSlugs(papers);
   await fs.writeFile(DATA_PATH, JSON.stringify(papers, null, 2));
   console.log(`\nAdded ${newPapers.length} papers. Total: ${papers.length}`);
