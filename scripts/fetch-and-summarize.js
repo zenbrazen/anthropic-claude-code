@@ -6,11 +6,17 @@ import { CATEGORIES, generateSite, ensureSlugs } from './lib/html.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, '../data/papers.json');
+const FILTER_LOG_PATH = path.join(__dirname, '../data/filter-log.jsonl');
 const PUBLIC_DIR = path.join(__dirname, '../public');
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-async function fetchArxivPapers(category, count = 25) {
+const VENUE_KEYWORDS = [
+  'NeurIPS', 'ICML', 'ICLR', 'ACL', 'EMNLP', 'CVPR', 'Nature', 'Science',
+  'PNAS', 'accepted at', 'to appear in',
+];
+
+async function fetchArxivPapers(category, count = 40) {
   const url = `https://export.arxiv.org/api/query?search_query=cat:${category}&sortBy=submittedDate&sortOrder=descending&max_results=${count}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`arXiv API error: ${res.status}`);
@@ -26,15 +32,54 @@ function parseAtomFeed(xml) {
   const entries = [];
   for (const match of xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)) {
     const entry = match[1];
-    const rawId = extractTag(entry, 'id') ?? '';
-    const id = rawId.replace(/https?:\/\/arxiv\.org\/abs\//, '').replace(/v\d+$/, '').trim();
+    const rawId = (extractTag(entry, 'id') ?? '').replace(/https?:\/\/arxiv\.org\/abs\//, '').trim();
+    const versionMatch = rawId.match(/v(\d+)$/);
+    const version = versionMatch ? parseInt(versionMatch[1]) : 1;
+    const id = rawId.replace(/v\d+$/, '').trim();
     const title = (extractTag(entry, 'title') ?? '').replace(/\$([^$]*)\$/g, '$1').replace(/\s+/g, ' ').trim();
     const abstract = (extractTag(entry, 'summary') ?? '').replace(/\s+/g, ' ').trim();
     const published = (extractTag(entry, 'published') ?? '').trim();
     const authors = [...entry.matchAll(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>[\s\S]*?<\/author>/g)].map(m => m[1].trim());
-    if (id && title && abstract) entries.push({ id, title, abstract, authors, published });
+    const comment = (extractTag(entry, 'arxiv:comment') ?? '').replace(/\s+/g, ' ').trim();
+    const categories = [...entry.matchAll(/<category\s+term="([^"]+)"/g)].map(m => m[1]);
+    if (id && title && abstract) entries.push({ id, title, abstract, authors, published, version, comment, categories });
   }
   return entries;
+}
+
+function parsePageCount(comment) {
+  const m = comment.match(/(\d+)\s*pages?/i);
+  return m ? parseInt(m[1]) : null;
+}
+
+function applyTierZeroFilter(papers) {
+  const kept = [], dropped = [];
+  for (const p of papers) {
+    if (p.version > 1) {
+      dropped.push({ id: p.id, title: p.title, reason: `version v${p.version}` });
+      continue;
+    }
+    const wordCount = p.abstract.split(/\s+/).length;
+    if (wordCount < 100) {
+      dropped.push({ id: p.id, title: p.title, reason: `abstract too short (${wordCount}w)` });
+      continue;
+    }
+    if (wordCount > 500) {
+      dropped.push({ id: p.id, title: p.title, reason: `abstract too long (${wordCount}w)` });
+      continue;
+    }
+    const pageCount = parsePageCount(p.comment);
+    if (pageCount !== null && pageCount < 6) {
+      dropped.push({ id: p.id, title: p.title, reason: `page count ${pageCount} < 6` });
+      continue;
+    }
+    const venueMatch = VENUE_KEYWORDS.some(kw => p.comment.includes(kw));
+    const crossListed = p.categories.length >= 2;
+    const goodPageCount = pageCount !== null && pageCount >= 8 && pageCount <= 30;
+    const score = (2 * +venueMatch) + +crossListed + +goodPageCount;
+    kept.push({ ...p, _signals: { venueMatch, crossListed, goodPageCount, score, pageCount, wordCount } });
+  }
+  return { kept, dropped };
 }
 
 async function summarizePaper(paper, categoryLabel) {
@@ -79,8 +124,6 @@ async function run() {
 
   const existingIds = new Set(papers.map(p => p.id));
 
-  // Always pull 1 AI paper + 1 each from 2 randomly chosen non-AI categories
-  // (prefer non-AI categories not covered in the 8 most recent papers)
   const aiCat = CATEGORIES.find(c => c.label === 'AI');
   const otherCats = CATEGORIES.filter(c => c.label !== 'AI');
   const recentCats = new Set(papers.slice(0, 8).map(p => p.categoryLabel));
@@ -89,33 +132,45 @@ async function run() {
     .sort(() => Math.random() - 0.5).slice(0, 2);
   const selected = [aiCat, ...otherSelected];
 
+  const runLog = { runAt: new Date().toISOString(), categories: [] };
   const newPapers = [];
   const cutoff = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+
   for (const cat of selected) {
     try {
       console.log(`Fetching from ${cat.arxivCat}...`);
-      const candidates = (await fetchArxivPapers(cat.arxivCat, 25))
+      const raw = (await fetchArxivPapers(cat.arxivCat, 40))
         .filter(p => new Date(p.published) >= cutoff)
         .filter(p => !existingIds.has(p.id));
-      if (!candidates.length) { console.log(`  No new papers in ${cat.arxivCat}`); continue; }
 
-      const candidate = candidates[0];
-      console.log(`  Summarizing: ${candidate.title.slice(0, 70)}...`);
-      const { subtitle, summary, whyItMatters } = await summarizePaper(candidate, cat.label);
-      const authorsStr = candidate.authors.slice(0, 3).join(', ') + (candidate.authors.length > 3 ? ' et al.' : '');
+      const { kept, dropped } = applyTierZeroFilter(raw);
+      console.log(`  Tier-0: ${raw.length} fetched → ${kept.length} kept, ${dropped.length} dropped`);
+
+      const catLog = { category: cat.label, fetched: raw.length, kept: kept.length, dropped: dropped.length, droppedDetails: dropped };
+      runLog.categories.push(catLog);
+
+      if (!kept.length) { console.log(`  No candidates after filter in ${cat.arxivCat}`); continue; }
+
+      const best = kept.sort((a, b) => b._signals.score - a._signals.score)[0];
+      console.log(`  Summarizing: ${best.title.slice(0, 70)}...`);
+      const { subtitle, summary, whyItMatters } = await summarizePaper(best, cat.label);
+      const authorsStr = best.authors.slice(0, 3).join(', ') + (best.authors.length > 3 ? ' et al.' : '');
 
       newPapers.push({
-        id: candidate.id, title: candidate.title, authors: authorsStr,
+        id: best.id, title: best.title, authors: authorsStr,
         categoryLabel: cat.label, categoryDisplay: cat.displayCat,
-        published: candidate.published, publishedFormatted: formatDate(candidate.published),
+        published: best.published, publishedFormatted: formatDate(best.published),
         subtitle, summary, whyItMatters, fetchedAt: new Date().toISOString(),
+        signals: best._signals,
       });
-      existingIds.add(candidate.id);
-      console.log(`  Done: ${cat.label}`);
+      existingIds.add(best.id);
+      console.log(`  Done: ${cat.label} (score=${best._signals.score})`);
     } catch (err) {
       console.error(`  Error (${cat.label}):`, err.message);
     }
   }
+
+  await fs.appendFile(FILTER_LOG_PATH, JSON.stringify(runLog) + '\n');
 
   if (!newPapers.length) { console.log('No new papers this run.'); return; }
 
