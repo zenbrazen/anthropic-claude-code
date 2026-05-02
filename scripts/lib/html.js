@@ -10,7 +10,7 @@ export const CATEGORIES = [
   { label: 'Comp Sci',    slug: 'comp-sci',    displayCat: 'Computer Science',            fullName: 'Computer Science',
     sources: [{ cat: 'cs.CR', count: 10 }, { cat: 'cs.CV', count: 5 }] },
   { label: 'Physics',     slug: 'physics',     displayCat: 'Physics',                     fullName: 'Physics',
-    sources: [{ cat: 'cond-mat', count: 10 }, { cat: 'physics.soc-ph', count: 5 }] },
+    sources: [{ cat: 'quant-ph', count: 10 }, { cat: 'physics.soc-ph', count: 5 }] },
   { label: 'Math',        slug: 'math',        displayCat: 'Mathematics',                 fullName: 'Mathematics',
     sources: [{ cat: 'math.OC', count: 10 }, { cat: 'math.CO', count: 5 }] },
   { label: 'Biology',     slug: 'biology',     displayCat: 'Quantitative Biology',        fullName: 'Biology',
@@ -270,6 +270,13 @@ const CSS = `
   .page-num:hover { color: var(--accent); }
   .page-num--active { color: var(--ink); font-weight: 500; }
 
+  /* Empty category */
+  .empty-cat {
+    padding: 72px 0; text-align: center; color: var(--muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    text-transform: uppercase; letter-spacing: .14em;
+  }
+
   /* Footer */
   .site-footer {
     padding: 40px 0 0; border-top: 1px solid var(--rule);
@@ -458,7 +465,9 @@ export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = nu
     : null;
   const nextUrl = page < totalPages ? `${baseUrl || ''}/page/${page + 1}` : null;
 
-  const entriesHTML = papers.map((p, i) => renderEntry(p, i === papers.length - 1)).join('\n');
+  const entriesHTML = papers.length > 0
+    ? papers.map((p, i) => renderEntry(p, i === papers.length - 1)).join('\n')
+    : '<p class="empty-cat">No papers yet in this category — check back soon.</p>';
   const paginationHTML = renderPagination(page, totalPages, baseUrl);
 
   return buildPage({
@@ -625,7 +634,6 @@ export async function generateSite(allPapers, publicDir) {
   // Per-category pages
   for (const cat of CATEGORIES) {
     const catPapers = allPapers.filter(p => p.categoryLabel === cat.label);
-    if (catPapers.length === 0) continue;
     const dir = path.join(publicDir, cat.slug);
     await fs.mkdir(dir, { recursive: true });
     const html = generateHTML(catPapers, { page: 1, totalPages: 1, activeSlug: cat.slug, baseUrl: `/${cat.slug}` });
