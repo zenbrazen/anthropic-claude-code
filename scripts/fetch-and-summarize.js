@@ -79,10 +79,15 @@ async function run() {
 
   const existingIds = new Set(papers.map(p => p.id));
 
-  // Pick 2 categories not covered recently
+  // Always pull 1 AI paper + 1 each from 2 randomly chosen non-AI categories
+  // (prefer non-AI categories not covered in the 8 most recent papers)
+  const aiCat = CATEGORIES.find(c => c.label === 'AI');
+  const otherCats = CATEGORIES.filter(c => c.label !== 'AI');
   const recentCats = new Set(papers.slice(0, 8).map(p => p.categoryLabel));
-  const pool = CATEGORIES.filter(c => !recentCats.has(c.label));
-  const selected = (pool.length >= 2 ? pool : CATEGORIES).sort(() => Math.random() - 0.5).slice(0, 2);
+  const otherPool = otherCats.filter(c => !recentCats.has(c.label));
+  const otherSelected = (otherPool.length >= 2 ? otherPool : otherCats)
+    .sort(() => Math.random() - 0.5).slice(0, 2);
+  const selected = [aiCat, ...otherSelected];
 
   const newPapers = [];
   const cutoff = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
