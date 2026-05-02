@@ -270,6 +270,28 @@ const CSS = `
   .page-num:hover { color: var(--accent); }
   .page-num--active { color: var(--ink); font-weight: 500; }
 
+  /* Stats sidebar */
+  .site-sidebar {
+    display: none;
+    position: fixed;
+    left: calc(50% - 524px);
+    top: 248px;
+    width: 120px;
+  }
+  @media (min-width: 1100px) { .site-sidebar { display: block; } }
+  .sidebar-stat { margin-bottom: 28px; }
+  .sidebar-num {
+    display: block;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800; font-size: 34px; line-height: 1;
+    color: var(--ink); font-variation-settings: 'opsz' 96;
+  }
+  .sidebar-label {
+    display: block; margin-top: 5px;
+    font-family: 'Newsreader', serif; font-style: italic;
+    font-size: 13.5px; line-height: 1.35; color: var(--muted);
+  }
+
   /* Empty category */
   .empty-cat {
     padding: 72px 0; text-align: center; color: var(--muted);
@@ -309,7 +331,21 @@ const CSS = `
   }
 `;
 
-function buildPage({ title, description, canonical, prevUrl = null, nextUrl = null, jsonLd, activeSlug, ogType = 'website', mainHTML }) {
+function buildSidebarHTML(allPapers) {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const monthStr = new Date().toISOString().slice(0, 7);
+  const total = allPapers.length;
+  const today = allPapers.filter(p => (p.fetchedAt || '').startsWith(todayStr)).length;
+  const month = allPapers.filter(p => (p.fetchedAt || '').startsWith(monthStr)).length;
+  const stat = (num, label) => `
+  <div class="sidebar-stat">
+    <span class="sidebar-num">${num}</span>
+    <span class="sidebar-label">${label}</span>
+  </div>`;
+  return `<aside class="site-sidebar" aria-label="Site statistics">${stat(total, 'Total Posts')}${stat(today, 'New Posts Today')}${stat(month, 'New Posts This Month')}</aside>`;
+}
+
+function buildPage({ title, description, canonical, prevUrl = null, nextUrl = null, jsonLd, activeSlug, ogType = 'website', sidebarHTML = '', mainHTML }) {
   const navLinks = CATEGORIES.map(cat => {
     const active = cat.slug === activeSlug ? ' class="active"' : '';
     return `<a href="/${cat.slug}"${active}>${escapeHtml(cat.label)}</a>`;
@@ -361,6 +397,7 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
     <path d="M22 2 L11 13 L15 22 Z" fill="currentColor" opacity="1"/>
   </symbol>
 </svg>
+${sidebarHTML}
 <div class="page">
   <header class="masthead">
     <h1 class="title">
@@ -456,7 +493,7 @@ function renderPagination(page, totalPages, baseUrl) {
   </nav>`;
 }
 
-export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = null, baseUrl = '' } = {}) {
+export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = null, baseUrl = '', sidebarHTML = '' } = {}) {
   const meta = getPageMeta(page, totalPages, activeSlug);
   const jsonLd = getJsonLd(papers, meta, page, totalPages, activeSlug);
 
@@ -479,11 +516,12 @@ export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = nu
     jsonLd,
     activeSlug,
     ogType: 'website',
+    sidebarHTML,
     mainHTML: entriesHTML + paginationHTML,
   });
 }
 
-export function generatePaperHTML(paper) {
+export function generatePaperHTML(paper, sidebarHTML = '') {
   const cat = CATEGORIES.find(c => c.label === paper.categoryLabel);
   const description = truncateDesc(paper.summary);
   const canonical = `${DOMAIN}/papers/${paper.slug}`;
@@ -523,6 +561,7 @@ export function generatePaperHTML(paper) {
     jsonLd,
     activeSlug: cat?.slug ?? null,
     ogType: 'article',
+    sidebarHTML,
     mainHTML: backLinks + renderEntry(paper, true, { detail: true }),
   });
 }
@@ -615,11 +654,13 @@ export async function generateSite(allPapers, publicDir) {
     await fs.rm(path.join(publicDir, cat.slug), { recursive: true, force: true });
   }
 
+  const sidebarHTML = buildSidebarHTML(allPapers);
+
   // Archive — paginated all-papers view
   const totalPages = Math.max(1, Math.ceil(allPapers.length / PAPERS_PER_PAGE));
   for (let page = 1; page <= totalPages; page++) {
     const slice = allPapers.slice((page - 1) * PAPERS_PER_PAGE, page * PAPERS_PER_PAGE);
-    const html = generateHTML(slice, { page, totalPages, activeSlug: null, baseUrl: '' });
+    const html = generateHTML(slice, { page, totalPages, activeSlug: null, baseUrl: '', sidebarHTML });
     if (page === 1) {
       await fs.writeFile(path.join(publicDir, 'index.html'), html);
       sitemapUrls.push({ url: DOMAIN, lastmod: today });
@@ -636,7 +677,7 @@ export async function generateSite(allPapers, publicDir) {
     const catPapers = allPapers.filter(p => p.categoryLabel === cat.label);
     const dir = path.join(publicDir, cat.slug);
     await fs.mkdir(dir, { recursive: true });
-    const html = generateHTML(catPapers, { page: 1, totalPages: 1, activeSlug: cat.slug, baseUrl: `/${cat.slug}` });
+    const html = generateHTML(catPapers, { page: 1, totalPages: 1, activeSlug: cat.slug, baseUrl: `/${cat.slug}`, sidebarHTML });
     await fs.writeFile(path.join(dir, 'index.html'), html);
     sitemapUrls.push({ url: `${DOMAIN}/${cat.slug}`, lastmod: today });
   }
@@ -646,7 +687,7 @@ export async function generateSite(allPapers, publicDir) {
     if (!paper.slug) continue;
     const dir = path.join(publicDir, 'papers', paper.slug);
     await fs.mkdir(dir, { recursive: true });
-    await fs.writeFile(path.join(dir, 'index.html'), generatePaperHTML(paper));
+    await fs.writeFile(path.join(dir, 'index.html'), generatePaperHTML(paper, sidebarHTML));
     sitemapUrls.push({ url: `${DOMAIN}/papers/${paper.slug}`, lastmod: today });
   }
 

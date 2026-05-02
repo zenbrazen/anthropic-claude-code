@@ -166,6 +166,28 @@
   .page-num:hover { color: var(--accent); }
   .page-num--active { color: var(--ink); font-weight: 500; }
 
+  /* Stats sidebar */
+  .site-sidebar {
+    display: none;
+    position: fixed;
+    left: calc(50% - 524px);
+    top: 248px;
+    width: 120px;
+  }
+  @media (min-width: 1100px) { .site-sidebar { display: block; } }
+  .sidebar-stat { margin-bottom: 28px; }
+  .sidebar-num {
+    display: block;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800; font-size: 34px; line-height: 1;
+    color: var(--ink); font-variation-settings: 'opsz' 96;
+  }
+  .sidebar-label {
+    display: block; margin-top: 5px;
+    font-family: 'Newsreader', serif; font-style: italic;
+    font-size: 13.5px; line-height: 1.35; color: var(--muted);
+  }
+
   /* Empty category */
   .empty-cat {
     padding: 72px 0; text-align: center; color: var(--muted);
@@ -212,6 +234,19 @@
     <path d="M22 2 L11 13 L15 22 Z" fill="currentColor" opacity="1"/>
   </symbol>
 </svg>
+<aside class="site-sidebar" aria-label="Site statistics">
+  <div class="sidebar-stat">
+    <span class="sidebar-num">40</span>
+    <span class="sidebar-label">Total Posts</span>
+  </div>
+  <div class="sidebar-stat">
+    <span class="sidebar-num">37</span>
+    <span class="sidebar-label">New Posts Today</span>
+  </div>
+  <div class="sidebar-stat">
+    <span class="sidebar-num">40</span>
+    <span class="sidebar-label">New Posts This Month</span>
+  </div></aside>
 <div class="page">
   <header class="masthead">
     <h1 class="title">
