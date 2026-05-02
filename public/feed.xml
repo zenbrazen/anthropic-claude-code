@@ -5,8 +5,314 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2026 02:20:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 12:15:03 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows</title>
+      <link>https://paperplaine.com/papers/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/claw-eval-live-a-live-agent-benchmark-for-evolving-real-world-workflows</guid>
+      <pubDate>Thu, 30 Apr 2026 17:23:19 GMT</pubDate>
+      <author>Chenxin Li, Zhengyang Tang, Huangxin Lin et al.</author>
+      <category>AI</category>
+      <description><![CDATA[<p>AI agents that work across software tools and business systems still struggle with everyday tasks—the best model tested only completed 67% of them. A new benchmark called Claw-Eval-Live tracks what people actually need done rather than relying on static task lists, and grades agents by checking whether they actually executed the work, not just whether they gave a good answer.</p><p><strong>Why it matters:</strong> Companies increasingly rely on AI agents to handle business workflows like HR tasks and spreadsheet repairs, but current benchmarks don't reflect the real, constantly changing demands these agents face. This benchmark reveals that workflow automation is nowhere near reliable enough for critical business work—and shows that models appearing equally capable on paper can perform very differently on actual tasks, which matters for deciding which AI system to trust with real work.</p>]]></description>
+    </item>
+    <item>
+      <title>Modeling dependency between operational risk losses and macroeconomic variables using Hidden Markov Models</title>
+      <link>https://paperplaine.com/papers/modeling-dependency-between-operational-risk-losses-and-macroeconomic-variables</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/modeling-dependency-between-operational-risk-losses-and-macroeconomic-variables</guid>
+      <pubDate>Thu, 23 Apr 2026 14:38:51 GMT</pubDate>
+      <author>Nikeethan Selvaratnam, Dorinel Bastide, Clément Fernandes et al.</author>
+      <category>Finance</category>
+      <description><![CDATA[<p>Banks lose money unpredictably—and those losses often spike when the economy weakens. Researchers built a statistical model that tracks hidden economic states and uses them to forecast operational losses, showing that macroeconomic conditions like unemployment and interest rates do meaningfully predict when these costly failures will occur.</p><p><strong>Why it matters:</strong> Banks must set aside capital reserves for potential losses, and stress-testing requirements force them to model worst-case scenarios. A better prediction method could help regulators and banks estimate required reserves more accurately, avoiding either dangerously low buffers or wasteful overprovision. This affects lending capacity and ultimately how much credit flows to the real economy.</p>]]></description>
+    </item>
+    <item>
+      <title>LLM as Clinical Graph Structure Refiner: Enhancing Representation Learning in EEG Seizure Diagnosis</title>
+      <link>https://paperplaine.com/papers/llm-as-clinical-graph-structure-refiner-enhancing-representation-learning-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/llm-as-clinical-graph-structure-refiner-enhancing-representation-learning-in</guid>
+      <pubDate>Thu, 30 Apr 2026 17:57:12 GMT</pubDate>
+      <author>Lincan Li, Zheng Chen, Yushun Dong</author>
+      <category>AI</category>
+      <description><![CDATA[<p>Researchers showed that large language models can improve how computers detect seizures from EEG brain scans by cleaning up noisy connections in data networks. Their two-stage approach first builds a graph of brain-signal relationships, then uses an LLM to remove false or redundant connections, achieving better detection accuracy and more interpretable results on standard medical datasets.</p><p><strong>Why it matters:</strong> Seizure detection is critical for patient safety, but EEG signals are notoriously noisy and hard to analyze accurately. This method improves detection reliability while making the underlying analysis transparent to doctors—important when machine learning decisions directly affect treatment decisions. The approach demonstrates a practical way to combine language models with medical AI, potentially accelerating similar improvements in other brain-imaging diagnostics.</p>]]></description>
+    </item>
+    <item>
+      <title>PhyCo: Learning Controllable Physical Priors for Generative Motion</title>
+      <link>https://paperplaine.com/papers/phyco-learning-controllable-physical-priors-for-generative-motion</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/phyco-learning-controllable-physical-priors-for-generative-motion</guid>
+      <pubDate>Thu, 30 Apr 2026 17:53:03 GMT</pubDate>
+      <author>Sriram Narayanan, Ziyu Jiang, Srinivasa Narasimhan et al.</author>
+      <category>AI</category>
+      <description><![CDATA[<p>Video generation models can now create realistic motion and physics interactions—objects bounce properly, materials deform correctly, and friction behaves as expected—by training on 100,000+ simulated videos where physical properties are systematically varied. The system lets users control these physical attributes directly, without needing to reconstruct 3D geometry or run simulations after generation.</p><p><strong>Why it matters:</strong> Current video AI produces visually plausible but physically nonsensical motion: objects pass through each other, gravity works inconsistently, and materials respond wrongly to forces. PhyCo fixes this at generation time, which matters for video effects in film and games, robot training simulations, and any application where physical accuracy affects downstream decisions. Users can now specify exact friction or material properties and get videos that respect them automatically.</p>]]></description>
+    </item>
+    <item>
+      <title>Intern-Atlas: A Methodological Evolution Graph as Research Infrastructure for AI Scientists</title>
+      <link>https://paperplaine.com/papers/intern-atlas-a-methodological-evolution-graph-as-research-infrastructure-for-ai</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/intern-atlas-a-methodological-evolution-graph-as-research-infrastructure-for-ai</guid>
+      <pubDate>Thu, 30 Apr 2026 17:44:55 GMT</pubDate>
+      <author>Yujun Wu, Dongxu Zhang, Xinchen Li et al.</author>
+      <category>AI</category>
+      <description><![CDATA[<p>Researchers created Intern-Atlas, a map of how artificial intelligence research methods have evolved and built upon one another across over 1 million papers. Unlike traditional citation networks that just link papers together, this map explicitly shows why and how new methods emerge from old ones, capturing the specific breakthroughs that prompt researchers to try different approaches.</p><p><strong>Why it matters:</strong> AI research agents—systems designed to help scientists by reading and synthesizing research—currently struggle to understand how methods are connected because that information is buried in text. Intern-Atlas gives them an explicit roadmap, making it possible for automated systems to suggest promising research directions or identify when a method is ready for a new application. This infrastructure could accelerate how quickly AI researchers iterate on ideas and help catch dead ends before humans invest time in them.</p>]]></description>
+    </item>
+    <item>
+      <title>FlexiTac: A Low-Cost, Open-Source, Scalable Tactile Sensing Solution for Robotic Systems</title>
+      <link>https://paperplaine.com/papers/flexitac-a-low-cost-open-source-scalable-tactile-sensing-solution-for-robotic</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/flexitac-a-low-cost-open-source-scalable-tactile-sensing-solution-for-robotic</guid>
+      <pubDate>Thu, 30 Apr 2026 17:43:07 GMT</pubDate>
+      <author>Binghao Huang, Yunzhu Li</author>
+      <category>AI</category>
+      <description><![CDATA[<p>Researchers built FlexiTac, a low-cost tactile sensing system that gives robot hands the ability to detect pressure and texture through flexible sensor pads and simple electronics. The system costs far less than existing alternatives, works on different types of grippers, and can be manufactured quickly and consistently—making it practical for widespread use in robotics labs and industry.</p><p><strong>Why it matters:</strong> Robot dexterity has been held back by expensive, fragile touch sensors that few labs can afford or easily integrate into new designs. FlexiTac removes that barrier: its open-source design, low manufacturing cost, and plug-and-play setup mean more researchers can experiment with touch-based learning, and manufacturers can add sensitive manipulation to more types of robots. This could accelerate progress in tasks like assembly, sorting, and manipulation that currently require human workers.</p>]]></description>
+    </item>
+    <item>
+      <title>Defending Quantum Classifiers against Adversarial Perturbations through Quantum Autoencoders</title>
+      <link>https://paperplaine.com/papers/defending-quantum-classifiers-against-adversarial-perturbations-through-quantum</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/defending-quantum-classifiers-against-adversarial-perturbations-through-quantum</guid>
+      <pubDate>Thu, 30 Apr 2026 17:56:40 GMT</pubDate>
+      <author>Emma Andrews, Sahan Sanjaya, Prabhat Mishra</author>
+      <category>Comp Sci</category>
+      <description><![CDATA[<p>Quantum machine learning systems that classify images can be fooled by specially crafted noise, just like regular AI systems. Researchers developed a defense using quantum autoencoders to clean up corrupted data before classification, improving accuracy by up to 68% under attack without needing to retrain the system on known threats.</p><p><strong>Why it matters:</strong> As quantum computers become practical tools for real tasks, securing them against adversarial attacks matters for any high-stakes application—medical imaging, security screening, or autonomous systems. This defense works without the overhead of constantly retraining on new attack types, making it more practical to deploy when attackers keep changing their tactics.</p>]]></description>
+    </item>
+    <item>
+      <title>Strait: Perceiving Priority and Interference in ML Inference Serving</title>
+      <link>https://paperplaine.com/papers/strait-perceiving-priority-and-interference-in-ml-inference-serving</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/strait-perceiving-priority-and-interference-in-ml-inference-serving</guid>
+      <pubDate>Thu, 30 Apr 2026 17:55:28 GMT</pubDate>
+      <author>Haidong Zhao, Nikolaos Georgantas</author>
+      <category>Comp Sci</category>
+      <description><![CDATA[<p>Strait is a system for managing requests to machine learning models running on GPUs when some requests matter more than others. It predicts how long each request will take even when multiple requests run simultaneously, then uses those predictions to prioritize urgent requests—cutting missed deadlines for high-priority tasks by up to 11 percentage points without completely starving lower-priority work.</p><p><strong>Why it matters:</strong> Companies running AI services on their own hardware often need to handle both time-sensitive requests (like fraud detection) and routine ones (like recommendations) on the same machines. Current systems either guess badly at how long things will take under load or simply interrupt low-priority tasks—wasting GPU power. Strait lets businesses meet their critical deadlines while still processing regular work efficiently, making on-premises AI infrastructure more practical.</p>]]></description>
+    </item>
+    <item>
+      <title>Mapping the Phase Diagram of the Vicsek Model with Machine Learning</title>
+      <link>https://paperplaine.com/papers/mapping-the-phase-diagram-of-the-vicsek-model-with-machine-learning</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/mapping-the-phase-diagram-of-the-vicsek-model-with-machine-learning</guid>
+      <pubDate>Thu, 30 Apr 2026 17:52:23 GMT</pubDate>
+      <author>Grace T. Bai, Brandon B. Le</author>
+      <category>Comp Sci</category>
+      <description><![CDATA[<p>Researchers used machine learning to chart the complete phase diagram of the Vicsek model—a mathematical model of how animals flock together—across its full parameter space. By training a neural network on simulated data, they achieved 92% accuracy in predicting when the system transitions between disordered, ordered, and mixed states, and revealed a previously unclear boundary region between ordered and chaotic behavior.</p><p><strong>Why it matters:</strong> Phase diagrams are critical maps in physics and biology that show where systems behave differently. This machine-learning approach turns expensive simulations into comprehensive maps that can predict behavior across untested regions, potentially accelerating research into real collective motion—from bird flocks to autonomous robot swarms—by replacing exhaustive simulations with trained algorithms.</p>]]></description>
+    </item>
+    <item>
+      <title>Explainable Load Forecasting with Covariate-Informed Time Series Foundation Models</title>
+      <link>https://paperplaine.com/papers/explainable-load-forecasting-with-covariate-informed-time-series-foundation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/explainable-load-forecasting-with-covariate-informed-time-series-foundation</guid>
+      <pubDate>Thu, 30 Apr 2026 17:36:24 GMT</pubDate>
+      <author>Matthias Hertel, Alexandra Nikoltchovska, Sebastian Pütz et al.</author>
+      <category>Comp Sci</category>
+      <description><![CDATA[<p>Researchers found that advanced AI models can predict electricity demand as accurately as traditional ones while remaining interpretable—a crucial requirement for critical infrastructure. By developing a method to explain which factors (weather, time of day, historical patterns) drive each prediction, they showed that these models reliably use the right information to make decisions, matching established expertise about what actually moves power consumption.</p><p><strong>Why it matters:</strong> Power grid operators need to understand *why* a forecast says demand will spike before they commit expensive resources. Black-box predictions, no matter how accurate, create operational risk and regulatory friction. This work proves that grid forecasting can be both cutting-edge and transparent, removing a major barrier to deploying faster, more efficient AI systems in electricity infrastructure.</p>]]></description>
+    </item>
+    <item>
+      <title>Hypergraph independence bounds: from maximum degree to average degree</title>
+      <link>https://paperplaine.com/papers/hypergraph-independence-bounds-from-maximum-degree-to-average-degree</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/hypergraph-independence-bounds-from-maximum-degree-to-average-degree</guid>
+      <pubDate>Thu, 30 Apr 2026 15:58:27 GMT</pubDate>
+      <author>Jing Yu, Junchi Zhang</author>
+      <category>Math</category>
+      <description><![CDATA[<p>Mathematicians proved that if you can guarantee a certain minimum size of non-connected nodes in networks with a strict upper limit on connections per node, then the same guarantee automatically holds for networks with that same average connection level. The result bridges two different ways of measuring network sparsity and applies to hypergraphs—the generalization of networks where edges can connect more than two nodes at once.</p><p><strong>Why it matters:</strong> This theorem simplifies proofs across multiple network structures by eliminating the need to separately verify bounds under different sparsity conditions. Graph theorists and computer scientists studying network properties, coloring algorithms, and combinatorial optimization can now transfer known results between maximum-degree and average-degree settings, reducing redundant work and expanding what we know about when large independent sets must exist in sparse networks.</p>]]></description>
+    </item>
+    <item>
+      <title>Extremal graphs for average size of maximal matchings in bicyclic graphs</title>
+      <link>https://paperplaine.com/papers/extremal-graphs-for-average-size-of-maximal-matchings-in-bicyclic-graphs</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/extremal-graphs-for-average-size-of-maximal-matchings-in-bicyclic-graphs</guid>
+      <pubDate>Thu, 30 Apr 2026 15:47:44 GMT</pubDate>
+      <author>Kai Zhang</author>
+      <category>Math</category>
+      <description><![CDATA[<p>Mathematicians determined the minimum possible average size of maximal matchings in bicyclic graphs — networks with exactly two cycles — and identified exactly which graph shape achieves this minimum. For any such graph with n vertices, the average matching size cannot drop below (4n−11)/(2n−5), with equality occurring only when two triangles share an edge and extra vertices hang off one corner.</p><p><strong>Why it matters:</strong> This completes a research program started years ago on matching problems in increasingly complex graphs. The methods used here — breaking down the problem by identifying which small matchings drive the minimum — create a template for solving similar extremal problems on other graph families, potentially accelerating progress on open questions in combinatorics.</p>]]></description>
+    </item>
+    <item>
+      <title>Cliques in minimally globally rigid graphs</title>
+      <link>https://paperplaine.com/papers/cliques-in-minimally-globally-rigid-graphs</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cliques-in-minimally-globally-rigid-graphs</guid>
+      <pubDate>Thu, 30 Apr 2026 15:16:48 GMT</pubDate>
+      <author>Julien Portier</author>
+      <category>Math</category>
+      <description><![CDATA[<p>Mathematicians have proven that certain rigid geometric structures—ones that can't be deformed without breaking their constraints—must actually be the simplest possible version if they contain a dense enough subgroup of connections. The finding confirms a 20-year-old prediction about how rigidity and connectivity relate in multidimensional space.</p><p><strong>Why it matters:</strong> This result helps engineers and mathematicians understand the boundaries between minimal rigidity and redundancy. In applications like robot design, mechanical linkages, and structural analysis, knowing exactly when a structure must be completely symmetric versus when it can be sparser tells engineers how much flexibility they have in their designs without sacrificing stability.</p>]]></description>
+    </item>
+    <item>
+      <title>Semidefinite and linear programming bounds for sum-rank-metric codes and non-existence results</title>
+      <link>https://paperplaine.com/papers/semidefinite-and-linear-programming-bounds-for-sum-rank-metric-codes-and-non</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/semidefinite-and-linear-programming-bounds-for-sum-rank-metric-codes-and-non</guid>
+      <pubDate>Thu, 30 Apr 2026 14:17:22 GMT</pubDate>
+      <author>Aida Abiad, Antonina P. Khramova, Sven C. Polak et al.</author>
+      <category>Math</category>
+      <description><![CDATA[<p>Researchers developed new mathematical tools to determine the maximum size of error-correcting codes designed for modern communication systems like distributed storage and network coding. Using optimization techniques including semidefinite programming, they found sharper upper limits on code size than previous methods and proved that certain theoretically perfect codes cannot actually exist.</p><p><strong>Why it matters:</strong> Error-correcting codes are fundamental to reliable data transmission—from cloud storage to wireless communications. These tighter bounds help engineers understand what's theoretically possible and avoid wasting resources searching for codes that don't exist, while the new optimization methods could improve the design of more efficient communication systems.</p>]]></description>
+    </item>
+    <item>
+      <title>Simulating Infant First-Person Sensorimotor Experience via Motion Retargeting from Babies to Humanoids</title>
+      <link>https://paperplaine.com/papers/simulating-infant-first-person-sensorimotor-experience-via-motion-retargeting</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/simulating-infant-first-person-sensorimotor-experience-via-motion-retargeting</guid>
+      <pubDate>Thu, 30 Apr 2026 08:37:46 GMT</pubDate>
+      <author>Francisco M. López, Hoshinori Kanazawa, Ondrej Fiala et al.</author>
+      <category>Biology</category>
+      <description><![CDATA[<p>Researchers developed a method to translate infant movements from videos onto humanoid robots and virtual models, recreating not just the motion but also the sensory feedback—touch, muscle awareness, and visual input—that babies experience. The technique reconstructs a baby's full 3D body position from a single video, then maps those movements onto different robot platforms with sub-centimeter accuracy, generating realistic streams of multimodal sensory data.</p><p><strong>Why it matters:</strong> Scientists can now study how babies develop motor skills by literally experiencing movement through a robot's sensors, rather than just watching from the outside. This opens new ways to detect early signs of developmental disorders, helps roboticists design machines that learn more like humans do, and gives developmental psychologists direct access to the sensory world of infancy—something previously impossible to measure or replicate.</p>]]></description>
+    </item>
+    <item>
+      <title>A geometry aware framework enhances noninvasive mapping of whole human brain dynamics</title>
+      <link>https://paperplaine.com/papers/a-geometry-aware-framework-enhances-noninvasive-mapping-of-whole-human-brain</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/a-geometry-aware-framework-enhances-noninvasive-mapping-of-whole-human-brain</guid>
+      <pubDate>Tue, 28 Apr 2026 12:58:56 GMT</pubDate>
+      <author>Song Wang, Kexin Lou, Chen Wei et al.</author>
+      <category>Biology</category>
+      <description><![CDATA[<p>A new method called Geometric Basis Functions uses each person's unique brain shape to better pinpoint where electrical activity originates during EEG and MEG scans. The technique works by breaking down the brain's surface into natural geometric patterns and combining them to reconstruct neural activity, and tests show it achieves higher accuracy than existing approaches across multiple types of brain data.</p><p><strong>Why it matters:</strong> Current brain imaging methods often place neural activity in the wrong location or require oversimplified assumptions about how the brain is organized. This approach leverages individual brain anatomy to make non-invasive scans more precise, which could improve diagnosis of conditions like epilepsy and strengthen neuroscience research by capturing faster, more detailed maps of how different brain regions communicate.</p>]]></description>
+    </item>
+    <item>
+      <title>One-shot emergency psychiatric triage across 15 frontier AI chatbots</title>
+      <link>https://paperplaine.com/papers/one-shot-emergency-psychiatric-triage-across-15-frontier-ai-chatbots</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/one-shot-emergency-psychiatric-triage-across-15-frontier-ai-chatbots</guid>
+      <pubDate>Tue, 28 Apr 2026 09:25:41 GMT</pubDate>
+      <author>Veith Weilnhammer, Lennart Luettgau, Christopher Summerfield et al.</author>
+      <category>Biology</category>
+      <description><![CDATA[<p>AI chatbots almost never miss true psychiatric emergencies—correctly flagging 94% of crisis cases for immediate care. But they frequently over-triage less urgent situations, incorrectly labeling routine or moderately concerning messages as needing faster response than they actually do.</p><p><strong>Why it matters:</strong> As people increasingly turn to chatbots for mental health guidance, this gap matters in opposite ways: the systems are reliable safety nets that won't let genuine crises slip through unnoticed, but they may also overwhelm emergency services and create unnecessary anxiety by treating normal distress as a crisis. Better calibration could preserve the protective function while reducing false alarms.</p>]]></description>
+    </item>
+    <item>
+      <title>Independent-Component-Based Encoding Models of Brain Activity During Story Comprehension</title>
+      <link>https://paperplaine.com/papers/independent-component-based-encoding-models-of-brain-activity-during-story</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/independent-component-based-encoding-models-of-brain-activity-during-story</guid>
+      <pubDate>Mon, 27 Apr 2026 19:30:46 GMT</pubDate>
+      <author>Kamya Hari, Taha Binhuraib, Jin Li et al.</author>
+      <category>Biology</category>
+      <description><![CDATA[<p>Researchers developed a new way to map how brain networks respond to stories by filtering out noise and individual variation in brain anatomy. Rather than analyzing individual pixels of brain scans, they identified independent functional networks and found that certain networks—like those for hearing and language—reliably respond to linguistic features of stories across different people, with their predictions confirmed by known acoustic properties.</p><p><strong>Why it matters:</strong> Brain imaging studies often struggle because each person's brain is wired slightly differently, making it hard to draw general conclusions. This method cuts through that noise to identify which brain networks actually respond to language, regardless of where those networks sit in each individual's head. That makes it easier for neuroscientists to compare results across studies and build more accurate models of how we understand language and stories.</p>]]></description>
+    </item>
+    <item>
+      <title>The Financialization of Proof-of-Stake: Asymptotic Centralization under Exogenous Risk Premiums</title>
+      <link>https://paperplaine.com/papers/the-financialization-of-proof-of-stake-asymptotic-centralization-under</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-financialization-of-proof-of-stake-asymptotic-centralization-under</guid>
+      <pubDate>Tue, 28 Apr 2026 19:40:04 GMT</pubDate>
+      <author>Mikhail Perepelitsa</author>
+      <category>Finance</category>
+      <description><![CDATA[<p>When external financial markets offer better returns than cryptocurrency staking rewards, wealthy investors flood into staking anyway, driving yields toward zero and forcing ordinary users out of the system entirely. A mathematical model shows this centralization is not a temporary problem but an inevitable long-term outcome of how Proof-of-Stake networks interact with traditional finance.</p><p><strong>Why it matters:</strong> Proof-of-Stake cryptocurrencies like Ethereum were designed to be more democratic than older mining-based systems, but this research suggests the opposite happens at scale: wealth and control concentrate in fewer hands. If true, it undermines a core promise of these networks—that ordinary people can participate meaningfully in securing and governing them.</p>]]></description>
+    </item>
+    <item>
+      <title>An Explicit Solution to Black-Scholes Implied Volatility</title>
+      <link>https://paperplaine.com/papers/an-explicit-solution-to-black-scholes-implied-volatility</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/an-explicit-solution-to-black-scholes-implied-volatility</guid>
+      <pubDate>Mon, 27 Apr 2026 13:46:58 GMT</pubDate>
+      <author>Wolfgang Schadner</author>
+      <category>Finance</category>
+      <description><![CDATA[<p>Researchers have derived the first explicit mathematical formula for implied volatility in the Black-Scholes model, a central calculation in options markets that previously required iterative trial-and-error methods. The solution recognizes that option prices follow a hidden probability pattern, which can be inverted to read off volatility directly from market prices. The new formula runs 3.4 times faster than current best methods while matching machine precision.</p><p><strong>Why it matters:</strong> Options traders and risk managers calculate implied volatility thousands of times per day—it's how they price contracts and manage portfolios. Replacing slow iterative methods with a direct calculation could speed up trading systems, reduce computational costs, and lower latency in high-frequency markets where milliseconds matter. The breakthrough also settles a mathematical question that has persisted since the Black-Scholes model became standard in 1973.</p>]]></description>
+    </item>
+    <item>
+      <title>The Anatomy of a Decentralized Prediction Market: Microstructure Evidence from the Polymarket Order Book</title>
+      <link>https://paperplaine.com/papers/the-anatomy-of-a-decentralized-prediction-market-microstructure-evidence-from</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-anatomy-of-a-decentralized-prediction-market-microstructure-evidence-from</guid>
+      <pubDate>Mon, 27 Apr 2026 12:01:14 GMT</pubDate>
+      <author>Philipp D. Dubach</author>
+      <category>Finance</category>
+      <description><![CDATA[<p>A detailed examination of Polymarket, the largest blockchain-based prediction market, reveals that its order book looks nothing like traditional financial markets—with unusual spreads, a different pattern of available liquidity, and surprisingly little self-dealing. The most striking finding: inferring who bought and who sold from public data works only 59% of the time, barely better than a coin flip, forcing researchers to use hidden on-chain records instead.</p><p><strong>Why it matters:</strong> Prediction markets are growing as a tool for forecasting everything from elections to climate outcomes, but we know almost nothing about how they actually work. This research documents Polymarket's plumbing in detail—revealing where the standard playbook from stock markets fails and where it holds. For anyone building a competing platform, trading on these markets, or relying on their price signals for real decisions, knowing what data you can actually trust matters enormously.</p>]]></description>
+    </item>
+    <item>
+      <title>Non-unique time and market incompleteness</title>
+      <link>https://paperplaine.com/papers/non-unique-time-and-market-incompleteness</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/non-unique-time-and-market-incompleteness</guid>
+      <pubDate>Sun, 26 Apr 2026 08:48:12 GMT</pubDate>
+      <author>Chris Angstmann, Tim Gebbie</author>
+      <category>Finance</category>
+      <description><![CDATA[<p>Financial markets don't operate on synchronized time the way traditional models assume. Instead, trading happens in random bursts tied to actual events—a buy order here, a sell order there—creating multiple valid ways to describe market time. This reveals a deeper kind of market incompleteness than economists usually discuss: the gap between the real time traders operate in and the theoretical time pricing models use.</p><p><strong>Why it matters:</strong> Traders and risk managers currently juggle two different clocks—one for actual trades and one for theoretical pricing—and this mismatch can hide real risks, especially during fast trading or market stress. Recognizing that market time is fundamentally non-unique doesn't break existing tools, but it explains why they sometimes fail at high frequencies and suggests when simpler, lower-frequency models might be more reliable for managing money and hedging positions.</p>]]></description>
+    </item>
+    <item>
+      <title>Prediction-powered Inference by Mixture of Experts</title>
+      <link>https://paperplaine.com/papers/prediction-powered-inference-by-mixture-of-experts</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/prediction-powered-inference-by-mixture-of-experts</guid>
+      <pubDate>Thu, 30 Apr 2026 14:08:17 GMT</pubDate>
+      <author>Yanwu Gu, Linglong Kong, Dong Xia</author>
+      <category>Statistics</category>
+      <description><![CDATA[<p>When you have multiple AI prediction tools available but limited labeled data to work with, treating them as a mixture of experts can reduce statistical uncertainty and improve inference. The method automatically figures out which predictors are most reliable and weights them accordingly, delivering tighter confidence intervals than using predictions alone.</p><p><strong>Why it matters:</strong> In fields like medicine, finance, and environmental monitoring, obtaining ground-truth labels is costly or time-consuming. This framework lets organizations leverage multiple off-the-shelf AI models they already have, extracting more reliable statistical conclusions from the labeled data they can afford to collect. The guaranteed best-expert performance means the approach never does worse than just using a single good predictor.</p>]]></description>
+    </item>
+    <item>
+      <title>Decoupled Descent: Exact Test Error Tracking Via Approximate Message Passing</title>
+      <link>https://paperplaine.com/papers/decoupled-descent-exact-test-error-tracking-via-approximate-message-passing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/decoupled-descent-exact-test-error-tracking-via-approximate-message-passing</guid>
+      <pubDate>Thu, 30 Apr 2026 14:01:23 GMT</pubDate>
+      <author>Max Lovig</author>
+      <category>Statistics</category>
+      <description><![CDATA[<p>Machine learning models trained on data gradually become overfit, causing their performance on training data to look better than it actually is on new data. Researchers developed a new training algorithm called decoupled descent that cancels out this bias as it trains, allowing the training error to accurately predict test performance without setting aside data for validation—using 100% of available data while still knowing how well the model will perform.</p><p><strong>Why it matters:</strong> Current machine learning practice forces a choice: either waste 10–20% of your data on a validation set to estimate real performance, or train blindly and risk deploying an overfit model. This algorithm could eliminate that trade-off, letting practitioners use all their data while still getting reliable estimates of how their model will perform in the real world. The method was tested on image classification tasks and consistently narrowed the gap between training and test performance compared to standard training approaches.</p>]]></description>
+    </item>
+    <item>
+      <title>Linear-Core Surrogates: Smooth Loss Functions with Linear Rates for Classification and Structured Prediction</title>
+      <link>https://paperplaine.com/papers/linear-core-surrogates-smooth-loss-functions-with-linear-rates-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/linear-core-surrogates-smooth-loss-functions-with-linear-rates-for</guid>
+      <pubDate>Thu, 30 Apr 2026 11:32:25 GMT</pubDate>
+      <author>Mehryar Mohri, Yutao Zhong</author>
+      <category>Statistics</category>
+      <description><![CDATA[<p>Researchers created a new loss function called Linear-Core Surrogates that solves a longstanding trade-off in machine learning: smooth functions train quickly but learn slowly, while sharp functions learn efficiently but are hard to optimize. The new approach combines both benefits—it's smooth enough to train fast, yet produces predictions as accurate as harder-to-optimize functions. In structured prediction tasks like language processing, the smoothness enables a 23-fold speedup over existing methods.</p><p><strong>Why it matters:</strong> Training machine learning models is expensive in both time and computational energy. This approach cuts training time dramatically—by 23× on large text tasks—without sacrificing accuracy. It also handles messy real-world data better: when labels contain errors, the method outperforms standard approaches by 2.6% on standard benchmarks, making it immediately useful for practitioners working with imperfect datasets.</p>]]></description>
+    </item>
+    <item>
+      <title>Mind the Gap: Structure-Aware Consistency in Preference Learning</title>
+      <link>https://paperplaine.com/papers/mind-the-gap-structure-aware-consistency-in-preference-learning</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/mind-the-gap-structure-aware-consistency-in-preference-learning</guid>
+      <pubDate>Thu, 30 Apr 2026 11:24:04 GMT</pubDate>
+      <author>Mehryar Mohri, Yutao Zhong</author>
+      <category>Statistics</category>
+      <description><![CDATA[<p>Current methods for aligning AI chatbots with human preferences, including the popular DPO technique, lack mathematical proof that they actually work as intended. The authors show that these methods can fail silently—appearing to work during training but producing unreliable behavior in real use—and propose a new approach (SA-DPO) that adds semantic-aware safety margins to restore theoretical guarantees.</p><p><strong>Why it matters:</strong> As AI systems become more powerful and are deployed for high-stakes decisions, knowing whether alignment methods actually work is critical. This work provides a way to verify that an AI system trained to follow human preferences will genuinely do so, rather than discovering failures after deployment. The new method is especially useful for handling tricky cases where multiple different responses are equally correct—a common problem in real-world AI alignment.</p>]]></description>
+    </item>
+    <item>
+      <title>CRS-LLM: Cooperative Beam Prediction with a GPT-Style Backbone and Switch-Gated Fusion</title>
+      <link>https://paperplaine.com/papers/crs-llm-cooperative-beam-prediction-with-a-gpt-style-backbone-and-switch-gated</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/crs-llm-cooperative-beam-prediction-with-a-gpt-style-backbone-and-switch-gated</guid>
+      <pubDate>Thu, 30 Apr 2026 14:43:25 GMT</pubDate>
+      <author>Fangzhi Li, Cunhua Pan, Hong Ren et al.</author>
+      <category>Engineering</category>
+      <description><![CDATA[<p>Researchers developed a system that predicts which cell tower and antenna beam a moving vehicle should use by treating it as a single decision rather than two separate choices. The method outperformed existing approaches across different signal strengths and showed it could work with limited training data or even transfer to new situations without retraining.</p><p><strong>Why it matters:</strong> As vehicles move faster and need stronger wireless signals, current methods that pick a tower first and then an antenna direction often fail when conditions change abruptly—causing dropped connections and wasted attempts. By making both choices at once, this system cuts errors significantly, which means smoother video calls, faster downloads, and more reliable communication for autonomous vehicles and connected cars in real-world driving conditions.</p>]]></description>
+    </item>
+    <item>
+      <title>Flying by Inference: Active Inference World Models for Adaptive UAV Swarms</title>
+      <link>https://paperplaine.com/papers/flying-by-inference-active-inference-world-models-for-adaptive-uav-swarms</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/flying-by-inference-active-inference-world-models-for-adaptive-uav-swarms</guid>
+      <pubDate>Thu, 30 Apr 2026 14:34:31 GMT</pubDate>
+      <author>Kaleem Arshid, Ali Krayani, Lucio Marcenaro et al.</author>
+      <category>Engineering</category>
+      <description><![CDATA[<p>Researchers created a system that lets teams of flying drones learn how to plan their missions by watching expert demonstrations, then adapt on the fly without recalculating everything from scratch. The approach compressed a computationally expensive planning problem into a learnable probabilistic model, allowing swarms to handle real-world uncertainties like measurement noise and unexpected obstacles more smoothly than existing learning-based methods.</p><p><strong>Why it matters:</strong> Autonomous drone swarms currently struggle to replan quickly when conditions change—recalculating optimal paths for multiple aircraft takes too long for real-time response. This method lets swarms make smart tactical adjustments instantly by comparing their current situation to what an expert would do, making coordinated multi-drone operations practical for time-sensitive tasks like emergency response or search and rescue.</p>]]></description>
+    </item>
+    <item>
+      <title>On the Fractional Fourier Transform for FMCW Radar Interference Mitigation</title>
+      <link>https://paperplaine.com/papers/on-the-fractional-fourier-transform-for-fmcw-radar-interference-mitigation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/on-the-fractional-fourier-transform-for-fmcw-radar-interference-mitigation</guid>
+      <pubDate>Thu, 30 Apr 2026 12:00:46 GMT</pubDate>
+      <author>Christian Oswald, Josef Kulmer, Franz Pernkopf</author>
+      <category>Engineering</category>
+      <description><![CDATA[<p>When multiple FMCW radars operate near each other, their signals interfere and create false readings. Researchers developed a faster mathematical approach using the fractional Fourier transform that removes this interference, can handle multiple conflicting signals at once, and works on real radar equipment in actual environments.</p><p><strong>Why it matters:</strong> FMCW radars are used in autonomous vehicles, collision avoidance systems, and industrial sensing—all applications where multiple radars operate in close proximity. Interference causes missed detections and ghost objects, creating safety risks. A practical method to eliminate this interference without expensive hardware upgrades means existing radar systems can work reliably in crowded electromagnetic environments.</p>]]></description>
+    </item>
+    <item>
+      <title>Bitwise Over-Parameterized Neural Polar Decoding: A Theoretical Performance Analysis</title>
+      <link>https://paperplaine.com/papers/bitwise-over-parameterized-neural-polar-decoding-a-theoretical-performance</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bitwise-over-parameterized-neural-polar-decoding-a-theoretical-performance</guid>
+      <pubDate>Thu, 30 Apr 2026 10:28:09 GMT</pubDate>
+      <author>Hongzhi Zhu, Wei Xu, Xiaohu You</author>
+      <category>Engineering</category>
+      <description><![CDATA[<p>Researchers developed a neural network decoder for polar codes (a type of error-correcting code used in wireless communications) and proved theoretically how well it works. The key finding: making the neural network wider—giving it more internal computing capacity—consistently improves its ability to recover transmitted messages from noisy signals, and the paper shows exactly why and how much.</p><p><strong>Why it matters:</strong> Polar codes are used in 5G networks to transmit data reliably over wireless channels. Traditional decoders are fast but have performance limits; neural network decoders can do better but were a black box. This work removes the guesswork by mathematically proving how neural decoders perform and how to build them properly, enabling engineers to design faster, more reliable wireless systems with confidence.</p>]]></description>
+    </item>
+    <item>
+      <title>Electricity price forecasting across Norway&#39;s five bidding zones in the post-crisis era</title>
+      <link>https://paperplaine.com/papers/electricity-price-forecasting-across-norway-s-five-bidding-zones-in-the-post</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/electricity-price-forecasting-across-norway-s-five-bidding-zones-in-the-post</guid>
+      <pubDate>Wed, 29 Apr 2026 13:02:02 GMT</pubDate>
+      <author>My Thi Diem Phan, Trung Tuyen Truong, Hoai Phuong Ha et al.</author>
+      <category>Economics</category>
+      <description><![CDATA[<p>When Norway's electricity market was hit by the 2021–2022 energy crisis and closer ties to Continental Europe, old forecasting models stopped working reliably. Researchers tested eight different forecasting approaches across Norway's five bidding zones and found that a machine learning method called LightGBM performed best, achieving error margins of 1.64 to 5.74 EUR per megawatt-hour—but surprisingly, simpler models using just past prices and calendar dates came close. The key insight: external factors like reservoir levels and gas prices matter less for accuracy in normal times, but become essential for predicting how far off forecasts will be when markets get stressed.</p><p><strong>Why it matters:</strong> Norway's electricity traders, grid operators, and energy companies rely on accurate price forecasts to make buying and selling decisions worth millions of euros daily. The old models trained on pre-crisis data were giving them false confidence in their predictions. This research provides updated benchmarks that work across all five zones, and shows traders which models and feature combinations to trust—and critically, when those models are likely to fail. The finding that simpler models work just as well in routine conditions could save companies from overcomplicating their systems, while the warning about stressed regimes gives decision makers a concrete signal for when to add extra caution to their bets.</p>]]></description>
+    </item>
+    <item>
+      <title>What Drives Contagion? Identifying and Attributing Cross-Border Transmission Mechanisms</title>
+      <link>https://paperplaine.com/papers/what-drives-contagion-identifying-and-attributing-cross-border-transmission</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/what-drives-contagion-identifying-and-attributing-cross-border-transmission</guid>
+      <pubDate>Wed, 29 Apr 2026 11:25:35 GMT</pubDate>
+      <author>Avishek Bhandari, Ipsita Parida, Hitesh Kumar Sahu</author>
+      <category>Economics</category>
+      <description><![CDATA[<p>When stock markets in one country crash, others often follow, but researchers didn't know exactly how the damage spreads. This study traced contagion across 18 major economies from 2006 to 2026 and found that trade links, financial connections, and behavioral panic each play different roles depending on which crisis is happening. During the 2008 financial crisis, trade accounted for 28% of spillovers, while financial channels dominated earlier calm periods.</p><p><strong>Why it matters:</strong> Policymakers trying to firewall their economies from global financial shocks need to know which transmission routes matter most in each type of crisis. Trade restrictions might help in some scenarios but miss the real danger in others. This framework reveals which channel to target, potentially saving governments from deploying expensive or ineffective crisis responses. The method also surfaces when the evidence is genuinely uncertain—transparency the researchers say is missing from most contagion research.</p>]]></description>
+    </item>
+    <item>
+      <title>Marshall meets Bartik: Revisiting the mysteries of the trade</title>
+      <link>https://paperplaine.com/papers/marshall-meets-bartik-revisiting-the-mysteries-of-the-trade</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/marshall-meets-bartik-revisiting-the-mysteries-of-the-trade</guid>
+      <pubDate>Wed, 29 Apr 2026 09:13:04 GMT</pubDate>
+      <author>Yasusada Murata, Ryo Nakajima</author>
+      <category>Economics</category>
+      <description><![CDATA[<p>When top inventors move into a region, local inventors become significantly more productive — even those who don't work together or share companies. This reveals that innovative ideas spread through the air in ways that can't be fully contained, suggesting that knowledge acts more like weather than property. The researchers found that state tax differences distort where inventive talent concentrates, reshaping innovation patterns across the country.</p><p><strong>Why it matters:</strong> States and cities compete fiercely to attract top talent through tax breaks and subsidies, betting that star inventors will boost local innovation. This research shows those bets are grounded in real effects — but also reveals a hidden cost: tax-driven clustering means inventive activity ends up in the wrong places, leaving other regions less innovative than they'd naturally be. Understanding these spillovers could help policymakers design smarter incentives that benefit entire regions rather than just chasing individual winners.</p>]]></description>
+    </item>
+    <item>
+      <title>The Reservation Inflation of Hard Money: Gold-Standard Deflation and the Real Expansion of Nominal Claims, 1873-1896</title>
+      <link>https://paperplaine.com/papers/the-reservation-inflation-of-hard-money-gold-standard-deflation-and-the-real</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-reservation-inflation-of-hard-money-gold-standard-deflation-and-the-real</guid>
+      <pubDate>Wed, 29 Apr 2026 03:10:23 GMT</pubDate>
+      <author>Ran Huang</author>
+      <category>Economics</category>
+      <description><![CDATA[<p>During the late 1800s gold standard, prices fell sharply in Britain and the US—yet the real value of fixed debts and financial claims rose dramatically. Between 1873 and 1896, British prices dropped 18% while the actual purchasing power of debt obligations climbed 22%. This shows that hard money constrains one type of inflation while unleashing another: deflation makes debts heavier, even as it makes goods cheaper.</p><p><strong>Why it matters:</strong> This reshapes how we think about monetary policy and economic stability. It suggests that tying currency to gold doesn't eliminate inflationary pressure—it redirects it toward savers and creditors at the expense of borrowers and workers. During deflationary periods, farms and businesses carrying fixed debts face mounting real obligations even as revenues shrink, which may explain why the 1873–1896 era sparked widespread farmer unrest and political upheaval despite falling prices.</p>]]></description>
+    </item>
     <item>
       <title>Computing Equilibrium beyond Unilateral Deviation</title>
       <link>https://paperplaine.com/papers/computing-equilibrium-beyond-unilateral-deviation</link>
@@ -60,141 +366,6 @@
       <author>Zhen He, Nika Salia, Casey Tompkins et al.</author>
       <category>Math</category>
       <description><![CDATA[<p>Mathematicians studying graph theory—the science of networks made of points (vertices) and connections (edges)—investigated how many pairs of points can be at certain distances from each other without forming forbidden patterns. The researchers solved two long-standing puzzles: they figured out the maximum number of pairs that are exactly three steps apart in a network while avoiding certain triangle arrangements, and they did the same for pairs that are exactly two steps apart, even identifying which network structures achieve these maximums.</p><p><strong>Why it matters:</strong> These results help mathematicians understand the fundamental limits of how networks can be structured, which has practical ripple effects in computer science, data analysis, and optimization problems. The techniques developed here can potentially be applied to real-world networks like social media connections or transportation systems, where understanding distance-based relationships helps identify bottlenecks or inefficiencies. This work also settles theoretical questions that have puzzled researchers in the field, allowing the field to move forward with new confidence about what's possible in network design.</p>]]></description>
-    </item>
-    <item>
-      <title>Multisensory learning recruits visual neurons into an olfactory memory engram</title>
-      <link>https://paperplaine.com/papers/multisensory-learning-recruits-visual-neurons-into-an-olfactory-memory-engram</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/multisensory-learning-recruits-visual-neurons-into-an-olfactory-memory-engram</guid>
-      <pubDate>Thu, 30 Apr 2026 15:28:58 GMT</pubDate>
-      <author>Zeynep Okray, Nils Otto, Anna A. Cook et al.</author>
-      <category>Biology</category>
-      <description><![CDATA[<p>Researchers studying fruit flies discovered how the brain combines information from different senses—like sight and smell—to create stronger memories. They found that when flies learned to associate a color with an odor (either as something good to approach or bad to avoid), their brains physically rewired neural connections so that visual neurons became part of the smell memory system, making the memory much more powerful and retrievable through either sense alone.</p><p><strong>Why it matters:</strong> This research reveals how multisensory experiences create richer, more durable memories—which matters because our everyday learning is rarely single-sensory (a song tied to a memory, a scent tied to a place). Understanding these neural mechanisms could eventually help us improve learning and memory in education, or develop better treatments for memory disorders. It also shows that our brains are remarkably flexible, physically reorganizing themselves to integrate information from different senses, suggesting that how we experience and remember the world is shaped by how our neural circuits can dynamically adapt.</p>]]></description>
-    </item>
-    <item>
-      <title>On Agentic Behavioral Modeling</title>
-      <link>https://paperplaine.com/papers/on-agentic-behavioral-modeling</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/on-agentic-behavioral-modeling</guid>
-      <pubDate>Thu, 30 Apr 2026 14:09:09 GMT</pubDate>
-      <author>Dirk Ostwald, Rasmus Bruckner, Franziska Usée et al.</author>
-      <category>Biology</category>
-      <description><![CDATA[<p>Researchers developed a new framework called agentic behavioral modeling that uses artificial agents (computer simulations of decision-makers) as tools to understand how human brains work. They tested this approach on two simple laboratory tasks—one involving seeing which image is darker, another involving learning which of two options gives better rewards—and showed how to mathematically connect what these artificial agents do to what real people actually do.</p><p><strong>Why it matters:</strong> This work builds a missing bridge between neuroscience theory and real human behavior, making it easier for scientists to test ideas about how cognition actually works rather than just speculating. If this framework catches on, it could improve how psychologists and neuroscientists design experiments and interpret results, leading to better understanding of learning, decision-making, and mental disorders. It also has practical implications for fields like AI development and mental health treatment, where understanding the mechanisms behind behavior is crucial.</p>]]></description>
-    </item>
-    <item>
-      <title>The Satoshi Overhang: Why the Bear Case is Bounded</title>
-      <link>https://paperplaine.com/papers/the-satoshi-overhang-why-the-bear-case-is-bounded</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/the-satoshi-overhang-why-the-bear-case-is-bounded</guid>
-      <pubDate>Thu, 30 Apr 2026 10:37:02 GMT</pubDate>
-      <author>Karl T. Ulrich</author>
-      <category>Finance</category>
-      <description><![CDATA[<p>A researcher analyzed what would happen to Bitcoin's price if Satoshi Nakamoto, Bitcoin's mysterious creator, ever sold the roughly 1.1 million bitcoins they're believed to own. The study found that even a complete sell-off would likely cause only a moderate price drop (somewhere between 5–15%), and based on 16 years of Satoshi's behavior, they're most likely to never sell at all—either out of ideological commitment or by permanently losing access to the coins.</p><p><strong>Why it matters:</strong> The possibility of Satoshi suddenly dumping Bitcoin is one of the biggest fears hanging over the cryptocurrency, so this research suggests that particular doomsday scenario is less catastrophic than people worry. If true, it could reduce one source of uncertainty that spooks Bitcoin investors and speculators. More broadly, this touches on how our confidence in any new financial system depends on understanding what its founders might do with their holdings—a concern that applies to cryptocurrencies, company stock, and other assets where early insiders hold enormous stakes.</p>]]></description>
-    </item>
-    <item>
-      <title>From Hypotheses to Factors: Constrained LLM Agents in Cryptocurrency Markets</title>
-      <link>https://paperplaine.com/papers/from-hypotheses-to-factors-constrained-llm-agents-in-cryptocurrency-markets</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/from-hypotheses-to-factors-constrained-llm-agents-in-cryptocurrency-markets</guid>
-      <pubDate>Wed, 29 Apr 2026 14:46:10 GMT</pubDate>
-      <author>Yikuan Huang, Zheqi Fan, Kaiqi Hu et al.</author>
-      <category>Finance</category>
-      <description><![CDATA[<p>Researchers created a system where AI language models act as scientific investigators to discover new trading strategies in cryptocurrency markets. The AI proposes testable ideas about what factors might predict price movements, tests them against historical data following strict rules, and documents both successes and failures. Their system found a strategy that made 44.55% annual returns on completely new data from 2024-2026, suggesting the approach can discover genuinely useful patterns rather than just getting lucky with past data.</p><p><strong>Why it matters:</strong> This work shows how to use powerful AI tools for financial discovery without letting them run wild and find meaningless patterns by accident. It matters because AI agents are increasingly used to search through massive amounts of data, and this paper demonstrates a way to keep that search honest and reproducible—something critical for finance, medicine, and other high-stakes fields. If this approach works well, it could help investors make better decisions while also offering a blueprint for how other industries can safely harness AI for research and discovery.</p>]]></description>
-    </item>
-    <item>
-      <title>Sequential Inference for Gaussian Processes: A Signal Processing Perspective</title>
-      <link>https://paperplaine.com/papers/sequential-inference-for-gaussian-processes-a-signal-processing-perspective</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/sequential-inference-for-gaussian-processes-a-signal-processing-perspective</guid>
-      <pubDate>Thu, 30 Apr 2026 17:48:09 GMT</pubDate>
-      <author>Daniel Waxman, Fernando Llorente, Petar M. Djurić</author>
-      <category>Statistics</category>
-      <description><![CDATA[<p>Researchers surveyed Gaussian processes—a flexible mathematical tool for modeling unpredictable patterns—with a focus on how to use them when data arrives one piece at a time rather than all at once. They organized recent techniques from a signal-processing angle and showed how these methods apply to real-world problems like predicting time series, spotting unusual patterns in data streams, and making decisions based on incoming information.</p><p><strong>Why it matters:</strong> Many real-world systems deal with continuous data streams—from medical monitoring to financial markets to sensor networks—where you can't wait to collect everything before analyzing it. This work provides practitioners with a practical playbook for building smarter systems that learn and adapt as new information arrives. By connecting machine learning advances to traditional signal-processing thinking, the research helps engineers and data scientists deploy these techniques more effectively in applications ranging from anomaly detection to autonomous decision-making.</p>]]></description>
-    </item>
-    <item>
-      <title>Kernelized Advantage Estimation: From Nonparametric Statistics to LLM Reasoning</title>
-      <link>https://paperplaine.com/papers/kernelized-advantage-estimation-from-nonparametric-statistics-to-llm-reasoning</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/kernelized-advantage-estimation-from-nonparametric-statistics-to-llm-reasoning</guid>
-      <pubDate>Thu, 30 Apr 2026 15:27:34 GMT</pubDate>
-      <author>Shijin Gong, Kai Ye, Jin Zhu et al.</author>
-      <category>Statistics</category>
-      <description><![CDATA[<p>Researchers tackled a practical problem in training AI language models: how to improve their reasoning without using expensive methods. They borrowed an old statistical technique called kernel smoothing—which essentially finds patterns in small datasets by looking at how nearby points relate to each other—and applied it to estimate the quality of different reasoning paths the model generates. Their tests showed this approach works better than existing methods when you can only afford to sample a few reasoning attempts per question.</p><p><strong>Why it matters:</strong> Training advanced AI models is expensive, and this research offers a way to make that training more efficient without sacrificing quality—which matters as AI becomes more resource-intensive. The work also bridges two worlds: classical statistics (techniques developed decades ago for small-data problems) and modern machine learning, suggesting that old ideas can solve new problems. For anyone worried about the environmental and financial cost of AI development, or working on limited budgets to build AI systems, this points to a practical path forward.</p>]]></description>
-    </item>
-    <item>
-      <title>Experimental Performance of a 5G N78 Reconfigurable Intelligent Surface: From Controlled Measurements to Commercial Network Deployment</title>
-      <link>https://paperplaine.com/papers/experimental-performance-of-a-5g-n78-reconfigurable-intelligent-surface-from</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/experimental-performance-of-a-5g-n78-reconfigurable-intelligent-surface-from</guid>
-      <pubDate>Thu, 30 Apr 2026 15:57:45 GMT</pubDate>
-      <author>Sefa Kayraklık, Samed Keşir, Batuhan Kaplan et al.</author>
-      <category>Engineering</category>
-      <description><![CDATA[<p>Researchers built and tested a special device called a reconfigurable intelligent surface (RIS) that can redirect 5G wireless signals to improve coverage in hard-to-reach areas. Unlike most studies that only use computer simulations, they tested their prototype in real conditions—first in a lab, then outdoors, and finally in an actual working 5G network—and found it successfully boosted signal strength and restored service where it had been unavailable.</p><p><strong>Why it matters:</strong> This research shows that RIS technology could be a practical, cost-effective way to expand 5G coverage without building new cell towers, which is expensive and time-consuming. Better coverage means faster internet in rural areas, more reliable service in buildings, and fewer dead zones in cities. Since telecom companies are always looking for cheaper ways to improve their networks, this technology could reshape how 5G infrastructure is built and deployed worldwide.</p>]]></description>
-    </item>
-    <item>
-      <title>LiDAR-based Dynamic Blockage Prediction: A Data-driven Approach for Learning Interactive Bayesian Models</title>
-      <link>https://paperplaine.com/papers/lidar-based-dynamic-blockage-prediction-a-data-driven-approach-for-learning</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/lidar-based-dynamic-blockage-prediction-a-data-driven-approach-for-learning</guid>
-      <pubDate>Thu, 30 Apr 2026 15:52:07 GMT</pubDate>
-      <author>Saleemullah Memon, Ali Krayani, Pamela Zontone et al.</author>
-      <category>Engineering</category>
-      <description><![CDATA[<p>Researchers developed a new computer system that predicts when a vehicle's LiDAR sensor (a device that uses laser pulses to detect objects) will be blocked or unable to see clearly. The system learns patterns from real-world driving data by building mathematical models of how sensors behave in normal conditions and in blockage situations, then uses those models to forecast problems before they happen.</p><p><strong>Why it matters:</strong> Self-driving cars and other autonomous vehicles depend heavily on LiDAR sensors to navigate safely, so predicting when these sensors might fail or get blocked—whether from dirt, weather, or other vehicles—could prevent accidents before they occur. This research also matters because the system can explain its predictions and adapt to new situations, making it easier for engineers and safety regulators to trust and improve autonomous vehicles. Additionally, the ability to anticipate sensor failures has applications beyond cars, including robots, drones, and other smart systems that operate in unpredictable environments.</p>]]></description>
-    </item>
-    <item>
-      <title>Optimal Consumption and Investment with Energy-Efficiency Adoption</title>
-      <link>https://paperplaine.com/papers/optimal-consumption-and-investment-with-energy-efficiency-adoption</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/optimal-consumption-and-investment-with-energy-efficiency-adoption</guid>
-      <pubDate>Thu, 30 Apr 2026 15:59:43 GMT</pubDate>
-      <author>Anthony Britto, Carlos Oliveira, Max Kleinebrahm</author>
-      <category>Economics</category>
-      <description><![CDATA[<p>Researchers built a mathematical model to understand when and why people invest in energy-efficient upgrades like better insulation or efficient heating systems. The model tracks how people make these decisions based on their wealth and financial conditions, and shows that while energy efficiency usually improves people's overall well-being, the actual energy savings are often smaller than expected because people tend to use more energy once they've made their homes more efficient. The researchers also show how government subsidies can influence whether people adopt these upgrades and reduce overall energy consumption.</p><p><strong>Why it matters:</strong> This research helps governments design better incentive programs—like rebates for energy-efficient upgrades—by predicting which policies actually work to reduce energy use and improve people's finances. The finding that wealthier people are more likely to adopt energy efficiency reveals an inequality problem: poorer households may miss out on cost savings because they can't afford the upfront investment, even when subsidies exist. For climate and energy policy, understanding these real-world adoption patterns is crucial because energy-efficiency improvements are often cheaper than building new power plants, but only if people actually make and use them effectively.</p>]]></description>
-    </item>
-    <item>
-      <title>The Signal Credibility Index for Prediction Markets: A Microstructure-Grounded Diagnostic with Weighted and Time-Varying Extensions</title>
-      <link>https://paperplaine.com/papers/the-signal-credibility-index-for-prediction-markets-a-microstructure-grounded</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/the-signal-credibility-index-for-prediction-markets-a-microstructure-grounded</guid>
-      <pubDate>Wed, 29 Apr 2026 17:19:45 GMT</pubDate>
-      <author>Maksym Nechepurenko</author>
-      <category>Economics</category>
-      <description><![CDATA[<p>Researchers created a diagnostic tool called the Signal Credibility Index (SCI) that helps identify what's really driving price movements in prediction markets—distinguishing between genuine new information, temporary trading pressure, strategic positioning, or coordinated manipulation. The tool uses mathematical techniques to measure whether a price move reflects lasting belief changes or temporary noise, and the team tested it extensively with simulated trading scenarios to see when it works well and when it struggles.</p><p><strong>Why it matters:</strong> Prediction markets are increasingly used to forecast everything from election outcomes to disease spread, so understanding whether price movements reflect real information or just trading games matters for trusting those forecasts. This work helps traders and market monitors spot manipulation and noise, which could make prediction markets more reliable as decision-making tools. The research also reveals an important limitation: the index is better at catching some types of fake coordination than others, meaning users need to know its blind spots. For anyone relying on prediction market prices to make real decisions, this tool provides a way to check whether those prices actually reflect genuine insights or just trading activity.</p>]]></description>
-    </item>
-    <item>
-      <title>Transformers are Bayesian Networks</title>
-      <link>https://paperplaine.com/papers/transformers-are-bayesian-networks</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/transformers-are-bayesian-networks</guid>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
-      <author>Greg Coppola</author>
-      <category>AI</category>
-      <description><![CDATA[<p>Transformers — the AI architecture behind every modern language model — work brilliantly, but nobody fully understands why. This paper argues there's a hidden, well-understood math machine inside: it's secretly doing belief propagation, a classical method for combining evidence to update beliefs. The author maps attention onto an AND gate, the feed-forward layer onto an OR gate, and proves it formally using Lean, a tool that double-checks every step.</p><p><strong>Why it matters:</strong> If transformers really are doing this specific kind of probabilistic reasoning under the hood, it gives us a much clearer lens for understanding and debugging them — instead of treating them as inscrutable black boxes, we could trace their thinking like a logic circuit. The most provocative claim is about hallucinations: the author argues these aren't a bug that bigger models will eventually fix, but a structural consequence of lacking grounding in defined facts. If he's right, the path to trustworthy AI requires hooking transformers up to verifiable knowledge bases — a meaningfully different direction than just training a larger model on more text.</p>]]></description>
-    </item>
-    <item>
-      <title>Physics-informed reinforcement learning eliminates catastrophic fuel waste in maritime routing</title>
-      <link>https://paperplaine.com/papers/physics-informed-reinforcement-learning-eliminates-catastrophic-fuel-waste-in</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/physics-informed-reinforcement-learning-eliminates-catastrophic-fuel-waste-in</guid>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
-      <author>Bora, Chalfant &amp; Chryssostomidis</author>
-      <category>Engineering</category>
-      <description><![CDATA[<p>Cargo ships burn enormous fuel crossing oceans, yet most still pick routes using simple rules of thumb. Researchers built an AI system called PIER that learns smarter routes from years of real ship-tracking and ocean data. Tested on a year of Gulf of Mexico voyages, it cut CO2 emissions by about 10% on average — and nearly eliminated catastrophic trips, dropping voyages with 50%+ excess fuel burn from 1 in 20 to 1 in 200.</p><p><strong>Why it matters:</strong> Shipping is responsible for around 3% of global greenhouse gas emissions, so even single-digit improvements scale to enormous absolute reductions in fuel use and CO2. The really interesting practical angle is that PIER doesn't depend on accurate weather forecasts — it keeps working using only what the ship can observe locally, making it deployable on real vessels today. The same approach should transfer cleanly to wildfire evacuation routes, aircraft trajectory planning, or autonomous vehicles operating in unmapped terrain.</p>]]></description>
-    </item>
-    <item>
-      <title>Mental fatigue from prolonged thinking can throw off your physical balance</title>
-      <link>https://paperplaine.com/papers/mental-fatigue-from-prolonged-thinking-can-throw-off-your-physical-balance</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/mental-fatigue-from-prolonged-thinking-can-throw-off-your-physical-balance</guid>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
-      <author>Noé, Hachard, Ceyte, Bru &amp; Paillard</author>
-      <category>Biology</category>
-      <description><![CDATA[<p>Researchers wanted to know whether mental exhaustion makes you physically wobblier. Twenty healthy young adults stood on a force platform measuring tiny shifts in body sway, both with eyes open and closed, then completed a brutal 90-minute attention test before retesting. The finding wasn't a simple "fatigue makes everyone wobble" — distinct subgroups emerged, with some participants noticeably losing their balance after the cognitive marathon while others stayed perfectly steady.</p><p><strong>Why it matters:</strong> Mental fatigue isn't just a productivity issue — for some people, it's a physical safety issue. That has real implications for jobs combining heavy cognitive work with physical movement: surgeons walking out of long operations, air traffic controllers ending shifts, truck drivers, soldiers, emergency responders. The bigger insight is the individual variation — population averages hide the people most genuinely at risk, and future workplace safety programs could screen for who's most vulnerable rather than assuming everyone reacts to mental exhaustion the same way.</p>]]></description>
-    </item>
-    <item>
-      <title>Industrial policy with network externalities: race to the bottom or win-win?</title>
-      <link>https://paperplaine.com/papers/industrial-policy-with-network-externalities-race-to-the-bottom-or-win-win</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/industrial-policy-with-network-externalities-race-to-the-bottom-or-win-win</guid>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 GMT</pubDate>
-      <author>Hashimzade &amp; Sun</author>
-      <category>Economics</category>
-      <description><![CDATA[<p>When two countries pour subsidies into the same high-tech industry — chips, EVs, AI — does anyone actually win? The authors build an economic model to find out, and the answer hinges on two factors: how strongly the products benefit from network effects, and how similar the two countries' offerings are. Near-identical substitutes lead to a wasteful race to the bottom; differentiated or complementary products with strong network effects can yield gains for both sides.</p><p><strong>Why it matters:</strong> Industrial policy is back in fashion globally — the U.S. CHIPS Act, EU green subsidies, China's tech push — but this paper offers a nuanced framework: subsidies aren't automatically wasteful, but the win-win conditions are specific and easy to miss. The takeaway is that funding product innovation tends to outperform funding cheaper production of the same thing. And chasing identical markets head-to-head is usually the worst strategy of all, even when domestic political pressure pushes hard in that direction.</p>]]></description>
-    </item>
-    <item>
-      <title>AI-assisted goal setting works — through felt social accountability</title>
-      <link>https://paperplaine.com/papers/ai-assisted-goal-setting-works-through-felt-social-accountability</link>
-      <guid isPermaLink="true">https://paperplaine.com/papers/ai-assisted-goal-setting-works-through-felt-social-accountability</guid>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
-      <author>Schimpf, Voigt &amp; Bohné</author>
-      <category>Comp Sci</category>
-      <description><![CDATA[<p>Career coaching helps people pursue meaningful goals, but it's expensive and inaccessible to most. Researchers tested whether an AI chatbot could fill that role, running an experiment with 517 people split into three groups: AI coach, a written reflection questionnaire, or no support. Two weeks later, the AI group had made more goal progress than the no-support group — but didn't really beat the questionnaire. What it did better was make people feel socially accountable.</p><p><strong>Why it matters:</strong> This challenges the popular assumption that AI coaches help because they give smarter advice. The active ingredient seems to be the conversational format itself — talking to something rather than writing for yourself activates our deeply social brain. For anyone building habit-tracking, fitness, or therapy apps, that suggests a chatbot interface adds a meaningful motivational layer almost for free. It also raises an ethical question worth sitting with: if the benefit comes from felt accountability rather than real accountability, we're essentially engineering useful social illusions.</p>]]></description>
     </item>
   </channel>
 </rss>
