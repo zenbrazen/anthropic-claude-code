@@ -532,7 +532,8 @@ function buildRobotsTxt() {
 function buildRssFeed(allPapers) {
   const items = allPapers.map(p => {
     const link = p.slug ? `${DOMAIN}/papers/${p.slug}` : `https://arxiv.org/abs/${p.id}`;
-    const desc = `<![CDATA[<p>${p.summary}</p><p><strong>Why it matters:</strong> ${p.whyItMatters}</p>]]>`;
+    const subtitle = p.subtitle ? escapeHtml(p.subtitle) : escapeHtml(p.title);
+    const fullContent = `<![CDATA[<p><em>${p.subtitle || ''}</em></p><p>${p.summary}</p><p><strong>Why it matters:</strong> ${p.whyItMatters}</p>]]>`;
     return `    <item>
       <title>${escapeHtml(p.title)}</title>
       <link>${link}</link>
@@ -540,12 +541,13 @@ function buildRssFeed(allPapers) {
       <pubDate>${new Date(p.published).toUTCString()}</pubDate>
       <author>${escapeHtml(p.authors)}</author>
       <category>${escapeHtml(p.categoryLabel)}</category>
-      <description>${desc}</description>
+      <description>${subtitle}</description>
+      <content:encoded>${fullContent}</content:encoded>
     </item>`;
   }).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Paper Plaine</title>
     <link>${DOMAIN}</link>
