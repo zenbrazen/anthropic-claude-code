@@ -87,13 +87,21 @@ async function run() {
   const cutoff = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
 
   for (const cat of CATEGORIES) {
-    console.log(`\nFetching ${PAPERS_PER_CATEGORY} papers from ${cat.arxivCat}...`);
+    const sourceList = cat.sources.map(s => s.cat).join(', ');
+    console.log(`\nFetching ${PAPERS_PER_CATEGORY} papers from [${sourceList}]...`);
     try {
-      const candidates = (await fetchArxivPapers(cat.arxivCat, 30))
+      const seen = new Map();
+      for (const { cat: arxivCat, count } of cat.sources) {
+        const results = await fetchArxivPapers(arxivCat, count);
+        for (const p of results) {
+          if (!seen.has(p.id)) seen.set(p.id, p);
+        }
+      }
+      const candidates = [...seen.values()]
         .filter(p => new Date(p.published) >= cutoff)
         .filter(p => !existingIds.has(p.id))
         .slice(0, PAPERS_PER_CATEGORY);
-      if (!candidates.length) { console.log(`  No new papers in ${cat.arxivCat}`); continue; }
+      if (!candidates.length) { console.log(`  No new papers in [${sourceList}]`); continue; }
 
       for (const candidate of candidates) {
         console.log(`  Summarizing: ${candidate.title.slice(0, 70)}...`);

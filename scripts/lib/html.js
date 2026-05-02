@@ -5,15 +5,24 @@ export const PAPERS_PER_PAGE = 12;
 const DOMAIN = 'https://paperplaine.com';
 
 export const CATEGORIES = [
-  { label: 'AI',          slug: 'ai',          arxivCat: 'cs.AI',    displayCat: 'Computer Science · cs.AI',     fullName: 'AI' },
-  { label: 'Comp Sci',    slug: 'comp-sci',    arxivCat: 'cs.LG',    displayCat: 'Computer Science · cs.LG',     fullName: 'Computer Science' },
-  { label: 'Physics',     slug: 'physics',     arxivCat: 'cond-mat', displayCat: 'Physics · cond-mat',           fullName: 'Physics' },
-  { label: 'Math',        slug: 'math',        arxivCat: 'math.CO',  displayCat: 'Mathematics · math.CO',        fullName: 'Mathematics' },
-  { label: 'Biology',     slug: 'biology',     arxivCat: 'q-bio.NC', displayCat: 'Quantitative Biology · q-bio.NC', fullName: 'Biology' },
-  { label: 'Finance',     slug: 'finance',     arxivCat: 'q-fin.GN', displayCat: 'Quantitative Finance · q-fin.GN', fullName: 'Finance' },
-  { label: 'Statistics',  slug: 'statistics',  arxivCat: 'stat.ML',  displayCat: 'Statistics · stat.ML',         fullName: 'Statistics' },
-  { label: 'Engineering', slug: 'engineering', arxivCat: 'eess.SP',  displayCat: 'Engineering · eess.SP',        fullName: 'Engineering' },
-  { label: 'Economics',   slug: 'economics',   arxivCat: 'econ.GN',  displayCat: 'Economics · econ.GN',          fullName: 'Economics' },
+  { label: 'AI',          slug: 'ai',          displayCat: 'Computer Science · AI',       fullName: 'AI',
+    sources: [{ cat: 'cs.AI', count: 15 }, { cat: 'cs.LG', count: 15 }, { cat: 'cs.CL', count: 10 }] },
+  { label: 'Comp Sci',    slug: 'comp-sci',    displayCat: 'Computer Science',            fullName: 'Computer Science',
+    sources: [{ cat: 'cs.CR', count: 10 }, { cat: 'cs.CV', count: 5 }] },
+  { label: 'Physics',     slug: 'physics',     displayCat: 'Physics',                     fullName: 'Physics',
+    sources: [{ cat: 'cond-mat', count: 10 }, { cat: 'physics.soc-ph', count: 5 }] },
+  { label: 'Math',        slug: 'math',        displayCat: 'Mathematics',                 fullName: 'Mathematics',
+    sources: [{ cat: 'math.OC', count: 10 }, { cat: 'math.CO', count: 5 }] },
+  { label: 'Biology',     slug: 'biology',     displayCat: 'Quantitative Biology',        fullName: 'Biology',
+    sources: [{ cat: 'q-bio.NC', count: 8 }, { cat: 'q-bio.QM', count: 7 }] },
+  { label: 'Finance',     slug: 'finance',     displayCat: 'Quantitative Finance',        fullName: 'Finance',
+    sources: [{ cat: 'q-fin.GN', count: 7 }, { cat: 'q-fin.TR', count: 5 }] },
+  { label: 'Statistics',  slug: 'statistics',  displayCat: 'Statistics',                  fullName: 'Statistics',
+    sources: [{ cat: 'stat.ML', count: 10 }, { cat: 'stat.AP', count: 5 }] },
+  { label: 'Engineering', slug: 'engineering', displayCat: 'Engineering',                 fullName: 'Engineering',
+    sources: [{ cat: 'eess.SP', count: 6 }, { cat: 'eess.IV', count: 6 }] },
+  { label: 'Economics',   slug: 'economics',   displayCat: 'Economics',                   fullName: 'Economics',
+    sources: [{ cat: 'econ.GN', count: 7 }, { cat: 'econ.EM', count: 5 }] },
 ];
 
 export function escapeHtml(str) {

@@ -16,8 +16,8 @@ const VENUE_KEYWORDS = [
   'PNAS', 'accepted at', 'to appear in',
 ];
 
-async function fetchArxivPapers(category, count = 40) {
-  const url = `https://export.arxiv.org/api/query?search_query=cat:${category}&sortBy=submittedDate&sortOrder=descending&max_results=${count}`;
+async function fetchArxivPapers(arxivCat, count) {
+  const url = `https://export.arxiv.org/api/query?search_query=cat:${arxivCat}&sortBy=submittedDate&sortOrder=descending&max_results=${count}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`arXiv API error: ${res.status}`);
   return parseAtomFeed(await res.text());
@@ -47,6 +47,35 @@ function parseAtomFeed(xml) {
   return entries;
 }
 
+async function fetchCategoryPool(cat, cutoff, existingIds) {
+  const seen = new Map(); // id → { paper, querySources: Set }
+
+  for (const { cat: arxivCat, count } of cat.sources) {
+    let results;
+    try {
+      results = await fetchArxivPapers(arxivCat, count);
+    } catch (err) {
+      console.error(`    fetch error (${arxivCat}):`, err.message);
+      continue;
+    }
+    for (const p of results) {
+      if (new Date(p.published) < cutoff) continue;
+      if (existingIds.has(p.id)) continue;
+      if (seen.has(p.id)) {
+        seen.get(p.id).querySources.add(arxivCat);
+      } else {
+        seen.set(p.id, { paper: p, querySources: new Set([arxivCat]) });
+      }
+    }
+  }
+
+  return [...seen.values()].map(({ paper, querySources }) => ({
+    ...paper,
+    _querySources: [...querySources],
+    _crossListedFromFetch: querySources.size >= 2,
+  }));
+}
+
 function parsePageCount(comment) {
   const m = comment.match(/(\d+)\s*pages?/i);
   return m ? parseInt(m[1]) : null;
@@ -74,7 +103,7 @@ function applyTierZeroFilter(papers) {
       continue;
     }
     const venueMatch = VENUE_KEYWORDS.some(kw => p.comment.includes(kw));
-    const crossListed = p.categories.length >= 2;
+    const crossListed = p._crossListedFromFetch || p.categories.length >= 2;
     const goodPageCount = pageCount !== null && pageCount >= 8 && pageCount <= 30;
     const score = (2 * +venueMatch) + +crossListed + +goodPageCount;
     kept.push({ ...p, _signals: { venueMatch, crossListed, goodPageCount, score, pageCount, wordCount } });
@@ -138,18 +167,16 @@ async function run() {
 
   for (const cat of selected) {
     try {
-      console.log(`Fetching from ${cat.arxivCat}...`);
-      const raw = (await fetchArxivPapers(cat.arxivCat, 40))
-        .filter(p => new Date(p.published) >= cutoff)
-        .filter(p => !existingIds.has(p.id));
+      const sourceList = cat.sources.map(s => `${s.cat}(${s.count})`).join(', ');
+      console.log(`Fetching ${cat.label} from [${sourceList}]...`);
 
-      const { kept, dropped } = applyTierZeroFilter(raw);
-      console.log(`  Tier-0: ${raw.length} fetched → ${kept.length} kept, ${dropped.length} dropped`);
+      const pool = await fetchCategoryPool(cat, cutoff, existingIds);
+      const { kept, dropped } = applyTierZeroFilter(pool);
+      console.log(`  Tier-0: ${pool.length} candidates → ${kept.length} kept, ${dropped.length} dropped`);
 
-      const catLog = { category: cat.label, fetched: raw.length, kept: kept.length, dropped: dropped.length, droppedDetails: dropped };
-      runLog.categories.push(catLog);
+      runLog.categories.push({ category: cat.label, fetched: pool.length, kept: kept.length, dropped: dropped.length, droppedDetails: dropped });
 
-      if (!kept.length) { console.log(`  No candidates after filter in ${cat.arxivCat}`); continue; }
+      if (!kept.length) { console.log(`  No candidates after filter for ${cat.label}`); continue; }
 
       const best = kept.sort((a, b) => b._signals.score - a._signals.score)[0];
       console.log(`  Summarizing: ${best.title.slice(0, 70)}...`);
