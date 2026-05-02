@@ -168,10 +168,22 @@
 
   /* Footer */
   .site-footer {
-    text-align: center; padding: 40px 0 0;
+    padding: 40px 0 0; border-top: 1px solid var(--rule);
     font-family: 'JetBrains Mono', monospace; font-size: 10px;
-    text-transform: uppercase; letter-spacing: .2em; color: var(--muted); line-height: 1.8;
+    text-transform: uppercase; letter-spacing: .2em; color: var(--muted);
+    line-height: 1.8; text-align: center;
   }
+  .footer-nav {
+    display: flex; justify-content: center; gap: 28px;
+    padding: 18px 0; margin-bottom: 14px;
+    border-bottom: 1px dotted var(--muted); font-size: 11.5px; letter-spacing: .1em;
+  }
+  .footer-nav a {
+    color: var(--ink-soft); text-decoration: none; padding: 4px 2px;
+    border-bottom: 2px solid transparent; white-space: nowrap;
+    transition: border-color .2s, color .2s;
+  }
+  .footer-nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
   @media (max-width: 640px) {
     .page { padding: 32px 18px 60px; }
@@ -332,6 +344,12 @@
   </article>
   </main>
   <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Site links">
+      <a href="/about">About</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="/contact">Contact</a>
+    </nav>
     <div>Paper Plaine &middot; Updated twice daily</div>
     <div>Source &middot; arXiv.org &middot; Cornell University</div>
   </footer>
