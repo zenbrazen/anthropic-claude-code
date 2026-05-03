@@ -717,6 +717,7 @@ function generateSubscribeHTML(sidebarHTML = '') {
       method="post"
       class="subscribe-form embeddable-buttondown-form"
     >
+      <input type="hidden" name="referrer_url" value="${DOMAIN}/subscribed" />
       <label for="bd-email">Enter your email</label>
       <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
       <div class="subscribe-submit-row">
@@ -733,6 +734,31 @@ function generateSubscribeHTML(sidebarHTML = '') {
     description: 'Subscribe to the Paper Plaine daily email and get new plain-English research summaries delivered to your inbox.',
     canonical: `${DOMAIN}/subscribe`,
     jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Subscribe — Paper Plaine', url: `${DOMAIN}/subscribe` }),
+    activeSlug: null,
+    sidebarHTML,
+    mainHTML,
+  });
+}
+
+function generateSubscribedHTML(sidebarHTML = '') {
+  const mainHTML = `
+  <div class="subscribe-page">
+    <h2 class="about-heading">Subscribed!</h2>
+    <div class="about-body">
+      <p>Thanks for subscribing!</p>
+      <p>Once a day, you&rsquo;ll get an email with a handful of fresh research papers from arXiv, Cornell University&rsquo;s open repository&hellip;translated into language a curious human can read and understand over coffee. Each entry has a short summary of what was found and a short take on why it matters. If something catches your interest, you can click through to the full paper.</p>
+      <p>PAPER PLAINE reads broadly: AI, biology, physics, economics, math, and a few others. Some days will land closer to your interests than others. That&rsquo;s the point. The surprise of running into a finding you wouldn&rsquo;t have thought to look for.</p>
+      <p>Replies to these emails come straight to us. If you spot a mistake, want to suggest a paper, or just have thoughts about what you&rsquo;re reading, we would genuinely like to hear it.</p>
+      <p>The full archive lives at <a href="${DOMAIN}" class="about-link">paperplaine.com</a> if you ever want to browse past entries. And if this isn&rsquo;t for you, no hard feelings. There&rsquo;s an unsubscribe link at the bottom of every email.</p>
+      <p>Enjoy!</p>
+    </div>
+  </div>`;
+
+  return buildPage({
+    title: 'Subscribed! — Paper Plaine',
+    description: 'You\'re subscribed to Paper Plaine. Once a day, fresh arXiv research explained in plain English, delivered to your inbox.',
+    canonical: `${DOMAIN}/subscribed`,
+    jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Subscribed! — Paper Plaine', url: `${DOMAIN}/subscribed` }),
     activeSlug: null,
     sidebarHTML,
     mainHTML,
@@ -930,6 +956,12 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(subscribeDir, 'index.html'), generateSubscribeHTML(sidebarHTML));
   sitemapUrls.push({ url: `${DOMAIN}/subscribe`, lastmod: today });
 
+  // Subscribed confirmation page
+  const subscribedDir = path.join(publicDir, 'subscribed');
+  await fs.mkdir(subscribedDir, { recursive: true });
+  await fs.writeFile(path.join(subscribedDir, 'index.html'), generateSubscribedHTML(sidebarHTML));
+  sitemapUrls.push({ url: `${DOMAIN}/subscribed`, lastmod: today });
+
   // sitemap.xml, robots.txt, llms.txt, feed.xml
   await fs.writeFile(path.join(publicDir, 'sitemap.xml'), buildSitemap(sitemapUrls));
   await fs.writeFile(path.join(publicDir, 'robots.txt'), buildRobotsTxt());
@@ -937,5 +969,5 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(publicDir, 'feed.xml'), buildRssFeed(allPapers));
 
   const paperPageCount = allPapers.filter(p => p.slug).length;
-  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 4;
+  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 5;
 }
