@@ -160,6 +160,7 @@ const CSS = `
     letter-spacing: -.01em; color: var(--ink); padding: 0 0 6px;
   }
   .title .letter { display: inline-block; text-transform: uppercase; font-variation-settings: 'opsz' 96; }
+  .title-link { display: contents; color: inherit; text-decoration: none; }
   .title .letter--grey { color: #888; }
   .title-plane { width: .62em; height: .62em; color: var(--icon-grey); transform: rotate(-12deg); flex-shrink: 0; }
   .tagline {
@@ -432,9 +433,11 @@ ${sidebarHTML}
 <div class="page">
   <header class="masthead">
     <h1 class="title">
-      <span class="letter">P</span><span class="letter">A</span><span class="letter">P</span><span class="letter">E</span><span class="letter">R</span>
-      <svg class="title-plane" aria-hidden="true"><use href="#plane"/></svg>
-      <span class="letter">P</span><span class="letter">L</span><span class="letter letter--grey">A</span><span class="letter letter--grey">I</span><span class="letter">N</span><span class="letter">E</span>
+      <a href="/" class="title-link">
+        <span class="letter">P</span><span class="letter">A</span><span class="letter">P</span><span class="letter">E</span><span class="letter">R</span>
+        <svg class="title-plane" aria-hidden="true"><use href="#plane"/></svg>
+        <span class="letter">P</span><span class="letter">L</span><span class="letter letter--grey">A</span><span class="letter letter--grey">I</span><span class="letter">N</span><span class="letter">E</span>
+      </a>
     </h1>
     <p class="tagline">Fresh research, simply explained. Updates twice daily.</p>
   </header>
