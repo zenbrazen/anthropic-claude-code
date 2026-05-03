@@ -306,8 +306,9 @@ const CSS = `
     font-size: 17px; outline: none; transition: border-color .2s;
   }
   .subscribe-form input[type="email"]:focus { border-color: var(--accent); }
+  .subscribe-submit-row { display: flex; align-items: center; gap: 16px; }
   .subscribe-form input[type="submit"] {
-    align-self: flex-start; padding: 10px 28px;
+    padding: 10px 28px;
     background: var(--ink); color: var(--bg); border: none; cursor: pointer;
     font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
     text-transform: uppercase; letter-spacing: .1em; transition: background .2s;
@@ -709,8 +710,8 @@ ${recentTitles}
 function generateSubscribeHTML(sidebarHTML = '') {
   const mainHTML = `
   <div class="subscribe-page">
-    <h2 class="about-heading">Subscribe to Daily Email</h2>
-    <p class="subscribe-intro">Get new papers delivered to your inbox. Paper Plaine adds at least 6 new papers every day across AI, Physics, Mathematics, Biology, and more — plain English, no jargon.</p>
+    <h2 class="about-heading">Subscribe</h2>
+    <p class="subscribe-intro">Get new papers delivered to your inbox. Paper Plaine adds at least 6 new papers every day across AI, Physics, Mathematics, Biology, and more. Fresh research, simply explained.</p>
     <form
       action="https://buttondown.com/api/emails/embed-subscribe/paperplaine"
       method="post"
@@ -718,10 +719,12 @@ function generateSubscribeHTML(sidebarHTML = '') {
     >
       <label for="bd-email">Enter your email</label>
       <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
-      <input type="submit" value="Subscribe" />
-      <p class="subscribe-powered">
-        <a href="https://buttondown.com/refer/paperplaine" target="_blank" rel="noopener">Powered by Buttondown.</a>
-      </p>
+      <div class="subscribe-submit-row">
+        <input type="submit" value="Subscribe" />
+        <p class="subscribe-powered">
+          <a href="https://buttondown.com/refer/paperplaine" target="_blank" rel="noopener">Powered by Buttondown.</a>
+        </p>
+      </div>
     </form>
   </div>`;
 
