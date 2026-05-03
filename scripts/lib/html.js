@@ -186,6 +186,7 @@ const CSS = `
     flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
     border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
   }
+  .nav-bottom-right { display: flex; align-items: center; gap: 14px; }
   .nav-rss {
     display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
@@ -291,6 +292,34 @@ const CSS = `
     font-size: 13.5px; line-height: 1.35; color: var(--muted);
   }
 
+  /* Subscribe page */
+  .subscribe-page { padding: 48px 0 0; max-width: 480px; }
+  .subscribe-intro { font-size: 18px; line-height: 1.7; color: var(--ink); margin-bottom: 36px; }
+  .subscribe-form { display: flex; flex-direction: column; gap: 14px; }
+  .subscribe-form label {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .14em; color: var(--muted);
+  }
+  .subscribe-form input[type="email"] {
+    width: 100%; padding: 12px 14px; border: 1.5px solid var(--rule);
+    background: var(--bg); color: var(--ink); font-family: 'Newsreader', serif;
+    font-size: 17px; outline: none; transition: border-color .2s;
+  }
+  .subscribe-form input[type="email"]:focus { border-color: var(--accent); }
+  .subscribe-form input[type="submit"] {
+    align-self: flex-start; padding: 10px 28px;
+    background: var(--ink); color: var(--bg); border: none; cursor: pointer;
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    text-transform: uppercase; letter-spacing: .1em; transition: background .2s;
+  }
+  .subscribe-form input[type="submit"]:hover { background: var(--accent); }
+  .subscribe-powered {
+    margin-top: 6px; font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted);
+  }
+  .subscribe-powered a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--muted); }
+  .subscribe-powered a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
   /* About page */
   .about-page { padding: 48px 0 0; }
   .about-heading {
@@ -383,7 +412,10 @@ function buildPage({ title, description, canonical, prevUrl = null, nextUrl = nu
   const archiveActive = activeSlug === null ? ' active' : '';
   const bottomRow = `<div class="nav-bottom">
     <a href="/" class="nav-archive${archiveActive}">Archive/All</a>
-    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+    <div class="nav-bottom-right">
+      <a href="/subscribe">Subscribe to Daily Email</a>
+      <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
+    </div>
   </div>`;
 
   return `<!DOCTYPE html>
@@ -674,6 +706,36 @@ ${recentTitles}
 `;
 }
 
+function generateSubscribeHTML(sidebarHTML = '') {
+  const mainHTML = `
+  <div class="subscribe-page">
+    <h2 class="about-heading">Subscribe to Daily Email</h2>
+    <p class="subscribe-intro">Get new papers delivered to your inbox. Paper Plaine adds at least 6 new papers every day across AI, Physics, Mathematics, Biology, and more — plain English, no jargon.</p>
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/paperplaine"
+      method="post"
+      class="subscribe-form embeddable-buttondown-form"
+    >
+      <label for="bd-email">Enter your email</label>
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
+      <input type="submit" value="Subscribe" />
+      <p class="subscribe-powered">
+        <a href="https://buttondown.com/refer/paperplaine" target="_blank" rel="noopener">Powered by Buttondown.</a>
+      </p>
+    </form>
+  </div>`;
+
+  return buildPage({
+    title: 'Subscribe — Paper Plaine',
+    description: 'Subscribe to the Paper Plaine daily email and get new plain-English research summaries delivered to your inbox.',
+    canonical: `${DOMAIN}/subscribe`,
+    jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Subscribe — Paper Plaine', url: `${DOMAIN}/subscribe` }),
+    activeSlug: null,
+    sidebarHTML,
+    mainHTML,
+  });
+}
+
 function generateTermsHTML(sidebarHTML = '') {
   const mainHTML = `
   <article class="about-page">
@@ -859,6 +921,12 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(termsDir, 'index.html'), generateTermsHTML(sidebarHTML));
   sitemapUrls.push({ url: `${DOMAIN}/terms`, lastmod: today });
 
+  // Subscribe page
+  const subscribeDir = path.join(publicDir, 'subscribe');
+  await fs.mkdir(subscribeDir, { recursive: true });
+  await fs.writeFile(path.join(subscribeDir, 'index.html'), generateSubscribeHTML(sidebarHTML));
+  sitemapUrls.push({ url: `${DOMAIN}/subscribe`, lastmod: today });
+
   // sitemap.xml, robots.txt, llms.txt, feed.xml
   await fs.writeFile(path.join(publicDir, 'sitemap.xml'), buildSitemap(sitemapUrls));
   await fs.writeFile(path.join(publicDir, 'robots.txt'), buildRobotsTxt());
@@ -866,5 +934,5 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(publicDir, 'feed.xml'), buildRssFeed(allPapers));
 
   const paperPageCount = allPapers.filter(p => p.slug).length;
-  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 3;
+  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 4;
 }
