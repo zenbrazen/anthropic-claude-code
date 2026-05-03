@@ -293,7 +293,7 @@ const CSS = `
   }
 
   /* Subscribe page */
-  .subscribe-page { padding: 48px 0 0; max-width: 480px; }
+  .subscribe-page { padding: 48px 0 48px; max-width: 480px; }
   .subscribe-intro { font-size: 18px; line-height: 1.7; color: var(--ink); margin-bottom: 36px; }
   .subscribe-form { display: flex; flex-direction: column; gap: 14px; }
   .subscribe-form label {
