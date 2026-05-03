@@ -302,6 +302,13 @@ const CSS = `
   .about-body p {
     font-size: 18px; line-height: 1.7; color: var(--ink); margin-bottom: 22px;
   }
+  .about-subheading {
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700;
+    font-size: 15px; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--ink); margin: 32px 0 10px;
+  }
+  .about-list { padding-left: 1.4em; margin-bottom: 22px; }
+  .about-list li { font-size: 18px; line-height: 1.7; color: var(--ink); margin-bottom: 4px; }
   .about-link { color: var(--ink); border-bottom: 1.5px solid var(--accent); text-decoration: none; padding-bottom: 1px; transition: color .2s; }
   .about-link:hover { color: var(--accent); }
   .about-contact {
@@ -666,6 +673,57 @@ ${recentTitles}
 `;
 }
 
+function generatePrivacyHTML(sidebarHTML = '') {
+  const mainHTML = `
+  <article class="about-page">
+    <h2 class="about-heading">Privacy Policy</h2>
+    <div class="about-body">
+      <p>This Privacy Policy describes how Paper Plaine (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) handles information when you visit paperplaine.com. We have tried to keep this as plain and simple as the rest of the site.</p>
+
+      <h3 class="about-subheading">What we do not collect</h3>
+      <p>Paper Plaine does not ask you to create an account, log in, or provide any personal information. There are no sign-up forms, comment sections, or user profiles. We do not collect, store, or sell personal data.</p>
+
+      <h3 class="about-subheading">Hosting &amp; server logs</h3>
+      <p>Paper Plaine is hosted on <a href="https://vercel.com" class="about-link">Vercel</a>. Like all web hosts, Vercel automatically collects standard server log data when you visit the site — including your IP address, browser type, referring URL, and pages visited. This data is used for security and operational purposes and is governed by <a href="https://vercel.com/legal/privacy-policy" class="about-link">Vercel&rsquo;s Privacy Policy</a>. We do not have access to individually identifiable log data.</p>
+
+      <h3 class="about-subheading">Cookies</h3>
+      <p>Paper Plaine does not set any cookies of its own. Vercel may set a cookie for performance and security purposes. This site loads fonts from Google Fonts; Google may collect data in connection with that request, subject to <a href="https://policies.google.com/privacy" class="about-link">Google&rsquo;s Privacy Policy</a>.</p>
+
+      <h3 class="about-subheading">Third-party services</h3>
+      <p>Paper Plaine uses the following third-party services to operate:</p>
+      <ul class="about-list">
+        <li><strong>Vercel</strong> &mdash; hosting and content delivery</li>
+        <li><strong>Anthropic (Claude)</strong> &mdash; AI-generated summaries and subtitles for each paper</li>
+        <li><strong>arXiv / Cornell University</strong> &mdash; source of all research papers</li>
+        <li><strong>Google Fonts</strong> &mdash; web font delivery</li>
+      </ul>
+      <p>Each of these services operates under its own privacy policy. We encourage you to review them if you have concerns.</p>
+
+      <h3 class="about-subheading">RSS feed</h3>
+      <p>Paper Plaine offers an <a href="/feed.xml" class="about-link">RSS feed</a>. If you subscribe through a third-party RSS reader, that service may collect data about your reading habits according to its own privacy policy.</p>
+
+      <h3 class="about-subheading">Email contact</h3>
+      <p>If you contact us at <a href="mailto:hello@paperplaine.com" class="about-link">hello@paperplaine.com</a>, we will use your email address only to respond to your message. We do not add you to any mailing list or share your address with third parties.</p>
+
+      <h3 class="about-subheading">Changes to this policy</h3>
+      <p>We may update this policy from time to time. Any changes will be posted on this page. Continued use of the site after changes are posted constitutes your acceptance of the updated policy.</p>
+
+      <h3 class="about-subheading">Contact</h3>
+      <p>Questions about this policy? Email us at <a href="mailto:hello@paperplaine.com" class="about-link">hello@paperplaine.com</a>.</p>
+    </div>
+  </article>`;
+
+  return buildPage({
+    title: 'Privacy Policy — Paper Plaine',
+    description: 'Privacy policy for Paper Plaine. We do not collect personal data. Learn how hosting, fonts, and third-party services handle information.',
+    canonical: `${DOMAIN}/privacy`,
+    jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Privacy Policy — Paper Plaine', url: `${DOMAIN}/privacy` }),
+    activeSlug: null,
+    sidebarHTML,
+    mainHTML,
+  });
+}
+
 function generateAboutHTML(sidebarHTML = '') {
   const mainHTML = `
   <article class="about-page">
@@ -746,6 +804,12 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(aboutDir, 'index.html'), generateAboutHTML(sidebarHTML));
   sitemapUrls.push({ url: `${DOMAIN}/about`, lastmod: today });
 
+  // Privacy page
+  const privacyDir = path.join(publicDir, 'privacy');
+  await fs.mkdir(privacyDir, { recursive: true });
+  await fs.writeFile(path.join(privacyDir, 'index.html'), generatePrivacyHTML(sidebarHTML));
+  sitemapUrls.push({ url: `${DOMAIN}/privacy`, lastmod: today });
+
   // sitemap.xml, robots.txt, llms.txt, feed.xml
   await fs.writeFile(path.join(publicDir, 'sitemap.xml'), buildSitemap(sitemapUrls));
   await fs.writeFile(path.join(publicDir, 'robots.txt'), buildRobotsTxt());
@@ -753,5 +817,5 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(publicDir, 'feed.xml'), buildRssFeed(allPapers));
 
   const paperPageCount = allPapers.filter(p => p.slug).length;
-  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 1;
+  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 2;
 }
