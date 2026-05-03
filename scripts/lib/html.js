@@ -186,8 +186,6 @@ const CSS = `
     flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
     border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
   }
-  .nav-archive { border-bottom: none !important; }
-  .nav-archive:hover { border-bottom: none !important; }
   .nav-rss {
     display: flex; align-items: center; gap: 5px; color: var(--muted);
     border-bottom: none !important;
