@@ -463,7 +463,7 @@ function renderEntry(paper, isLast, { detail = false } = {}) {
   <article class="entry" style="${border}">
     <div class="entry-meta">
       <span class="category">${escapeHtml(paper.categoryDisplay)}</span>
-      <span>${escapeHtml(paper.publishedFormatted)}</span>
+      <span>${paper.fetchedAt ? new Date(paper.fetchedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : escapeHtml(paper.publishedFormatted)}</span>
     </div>
     <h2 class="entry-title">${titleContent}</h2>
     ${paper.subtitle ? `<p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>${escapeHtml(paper.subtitle)}</p>` : ''}

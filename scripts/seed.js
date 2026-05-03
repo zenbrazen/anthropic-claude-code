@@ -124,7 +124,7 @@ async function run() {
 
   if (!newPapers.length) { console.log('\nNo new papers added.'); return; }
 
-  papers = [...newPapers, ...papers].slice(0, 80);
+  papers = [...newPapers, ...papers];
   ensureSlugs(papers);
   await fs.writeFile(DATA_PATH, JSON.stringify(papers, null, 2));
   console.log(`\nAdded ${newPapers.length} papers. Total: ${papers.length}`);
