@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2026 21:22:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 09:18:29 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Position: agentic AI orchestration should be Bayes-consistent</title>
+      <link>https://paperplaine.com/papers/position-agentic-ai-orchestration-should-be-bayes-consistent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/position-agentic-ai-orchestration-should-be-bayes-consistent</guid>
+      <pubDate>Fri, 01 May 2026 15:43:43 GMT</pubDate>
+      <author>Theodore Papamarkou, Pierre Alquier, Matthias Bauer et al.</author>
+      <category>AI</category>
+      <description>Why AI assistants need better decision-making rules for choosing which tools to use</description>
+      <content:encoded><![CDATA[<p><em>Why AI assistants need better decision-making rules for choosing which tools to use</em></p><p>Large language models are good at predicting and reasoning, but bad at making decisions when stakes are high—like choosing which expert to ask or how much to spend. This paper argues that AI systems should use Bayesian probability rules at the control layer that decides which tools to deploy, rather than trying to make the language models themselves fully probabilistic, because this approach is practical and mathematically sound for real-world decisions under uncertainty.</p><p><strong>Why it matters:</strong> When an AI system decides to call a specialist, request more data, or allocate resources, getting that call wrong can be expensive or risky. Using Bayesian decision theory at the orchestration level means the system tracks what it actually knows, updates beliefs as it gathers information, and chooses actions deliberately rather than by default. This framework also makes human-AI collaboration clearer: humans can see what the system believes and why it made a choice, making the system's reasoning auditable and correctable.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents</title>
+      <link>https://paperplaine.com/papers/foresight-arena-an-on-chain-benchmark-for-evaluating-ai-forecasting-agents</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/foresight-arena-an-on-chain-benchmark-for-evaluating-ai-forecasting-agents</guid>
+      <pubDate>Fri, 01 May 2026 05:33:10 GMT</pubDate>
+      <author>Maksym Nechepurenko, Pavel Shuvalov</author>
+      <category>Finance</category>
+      <description>A blockchain-based test for AI that can actually predict the future</description>
+      <content:encoded><![CDATA[<p><em>A blockchain-based test for AI that can actually predict the future</em></p><p>Researchers built an on-chain benchmark that measures whether AI forecasting agents can genuinely predict real-world events better than existing markets, rather than just copying market prices or getting lucky with timing. The system uses blockchain smart contracts to prevent cheating and applies statistical scoring rules that reward honest probability estimates, and testing shows that detecting a real forecasting edge requires roughly 350 predictions—far more than most existing evaluations.</p><p><strong>Why it matters:</strong> Most AI forecasting systems today are evaluated on static datasets or by their trading profits, both of which hide whether an AI actually has predictive skill or just got lucky with market timing and position sizing. This benchmark lets anyone trustlessly evaluate AI forecasting agents on real prediction markets with proper statistical incentives, cutting through the noise to identify which systems genuinely see the future more clearly than crowds do. For AI companies and traders, it's a way to separate signal from noise; for the broader AI safety community, it's a model for building evaluations resistant to overfitting and centralized gaming.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Adaptive Querying with AI Persona Priors</title>
+      <link>https://paperplaine.com/papers/adaptive-querying-with-ai-persona-priors</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/adaptive-querying-with-ai-persona-priors</guid>
+      <pubDate>Fri, 01 May 2026 14:34:25 GMT</pubDate>
+      <author>Kaizheng Wang, Yuhang Wu, Assaf Zeevi</author>
+      <category>Statistics</category>
+      <description>Using AI personas to ask smarter survey questions with limited budgets</description>
+      <content:encoded><![CDATA[<p><em>Using AI personas to ask smarter survey questions with limited budgets</em></p><p>Researchers developed a new method for adaptive surveys that uses artificial intelligence personas—templates of how different types of people respond—to predict what questions will be most informative to ask next. Rather than relying on rigid statistical models or expensive computations, the approach treats each person as belonging to one of several AI-generated persona types, which allows for quick, accurate predictions and efficient question selection even when surveying new populations or asking about unfamiliar topics.</p><p><strong>Why it matters:</strong> Surveys and tests that adapt their questions based on previous answers can extract more reliable information while asking fewer questions—cutting costs and reducing respondent fatigue. This method makes adaptive surveying practical for real applications like market research, psychological assessment, and opinion polling, especially when you're starting fresh with a new population and can't rely on historical data. The approach also produces interpretable results: you learn not just what someone thinks, but which persona type they resemble, offering actionable insights alongside raw answers.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Beyond Gaussian Bottlenecks: Topologically Aligned Encoding of Vision-Transformer Feature Spaces</title>
       <link>https://paperplaine.com/papers/beyond-gaussian-bottlenecks-topologically-aligned-encoding-of-vision</link>

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.00742",
+    "title": "Position: agentic AI orchestration should be Bayes-consistent",
+    "authors": "Theodore Papamarkou, Pierre Alquier, Matthias Bauer et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-01T15:43:43Z",
+    "publishedFormatted": "May 1, 2026",
+    "subtitle": "Why AI assistants need better decision-making rules for choosing which tools to use",
+    "summary": "Large language models are good at predicting and reasoning, but bad at making decisions when stakes are high—like choosing which expert to ask or how much to spend. This paper argues that AI systems should use Bayesian probability rules at the control layer that decides which tools to deploy, rather than trying to make the language models themselves fully probabilistic, because this approach is practical and mathematically sound for real-world decisions under uncertainty.",
+    "whyItMatters": "When an AI system decides to call a specialist, request more data, or allocate resources, getting that call wrong can be expensive or risky. Using Bayesian decision theory at the orchestration level means the system tracks what it actually knows, updates beliefs as it gathers information, and chooses actions deliberately rather than by default. This framework also makes human-AI collaboration clearer: humans can see what the system believes and why it made a choice, making the system's reasoning auditable and correctable.",
+    "fetchedAt": "2026-05-04T09:18:21.362Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 187
+    },
+    "slug": "position-agentic-ai-orchestration-should-be-bayes-consistent"
+  },
+  {
+    "id": "2605.00420",
+    "title": "Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents",
+    "authors": "Maksym Nechepurenko, Pavel Shuvalov",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-05-01T05:33:10Z",
+    "publishedFormatted": "May 1, 2026",
+    "subtitle": "A blockchain-based test for AI that can actually predict the future",
+    "summary": "Researchers built an on-chain benchmark that measures whether AI forecasting agents can genuinely predict real-world events better than existing markets, rather than just copying market prices or getting lucky with timing. The system uses blockchain smart contracts to prevent cheating and applies statistical scoring rules that reward honest probability estimates, and testing shows that detecting a real forecasting edge requires roughly 350 predictions—far more than most existing evaluations.",
+    "whyItMatters": "Most AI forecasting systems today are evaluated on static datasets or by their trading profits, both of which hide whether an AI actually has predictive skill or just got lucky with market timing and position sizing. This benchmark lets anyone trustlessly evaluate AI forecasting agents on real prediction markets with proper statistical incentives, cutting through the noise to identify which systems genuinely see the future more clearly than crowds do. For AI companies and traders, it's a way to separate signal from noise; for the broader AI safety community, it's a model for building evaluations resistant to overfitting and centralized gaming.",
+    "fetchedAt": "2026-05-04T09:18:25.285Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 233
+    },
+    "slug": "foresight-arena-an-on-chain-benchmark-for-evaluating-ai-forecasting-agents"
+  },
+  {
+    "id": "2605.00696",
+    "title": "Adaptive Querying with AI Persona Priors",
+    "authors": "Kaizheng Wang, Yuhang Wu, Assaf Zeevi",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-05-01T14:34:25Z",
+    "publishedFormatted": "May 1, 2026",
+    "subtitle": "Using AI personas to ask smarter survey questions with limited budgets",
+    "summary": "Researchers developed a new method for adaptive surveys that uses artificial intelligence personas—templates of how different types of people respond—to predict what questions will be most informative to ask next. Rather than relying on rigid statistical models or expensive computations, the approach treats each person as belonging to one of several AI-generated persona types, which allows for quick, accurate predictions and efficient question selection even when surveying new populations or asking about unfamiliar topics.",
+    "whyItMatters": "Surveys and tests that adapt their questions based on previous answers can extract more reliable information while asking fewer questions—cutting costs and reducing respondent fatigue. This method makes adaptive surveying practical for real applications like market research, psychological assessment, and opinion polling, especially when you're starting fresh with a new population and can't rely on historical data. The approach also produces interpretable results: you learn not just what someone thinks, but which persona type they resemble, offering actionable insights alongside raw answers.",
+    "fetchedAt": "2026-05-04T09:18:29.419Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 120
+    },
+    "slug": "adaptive-querying-with-ai-persona-priors"
+  },
+  {
     "id": "2604.28122",
     "title": "Beyond Gaussian Bottlenecks: Topologically Aligned Encoding of Vision-Transformer Feature Spaces",
     "authors": "Andrew Bond, Ilkin Umut Melanlioglu, Erkut Erdem et al.",
