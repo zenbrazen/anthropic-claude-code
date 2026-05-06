@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2026 20:03:58 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 09:22:33 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Feature-Augmented Transformers for Robust AI-Text Detection Across Domains and Generators</title>
+      <link>https://paperplaine.com/papers/feature-augmented-transformers-for-robust-ai-text-detection-across-domains-and</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/feature-augmented-transformers-for-robust-ai-text-detection-across-domains-and</guid>
+      <pubDate>Tue, 05 May 2026 16:52:26 GMT</pubDate>
+      <author>Mohamed Mady, Johannes Reschke, Björn Schuller</author>
+      <category>AI</category>
+      <description>Making AI-text detectors work reliably across different sources and writing styles</description>
+      <content:encoded><![CDATA[<p><em>Making AI-text detectors work reliably across different sources and writing styles</em></p><p>Detectors trained to spot AI-generated text perform near-perfectly on familiar material but fail badly when encountering text from new sources or generators—a problem researchers call brittleness. Adding linguistic features like readability and vocabulary patterns to a transformer model improved performance across different domains, pushing balanced accuracy from around 60% to 86% when tested on unfamiliar text.</p><p><strong>Why it matters:</strong> As AI systems generate text at scale across the internet, platforms need detectors that actually work in the real world, not just in controlled testing. This research shows that simple feature engineering can make detectors three times more reliable when encountering new types of AI generators, making them practically useful for content moderation and detection systems that can't be retrained constantly.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Conditional Diffusion Sampling</title>
+      <link>https://paperplaine.com/papers/conditional-diffusion-sampling</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/conditional-diffusion-sampling</guid>
+      <pubDate>Tue, 05 May 2026 17:36:29 GMT</pubDate>
+      <author>Francisco M. Castro-Macías, Pablo Morales-Álvarez, Saifuddin Syed et al.</author>
+      <category>Statistics</category>
+      <description>A faster way to sample from messy, multimodal probability distributions</description>
+      <content:encoded><![CDATA[<p><em>A faster way to sample from messy, multimodal probability distributions</em></p><p>Researchers combined two established sampling methods—Parallel Tempering and diffusion models—into a hybrid approach that requires no neural network training. The new method uses Parallel Tempering to explore the overall landscape first, then applies a mathematically exact transport process to refine samples locally, achieving better results with fewer probability evaluations than existing methods.</p><p><strong>Why it matters:</strong> Sampling from complex probability distributions is central to machine learning, physics simulations, and Bayesian statistics. Current methods either require extensive training or many expensive probability evaluations. This hybrid approach cuts the computational cost of generating high-quality samples, which directly speeds up inference in scientific computing, drug discovery, and probabilistic machine learning models where every probability calculation is expensive.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Do Venture Capitalists Beat Random Allocation?</title>
+      <link>https://paperplaine.com/papers/do-venture-capitalists-beat-random-allocation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/do-venture-capitalists-beat-random-allocation</guid>
+      <pubDate>Tue, 05 May 2026 17:04:54 GMT</pubDate>
+      <author>Max Sina Knicker, Jean-Philippe Bouchaud, Michael Benzaquen</author>
+      <category>Economics</category>
+      <description>Why venture capitalists&#39; picks look no better than random luck</description>
+      <content:encoded><![CDATA[<p><em>Why venture capitalists' picks look no better than random luck</em></p><p>Venture capital investors pick companies that perform almost identically to what chance alone would predict, when accounting for timing, location, and industry. Even the best-performing VC portfolios don't beat the outcomes expected from random selection, suggesting that skill in choosing individual companies is nearly impossible to detect in an industry dominated by a handful of huge winners.</p><p><strong>Why it matters:</strong> This finding challenges the premise that venture capitalists earn their 2-and-20 fees through superior judgment. If VC performance is indistinguishable from random allocation, it raises hard questions about whether investors should pay premium fees for what amounts to passive exposure to startups. The same pattern holds for stock analysts picking companies, suggesting skill is difficult to prove in any extreme winner-take-most market.</p>]]></content:encoded>
+    </item>
     <item>
       <title>SpecKV: Adaptive Speculative Decoding with Compression-Aware Gamma Selection</title>
       <link>https://paperplaine.com/papers/speckv-adaptive-speculative-decoding-with-compression-aware-gamma-selection</link>

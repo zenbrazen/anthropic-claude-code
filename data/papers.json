@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.03969",
+    "title": "Feature-Augmented Transformers for Robust AI-Text Detection Across Domains and Generators",
+    "authors": "Mohamed Mady, Johannes Reschke, Björn Schuller",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-05T16:52:26Z",
+    "publishedFormatted": "May 5, 2026",
+    "subtitle": "Making AI-text detectors work reliably across different sources and writing styles",
+    "summary": "Detectors trained to spot AI-generated text perform near-perfectly on familiar material but fail badly when encountering text from new sources or generators—a problem researchers call brittleness. Adding linguistic features like readability and vocabulary patterns to a transformer model improved performance across different domains, pushing balanced accuracy from around 60% to 86% when tested on unfamiliar text.",
+    "whyItMatters": "As AI systems generate text at scale across the internet, platforms need detectors that actually work in the real world, not just in controlled testing. This research shows that simple feature engineering can make detectors three times more reliable when encountering new types of AI generators, making them practically useful for content moderation and detection systems that can't be retrained constantly.",
+    "fetchedAt": "2026-05-06T09:22:26.662Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 8,
+      "wordCount": 192
+    },
+    "slug": "feature-augmented-transformers-for-robust-ai-text-detection-across-domains-and"
+  },
+  {
+    "id": "2605.04013",
+    "title": "Conditional Diffusion Sampling",
+    "authors": "Francisco M. Castro-Macías, Pablo Morales-Álvarez, Saifuddin Syed et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-05-05T17:36:29Z",
+    "publishedFormatted": "May 5, 2026",
+    "subtitle": "A faster way to sample from messy, multimodal probability distributions",
+    "summary": "Researchers combined two established sampling methods—Parallel Tempering and diffusion models—into a hybrid approach that requires no neural network training. The new method uses Parallel Tempering to explore the overall landscape first, then applies a mathematically exact transport process to refine samples locally, achieving better results with fewer probability evaluations than existing methods.",
+    "whyItMatters": "Sampling from complex probability distributions is central to machine learning, physics simulations, and Bayesian statistics. Current methods either require extensive training or many expensive probability evaluations. This hybrid approach cuts the computational cost of generating high-quality samples, which directly speeds up inference in scientific computing, drug discovery, and probabilistic machine learning models where every probability calculation is expensive.",
+    "fetchedAt": "2026-05-06T09:22:29.677Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 190
+    },
+    "slug": "conditional-diffusion-sampling"
+  },
+  {
+    "id": "2605.03980",
+    "title": "Do Venture Capitalists Beat Random Allocation?",
+    "authors": "Max Sina Knicker, Jean-Philippe Bouchaud, Michael Benzaquen",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-05-05T17:04:54Z",
+    "publishedFormatted": "May 5, 2026",
+    "subtitle": "Why venture capitalists' picks look no better than random luck",
+    "summary": "Venture capital investors pick companies that perform almost identically to what chance alone would predict, when accounting for timing, location, and industry. Even the best-performing VC portfolios don't beat the outcomes expected from random selection, suggesting that skill in choosing individual companies is nearly impossible to detect in an industry dominated by a handful of huge winners.",
+    "whyItMatters": "This finding challenges the premise that venture capitalists earn their 2-and-20 fees through superior judgment. If VC performance is indistinguishable from random allocation, it raises hard questions about whether investors should pay premium fees for what amounts to passive exposure to startups. The same pattern holds for stock analysts picking companies, suggesting skill is difficult to prove in any extreme winner-take-most market.",
+    "fetchedAt": "2026-05-06T09:22:33.013Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 196
+    },
+    "slug": "do-venture-capitalists-beat-random-allocation"
+  },
+  {
     "id": "2605.02888",
     "title": "SpecKV: Adaptive Speculative Decoding with Compression-Aware Gamma Selection",
     "authors": "Shikhar Shukla",
