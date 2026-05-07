@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.05090",
+    "title": "Automatically Finding and Validating Unexpected Side-Effects of Interventions on Language Models",
+    "authors": "Quintin Pope, Ajay Hayagreeve Balaji, Jacques Thibodeau et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-06T16:27:23Z",
+    "publishedFormatted": "May 6, 2026",
+    "subtitle": "Automatically discovering hidden side effects when tweaking AI language models",
+    "summary": "Researchers built an automated system that compares how a language model behaves before and after an intervention—like when engineers try to make it forget certain information or reason better—and generates human-readable descriptions of what changed. Testing on three real interventions (reasoning training, knowledge editing, and unlearning), the system caught both intended changes and unexpected behavioral shifts that engineers hadn't anticipated.",
+    "whyItMatters": "AI companies make constant changes to their language models, but it's extremely difficult to know all the ways those changes affect behavior beyond the intended goal. This tool lets engineers systematically audit what else changed, catching surprises before models are deployed. That's critical for safety: a fix intended to make a model more helpful might accidentally make it worse at something else, and discovering that requires more than checking the intended behavior.",
+    "fetchedAt": "2026-05-07T09:32:42.395Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 33,
+      "wordCount": 145
+    },
+    "slug": "automatically-finding-and-validating-unexpected-side-effects-of-interventions"
+  },
+  {
+    "id": "2605.04910",
+    "title": "Symmetric Bessmertnyĭ Realizations and Field Extension Problems in Characteristic 2 - A Differential Algebra Approach",
+    "authors": "Soumya Sinha Babu, Aaron Welters",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-05-06T13:38:01Z",
+    "publishedFormatted": "May 6, 2026",
+    "subtitle": "A simpler way to check when complex systems have valid mathematical structures",
+    "summary": "Mathematicians found a purely algebraic method to verify when certain matrix structures—called Symmetric Bessmertnyĭ realizations—can exist in characteristic 2 fields, a setting where ordinary arithmetic rules break down. The new approach uses calculus-like tools on rational functions to reduce the problem from checking entire matrices to checking just their diagonal entries, making verification much simpler.",
+    "whyItMatters": "Linear systems theory relies on these realizations to describe how systems behave, and the new algebraic proof works in characteristic 2 fields, which appear in coding theory and digital systems where all arithmetic happens modulo 2. The simpler method makes it practical to verify whether a given system has a valid mathematical representation without running complex algorithms, and also reveals new connections between realizability and field extensions that could inform future designs.",
+    "fetchedAt": "2026-05-07T09:33:14.040Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 147
+    },
+    "slug": "symmetric-bessmertnyi-realizations-and-field-extension-problems-in"
+  },
+  {
+    "id": "2605.05190",
+    "title": "Release-free electro-optomechanical crystal modulator",
+    "authors": "Paul Burger, Joey Frey, Johan Kolvik et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-05-06T17:54:13Z",
+    "publishedFormatted": "May 6, 2026",
+    "subtitle": "A better bridge between quantum computers and fiber optic networks",
+    "summary": "Researchers built a device that converts signals between microwave circuits in quantum computers and optical fibers with less thermal noise than previous designs. By combining two materials—silicon and lithium niobate—using a precise printing technique, they achieved the strong signal conversion needed for practical quantum-to-optical communication.",
+    "whyItMatters": "Quantum computers currently sit isolated on lab benches because they can't efficiently send information over long distances. This device could become the missing link that lets distant quantum computers talk to each other and to optical networks, making large-scale quantum computing infrastructure actually possible.",
+    "fetchedAt": "2026-05-07T09:33:26.565Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 113
+    },
+    "slug": "release-free-electro-optomechanical-crystal-modulator"
+  },
+  {
     "id": "2605.03984",
     "title": "Flow Sampling: Learning to Sample from Unnormalized Densities via Denoising Conditional Processes",
     "authors": "Aaron Havens, Brian Karrer, Neta Shaul",
