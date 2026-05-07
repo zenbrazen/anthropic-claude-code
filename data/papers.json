@@ -1,5 +1,49 @@
 [
   {
+    "id": "2605.05151",
+    "title": "Superposition Is Not Necessary: A Mechanistic Interpretability Analysis of Transformer Representations for Time Series Forecasting",
+    "authors": "Alper Yıldırım",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-06T17:23:27Z",
+    "publishedFormatted": "May 6, 2026",
+    "subtitle": "Why transformers for time series don't need complex hidden patterns",
+    "summary": "Transformers work well for predicting time series, but researchers wanted to understand how—specifically whether they use the same clever internal trick (called superposition) that makes them powerful for language. By examining a transformer trained on forecasting, they found transformers actually keep things simple: they don't compress multiple patterns into the same neurons, and they ignore most of their hidden layers when making predictions. This helps explain why straightforward linear models stay competitive with far more complex transformer models.",
+    "whyItMatters": "Companies spend millions deploying expensive transformer models for forecasting tasks when simpler, cheaper alternatives work nearly as well. Understanding that transformers aren't actually using sophisticated compositional tricks on time series means practitioners can stop assuming complexity equals better performance and instead choose based on speed, cost, and actual accuracy on their specific problem. This could shift forecasting systems toward simpler, more interpretable models without sacrificing results.",
+    "fetchedAt": "2026-05-07T20:10:22.753Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 218
+    },
+    "slug": "superposition-is-not-necessary-a-mechanistic-interpretability-analysis-of"
+  },
+  {
+    "id": "2605.04901",
+    "title": "On the (In-)Security of the Shuffling Defense in the Transformer Secure Inference",
+    "authors": "Zhengyi Li, Yakai Wang, Kang Yang et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-05-06T13:31:15Z",
+    "publishedFormatted": "May 6, 2026",
+    "subtitle": "How shuffling AI model outputs doesn't actually hide them from hackers",
+    "summary": "A security technique meant to protect AI models during remote computation—shuffling the model's internal activations before revealing them—can be broken for about $1 worth of queries. Researchers show how to align these shuffled values back to their original order, then use them to recover the model's actual weights, demonstrating the attack works on real models like GPT-2.",
+    "whyItMatters": "As AI systems move to cloud computing, companies rely on cryptographic defenses to keep model weights secret while still computing results. This attack shows a widely-used shuffling defense provides a false sense of security—meaning companies using it may think their models are protected when they're actually vulnerable to cheap theft. Developers now need better defenses before deploying sensitive models to untrusted servers.",
+    "fetchedAt": "2026-05-07T20:10:25.823Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 183
+    },
+    "slug": "on-the-in-security-of-the-shuffling-defense-in-the-transformer-secure-inference"
+  },
+  {
     "id": "2605.05090",
     "title": "Automatically Finding and Validating Unexpected Side-Effects of Interventions on Language Models",
     "authors": "Quintin Pope, Ajay Hayagreeve Balaji, Jacques Thibodeau et al.",
