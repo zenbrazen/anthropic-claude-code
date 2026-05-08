@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 15:05:10 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 20:06:25 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems</title>
+      <link>https://paperplaine.com/papers/maspo-joint-prompt-optimization-for-llm-based-multi-agent-systems</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/maspo-joint-prompt-optimization-for-llm-based-multi-agent-systems</guid>
+      <pubDate>Thu, 07 May 2026 17:35:26 GMT</pubDate>
+      <author>Zhexuan Wang, Xuebo Liu, Li Wang et al.</author>
+      <category>AI</category>
+      <description>Automatically tuning instructions for AI teams that work together</description>
+      <content:encoded><![CDATA[<p><em>Automatically tuning instructions for AI teams that work together</em></p><p>When multiple AI agents work together on a task, their individual instructions (prompts) need to work well not just in isolation, but as a coordinated system. A new framework called MASPO automatically improves these prompts by testing how well each agent's output helps the next agent succeed, rather than optimizing each agent separately. Tests across six different tasks show this approach outperforms existing methods by an average of 2.9 percentage points.</p><p><strong>Why it matters:</strong> As companies deploy multi-agent AI systems for complex work, getting these systems to actually cooperate effectively has been a major bottleneck—manually writing and tuning prompts for each agent is slow and often produces suboptimal teamwork. MASPO makes this process automatic and more effective, which could accelerate real-world deployment of AI systems handling tasks like research, customer service, or software development that require coordinated reasoning across multiple specialized agents.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Scaling the Queue: Reinforcement Learning for Equitable Call Classification Capacity in NYC Municipal Complaint Systems</title>
+      <link>https://paperplaine.com/papers/scaling-the-queue-reinforcement-learning-for-equitable-call-classification</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/scaling-the-queue-reinforcement-learning-for-equitable-call-classification</guid>
+      <pubDate>Thu, 07 May 2026 16:06:21 GMT</pubDate>
+      <author>Irene Aldridge, Ellie Bae, Siddhesh Darak et al.</author>
+      <category>Economics</category>
+      <description>Using AI to route 311 complaints fairly across New York City neighborhoods</description>
+      <content:encoded><![CDATA[<p><em>Using AI to route 311 complaints fairly across New York City neighborhoods</em></p><p>New York City's 311 complaint system can't keep up with incoming calls, causing longer waits and worse service in poorer neighborhoods. Researchers built an AI system that routes complaints more intelligently—by learning that neighborhoods with repeated complaints actually need faster action, not just those with the most calls. The system reduced unfair service gaps while handling more complaints without replacing human staff.</p><p><strong>Why it matters:</strong> NYC residents in low-income and communities of color have historically waited longer for building inspections and housing repairs. This AI system could cut those wait times by routing complaints to the right teams faster, meaning families get heat in winter or safe scaffolding fixed sooner. The approach also shows that fair service doesn't mean treating everyone identically—it means understanding which neighborhoods have persistent problems that need priority attention.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Structural Origin of Attention Sink: Variance Discrepancy, Super Neurons, and Dimension Disparity</title>
+      <link>https://paperplaine.com/papers/the-structural-origin-of-attention-sink-variance-discrepancy-super-neurons-and</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-structural-origin-of-attention-sink-variance-discrepancy-super-neurons-and</guid>
+      <pubDate>Thu, 07 May 2026 17:28:55 GMT</pubDate>
+      <author>Siquan Li, Kaiqi Jiang, Jiacheng Sun et al.</author>
+      <category>Statistics</category>
+      <description>Why language models obsess over the first word and how to fix it</description>
+      <content:encoded><![CDATA[<p><em>Why language models obsess over the first word and how to fix it</em></p><p>Large language models tend to give disproportionate attention to initial tokens—a problem called "attention sink"—because of how they aggregate information and process data through their internal layers. Researchers traced this to a specific structural imbalance: early neurons create inconsistent signal strengths that force the model to anchor attention to the first token as a stabilizing mechanism. They proved this causal chain by deliberately triggering attention sinks at different positions, then tested a simple architectural fix that balanced the signals during training and sped up model convergence.</p><p><strong>Why it matters:</strong> Attention sinks waste computational resources and can degrade model performance by forcing the network to concentrate on irrelevant tokens. Understanding the root cause opens the door to cleaner, more efficient models—the architectural tweak the researchers tested could reduce training time and improve how language models process information, with potential benefits for speed and accuracy in real applications.</p>]]></content:encoded>
+    </item>
     <item>
       <title>BAMI: Training-Free Bias Mitigation in GUI Grounding</title>
       <link>https://paperplaine.com/papers/bami-training-free-bias-mitigation-in-gui-grounding</link>
