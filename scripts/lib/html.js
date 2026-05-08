@@ -189,9 +189,8 @@ const CSS = `
   .nav-bottom-right { display: flex; align-items: center; gap: 14px; }
   .nav-rss {
     display: flex; align-items: center; gap: 5px; color: var(--muted);
-    border-bottom: none !important;
   }
-  .nav-rss:hover { color: var(--accent); border-bottom: none !important; }
+  .nav-rss:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -413,10 +412,7 @@ function buildPage({ title, description, canonical, prevUrl = null, nextUrl = nu
   const archiveActive = activeSlug === null ? ' active' : '';
   const bottomRow = `<div class="nav-bottom">
     <a href="/" class="nav-archive${archiveActive}">Archive/All</a>
-    <div class="nav-bottom-right">
-      <a href="/subscribe">Subscribe to Daily Email</a>
-      <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
-    </div>
+    <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
   </div>`;
 
   return `<!DOCTYPE html>
