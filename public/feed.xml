@@ -5,8 +5,228 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 15:04:37 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 08:21:01 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BAMI: Training-Free Bias Mitigation in GUI Grounding</title>
+      <link>https://paperplaine.com/papers/bami-training-free-bias-mitigation-in-gui-grounding</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bami-training-free-bias-mitigation-in-gui-grounding</guid>
+      <pubDate>Thu, 07 May 2026 17:59:31 GMT</pubDate>
+      <author>Borui Zhang, Bo Zhang, Bo Wang et al.</author>
+      <category>AI</category>
+      <description>Fixing AI agents that struggle to click the right button on complex screens</description>
+      <content:encoded><![CDATA[<p><em>Fixing AI agents that struggle to click the right button on complex screens</em></p><p>AI systems that automate computer tasks often fail when screens are high-resolution or crowded with interface elements. A new technique called BAMI improves accuracy without requiring retraining—boosting one model's performance on a challenging benchmark from 52% to 58%—by breaking down the task into simpler steps and filtering out confusing options.</p><p><strong>Why it matters:</strong> As companies automate more customer service, data entry, and software testing with AI agents, these systems need to reliably click and interact with real websites and applications. This method works with existing AI models off-the-shelf, making it immediately useful for improving the accuracy of automation tools without the expense and time of rebuilding them from scratch.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Superposition Is Not Necessary: A Mechanistic Interpretability Analysis of Transformer Representations for Time Series Forecasting</title>
+      <link>https://paperplaine.com/papers/superposition-is-not-necessary-a-mechanistic-interpretability-analysis-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/superposition-is-not-necessary-a-mechanistic-interpretability-analysis-of</guid>
+      <pubDate>Wed, 06 May 2026 17:23:27 GMT</pubDate>
+      <author>Alper Yıldırım</author>
+      <category>AI</category>
+      <description>Why transformers for time series don&#39;t need complex hidden patterns</description>
+      <content:encoded><![CDATA[<p><em>Why transformers for time series don't need complex hidden patterns</em></p><p>Transformers work well for predicting time series, but researchers wanted to understand how—specifically whether they use the same clever internal trick (called superposition) that makes them powerful for language. By examining a transformer trained on forecasting, they found transformers actually keep things simple: they don't compress multiple patterns into the same neurons, and they ignore most of their hidden layers when making predictions. This helps explain why straightforward linear models stay competitive with far more complex transformer models.</p><p><strong>Why it matters:</strong> Companies spend millions deploying expensive transformer models for forecasting tasks when simpler, cheaper alternatives work nearly as well. Understanding that transformers aren't actually using sophisticated compositional tricks on time series means practitioners can stop assuming complexity equals better performance and instead choose based on speed, cost, and actual accuracy on their specific problem. This could shift forecasting systems toward simpler, more interpretable models without sacrificing results.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>On the (In-)Security of the Shuffling Defense in the Transformer Secure Inference</title>
+      <link>https://paperplaine.com/papers/on-the-in-security-of-the-shuffling-defense-in-the-transformer-secure-inference</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/on-the-in-security-of-the-shuffling-defense-in-the-transformer-secure-inference</guid>
+      <pubDate>Wed, 06 May 2026 13:31:15 GMT</pubDate>
+      <author>Zhengyi Li, Yakai Wang, Kang Yang et al.</author>
+      <category>Comp Sci</category>
+      <description>How shuffling AI model outputs doesn&#39;t actually hide them from hackers</description>
+      <content:encoded><![CDATA[<p><em>How shuffling AI model outputs doesn't actually hide them from hackers</em></p><p>A security technique meant to protect AI models during remote computation—shuffling the model's internal activations before revealing them—can be broken for about $1 worth of queries. Researchers show how to align these shuffled values back to their original order, then use them to recover the model's actual weights, demonstrating the attack works on real models like GPT-2.</p><p><strong>Why it matters:</strong> As AI systems move to cloud computing, companies rely on cryptographic defenses to keep model weights secret while still computing results. This attack shows a widely-used shuffling defense provides a false sense of security—meaning companies using it may think their models are protected when they're actually vulnerable to cheap theft. Developers now need better defenses before deploying sensitive models to untrusted servers.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Automatically Finding and Validating Unexpected Side-Effects of Interventions on Language Models</title>
+      <link>https://paperplaine.com/papers/automatically-finding-and-validating-unexpected-side-effects-of-interventions</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/automatically-finding-and-validating-unexpected-side-effects-of-interventions</guid>
+      <pubDate>Wed, 06 May 2026 16:27:23 GMT</pubDate>
+      <author>Quintin Pope, Ajay Hayagreeve Balaji, Jacques Thibodeau et al.</author>
+      <category>AI</category>
+      <description>Automatically discovering hidden side effects when tweaking AI language models</description>
+      <content:encoded><![CDATA[<p><em>Automatically discovering hidden side effects when tweaking AI language models</em></p><p>Researchers built an automated system that compares how a language model behaves before and after an intervention—like when engineers try to make it forget certain information or reason better—and generates human-readable descriptions of what changed. Testing on three real interventions (reasoning training, knowledge editing, and unlearning), the system caught both intended changes and unexpected behavioral shifts that engineers hadn't anticipated.</p><p><strong>Why it matters:</strong> AI companies make constant changes to their language models, but it's extremely difficult to know all the ways those changes affect behavior beyond the intended goal. This tool lets engineers systematically audit what else changed, catching surprises before models are deployed. That's critical for safety: a fix intended to make a model more helpful might accidentally make it worse at something else, and discovering that requires more than checking the intended behavior.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Symmetric Bessmertnyĭ Realizations and Field Extension Problems in Characteristic 2 - A Differential Algebra Approach</title>
+      <link>https://paperplaine.com/papers/symmetric-bessmertnyi-realizations-and-field-extension-problems-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/symmetric-bessmertnyi-realizations-and-field-extension-problems-in</guid>
+      <pubDate>Wed, 06 May 2026 13:38:01 GMT</pubDate>
+      <author>Soumya Sinha Babu, Aaron Welters</author>
+      <category>Math</category>
+      <description>A simpler way to check when complex systems have valid mathematical structures</description>
+      <content:encoded><![CDATA[<p><em>A simpler way to check when complex systems have valid mathematical structures</em></p><p>Mathematicians found a purely algebraic method to verify when certain matrix structures—called Symmetric Bessmertnyĭ realizations—can exist in characteristic 2 fields, a setting where ordinary arithmetic rules break down. The new approach uses calculus-like tools on rational functions to reduce the problem from checking entire matrices to checking just their diagonal entries, making verification much simpler.</p><p><strong>Why it matters:</strong> Linear systems theory relies on these realizations to describe how systems behave, and the new algebraic proof works in characteristic 2 fields, which appear in coding theory and digital systems where all arithmetic happens modulo 2. The simpler method makes it practical to verify whether a given system has a valid mathematical representation without running complex algorithms, and also reveals new connections between realizability and field extensions that could inform future designs.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Release-free electro-optomechanical crystal modulator</title>
+      <link>https://paperplaine.com/papers/release-free-electro-optomechanical-crystal-modulator</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/release-free-electro-optomechanical-crystal-modulator</guid>
+      <pubDate>Wed, 06 May 2026 17:54:13 GMT</pubDate>
+      <author>Paul Burger, Joey Frey, Johan Kolvik et al.</author>
+      <category>Physics</category>
+      <description>A better bridge between quantum computers and fiber optic networks</description>
+      <content:encoded><![CDATA[<p><em>A better bridge between quantum computers and fiber optic networks</em></p><p>Researchers built a device that converts signals between microwave circuits in quantum computers and optical fibers with less thermal noise than previous designs. By combining two materials—silicon and lithium niobate—using a precise printing technique, they achieved the strong signal conversion needed for practical quantum-to-optical communication.</p><p><strong>Why it matters:</strong> Quantum computers currently sit isolated on lab benches because they can't efficiently send information over long distances. This device could become the missing link that lets distant quantum computers talk to each other and to optical networks, making large-scale quantum computing infrastructure actually possible.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Flow Sampling: Learning to Sample from Unnormalized Densities via Denoising Conditional Processes</title>
+      <link>https://paperplaine.com/papers/flow-sampling-learning-to-sample-from-unnormalized-densities-via-denoising</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/flow-sampling-learning-to-sample-from-unnormalized-densities-via-denoising</guid>
+      <pubDate>Tue, 05 May 2026 17:07:37 GMT</pubDate>
+      <author>Aaron Havens, Brian Karrer, Neta Shaul</author>
+      <category>AI</category>
+      <description>Teaching AI to sample from mathematical functions without wasting computation</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to sample from mathematical functions without wasting computation</em></p><p>Researchers developed Flow Sampling, a method that lets AI systems efficiently generate samples from complex mathematical distributions defined by energy functions—without needing actual data to learn from. The technique cuts down how many times the expensive energy function must be evaluated during training, and works not just in ordinary space but also on curved mathematical surfaces like spheres and hyperbolic geometries.</p><p><strong>Why it matters:</strong> Many real problems in physics, chemistry, and statistics require sampling from distributions where you know the underlying energy function but can't directly sample from it. This method makes that process far cheaper computationally, opening the door to faster simulations of molecular structures, protein folding, and other complex systems where brute-force sampling would be prohibitively expensive.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Deepening the Secondary Market: Integrating Trade Credit into Market Clearing with the Cycles Protocol</title>
+      <link>https://paperplaine.com/papers/deepening-the-secondary-market-integrating-trade-credit-into-market-clearing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/deepening-the-secondary-market-integrating-trade-credit-into-market-clearing</guid>
+      <pubDate>Mon, 04 May 2026 10:34:50 GMT</pubDate>
+      <author>Tomaž Fleischman, Ethan Buchman</author>
+      <category>Finance</category>
+      <description>Unlocking trillions in hidden business debt to speed up payments</description>
+      <content:encoded><![CDATA[<p><em>Unlocking trillions in hidden business debt to speed up payments</em></p><p>Most payment systems ignore trade credit—the informal IOUs between businesses that represent enormous untapped liquidity. A new protocol called Cycles can find and clear these debts directly without requiring a middleman to take on the risk, potentially integrating trillions of dollars in business-to-business lending into formal settlement systems.</p><p><strong>Why it matters:</strong> Businesses currently wait weeks to settle payments because trade credit sits outside official clearing systems. By tapping this hidden liquidity, companies could access cash faster and cut the working capital they need to tie up. This could be especially powerful for small suppliers and developing economies where informal credit chains are most common and access to capital is most constrained.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Electroencephalography and Electromyography as a Non-Invasive Biomarker of Neural Regeneration: A Review of Central and Peripheral Nervous System Injury and Regeneration</title>
+      <link>https://paperplaine.com/papers/electroencephalography-and-electromyography-as-a-non-invasive-biomarker-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/electroencephalography-and-electromyography-as-a-non-invasive-biomarker-of</guid>
+      <pubDate>Sun, 03 May 2026 07:59:27 GMT</pubDate>
+      <author>Maryam Kheyrollah, Reza Khanbabaie, Chris Ullrich et al.</author>
+      <category>Biology</category>
+      <description>Using brain and muscle electrical signals to track nerve healing after injury</description>
+      <content:encoded><![CDATA[<p><em>Using brain and muscle electrical signals to track nerve healing after injury</em></p><p>Brain waves (EEG) and muscle signals (EMG) can monitor whether nerves are actually healing after injury, offering doctors a non-invasive way to track recovery in real time. The two measurements work together: EEG reveals how the brain is reorganizing after damage, while EMG shows whether muscles are regaining function as peripheral nerves reconnect.</p><p><strong>Why it matters:</strong> Nerve injuries from stroke or spinal cord damage are hard to assess — doctors can't easily tell if healing is happening without invasive procedures. Being able to track recovery with simple electrical readings from skin electrodes would let clinicians adjust treatment earlier, predict which patients will recover function, and measure whether new therapies actually work. This bridges the gap between understanding what's happening at the molecular level and knowing whether patients are actually getting better.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Feature-Augmented Transformers for Robust AI-Text Detection Across Domains and Generators</title>
+      <link>https://paperplaine.com/papers/feature-augmented-transformers-for-robust-ai-text-detection-across-domains-and</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/feature-augmented-transformers-for-robust-ai-text-detection-across-domains-and</guid>
+      <pubDate>Tue, 05 May 2026 16:52:26 GMT</pubDate>
+      <author>Mohamed Mady, Johannes Reschke, Björn Schuller</author>
+      <category>AI</category>
+      <description>Making AI-text detectors work reliably across different sources and writing styles</description>
+      <content:encoded><![CDATA[<p><em>Making AI-text detectors work reliably across different sources and writing styles</em></p><p>Detectors trained to spot AI-generated text perform near-perfectly on familiar material but fail badly when encountering text from new sources or generators—a problem researchers call brittleness. Adding linguistic features like readability and vocabulary patterns to a transformer model improved performance across different domains, pushing balanced accuracy from around 60% to 86% when tested on unfamiliar text.</p><p><strong>Why it matters:</strong> As AI systems generate text at scale across the internet, platforms need detectors that actually work in the real world, not just in controlled testing. This research shows that simple feature engineering can make detectors three times more reliable when encountering new types of AI generators, making them practically useful for content moderation and detection systems that can't be retrained constantly.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Conditional Diffusion Sampling</title>
+      <link>https://paperplaine.com/papers/conditional-diffusion-sampling</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/conditional-diffusion-sampling</guid>
+      <pubDate>Tue, 05 May 2026 17:36:29 GMT</pubDate>
+      <author>Francisco M. Castro-Macías, Pablo Morales-Álvarez, Saifuddin Syed et al.</author>
+      <category>Statistics</category>
+      <description>A faster way to sample from messy, multimodal probability distributions</description>
+      <content:encoded><![CDATA[<p><em>A faster way to sample from messy, multimodal probability distributions</em></p><p>Researchers combined two established sampling methods—Parallel Tempering and diffusion models—into a hybrid approach that requires no neural network training. The new method uses Parallel Tempering to explore the overall landscape first, then applies a mathematically exact transport process to refine samples locally, achieving better results with fewer probability evaluations than existing methods.</p><p><strong>Why it matters:</strong> Sampling from complex probability distributions is central to machine learning, physics simulations, and Bayesian statistics. Current methods either require extensive training or many expensive probability evaluations. This hybrid approach cuts the computational cost of generating high-quality samples, which directly speeds up inference in scientific computing, drug discovery, and probabilistic machine learning models where every probability calculation is expensive.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Do Venture Capitalists Beat Random Allocation?</title>
+      <link>https://paperplaine.com/papers/do-venture-capitalists-beat-random-allocation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/do-venture-capitalists-beat-random-allocation</guid>
+      <pubDate>Tue, 05 May 2026 17:04:54 GMT</pubDate>
+      <author>Max Sina Knicker, Jean-Philippe Bouchaud, Michael Benzaquen</author>
+      <category>Economics</category>
+      <description>Why venture capitalists&#39; picks look no better than random luck</description>
+      <content:encoded><![CDATA[<p><em>Why venture capitalists' picks look no better than random luck</em></p><p>Venture capital investors pick companies that perform almost identically to what chance alone would predict, when accounting for timing, location, and industry. Even the best-performing VC portfolios don't beat the outcomes expected from random selection, suggesting that skill in choosing individual companies is nearly impossible to detect in an industry dominated by a handful of huge winners.</p><p><strong>Why it matters:</strong> This finding challenges the premise that venture capitalists earn their 2-and-20 fees through superior judgment. If VC performance is indistinguishable from random allocation, it raises hard questions about whether investors should pay premium fees for what amounts to passive exposure to startups. The same pattern holds for stock analysts picking companies, suggesting skill is difficult to prove in any extreme winner-take-most market.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>SpecKV: Adaptive Speculative Decoding with Compression-Aware Gamma Selection</title>
+      <link>https://paperplaine.com/papers/speckv-adaptive-speculative-decoding-with-compression-aware-gamma-selection</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/speckv-adaptive-speculative-decoding-with-compression-aware-gamma-selection</guid>
+      <pubDate>Mon, 04 May 2026 17:55:05 GMT</pubDate>
+      <author>Shikhar Shukla</author>
+      <category>AI</category>
+      <description>Speeding up AI by automatically adjusting how many words to guess ahead</description>
+      <content:encoded><![CDATA[<p><em>Speeding up AI by automatically adjusting how many words to guess ahead</em></p><p>A new system called SpecKV automatically tunes how many tokens a small AI model should propose at each step during the verification process that speeds up large language models. By reading signals from the draft model itself—like how confident it is in its guesses—SpecKV picks the best number of proposals for each moment, delivering 56% faster results than the current fixed approach with almost no added slowdown.</p><p><strong>Why it matters:</strong> Large language models power chatbots, search, and countless AI applications, and making them faster directly cuts energy costs and lets more people access them affordably. A 56% speedup with minimal overhead means faster responses for users and significantly lower compute bills for companies running these systems at scale.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>TRACED: In vivo imaging of extracellular intrinsic diffusivity, tortuosity, cell size distribution and cell density in human glioma patients</title>
+      <link>https://paperplaine.com/papers/traced-in-vivo-imaging-of-extracellular-intrinsic-diffusivity-tortuosity-cell</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/traced-in-vivo-imaging-of-extracellular-intrinsic-diffusivity-tortuosity-cell</guid>
+      <pubDate>Mon, 04 May 2026 14:03:48 GMT</pubDate>
+      <author>Joshua K. Marchant, Hong-Hsi Lee, Elizabeth R. Gerstner et al.</author>
+      <category>Engineering</category>
+      <description>Reading tumor cell size and density from brain MRI scans without a biopsy</description>
+      <content:encoded><![CDATA[<p><em>Reading tumor cell size and density from brain MRI scans without a biopsy</em></p><p>Researchers developed TRACED, a new method that extracts detailed information about tumor structure directly from standard MRI scans of brain cancer patients. The technique measures cell size, cell density, and how easily water moves through tumor tissue — measurements previously only possible through invasive biopsies — and the team verified these measurements against actual tumor tissue samples from two patients.</p><p><strong>Why it matters:</strong> Brain tumor surgery and treatment decisions depend on understanding tumor structure, but biopsies are invasive, risky, and only sample one small location. This MRI-based approach could let doctors assess tumor properties across the entire tumor without any biopsy, potentially improving treatment planning and monitoring how tumors respond to therapy.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Note on Strong Quantum Markov Properties</title>
+      <link>https://paperplaine.com/papers/note-on-strong-quantum-markov-properties</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/note-on-strong-quantum-markov-properties</guid>
+      <pubDate>Mon, 04 May 2026 17:49:07 GMT</pubDate>
+      <author>Chi-Fang Chen</author>
+      <category>Physics</category>
+      <description>When quantum systems reveal their secrets through local measurements</description>
+      <content:encoded><![CDATA[<p><em>When quantum systems reveal their secrets through local measurements</em></p><p>A quantum state satisfies a "strong Markov property" if you can recover lost information about it by measuring just one copy and applying a local fix — and this works the same way regardless of what you actually measure. The researchers show this property is equivalent to a simpler mathematical condition: correlations must decay in a particular way, and they prove three surprising consequences, including that you can estimate multiple properties of a quantum state from a single measurement.</p><p><strong>Why it matters:</strong> Quantum systems are notoriously fragile and hard to measure. This result shows that under certain conditions — when a quantum state has the strong Markov property — you don't need many copies or elaborate measurement schemes to extract useful information. This could simplify how we extract information from quantum devices and systems in the lab, and it deepens our understanding of which quantum states are easier to work with in practice.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>mdok-style at SemEval-2026 Task 9: Finetuning LLMs for Multilingual Polarization Detection</title>
+      <link>https://paperplaine.com/papers/mdok-style-at-semeval-2026-task-9-finetuning-llms-for-multilingual-polarization</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/mdok-style-at-semeval-2026-task-9-finetuning-llms-for-multilingual-polarization</guid>
+      <pubDate>Mon, 04 May 2026 15:08:24 GMT</pubDate>
+      <author>Dominik Macko, Alok Debnath, Jakub Simko</author>
+      <category>AI</category>
+      <description>Spotting inflammatory speech across 22 languages before it turns toxic</description>
+      <content:encoded><![CDATA[<p><em>Spotting inflammatory speech across 22 languages before it turns toxic</em></p><p>Researchers built an AI system to detect polarizing content online across 22 languages by finetuning large language models with a technique that keeps computational costs manageable. They strengthened the system by training it on multiple versions of the same text—anonymized, capitalized differently, and with character substitutions—making it more likely to catch polarization even when people use tricks to avoid detection.</p><p><strong>Why it matters:</strong> Online polarization often escalates into hate speech and social division. Catching inflammatory rhetoric early, across languages and cultures, gives platforms a practical tool to intervene before discussions turn hostile. The approach also shows how to build multilingual AI systems efficiently, without needing expensive computational resources.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Towards Improving Speaker Distance Estimation through Generative Impulse Response Augmentation</title>
+      <link>https://paperplaine.com/papers/towards-improving-speaker-distance-estimation-through-generative-impulse</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/towards-improving-speaker-distance-estimation-through-generative-impulse</guid>
+      <pubDate>Fri, 01 May 2026 15:08:42 GMT</pubDate>
+      <author>Anton Ratnarajah, Mehmet Ergezer, Arun Nair et al.</author>
+      <category>AI</category>
+      <description>Using artificial sound reflections to help systems pinpoint where speakers are standing</description>
+      <content:encoded><![CDATA[<p><em>Using artificial sound reflections to help systems pinpoint where speakers are standing</em></p><p>Researchers improved distance estimation accuracy by generating synthetic acoustic data to train AI models. The approach reduced localization error by up to 68% across different room types—bringing average errors down from 2.18 meters to 0.69 meters in some settings.</p><p><strong>Why it matters:</strong> Accurate speaker distance estimation matters for hearing aids, video conferencing systems, and spatial audio applications that need to know where someone is in a room. Real acoustic recordings are expensive and limited; this method shows that artificially generated sound reflections can work just as well for training, making it faster and cheaper to build better location-aware audio systems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Unsupervised Denoising of Real Clinical Low Dose Liver CT with Perceptual Attention Networks</title>
+      <link>https://paperplaine.com/papers/unsupervised-denoising-of-real-clinical-low-dose-liver-ct-with-perceptual</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/unsupervised-denoising-of-real-clinical-low-dose-liver-ct-with-perceptual</guid>
+      <pubDate>Fri, 01 May 2026 17:19:15 GMT</pubDate>
+      <author>Jingxi Pu, Tonghua Liu, Zhilin Guan et al.</author>
+      <category>Comp Sci</category>
+      <description>Cleaning up blurry CT scans without needing perfect reference images</description>
+      <content:encoded><![CDATA[<p><em>Cleaning up blurry CT scans without needing perfect reference images</em></p><p>Researchers developed an artificial intelligence system that removes noise from low-dose CT scans without requiring paired clean images for training—a major obstacle in medical imaging. The system was tested on real clinical scans and validated by radiologists, achieving results comparable to supervised methods while solving the practical problem that hospitals rarely have perfectly clean versions of the same scan to learn from.</p><p><strong>Why it matters:</strong> Low-dose CT reduces radiation risk to patients, but the grainy images can make tumors and other abnormalities harder to spot, potentially leading to missed diagnoses. This technique cleans up those images automatically using only the noisy scans themselves, making it immediately usable in hospitals without requiring expensive paired training data. Radiologists who reviewed the results confirmed it meets clinical standards, meaning patients could get safer imaging without sacrificing diagnostic clarity.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Optimal Merton&#39;s Problem under Multivariate Affine Volterra Models with Jumps</title>
+      <link>https://paperplaine.com/papers/optimal-merton-s-problem-under-multivariate-affine-volterra-models-with-jumps</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/optimal-merton-s-problem-under-multivariate-affine-volterra-models-with-jumps</guid>
+      <pubDate>Fri, 01 May 2026 14:21:35 GMT</pubDate>
+      <author>Sigui Brice Dro, Emmanuel Gnabeyeu</author>
+      <category>Math</category>
+      <description>How investors should rebalance portfolios when markets jump unpredictably</description>
+      <content:encoded><![CDATA[<p><em>How investors should rebalance portfolios when markets jump unpredictably</em></p><p>Investors often adjust their portfolios based on past market patterns, but real markets jump suddenly and have memory — past prices influence future ones in ways classical models ignore. This paper solves the classic portfolio-balancing problem for these more realistic, jumpy markets with memory, deriving concrete investment strategies that account for both kinds of market friction.</p><p><strong>Why it matters:</strong> Standard portfolio advice assumes smooth, memoryless markets — assumptions that fail during crashes and volatility clusters. This work provides investors and fund managers with mathematically rigorous strategies tailored to real market behavior, potentially improving returns and risk management when applied to multi-asset portfolios.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Position: agentic AI orchestration should be Bayes-consistent</title>
+      <link>https://paperplaine.com/papers/position-agentic-ai-orchestration-should-be-bayes-consistent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/position-agentic-ai-orchestration-should-be-bayes-consistent</guid>
+      <pubDate>Fri, 01 May 2026 15:43:43 GMT</pubDate>
+      <author>Theodore Papamarkou, Pierre Alquier, Matthias Bauer et al.</author>
+      <category>AI</category>
+      <description>Why AI assistants need better decision-making rules for choosing which tools to use</description>
+      <content:encoded><![CDATA[<p><em>Why AI assistants need better decision-making rules for choosing which tools to use</em></p><p>Large language models are good at predicting and reasoning, but bad at making decisions when stakes are high—like choosing which expert to ask or how much to spend. This paper argues that AI systems should use Bayesian probability rules at the control layer that decides which tools to deploy, rather than trying to make the language models themselves fully probabilistic, because this approach is practical and mathematically sound for real-world decisions under uncertainty.</p><p><strong>Why it matters:</strong> When an AI system decides to call a specialist, request more data, or allocate resources, getting that call wrong can be expensive or risky. Using Bayesian decision theory at the orchestration level means the system tracks what it actually knows, updates beliefs as it gathers information, and chooses actions deliberately rather than by default. This framework also makes human-AI collaboration clearer: humans can see what the system believes and why it made a choice, making the system's reasoning auditable and correctable.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents</title>
+      <link>https://paperplaine.com/papers/foresight-arena-an-on-chain-benchmark-for-evaluating-ai-forecasting-agents</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/foresight-arena-an-on-chain-benchmark-for-evaluating-ai-forecasting-agents</guid>
+      <pubDate>Fri, 01 May 2026 05:33:10 GMT</pubDate>
+      <author>Maksym Nechepurenko, Pavel Shuvalov</author>
+      <category>Finance</category>
+      <description>A blockchain-based test for AI that can actually predict the future</description>
+      <content:encoded><![CDATA[<p><em>A blockchain-based test for AI that can actually predict the future</em></p><p>Researchers built an on-chain benchmark that measures whether AI forecasting agents can genuinely predict real-world events better than existing markets, rather than just copying market prices or getting lucky with timing. The system uses blockchain smart contracts to prevent cheating and applies statistical scoring rules that reward honest probability estimates, and testing shows that detecting a real forecasting edge requires roughly 350 predictions—far more than most existing evaluations.</p><p><strong>Why it matters:</strong> Most AI forecasting systems today are evaluated on static datasets or by their trading profits, both of which hide whether an AI actually has predictive skill or just got lucky with market timing and position sizing. This benchmark lets anyone trustlessly evaluate AI forecasting agents on real prediction markets with proper statistical incentives, cutting through the noise to identify which systems genuinely see the future more clearly than crowds do. For AI companies and traders, it's a way to separate signal from noise; for the broader AI safety community, it's a model for building evaluations resistant to overfitting and centralized gaming.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Adaptive Querying with AI Persona Priors</title>
+      <link>https://paperplaine.com/papers/adaptive-querying-with-ai-persona-priors</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/adaptive-querying-with-ai-persona-priors</guid>
+      <pubDate>Fri, 01 May 2026 14:34:25 GMT</pubDate>
+      <author>Kaizheng Wang, Yuhang Wu, Assaf Zeevi</author>
+      <category>Statistics</category>
+      <description>Using AI personas to ask smarter survey questions with limited budgets</description>
+      <content:encoded><![CDATA[<p><em>Using AI personas to ask smarter survey questions with limited budgets</em></p><p>Researchers developed a new method for adaptive surveys that uses artificial intelligence personas—templates of how different types of people respond—to predict what questions will be most informative to ask next. Rather than relying on rigid statistical models or expensive computations, the approach treats each person as belonging to one of several AI-generated persona types, which allows for quick, accurate predictions and efficient question selection even when surveying new populations or asking about unfamiliar topics.</p><p><strong>Why it matters:</strong> Surveys and tests that adapt their questions based on previous answers can extract more reliable information while asking fewer questions—cutting costs and reducing respondent fatigue. This method makes adaptive surveying practical for real applications like market research, psychological assessment, and opinion polling, especially when you're starting fresh with a new population and can't rely on historical data. The approach also produces interpretable results: you learn not just what someone thinks, but which persona type they resemble, offering actionable insights alongside raw answers.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Beyond Gaussian Bottlenecks: Topologically Aligned Encoding of Vision-Transformer Feature Spaces</title>
       <link>https://paperplaine.com/papers/beyond-gaussian-bottlenecks-topologically-aligned-encoding-of-vision</link>
