@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2026 08:26:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 19:54:10 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation</title>
+      <link>https://paperplaine.com/papers/actcam-zero-shot-joint-camera-and-3d-motion-control-for-video-generation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/actcam-zero-shot-joint-camera-and-3d-motion-control-for-video-generation</guid>
+      <pubDate>Thu, 07 May 2026 17:59:58 GMT</pubDate>
+      <author>Omar El Khalifi, Thomas Rossi, Oscar Fossey et al.</author>
+      <category>AI</category>
+      <description>Controlling both actor movement and camera angles in AI-generated videos</description>
+      <content:encoded><![CDATA[<p><em>Controlling both actor movement and camera angles in AI-generated videos</em></p><p>A new method called ActCam lets filmmakers generate videos where they control both how an actor moves and where the camera points—without needing to train a custom AI model. By carefully layering pose and depth information at different stages of video generation, the system maintains geometric consistency and produces results that human raters prefer, especially when the camera makes large jumps to new angles.</p><p><strong>Why it matters:</strong> Video production typically requires either expensive motion capture setups or manual frame-by-frame editing to coordinate actor movement with camera work. ActCam works with existing AI video generators and requires no retraining, making professional-looking camera control accessible to independent filmmakers and artists who lack studio resources.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>CLAD: A Clustered Label-Agnostic Federated Learning Framework for Joint Anomaly Detection and Attack Classification</title>
+      <link>https://paperplaine.com/papers/clad-a-clustered-label-agnostic-federated-learning-framework-for-joint-anomaly</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/clad-a-clustered-label-agnostic-federated-learning-framework-for-joint-anomaly</guid>
+      <pubDate>Thu, 07 May 2026 17:01:19 GMT</pubDate>
+      <author>Iason Ofeidis, Nikos Papadis, Randeep Bhatia et al.</author>
+      <category>Comp Sci</category>
+      <description>Training security systems across IoT devices without sharing raw data</description>
+      <content:encoded><![CDATA[<p><em>Training security systems across IoT devices without sharing raw data</em></p><p>A new framework called CLAD trains security systems across thousands of IoT devices while keeping data private and handling the reality that most collected data comes without labels. It achieves 30% better detection of network attacks than existing methods while using half the communication bandwidth, even when 80% of the data lacks security labels.</p><p><strong>Why it matters:</strong> As factories, smart homes, and critical infrastructure rely on millions of connected devices, security breaches can cascade rapidly across networks. CLAD makes it practical for these devices to collectively learn threat patterns without exposing sensitive operational data to central servers, while actually improving detection accuracy by making use of unlabeled data that would otherwise be wasted.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>SNAPO: Smooth Neural Adjoint Policy Optimization for Optimal Control via Differentiable Simulation</title>
+      <link>https://paperplaine.com/papers/snapo-smooth-neural-adjoint-policy-optimization-for-optimal-control-via</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/snapo-smooth-neural-adjoint-policy-optimization-for-optimal-control-via</guid>
+      <pubDate>Thu, 07 May 2026 17:01:13 GMT</pubDate>
+      <author>Dmitri Goloubentsev, Natalija Karpichina</author>
+      <category>Math</category>
+      <description>Training AI to make better decisions while instantly measuring risk exposure</description>
+      <content:encoded><![CDATA[<p><em>Training AI to make better decisions while instantly measuring risk exposure</em></p><p>Researchers developed SNAPO, a method that trains neural networks to make sequential decisions in complex systems while simultaneously computing how sensitive those decisions are to different inputs and conditions. Unlike existing approaches that either solve small problems slowly or train fast but blind, SNAPO trains a policy in minutes while automatically generating thousands of sensitivity measurements at essentially no extra cost — a single backward pass produces both the training signal and all the risk metrics.</p><p><strong>Why it matters:</strong> Real-world decision systems need both speed and accountability. Energy traders need to know how their storage decisions respond to price swings; pension fund managers need to measure exposure across dozens of risk factors; pharmaceutical manufacturers must document how process changes affect product quality for regulators. SNAPO delivers these sensitivities during training rather than afterward, cutting computation time by orders of magnitude — sensitivity analysis that took hours now takes milliseconds — while keeping the same training budget. This makes AI-driven optimization practical for industries where understanding risk isn't optional.</p>]]></content:encoded>
+    </item>
     <item>
       <title>StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</title>
       <link>https://paperplaine.com/papers/strata-incentivizing-agentic-reinforcement-learning-with-strategic-trajectory</link>

@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Linear-Core Surrogates: Smooth Loss Functions with Linear Rates for Classification and Structured Prediction — Paper Plaine</title>
-<meta name="description" content="Researchers created a new loss function called Linear-Core Surrogates that solves a longstanding trade-off in machine learning: smooth functions train…">
-<link rel="canonical" href="https://paperplaine.com/papers/linear-core-surrogates-smooth-loss-functions-with-linear-rates-for">
+<title>ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation — Paper Plaine</title>
+<meta name="description" content="A new method called ActCam lets filmmakers generate videos where they control both how an actor moves and where the camera points—without needing to train…">
+<link rel="canonical" href="https://paperplaine.com/papers/actcam-zero-shot-joint-camera-and-3d-motion-control-for-video-generation">
 
 
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Paper Plaine">
-<meta property="og:title" content="Linear-Core Surrogates: Smooth Loss Functions with Linear Rates for Classification and Structured Prediction — Paper Plaine">
-<meta property="og:description" content="Researchers created a new loss function called Linear-Core Surrogates that solves a longstanding trade-off in machine learning: smooth functions train…">
-<meta property="og:url" content="https://paperplaine.com/papers/linear-core-surrogates-smooth-loss-functions-with-linear-rates-for">
+<meta property="og:title" content="ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation — Paper Plaine">
+<meta property="og:description" content="A new method called ActCam lets filmmakers generate videos where they control both how an actor moves and where the camera points—without needing to train…">
+<meta property="og:url" content="https://paperplaine.com/papers/actcam-zero-shot-joint-camera-and-3d-motion-control-for-video-generation">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linear-Core Surrogates: Smooth Loss Functions with Linear Rates for Classification and Structured Prediction — Paper Plaine">
-<meta name="twitter:description" content="Researchers created a new loss function called Linear-Core Surrogates that solves a longstanding trade-off in machine learning: smooth functions train…">
+<meta name="twitter:title" content="ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation — Paper Plaine">
+<meta name="twitter:description" content="A new method called ActCam lets filmmakers generate videos where they control both how an actor moves and where the camera points—without needing to train…">
 
 <!-- RSS autodiscovery -->
 <link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/linear-core-surrogates-smooth-loss-functions-with-linear-rates-for#article","headline":"Linear-Core Surrogates: Smooth Loss Functions with Linear Rates for Classification and Structured Prediction","description":"Researchers created a new loss function called Linear-Core Surrogates that solves a longstanding trade-off in machine learning: smooth functions train quickly but learn slowly, while sharp functions learn efficiently but are hard to optimize. The new approach combines both benefits—it's smooth enough to train fast, yet produces predictions as accurate as harder-to-optimize functions. In structured prediction tasks like language processing, the smoothness enables a 23-fold speedup over existing methods.","author":"Mehryar Mohri, Yutao Zhong","url":"https://arxiv.org/abs/2604.27742","datePublished":"2026-04-30T11:32:25Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/actcam-zero-shot-joint-camera-and-3d-motion-control-for-video-generation#article","headline":"ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation","description":"A new method called ActCam lets filmmakers generate videos where they control both how an actor moves and where the camera points—without needing to train a custom AI model. By carefully layering pose and depth information at different stages of video generation, the system maintains geometric consistency and produces results that human raters prefer, especially when the camera makes large jumps to new angles.","author":"Omar El Khalifi, Thomas Rossi, Oscar Fossey et al.","url":"https://arxiv.org/abs/2605.06667","datePublished":"2026-05-07T17:59:58Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -318,13 +318,13 @@
     <p class="tagline">Fresh research, simply explained. Updates twice daily.</p>
   </header>
   <nav class="nav" aria-label="Categories">
-    <a href="/ai">AI</a>
+    <a href="/ai" class="active">AI</a>
     <a href="/comp-sci">Comp Sci</a>
     <a href="/physics">Physics</a>
     <a href="/math">Math</a>
     <a href="/biology">Biology</a>
     <a href="/finance">Finance</a>
-    <a href="/statistics" class="active">Statistics</a>
+    <a href="/statistics">Statistics</a>
     <a href="/engineering">Engineering</a>
     <a href="/economics">Economics</a>
     <div class="nav-bottom">
@@ -333,32 +333,32 @@
   </div>
   </nav>
   <main id="entries">
-    <div class="paper-back"><a href="/statistics">← Statistics</a><a href="/">Archive</a></div>
+    <div class="paper-back"><a href="/ai">← AI</a><a href="/">Archive</a></div>
   <article class="entry" style="border-bottom: 6px double var(--rule);">
     <div class="entry-meta">
-      <span class="category">Statistics · stat.ML</span>
-      <span>May 2, 2026</span>
+      <span class="category">Computer Science · AI</span>
+      <span>May 9, 2026</span>
     </div>
-    <h2 class="entry-title">Linear-Core Surrogates: Smooth Loss Functions with Linear Rates for Classification and Structured Prediction</h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Combining fast training with accurate predictions in machine learning</p>
+    <h2 class="entry-title">ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation</h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Controlling both actor movement and camera angles in AI-generated videos</p>
     <p class="byline">
-      Mehryar Mohri, Yutao Zhong
-      <br><span class="arxiv-id">arXiv:2604.27742</span>
+      Omar El Khalifi, Thomas Rossi, Oscar Fossey et al.
+      <br><span class="arxiv-id">arXiv:2605.06667</span>
     </p>
     <div class="entry-body">
       <div class="col-summary">
         <div class="section-label">Summary</div>
-        <p class="summary-text">Researchers created a new loss function called Linear-Core Surrogates that solves a longstanding trade-off in machine learning: smooth functions train quickly but learn slowly, while sharp functions learn efficiently but are hard to optimize. The new approach combines both benefits—it&#39;s smooth enough to train fast, yet produces predictions as accurate as harder-to-optimize functions. In structured prediction tasks like language processing, the smoothness enables a 23-fold speedup over existing methods.</p>
+        <p class="summary-text">A new method called ActCam lets filmmakers generate videos where they control both how an actor moves and where the camera points—without needing to train a custom AI model. By carefully layering pose and depth information at different stages of video generation, the system maintains geometric consistency and produces results that human raters prefer, especially when the camera makes large jumps to new angles.</p>
       </div>
       <div class="col-divider"></div>
       <div class="col-matters">
         <div class="section-label">Why it matters</div>
-        <p class="matters-text">Training machine learning models is expensive in both time and computational energy. This approach cuts training time dramatically—by 23× on large text tasks—without sacrificing accuracy. It also handles messy real-world data better: when labels contain errors, the method outperforms standard approaches by 2.6% on standard benchmarks, making it immediately useful for practitioners working with imperfect datasets.</p>
+        <p class="matters-text">Video production typically requires either expensive motion capture setups or manual frame-by-frame editing to coordinate actor movement with camera work. ActCam works with existing AI video generators and requires no retraining, making professional-looking camera control accessible to independent filmmakers and artists who lack studio resources.</p>
       </div>
     </div>
     <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2604.27742" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · Apr 30, 2026</span>
+      <a href="https://arxiv.org/abs/2605.06667" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · May 7, 2026</span>
     </div>
   </article>
   </main>
