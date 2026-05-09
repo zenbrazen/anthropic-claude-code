@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 20:06:25 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 08:26:40 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction</title>
+      <link>https://paperplaine.com/papers/strata-incentivizing-agentic-reinforcement-learning-with-strategic-trajectory</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/strata-incentivizing-agentic-reinforcement-learning-with-strategic-trajectory</guid>
+      <pubDate>Thu, 07 May 2026 17:51:16 GMT</pubDate>
+      <author>Xiangyuan Xue, Yifan Zhou, Zidong Wang et al.</author>
+      <category>AI</category>
+      <description>Teaching AI agents to plan ahead instead of just reacting moment-to-moment</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI agents to plan ahead instead of just reacting moment-to-moment</em></p><p>A new training method called StraTA helps large language models work better as decision-making agents by having them sketch out a high-level strategy before taking action. On three real-world task environments, the approach achieved success rates above 93% on some benchmarks and needed fewer training examples than existing methods.</p><p><strong>Why it matters:</strong> Current AI agents struggle with long chains of decisions because they react to each step without a plan, making them inefficient and error-prone. StraTA's strategy-first approach could improve AI assistants that handle complex real-world tasks like shopping, research, or household management—reducing the computing power and training data needed to get them working reliably.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The frame-level leakage trap: rethinking evaluation protocols for intrinsic image decomposition, with source-separable uncertainty as a case study</title>
+      <link>https://paperplaine.com/papers/the-frame-level-leakage-trap-rethinking-evaluation-protocols-for-intrinsic</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-frame-level-leakage-trap-rethinking-evaluation-protocols-for-intrinsic</guid>
+      <pubDate>Thu, 07 May 2026 14:37:16 GMT</pubDate>
+      <author>Jihwan Woo</author>
+      <category>Engineering</category>
+      <description>How similar test frames secretly inflate computer vision scores by 10 decibels</description>
+      <content:encoded><![CDATA[<p><em>How similar test frames secretly inflate computer vision scores by 10 decibels</em></p><p>Researchers discovered that a common way of testing image-decomposition algorithms on the MPI Sintel dataset inflates performance scores by 1.6 to 2.0 decibels because spatially similar frames from the same scene leak into both training and test sets. Using the correct evaluation method—splitting by scene rather than by frame—reveals that past reported results were significantly overstated, and the team proposes a new model that estimates uncertainty separately for different image components, allowing it to identify and filter out unreliable pixels with 77% error reduction.</p><p><strong>Why it matters:</strong> Accurate evaluation standards prevent researchers from chasing inflated performance numbers and wasting effort on algorithms that aren't actually better. The proposed uncertainty method also has practical value: by flagging which pixels it's unsure about, it enables downstream applications to discard unreliable regions and achieve much cleaner results—useful for any system relying on image decomposition in graphics, robotics, or computational photography.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Engineering a driven-dissipative bath of altermagnetic quantum magnons for controlling classical dynamics of spins hosting spin waves, domain walls, or skyrmions</title>
+      <link>https://paperplaine.com/papers/engineering-a-driven-dissipative-bath-of-altermagnetic-quantum-magnons-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/engineering-a-driven-dissipative-bath-of-altermagnetic-quantum-magnons-for</guid>
+      <pubDate>Thu, 07 May 2026 15:58:33 GMT</pubDate>
+      <author>Felipe Reyes-Osorio, Branislav K. Nikolic</author>
+      <category>Physics</category>
+      <description>Using quantum magnets to remotely control classical magnetic waves and patterns</description>
+      <content:encoded><![CDATA[<p><em>Using quantum magnets to remotely control classical magnetic waves and patterns</em></p><p>Physicists have designed a way to control magnetic behavior in one material by attaching a quantum magnetic layer next to it. The quantum layer acts like a bath that damps and drives the classical magnetic material, creating new ways to tune how magnetic waves, domain walls, and skyrmions (tiny magnetic vortices) move and disappear. This could let engineers manipulate magnetic dynamics without direct electrical or magnetic contact.</p><p><strong>Why it matters:</strong> Magnetic devices are central to data storage and computing, and most current approaches rely on direct control of the magnet itself. This technique offers a new handle for tuning magnetic behavior through an adjacent layer, potentially enabling more efficient or flexible designs for spintronic devices and magnonic circuits. It demonstrates a path to remotely shape how magnetic patterns propagate and annihilate, which matters for encoding and erasing information in next-generation magnetic memory.</p>]]></content:encoded>
+    </item>
     <item>
       <title>MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems</title>
       <link>https://paperplaine.com/papers/maspo-joint-prompt-optimization-for-llm-based-multi-agent-systems</link>

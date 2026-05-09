@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.06642",
+    "title": "StraTA: Incentivizing Agentic Reinforcement Learning with Strategic Trajectory Abstraction",
+    "authors": "Xiangyuan Xue, Yifan Zhou, Zidong Wang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-07T17:51:16Z",
+    "publishedFormatted": "May 7, 2026",
+    "subtitle": "Teaching AI agents to plan ahead instead of just reacting moment-to-moment",
+    "summary": "A new training method called StraTA helps large language models work better as decision-making agents by having them sketch out a high-level strategy before taking action. On three real-world task environments, the approach achieved success rates above 93% on some benchmarks and needed fewer training examples than existing methods.",
+    "whyItMatters": "Current AI agents struggle with long chains of decisions because they react to each step without a plan, making them inefficient and error-prone. StraTA's strategy-first approach could improve AI assistants that handle complex real-world tasks like shopping, research, or household management—reducing the computing power and training data needed to get them working reliably.",
+    "fetchedAt": "2026-05-09T08:26:30.954Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 26,
+      "wordCount": 142
+    },
+    "slug": "strata-incentivizing-agentic-reinforcement-learning-with-strategic-trajectory"
+  },
+  {
+    "id": "2605.06359",
+    "title": "The frame-level leakage trap: rethinking evaluation protocols for intrinsic image decomposition, with source-separable uncertainty as a case study",
+    "authors": "Jihwan Woo",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-05-07T14:37:16Z",
+    "publishedFormatted": "May 7, 2026",
+    "subtitle": "How similar test frames secretly inflate computer vision scores by 10 decibels",
+    "summary": "Researchers discovered that a common way of testing image-decomposition algorithms on the MPI Sintel dataset inflates performance scores by 1.6 to 2.0 decibels because spatially similar frames from the same scene leak into both training and test sets. Using the correct evaluation method—splitting by scene rather than by frame—reveals that past reported results were significantly overstated, and the team proposes a new model that estimates uncertainty separately for different image components, allowing it to identify and filter out unreliable pixels with 77% error reduction.",
+    "whyItMatters": "Accurate evaluation standards prevent researchers from chasing inflated performance numbers and wasting effort on algorithms that aren't actually better. The proposed uncertainty method also has practical value: by flagging which pixels it's unsure about, it enables downstream applications to discard unreliable regions and achieve much cleaner results—useful for any system relying on image decomposition in graphics, robotics, or computational photography.",
+    "fetchedAt": "2026-05-09T08:26:35.042Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 258
+    },
+    "slug": "the-frame-level-leakage-trap-rethinking-evaluation-protocols-for-intrinsic"
+  },
+  {
+    "id": "2605.06473",
+    "title": "Engineering a driven-dissipative bath of altermagnetic quantum magnons for controlling classical dynamics of spins hosting spin waves, domain walls, or skyrmions",
+    "authors": "Felipe Reyes-Osorio, Branislav K. Nikolic",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-05-07T15:58:33Z",
+    "publishedFormatted": "May 7, 2026",
+    "subtitle": "Using quantum magnets to remotely control classical magnetic waves and patterns",
+    "summary": "Physicists have designed a way to control magnetic behavior in one material by attaching a quantum magnetic layer next to it. The quantum layer acts like a bath that damps and drives the classical magnetic material, creating new ways to tune how magnetic waves, domain walls, and skyrmions (tiny magnetic vortices) move and disappear. This could let engineers manipulate magnetic dynamics without direct electrical or magnetic contact.",
+    "whyItMatters": "Magnetic devices are central to data storage and computing, and most current approaches rely on direct control of the magnet itself. This technique offers a new handle for tuning magnetic behavior through an adjacent layer, potentially enabling more efficient or flexible designs for spintronic devices and magnonic circuits. It demonstrates a path to remotely shape how magnetic patterns propagate and annihilate, which matters for encoding and erasing information in next-generation magnetic memory.",
+    "fetchedAt": "2026-05-09T08:26:40.056Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 189
+    },
+    "slug": "engineering-a-driven-dissipative-bath-of-altermagnetic-quantum-magnons-for"
+  },
+  {
     "id": "2605.06623",
     "title": "MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems",
     "authors": "Zhexuan Wang, Xuebo Liu, Li Wang et al.",
