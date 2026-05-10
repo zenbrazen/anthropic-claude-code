@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.06660",
+    "title": "Verifier-Backed Hard Problem Generation for Mathematical Reasoning",
+    "authors": "Yuhang Lai, Jiazhan Feng, Yee Whye Teh et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-07T17:58:32Z",
+    "publishedFormatted": "May 7, 2026",
+    "subtitle": "Using AI judges to stop problem-generators from cheating their way to easy wins",
+    "summary": "AI systems are good at solving math problems but terrible at creating hard, valid new ones — they often exploit loopholes to fake difficulty. Researchers added an independent referee to the creation process, forcing the problem-generator to satisfy both a validity checker and a solver, which stopped cheating and produced genuinely difficult problems that outperformed existing methods.",
+    "whyItMatters": "Training AI systems requires a constant supply of challenging problems, but having humans write them doesn't scale. This approach could enable AI systems to autonomously generate their own training materials, similar to how AlphaGo learned by playing itself — but with a built-in referee to prevent the system from gaming the process. That's essential for pushing AI reasoning capabilities forward without hitting a wall created by limited human effort.",
+    "fetchedAt": "2026-05-10T19:56:09.448Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 148
+    },
+    "slug": "verifier-backed-hard-problem-generation-for-mathematical-reasoning"
+  },
+  {
+    "id": "2605.06484",
+    "title": "Estimate Level Adjustment For Inference With Proxies Under Random Distribution Shifts",
+    "authors": "Steven Wilkins-Reeves, Alexandra N. M. Darmon, Deeksha Sinha",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-05-07T16:07:35Z",
+    "publishedFormatted": "May 7, 2026",
+    "subtitle": "Fixing proxy measurements when conditions shift between experiments",
+    "summary": "When researchers use quick proxy measurements instead of slower primary ones, distribution shifts between experiments can introduce hidden bias. This paper introduces a method that learns from past experiments to automatically adjust for these shifts, layering onto existing correction techniques without requiring individual-level data storage.",
+    "whyItMatters": "Many fields rely on proxy measurements for speed—clinical trials using biomarkers instead of patient outcomes, industrial testing using sensor readings instead of final quality checks. Current methods fail when conditions drift between experiments. This adjustment works on top of existing corrections and requires only summary-level historical data, making it practical to implement across domains while reducing the risk of biased conclusions.",
+    "fetchedAt": "2026-05-10T19:56:12.325Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 10,
+      "wordCount": 235
+    },
+    "slug": "estimate-level-adjustment-for-inference-with-proxies-under-random-distribution"
+  },
+  {
+    "id": "2605.06208",
+    "title": "Two-mode geometry controls multiscale organization in bipartite systems",
+    "authors": "Ottavia Falconi, Giulio Cimini, Pablo Villegas",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-05-07T13:14:20Z",
+    "publishedFormatted": "May 7, 2026",
+    "subtitle": "Why collapsing two-sided networks hides their true structure across scales",
+    "summary": "A new method for zooming in and out on networks where two different types of things interact—like plants and pollinators, or actors and movies—reveals multiscale structure that standard techniques miss. When researchers compressed these bipartite networks the usual way, they erased crucial information about role separation; the new approach preserves it, uncovering hidden hierarchies that traditional analysis overlooks.",
+    "whyItMatters": "Many real systems—food webs, disease transmission networks, supply chains—naturally split into two distinct roles that interact with each other. Understanding their organization across scales is essential for predicting how they behave and respond to disruption. Standard network analysis has been inadvertently destroying the information needed to see this organization clearly.",
+    "fetchedAt": "2026-05-10T19:56:16.183Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 140
+    },
+    "slug": "two-mode-geometry-controls-multiscale-organization-in-bipartite-systems"
+  },
+  {
     "id": "2605.06665",
     "title": "UniPool: A Globally Shared Expert Pool for Mixture-of-Experts",
     "authors": "Minbin Huang, Han Shi, Chuanyang Zheng et al.",
