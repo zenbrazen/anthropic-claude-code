@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.08012",
+    "title": "Position: Mechanistic Interpretability Must Disclose Identification Assumptions for Causal Claims",
+    "authors": "Zezheng Lin, Fengming Liu",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-08T17:01:55Z",
+    "publishedFormatted": "May 8, 2026",
+    "subtitle": "Why AI researchers must be honest about what they can actually prove",
+    "summary": "A new audit finds that papers claiming to have decoded how neural networks work—using causal language like \"circuits\" and \"mediators\"—almost never explicitly state the assumptions required to make those causal claims valid. The researchers checked 10 major papers and found none had a dedicated section disclosing identification assumptions, even though testing a system's behavior (validation) is fundamentally different from proving causation. The authors propose a simple fix: researchers should openly declare whether a claim is causal, name their identification strategy, list their assumptions, and explain what breaks if those assumptions fail.",
+    "whyItMatters": "Mechanistic interpretability is increasingly used to understand and build safer AI systems. If researchers claim to have found what causes a neural network's behavior without disclosing their hidden assumptions, downstream work and safety decisions may rest on unfounded causal claims. Adopting explicit disclosure would make it immediately clear which interpretability findings are solid evidence versus speculative, helping the field avoid confidently building on weak foundations.",
+    "fetchedAt": "2026-05-11T10:38:13.434Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 10,
+      "wordCount": 125
+    },
+    "slug": "position-mechanistic-interpretability-must-disclose-identification-assumptions"
+  },
+  {
+    "id": "2605.08006",
+    "title": "Penalty-Based First-Order Methods for Bilevel Optimization with Minimax and Constrained Lower-Level Problems",
+    "authors": "Yiyang Shen, Yutian He, Weiran Wang et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-05-08T16:59:29Z",
+    "publishedFormatted": "May 8, 2026",
+    "subtitle": "Solving nested optimization problems where both levels play competing roles",
+    "summary": "Researchers developed new algorithms for a class of optimization problems where you're trying to optimize something that depends on the solution to another optimization problem—and both levels involve competing objectives rather than simple minimization. The method works without strong mathematical assumptions and achieves significantly faster performance than prior approaches, especially for constrained problems where existing methods were up to 1,000 times slower.",
+    "whyItMatters": "This type of nested optimization appears in machine learning applications like training robust AI models that resist adversarial attacks, game-playing systems, and fairness-aware machine learning. Faster algorithms mean these systems can be trained in hours instead of days, making it practical to deploy protective techniques that were previously too slow to be useful in real applications.",
+    "fetchedAt": "2026-05-11T10:38:16.864Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 174
+    },
+    "slug": "penalty-based-first-order-methods-for-bilevel-optimization-with-minimax-and"
+  },
+  {
+    "id": "2605.08071",
+    "title": "Vibe Econometrics and the Analysis Contract",
+    "authors": "Lydia Ashton",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-05-08T17:54:47Z",
+    "publishedFormatted": "May 8, 2026",
+    "subtitle": "Why AI-powered analysis hides bad assumptions better than humans do",
+    "summary": "AI tools that run statistical analyses can make flawed reasoning look polished and credible, even when the underlying assumptions are wrong. The problem isn't that AI creates new mistakes—economists have always made them—but that it packages weak analysis so convincingly and distributes it so fast that spotting the errors becomes much harder. The author proposes a pre-commitment framework that forces researchers to document their methods and define what would prove them wrong before running the analysis, not after.",
+    "whyItMatters": "As AI tools become standard for policy analysis, business forecasting, and academic research, faulty causal claims now spread with unprecedented speed and polish, making their errors harder to catch. When a formatted spreadsheet or polished chart is your only signal of validity, and recognizing problems requires expertise the AI workflow sidesteps, bad analysis can drive real decisions—from business strategy to public policy—before anyone spots the mistake. The proposed Analysis Contract creates an audit trail that forces rigor back into the process.",
+    "fetchedAt": "2026-05-11T10:38:20.780Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 282
+    },
+    "slug": "vibe-econometrics-and-the-analysis-contract"
+  },
+  {
     "id": "2605.06660",
     "title": "Verifier-Backed Hard Problem Generation for Mathematical Reasoning",
     "authors": "Yuhang Lai, Jiazhan Feng, Yee Whye Teh et al.",
