@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.10875",
+    "title": "Compute Where it Counts: Self Optimizing Language Models",
+    "authors": "Yash Akhauri, Mohamed S. Abdelfattah",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-11T17:27:15Z",
+    "publishedFormatted": "May 11, 2026",
+    "subtitle": "Letting AI models decide when to think harder about harder words",
+    "summary": "Language models waste computation on easy words and skimp on hard ones when using uniform processing budgets. Researchers built a lightweight decision-maker that watches the model's internal state and adjusts computational effort token-by-token—controlling attention, pruning, and precision on the fly. The system improved accuracy by up to 7.3% while using the same total compute as static approaches.",
+    "whyItMatters": "LLM inference is expensive and becoming a bottleneck for real-world deployment. If you can maintain quality while using less computation on easy passages and spend savings on genuinely difficult ones, you reduce latency and energy cost for every query—directly cutting the operational cost of running ChatGPT-scale systems. The approach works without retraining the base model, making it practical to add to existing systems.",
+    "fetchedAt": "2026-05-12T20:27:46.834Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 241
+    },
+    "slug": "compute-where-it-counts-self-optimizing-language-models"
+  },
+  {
+    "id": "2605.10486",
+    "title": "Manipulation, Insider Information, and Regulation in Leveraged Event-Linked Markets",
+    "authors": "Maksym Nechepurenko",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-05-11T12:44:29Z",
+    "publishedFormatted": "May 11, 2026",
+    "subtitle": "When prediction markets use borrowed money, who cheats and how to stop them",
+    "summary": "Prediction markets that let traders borrow money to bet create two completely different ways to cheat: manipulating the market price itself, or secretly influencing the real-world event being predicted. Borrowed money makes price manipulation easier but actually changes *whether* it's worth trying to manipulate the event—and across different jurisdictions, regulators have left gaps that savvy traders can exploit.",
+    "whyItMatters": "As prediction markets grow and add leverage features, platforms and regulators need to know which manipulation tactics actually work and which safeguards backfire. Without this roadmap, leverage could shift cheating from hard-to-detect price games to outcome manipulation that distorts real elections, financial forecasts, or sporting events—while traders park their money in whichever country's rules make cheating easiest.",
+    "fetchedAt": "2026-05-12T20:27:51.030Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 53,
+      "wordCount": 222
+    },
+    "slug": "manipulation-insider-information-and-regulation-in-leveraged-event-linked"
+  },
+  {
+    "id": "2605.10805",
+    "title": "Reasoning Is Not Free: Robust Adaptive Cost-Efficient Routing for LLM-as-a-Judge",
+    "authors": "Wenbo Zhang, Lijinghua Zhang, Liner Xiang et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-05-11T16:30:20Z",
+    "publishedFormatted": "May 11, 2026",
+    "subtitle": "When should AI judges actually think through their decisions?",
+    "summary": "Reasoning-capable AI judges dramatically improve accuracy on complex tasks like math and code verification, but waste computation on simpler evaluations—suggesting they should be deployed selectively, not everywhere. Researchers developed RACER, a system that automatically routes tasks to either reasoning or fast judges based on difficulty and cost, maintaining accuracy while staying within a fixed computing budget even when task types shift unexpectedly.",
+    "whyItMatters": "AI-as-a-judge systems are increasingly used to automatically grade student work, evaluate code, and validate outputs in production systems. Making these systems smarter about when to engage expensive reasoning directly cuts computational waste while maintaining accuracy—crucial for companies running these evaluations at scale where every percentage point of wasted compute multiplies across millions of judgments.",
+    "fetchedAt": "2026-05-12T20:27:54.717Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 153
+    },
+    "slug": "reasoning-is-not-free-robust-adaptive-cost-efficient-routing-for-llm-as-a-judge"
+  },
+  {
     "id": "2605.10917",
     "title": "Optimal and Scalable MAPF via Multi-Marginal Optimal Transport and Schrödinger Bridges",
     "authors": "Usman A. Khan, Joseph W. Durham",

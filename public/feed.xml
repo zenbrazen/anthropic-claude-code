@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 09:39:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 20:27:54 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Compute Where it Counts: Self Optimizing Language Models</title>
+      <link>https://paperplaine.com/papers/compute-where-it-counts-self-optimizing-language-models</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/compute-where-it-counts-self-optimizing-language-models</guid>
+      <pubDate>Mon, 11 May 2026 17:27:15 GMT</pubDate>
+      <author>Yash Akhauri, Mohamed S. Abdelfattah</author>
+      <category>AI</category>
+      <description>Letting AI models decide when to think harder about harder words</description>
+      <content:encoded><![CDATA[<p><em>Letting AI models decide when to think harder about harder words</em></p><p>Language models waste computation on easy words and skimp on hard ones when using uniform processing budgets. Researchers built a lightweight decision-maker that watches the model's internal state and adjusts computational effort token-by-token—controlling attention, pruning, and precision on the fly. The system improved accuracy by up to 7.3% while using the same total compute as static approaches.</p><p><strong>Why it matters:</strong> LLM inference is expensive and becoming a bottleneck for real-world deployment. If you can maintain quality while using less computation on easy passages and spend savings on genuinely difficult ones, you reduce latency and energy cost for every query—directly cutting the operational cost of running ChatGPT-scale systems. The approach works without retraining the base model, making it practical to add to existing systems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Manipulation, Insider Information, and Regulation in Leveraged Event-Linked Markets</title>
+      <link>https://paperplaine.com/papers/manipulation-insider-information-and-regulation-in-leveraged-event-linked</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/manipulation-insider-information-and-regulation-in-leveraged-event-linked</guid>
+      <pubDate>Mon, 11 May 2026 12:44:29 GMT</pubDate>
+      <author>Maksym Nechepurenko</author>
+      <category>Economics</category>
+      <description>When prediction markets use borrowed money, who cheats and how to stop them</description>
+      <content:encoded><![CDATA[<p><em>When prediction markets use borrowed money, who cheats and how to stop them</em></p><p>Prediction markets that let traders borrow money to bet create two completely different ways to cheat: manipulating the market price itself, or secretly influencing the real-world event being predicted. Borrowed money makes price manipulation easier but actually changes *whether* it's worth trying to manipulate the event—and across different jurisdictions, regulators have left gaps that savvy traders can exploit.</p><p><strong>Why it matters:</strong> As prediction markets grow and add leverage features, platforms and regulators need to know which manipulation tactics actually work and which safeguards backfire. Without this roadmap, leverage could shift cheating from hard-to-detect price games to outcome manipulation that distorts real elections, financial forecasts, or sporting events—while traders park their money in whichever country's rules make cheating easiest.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Reasoning Is Not Free: Robust Adaptive Cost-Efficient Routing for LLM-as-a-Judge</title>
+      <link>https://paperplaine.com/papers/reasoning-is-not-free-robust-adaptive-cost-efficient-routing-for-llm-as-a-judge</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/reasoning-is-not-free-robust-adaptive-cost-efficient-routing-for-llm-as-a-judge</guid>
+      <pubDate>Mon, 11 May 2026 16:30:20 GMT</pubDate>
+      <author>Wenbo Zhang, Lijinghua Zhang, Liner Xiang et al.</author>
+      <category>Statistics</category>
+      <description>When should AI judges actually think through their decisions?</description>
+      <content:encoded><![CDATA[<p><em>When should AI judges actually think through their decisions?</em></p><p>Reasoning-capable AI judges dramatically improve accuracy on complex tasks like math and code verification, but waste computation on simpler evaluations—suggesting they should be deployed selectively, not everywhere. Researchers developed RACER, a system that automatically routes tasks to either reasoning or fast judges based on difficulty and cost, maintaining accuracy while staying within a fixed computing budget even when task types shift unexpectedly.</p><p><strong>Why it matters:</strong> AI-as-a-judge systems are increasingly used to automatically grade student work, evaluate code, and validate outputs in production systems. Making these systems smarter about when to engage expensive reasoning directly cuts computational waste while maintaining accuracy—crucial for companies running these evaluations at scale where every percentage point of wasted compute multiplies across millions of judgments.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Optimal and Scalable MAPF via Multi-Marginal Optimal Transport and Schrödinger Bridges</title>
       <link>https://paperplaine.com/papers/optimal-and-scalable-mapf-via-multi-marginal-optimal-transport-and-schrodinger</link>
