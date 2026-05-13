@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.12471",
+    "title": "KV-Fold: One-Step KV-Cache Recurrence for Long-Context Inference",
+    "authors": "Alireza Nadali, Patrick Cooper, Ashutosh Trivedi et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-12T17:53:47Z",
+    "publishedFormatted": "May 12, 2026",
+    "subtitle": "How to run language models on massive texts without retraining them",
+    "summary": "Researchers showed that language models can process extremely long documents by treating their internal memory like a repeating chain—each chunk of text updates the previous one without needing any retraining. The method works perfectly on retrieval tasks across documents up to 128,000 tokens long (roughly 100,000 words) on standard hardware, maintaining accuracy even through over 500 processing steps.",
+    "whyItMatters": "Current language models break down on very long documents because they run out of memory. KV-Fold solves this without requiring expensive retraining or architectural redesigns—it works immediately on existing models. This makes it practical to search through massive documents, analyze long books, or process extended conversations on ordinary GPUs, expanding what these models can handle without slowing them down or requiring specialist infrastructure.",
+    "fetchedAt": "2026-05-13T20:28:33.655Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 12,
+      "wordCount": 261
+    },
+    "slug": "kv-fold-one-step-kv-cache-recurrence-for-long-context-inference"
+  },
+  {
+    "id": "2605.12202",
+    "title": "Cavity shape reconstruction with a homogeneous Robin condition via a constrained coupled complex boundary method with ADMM",
+    "authors": "Mustapha Essahraoui, El Mehdi Cherrat, Lekbir Afraites et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-05-12T14:42:35Z",
+    "publishedFormatted": "May 12, 2026",
+    "subtitle": "Finding hidden boundaries inside objects using partial measurement data",
+    "summary": "Researchers developed a new mathematical method to reconstruct the shape of an unknown internal or hidden boundary in an object when they can only measure conditions on the accessible outer surface. The technique converts the problem into a complex-valued mathematical framework and uses an optimization algorithm to find the boundary shape that best matches the measured data, even when measurements are noisy or imperfect.",
+    "whyItMatters": "This could improve medical imaging (like ultrasound or tomography) where doctors need to identify internal boundaries or detect cavities without full access to the object. It also applies to materials testing and nondestructive inspection, where engineers need to locate internal flaws or structural features by measuring only from the surface. The constrained optimization approach makes the method more robust when real-world measurements contain errors.",
+    "fetchedAt": "2026-05-13T20:28:37.804Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 210
+    },
+    "slug": "cavity-shape-reconstruction-with-a-homogeneous-robin-condition-via-a"
+  },
+  {
+    "id": "2605.11423",
+    "title": "A Validated Volatility-Volume-Gap Classifier for Regime Identification in MNQ Intraday Data",
+    "authors": "Mathias Mesfin",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-05-12T02:17:32Z",
+    "publishedFormatted": "May 12, 2026",
+    "subtitle": "Why a promising market pattern fails when real trading costs are applied",
+    "summary": "A researcher built a system to identify unusual trading days in Nasdaq futures by looking at three pre-market signals: early trading moves, overnight price gaps, and abnormal opening volume. The system successfully identified days with distinct patterns—mornings that trended one way, then reversed in the afternoon—but when tested as actual trading strategies with realistic costs and fees, every approach lost money or became inconsistent year to year.",
+    "whyItMatters": "This work demonstrates a common trap in financial research: statistical patterns that look real on paper often vanish once you account for transaction costs and the practical constraints of real trading. For traders and investors evaluating new trading ideas, it shows why passing academic tests is necessary but not sufficient—a strategy must also survive the friction of actual markets to be worth implementing.",
+    "fetchedAt": "2026-05-13T20:28:41.945Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 138
+    },
+    "slug": "a-validated-volatility-volume-gap-classifier-for-regime-identification-in-mnq"
+  },
+  {
     "id": "2605.12495",
     "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation in UMMs via Decompositional Verifiable Reward",
     "authors": "Runhui Huang, Jie Wu, Rui Yang et al.",
