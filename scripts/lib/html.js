@@ -386,6 +386,24 @@ const CSS = `
     .col-divider { display: none; }
     .entry-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
     .pagination { flex-direction: column; gap: 16px; align-items: center; }
+    .tagline-break { display: block; }
+    .mobile-stats {
+      display: flex; justify-content: space-around;
+      padding: 24px 0; margin-bottom: 8px;
+      border-top: 1px solid var(--rule); border-bottom: 1px dotted var(--muted);
+    }
+  }
+  .mobile-stats { display: none; }
+  .mobile-stats-stat { text-align: center; }
+  .mobile-stats-num {
+    display: block; font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800; font-size: 28px; line-height: 1;
+    color: var(--ink); font-variation-settings: 'opsz' 96;
+  }
+  .mobile-stats-label {
+    display: block; margin-top: 4px;
+    font-family: 'Newsreader', serif; font-style: italic;
+    font-size: 12px; line-height: 1.35; color: var(--muted);
   }
 `;
 
@@ -403,7 +421,17 @@ function buildSidebarHTML(allPapers) {
   return `<aside class="site-sidebar" aria-label="Site statistics">${stat(total, 'Total Posts')}${stat(today, 'New Posts Today')}${stat(month, 'New Posts This Month')}</aside>`;
 }
 
-function buildPage({ title, description, canonical, prevUrl = null, nextUrl = null, jsonLd, activeSlug, ogType = 'website', sidebarHTML = '', mainHTML }) {
+function buildMobileStatsHTML(allPapers) {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const monthStr = new Date().toISOString().slice(0, 7);
+  const total = allPapers.length;
+  const today = allPapers.filter(p => (p.fetchedAt || '').startsWith(todayStr)).length;
+  const month = allPapers.filter(p => (p.fetchedAt || '').startsWith(monthStr)).length;
+  const stat = (num, label) => `<div class="mobile-stats-stat"><span class="mobile-stats-num">${num}</span><span class="mobile-stats-label">${label}</span></div>`;
+  return `<div class="mobile-stats" aria-label="Site statistics">${stat(total, 'Total Posts')}${stat(today, 'New Today')}${stat(month, 'This Month')}</div>`;
+}
+
+function buildPage({ title, description, canonical, prevUrl = null, nextUrl = null, jsonLd, activeSlug, ogType = 'website', sidebarHTML = '', mobileStatsHTML = '', mainHTML }) {
   const navLinks = CATEGORIES.map(cat => {
     const active = cat.slug === activeSlug ? ' class="active"' : '';
     return `<a href="/${cat.slug}"${active}>${escapeHtml(cat.label)}</a>`;
@@ -465,7 +493,7 @@ ${sidebarHTML}
         <span class="letter">P</span><span class="letter">L</span><span class="letter letter--grey">A</span><span class="letter letter--grey">I</span><span class="letter">N</span><span class="letter">E</span>
       </a>
     </h1>
-    <p class="tagline">Fresh research, simply explained. Updates twice daily.</p>
+    <p class="tagline">Fresh research, simply explained.<span class="tagline-break"> Updates twice daily.</span></p>
   </header>
   <nav class="nav" aria-label="Categories">
     ${navLinks}
@@ -475,6 +503,7 @@ ${sidebarHTML}
     ${mainHTML}
   </main>
   <footer class="site-footer">
+    ${mobileStatsHTML}
     <nav class="footer-nav" aria-label="Site links">
       <a href="/about">About/Contact</a>
       <a href="/privacy">Privacy</a>
@@ -552,7 +581,7 @@ function renderPagination(page, totalPages, baseUrl) {
   </nav>`;
 }
 
-export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = null, baseUrl = '', sidebarHTML = '' } = {}) {
+export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = null, baseUrl = '', sidebarHTML = '', mobileStatsHTML = '' } = {}) {
   const meta = getPageMeta(page, totalPages, activeSlug);
   const jsonLd = getJsonLd(papers, meta, page, totalPages, activeSlug);
 
@@ -576,11 +605,12 @@ export function generateHTML(papers, { page = 1, totalPages = 1, activeSlug = nu
     activeSlug,
     ogType: 'website',
     sidebarHTML,
+    mobileStatsHTML,
     mainHTML: entriesHTML + paginationHTML,
   });
 }
 
-export function generatePaperHTML(paper, sidebarHTML = '') {
+export function generatePaperHTML(paper, sidebarHTML = '', mobileStatsHTML = '') {
   const cat = CATEGORIES.find(c => c.label === paper.categoryLabel);
   const description = truncateDesc(paper.summary);
   const canonical = `${DOMAIN}/papers/${paper.slug}`;
@@ -621,6 +651,7 @@ export function generatePaperHTML(paper, sidebarHTML = '') {
     activeSlug: cat?.slug ?? null,
     ogType: 'article',
     sidebarHTML,
+    mobileStatsHTML,
     mainHTML: backLinks + renderEntry(paper, true, { detail: true }),
   });
 }
@@ -702,7 +733,7 @@ ${recentTitles}
 `;
 }
 
-function generateSubscribeHTML(sidebarHTML = '') {
+function generateSubscribeHTML(sidebarHTML = '', mobileStatsHTML = '') {
   const mainHTML = `
   <div class="subscribe-page">
     <h2 class="about-heading">Subscribe</h2>
@@ -731,11 +762,12 @@ function generateSubscribeHTML(sidebarHTML = '') {
     jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Subscribe — Paper Plaine', url: `${DOMAIN}/subscribe` }),
     activeSlug: null,
     sidebarHTML,
+    mobileStatsHTML,
     mainHTML,
   });
 }
 
-function generateSubscribedHTML(sidebarHTML = '') {
+function generateSubscribedHTML(sidebarHTML = '', mobileStatsHTML = '') {
   const mainHTML = `
   <div class="subscribe-page">
     <h2 class="about-heading">Subscribed!</h2>
@@ -756,11 +788,12 @@ function generateSubscribedHTML(sidebarHTML = '') {
     jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Subscribed! — Paper Plaine', url: `${DOMAIN}/subscribed` }),
     activeSlug: null,
     sidebarHTML,
+    mobileStatsHTML,
     mainHTML,
   });
 }
 
-function generateTermsHTML(sidebarHTML = '') {
+function generateTermsHTML(sidebarHTML = '', mobileStatsHTML = '') {
   const mainHTML = `
   <article class="about-page">
     <h2 class="about-heading">Terms of Use</h2>
@@ -798,11 +831,12 @@ function generateTermsHTML(sidebarHTML = '') {
     jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Terms of Use — Paper Plaine', url: `${DOMAIN}/terms` }),
     activeSlug: null,
     sidebarHTML,
+    mobileStatsHTML,
     mainHTML,
   });
 }
 
-function generatePrivacyHTML(sidebarHTML = '') {
+function generatePrivacyHTML(sidebarHTML = '', mobileStatsHTML = '') {
   const mainHTML = `
   <article class="about-page">
     <h2 class="about-heading">Privacy Policy</h2>
@@ -849,11 +883,12 @@ function generatePrivacyHTML(sidebarHTML = '') {
     jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebPage', name: 'Privacy Policy — Paper Plaine', url: `${DOMAIN}/privacy` }),
     activeSlug: null,
     sidebarHTML,
+    mobileStatsHTML,
     mainHTML,
   });
 }
 
-function generateAboutHTML(sidebarHTML = '') {
+function generateAboutHTML(sidebarHTML = '', mobileStatsHTML = '') {
   const mainHTML = `
   <article class="about-page">
     <h2 class="about-heading">About / Contact</h2>
@@ -875,6 +910,7 @@ function generateAboutHTML(sidebarHTML = '') {
     jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About — Paper Plaine', url: `${DOMAIN}/about` }),
     activeSlug: null,
     sidebarHTML,
+    mobileStatsHTML,
     mainHTML,
   });
 }
@@ -891,12 +927,13 @@ export async function generateSite(allPapers, publicDir) {
   }
 
   const sidebarHTML = buildSidebarHTML(allPapers);
+  const mobileStatsHTML = buildMobileStatsHTML(allPapers);
 
   // Archive — paginated all-papers view
   const totalPages = Math.max(1, Math.ceil(allPapers.length / PAPERS_PER_PAGE));
   for (let page = 1; page <= totalPages; page++) {
     const slice = allPapers.slice((page - 1) * PAPERS_PER_PAGE, page * PAPERS_PER_PAGE);
-    const html = generateHTML(slice, { page, totalPages, activeSlug: null, baseUrl: '', sidebarHTML });
+    const html = generateHTML(slice, { page, totalPages, activeSlug: null, baseUrl: '', sidebarHTML, mobileStatsHTML });
     if (page === 1) {
       await fs.writeFile(path.join(publicDir, 'index.html'), html);
       sitemapUrls.push({ url: DOMAIN, lastmod: today });
@@ -913,7 +950,7 @@ export async function generateSite(allPapers, publicDir) {
     const catPapers = allPapers.filter(p => p.categoryLabel === cat.label);
     const dir = path.join(publicDir, cat.slug);
     await fs.mkdir(dir, { recursive: true });
-    const html = generateHTML(catPapers, { page: 1, totalPages: 1, activeSlug: cat.slug, baseUrl: `/${cat.slug}`, sidebarHTML });
+    const html = generateHTML(catPapers, { page: 1, totalPages: 1, activeSlug: cat.slug, baseUrl: `/${cat.slug}`, sidebarHTML, mobileStatsHTML });
     await fs.writeFile(path.join(dir, 'index.html'), html);
     sitemapUrls.push({ url: `${DOMAIN}/${cat.slug}`, lastmod: today });
   }
@@ -923,38 +960,38 @@ export async function generateSite(allPapers, publicDir) {
     if (!paper.slug) continue;
     const dir = path.join(publicDir, 'papers', paper.slug);
     await fs.mkdir(dir, { recursive: true });
-    await fs.writeFile(path.join(dir, 'index.html'), generatePaperHTML(paper, sidebarHTML));
+    await fs.writeFile(path.join(dir, 'index.html'), generatePaperHTML(paper, sidebarHTML, mobileStatsHTML));
     sitemapUrls.push({ url: `${DOMAIN}/papers/${paper.slug}`, lastmod: today });
   }
 
   // About/Contact page
   const aboutDir = path.join(publicDir, 'about');
   await fs.mkdir(aboutDir, { recursive: true });
-  await fs.writeFile(path.join(aboutDir, 'index.html'), generateAboutHTML(sidebarHTML));
+  await fs.writeFile(path.join(aboutDir, 'index.html'), generateAboutHTML(sidebarHTML, mobileStatsHTML));
   sitemapUrls.push({ url: `${DOMAIN}/about`, lastmod: today });
 
   // Privacy page
   const privacyDir = path.join(publicDir, 'privacy');
   await fs.mkdir(privacyDir, { recursive: true });
-  await fs.writeFile(path.join(privacyDir, 'index.html'), generatePrivacyHTML(sidebarHTML));
+  await fs.writeFile(path.join(privacyDir, 'index.html'), generatePrivacyHTML(sidebarHTML, mobileStatsHTML));
   sitemapUrls.push({ url: `${DOMAIN}/privacy`, lastmod: today });
 
   // Terms page
   const termsDir = path.join(publicDir, 'terms');
   await fs.mkdir(termsDir, { recursive: true });
-  await fs.writeFile(path.join(termsDir, 'index.html'), generateTermsHTML(sidebarHTML));
+  await fs.writeFile(path.join(termsDir, 'index.html'), generateTermsHTML(sidebarHTML, mobileStatsHTML));
   sitemapUrls.push({ url: `${DOMAIN}/terms`, lastmod: today });
 
   // Subscribe page
   const subscribeDir = path.join(publicDir, 'subscribe');
   await fs.mkdir(subscribeDir, { recursive: true });
-  await fs.writeFile(path.join(subscribeDir, 'index.html'), generateSubscribeHTML(sidebarHTML));
+  await fs.writeFile(path.join(subscribeDir, 'index.html'), generateSubscribeHTML(sidebarHTML, mobileStatsHTML));
   sitemapUrls.push({ url: `${DOMAIN}/subscribe`, lastmod: today });
 
   // Subscribed confirmation page
   const subscribedDir = path.join(publicDir, 'subscribed');
   await fs.mkdir(subscribedDir, { recursive: true });
-  await fs.writeFile(path.join(subscribedDir, 'index.html'), generateSubscribedHTML(sidebarHTML));
+  await fs.writeFile(path.join(subscribedDir, 'index.html'), generateSubscribedHTML(sidebarHTML, mobileStatsHTML));
   sitemapUrls.push({ url: `${DOMAIN}/subscribed`, lastmod: today });
 
   // sitemap.xml, robots.txt, llms.txt, feed.xml

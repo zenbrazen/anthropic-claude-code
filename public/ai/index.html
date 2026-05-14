@@ -283,6 +283,24 @@
     .col-divider { display: none; }
     .entry-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
     .pagination { flex-direction: column; gap: 16px; align-items: center; }
+    .tagline-break { display: block; }
+    .mobile-stats {
+      display: flex; justify-content: space-around;
+      padding: 24px 0; margin-bottom: 8px;
+      border-top: 1px solid var(--rule); border-bottom: 1px dotted var(--muted);
+    }
+  }
+  .mobile-stats { display: none; }
+  .mobile-stats-stat { text-align: center; }
+  .mobile-stats-num {
+    display: block; font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800; font-size: 28px; line-height: 1;
+    color: var(--ink); font-variation-settings: 'opsz' 96;
+  }
+  .mobile-stats-label {
+    display: block; margin-top: 4px;
+    font-family: 'Newsreader', serif; font-style: italic;
+    font-size: 12px; line-height: 1.35; color: var(--muted);
   }
 </style>
 </head>
@@ -315,7 +333,7 @@
         <span class="letter">P</span><span class="letter">L</span><span class="letter letter--grey">A</span><span class="letter letter--grey">I</span><span class="letter">N</span><span class="letter">E</span>
       </a>
     </h1>
-    <p class="tagline">Fresh research, simply explained. Updates twice daily.</p>
+    <p class="tagline">Fresh research, simply explained.<span class="tagline-break"> Updates twice daily.</span></p>
   </header>
   <nav class="nav" aria-label="Categories">
     <a href="/ai" class="active">AI</a>
@@ -1147,6 +1165,7 @@
   </article>
   </main>
   <footer class="site-footer">
+    <div class="mobile-stats" aria-label="Site statistics"><div class="mobile-stats-stat"><span class="mobile-stats-num">99</span><span class="mobile-stats-label">Total Posts</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">2</span><span class="mobile-stats-label">New Today</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">99</span><span class="mobile-stats-label">This Month</span></div></div>
     <nav class="footer-nav" aria-label="Site links">
       <a href="/about">About/Contact</a>
       <a href="/privacy">Privacy</a>
