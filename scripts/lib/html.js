@@ -376,6 +376,8 @@ const CSS = `
   }
   .footer-nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
+  .mobile-stats { display: none; }
+
   @media (max-width: 640px) {
     .page { padding: 32px 18px 60px; }
     body { font-size: 17px; }
@@ -393,7 +395,6 @@ const CSS = `
       border-top: 1px solid var(--rule); border-bottom: 1px dotted var(--muted);
     }
   }
-  .mobile-stats { display: none; }
   .mobile-stats-stat { text-align: center; }
   .mobile-stats-num {
     display: block; font-family: 'Bricolage Grotesque', sans-serif;
