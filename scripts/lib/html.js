@@ -35,16 +35,15 @@ export function escapeHtml(str) {
 }
 
 export function generateSlug(title, existingSlugs = new Set()) {
-  let base = title
+  const base = title
     .normalize('NFKD')
     .replace(/[̀-ͯ]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, ' ')
     .trim()
-    .replace(/\s+/g, '-');
-  if (base.length > 80) {
-    base = base.slice(0, 80).replace(/-[^-]*$/, '');
-  }
+    .split(/\s+/)
+    .slice(0, 6)
+    .join('-');
   if (!existingSlugs.has(base)) return base;
   let n = 2;
   while (existingSlugs.has(`${base}-${n}`)) n++;
