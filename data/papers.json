@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.15171",
+    "title": "Evidential Reasoning Advances Interpretable Real-World Disease Screening",
+    "authors": "Chenyu Lian, Hong-Yu Zhou, Jing Qin",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-14T17:56:07Z",
+    "publishedFormatted": "May 14, 2026",
+    "subtitle": "How AI disease screening learns from past cases to explain its decisions",
+    "summary": "A new AI system called EviScreen improves disease screening by retrieving similar cases from medical history and using them to explain its predictions. Rather than treating each scan in isolation, the system shows which past patients it learned from and highlights specific abnormal regions, making its reasoning transparent to doctors.",
+    "whyItMatters": "Doctors need to trust AI decisions about disease screening, especially when the stakes are high. By showing its work—pointing to specific abnormal regions and similar historical cases—EviScreen helps clinicians verify the AI's reasoning rather than accepting a black-box diagnosis. The system also catches more true cases at the sensitivity levels doctors need in practice.",
+    "fetchedAt": "2026-05-15T09:48:19.405Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 150
+    },
+    "slug": "evidential-reasoning-advances-interpretable-real-world"
+  },
+  {
+    "id": "2605.15168",
+    "title": "Text Knows What, Tables Know When: Clinical Timeline Reconstruction via Retrieval-Augmented Multimodal Alignment",
+    "authors": "Sayantan Kumar, Shahriar Noroozizadeh, Juyong Kim et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-05-14T17:55:27Z",
+    "publishedFormatted": "May 14, 2026",
+    "subtitle": "Using both patient notes and data tables to figure out when medical events actually happened",
+    "summary": "Researchers created a system that combines clinical notes with structured hospital records to pinpoint when medical events occurred in a patient's care, solving a common problem where narratives are detailed but vague on timing, while data tables are precise but incomplete. The approach improved accuracy by using notes to identify key events, then checking them against hospital database records to lock down exact dates and times. The method recovered nearly 35% of clinically important events that appeared in notes but were never recorded in the hospital's structured data.",
+    "whyItMatters": "Hospitals need accurate timelines to predict which patients are deteriorating—crucial for conditions like sepsis where hours matter. Current systems force doctors to choose between rich but fuzzy narratives or precise but gappy data tables. This method uses both, meaning clinicians get both the full picture of what happened to a patient and the exact timing of when it happened, improving risk prediction and care decisions.",
+    "fetchedAt": "2026-05-15T09:48:23.040Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 212
+    },
+    "slug": "text-knows-what-tables-know-when"
+  },
+  {
+    "id": "2605.12999",
+    "title": "Implicit Behavioral Decoding from Next-Step Spike Forecasts at Population Scale",
+    "authors": "John R. Minnick, Jesus Gonzalez-Ferrer, Kamran Hussain et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-05-13T04:55:03Z",
+    "publishedFormatted": "May 13, 2026",
+    "subtitle": "A single AI model reads both brain activity and animal decisions from neural recordings",
+    "summary": "Researchers trained a single AI model to forecast neural activity one step ahead and discovered it could simultaneously decode what a mouse was about to do—predicting its choice 75.7% of the time and which visual stimulus it saw 66.1% of the time. This dual capability emerged from learning to predict raw spike counts alone, without explicit behavioral training, and worked reliably after just 100–150 calibration trials at the start of each recording session.",
+    "whyItMatters": "Brain-computer interfaces need both prediction and readout, usually requiring separate models and extra computational overhead. This approach cuts that complexity in half while running fast enough for real-time closed-loop experiments on standard lab computers, making it practical for researchers developing neural prosthetics or studying decision-making in animal models.",
+    "fetchedAt": "2026-05-15T09:48:26.278Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 21,
+      "wordCount": 178
+    },
+    "slug": "implicit-behavioral-decoding-from-next-step"
+  },
+  {
     "id": "2605.13709",
     "title": "Children's English Reading Story Generation via Supervised Fine-Tuning of Compact LLMs with Controllable Difficulty and Safety",
     "authors": "Qian Shen, Fanghua Cao, Min Yao et al.",
