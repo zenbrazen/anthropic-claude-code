@@ -42,7 +42,7 @@ export function generateSlug(title, existingSlugs = new Set()) {
     .replace(/[^a-z0-9\s]/g, ' ')
     .trim()
     .split(/\s+/)
-    .slice(0, 6)
+    .slice(0, 4)
     .join('-');
   if (!existingSlugs.has(base)) return base;
   let n = 2;
