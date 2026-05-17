@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation — Paper Plaine</title>
-<meta name="description" content="Researchers built EntityBench, a standardized test for video-generation AI that measures whether systems can keep the same characters, objects, and…">
-<link rel="canonical" href="https://paperplaine.com/papers/entitybench-towards-entity-consistent">
+<title>RoSHAP: A Distributional Framework and Robust Metric for Stable Feature Attribution — Paper Plaine</title>
+<meta name="description" content="Machine learning models often rank features differently depending on random choices in training, making it hard to trust which factors actually matter.…">
+<link rel="canonical" href="https://paperplaine.com/papers/roshap-a-distributional-framework">
 
 
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Paper Plaine">
-<meta property="og:title" content="EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation — Paper Plaine">
-<meta property="og:description" content="Researchers built EntityBench, a standardized test for video-generation AI that measures whether systems can keep the same characters, objects, and…">
-<meta property="og:url" content="https://paperplaine.com/papers/entitybench-towards-entity-consistent">
+<meta property="og:title" content="RoSHAP: A Distributional Framework and Robust Metric for Stable Feature Attribution — Paper Plaine">
+<meta property="og:description" content="Machine learning models often rank features differently depending on random choices in training, making it hard to trust which factors actually matter.…">
+<meta property="og:url" content="https://paperplaine.com/papers/roshap-a-distributional-framework">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation — Paper Plaine">
-<meta name="twitter:description" content="Researchers built EntityBench, a standardized test for video-generation AI that measures whether systems can keep the same characters, objects, and…">
+<meta name="twitter:title" content="RoSHAP: A Distributional Framework and Robust Metric for Stable Feature Attribution — Paper Plaine">
+<meta name="twitter:description" content="Machine learning models often rank features differently depending on random choices in training, making it hard to trust which factors actually matter.…">
 
 <!-- RSS autodiscovery -->
 <link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/entitybench-towards-entity-consistent#article","headline":"EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation","description":"Researchers built EntityBench, a standardized test for video-generation AI that measures whether systems can keep the same characters, objects, and locations consistent across long sequences of shots. The test, based on real TV episodes, reveals that existing systems struggle dramatically when characters reappear after long gaps, and a new memory-based approach (EntityMem) achieved significantly better character consistency than existing methods.","author":"Ruozhen He, Meng Wei, Ziyan Yang et al.","url":"https://arxiv.org/abs/2605.15199","datePublished":"2026-05-14T17:59:55Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/roshap-a-distributional-framework#article","headline":"RoSHAP: A Distributional Framework and Robust Metric for Stable Feature Attribution","description":"Machine learning models often rank features differently depending on random choices in training, making it hard to trust which factors actually matter. This paper introduces RoSHAP, a new method that accounts for this natural variation by treating feature importance as a distribution rather than a single number, and shows it identifies truly influential features more reliably than standard approaches.","author":"Lanxin Xiang, Liang Shi, Youhui Ye et al.","url":"https://arxiv.org/abs/2605.15154","datePublished":"2026-05-14T17:51:09Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -337,13 +337,13 @@
     <p class="tagline">Fresh research, simply explained.<span class="tagline-break"> Updates twice daily.</span></p>
   </header>
   <nav class="nav" aria-label="Categories">
-    <a href="/ai" class="active">AI</a>
+    <a href="/ai">AI</a>
     <a href="/comp-sci">Comp Sci</a>
     <a href="/physics">Physics</a>
     <a href="/math">Math</a>
     <a href="/biology">Biology</a>
     <a href="/finance">Finance</a>
-    <a href="/statistics">Statistics</a>
+    <a href="/statistics" class="active">Statistics</a>
     <a href="/engineering">Engineering</a>
     <a href="/economics">Economics</a>
     <div class="nav-bottom">
@@ -352,31 +352,31 @@
   </div>
   </nav>
   <main id="entries">
-    <div class="paper-back"><a href="/ai">← AI</a><a href="/">Archive</a></div>
+    <div class="paper-back"><a href="/statistics">← Statistics</a><a href="/">Archive</a></div>
   <article class="entry" style="border-bottom: 6px double var(--rule);">
     <div class="entry-meta">
-      <span class="category">Computer Science · AI</span>
-      <span>May 16, 2026</span>
+      <span class="category">Statistics</span>
+      <span>May 17, 2026</span>
     </div>
-    <h2 class="entry-title">EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation</h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Testing AI&#39;s ability to keep characters consistent across long video sequences</p>
+    <h2 class="entry-title">RoSHAP: A Distributional Framework and Robust Metric for Stable Feature Attribution</h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Making machine learning explanations reliable across different data splits</p>
     <p class="byline">
-      Ruozhen He, Meng Wei, Ziyan Yang et al.
-      <br><span class="arxiv-id">arXiv:2605.15199</span>
+      Lanxin Xiang, Liang Shi, Youhui Ye et al.
+      <br><span class="arxiv-id">arXiv:2605.15154</span>
     </p>
     <div class="entry-body">
       <div class="col-summary">
         <div class="section-label">Summary</div>
-        <p class="summary-text">Researchers built EntityBench, a standardized test for video-generation AI that measures whether systems can keep the same characters, objects, and locations consistent across long sequences of shots. The test, based on real TV episodes, reveals that existing systems struggle dramatically when characters reappear after long gaps, and a new memory-based approach (EntityMem) achieved significantly better character consistency than existing methods.</p>
+        <p class="summary-text">Machine learning models often rank features differently depending on random choices in training, making it hard to trust which factors actually matter. This paper introduces RoSHAP, a new method that accounts for this natural variation by treating feature importance as a distribution rather than a single number, and shows it identifies truly influential features more reliably than standard approaches.</p>
       </div>
       <div class="col-divider"></div>
       <div class="col-matters">
         <div class="section-label">Why it matters</div>
-        <p class="matters-text">Generating coherent multi-scene videos is a step toward AI that can create longer, more complex visual stories — from TV-like narratives to advertisements and filmmaking. Right now, when a character disappears from frame for several minutes then reappears, AI systems often render them looking completely different, breaking the viewer&#39;s experience. EntityBench gives researchers a concrete way to measure and improve this problem, accelerating progress toward AI that can maintain visual continuity over extended sequences.</p>
+        <p class="matters-text">When doctors, banks, or regulators rely on machine learning to make decisions, they need to know which factors the model actually used—not just a ranking that changes every time the model is retrained. RoSHAP makes those explanations stable and trustworthy. The method also lets companies use fewer data inputs while keeping the same prediction accuracy, reducing complexity without sacrificing performance.</p>
       </div>
     </div>
     <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2605.15199" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <a href="https://arxiv.org/abs/2605.15154" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
       <span class="stamp">Posted on arXiv · May 14, 2026</span>
     </div>
   </article>
