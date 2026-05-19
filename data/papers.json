@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.18745",
+    "title": "SURGE: Approximation-free Training Free Particle Filter for Diffusion Surrogate",
+    "authors": "Lifu Wei, Yinuo Ren, Naichen Shi et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-18T17:59:00Z",
+    "publishedFormatted": "May 18, 2026",
+    "subtitle": "Guiding AI image generation without computing expensive gradients",
+    "summary": "Researchers created URGE, a new method that improves how diffusion models (AI systems that generate images) follow instructions at the moment of creation—without requiring expensive mathematical calculations. The method assigns lightweight weights to different generation paths and occasionally filters out the worst ones, producing better results than existing techniques while being simpler and faster to run.",
+    "whyItMatters": "Diffusion models power popular image generators like DALL-E and Stable Diffusion. Speeding up their guidance step without sacrificing quality means these tools can run faster and cheaper, making them more accessible. The gradient-free approach also opens these methods to applications where computing gradients is difficult or impossible.",
+    "fetchedAt": "2026-05-19T10:37:11.363Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 157
+    },
+    "slug": "surge-approximation-free-training"
+  },
+  {
+    "id": "2605.18552",
+    "title": "Protein Fold Classification at Scale: Benchmarking and Pretraining",
+    "authors": "Dexiong Chen, Andrei Manolache, Mathias Niepert et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-05-18T15:32:34Z",
+    "publishedFormatted": "May 18, 2026",
+    "subtitle": "A faster way to sort proteins by shape using less computing power",
+    "summary": "Researchers created a large, high-quality benchmark dataset and a new training method that can classify protein structures more efficiently than existing approaches. The new method, called Masked Invariant Autoencoders, works by hiding up to 90% of a protein's structure during training and learning to reconstruct it—a strategy that scales better than current methods while achieving superior performance on protein fold classification tasks.",
+    "whyItMatters": "Proteins fold into thousands of distinct shapes, and each shape determines what the protein does in living cells. Faster, cheaper ways to classify these folds could accelerate drug discovery, help predict how mutations affect disease, and make protein research accessible to labs without massive computing budgets. The openly shared benchmark also gives the field a common standard for measuring progress.",
+    "fetchedAt": "2026-05-19T10:37:15.108Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 166
+    },
+    "slug": "protein-fold-classification-at"
+  },
+  {
+    "id": "2605.18704",
+    "title": "Learned Memory Attenuation in Sage-Husa Kalman Filters for Robust UAV State Estimation",
+    "authors": "Kenan Majewski, Marcin Żugaj",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-05-18T17:38:13Z",
+    "publishedFormatted": "May 18, 2026",
+    "subtitle": "Teaching drones to track themselves better when sensors fail",
+    "summary": "Drones lose track of their position when sensors cut out or vibrate unpredictably—problems that stumped earlier tracking systems. Researchers built a learning-based filter that adapts to these disruptions in real time, using a neural network to adjust how much it trusts past measurements versus new sensor data. On real drone flights, it stayed accurate longer than standard methods when sensors went dark.",
+    "whyItMatters": "Drones operating in cluttered or noisy environments—industrial inspection, search and rescue in cities, GPS-denied zones—depend on reliable position estimates to avoid crashing. This filter extends how long a drone can navigate safely without external signals, and keeps it oriented during the messy transition when it must switch from sensor data to pure dead reckoning. That directly improves safety and mission success in real-world conditions where classical filters fail.",
+    "fetchedAt": "2026-05-19T10:37:18.837Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 49,
+      "wordCount": 179
+    },
+    "slug": "learned-memory-attenuation-in"
+  },
+  {
     "id": "2605.16230",
     "title": "Universal Magnetic Structure Prediction from Atomic Coordinates with Near-Experimental Accuracy",
     "authors": "Abhijatmedhi Chotrattanapituk, Ryotaro Okabe, Eunbi Rha et al.",

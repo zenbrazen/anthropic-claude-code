@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2026 20:22:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 10:37:18 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SURGE: Approximation-free Training Free Particle Filter for Diffusion Surrogate</title>
+      <link>https://paperplaine.com/papers/surge-approximation-free-training</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/surge-approximation-free-training</guid>
+      <pubDate>Mon, 18 May 2026 17:59:00 GMT</pubDate>
+      <author>Lifu Wei, Yinuo Ren, Naichen Shi et al.</author>
+      <category>AI</category>
+      <description>Guiding AI image generation without computing expensive gradients</description>
+      <content:encoded><![CDATA[<p><em>Guiding AI image generation without computing expensive gradients</em></p><p>Researchers created URGE, a new method that improves how diffusion models (AI systems that generate images) follow instructions at the moment of creation—without requiring expensive mathematical calculations. The method assigns lightweight weights to different generation paths and occasionally filters out the worst ones, producing better results than existing techniques while being simpler and faster to run.</p><p><strong>Why it matters:</strong> Diffusion models power popular image generators like DALL-E and Stable Diffusion. Speeding up their guidance step without sacrificing quality means these tools can run faster and cheaper, making them more accessible. The gradient-free approach also opens these methods to applications where computing gradients is difficult or impossible.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Protein Fold Classification at Scale: Benchmarking and Pretraining</title>
+      <link>https://paperplaine.com/papers/protein-fold-classification-at</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/protein-fold-classification-at</guid>
+      <pubDate>Mon, 18 May 2026 15:32:34 GMT</pubDate>
+      <author>Dexiong Chen, Andrei Manolache, Mathias Niepert et al.</author>
+      <category>Biology</category>
+      <description>A faster way to sort proteins by shape using less computing power</description>
+      <content:encoded><![CDATA[<p><em>A faster way to sort proteins by shape using less computing power</em></p><p>Researchers created a large, high-quality benchmark dataset and a new training method that can classify protein structures more efficiently than existing approaches. The new method, called Masked Invariant Autoencoders, works by hiding up to 90% of a protein's structure during training and learning to reconstruct it—a strategy that scales better than current methods while achieving superior performance on protein fold classification tasks.</p><p><strong>Why it matters:</strong> Proteins fold into thousands of distinct shapes, and each shape determines what the protein does in living cells. Faster, cheaper ways to classify these folds could accelerate drug discovery, help predict how mutations affect disease, and make protein research accessible to labs without massive computing budgets. The openly shared benchmark also gives the field a common standard for measuring progress.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Learned Memory Attenuation in Sage-Husa Kalman Filters for Robust UAV State Estimation</title>
+      <link>https://paperplaine.com/papers/learned-memory-attenuation-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/learned-memory-attenuation-in</guid>
+      <pubDate>Mon, 18 May 2026 17:38:13 GMT</pubDate>
+      <author>Kenan Majewski, Marcin Żugaj</author>
+      <category>Engineering</category>
+      <description>Teaching drones to track themselves better when sensors fail</description>
+      <content:encoded><![CDATA[<p><em>Teaching drones to track themselves better when sensors fail</em></p><p>Drones lose track of their position when sensors cut out or vibrate unpredictably—problems that stumped earlier tracking systems. Researchers built a learning-based filter that adapts to these disruptions in real time, using a neural network to adjust how much it trusts past measurements versus new sensor data. On real drone flights, it stayed accurate longer than standard methods when sensors went dark.</p><p><strong>Why it matters:</strong> Drones operating in cluttered or noisy environments—industrial inspection, search and rescue in cities, GPS-denied zones—depend on reliable position estimates to avoid crashing. This filter extends how long a drone can navigate safely without external signals, and keeps it oriented during the messy transition when it must switch from sensor data to pure dead reckoning. That directly improves safety and mission success in real-world conditions where classical filters fail.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Universal Magnetic Structure Prediction from Atomic Coordinates with Near-Experimental Accuracy</title>
       <link>https://paperplaine.com/papers/universal-magnetic-structure-prediction</link>
