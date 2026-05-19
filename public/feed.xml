@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2026 10:37:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 20:27:32 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>General Preference Reinforcement Learning</title>
+      <link>https://paperplaine.com/papers/general-preference-reinforcement-learning</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/general-preference-reinforcement-learning</guid>
+      <pubDate>Mon, 18 May 2026 17:50:27 GMT</pubDate>
+      <author>Muhammad Umer, Muhammad Ahmed Mohsin, Ahsan Bilal et al.</author>
+      <category>AI</category>
+      <description>Training AI to excel at many types of tasks without gaming the system</description>
+      <content:encoded><![CDATA[<p><em>Training AI to excel at many types of tasks without gaming the system</em></p><p>A new training method called General Preference Reinforcement Learning (GPRL) lets AI models improve at open-ended tasks like writing and reasoning without collapsing into narrow reward-gaming behavior. The approach treats quality as multidimensional rather than a single score, and achieved 56.51% win rate on standard benchmarks while outperforming existing methods across multiple evaluation tests.</p><p><strong>Why it matters:</strong> Current AI training methods force a choice: you can get strong performance on verifiable tasks like math by optimizing a clear reward signal, but that same approach fails for open-ended generation and causes the model to exploit whichever dimension the reward metric is most sensitive to. GPRL closes this gap, meaning AI assistants could eventually handle both types of tasks well without needing separate training pipelines or developing exploitable behaviors that look good on paper but fail in real use.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Geometric Brownian motion with intermittent entries and exits</title>
+      <link>https://paperplaine.com/papers/geometric-brownian-motion-with</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/geometric-brownian-motion-with</guid>
+      <pubDate>Sun, 17 May 2026 07:20:30 GMT</pubDate>
+      <author>Suvam Pal, Viktor Stojkoski, Arnab Pal et al.</author>
+      <category>Economics</category>
+      <description>Why companies entering and leaving markets stabilize despite chaos</description>
+      <content:encoded><![CDATA[<p><em>Why companies entering and leaving markets stabilize despite chaos</em></p><p>When new firms constantly enter a market while others fail, the overall system eventually settles into a predictable pattern—even though entry and exit rates are unequal. The research identifies three distinct phases in how market populations evolve and discovers that there's an optimal exit rate that minimizes how long it takes for the market to reach major milestones, showing that firm turnover isn't just random turbulence but can be deliberately shaped.</p><p><strong>Why it matters:</strong> Economic policymakers and investors make decisions based on how markets will evolve over time. This model explains real-world patterns in firm formation, job flows, and income distribution by showing that entry-exit dynamics have predictable structure and can be optimized. Companies and governments can use these insights to design policies that steer markets toward desired outcomes rather than treating entry and exit as uncontrollable forces.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Can Adaptive Gradient Methods Converge under Heavy-Tailed Noise? A Case Study of AdaGrad</title>
+      <link>https://paperplaine.com/papers/can-adaptive-gradient-methods</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/can-adaptive-gradient-methods</guid>
+      <pubDate>Mon, 18 May 2026 17:30:15 GMT</pubDate>
+      <author>Zijian Liu</author>
+      <category>Statistics</category>
+      <description>Why popular AI optimizers work even when math predicts they should fail</description>
+      <content:encoded><![CDATA[<p><em>Why popular AI optimizers work even when math predicts they should fail</em></p><p>AdaGrad, a foundational algorithm used in machine learning optimization, can successfully navigate noisy training environments where extreme outlier values occur—without needing extra safeguards like gradient clipping that other methods require. This finding applies when the noise follows heavy-tailed distributions and the algorithm automatically adapts to the severity of the problem without advance warning.</p><p><strong>Why it matters:</strong> Popular optimizers like Adam and AdamW are built on AdaGrad's principles, so understanding why AdaGrad works under chaotic, noisy training conditions explains why these widely-used tools perform reliably in practice. This closes a gap between theory and practice: machine learning practitioners have long observed these algorithms working well on messy real-world tasks, but the math didn't fully explain why until now.</p>]]></content:encoded>
+    </item>
     <item>
       <title>SURGE: Approximation-free Training Free Particle Filter for Diffusion Surrogate</title>
       <link>https://paperplaine.com/papers/surge-approximation-free-training</link>
