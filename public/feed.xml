@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2026 10:39:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 20:49:11 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Quantifying Hyperparameter Transfer and the Importance of Embedding Layer Learning Rate</title>
+      <link>https://paperplaine.com/papers/quantifying-hyperparameter-transfer-and</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/quantifying-hyperparameter-transfer-and</guid>
+      <pubDate>Wed, 20 May 2026 17:59:40 GMT</pubDate>
+      <author>Dayal Singh Kalra, Maissam Barkeshli</author>
+      <category>AI</category>
+      <description>Why one simple tweak to embedding layer training speeds up AI model scaling</description>
+      <content:encoded><![CDATA[<p><em>Why one simple tweak to embedding layer training speeds up AI model scaling</em></p><p>Training large language models requires finding the right hyperparameters—settings like learning rates—at small scale and then scaling them up. This paper reveals that a popular technique called Maximal Update Parameterization (μP) works so well primarily because it increases the learning rate for one specific component: the embedding layer. Simply boosting the embedding layer's learning rate in standard training setups by a factor equal to model width produces the same scaling benefits, suggesting the real advantage isn't deep theory but rather fixing a training bottleneck.</p><p><strong>Why it matters:</strong> Training large language models is expensive and time-consuming. If you can nail hyperparameters on a small, cheap model and confidently scale them to a massive one, you save weeks of computation and millions in hardware costs. This work shows practitioners exactly which knob to turn—the embedding layer learning rate—to make that transfer reliable, potentially cutting wasted training runs and accelerating AI development timelines.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>SAGA: A Sequence-Adaptive Generative Architecture for Multi-Horizon Probabilistic Forecasting with Adaptive Temporal Conformal Prediction</title>
+      <link>https://paperplaine.com/papers/saga-a-sequence-adaptive</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/saga-a-sequence-adaptive</guid>
+      <pubDate>Mon, 18 May 2026 18:35:20 GMT</pubDate>
+      <author>Gustav Olaf Yunus Laitinen-Fredriksson Lundström-Imanov, Hafize Gonca Cömert</author>
+      <category>Economics</category>
+      <description>Better forecasts of lifetime earnings for government economic planning</description>
+      <content:encoded><![CDATA[<p><em>Better forecasts of lifetime earnings for government economic planning</em></p><p>A new AI model called SAGA predicts how much money people will earn over their entire working lives far more accurately than the methods used by finance ministries and central banks today. Tested on Swedish tax records spanning three decades and over 2 million people, it cuts prediction errors by nearly 38 percent at the twenty-year mark and produces reliable confidence intervals around its forecasts.</p><p><strong>Why it matters:</strong> Governments use lifetime earnings predictions to design pension systems, tax policy, and welfare programs. Current methods miss real patterns in how earnings actually change over time, leading to inaccurate estimates of inequality and insufficient planning for retirement security. SAGA's 31–38 percent improvement in accuracy could help policymakers better anticipate future costs and design fairer systems—and the researchers released their model publicly so other governments can test it on their own data.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Neural Negative Binomial Regression for Weekly Seismicity Forecasting: Per-Cell Dispersion Estimation and Tail Risk Assessment</title>
+      <link>https://paperplaine.com/papers/neural-negative-binomial-regression</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/neural-negative-binomial-regression</guid>
+      <pubDate>Wed, 20 May 2026 17:27:27 GMT</pubDate>
+      <author>Alim Igilik</author>
+      <category>Statistics</category>
+      <description>Better earthquake forecasts by mapping how shaking clusters differ across regions</description>
+      <content:encoded><![CDATA[<p><em>Better earthquake forecasts by mapping how shaking clusters differ across regions</em></p><p>Standard earthquake forecasting assumes seismic activity follows the same random pattern everywhere, but analysis of Central Asian earthquakes from 2010–2024 overwhelmingly rejects this assumption. A new neural network model called EarthquakeNet estimates how clustering patterns vary location-by-location, improving weekly forecasts by 8.6 percent overall and 12.5 percent for high-magnitude weeks when accurate predictions matter most.</p><p><strong>Why it matters:</strong> Earthquake early-warning systems guide emergency response and evacuation decisions. Better forecasts of which regions will experience intense clustering in a given week could help authorities pre-position resources and issue more reliable alerts. The model's strongest gains come in predicting extreme weeks (5+ earthquakes), exactly when forecasts are hardest to make and most consequential for public safety.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling</title>
       <link>https://paperplaine.com/papers/agent-jit-compilation-for</link>

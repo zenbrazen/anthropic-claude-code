@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.21486",
+    "title": "Quantifying Hyperparameter Transfer and the Importance of Embedding Layer Learning Rate",
+    "authors": "Dayal Singh Kalra, Maissam Barkeshli",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-20T17:59:40Z",
+    "publishedFormatted": "May 20, 2026",
+    "subtitle": "Why one simple tweak to embedding layer training speeds up AI model scaling",
+    "summary": "Training large language models requires finding the right hyperparameters—settings like learning rates—at small scale and then scaling them up. This paper reveals that a popular technique called Maximal Update Parameterization (μP) works so well primarily because it increases the learning rate for one specific component: the embedding layer. Simply boosting the embedding layer's learning rate in standard training setups by a factor equal to model width produces the same scaling benefits, suggesting the real advantage isn't deep theory but rather fixing a training bottleneck.",
+    "whyItMatters": "Training large language models is expensive and time-consuming. If you can nail hyperparameters on a small, cheap model and confidently scale them to a massive one, you save weeks of computation and millions in hardware costs. This work shows practitioners exactly which knob to turn—the embedding layer learning rate—to make that transfer reliable, potentially cutting wasted training runs and accelerating AI development timelines.",
+    "fetchedAt": "2026-05-21T20:49:03.947Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 203
+    },
+    "slug": "quantifying-hyperparameter-transfer-and"
+  },
+  {
+    "id": "2605.19014",
+    "title": "SAGA: A Sequence-Adaptive Generative Architecture for Multi-Horizon Probabilistic Forecasting with Adaptive Temporal Conformal Prediction",
+    "authors": "Gustav Olaf Yunus Laitinen-Fredriksson Lundström-Imanov, Hafize Gonca Cömert",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-05-18T18:35:20Z",
+    "publishedFormatted": "May 18, 2026",
+    "subtitle": "Better forecasts of lifetime earnings for government economic planning",
+    "summary": "A new AI model called SAGA predicts how much money people will earn over their entire working lives far more accurately than the methods used by finance ministries and central banks today. Tested on Swedish tax records spanning three decades and over 2 million people, it cuts prediction errors by nearly 38 percent at the twenty-year mark and produces reliable confidence intervals around its forecasts.",
+    "whyItMatters": "Governments use lifetime earnings predictions to design pension systems, tax policy, and welfare programs. Current methods miss real patterns in how earnings actually change over time, leading to inaccurate estimates of inequality and insufficient planning for retirement security. SAGA's 31–38 percent improvement in accuracy could help policymakers better anticipate future costs and design fairer systems—and the researchers released their model publicly so other governments can test it on their own data.",
+    "fetchedAt": "2026-05-21T20:49:07.997Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 202
+    },
+    "slug": "saga-a-sequence-adaptive"
+  },
+  {
+    "id": "2605.21437",
+    "title": "Neural Negative Binomial Regression for Weekly Seismicity Forecasting: Per-Cell Dispersion Estimation and Tail Risk Assessment",
+    "authors": "Alim Igilik",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-05-20T17:27:27Z",
+    "publishedFormatted": "May 20, 2026",
+    "subtitle": "Better earthquake forecasts by mapping how shaking clusters differ across regions",
+    "summary": "Standard earthquake forecasting assumes seismic activity follows the same random pattern everywhere, but analysis of Central Asian earthquakes from 2010–2024 overwhelmingly rejects this assumption. A new neural network model called EarthquakeNet estimates how clustering patterns vary location-by-location, improving weekly forecasts by 8.6 percent overall and 12.5 percent for high-magnitude weeks when accurate predictions matter most.",
+    "whyItMatters": "Earthquake early-warning systems guide emergency response and evacuation decisions. Better forecasts of which regions will experience intense clustering in a given week could help authorities pre-position resources and issue more reliable alerts. The model's strongest gains come in predicting extreme weeks (5+ earthquakes), exactly when forecasts are hardest to make and most consequential for public safety.",
+    "fetchedAt": "2026-05-21T20:49:10.997Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 194
+    },
+    "slug": "neural-negative-binomial-regression"
+  },
+  {
     "id": "2605.21470",
     "title": "Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling",
     "authors": "Caleb Winston, Ron Yifeng Wang, Azalia Mirhoseini et al.",
