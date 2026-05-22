@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.22817",
+    "title": "Vector Policy Optimization: Training for Diversity Improves Test-Time Search",
+    "authors": "Ryan Bahlous-Boldi, Isha Puri, Idan Shenfeld et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-21T17:59:26Z",
+    "publishedFormatted": "May 21, 2026",
+    "subtitle": "Training AI to explore multiple solutions instead of picking just one",
+    "summary": "Language models trained with a new method called Vector Policy Optimization produce more diverse answers during testing, which makes them better at solving problems when given extra time to search through options. The approach trains models to anticipate multiple different goals at once—like correctness on different test cases—rather than optimizing for a single score, and it outperforms standard methods as the search budget grows.",
+    "whyItMatters": "As AI systems increasingly use test-time search to find better answers by trying many options, diversity becomes critical. Models trained the old way get stuck producing similar outputs and can't explore the space of possible solutions effectively. VPO fixes this at training time, meaning systems like AlphaEvolve can actually leverage their extra compute to find genuinely better answers instead of just finding variations of the same narrow solution.",
+    "fetchedAt": "2026-05-22T20:40:27.528Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 206
+    },
+    "slug": "vector-policy-optimization-training"
+  },
+  {
+    "id": "2605.16613",
+    "title": "Beyond Sentiment Classification: A Generative Framework for Emotion Intensity Evaluation in Text",
+    "authors": "Francesco A. Fabozzi, Dasol Kim, William N. Goetzmann",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-05-15T20:32:29Z",
+    "publishedFormatted": "May 15, 2026",
+    "subtitle": "Measuring how intensely emotional text is, not just what emotion it shows",
+    "summary": "Researchers created a new way to analyze emotions in text by measuring their strength on a scale from 0 to 100, rather than sorting text into fixed categories like \"positive\" or \"negative.\" This approach outperformed traditional emotion classification and unexpectedly transferred well to related concepts like sentiment and arousal.",
+    "whyItMatters": "Financial markets move on emotion as much as data. A trader's brief worry about inflation differs radically from panic selling — but traditional sentiment tools treat both the same way. By measuring emotional intensity rather than just labeling sentiment, analysts can better gauge market psychology and make sharper predictions about how people will actually respond to news.",
+    "fetchedAt": "2026-05-22T20:40:30.377Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 10,
+      "wordCount": 127
+    },
+    "slug": "beyond-sentiment-classification-a"
+  },
+  {
+    "id": "2605.22736",
+    "title": "Optimization over the intersection of manifolds",
+    "authors": "Yan Yang, Bin Gao, Ya-xiang Yuan",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-05-21T17:08:00Z",
+    "publishedFormatted": "May 21, 2026",
+    "subtitle": "A simpler way to optimize when solutions must satisfy multiple geometric constraints",
+    "summary": "Mathematicians solved a long-standing puzzle in optimization: when a solution must lie on the intersection of two curved surfaces, two different regularity conditions that seemed different are actually equivalent. Using this insight, they designed a practical algorithm that stays on one surface while systematically approaching the other, and proved it reliably finds optimal solutions across problems ranging from data compression to fitting embeddings.",
+    "whyItMatters": "Many real problems—from compressing high-dimensional data to fitting machine learning models—require finding the best solution subject to multiple geometric constraints that intersect in complex ways. This work removes a major computational barrier: instead of struggling with coupled constraints, practitioners can now use a straightforward algorithm with guaranteed convergence. This opens the door to faster, more reliable solutions in fields like signal processing, dimensionality reduction, and scientific computing.",
+    "fetchedAt": "2026-05-22T20:40:33.453Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 26,
+      "wordCount": 156
+    },
+    "slug": "optimization-over-the-intersection"
+  },
+  {
     "id": "2605.22816",
     "title": "AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation",
     "authors": "Wenxuan Guo, Xiuwei Xu, Yichen Liu et al.",
