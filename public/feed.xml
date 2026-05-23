@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2026 09:01:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 20:03:09 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FAME: Failure-Aware Mixture-of-Experts for Message-Level Log Anomaly Detection</title>
+      <link>https://paperplaine.com/papers/fame-failure-aware-mixture</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/fame-failure-aware-mixture</guid>
+      <pubDate>Thu, 21 May 2026 17:34:53 GMT</pubDate>
+      <author>Huanchi Wang, Zihang Huang, Yifang Tian et al.</author>
+      <category>AI</category>
+      <description>Spotting exactly which log line signals a server problem, not just that something went wrong</description>
+      <content:encoded><![CDATA[<p><em>Spotting exactly which log line signals a server problem, not just that something went wrong</em></p><p>Most systems that catch server problems flag entire groups of log lines, forcing engineers to dig through dozens of routine entries per alert. FAME uses an AI model to understand log patterns offline, then deploys lightweight detectors that pinpoint the exact problematic line in real time—catching 86% of problems even from never-before-seen error types, while requiring humans to label fewer than 100 examples per log type.</p><p><strong>Why it matters:</strong> Server outages cost thousands of dollars per minute, and every minute spent investigating false alerts or irrelevant log lines is a minute closer to serious impact. By identifying the single line responsible for a failure instead of grouping entire sessions, FAME lets operators act faster and more confidently. The approach also cuts the labeling work required to deploy such systems by 76x, making it practical for teams managing millions of daily log lines across heterogeneous infrastructure.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Beyond Temperature: Hyperfitting as a Late-Stage Geometric Expansion</title>
+      <link>https://paperplaine.com/papers/beyond-temperature-hyperfitting-as</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/beyond-temperature-hyperfitting-as</guid>
+      <pubDate>Thu, 21 May 2026 14:52:48 GMT</pubDate>
+      <author>Meimingwei Li, Yuanhao Ding, Esteban Garces Arias et al.</author>
+      <category>Statistics</category>
+      <description>Why AI models get better at creative writing when trained to the point of seeming overfit</description>
+      <content:encoded><![CDATA[<p><em>Why AI models get better at creative writing when trained to the point of seeming overfit</em></p><p>When researchers push large language models to memorize small datasets almost perfectly, the models paradoxically generate more creative and varied text. The researchers show this isn't simply the model sharpening its predictions—temperature scaling controls can't replicate the effect—and discovered the mechanism lies in the final neural network layer, which undergoes a geometric expansion that rescues rare words from obscurity.</p><p><strong>Why it matters:</strong> Fine-tuning is one of the fastest ways to adapt AI models to specific tasks, but practitioners have long assumed that pushing training loss too low causes the model to overfit and fail. This work shows that apparent overfitting can actually improve real-world output quality, challenging a core assumption in how models are trained and opening a path to better performance with minimal computational cost.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Not Yet: Humans Outperform LLMs in a Colonel Blotto Tournament</title>
+      <link>https://paperplaine.com/papers/not-yet-humans-outperform</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/not-yet-humans-outperform</guid>
+      <pubDate>Thu, 21 May 2026 07:34:49 GMT</pubDate>
+      <author>Dmitry Dagaev, Egor Ivanov, Petr Parshakov et al.</author>
+      <category>Economics</category>
+      <description>Humans beat AI at strategic game theory because they think smarter</description>
+      <content:encoded><![CDATA[<p><em>Humans beat AI at strategic game theory because they think smarter</em></p><p>In a strategic competition game called Colonel Blotto, human players significantly outperformed large language models. Humans won by using flexible, middle-ground strategies that adapted to the game's structure, while LLMs relied on simpler, repetitive approaches. The key advantage wasn't raw intelligence but rather the ability to reach the right level of strategic reasoning for the specific challenge.</p><p><strong>Why it matters:</strong> As companies consider deploying LLMs for economic decisions and negotiations, this shows current AI systems lack the flexible strategic thinking humans naturally apply. LLMs produced predictable, exploitable strategies that humans quickly learned to beat. The finding suggests humans and AI shouldn't yet be considered interchangeable for high-stakes competitive situations where adaptability matters—and that careful human judgment remains essential in strategic settings.</p>]]></content:encoded>
+    </item>
     <item>
       <title>MOSS: Self-Evolution through Source-Level Rewriting in Autonomous Agent Systems</title>
       <link>https://paperplaine.com/papers/moss-self-evolution-through</link>
