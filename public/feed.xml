@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 20:02:27 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 11:10:18 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws</title>
+      <link>https://paperplaine.com/papers/llms-as-noisy-channels</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/llms-as-noisy-channels</guid>
+      <pubDate>Fri, 22 May 2026 17:59:38 GMT</pubDate>
+      <author>Xu Ouyang, Deyi Liu, Yuhang Cai et al.</author>
+      <category>AI</category>
+      <description>Why making AI models bigger sometimes makes them worse</description>
+      <content:encoded><![CDATA[<p><em>Why making AI models bigger sometimes makes them worse</em></p><p>Large language models stop improving and sometimes get worse when you scale them up without careful balance—much like how adding noise to a radio signal eventually drowns out the message. Researchers applied Shannon's information theory, which originally explained how much data can travel reliably through noisy communication channels, to model training and found it predicts this counterintuitive breakdown far better than existing scaling laws.</p><p><strong>Why it matters:</strong> Teams building AI models currently spend billions scaling up compute and data assuming bigger always means better. This framework shows there's a ceiling—a signal-to-noise ratio threshold—beyond which throwing more resources at training actually degrades performance. The predictions hold up across different model sizes and perturbations, which means practitioners can now estimate where that threshold lies before wasting compute, and researchers have a principled way to understand when and why scaling strategies fail.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Sparse Autoencoders Map Brain-LLM Alignment onto Cortical Semantic Topography</title>
+      <link>https://paperplaine.com/papers/sparse-autoencoders-map-brain</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/sparse-autoencoders-map-brain</guid>
+      <pubDate>Thu, 21 May 2026 21:00:24 GMT</pubDate>
+      <author>Dongxin Guo, Jikun Wu, Siu Ming Yiu</author>
+      <category>Biology</category>
+      <description>How neural networks organize meaning exactly like human brains do</description>
+      <content:encoded><![CDATA[<p><em>How neural networks organize meaning exactly like human brains do</em></p><p>Researchers decoded how large language models like GPT-2 internally organize semantic information and discovered that this organization mirrors the structure of the human brain's language regions. Semantic features alone explained 94% of how well the model predicted brain responses to language, and five specific semantic categories aligned precisely with five distinct brain regions known from neuroscience.</p><p><strong>Why it matters:</strong> This finding bridges a major gap between how AI language models work and how human brains process language. It shows that the brain's semantic architecture isn't arbitrary—it emerges naturally when systems learn to understand language—which could help neuroscientists understand language processing and AI researchers build models that align more closely with biological intelligence.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Discontinuous Galerkin Neural Operator for Pathology Defocus Deblurring</title>
+      <link>https://paperplaine.com/papers/discontinuous-galerkin-neural-operator</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/discontinuous-galerkin-neural-operator</guid>
+      <pubDate>Fri, 22 May 2026 06:50:26 GMT</pubDate>
+      <author>Shaoqing Duan, Haofei Song, Xintian Mao et al.</author>
+      <category>Engineering</category>
+      <description>Fixing blurry microscope images using physics-aware artificial intelligence</description>
+      <content:encoded><![CDATA[<p><em>Fixing blurry microscope images using physics-aware artificial intelligence</em></p><p>Microscope images often blur in inconsistent ways depending on where you look in the photo, and standard AI image-sharpening tools fail because they assume blur is uniform everywhere. Researchers developed a new neural network called DGNO that models blur as a physics-based mathematical process and handles these varying blur patterns, producing sharper, clearer images than existing methods.</p><p><strong>Why it matters:</strong> Pathologists and researchers rely on microscope images to diagnose diseases and study biological samples. Blurry images force them to retake photos, wasting time and materials, or work with degraded data that could lead to misdiagnosis. Better deblurring software could reduce image retakes, speed up analysis, and improve the reliability of microscopy-based diagnostics.</p>]]></content:encoded>
+    </item>
     <item>
       <title>AMEL: Accumulated Message Effects on LLM Judgments</title>
       <link>https://paperplaine.com/papers/amel-accumulated-message-effects</link>
