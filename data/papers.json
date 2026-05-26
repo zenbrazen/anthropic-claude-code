@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.26067",
+    "title": "Conditional KRR: Injecting Unpenalized Features into Kernel Methods with Applications to Kernel Thresholding",
+    "authors": "Rustem Takhanov, Zhenisbek Assylbekov",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-25T17:31:54Z",
+    "publishedFormatted": "May 25, 2026",
+    "subtitle": "Letting machine learning models focus on what matters by handling easy patterns first",
+    "summary": "Machine learning researchers have figured out how to improve kernel ridge regression—a standard prediction technique—by first extracting simple, obvious patterns from data before fitting the more complex model. The key insight is mathematical: this two-stage approach behaves like ordinary kernel ridge regression on the leftover problem, with a small, predictable loss in accuracy that shrinks as you gather more data. The method works best when the simple patterns account for most of what you're trying to predict.",
+    "whyItMatters": "Many real prediction problems have some patterns that are easy to spot (like linear trends) and others that are harder to capture. By handling the easy ones separately, this approach can make predictions more accurate without needing to tune as many knobs or gather as much training data. This is particularly useful in fields like scientific modeling where you might know some rules in advance and want the machine learning part to focus only on what the rules don't explain.",
+    "fetchedAt": "2026-05-26T20:51:21.993Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 278
+    },
+    "slug": "conditional-krr-injecting-unpenalized"
+  },
+  {
+    "id": "2605.26074",
+    "title": "StakeBench: Evaluating Language Understanding Grounded in Market Commitment",
+    "authors": "Yunhua Pei, Jingyu Hu, Yiwei Shi et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-05-25T17:38:30Z",
+    "publishedFormatted": "May 25, 2026",
+    "subtitle": "Testing AI's ability to understand what money actually says about beliefs",
+    "summary": "Researchers created StakeBench, a new test for AI language understanding based on real financial commitments rather than human opinions. They linked nearly 561,000 comments from prediction markets to actual trades and betting positions, then measured whether 15 large language models could identify what people had put money behind. Most models performed poorly—detecting the correct position only about half the time, and completely failing at predicting future trades or collective market movements, even when they were very large.",
+    "whyItMatters": "Financial institutions and traders increasingly rely on AI to interpret market commentary and news. This benchmark reveals that today's best models can't reliably extract the actual beliefs people are willing to bet on, which means systems used to inform real investment decisions are systematically misunderstanding what market participants truly think. The findings also suggest that simply making models bigger or training them on finance data doesn't solve the problem.",
+    "fetchedAt": "2026-05-26T20:51:26.417Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 21,
+      "wordCount": 218
+    },
+    "slug": "stakebench-evaluating-language-understanding"
+  },
+  {
+    "id": "2605.25819",
+    "title": "On Reliability of Efficient Membership Inference Vulnerability Evaluation",
+    "authors": "Joonas Jälkö, Gauri Pradhan, Ossi Räisä et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-05-25T13:16:39Z",
+    "publishedFormatted": "May 25, 2026",
+    "subtitle": "Why the shortcuts used to test AI privacy leaks often give misleading results",
+    "summary": "Researchers found that common methods for measuring whether machine learning models leak training data are fundamentally unreliable. When researchers combine results across multiple people or models to save computation time, their measurements become miscalibrated and can dramatically overestimate actual privacy risks — making weak privacy protections look safer than they really are.",
+    "whyItMatters": "Companies and researchers use these flawed measurements to audit whether their AI systems properly protect sensitive training data under privacy frameworks like differential privacy. False reassurances from broken tests could lead organizations to deploy systems that leak more personal information than they believe, putting user data at risk. The authors provide a fix that allows researchers to get accurate privacy measurements without the computational burden.",
+    "fetchedAt": "2026-05-26T20:51:29.780Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 214
+    },
+    "slug": "on-reliability-of-efficient"
+  },
+  {
     "id": "2605.23904",
     "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
     "authors": "Yifan Yang, Ziyang Gong, Weiquan Huang et al.",

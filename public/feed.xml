@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2026 20:20:42 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 20:51:29 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Conditional KRR: Injecting Unpenalized Features into Kernel Methods with Applications to Kernel Thresholding</title>
+      <link>https://paperplaine.com/papers/conditional-krr-injecting-unpenalized</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/conditional-krr-injecting-unpenalized</guid>
+      <pubDate>Mon, 25 May 2026 17:31:54 GMT</pubDate>
+      <author>Rustem Takhanov, Zhenisbek Assylbekov</author>
+      <category>AI</category>
+      <description>Letting machine learning models focus on what matters by handling easy patterns first</description>
+      <content:encoded><![CDATA[<p><em>Letting machine learning models focus on what matters by handling easy patterns first</em></p><p>Machine learning researchers have figured out how to improve kernel ridge regression—a standard prediction technique—by first extracting simple, obvious patterns from data before fitting the more complex model. The key insight is mathematical: this two-stage approach behaves like ordinary kernel ridge regression on the leftover problem, with a small, predictable loss in accuracy that shrinks as you gather more data. The method works best when the simple patterns account for most of what you're trying to predict.</p><p><strong>Why it matters:</strong> Many real prediction problems have some patterns that are easy to spot (like linear trends) and others that are harder to capture. By handling the easy ones separately, this approach can make predictions more accurate without needing to tune as many knobs or gather as much training data. This is particularly useful in fields like scientific modeling where you might know some rules in advance and want the machine learning part to focus only on what the rules don't explain.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>StakeBench: Evaluating Language Understanding Grounded in Market Commitment</title>
+      <link>https://paperplaine.com/papers/stakebench-evaluating-language-understanding</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/stakebench-evaluating-language-understanding</guid>
+      <pubDate>Mon, 25 May 2026 17:38:30 GMT</pubDate>
+      <author>Yunhua Pei, Jingyu Hu, Yiwei Shi et al.</author>
+      <category>Finance</category>
+      <description>Testing AI&#39;s ability to understand what money actually says about beliefs</description>
+      <content:encoded><![CDATA[<p><em>Testing AI's ability to understand what money actually says about beliefs</em></p><p>Researchers created StakeBench, a new test for AI language understanding based on real financial commitments rather than human opinions. They linked nearly 561,000 comments from prediction markets to actual trades and betting positions, then measured whether 15 large language models could identify what people had put money behind. Most models performed poorly—detecting the correct position only about half the time, and completely failing at predicting future trades or collective market movements, even when they were very large.</p><p><strong>Why it matters:</strong> Financial institutions and traders increasingly rely on AI to interpret market commentary and news. This benchmark reveals that today's best models can't reliably extract the actual beliefs people are willing to bet on, which means systems used to inform real investment decisions are systematically misunderstanding what market participants truly think. The findings also suggest that simply making models bigger or training them on finance data doesn't solve the problem.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>On Reliability of Efficient Membership Inference Vulnerability Evaluation</title>
+      <link>https://paperplaine.com/papers/on-reliability-of-efficient</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/on-reliability-of-efficient</guid>
+      <pubDate>Mon, 25 May 2026 13:16:39 GMT</pubDate>
+      <author>Joonas Jälkö, Gauri Pradhan, Ossi Räisä et al.</author>
+      <category>Comp Sci</category>
+      <description>Why the shortcuts used to test AI privacy leaks often give misleading results</description>
+      <content:encoded><![CDATA[<p><em>Why the shortcuts used to test AI privacy leaks often give misleading results</em></p><p>Researchers found that common methods for measuring whether machine learning models leak training data are fundamentally unreliable. When researchers combine results across multiple people or models to save computation time, their measurements become miscalibrated and can dramatically overestimate actual privacy risks — making weak privacy protections look safer than they really are.</p><p><strong>Why it matters:</strong> Companies and researchers use these flawed measurements to audit whether their AI systems properly protect sensitive training data under privacy frameworks like differential privacy. False reassurances from broken tests could lead organizations to deploy systems that leak more personal information than they believe, putting user data at risk. The authors provide a fix that allows researchers to get accurate privacy measurements without the computational burden.</p>]]></content:encoded>
+    </item>
     <item>
       <title>SkillOpt: Executive Strategy for Self-Evolving Agent Skills</title>
       <link>https://paperplaine.com/papers/skillopt-executive-strategy-for</link>
