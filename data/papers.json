@@ -1,5 +1,49 @@
 [
   {
+    "id": "2605.28809",
+    "title": "AREA: Attribute Extraction and Aggregation for CLIP-Based Class-Incremental Learning",
+    "authors": "Zhen-Hao Xie, Yu-Cheng Shi, Da-Wei Zhou",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-27T17:58:16Z",
+    "publishedFormatted": "May 27, 2026",
+    "subtitle": "Keeping AI from forgetting old categories when learning new ones",
+    "summary": "When AI systems learn new object categories over time, they typically forget what they learned before—a problem called catastrophic forgetting. This paper shows how to break down the recognition process into two separate steps (extracting distinguishing features and combining them) and stabilize each one independently, allowing models to learn continuously without losing old knowledge. The method outperforms existing approaches on standard benchmarks.",
+    "whyItMatters": "Real-world AI systems need to learn new categories throughout their lifespan without being retrained from scratch each time. Current approaches either require keeping all old training data (expensive and often impossible) or suffer severe accuracy drops on previously learned categories. This work enables practical continual learning systems that maintain performance on old tasks while successfully absorbing new ones.",
+    "fetchedAt": "2026-05-28T21:04:34.344Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 200
+    },
+    "slug": "area-attribute-extraction-and"
+  },
+  {
+    "id": "2605.28646",
+    "title": "MaskClaw: Edge-Side Personalized Privacy Arbitration for GUI Agents with Behavior-Driven Skill Evolution",
+    "authors": "Yanqiu Zhao, Dongying Zheng, Kaibo Huang et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-05-27T15:51:22Z",
+    "publishedFormatted": "May 27, 2026",
+    "subtitle": "Deciding what to hide in screenshots before AI agents see them",
+    "summary": "GUI agents—AI systems that control computers by reading screenshots—often capture sensitive information like passwords, medical records, and private messages. MaskClaw makes privacy decisions locally on your device before screenshots leave, choosing whether to allow the agent full access, mask sensitive areas, or ask the user first, using learned rules about what matters in each task and application.",
+    "whyItMatters": "As AI agents take over more computer tasks, they need to read your screen—but sending raw screenshots to cloud servers exposes private data before anyone checks what should stay hidden. MaskClaw keeps this decision-making on your device or your organization's servers, preventing sensitive information from being uploaded in the first place, while still letting agents do their job.",
+    "fetchedAt": "2026-05-28T21:04:37.198Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 21,
+      "wordCount": 163
+    },
+    "slug": "maskclaw-edge-side-personalized"
+  },
+  {
     "id": "2605.28805",
     "title": "OmniVerifier-M1: Multimodal Meta-Verifier with Explicit Structured Recalibration",
     "authors": "Xinchen Zhang, Bowei Liu, Jiale Liu et al.",
