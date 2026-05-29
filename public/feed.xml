@@ -5,8 +5,28 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 May 2026 10:45:34 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 21:07:05 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents</title>
+      <link>https://paperplaine.com/papers/locally-coherent-globally-incoherent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/locally-coherent-globally-incoherent</guid>
+      <pubDate>Thu, 28 May 2026 17:58:55 GMT</pubDate>
+      <author>Anany Kotawala</author>
+      <category>AI</category>
+      <description>Why AI systems built from multiple chatbots often break basic logic rules</description>
+      <content:encoded><![CDATA[<p><em>Why AI systems built from multiple chatbots often break basic logic rules</em></p><p>When large language models are assembled into multi-part systems, each component can be internally consistent while producing outputs that violate fundamental probability rules when combined—a failure that occurs in one-third to nearly all component combinations in real systems. Researchers created a mathematical measure of this incoherence that can be calculated from a system's actual output, predicted its magnitude with 93% accuracy on most problem types, and demonstrated that standard fixes like better prompting or retrieval methods do not resolve the issue.</p><p><strong>Why it matters:</strong> AI agents that make decisions by combining outputs from multiple language models—used in everything from medical diagnosis assistants to financial forecasting—can appear confident while producing logically impossible conclusions. The ability to measure and detect this failure at runtime means developers can catch these breakdowns before deployment, and the finding that typical mitigation strategies fail suggests the problem requires fundamental architectural changes rather than prompt engineering fixes.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets</title>
+      <link>https://paperplaine.com/papers/from-knowing-to-doing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/from-knowing-to-doing</guid>
+      <pubDate>Wed, 27 May 2026 11:57:10 GMT</pubDate>
+      <author>Taojie Zhu, Wentao Zhao, Rui Sun et al.</author>
+      <category>Finance</category>
+      <description>Testing whether AI traders are actually skilled or just remembering stock prices</description>
+      <content:encoded><![CDATA[<p><em>Testing whether AI traders are actually skilled or just remembering stock prices</em></p><p>When researchers tested advanced AI language models on simulated stock trading, the models appeared to make money—but the gains came almost entirely from broad market movements, not genuine investment skill. A new benchmark called KTD-Fin revealed this by hiding stock names and dates to prevent the AI from relying on memorized information, and by breaking down returns to show which part came from real decision-making versus passive market exposure.</p><p><strong>Why it matters:</strong> Companies and investors are pouring money into AI trading systems based on impressive backtest results. If those results are driven by the AI simply remembering what happened rather than learning to pick winning stocks, the systems will fail in live markets. This benchmark makes it possible to spot the difference—separating genuine trading skill from inflated performance numbers created by data leakage.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software</title>
       <link>https://paperplaine.com/papers/physics-is-all-you</link>
