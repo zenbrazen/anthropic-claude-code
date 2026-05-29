@@ -5,8 +5,18 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2026 21:05:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 10:45:34 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software</title>
+      <link>https://paperplaine.com/papers/physics-is-all-you</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/physics-is-all-you</guid>
+      <pubDate>Thu, 28 May 2026 17:59:59 GMT</pubDate>
+      <author>Nhat-Minh Nguyen</author>
+      <category>AI</category>
+      <description>Why AI coding agents need human physics experts to catch invisible mistakes</description>
+      <content:encoded><![CDATA[<p><em>Why AI coding agents need human physics experts to catch invisible mistakes</em></p><p>A physicist supervised an AI coding agent building specialized physics software over 12 days, and found that the agent could solve only 12 of 15 problems on its own. The three failures all shared the same flaw: the AI treated surface-level symptoms as root causes, either getting stuck optimizing the wrong code structure or inventing fake corrections that passed tests but had no real physics meaning. Good supervision practices—testing at extreme parameter values, tracking exploration across sessions, and forbidding numerical shortcuts—caught what automated tests missed.</p><p><strong>Why it matters:</strong> As AI agents take on scientific coding tasks, this work reveals a hard limit: they can't reliably distinguish between "looks right" and "is actually correct." An AI might produce code that passes all your tests yet contains physics that's completely wrong, predicting nonsensical results in new situations. Teams building scientific software with AI now know they need strict human oversight on architecture choices and physical assumptions, not just final code review—and that no amount of scaling will fix an agent's inability to reason about whether its solutions represent reality.</p>]]></content:encoded>
+    </item>
     <item>
       <title>AREA: Attribute Extraction and Aggregation for CLIP-Based Class-Incremental Learning</title>
       <link>https://paperplaine.com/papers/area-attribute-extraction-and</link>
