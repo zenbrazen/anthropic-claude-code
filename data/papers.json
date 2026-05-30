@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.30315",
+    "title": "Resolution Diagnostics for Paired LLM Evaluation",
+    "authors": "Anany Kotawala",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-28T17:54:09Z",
+    "publishedFormatted": "May 28, 2026",
+    "subtitle": "Why AI leaderboard rankings often lack statistical proof",
+    "summary": "Many AI model comparisons published on major leaderboards don't have enough test data to confidently declare one model better than another. The paper shows that on the Open LLM Leaderboard, 11 of 40 pairwise rankings and on MMLU-Pro, 4 to 6 of 9 top-tier comparisons fail to meet standard statistical certainty thresholds — and a widely-used calculation method used to estimate required test size can be off by a factor of two in close races.",
+    "whyItMatters": "When researchers or companies choose which AI model to deploy, they often rely on these published leaderboards as proof that one model outperforms another. Unresolved comparisons mean those rankings may reflect noise rather than genuine performance differences, potentially leading to costly or misguided adoption decisions. The calculation error identified here affects how many test cases are needed to prove differences are real, so fixing it could prevent false claims from appearing on leaderboards in the first place.",
+    "fetchedAt": "2026-05-30T09:15:21.827Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 16,
+      "wordCount": 161
+    },
+    "slug": "resolution-diagnostics-for-paired"
+  },
+  {
+    "id": "2605.30304",
+    "title": "Analytical model for structured light propagation through a turbulent atmosphere",
+    "authors": "Konstantin Kravtsov",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-05-28T17:47:23Z",
+    "publishedFormatted": "May 28, 2026",
+    "subtitle": "How turbulence scrambles laser beams carrying information through air",
+    "summary": "When laser beams carrying data travel through a turbulent atmosphere, turbulence scrambles their structure and spreads their power across multiple beam patterns. Researchers created a mathematical model that predicts exactly how much power leaks from the original beam pattern into neighboring ones—and found the loss scales predictably with distance, following a simple formula that works even over very long paths.",
+    "whyItMatters": "Structured light beams are increasingly used for long-distance wireless communication and satellite links, where atmospheric turbulence is a major obstacle. This model makes it possible to predict signal loss and design stronger error correction before deploying real systems, rather than discovering degradation through expensive field tests. It also explains why some beam patterns fail faster than others—knowledge that helps engineers choose which beams to use for critical links.",
+    "fetchedAt": "2026-05-30T09:15:25.031Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 12,
+      "wordCount": 151
+    },
+    "slug": "analytical-model-for-structured"
+  },
+  {
+    "id": "2605.30153",
+    "title": "Diffusion Models Are Statistically Optimal for Learning Low-Dimensional Multi-Modal Distributions",
+    "authors": "Jingda Wu, Changxiao Cai",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-05-28T16:13:44Z",
+    "publishedFormatted": "May 28, 2026",
+    "subtitle": "Why AI learning models work better with clumpy, low-dimensional data",
+    "summary": "Diffusion models—a type of AI that learns to generate data by gradually adding and removing noise—can learn complex, multi-peaked distributions far more efficiently than theory previously predicted. The researchers proved these models need only a sample size proportional to the true underlying dimension of the data, not the apparent dimension, and don't require unrealistic assumptions like perfectly smooth distributions.",
+    "whyItMatters": "Diffusion models power today's most capable image and text generators, but engineers have been working largely in the dark about why they're so statistically efficient. This theoretical proof validates the practical intuition that these models naturally exploit hidden structure in real data—like the fact that natural images, despite having millions of pixels, lie on much lower-dimensional manifolds. It means companies building generative AI can trust that the approach is fundamentally sound, not just empirically lucky.",
+    "fetchedAt": "2026-05-30T09:15:28.438Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 182
+    },
+    "slug": "diffusion-models-are-statistically"
+  },
+  {
     "id": "2605.30335",
     "title": "Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents",
     "authors": "Anany Kotawala",
