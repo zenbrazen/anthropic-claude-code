@@ -1,5 +1,71 @@
 [
   {
+    "id": "2605.30348",
+    "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+    "authors": "Yaxin Luo, Jiacheng Cui, Xiaohan Zhao et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-05-28T17:59:53Z",
+    "publishedFormatted": "May 28, 2026",
+    "subtitle": "Reverse-engineering what data trained a language model from its output alone",
+    "summary": "Researchers developed a method to figure out what types of data were used to train a large language model—code, news, Wikipedia, social media, and so on—by analyzing only the text it generates. The technique, called LLMSurgeon, treats this as a puzzle to solve mathematically, correcting for the fact that different domains can look similar. Tests on models with known training recipes showed it can recover the original data mixture with high accuracy.",
+    "whyItMatters": "Most companies and labs keep their training data secret, making it impossible to audit whether models were built on quality sources or biased datasets. This method lets independent researchers inspect a model's \"digital DNA\" from the outside, surfacing potential problems without needing internal access. As AI systems influence critical decisions, transparency about what trained them becomes an accountability tool.",
+    "fetchedAt": "2026-05-30T20:04:55.894Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 161
+    },
+    "slug": "llmsurgeon-diagnosing-data-mixture"
+  },
+  {
+    "id": "2605.30181",
+    "title": "Generalized matrix nearness problems II",
+    "authors": "Rongbiao Thomas Wang, Chi-Kwong Li, Lek-Heng Lim",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-05-28T16:28:58Z",
+    "publishedFormatted": "May 28, 2026",
+    "subtitle": "Finding the best matrix match under complicated constraints",
+    "summary": "When you need to find a matrix that best approximates a complicated expression, you can't always solve it directly—but this paper shows how to do it anyway. The researchers developed an algorithm that always finds the best answer, works for multiple types of matrix problems, and does so using only standard computational techniques without needing to calculate gradients.",
+    "whyItMatters": "Matrix nearness problems appear in signal processing, computer vision, and control systems—anywhere engineers need to find the closest match to data while respecting real-world constraints. This work makes it practical to solve versions of these problems that were previously unsolvable, expanding what's computationally feasible in applications from image compression to robotic control.",
+    "fetchedAt": "2026-05-30T20:04:59.061Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 167
+    },
+    "slug": "generalized-matrix-nearness-problems"
+  },
+  {
+    "id": "2605.30209",
+    "title": "Betting Against Integrity: Identifying Match-Fixing Through In-Play Market Dynamics",
+    "authors": "David Winkelmann, Maya Vienken, Christian Deutscher et al.",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-05-28T16:44:54Z",
+    "publishedFormatted": "May 28, 2026",
+    "subtitle": "Using betting data patterns to catch match-fixing in real time",
+    "summary": "Researchers analyzed live-betting data from Italian football matches to detect when betting markets behaved abnormally—a potential sign of match-fixing. They built a statistical model that predicts normal betting volumes based on match characteristics, then flagged deviations as suspicious. The approach successfully identified unusual betting periods that could warrant further investigation.",
+    "whyItMatters": "Match-fixing threatens the credibility of sports and costs leagues millions in lost revenue and fan trust. Football betting markets handle more money globally than any other sport, making them a prime target for manipulation. A tool that automatically flags suspicious betting patterns could help sports authorities catch cheating before it spreads, protecting the integrity of competitions that billions of fans rely on.",
+    "fetchedAt": "2026-05-30T20:05:01.882Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 158
+    },
+    "slug": "betting-against-integrity-identifying"
+  },
+  {
     "id": "2605.30315",
     "title": "Resolution Diagnostics for Paired LLM Evaluation",
     "authors": "Anany Kotawala",

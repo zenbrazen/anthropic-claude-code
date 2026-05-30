@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2026 09:15:28 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 20:05:02 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LLMSurgeon: Diagnosing Data Mixture of Large Language Models</title>
+      <link>https://paperplaine.com/papers/llmsurgeon-diagnosing-data-mixture</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/llmsurgeon-diagnosing-data-mixture</guid>
+      <pubDate>Thu, 28 May 2026 17:59:53 GMT</pubDate>
+      <author>Yaxin Luo, Jiacheng Cui, Xiaohan Zhao et al.</author>
+      <category>AI</category>
+      <description>Reverse-engineering what data trained a language model from its output alone</description>
+      <content:encoded><![CDATA[<p><em>Reverse-engineering what data trained a language model from its output alone</em></p><p>Researchers developed a method to figure out what types of data were used to train a large language model—code, news, Wikipedia, social media, and so on—by analyzing only the text it generates. The technique, called LLMSurgeon, treats this as a puzzle to solve mathematically, correcting for the fact that different domains can look similar. Tests on models with known training recipes showed it can recover the original data mixture with high accuracy.</p><p><strong>Why it matters:</strong> Most companies and labs keep their training data secret, making it impossible to audit whether models were built on quality sources or biased datasets. This method lets independent researchers inspect a model's "digital DNA" from the outside, surfacing potential problems without needing internal access. As AI systems influence critical decisions, transparency about what trained them becomes an accountability tool.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Generalized matrix nearness problems II</title>
+      <link>https://paperplaine.com/papers/generalized-matrix-nearness-problems</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/generalized-matrix-nearness-problems</guid>
+      <pubDate>Thu, 28 May 2026 16:28:58 GMT</pubDate>
+      <author>Rongbiao Thomas Wang, Chi-Kwong Li, Lek-Heng Lim</author>
+      <category>Math</category>
+      <description>Finding the best matrix match under complicated constraints</description>
+      <content:encoded><![CDATA[<p><em>Finding the best matrix match under complicated constraints</em></p><p>When you need to find a matrix that best approximates a complicated expression, you can't always solve it directly—but this paper shows how to do it anyway. The researchers developed an algorithm that always finds the best answer, works for multiple types of matrix problems, and does so using only standard computational techniques without needing to calculate gradients.</p><p><strong>Why it matters:</strong> Matrix nearness problems appear in signal processing, computer vision, and control systems—anywhere engineers need to find the closest match to data while respecting real-world constraints. This work makes it practical to solve versions of these problems that were previously unsolvable, expanding what's computationally feasible in applications from image compression to robotic control.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Betting Against Integrity: Identifying Match-Fixing Through In-Play Market Dynamics</title>
+      <link>https://paperplaine.com/papers/betting-against-integrity-identifying</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/betting-against-integrity-identifying</guid>
+      <pubDate>Thu, 28 May 2026 16:44:54 GMT</pubDate>
+      <author>David Winkelmann, Maya Vienken, Christian Deutscher et al.</author>
+      <category>Economics</category>
+      <description>Using betting data patterns to catch match-fixing in real time</description>
+      <content:encoded><![CDATA[<p><em>Using betting data patterns to catch match-fixing in real time</em></p><p>Researchers analyzed live-betting data from Italian football matches to detect when betting markets behaved abnormally—a potential sign of match-fixing. They built a statistical model that predicts normal betting volumes based on match characteristics, then flagged deviations as suspicious. The approach successfully identified unusual betting periods that could warrant further investigation.</p><p><strong>Why it matters:</strong> Match-fixing threatens the credibility of sports and costs leagues millions in lost revenue and fan trust. Football betting markets handle more money globally than any other sport, making them a prime target for manipulation. A tool that automatically flags suspicious betting patterns could help sports authorities catch cheating before it spreads, protecting the integrity of competitions that billions of fans rely on.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Resolution Diagnostics for Paired LLM Evaluation</title>
       <link>https://paperplaine.com/papers/resolution-diagnostics-for-paired</link>
