@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2026 09:47:09 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 20:04:49 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings</title>
+      <link>https://paperplaine.com/papers/medcase-structured-a-text</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/medcase-structured-a-text</guid>
+      <pubDate>Thu, 28 May 2026 17:42:43 GMT</pubDate>
+      <author>Valentina Bui Muti, Eugénie Dulout, Ziquan Fu</author>
+      <category>AI</category>
+      <description>Testing AI doctors on realistic hospital data formats, not simplified text</description>
+      <content:encoded><![CDATA[<p><em>Testing AI doctors on realistic hospital data formats, not simplified text</em></p><p>Researchers created a benchmark dataset that tests whether AI language models can reason about medical cases when given data in the structured format used by actual hospital systems, rather than plain-text descriptions. They found that AI diagnostic accuracy drops significantly when working with this realistic format—suggesting that current evaluations may overstate how well these systems would perform in real clinical settings.</p><p><strong>Why it matters:</strong> Hospitals are considering deploying AI for clinical decision support, but most testing happens on simplified data. This work shows that performance drops measurably when AI encounters the structured medical data formats (FHIR) that hospitals actually use, meaning real-world deployment could be less accurate than benchmarks suggest. Clinicians and hospitals need honest performance metrics that match their actual systems before trusting AI with diagnostic support.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>CalArena: A Large-Scale Post-Hoc Calibration Benchmark</title>
+      <link>https://paperplaine.com/papers/calarena-a-large-scale</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/calarena-a-large-scale</guid>
+      <pubDate>Thu, 28 May 2026 16:31:36 GMT</pubDate>
+      <author>Eugène Berta, David Holzmüller, Francis Bach et al.</author>
+      <category>Statistics</category>
+      <description>Testing dozens of methods that fix AI confidence scores at scale</description>
+      <content:encoded><![CDATA[<p><em>Testing dozens of methods that fix AI confidence scores at scale</em></p><p>Machine learning models often give overconfident or underconfident probability estimates, making them unreliable in high-stakes decisions. Researchers created the largest standardized test of post-hoc calibration methods—techniques that fix these probability estimates after training—evaluating nearly 2,000 experiments across images and tabular data. They found that smooth mathematical functions consistently outperform other approaches, and that generic machine learning models fail unless calibration is built into their design.</p><p><strong>Why it matters:</strong> When a medical AI says it's 95% confident in a diagnosis, that confidence needs to mean something. Poorly calibrated models mislead doctors, lenders, and regulators about how much they can trust a decision. This benchmark provides a standardized way for practitioners to pick the right fix for their specific problem, and gives researchers a shared testing ground so better methods don't get lost among dozens of competing approaches.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Three-Currency HJM for Brazilian Credit Markets</title>
+      <link>https://paperplaine.com/papers/three-currency-hjm-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/three-currency-hjm-for</guid>
+      <pubDate>Thu, 28 May 2026 05:23:22 GMT</pubDate>
+      <author>Raphael Coelho</author>
+      <category>Finance</category>
+      <description>Why the same company&#39;s bonds trade at wildly different prices in Brazil&#39;s split markets</description>
+      <content:encoded><![CDATA[<p><em>Why the same company's bonds trade at wildly different prices in Brazil's split markets</em></p><p>When the same Brazilian company issues bonds in two different market segments—one tied to short-term interest rates, the other to inflation—the bonds should trade at consistent prices relative to each other. They don't. The gap between what these bonds are worth averages 640 basis points (6.4%), with only modest variation across 15 large issuers over a five-year period, suggesting the two markets are pricing different economic assumptions rather than pricing the same company.</p><p><strong>Why it matters:</strong> Investors comparing bond deals across Brazil's segmented markets are working with prices that reflect structural market splits, not just company risk. Asset managers and corporate treasurers need to account for these persistent pricing gaps when allocating capital or hedging—they cannot assume a single "fair value" across both segments. Understanding what drives the 640-basis-point wedge also reveals which market segments attract different investor types and where liquidity constraints bite hardest.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Demystifying Data Organization for Enhanced LLM Training</title>
       <link>https://paperplaine.com/papers/demystifying-data-organization-for</link>
