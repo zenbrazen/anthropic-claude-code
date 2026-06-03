@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.03985",
+    "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
+    "authors": "Zekun Qi, Xuchuan Chen, Dairu Liu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-02T17:59:05Z",
+    "publishedFormatted": "Jun 2, 2026",
+    "subtitle": "Training one AI model on billions of motion frames to control robot bodies",
+    "summary": "Researchers built Humanoid-GPT, a single AI model trained on 2 billion frames of human motion data that can control a humanoid robot to perform movements it has never seen before. Unlike earlier systems that required separate training for each new motion, this model generalizes to entirely new behaviors and tasks without additional fine-tuning, while also handling complex, fast-moving actions.",
+    "whyItMatters": "Humanoid robots currently require time-consuming, task-specific training to learn new movements. A model that can instantly adapt to unseen motions could dramatically speed up robot deployment in factories, hospitals, and other real-world settings. This approach shows that scaling up both training data and model size—similar to how large language models work—may be the path to robots that are genuinely flexible rather than narrowly specialized.",
+    "fetchedAt": "2026-06-03T21:45:04.232Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 105
+    },
+    "slug": "humanoid-gpt-scaling-data"
+  },
+  {
+    "id": "2606.03559",
+    "title": "Analytical Evaluation of DCA Convergence Properties for Minimizing Prediction Functions of Gaussian RBF Support Vector Regression",
+    "authors": "Yohei Kakimoto, Yuto Omae, Hirotaka Takahashi",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-06-02T12:25:21Z",
+    "publishedFormatted": "Jun 2, 2026",
+    "subtitle": "Predicting how fast a machine learning algorithm will find good answers",
+    "summary": "A team of researchers figured out how to predict whether a common optimization algorithm will quickly solve problems involving trained support vector machines with Gaussian kernels. They discovered that a single number—based on the machine's training parameters—reliably forecasts both how fast the algorithm converges and how sensitive it is to starting conditions, making it possible to assess performance before training even begins.",
+    "whyItMatters": "Machine learning engineers spend significant time tuning hyperparameters and choosing algorithms without knowing in advance whether their choices will lead to fast or slow solutions. This framework lets them estimate convergence speed from a simple formula, cutting down trial-and-error and making it easier to decide whether a particular configuration is worth pursuing before investing computational resources in training.",
+    "fetchedAt": "2026-06-03T21:45:07.356Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 212
+    },
+    "slug": "analytical-evaluation-of-dca"
+  },
+  {
+    "id": "2606.02528",
+    "title": "Auditing Asset-Specific Preferences in Financial Large Language Models: Evidence from Bitcoin Representations and Portfolio Allocation",
+    "authors": "Wenbin Wu",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-06-01T17:36:06Z",
+    "publishedFormatted": "Jun 1, 2026",
+    "subtitle": "Do AI financial advisors secretly favor certain assets like Bitcoin?",
+    "summary": "Researchers found that large language models powering robo-advisors and trading bots do carry built-in preferences for specific assets, including Bitcoin. They identified a single internal feature in one AI model that, when amplified, increased Bitcoin's allocation in a simulated portfolio by 5.2 percentage points—even when the word \"Bitcoin\" wasn't mentioned. This preference shifted depending on context: the models ranked Bitcoin much higher as \"reliable money\" during crises than during normal times.",
+    "whyItMatters": "As AI systems begin making real financial decisions for investors, hidden asset preferences could steer people toward or away from particular investments without their knowledge. This work provides the first method to detect and measure these internal biases, laying groundwork for new transparency standards that would require financial AI systems to disclose what they actually prefer—similar to how banks must know their customers, AI advisors should be audited to know their own assets.",
+    "fetchedAt": "2026-06-03T21:45:10.797Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 267
+    },
+    "slug": "auditing-asset-specific-preferences"
+  },
+  {
     "id": "2606.03976",
     "title": "Formalizing the Binding Problem",
     "authors": "Lianghuan Huang, Yihao Li, Saeed Salehi et al.",

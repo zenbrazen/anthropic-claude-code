@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jun 2026 11:56:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 21:45:10 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking</title>
+      <link>https://paperplaine.com/papers/humanoid-gpt-scaling-data</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/humanoid-gpt-scaling-data</guid>
+      <pubDate>Tue, 02 Jun 2026 17:59:05 GMT</pubDate>
+      <author>Zekun Qi, Xuchuan Chen, Dairu Liu et al.</author>
+      <category>AI</category>
+      <description>Training one AI model on billions of motion frames to control robot bodies</description>
+      <content:encoded><![CDATA[<p><em>Training one AI model on billions of motion frames to control robot bodies</em></p><p>Researchers built Humanoid-GPT, a single AI model trained on 2 billion frames of human motion data that can control a humanoid robot to perform movements it has never seen before. Unlike earlier systems that required separate training for each new motion, this model generalizes to entirely new behaviors and tasks without additional fine-tuning, while also handling complex, fast-moving actions.</p><p><strong>Why it matters:</strong> Humanoid robots currently require time-consuming, task-specific training to learn new movements. A model that can instantly adapt to unseen motions could dramatically speed up robot deployment in factories, hospitals, and other real-world settings. This approach shows that scaling up both training data and model size—similar to how large language models work—may be the path to robots that are genuinely flexible rather than narrowly specialized.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Analytical Evaluation of DCA Convergence Properties for Minimizing Prediction Functions of Gaussian RBF Support Vector Regression</title>
+      <link>https://paperplaine.com/papers/analytical-evaluation-of-dca</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/analytical-evaluation-of-dca</guid>
+      <pubDate>Tue, 02 Jun 2026 12:25:21 GMT</pubDate>
+      <author>Yohei Kakimoto, Yuto Omae, Hirotaka Takahashi</author>
+      <category>Statistics</category>
+      <description>Predicting how fast a machine learning algorithm will find good answers</description>
+      <content:encoded><![CDATA[<p><em>Predicting how fast a machine learning algorithm will find good answers</em></p><p>A team of researchers figured out how to predict whether a common optimization algorithm will quickly solve problems involving trained support vector machines with Gaussian kernels. They discovered that a single number—based on the machine's training parameters—reliably forecasts both how fast the algorithm converges and how sensitive it is to starting conditions, making it possible to assess performance before training even begins.</p><p><strong>Why it matters:</strong> Machine learning engineers spend significant time tuning hyperparameters and choosing algorithms without knowing in advance whether their choices will lead to fast or slow solutions. This framework lets them estimate convergence speed from a simple formula, cutting down trial-and-error and making it easier to decide whether a particular configuration is worth pursuing before investing computational resources in training.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Auditing Asset-Specific Preferences in Financial Large Language Models: Evidence from Bitcoin Representations and Portfolio Allocation</title>
+      <link>https://paperplaine.com/papers/auditing-asset-specific-preferences</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/auditing-asset-specific-preferences</guid>
+      <pubDate>Mon, 01 Jun 2026 17:36:06 GMT</pubDate>
+      <author>Wenbin Wu</author>
+      <category>Finance</category>
+      <description>Do AI financial advisors secretly favor certain assets like Bitcoin?</description>
+      <content:encoded><![CDATA[<p><em>Do AI financial advisors secretly favor certain assets like Bitcoin?</em></p><p>Researchers found that large language models powering robo-advisors and trading bots do carry built-in preferences for specific assets, including Bitcoin. They identified a single internal feature in one AI model that, when amplified, increased Bitcoin's allocation in a simulated portfolio by 5.2 percentage points—even when the word "Bitcoin" wasn't mentioned. This preference shifted depending on context: the models ranked Bitcoin much higher as "reliable money" during crises than during normal times.</p><p><strong>Why it matters:</strong> As AI systems begin making real financial decisions for investors, hidden asset preferences could steer people toward or away from particular investments without their knowledge. This work provides the first method to detect and measure these internal biases, laying groundwork for new transparency standards that would require financial AI systems to disclose what they actually prefer—similar to how banks must know their customers, AI advisors should be audited to know their own assets.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Formalizing the Binding Problem</title>
       <link>https://paperplaine.com/papers/formalizing-the-binding-problem</link>
