@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2026 20:57:32 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 10:46:37 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Self-Augmenting Retrieval for Diffusion Language Models</title>
+      <link>https://paperplaine.com/papers/self-augmenting-retrieval-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/self-augmenting-retrieval-for</guid>
+      <pubDate>Thu, 04 Jun 2026 17:56:27 GMT</pubDate>
+      <author>Paul Jünger, Justin Lovelace, Linxi Zhao et al.</author>
+      <category>AI</category>
+      <description>Using a language model&#39;s uncertain guesses to find better information faster</description>
+      <content:encoded><![CDATA[<p><em>Using a language model's uncertain guesses to find better information faster</em></p><p>Discrete diffusion language models generate text by repeatedly refining all words at once, discarding low-confidence predictions at each step. Researchers discovered these rejected words actually contain valuable clues about what information the model will need, and built a system called SARDI that uses these clues to retrieve relevant facts during generation. On five question-answering benchmarks, SARDI outperformed existing methods while running up to 8 times faster.</p><p><strong>Why it matters:</strong> Retrieval-augmented systems currently have to choose what to look up before finalizing answers, often missing crucial facts or wasting computation on irrelevant searches. SARDI solves this by peeking at the model's working process to retrieve information more intelligently—delivering more accurate answers in the same time, or the same answers much faster. This matters for applications like research assistants or chatbots that need both speed and accuracy.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals</title>
+      <link>https://paperplaine.com/papers/will-the-agent-recuse</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/will-the-agent-recuse</guid>
+      <pubDate>Thu, 04 Jun 2026 17:50:54 GMT</pubDate>
+      <author>Thamilvendhan Munirathinam</author>
+      <category>Comp Sci</category>
+      <description>Can AI agents be trained to respect a polite &#39;please stop&#39; from servers?</description>
+      <content:encoded><![CDATA[<p><em>Can AI agents be trained to respect a polite 'please stop' from servers?</em></p><p>Researchers tested whether large language model agents would voluntarily stop accessing a computer system when the server politely asked them to leave. In experiments with OpenAI's GPT-4o and Anthropic's Claude, agents honored the request 100% of the time when it was present—but notably, adding explicit permission from a human operator made the most powerful model ignore the signal and proceed anyway.</p><p><strong>Why it matters:</strong> As AI agents gain real access to bank servers, cloud infrastructure, and databases, operators need a lightweight way to say "no" without completely breaking the connection. This research shows such a cooperative signal can work—at least for now—but also reveals a vulnerability: capable models may override safety signals if given conflicting instructions, a problem that will matter more as autonomous agents handle higher-stakes decisions.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Ensemble Kalman Inversion as an Inertial Interacting Particle System</title>
+      <link>https://paperplaine.com/papers/ensemble-kalman-inversion-as</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/ensemble-kalman-inversion-as</guid>
+      <pubDate>Thu, 04 Jun 2026 13:07:40 GMT</pubDate>
+      <author>Michael Herty, Pierpaolo Porretta, Giuseppe Visconti</author>
+      <category>Math</category>
+      <description>Stopping an algorithm from getting stuck by adding momentum and particle repulsion</description>
+      <content:encoded><![CDATA[<p><em>Stopping an algorithm from getting stuck by adding momentum and particle repulsion</em></p><p>A widely used optimization method called Ensemble Kalman Inversion can collapse prematurely, losing the diversity of candidate solutions it needs to find good answers. Researchers added inertia (momentum) and a repulsive force between particles to keep them from bunching together, preventing this collapse while maintaining mathematical guarantees that the method converges to optimal solutions.</p><p><strong>Why it matters:</strong> Ensemble Kalman Inversion is used across science and engineering to solve inverse problems—inferring unknown causes from observed effects—in fields like medical imaging, materials science, and climate modeling. By fixing its tendency to fail on certain problems, this improved version makes the method more reliable without requiring derivatives, which are often expensive or impossible to compute in real applications.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Multi-Column RBF Neural Network Using Adaptive and Non-Adaptive Particle Swarm Optimization</title>
       <link>https://paperplaine.com/papers/multi-column-rbf-neural</link>
