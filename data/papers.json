@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.06440",
+    "title": "Causal Atlases from Entropic Inference: Bayesian Networks beyond Optimal DAGs",
+    "authors": "Hazhir Aliahmadi, Irina Babayan, Greg van Anders",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-04T17:41:32Z",
+    "publishedFormatted": "Jun 4, 2026",
+    "subtitle": "Finding all the causal stories that fit the data, not just one",
+    "summary": "When researchers try to map cause-and-effect relationships from data, they usually pick a single best explanation. This paper shows that multiple competing causal explanations can fit equally well—and that traditional optimization methods often miss this ambiguity, leading to false causal links. By sampling many plausible causal maps instead of hunting for one ideal one, the authors reveal which causal claims are truly supported by the data and which are artifacts of the search method.",
+    "whyItMatters": "Causal maps guide real decisions in medicine, policy, and engineering—from which treatments actually cause recovery to which factors drive climate change. If researchers unknowingly pick a causal story that fits the data but isn't the true one, their conclusions could be misleading. This method exposes when the data genuinely can't decide between competing causes, prompting researchers to either collect better data or acknowledge uncertainty rather than confidently act on false causal claims.",
+    "fetchedAt": "2026-06-06T20:06:22.963Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 154
+    },
+    "slug": "causal-atlases-from-entropic"
+  },
+  {
+    "id": "2606.05991",
+    "title": "Forecasting of volatility and risk premia in electricity markets",
+    "authors": "Thomas K. Kloster, Fred Espen Benth",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-06-04T10:38:46Z",
+    "publishedFormatted": "Jun 4, 2026",
+    "subtitle": "Predicting price swings in electricity markets a week ahead",
+    "summary": "A new forecasting method can predict how electricity prices will move together across different time periods and locations, outperforming standard approaches. The method works better when it includes information about renewable energy generation and looks at patterns across multiple time scales, not just recent history.",
+    "whyItMatters": "Power companies and traders use these forecasts to manage financial risk and set prices for electricity contracts weeks in advance. Better predictions mean more accurate pricing, lower hedging costs, and less money wasted on unnecessary precautions — especially important as renewables make electricity markets more volatile and harder to predict.",
+    "fetchedAt": "2026-06-06T20:06:33.653Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 102
+    },
+    "slug": "forecasting-of-volatility-and"
+  },
+  {
+    "id": "2606.06368",
+    "title": "Optimally taming biases in black-box models for efficient semiparametric estimation",
+    "authors": "Yihong Gu, Qishuo Yin, Tianxi Cai et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-06-04T16:36:18Z",
+    "publishedFormatted": "Jun 4, 2026",
+    "subtitle": "How to squeeze better answers from machine learning models used as helper tools",
+    "summary": "When statisticians use machine learning to estimate hidden quantities needed for their main analysis, those errors typically damage results in direct proportion—double the error, double the damage. This paper proves that in many real situations, you can actually erase the first level of machine learning errors entirely, leaving only their squared effects. The authors propose a new method that achieves this sharper result and show it's mathematically impossible to do better.",
+    "whyItMatters": "Most modern statistical analyses rely on machine learning to handle complex nuisance tasks, from estimating treatment effects in medicine to calculating causal impacts in policy. This work shows how to extract more reliable answers from the same amount of data—without requiring stronger assumptions or running more experiments. For practitioners, it means sharper confidence intervals and more trustworthy conclusions when combining flexible machine learning with rigorous statistical inference.",
+    "fetchedAt": "2026-06-06T20:06:42.251Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 241
+    },
+    "slug": "optimally-taming-biases-in"
+  },
+  {
     "id": "2606.06479",
     "title": "Pretraining Recurrent Networks without Recurrence",
     "authors": "Akarsh Kumar, Phillip Isola",
