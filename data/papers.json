@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.06492",
+    "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+    "authors": "Liliana Hotsko, Yinxi Li, Yuntian Deng et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-04T17:59:46Z",
+    "publishedFormatted": "Jun 4, 2026",
+    "subtitle": "Teaching AI code assistants to adapt when projects change and grow",
+    "summary": "Researchers developed Code2LoRA, a system that generates custom AI adapters for code models without slowing down inference. The approach matches the performance of traditional fine-tuning methods while staying lightweight, and a new variant can update automatically as codebases evolve through commits.",
+    "whyItMatters": "Code AI assistants today either memorize entire repositories (making them slow) or ignore repository-specific details (making them less accurate). Code2LoRA solves this by generating lightweight, project-specific customizations instantly—meaning developers get smarter code completions for their actual codebase without the computational overhead or the brittleness of retraining when code changes.",
+    "fetchedAt": "2026-06-07T20:07:39.250Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 202
+    },
+    "slug": "code2lora-hypernetwork-generated-adapters"
+  },
+  {
+    "id": "2606.06254",
+    "title": "SecRL-Prune: Structured Reinforcement Learning-Based Pruning of CodeLLMs for Preserving Adversarial Code Mutation",
+    "authors": "Parsa Memarzadehsaghezi, Pooria Madani, Khalil El-Khatib",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-06-04T14:55:14Z",
+    "publishedFormatted": "Jun 4, 2026",
+    "subtitle": "Shrinking AI code generators while keeping their ability to dodge malware detectors",
+    "summary": "Researchers compressed large AI code models to 70–90% of their original size while preserving their ability to generate functionally identical but textually different code—a technique criminals could use to evade antivirus detection. In tests on real malware samples, code from these smaller models still reduced detection rates significantly, showing that the security risk persists even after aggressive compression.",
+    "whyItMatters": "As code-generation AI becomes cheaper and easier to deploy on everyday devices, malicious actors gain practical tools to automatically generate undetectable malware variants at scale. Security teams building detection systems now need to account for the fact that compressed AI models remain dangerous, not just the original full-size versions. This shifts the calculus for both offensive and defensive security planning around AI-generated code.",
+    "fetchedAt": "2026-06-07T20:07:42.560Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 1,
+      "pageCount": 9,
+      "wordCount": 180
+    },
+    "slug": "secrl-prune-structured-reinforcement"
+  },
+  {
+    "id": "2606.06452",
+    "title": "Energy-Modulated Time-Asymmetric Spontaneous Collapse: Forward-Backward Dynamics from Stochastic Ito Reversal and Bright Solitons",
+    "authors": "Ikechukwu C. Okoro, Mike O. Osiele, Godfrey E. Akpojotor",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-06-04T17:47:59Z",
+    "publishedFormatted": "Jun 4, 2026",
+    "subtitle": "How quantum systems evolve differently forward and backward in time",
+    "summary": "Physicists have shown that quantum systems described by a particular mathematical framework cannot evolve the same way backward as forward in time—a fundamental asymmetry encoded in the ratio 2/3. When they modeled the behavior of ultracold lithium atoms using this framework, they found that collapse effects grew a trillion times stronger in the forward direction than the reverse, matching none of the symmetric collapse models currently used in physics.",
+    "whyItMatters": "This work bridges quantum mechanics and irreversibility—the reason we experience time flowing one direction. If validated experimentally in ultracold atom systems, it could reshape how physicists model quantum collapse and nonequilibrium processes, moving beyond the symmetric assumptions that have dominated the field for decades.",
+    "fetchedAt": "2026-06-07T20:07:45.381Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 150
+    },
+    "slug": "energy-modulated-time-asymmetric"
+  },
+  {
     "id": "2606.06464",
     "title": "Human Adults and LLMs as Scientists: Who Benefits from Active Exploration?",
     "authors": "Mandana Samiei, Eunice Yiu, Anthony GX-Chen et al.",
