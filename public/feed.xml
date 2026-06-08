@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2026 20:07:45 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 11:57:32 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Supervision versus Demonstration-Based In-Context Learning for Multiword Expression Classification</title>
+      <link>https://paperplaine.com/papers/supervision-versus-demonstration-based</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/supervision-versus-demonstration-based</guid>
+      <pubDate>Fri, 05 Jun 2026 17:34:07 GMT</pubDate>
+      <author>Sercan Karakaş, Yusuf Şimşek</author>
+      <category>AI</category>
+      <description>Can AI learn to spot hidden idioms by example instead of training data?</description>
+      <content:encoded><![CDATA[<p><em>Can AI learn to spot hidden idioms by example instead of training data?</em></p><p>When large language models are shown just one or two examples of Turkish idioms in prompts, they dramatically improve at recognizing them—but only if the examples are chosen carefully. A traditional supervised model performed roughly as well overall, suggesting that examples matter more than scale for this particular language task.</p><p><strong>Why it matters:</strong> Turkish and many other languages rely heavily on idioms that look identical to literal phrases, making them genuinely hard to classify. This research shows that current AI systems struggle with this distinction unless they receive well-designed guidance, and that bigger models aren't automatically better at it. For anyone building translation tools or search systems for Turkish, the findings suggest investing in smarter example selection might work better than simply scaling up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Time series Foundation Models based on Physics-Informed Synthetic Histories for Cold-Start Photovoltaic Forecasting</title>
+      <link>https://paperplaine.com/papers/time-series-foundation-models</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/time-series-foundation-models</guid>
+      <pubDate>Fri, 05 Jun 2026 17:05:19 GMT</pubDate>
+      <author>Lorenzo Longarini, Alessandro Rongoni, Simone Silenzi et al.</author>
+      <category>Statistics</category>
+      <description>Predicting solar power output before any real data exists</description>
+      <content:encoded><![CDATA[<p><em>Predicting solar power output before any real data exists</em></p><p>When a solar farm first opens, operators have no historical data to train forecasting models—but this research shows they can generate fake production histories from basic site information and weather patterns, then feed those into artificial intelligence models to make accurate predictions. On real data, this approach cut forecast error by 1.7 to 2 times compared to traditional methods, with one model achieving an error rate of just 0.514 kilowatt-hours per kilowatt of capacity per day.</p><p><strong>Why it matters:</strong> Solar operators currently make blind decisions about maintenance, storage, and grid commitments at a plant's launch. Better cold-start forecasts let them optimize operations immediately rather than waiting months for real data to accumulate, reducing waste and improving grid reliability. The method works across different climates and plant types, making it practical for rapid deployment worldwide.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Identity Trap in EEG Foundation Models: A Diagnostic Audit</title>
+      <link>https://paperplaine.com/papers/the-identity-trap-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-identity-trap-in</guid>
+      <pubDate>Thu, 04 Jun 2026 18:54:34 GMT</pubDate>
+      <author>Jun-You Lin, Ying Choon Wu, Tzyy-Ping Jung</author>
+      <category>Biology</category>
+      <description>When brain-reading AI learns to spot the person instead of the disease</description>
+      <content:encoded><![CDATA[<p><em>When brain-reading AI learns to spot the person instead of the disease</em></p><p>Popular AI models trained on EEG brain scans achieve high accuracy on clinical tasks, but a new diagnostic reveals they often rely on subject-identity features rather than genuine disease markers. Researchers identified this "Identity Trap" across three major foundation models and four datasets, showing that subject-specific patterns were 13–89 times stronger than random noise—and only grew stronger after fine-tuning. They developed FMScope, a toolkit that separates real biological signals from identity shortcuts, improving accuracy by 6–27 percentage points when true clinical markers exist.</p><p><strong>Why it matters:</strong> EEG-based AI models are moving into clinical use for diagnosing epilepsy, sleep disorders, and brain injuries, where misplaced confidence in false accuracy could harm patients. Without tools like FMScope, hospitals might deploy models that perform well on test data but fail on new patients they've never seen—because the model learned to recognize individual brains rather than disease patterns. This work provides a concrete method to audit foundation models before clinical deployment and shows which features are genuinely tied to disease versus which are diagnostic dead ends.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution</title>
       <link>https://paperplaine.com/papers/code2lora-hypernetwork-generated-adapters</link>
