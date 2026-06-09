@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.09762",
+    "title": "Preserving Plasticity in Continual Learning via Dynamical Isometry",
+    "authors": "Andries Rosseau, Robert Müller, Ann Nowé",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-08T17:24:15Z",
+    "publishedFormatted": "Jun 8, 2026",
+    "subtitle": "Keeping neural networks flexible enough to learn new things over time",
+    "summary": "Neural networks gradually lose the ability to learn new information when trained continuously on shifting data—a problem called plasticity loss. Researchers traced this to a mathematical property called dynamical isometry, where the network's internal layers maintain balanced sensitivity, and showed that maintaining this property preserves learning ability. They developed a new optimizer called AdamO and regularization technique that keeps networks flexible while remaining powerful, consistently outperforming existing methods on standard tests.",
+    "whyItMatters": "This directly addresses a major limitation in AI systems that need to learn from new data over months or years—like recommendation systems, robotics, or autonomous vehicles. Without solving plasticity loss, these systems become frozen in place, unable to adapt to new patterns or tasks. The new methods are efficient enough to use in practice, making continually-learning AI systems genuinely viable rather than theoretical.",
+    "fetchedAt": "2026-06-09T20:52:55.018Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 164
+    },
+    "slug": "preserving-plasticity-in-continual"
+  },
+  {
+    "id": "2606.09781",
+    "title": "Topological defects and scalar field modes in warped geometries",
+    "authors": "A. A. Saharian, E. L. Karapetyan, G. V. Mirzoyan",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-06-08T17:40:22Z",
+    "publishedFormatted": "Jun 8, 2026",
+    "subtitle": "How quantum fields behave around cosmic defects in curved spacetime",
+    "summary": "Physicists developed a mathematical toolkit for understanding how quantum fields behave in warped spacetimes—curved geometries that include cosmic defects like strings and monopoles. By breaking down the complex geometry into simpler pieces, they derived exact solutions showing how fields vibrate around these defects, with specific predictions for how particles pop in and out of existence near a monopole in anti-de Sitter space.",
+    "whyItMatters": "Warped geometries appear in modern theories of extra dimensions and high-energy physics, including models that try to explain why gravity is so much weaker than other forces. The exact solutions provided here give physicists concrete predictions they can test against quantum field behavior in these exotic spacetimes, moving beyond approximations they've relied on before.",
+    "fetchedAt": "2026-06-09T20:52:58.360Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 128
+    },
+    "slug": "topological-defects-and-scalar"
+  },
+  {
+    "id": "2606.09551",
+    "title": "FuseFSS: Efficient Secure LLM Inference with Function Secret Sharing",
+    "authors": "Yuhan Ma, Yong Li, Stefan Schmid",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-06-08T14:30:00Z",
+    "publishedFormatted": "Jun 8, 2026",
+    "subtitle": "Making AI chatbots faster while keeping user questions completely private",
+    "summary": "A new system called FuseFSS speeds up private AI queries by 24–50% while keeping prompts hidden from the servers hosting the model. The key innovation replaces dozens of custom security protocols with a single streamlined compiler that handles all the mathematical operations needed to run AI models securely.",
+    "whyItMatters": "As AI assistants handle sensitive queries—medical questions, legal advice, confidential business data—users need privacy guarantees. FuseFSS makes this possible without sacrificing speed, meaning companies can offer genuinely private AI services without the performance penalty that currently deters adoption. It also reduces the storage overhead for security setup by 20–24%, lowering infrastructure costs.",
+    "fetchedAt": "2026-06-09T20:53:01.182Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 168
+    },
+    "slug": "fusefss-efficient-secure-llm"
+  },
+  {
     "id": "2606.09758",
     "title": "Difference-Aware Retrieval Policies for Imitation Learning",
     "authors": "Quinn Pfeifer, Ethan Pronovost, Paarth Shah et al.",
