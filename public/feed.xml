@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2026 09:55:55 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 20:12:07 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Generative Modeling of Bach-Style Symbolic Music: A Comparative Study of Autoregressive, Latent-Variable, and Adversarial Approaches</title>
+      <link>https://paperplaine.com/papers/generative-modeling-of-bach</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/generative-modeling-of-bach</guid>
+      <pubDate>Thu, 11 Jun 2026 17:39:55 GMT</pubDate>
+      <author>Kyuil Lee, Dezhi Yu, Yongkang Huang</author>
+      <category>AI</category>
+      <description>Which AI method best learns to compose music like Bach</description>
+      <content:encoded><![CDATA[<p><em>Which AI method best learns to compose music like Bach</em></p><p>Researchers tested three different AI approaches for composing Bach-style piano music and found that a method called autoregressive LSTM with attention produced the most musically coherent pieces. A technique called vector quantization improved a second approach called recurrent VAEs by preventing them from collapsing into useless outputs, while adversarial networks struggled with training stability and consistency.</p><p><strong>Why it matters:</strong> As AI tools for creative work become more common, understanding which methods work best for music composition matters for building better music generation software. The findings show that simpler, more direct approaches (autoregressive models) currently outperform more complex ones for this task—a lesson that could guide how developers choose tools for other creative AI applications.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Fed-FBD: Federated Functional Block Diversification for Isolation, Privacy, and Surgical Unlearning</title>
+      <link>https://paperplaine.com/papers/fed-fbd-federated-functional</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/fed-fbd-federated-functional</guid>
+      <pubDate>Wed, 10 Jun 2026 21:06:10 GMT</pubDate>
+      <author>Weijie Chen, Alan B. McMillan</author>
+      <category>Engineering</category>
+      <description>Keeping hospitals safe in collaborative AI without sharing patient data</description>
+      <content:encoded><![CDATA[<p><em>Keeping hospitals safe in collaborative AI without sharing patient data</em></p><p>Federated learning lets hospitals train AI together without exposing raw patient data, but standard approaches can't stop one bad actor from poisoning the model or let departed hospitals erase their contribution. Researchers built Fed-FBD, which breaks neural networks into modular blocks and tracks which hospital contributed each piece, allowing instant removal of a departed participant's influence and architectural protection against poisoning — losing only 0.3–3.1% accuracy in exchange.</p><p><strong>Why it matters:</strong> Healthcare networks can now collaborate on AI without fear that one compromised hospital or malicious participant will corrupt the shared model, and they can honor patient privacy requests by surgically erasing a departed hospital's contribution in under a second rather than retraining from scratch. This removes a major legal and trust barrier to the kind of multi-hospital AI training that could improve rare disease diagnosis and treatment.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Option prices from operational-time reaction-boundary lattices</title>
+      <link>https://paperplaine.com/papers/option-prices-from-operational</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/option-prices-from-operational</guid>
+      <pubDate>Mon, 08 Jun 2026 14:38:58 GMT</pubDate>
+      <author>Chris Angstmann, Tim Gebbie</author>
+      <category>Finance</category>
+      <description>How market activity time, not clock time, shapes option prices</description>
+      <content:encoded><![CDATA[<p><em>How market activity time, not clock time, shapes option prices</em></p><p>This paper shows that option prices depend on operational time — the actual pace of market events — rather than calendar time alone. The authors built a mathematical model showing how buy-sell activity at the bid-ask spread directly determines volatility and pricing, and how this framework explains why some market risks fall outside standard pricing models.</p><p><strong>Why it matters:</strong> Financial traders and risk managers currently price options using models that assume steady time flow, but real markets operate in bursts — some moments see hundreds of trades, others see none. This work provides a concrete way to account for that variable rhythm, potentially improving how banks price derivatives and manage hedging when market activity is thin or uneven. It also clarifies which types of market risk standard models fail to capture, which matters for both regulators assessing systemic risk and traders avoiding blind spots.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Understanding Truncated Positional Encodings for Graph Neural Networks</title>
       <link>https://paperplaine.com/papers/understanding-truncated-positional-encodings</link>
