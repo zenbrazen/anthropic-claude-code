@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2026 21:00:32 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 09:55:55 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Understanding Truncated Positional Encodings for Graph Neural Networks</title>
+      <link>https://paperplaine.com/papers/understanding-truncated-positional-encodings</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/understanding-truncated-positional-encodings</guid>
+      <pubDate>Thu, 11 Jun 2026 17:58:56 GMT</pubDate>
+      <author>James Flora, Mitchell Black, Weng-Keen Wong et al.</author>
+      <category>AI</category>
+      <description>Why shortcuts in graph neural networks lose their theoretical power</description>
+      <content:encoded><![CDATA[<p><em>Why shortcuts in graph neural networks lose their theoretical power</em></p><p>When graph neural networks use shortcuts to speed up computation, they lose expressive power in ways theory didn't predict. Researchers found that truncated positional encodings—practical versions of mathematical features that normally match cutting-edge graph networks—actually fall back to the level of much simpler networks. Using a mix of different truncated encodings together works better than relying on any single type.</p><p><strong>Why it matters:</strong> Graph neural networks power recommendation systems, drug discovery, and social network analysis. Practitioners use truncated encodings because full versions are too slow, but now know this tradeoff weakens the network's ability to distinguish between different graph structures. Teams building production systems can use these findings to either choose truncated encodings more strategically or invest in combining multiple types to recover lost performance.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Differential Geometric Conditions for Koopman Linearizability of Control-Affine Systems</title>
+      <link>https://paperplaine.com/papers/differential-geometric-conditions-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/differential-geometric-conditions-for</guid>
+      <pubDate>Thu, 11 Jun 2026 17:03:00 GMT</pubDate>
+      <author>Shankar A. Deka</author>
+      <category>Math</category>
+      <description>When can curved control systems be transformed into straight-line ones?</description>
+      <content:encoded><![CDATA[<p><em>When can curved control systems be transformed into straight-line ones?</em></p><p>Researchers identified mathematical conditions that determine whether a nonlinear control system can be converted into a simpler linear form using a technique called Koopman linearization. The conditions—based on the geometric properties of the system's equations—are both necessary and sufficient for this transformation to work, providing engineers with a practical checklist to assess whether linearization is possible before attempting it.</p><p><strong>Why it matters:</strong> Control engineers routinely work with nonlinear systems (robots, aircraft, power grids) that are hard to analyze and control. If a system can be Koopman linearized, standard linear control techniques become available, making design faster and more reliable. These geometric conditions let engineers quickly determine whether linearization will work for their specific system, avoiding wasted effort on impossible transformations.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Beyond Runtime Enforcement: Shield Synthesis as Defensibility Analysis for Adversarial Networks</title>
+      <link>https://paperplaine.com/papers/beyond-runtime-enforcement-shield</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/beyond-runtime-enforcement-shield</guid>
+      <pubDate>Thu, 11 Jun 2026 17:35:40 GMT</pubDate>
+      <author>Achraf Hsain, Sultan Almuhammadi</author>
+      <category>Comp Sci</category>
+      <description>Using game theory to audit whether networks can actually be defended</description>
+      <content:encoded><![CDATA[<p><em>Using game theory to audit whether networks can actually be defended</em></p><p>Researchers developed a mathematical framework that tests whether a computer network can be defended against attackers by treating defense as a two-player game. Rather than using this approach to control agents at runtime, the team shows it works better as a design-time audit tool that reveals structural weaknesses in network architectures and produces a formal yes-or-no verdict on whether a topology can be secured.</p><p><strong>Why it matters:</strong> Network defenders typically evaluate security through operational testing alone, which misses systematic vulnerabilities. This framework provides a formal guarantee—a mathematical proof—that a network design either can or cannot be defended given specific constraints, catching architectural flaws before deployment. The approach also revealed that networks can look formally secure on paper while failing in real adversarial play, meaning defenders now have two complementary lenses instead of one.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Multi-Agent Reinforcement Learning from Delayed Marketplace Feedback for Objective-Weight Adaptation in Three-Sided Dispatch</title>
       <link>https://paperplaine.com/papers/multi-agent-reinforcement-learning</link>
