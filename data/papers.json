@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.13677",
+    "title": "Mana: Dexterous Manipulation of Articulated Tools",
+    "authors": "Zhao-Heng Yin, Guanya Shi, Pieter Abbeel et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-11T17:59:49Z",
+    "publishedFormatted": "Jun 11, 2026",
+    "subtitle": "Teaching robots to manipulate tools with moving parts by treating it like animation",
+    "summary": "Robots can now manipulate articulated tools—things with hinges, joints, and moving parts—by using a strategy borrowed from computer animation. The system, called Mana, learns to grasp and move tools like scissors, pliers, and tongs with a single robot hand, requiring less than a minute of human input per tool and succeeding on real hardware without additional training.",
+    "whyItMatters": "Most robot hands today can handle rigid objects but struggle with tools that bend, rotate, or have moving joints—the very tools humans use daily. This work opens the door to robots performing practical manipulation tasks in homes, factories, and repair shops, where articulated tools are ubiquitous. The approach is also efficient: it generates its own training data automatically, meaning new tools can be added without expensive manual setup.",
+    "fetchedAt": "2026-06-14T20:15:01.410Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 143
+    },
+    "slug": "mana-dexterous-manipulation-of"
+  },
+  {
+    "id": "2606.13272",
+    "title": "Split Tallies: A Discrete Certificate Calculus for Auditing Dynamic Ordered Sets in Constant Memory",
+    "authors": "Faruk Alpay, Levent Sarioglu",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-06-11T12:25:43Z",
+    "publishedFormatted": "Jun 11, 2026",
+    "subtitle": "Catching sneaky changes to ordered lists using almost no memory",
+    "summary": "Researchers developed a method for spotting when someone secretly alters a growing or shrinking ordered list of data—detecting wrong answers with near-certainty despite the auditor only remembering five numbers. The approach works by tracking invisible gaps between items and checking if the record of when gaps appeared matches when they disappeared.",
+    "whyItMatters": "Databases and financial ledgers often rely on untrusted third parties to maintain sorted data correctly. This method lets an auditor verify that data hasn't been corrupted or manipulated without storing a copy of the entire dataset—critical for systems where storage is expensive or memory is constrained, like blockchain systems or distributed databases.",
+    "fetchedAt": "2026-06-14T20:15:04.323Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 171
+    },
+    "slug": "split-tallies-a-discrete"
+  },
+  {
+    "id": "2606.13570",
+    "title": "Approximability limits for bounded-degree max-LINSAT and implications for decoded quantum interferometry",
+    "authors": "Maximilian J. Kramer, Carsten Schubert, Jens Eisert",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-06-11T16:59:12Z",
+    "publishedFormatted": "Jun 11, 2026",
+    "subtitle": "Finding the limits of what quantum computers can solve better than classical ones",
+    "summary": "Researchers proved that for a broad class of optimization problems, even quantum computers face fundamental speed limits when trying to beat classical algorithms. On problems where each variable connects to at most D constraints, any quantum advantage shrinks to just a constant improvement — the hard part (improving by roughly 1/√D) remains equally hard for both quantum and classical machines.",
+    "whyItMatters": "Quantum computing advocates have hoped quantum machines could dramatically outperform classical ones on certain optimization problems. This work draws a precise line: quantum advantage exists only in small constant factors, not in the scaling that matters for large, practical problems. For researchers building quantum algorithms, it means effort should focus on optimizing these constant improvements rather than chasing exponential speedups that the mathematics now shows are unreachable.",
+    "fetchedAt": "2026-06-14T20:15:07.431Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 244
+    },
+    "slug": "approximability-limits-for-bounded"
+  },
+  {
     "id": "2606.13680",
     "title": "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
     "authors": "Zilin Xiao, Qi Ma, Chun-cheng Jason Chen et al.",

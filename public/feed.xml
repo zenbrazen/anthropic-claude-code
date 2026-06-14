@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2026 10:24:34 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 20:15:07 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mana: Dexterous Manipulation of Articulated Tools</title>
+      <link>https://paperplaine.com/papers/mana-dexterous-manipulation-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/mana-dexterous-manipulation-of</guid>
+      <pubDate>Thu, 11 Jun 2026 17:59:49 GMT</pubDate>
+      <author>Zhao-Heng Yin, Guanya Shi, Pieter Abbeel et al.</author>
+      <category>AI</category>
+      <description>Teaching robots to manipulate tools with moving parts by treating it like animation</description>
+      <content:encoded><![CDATA[<p><em>Teaching robots to manipulate tools with moving parts by treating it like animation</em></p><p>Robots can now manipulate articulated tools—things with hinges, joints, and moving parts—by using a strategy borrowed from computer animation. The system, called Mana, learns to grasp and move tools like scissors, pliers, and tongs with a single robot hand, requiring less than a minute of human input per tool and succeeding on real hardware without additional training.</p><p><strong>Why it matters:</strong> Most robot hands today can handle rigid objects but struggle with tools that bend, rotate, or have moving joints—the very tools humans use daily. This work opens the door to robots performing practical manipulation tasks in homes, factories, and repair shops, where articulated tools are ubiquitous. The approach is also efficient: it generates its own training data automatically, meaning new tools can be added without expensive manual setup.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Split Tallies: A Discrete Certificate Calculus for Auditing Dynamic Ordered Sets in Constant Memory</title>
+      <link>https://paperplaine.com/papers/split-tallies-a-discrete</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/split-tallies-a-discrete</guid>
+      <pubDate>Thu, 11 Jun 2026 12:25:43 GMT</pubDate>
+      <author>Faruk Alpay, Levent Sarioglu</author>
+      <category>Comp Sci</category>
+      <description>Catching sneaky changes to ordered lists using almost no memory</description>
+      <content:encoded><![CDATA[<p><em>Catching sneaky changes to ordered lists using almost no memory</em></p><p>Researchers developed a method for spotting when someone secretly alters a growing or shrinking ordered list of data—detecting wrong answers with near-certainty despite the auditor only remembering five numbers. The approach works by tracking invisible gaps between items and checking if the record of when gaps appeared matches when they disappeared.</p><p><strong>Why it matters:</strong> Databases and financial ledgers often rely on untrusted third parties to maintain sorted data correctly. This method lets an auditor verify that data hasn't been corrupted or manipulated without storing a copy of the entire dataset—critical for systems where storage is expensive or memory is constrained, like blockchain systems or distributed databases.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Approximability limits for bounded-degree max-LINSAT and implications for decoded quantum interferometry</title>
+      <link>https://paperplaine.com/papers/approximability-limits-for-bounded</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/approximability-limits-for-bounded</guid>
+      <pubDate>Thu, 11 Jun 2026 16:59:12 GMT</pubDate>
+      <author>Maximilian J. Kramer, Carsten Schubert, Jens Eisert</author>
+      <category>Physics</category>
+      <description>Finding the limits of what quantum computers can solve better than classical ones</description>
+      <content:encoded><![CDATA[<p><em>Finding the limits of what quantum computers can solve better than classical ones</em></p><p>Researchers proved that for a broad class of optimization problems, even quantum computers face fundamental speed limits when trying to beat classical algorithms. On problems where each variable connects to at most D constraints, any quantum advantage shrinks to just a constant improvement — the hard part (improving by roughly 1/√D) remains equally hard for both quantum and classical machines.</p><p><strong>Why it matters:</strong> Quantum computing advocates have hoped quantum machines could dramatically outperform classical ones on certain optimization problems. This work draws a precise line: quantum advantage exists only in small constant factors, not in the scaling that matters for large, practical problems. For researchers building quantum algorithms, it means effort should focus on optimizing these constant improvements rather than chasing exponential speedups that the mathematics now shows are unreachable.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning</title>
       <link>https://paperplaine.com/papers/learning-to-reason-by</link>
