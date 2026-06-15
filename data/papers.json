@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.14639",
+    "title": "From Self-Supervised Speech Models to Mixture-of-Experts for Robust Anti-Spoofing",
+    "authors": "Hugo Daumain, Driss Matrouf, Khaled Khelif et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-12T17:04:32Z",
+    "publishedFormatted": "Jun 12, 2026",
+    "subtitle": "Making voice-cloning detection work against new fake-speech techniques",
+    "summary": "Researchers upgraded a speech-analysis AI system using a technique called Mixture-of-Experts, which lets multiple specialized neural networks work together to catch synthetic voices. The system reduced errors by 12% when tested against 14 different datasets of spoofed audio, and crucially, it maintained its ability to detect new types of fake speech it had never encountered before.",
+    "whyItMatters": "Voice-based authentication is increasingly used for banking, phone systems, and security—making reliable detection of deepfake audio critical. As AI-generated speech becomes more convincing, anti-spoofing systems that fail on novel synthesis methods create real security gaps. This approach offers measurably better detection across diverse generation techniques, meaning voice-based systems can defend against both current and emerging deepfake threats.",
+    "fetchedAt": "2026-06-15T13:12:59.493Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 8,
+      "wordCount": 131
+    },
+    "slug": "from-self-supervised-speech"
+  },
+  {
+    "id": "2606.14416",
+    "title": "Federated Learning for Feature Generalization with Convex Constraints",
+    "authors": "Dongwon Kim, Donghee Kim, Sung Kuk Shyn et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-06-12T12:50:33Z",
+    "publishedFormatted": "Jun 12, 2026",
+    "subtitle": "Helping distributed AI systems learn shared skills without overfitting to local data",
+    "summary": "When machine learning models train across multiple devices with different data, they often overfit to their local information and lose the ability to generalize. Researchers developed FedCONST, which automatically adjusts how much each device's updates influence the shared model, ensuring that well-learned features don't drown out weaker ones during the merging process.",
+    "whyItMatters": "Federated learning powers real-world systems like predictive keyboards, health apps, and industrial sensors that must learn from private data without sending it to a central server. Better generalization means these systems work reliably when deployed to new users or environments, rather than degrading because they memorized quirks of their training group. This directly improves the practical performance of privacy-preserving AI across smartphones, hospitals, and distributed networks.",
+    "fetchedAt": "2026-06-15T13:13:02.610Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 124
+    },
+    "slug": "federated-learning-for-feature"
+  },
+  {
+    "id": "2606.13812",
+    "title": "CFOs Meet LLMs",
+    "authors": "John R. Graham, Campbell R. Harvey, Manish Jha",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-06-11T18:32:12Z",
+    "publishedFormatted": "Jun 11, 2026",
+    "subtitle": "Can AI predict what business leaders actually think about the economy?",
+    "summary": "Researchers prompted an AI language model to role-play as CFOs of real companies and answer questions about economic optimism. The AI's answers matched what those CFOs actually said in surveys with striking accuracy, even after accounting for the companies' past responses and characteristics. This suggests LLMs could replace expensive, slow-to-conduct surveys with instant, continuous snapshots of business sentiment across thousands of firms.",
+    "whyItMatters": "Business leaders' economic outlook drives hiring, investment, and lending decisions that ripple through the entire economy. Currently, policymakers and investors rely on surveys of just a few hundred CFOs that arrive months late. If AI can reliably predict what executives are thinking in real time, economists and the Federal Reserve could spot economic shifts weeks or months earlier and adjust policy accordingly—potentially catching slowdowns before they happen or avoiding overheating.",
+    "fetchedAt": "2026-06-15T13:13:06.244Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 21,
+      "wordCount": 157
+    },
+    "slug": "cfos-meet-llms"
+  },
+  {
     "id": "2606.13677",
     "title": "Mana: Dexterous Manipulation of Articulated Tools",
     "authors": "Zhao-Heng Yin, Guanya Shi, Pieter Abbeel et al.",
