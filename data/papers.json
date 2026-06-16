@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.17034",
+    "title": "KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing",
+    "authors": "Mufei Li, Shikun Liu, Dongqi Fu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-15T17:53:09Z",
+    "publishedFormatted": "Jun 15, 2026",
+    "subtitle": "Removing unwanted information from AI's memory without reprocessing everything",
+    "summary": "When large language models process long documents, information gets cached for speed—but sometimes that information becomes irrelevant or harmful after processing starts. KVEraser, a new technique, removes specific spans of cached information by replacing only their memory traces with learned alternatives, rather than forcing the system to reprocess thousands of subsequent tokens. On documents up to 32,000 tokens long, it achieves nearly the same accuracy as full recomputation while being 7 times faster.",
+    "whyItMatters": "Long-context AI applications frequently encounter stale search results, incorrect tool outputs, or harmful injected content that only become apparent mid-processing. KVEraser enables real-time removal of this bad information without the computational penalty that would otherwise make it impractical—turning a 17.6x slowdown into just a 24% one. This makes it feasible to build AI systems that can correct themselves and respond safely to new user instructions mid-conversation.",
+    "fetchedAt": "2026-06-16T21:39:10.968Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 221
+    },
+    "slug": "kveraser-learning-to-steer"
+  },
+  {
+    "id": "2606.16951",
+    "title": "Simulation-Based Multi-Fillet Evaluation of Woody Breast Poultry Fillets",
+    "authors": "Chirantan Sen Mukherjee, Seung-Chul Yoon, William J. Beksi",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-06-15T16:52:34Z",
+    "publishedFormatted": "Jun 15, 2026",
+    "subtitle": "Spotting diseased chicken meat by watching multiple fillets bend at once",
+    "summary": "Chicken breast disease called woody breast makes meat tough and worthless, but current detection systems only scan one fillet at a time, slowing down processing plants. Researchers created a physics-based computer simulation and a new camera angle that can evaluate multiple fillets simultaneously by tracking how they bend, offering a faster alternative to the existing method.",
+    "whyItMatters": "Poultry processing plants lose millions annually to woody breast going undetected. A system that evaluates several fillets at once instead of one could speed up quality control lines while catching more diseased meat before it reaches consumers. This approach could help producers reduce waste and improve food safety without expensive equipment overhauls.",
+    "fetchedAt": "2026-06-16T21:39:13.708Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 187
+    },
+    "slug": "simulation-based-multi-fillet"
+  },
+  {
+    "id": "2606.16269",
+    "title": "Revisiting Trade-sign Long-memory and Square-root Law price impact",
+    "authors": "Chris Angstmann, Tim Gebbie",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-06-15T06:18:42Z",
+    "publishedFormatted": "Jun 15, 2026",
+    "subtitle": "Why large trades leave predictable price fingerprints in financial markets",
+    "summary": "When traders execute large orders, markets exhibit two well-known patterns: past trade directions predict future ones (long-memory), and price impact grows with the square root of order size rather than linearly. This paper derives both patterns from a single mathematical framework based on how buy and sell orders pile up in the market, showing that the long-memory effect is really about timing of trades, while the square-root law reflects the market's actual survival and stability.",
+    "whyItMatters": "Large institutional investors rely on these patterns to predict how much a trade will move the market and to design execution strategies that minimize costs. Clarifying exactly why these patterns emerge—and distinguishing between patterns that depend on how often trades happen versus how many shares move—helps traders and risk managers build more accurate models of real market behavior and avoid costly surprises when market conditions shift.",
+    "fetchedAt": "2026-06-16T21:39:24.062Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 188
+    },
+    "slug": "revisiting-trade-sign-long"
+  },
+  {
     "id": "2606.16995",
     "title": "When in Doubt, Plan It Out: Committed Small Language Model Deliberation for Reactive Reinforcement Learning",
     "authors": "Nathan Gavenski, Juarez Monteiro, Francisco Galuppo et al.",
