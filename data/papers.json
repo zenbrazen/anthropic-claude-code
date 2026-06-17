@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.18236",
+    "title": "Sign-Rank, Index, and List Replicability: Connections and Separations",
+    "authors": "Ari Blondal, Hamed Hatami, Pooya Hatami et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-16T17:57:16Z",
+    "publishedFormatted": "Jun 16, 2026",
+    "subtitle": "New tools for measuring how hard it is to learn complex patterns",
+    "summary": "Researchers discovered how three different measures of pattern complexity relate to each other, proving that two newer measures called the Z₂-index and list replicability can help estimate sign rank—a notoriously hard-to-calculate measure in machine learning. By connecting these measures and studying list replicability more deeply, the team resolved an open question about when sign rank and the Z₂-index diverge.",
+    "whyItMatters": "Sign rank is a fundamental concept in learning theory, but computing it directly is so difficult that researchers often can't determine whether certain problems are inherently hard to learn. These new connections give machine learning theorists practical tools to prove lower bounds on sign rank without calculating it directly, potentially accelerating progress on long-standing open problems in computational learning.",
+    "fetchedAt": "2026-06-17T21:01:13.301Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 172
+    },
+    "slug": "sign-rank-index-and"
+  },
+  {
+    "id": "2606.18167",
+    "title": "Optimal Calibration of Quantum Network Links",
+    "authors": "Vinay Kumar, Claudio Cicconetti, Marco Conti et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-06-16T17:06:41Z",
+    "publishedFormatted": "Jun 16, 2026",
+    "subtitle": "Finding the sweet spot between quantum link quality and how often they need repairs",
+    "summary": "Quantum networks face a fundamental trade-off: the longer you run a quantum link without maintenance, the more its signal quality degrades, but pausing to recalibrate takes the link offline entirely. Researchers developed a mathematical protocol that automatically decides how long each link should operate before recalibrating, balancing quality against availability to meet a network's performance needs.",
+    "whyItMatters": "Quantum networks promise unprecedented security and computing power, but they only work if their links stay reliable. This optimization directly determines how much usable bandwidth a quantum network actually delivers—get the calibration timing wrong, and you either waste time on repairs or send corrupted data. The protocol works for both simple chains and complex networks where multiple paths share links, making it practical for real quantum infrastructure.",
+    "fetchedAt": "2026-06-17T21:01:16.582Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 216
+    },
+    "slug": "optimal-calibration-of-quantum"
+  },
+  {
+    "id": "2606.18173",
+    "title": "An algorithm to exactly compute minimal upper bounds in the Loewner order",
+    "authors": "Adam Humeniuk, Gabriel Jarry-Bolduc, Patrick Pascua et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-06-16T17:08:55Z",
+    "publishedFormatted": "Jun 16, 2026",
+    "subtitle": "Finding the smallest matrix that bounds a collection of matrices",
+    "summary": "Researchers developed an algorithm that can exactly compute the smallest upper bound for any group of matrices—a problem that matters across optimization, quantum computing, and control theory. The method finishes in at most n iterations and works by finding what's called a minimal upper bound in the Loewner order, a mathematical framework for comparing matrices.",
+    "whyItMatters": "Many optimization and engineering problems require finding a single matrix that bounds multiple others, but unlike ordering regular numbers, matrices often have no unique smallest upper bound. This algorithm provides a guaranteed way to find one, enabling faster and more precise solutions in quantum information processing, control systems design, and numerical computations that rely on comparing matrices in this specific way.",
+    "fetchedAt": "2026-06-17T21:01:20.024Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 145
+    },
+    "slug": "an-algorithm-to-exactly"
+  },
+  {
     "id": "2606.18231",
     "title": "Adaptive Volumetric Mechanical Property Fields Invariant to Resolution",
     "authors": "Rishit Dagli, Donglai Xiang, Vismay Modi et al.",
