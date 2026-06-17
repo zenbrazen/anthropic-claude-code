@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.18231",
+    "title": "Adaptive Volumetric Mechanical Property Fields Invariant to Resolution",
+    "authors": "Rishit Dagli, Donglai Xiang, Vismay Modi et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-16T17:56:03Z",
+    "publishedFormatted": "Jun 16, 2026",
+    "subtitle": "Teaching computers to guess what materials are made of inside 3D objects",
+    "summary": "Most 3D digital objects lack information about their internal materials—how stiff they are, how they bend, how heavy they feel—which breaks realistic physics simulations. A new method called AdaVoMP predicts these hidden material properties at 16 times higher resolution than previous approaches, using far less computing power while actually becoming more accurate.",
+    "whyItMatters": "Video game developers, architects, and engineers currently spend hours manually assigning material properties to digital objects before they can simulate how they'll behave. This method automates that process, turning raw 3D files into simulation-ready assets in minutes instead of days. The result is more realistic animations, better engineering previews, and faster production pipelines across gaming, film, and product design.",
+    "fetchedAt": "2026-06-17T11:47:26.835Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 163
+    },
+    "slug": "adaptive-volumetric-mechanical-property"
+  },
+  {
+    "id": "2606.18250",
+    "title": "Future Dynamic 3D Reconstruction: A 3D World Model with Disentangled Ego-Motion",
+    "authors": "Nils Morbitzer, Jonathan Evers, Artem Savkin et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-06-16T17:59:46Z",
+    "publishedFormatted": "Jun 16, 2026",
+    "subtitle": "Teaching self-driving cars to predict 3D worlds without getting confused by their own movement",
+    "summary": "Current AI video prediction systems create realistic-looking images but often show physically impossible things like objects morphing or disappearing, especially when predicting far ahead. A new system called FR3D fixes this by separately tracking how the world changes from how the camera moves, maintaining geometric consistency so objects stay stable and believable as it predicts 2 seconds into the future.",
+    "whyItMatters": "Autonomous vehicles need accurate predictions of their surroundings to navigate safely, especially in dynamic environments with other moving objects. When prediction systems confuse the vehicle's own motion with changes in the environment, they produce unreliable forecasts that could lead to dangerous decisions. FR3D's approach to keeping track of the 3D structure of scenes could help make self-driving systems more reliable at planning safe paths through unpredictable traffic.",
+    "fetchedAt": "2026-06-17T11:47:29.859Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 169
+    },
+    "slug": "future-dynamic-3d-reconstruction"
+  },
+  {
+    "id": "2606.18074",
+    "title": "Tensor-based second-order causal discovery",
+    "authors": "Nathan Ouyang, Kexin Wan, Anna Seigal",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-06-16T15:43:44Z",
+    "publishedFormatted": "Jun 16, 2026",
+    "subtitle": "Finding cause-and-effect relationships by analyzing how variables respond to changes",
+    "summary": "A new algorithm called TSCD can uncover which variables cause which others by analyzing data from experiments where researchers deliberately change one thing at a time. The method works with far fewer experiments than you'd expect—only needing a number proportional to the logarithm of total variables—and handles both linear and nonlinear relationships without requiring the data to be normally distributed.",
+    "whyItMatters": "Identifying true causes rather than just correlations is essential in fields from medicine to economics, where treating a symptom won't help if you don't know what causes it. TSCD's ability to work with fewer experiments saves time and resources, while its efficiency means it can handle systems with hundreds of variables—making it practical for real-world problems like understanding gene networks or economic supply chains.",
+    "fetchedAt": "2026-06-17T11:47:32.983Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 162
+    },
+    "slug": "tensor-based-second-order"
+  },
+  {
     "id": "2606.17034",
     "title": "KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing",
     "authors": "Mufei Li, Shikun Liu, Dongqi Fu et al.",
