@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.20527",
+    "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
+    "authors": "Shaghayegh Kolli, Timo Cavelius, Nafiseh Nikeghbal et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-18T17:39:56Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "A handful of fashion and appearance cues drive how AI judges people",
+    "summary": "AI image models make sweeping social judgments about people based on surprisingly few visual signals—mainly clothing style, age, and body type. Researchers tested six major AI systems on 25,000 carefully controlled images where only one attribute changed at a time, finding that just 15 visual cues account for nearly 80% of all the biased judgments these models make.",
+    "whyItMatters": "These AI models are already screening job applicants, assessing loan eligibility, and making other high-stakes decisions about real people. If a model judges someone's trustworthiness or earning potential based primarily on their clothes or perceived age, it can systematize discrimination at scale. This benchmark gives developers a concrete way to test and fix these specific weak points before deploying systems in consequential settings.",
+    "fetchedAt": "2026-06-19T20:24:49.402Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 194
+    },
+    "slug": "stylisticbias-a-few-human"
+  },
+  {
+    "id": "2606.20164",
+    "title": "MedRLM: Recursive Multimodal Health Intelligence for Long-Context Clinical Reasoning, Sensor-Guided Screening, Evidence-Grounded Decision Support, and Community-to-Tertiary Referral Optimization",
+    "authors": "Aueaphum Aueawatthanaphisut",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-06-18T12:30:39Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "AI that reasons through a patient's complete medical history to guide treatment decisions",
+    "summary": "Most medical AI answers isolated questions quickly but struggles when the real answer requires connecting facts scattered across patient records, images, and sensor data. MedRLM instead builds a dynamic \"evidence map\" that recursively searches through a patient's full medical picture—text notes, imaging, heart rhythms, blood pressure trends, and clinical guidelines—activating deeper analysis when abnormal patterns appear, then flags cases for human review when confidence is low.",
+    "whyItMatters": "Healthcare providers in rural or under-resourced areas often lack specialists to review complex cases. A system that can systematically extract and connect evidence across all available patient data, then decide whether a case needs referral to a tertiary hospital, could reduce delays in care and improve triage accuracy. The framework's built-in uncertainty checking also prevents overconfident recommendations that might lead clinicians astray.",
+    "fetchedAt": "2026-06-19T20:24:52.919Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 218
+    },
+    "slug": "medrlm-recursive-multimodal-health"
+  },
+  {
+    "id": "2606.20498",
+    "title": "CLUSTER: Derivative-free optimization of smooth functions with parameter-change costs",
+    "authors": "Serena Landers, Sahil Pontula, Shiekh Zia Uddin et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-06-18T17:14:13Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "Speeding up lab experiments when moving between settings costs time and money",
+    "summary": "A new algorithm called CLUSTER optimizes laboratory experiments about 50% faster than existing methods when there's a penalty for adjusting each parameter or group of parameters—such as when a robot must physically reposition equipment. The approach works especially well for real-world lab setups like optics experiments, and outperforms popular alternatives like Bayesian optimization.",
+    "whyItMatters": "Robot-controlled labs waste time and resources repositioning equipment between every tiny parameter adjustment. CLUSTER reduces this waste by being smarter about which parameters to change together, cutting experiment time significantly. For labs running hundreds of optimization experiments—from drug discovery to materials science—this 50% speedup translates directly to faster results and lower costs.",
+    "fetchedAt": "2026-06-19T20:24:55.897Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 1,
+      "pageCount": 18,
+      "wordCount": 140
+    },
+    "slug": "cluster-derivative-free-optimization"
+  },
+  {
     "id": "2606.20517",
     "title": "Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages",
     "authors": "Maria Ivanova, Pavel Zadorozhny, Rodion Levichev et al.",
