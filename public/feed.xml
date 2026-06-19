@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jun 2026 21:20:51 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 11:22:30 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages</title>
+      <link>https://paperplaine.com/papers/multi-lcb-extending-livecodebench</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multi-lcb-extending-livecodebench</guid>
+      <pubDate>Thu, 18 Jun 2026 17:35:57 GMT</pubDate>
+      <author>Maria Ivanova, Pavel Zadorozhny, Rodion Levichev et al.</author>
+      <category>AI</category>
+      <description>Testing whether AI coding assistants work equally well in twelve languages, not just Python</description>
+      <content:encoded><![CDATA[<p><em>Testing whether AI coding assistants work equally well in twelve languages, not just Python</em></p><p>Researchers expanded a major AI coding benchmark from Python alone to twelve programming languages, revealing that large language models perform significantly worse in non-Python languages even on identical tasks. The evaluation of 24 models uncovered clear evidence that AI systems are overtrained on Python and struggle with language-specific code patterns.</p><p><strong>Why it matters:</strong> Most programming benchmarks only test AI in Python, so companies have no reliable way to know whether these tools will work for their JavaScript, Java, C++, or Go codebases. This benchmark exposes real performance gaps that developers will encounter in practice, pushing AI model builders to create systems that actually generalize across the languages used in professional software development.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Sovereign Execution Brokers: Enforcing Certificate-Bound Authority in Agentic Control Planes</title>
+      <link>https://paperplaine.com/papers/sovereign-execution-brokers-enforcing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/sovereign-execution-brokers-enforcing</guid>
+      <pubDate>Thu, 18 Jun 2026 17:36:46 GMT</pubDate>
+      <author>Jun He, Deying Yu</author>
+      <category>Comp Sci</category>
+      <description>A security checkpoint that stops AI agents from making unauthorized changes to cloud systems</description>
+      <content:encoded><![CDATA[<p><em>A security checkpoint that stops AI agents from making unauthorized changes to cloud systems</em></p><p>Autonomous agents controlling cloud infrastructure need a hard stop between decision and action. This paper introduces the Sovereign Execution Broker, a system that sits between an AI agent's proposed changes and the actual infrastructure, verifying that each change matches what was explicitly approved and hasn't been revoked—then recording exactly what happened. The authors tested it on AWS and Kubernetes clusters and found it adds minimal latency while catching unauthorized mutations.</p><p><strong>Why it matters:</strong> As AI agents gain direct control over production systems, a single compromised or hallucinating agent could cause widespread damage before anyone notices. This broker creates a tamper-proof record and a mandatory verification point that can't be bypassed, letting companies revoke agent permissions instantly and audit every change. In regulated industries like finance and healthcare, having a signed, auditable trail of who authorized what change and when could be legally required.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Analysing drivers and interdependencies in European electricity markets using XAI</title>
+      <link>https://paperplaine.com/papers/analysing-drivers-and-interdependencies</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/analysing-drivers-and-interdependencies</guid>
+      <pubDate>Wed, 17 Jun 2026 14:32:39 GMT</pubDate>
+      <author>Antoine Pesenti, Aidan O&#39;Sullivan</author>
+      <category>Economics</category>
+      <description>What actually drives electricity prices across Europe&#39;s interconnected power grid</description>
+      <content:encoded><![CDATA[<p><em>What actually drives electricity prices across Europe's interconnected power grid</em></p><p>Researchers used artificial intelligence to decode why electricity prices fluctuate across 39 European regions, revealing that solar power influences prices far more than its overall share of power generation would suggest. Gas prices remain the most consistent driver, and direct connections between countries' grids significantly reshape pricing in neighboring nations—showing how tightly Europe's electricity systems are now linked.</p><p><strong>Why it matters:</strong> European governments and grid operators make billion-euro decisions about energy policy, transmission upgrades, and emergency reserves based on price forecasts. Understanding which factors actually move prices—rather than just predicting them—lets policymakers target the right levers: they might invest differently in solar storage if solar truly dominates price swings, or prioritize grid upgrades between countries if interconnections reshape regional economics. This analysis also shows what a genuinely unified European market would look like, crucial information as the EU pushes toward deeper energy integration.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Mechanism-Guided Selective Unlearning for RLVR-Induced Reasoning</title>
       <link>https://paperplaine.com/papers/mechanism-guided-selective-unlearning</link>
