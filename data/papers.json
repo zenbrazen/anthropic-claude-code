@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.20493",
+    "title": "Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems",
+    "authors": "Zewen Liu",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-18T17:09:34Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "How flawed AI judges infect each other's decisions in multi-agent systems",
+    "summary": "When AI language models evaluate each other's work in team settings, their biases spread from one agent to the next—even when they're the same model. Researchers found that biased evaluators cause contagion coefficients between 0.157 and 0.352, but adding just two more evaluators to the review process cuts this bias spread by 72%, offering a simple fix.",
+    "whyItMatters": "AI systems increasingly rely on other AIs to check their work. If one model's judgment bias infects the rest of the team, bad decisions compound across the entire network. This research shows you can dramatically reduce that contamination by using evaluation committees instead of single judges—a practical safeguard for any system where AI agents depend on each other's feedback.",
+    "fetchedAt": "2026-06-20T10:08:42.551Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 145
+    },
+    "slug": "contagion-networks-evaluator-bias"
+  },
+  {
+    "id": "2606.20112",
+    "title": "Pixel-Level Residual Diffusion Transformer: Scalable 3D CT Volume Generation",
+    "authors": "Zhenkai Zhang, Markus Hiller, Krista A. Ehinger et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-06-18T11:35:11Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "A faster way to generate realistic 3D medical scans from scratch",
+    "summary": "Researchers built a new AI system that can create high-resolution 3D CT scans of the chest and lungs with fine detail intact, without the computational bottlenecks that slow down existing methods. The system works in two stages: first handling large-scale structures, then filling in subtle details—an approach that outperformed competing methods on standard medical imaging benchmarks.",
+    "whyItMatters": "CT scans are expensive and expose patients to radiation, so generating realistic synthetic ones could reduce both costs and unnecessary imaging in research and clinical training. A faster, more efficient generation method means hospitals could use synthetic scans to train AI diagnostic tools and practice rare cases without scanning additional patients. This could accelerate the development of more reliable medical AI while protecting patient privacy.",
+    "fetchedAt": "2026-06-20T10:08:45.733Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 149
+    },
+    "slug": "pixel-level-residual-diffusion"
+  },
+  {
+    "id": "2606.20041",
+    "title": "AI Economist Agent: An Agentic Framework for Model-Grounded Economic Analysis with RAG, Knowledge Graphs, and Large Language Models",
+    "authors": "Masahiro Kato",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-06-18T10:18:03Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "Teaching AI to explain economics using real data and tested theories",
+    "summary": "Researchers built an AI economist that generates economic reports and analyses by anchoring its claims to actual data and economic theory, rather than just producing plausible-sounding narratives. When tested on inflation forecasts and bank stress scenarios, the system produced more coherent and traceable explanations than language models working alone.",
+    "whyItMatters": "Economic analysis shapes real decisions—from Federal Reserve policy to bank lending rules—so explanations need to be trustworthy and defensible, not just fluent. This framework makes AI-generated economic reasoning transparent and checkable against actual models and evidence, reducing the risk of confident-sounding but unfounded claims influencing financial decisions.",
+    "fetchedAt": "2026-06-20T10:08:48.369Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 170
+    },
+    "slug": "ai-economist-agent-an"
+  },
+  {
     "id": "2606.20527",
     "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
     "authors": "Shaghayegh Kolli, Timo Cavelius, Nafiseh Nikeghbal et al.",
