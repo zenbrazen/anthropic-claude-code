@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.20547",
+    "title": "The Token Is a Group Element: On Lie-Algebra Attention over Matrix Lie Groups",
+    "authors": "Przemyslaw Musialski",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-18T17:56:17Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "Teaching AI to pay attention using pure geometry instead of learned rules",
+    "summary": "A new attention mechanism for AI treats tokens as geometric transformations—rotations, reflections, shearing—rather than vectors with learned features. The system scores relationships using intrinsic distance between these transformations, not learned kernels, and handles complex geometric groups (like rotations in 3D space or 2D affine transformations with scaling) that existing methods cannot. In tests on sequence completion, it matched learned approaches with 50–80 times fewer parameters and broke no geometric rules, while standard vector-based attention failed by trillions of times over.",
+    "whyItMatters": "Most AI attention mechanisms are built on learned, data-dependent rules that can violate the geometric structure they're meant to preserve. This construction builds attention directly from mathematical geometry, guaranteeing that transformations remain valid by design rather than by luck. That matters for any system working with structured spatial data—robotics, 3D vision, medical imaging, physical simulations—where breaking geometric consistency causes failures downstream.",
+    "fetchedAt": "2026-06-20T20:13:06.530Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 261
+    },
+    "slug": "the-token-is-a"
+  },
+  {
+    "id": "2606.20548",
+    "title": "Topological Codes Based on Space Groups",
+    "authors": "Chong-Yuan Xu, Ze-Chuan Liu, Yong Xu",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-06-18T17:56:41Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "Building quantum error-correction codes with less repetitive structure",
+    "summary": "Researchers expanded how to build topological codes—a leading approach to protecting quantum computers from errors—by relaxing the requirement that they repeat perfectly across space. The new codes combine translation symmetry with rotations and reflections, and surprisingly, they can require fewer qubits in practice than the standard designs, making them simpler to build.",
+    "whyItMatters": "Quantum computers remain fragile, and error correction is essential before they can solve real problems. This work expands the toolkit for designing error-correcting codes that fit better with actual quantum hardware, potentially reducing the number of physical qubits needed to run a reliable quantum computer.",
+    "fetchedAt": "2026-06-20T20:13:09.088Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 140
+    },
+    "slug": "topological-codes-based-on"
+  },
+  {
+    "id": "2606.19794",
+    "title": "Forecasting AI-Era Productivity: The Intellectually Converged Human Framework and a Missing Cognitive Mediator in Production Function Theory",
+    "authors": "Kwan Soo Shin, In Seok Kang",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-06-18T04:57:53Z",
+    "publishedFormatted": "Jun 18, 2026",
+    "subtitle": "Why AI investments fail without developing workers' ability to use them",
+    "summary": "Massive spending on artificial intelligence hasn't delivered expected productivity gains because companies deploy AI without first building workers' capacity to actually use it effectively. A new framework shows that the match between AI availability and what researchers call \"convergence capacity\"—a combination of practical understanding, self-awareness, flexible thinking, and ability to connect ideas—accounts for 86% of productivity differences across wealthy nations, compared to just 31% for AI deployment alone.",
+    "whyItMatters": "Countries and companies are pouring billions into AI tools that sit underutilized because workers lack the cognitive skills to integrate them into their jobs. South Korea exemplifies the problem: despite strong workforce education and significant AI investment, low convergence capacity means minimal actual productivity gain. The framework suggests that before buying more AI, organizations need to invest in training that builds workers' ability to learn across domains, think flexibly, and adapt—a shift that could unlock trillions in stranded AI value currently going unrealized.",
+    "fetchedAt": "2026-06-20T20:13:13.069Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 78,
+      "wordCount": 246
+    },
+    "slug": "forecasting-ai-era-productivity"
+  },
+  {
     "id": "2606.20493",
     "title": "Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems",
     "authors": "Zewen Liu",
