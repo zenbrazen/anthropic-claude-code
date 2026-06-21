@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2026 10:28:52 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 20:20:52 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving</title>
+      <link>https://paperplaine.com/papers/execution-state-capsules-graph</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/execution-state-capsules-graph</guid>
+      <pubDate>Thu, 18 Jun 2026 17:49:36 GMT</pubDate>
+      <author>Liang Su</author>
+      <category>AI</category>
+      <description>Faster AI responses by saving and restarting the entire brain state</description>
+      <content:encoded><![CDATA[<p><em>Faster AI responses by saving and restarting the entire brain state</em></p><p>Researchers built a way for AI systems running on devices to instantly save and restore their complete internal state—not just cached data, but all the working memory an AI uses while processing. On high-end GPUs, this snapshot-and-restore process takes less than a millisecond and speeds up response times by up to 27 times when handling longer conversations or tasks that branch and restart frequently.</p><p><strong>Why it matters:</strong> AI assistants in phones, robots, and edge devices often need to pause, switch tasks, and restart quickly without losing context. Current systems waste time recalculating everything from scratch. This technique lets them pick up exactly where they left off—enabling faster voice assistants, more responsive robots, and snappier interactive AI on your device without needing a constant cloud connection.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>bioETH-Beacon: A Confidential On-Chain Genomic Beacon with Encrypted Counts, Filters, and Bounded Noise over a Fully Homomorphic EVM</title>
+      <link>https://paperplaine.com/papers/bioeth-beacon-a-confidential</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bioeth-beacon-a-confidential</guid>
+      <pubDate>Thu, 18 Jun 2026 14:49:13 GMT</pubDate>
+      <author>Christos Galanopoulos, Kimon Antonios Provatas, Ilias Georgakopoulos-Soares</author>
+      <category>Comp Sci</category>
+      <description>Letting researchers query genetic databases without revealing what they&#39;re looking for</description>
+      <content:encoded><![CDATA[<p><em>Letting researchers query genetic databases without revealing what they're looking for</em></p><p>Researchers built a system that lets hospitals and scientists search shared genetic databases while keeping both the queries and the data encrypted—so no one can see what variant someone is searching for or what raw genetic information hospitals hold. The system runs on blockchain-like infrastructure using advanced encryption that performs calculations directly on coded data, eliminating the need for a trusted middleman to decrypt information during the search process.</p><p><strong>Why it matters:</strong> Genomic databases are crucial for medical research, but current systems force hospitals to either trust a single organization with plaintext genetic data or reveal to each institution what researchers are searching for—creating privacy breaches and membership-inference risks where repeated searches could expose whether specific patients are in a database. This prototype removes that tradeoff, letting hospitals contribute genetic data to research networks without exposing raw information or surveillance-level query logs.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Multi-type branching inference on contact trees with application to COVID-19</title>
+      <link>https://paperplaine.com/papers/multi-type-branching-inference</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multi-type-branching-inference</guid>
+      <pubDate>Wed, 17 Jun 2026 13:02:50 GMT</pubDate>
+      <author>Augustine Okolie, Johannes Müller, Eno Akarawakc et al.</author>
+      <category>Biology</category>
+      <description>Mapping how diseases spread through real contact networks, not just genetic sequences.</description>
+      <content:encoded><![CDATA[<p><em>Mapping how diseases spread through real contact networks, not just genetic sequences.</em></p><p>Researchers developed a mathematical method to extract disease transmission patterns directly from contact-tracing data—who infected whom—without needing genetic sequences. The approach accounts for a key reality that older models miss: some infected people have many contacts while others have few, and this affects how fast disease spreads. When tested on COVID-19 data from India, the method accurately recovered transmission rates and contact patterns.</p><p><strong>Why it matters:</strong> Public health officials use contact tracing to understand outbreak dynamics, but existing tools struggle to extract transmission rates from incomplete records. This framework turns messy contact-tracing data into precise estimates of who is most likely to spread disease and how many contacts matter, enabling faster identification of superspreaders and better targeting of interventions during future outbreaks.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Multi-Task Bayesian In-Context Learning</title>
       <link>https://paperplaine.com/papers/multi-task-bayesian-in</link>
