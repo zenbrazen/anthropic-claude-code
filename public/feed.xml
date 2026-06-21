@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 20:13:13 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 10:28:52 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Multi-Task Bayesian In-Context Learning</title>
+      <link>https://paperplaine.com/papers/multi-task-bayesian-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multi-task-bayesian-in</guid>
+      <pubDate>Thu, 18 Jun 2026 17:50:10 GMT</pubDate>
+      <author>Qingyang Zhu, Eric Karl Oermann, Kyunghyun Cho</author>
+      <category>AI</category>
+      <description>Teaching AI to make fast, smart predictions that adapt to new situations</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to make fast, smart predictions that adapt to new situations</em></p><p>Researchers developed a method that lets artificial intelligence systems quickly learn how to make predictions with built-in uncertainty estimates, even when the rules change. The approach uses a transformer model trained to read past examples and adjust its predictions for new scenarios—and it works orders of magnitude faster than traditional mathematical methods while matching their accuracy.</p><p><strong>Why it matters:</strong> Machine learning systems often need to adapt predictions when conditions shift—weather forecasting when climate patterns change, medical diagnosis when treating a new population, or recommendation systems facing new user preferences. This method makes that adaptation fast enough to happen in real time while maintaining the statistical rigor that matters for high-stakes decisions. The authors demonstrated it on temperature prediction and showed it handles situations that would break less flexible approaches.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Off-Policy Evaluation for Missingness-Aware Policies in MDPs with Rewards Missing Not at Random</title>
+      <link>https://paperplaine.com/papers/off-policy-evaluation-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/off-policy-evaluation-for</guid>
+      <pubDate>Thu, 18 Jun 2026 13:19:43 GMT</pubDate>
+      <author>Ziheng Wei, Annie Qu, Rui Miao</author>
+      <category>Statistics</category>
+      <description>Evaluating AI decisions when reward data goes missing in unpredictable patterns</description>
+      <content:encoded><![CDATA[<p><em>Evaluating AI decisions when reward data goes missing in unpredictable patterns</em></p><p>When hospitals or companies use past data to test new decision-making strategies, they often have incomplete records—some rewards are never recorded, others are hidden above a threshold. This creates a blind spot that breaks standard evaluation methods. The researchers developed a new statistical approach that recovers the missing information using future outcomes as clues, allowing them to fairly test new policies even when data is riddled with these gaps.</p><p><strong>Why it matters:</strong> Healthcare systems and marketing platforms constantly evaluate whether new treatment or customer strategies would work better than current ones, but incomplete record-keeping undermines these tests. This method makes it possible to learn from flawed historical data without bias, meaning hospitals could confidently test new care protocols and companies could validate strategy changes using the messy real-world data they actually have.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Agentic AutoResearch forSpace Autonomy: An Auditable, LLM-Driven Research Agent for Aerospace Control Problems</title>
+      <link>https://paperplaine.com/papers/agentic-autoresearch-forspace-autonomy</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/agentic-autoresearch-forspace-autonomy</guid>
+      <pubDate>Thu, 18 Jun 2026 15:48:25 GMT</pubDate>
+      <author>Amit Jain, Richard Linares</author>
+      <category>Math</category>
+      <description>AI that can teach spacecraft to fly themselves—and prove the results are real</description>
+      <content:encoded><![CDATA[<p><em>AI that can teach spacecraft to fly themselves—and prove the results are real</em></p><p>Researchers built an AI agent that automatically designs control policies for spacecraft by proposing and testing tweaks to training code, then checking whether improvements are genuine or just statistical noise. On two docking and rendezvous problems, the AI-designed policies outperformed random parameter searches so decisively that on one task, undirected search produced no working solution at all while the AI approach succeeded every time.</p><p><strong>Why it matters:</strong> Spacecraft currently rely on hand-coded control systems or policies developed through labor-intensive manual research. This framework could compress that development cycle while building in built-in verification that results are trustworthy—crucial for safety-critical aerospace applications where false confidence in a control system could end in collision or mission failure.</p>]]></content:encoded>
+    </item>
     <item>
       <title>The Token Is a Group Element: On Lie-Algebra Attention over Matrix Lie Groups</title>
       <link>https://paperplaine.com/papers/the-token-is-a</link>
