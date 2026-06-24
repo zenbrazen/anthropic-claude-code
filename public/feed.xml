@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 20:58:26 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 10:22:06 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>World Models in Pieces: Structural Certification for General Agents</title>
+      <link>https://paperplaine.com/papers/world-models-in-pieces</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/world-models-in-pieces</guid>
+      <pubDate>Tue, 23 Jun 2026 17:21:09 GMT</pubDate>
+      <author>Yikai Lu, Yifei Wu, Xinyu Lu et al.</author>
+      <category>AI</category>
+      <description>Testing AI agents by checking what they actually understand, not everything they could fail at</description>
+      <content:encoded><![CDATA[<p><em>Testing AI agents by checking what they actually understand, not everything they could fail at</em></p><p>AI agents designed to handle many different tasks are inherently specialists—good at some things, weak at others. Standard safety tests treat all failures equally, missing where an agent truly understands its world and where it's just guessing. This paper introduces a new testing method that maps an agent's actual performance on specific tasks directly to measurable reliability of its internal understanding, with proven error bounds.</p><p><strong>Why it matters:</strong> Current safety certification for general AI agents is too blunt: a single worst-case failure in any scenario can block deployment, even if the agent works reliably in the scenarios that matter. This work makes it possible to certify when an agent is safe to deploy on specific tasks by proving exactly where its planning is trustworthy and where it isn't. This could enable practical deployment of capable AI systems while maintaining verifiable safety guarantees.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A Concentration Inequality for the Covariance Matrix of an Arbitrary Subset of Random Vectors</title>
+      <link>https://paperplaine.com/papers/a-concentration-inequality-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/a-concentration-inequality-for</guid>
+      <pubDate>Tue, 23 Jun 2026 16:26:55 GMT</pubDate>
+      <author>Huikang Liu, Peng Wang, Laura Balzano</author>
+      <category>Math</category>
+      <description>Measuring uncertainty when you choose which data points to analyze</description>
+      <content:encoded><![CDATA[<p><em>Measuring uncertainty when you choose which data points to analyze</em></p><p>When statisticians select which data to use based on what that data looks like, standard mathematical guarantees break down. This paper proves new rules for how reliable sample covariance matrices remain even after such data-dependent selection—and shows these new rules are much tighter and more practical than existing workarounds. The results extend to realistic scenarios with weakly dependent observations and apply directly to clustering problems.</p><p><strong>Why it matters:</strong> Many real machine-learning algorithms pick or filter their data based on what they see, not randomly in advance. Without reliable guarantees for this setting, practitioners can't know whether their statistical conclusions are trustworthy. This work closes that gap, providing theoretical backing for algorithms that adaptively select subsets of data while maintaining provable recovery guarantees—particularly relevant for clustering tasks where picking the right groups is inherently data-dependent.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Average Rankings Mask Per-Subject Optimality: A Friedman-Nemenyi Benchmark of EEG Motor-Imagery BCI Decoders</title>
+      <link>https://paperplaine.com/papers/average-rankings-mask-per</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/average-rankings-mask-per</guid>
+      <pubDate>Tue, 23 Jun 2026 10:26:27 GMT</pubDate>
+      <author>Xavier Vasques, Paul Barbaste, Olivier Oullier</author>
+      <category>Biology</category>
+      <description>Why the best brain-computer interface decoder changes from person to person</description>
+      <content:encoded><![CDATA[<p><em>Why the best brain-computer interface decoder changes from person to person</em></p><p>Brain-computer interfaces that read motor intention from EEG show no single best decoding method across people, even in ideal conditions. Testing over 1,000 different pipelines on more than 340,000 individual model fits revealed that the top-performing approach varies by dataset and person—matching the decoder to each person's brain patterns improved accuracy by about 7 percentage points compared to using one universal decoder.</p><p><strong>Why it matters:</strong> Brain-computer interfaces aim to help people with paralysis or locked-in syndrome control prosthetics or communication devices. If one decoding method worked best for everyone, clinical deployment would be straightforward. This work shows that practical BCI systems need to personalize their approach for each user rather than relying on a single universal design, suggesting that real-world BCI performance depends as much on fitting the algorithm to individual brain differences as on the algorithm itself.</p>]]></content:encoded>
+    </item>
     <item>
       <title>AI Exposure Scores: what they measure, what they miss, and what comes next</title>
       <link>https://paperplaine.com/papers/ai-exposure-scores-what</link>

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.24842",
+    "title": "World Models in Pieces: Structural Certification for General Agents",
+    "authors": "Yikai Lu, Yifei Wu, Xinyu Lu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-23T17:21:09Z",
+    "publishedFormatted": "Jun 23, 2026",
+    "subtitle": "Testing AI agents by checking what they actually understand, not everything they could fail at",
+    "summary": "AI agents designed to handle many different tasks are inherently specialists—good at some things, weak at others. Standard safety tests treat all failures equally, missing where an agent truly understands its world and where it's just guessing. This paper introduces a new testing method that maps an agent's actual performance on specific tasks directly to measurable reliability of its internal understanding, with proven error bounds.",
+    "whyItMatters": "Current safety certification for general AI agents is too blunt: a single worst-case failure in any scenario can block deployment, even if the agent works reliably in the scenarios that matter. This work makes it possible to certify when an agent is safe to deploy on specific tasks by proving exactly where its planning is trustworthy and where it isn't. This could enable practical deployment of capable AI systems while maintaining verifiable safety guarantees.",
+    "fetchedAt": "2026-06-24T10:21:59.710Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 3,
+      "pageCount": 30,
+      "wordCount": 152
+    },
+    "slug": "world-models-in-pieces"
+  },
+  {
+    "id": "2606.24766",
+    "title": "A Concentration Inequality for the Covariance Matrix of an Arbitrary Subset of Random Vectors",
+    "authors": "Huikang Liu, Peng Wang, Laura Balzano",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-06-23T16:26:55Z",
+    "publishedFormatted": "Jun 23, 2026",
+    "subtitle": "Measuring uncertainty when you choose which data points to analyze",
+    "summary": "When statisticians select which data to use based on what that data looks like, standard mathematical guarantees break down. This paper proves new rules for how reliable sample covariance matrices remain even after such data-dependent selection—and shows these new rules are much tighter and more practical than existing workarounds. The results extend to realistic scenarios with weakly dependent observations and apply directly to clustering problems.",
+    "whyItMatters": "Many real machine-learning algorithms pick or filter their data based on what they see, not randomly in advance. Without reliable guarantees for this setting, practitioners can't know whether their statistical conclusions are trustworthy. This work closes that gap, providing theoretical backing for algorithms that adaptively select subsets of data while maintaining provable recovery guarantees—particularly relevant for clustering tasks where picking the right groups is inherently data-dependent.",
+    "fetchedAt": "2026-06-24T10:22:03.217Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 178
+    },
+    "slug": "a-concentration-inequality-for"
+  },
+  {
+    "id": "2606.24394",
+    "title": "Average Rankings Mask Per-Subject Optimality: A Friedman-Nemenyi Benchmark of EEG Motor-Imagery BCI Decoders",
+    "authors": "Xavier Vasques, Paul Barbaste, Olivier Oullier",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-06-23T10:26:27Z",
+    "publishedFormatted": "Jun 23, 2026",
+    "subtitle": "Why the best brain-computer interface decoder changes from person to person",
+    "summary": "Brain-computer interfaces that read motor intention from EEG show no single best decoding method across people, even in ideal conditions. Testing over 1,000 different pipelines on more than 340,000 individual model fits revealed that the top-performing approach varies by dataset and person—matching the decoder to each person's brain patterns improved accuracy by about 7 percentage points compared to using one universal decoder.",
+    "whyItMatters": "Brain-computer interfaces aim to help people with paralysis or locked-in syndrome control prosthetics or communication devices. If one decoding method worked best for everyone, clinical deployment would be straightforward. This work shows that practical BCI systems need to personalize their approach for each user rather than relying on a single universal design, suggesting that real-world BCI performance depends as much on fitting the algorithm to individual brain differences as on the algorithm itself.",
+    "fetchedAt": "2026-06-24T10:22:06.238Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 268
+    },
+    "slug": "average-rankings-mask-per"
+  },
+  {
     "id": "2606.23633",
     "title": "AI Exposure Scores: what they measure, what they miss, and what comes next",
     "authors": "Campbell Lund, Thomas Euyang, Zanele Munyikwa et al.",
