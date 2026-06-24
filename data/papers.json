@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.24790",
+    "title": "Grad Detect: Gradient-Based Hallucination Detection in LLMs",
+    "authors": "Anand Kamat, Daniel Blake, Brent M. Werness",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-23T16:46:36Z",
+    "publishedFormatted": "Jun 23, 2026",
+    "subtitle": "How to catch AI lies by reading the model's internal math",
+    "summary": "A new technique called Grad Detect can predict when large language models will give wrong answers by analyzing the mathematical patterns the model creates during thinking, rather than just looking at its final answer. Testing on question-answering tasks shows it catches hallucinations better than existing methods, and remarkably, only the last five layers of the model contain most of the useful signal needed.",
+    "whyItMatters": "AI hallucinations cause real harm in healthcare, law, and finance—doctors, lawyers, and financial advisors using these systems need ways to know when the AI is confabulating. This method provides a reliable built-in detector that doesn't slow down inference, making it practical to deploy LLMs safely in high-stakes applications where getting the wrong answer has serious consequences.",
+    "fetchedAt": "2026-06-24T20:43:46.492Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 167
+    },
+    "slug": "grad-detect-gradient-based"
+  },
+  {
+    "id": "2606.24808",
+    "title": "Large-Language-Model Discovery of Quantum LDPC Codes through Structured Concept Evolution",
+    "authors": "Zidu Liu, Florian Marquardt",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-06-23T16:56:24Z",
+    "publishedFormatted": "Jun 23, 2026",
+    "subtitle": "Using AI to design better error-correcting codes for quantum computers",
+    "summary": "Researchers used an AI language model paired with mathematical rules to discover new quantum error-correcting codes that could help scale up quantum computers. The AI system found dozens of competitive code designs by evolving mathematical specifications, including some based on non-abelian groups that were never explored before in this context.",
+    "whyItMatters": "Quantum computers need nearly perfect error correction to solve real problems, but designing effective codes is extremely difficult and has relied mainly on human intuition. This work shows that AI can discover practical new codes automatically, potentially accelerating the engineering effort needed to build quantum computers that actually outperform classical machines.",
+    "fetchedAt": "2026-06-24T20:43:49.038Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 177
+    },
+    "slug": "large-language-model-discovery"
+  },
+  {
+    "id": "2606.24540",
+    "title": "Offline Channel-Independent QAOA Angles for RIS Power Aggregation: Unit-Circle Phase Dictionaries and Infinite-Size Spin-Glass Limits",
+    "authors": "Burhan Gulbahar",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-06-23T13:07:10Z",
+    "publishedFormatted": "Jun 23, 2026",
+    "subtitle": "Using quantum computers to aim reflective surfaces and boost wireless signals",
+    "summary": "Researchers developed a method to use quantum computers to solve a notoriously difficult engineering problem: aiming thousands of tiny reflective elements to maximize wireless signal strength. The approach uses pre-calculated settings that work across different channel conditions, and testing shows it achieves near-optimal performance for systems up to 16 elements—a significant step toward making this quantum approach practical for real hardware.",
+    "whyItMatters": "Reconfigurable intelligent surfaces are emerging technology for next-generation wireless networks, but finding the right settings for each element becomes computationally impossible as systems scale up. This work demonstrates a quantum computing approach that could solve larger optimization problems than classical computers can handle, potentially enabling stronger, more efficient wireless coverage once quantum hardware matures. The pre-calculated angle method also means users won't need to spend computing time optimizing settings for each new environment.",
+    "fetchedAt": "2026-06-24T20:43:52.670Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 203
+    },
+    "slug": "offline-channel-independent-qaoa"
+  },
+  {
     "id": "2606.24842",
     "title": "World Models in Pieces: Structural Certification for General Agents",
     "authors": "Yikai Lu, Yifei Wu, Xinyu Lu et al.",
