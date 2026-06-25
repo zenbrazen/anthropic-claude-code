@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jun 2026 20:43:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 10:15:01 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Natural Ungrokking: Asymmetric Control of Which Rules Survive Pretraining</title>
+      <link>https://paperplaine.com/papers/natural-ungrokking-asymmetric-control</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/natural-ungrokking-asymmetric-control</guid>
+      <pubDate>Wed, 24 Jun 2026 17:27:13 GMT</pubDate>
+      <author>Juliana Li, Diya Sreedhar</author>
+      <category>AI</category>
+      <description>How training data decides which AI rules stick around and which get forgotten</description>
+      <content:encoded><![CDATA[<p><em>How training data decides which AI rules stick around and which get forgotten</em></p><p>Language models learn rules like "girl names go with she" during training, but then mysteriously unlearn them mid-run — even when the evidence stays in the data. Researchers found this "natural ungrokking" follows a simple rule: whichever pattern appears most often in the training stream wins and survives, while less-frequent competing patterns get displaced and forgotten. The forgetting is one-way: you can kill a rule by removing its support, but flooding the data with the rule doesn't bring it back once it's gone.</p><p><strong>Why it matters:</strong> This reveals how messy real training data — not just model size or architecture — shapes which behaviors stick around in AI systems. If a model forgets a useful rule because conflicting signals are more common in the wild, retraining on cleaner data might not fix it. Understanding this could help engineers design training corpora that preserve desired behaviors and predict when models will abandon important patterns mid-training.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers</title>
+      <link>https://paperplaine.com/papers/restoring-incentive-compatibility-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/restoring-incentive-compatibility-in</guid>
+      <pubDate>Wed, 24 Jun 2026 14:56:51 GMT</pubDate>
+      <author>Nikolas Koumpis, Koushik Kar, Leandros Tassiulas et al.</author>
+      <category>Economics</category>
+      <description>Stopping energy traders from gaming the market by hiding what they actually need</description>
+      <content:encoded><![CDATA[<p><em>Stopping energy traders from gaming the market by hiding what they actually need</em></p><p>People who both buy and sell electricity are deliberately underreporting their energy needs to the day-ahead market, which lets them profit by selling power at higher real-time prices. Researchers designed a penalty system that removes this incentive, forcing honest reporting while keeping costs low for traders who play by the rules.</p><p><strong>Why it matters:</strong> When market participants strategically misreport demand, it distorts electricity prices, wastes renewable energy, and destabilizes the grid. This mechanism makes the market work as intended without requiring operators to monitor every participant — honest traders face no penalty, while cheaters get priced out.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Learning Interpretable Text Signals for Structured Responses</title>
+      <link>https://paperplaine.com/papers/learning-interpretable-text-signals</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/learning-interpretable-text-signals</guid>
+      <pubDate>Wed, 24 Jun 2026 01:08:05 GMT</pubDate>
+      <author>Cixiao Jiang, Ben Powell, Niall MacKay</author>
+      <category>Statistics</category>
+      <description>Finding readable text patterns that predict ratings and other outcomes</description>
+      <content:encoded><![CDATA[<p><em>Finding readable text patterns that predict ratings and other outcomes</em></p><p>A new method learns to extract meaningful topics from customer reviews while simultaneously predicting their star ratings, keeping both goals in balance. Unlike standard approaches that either predict well or explain clearly, this model does both—recovering stable patterns in text that actually drive the ratings people give.</p><p><strong>Why it matters:</strong> Companies analyzing thousands of reviews need to know not just what rating to expect, but why customers gave it. This method delivers both at once, letting product teams spot the actual language patterns driving customer satisfaction rather than treating prediction and understanding as separate problems that require different tools.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Grad Detect: Gradient-Based Hallucination Detection in LLMs</title>
       <link>https://paperplaine.com/papers/grad-detect-gradient-based</link>
