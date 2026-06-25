@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 10:15:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 20:52:38 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs</title>
+      <link>https://paperplaine.com/papers/triviewbench-controlled-complexity-scaling</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/triviewbench-controlled-complexity-scaling</guid>
+      <pubDate>Wed, 24 Jun 2026 17:00:05 GMT</pubDate>
+      <author>Yu-Yang Chen, Lan-Zhe Guo</author>
+      <category>AI</category>
+      <description>Why AI vision systems fail when objects hide and multiply across views</description>
+      <content:encoded><![CDATA[<p><em>Why AI vision systems fail when objects hide and multiply across views</em></p><p>All 18 major AI vision systems tested share the same weakness: they handle simple visual questions well but collapse catastrophically when asked to count objects (59% accuracy drop) or understand complex 3D scenes (80% drop). The failures stem from two distinct problems—the systems either miss hidden objects or confuse the same object across different camera angles—and simply asking them to "think step by step" doesn't help.</p><p><strong>Why it matters:</strong> AI systems that see are being deployed in robotics, autonomous vehicles, and industrial inspection, where missing hidden objects or misidentifying items across viewpoints could cause real failures. This benchmark reveals these systems have a fundamental blind spot that current prompting tricks can't fix, suggesting engineers need to rebuild how these systems represent 3D space rather than just improve their reasoning.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Extended pseudo-spectral physics-informed neural networks for phase-field models</title>
+      <link>https://paperplaine.com/papers/extended-pseudo-spectral-physics</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/extended-pseudo-spectral-physics</guid>
+      <pubDate>Tue, 23 Jun 2026 14:51:58 GMT</pubDate>
+      <author>Callum Marsh, Radek Erban, Andreas Munch</author>
+      <category>Biology</category>
+      <description>Using AI to reverse-engineer the hidden rules that drive material separation</description>
+      <content:encoded><![CDATA[<p><em>Using AI to reverse-engineer the hidden rules that drive material separation</em></p><p>Researchers developed a machine-learning method that can figure out the underlying physical laws of phase separation—the process where mixtures split into distinct regions—by watching how materials evolve over time. The technique recovers unknown physical parameters from just a single or handful of snapshot pairs, and continues to work reasonably well even when data is noisy.</p><p><strong>Why it matters:</strong> Materials scientists often can't directly measure the fundamental properties that control how materials separate and form patterns, but need to know them to design alloys, polymers, and other engineered materials. This method cuts the number of observations needed to infer those hidden rules, potentially speeding up materials discovery and making it cheaper to characterize new substances without running expensive, lengthy experiments.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries</title>
+      <link>https://paperplaine.com/papers/privacy-vulnerabilities-of-attention</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/privacy-vulnerabilities-of-attention</guid>
+      <pubDate>Wed, 24 Jun 2026 16:42:21 GMT</pubDate>
+      <author>Tânia Carvalho, Maxime Cordy</author>
+      <category>Comp Sci</category>
+      <description>How AI models leak secrets hidden in their attention patterns</description>
+      <content:encoded><![CDATA[<p><em>How AI models leak secrets hidden in their attention patterns</em></p><p>Tabular foundation models — AI systems trained to work with spreadsheet-like data — can be tricked into revealing whether specific records were used during their processing, even when the model was pre-trained on synthetic data. Researchers created a new attack that reads the model's attention patterns to detect membership in context examples with 7.7% higher accuracy than existing methods, then developed a defence that reduces this privacy leakage by half without significantly harming the model's performance.</p><p><strong>Why it matters:</strong> As businesses deploy these models to make decisions using sensitive customer or patient data, the privacy risk is concrete: attackers can determine whether a specific person's medical record or financial information was part of the data fed to the model. The proposed defence offers a practical fix that works at inference time without retraining, making it immediately applicable to systems already in production.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Natural Ungrokking: Asymmetric Control of Which Rules Survive Pretraining</title>
       <link>https://paperplaine.com/papers/natural-ungrokking-asymmetric-control</link>
