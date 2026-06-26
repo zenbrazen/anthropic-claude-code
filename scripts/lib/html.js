@@ -665,7 +665,9 @@ function buildSitemap(urls) {
 }
 
 function buildRobotsTxt() {
-  return `User-agent: *\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`;
+  const aiBots = ['GPTBot', 'ClaudeBot', 'PerplexityBot', 'Anthropic-AI', 'cohere-ai', 'YouBot', 'Googlebot'];
+  const botRules = aiBots.map(bot => `User-agent: ${bot}\nAllow: /`).join('\n\n');
+  return `User-agent: *\nAllow: /\n\n${botRules}\n\nSitemap: ${DOMAIN}/sitemap.xml\n`;
 }
 
 function buildRssFeed(allPapers) {
