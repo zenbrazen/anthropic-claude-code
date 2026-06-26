@@ -182,14 +182,54 @@ const CSS = `
   .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
   .nav-bottom {
-    flex-basis: 100%; display: flex; justify-content: space-between; align-items: center;
+    flex-basis: 100%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
     border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
   }
-  .nav-bottom-right { display: flex; align-items: center; gap: 14px; }
   .nav-rss {
-    display: flex; align-items: center; gap: 5px; color: var(--muted);
+    display: flex; align-items: center; gap: 5px; color: var(--muted); justify-self: end;
   }
   .nav-rss:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .nav-search { display: flex; align-items: stretch; }
+  .nav-search-input {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .08em;
+    padding: 4px 8px; width: 140px;
+    border: 1.5px solid var(--muted); border-right: none;
+    background: var(--bg); color: var(--ink); outline: none;
+    transition: border-color .2s;
+  }
+  .nav-search-input:focus { border-color: var(--accent); }
+  .nav-search-input::placeholder { color: var(--muted); text-transform: none; letter-spacing: 0; }
+  .nav-search-btn {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .08em;
+    padding: 4px 10px; border: 1.5px solid var(--rule); cursor: pointer;
+    background: var(--ink); color: var(--bg); transition: background .2s, border-color .2s;
+  }
+  .nav-search-btn:hover { background: var(--accent); border-color: var(--accent); }
+
+  /* Search results page */
+  .search-page { padding: 48px 0; }
+  .search-page-form { display: flex; align-items: stretch; margin-bottom: 40px; max-width: 480px; }
+  .search-page-input {
+    flex: 1; font-family: 'Newsreader', serif; font-size: 17px;
+    padding: 10px 14px; border: 1.5px solid var(--rule); border-right: none;
+    background: var(--bg); color: var(--ink); outline: none; transition: border-color .2s;
+  }
+  .search-page-input:focus { border-color: var(--accent); }
+  .search-page-btn {
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    text-transform: uppercase; letter-spacing: .1em;
+    padding: 10px 20px; border: 1.5px solid var(--rule); cursor: pointer;
+    background: var(--ink); color: var(--bg); white-space: nowrap;
+    transition: background .2s, border-color .2s;
+  }
+  .search-page-btn:hover { background: var(--accent); border-color: var(--accent); }
+  .search-status {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em; color: var(--muted);
+    margin-bottom: 32px;
+  }
 
   /* Entries */
   .entry { padding: 50px 0 44px; }
@@ -392,6 +432,10 @@ const CSS = `
     .pagination { grid-template-columns: 1fr; justify-items: center; gap: 12px; }
     .page-nav-next { text-align: center; }
     .tagline-break { display: block; }
+    .nav-bottom { grid-template-columns: 1fr auto; row-gap: 10px; }
+    .nav-search { grid-column: 1 / -1; justify-content: center; }
+    .nav-search-input { width: 180px; }
+    .nav-rss { justify-self: end; }
     .mobile-stats {
       display: flex; justify-content: space-around;
       padding: 24px 0; margin-bottom: 8px;
@@ -443,6 +487,10 @@ function buildPage({ title, description, canonical, prevUrl = null, nextUrl = nu
   const archiveActive = activeSlug === null ? ' active' : '';
   const bottomRow = `<div class="nav-bottom">
     <a href="/" class="nav-archive${archiveActive}">Archive/All</a>
+    <form class="nav-search" action="/search" method="get" role="search">
+      <input type="search" name="q" class="nav-search-input" placeholder="Search papers…" autocomplete="off" aria-label="Search papers">
+      <button type="submit" class="nav-search-btn">Search</button>
+    </form>
     <a href="/feed.xml" class="nav-rss" title="RSS feed"><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="2" cy="10" r="1.5"/><path d="M1 6.5a5 5 0 0 1 5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 2.5a9 9 0 0 1 9 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> RSS</a>
   </div>`;
 
@@ -1000,6 +1048,105 @@ function generateAboutHTML(sidebarHTML = '', mobileStatsHTML = '') {
   });
 }
 
+function buildSearchIndex(allPapers) {
+  return JSON.stringify(allPapers.map(p => ({
+    title: p.title,
+    subtitle: p.subtitle || '',
+    slug: p.slug || '',
+    id: p.id,
+    categoryDisplay: p.categoryDisplay,
+    authors: p.authors,
+    fetchedAt: p.fetchedAt || '',
+    publishedFormatted: p.publishedFormatted || '',
+  })));
+}
+
+function generateSearchHTML(sidebarHTML = '', mobileStatsHTML = '') {
+  const searchJS = `
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var q = (params.get('q') || '').trim();
+  var container = document.getElementById('search-results');
+  var status = document.getElementById('search-status');
+
+  function esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  if (!q) {
+    status.textContent = 'Enter a search term above.';
+    return;
+  }
+
+  // Pre-fill nav search input with current query
+  var navInput = document.querySelector('.nav-search-input');
+  if (navInput) navInput.value = q;
+
+  // Pre-fill page form input
+  var pageInput = document.getElementById('search-page-input');
+  if (pageInput) pageInput.value = q;
+
+  status.textContent = 'Searching…';
+
+  fetch('/search-index.json')
+    .then(function(r) { return r.json(); })
+    .then(function(papers) {
+      var lower = q.toLowerCase();
+      var results = papers.filter(function(p) {
+        return p.title.toLowerCase().indexOf(lower) !== -1 ||
+               p.subtitle.toLowerCase().indexOf(lower) !== -1;
+      });
+
+      if (!results.length) {
+        status.textContent = 'No papers found for "' + esc(q) + '".';
+        return;
+      }
+
+      status.textContent = results.length + ' result' + (results.length === 1 ? '' : 's') + ' for "' + esc(q) + '"';
+
+      container.innerHTML = results.map(function(p, i) {
+        var url = p.slug ? '/papers/' + p.slug : 'https://arxiv.org/abs/' + p.id;
+        var isLast = i === results.length - 1;
+        var border = isLast ? 'border-bottom:6px double var(--rule)' : 'border-bottom:3px solid var(--rule)';
+        var date = p.fetchedAt ? new Date(p.fetchedAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : esc(p.publishedFormatted);
+        return '<article class="entry" style="' + border + '">' +
+          '<div class="entry-meta"><span class="category">' + esc(p.categoryDisplay) + '</span><span>' + date + '</span></div>' +
+          '<h2 class="entry-title"><a href="' + esc(url) + '" class="entry-title-link">' + esc(p.title) + '</a></h2>' +
+          (p.subtitle ? '<p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>' + esc(p.subtitle) + '</p>' : '') +
+          '<p class="byline">' + esc(p.authors) + '</p>' +
+          '<div class="entry-footer"><a href="https://arxiv.org/abs/' + esc(p.id) + '" class="read-link" target="_blank" rel="noopener">Read on arXiv</a></div>' +
+          '</article>';
+      }).join('');
+    })
+    .catch(function() {
+      status.textContent = 'Search unavailable — please try again.';
+    });
+})();`;
+
+  const mainHTML = `
+  <div class="search-page">
+    <h2 class="about-heading">Search</h2>
+    <form class="search-page-form" action="/search" method="get" role="search">
+      <input type="search" name="q" id="search-page-input" class="search-page-input" placeholder="Search titles and subtitles…" autocomplete="off" aria-label="Search papers">
+      <button type="submit" class="search-page-btn">Search</button>
+    </form>
+    <p class="search-status" id="search-status"></p>
+    <div id="search-results"></div>
+  </div>
+  <script>${searchJS}<\/script>`;
+
+  return buildPage({
+    title: 'Search — Paper Plaine',
+    description: 'Search Paper Plaine for research papers by title or subtitle.',
+    canonical: `${DOMAIN}/search`,
+    jsonLd: JSON.stringify({ '@context': 'https://schema.org', '@type': 'SearchResultsPage', name: 'Search — Paper Plaine', url: `${DOMAIN}/search` }),
+    activeSlug: null,
+    sidebarHTML,
+    mobileStatsHTML,
+    mainHTML,
+  });
+}
+
 export async function generateSite(allPapers, publicDir) {
   const sitemapUrls = [];
   const today = new Date().toISOString().split('T')[0];
@@ -1079,6 +1226,13 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(subscribedDir, 'index.html'), generateSubscribedHTML(sidebarHTML, mobileStatsHTML));
   sitemapUrls.push({ url: `${DOMAIN}/subscribed`, lastmod: today });
 
+  // Search page + index
+  const searchDir = path.join(publicDir, 'search');
+  await fs.mkdir(searchDir, { recursive: true });
+  await fs.writeFile(path.join(searchDir, 'index.html'), generateSearchHTML(sidebarHTML, mobileStatsHTML));
+  await fs.writeFile(path.join(publicDir, 'search-index.json'), buildSearchIndex(allPapers));
+  sitemapUrls.push({ url: `${DOMAIN}/search`, lastmod: today });
+
   // sitemap.xml, robots.txt, llms.txt, llms-full.txt, feed.xml
   await fs.writeFile(path.join(publicDir, 'sitemap.xml'), buildSitemap(sitemapUrls));
   await fs.writeFile(path.join(publicDir, 'robots.txt'), buildRobotsTxt());
@@ -1087,5 +1241,5 @@ export async function generateSite(allPapers, publicDir) {
   await fs.writeFile(path.join(publicDir, 'feed.xml'), buildRssFeed(allPapers));
 
   const paperPageCount = allPapers.filter(p => p.slug).length;
-  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 5;
+  return totalPages + CATEGORIES.filter(c => allPapers.some(p => p.categoryLabel === c.label)).length + paperPageCount + 6;
 }
