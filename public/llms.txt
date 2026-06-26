@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 332 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 335 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 113 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 114 papers in archive.
+  - "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning"
   - "Autoregressive Boltzmann Generators"
-  - "TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 28 papers in archive.
   - "Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries"
   - "Optimal Small Set Expanders and Their Codes"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 26 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 27 papers in archive.
+  - "Exact subsystem dynamics in the deterministic Floquet-PXP model"
   - "Large-Language-Model Discovery of Quantum LDPC Codes through Structured Concept Evolution"
-  - "Genuine certification of incompatible quantum instruments through sequential communication tasks"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 28 papers in archive.
   - "Finding Stationary Points by Comparisons"
   - "A Concentration Inequality for the Covariance Matrix of an Arbitrary Subset of Random Vectors"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 27 papers in archive.
   - "Extended pseudo-spectral physics-informed neural networks for phase-field models"
   - "Average Rankings Mask Per-Subject Optimality: A Friedman-Nemenyi Benchmark of EEG Motor-Imagery BCI Decoders"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 28 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 29 papers in archive.
+  - "Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns"
   - "KineticSim: A Lightweight, High-Performance Execution Engine for Real-Time Market Simulators"
-  - "Which Portfolios? The Construction Dependence of Factor Model Performance"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 28 papers in archive.
   - "Learning Interpretable Text Signals for Structured Responses"
   - "Collapsed Effective Operators for Higher-order Structures"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Digital Speech Acts Retain Control of Copyright with People, Not Platforms"
 
 ## 10 most recent papers
+
+### Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning
+- URL: https://paperplaine.com/papers/empowering-gui-agents-via
+- Category: Computer Science · AI
+- Authors: Tianyi Men, Zhuoran Jin, Pengfei Cao et al.
+- arXiv: 2606.27330
+- Plain-English subtitle: Training smaller AI models to plan complex computer tasks better than much larger ones
+- Summary: Researchers developed a method that lets smaller AI models learn to navigate websites and complete tasks by autonomously exploring environments and reusing past experiences as training data. A 7-billion-parameter model trained this way outperformed a much larger 32-billion-parameter commercial model, reaching 30.6% accuracy on real-world benchmarks. The breakthrough came from focusing training on high-level task planning rather than low-level individual skills.
+- Why it matters: Smaller AI models are cheaper to run and keep user data private, but they've struggled with planning complex multi-step tasks on websites and generalizing to new situations. This work shows they can match or beat much larger commercial models when trained the right way—meaning organizations could deploy capable web automation agents without expensive hardware or privacy concerns, while still handling unfamiliar websites and task variations they've never seen before.
+
+### Exact subsystem dynamics in the deterministic Floquet-PXP model
+- URL: https://paperplaine.com/papers/exact-subsystem-dynamics-in
+- Category: Physics
+- Authors: Katja Klobas
+- arXiv: 2606.27337
+- Plain-English subtitle: How to track quantum systems' behavior when their surroundings act like a hidden bath
+- Summary: Physicists have figured out how to exactly predict how parts of certain quantum systems evolve over time, even when those parts are constantly jostled by the rest of the system around them. They showed that a specific type of quantum rule called Rule 201 can be solved mathematically using a compact mathematical structure, making it possible to calculate how quantum properties change moment by moment without the usual explosion of complexity.
+- Why it matters: Most quantum systems are far too complicated to predict exactly—the math becomes impossibly tangled as time goes on. Finding even one solvable case, like Rule 201, gives physicists a testbed for understanding how quantum information spreads and gets scrambled in realistic situations. This matters for designing quantum computers and sensors, where controlling how quantum states degrade is essential.
+
+### Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns
+- URL: https://paperplaine.com/papers/time-dependent-weighted-directed
+- Category: Quantitative Finance
+- Authors: Shubhangam Shukla, Mahesh Peyyala, Abhijit Chakraborty
+- arXiv: 2606.25466
+- Plain-English subtitle: Which cryptocurrencies drive the market—and how that power shifts over time
+- Summary: A analysis of five years of cryptocurrency price data reveals a shifting pecking order of influence: Ethereum has become the market's most powerful trendsetter, while Bitcoin's sway has weakened. The researchers mapped these relationships by tracking which cryptocurrencies' price movements predict others', uncovering a tiny handful of coins that shape the entire market.
+- Why it matters: Traders and fund managers who want to anticipate crypto market moves need to watch the right assets. Bitcoin is no longer the dominant signal it once was—ignoring Ethereum's emerging role would mean missing early warnings of broader market shifts. This snapshot of a fast-changing hierarchy also flags a real risk: when power concentrates in a small number of assets, the entire market becomes more fragile.
 
 ### Autoregressive Boltzmann Generators
 - URL: https://paperplaine.com/papers/autoregressive-boltzmann-generators
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How training data decides which AI rules stick around and which get forgotten
 - Summary: Language models learn rules like "girl names go with she" during training, but then mysteriously unlearn them mid-run — even when the evidence stays in the data. Researchers found this "natural ungrokking" follows a simple rule: whichever pattern appears most often in the training stream wins and survives, while less-frequent competing patterns get displaced and forgotten. The forgetting is one-way: you can kill a rule by removing its support, but flooding the data with the rule doesn't bring it back once it's gone.
 - Why it matters: This reveals how messy real training data — not just model size or architecture — shapes which behaviors stick around in AI systems. If a model forgets a useful rule because conflicting signals are more common in the wild, retraining on cleaner data might not fix it. Understanding this could help engineers design training corpora that preserve desired behaviors and predict when models will abandon important patterns mid-training.
-
-### Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers
-- URL: https://paperplaine.com/papers/restoring-incentive-compatibility-in
-- Category: Economics
-- Authors: Nikolas Koumpis, Koushik Kar, Leandros Tassiulas et al.
-- arXiv: 2606.25910
-- Plain-English subtitle: Stopping energy traders from gaming the market by hiding what they actually need
-- Summary: People who both buy and sell electricity are deliberately underreporting their energy needs to the day-ahead market, which lets them profit by selling power at higher real-time prices. Researchers designed a penalty system that removes this incentive, forcing honest reporting while keeping costs low for traders who play by the rules.
-- Why it matters: When market participants strategically misreport demand, it distorts electricity prices, wastes renewable energy, and destabilizes the grid. This mechanism makes the market work as intended without requiring operators to monitor every participant — honest traders face no penalty, while cheaters get priced out.
-
-### Learning Interpretable Text Signals for Structured Responses
-- URL: https://paperplaine.com/papers/learning-interpretable-text-signals
-- Category: Statistics
-- Authors: Cixiao Jiang, Ben Powell, Niall MacKay
-- arXiv: 2606.25268
-- Plain-English subtitle: Finding readable text patterns that predict ratings and other outcomes
-- Summary: A new method learns to extract meaningful topics from customer reviews while simultaneously predicting their star ratings, keeping both goals in balance. Unlike standard approaches that either predict well or explain clearly, this model does both—recovering stable patterns in text that actually drive the ratings people give.
-- Why it matters: Companies analyzing thousands of reviews need to know not just what rating to expect, but why customers gave it. This method delivers both at once, letting product teams spot the actual language patterns driving customer satisfaction rather than treating prediction and understanding as separate problems that require different tools.
-
-### Grad Detect: Gradient-Based Hallucination Detection in LLMs
-- URL: https://paperplaine.com/papers/grad-detect-gradient-based
-- Category: Computer Science · AI
-- Authors: Anand Kamat, Daniel Blake, Brent M. Werness
-- arXiv: 2606.24790
-- Plain-English subtitle: How to catch AI lies by reading the model's internal math
-- Summary: A new technique called Grad Detect can predict when large language models will give wrong answers by analyzing the mathematical patterns the model creates during thinking, rather than just looking at its final answer. Testing on question-answering tasks shows it catches hallucinations better than existing methods, and remarkably, only the last five layers of the model contain most of the useful signal needed.
-- Why it matters: AI hallucinations cause real harm in healthcare, law, and finance—doctors, lawyers, and financial advisors using these systems need ways to know when the AI is confabulating. This method provides a reliable built-in detector that doesn't slow down inference, making it practical to deploy LLMs safely in high-stakes applications where getting the wrong answer has serious consequences.
 
 ## About
 
