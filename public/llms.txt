@@ -2,35 +2,160 @@
 
 > arXiv research papers explained in plain English, updated twice daily.
 
-Paper Plaine summarizes recent academic research from Cornell's arXiv database. Each paper receives a plain-English summary and a "why it matters" explanation. The site updates automatically at 7 AM and 7 PM UTC with new papers across 9 subject areas.
+## What this site is
+
+Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
+
+The site currently has 332 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+
+## How content is structured
+
+Each paper entry contains:
+- Formal arXiv title and authors
+- Plain-English subtitle — a one-phrase translation of the paper's core idea
+- Summary — 2–3 sentences leading with the finding, not the method
+- Why it matters — real-world consequences, stated directly
+- Link to the full paper on arXiv
+- Category and posting date
+
+## Site structure
+
+- Home / archive: https://paperplaine.com (paginated, 12 papers per page)
+- Per-category pages: https://paperplaine.com/<category-slug>
+- Per-paper pages: https://paperplaine.com/papers/<slug>
+- RSS feed: https://paperplaine.com/feed.xml
+- llms.txt (this file): https://paperplaine.com/llms.txt
+- llms-full.txt (full text of recent papers): https://paperplaine.com/llms-full.txt
+- Sitemap: https://paperplaine.com/sitemap.xml
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English.
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English.
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English.
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English.
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English.
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English.
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English.
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English.
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 113 papers in archive.
+  - "Autoregressive Boltzmann Generators"
+  - "TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs"
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 28 papers in archive.
+  - "Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries"
+  - "Optimal Small Set Expanders and Their Codes"
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 26 papers in archive.
+  - "Large-Language-Model Discovery of Quantum LDPC Codes through Structured Concept Evolution"
+  - "Genuine certification of incompatible quantum instruments through sequential communication tasks"
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 28 papers in archive.
+  - "Finding Stationary Points by Comparisons"
+  - "A Concentration Inequality for the Covariance Matrix of an Arbitrary Subset of Random Vectors"
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 27 papers in archive.
+  - "Extended pseudo-spectral physics-informed neural networks for phase-field models"
+  - "Average Rankings Mask Per-Subject Optimality: A Friedman-Nemenyi Benchmark of EEG Motor-Imagery BCI Decoders"
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 28 papers in archive.
+  - "KineticSim: A Lightweight, High-Performance Execution Engine for Real-Time Market Simulators"
+  - "Which Portfolios? The Construction Dependence of Factor Model Performance"
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 28 papers in archive.
+  - "Learning Interpretable Text Signals for Structured Responses"
+  - "Collapsed Effective Operators for Higher-order Structures"
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 28 papers in archive.
+  - "Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT"
+  - "Offline Channel-Independent QAOA Angles for RIS Power Aggregation: Unit-Circle Phase Dictionaries and Infinite-Size Spin-Glass Limits"
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 26 papers in archive.
+  - "Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers"
+  - "Digital Speech Acts Retain Control of Copyright with People, Not Platforms"
 
-## Archive
+## 10 most recent papers
 
-The full archive of all papers is paginated at 12 per page, starting at https://paperplaine.com.
+### Autoregressive Boltzmann Generators
+- URL: https://paperplaine.com/papers/autoregressive-boltzmann-generators
+- Category: Computer Science · AI
+- Authors: Danyal Rehman, Charlie B. Tan, Yoshua Bengio et al.
+- arXiv: 2606.27361
+- Plain-English subtitle: Using language-model techniques to simulate protein behavior faster
+- Summary: Researchers created a new method called Autoregressive Boltzmann Generators that simulates how proteins behave at equilibrium—a crucial problem in chemistry and drug discovery. The approach borrows techniques from large language models to sidestep the mathematical limitations of previous methods, achieving 60% better accuracy on standard tests and working significantly faster on larger protein systems.
+- Why it matters: Simulating protein behavior accurately is essential for drug design, materials science, and understanding biological processes. The speedup and accuracy gains mean researchers can test more drug candidates computationally before expensive lab experiments, potentially accelerating the discovery of new medicines and reducing development costs.
 
-## Recent papers
+### Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT
+- URL: https://paperplaine.com/papers/pseudo-text-conditioned-3d
+- Category: Engineering
+- Authors: Siqi Chen, Han Gong, Keyi Hou et al.
+- arXiv: 2606.27084
+- Plain-English subtitle: Teaching CT scanners to automatically spot organs without text labels
+- Summary: Researchers created a lightweight AI system that locates five abdominal organs (liver, spleen, both kidneys, and bowel) in CT scans by using simplified text-like tokens instead of full language descriptions. The system achieved 58% accuracy on finding organs in the right general location, but struggled with pinpointing exact boundaries—suggesting it's useful for initial navigation through scans but needs refinement for precise surgical planning.
+- Why it matters: Automatically finding organs in trauma patients' CT scans could speed up emergency diagnosis and help surgeons plan interventions faster when minutes matter. The open-source baseline the authors released gives hospitals and researchers a starting point to improve organ detection, potentially reducing the time radiologists spend manually locating structures before analyzing injuries.
 
-- "Autoregressive Boltzmann Generators" (arXiv:2606.27361)
-- "Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT" (arXiv:2606.27084)
-- "Finding Stationary Points by Comparisons" (arXiv:2606.27082)
-- "TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs" (arXiv:2606.26029)
-- "Extended pseudo-spectral physics-informed neural networks for phase-field models" (arXiv:2606.24660)
+### Finding Stationary Points by Comparisons
+- URL: https://paperplaine.com/papers/finding-stationary-points-by
+- Category: Mathematics
+- Authors: Helin Wang, Chenyi Zhang, Xiwen Tao et al.
+- arXiv: 2606.27082
+- Plain-English subtitle: Finding mathematical sweet spots using only yes-or-no comparisons
+- Summary: Researchers developed a new method to find stationary points—places where functions flatten out—when you can only ask a computer "which of these two values is bigger?" instead of calculating exact function values. The approach uses roughly 10,000 times fewer queries than naive methods for typical problem sizes, and a quantum version cuts that further by a factor equal to the square root of the problem's dimensions.
+- Why it matters: Many real optimization problems can only be queried through comparisons—ranking models, A/B testing, or noisy systems where you can compare outcomes but not measure them precisely. This algorithm makes it practical to find good solutions in those scenarios. The quantum version hints at how quantum computers might eventually offer speedups for real-world optimization beyond brute-force advantage.
+
+### TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs
+- URL: https://paperplaine.com/papers/triviewbench-controlled-complexity-scaling
+- Category: Computer Science · AI
+- Authors: Yu-Yang Chen, Lan-Zhe Guo
+- arXiv: 2606.26029
+- Plain-English subtitle: Why AI vision systems fail when objects hide and multiply across views
+- Summary: All 18 major AI vision systems tested share the same weakness: they handle simple visual questions well but collapse catastrophically when asked to count objects (59% accuracy drop) or understand complex 3D scenes (80% drop). The failures stem from two distinct problems—the systems either miss hidden objects or confuse the same object across different camera angles—and simply asking them to "think step by step" doesn't help.
+- Why it matters: AI systems that see are being deployed in robotics, autonomous vehicles, and industrial inspection, where missing hidden objects or misidentifying items across viewpoints could cause real failures. This benchmark reveals these systems have a fundamental blind spot that current prompting tricks can't fix, suggesting engineers need to rebuild how these systems represent 3D space rather than just improve their reasoning.
+
+### Extended pseudo-spectral physics-informed neural networks for phase-field models
+- URL: https://paperplaine.com/papers/extended-pseudo-spectral-physics
+- Category: Quantitative Biology
+- Authors: Callum Marsh, Radek Erban, Andreas Munch
+- arXiv: 2606.24660
+- Plain-English subtitle: Using AI to reverse-engineer the hidden rules that drive material separation
+- Summary: Researchers developed a machine-learning method that can figure out the underlying physical laws of phase separation—the process where mixtures split into distinct regions—by watching how materials evolve over time. The technique recovers unknown physical parameters from just a single or handful of snapshot pairs, and continues to work reasonably well even when data is noisy.
+- Why it matters: Materials scientists often can't directly measure the fundamental properties that control how materials separate and form patterns, but need to know them to design alloys, polymers, and other engineered materials. This method cuts the number of observations needed to infer those hidden rules, potentially speeding up materials discovery and making it cheaper to characterize new substances without running expensive, lengthy experiments.
+
+### Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries
+- URL: https://paperplaine.com/papers/privacy-vulnerabilities-of-attention
+- Category: Computer Science
+- Authors: Tânia Carvalho, Maxime Cordy
+- arXiv: 2606.26021
+- Plain-English subtitle: How AI models leak secrets hidden in their attention patterns
+- Summary: Tabular foundation models — AI systems trained to work with spreadsheet-like data — can be tricked into revealing whether specific records were used during their processing, even when the model was pre-trained on synthetic data. Researchers created a new attack that reads the model's attention patterns to detect membership in context examples with 7.7% higher accuracy than existing methods, then developed a defence that reduces this privacy leakage by half without significantly harming the model's performance.
+- Why it matters: As businesses deploy these models to make decisions using sensitive customer or patient data, the privacy risk is concrete: attackers can determine whether a specific person's medical record or financial information was part of the data fed to the model. The proposed defence offers a practical fix that works at inference time without retraining, making it immediately applicable to systems already in production.
+
+### Natural Ungrokking: Asymmetric Control of Which Rules Survive Pretraining
+- URL: https://paperplaine.com/papers/natural-ungrokking-asymmetric-control
+- Category: Computer Science · AI
+- Authors: Juliana Li, Diya Sreedhar
+- arXiv: 2606.26050
+- Plain-English subtitle: How training data decides which AI rules stick around and which get forgotten
+- Summary: Language models learn rules like "girl names go with she" during training, but then mysteriously unlearn them mid-run — even when the evidence stays in the data. Researchers found this "natural ungrokking" follows a simple rule: whichever pattern appears most often in the training stream wins and survives, while less-frequent competing patterns get displaced and forgotten. The forgetting is one-way: you can kill a rule by removing its support, but flooding the data with the rule doesn't bring it back once it's gone.
+- Why it matters: This reveals how messy real training data — not just model size or architecture — shapes which behaviors stick around in AI systems. If a model forgets a useful rule because conflicting signals are more common in the wild, retraining on cleaner data might not fix it. Understanding this could help engineers design training corpora that preserve desired behaviors and predict when models will abandon important patterns mid-training.
+
+### Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers
+- URL: https://paperplaine.com/papers/restoring-incentive-compatibility-in
+- Category: Economics
+- Authors: Nikolas Koumpis, Koushik Kar, Leandros Tassiulas et al.
+- arXiv: 2606.25910
+- Plain-English subtitle: Stopping energy traders from gaming the market by hiding what they actually need
+- Summary: People who both buy and sell electricity are deliberately underreporting their energy needs to the day-ahead market, which lets them profit by selling power at higher real-time prices. Researchers designed a penalty system that removes this incentive, forcing honest reporting while keeping costs low for traders who play by the rules.
+- Why it matters: When market participants strategically misreport demand, it distorts electricity prices, wastes renewable energy, and destabilizes the grid. This mechanism makes the market work as intended without requiring operators to monitor every participant — honest traders face no penalty, while cheaters get priced out.
+
+### Learning Interpretable Text Signals for Structured Responses
+- URL: https://paperplaine.com/papers/learning-interpretable-text-signals
+- Category: Statistics
+- Authors: Cixiao Jiang, Ben Powell, Niall MacKay
+- arXiv: 2606.25268
+- Plain-English subtitle: Finding readable text patterns that predict ratings and other outcomes
+- Summary: A new method learns to extract meaningful topics from customer reviews while simultaneously predicting their star ratings, keeping both goals in balance. Unlike standard approaches that either predict well or explain clearly, this model does both—recovering stable patterns in text that actually drive the ratings people give.
+- Why it matters: Companies analyzing thousands of reviews need to know not just what rating to expect, but why customers gave it. This method delivers both at once, letting product teams spot the actual language patterns driving customer satisfaction rather than treating prediction and understanding as separate problems that require different tools.
+
+### Grad Detect: Gradient-Based Hallucination Detection in LLMs
+- URL: https://paperplaine.com/papers/grad-detect-gradient-based
+- Category: Computer Science · AI
+- Authors: Anand Kamat, Daniel Blake, Brent M. Werness
+- arXiv: 2606.24790
+- Plain-English subtitle: How to catch AI lies by reading the model's internal math
+- Summary: A new technique called Grad Detect can predict when large language models will give wrong answers by analyzing the mathematical patterns the model creates during thinking, rather than just looking at its final answer. Testing on question-answering tasks shows it catches hallucinations better than existing methods, and remarkably, only the last five layers of the model contain most of the useful signal needed.
+- Why it matters: AI hallucinations cause real harm in healthcare, law, and finance—doctors, lawyers, and financial advisors using these systems need ways to know when the AI is confabulating. This method provides a reliable built-in detector that doesn't slow down inference, making it practical to deploy LLMs safely in high-stakes applications where getting the wrong answer has serious consequences.
 
 ## About
 
-- Source data: arXiv.org (Cornell University)
-- Summaries generated by: Claude AI (Anthropic)
-- Update frequency: Twice daily
-- Content license: summaries are original; linked papers are © their respective authors
+- Publisher: Paper Plaine (paperplaine.com)
+- Source data: arXiv.org, Cornell University open-access preprint repository
+- Summaries generated by: Claude (Anthropic)
+- Update frequency: Twice daily, automated
+- Contact: hello@paperplaine.com
+- Content license: Plain-English summaries are original works by Paper Plaine. Linked papers remain © their respective authors under their original arXiv licenses.
+- No paywalls, no login required, no cookies set by the publisher
