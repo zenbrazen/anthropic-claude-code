@@ -255,18 +255,20 @@ const CSS = `
 
   /* Pagination */
   .pagination {
-    display: flex; justify-content: space-between; align-items: center;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
     padding: 36px 0 0; border-top: 1px solid var(--rule);
     font-family: 'JetBrains Mono', monospace; font-size: 11px;
     text-transform: uppercase; letter-spacing: .12em;
   }
-  .page-nav { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; }
+  .page-nav { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px; transition: color .2s; white-space: nowrap; }
   .page-nav:hover { color: var(--accent); }
-  .page-nav--off { color: var(--muted); border-bottom: none; cursor: default; }
-  .page-numbers { display: flex; gap: 16px; }
+  .page-nav--off { color: var(--muted); border-bottom: none; cursor: default; white-space: nowrap; }
+  .page-nav-next { text-align: right; }
+  .page-numbers { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
   .page-num { color: var(--muted); text-decoration: none; letter-spacing: .12em; }
   .page-num:hover { color: var(--accent); }
   .page-num--active { color: var(--ink); font-weight: 500; }
+  .page-ellipsis { color: var(--muted); cursor: default; }
 
   /* Stats sidebar */
   .site-sidebar {
@@ -387,7 +389,8 @@ const CSS = `
     .entry-body { grid-template-columns: 1fr; row-gap: 28px; }
     .col-divider { display: none; }
     .entry-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
-    .pagination { flex-direction: column; gap: 16px; align-items: center; }
+    .pagination { grid-template-columns: 1fr; justify-items: center; gap: 12px; }
+    .page-nav-next { text-align: center; }
     .tagline-break { display: block; }
     .mobile-stats {
       display: flex; justify-content: space-around;
@@ -565,14 +568,19 @@ function renderPagination(page, totalPages, baseUrl) {
     : `<span class="page-nav page-nav--off">← Newer</span>`;
 
   const older = page < totalPages
-    ? `<a href="${pageUrl(page + 1)}" class="page-nav">Older →</a>`
-    : `<span class="page-nav page-nav--off">Older →</span>`;
+    ? `<a href="${pageUrl(page + 1)}" class="page-nav page-nav-next">Older →</a>`
+    : `<span class="page-nav page-nav--off page-nav-next">Older →</span>`;
 
-  const nums = Array.from({ length: totalPages }, (_, i) => i + 1).map(p =>
-    p === page
+  // Build a compact page number list: always show first, last, current ±2, with ellipsis
+  const visible = new Set([1, totalPages, page, page - 1, page - 2, page + 1, page + 2].filter(p => p >= 1 && p <= totalPages));
+  const sorted = [...visible].sort((a, b) => a - b);
+  const nums = sorted.map((p, i) => {
+    const gap = i > 0 && p - sorted[i - 1] > 1 ? `<span class="page-ellipsis">…</span>` : '';
+    const item = p === page
       ? `<span class="page-num page-num--active">${p}</span>`
-      : `<a href="${pageUrl(p)}" class="page-num">${p}</a>`
-  ).join('');
+      : `<a href="${pageUrl(p)}" class="page-num">${p}</a>`;
+    return gap + item;
+  }).join('');
 
   return `
   <nav class="pagination" aria-label="Page navigation">
