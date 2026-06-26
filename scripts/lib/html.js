@@ -185,7 +185,7 @@ const CSS = `
     flex-basis: 100%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
     border-top: 1px dotted var(--muted); padding-top: 14px; margin-top: 4px;
   }
-  .nav-archive { display: inline-block; }
+  .nav-archive { justify-self: start; }
   .nav-rss {
     display: flex; align-items: center; gap: 5px; color: var(--muted); justify-self: end;
   }
