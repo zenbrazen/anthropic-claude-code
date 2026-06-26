@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.27361",
+    "title": "Autoregressive Boltzmann Generators",
+    "authors": "Danyal Rehman, Charlie B. Tan, Yoshua Bengio et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-25T17:58:21Z",
+    "publishedFormatted": "Jun 25, 2026",
+    "subtitle": "Using language-model techniques to simulate protein behavior faster",
+    "summary": "Researchers created a new method called Autoregressive Boltzmann Generators that simulates how proteins behave at equilibrium—a crucial problem in chemistry and drug discovery. The approach borrows techniques from large language models to sidestep the mathematical limitations of previous methods, achieving 60% better accuracy on standard tests and working significantly faster on larger protein systems.",
+    "whyItMatters": "Simulating protein behavior accurately is essential for drug design, materials science, and understanding biological processes. The speedup and accuracy gains mean researchers can test more drug candidates computationally before expensive lab experiments, potentially accelerating the discovery of new medicines and reducing development costs.",
+    "fetchedAt": "2026-06-26T10:22:29.170Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 194
+    },
+    "slug": "autoregressive-boltzmann-generators"
+  },
+  {
+    "id": "2606.27084",
+    "title": "Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT",
+    "authors": "Siqi Chen, Han Gong, Keyi Hou et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-06-25T14:22:07Z",
+    "publishedFormatted": "Jun 25, 2026",
+    "subtitle": "Teaching CT scanners to automatically spot organs without text labels",
+    "summary": "Researchers created a lightweight AI system that locates five abdominal organs (liver, spleen, both kidneys, and bowel) in CT scans by using simplified text-like tokens instead of full language descriptions. The system achieved 58% accuracy on finding organs in the right general location, but struggled with pinpointing exact boundaries—suggesting it's useful for initial navigation through scans but needs refinement for precise surgical planning.",
+    "whyItMatters": "Automatically finding organs in trauma patients' CT scans could speed up emergency diagnosis and help surgeons plan interventions faster when minutes matter. The open-source baseline the authors released gives hospitals and researchers a starting point to improve organ detection, potentially reducing the time radiologists spend manually locating structures before analyzing injuries.",
+    "fetchedAt": "2026-06-26T10:22:47.763Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 169
+    },
+    "slug": "pseudo-text-conditioned-3d"
+  },
+  {
+    "id": "2606.27082",
+    "title": "Finding Stationary Points by Comparisons",
+    "authors": "Helin Wang, Chenyi Zhang, Xiwen Tao et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-06-25T14:20:03Z",
+    "publishedFormatted": "Jun 25, 2026",
+    "subtitle": "Finding mathematical sweet spots using only yes-or-no comparisons",
+    "summary": "Researchers developed a new method to find stationary points—places where functions flatten out—when you can only ask a computer \"which of these two values is bigger?\" instead of calculating exact function values. The approach uses roughly 10,000 times fewer queries than naive methods for typical problem sizes, and a quantum version cuts that further by a factor equal to the square root of the problem's dimensions.",
+    "whyItMatters": "Many real optimization problems can only be queried through comparisons—ranking models, A/B testing, or noisy systems where you can compare outcomes but not measure them precisely. This algorithm makes it practical to find good solutions in those scenarios. The quantum version hints at how quantum computers might eventually offer speedups for real-world optimization beyond brute-force advantage.",
+    "fetchedAt": "2026-06-26T10:22:51.025Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 41,
+      "wordCount": 110
+    },
+    "slug": "finding-stationary-points-by"
+  },
+  {
     "id": "2606.26029",
     "title": "TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs",
     "authors": "Yu-Yang Chen, Lan-Zhe Guo",

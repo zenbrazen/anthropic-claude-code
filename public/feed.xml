@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 20:52:38 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 10:22:51 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Autoregressive Boltzmann Generators</title>
+      <link>https://paperplaine.com/papers/autoregressive-boltzmann-generators</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/autoregressive-boltzmann-generators</guid>
+      <pubDate>Thu, 25 Jun 2026 17:58:21 GMT</pubDate>
+      <author>Danyal Rehman, Charlie B. Tan, Yoshua Bengio et al.</author>
+      <category>AI</category>
+      <description>Using language-model techniques to simulate protein behavior faster</description>
+      <content:encoded><![CDATA[<p><em>Using language-model techniques to simulate protein behavior faster</em></p><p>Researchers created a new method called Autoregressive Boltzmann Generators that simulates how proteins behave at equilibrium—a crucial problem in chemistry and drug discovery. The approach borrows techniques from large language models to sidestep the mathematical limitations of previous methods, achieving 60% better accuracy on standard tests and working significantly faster on larger protein systems.</p><p><strong>Why it matters:</strong> Simulating protein behavior accurately is essential for drug design, materials science, and understanding biological processes. The speedup and accuracy gains mean researchers can test more drug candidates computationally before expensive lab experiments, potentially accelerating the discovery of new medicines and reducing development costs.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT</title>
+      <link>https://paperplaine.com/papers/pseudo-text-conditioned-3d</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/pseudo-text-conditioned-3d</guid>
+      <pubDate>Thu, 25 Jun 2026 14:22:07 GMT</pubDate>
+      <author>Siqi Chen, Han Gong, Keyi Hou et al.</author>
+      <category>Engineering</category>
+      <description>Teaching CT scanners to automatically spot organs without text labels</description>
+      <content:encoded><![CDATA[<p><em>Teaching CT scanners to automatically spot organs without text labels</em></p><p>Researchers created a lightweight AI system that locates five abdominal organs (liver, spleen, both kidneys, and bowel) in CT scans by using simplified text-like tokens instead of full language descriptions. The system achieved 58% accuracy on finding organs in the right general location, but struggled with pinpointing exact boundaries—suggesting it's useful for initial navigation through scans but needs refinement for precise surgical planning.</p><p><strong>Why it matters:</strong> Automatically finding organs in trauma patients' CT scans could speed up emergency diagnosis and help surgeons plan interventions faster when minutes matter. The open-source baseline the authors released gives hospitals and researchers a starting point to improve organ detection, potentially reducing the time radiologists spend manually locating structures before analyzing injuries.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Finding Stationary Points by Comparisons</title>
+      <link>https://paperplaine.com/papers/finding-stationary-points-by</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/finding-stationary-points-by</guid>
+      <pubDate>Thu, 25 Jun 2026 14:20:03 GMT</pubDate>
+      <author>Helin Wang, Chenyi Zhang, Xiwen Tao et al.</author>
+      <category>Math</category>
+      <description>Finding mathematical sweet spots using only yes-or-no comparisons</description>
+      <content:encoded><![CDATA[<p><em>Finding mathematical sweet spots using only yes-or-no comparisons</em></p><p>Researchers developed a new method to find stationary points—places where functions flatten out—when you can only ask a computer "which of these two values is bigger?" instead of calculating exact function values. The approach uses roughly 10,000 times fewer queries than naive methods for typical problem sizes, and a quantum version cuts that further by a factor equal to the square root of the problem's dimensions.</p><p><strong>Why it matters:</strong> Many real optimization problems can only be queried through comparisons—ranking models, A/B testing, or noisy systems where you can compare outcomes but not measure them precisely. This algorithm makes it practical to find good solutions in those scenarios. The quantum version hints at how quantum computers might eventually offer speedups for real-world optimization beyond brute-force advantage.</p>]]></content:encoded>
+    </item>
     <item>
       <title>TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs</title>
       <link>https://paperplaine.com/papers/triviewbench-controlled-complexity-scaling</link>
