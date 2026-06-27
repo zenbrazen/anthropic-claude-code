@@ -5,8 +5,28 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2026 09:28:14 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 20:06:15 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>How Surprising Is Historical Italian to Language Models? Tokenization Tax, Comprehension Tax, and a Simple Mitigation</title>
+      <link>https://paperplaine.com/papers/how-surprising-is-historical</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/how-surprising-is-historical</guid>
+      <pubDate>Thu, 25 Jun 2026 16:52:21 GMT</pubDate>
+      <author>Maria Levchenko</author>
+      <category>AI</category>
+      <description>Why old Italian texts confuse AI language models—and how to fix it</description>
+      <content:encoded><![CDATA[<p><em>Why old Italian texts confuse AI language models—and how to fix it</em></p><p>Large language models find 17th-century Italian text 2.4 times harder to predict than modern Italian, even though they understand its meaning just as well. The gap comes not from how the text is broken into word chunks, but from genuine unfamiliarity with old word patterns and phrasing. A simple fix—adding a brief historical context prompt—cuts this difficulty in half.</p><p><strong>Why it matters:</strong> Digital libraries are now using AI to search and organize millions of historical documents, but old texts trip up these models in unpredictable ways. This work shows the problem isn't a barrier to understanding meaning, only to generating new text fluently. It means libraries can safely use AI for finding and retrieving historical documents today, but need to be cautious with AI systems that generate new text from them—and offers a concrete technique that dramatically improves performance.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP</title>
+      <link>https://paperplaine.com/papers/sharelock-a-stealthy-multi</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/sharelock-a-stealthy-multi</guid>
+      <pubDate>Thu, 25 Jun 2026 13:35:28 GMT</pubDate>
+      <author>Liwei Liu, Tianzhu Han, Zijian Liu et al.</author>
+      <category>Comp Sci</category>
+      <description>How attackers hide harmful instructions across multiple AI tools to avoid detection</description>
+      <content:encoded><![CDATA[<p><em>How attackers hide harmful instructions across multiple AI tools to avoid detection</em></p><p>Researchers discovered a new attack method called ShareLock that splits malicious instructions into harmless-looking pieces hidden across multiple AI tools, making it nearly impossible to spot by inspection or automated systems. The attack succeeded over 90% of the time against major AI language models and only requires a small trigger during a routine system update to activate the hidden instructions and steal data or compromise systems.</p><p><strong>Why it matters:</strong> As AI assistants increasingly rely on external tools and integrations to function, this attack reveals a critical blind spot in how these systems are secured. Organizations deploying AI agents with tool access need to know that current inspection methods—manual review or automated scanning—won't catch poisoning hidden across multiple tools, which means their defensive strategies are currently insufficient and could leave them vulnerable to data theft or system compromise.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity</title>
       <link>https://paperplaine.com/papers/fast-algorithms-for-learning</link>

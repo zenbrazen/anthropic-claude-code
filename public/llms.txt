@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 338 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 340 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 115 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 116 papers in archive.
+  - "How Surprising Is Historical Italian to Language Models? Tokenization Tax, Comprehension Tax, and a Simple Mitigation"
   - "Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity"
-  - "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 28 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 29 papers in archive.
+  - "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP"
   - "Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries"
-  - "Optimal Small Set Expanders and Their Codes"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 27 papers in archive.
   - "Exact subsystem dynamics in the deterministic Floquet-PXP model"
   - "Large-Language-Model Discovery of Quantum LDPC Codes through Structured Concept Evolution"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers"
 
 ## 10 most recent papers
+
+### How Surprising Is Historical Italian to Language Models? Tokenization Tax, Comprehension Tax, and a Simple Mitigation
+- URL: https://paperplaine.com/papers/how-surprising-is-historical
+- Category: Computer Science · AI
+- Authors: Maria Levchenko
+- arXiv: 2606.27275
+- Plain-English subtitle: Why old Italian texts confuse AI language models—and how to fix it
+- Summary: Large language models find 17th-century Italian text 2.4 times harder to predict than modern Italian, even though they understand its meaning just as well. The gap comes not from how the text is broken into word chunks, but from genuine unfamiliarity with old word patterns and phrasing. A simple fix—adding a brief historical context prompt—cuts this difficulty in half.
+- Why it matters: Digital libraries are now using AI to search and organize millions of historical documents, but old texts trip up these models in unpredictable ways. This work shows the problem isn't a barrier to understanding meaning, only to generating new text fluently. It means libraries can safely use AI for finding and retrieving historical documents today, but need to be cautious with AI systems that generate new text from them—and offers a concrete technique that dramatically improves performance.
+
+### ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP
+- URL: https://paperplaine.com/papers/sharelock-a-stealthy-multi
+- Category: Computer Science
+- Authors: Liwei Liu, Tianzhu Han, Zijian Liu et al.
+- arXiv: 2606.27027
+- Plain-English subtitle: How attackers hide harmful instructions across multiple AI tools to avoid detection
+- Summary: Researchers discovered a new attack method called ShareLock that splits malicious instructions into harmless-looking pieces hidden across multiple AI tools, making it nearly impossible to spot by inspection or automated systems. The attack succeeded over 90% of the time against major AI language models and only requires a small trigger during a routine system update to activate the hidden instructions and steal data or compromise systems.
+- Why it matters: As AI assistants increasingly rely on external tools and integrations to function, this attack reveals a critical blind spot in how these systems are secured. Organizations deploying AI agents with tool access need to know that current inspection methods—manual review or automated scanning—won't catch poisoning hidden across multiple tools, which means their defensive strategies are currently insufficient and could leave them vulnerable to data theft or system compromise.
 
 ### Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity
 - URL: https://paperplaine.com/papers/fast-algorithms-for-learning
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching CT scanners to automatically spot organs without text labels
 - Summary: Researchers created a lightweight AI system that locates five abdominal organs (liver, spleen, both kidneys, and bowel) in CT scans by using simplified text-like tokens instead of full language descriptions. The system achieved 58% accuracy on finding organs in the right general location, but struggled with pinpointing exact boundaries—suggesting it's useful for initial navigation through scans but needs refinement for precise surgical planning.
 - Why it matters: Automatically finding organs in trauma patients' CT scans could speed up emergency diagnosis and help surgeons plan interventions faster when minutes matter. The open-source baseline the authors released gives hospitals and researchers a starting point to improve organ detection, potentially reducing the time radiologists spend manually locating structures before analyzing injuries.
-
-### Finding Stationary Points by Comparisons
-- URL: https://paperplaine.com/papers/finding-stationary-points-by
-- Category: Mathematics
-- Authors: Helin Wang, Chenyi Zhang, Xiwen Tao et al.
-- arXiv: 2606.27082
-- Plain-English subtitle: Finding mathematical sweet spots using only yes-or-no comparisons
-- Summary: Researchers developed a new method to find stationary points—places where functions flatten out—when you can only ask a computer "which of these two values is bigger?" instead of calculating exact function values. The approach uses roughly 10,000 times fewer queries than naive methods for typical problem sizes, and a quantum version cuts that further by a factor equal to the square root of the problem's dimensions.
-- Why it matters: Many real optimization problems can only be queried through comparisons—ranking models, A/B testing, or noisy systems where you can compare outcomes but not measure them precisely. This algorithm makes it practical to find good solutions in those scenarios. The quantum version hints at how quantum computers might eventually offer speedups for real-world optimization beyond brute-force advantage.
-
-### TriViewBench: Controlled Complexity Scaling for Multi-View Structural Reasoning in MLLMs
-- URL: https://paperplaine.com/papers/triviewbench-controlled-complexity-scaling
-- Category: Computer Science · AI
-- Authors: Yu-Yang Chen, Lan-Zhe Guo
-- arXiv: 2606.26029
-- Plain-English subtitle: Why AI vision systems fail when objects hide and multiply across views
-- Summary: All 18 major AI vision systems tested share the same weakness: they handle simple visual questions well but collapse catastrophically when asked to count objects (59% accuracy drop) or understand complex 3D scenes (80% drop). The failures stem from two distinct problems—the systems either miss hidden objects or confuse the same object across different camera angles—and simply asking them to "think step by step" doesn't help.
-- Why it matters: AI systems that see are being deployed in robotics, autonomous vehicles, and industrial inspection, where missing hidden objects or misidentifying items across viewpoints could cause real failures. This benchmark reveals these systems have a fundamental blind spot that current prompting tricks can't fix, suggesting engineers need to rebuild how these systems represent 3D space rather than just improve their reasoning.
 
 ## About
 

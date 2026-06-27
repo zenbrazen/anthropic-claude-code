@@ -1,5 +1,49 @@
 [
   {
+    "id": "2606.27275",
+    "title": "How Surprising Is Historical Italian to Language Models? Tokenization Tax, Comprehension Tax, and a Simple Mitigation",
+    "authors": "Maria Levchenko",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-25T16:52:21Z",
+    "publishedFormatted": "Jun 25, 2026",
+    "subtitle": "Why old Italian texts confuse AI language models—and how to fix it",
+    "summary": "Large language models find 17th-century Italian text 2.4 times harder to predict than modern Italian, even though they understand its meaning just as well. The gap comes not from how the text is broken into word chunks, but from genuine unfamiliarity with old word patterns and phrasing. A simple fix—adding a brief historical context prompt—cuts this difficulty in half.",
+    "whyItMatters": "Digital libraries are now using AI to search and organize millions of historical documents, but old texts trip up these models in unpredictable ways. This work shows the problem isn't a barrier to understanding meaning, only to generating new text fluently. It means libraries can safely use AI for finding and retrieving historical documents today, but need to be cautious with AI systems that generate new text from them—and offers a concrete technique that dramatically improves performance.",
+    "fetchedAt": "2026-06-27T20:05:41.480Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 248
+    },
+    "slug": "how-surprising-is-historical"
+  },
+  {
+    "id": "2606.27027",
+    "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
+    "authors": "Liwei Liu, Tianzhu Han, Zijian Liu et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-06-25T13:35:28Z",
+    "publishedFormatted": "Jun 25, 2026",
+    "subtitle": "How attackers hide harmful instructions across multiple AI tools to avoid detection",
+    "summary": "Researchers discovered a new attack method called ShareLock that splits malicious instructions into harmless-looking pieces hidden across multiple AI tools, making it nearly impossible to spot by inspection or automated systems. The attack succeeded over 90% of the time against major AI language models and only requires a small trigger during a routine system update to activate the hidden instructions and steal data or compromise systems.",
+    "whyItMatters": "As AI assistants increasingly rely on external tools and integrations to function, this attack reveals a critical blind spot in how these systems are secured. Organizations deploying AI agents with tool access need to know that current inspection methods—manual review or automated scanning—won't catch poisoning hidden across multiple tools, which means their defensive strategies are currently insufficient and could leave them vulnerable to data theft or system compromise.",
+    "fetchedAt": "2026-06-27T20:05:44.616Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 218
+    },
+    "slug": "sharelock-a-stealthy-multi"
+  },
+  {
     "id": "2606.27298",
     "title": "Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity",
     "authors": "Haitong Liu, Deepak Narayanan Sridharan, David Steurer et al.",
