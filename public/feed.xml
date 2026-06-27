@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jun 2026 21:12:52 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 09:28:14 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity</title>
+      <link>https://paperplaine.com/papers/fast-algorithms-for-learning</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/fast-algorithms-for-learning</guid>
+      <pubDate>Thu, 25 Jun 2026 17:14:57 GMT</pubDate>
+      <author>Haitong Liu, Deepak Narayanan Sridharan, David Steurer et al.</author>
+      <category>AI</category>
+      <description>Learning hidden patterns from incomplete data faster than previously possible</description>
+      <content:encoded><![CDATA[<p><em>Learning hidden patterns from incomplete data faster than previously possible</em></p><p>Researchers created a faster algorithm for recovering the true shape of a high-dimensional dataset when only a partial view is available. The new method uses the minimum amount of data theoretically possible and runs at the speed of basic matrix operations—improvements over the previous best approach, which was slower and required more samples.</p><p><strong>Why it matters:</strong> Many real-world datasets are naturally filtered or incomplete: sensor readings might only record values above a threshold, survey responses might exclude certain groups, or observations might be restricted to a subset of space. This algorithm makes it practical to recover accurate statistical models from such truncated data without the computational slowdown of previous methods, potentially improving everything from medical imaging to climate modeling where observations are naturally limited.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees</title>
+      <link>https://paperplaine.com/papers/embedding-foundation-model-predictions</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/embedding-foundation-model-predictions</guid>
+      <pubDate>Wed, 24 Jun 2026 22:44:29 GMT</pubDate>
+      <author>Yingshuo Wang, Xian Sun, Yanhang Li et al.</author>
+      <category>Economics</category>
+      <description>Making AI predictions follow economic rules without sacrificing accuracy</description>
+      <content:encoded><![CDATA[<p><em>Making AI predictions follow economic rules without sacrificing accuracy</em></p><p>Foundation models predict choices well but often violate basic economics—suggesting that raising prices increases demand, or that unavailable options have some probability of being chosen. Researchers created a two-stage adapter that embeds foundation model predictions into an economic model while mathematically guaranteeing that the results follow economic logic, gaining an average 6.4 percentage point accuracy boost while maintaining 100% cost monotonicity.</p><p><strong>Why it matters:</strong> Transportation agencies, retailers, and economists use choice models to estimate how people respond to prices and policies. An accurate model that also obeys economic logic is more trustworthy for real decisions—whether predicting traffic patterns after a toll increase or estimating consumer welfare. This method lets organizations use faster, more accurate foundation models without sacrificing the economic guarantees that justify policy reliance on their outputs.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Geometry of Updates: Fisher Alignment at Vocabulary Scale</title>
+      <link>https://paperplaine.com/papers/the-geometry-of-updates</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-geometry-of-updates</guid>
+      <pubDate>Thu, 25 Jun 2026 16:30:27 GMT</pubDate>
+      <author>John Sweeney</author>
+      <category>Statistics</category>
+      <description>A faster way to pick the best training data for specialized AI models</description>
+      <content:encoded><![CDATA[<p><em>A faster way to pick the best training data for specialized AI models</em></p><p>When training language models on specialized data like DNA sequences or protein structures, picking the right source material is usually slow and expensive. Researchers developed FisherSketch, a method that identifies which training datasets will transfer best to a new task without needing to actually train the models—reducing the signature size needed to just 16 kilobytes while capturing the actual learning patterns that matter.</p><p><strong>Why it matters:</strong> For scientists working with specialized sequences in biology and chemistry, this cuts the cost of selecting training data from hours of computation to seconds. The technique also reveals whether models learn from data patterns, prediction errors, or how those interact—giving researchers insight into what makes transfer learning succeed or fail in their domain.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning</title>
       <link>https://paperplaine.com/papers/empowering-gui-agents-via</link>

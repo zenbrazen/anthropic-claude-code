@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.27298",
+    "title": "Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity",
+    "authors": "Haitong Liu, Deepak Narayanan Sridharan, David Steurer et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-25T17:14:57Z",
+    "publishedFormatted": "Jun 25, 2026",
+    "subtitle": "Learning hidden patterns from incomplete data faster than previously possible",
+    "summary": "Researchers created a faster algorithm for recovering the true shape of a high-dimensional dataset when only a partial view is available. The new method uses the minimum amount of data theoretically possible and runs at the speed of basic matrix operations—improvements over the previous best approach, which was slower and required more samples.",
+    "whyItMatters": "Many real-world datasets are naturally filtered or incomplete: sensor readings might only record values above a threshold, survey responses might exclude certain groups, or observations might be restricted to a subset of space. This algorithm makes it practical to recover accurate statistical models from such truncated data without the computational slowdown of previous methods, potentially improving everything from medical imaging to climate modeling where observations are naturally limited.",
+    "fetchedAt": "2026-06-27T09:28:07.429Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 88,
+      "wordCount": 189
+    },
+    "slug": "fast-algorithms-for-learning"
+  },
+  {
+    "id": "2606.26432",
+    "title": "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees",
+    "authors": "Yingshuo Wang, Xian Sun, Yanhang Li et al.",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-06-24T22:44:29Z",
+    "publishedFormatted": "Jun 24, 2026",
+    "subtitle": "Making AI predictions follow economic rules without sacrificing accuracy",
+    "summary": "Foundation models predict choices well but often violate basic economics—suggesting that raising prices increases demand, or that unavailable options have some probability of being chosen. Researchers created a two-stage adapter that embeds foundation model predictions into an economic model while mathematically guaranteeing that the results follow economic logic, gaining an average 6.4 percentage point accuracy boost while maintaining 100% cost monotonicity.",
+    "whyItMatters": "Transportation agencies, retailers, and economists use choice models to estimate how people respond to prices and policies. An accurate model that also obeys economic logic is more trustworthy for real decisions—whether predicting traffic patterns after a toll increase or estimating consumer welfare. This method lets organizations use faster, more accurate foundation models without sacrificing the economic guarantees that justify policy reliance on their outputs.",
+    "fetchedAt": "2026-06-27T09:28:10.874Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 198
+    },
+    "slug": "embedding-foundation-model-predictions"
+  },
+  {
+    "id": "2606.27242",
+    "title": "The Geometry of Updates: Fisher Alignment at Vocabulary Scale",
+    "authors": "John Sweeney",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-06-25T16:30:27Z",
+    "publishedFormatted": "Jun 25, 2026",
+    "subtitle": "A faster way to pick the best training data for specialized AI models",
+    "summary": "When training language models on specialized data like DNA sequences or protein structures, picking the right source material is usually slow and expensive. Researchers developed FisherSketch, a method that identifies which training datasets will transfer best to a new task without needing to actually train the models—reducing the signature size needed to just 16 kilobytes while capturing the actual learning patterns that matter.",
+    "whyItMatters": "For scientists working with specialized sequences in biology and chemistry, this cuts the cost of selecting training data from hours of computation to seconds. The technique also reveals whether models learn from data patterns, prediction errors, or how those interact—giving researchers insight into what makes transfer learning succeed or fail in their domain.",
+    "fetchedAt": "2026-06-27T09:28:13.777Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 64,
+      "wordCount": 208
+    },
+    "slug": "the-geometry-of-updates"
+  },
+  {
     "id": "2606.27330",
     "title": "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning",
     "authors": "Tianyi Men, Zhuoran Jin, Pengfei Cao et al.",

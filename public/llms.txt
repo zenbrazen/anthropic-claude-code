@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 335 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 338 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 114 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 115 papers in archive.
+  - "Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity"
   - "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning"
-  - "Autoregressive Boltzmann Generators"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 28 papers in archive.
   - "Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries"
   - "Optimal Small Set Expanders and Their Codes"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 29 papers in archive.
   - "Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns"
   - "KineticSim: A Lightweight, High-Performance Execution Engine for Real-Time Market Simulators"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 28 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 29 papers in archive.
+  - "The Geometry of Updates: Fisher Alignment at Vocabulary Scale"
   - "Learning Interpretable Text Signals for Structured Responses"
-  - "Collapsed Effective Operators for Higher-order Structures"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 28 papers in archive.
   - "Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT"
   - "Offline Channel-Independent QAOA Angles for RIS Power Aggregation: Unit-Circle Phase Dictionaries and Infinite-Size Spin-Glass Limits"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 26 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 27 papers in archive.
+  - "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees"
   - "Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers"
-  - "Digital Speech Acts Retain Control of Copyright with People, Not Platforms"
 
 ## 10 most recent papers
+
+### Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity
+- URL: https://paperplaine.com/papers/fast-algorithms-for-learning
+- Category: Computer Science · AI
+- Authors: Haitong Liu, Deepak Narayanan Sridharan, David Steurer et al.
+- arXiv: 2606.27298
+- Plain-English subtitle: Learning hidden patterns from incomplete data faster than previously possible
+- Summary: Researchers created a faster algorithm for recovering the true shape of a high-dimensional dataset when only a partial view is available. The new method uses the minimum amount of data theoretically possible and runs at the speed of basic matrix operations—improvements over the previous best approach, which was slower and required more samples.
+- Why it matters: Many real-world datasets are naturally filtered or incomplete: sensor readings might only record values above a threshold, survey responses might exclude certain groups, or observations might be restricted to a subset of space. This algorithm makes it practical to recover accurate statistical models from such truncated data without the computational slowdown of previous methods, potentially improving everything from medical imaging to climate modeling where observations are naturally limited.
+
+### Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees
+- URL: https://paperplaine.com/papers/embedding-foundation-model-predictions
+- Category: Economics
+- Authors: Yingshuo Wang, Xian Sun, Yanhang Li et al.
+- arXiv: 2606.26432
+- Plain-English subtitle: Making AI predictions follow economic rules without sacrificing accuracy
+- Summary: Foundation models predict choices well but often violate basic economics—suggesting that raising prices increases demand, or that unavailable options have some probability of being chosen. Researchers created a two-stage adapter that embeds foundation model predictions into an economic model while mathematically guaranteeing that the results follow economic logic, gaining an average 6.4 percentage point accuracy boost while maintaining 100% cost monotonicity.
+- Why it matters: Transportation agencies, retailers, and economists use choice models to estimate how people respond to prices and policies. An accurate model that also obeys economic logic is more trustworthy for real decisions—whether predicting traffic patterns after a toll increase or estimating consumer welfare. This method lets organizations use faster, more accurate foundation models without sacrificing the economic guarantees that justify policy reliance on their outputs.
+
+### The Geometry of Updates: Fisher Alignment at Vocabulary Scale
+- URL: https://paperplaine.com/papers/the-geometry-of-updates
+- Category: Statistics
+- Authors: John Sweeney
+- arXiv: 2606.27242
+- Plain-English subtitle: A faster way to pick the best training data for specialized AI models
+- Summary: When training language models on specialized data like DNA sequences or protein structures, picking the right source material is usually slow and expensive. Researchers developed FisherSketch, a method that identifies which training datasets will transfer best to a new task without needing to actually train the models—reducing the signature size needed to just 16 kilobytes while capturing the actual learning patterns that matter.
+- Why it matters: For scientists working with specialized sequences in biology and chemistry, this cuts the cost of selecting training data from hours of computation to seconds. The technique also reveals whether models learn from data patterns, prediction errors, or how those interact—giving researchers insight into what makes transfer learning succeed or fail in their domain.
 
 ### Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning
 - URL: https://paperplaine.com/papers/empowering-gui-agents-via
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI vision systems fail when objects hide and multiply across views
 - Summary: All 18 major AI vision systems tested share the same weakness: they handle simple visual questions well but collapse catastrophically when asked to count objects (59% accuracy drop) or understand complex 3D scenes (80% drop). The failures stem from two distinct problems—the systems either miss hidden objects or confuse the same object across different camera angles—and simply asking them to "think step by step" doesn't help.
 - Why it matters: AI systems that see are being deployed in robotics, autonomous vehicles, and industrial inspection, where missing hidden objects or misidentifying items across viewpoints could cause real failures. This benchmark reveals these systems have a fundamental blind spot that current prompting tricks can't fix, suggesting engineers need to rebuild how these systems represent 3D space rather than just improve their reasoning.
-
-### Extended pseudo-spectral physics-informed neural networks for phase-field models
-- URL: https://paperplaine.com/papers/extended-pseudo-spectral-physics
-- Category: Quantitative Biology
-- Authors: Callum Marsh, Radek Erban, Andreas Munch
-- arXiv: 2606.24660
-- Plain-English subtitle: Using AI to reverse-engineer the hidden rules that drive material separation
-- Summary: Researchers developed a machine-learning method that can figure out the underlying physical laws of phase separation—the process where mixtures split into distinct regions—by watching how materials evolve over time. The technique recovers unknown physical parameters from just a single or handful of snapshot pairs, and continues to work reasonably well even when data is noisy.
-- Why it matters: Materials scientists often can't directly measure the fundamental properties that control how materials separate and form patterns, but need to know them to design alloys, polymers, and other engineered materials. This method cuts the number of observations needed to infer those hidden rules, potentially speeding up materials discovery and making it cheaper to characterize new substances without running expensive, lengthy experiments.
-
-### Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries
-- URL: https://paperplaine.com/papers/privacy-vulnerabilities-of-attention
-- Category: Computer Science
-- Authors: Tânia Carvalho, Maxime Cordy
-- arXiv: 2606.26021
-- Plain-English subtitle: How AI models leak secrets hidden in their attention patterns
-- Summary: Tabular foundation models — AI systems trained to work with spreadsheet-like data — can be tricked into revealing whether specific records were used during their processing, even when the model was pre-trained on synthetic data. Researchers created a new attack that reads the model's attention patterns to detect membership in context examples with 7.7% higher accuracy than existing methods, then developed a defence that reduces this privacy leakage by half without significantly harming the model's performance.
-- Why it matters: As businesses deploy these models to make decisions using sensitive customer or patient data, the privacy risk is concrete: attackers can determine whether a specific person's medical record or financial information was part of the data fed to the model. The proposed defence offers a practical fix that works at inference time without retraining, making it immediately applicable to systems already in production.
-
-### Natural Ungrokking: Asymmetric Control of Which Rules Survive Pretraining
-- URL: https://paperplaine.com/papers/natural-ungrokking-asymmetric-control
-- Category: Computer Science · AI
-- Authors: Juliana Li, Diya Sreedhar
-- arXiv: 2606.26050
-- Plain-English subtitle: How training data decides which AI rules stick around and which get forgotten
-- Summary: Language models learn rules like "girl names go with she" during training, but then mysteriously unlearn them mid-run — even when the evidence stays in the data. Researchers found this "natural ungrokking" follows a simple rule: whichever pattern appears most often in the training stream wins and survives, while less-frequent competing patterns get displaced and forgotten. The forgetting is one-way: you can kill a rule by removing its support, but flooding the data with the rule doesn't bring it back once it's gone.
-- Why it matters: This reveals how messy real training data — not just model size or architecture — shapes which behaviors stick around in AI systems. If a model forgets a useful rule because conflicting signals are more common in the wild, retraining on cleaner data might not fix it. Understanding this could help engineers design training corpora that preserve desired behaviors and predict when models will abandon important patterns mid-training.
 
 ## About
 
