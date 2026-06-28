@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 343 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 346 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 117 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 118 papers in archive.
+  - "From Celebrities to Anyone: Characterizing AI Nudification Content, Technology, and Community Dynamics on 4chan"
   - "EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting"
-  - "How Surprising Is Historical Italian to Language Models? Tokenization Tax, Comprehension Tax, and a Simple Mitigation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 29 papers in archive.
   - "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP"
   - "Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 28 papers in archive.
   - "Surviving by Serving: Functional Relevance Drives Self-Organization in Complex Adaptive Systems"
   - "Extended pseudo-spectral physics-informed neural networks for phase-field models"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 29 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 30 papers in archive.
+  - "A Structural Matrix Autoregressive Model for the Joint Dynamics of Volume, Volatility, and Returns"
   - "Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns"
-  - "KineticSim: A Lightweight, High-Performance Execution Engine for Real-Time Market Simulators"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 29 papers in archive.
   - "The Geometry of Updates: Fisher Alignment at Vocabulary Scale"
   - "Learning Interpretable Text Signals for Structured Responses"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 28 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 29 papers in archive.
+  - "Physical Layer Authentication With Channel Knowledge Maps in Indoor Environments"
   - "Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT"
-  - "Offline Channel-Independent QAOA Angles for RIS Power Aggregation: Unit-Circle Phase Dictionaries and Infinite-Size Spin-Glass Limits"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 27 papers in archive.
   - "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees"
   - "Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers"
 
 ## 10 most recent papers
+
+### From Celebrities to Anyone: Characterizing AI Nudification Content, Technology, and Community Dynamics on 4chan
+- URL: https://paperplaine.com/papers/from-celebrities-to-anyone
+- Category: Computer Science · AI
+- Authors: Chi Cui, Yixin Wu, Yang Zhang
+- arXiv: 2606.27234
+- Plain-English subtitle: How AI-generated sexual abuse images shifted from celebrity targets to everyday people
+- Summary: AI is being used to create fake sexually explicit images of real people without consent—and the targets have dramatically changed. While earlier research found celebrities dominated, a new study of 4chan found that over half of victims are now ordinary people, likely known to those creating the images. A small group of highly active producers using open-source tools like Stable Diffusion drives the entire ecosystem.
+- Why it matters: This shows AI nudification has moved from a celebrity problem to a widespread threat affecting people in everyday life. The technology is easy to access and the core producers are few enough that targeted interventions could actually work. Without action on platform moderation and technical safeguards, the barrier to creating and sharing non-consensual sexual imagery of anyone keeps dropping.
+
+### Physical Layer Authentication With Channel Knowledge Maps in Indoor Environments
+- URL: https://paperplaine.com/papers/physical-layer-authentication-with
+- Category: Engineering
+- Authors: Luca Bonaventura, Francesco Ardizzon, Stefano Tomasin
+- arXiv: 2606.27044
+- Plain-English subtitle: Authenticating moving devices indoors by mapping wireless signal patterns
+- Summary: A new security method can verify that a device belongs to a legitimate user even as it moves around inside buildings, by comparing real-time wireless signal measurements against pre-recorded maps of how signals behave in different locations. The approach uses multiple access points to measure signal strength and direction, then checks whether these match what would be expected at the device's current position — making it much harder for attackers to spoof their identity while moving through indoor spaces where signals bounce off walls and obstacles.
+- Why it matters: Indoor location-based authentication could strengthen security for smartphones, laptops, and building access systems without requiring users to actively re-authenticate as they move between rooms. This is especially valuable in offices, hospitals, and secure facilities where devices frequently move between locations but need continuous verification that they haven't been compromised or stolen.
+
+### A Structural Matrix Autoregressive Model for the Joint Dynamics of Volume, Volatility, and Returns
+- URL: https://paperplaine.com/papers/a-structural-matrix-autoregressive
+- Category: Quantitative Finance
+- Authors: Andrea Bucci, Giulio Palomba, Eduardo Rossi
+- arXiv: 2606.08141
+- Plain-English subtitle: How price swings drive trading volume across stocks in real time
+- Summary: Researchers built a statistical model that tracks how stock returns, price swings, and trading volume move together across all 30 Dow Jones companies. They found that volatility—how much prices bounce around—is the main force pushing people to trade, and that shocks ripple between stocks to drive more than half of long-term volume swings.
+- Why it matters: Understanding what actually drives trading volume helps market regulators spot abnormal activity and traders design better strategies for executing large orders without moving prices. The finding that volatility leads volume rather than the reverse overturns an old assumption and suggests that markets are primarily incorporating news through price discovery rather than through volume surges.
 
 ### EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting
 - URL: https://paperplaine.com/papers/eo-wm-a-physically
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI predictions follow economic rules without sacrificing accuracy
 - Summary: Foundation models predict choices well but often violate basic economics—suggesting that raising prices increases demand, or that unavailable options have some probability of being chosen. Researchers created a two-stage adapter that embeds foundation model predictions into an economic model while mathematically guaranteeing that the results follow economic logic, gaining an average 6.4 percentage point accuracy boost while maintaining 100% cost monotonicity.
 - Why it matters: Transportation agencies, retailers, and economists use choice models to estimate how people respond to prices and policies. An accurate model that also obeys economic logic is more trustworthy for real decisions—whether predicting traffic patterns after a toll increase or estimating consumer welfare. This method lets organizations use faster, more accurate foundation models without sacrificing the economic guarantees that justify policy reliance on their outputs.
-
-### The Geometry of Updates: Fisher Alignment at Vocabulary Scale
-- URL: https://paperplaine.com/papers/the-geometry-of-updates
-- Category: Statistics
-- Authors: John Sweeney
-- arXiv: 2606.27242
-- Plain-English subtitle: A faster way to pick the best training data for specialized AI models
-- Summary: When training language models on specialized data like DNA sequences or protein structures, picking the right source material is usually slow and expensive. Researchers developed FisherSketch, a method that identifies which training datasets will transfer best to a new task without needing to actually train the models—reducing the signature size needed to just 16 kilobytes while capturing the actual learning patterns that matter.
-- Why it matters: For scientists working with specialized sequences in biology and chemistry, this cuts the cost of selecting training data from hours of computation to seconds. The technique also reveals whether models learn from data patterns, prediction errors, or how those interact—giving researchers insight into what makes transfer learning succeed or fail in their domain.
-
-### Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning
-- URL: https://paperplaine.com/papers/empowering-gui-agents-via
-- Category: Computer Science · AI
-- Authors: Tianyi Men, Zhuoran Jin, Pengfei Cao et al.
-- arXiv: 2606.27330
-- Plain-English subtitle: Training smaller AI models to plan complex computer tasks better than much larger ones
-- Summary: Researchers developed a method that lets smaller AI models learn to navigate websites and complete tasks by autonomously exploring environments and reusing past experiences as training data. A 7-billion-parameter model trained this way outperformed a much larger 32-billion-parameter commercial model, reaching 30.6% accuracy on real-world benchmarks. The breakthrough came from focusing training on high-level task planning rather than low-level individual skills.
-- Why it matters: Smaller AI models are cheaper to run and keep user data private, but they've struggled with planning complex multi-step tasks on websites and generalizing to new situations. This work shows they can match or beat much larger commercial models when trained the right way—meaning organizations could deploy capable web automation agents without expensive hardware or privacy concerns, while still handling unfamiliar websites and task variations they've never seen before.
-
-### Exact subsystem dynamics in the deterministic Floquet-PXP model
-- URL: https://paperplaine.com/papers/exact-subsystem-dynamics-in
-- Category: Physics
-- Authors: Katja Klobas
-- arXiv: 2606.27337
-- Plain-English subtitle: How to track quantum systems' behavior when their surroundings act like a hidden bath
-- Summary: Physicists have figured out how to exactly predict how parts of certain quantum systems evolve over time, even when those parts are constantly jostled by the rest of the system around them. They showed that a specific type of quantum rule called Rule 201 can be solved mathematically using a compact mathematical structure, making it possible to calculate how quantum properties change moment by moment without the usual explosion of complexity.
-- Why it matters: Most quantum systems are far too complicated to predict exactly—the math becomes impossibly tangled as time goes on. Finding even one solvable case, like Rule 201, gives physicists a testbed for understanding how quantum information spreads and gets scrambled in realistic situations. This matters for designing quantum computers and sensors, where controlling how quantum states degrade is essential.
 
 ## About
 
