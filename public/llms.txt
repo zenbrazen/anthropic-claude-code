@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 346 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 349 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 118 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 119 papers in archive.
+  - "LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior"
   - "From Celebrities to Anyone: Characterizing AI Nudification Content, Technology, and Community Dynamics on 4chan"
-  - "EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 29 papers in archive.
   - "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP"
   - "Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 27 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 28 papers in archive.
+  - "Diameter truncated operator evolution"
   - "Exact subsystem dynamics in the deterministic Floquet-PXP model"
-  - "Large-Language-Model Discovery of Quantum LDPC Codes through Structured Concept Evolution"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 29 papers in archive.
   - "CHAMB-GA: A Containerized HPC Scalable Microservice-Based Framework for Genetic Algorithms"
   - "Finding Stationary Points by Comparisons"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 30 papers in archive.
   - "A Structural Matrix Autoregressive Model for the Joint Dynamics of Volume, Volatility, and Returns"
   - "Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 29 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 30 papers in archive.
+  - "Local Fokker--Planck Geometry for Score Estimation: Heat-Ball Mean-Value Representations and Exact High-Dimensional Sampling"
   - "The Geometry of Updates: Fisher Alignment at Vocabulary Scale"
-  - "Learning Interpretable Text Signals for Structured Responses"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 29 papers in archive.
   - "Physical Layer Authentication With Channel Knowledge Maps in Indoor Environments"
   - "Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers"
 
 ## 10 most recent papers
+
+### LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior
+- URL: https://paperplaine.com/papers/llawco-learning-laws-of
+- Category: Computer Science · AI
+- Authors: Qinhong Zhou, Chuang Gan, Anoop Cherian
+- arXiv: 2606.28182
+- Plain-English subtitle: Teaching AI agents to learn cooperation rules by reflecting on past failures
+- Summary: Embodied AI agents often fail to cooperate effectively because they don't align with their partners' behavior or adapt to what's actually happening around them. Researchers developed LLawCo, a system that lets agents analyze their own failures to extract simple behavioral rules like "Talk when necessary" and "Wait for partner," then bake these rules directly into their reasoning. On two cooperative planning benchmarks, this approach improved success rates by 4.5% to 6.8% across multiple AI language models.
+- Why it matters: Multi-agent AI systems are being deployed for robotics, autonomous vehicles, and collaborative planning tasks where agents must coordinate without constant supervision. When agents fail to cooperate smoothly, tasks take longer or fail entirely—wasting time and resources. This work shows that teaching agents to learn and follow cooperation principles dramatically improves their ability to work together, making real-world multi-robot and collaborative systems more reliable and efficient.
+
+### Diameter truncated operator evolution
+- URL: https://paperplaine.com/papers/diameter-truncated-operator-evolution
+- Category: Physics
+- Authors: Tom Holden-Dye, Max Marvell, Joel Mills et al.
+- arXiv: 2606.28313
+- Plain-English subtitle: A faster way to predict quantum systems that refuse to settle down
+- Summary: Physicists have developed a streamlined method for simulating how quantum systems evolve when they're knocked out of equilibrium—a notoriously hard problem because the complexity explodes exponentially. Instead of tracking all the mathematical details, the new approach focuses only on operators that act on small, localized regions of the system, discarding the rest as negligible. Tests on two benchmark quantum systems show this simplified method accurately predicts correlation patterns and how energy and particles move through the system, while cutting computational demand significantly.
+- Why it matters: Quantum systems that don't settle into equilibrium appear everywhere—in ultracold atoms created in labs, in exotic materials, and potentially in quantum computers. This method makes it practical to predict their behavior without needing supercomputers, which could accelerate both experimental design and the hunt for new quantum materials with useful properties. Faster simulations also mean researchers can test more hypotheses and explore parameter spaces that were previously out of reach.
+
+### Local Fokker--Planck Geometry for Score Estimation: Heat-Ball Mean-Value Representations and Exact High-Dimensional Sampling
+- URL: https://paperplaine.com/papers/local-fokker-planck-geometry
+- Category: Statistics
+- Authors: Jiayao Bai, Lang Deng, Yi Du et al.
+- arXiv: 2606.27954
+- Plain-English subtitle: Making AI learn to generate data more accurately in hard-to-reach regions
+- Summary: Researchers developed a new geometric method for teaching generative AI models to sample from complex probability distributions. The approach focuses on accurately estimating scores in low-density regions where existing methods fail, by using local averaging rather than global averaging—and proves this works mathematically while demonstrating it on real datasets.
+- Why it matters: Generative AI models power image synthesis, drug discovery, and scientific simulation. Current methods introduce systematic errors precisely where accuracy matters most: in the tails of probability distributions where rare but important outcomes live. This framework cuts estimation error in those critical regions, potentially improving the reliability of AI-generated samples across applications from medicine to materials science.
 
 ### From Celebrities to Anyone: Characterizing AI Nudification Content, Technology, and Community Dynamics on 4chan
 - URL: https://paperplaine.com/papers/from-celebrities-to-anyone
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why old Italian texts confuse AI language models—and how to fix it
 - Summary: Large language models find 17th-century Italian text 2.4 times harder to predict than modern Italian, even though they understand its meaning just as well. The gap comes not from how the text is broken into word chunks, but from genuine unfamiliarity with old word patterns and phrasing. A simple fix—adding a brief historical context prompt—cuts this difficulty in half.
 - Why it matters: Digital libraries are now using AI to search and organize millions of historical documents, but old texts trip up these models in unpredictable ways. This work shows the problem isn't a barrier to understanding meaning, only to generating new text fluently. It means libraries can safely use AI for finding and retrieving historical documents today, but need to be cautious with AI systems that generate new text from them—and offers a concrete technique that dramatically improves performance.
-
-### ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP
-- URL: https://paperplaine.com/papers/sharelock-a-stealthy-multi
-- Category: Computer Science
-- Authors: Liwei Liu, Tianzhu Han, Zijian Liu et al.
-- arXiv: 2606.27027
-- Plain-English subtitle: How attackers hide harmful instructions across multiple AI tools to avoid detection
-- Summary: Researchers discovered a new attack method called ShareLock that splits malicious instructions into harmless-looking pieces hidden across multiple AI tools, making it nearly impossible to spot by inspection or automated systems. The attack succeeded over 90% of the time against major AI language models and only requires a small trigger during a routine system update to activate the hidden instructions and steal data or compromise systems.
-- Why it matters: As AI assistants increasingly rely on external tools and integrations to function, this attack reveals a critical blind spot in how these systems are secured. Organizations deploying AI agents with tool access need to know that current inspection methods—manual review or automated scanning—won't catch poisoning hidden across multiple tools, which means their defensive strategies are currently insufficient and could leave them vulnerable to data theft or system compromise.
-
-### Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity
-- URL: https://paperplaine.com/papers/fast-algorithms-for-learning
-- Category: Computer Science · AI
-- Authors: Haitong Liu, Deepak Narayanan Sridharan, David Steurer et al.
-- arXiv: 2606.27298
-- Plain-English subtitle: Learning hidden patterns from incomplete data faster than previously possible
-- Summary: Researchers created a faster algorithm for recovering the true shape of a high-dimensional dataset when only a partial view is available. The new method uses the minimum amount of data theoretically possible and runs at the speed of basic matrix operations—improvements over the previous best approach, which was slower and required more samples.
-- Why it matters: Many real-world datasets are naturally filtered or incomplete: sensor readings might only record values above a threshold, survey responses might exclude certain groups, or observations might be restricted to a subset of space. This algorithm makes it practical to recover accurate statistical models from such truncated data without the computational slowdown of previous methods, potentially improving everything from medical imaging to climate modeling where observations are naturally limited.
-
-### Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees
-- URL: https://paperplaine.com/papers/embedding-foundation-model-predictions
-- Category: Economics
-- Authors: Yingshuo Wang, Xian Sun, Yanhang Li et al.
-- arXiv: 2606.26432
-- Plain-English subtitle: Making AI predictions follow economic rules without sacrificing accuracy
-- Summary: Foundation models predict choices well but often violate basic economics—suggesting that raising prices increases demand, or that unavailable options have some probability of being chosen. Researchers created a two-stage adapter that embeds foundation model predictions into an economic model while mathematically guaranteeing that the results follow economic logic, gaining an average 6.4 percentage point accuracy boost while maintaining 100% cost monotonicity.
-- Why it matters: Transportation agencies, retailers, and economists use choice models to estimate how people respond to prices and policies. An accurate model that also obeys economic logic is more trustworthy for real decisions—whether predicting traffic patterns after a toll increase or estimating consumer welfare. This method lets organizations use faster, more accurate foundation models without sacrificing the economic guarantees that justify policy reliance on their outputs.
 
 ## About
 

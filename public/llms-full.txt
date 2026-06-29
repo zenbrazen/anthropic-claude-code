@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 346 papers currently in the Paper Plaine archive.
-Last updated: 2026-06-28
+This file contains the complete plain-English text of all 349 papers currently in the Paper Plaine archive.
+Last updated: 2026-06-29
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior
+Subtitle: Teaching AI agents to learn cooperation rules by reflecting on past failures
+URL: https://paperplaine.com/papers/llawco-learning-laws-of
+Category: Computer Science · AI
+Authors: Qinhong Zhou, Chuang Gan, Anoop Cherian
+arXiv ID: 2606.28182
+arXiv URL: https://arxiv.org/abs/2606.28182
+Posted: 2026-06-29
+
+Summary: Embodied AI agents often fail to cooperate effectively because they don't align with their partners' behavior or adapt to what's actually happening around them. Researchers developed LLawCo, a system that lets agents analyze their own failures to extract simple behavioral rules like "Talk when necessary" and "Wait for partner," then bake these rules directly into their reasoning. On two cooperative planning benchmarks, this approach improved success rates by 4.5% to 6.8% across multiple AI language models.
+
+Why it matters: Multi-agent AI systems are being deployed for robotics, autonomous vehicles, and collaborative planning tasks where agents must coordinate without constant supervision. When agents fail to cooperate smoothly, tasks take longer or fail entirely—wasting time and resources. This work shows that teaching agents to learn and follow cooperation principles dramatically improves their ability to work together, making real-world multi-robot and collaborative systems more reliable and efficient.
+
+---
+Title: Diameter truncated operator evolution
+Subtitle: A faster way to predict quantum systems that refuse to settle down
+URL: https://paperplaine.com/papers/diameter-truncated-operator-evolution
+Category: Physics
+Authors: Tom Holden-Dye, Max Marvell, Joel Mills et al.
+arXiv ID: 2606.28313
+arXiv URL: https://arxiv.org/abs/2606.28313
+Posted: 2026-06-29
+
+Summary: Physicists have developed a streamlined method for simulating how quantum systems evolve when they're knocked out of equilibrium—a notoriously hard problem because the complexity explodes exponentially. Instead of tracking all the mathematical details, the new approach focuses only on operators that act on small, localized regions of the system, discarding the rest as negligible. Tests on two benchmark quantum systems show this simplified method accurately predicts correlation patterns and how energy and particles move through the system, while cutting computational demand significantly.
+
+Why it matters: Quantum systems that don't settle into equilibrium appear everywhere—in ultracold atoms created in labs, in exotic materials, and potentially in quantum computers. This method makes it practical to predict their behavior without needing supercomputers, which could accelerate both experimental design and the hunt for new quantum materials with useful properties. Faster simulations also mean researchers can test more hypotheses and explore parameter spaces that were previously out of reach.
+
+---
+Title: Local Fokker--Planck Geometry for Score Estimation: Heat-Ball Mean-Value Representations and Exact High-Dimensional Sampling
+Subtitle: Making AI learn to generate data more accurately in hard-to-reach regions
+URL: https://paperplaine.com/papers/local-fokker-planck-geometry
+Category: Statistics
+Authors: Jiayao Bai, Lang Deng, Yi Du et al.
+arXiv ID: 2606.27954
+arXiv URL: https://arxiv.org/abs/2606.27954
+Posted: 2026-06-29
+
+Summary: Researchers developed a new geometric method for teaching generative AI models to sample from complex probability distributions. The approach focuses on accurately estimating scores in low-density regions where existing methods fail, by using local averaging rather than global averaging—and proves this works mathematically while demonstrating it on real datasets.
+
+Why it matters: Generative AI models power image synthesis, drug discovery, and scientific simulation. Current methods introduce systematic errors precisely where accuracy matters most: in the tails of probability distributions where rare but important outcomes live. This framework cuts estimation error in those critical regions, potentially improving the reliability of AI-generated samples across applications from medicine to materials science.
 
 ---
 Title: From Celebrities to Anyone: Characterizing AI Nudification Content, Technology, and Community Dynamics on 4chan
