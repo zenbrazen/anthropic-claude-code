@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 349 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 352 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 119 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 120 papers in archive.
+  - "Democratic ICAI: Debating Our Way to Steering Principles from Preferences"
   - "LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior"
-  - "From Celebrities to Anyone: Characterizing AI Nudification Content, Technology, and Community Dynamics on 4chan"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 29 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 30 papers in archive.
+  - "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models"
   - "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP"
-  - "Privacy Vulnerabilities of Attention Layers in Tabular Foundation Models and Protection of High-Risk Queries"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 28 papers in archive.
   - "Diameter truncated operator evolution"
   - "Exact subsystem dynamics in the deterministic Floquet-PXP model"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 29 papers in archive.
   - "Physical Layer Authentication With Channel Knowledge Maps in Indoor Environments"
   - "Pseudo-Text-Conditioned 3D Grounding DINO for Organ Localization in Abdominal CT"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 27 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 28 papers in archive.
+  - "LLM Agents as Static Level-k Players in Behavioural Games"
   - "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees"
-  - "Restoring Incentive Compatibility in Two-Stage Energy Markets with Prosumers"
 
 ## 10 most recent papers
+
+### Democratic ICAI: Debating Our Way to Steering Principles from Preferences
+- URL: https://paperplaine.com/papers/democratic-icai-debating-our
+- Category: Computer Science · AI
+- Authors: Kevin Kingslin, Anish Natekar, Ashutosh Ranjan et al.
+- arXiv: 2606.28294
+- Plain-English subtitle: Getting AI to explain its choices by debating multiple viewpoints
+- Summary: When AI systems make decisions based on human preferences, they usually just pick a winner without showing their reasoning. Researchers developed Democratic ICAI, which generates multiple competing explanations for each choice through structured debate between different perspectives, then distills these arguments into clear principles that better predict future decisions. On creative writing tasks, this approach outperformed simpler methods and produced explanations that human evaluators preferred.
+- Why it matters: As AI systems make more consequential decisions—from hiring to content moderation—understanding *why* they chose one option over another becomes critical for accountability and improvement. Right now, preference-based systems often hide the complexity of human judgment behind a single binary choice. This method surfaces the actual reasoning behind decisions, making it easier to spot bias, correct mistakes, and build AI systems that align with what humans actually care about rather than just mimicking their surface-level choices.
+
+### Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models
+- URL: https://paperplaine.com/papers/robust-harmful-features-under
+- Category: Computer Science
+- Authors: Yanchen Yin, Dongqi Han, Linghui Li
+- arXiv: 2606.28153
+- Plain-English subtitle: Why AI safety features survive jailbreak attacks by hiding in plain sight
+- Summary: When hackers try to jailbreak language models, they don't actually disable the AI's safety guardrails—they just muffle a few specific parts of the model's attention system while leaving the core safety signals intact. Researchers found that safety features split into two types: early-layer heads that attacks suppress, and mid-layer heads that keep working even during successful jailbreaks. This means the model's "conscience" never truly disappears; attackers just drown it out.
+- Why it matters: If AI safety features are hardwired into the model's architecture rather than easily erasable, it becomes much harder to fully compromise them. The discovery suggests a practical shortcut: security teams could monitor those persistent safety signals without retraining the model, creating a new line of defense against jailbreaks. Understanding this hidden robustness also helps researchers design models where safety is even more difficult to bypass.
+
+### LLM Agents as Static Level-k Players in Behavioural Games
+- URL: https://paperplaine.com/papers/llm-agents-as-static
+- Category: Economics
+- Authors: Po Han Teo
+- arXiv: 2606.27845
+- Plain-English subtitle: Why AI agents don't think strategically like humans in economic games
+- Summary: When researchers tested large language models in two classic economic games—a guessing game and a cooperation game—the AI agents behaved nothing like human players, despite producing similar-looking choices on the surface. The models act as fixed strategic thinkers based purely on their size, never adjusting their strategy mid-game or thinking several moves ahead the way humans do.
+- Why it matters: As companies and researchers increasingly use LLMs to simulate human behavior in economic or social experiments, this work reveals a critical flaw: matching surface-level choice distributions isn't enough. An AI might pick the same numbers as humans, but for entirely different reasons—which means using LLMs as stand-ins for human subjects in behavioral research could lead to false conclusions about how people actually make decisions under pressure.
 
 ### LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior
 - URL: https://paperplaine.com/papers/llawco-learning-laws-of
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to predict crop health by understanding weather stress patterns
 - Summary: Researchers built a new AI model that predicts how vegetation will change by treating weather not as a simple label, but as a source of physical stress that builds up over time. The model cuts prediction errors for vegetation decline by 5.63% and correctly identifies whether plants will thrive or fail under extreme conditions better than existing methods.
 - Why it matters: Accurate vegetation forecasts help farmers and governments prepare for droughts, plan irrigation, and anticipate food shortages weeks in advance. This model responds correctly to extreme heat and dry conditions—not just reconstructing what happened, but predicting how real physical stress affects crops and ecosystems.
-
-### Surviving by Serving: Functional Relevance Drives Self-Organization in Complex Adaptive Systems
-- URL: https://paperplaine.com/papers/surviving-by-serving-functional
-- Category: Quantitative Biology
-- Authors: Claus Metzner, Ali Ghebleh, Achim Schilling et al.
-- arXiv: 2606.26733
-- Plain-English subtitle: Why systems survive by making themselves useful to each other
-- Summary: When components in a system are used by other components, they survive and stay put; when they're ignored, they adapt and explore. A new computer model shows that this simple rule—with no central control or outside pressure—causes networks to spontaneously organize into functional chains that can reach goals previously thought impossible.
-- Why it matters: This principle could explain how real-world systems from cells to ecosystems to economies organize themselves without anyone in charge. Understanding these ground-level rules might help us design more resilient networks, predict how biological systems evolve, or troubleshoot why some organizations thrive while others stagnate.
-
-### CHAMB-GA: A Containerized HPC Scalable Microservice-Based Framework for Genetic Algorithms
-- URL: https://paperplaine.com/papers/chamb-ga-a-containerized
-- Category: Mathematics
-- Authors: Felix Bonhoff, Thiemo Pesch, Andrea Benigni et al.
-- arXiv: 2606.27217
-- Plain-English subtitle: Running genetic algorithms on any computer, from laptop to supercomputer
-- Summary: Researchers built a system that lets scientists run genetic algorithms—a type of optimization technique inspired by evolution—on computers of any size, from personal laptops to massive cloud servers and supercomputers. The system scaled smoothly to over 3,500 processor cores and handled real-world power grid optimization problems without losing efficiency, while also working across different computing platforms without modification.
-- Why it matters: Many scientific and engineering problems require searching through billions of possible solutions—from designing power grids to optimizing industrial processes. Until now, researchers had to completely rewrite their code to move from testing on a personal computer to running on university supercomputers, wasting months on infrastructure work instead of actual problem-solving. This framework eliminates that friction, letting a researcher test an idea on their laptop Monday and scale to a supercomputer Thursday without touching the core code.
-
-### How Surprising Is Historical Italian to Language Models? Tokenization Tax, Comprehension Tax, and a Simple Mitigation
-- URL: https://paperplaine.com/papers/how-surprising-is-historical
-- Category: Computer Science · AI
-- Authors: Maria Levchenko
-- arXiv: 2606.27275
-- Plain-English subtitle: Why old Italian texts confuse AI language models—and how to fix it
-- Summary: Large language models find 17th-century Italian text 2.4 times harder to predict than modern Italian, even though they understand its meaning just as well. The gap comes not from how the text is broken into word chunks, but from genuine unfamiliarity with old word patterns and phrasing. A simple fix—adding a brief historical context prompt—cuts this difficulty in half.
-- Why it matters: Digital libraries are now using AI to search and organize millions of historical documents, but old texts trip up these models in unpredictable ways. This work shows the problem isn't a barrier to understanding meaning, only to generating new text fluently. It means libraries can safely use AI for finding and retrieving historical documents today, but need to be cautious with AI systems that generate new text from them—and offers a concrete technique that dramatically improves performance.
 
 ## About
 

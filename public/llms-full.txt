@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 349 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 352 papers currently in the Paper Plaine archive.
 Last updated: 2026-06-29
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Democratic ICAI: Debating Our Way to Steering Principles from Preferences
+Subtitle: Getting AI to explain its choices by debating multiple viewpoints
+URL: https://paperplaine.com/papers/democratic-icai-debating-our
+Category: Computer Science · AI
+Authors: Kevin Kingslin, Anish Natekar, Ashutosh Ranjan et al.
+arXiv ID: 2606.28294
+arXiv URL: https://arxiv.org/abs/2606.28294
+Posted: 2026-06-29
+
+Summary: When AI systems make decisions based on human preferences, they usually just pick a winner without showing their reasoning. Researchers developed Democratic ICAI, which generates multiple competing explanations for each choice through structured debate between different perspectives, then distills these arguments into clear principles that better predict future decisions. On creative writing tasks, this approach outperformed simpler methods and produced explanations that human evaluators preferred.
+
+Why it matters: As AI systems make more consequential decisions—from hiring to content moderation—understanding *why* they chose one option over another becomes critical for accountability and improvement. Right now, preference-based systems often hide the complexity of human judgment behind a single binary choice. This method surfaces the actual reasoning behind decisions, making it easier to spot bias, correct mistakes, and build AI systems that align with what humans actually care about rather than just mimicking their surface-level choices.
+
+---
+Title: Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models
+Subtitle: Why AI safety features survive jailbreak attacks by hiding in plain sight
+URL: https://paperplaine.com/papers/robust-harmful-features-under
+Category: Computer Science
+Authors: Yanchen Yin, Dongqi Han, Linghui Li
+arXiv ID: 2606.28153
+arXiv URL: https://arxiv.org/abs/2606.28153
+Posted: 2026-06-29
+
+Summary: When hackers try to jailbreak language models, they don't actually disable the AI's safety guardrails—they just muffle a few specific parts of the model's attention system while leaving the core safety signals intact. Researchers found that safety features split into two types: early-layer heads that attacks suppress, and mid-layer heads that keep working even during successful jailbreaks. This means the model's "conscience" never truly disappears; attackers just drown it out.
+
+Why it matters: If AI safety features are hardwired into the model's architecture rather than easily erasable, it becomes much harder to fully compromise them. The discovery suggests a practical shortcut: security teams could monitor those persistent safety signals without retraining the model, creating a new line of defense against jailbreaks. Understanding this hidden robustness also helps researchers design models where safety is even more difficult to bypass.
+
+---
+Title: LLM Agents as Static Level-k Players in Behavioural Games
+Subtitle: Why AI agents don't think strategically like humans in economic games
+URL: https://paperplaine.com/papers/llm-agents-as-static
+Category: Economics
+Authors: Po Han Teo
+arXiv ID: 2606.27845
+arXiv URL: https://arxiv.org/abs/2606.27845
+Posted: 2026-06-29
+
+Summary: When researchers tested large language models in two classic economic games—a guessing game and a cooperation game—the AI agents behaved nothing like human players, despite producing similar-looking choices on the surface. The models act as fixed strategic thinkers based purely on their size, never adjusting their strategy mid-game or thinking several moves ahead the way humans do.
+
+Why it matters: As companies and researchers increasingly use LLMs to simulate human behavior in economic or social experiments, this work reveals a critical flaw: matching surface-level choice distributions isn't enough. An AI might pick the same numbers as humans, but for entirely different reasons—which means using LLMs as stand-ins for human subjects in behavioral research could lead to false conclusions about how people actually make decisions under pressure.
 
 ---
 Title: LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior
