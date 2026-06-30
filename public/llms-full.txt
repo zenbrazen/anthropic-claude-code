@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 352 papers currently in the Paper Plaine archive.
-Last updated: 2026-06-29
+This file contains the complete plain-English text of all 355 papers currently in the Paper Plaine archive.
+Last updated: 2026-06-30
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: C^{2}R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders
+Subtitle: Fixing AI interpretation tools that break concepts into scattered, unreliable pieces
+URL: https://paperplaine.com/papers/c-2-r-cross
+Category: Computer Science · AI
+Authors: Haoran Jin, Xiting Wang, Shijie Ren et al.
+arXiv ID: 2606.30609
+arXiv URL: https://arxiv.org/abs/2606.30609
+Posted: 2026-06-30
+
+Summary: Sparse autoencoders are crucial tools for understanding how large language models work, but they break down when scaled up—they fragment single concepts into multiple confusing pieces and create arbitrary exceptions to rules. Researchers developed a technique called C²R that forces the system to represent each concept consistently across different text samples, eliminating these fragmentation problems while keeping the model's performance intact.
+
+Why it matters: Understanding how AI models work is essential for safety and debugging, but current interpretation tools become unreliable at scale. C²R makes these tools work reliably on larger, more realistic problems without sacrificing the model's ability to do its job. This directly improves researchers' ability to audit and understand what's happening inside billion-parameter language models.
+
+---
+Title: Clinical Reasoning Graphs: Structured Evaluation of LLM Diagnostic Reasoning Reveals Competence Without Consistency
+Subtitle: Why AI doctors can get diagnoses right for completely different reasons
+URL: https://paperplaine.com/papers/clinical-reasoning-graphs-structured
+Category: Quantitative Biology
+Authors: Nisarg A. Patel
+arXiv ID: 2606.29876
+arXiv URL: https://arxiv.org/abs/2606.29876
+Posted: 2026-06-30
+
+Summary: Large language models achieve 60–70% accuracy on complex medical cases, but new analysis reveals they don't reason consistently: when diagnosing similar cases, they use wildly different reasoning patterns. Researchers mapped the logical steps LLMs take during diagnosis and found that models reaching the correct answer often follow completely different reasoning paths than other models, even when those models also got the answer right.
+
+Why it matters: Before deploying AI in medical settings, hospitals need to know whether a model reached the right diagnosis through sound clinical logic or lucky pattern-matching. This work shows that accuracy scores alone hide a deeper problem—AI systems can be right for the wrong reasons, which matters enormously for trust and safety. The researchers released their analytical tools so that hospitals and regulators can now examine how an AI actually reasons, not just whether it guesses correctly.
+
+---
+Title: Fund2Persona: A Framework for Building and Refining Financial Advisor Personas from Fund Disclosure Data
+Subtitle: Teaching AI financial advisors to think like real fund managers, not generic chatbots
+URL: https://paperplaine.com/papers/fund2persona-a-framework-for
+Category: Quantitative Finance
+Authors: Suhwan Park, Hoyoung Lee, Zhangyang Wang et al.
+arXiv ID: 2606.29793
+arXiv URL: https://arxiv.org/abs/2606.29793
+Posted: 2026-06-30
+
+Summary: Researchers built Fund2Persona, a system that creates AI financial-advisor personas by studying actual fund holdings, manager decisions, and market commentary rather than relying on generic prompts. The resulting personas gave more specific and useful investment advice, better predicted what portfolio moves a manager would make, and generated more varied investment perspectives than standard AI advisors.
+
+Why it matters: Financial advisory is expensive and scarce—most people can't afford personalized guidance. This framework could make expert portfolio-management logic scalable and available through AI systems that actually understand *how* a specific manager thinks, not just what generic best practices are. The difference matters: an AI trained on a growth-stock specialist's real decisions will steer a portfolio differently than one trained on boilerplate advice, and clients get recommendations tailored to actual investment philosophies rather than one-size-fits-all rules.
 
 ---
 Title: Democratic ICAI: Debating Our Way to Steering Principles from Preferences

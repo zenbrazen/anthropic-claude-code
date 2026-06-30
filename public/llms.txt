@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 352 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 355 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 120 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 121 papers in archive.
+  - "C^{2}R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders"
   - "Democratic ICAI: Debating Our Way to Steering Principles from Preferences"
-  - "LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 30 papers in archive.
   - "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models"
   - "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP"
@@ -42,12 +42,12 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 29 papers in archive.
   - "CHAMB-GA: A Containerized HPC Scalable Microservice-Based Framework for Genetic Algorithms"
   - "Finding Stationary Points by Comparisons"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 28 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 29 papers in archive.
+  - "Clinical Reasoning Graphs: Structured Evaluation of LLM Diagnostic Reasoning Reveals Competence Without Consistency"
   - "Surviving by Serving: Functional Relevance Drives Self-Organization in Complex Adaptive Systems"
-  - "Extended pseudo-spectral physics-informed neural networks for phase-field models"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 30 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 31 papers in archive.
+  - "Fund2Persona: A Framework for Building and Refining Financial Advisor Personas from Fund Disclosure Data"
   - "A Structural Matrix Autoregressive Model for the Joint Dynamics of Volume, Volatility, and Returns"
-  - "Time-dependent weighted directed networks of cryptocurrency interaction from high-frequency returns"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 30 papers in archive.
   - "Local Fokker--Planck Geometry for Score Estimation: Heat-Ball Mean-Value Representations and Exact High-Dimensional Sampling"
   - "The Geometry of Updates: Fisher Alignment at Vocabulary Scale"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees"
 
 ## 10 most recent papers
+
+### C^{2}R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders
+- URL: https://paperplaine.com/papers/c-2-r-cross
+- Category: Computer Science · AI
+- Authors: Haoran Jin, Xiting Wang, Shijie Ren et al.
+- arXiv: 2606.30609
+- Plain-English subtitle: Fixing AI interpretation tools that break concepts into scattered, unreliable pieces
+- Summary: Sparse autoencoders are crucial tools for understanding how large language models work, but they break down when scaled up—they fragment single concepts into multiple confusing pieces and create arbitrary exceptions to rules. Researchers developed a technique called C²R that forces the system to represent each concept consistently across different text samples, eliminating these fragmentation problems while keeping the model's performance intact.
+- Why it matters: Understanding how AI models work is essential for safety and debugging, but current interpretation tools become unreliable at scale. C²R makes these tools work reliably on larger, more realistic problems without sacrificing the model's ability to do its job. This directly improves researchers' ability to audit and understand what's happening inside billion-parameter language models.
+
+### Clinical Reasoning Graphs: Structured Evaluation of LLM Diagnostic Reasoning Reveals Competence Without Consistency
+- URL: https://paperplaine.com/papers/clinical-reasoning-graphs-structured
+- Category: Quantitative Biology
+- Authors: Nisarg A. Patel
+- arXiv: 2606.29876
+- Plain-English subtitle: Why AI doctors can get diagnoses right for completely different reasons
+- Summary: Large language models achieve 60–70% accuracy on complex medical cases, but new analysis reveals they don't reason consistently: when diagnosing similar cases, they use wildly different reasoning patterns. Researchers mapped the logical steps LLMs take during diagnosis and found that models reaching the correct answer often follow completely different reasoning paths than other models, even when those models also got the answer right.
+- Why it matters: Before deploying AI in medical settings, hospitals need to know whether a model reached the right diagnosis through sound clinical logic or lucky pattern-matching. This work shows that accuracy scores alone hide a deeper problem—AI systems can be right for the wrong reasons, which matters enormously for trust and safety. The researchers released their analytical tools so that hospitals and regulators can now examine how an AI actually reasons, not just whether it guesses correctly.
+
+### Fund2Persona: A Framework for Building and Refining Financial Advisor Personas from Fund Disclosure Data
+- URL: https://paperplaine.com/papers/fund2persona-a-framework-for
+- Category: Quantitative Finance
+- Authors: Suhwan Park, Hoyoung Lee, Zhangyang Wang et al.
+- arXiv: 2606.29793
+- Plain-English subtitle: Teaching AI financial advisors to think like real fund managers, not generic chatbots
+- Summary: Researchers built Fund2Persona, a system that creates AI financial-advisor personas by studying actual fund holdings, manager decisions, and market commentary rather than relying on generic prompts. The resulting personas gave more specific and useful investment advice, better predicted what portfolio moves a manager would make, and generated more varied investment perspectives than standard AI advisors.
+- Why it matters: Financial advisory is expensive and scarce—most people can't afford personalized guidance. This framework could make expert portfolio-management logic scalable and available through AI systems that actually understand *how* a specific manager thinks, not just what generic best practices are. The difference matters: an AI trained on a growth-stock specialist's real decisions will steer a portfolio differently than one trained on boilerplate advice, and clients get recommendations tailored to actual investment philosophies rather than one-size-fits-all rules.
 
 ### Democratic ICAI: Debating Our Way to Steering Principles from Preferences
 - URL: https://paperplaine.com/papers/democratic-icai-debating-our
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI-generated sexual abuse images shifted from celebrity targets to everyday people
 - Summary: AI is being used to create fake sexually explicit images of real people without consent—and the targets have dramatically changed. While earlier research found celebrities dominated, a new study of 4chan found that over half of victims are now ordinary people, likely known to those creating the images. A small group of highly active producers using open-source tools like Stable Diffusion drives the entire ecosystem.
 - Why it matters: This shows AI nudification has moved from a celebrity problem to a widespread threat affecting people in everyday life. The technology is easy to access and the core producers are few enough that targeted interventions could actually work. Without action on platform moderation and technical safeguards, the barrier to creating and sharing non-consensual sexual imagery of anyone keeps dropping.
-
-### Physical Layer Authentication With Channel Knowledge Maps in Indoor Environments
-- URL: https://paperplaine.com/papers/physical-layer-authentication-with
-- Category: Engineering
-- Authors: Luca Bonaventura, Francesco Ardizzon, Stefano Tomasin
-- arXiv: 2606.27044
-- Plain-English subtitle: Authenticating moving devices indoors by mapping wireless signal patterns
-- Summary: A new security method can verify that a device belongs to a legitimate user even as it moves around inside buildings, by comparing real-time wireless signal measurements against pre-recorded maps of how signals behave in different locations. The approach uses multiple access points to measure signal strength and direction, then checks whether these match what would be expected at the device's current position — making it much harder for attackers to spoof their identity while moving through indoor spaces where signals bounce off walls and obstacles.
-- Why it matters: Indoor location-based authentication could strengthen security for smartphones, laptops, and building access systems without requiring users to actively re-authenticate as they move between rooms. This is especially valuable in offices, hospitals, and secure facilities where devices frequently move between locations but need continuous verification that they haven't been compromised or stolen.
-
-### A Structural Matrix Autoregressive Model for the Joint Dynamics of Volume, Volatility, and Returns
-- URL: https://paperplaine.com/papers/a-structural-matrix-autoregressive
-- Category: Quantitative Finance
-- Authors: Andrea Bucci, Giulio Palomba, Eduardo Rossi
-- arXiv: 2606.08141
-- Plain-English subtitle: How price swings drive trading volume across stocks in real time
-- Summary: Researchers built a statistical model that tracks how stock returns, price swings, and trading volume move together across all 30 Dow Jones companies. They found that volatility—how much prices bounce around—is the main force pushing people to trade, and that shocks ripple between stocks to drive more than half of long-term volume swings.
-- Why it matters: Understanding what actually drives trading volume helps market regulators spot abnormal activity and traders design better strategies for executing large orders without moving prices. The finding that volatility leads volume rather than the reverse overturns an old assumption and suggests that markets are primarily incorporating news through price discovery rather than through volume surges.
-
-### EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting
-- URL: https://paperplaine.com/papers/eo-wm-a-physically
-- Category: Computer Science · AI
-- Authors: Junwei Luo, Shuai Yuan, Zhenya Yang et al.
-- arXiv: 2606.27277
-- Plain-English subtitle: Teaching AI to predict crop health by understanding weather stress patterns
-- Summary: Researchers built a new AI model that predicts how vegetation will change by treating weather not as a simple label, but as a source of physical stress that builds up over time. The model cuts prediction errors for vegetation decline by 5.63% and correctly identifies whether plants will thrive or fail under extreme conditions better than existing methods.
-- Why it matters: Accurate vegetation forecasts help farmers and governments prepare for droughts, plan irrigation, and anticipate food shortages weeks in advance. This model responds correctly to extreme heat and dry conditions—not just reconstructing what happened, but predicting how real physical stress affects crops and ecosystems.
 
 ## About
 

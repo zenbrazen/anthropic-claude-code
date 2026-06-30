@@ -1,5 +1,71 @@
 [
   {
+    "id": "2606.30609",
+    "title": "C^{2}R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders",
+    "authors": "Haoran Jin, Xiting Wang, Shijie Ren et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-06-29T17:45:31Z",
+    "publishedFormatted": "Jun 29, 2026",
+    "subtitle": "Fixing AI interpretation tools that break concepts into scattered, unreliable pieces",
+    "summary": "Sparse autoencoders are crucial tools for understanding how large language models work, but they break down when scaled up—they fragment single concepts into multiple confusing pieces and create arbitrary exceptions to rules. Researchers developed a technique called C²R that forces the system to represent each concept consistently across different text samples, eliminating these fragmentation problems while keeping the model's performance intact.",
+    "whyItMatters": "Understanding how AI models work is essential for safety and debugging, but current interpretation tools become unreliable at scale. C²R makes these tools work reliably on larger, more realistic problems without sacrificing the model's ability to do its job. This directly improves researchers' ability to audit and understand what's happening inside billion-parameter language models.",
+    "fetchedAt": "2026-06-30T10:31:04.602Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 24,
+      "wordCount": 152
+    },
+    "slug": "c-2-r-cross"
+  },
+  {
+    "id": "2606.29876",
+    "title": "Clinical Reasoning Graphs: Structured Evaluation of LLM Diagnostic Reasoning Reveals Competence Without Consistency",
+    "authors": "Nisarg A. Patel",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-06-29T07:16:59Z",
+    "publishedFormatted": "Jun 29, 2026",
+    "subtitle": "Why AI doctors can get diagnoses right for completely different reasons",
+    "summary": "Large language models achieve 60–70% accuracy on complex medical cases, but new analysis reveals they don't reason consistently: when diagnosing similar cases, they use wildly different reasoning patterns. Researchers mapped the logical steps LLMs take during diagnosis and found that models reaching the correct answer often follow completely different reasoning paths than other models, even when those models also got the answer right.",
+    "whyItMatters": "Before deploying AI in medical settings, hospitals need to know whether a model reached the right diagnosis through sound clinical logic or lucky pattern-matching. This work shows that accuracy scores alone hide a deeper problem—AI systems can be right for the wrong reasons, which matters enormously for trust and safety. The researchers released their analytical tools so that hospitals and regulators can now examine how an AI actually reasons, not just whether it guesses correctly.",
+    "fetchedAt": "2026-06-30T10:31:10.233Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 230
+    },
+    "slug": "clinical-reasoning-graphs-structured"
+  },
+  {
+    "id": "2606.29793",
+    "title": "Fund2Persona: A Framework for Building and Refining Financial Advisor Personas from Fund Disclosure Data",
+    "authors": "Suhwan Park, Hoyoung Lee, Zhangyang Wang et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-06-29T05:14:43Z",
+    "publishedFormatted": "Jun 29, 2026",
+    "subtitle": "Teaching AI financial advisors to think like real fund managers, not generic chatbots",
+    "summary": "Researchers built Fund2Persona, a system that creates AI financial-advisor personas by studying actual fund holdings, manager decisions, and market commentary rather than relying on generic prompts. The resulting personas gave more specific and useful investment advice, better predicted what portfolio moves a manager would make, and generated more varied investment perspectives than standard AI advisors.",
+    "whyItMatters": "Financial advisory is expensive and scarce—most people can't afford personalized guidance. This framework could make expert portfolio-management logic scalable and available through AI systems that actually understand *how* a specific manager thinks, not just what generic best practices are. The difference matters: an AI trained on a growth-stock specialist's real decisions will steer a portfolio differently than one trained on boilerplate advice, and clients get recommendations tailored to actual investment philosophies rather than one-size-fits-all rules.",
+    "fetchedAt": "2026-06-30T10:31:13.953Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 150
+    },
+    "slug": "fund2persona-a-framework-for"
+  },
+  {
     "id": "2606.28294",
     "title": "Democratic ICAI: Debating Our Way to Steering Principles from Preferences",
     "authors": "Kevin Kingslin, Anish Natekar, Ashutosh Ranjan et al.",
