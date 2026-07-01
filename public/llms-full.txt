@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 361 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 364 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-01
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors
+Subtitle: Why AI chatbots misquote numbers from tables—and how to fix it
+URL: https://paperplaine.com/papers/when-llms-read-tables
+Category: Computer Science · AI
+Authors: Yuqing Yang, Qi Zhu, Zhen Han et al.
+arXiv ID: 2606.32029
+arXiv URL: https://arxiv.org/abs/2606.32029
+Posted: 2026-07-01
+
+Summary: Large language models make mistakes when pulling numbers from tables, citing wrong values or skipping data entirely even when they understand the table structure. A new systematic study found these errors happen in all tested models, then showed that adding a specialized checking system—a "critic" model—can catch and correct these mistakes, boosting final answer accuracy by up to 12%.
+
+Why it matters: When LLMs are used for real-world decisions—analyzing financial reports, medical data, or research findings—misquoting a single number can lead to wrong conclusions. The lightweight 4-billion-parameter critic described here can be added to existing AI systems to catch these mistakes before they propagate into reports or decisions, making AI tools more trustworthy for high-stakes applications without slowing them down significantly.
+
+---
+Title: Same Firms, Different Verdicts: ESG Rating Choice and the Measurement of Greenwashing
+Subtitle: Why the same company looks greener or dirtier depending on who grades it
+URL: https://paperplaine.com/papers/same-firms-different-verdicts
+Category: Quantitative Finance
+Authors: Praveen Kumar Ashok Kumar, Rafał Sieradzki
+arXiv ID: 2606.31469
+arXiv URL: https://arxiv.org/abs/2606.31469
+Posted: 2026-07-01
+
+Summary: European firms with prominent stock market listings talk much bigger about their environmental efforts than their actual emissions reductions show — a gap nearly three times wider than smaller companies. But the greenwashing disappears entirely when researchers use a different environmental rating system to measure the same companies, revealing that much of what looks like corporate deception is actually an artifact of which rating agency is doing the measuring.
+
+Why it matters: Investors, regulators, and asset managers rely on environmental ratings to direct trillions of dollars toward genuinely sustainable companies. If the same firm appears virtuous under one rating system and deceptive under another, it means current tools for detecting greenwashing are unreliable — making it harder to distinguish real environmental progress from marketing. This suggests regulators need standardized measurement approaches before environmental ratings can effectively steer capital toward actual sustainability.
+
+---
+Title: Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset
+Subtitle: Combining math topology and neural networks to catch network hackers
+URL: https://paperplaine.com/papers/hybrid-topological-data-analysis
+Category: Computer Science
+Authors: Amar Jeet, Bhaskar Ranjan Karn, Dinesh Kumar
+arXiv ID: 2606.31619
+arXiv URL: https://arxiv.org/abs/2606.31619
+Posted: 2026-07-01
+
+Summary: Researchers combined two mathematical approaches—one that finds hidden patterns in data structure, another that learns from sequences over time—to detect cyberattacks in network traffic. On a standard test dataset, the hybrid system achieved perfect detection rates (100% accuracy), outperforming simpler machine-learning methods that caught 99.4% and 83.5% of attacks respectively.
+
+Why it matters: Network breaches cost organizations billions annually. A detection system that identifies attacks with near-perfect accuracy could catch intrusions that slip past current defenses, giving security teams critical seconds to respond before damage spreads. The approach works on real network data containing millions of traffic patterns, suggesting it could actually protect live systems.
 
 ---
 Title: Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 361 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 364 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 123 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 124 papers in archive.
+  - "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors"
   - "Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization"
-  - "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 30 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 31 papers in archive.
+  - "Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset"
   - "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models"
-  - "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 29 papers in archive.
   - "Spatially Coupled MacKay-Neal/Hsu-Anastasopoulos CSS Codes Achieve the Quantum-Erasure Hashing Bound by Seeded BP Decoding"
   - "Diameter truncated operator evolution"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 29 papers in archive.
   - "Clinical Reasoning Graphs: Structured Evaluation of LLM Diagnostic Reasoning Reveals Competence Without Consistency"
   - "Surviving by Serving: Functional Relevance Drives Self-Organization in Complex Adaptive Systems"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 31 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 32 papers in archive.
+  - "Same Firms, Different Verdicts: ESG Rating Choice and the Measurement of Greenwashing"
   - "Fund2Persona: A Framework for Building and Refining Financial Advisor Personas from Fund Disclosure Data"
-  - "A Structural Matrix Autoregressive Model for the Joint Dynamics of Volume, Volatility, and Returns"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 31 papers in archive.
   - "Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models"
   - "Local Fokker--Planck Geometry for Score Estimation: Heat-Ball Mean-Value Representations and Exact High-Dimensional Sampling"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees"
 
 ## 10 most recent papers
+
+### When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors
+- URL: https://paperplaine.com/papers/when-llms-read-tables
+- Category: Computer Science · AI
+- Authors: Yuqing Yang, Qi Zhu, Zhen Han et al.
+- arXiv: 2606.32029
+- Plain-English subtitle: Why AI chatbots misquote numbers from tables—and how to fix it
+- Summary: Large language models make mistakes when pulling numbers from tables, citing wrong values or skipping data entirely even when they understand the table structure. A new systematic study found these errors happen in all tested models, then showed that adding a specialized checking system—a "critic" model—can catch and correct these mistakes, boosting final answer accuracy by up to 12%.
+- Why it matters: When LLMs are used for real-world decisions—analyzing financial reports, medical data, or research findings—misquoting a single number can lead to wrong conclusions. The lightweight 4-billion-parameter critic described here can be added to existing AI systems to catch these mistakes before they propagate into reports or decisions, making AI tools more trustworthy for high-stakes applications without slowing them down significantly.
+
+### Same Firms, Different Verdicts: ESG Rating Choice and the Measurement of Greenwashing
+- URL: https://paperplaine.com/papers/same-firms-different-verdicts
+- Category: Quantitative Finance
+- Authors: Praveen Kumar Ashok Kumar, Rafał Sieradzki
+- arXiv: 2606.31469
+- Plain-English subtitle: Why the same company looks greener or dirtier depending on who grades it
+- Summary: European firms with prominent stock market listings talk much bigger about their environmental efforts than their actual emissions reductions show — a gap nearly three times wider than smaller companies. But the greenwashing disappears entirely when researchers use a different environmental rating system to measure the same companies, revealing that much of what looks like corporate deception is actually an artifact of which rating agency is doing the measuring.
+- Why it matters: Investors, regulators, and asset managers rely on environmental ratings to direct trillions of dollars toward genuinely sustainable companies. If the same firm appears virtuous under one rating system and deceptive under another, it means current tools for detecting greenwashing are unreliable — making it harder to distinguish real environmental progress from marketing. This suggests regulators need standardized measurement approaches before environmental ratings can effectively steer capital toward actual sustainability.
+
+### Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset
+- URL: https://paperplaine.com/papers/hybrid-topological-data-analysis
+- Category: Computer Science
+- Authors: Amar Jeet, Bhaskar Ranjan Karn, Dinesh Kumar
+- arXiv: 2606.31619
+- Plain-English subtitle: Combining math topology and neural networks to catch network hackers
+- Summary: Researchers combined two mathematical approaches—one that finds hidden patterns in data structure, another that learns from sequences over time—to detect cyberattacks in network traffic. On a standard test dataset, the hybrid system achieved perfect detection rates (100% accuracy), outperforming simpler machine-learning methods that caught 99.4% and 83.5% of attacks respectively.
+- Why it matters: Network breaches cost organizations billions annually. A detection system that identifies attacks with near-perfect accuracy could catch intrusions that slip past current defenses, giving security teams critical seconds to respond before damage spreads. The approach works on real network data containing millions of traffic patterns, suggesting it could actually protect live systems.
 
 ### Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization
 - URL: https://paperplaine.com/papers/radial-suppression-accelerates-algorithmic
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Fixing AI interpretation tools that break concepts into scattered, unreliable pieces
 - Summary: Sparse autoencoders are crucial tools for understanding how large language models work, but they break down when scaled up—they fragment single concepts into multiple confusing pieces and create arbitrary exceptions to rules. Researchers developed a technique called C²R that forces the system to represent each concept consistently across different text samples, eliminating these fragmentation problems while keeping the model's performance intact.
 - Why it matters: Understanding how AI models work is essential for safety and debugging, but current interpretation tools become unreliable at scale. C²R makes these tools work reliably on larger, more realistic problems without sacrificing the model's ability to do its job. This directly improves researchers' ability to audit and understand what's happening inside billion-parameter language models.
-
-### Clinical Reasoning Graphs: Structured Evaluation of LLM Diagnostic Reasoning Reveals Competence Without Consistency
-- URL: https://paperplaine.com/papers/clinical-reasoning-graphs-structured
-- Category: Quantitative Biology
-- Authors: Nisarg A. Patel
-- arXiv: 2606.29876
-- Plain-English subtitle: Why AI doctors can get diagnoses right for completely different reasons
-- Summary: Large language models achieve 60–70% accuracy on complex medical cases, but new analysis reveals they don't reason consistently: when diagnosing similar cases, they use wildly different reasoning patterns. Researchers mapped the logical steps LLMs take during diagnosis and found that models reaching the correct answer often follow completely different reasoning paths than other models, even when those models also got the answer right.
-- Why it matters: Before deploying AI in medical settings, hospitals need to know whether a model reached the right diagnosis through sound clinical logic or lucky pattern-matching. This work shows that accuracy scores alone hide a deeper problem—AI systems can be right for the wrong reasons, which matters enormously for trust and safety. The researchers released their analytical tools so that hospitals and regulators can now examine how an AI actually reasons, not just whether it guesses correctly.
-
-### Fund2Persona: A Framework for Building and Refining Financial Advisor Personas from Fund Disclosure Data
-- URL: https://paperplaine.com/papers/fund2persona-a-framework-for
-- Category: Quantitative Finance
-- Authors: Suhwan Park, Hoyoung Lee, Zhangyang Wang et al.
-- arXiv: 2606.29793
-- Plain-English subtitle: Teaching AI financial advisors to think like real fund managers, not generic chatbots
-- Summary: Researchers built Fund2Persona, a system that creates AI financial-advisor personas by studying actual fund holdings, manager decisions, and market commentary rather than relying on generic prompts. The resulting personas gave more specific and useful investment advice, better predicted what portfolio moves a manager would make, and generated more varied investment perspectives than standard AI advisors.
-- Why it matters: Financial advisory is expensive and scarce—most people can't afford personalized guidance. This framework could make expert portfolio-management logic scalable and available through AI systems that actually understand *how* a specific manager thinks, not just what generic best practices are. The difference matters: an AI trained on a growth-stock specialist's real decisions will steer a portfolio differently than one trained on boilerplate advice, and clients get recommendations tailored to actual investment philosophies rather than one-size-fits-all rules.
-
-### Democratic ICAI: Debating Our Way to Steering Principles from Preferences
-- URL: https://paperplaine.com/papers/democratic-icai-debating-our
-- Category: Computer Science · AI
-- Authors: Kevin Kingslin, Anish Natekar, Ashutosh Ranjan et al.
-- arXiv: 2606.28294
-- Plain-English subtitle: Getting AI to explain its choices by debating multiple viewpoints
-- Summary: When AI systems make decisions based on human preferences, they usually just pick a winner without showing their reasoning. Researchers developed Democratic ICAI, which generates multiple competing explanations for each choice through structured debate between different perspectives, then distills these arguments into clear principles that better predict future decisions. On creative writing tasks, this approach outperformed simpler methods and produced explanations that human evaluators preferred.
-- Why it matters: As AI systems make more consequential decisions—from hiring to content moderation—understanding *why* they chose one option over another becomes critical for accountability and improvement. Right now, preference-based systems often hide the complexity of human judgment behind a single binary choice. This method surfaces the actual reasoning behind decisions, making it easier to spot bias, correct mistakes, and build AI systems that align with what humans actually care about rather than just mimicking their surface-level choices.
 
 ## About
 
