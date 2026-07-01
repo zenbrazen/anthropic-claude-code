@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 358 papers currently in the Paper Plaine archive.
-Last updated: 2026-06-30
+This file contains the complete plain-English text of all 361 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-01
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization
+Subtitle: Why neural networks waste time memorizing before learning the underlying rules
+URL: https://paperplaine.com/papers/radial-suppression-accelerates-algorithmic
+Category: Computer Science · AI
+Authors: Srijan Tiwari, Aditya Chauhan, Manjot Singh
+arXiv ID: 2606.32000
+arXiv URL: https://arxiv.org/abs/2606.32000
+Posted: 2026-07-01
+
+Summary: Neural networks often memorize training examples long before they learn to generalize to new cases—a frustrating phenomenon called delayed generalization. This paper shows the problem stems from hidden representations inflating outward in space during normal training, and a simple geometric constraint that keeps them compact can speed up learning by up to 6 times and cut training steps in half.
+
+Why it matters: Neural networks are notoriously slow and expensive to train, especially at scale. A technique that cuts training time by half—like the one tested here on a 10-million-parameter language model—directly reduces computational cost and energy use. More fundamentally, understanding why networks memorize before generalizing gets us closer to designing more efficient learning algorithms and knowing when we can trust a model's performance.
+
+---
+Title: Spatially Coupled MacKay-Neal/Hsu-Anastasopoulos CSS Codes Achieve the Quantum-Erasure Hashing Bound by Seeded BP Decoding
+Subtitle: Quantum error correction codes that match theoretical limits using practical algorithms
+URL: https://paperplaine.com/papers/spatially-coupled-mackay-neal
+Category: Physics
+Authors: Kenta Kasai
+arXiv ID: 2606.32001
+arXiv URL: https://arxiv.org/abs/2606.32001
+Posted: 2026-07-01
+
+Summary: Researchers proved that a specific type of quantum error-correction code, when combined with a spatial coupling technique and a particular decoding algorithm, can reach the theoretical performance limit for correcting erasure errors. The breakthrough shows that this practical decoding method works as well as the best theoretically possible method, closing a gap between theory and what's actually implementable.
+
+Why it matters: Quantum computers need extremely reliable error correction to function at scale, and current codes waste capacity by not reaching their theoretical limits. This work demonstrates that a practical decoding algorithm can achieve optimal performance, potentially reducing the number of physical qubits needed to run a quantum computation and making quantum computers more feasible to build.
+
+---
+Title: Eigenvalue optimization via a first-variation formula
+Subtitle: Finding the best shapes by analyzing how eigenvalues change
+URL: https://paperplaine.com/papers/eigenvalue-optimization-via-a
+Category: Mathematics
+Authors: Denis Vinokurov
+arXiv ID: 2606.31869
+arXiv URL: https://arxiv.org/abs/2606.31869
+Posted: 2026-07-01
+
+Summary: Mathematicians have developed a formula that describes how eigenvalues shift when you slightly alter the spaces they live in — even in tricky cases where eigenvalues sit at special boundary points. This formula acts as a map for finding optimal weights that make certain vibrational modes as efficient as possible, settling several longstanding questions about weighted drums and boundary vibrations.
+
+Why it matters: Eigenvalue optimization underlies real engineering problems: designing drums or membranes that vibrate at specific frequencies, tuning acoustic properties of rooms, and optimizing quantum systems. This work provides a practical tool for engineers and physicists to systematically find the best configurations without trial and error, while also proving that solutions actually exist — a guarantee that wasn't previously certain in all cases.
 
 ---
 Title: Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 358 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 361 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 122 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 123 papers in archive.
+  - "Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization"
   - "Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing"
-  - "C^{2}R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 30 papers in archive.
   - "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models"
   - "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 28 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 29 papers in archive.
+  - "Spatially Coupled MacKay-Neal/Hsu-Anastasopoulos CSS Codes Achieve the Quantum-Erasure Hashing Bound by Seeded BP Decoding"
   - "Diameter truncated operator evolution"
-  - "Exact subsystem dynamics in the deterministic Floquet-PXP model"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 29 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 30 papers in archive.
+  - "Eigenvalue optimization via a first-variation formula"
   - "CHAMB-GA: A Containerized HPC Scalable Microservice-Based Framework for Genetic Algorithms"
-  - "Finding Stationary Points by Comparisons"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 29 papers in archive.
   - "Clinical Reasoning Graphs: Structured Evaluation of LLM Diagnostic Reasoning Reveals Competence Without Consistency"
   - "Surviving by Serving: Functional Relevance Drives Self-Organization in Complex Adaptive Systems"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees"
 
 ## 10 most recent papers
+
+### Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization
+- URL: https://paperplaine.com/papers/radial-suppression-accelerates-algorithmic
+- Category: Computer Science · AI
+- Authors: Srijan Tiwari, Aditya Chauhan, Manjot Singh
+- arXiv: 2606.32000
+- Plain-English subtitle: Why neural networks waste time memorizing before learning the underlying rules
+- Summary: Neural networks often memorize training examples long before they learn to generalize to new cases—a frustrating phenomenon called delayed generalization. This paper shows the problem stems from hidden representations inflating outward in space during normal training, and a simple geometric constraint that keeps them compact can speed up learning by up to 6 times and cut training steps in half.
+- Why it matters: Neural networks are notoriously slow and expensive to train, especially at scale. A technique that cuts training time by half—like the one tested here on a 10-million-parameter language model—directly reduces computational cost and energy use. More fundamentally, understanding why networks memorize before generalizing gets us closer to designing more efficient learning algorithms and knowing when we can trust a model's performance.
+
+### Spatially Coupled MacKay-Neal/Hsu-Anastasopoulos CSS Codes Achieve the Quantum-Erasure Hashing Bound by Seeded BP Decoding
+- URL: https://paperplaine.com/papers/spatially-coupled-mackay-neal
+- Category: Physics
+- Authors: Kenta Kasai
+- arXiv: 2606.32001
+- Plain-English subtitle: Quantum error correction codes that match theoretical limits using practical algorithms
+- Summary: Researchers proved that a specific type of quantum error-correction code, when combined with a spatial coupling technique and a particular decoding algorithm, can reach the theoretical performance limit for correcting erasure errors. The breakthrough shows that this practical decoding method works as well as the best theoretically possible method, closing a gap between theory and what's actually implementable.
+- Why it matters: Quantum computers need extremely reliable error correction to function at scale, and current codes waste capacity by not reaching their theoretical limits. This work demonstrates that a practical decoding algorithm can achieve optimal performance, potentially reducing the number of physical qubits needed to run a quantum computation and making quantum computers more feasible to build.
+
+### Eigenvalue optimization via a first-variation formula
+- URL: https://paperplaine.com/papers/eigenvalue-optimization-via-a
+- Category: Mathematics
+- Authors: Denis Vinokurov
+- arXiv: 2606.31869
+- Plain-English subtitle: Finding the best shapes by analyzing how eigenvalues change
+- Summary: Mathematicians have developed a formula that describes how eigenvalues shift when you slightly alter the spaces they live in — even in tricky cases where eigenvalues sit at special boundary points. This formula acts as a map for finding optimal weights that make certain vibrational modes as efficient as possible, settling several longstanding questions about weighted drums and boundary vibrations.
+- Why it matters: Eigenvalue optimization underlies real engineering problems: designing drums or membranes that vibrate at specific frequencies, tuning acoustic properties of rooms, and optimizing quantum systems. This work provides a practical tool for engineers and physicists to systematically find the best configurations without trial and error, while also proving that solutions actually exist — a guarantee that wasn't previously certain in all cases.
 
 ### Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing
 - URL: https://paperplaine.com/papers/linguistic-firewall-geometry-as
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Getting AI to explain its choices by debating multiple viewpoints
 - Summary: When AI systems make decisions based on human preferences, they usually just pick a winner without showing their reasoning. Researchers developed Democratic ICAI, which generates multiple competing explanations for each choice through structured debate between different perspectives, then distills these arguments into clear principles that better predict future decisions. On creative writing tasks, this approach outperformed simpler methods and produced explanations that human evaluators preferred.
 - Why it matters: As AI systems make more consequential decisions—from hiring to content moderation—understanding *why* they chose one option over another becomes critical for accountability and improvement. Right now, preference-based systems often hide the complexity of human judgment behind a single binary choice. This method surfaces the actual reasoning behind decisions, making it easier to spot bias, correct mistakes, and build AI systems that align with what humans actually care about rather than just mimicking their surface-level choices.
-
-### Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models
-- URL: https://paperplaine.com/papers/robust-harmful-features-under
-- Category: Computer Science
-- Authors: Yanchen Yin, Dongqi Han, Linghui Li
-- arXiv: 2606.28153
-- Plain-English subtitle: Why AI safety features survive jailbreak attacks by hiding in plain sight
-- Summary: When hackers try to jailbreak language models, they don't actually disable the AI's safety guardrails—they just muffle a few specific parts of the model's attention system while leaving the core safety signals intact. Researchers found that safety features split into two types: early-layer heads that attacks suppress, and mid-layer heads that keep working even during successful jailbreaks. This means the model's "conscience" never truly disappears; attackers just drown it out.
-- Why it matters: If AI safety features are hardwired into the model's architecture rather than easily erasable, it becomes much harder to fully compromise them. The discovery suggests a practical shortcut: security teams could monitor those persistent safety signals without retraining the model, creating a new line of defense against jailbreaks. Understanding this hidden robustness also helps researchers design models where safety is even more difficult to bypass.
-
-### LLM Agents as Static Level-k Players in Behavioural Games
-- URL: https://paperplaine.com/papers/llm-agents-as-static
-- Category: Economics
-- Authors: Po Han Teo
-- arXiv: 2606.27845
-- Plain-English subtitle: Why AI agents don't think strategically like humans in economic games
-- Summary: When researchers tested large language models in two classic economic games—a guessing game and a cooperation game—the AI agents behaved nothing like human players, despite producing similar-looking choices on the surface. The models act as fixed strategic thinkers based purely on their size, never adjusting their strategy mid-game or thinking several moves ahead the way humans do.
-- Why it matters: As companies and researchers increasingly use LLMs to simulate human behavior in economic or social experiments, this work reveals a critical flaw: matching surface-level choice distributions isn't enough. An AI might pick the same numbers as humans, but for entirely different reasons—which means using LLMs as stand-ins for human subjects in behavioral research could lead to false conclusions about how people actually make decisions under pressure.
-
-### LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior
-- URL: https://paperplaine.com/papers/llawco-learning-laws-of
-- Category: Computer Science · AI
-- Authors: Qinhong Zhou, Chuang Gan, Anoop Cherian
-- arXiv: 2606.28182
-- Plain-English subtitle: Teaching AI agents to learn cooperation rules by reflecting on past failures
-- Summary: Embodied AI agents often fail to cooperate effectively because they don't align with their partners' behavior or adapt to what's actually happening around them. Researchers developed LLawCo, a system that lets agents analyze their own failures to extract simple behavioral rules like "Talk when necessary" and "Wait for partner," then bake these rules directly into their reasoning. On two cooperative planning benchmarks, this approach improved success rates by 4.5% to 6.8% across multiple AI language models.
-- Why it matters: Multi-agent AI systems are being deployed for robotics, autonomous vehicles, and collaborative planning tasks where agents must coordinate without constant supervision. When agents fail to cooperate smoothly, tasks take longer or fail entirely—wasting time and resources. This work shows that teaching agents to learn and follow cooperation principles dramatically improves their ability to work together, making real-world multi-robot and collaborative systems more reliable and efficient.
 
 ## About
 
