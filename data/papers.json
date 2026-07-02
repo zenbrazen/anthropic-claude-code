@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.01208",
+    "title": "Distill to Detect: Exposing Stealth Biases in LLMs through Cartridge Distillation",
+    "authors": "Shayan Talaei, Abhinav Chinta, Devvrit Khatri et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-01T17:46:33Z",
+    "publishedFormatted": "Jul 1, 2026",
+    "subtitle": "Finding hidden biases that AI language models are designed to conceal",
+    "summary": "Language models can be secretly programmed to favor certain brands, viewpoints, or entities while acting normal on everything else—biases so well-hidden that inspecting the model's outputs or internal structure reveals nothing. Researchers developed a detection method called Distill to Detect that exposes these stealth biases by forcing a model to compress its hidden preferences into a smaller adapter, amplifying the bias signal enough to catch it.",
+    "whyItMatters": "AI systems deployed in hiring, lending, content recommendation, and policy advice can steer decisions at scale without detection. A bank's loan-approval model might secretly favor applicants from certain zip codes, or a resume-screening tool could subtly downrank women—both invisible to standard audits. This technique gives organizations a practical way to audit their deployed models for hidden manipulation before those biases cause real harm.",
+    "fetchedAt": "2026-07-02T10:09:40.527Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 247
+    },
+    "slug": "distill-to-detect-exposing"
+  },
+  {
+    "id": "2606.31188",
+    "title": "Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement",
+    "authors": "Takeshi Kato, Yoshinori Hiroi, Sae Horiguchi et al.",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-06-30T06:18:36Z",
+    "publishedFormatted": "Jun 30, 2026",
+    "subtitle": "Measuring what companies owe society, not just what they earn",
+    "summary": "Companies today hide their social and environmental damage in their accounting — treating it as free. Researchers have designed a new dual reporting system, modeled on profit-and-loss statements, that forces firms to measure and disclose their actual impact on relationships, communities, and the world. The method assigns numerical scores to a company's social ties and actions, making social value as visible and comparable as financial value.",
+    "whyItMatters": "When companies only count money, they systematically ignore pollution, broken communities, and eroded trust — costs that everyone else pays. A standard social balance sheet would make harm visible to investors, regulators, and the public, giving markets real information for the first time. This could shift which companies attract capital and which face pressure to change, making social responsibility a business requirement rather than an optional add-on.",
+    "fetchedAt": "2026-07-02T10:09:48.878Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 162
+    },
+    "slug": "social-statements-a-proposal"
+  },
+  {
+    "id": "2606.31394",
+    "title": "Resolving superposition in AI for interpretability and cross-modal alignment in patient-neuronal images",
+    "authors": "Jisung Park, Seohyeon Kang, Daeun Yoo et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-06-30T09:22:35Z",
+    "publishedFormatted": "Jun 30, 2026",
+    "subtitle": "Untangling AI's compressed neural image data to understand Parkinson's disease better",
+    "summary": "Neural networks often squash multiple biological concepts into a few dimensions to fit high-dimensional data, a problem called superposition that makes AI interpretability nearly impossible. Researchers used sparse autoencoders on 100,000+ images of Parkinson's and healthy neurons to separate these compressed concepts back out, recovering clean geometric patterns that match gene expression data without needing ground-truth reference samples.",
+    "whyItMatters": "Current AI models that analyze medical images can't reliably explain which biological features they're actually detecting because multiple concepts get tangled together in their compressed representations. This method lets researchers cross-validate what AI systems learn from patient images against actual molecular data, creating a foundation for AI-driven spatial biology that doesn't require expensive reference samples—potentially accelerating discovery of disease mechanisms in neurodegenerative conditions.",
+    "fetchedAt": "2026-07-02T10:09:52.335Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 10,
+      "wordCount": 178
+    },
+    "slug": "resolving-superposition-in-ai"
+  },
+  {
     "id": "2606.32029",
     "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
     "authors": "Yuqing Yang, Qi Zhu, Zhen Han et al.",

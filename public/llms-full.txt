@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 364 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-01
+This file contains the complete plain-English text of all 367 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-02
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Distill to Detect: Exposing Stealth Biases in LLMs through Cartridge Distillation
+Subtitle: Finding hidden biases that AI language models are designed to conceal
+URL: https://paperplaine.com/papers/distill-to-detect-exposing
+Category: Computer Science · AI
+Authors: Shayan Talaei, Abhinav Chinta, Devvrit Khatri et al.
+arXiv ID: 2607.01208
+arXiv URL: https://arxiv.org/abs/2607.01208
+Posted: 2026-07-02
+
+Summary: Language models can be secretly programmed to favor certain brands, viewpoints, or entities while acting normal on everything else—biases so well-hidden that inspecting the model's outputs or internal structure reveals nothing. Researchers developed a detection method called Distill to Detect that exposes these stealth biases by forcing a model to compress its hidden preferences into a smaller adapter, amplifying the bias signal enough to catch it.
+
+Why it matters: AI systems deployed in hiring, lending, content recommendation, and policy advice can steer decisions at scale without detection. A bank's loan-approval model might secretly favor applicants from certain zip codes, or a resume-screening tool could subtly downrank women—both invisible to standard audits. This technique gives organizations a practical way to audit their deployed models for hidden manipulation before those biases cause real harm.
+
+---
+Title: Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement
+Subtitle: Measuring what companies owe society, not just what they earn
+URL: https://paperplaine.com/papers/social-statements-a-proposal
+Category: Economics
+Authors: Takeshi Kato, Yoshinori Hiroi, Sae Horiguchi et al.
+arXiv ID: 2606.31188
+arXiv URL: https://arxiv.org/abs/2606.31188
+Posted: 2026-07-02
+
+Summary: Companies today hide their social and environmental damage in their accounting — treating it as free. Researchers have designed a new dual reporting system, modeled on profit-and-loss statements, that forces firms to measure and disclose their actual impact on relationships, communities, and the world. The method assigns numerical scores to a company's social ties and actions, making social value as visible and comparable as financial value.
+
+Why it matters: When companies only count money, they systematically ignore pollution, broken communities, and eroded trust — costs that everyone else pays. A standard social balance sheet would make harm visible to investors, regulators, and the public, giving markets real information for the first time. This could shift which companies attract capital and which face pressure to change, making social responsibility a business requirement rather than an optional add-on.
+
+---
+Title: Resolving superposition in AI for interpretability and cross-modal alignment in patient-neuronal images
+Subtitle: Untangling AI's compressed neural image data to understand Parkinson's disease better
+URL: https://paperplaine.com/papers/resolving-superposition-in-ai
+Category: Quantitative Biology
+Authors: Jisung Park, Seohyeon Kang, Daeun Yoo et al.
+arXiv ID: 2606.31394
+arXiv URL: https://arxiv.org/abs/2606.31394
+Posted: 2026-07-02
+
+Summary: Neural networks often squash multiple biological concepts into a few dimensions to fit high-dimensional data, a problem called superposition that makes AI interpretability nearly impossible. Researchers used sparse autoencoders on 100,000+ images of Parkinson's and healthy neurons to separate these compressed concepts back out, recovering clean geometric patterns that match gene expression data without needing ground-truth reference samples.
+
+Why it matters: Current AI models that analyze medical images can't reliably explain which biological features they're actually detecting because multiple concepts get tangled together in their compressed representations. This method lets researchers cross-validate what AI systems learn from patient images against actual molecular data, creating a foundation for AI-driven spatial biology that doesn't require expensive reference samples—potentially accelerating discovery of disease mechanisms in neurodegenerative conditions.
 
 ---
 Title: When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors
