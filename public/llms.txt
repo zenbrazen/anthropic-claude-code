@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 367 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 370 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 125 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 126 papers in archive.
+  - "Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search"
   - "Distill to Detect: Exposing Stealth Biases in LLMs through Cartridge Distillation"
-  - "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 31 papers in archive.
   - "Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset"
   - "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 32 papers in archive.
   - "Same Firms, Different Verdicts: ESG Rating Choice and the Measurement of Greenwashing"
   - "Fund2Persona: A Framework for Building and Refining Financial Advisor Personas from Fund Disclosure Data"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 31 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 32 papers in archive.
+  - "Convolutional Symmetric AutoEncoders: enhancing latent stability via differential geometry"
   - "Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models"
-  - "Local Fokker--Planck Geometry for Score Estimation: Heat-Ball Mean-Value Representations and Exact High-Dimensional Sampling"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 30 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 31 papers in archive.
+  - "Predicting Lethal Outcome (Cause) And Understanding Key Biomarkers Linked With Acute Myocardial Infarction Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies"
   - "A multi-architecture study of specificity refinement and false-positive mechanism analysis in prostate MRI"
-  - "Physical Layer Authentication With Channel Knowledge Maps in Indoor Environments"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 29 papers in archive.
   - "Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement"
   - "LLM Agents as Static Level-k Players in Behavioural Games"
 
 ## 10 most recent papers
+
+### Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search
+- URL: https://paperplaine.com/papers/sequentially-controlled-interactive-multi
+- Category: Computer Science · AI
+- Authors: Binglin Ji, Anindya Sarkar, Hengchang Lu et al.
+- arXiv: 2607.01144
+- Plain-English subtitle: Teaching AI to explore broadly and learn what humans actually want
+- Summary: When AI systems learn from human feedback given one step at a time, they tend to get stuck exploring a narrow corner of what's possible instead of finding the best solutions across the full space of options. This paper introduces IMPFM, a method that uses multiple interacting particles (candidate solutions) guided by flow maps to explore widely while learning from sequential feedback, preventing the system from overshooting toward extreme or unhelpful outcomes.
+- Why it matters: Most AI alignment methods today work well only when preferences are already known, or they chase narrow local optima that don't match what users actually want. This approach enables systems to discover genuinely diverse, high-quality solutions even when human preferences emerge gradually through interaction—making AI assistants and recommendation systems more useful and less prone to gaming metrics in unexpected ways.
+
+### Predicting Lethal Outcome (Cause) And Understanding Key Biomarkers Linked With Acute Myocardial Infarction Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies
+- URL: https://paperplaine.com/papers/predicting-lethal-outcome-cause
+- Category: Engineering
+- Authors: Sagnik Ghosh
+- arXiv: 2607.00472
+- Plain-English subtitle: Machine learning to predict who will die from a heart attack
+- Summary: Researchers built an automated system that combines machine learning and neural networks to predict which heart attack patients will have fatal outcomes and identify the key warning signs doctors should watch for. The approach handles messy real-world data by filling gaps and balancing uneven patient groups, then uses multiple algorithms working together to boost accuracy beyond what any single method could achieve.
+- Why it matters: Heart attacks kill millions annually, and 5–10% of survivors die within a year. Faster, more accurate predictions could let doctors intervene earlier and guide patients toward better self-care before complications strike. Right now diagnosis relies on a doctor's experience and intuition, which varies widely; an automated system could make life-or-death decisions consistent and available everywhere, not just in hospitals with top cardiologists.
+
+### Convolutional Symmetric AutoEncoders: enhancing latent stability via differential geometry
+- URL: https://paperplaine.com/papers/convolutional-symmetric-autoencoders-enhancing
+- Category: Statistics
+- Authors: G. Li Causi, N. Tonicello, L. Magri et al.
+- arXiv: 2607.00669
+- Plain-English subtitle: Making neural networks more trustworthy for modeling complex physical systems
+- Summary: Researchers created a new type of neural network designed to better capture the underlying structure of physical systems rather than simply memorizing patterns. When tested on three classical physics equations, the improved networks produced more accurate predictions, lower errors, and more stable behavior than standard approaches.
+- Why it matters: Physics simulations are computationally expensive—whether for engineering, climate modeling, or drug discovery. These more stable neural networks could run orders of magnitude faster while remaining reliable, enabling scientists to explore more scenarios and design variations in the time it currently takes to run a single full simulation.
 
 ### Distill to Detect: Exposing Stealth Biases in LLMs through Cartridge Distillation
 - URL: https://paperplaine.com/papers/distill-to-detect-exposing
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why neural networks waste time memorizing before learning the underlying rules
 - Summary: Neural networks often memorize training examples long before they learn to generalize to new cases—a frustrating phenomenon called delayed generalization. This paper shows the problem stems from hidden representations inflating outward in space during normal training, and a simple geometric constraint that keeps them compact can speed up learning by up to 6 times and cut training steps in half.
 - Why it matters: Neural networks are notoriously slow and expensive to train, especially at scale. A technique that cuts training time by half—like the one tested here on a 10-million-parameter language model—directly reduces computational cost and energy use. More fundamentally, understanding why networks memorize before generalizing gets us closer to designing more efficient learning algorithms and knowing when we can trust a model's performance.
-
-### Spatially Coupled MacKay-Neal/Hsu-Anastasopoulos CSS Codes Achieve the Quantum-Erasure Hashing Bound by Seeded BP Decoding
-- URL: https://paperplaine.com/papers/spatially-coupled-mackay-neal
-- Category: Physics
-- Authors: Kenta Kasai
-- arXiv: 2606.32001
-- Plain-English subtitle: Quantum error correction codes that match theoretical limits using practical algorithms
-- Summary: Researchers proved that a specific type of quantum error-correction code, when combined with a spatial coupling technique and a particular decoding algorithm, can reach the theoretical performance limit for correcting erasure errors. The breakthrough shows that this practical decoding method works as well as the best theoretically possible method, closing a gap between theory and what's actually implementable.
-- Why it matters: Quantum computers need extremely reliable error correction to function at scale, and current codes waste capacity by not reaching their theoretical limits. This work demonstrates that a practical decoding algorithm can achieve optimal performance, potentially reducing the number of physical qubits needed to run a quantum computation and making quantum computers more feasible to build.
-
-### Eigenvalue optimization via a first-variation formula
-- URL: https://paperplaine.com/papers/eigenvalue-optimization-via-a
-- Category: Mathematics
-- Authors: Denis Vinokurov
-- arXiv: 2606.31869
-- Plain-English subtitle: Finding the best shapes by analyzing how eigenvalues change
-- Summary: Mathematicians have developed a formula that describes how eigenvalues shift when you slightly alter the spaces they live in — even in tricky cases where eigenvalues sit at special boundary points. This formula acts as a map for finding optimal weights that make certain vibrational modes as efficient as possible, settling several longstanding questions about weighted drums and boundary vibrations.
-- Why it matters: Eigenvalue optimization underlies real engineering problems: designing drums or membranes that vibrate at specific frequencies, tuning acoustic properties of rooms, and optimizing quantum systems. This work provides a practical tool for engineers and physicists to systematically find the best configurations without trial and error, while also proving that solutions actually exist — a guarantee that wasn't previously certain in all cases.
-
-### Linguistic Firewall: Geometry as Defense in Multi-Agent Systems Routing
-- URL: https://paperplaine.com/papers/linguistic-firewall-geometry-as
-- Category: Computer Science · AI
-- Authors: Dvir Alsheich, Adar Peleg, Ben Hagag et al.
-- arXiv: 2606.30555
-- Plain-English subtitle: Testing AI agents' real skills instead of trusting their claims
-- Summary: Malicious AI agents can lie about what they're good at, fooling routers that rely on self-descriptions or learned profiles. Researchers built ANTAP, a system that actively tests each agent's actual capabilities rather than trusting their word—eliminating over 67% of successful attacks that fool description-based routers. The approach works by converting test results into geometric patterns that attackers can't manipulate through language tricks.
-- Why it matters: As companies deploy multi-agent AI systems to handle complex workflows, a compromised agent that tricks the router into giving it the wrong tasks could inject false data, steal information, or corrupt outputs. ANTAP's active testing method blocks this attack vector entirely, making it safer to deploy agent networks in sensitive applications like financial services, healthcare, or infrastructure management.
 
 ## About
 
