@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 370 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 373 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 126 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 127 papers in archive.
+  - "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs"
   - "Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search"
-  - "Distill to Detect: Exposing Stealth Biases in LLMs through Cartridge Distillation"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 31 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 32 papers in archive.
+  - "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas"
   - "Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset"
-  - "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 29 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 30 papers in archive.
+  - "On the emergence of quantum many-body chaos for tunably-broken integrability"
   - "Spatially Coupled MacKay-Neal/Hsu-Anastasopoulos CSS Codes Achieve the Quantum-Erasure Hashing Bound by Seeded BP Decoding"
-  - "Diameter truncated operator evolution"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 30 papers in archive.
   - "Eigenvalue optimization via a first-variation formula"
   - "CHAMB-GA: A Containerized HPC Scalable Microservice-Based Framework for Genetic Algorithms"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "LLM Agents as Static Level-k Players in Behavioural Games"
 
 ## 10 most recent papers
+
+### Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs
+- URL: https://paperplaine.com/papers/learning-to-move-before
+- Category: Computer Science · AI
+- Authors: Junhao Shi, Siyin Wang, Xiaopeng Yu et al.
+- arXiv: 2607.02466
+- Plain-English subtitle: Teaching robots to move first, then learn what tasks mean
+- Summary: Researchers separated robot learning into two parts: first, learning basic movement skills from cheap unlabeled footage, and second, connecting those skills to language instructions using small amounts of expert data. This approach matched the performance of models trained on over 1 million labeled examples while using far less expensive supervision, and performed 25 times better than competing methods when camera angles shifted unexpectedly.
+- Why it matters: Collecting labeled robot training data is expensive and slow — a major barrier to deploying AI robots at scale. By showing that robots can learn useful movement patterns from cheap, unlabeled video first, this work dramatically reduces the amount of expert supervision needed to teach them new tasks. Real robots trained this way also stayed functional when their cameras were moved or tilted, a robustness gain that could make deployed systems practical rather than brittle.
+
+### Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas
+- URL: https://paperplaine.com/papers/reasoning-llm-improves-speaker
+- Category: Computer Science
+- Authors: Yuxuan Li, Lingxi Xie, Xinyue Huo et al.
+- arXiv: 2607.02504
+- Plain-English subtitle: Using AI reasoning to figure out who's speaking in TV dramas
+- Summary: Researchers built a new system that uses reasoning AI to correctly identify which character is speaking in TV dramas, even when voices are hard to hear. The system works by combining audio, dialogue, and visual cues, and outperforms existing methods especially on short lines where voice recognition alone fails. They also released a dataset of 532,000 labeled dialogue lines from over 900 characters to help train future systems.
+- Why it matters: Accurate speaker identification is essential for any AI system that needs to understand TV shows—whether for automatic subtitling, content analysis, or helping viewers with hearing disabilities follow complex scenes with many characters. Current methods stumble on short lines and overlapping dialogue, but reasoning-based approaches could make video understanding AI more reliable for real-world media applications.
+
+### On the emergence of quantum many-body chaos for tunably-broken integrability
+- URL: https://paperplaine.com/papers/on-the-emergence-of
+- Category: Physics
+- Authors: Sounak Biswas, Sthitadhi Roy, Roderich Moessner
+- arXiv: 2607.02506
+- Plain-English subtitle: How quantum systems tip from orderly to chaotic as their rules gradually break down
+- Summary: Physicists mapped out exactly how quantum systems transition from behaving in predictable, orderly ways to becoming completely chaotic—a shift that happens when you gradually introduce rule-breaking into an otherwise perfectly symmetric system. By studying a model circuit and tracking how information scrambles over time, the team identified the precise mechanisms, speeds, and distances involved in this tipping point.
+- Why it matters: Understanding when and how quantum systems become chaotic matters for designing quantum computers and sensors, since chaos can either destroy useful quantum effects or serve as a resource. This work provides a quantitative roadmap for predicting and controlling that transition, rather than treating chaos as an unpredictable black box.
 
 ### Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search
 - URL: https://paperplaine.com/papers/sequentially-controlled-interactive-multi
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI chatbots misquote numbers from tables—and how to fix it
 - Summary: Large language models make mistakes when pulling numbers from tables, citing wrong values or skipping data entirely even when they understand the table structure. A new systematic study found these errors happen in all tested models, then showed that adding a specialized checking system—a "critic" model—can catch and correct these mistakes, boosting final answer accuracy by up to 12%.
 - Why it matters: When LLMs are used for real-world decisions—analyzing financial reports, medical data, or research findings—misquoting a single number can lead to wrong conclusions. The lightweight 4-billion-parameter critic described here can be added to existing AI systems to catch these mistakes before they propagate into reports or decisions, making AI tools more trustworthy for high-stakes applications without slowing them down significantly.
-
-### Same Firms, Different Verdicts: ESG Rating Choice and the Measurement of Greenwashing
-- URL: https://paperplaine.com/papers/same-firms-different-verdicts
-- Category: Quantitative Finance
-- Authors: Praveen Kumar Ashok Kumar, Rafał Sieradzki
-- arXiv: 2606.31469
-- Plain-English subtitle: Why the same company looks greener or dirtier depending on who grades it
-- Summary: European firms with prominent stock market listings talk much bigger about their environmental efforts than their actual emissions reductions show — a gap nearly three times wider than smaller companies. But the greenwashing disappears entirely when researchers use a different environmental rating system to measure the same companies, revealing that much of what looks like corporate deception is actually an artifact of which rating agency is doing the measuring.
-- Why it matters: Investors, regulators, and asset managers rely on environmental ratings to direct trillions of dollars toward genuinely sustainable companies. If the same firm appears virtuous under one rating system and deceptive under another, it means current tools for detecting greenwashing are unreliable — making it harder to distinguish real environmental progress from marketing. This suggests regulators need standardized measurement approaches before environmental ratings can effectively steer capital toward actual sustainability.
-
-### Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset
-- URL: https://paperplaine.com/papers/hybrid-topological-data-analysis
-- Category: Computer Science
-- Authors: Amar Jeet, Bhaskar Ranjan Karn, Dinesh Kumar
-- arXiv: 2606.31619
-- Plain-English subtitle: Combining math topology and neural networks to catch network hackers
-- Summary: Researchers combined two mathematical approaches—one that finds hidden patterns in data structure, another that learns from sequences over time—to detect cyberattacks in network traffic. On a standard test dataset, the hybrid system achieved perfect detection rates (100% accuracy), outperforming simpler machine-learning methods that caught 99.4% and 83.5% of attacks respectively.
-- Why it matters: Network breaches cost organizations billions annually. A detection system that identifies attacks with near-perfect accuracy could catch intrusions that slip past current defenses, giving security teams critical seconds to respond before damage spreads. The approach works on real network data containing millions of traffic patterns, suggesting it could actually protect live systems.
-
-### Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization
-- URL: https://paperplaine.com/papers/radial-suppression-accelerates-algorithmic
-- Category: Computer Science · AI
-- Authors: Srijan Tiwari, Aditya Chauhan, Manjot Singh
-- arXiv: 2606.32000
-- Plain-English subtitle: Why neural networks waste time memorizing before learning the underlying rules
-- Summary: Neural networks often memorize training examples long before they learn to generalize to new cases—a frustrating phenomenon called delayed generalization. This paper shows the problem stems from hidden representations inflating outward in space during normal training, and a simple geometric constraint that keeps them compact can speed up learning by up to 6 times and cut training steps in half.
-- Why it matters: Neural networks are notoriously slow and expensive to train, especially at scale. A technique that cuts training time by half—like the one tested here on a 10-million-parameter language model—directly reduces computational cost and energy use. More fundamentally, understanding why networks memorize before generalizing gets us closer to designing more efficient learning algorithms and knowing when we can trust a model's performance.
 
 ## About
 

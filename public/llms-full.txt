@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 370 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-02
+This file contains the complete plain-English text of all 373 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-03
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs
+Subtitle: Teaching robots to move first, then learn what tasks mean
+URL: https://paperplaine.com/papers/learning-to-move-before
+Category: Computer Science · AI
+Authors: Junhao Shi, Siyin Wang, Xiaopeng Yu et al.
+arXiv ID: 2607.02466
+arXiv URL: https://arxiv.org/abs/2607.02466
+Posted: 2026-07-03
+
+Summary: Researchers separated robot learning into two parts: first, learning basic movement skills from cheap unlabeled footage, and second, connecting those skills to language instructions using small amounts of expert data. This approach matched the performance of models trained on over 1 million labeled examples while using far less expensive supervision, and performed 25 times better than competing methods when camera angles shifted unexpectedly.
+
+Why it matters: Collecting labeled robot training data is expensive and slow — a major barrier to deploying AI robots at scale. By showing that robots can learn useful movement patterns from cheap, unlabeled video first, this work dramatically reduces the amount of expert supervision needed to teach them new tasks. Real robots trained this way also stayed functional when their cameras were moved or tilted, a robustness gain that could make deployed systems practical rather than brittle.
+
+---
+Title: Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas
+Subtitle: Using AI reasoning to figure out who's speaking in TV dramas
+URL: https://paperplaine.com/papers/reasoning-llm-improves-speaker
+Category: Computer Science
+Authors: Yuxuan Li, Lingxi Xie, Xinyue Huo et al.
+arXiv ID: 2607.02504
+arXiv URL: https://arxiv.org/abs/2607.02504
+Posted: 2026-07-03
+
+Summary: Researchers built a new system that uses reasoning AI to correctly identify which character is speaking in TV dramas, even when voices are hard to hear. The system works by combining audio, dialogue, and visual cues, and outperforms existing methods especially on short lines where voice recognition alone fails. They also released a dataset of 532,000 labeled dialogue lines from over 900 characters to help train future systems.
+
+Why it matters: Accurate speaker identification is essential for any AI system that needs to understand TV shows—whether for automatic subtitling, content analysis, or helping viewers with hearing disabilities follow complex scenes with many characters. Current methods stumble on short lines and overlapping dialogue, but reasoning-based approaches could make video understanding AI more reliable for real-world media applications.
+
+---
+Title: On the emergence of quantum many-body chaos for tunably-broken integrability
+Subtitle: How quantum systems tip from orderly to chaotic as their rules gradually break down
+URL: https://paperplaine.com/papers/on-the-emergence-of
+Category: Physics
+Authors: Sounak Biswas, Sthitadhi Roy, Roderich Moessner
+arXiv ID: 2607.02506
+arXiv URL: https://arxiv.org/abs/2607.02506
+Posted: 2026-07-03
+
+Summary: Physicists mapped out exactly how quantum systems transition from behaving in predictable, orderly ways to becoming completely chaotic—a shift that happens when you gradually introduce rule-breaking into an otherwise perfectly symmetric system. By studying a model circuit and tracking how information scrambles over time, the team identified the precise mechanisms, speeds, and distances involved in this tipping point.
+
+Why it matters: Understanding when and how quantum systems become chaotic matters for designing quantum computers and sensors, since chaos can either destroy useful quantum effects or serve as a resource. This work provides a quantitative roadmap for predicting and controlling that transition, rather than treating chaos as an unpredictable black box.
 
 ---
 Title: Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search
