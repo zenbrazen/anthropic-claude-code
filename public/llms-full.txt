@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 375 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-03
+This file contains the complete plain-English text of all 378 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-04
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Understanding the Robustness of Distributed Self-Supervised Learning Frameworks Against Non-IID Data
+Subtitle: Why some AI learning methods handle messy, uneven data better than others
+URL: https://paperplaine.com/papers/understanding-the-robustness-of
+Category: Computer Science · AI
+Authors: Xuanyu Chen, Nan Yang, Shuai Wang et al.
+arXiv ID: 2607.02447
+arXiv URL: https://arxiv.org/abs/2607.02447
+Posted: 2026-07-04
+
+Summary: When machine learning systems train across many devices with mismatched data, some approaches fail badly while others hold up. This paper proves that a technique called Masked Image Modeling outperforms Contrastive Learning on fragmented data, and that better-connected networks learn more reliably. The researchers also introduced a refined training method that improves robustness in real deployments.
+
+Why it matters: Companies and researchers increasingly train AI on decentralized data—from hospitals sharing patient images without centralizing them, to phones learning from local photos. This work provides concrete guidance on which methods won't collapse when data is unevenly distributed, plus a practical technique that improves reliability. That directly reduces the risk of failed deployments in privacy-sensitive or logistically complex settings.
+
+---
+Title: Stationary covariance spectra of discrete-time non-normal random recurrent dynamics
+Subtitle: Why brain-inspired networks behave differently than math predicts
+URL: https://paperplaine.com/papers/stationary-covariance-spectra-of
+Category: Quantitative Biology
+Authors: Jacob A. Zavatone-Veth
+arXiv ID: 2606.31944
+arXiv URL: https://arxiv.org/abs/2606.31944
+Posted: 2026-07-04
+
+Summary: Brain-inspired artificial networks don't follow the simple mathematical rules that scientists expected. A new mathematical approach reveals how noise ripples through these networks in unexpected ways, showing that the randomness in how neurons connect matters far more than previous theory suggested.
+
+Why it matters: Neuroscientists use these artificial networks to understand how real brains process information by comparing network behavior to actual brain recordings. Without knowing how these networks truly distribute activity across their components, researchers can't tell whether their models actually capture real brain dynamics or just produce superficially similar results. This work provides the missing mathematical foundation to make those comparisons meaningful.
+
+---
+Title: Refinement of Reliability Grid Codes in the Provision of Ancillary Services
+Subtitle: Finding the right safety bar for wind farms selling emergency power
+URL: https://paperplaine.com/papers/refinement-of-reliability-grid
+Category: Mathematics
+Authors: Torine R. Herstad, Jalal Kazempour, Lesia Mitridati et al.
+arXiv ID: 2607.02319
+arXiv URL: https://arxiv.org/abs/2607.02319
+Posted: 2026-07-04
+
+Summary: Denmark's grid operator requires wind farms and other unpredictable power sources to guarantee they can deliver emergency reserves 90% of the time — but that threshold was never actually optimized. Researchers built a model to find the true cost-reliability sweet spot and discovered the standard could drop to around 85% without sacrificing grid safety, cutting costs by up to 14.5%.
+
+Why it matters: As grids add more wind and solar, they rely increasingly on these uncertain sources for emergency backup power. Setting reliability rules too high wastes money; too low risks blackouts. This work provides a concrete method to find the actual optimal threshold instead of guessing — potentially saving millions in grid costs across Europe's renewable-heavy systems while maintaining the same safety margin.
 
 ---
 Title: Controllable Sim Agents with Behavior Latents
