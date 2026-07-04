@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.02494",
+    "title": "Towards Robustness against Typographic Attack with Training-free Concept Localization",
+    "authors": "Bohan Liu, Wenqian Ye, Guangzhi Xiong et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-02T17:55:24Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "Why AI vision systems get tricked by random text in images—and how to fix it",
+    "summary": "AI vision models trained on paired images and text can be fooled by irrelevant words appearing within photos, causing them to misidentify what they're actually seeing. Researchers found which parts of these models are responsible for this weakness and showed that simple, no-retraining fixes applied directly to those components can substantially restore accuracy, even when text clutter is deliberately added to images.",
+    "whyItMatters": "Autonomous vehicles and other safety-critical systems rely on these vision models to understand their surroundings. Stickers, graffiti, or any text in a scene could currently cause dangerous misidentifications—a stop sign misread as something else, for example. This method fixes the vulnerability without requiring expensive retraining, making it practical to deploy immediately in existing systems.",
+    "fetchedAt": "2026-07-04T20:05:28.583Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 229
+    },
+    "slug": "towards-robustness-against-typographic"
+  },
+  {
+    "id": "2607.02173",
+    "title": "Conformal Bayes for Two-Sided Censored Gaussian Regression under Label Shift",
+    "authors": "Seungjin Choi",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-02T13:45:24Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "Making predictions when some measurements are hidden at the edges",
+    "summary": "When real-world measurements get cut off at upper or lower limits—like income surveys that cap responses or medical tests that max out—standard prediction methods fail. Researchers developed a new statistical approach that handles these artificially truncated datasets while also accounting for shifts in what you're trying to predict, producing smaller prediction ranges without sacrificing accuracy.",
+    "whyItMatters": "Many real datasets have built-in boundaries: household income surveys that don't record above a threshold, medical tests with detection limits, or equipment readings that plateau. This method lets analysts make reliable predictions from such data without either throwing information away or pretending the boundaries don't exist. It's particularly useful when the relationship between data source and real-world conditions has shifted, a common problem when applying models trained on one dataset to different populations.",
+    "fetchedAt": "2026-07-04T20:05:31.868Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 227
+    },
+    "slug": "conformal-bayes-for-two"
+  },
+  {
+    "id": "2607.02384",
+    "title": "Robust Transmission Design for RIS-Assisted RSMA-SWIPT Systems With Movable Antennas Under Hardware Distortions",
+    "authors": "Muhammad Asif, Asim Ihsan, Irfan Muhammad et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-07-02T16:22:21Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "Making wireless power and data transfer work reliably with imperfect equipment",
+    "summary": "Engineers designed a system that simultaneously transmits information and wireless power to multiple users while accounting for two real-world problems: incomplete knowledge of signal conditions and hardware that doesn't perform perfectly. The system uses movable antennas and intelligent reflective surfaces to adapt continuously, achieving higher data rates even when conditions are uncertain or equipment degrades.",
+    "whyItMatters": "Wireless power transfer could charge devices without cables, but only works if transmitters can adjust to real equipment limitations and incomplete information about signal paths. This framework makes that adjustment automatic and robust, bringing practical wireless power systems closer to viability for phones, sensors, and remote devices that can't be recharged manually.",
+    "fetchedAt": "2026-07-04T20:05:34.944Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 1,
+      "pageCount": 13,
+      "wordCount": 217
+    },
+    "slug": "robust-transmission-design-for"
+  },
+  {
     "id": "2607.02447",
     "title": "Understanding the Robustness of Distributed Self-Supervised Learning Frameworks Against Non-IID Data",
     "authors": "Xuanyu Chen, Nan Yang, Shuai Wang et al.",
