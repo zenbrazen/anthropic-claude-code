@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.02512",
+    "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+    "authors": "Wentao Zhang, Liliana Hotsko, Woojeong Kim et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-02T17:59:50Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "Turning vague instructions into tiny, reusable AI programs that run locally",
+    "summary": "Researchers built a system that compiles natural-language descriptions into small neural programs that can run on ordinary computers without calling cloud APIs. A tiny 600-million-parameter interpreter running these programs matches the output quality of a 32-billion-parameter model, while using 50 times less memory and running 30 times faster on a MacBook.",
+    "whyItMatters": "Tasks like filtering log files or ranking search results currently require paid API calls to large language models every single time. This approach lets you define the function once and then run it repeatedly on your own machine—cheaper, faster, and without sending data to the cloud. It's especially valuable for teams who need reproducible results or can't rely on internet access.",
+    "fetchedAt": "2026-07-05T20:09:20.346Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 155
+    },
+    "slug": "program-as-weights-a"
+  },
+  {
+    "id": "2607.02279",
+    "title": "Invariance Entropy in the Dust",
+    "authors": "Senhan Yao",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-07-02T15:00:02Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "Why two ways of measuring control system complexity give different answers",
+    "summary": "A fifteen-year-old mathematical puzzle about control systems has been solved: two seemingly equivalent ways of measuring how much information is needed to keep a system on track actually give different results. The researchers built a clever example that reveals the discrepancy, showing that one measure can be infinite while the other remains finite, and that small changes to the starting conditions can cause unexpected jumps in complexity.",
+    "whyItMatters": "Control systems steer everything from robots to aircraft, and understanding their information complexity helps engineers design more efficient controllers. This result corrects a long-standing misconception about which mathematical tools actually measure the same thing, preventing researchers from accidentally using interchangeable definitions that aren't interchangeable. It also reveals a new source of complexity that arises not from the system spreading apart dynamically, but from the geometry of the constraints themselves.",
+    "fetchedAt": "2026-07-05T20:09:23.358Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 125
+    },
+    "slug": "invariance-entropy-in-the"
+  },
+  {
+    "id": "2607.01377",
+    "title": "Liquidity Premium and Investment Horizons",
+    "authors": "Irene Aldridge",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-07-01T18:41:20Z",
+    "publishedFormatted": "Jul 1, 2026",
+    "subtitle": "Why stocks with thin trading volumes pay higher returns later",
+    "summary": "When fewer investors are buying or selling a stock, prices move more dramatically with each trade—a cost called the liquidity premium that investors demand as compensation. Researchers found they could predict which stocks would outperform by measuring daily order flow and how much prices swing around it, using 2020–2025 stock data. The finding suggests the premium isn't just about risk, but about how trading scarcity temporarily depresses prices and then corrects itself.",
+    "whyItMatters": "Portfolio managers and algorithmic traders can use order-flow measurements to identify underpriced stocks before the liquidity bounce occurs, potentially improving returns. Understanding that liquidity costs drive part of the return premium—rather than fundamental risk—helps investors distinguish between genuinely risky stocks and merely illiquid ones, leading to better capital allocation decisions.",
+    "fetchedAt": "2026-07-05T20:09:27.136Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 126
+    },
+    "slug": "liquidity-premium-and-investment"
+  },
+  {
     "id": "2607.02513",
     "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
     "authors": "Matteo Boglioni, Thibault Rousset, Siva Reddy et al.",

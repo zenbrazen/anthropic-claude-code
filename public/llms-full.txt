@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 384 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 387 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-05
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Program-as-Weights: A Programming Paradigm for Fuzzy Functions
+Subtitle: Turning vague instructions into tiny, reusable AI programs that run locally
+URL: https://paperplaine.com/papers/program-as-weights-a
+Category: Computer Science · AI
+Authors: Wentao Zhang, Liliana Hotsko, Woojeong Kim et al.
+arXiv ID: 2607.02512
+arXiv URL: https://arxiv.org/abs/2607.02512
+Posted: 2026-07-05
+
+Summary: Researchers built a system that compiles natural-language descriptions into small neural programs that can run on ordinary computers without calling cloud APIs. A tiny 600-million-parameter interpreter running these programs matches the output quality of a 32-billion-parameter model, while using 50 times less memory and running 30 times faster on a MacBook.
+
+Why it matters: Tasks like filtering log files or ranking search results currently require paid API calls to large language models every single time. This approach lets you define the function once and then run it repeatedly on your own machine—cheaper, faster, and without sending data to the cloud. It's especially valuable for teams who need reproducible results or can't rely on internet access.
+
+---
+Title: Invariance Entropy in the Dust
+Subtitle: Why two ways of measuring control system complexity give different answers
+URL: https://paperplaine.com/papers/invariance-entropy-in-the
+Category: Mathematics
+Authors: Senhan Yao
+arXiv ID: 2607.02279
+arXiv URL: https://arxiv.org/abs/2607.02279
+Posted: 2026-07-05
+
+Summary: A fifteen-year-old mathematical puzzle about control systems has been solved: two seemingly equivalent ways of measuring how much information is needed to keep a system on track actually give different results. The researchers built a clever example that reveals the discrepancy, showing that one measure can be infinite while the other remains finite, and that small changes to the starting conditions can cause unexpected jumps in complexity.
+
+Why it matters: Control systems steer everything from robots to aircraft, and understanding their information complexity helps engineers design more efficient controllers. This result corrects a long-standing misconception about which mathematical tools actually measure the same thing, preventing researchers from accidentally using interchangeable definitions that aren't interchangeable. It also reveals a new source of complexity that arises not from the system spreading apart dynamically, but from the geometry of the constraints themselves.
+
+---
+Title: Liquidity Premium and Investment Horizons
+Subtitle: Why stocks with thin trading volumes pay higher returns later
+URL: https://paperplaine.com/papers/liquidity-premium-and-investment
+Category: Quantitative Finance
+Authors: Irene Aldridge
+arXiv ID: 2607.01377
+arXiv URL: https://arxiv.org/abs/2607.01377
+Posted: 2026-07-05
+
+Summary: When fewer investors are buying or selling a stock, prices move more dramatically with each trade—a cost called the liquidity premium that investors demand as compensation. Researchers found they could predict which stocks would outperform by measuring daily order flow and how much prices swing around it, using 2020–2025 stock data. The finding suggests the premium isn't just about risk, but about how trading scarcity temporarily depresses prices and then corrects itself.
+
+Why it matters: Portfolio managers and algorithmic traders can use order-flow measurements to identify underpriced stocks before the liquidity bounce occurs, potentially improving returns. Understanding that liquidity costs drive part of the return premium—rather than fundamental risk—helps investors distinguish between genuinely risky stocks and merely illiquid ones, leading to better capital allocation decisions.
 
 ---
 Title: LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning

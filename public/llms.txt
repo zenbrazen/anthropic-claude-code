@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 384 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 387 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 131 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 132 papers in archive.
+  - "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
   - "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning"
-  - "Towards Robustness against Typographic Attack with Training-free Concept Localization"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 33 papers in archive.
   - "Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring"
   - "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 31 papers in archive.
   - "Quantum mutual information as a robust probe of integrability in open quantum systems"
   - "On the emergence of quantum many-body chaos for tunably-broken integrability"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 31 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 32 papers in archive.
+  - "Invariance Entropy in the Dust"
   - "Refinement of Reliability Grid Codes in the Provision of Ancillary Services"
-  - "Eigenvalue optimization via a first-variation formula"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 31 papers in archive.
   - "Stationary covariance spectra of discrete-time non-normal random recurrent dynamics"
   - "Resolving superposition in AI for interpretability and cross-modal alignment in patient-neuronal images"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 33 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 34 papers in archive.
+  - "Liquidity Premium and Investment Horizons"
   - "Is Trend Still Your Friend?: A Microstructural Account of the Demise of Short-Term Trend-Following"
-  - "Same Firms, Different Verdicts: ESG Rating Choice and the Measurement of Greenwashing"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 33 papers in archive.
   - "Conformal Bayes for Two-Sided Censored Gaussian Regression under Label Shift"
   - "Convolutional Symmetric AutoEncoders: enhancing latent stability via differential geometry"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "LLM Agents as Static Level-k Players in Behavioural Games"
 
 ## 10 most recent papers
+
+### Program-as-Weights: A Programming Paradigm for Fuzzy Functions
+- URL: https://paperplaine.com/papers/program-as-weights-a
+- Category: Computer Science · AI
+- Authors: Wentao Zhang, Liliana Hotsko, Woojeong Kim et al.
+- arXiv: 2607.02512
+- Plain-English subtitle: Turning vague instructions into tiny, reusable AI programs that run locally
+- Summary: Researchers built a system that compiles natural-language descriptions into small neural programs that can run on ordinary computers without calling cloud APIs. A tiny 600-million-parameter interpreter running these programs matches the output quality of a 32-billion-parameter model, while using 50 times less memory and running 30 times faster on a MacBook.
+- Why it matters: Tasks like filtering log files or ranking search results currently require paid API calls to large language models every single time. This approach lets you define the function once and then run it repeatedly on your own machine—cheaper, faster, and without sending data to the cloud. It's especially valuable for teams who need reproducible results or can't rely on internet access.
+
+### Invariance Entropy in the Dust
+- URL: https://paperplaine.com/papers/invariance-entropy-in-the
+- Category: Mathematics
+- Authors: Senhan Yao
+- arXiv: 2607.02279
+- Plain-English subtitle: Why two ways of measuring control system complexity give different answers
+- Summary: A fifteen-year-old mathematical puzzle about control systems has been solved: two seemingly equivalent ways of measuring how much information is needed to keep a system on track actually give different results. The researchers built a clever example that reveals the discrepancy, showing that one measure can be infinite while the other remains finite, and that small changes to the starting conditions can cause unexpected jumps in complexity.
+- Why it matters: Control systems steer everything from robots to aircraft, and understanding their information complexity helps engineers design more efficient controllers. This result corrects a long-standing misconception about which mathematical tools actually measure the same thing, preventing researchers from accidentally using interchangeable definitions that aren't interchangeable. It also reveals a new source of complexity that arises not from the system spreading apart dynamically, but from the geometry of the constraints themselves.
+
+### Liquidity Premium and Investment Horizons
+- URL: https://paperplaine.com/papers/liquidity-premium-and-investment
+- Category: Quantitative Finance
+- Authors: Irene Aldridge
+- arXiv: 2607.01377
+- Plain-English subtitle: Why stocks with thin trading volumes pay higher returns later
+- Summary: When fewer investors are buying or selling a stock, prices move more dramatically with each trade—a cost called the liquidity premium that investors demand as compensation. Researchers found they could predict which stocks would outperform by measuring daily order flow and how much prices swing around it, using 2020–2025 stock data. The finding suggests the premium isn't just about risk, but about how trading scarcity temporarily depresses prices and then corrects itself.
+- Why it matters: Portfolio managers and algorithmic traders can use order-flow measurements to identify underpriced stocks before the liquidity bounce occurs, potentially improving returns. Understanding that liquidity costs drive part of the return premium—rather than fundamental risk—helps investors distinguish between genuinely risky stocks and merely illiquid ones, leading to better capital allocation decisions.
 
 ### LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning
 - URL: https://paperplaine.com/papers/lacuna-a-testbed-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why some AI learning methods handle messy, uneven data better than others
 - Summary: When machine learning systems train across many devices with mismatched data, some approaches fail badly while others hold up. This paper proves that a technique called Masked Image Modeling outperforms Contrastive Learning on fragmented data, and that better-connected networks learn more reliably. The researchers also introduced a refined training method that improves robustness in real deployments.
 - Why it matters: Companies and researchers increasingly train AI on decentralized data—from hospitals sharing patient images without centralizing them, to phones learning from local photos. This work provides concrete guidance on which methods won't collapse when data is unevenly distributed, plus a practical technique that improves reliability. That directly reduces the risk of failed deployments in privacy-sensitive or logistically complex settings.
-
-### Stationary covariance spectra of discrete-time non-normal random recurrent dynamics
-- URL: https://paperplaine.com/papers/stationary-covariance-spectra-of
-- Category: Quantitative Biology
-- Authors: Jacob A. Zavatone-Veth
-- arXiv: 2606.31944
-- Plain-English subtitle: Why brain-inspired networks behave differently than math predicts
-- Summary: Brain-inspired artificial networks don't follow the simple mathematical rules that scientists expected. A new mathematical approach reveals how noise ripples through these networks in unexpected ways, showing that the randomness in how neurons connect matters far more than previous theory suggested.
-- Why it matters: Neuroscientists use these artificial networks to understand how real brains process information by comparing network behavior to actual brain recordings. Without knowing how these networks truly distribute activity across their components, researchers can't tell whether their models actually capture real brain dynamics or just produce superficially similar results. This work provides the missing mathematical foundation to make those comparisons meaningful.
-
-### Refinement of Reliability Grid Codes in the Provision of Ancillary Services
-- URL: https://paperplaine.com/papers/refinement-of-reliability-grid
-- Category: Mathematics
-- Authors: Torine R. Herstad, Jalal Kazempour, Lesia Mitridati et al.
-- arXiv: 2607.02319
-- Plain-English subtitle: Finding the right safety bar for wind farms selling emergency power
-- Summary: Denmark's grid operator requires wind farms and other unpredictable power sources to guarantee they can deliver emergency reserves 90% of the time — but that threshold was never actually optimized. Researchers built a model to find the true cost-reliability sweet spot and discovered the standard could drop to around 85% without sacrificing grid safety, cutting costs by up to 14.5%.
-- Why it matters: As grids add more wind and solar, they rely increasingly on these uncertain sources for emergency backup power. Setting reliability rules too high wastes money; too low risks blackouts. This work provides a concrete method to find the actual optimal threshold instead of guessing — potentially saving millions in grid costs across Europe's renewable-heavy systems while maintaining the same safety margin.
-
-### Controllable Sim Agents with Behavior Latents
-- URL: https://paperplaine.com/papers/controllable-sim-agents-with
-- Category: Computer Science · AI
-- Authors: Juanwu Lu, Junyu Zhu, Ziran Wang
-- arXiv: 2607.02496
-- Plain-English subtitle: Making realistic traffic simulations that engineers can actually control and steer
-- Summary: Researchers created a system that generates realistic driving behavior in simulations while letting engineers adjust how aggressive, safe, or compliant individual cars are—without sacrificing realism. The method learns what a driver's typical behavior looks like, then allows fine-grained control along specific axes like speed or caution, something existing systems struggle to do.
-- Why it matters: Autonomous vehicle companies need to test their systems against thousands of edge cases—sudden lane changes, risky acceleration, near-miss scenarios—without putting real cars on roads. This system lets engineers reproduce specific dangerous situations reliably and tweak how aggressive or cautious simulated drivers behave, making it faster and cheaper to stress-test self-driving algorithms before they reach public roads.
 
 ## About
 
