@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2026 20:05:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 09:42:29 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning</title>
+      <link>https://paperplaine.com/papers/lacuna-a-testbed-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/lacuna-a-testbed-for</guid>
+      <pubDate>Thu, 02 Jul 2026 17:59:52 GMT</pubDate>
+      <author>Matteo Boglioni, Thibault Rousset, Siva Reddy et al.</author>
+      <category>AI</category>
+      <description>Checking whether AI models actually forget sensitive data or just hide it</description>
+      <content:encoded><![CDATA[<p><em>Checking whether AI models actually forget sensitive data or just hide it</em></p><p>Researchers created a test to see if methods that remove sensitive information from AI models actually erase it from the model's internal parameters or merely hide it. They found that current state-of-the-art methods perform well on surface-level tests but are imprecise when examined at the parameter level and remain vulnerable to attacks that try to resurrect the forgotten information.</p><p><strong>Why it matters:</strong> As AI companies face legal and ethical pressure to remove personal data from trained models, this work reveals a critical gap: methods that appear to work often fail when tested thoroughly. Getting unlearning right matters because incomplete removal of sensitive data like social security numbers or health records could expose people to privacy breaches, and regulators need reliable ways to verify that deletion actually happened.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Quantum mutual information as a robust probe of integrability in open quantum systems</title>
+      <link>https://paperplaine.com/papers/quantum-mutual-information-as</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/quantum-mutual-information-as</guid>
+      <pubDate>Thu, 02 Jul 2026 17:28:38 GMT</pubDate>
+      <author>Nirupam Sen, Keshav Das Agarwal, Aditi Sen De</author>
+      <category>Physics</category>
+      <description>A new tool for telling orderly from chaotic quantum systems that actually works with noise</description>
+      <content:encoded><![CDATA[<p><em>A new tool for telling orderly from chaotic quantum systems that actually works with noise</em></p><p>Physicists have found a new way to tell whether a quantum system behaves in an orderly, predictable way or descends into chaos — and it works even when the system is exposed to environmental noise. The approach, based on measuring quantum correlations between particles, outperforms the standard method in certain noisy conditions, especially when the noise has a memory effect that lets quantum information leak back into the system.</p><p><strong>Why it matters:</strong> Understanding whether quantum systems are orderly or chaotic determines how well we can control them and predict their behavior — critical for quantum computers and quantum sensors. Current methods for making this distinction break down when real-world noise enters the picture, but this new approach keeps working in some realistic noise scenarios, making it more practical for distinguishing system types in actual experiments and devices.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring</title>
+      <link>https://paperplaine.com/papers/behind-the-refusal-determining</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/behind-the-refusal-determining</guid>
+      <pubDate>Thu, 02 Jul 2026 12:59:28 GMT</pubDate>
+      <author>William Hackett, Peter Garraghan</author>
+      <category>Comp Sci</category>
+      <description>How to tell when an AI&#39;s safety filter blocks you versus the AI itself</description>
+      <content:encoded><![CDATA[<p><em>How to tell when an AI's safety filter blocks you versus the AI itself</em></p><p>Researchers developed the first method to detect whether an AI system has guardrails installed and what it's designed to block, using only external behavioral clues like response timing and structure. By monitoring how an AI system responds to harmful requests, they achieved 100% accuracy at detecting guardrails and 98% accuracy at distinguishing a guardrail block from an AI's own refusal—a distinction attackers need to make to choose the right hacking technique.</p><p><strong>Why it matters:</strong> As AI systems deploy into banks, hospitals, and military applications, security teams need to know what guardrails protect their systems and how well they work. This method lets defenders audit their own defenses without needing access to internal code. It also reveals how attackers would probe a live AI system, so security teams can spot reconnaissance attempts in real time.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Towards Robustness against Typographic Attack with Training-free Concept Localization</title>
       <link>https://paperplaine.com/papers/towards-robustness-against-typographic</link>

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 381 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 384 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 130 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 131 papers in archive.
+  - "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning"
   - "Towards Robustness against Typographic Attack with Training-free Concept Localization"
-  - "Understanding the Robustness of Distributed Self-Supervised Learning Frameworks Against Non-IID Data"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 32 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 33 papers in archive.
+  - "Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring"
   - "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas"
-  - "Hybrid Topological Data Analysis and LSTM Networks for Enhanced Network Intrusion Detection Using CIC-IDS2017 Dataset"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 30 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 31 papers in archive.
+  - "Quantum mutual information as a robust probe of integrability in open quantum systems"
   - "On the emergence of quantum many-body chaos for tunably-broken integrability"
-  - "Spatially Coupled MacKay-Neal/Hsu-Anastasopoulos CSS Codes Achieve the Quantum-Erasure Hashing Bound by Seeded BP Decoding"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 31 papers in archive.
   - "Refinement of Reliability Grid Codes in the Provision of Ancillary Services"
   - "Eigenvalue optimization via a first-variation formula"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "LLM Agents as Static Level-k Players in Behavioural Games"
 
 ## 10 most recent papers
+
+### LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning
+- URL: https://paperplaine.com/papers/lacuna-a-testbed-for
+- Category: Computer Science · AI
+- Authors: Matteo Boglioni, Thibault Rousset, Siva Reddy et al.
+- arXiv: 2607.02513
+- Plain-English subtitle: Checking whether AI models actually forget sensitive data or just hide it
+- Summary: Researchers created a test to see if methods that remove sensitive information from AI models actually erase it from the model's internal parameters or merely hide it. They found that current state-of-the-art methods perform well on surface-level tests but are imprecise when examined at the parameter level and remain vulnerable to attacks that try to resurrect the forgotten information.
+- Why it matters: As AI companies face legal and ethical pressure to remove personal data from trained models, this work reveals a critical gap: methods that appear to work often fail when tested thoroughly. Getting unlearning right matters because incomplete removal of sensitive data like social security numbers or health records could expose people to privacy breaches, and regulators need reliable ways to verify that deletion actually happened.
+
+### Quantum mutual information as a robust probe of integrability in open quantum systems
+- URL: https://paperplaine.com/papers/quantum-mutual-information-as
+- Category: Physics
+- Authors: Nirupam Sen, Keshav Das Agarwal, Aditi Sen De
+- arXiv: 2607.02462
+- Plain-English subtitle: A new tool for telling orderly from chaotic quantum systems that actually works with noise
+- Summary: Physicists have found a new way to tell whether a quantum system behaves in an orderly, predictable way or descends into chaos — and it works even when the system is exposed to environmental noise. The approach, based on measuring quantum correlations between particles, outperforms the standard method in certain noisy conditions, especially when the noise has a memory effect that lets quantum information leak back into the system.
+- Why it matters: Understanding whether quantum systems are orderly or chaotic determines how well we can control them and predict their behavior — critical for quantum computers and quantum sensors. Current methods for making this distinction break down when real-world noise enters the picture, but this new approach keeps working in some realistic noise scenarios, making it more practical for distinguishing system types in actual experiments and devices.
+
+### Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring
+- URL: https://paperplaine.com/papers/behind-the-refusal-determining
+- Category: Computer Science
+- Authors: William Hackett, Peter Garraghan
+- arXiv: 2607.02121
+- Plain-English subtitle: How to tell when an AI's safety filter blocks you versus the AI itself
+- Summary: Researchers developed the first method to detect whether an AI system has guardrails installed and what it's designed to block, using only external behavioral clues like response timing and structure. By monitoring how an AI system responds to harmful requests, they achieved 100% accuracy at detecting guardrails and 98% accuracy at distinguishing a guardrail block from an AI's own refusal—a distinction attackers need to make to choose the right hacking technique.
+- Why it matters: As AI systems deploy into banks, hospitals, and military applications, security teams need to know what guardrails protect their systems and how well they work. This method lets defenders audit their own defenses without needing access to internal code. It also reveals how attackers would probe a live AI system, so security teams can spot reconnaissance attempts in real time.
 
 ### Towards Robustness against Typographic Attack with Training-free Concept Localization
 - URL: https://paperplaine.com/papers/towards-robustness-against-typographic
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making realistic traffic simulations that engineers can actually control and steer
 - Summary: Researchers created a system that generates realistic driving behavior in simulations while letting engineers adjust how aggressive, safe, or compliant individual cars are—without sacrificing realism. The method learns what a driver's typical behavior looks like, then allows fine-grained control along specific axes like speed or caution, something existing systems struggle to do.
 - Why it matters: Autonomous vehicle companies need to test their systems against thousands of edge cases—sudden lane changes, risky acceleration, near-miss scenarios—without putting real cars on roads. This system lets engineers reproduce specific dangerous situations reliably and tweak how aggressive or cautious simulated drivers behave, making it faster and cheaper to stress-test self-driving algorithms before they reach public roads.
-
-### Is Trend Still Your Friend?: A Microstructural Account of the Demise of Short-Term Trend-Following
-- URL: https://paperplaine.com/papers/is-trend-still-your
-- Category: Quantitative Finance
-- Authors: Jutta G. Kurth, Zoltan Eisler, Adam Rej et al.
-- arXiv: 2607.01550
-- Plain-English subtitle: Why a famous investing strategy suddenly stopped working in 2009
-- Summary: Trend following—a strategy that has reliably made money for 200 years by betting on price movements—abruptly broke down around 2009 and has stayed broken for short-term trades. The culprit is not what people thought: it's not that too many traders crowded the strategy, or that markets became electronic. Instead, the real cause is a mechanical quirk about how trades execute on different types of contracts: the strategy still works on assets with wide trading spreads but has collapsed on assets with narrow spreads, and that collapse is tied to how high-frequency traders manage their market-making since the 2008 financial crisis.
-- Why it matters: Investors managing hundreds of billions in trend-following funds have had to abandon short-term strategies and shift capital elsewhere, reshaping global markets. Understanding why the break happened—and that it stems from a specific change in how market makers operate rather than fundamental market exhaustion—could help traders and regulators spot similar vulnerabilities in other widely-used strategies and prepare for future mechanical breakdowns in markets.
-
-### Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs
-- URL: https://paperplaine.com/papers/learning-to-move-before
-- Category: Computer Science · AI
-- Authors: Junhao Shi, Siyin Wang, Xiaopeng Yu et al.
-- arXiv: 2607.02466
-- Plain-English subtitle: Teaching robots to move first, then learn what tasks mean
-- Summary: Researchers separated robot learning into two parts: first, learning basic movement skills from cheap unlabeled footage, and second, connecting those skills to language instructions using small amounts of expert data. This approach matched the performance of models trained on over 1 million labeled examples while using far less expensive supervision, and performed 25 times better than competing methods when camera angles shifted unexpectedly.
-- Why it matters: Collecting labeled robot training data is expensive and slow — a major barrier to deploying AI robots at scale. By showing that robots can learn useful movement patterns from cheap, unlabeled video first, this work dramatically reduces the amount of expert supervision needed to teach them new tasks. Real robots trained this way also stayed functional when their cameras were moved or tilted, a robustness gain that could make deployed systems practical rather than brittle.
-
-### Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas
-- URL: https://paperplaine.com/papers/reasoning-llm-improves-speaker
-- Category: Computer Science
-- Authors: Yuxuan Li, Lingxi Xie, Xinyue Huo et al.
-- arXiv: 2607.02504
-- Plain-English subtitle: Using AI reasoning to figure out who's speaking in TV dramas
-- Summary: Researchers built a new system that uses reasoning AI to correctly identify which character is speaking in TV dramas, even when voices are hard to hear. The system works by combining audio, dialogue, and visual cues, and outperforms existing methods especially on short lines where voice recognition alone fails. They also released a dataset of 532,000 labeled dialogue lines from over 900 characters to help train future systems.
-- Why it matters: Accurate speaker identification is essential for any AI system that needs to understand TV shows—whether for automatic subtitling, content analysis, or helping viewers with hearing disabilities follow complex scenes with many characters. Current methods stumble on short lines and overlapping dialogue, but reasoning-based approaches could make video understanding AI more reliable for real-world media applications.
 
 ## About
 
