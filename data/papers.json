@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.02502",
+    "title": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+    "authors": "Yunhe Li, Hao Shi, Wenhao Liu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-02T17:58:29Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "Teaching AI to learn from itself without cheating on test day",
+    "summary": "A new training method called DemoPSD helps large language models learn from their own outputs without picking up bad habits that fall apart when the training wheels come off. The method works by letting the model selectively ignore its teacher's guidance when doing so would help it think better on its own, rather than blindly copying everything it's told. On scientific reasoning tasks, it outperformed existing methods while maintaining the model's ability to explore different reasoning paths.",
+    "whyItMatters": "Current AI training often makes models dependent on information or shortcuts only available during training, causing them to fail on new problems. DemoPSD prevents this by keeping models honest — they learn genuine reasoning skills rather than surface patterns. This matters because it makes AI systems more reliable in the real world, where they won't have access to the training setup that created them.",
+    "fetchedAt": "2026-07-06T20:49:02.537Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 222
+    },
+    "slug": "demopsd-disagreement-modulated-policy"
+  },
+  {
+    "id": "2607.02079",
+    "title": "HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety",
+    "authors": "Navaneeth Sangameswaran, Preetham S, Ashmiya Lenin",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-07-02T12:21:16Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "A smaller AI safety filter that catches harmful requests across 46 languages",
+    "summary": "Researchers built HaloGuard, a safety classifier that blocks harmful prompts to AI systems while being 30 times smaller than competing models and matching their performance. The system uses a structured set of 46 safety policies translated across languages, then trains on thousands of paired examples where only the harmful intent changes—not the topic or wording—to learn what's truly dangerous rather than just flagging unfamiliar phrasing.",
+    "whyItMatters": "AI companies need safety filters that work in many languages without slowing down their systems. HaloGuard runs efficiently on smaller hardware while catching 90% of harmful requests with only a 4% false-alarm rate, making it practical for real-world deployment. Because it's released openly, smaller companies and researchers outside tech giants can now afford to build safer multilingual AI systems.",
+    "fetchedAt": "2026-07-06T20:49:05.532Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 30,
+      "wordCount": 219
+    },
+    "slug": "haloguard-1-0-an"
+  },
+  {
+    "id": "2607.02103",
+    "title": "Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data",
+    "authors": "Yue Zhang, Nandini Amit Gadhia, Georgios Karagiannis et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-07-02T12:37:40Z",
+    "publishedFormatted": "Jul 2, 2026",
+    "subtitle": "Using biological networks to predict disease from genetic data with few samples",
+    "summary": "Researchers developed a new machine-learning method that predicts disease states from genetic data by incorporating known biological pathways directly into its decision-making process. The approach outperformed standard methods on microbiome datasets and naturally flags uncertain predictions, which is crucial when working with small sample sizes where confidence matters as much as accuracy.",
+    "whyItMatters": "Most genetic disease prediction fails in real clinical settings because training data is scarce and imbalanced—healthy people vastly outnumber sick ones. This method addresses both problems by leveraging what we already know about how genes interact, meaning hospitals could make more reliable predictions from smaller patient groups. The built-in confidence scores also help clinicians avoid false alarms and know when a result is unreliable.",
+    "fetchedAt": "2026-07-06T20:49:08.358Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 171
+    },
+    "slug": "structured-gaussian-processes-for"
+  },
+  {
     "id": "2607.02507",
     "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
     "authors": "Arman Ghaffarizadeh, Danyal Mohaddes, Aliakbar Izadkhah et al.",

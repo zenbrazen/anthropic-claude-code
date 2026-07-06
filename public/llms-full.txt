@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 390 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 393 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-06
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: DemoPSD: Disagreement-Modulated Policy Self-Distillation
+Subtitle: Teaching AI to learn from itself without cheating on test day
+URL: https://paperplaine.com/papers/demopsd-disagreement-modulated-policy
+Category: Computer Science · AI
+Authors: Yunhe Li, Hao Shi, Wenhao Liu et al.
+arXiv ID: 2607.02502
+arXiv URL: https://arxiv.org/abs/2607.02502
+Posted: 2026-07-06
+
+Summary: A new training method called DemoPSD helps large language models learn from their own outputs without picking up bad habits that fall apart when the training wheels come off. The method works by letting the model selectively ignore its teacher's guidance when doing so would help it think better on its own, rather than blindly copying everything it's told. On scientific reasoning tasks, it outperformed existing methods while maintaining the model's ability to explore different reasoning paths.
+
+Why it matters: Current AI training often makes models dependent on information or shortcuts only available during training, causing them to fail on new problems. DemoPSD prevents this by keeping models honest — they learn genuine reasoning skills rather than surface patterns. This matters because it makes AI systems more reliable in the real world, where they won't have access to the training setup that created them.
+
+---
+Title: HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety
+Subtitle: A smaller AI safety filter that catches harmful requests across 46 languages
+URL: https://paperplaine.com/papers/haloguard-1-0-an
+Category: Computer Science
+Authors: Navaneeth Sangameswaran, Preetham S, Ashmiya Lenin
+arXiv ID: 2607.02079
+arXiv URL: https://arxiv.org/abs/2607.02079
+Posted: 2026-07-06
+
+Summary: Researchers built HaloGuard, a safety classifier that blocks harmful prompts to AI systems while being 30 times smaller than competing models and matching their performance. The system uses a structured set of 46 safety policies translated across languages, then trains on thousands of paired examples where only the harmful intent changes—not the topic or wording—to learn what's truly dangerous rather than just flagging unfamiliar phrasing.
+
+Why it matters: AI companies need safety filters that work in many languages without slowing down their systems. HaloGuard runs efficiently on smaller hardware while catching 90% of harmful requests with only a 4% false-alarm rate, making it practical for real-world deployment. Because it's released openly, smaller companies and researchers outside tech giants can now afford to build safer multilingual AI systems.
+
+---
+Title: Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data
+Subtitle: Using biological networks to predict disease from genetic data with few samples
+URL: https://paperplaine.com/papers/structured-gaussian-processes-for
+Category: Quantitative Biology
+Authors: Yue Zhang, Nandini Amit Gadhia, Georgios Karagiannis et al.
+arXiv ID: 2607.02103
+arXiv URL: https://arxiv.org/abs/2607.02103
+Posted: 2026-07-06
+
+Summary: Researchers developed a new machine-learning method that predicts disease states from genetic data by incorporating known biological pathways directly into its decision-making process. The approach outperformed standard methods on microbiome datasets and naturally flags uncertain predictions, which is crucial when working with small sample sizes where confidence matters as much as accuracy.
+
+Why it matters: Most genetic disease prediction fails in real clinical settings because training data is scarce and imbalanced—healthy people vastly outnumber sick ones. This method addresses both problems by leveraging what we already know about how genes interact, meaning hospitals could make more reliable predictions from smaller patient groups. The built-in confidence scores also help clinicians avoid false alarms and know when a result is unreliable.
 
 ---
 Title: What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 390 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 393 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 133 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 134 papers in archive.
+  - "DemoPSD: Disagreement-Modulated Policy Self-Distillation"
   - "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates"
-  - "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 33 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 34 papers in archive.
+  - "HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety"
   - "Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring"
-  - "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 31 papers in archive.
   - "Quantum mutual information as a robust probe of integrability in open quantum systems"
   - "On the emergence of quantum many-body chaos for tunably-broken integrability"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 32 papers in archive.
   - "Invariance Entropy in the Dust"
   - "Refinement of Reliability Grid Codes in the Provision of Ancillary Services"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 31 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 32 papers in archive.
+  - "Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data"
   - "Stationary covariance spectra of discrete-time non-normal random recurrent dynamics"
-  - "Resolving superposition in AI for interpretability and cross-modal alignment in patient-neuronal images"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 34 papers in archive.
   - "Liquidity Premium and Investment Horizons"
   - "Is Trend Still Your Friend?: A Microstructural Account of the Demise of Short-Term Trend-Following"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement"
 
 ## 10 most recent papers
+
+### DemoPSD: Disagreement-Modulated Policy Self-Distillation
+- URL: https://paperplaine.com/papers/demopsd-disagreement-modulated-policy
+- Category: Computer Science · AI
+- Authors: Yunhe Li, Hao Shi, Wenhao Liu et al.
+- arXiv: 2607.02502
+- Plain-English subtitle: Teaching AI to learn from itself without cheating on test day
+- Summary: A new training method called DemoPSD helps large language models learn from their own outputs without picking up bad habits that fall apart when the training wheels come off. The method works by letting the model selectively ignore its teacher's guidance when doing so would help it think better on its own, rather than blindly copying everything it's told. On scientific reasoning tasks, it outperformed existing methods while maintaining the model's ability to explore different reasoning paths.
+- Why it matters: Current AI training often makes models dependent on information or shortcuts only available during training, causing them to fail on new problems. DemoPSD prevents this by keeping models honest — they learn genuine reasoning skills rather than surface patterns. This matters because it makes AI systems more reliable in the real world, where they won't have access to the training setup that created them.
+
+### HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety
+- URL: https://paperplaine.com/papers/haloguard-1-0-an
+- Category: Computer Science
+- Authors: Navaneeth Sangameswaran, Preetham S, Ashmiya Lenin
+- arXiv: 2607.02079
+- Plain-English subtitle: A smaller AI safety filter that catches harmful requests across 46 languages
+- Summary: Researchers built HaloGuard, a safety classifier that blocks harmful prompts to AI systems while being 30 times smaller than competing models and matching their performance. The system uses a structured set of 46 safety policies translated across languages, then trains on thousands of paired examples where only the harmful intent changes—not the topic or wording—to learn what's truly dangerous rather than just flagging unfamiliar phrasing.
+- Why it matters: AI companies need safety filters that work in many languages without slowing down their systems. HaloGuard runs efficiently on smaller hardware while catching 90% of harmful requests with only a 4% false-alarm rate, making it practical for real-world deployment. Because it's released openly, smaller companies and researchers outside tech giants can now afford to build safer multilingual AI systems.
+
+### Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data
+- URL: https://paperplaine.com/papers/structured-gaussian-processes-for
+- Category: Quantitative Biology
+- Authors: Yue Zhang, Nandini Amit Gadhia, Georgios Karagiannis et al.
+- arXiv: 2607.02103
+- Plain-English subtitle: Using biological networks to predict disease from genetic data with few samples
+- Summary: Researchers developed a new machine-learning method that predicts disease states from genetic data by incorporating known biological pathways directly into its decision-making process. The approach outperformed standard methods on microbiome datasets and naturally flags uncertain predictions, which is crucial when working with small sample sizes where confidence matters as much as accuracy.
+- Why it matters: Most genetic disease prediction fails in real clinical settings because training data is scarce and imbalanced—healthy people vastly outnumber sick ones. This method addresses both problems by leveraging what we already know about how genes interact, meaning hospitals could make more reliable predictions from smaller patient groups. The built-in confidence scores also help clinicians avoid false alarms and know when a result is unreliable.
 
 ### What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates
 - URL: https://paperplaine.com/papers/what-llm-agents-say
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Checking whether AI models actually forget sensitive data or just hide it
 - Summary: Researchers created a test to see if methods that remove sensitive information from AI models actually erase it from the model's internal parameters or merely hide it. They found that current state-of-the-art methods perform well on surface-level tests but are imprecise when examined at the parameter level and remain vulnerable to attacks that try to resurrect the forgotten information.
 - Why it matters: As AI companies face legal and ethical pressure to remove personal data from trained models, this work reveals a critical gap: methods that appear to work often fail when tested thoroughly. Getting unlearning right matters because incomplete removal of sensitive data like social security numbers or health records could expose people to privacy breaches, and regulators need reliable ways to verify that deletion actually happened.
-
-### Quantum mutual information as a robust probe of integrability in open quantum systems
-- URL: https://paperplaine.com/papers/quantum-mutual-information-as
-- Category: Physics
-- Authors: Nirupam Sen, Keshav Das Agarwal, Aditi Sen De
-- arXiv: 2607.02462
-- Plain-English subtitle: A new tool for telling orderly from chaotic quantum systems that actually works with noise
-- Summary: Physicists have found a new way to tell whether a quantum system behaves in an orderly, predictable way or descends into chaos — and it works even when the system is exposed to environmental noise. The approach, based on measuring quantum correlations between particles, outperforms the standard method in certain noisy conditions, especially when the noise has a memory effect that lets quantum information leak back into the system.
-- Why it matters: Understanding whether quantum systems are orderly or chaotic determines how well we can control them and predict their behavior — critical for quantum computers and quantum sensors. Current methods for making this distinction break down when real-world noise enters the picture, but this new approach keeps working in some realistic noise scenarios, making it more practical for distinguishing system types in actual experiments and devices.
-
-### Behind the Refusal: Determining Guardrail Activation via Behavioral Monitoring
-- URL: https://paperplaine.com/papers/behind-the-refusal-determining
-- Category: Computer Science
-- Authors: William Hackett, Peter Garraghan
-- arXiv: 2607.02121
-- Plain-English subtitle: How to tell when an AI's safety filter blocks you versus the AI itself
-- Summary: Researchers developed the first method to detect whether an AI system has guardrails installed and what it's designed to block, using only external behavioral clues like response timing and structure. By monitoring how an AI system responds to harmful requests, they achieved 100% accuracy at detecting guardrails and 98% accuracy at distinguishing a guardrail block from an AI's own refusal—a distinction attackers need to make to choose the right hacking technique.
-- Why it matters: As AI systems deploy into banks, hospitals, and military applications, security teams need to know what guardrails protect their systems and how well they work. This method lets defenders audit their own defenses without needing access to internal code. It also reveals how attackers would probe a live AI system, so security teams can spot reconnaissance attempts in real time.
-
-### Towards Robustness against Typographic Attack with Training-free Concept Localization
-- URL: https://paperplaine.com/papers/towards-robustness-against-typographic
-- Category: Computer Science · AI
-- Authors: Bohan Liu, Wenqian Ye, Guangzhi Xiong et al.
-- arXiv: 2607.02494
-- Plain-English subtitle: Why AI vision systems get tricked by random text in images—and how to fix it
-- Summary: AI vision models trained on paired images and text can be fooled by irrelevant words appearing within photos, causing them to misidentify what they're actually seeing. Researchers found which parts of these models are responsible for this weakness and showed that simple, no-retraining fixes applied directly to those components can substantially restore accuracy, even when text clutter is deliberately added to images.
-- Why it matters: Autonomous vehicles and other safety-critical systems rely on these vision models to understand their surroundings. Stickers, graffiti, or any text in a scene could currently cause dangerous misidentifications—a stop sign misread as something else, for example. This method fixes the vulnerability without requiring expensive retraining, making it practical to deploy immediately in existing systems.
 
 ## About
 
