@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jul 2026 10:25:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 20:46:35 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning</title>
+      <link>https://paperplaine.com/papers/tabpack-efficient-hyperparameter-ensembles</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/tabpack-efficient-hyperparameter-ensembles</guid>
+      <pubDate>Mon, 06 Jul 2026 17:55:55 GMT</pubDate>
+      <author>Yury Gorishniy, Akim Kotelnikov, Ivan Rubachev et al.</author>
+      <category>AI</category>
+      <description>A smarter way to train multiple AI models on spreadsheet data at once</description>
+      <content:encoded><![CDATA[<p><em>A smarter way to train multiple AI models on spreadsheet data at once</em></p><p>TabPack trains many slightly different AI models in parallel on tabular data and automatically picks the best ones, all without requiring tedious manual tuning beforehand. The method performs as well as carefully hand-tuned competitors while using far fewer computing resources—in one test, it completed on a MacBook faster than a baseline method running on a high-end GPU.</p><p><strong>Why it matters:</strong> Tabular data (spreadsheets, databases, business records) powers most real-world AI applications, yet training models on it has required time-consuming trial-and-error to find the right settings. TabPack eliminates that bottleneck, letting analysts get competitive results with minimal setup work. This matters for companies and researchers working with limited computing budgets, since it delivers performance without requiring expensive hardware or weeks of tuning.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>TREK: Distill to Explore, Reinforce to Refine</title>
+      <link>https://paperplaine.com/papers/trek-distill-to-explore</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/trek-distill-to-explore</guid>
+      <pubDate>Mon, 06 Jul 2026 17:21:16 GMT</pubDate>
+      <author>Yuanda Xu, Zhengze Zhou, Kayhan Behdin et al.</author>
+      <category>Statistics</category>
+      <description>Teaching AI to solve hard problems by learning from smarter teachers first</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to solve hard problems by learning from smarter teachers first</em></p><p>A new method called TREK helps AI models solve difficult math and reasoning problems by first learning verified solutions from a stronger teacher, then refining its own approach. On challenging math competitions, the method improved Qwen3-8B's score on AIME 2025 from 36.9 to 40.3, and lifted performance on agent-based tasks like virtual world navigation from 75.8 to 82.8 percent success.</p><p><strong>Why it matters:</strong> AI systems currently struggle when faced with hard problems outside their normal experience. TREK fixes this by letting models learn from external teachers—whether a more powerful AI, a human-created solution, or the model itself with extra context—then polish those solutions through standard training. This means better reasoning AI without requiring expensive human feedback or labeled training data, directly improving performance on math competitions and complex real-world tasks.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Short-Horizon Sparse Model Predictive Control for Precipitation Reduction Using Numerical Weather Prediction</title>
+      <link>https://paperplaine.com/papers/short-horizon-sparse-model</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/short-horizon-sparse-model</guid>
+      <pubDate>Mon, 06 Jul 2026 07:32:20 GMT</pubDate>
+      <author>Yuta Tanikawa, Yuga Tomita, Toshiyuki Ohtsuka</author>
+      <category>Math</category>
+      <description>Using weather forecasts and real-time adjustments to reduce rainfall</description>
+      <content:encoded><![CDATA[<p><em>Using weather forecasts and real-time adjustments to reduce rainfall</em></p><p>Researchers developed a control system that uses live weather prediction data to compute small atmospheric tweaks designed to reduce precipitation. By treating the weather forecast model as a constantly updating guide and solving for the most efficient adjustments at each time step, the system achieved significant rainfall reduction even when simpler methods failed — and did so with much less computer time than full-horizon planning approaches.</p><p><strong>Why it matters:</strong> Cloud seeding and weather modification remain experimental, but this work shows a computationally practical way to steer real weather models toward specific precipitation outcomes. If scaled to operational forecasts, such methods could eventually help mitigate flooding or drought in water-stressed regions, though implementation would require careful environmental and policy frameworks before deployment.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Selective Disclosure Watermarking for Large Language Models</title>
       <link>https://paperplaine.com/papers/selective-disclosure-watermarking-for</link>

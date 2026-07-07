@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.05380",
+    "title": "TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning",
+    "authors": "Yury Gorishniy, Akim Kotelnikov, Ivan Rubachev et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-06T17:55:55Z",
+    "publishedFormatted": "Jul 6, 2026",
+    "subtitle": "A smarter way to train multiple AI models on spreadsheet data at once",
+    "summary": "TabPack trains many slightly different AI models in parallel on tabular data and automatically picks the best ones, all without requiring tedious manual tuning beforehand. The method performs as well as carefully hand-tuned competitors while using far fewer computing resources—in one test, it completed on a MacBook faster than a baseline method running on a high-end GPU.",
+    "whyItMatters": "Tabular data (spreadsheets, databases, business records) powers most real-world AI applications, yet training models on it has required time-consuming trial-and-error to find the right settings. TabPack eliminates that bottleneck, letting analysts get competitive results with minimal setup work. This matters for companies and researchers working with limited computing budgets, since it delivers performance without requiring expensive hardware or weeks of tuning.",
+    "fetchedAt": "2026-07-07T20:46:28.514Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 166
+    },
+    "slug": "tabpack-efficient-hyperparameter-ensembles"
+  },
+  {
+    "id": "2607.05339",
+    "title": "TREK: Distill to Explore, Reinforce to Refine",
+    "authors": "Yuanda Xu, Zhengze Zhou, Kayhan Behdin et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-06T17:21:16Z",
+    "publishedFormatted": "Jul 6, 2026",
+    "subtitle": "Teaching AI to solve hard problems by learning from smarter teachers first",
+    "summary": "A new method called TREK helps AI models solve difficult math and reasoning problems by first learning verified solutions from a stronger teacher, then refining its own approach. On challenging math competitions, the method improved Qwen3-8B's score on AIME 2025 from 36.9 to 40.3, and lifted performance on agent-based tasks like virtual world navigation from 75.8 to 82.8 percent success.",
+    "whyItMatters": "AI systems currently struggle when faced with hard problems outside their normal experience. TREK fixes this by letting models learn from external teachers—whether a more powerful AI, a human-created solution, or the model itself with extra context—then polish those solutions through standard training. This means better reasoning AI without requiring expensive human feedback or labeled training data, directly improving performance on math competitions and complex real-world tasks.",
+    "fetchedAt": "2026-07-07T20:46:31.936Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 255
+    },
+    "slug": "trek-distill-to-explore"
+  },
+  {
+    "id": "2607.04746",
+    "title": "Short-Horizon Sparse Model Predictive Control for Precipitation Reduction Using Numerical Weather Prediction",
+    "authors": "Yuta Tanikawa, Yuga Tomita, Toshiyuki Ohtsuka",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-07-06T07:32:20Z",
+    "publishedFormatted": "Jul 6, 2026",
+    "subtitle": "Using weather forecasts and real-time adjustments to reduce rainfall",
+    "summary": "Researchers developed a control system that uses live weather prediction data to compute small atmospheric tweaks designed to reduce precipitation. By treating the weather forecast model as a constantly updating guide and solving for the most efficient adjustments at each time step, the system achieved significant rainfall reduction even when simpler methods failed — and did so with much less computer time than full-horizon planning approaches.",
+    "whyItMatters": "Cloud seeding and weather modification remain experimental, but this work shows a computationally practical way to steer real weather models toward specific precipitation outcomes. If scaled to operational forecasts, such methods could eventually help mitigate flooding or drought in water-stressed regions, though implementation would require careful environmental and policy frameworks before deployment.",
+    "fetchedAt": "2026-07-07T20:46:35.330Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 266
+    },
+    "slug": "short-horizon-sparse-model"
+  },
+  {
     "id": "2607.05353",
     "title": "Selective Disclosure Watermarking for Large Language Models",
     "authors": "Xuyang Chen, Xiang Li, Yangxinyu Xie et al.",
