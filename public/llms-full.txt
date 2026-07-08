@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 400 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 403 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Bridging Physical Reasoning and Task Generalization via Visual Action Outcome Reasoning Alignment
+Subtitle: Teaching AI to understand physics by checking if its reasoning matches what actually happens
+URL: https://paperplaine.com/papers/bridging-physical-reasoning-and
+Category: Computer Science · AI
+Authors: Han-Jun Ko, Jr-Jen Chen, Haobo Yuan et al.
+arXiv ID: 2607.06522
+arXiv URL: https://arxiv.org/abs/2607.06522
+Posted: 2026-07-08
+
+Summary: Vision-language models often make up false explanations about how physical interactions will unfold, and their reasoning doesn't match their actual behavior. Researchers developed VAORA, a reward system that forces AI to ground its reasoning in what it actually sees and does, significantly improving the model's ability to handle new tasks and unfamiliar environments.
+
+Why it matters: AI systems that reason accurately about physics could improve robot manipulation, autonomous navigation, and task planning in unpredictable real-world settings. Current systems fail because they hallucinate explanations that sound plausible but contradict reality—VAORA fixes this by penalizing reasoning that doesn't align with visual outcomes, making AI more reliable when deployed in novel situations.
+
+---
+Title: Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers
+Subtitle: Teaching AI to match security rules to technical safeguards automatically
+URL: https://paperplaine.com/papers/automated-compliance-mapping-in
+Category: Computer Science
+Authors: John Bianchi, Luca Petrillo, Fabio Martinelli et al.
+arXiv ID: 2607.06364
+arXiv URL: https://arxiv.org/abs/2607.06364
+Posted: 2026-07-08
+
+Summary: Matching security regulations to actual technical controls in cloud systems has always meant manual work by compliance experts. This paper trains AI models on 14,000 examples of security requirements paired with technical metrics, allowing them to automate the matching process—with the best models improving accuracy by up to 23 percentage points over standard AI approaches. The technique also works across different security standards, so a mapping learned from one regulation can help with others.
+
+Why it matters: Cloud companies spend thousands of hours manually documenting how their technical systems satisfy security regulations. Automating this work could cut compliance overhead significantly, reduce human error in safety-critical mappings, and let teams redeploy compliance staff to higher-level risk assessment. For regulators, automated accuracy checking could catch gaps that slip through human review.
+
+---
+Title: The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis
+Subtitle: Why the Moon's south pole needs ground beacons to get reliable GPS
+URL: https://paperplaine.com/papers/the-cost-of-lunar
+Category: Engineering
+Authors: Chakshu Baweja
+arXiv ID: 2607.06212
+arXiv URL: https://arxiv.org/abs/2607.06212
+Posted: 2026-07-08
+
+Summary: Satellites in lunar orbit bunch together overhead at the south pole, creating poor positioning geometry—even a 12-satellite constellation barely matches Earth GPS performance. Adding just three ground beacons on high terrain around the pole fixes the problem almost completely, dropping positioning error tenfold and costing far less than launching extra satellites.
+
+Why it matters: NASA and ESA are planning navigation systems for lunar south-pole exploration, where reliable positioning is critical for rovers and human missions. This finding shows they can achieve the necessary accuracy with far fewer orbital satellites by deploying cheap surface beacons instead—cutting launch costs and complexity while actually improving service.
 
 ---
 Title: RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation
