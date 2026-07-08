@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems — Paper Plaine</title>
-<meta name="description" content="When multiple AI agents work together on a task, their individual instructions (prompts) need to work well not just in isolation, but as a coordinated…">
-<link rel="canonical" href="https://paperplaine.com/papers/maspo-joint-prompt-optimization-for-llm-based-multi-agent-systems">
+<title>RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation — Paper Plaine</title>
+<meta name="description" content="When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use…">
+<link rel="canonical" href="https://paperplaine.com/papers/rsf-gllm-bridging-the">
 
 
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Paper Plaine">
-<meta property="og:title" content="MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems — Paper Plaine">
-<meta property="og:description" content="When multiple AI agents work together on a task, their individual instructions (prompts) need to work well not just in isolation, but as a coordinated…">
-<meta property="og:url" content="https://paperplaine.com/papers/maspo-joint-prompt-optimization-for-llm-based-multi-agent-systems">
+<meta property="og:title" content="RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation — Paper Plaine">
+<meta property="og:description" content="When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use…">
+<meta property="og:url" content="https://paperplaine.com/papers/rsf-gllm-bridging-the">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems — Paper Plaine">
-<meta name="twitter:description" content="When multiple AI agents work together on a task, their individual instructions (prompts) need to work well not just in isolation, but as a coordinated…">
+<meta name="twitter:title" content="RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation — Paper Plaine">
+<meta name="twitter:description" content="When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use…">
 
 <!-- RSS autodiscovery -->
 <link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/maspo-joint-prompt-optimization-for-llm-based-multi-agent-systems#article","headline":"MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems","description":"When multiple AI agents work together on a task, their individual instructions (prompts) need to work well not just in isolation, but as a coordinated system. A new framework called MASPO automatically improves these prompts by testing how well each agent's output helps the next agent succeed, rather than optimizing each agent separately. Tests across six different tasks show this approach outperforms existing methods by an average of 2.9 percentage points.","author":"Zhexuan Wang, Xuebo Liu, Li Wang et al.","url":"https://arxiv.org/abs/2605.06623","datePublished":"2026-05-07T17:35:26Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"ScholarlyArticle","@id":"https://paperplaine.com/papers/rsf-gllm-bridging-the#article","headline":"RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation","description":"When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use different words than the original question. RSF-GLLM solves this by first tracing a path through the graph using meaning-based relevance scores rather than word matching, then using that concrete path to guide a language model toward the right answer—achieving competitive accuracy while running significantly faster than similar systems.","author":"Sambaran Bandyopadhyay, Ananth Muppidi","url":"https://arxiv.org/abs/2607.06527","datePublished":"2026-07-07T17:32:36Z","isPartOf":{"@id":"https://paperplaine.com/#website"}}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -408,28 +408,28 @@
   <article class="entry" style="border-bottom: 6px double var(--rule);">
     <div class="entry-meta">
       <span class="category">Computer Science · AI</span>
-      <span>May 8, 2026</span>
+      <span>Jul 8, 2026</span>
     </div>
-    <h2 class="entry-title">MASPO: Joint Prompt Optimization for LLM-based Multi-Agent Systems</h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Automatically tuning instructions for AI teams that work together</p>
+    <h2 class="entry-title">RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation</h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Finding hidden connections in knowledge bases that words alone can&#39;t reveal</p>
     <p class="byline">
-      Zhexuan Wang, Xuebo Liu, Li Wang et al.
-      <br><span class="arxiv-id">arXiv:2605.06623</span>
+      Sambaran Bandyopadhyay, Ananth Muppidi
+      <br><span class="arxiv-id">arXiv:2607.06527</span>
     </p>
     <div class="entry-body">
       <div class="col-summary">
         <div class="section-label">Summary</div>
-        <p class="summary-text">When multiple AI agents work together on a task, their individual instructions (prompts) need to work well not just in isolation, but as a coordinated system. A new framework called MASPO automatically improves these prompts by testing how well each agent&#39;s output helps the next agent succeed, rather than optimizing each agent separately. Tests across six different tasks show this approach outperforms existing methods by an average of 2.9 percentage points.</p>
+        <p class="summary-text">When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use different words than the original question. RSF-GLLM solves this by first tracing a path through the graph using meaning-based relevance scores rather than word matching, then using that concrete path to guide a language model toward the right answer—achieving competitive accuracy while running significantly faster than similar systems.</p>
       </div>
       <div class="col-divider"></div>
       <div class="col-matters">
         <div class="section-label">Why it matters</div>
-        <p class="matters-text">As companies deploy multi-agent AI systems for complex work, getting these systems to actually cooperate effectively has been a major bottleneck—manually writing and tuning prompts for each agent is slow and often produces suboptimal teamwork. MASPO makes this process automatic and more effective, which could accelerate real-world deployment of AI systems handling tasks like research, customer service, or software development that require coordinated reasoning across multiple specialized agents.</p>
+        <p class="matters-text">Question-answering systems power search engines, customer support chatbots, and research tools. This approach makes them both more reliable (by grounding answers in actual facts rather than probabilistic guessing) and faster to run, reducing the computational cost of AI-powered question systems without sacrificing accuracy.</p>
       </div>
     </div>
     <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2605.06623" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · May 7, 2026</span>
+      <a href="https://arxiv.org/abs/2607.06527" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Jul 7, 2026</span>
     </div>
   </article>
   </main>

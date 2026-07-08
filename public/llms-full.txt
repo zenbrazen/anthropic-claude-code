@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 399 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-07
+This file contains the complete plain-English text of all 400 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,20 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation
+Subtitle: Finding hidden connections in knowledge bases that words alone can't reveal
+URL: https://paperplaine.com/papers/rsf-gllm-bridging-the
+Category: Computer Science · AI
+Authors: Sambaran Bandyopadhyay, Ananth Muppidi
+arXiv ID: 2607.06527
+arXiv URL: https://arxiv.org/abs/2607.06527
+Posted: 2026-07-08
+
+Summary: When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use different words than the original question. RSF-GLLM solves this by first tracing a path through the graph using meaning-based relevance scores rather than word matching, then using that concrete path to guide a language model toward the right answer—achieving competitive accuracy while running significantly faster than similar systems.
+
+Why it matters: Question-answering systems power search engines, customer support chatbots, and research tools. This approach makes them both more reliable (by grounding answers in actual facts rather than probabilistic guessing) and faster to run, reducing the computational cost of AI-powered question systems without sacrificing accuracy.
 
 ---
 Title: TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning
