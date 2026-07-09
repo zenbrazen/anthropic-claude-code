@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.07646",
+    "title": "RL Post-Training Builds Compositional Reasoning Strategies",
+    "authors": "Azwar Abdulsalam, Nishil Patel, Andrew Saxe",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-08T17:04:42Z",
+    "publishedFormatted": "Jul 8, 2026",
+    "subtitle": "How AI learns to chain simple skills into complex problem-solving strategies",
+    "summary": "Reinforcement learning doesn't just amplify basic skills that already exist in a pretrained AI model—it actively constructs new composite strategies by chaining primitive skills together. Researchers showed this by training a transformer on simple symbol-rewriting tasks, then using RL to solve harder problems that required combining those primitives. The model developed two types of compositions: sequential ones that collapsed ordered chains of rewrites, and parallel ones that combined independent rewrites in a single step, building a stable toolkit it reused across problems.",
+    "whyItMatters": "This reveals how AI systems can move beyond surface-level pattern matching to develop genuine problem-solving machinery. Understanding that composition emerges through selective exploration—not just more sampling—could guide better training methods for AI systems that need to tackle novel, multi-step reasoning tasks. The finding that pretraining must organize primitive skills into usable procedures for this to work suggests concrete design principles for building more capable AI systems.",
+    "fetchedAt": "2026-07-09T20:42:43.009Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 8,
+      "wordCount": 232
+    },
+    "slug": "rl-post-training-builds"
+  },
+  {
+    "id": "2607.07538",
+    "title": "Avoiding unsafe sets when training with Langevin Dynamics",
+    "authors": "Adam M. Oberman",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-08T15:36:45Z",
+    "publishedFormatted": "Jul 8, 2026",
+    "subtitle": "How to guarantee neural network training avoids dangerous failure zones",
+    "summary": "When training a machine learning model with noisy gradient descent, the model can temporarily stray into dangerous regions before settling near its optimal solution. This paper proves that even in high-dimensional problems, the probability of landing in a designated failure zone becomes exponentially small — but only after an initial \"burn-in\" period whose length depends on the problem dimension, not just the steepness of the loss landscape.",
+    "whyItMatters": "Training procedures that wander through unsafe regions — even briefly — can cause real failures in deployed systems, from autonomous vehicles misclassifying obstacles to medical AI producing dangerous predictions. This work provides concrete mathematical guarantees about when and how badly a model can stray during training, letting practitioners either trust the process or redesign it to avoid specific high-risk zones altogether.",
+    "fetchedAt": "2026-07-09T20:42:46.613Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 253
+    },
+    "slug": "avoiding-unsafe-sets-when"
+  },
+  {
+    "id": "2607.07343",
+    "title": "Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings",
+    "authors": "Aswin Chandrasekaran",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-07-08T12:34:41Z",
+    "publishedFormatted": "Jul 8, 2026",
+    "subtitle": "Deciding which freight jobs to accept when trucks can't wait",
+    "summary": "Trucking companies must decide in seconds whether to accept shipping jobs, weighing whether they can physically reach pickups, what future opportunities they'll miss, and how much repositioning will cost. Researchers built FreightBidBench, the first public testing ground for this problem, and showed that a smart decision-making system can match the performance of perfect hindsight 98% of the time while cutting decision time nearly in half.",
+    "whyItMatters": "Trucking is a $800+ billion U.S. industry where millisecond-by-millisecond acceptance decisions directly affect profits and service reliability. A public benchmark lets companies and researchers test new bidding strategies without exposing proprietary fleet data, accelerating improvements that could reduce empty miles, lower shipping costs, and improve on-time delivery across the supply chain.",
+    "fetchedAt": "2026-07-09T20:42:49.866Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 228
+    },
+    "slug": "latency-aware-bid-acceptance"
+  },
+  {
     "id": "2607.07693",
     "title": "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF",
     "authors": "Eric Zhu, Abhinav Shrivastava, Soumik Mukhopadhyay",

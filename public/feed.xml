@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2026 10:34:28 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 20:42:50 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RL Post-Training Builds Compositional Reasoning Strategies</title>
+      <link>https://paperplaine.com/papers/rl-post-training-builds</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/rl-post-training-builds</guid>
+      <pubDate>Wed, 08 Jul 2026 17:04:42 GMT</pubDate>
+      <author>Azwar Abdulsalam, Nishil Patel, Andrew Saxe</author>
+      <category>AI</category>
+      <description>How AI learns to chain simple skills into complex problem-solving strategies</description>
+      <content:encoded><![CDATA[<p><em>How AI learns to chain simple skills into complex problem-solving strategies</em></p><p>Reinforcement learning doesn't just amplify basic skills that already exist in a pretrained AI model—it actively constructs new composite strategies by chaining primitive skills together. Researchers showed this by training a transformer on simple symbol-rewriting tasks, then using RL to solve harder problems that required combining those primitives. The model developed two types of compositions: sequential ones that collapsed ordered chains of rewrites, and parallel ones that combined independent rewrites in a single step, building a stable toolkit it reused across problems.</p><p><strong>Why it matters:</strong> This reveals how AI systems can move beyond surface-level pattern matching to develop genuine problem-solving machinery. Understanding that composition emerges through selective exploration—not just more sampling—could guide better training methods for AI systems that need to tackle novel, multi-step reasoning tasks. The finding that pretraining must organize primitive skills into usable procedures for this to work suggests concrete design principles for building more capable AI systems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Avoiding unsafe sets when training with Langevin Dynamics</title>
+      <link>https://paperplaine.com/papers/avoiding-unsafe-sets-when</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/avoiding-unsafe-sets-when</guid>
+      <pubDate>Wed, 08 Jul 2026 15:36:45 GMT</pubDate>
+      <author>Adam M. Oberman</author>
+      <category>Statistics</category>
+      <description>How to guarantee neural network training avoids dangerous failure zones</description>
+      <content:encoded><![CDATA[<p><em>How to guarantee neural network training avoids dangerous failure zones</em></p><p>When training a machine learning model with noisy gradient descent, the model can temporarily stray into dangerous regions before settling near its optimal solution. This paper proves that even in high-dimensional problems, the probability of landing in a designated failure zone becomes exponentially small — but only after an initial "burn-in" period whose length depends on the problem dimension, not just the steepness of the loss landscape.</p><p><strong>Why it matters:</strong> Training procedures that wander through unsafe regions — even briefly — can cause real failures in deployed systems, from autonomous vehicles misclassifying obstacles to medical AI producing dangerous predictions. This work provides concrete mathematical guarantees about when and how badly a model can stray during training, letting practitioners either trust the process or redesign it to avoid specific high-risk zones altogether.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings</title>
+      <link>https://paperplaine.com/papers/latency-aware-bid-acceptance</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/latency-aware-bid-acceptance</guid>
+      <pubDate>Wed, 08 Jul 2026 12:34:41 GMT</pubDate>
+      <author>Aswin Chandrasekaran</author>
+      <category>Math</category>
+      <description>Deciding which freight jobs to accept when trucks can&#39;t wait</description>
+      <content:encoded><![CDATA[<p><em>Deciding which freight jobs to accept when trucks can't wait</em></p><p>Trucking companies must decide in seconds whether to accept shipping jobs, weighing whether they can physically reach pickups, what future opportunities they'll miss, and how much repositioning will cost. Researchers built FreightBidBench, the first public testing ground for this problem, and showed that a smart decision-making system can match the performance of perfect hindsight 98% of the time while cutting decision time nearly in half.</p><p><strong>Why it matters:</strong> Trucking is a $800+ billion U.S. industry where millisecond-by-millisecond acceptance decisions directly affect profits and service reliability. A public benchmark lets companies and researchers test new bidding strategies without exposing proprietary fleet data, accelerating improvements that could reduce empty miles, lower shipping costs, and improve on-time delivery across the supply chain.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF</title>
       <link>https://paperplaine.com/papers/selective-timestep-weighting-and</link>

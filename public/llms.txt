@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 406 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 409 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,27 +30,27 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 139 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 140 papers in archive.
+  - "RL Post-Training Builds Compositional Reasoning Strategies"
   - "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF"
-  - "Bridging Physical Reasoning and Task Generalization via Visual Action Outcome Reasoning Alignment"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 35 papers in archive.
   - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
   - "HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 33 papers in archive.
   - "Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)"
   - "Charge-Sector Construction of the Type-IIB Axion--Dilaton Wormhole Partition Function"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 33 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 34 papers in archive.
+  - "Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings"
   - "Short-Horizon Sparse Model Predictive Control for Precipitation Reduction Using Numerical Weather Prediction"
-  - "Invariance Entropy in the Dust"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 33 papers in archive.
   - "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling"
   - "Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 35 papers in archive.
   - "Pump.fun Graduation Regime Windows: Survival Analysis of 832,941 Token Launches and the Social-Presence Effect"
   - "Liquidity Premium and Investment Horizons"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 34 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 35 papers in archive.
+  - "Avoiding unsafe sets when training with Langevin Dynamics"
   - "TREK: Distill to Explore, Reinforce to Refine"
-  - "Conformal Bayes for Two-Sided Censored Gaussian Regression under Label Shift"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 34 papers in archive.
   - "The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis"
   - "Beyond Beamforming: Phase-and-Gain Channel Shaping via Rotatable Antenna Arrays"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement"
 
 ## 10 most recent papers
+
+### RL Post-Training Builds Compositional Reasoning Strategies
+- URL: https://paperplaine.com/papers/rl-post-training-builds
+- Category: Computer Science · AI
+- Authors: Azwar Abdulsalam, Nishil Patel, Andrew Saxe
+- arXiv: 2607.07646
+- Plain-English subtitle: How AI learns to chain simple skills into complex problem-solving strategies
+- Summary: Reinforcement learning doesn't just amplify basic skills that already exist in a pretrained AI model—it actively constructs new composite strategies by chaining primitive skills together. Researchers showed this by training a transformer on simple symbol-rewriting tasks, then using RL to solve harder problems that required combining those primitives. The model developed two types of compositions: sequential ones that collapsed ordered chains of rewrites, and parallel ones that combined independent rewrites in a single step, building a stable toolkit it reused across problems.
+- Why it matters: This reveals how AI systems can move beyond surface-level pattern matching to develop genuine problem-solving machinery. Understanding that composition emerges through selective exploration—not just more sampling—could guide better training methods for AI systems that need to tackle novel, multi-step reasoning tasks. The finding that pretraining must organize primitive skills into usable procedures for this to work suggests concrete design principles for building more capable AI systems.
+
+### Avoiding unsafe sets when training with Langevin Dynamics
+- URL: https://paperplaine.com/papers/avoiding-unsafe-sets-when
+- Category: Statistics
+- Authors: Adam M. Oberman
+- arXiv: 2607.07538
+- Plain-English subtitle: How to guarantee neural network training avoids dangerous failure zones
+- Summary: When training a machine learning model with noisy gradient descent, the model can temporarily stray into dangerous regions before settling near its optimal solution. This paper proves that even in high-dimensional problems, the probability of landing in a designated failure zone becomes exponentially small — but only after an initial "burn-in" period whose length depends on the problem dimension, not just the steepness of the loss landscape.
+- Why it matters: Training procedures that wander through unsafe regions — even briefly — can cause real failures in deployed systems, from autonomous vehicles misclassifying obstacles to medical AI producing dangerous predictions. This work provides concrete mathematical guarantees about when and how badly a model can stray during training, letting practitioners either trust the process or redesign it to avoid specific high-risk zones altogether.
+
+### Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings
+- URL: https://paperplaine.com/papers/latency-aware-bid-acceptance
+- Category: Mathematics
+- Authors: Aswin Chandrasekaran
+- arXiv: 2607.07343
+- Plain-English subtitle: Deciding which freight jobs to accept when trucks can't wait
+- Summary: Trucking companies must decide in seconds whether to accept shipping jobs, weighing whether they can physically reach pickups, what future opportunities they'll miss, and how much repositioning will cost. Researchers built FreightBidBench, the first public testing ground for this problem, and showed that a smart decision-making system can match the performance of perfect hindsight 98% of the time while cutting decision time nearly in half.
+- Why it matters: Trucking is a $800+ billion U.S. industry where millisecond-by-millisecond acceptance decisions directly affect profits and service reliability. A public benchmark lets companies and researchers test new bidding strategies without exposing proprietary fleet data, accelerating improvements that could reduce empty miles, lower shipping costs, and improve on-time delivery across the supply chain.
 
 ### Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF
 - URL: https://paperplaine.com/papers/selective-timestep-weighting-and
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Finding hidden connections in knowledge bases that words alone can't reveal
 - Summary: When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use different words than the original question. RSF-GLLM solves this by first tracing a path through the graph using meaning-based relevance scores rather than word matching, then using that concrete path to guide a language model toward the right answer—achieving competitive accuracy while running significantly faster than similar systems.
 - Why it matters: Question-answering systems power search engines, customer support chatbots, and research tools. This approach makes them both more reliable (by grounding answers in actual facts rather than probabilistic guessing) and faster to run, reducing the computational cost of AI-powered question systems without sacrificing accuracy.
-
-### TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning
-- URL: https://paperplaine.com/papers/tabpack-efficient-hyperparameter-ensembles
-- Category: Computer Science · AI
-- Authors: Yury Gorishniy, Akim Kotelnikov, Ivan Rubachev et al.
-- arXiv: 2607.05380
-- Plain-English subtitle: A smarter way to train multiple AI models on spreadsheet data at once
-- Summary: TabPack trains many slightly different AI models in parallel on tabular data and automatically picks the best ones, all without requiring tedious manual tuning beforehand. The method performs as well as carefully hand-tuned competitors while using far fewer computing resources—in one test, it completed on a MacBook faster than a baseline method running on a high-end GPU.
-- Why it matters: Tabular data (spreadsheets, databases, business records) powers most real-world AI applications, yet training models on it has required time-consuming trial-and-error to find the right settings. TabPack eliminates that bottleneck, letting analysts get competitive results with minimal setup work. This matters for companies and researchers working with limited computing budgets, since it delivers performance without requiring expensive hardware or weeks of tuning.
-
-### TREK: Distill to Explore, Reinforce to Refine
-- URL: https://paperplaine.com/papers/trek-distill-to-explore
-- Category: Statistics
-- Authors: Yuanda Xu, Zhengze Zhou, Kayhan Behdin et al.
-- arXiv: 2607.05339
-- Plain-English subtitle: Teaching AI to solve hard problems by learning from smarter teachers first
-- Summary: A new method called TREK helps AI models solve difficult math and reasoning problems by first learning verified solutions from a stronger teacher, then refining its own approach. On challenging math competitions, the method improved Qwen3-8B's score on AIME 2025 from 36.9 to 40.3, and lifted performance on agent-based tasks like virtual world navigation from 75.8 to 82.8 percent success.
-- Why it matters: AI systems currently struggle when faced with hard problems outside their normal experience. TREK fixes this by letting models learn from external teachers—whether a more powerful AI, a human-created solution, or the model itself with extra context—then polish those solutions through standard training. This means better reasoning AI without requiring expensive human feedback or labeled training data, directly improving performance on math competitions and complex real-world tasks.
-
-### Short-Horizon Sparse Model Predictive Control for Precipitation Reduction Using Numerical Weather Prediction
-- URL: https://paperplaine.com/papers/short-horizon-sparse-model
-- Category: Mathematics
-- Authors: Yuta Tanikawa, Yuga Tomita, Toshiyuki Ohtsuka
-- arXiv: 2607.04746
-- Plain-English subtitle: Using weather forecasts and real-time adjustments to reduce rainfall
-- Summary: Researchers developed a control system that uses live weather prediction data to compute small atmospheric tweaks designed to reduce precipitation. By treating the weather forecast model as a constantly updating guide and solving for the most efficient adjustments at each time step, the system achieved significant rainfall reduction even when simpler methods failed — and did so with much less computer time than full-horizon planning approaches.
-- Why it matters: Cloud seeding and weather modification remain experimental, but this work shows a computationally practical way to steer real weather models toward specific precipitation outcomes. If scaled to operational forecasts, such methods could eventually help mitigate flooding or drought in water-stressed regions, though implementation would require careful environmental and policy frameworks before deployment.
 
 ## About
 

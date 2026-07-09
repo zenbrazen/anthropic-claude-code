@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 406 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 409 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-09
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: RL Post-Training Builds Compositional Reasoning Strategies
+Subtitle: How AI learns to chain simple skills into complex problem-solving strategies
+URL: https://paperplaine.com/papers/rl-post-training-builds
+Category: Computer Science · AI
+Authors: Azwar Abdulsalam, Nishil Patel, Andrew Saxe
+arXiv ID: 2607.07646
+arXiv URL: https://arxiv.org/abs/2607.07646
+Posted: 2026-07-09
+
+Summary: Reinforcement learning doesn't just amplify basic skills that already exist in a pretrained AI model—it actively constructs new composite strategies by chaining primitive skills together. Researchers showed this by training a transformer on simple symbol-rewriting tasks, then using RL to solve harder problems that required combining those primitives. The model developed two types of compositions: sequential ones that collapsed ordered chains of rewrites, and parallel ones that combined independent rewrites in a single step, building a stable toolkit it reused across problems.
+
+Why it matters: This reveals how AI systems can move beyond surface-level pattern matching to develop genuine problem-solving machinery. Understanding that composition emerges through selective exploration—not just more sampling—could guide better training methods for AI systems that need to tackle novel, multi-step reasoning tasks. The finding that pretraining must organize primitive skills into usable procedures for this to work suggests concrete design principles for building more capable AI systems.
+
+---
+Title: Avoiding unsafe sets when training with Langevin Dynamics
+Subtitle: How to guarantee neural network training avoids dangerous failure zones
+URL: https://paperplaine.com/papers/avoiding-unsafe-sets-when
+Category: Statistics
+Authors: Adam M. Oberman
+arXiv ID: 2607.07538
+arXiv URL: https://arxiv.org/abs/2607.07538
+Posted: 2026-07-09
+
+Summary: When training a machine learning model with noisy gradient descent, the model can temporarily stray into dangerous regions before settling near its optimal solution. This paper proves that even in high-dimensional problems, the probability of landing in a designated failure zone becomes exponentially small — but only after an initial "burn-in" period whose length depends on the problem dimension, not just the steepness of the loss landscape.
+
+Why it matters: Training procedures that wander through unsafe regions — even briefly — can cause real failures in deployed systems, from autonomous vehicles misclassifying obstacles to medical AI producing dangerous predictions. This work provides concrete mathematical guarantees about when and how badly a model can stray during training, letting practitioners either trust the process or redesign it to avoid specific high-risk zones altogether.
+
+---
+Title: Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings
+Subtitle: Deciding which freight jobs to accept when trucks can't wait
+URL: https://paperplaine.com/papers/latency-aware-bid-acceptance
+Category: Mathematics
+Authors: Aswin Chandrasekaran
+arXiv ID: 2607.07343
+arXiv URL: https://arxiv.org/abs/2607.07343
+Posted: 2026-07-09
+
+Summary: Trucking companies must decide in seconds whether to accept shipping jobs, weighing whether they can physically reach pickups, what future opportunities they'll miss, and how much repositioning will cost. Researchers built FreightBidBench, the first public testing ground for this problem, and showed that a smart decision-making system can match the performance of perfect hindsight 98% of the time while cutting decision time nearly in half.
+
+Why it matters: Trucking is a $800+ billion U.S. industry where millisecond-by-millisecond acceptance decisions directly affect profits and service reliability. A public benchmark lets companies and researchers test new bidding strategies without exposing proprietary fleet data, accelerating improvements that could reduce empty miles, lower shipping costs, and improve on-time delivery across the supply chain.
 
 ---
 Title: Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF
