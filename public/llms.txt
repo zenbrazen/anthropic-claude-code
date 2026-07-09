@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 403 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 406 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 138 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 139 papers in archive.
+  - "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF"
   - "Bridging Physical Reasoning and Task Generalization via Visual Action Outcome Reasoning Alignment"
-  - "RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 35 papers in archive.
   - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
   - "HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 32 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 33 papers in archive.
+  - "Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)"
   - "Charge-Sector Construction of the Type-IIB Axion--Dilaton Wormhole Partition Function"
-  - "Quantum mutual information as a robust probe of integrability in open quantum systems"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 33 papers in archive.
   - "Short-Horizon Sparse Model Predictive Control for Precipitation Reduction Using Numerical Weather Prediction"
   - "Invariance Entropy in the Dust"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 32 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 33 papers in archive.
+  - "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling"
   - "Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data"
-  - "Stationary covariance spectra of discrete-time non-normal random recurrent dynamics"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 35 papers in archive.
   - "Pump.fun Graduation Regime Windows: Survival Analysis of 832,941 Token Launches and the Social-Presence Effect"
   - "Liquidity Premium and Investment Horizons"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement"
 
 ## 10 most recent papers
+
+### Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF
+- URL: https://paperplaine.com/papers/selective-timestep-weighting-and
+- Category: Computer Science · AI
+- Authors: Eric Zhu, Abhinav Shrivastava, Soumik Mukhopadhyay
+- arXiv: 2607.07693
+- Plain-English subtitle: Making AI feedback six times more efficient for image generation models
+- Summary: Training image generation models to match human preferences currently wastes feedback by treating all learning moments equally. This paper shows that some timesteps in the generation process carry much more useful information than others, and some past examples are more worth revisiting — together, these insights reduce the amount of human feedback needed by up to sixfold while maintaining quality.
+- Why it matters: Human feedback is expensive and slow to collect. By slashing feedback requirements by up to 6×, this approach makes it practical to fine-tune image generators in real-world settings where human judgments are the limiting resource. This could accelerate the development of personalized AI models that better match what individual users or organizations actually want.
+
+### Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)
+- URL: https://paperplaine.com/papers/multi-channel-collective-dissipation
+- Category: Physics
+- Authors: M. Lutsukh, M. Bazarsana, T. Begzjav et al.
+- arXiv: 2607.07701
+- Plain-English subtitle: How groups of atoms emit light in unexpected synchronized bursts
+- Summary: When multiple identical four-level atoms are arranged in certain geometric configurations, they emit light in coordinated bursts that grow much faster than expected—following a mathematical power law where the peak brightness scales roughly with the square of the number of atoms rather than linearly. Researchers developed a unified mathematical framework using group theory to predict and explain these synchronized emission patterns across seven different atomic geometries.
+- Why it matters: This work reveals how collective behavior emerges from quantum systems, which is crucial for designing quantum technologies like lasers and atomic clocks that rely on synchronized emission. Understanding these geometric patterns and power-law relationships could help engineers build more efficient quantum devices by choosing configurations that maximize or control cooperative effects among atoms.
+
+### A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling
+- URL: https://paperplaine.com/papers/a-hierarchical-memory-architecture
+- Category: Quantitative Biology
+- Authors: Shivendra G. Tewari, Holly Kimko
+- arXiv: 2607.07666
+- Plain-English subtitle: How AI systems remember their work across weeks of complex research tasks
+- Summary: Researchers built a system where multiple AI agents work together on long drug-development projects while staying within memory limits by forgetting completed tasks. The system consistently picked the right mathematical models for predicting how drugs move through the body, even when switching between cheaper and more powerful AI models, and recovered drug parameters more accurately than single-agent approaches.
+- Why it matters: Most AI tools hit a wall when asked to work on research that stretches over weeks or months—they can't remember what they've already done and decisions get worse as context piles up. This system stays reliable across long projects by strategically forgetting completed work, meaning it could accelerate drug development and other multi-month computational research without human hand-holding or rebuilding the entire conversation each week.
 
 ### Bridging Physical Reasoning and Task Generalization via Visual Action Outcome Reasoning Alignment
 - URL: https://paperplaine.com/papers/bridging-physical-reasoning-and
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Using weather forecasts and real-time adjustments to reduce rainfall
 - Summary: Researchers developed a control system that uses live weather prediction data to compute small atmospheric tweaks designed to reduce precipitation. By treating the weather forecast model as a constantly updating guide and solving for the most efficient adjustments at each time step, the system achieved significant rainfall reduction even when simpler methods failed — and did so with much less computer time than full-horizon planning approaches.
 - Why it matters: Cloud seeding and weather modification remain experimental, but this work shows a computationally practical way to steer real weather models toward specific precipitation outcomes. If scaled to operational forecasts, such methods could eventually help mitigate flooding or drought in water-stressed regions, though implementation would require careful environmental and policy frameworks before deployment.
-
-### Selective Disclosure Watermarking for Large Language Models
-- URL: https://paperplaine.com/papers/selective-disclosure-watermarking-for
-- Category: Computer Science · AI
-- Authors: Xuyang Chen, Xiang Li, Yangxinyu Xie et al.
-- arXiv: 2607.05353
-- Plain-English subtitle: Hiding secret messages in AI text that only some people can read
-- Summary: Researchers created a new watermarking system for AI-generated text that lets you hide information inside it—then reveal only parts of that hidden message to different people. Unlike older methods that force you to expose everything or nothing, this approach uses a hierarchical system that gives each reader access to only what they're authorized to see, without degrading the quality of the generated text.
-- Why it matters: As AI text generation becomes more widespread, creators need ways to prove ownership, detect misuse, and embed metadata—but without leaking sensitive information to everyone who checks the watermark. This system lets a company verify its own AI's output to one auditor while showing a copyright notice to another, without exposing proprietary details. It's especially relevant for AI systems handling sensitive domains like healthcare or finance, where different stakeholders need different proof.
-
-### Pump.fun Graduation Regime Windows: Survival Analysis of 832,941 Token Launches and the Social-Presence Effect
-- URL: https://paperplaine.com/papers/pump-fun-graduation-regime
-- Category: Quantitative Finance
-- Authors: Arati Uday Kamat
-- arXiv: 2607.02823
-- Plain-English subtitle: Why most meme coins fail, and which ones actually survive to the next stage
-- Summary: Only about 1 in 500 tokens launched on Solana's pump.fun platform graduate to a larger exchange—a rate that has plummeted threefold since late 2025. Tokens with Telegram communities succeed 9 times more often than those without social media, and those with all three major social channels succeed 17 times more often, while creator self-investment roughly quadruples the survival rate.
-- Why it matters: Meme coin platforms have become a $2+ billion gambling arena where retail traders lose money at scale. Understanding which tokens survive exposes how social coordination and creator skin-in-the-game drive outcomes—and how the vast majority of launches are designed to fail. The findings show that token survival depends far less on luck than on measurable signals of legitimacy and community management, giving researchers and traders a framework to spot which projects might actually reach an exchange versus which are destined to collapse.
-
-### Charge-Sector Construction of the Type-IIB Axion--Dilaton Wormhole Partition Function
-- URL: https://paperplaine.com/papers/charge-sector-construction-of
-- Category: Physics
-- Authors: Soo-Jong Rey
-- arXiv: 2607.05385
-- Plain-English subtitle: How physicists calculate the quantum properties of wormholes
-- Summary: A physicist has figured out how to calculate the partition function—a fundamental quantity describing quantum behavior—for wormholes in string theory by working from charge-sector data. The method reconstructs what happens when quantum fields traverse these hypothetical shortcuts through spacetime, revealing mathematical constraints and symmetries these wormhole properties must obey.
-- Why it matters: Wormholes remain largely theoretical, but understanding their quantum properties is essential for testing whether string theory can consistently describe both gravity and quantum mechanics together. This work provides concrete mathematical tools for analyzing what quantum wormholes would actually look like if they existed, making it possible to check whether the theory's predictions are self-consistent or whether it breaks down in unexpected ways.
 
 ## About
 

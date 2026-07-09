@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 403 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-08
+This file contains the complete plain-English text of all 406 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-09
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF
+Subtitle: Making AI feedback six times more efficient for image generation models
+URL: https://paperplaine.com/papers/selective-timestep-weighting-and
+Category: Computer Science · AI
+Authors: Eric Zhu, Abhinav Shrivastava, Soumik Mukhopadhyay
+arXiv ID: 2607.07693
+arXiv URL: https://arxiv.org/abs/2607.07693
+Posted: 2026-07-09
+
+Summary: Training image generation models to match human preferences currently wastes feedback by treating all learning moments equally. This paper shows that some timesteps in the generation process carry much more useful information than others, and some past examples are more worth revisiting — together, these insights reduce the amount of human feedback needed by up to sixfold while maintaining quality.
+
+Why it matters: Human feedback is expensive and slow to collect. By slashing feedback requirements by up to 6×, this approach makes it practical to fine-tune image generators in real-world settings where human judgments are the limiting resource. This could accelerate the development of personalized AI models that better match what individual users or organizations actually want.
+
+---
+Title: Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)
+Subtitle: How groups of atoms emit light in unexpected synchronized bursts
+URL: https://paperplaine.com/papers/multi-channel-collective-dissipation
+Category: Physics
+Authors: M. Lutsukh, M. Bazarsana, T. Begzjav et al.
+arXiv ID: 2607.07701
+arXiv URL: https://arxiv.org/abs/2607.07701
+Posted: 2026-07-09
+
+Summary: When multiple identical four-level atoms are arranged in certain geometric configurations, they emit light in coordinated bursts that grow much faster than expected—following a mathematical power law where the peak brightness scales roughly with the square of the number of atoms rather than linearly. Researchers developed a unified mathematical framework using group theory to predict and explain these synchronized emission patterns across seven different atomic geometries.
+
+Why it matters: This work reveals how collective behavior emerges from quantum systems, which is crucial for designing quantum technologies like lasers and atomic clocks that rely on synchronized emission. Understanding these geometric patterns and power-law relationships could help engineers build more efficient quantum devices by choosing configurations that maximize or control cooperative effects among atoms.
+
+---
+Title: A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling
+Subtitle: How AI systems remember their work across weeks of complex research tasks
+URL: https://paperplaine.com/papers/a-hierarchical-memory-architecture
+Category: Quantitative Biology
+Authors: Shivendra G. Tewari, Holly Kimko
+arXiv ID: 2607.07666
+arXiv URL: https://arxiv.org/abs/2607.07666
+Posted: 2026-07-09
+
+Summary: Researchers built a system where multiple AI agents work together on long drug-development projects while staying within memory limits by forgetting completed tasks. The system consistently picked the right mathematical models for predicting how drugs move through the body, even when switching between cheaper and more powerful AI models, and recovered drug parameters more accurately than single-agent approaches.
+
+Why it matters: Most AI tools hit a wall when asked to work on research that stretches over weeks or months—they can't remember what they've already done and decisions get worse as context piles up. This system stays reliable across long projects by strategically forgetting completed work, meaning it could accelerate drug development and other multi-month computational research without human hand-holding or rebuilding the entire conversation each week.
 
 ---
 Title: Bridging Physical Reasoning and Task Generalization via Visual Action Outcome Reasoning Alignment
