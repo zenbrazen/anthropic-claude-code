@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 412 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 415 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 141 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 142 papers in archive.
+  - "Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction"
   - "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding"
-  - "RL Post-Training Builds Compositional Reasoning Strategies"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 35 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 36 papers in archive.
+  - "From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure"
   - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
-  - "HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 33 papers in archive.
   - "Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)"
   - "Charge-Sector Construction of the Type-IIB Axion--Dilaton Wormhole Partition Function"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 35 papers in archive.
   - "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems"
   - "The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 30 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 31 papers in archive.
+  - "A Comparative Review of Methods to Create a Composite Index for Sustainable and Inclusive Wellbeing"
   - "How optimistic inflow forecasts distort dispatch, prices, and contracts in hydro-dominated power systems: evidence from Brazil"
-  - "Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement"
 
 ## 10 most recent papers
+
+### Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction
+- URL: https://paperplaine.com/papers/pose-to-biomechanics-bridging
+- Category: Computer Science · AI
+- Authors: Ayda Eghbalian, Kevin Desai
+- arXiv: 2607.08725
+- Plain-English subtitle: Turning pose videos into measurements of body stress and muscle work
+- Summary: Researchers created BioModule, a lightweight add-on that converts standard 3D pose estimates from videos into biomechanical measurements—like joint forces, muscle activation, and movement efficiency—that matter for injury prevention and rehabilitation. The system works with any existing pose estimator without modifications, and the team built the first large-scale dataset pairing video recordings with precise biomechanical labels to train and test it.
+- Why it matters: Physical therapists, sports coaches, and ergonomists currently need expensive motion-capture labs with markers placed on patients' bodies to measure how joints load during movement. This work enables those same biomechanical insights from ordinary video, making detailed movement analysis accessible in clinics, gyms, and workplaces where cameras already exist. It could expand screening for injury risk and personalized rehabilitation to millions more people who can't afford specialized labs.
+
+### From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure
+- URL: https://paperplaine.com/papers/from-legacy-documentation-to
+- Category: Computer Science
+- Authors: Lea Roxanne Muth, Marian Margraf
+- arXiv: 2607.08288
+- Plain-English subtitle: Converting operator notes into official compliance documents without scanning critical systems
+- Summary: Researchers built an AI system that converts written descriptions of water treatment plants and other critical infrastructure into official compliance documents, without needing to scan the live systems. The system correctly identified 90% of known vulnerabilities and avoided fabricating attack paths by anchoring its reasoning to verified threat databases rather than relying on the AI's own knowledge.
+- Why it matters: Critical infrastructure like power plants and water utilities can't be actively scanned for security holes without risking operational failure. This pipeline lets operators generate auditable compliance reports from existing documentation, making their actual security posture visible to regulators. When errors do occur, they happen in the initial translation step rather than cascading through the entire analysis—meaning a human can quickly spot and fix a mistaken asset description before it wastes resources chasing irrelevant vulnerabilities.
+
+### A Comparative Review of Methods to Create a Composite Index for Sustainable and Inclusive Wellbeing
+- URL: https://paperplaine.com/papers/a-comparative-review-of
+- Category: Economics
+- Authors: Ricardo da Silva Vieira, Mario Biggeri, Peter Benczur et al.
+- arXiv: 2607.08153
+- Plain-English subtitle: How to measure a country's true wellbeing beyond just GDP
+- Summary: Measuring a nation's success requires looking far beyond GDP—but combining all the pieces of sustainable wellbeing into a single number is fraught with hidden choices. This review compares 13 methods for building such an index and finds that no single approach handles all the key ingredients fairly: none can simultaneously penalize inequality, respect environmental limits, account for trade-offs between countries, and measure things the way they actually interconnect.
+- Why it matters: Countries currently use GDP to guide trillion-dollar decisions on spending, regulation, and priority-setting—even though it ignores health, inequality, and environmental damage. A better wellbeing index could redirect policy toward what actually improves lives. The paper shows that how you build this index matters enormously: different methods rank countries in completely different orders, meaning the choice of measurement method itself becomes a political decision that affects which nations look successful and which look like they're failing.
 
 ### AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding
 - URL: https://paperplaine.com/papers/autopilot-vqa-benchmarking-vision
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI feedback six times more efficient for image generation models
 - Summary: Training image generation models to match human preferences currently wastes feedback by treating all learning moments equally. This paper shows that some timesteps in the generation process carry much more useful information than others, and some past examples are more worth revisiting — together, these insights reduce the amount of human feedback needed by up to sixfold while maintaining quality.
 - Why it matters: Human feedback is expensive and slow to collect. By slashing feedback requirements by up to 6×, this approach makes it practical to fine-tune image generators in real-world settings where human judgments are the limiting resource. This could accelerate the development of personalized AI models that better match what individual users or organizations actually want.
-
-### Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)
-- URL: https://paperplaine.com/papers/multi-channel-collective-dissipation
-- Category: Physics
-- Authors: M. Lutsukh, M. Bazarsana, T. Begzjav et al.
-- arXiv: 2607.07701
-- Plain-English subtitle: How groups of atoms emit light in unexpected synchronized bursts
-- Summary: When multiple identical four-level atoms are arranged in certain geometric configurations, they emit light in coordinated bursts that grow much faster than expected—following a mathematical power law where the peak brightness scales roughly with the square of the number of atoms rather than linearly. Researchers developed a unified mathematical framework using group theory to predict and explain these synchronized emission patterns across seven different atomic geometries.
-- Why it matters: This work reveals how collective behavior emerges from quantum systems, which is crucial for designing quantum technologies like lasers and atomic clocks that rely on synchronized emission. Understanding these geometric patterns and power-law relationships could help engineers build more efficient quantum devices by choosing configurations that maximize or control cooperative effects among atoms.
-
-### A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling
-- URL: https://paperplaine.com/papers/a-hierarchical-memory-architecture
-- Category: Quantitative Biology
-- Authors: Shivendra G. Tewari, Holly Kimko
-- arXiv: 2607.07666
-- Plain-English subtitle: How AI systems remember their work across weeks of complex research tasks
-- Summary: Researchers built a system where multiple AI agents work together on long drug-development projects while staying within memory limits by forgetting completed tasks. The system consistently picked the right mathematical models for predicting how drugs move through the body, even when switching between cheaper and more powerful AI models, and recovered drug parameters more accurately than single-agent approaches.
-- Why it matters: Most AI tools hit a wall when asked to work on research that stretches over weeks or months—they can't remember what they've already done and decisions get worse as context piles up. This system stays reliable across long projects by strategically forgetting completed work, meaning it could accelerate drug development and other multi-month computational research without human hand-holding or rebuilding the entire conversation each week.
-
-### Bridging Physical Reasoning and Task Generalization via Visual Action Outcome Reasoning Alignment
-- URL: https://paperplaine.com/papers/bridging-physical-reasoning-and
-- Category: Computer Science · AI
-- Authors: Han-Jun Ko, Jr-Jen Chen, Haobo Yuan et al.
-- arXiv: 2607.06522
-- Plain-English subtitle: Teaching AI to understand physics by checking if its reasoning matches what actually happens
-- Summary: Vision-language models often make up false explanations about how physical interactions will unfold, and their reasoning doesn't match their actual behavior. Researchers developed VAORA, a reward system that forces AI to ground its reasoning in what it actually sees and does, significantly improving the model's ability to handle new tasks and unfamiliar environments.
-- Why it matters: AI systems that reason accurately about physics could improve robot manipulation, autonomous navigation, and task planning in unpredictable real-world settings. Current systems fail because they hallucinate explanations that sound plausible but contradict reality—VAORA fixes this by penalizing reasoning that doesn't align with visual outcomes, making AI more reliable when deployed in novel situations.
 
 ## About
 

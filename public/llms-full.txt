@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 412 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 415 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-10
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction
+Subtitle: Turning pose videos into measurements of body stress and muscle work
+URL: https://paperplaine.com/papers/pose-to-biomechanics-bridging
+Category: Computer Science · AI
+Authors: Ayda Eghbalian, Kevin Desai
+arXiv ID: 2607.08725
+arXiv URL: https://arxiv.org/abs/2607.08725
+Posted: 2026-07-10
+
+Summary: Researchers created BioModule, a lightweight add-on that converts standard 3D pose estimates from videos into biomechanical measurements—like joint forces, muscle activation, and movement efficiency—that matter for injury prevention and rehabilitation. The system works with any existing pose estimator without modifications, and the team built the first large-scale dataset pairing video recordings with precise biomechanical labels to train and test it.
+
+Why it matters: Physical therapists, sports coaches, and ergonomists currently need expensive motion-capture labs with markers placed on patients' bodies to measure how joints load during movement. This work enables those same biomechanical insights from ordinary video, making detailed movement analysis accessible in clinics, gyms, and workplaces where cameras already exist. It could expand screening for injury risk and personalized rehabilitation to millions more people who can't afford specialized labs.
+
+---
+Title: From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure
+Subtitle: Converting operator notes into official compliance documents without scanning critical systems
+URL: https://paperplaine.com/papers/from-legacy-documentation-to
+Category: Computer Science
+Authors: Lea Roxanne Muth, Marian Margraf
+arXiv ID: 2607.08288
+arXiv URL: https://arxiv.org/abs/2607.08288
+Posted: 2026-07-10
+
+Summary: Researchers built an AI system that converts written descriptions of water treatment plants and other critical infrastructure into official compliance documents, without needing to scan the live systems. The system correctly identified 90% of known vulnerabilities and avoided fabricating attack paths by anchoring its reasoning to verified threat databases rather than relying on the AI's own knowledge.
+
+Why it matters: Critical infrastructure like power plants and water utilities can't be actively scanned for security holes without risking operational failure. This pipeline lets operators generate auditable compliance reports from existing documentation, making their actual security posture visible to regulators. When errors do occur, they happen in the initial translation step rather than cascading through the entire analysis—meaning a human can quickly spot and fix a mistaken asset description before it wastes resources chasing irrelevant vulnerabilities.
+
+---
+Title: A Comparative Review of Methods to Create a Composite Index for Sustainable and Inclusive Wellbeing
+Subtitle: How to measure a country's true wellbeing beyond just GDP
+URL: https://paperplaine.com/papers/a-comparative-review-of
+Category: Economics
+Authors: Ricardo da Silva Vieira, Mario Biggeri, Peter Benczur et al.
+arXiv ID: 2607.08153
+arXiv URL: https://arxiv.org/abs/2607.08153
+Posted: 2026-07-10
+
+Summary: Measuring a nation's success requires looking far beyond GDP—but combining all the pieces of sustainable wellbeing into a single number is fraught with hidden choices. This review compares 13 methods for building such an index and finds that no single approach handles all the key ingredients fairly: none can simultaneously penalize inequality, respect environmental limits, account for trade-offs between countries, and measure things the way they actually interconnect.
+
+Why it matters: Countries currently use GDP to guide trillion-dollar decisions on spending, regulation, and priority-setting—even though it ignores health, inequality, and environmental damage. A better wellbeing index could redirect policy toward what actually improves lives. The paper shows that how you build this index matters enormously: different methods rank countries in completely different orders, meaning the choice of measurement method itself becomes a political decision that affects which nations look successful and which look like they're failing.
 
 ---
 Title: AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding
