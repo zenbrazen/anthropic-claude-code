@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.08745",
+    "title": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
+    "authors": "Siddharth Damodharan, Radhika Gupta, Ali Alshami et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-09T17:46:24Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Testing whether AI dashcams can truly understand driving accidents",
+    "summary": "Researchers created AUTOPILOT-VQA, a benchmark that asks AI vision-language models detailed questions about real dashcam footage of accidents and near-misses. The test goes beyond simple object spotting to evaluate whether these systems can reason about safety-critical factors—from weather conditions to whether a crash was avoidable—mirroring the kind of judgment an autonomous car needs to make in dangerous moments.",
+    "whyItMatters": "Autonomous vehicles must reliably understand accidents to operate safely, but current AI systems are tested mainly on basic scene recognition rather than safety reasoning. This benchmark directly measures whether the models used in self-driving cars can handle the complex, split-second judgments that prevent crashes—exposing weaknesses before these systems are deployed on public roads.",
+    "fetchedAt": "2026-07-10T10:23:12.676Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 173
+    },
+    "slug": "autopilot-vqa-benchmarking-vision"
+  },
+  {
+    "id": "2607.08346",
+    "title": "Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy",
+    "authors": "Rian Dolphin, Joe Dursun, Jarrett Blankenship et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-07-09T10:50:51Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Breaking down vague SEC filings into specific, verifiable business events",
+    "summary": "Researchers built a system that reads SEC 8-K filings — the documents companies must file when something important happens — and sorts them into 119 specific event types instead of the SEC's broad categories. The system anchors each classification to exact quotes from the filing and assigns quality scores; tags with the highest scores reach 96% accuracy, while unsupported ones drop to near zero. Applied to nearly 300,000 filings, the system shows that events lumped together by the SEC actually move stock prices differently.",
+    "whyItMatters": "Investors and regulators currently rely on coarse SEC categories that mix routine announcements with major news, making it hard to spot what actually matters. This fine-grained breakdown lets market participants and researchers identify economically significant events consistently and verify that the classification is correct by checking the source text. The dataset of 601,000 grounded event tags provides a foundation for better market analysis and compliance monitoring.",
+    "fetchedAt": "2026-07-10T10:23:16.417Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 211
+    },
+    "slug": "grounded-event-extraction-from"
+  },
+  {
+    "id": "2607.08717",
+    "title": "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems",
+    "authors": "Emmanouil Kavvousanos, Francky Catthoor, Vassilis Paliouras",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-07-09T17:26:43Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Teaching AI to clean up wireless signals buried in interference noise",
+    "summary": "Researchers built a deep learning system that removes unwanted radio signals corrupting wireless communications and then reliably reads what remains—in a single pass instead of multiple steps. The approach works without knowing how many interfering signals are present and gets within 0.2–0.5 dB of the theoretical best performance, while avoiding the error floors that plague traditional methods.",
+    "whyItMatters": "Wireless systems operating in crowded frequency bands routinely lose data quality when hit by narrowband interference. This method cuts computational time by up to 60% while maintaining reliability, making it practical for real-time communication in harsh radio environments. It also recovers 3+ dB of coding gain in dense interference scenarios where current algorithms fail entirely by accidentally deleting legitimate user data.",
+    "fetchedAt": "2026-07-10T10:23:20.609Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 236
+    },
+    "slug": "deep-learning-for-joint"
+  },
+  {
     "id": "2607.07646",
     "title": "RL Post-Training Builds Compositional Reasoning Strategies",
     "authors": "Azwar Abdulsalam, Nishil Patel, Andrew Saxe",

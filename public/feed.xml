@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2026 20:42:50 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 10:23:20 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding</title>
+      <link>https://paperplaine.com/papers/autopilot-vqa-benchmarking-vision</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/autopilot-vqa-benchmarking-vision</guid>
+      <pubDate>Thu, 09 Jul 2026 17:46:24 GMT</pubDate>
+      <author>Siddharth Damodharan, Radhika Gupta, Ali Alshami et al.</author>
+      <category>AI</category>
+      <description>Testing whether AI dashcams can truly understand driving accidents</description>
+      <content:encoded><![CDATA[<p><em>Testing whether AI dashcams can truly understand driving accidents</em></p><p>Researchers created AUTOPILOT-VQA, a benchmark that asks AI vision-language models detailed questions about real dashcam footage of accidents and near-misses. The test goes beyond simple object spotting to evaluate whether these systems can reason about safety-critical factors—from weather conditions to whether a crash was avoidable—mirroring the kind of judgment an autonomous car needs to make in dangerous moments.</p><p><strong>Why it matters:</strong> Autonomous vehicles must reliably understand accidents to operate safely, but current AI systems are tested mainly on basic scene recognition rather than safety reasoning. This benchmark directly measures whether the models used in self-driving cars can handle the complex, split-second judgments that prevent crashes—exposing weaknesses before these systems are deployed on public roads.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy</title>
+      <link>https://paperplaine.com/papers/grounded-event-extraction-from</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/grounded-event-extraction-from</guid>
+      <pubDate>Thu, 09 Jul 2026 10:50:51 GMT</pubDate>
+      <author>Rian Dolphin, Joe Dursun, Jarrett Blankenship et al.</author>
+      <category>Finance</category>
+      <description>Breaking down vague SEC filings into specific, verifiable business events</description>
+      <content:encoded><![CDATA[<p><em>Breaking down vague SEC filings into specific, verifiable business events</em></p><p>Researchers built a system that reads SEC 8-K filings — the documents companies must file when something important happens — and sorts them into 119 specific event types instead of the SEC's broad categories. The system anchors each classification to exact quotes from the filing and assigns quality scores; tags with the highest scores reach 96% accuracy, while unsupported ones drop to near zero. Applied to nearly 300,000 filings, the system shows that events lumped together by the SEC actually move stock prices differently.</p><p><strong>Why it matters:</strong> Investors and regulators currently rely on coarse SEC categories that mix routine announcements with major news, making it hard to spot what actually matters. This fine-grained breakdown lets market participants and researchers identify economically significant events consistently and verify that the classification is correct by checking the source text. The dataset of 601,000 grounded event tags provides a foundation for better market analysis and compliance monitoring.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems</title>
+      <link>https://paperplaine.com/papers/deep-learning-for-joint</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/deep-learning-for-joint</guid>
+      <pubDate>Thu, 09 Jul 2026 17:26:43 GMT</pubDate>
+      <author>Emmanouil Kavvousanos, Francky Catthoor, Vassilis Paliouras</author>
+      <category>Engineering</category>
+      <description>Teaching AI to clean up wireless signals buried in interference noise</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to clean up wireless signals buried in interference noise</em></p><p>Researchers built a deep learning system that removes unwanted radio signals corrupting wireless communications and then reliably reads what remains—in a single pass instead of multiple steps. The approach works without knowing how many interfering signals are present and gets within 0.2–0.5 dB of the theoretical best performance, while avoiding the error floors that plague traditional methods.</p><p><strong>Why it matters:</strong> Wireless systems operating in crowded frequency bands routinely lose data quality when hit by narrowband interference. This method cuts computational time by up to 60% while maintaining reliability, making it practical for real-time communication in harsh radio environments. It also recovers 3+ dB of coding gain in dense interference scenarios where current algorithms fail entirely by accidentally deleting legitimate user data.</p>]]></content:encoded>
+    </item>
     <item>
       <title>RL Post-Training Builds Compositional Reasoning Strategies</title>
       <link>https://paperplaine.com/papers/rl-post-training-builds</link>

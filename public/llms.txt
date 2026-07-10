@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 409 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 412 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 140 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 141 papers in archive.
+  - "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding"
   - "RL Post-Training Builds Compositional Reasoning Strategies"
-  - "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 35 papers in archive.
   - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
   - "HaloGuard 1.0: An Open Weights Constitutional Classifier for Multilingual AI Safety"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 33 papers in archive.
   - "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling"
   - "Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 35 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 36 papers in archive.
+  - "Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy"
   - "Pump.fun Graduation Regime Windows: Survival Analysis of 832,941 Token Launches and the Social-Presence Effect"
-  - "Liquidity Premium and Investment Horizons"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 35 papers in archive.
   - "Avoiding unsafe sets when training with Langevin Dynamics"
   - "TREK: Distill to Explore, Reinforce to Refine"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 34 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 35 papers in archive.
+  - "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems"
   - "The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis"
-  - "Beyond Beamforming: Phase-and-Gain Channel Shaping via Rotatable Antenna Arrays"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 30 papers in archive.
   - "How optimistic inflow forecasts distort dispatch, prices, and contracts in hydro-dominated power systems: evidence from Brazil"
   - "Social Statements: A Proposal for a Social-Value Balance Sheet and Profit-Loss Statement"
 
 ## 10 most recent papers
+
+### AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding
+- URL: https://paperplaine.com/papers/autopilot-vqa-benchmarking-vision
+- Category: Computer Science · AI
+- Authors: Siddharth Damodharan, Radhika Gupta, Ali Alshami et al.
+- arXiv: 2607.08745
+- Plain-English subtitle: Testing whether AI dashcams can truly understand driving accidents
+- Summary: Researchers created AUTOPILOT-VQA, a benchmark that asks AI vision-language models detailed questions about real dashcam footage of accidents and near-misses. The test goes beyond simple object spotting to evaluate whether these systems can reason about safety-critical factors—from weather conditions to whether a crash was avoidable—mirroring the kind of judgment an autonomous car needs to make in dangerous moments.
+- Why it matters: Autonomous vehicles must reliably understand accidents to operate safely, but current AI systems are tested mainly on basic scene recognition rather than safety reasoning. This benchmark directly measures whether the models used in self-driving cars can handle the complex, split-second judgments that prevent crashes—exposing weaknesses before these systems are deployed on public roads.
+
+### Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy
+- URL: https://paperplaine.com/papers/grounded-event-extraction-from
+- Category: Quantitative Finance
+- Authors: Rian Dolphin, Joe Dursun, Jarrett Blankenship et al.
+- arXiv: 2607.08346
+- Plain-English subtitle: Breaking down vague SEC filings into specific, verifiable business events
+- Summary: Researchers built a system that reads SEC 8-K filings — the documents companies must file when something important happens — and sorts them into 119 specific event types instead of the SEC's broad categories. The system anchors each classification to exact quotes from the filing and assigns quality scores; tags with the highest scores reach 96% accuracy, while unsupported ones drop to near zero. Applied to nearly 300,000 filings, the system shows that events lumped together by the SEC actually move stock prices differently.
+- Why it matters: Investors and regulators currently rely on coarse SEC categories that mix routine announcements with major news, making it hard to spot what actually matters. This fine-grained breakdown lets market participants and researchers identify economically significant events consistently and verify that the classification is correct by checking the source text. The dataset of 601,000 grounded event tags provides a foundation for better market analysis and compliance monitoring.
+
+### Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems
+- URL: https://paperplaine.com/papers/deep-learning-for-joint
+- Category: Engineering
+- Authors: Emmanouil Kavvousanos, Francky Catthoor, Vassilis Paliouras
+- arXiv: 2607.08717
+- Plain-English subtitle: Teaching AI to clean up wireless signals buried in interference noise
+- Summary: Researchers built a deep learning system that removes unwanted radio signals corrupting wireless communications and then reliably reads what remains—in a single pass instead of multiple steps. The approach works without knowing how many interfering signals are present and gets within 0.2–0.5 dB of the theoretical best performance, while avoiding the error floors that plague traditional methods.
+- Why it matters: Wireless systems operating in crowded frequency bands routinely lose data quality when hit by narrowband interference. This method cuts computational time by up to 60% while maintaining reliability, making it practical for real-time communication in harsh radio environments. It also recovers 3+ dB of coding gain in dense interference scenarios where current algorithms fail entirely by accidentally deleting legitimate user data.
 
 ### RL Post-Training Builds Compositional Reasoning Strategies
 - URL: https://paperplaine.com/papers/rl-post-training-builds
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to understand physics by checking if its reasoning matches what actually happens
 - Summary: Vision-language models often make up false explanations about how physical interactions will unfold, and their reasoning doesn't match their actual behavior. Researchers developed VAORA, a reward system that forces AI to ground its reasoning in what it actually sees and does, significantly improving the model's ability to handle new tasks and unfamiliar environments.
 - Why it matters: AI systems that reason accurately about physics could improve robot manipulation, autonomous navigation, and task planning in unpredictable real-world settings. Current systems fail because they hallucinate explanations that sound plausible but contradict reality—VAORA fixes this by penalizing reasoning that doesn't align with visual outcomes, making AI more reliable when deployed in novel situations.
-
-### Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers
-- URL: https://paperplaine.com/papers/automated-compliance-mapping-in
-- Category: Computer Science
-- Authors: John Bianchi, Luca Petrillo, Fabio Martinelli et al.
-- arXiv: 2607.06364
-- Plain-English subtitle: Teaching AI to match security rules to technical safeguards automatically
-- Summary: Matching security regulations to actual technical controls in cloud systems has always meant manual work by compliance experts. This paper trains AI models on 14,000 examples of security requirements paired with technical metrics, allowing them to automate the matching process—with the best models improving accuracy by up to 23 percentage points over standard AI approaches. The technique also works across different security standards, so a mapping learned from one regulation can help with others.
-- Why it matters: Cloud companies spend thousands of hours manually documenting how their technical systems satisfy security regulations. Automating this work could cut compliance overhead significantly, reduce human error in safety-critical mappings, and let teams redeploy compliance staff to higher-level risk assessment. For regulators, automated accuracy checking could catch gaps that slip through human review.
-
-### The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis
-- URL: https://paperplaine.com/papers/the-cost-of-lunar
-- Category: Engineering
-- Authors: Chakshu Baweja
-- arXiv: 2607.06212
-- Plain-English subtitle: Why the Moon's south pole needs ground beacons to get reliable GPS
-- Summary: Satellites in lunar orbit bunch together overhead at the south pole, creating poor positioning geometry—even a 12-satellite constellation barely matches Earth GPS performance. Adding just three ground beacons on high terrain around the pole fixes the problem almost completely, dropping positioning error tenfold and costing far less than launching extra satellites.
-- Why it matters: NASA and ESA are planning navigation systems for lunar south-pole exploration, where reliable positioning is critical for rovers and human missions. This finding shows they can achieve the necessary accuracy with far fewer orbital satellites by deploying cheap surface beacons instead—cutting launch costs and complexity while actually improving service.
-
-### RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation
-- URL: https://paperplaine.com/papers/rsf-gllm-bridging-the
-- Category: Computer Science · AI
-- Authors: Sambaran Bandyopadhyay, Ananth Muppidi
-- arXiv: 2607.06527
-- Plain-English subtitle: Finding hidden connections in knowledge bases that words alone can't reveal
-- Summary: When AI systems answer complex questions by hopping between related facts in a knowledge graph, they often get stuck because intermediate steps use different words than the original question. RSF-GLLM solves this by first tracing a path through the graph using meaning-based relevance scores rather than word matching, then using that concrete path to guide a language model toward the right answer—achieving competitive accuracy while running significantly faster than similar systems.
-- Why it matters: Question-answering systems power search engines, customer support chatbots, and research tools. This approach makes them both more reliable (by grounding answers in actual facts rather than probabilistic guessing) and faster to run, reducing the computational cost of AI-powered question systems without sacrificing accuracy.
 
 ## About
 
