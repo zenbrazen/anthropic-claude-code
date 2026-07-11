@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.08756",
+    "title": "MulTTiPop: A Multitrack Transcription Dataset for Pop Music",
+    "authors": "Nathan Pruyne, Benjamin Stoler, William Chen et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-09T17:55:33Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "A dataset to test whether AI can accurately transcribe pop music into notes",
+    "summary": "Researchers created MulTTiPop, a collection of 572 pop music segments with matching digital note-by-note transcriptions, to measure how well AI systems can automatically convert recorded music into written musical notation. When tested on the best existing AI models, the results showed significant room for improvement—the top performer only correctly identified 38% of note onsets, the moment each note begins.",
+    "whyItMatters": "Automatic music transcription is a key step toward AI that can analyze, remix, and understand recorded music. This dataset gives researchers a reliable way to measure real progress on the problem. Better transcription systems could speed up music production, help musicians learn songs by ear, and improve music search and recommendation tools.",
+    "fetchedAt": "2026-07-11T20:02:02.860Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 127
+    },
+    "slug": "multtipop-a-multitrack-transcription"
+  },
+  {
+    "id": "2607.08404",
+    "title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
+    "authors": "Ali Motahharynia, Mohammadreza Ghaffarzadeh-Esfahani, Mahsa Sheikholeslami et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-07-09T12:29:33Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "AI that designs drugs while understanding the disease they'll treat",
+    "summary": "Researchers created DrugGen-2, an AI model that designs drug molecules by considering both the disease being treated and the specific protein target involved. When tested on diabetic kidney disease, the model generated drugs with stronger predicted binding to their targets than existing approved treatments like enalapril, while also producing more diverse and chemically valid candidates than earlier AI systems.",
+    "whyItMatters": "Current drug discovery AI tools ignore disease context, potentially missing how the same protein behaves differently across conditions. DrugGen-2 bridges this gap, which could speed up finding treatments for complex diseases where target proteins change behavior. This matters because it compresses a lengthy trial-and-error process—generating better drug candidates faster could accelerate development for conditions like diabetic nephropathy where current treatments remain suboptimal.",
+    "fetchedAt": "2026-07-11T20:02:06.107Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 225
+    },
+    "slug": "druggen-2-a-disease"
+  },
+  {
+    "id": "2607.08406",
+    "title": "Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks",
+    "authors": "Hong Zhao",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-09T12:31:04Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Training neural networks without calculating gradients at all",
+    "summary": "A simple random-search algorithm can train deep neural networks without relying on backpropagation or gradients — the standard method that can cause training to fail. The method works by randomly tweaking each parameter and keeping changes that reduce errors, and successfully trained networks with over 20 layers, wide networks with thousands of neurons, and even Transformer models on image and language tasks.",
+    "whyItMatters": "Backpropagation's gradient calculations become unreliable in very deep networks, limiting how large and capable these systems can be. This gradient-free alternative sidesteps that problem entirely and works without requiring architectural tricks like batch normalization that researchers currently use as workarounds. If practical, it could unlock simpler ways to train neural networks and offer new insights into how these systems learn.",
+    "fetchedAt": "2026-07-11T20:02:09.062Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 195
+    },
+    "slug": "beyond-backpropagation-monte-carlo"
+  },
+  {
     "id": "2607.08757",
     "title": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
     "authors": "Yiwei Zhou",

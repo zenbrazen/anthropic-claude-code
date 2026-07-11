@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 418 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 421 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 143 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 144 papers in archive.
+  - "MulTTiPop: A Multitrack Transcription Dataset for Pop Music"
   - "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling"
-  - "Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 36 papers in archive.
   - "From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure"
   - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 35 papers in archive.
   - "K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy"
   - "Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 33 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 34 papers in archive.
+  - "DrugGen 2: A disease-aware language model for enhancing drug discovery"
   - "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling"
-  - "Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 36 papers in archive.
   - "Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy"
   - "Pump.fun Graduation Regime Windows: Survival Analysis of 832,941 Token Launches and the Social-Presence Effect"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 35 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 36 papers in archive.
+  - "Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks"
   - "Avoiding unsafe sets when training with Langevin Dynamics"
-  - "TREK: Distill to Explore, Reinforce to Refine"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 35 papers in archive.
   - "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems"
   - "The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "How optimistic inflow forecasts distort dispatch, prices, and contracts in hydro-dominated power systems: evidence from Brazil"
 
 ## 10 most recent papers
+
+### MulTTiPop: A Multitrack Transcription Dataset for Pop Music
+- URL: https://paperplaine.com/papers/multtipop-a-multitrack-transcription
+- Category: Computer Science · AI
+- Authors: Nathan Pruyne, Benjamin Stoler, William Chen et al.
+- arXiv: 2607.08756
+- Plain-English subtitle: A dataset to test whether AI can accurately transcribe pop music into notes
+- Summary: Researchers created MulTTiPop, a collection of 572 pop music segments with matching digital note-by-note transcriptions, to measure how well AI systems can automatically convert recorded music into written musical notation. When tested on the best existing AI models, the results showed significant room for improvement—the top performer only correctly identified 38% of note onsets, the moment each note begins.
+- Why it matters: Automatic music transcription is a key step toward AI that can analyze, remix, and understand recorded music. This dataset gives researchers a reliable way to measure real progress on the problem. Better transcription systems could speed up music production, help musicians learn songs by ear, and improve music search and recommendation tools.
+
+### DrugGen 2: A disease-aware language model for enhancing drug discovery
+- URL: https://paperplaine.com/papers/druggen-2-a-disease
+- Category: Quantitative Biology
+- Authors: Ali Motahharynia, Mohammadreza Ghaffarzadeh-Esfahani, Mahsa Sheikholeslami et al.
+- arXiv: 2607.08404
+- Plain-English subtitle: AI that designs drugs while understanding the disease they'll treat
+- Summary: Researchers created DrugGen-2, an AI model that designs drug molecules by considering both the disease being treated and the specific protein target involved. When tested on diabetic kidney disease, the model generated drugs with stronger predicted binding to their targets than existing approved treatments like enalapril, while also producing more diverse and chemically valid candidates than earlier AI systems.
+- Why it matters: Current drug discovery AI tools ignore disease context, potentially missing how the same protein behaves differently across conditions. DrugGen-2 bridges this gap, which could speed up finding treatments for complex diseases where target proteins change behavior. This matters because it compresses a lengthy trial-and-error process—generating better drug candidates faster could accelerate development for conditions like diabetic nephropathy where current treatments remain suboptimal.
+
+### Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks
+- URL: https://paperplaine.com/papers/beyond-backpropagation-monte-carlo
+- Category: Statistics
+- Authors: Hong Zhao
+- arXiv: 2607.08406
+- Plain-English subtitle: Training neural networks without calculating gradients at all
+- Summary: A simple random-search algorithm can train deep neural networks without relying on backpropagation or gradients — the standard method that can cause training to fail. The method works by randomly tweaking each parameter and keeping changes that reduce errors, and successfully trained networks with over 20 layers, wide networks with thousands of neurons, and even Transformer models on image and language tasks.
+- Why it matters: Backpropagation's gradient calculations become unreliable in very deep networks, limiting how large and capable these systems can be. This gradient-free alternative sidesteps that problem entirely and works without requiring architectural tricks like batch normalization that researchers currently use as workarounds. If practical, it could unlock simpler ways to train neural networks and offer new insights into how these systems learn.
 
 ### Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling
 - URL: https://paperplaine.com/papers/score-accuracy-along-the
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Testing whether AI dashcams can truly understand driving accidents
 - Summary: Researchers created AUTOPILOT-VQA, a benchmark that asks AI vision-language models detailed questions about real dashcam footage of accidents and near-misses. The test goes beyond simple object spotting to evaluate whether these systems can reason about safety-critical factors—from weather conditions to whether a crash was avoidable—mirroring the kind of judgment an autonomous car needs to make in dangerous moments.
 - Why it matters: Autonomous vehicles must reliably understand accidents to operate safely, but current AI systems are tested mainly on basic scene recognition rather than safety reasoning. This benchmark directly measures whether the models used in self-driving cars can handle the complex, split-second judgments that prevent crashes—exposing weaknesses before these systems are deployed on public roads.
-
-### Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy
-- URL: https://paperplaine.com/papers/grounded-event-extraction-from
-- Category: Quantitative Finance
-- Authors: Rian Dolphin, Joe Dursun, Jarrett Blankenship et al.
-- arXiv: 2607.08346
-- Plain-English subtitle: Breaking down vague SEC filings into specific, verifiable business events
-- Summary: Researchers built a system that reads SEC 8-K filings — the documents companies must file when something important happens — and sorts them into 119 specific event types instead of the SEC's broad categories. The system anchors each classification to exact quotes from the filing and assigns quality scores; tags with the highest scores reach 96% accuracy, while unsupported ones drop to near zero. Applied to nearly 300,000 filings, the system shows that events lumped together by the SEC actually move stock prices differently.
-- Why it matters: Investors and regulators currently rely on coarse SEC categories that mix routine announcements with major news, making it hard to spot what actually matters. This fine-grained breakdown lets market participants and researchers identify economically significant events consistently and verify that the classification is correct by checking the source text. The dataset of 601,000 grounded event tags provides a foundation for better market analysis and compliance monitoring.
-
-### Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems
-- URL: https://paperplaine.com/papers/deep-learning-for-joint
-- Category: Engineering
-- Authors: Emmanouil Kavvousanos, Francky Catthoor, Vassilis Paliouras
-- arXiv: 2607.08717
-- Plain-English subtitle: Teaching AI to clean up wireless signals buried in interference noise
-- Summary: Researchers built a deep learning system that removes unwanted radio signals corrupting wireless communications and then reliably reads what remains—in a single pass instead of multiple steps. The approach works without knowing how many interfering signals are present and gets within 0.2–0.5 dB of the theoretical best performance, while avoiding the error floors that plague traditional methods.
-- Why it matters: Wireless systems operating in crowded frequency bands routinely lose data quality when hit by narrowband interference. This method cuts computational time by up to 60% while maintaining reliability, making it practical for real-time communication in harsh radio environments. It also recovers 3+ dB of coding gain in dense interference scenarios where current algorithms fail entirely by accidentally deleting legitimate user data.
-
-### RL Post-Training Builds Compositional Reasoning Strategies
-- URL: https://paperplaine.com/papers/rl-post-training-builds
-- Category: Computer Science · AI
-- Authors: Azwar Abdulsalam, Nishil Patel, Andrew Saxe
-- arXiv: 2607.07646
-- Plain-English subtitle: How AI learns to chain simple skills into complex problem-solving strategies
-- Summary: Reinforcement learning doesn't just amplify basic skills that already exist in a pretrained AI model—it actively constructs new composite strategies by chaining primitive skills together. Researchers showed this by training a transformer on simple symbol-rewriting tasks, then using RL to solve harder problems that required combining those primitives. The model developed two types of compositions: sequential ones that collapsed ordered chains of rewrites, and parallel ones that combined independent rewrites in a single step, building a stable toolkit it reused across problems.
-- Why it matters: This reveals how AI systems can move beyond surface-level pattern matching to develop genuine problem-solving machinery. Understanding that composition emerges through selective exploration—not just more sampling—could guide better training methods for AI systems that need to tackle novel, multi-step reasoning tasks. The finding that pretraining must organize primitive skills into usable procedures for this to work suggests concrete design principles for building more capable AI systems.
 
 ## About
 

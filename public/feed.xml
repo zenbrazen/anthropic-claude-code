@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 08:45:56 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 20:02:09 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MulTTiPop: A Multitrack Transcription Dataset for Pop Music</title>
+      <link>https://paperplaine.com/papers/multtipop-a-multitrack-transcription</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multtipop-a-multitrack-transcription</guid>
+      <pubDate>Thu, 09 Jul 2026 17:55:33 GMT</pubDate>
+      <author>Nathan Pruyne, Benjamin Stoler, William Chen et al.</author>
+      <category>AI</category>
+      <description>A dataset to test whether AI can accurately transcribe pop music into notes</description>
+      <content:encoded><![CDATA[<p><em>A dataset to test whether AI can accurately transcribe pop music into notes</em></p><p>Researchers created MulTTiPop, a collection of 572 pop music segments with matching digital note-by-note transcriptions, to measure how well AI systems can automatically convert recorded music into written musical notation. When tested on the best existing AI models, the results showed significant room for improvement—the top performer only correctly identified 38% of note onsets, the moment each note begins.</p><p><strong>Why it matters:</strong> Automatic music transcription is a key step toward AI that can analyze, remix, and understand recorded music. This dataset gives researchers a reliable way to measure real progress on the problem. Better transcription systems could speed up music production, help musicians learn songs by ear, and improve music search and recommendation tools.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>DrugGen 2: A disease-aware language model for enhancing drug discovery</title>
+      <link>https://paperplaine.com/papers/druggen-2-a-disease</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/druggen-2-a-disease</guid>
+      <pubDate>Thu, 09 Jul 2026 12:29:33 GMT</pubDate>
+      <author>Ali Motahharynia, Mohammadreza Ghaffarzadeh-Esfahani, Mahsa Sheikholeslami et al.</author>
+      <category>Biology</category>
+      <description>AI that designs drugs while understanding the disease they&#39;ll treat</description>
+      <content:encoded><![CDATA[<p><em>AI that designs drugs while understanding the disease they'll treat</em></p><p>Researchers created DrugGen-2, an AI model that designs drug molecules by considering both the disease being treated and the specific protein target involved. When tested on diabetic kidney disease, the model generated drugs with stronger predicted binding to their targets than existing approved treatments like enalapril, while also producing more diverse and chemically valid candidates than earlier AI systems.</p><p><strong>Why it matters:</strong> Current drug discovery AI tools ignore disease context, potentially missing how the same protein behaves differently across conditions. DrugGen-2 bridges this gap, which could speed up finding treatments for complex diseases where target proteins change behavior. This matters because it compresses a lengthy trial-and-error process—generating better drug candidates faster could accelerate development for conditions like diabetic nephropathy where current treatments remain suboptimal.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks</title>
+      <link>https://paperplaine.com/papers/beyond-backpropagation-monte-carlo</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/beyond-backpropagation-monte-carlo</guid>
+      <pubDate>Thu, 09 Jul 2026 12:31:04 GMT</pubDate>
+      <author>Hong Zhao</author>
+      <category>Statistics</category>
+      <description>Training neural networks without calculating gradients at all</description>
+      <content:encoded><![CDATA[<p><em>Training neural networks without calculating gradients at all</em></p><p>A simple random-search algorithm can train deep neural networks without relying on backpropagation or gradients — the standard method that can cause training to fail. The method works by randomly tweaking each parameter and keeping changes that reduce errors, and successfully trained networks with over 20 layers, wide networks with thousands of neurons, and even Transformer models on image and language tasks.</p><p><strong>Why it matters:</strong> Backpropagation's gradient calculations become unreliable in very deep networks, limiting how large and capable these systems can be. This gradient-free alternative sidesteps that problem entirely and works without requiring architectural tricks like batch normalization that researchers currently use as workarounds. If practical, it could unlock simpler ways to train neural networks and offer new insights into how these systems learn.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling</title>
       <link>https://paperplaine.com/papers/score-accuracy-along-the</link>
