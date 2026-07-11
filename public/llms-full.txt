@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 415 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-10
+This file contains the complete plain-English text of all 418 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-11
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling
+Subtitle: When AI image generators seem accurate but actually produce unstable results
+URL: https://paperplaine.com/papers/score-accuracy-along-the
+Category: Computer Science · AI
+Authors: Yiwei Zhou
+arXiv ID: 2607.08757
+arXiv URL: https://arxiv.org/abs/2607.08757
+Posted: 2026-07-11
+
+Summary: Diffusion models—the AI systems behind image generators—are usually trained to match real data distributions accurately, but this training goal doesn't guarantee the sampling process will remain numerically stable. Researchers constructed examples where a learned score function has negligibly small error by standard measures, yet its discretized sampling algorithm produces outputs with wildly diverging statistical properties, contradicting what the training metrics predicted.
+
+Why it matters: Diffusion models power real products like DALL-E and Stable Diffusion. If a model passes standard accuracy tests but fails on numerical stability, it could generate bizarre or corrupted images on rare trajectories—failures that wouldn't be caught by conventional evaluation. The researchers also show that constraining the learned function to stay within known bounds fixes the problem, offering a practical safeguard for production systems.
+
+---
+Title: Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine
+Subtitle: Building heat engines that squeeze out maximum efficiency without sacrificing power
+URL: https://paperplaine.com/papers/approaching-carnot-efficiency-at
+Category: Physics
+Authors: Shogo Toma, Atsushi Noguchi, Ken Funo et al.
+arXiv ID: 2607.08713
+arXiv URL: https://arxiv.org/abs/2607.08713
+Posted: 2026-07-11
+
+Summary: Researchers designed a quantum heat engine using superconducting circuits that can approach the theoretical efficiency limit (Carnot efficiency) while still producing useful power—something impossible for classical engines. The trick is harnessing collective quantum effects that boost the engine's activity in ways classical systems cannot match.
+
+Why it matters: Classical heat engines face a hard trade-off: boost efficiency and power drops, or maintain power and efficiency suffers. Cracking this constraint could reshape how we design future quantum devices and energy systems. This work proves the mechanism isn't just theoretical—it can actually be built and tested in real hardware.
+
+---
+Title: K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy
+Subtitle: How randomness spreads in abstract algebraic structures built on trees
+URL: https://paperplaine.com/papers/k-spherical-horospherical-averages
+Category: Mathematics
+Authors: Sanghoon Kwon
+arXiv ID: 2607.08704
+arXiv URL: https://arxiv.org/abs/2607.08704
+Posted: 2026-07-11
+
+Summary: A mathematician proved exact formulas for how averages spread across a specific type of abstract space called the Nagao quotient. The key insight is that two very different dynamical processes—one expanding outward, one shrinking inward—actually describe the same underlying structure on a tree. The formulas reveal when the spreading reaches perfect balance and when errors remain, giving quantitative bounds on the convergence.
+
+Why it matters: These results resolve long-standing questions about equidistribution—how objects distribute evenly—in algebraic spaces that appear throughout modern number theory and representation theory. The exact error formulas allow mathematicians to move beyond just proving things converge 'eventually' and instead predict precisely how fast and where deviations occur, enabling more refined analysis of dynamical systems on these structures.
 
 ---
 Title: Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction

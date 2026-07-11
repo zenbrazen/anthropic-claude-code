@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 415 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 418 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 142 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 143 papers in archive.
+  - "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling"
   - "Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction"
-  - "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 36 papers in archive.
   - "From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure"
   - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 33 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 34 papers in archive.
+  - "Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine"
   - "Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)"
-  - "Charge-Sector Construction of the Type-IIB Axion--Dilaton Wormhole Partition Function"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 34 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 35 papers in archive.
+  - "K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy"
   - "Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings"
-  - "Short-Horizon Sparse Model Predictive Control for Precipitation Reduction Using Numerical Weather Prediction"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 33 papers in archive.
   - "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling"
   - "Structured Gaussian Processes for Uncertainty-Aware Classification of High-Dimensional, Small-Sampled Omics Data"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "How optimistic inflow forecasts distort dispatch, prices, and contracts in hydro-dominated power systems: evidence from Brazil"
 
 ## 10 most recent papers
+
+### Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling
+- URL: https://paperplaine.com/papers/score-accuracy-along-the
+- Category: Computer Science · AI
+- Authors: Yiwei Zhou
+- arXiv: 2607.08757
+- Plain-English subtitle: When AI image generators seem accurate but actually produce unstable results
+- Summary: Diffusion models—the AI systems behind image generators—are usually trained to match real data distributions accurately, but this training goal doesn't guarantee the sampling process will remain numerically stable. Researchers constructed examples where a learned score function has negligibly small error by standard measures, yet its discretized sampling algorithm produces outputs with wildly diverging statistical properties, contradicting what the training metrics predicted.
+- Why it matters: Diffusion models power real products like DALL-E and Stable Diffusion. If a model passes standard accuracy tests but fails on numerical stability, it could generate bizarre or corrupted images on rare trajectories—failures that wouldn't be caught by conventional evaluation. The researchers also show that constraining the learned function to stay within known bounds fixes the problem, offering a practical safeguard for production systems.
+
+### Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine
+- URL: https://paperplaine.com/papers/approaching-carnot-efficiency-at
+- Category: Physics
+- Authors: Shogo Toma, Atsushi Noguchi, Ken Funo et al.
+- arXiv: 2607.08713
+- Plain-English subtitle: Building heat engines that squeeze out maximum efficiency without sacrificing power
+- Summary: Researchers designed a quantum heat engine using superconducting circuits that can approach the theoretical efficiency limit (Carnot efficiency) while still producing useful power—something impossible for classical engines. The trick is harnessing collective quantum effects that boost the engine's activity in ways classical systems cannot match.
+- Why it matters: Classical heat engines face a hard trade-off: boost efficiency and power drops, or maintain power and efficiency suffers. Cracking this constraint could reshape how we design future quantum devices and energy systems. This work proves the mechanism isn't just theoretical—it can actually be built and tested in real hardware.
+
+### K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy
+- URL: https://paperplaine.com/papers/k-spherical-horospherical-averages
+- Category: Mathematics
+- Authors: Sanghoon Kwon
+- arXiv: 2607.08704
+- Plain-English subtitle: How randomness spreads in abstract algebraic structures built on trees
+- Summary: A mathematician proved exact formulas for how averages spread across a specific type of abstract space called the Nagao quotient. The key insight is that two very different dynamical processes—one expanding outward, one shrinking inward—actually describe the same underlying structure on a tree. The formulas reveal when the spreading reaches perfect balance and when errors remain, giving quantitative bounds on the convergence.
+- Why it matters: These results resolve long-standing questions about equidistribution—how objects distribute evenly—in algebraic spaces that appear throughout modern number theory and representation theory. The exact error formulas allow mathematicians to move beyond just proving things converge 'eventually' and instead predict precisely how fast and where deviations occur, enabling more refined analysis of dynamical systems on these structures.
 
 ### Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction
 - URL: https://paperplaine.com/papers/pose-to-biomechanics-bridging
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI learns to chain simple skills into complex problem-solving strategies
 - Summary: Reinforcement learning doesn't just amplify basic skills that already exist in a pretrained AI model—it actively constructs new composite strategies by chaining primitive skills together. Researchers showed this by training a transformer on simple symbol-rewriting tasks, then using RL to solve harder problems that required combining those primitives. The model developed two types of compositions: sequential ones that collapsed ordered chains of rewrites, and parallel ones that combined independent rewrites in a single step, building a stable toolkit it reused across problems.
 - Why it matters: This reveals how AI systems can move beyond surface-level pattern matching to develop genuine problem-solving machinery. Understanding that composition emerges through selective exploration—not just more sampling—could guide better training methods for AI systems that need to tackle novel, multi-step reasoning tasks. The finding that pretraining must organize primitive skills into usable procedures for this to work suggests concrete design principles for building more capable AI systems.
-
-### Avoiding unsafe sets when training with Langevin Dynamics
-- URL: https://paperplaine.com/papers/avoiding-unsafe-sets-when
-- Category: Statistics
-- Authors: Adam M. Oberman
-- arXiv: 2607.07538
-- Plain-English subtitle: How to guarantee neural network training avoids dangerous failure zones
-- Summary: When training a machine learning model with noisy gradient descent, the model can temporarily stray into dangerous regions before settling near its optimal solution. This paper proves that even in high-dimensional problems, the probability of landing in a designated failure zone becomes exponentially small — but only after an initial "burn-in" period whose length depends on the problem dimension, not just the steepness of the loss landscape.
-- Why it matters: Training procedures that wander through unsafe regions — even briefly — can cause real failures in deployed systems, from autonomous vehicles misclassifying obstacles to medical AI producing dangerous predictions. This work provides concrete mathematical guarantees about when and how badly a model can stray during training, letting practitioners either trust the process or redesign it to avoid specific high-risk zones altogether.
-
-### Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings
-- URL: https://paperplaine.com/papers/latency-aware-bid-acceptance
-- Category: Mathematics
-- Authors: Aswin Chandrasekaran
-- arXiv: 2607.07343
-- Plain-English subtitle: Deciding which freight jobs to accept when trucks can't wait
-- Summary: Trucking companies must decide in seconds whether to accept shipping jobs, weighing whether they can physically reach pickups, what future opportunities they'll miss, and how much repositioning will cost. Researchers built FreightBidBench, the first public testing ground for this problem, and showed that a smart decision-making system can match the performance of perfect hindsight 98% of the time while cutting decision time nearly in half.
-- Why it matters: Trucking is a $800+ billion U.S. industry where millisecond-by-millisecond acceptance decisions directly affect profits and service reliability. A public benchmark lets companies and researchers test new bidding strategies without exposing proprietary fleet data, accelerating improvements that could reduce empty miles, lower shipping costs, and improve on-time delivery across the supply chain.
-
-### Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF
-- URL: https://paperplaine.com/papers/selective-timestep-weighting-and
-- Category: Computer Science · AI
-- Authors: Eric Zhu, Abhinav Shrivastava, Soumik Mukhopadhyay
-- arXiv: 2607.07693
-- Plain-English subtitle: Making AI feedback six times more efficient for image generation models
-- Summary: Training image generation models to match human preferences currently wastes feedback by treating all learning moments equally. This paper shows that some timesteps in the generation process carry much more useful information than others, and some past examples are more worth revisiting — together, these insights reduce the amount of human feedback needed by up to sixfold while maintaining quality.
-- Why it matters: Human feedback is expensive and slow to collect. By slashing feedback requirements by up to 6×, this approach makes it practical to fine-tune image generators in real-world settings where human judgments are the limiting resource. This could accelerate the development of personalized AI models that better match what individual users or organizations actually want.
 
 ## About
 
