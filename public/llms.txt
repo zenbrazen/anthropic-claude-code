@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 421 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 424 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 144 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 145 papers in archive.
+  - "OpenCoF: Learning to Reason Through Video Generation"
   - "MulTTiPop: A Multitrack Transcription Dataset for Pop Music"
-  - "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 36 papers in archive.
   - "From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure"
   - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 34 papers in archive.
   - "DrugGen 2: A disease-aware language model for enhancing drug discovery"
   - "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 36 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 37 papers in archive.
+  - "Can Reinforcement Learning Efficiently Discover Price Manipulation?"
   - "Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy"
-  - "Pump.fun Graduation Regime Windows: Survival Analysis of 832,941 Token Launches and the Social-Presence Effect"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 36 papers in archive.
   - "Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks"
   - "Avoiding unsafe sets when training with Langevin Dynamics"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 35 papers in archive.
   - "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems"
   - "The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 31 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 32 papers in archive.
+  - "A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers"
   - "A Comparative Review of Methods to Create a Composite Index for Sustainable and Inclusive Wellbeing"
-  - "How optimistic inflow forecasts distort dispatch, prices, and contracts in hydro-dominated power systems: evidence from Brazil"
 
 ## 10 most recent papers
+
+### OpenCoF: Learning to Reason Through Video Generation
+- URL: https://paperplaine.com/papers/opencof-learning-to-reason
+- Category: Computer Science · AI
+- Authors: Xinyan Chen, Ziyu Guo, Renrui Zhang et al.
+- arXiv: 2607.08763
+- Plain-English subtitle: Teaching AI to reason by generating step-by-step videos instead of text
+- Summary: Researchers created a new dataset and video generation model that teaches AI systems to solve reasoning problems by generating sequences of video frames rather than text explanations. The model, called Wan-CoF, substantially outperformed existing video generators on four reasoning benchmarks by learning from diverse examples of visual problem-solving and using special tokens to track reasoning across frames.
+- Why it matters: Video-based reasoning could help AI systems explain their logic in ways that are easier for humans to follow and verify, especially in domains where visual understanding matters—like robotics, medical diagnosis, or scientific discovery. This work also establishes a new training approach that could make AI reasoning more transparent and grounded in real-world sequences rather than abstract text.
+
+### A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers
+- URL: https://paperplaine.com/papers/a-design-based-approach
+- Category: Economics
+- Authors: Yechan Park
+- arXiv: 2607.08640
+- Plain-English subtitle: Finding the right way to measure how policies spread to nearby people
+- Summary: When governments run anti-poverty programs, the benefits often spread beyond the direct recipients to their neighbors and social connections. Researchers typically guess at how far these spillovers reach, but this paper shows how to let the data reveal the correct distance and shape instead. Applied to two major poverty-reduction programs, the method confirmed some previous estimates but rejected others—and the corrected distances produced substantially different estimates of how well the policies actually worked.
+- Why it matters: Policy makers rely on accurate impact estimates to decide whether programs are worth the cost. If researchers measure spillovers using the wrong distance or formula, they systematically underestimate or overestimate program effects. This framework provides a testable, data-driven way to get the measurement right, which directly changes which policies look effective and how much funding they deserve.
+
+### Can Reinforcement Learning Efficiently Discover Price Manipulation?
+- URL: https://paperplaine.com/papers/can-reinforcement-learning-efficiently
+- Category: Quantitative Finance
+- Authors: Ioanna-Yvonni Tsaknaki, Andrea Macrì, Fabrizio Lillo
+- arXiv: 2607.06121
+- Plain-English subtitle: Can AI discover and exploit price manipulation before regulators catch on?
+- Summary: Researchers compared two approaches to finding price manipulation opportunities in financial markets: a traditional method that assumes it knows how prices work, and an artificial intelligence agent that learns patterns from raw data. For moderately volatile markets, the AI agent discovered profitable manipulation strategies using limited training data and actually outperformed the traditional method, even though the traditional method started with correct assumptions about how markets function.
+- Why it matters: Financial regulators need to understand whether AI systems could discover market manipulation faster than humans can detect and prevent it. This work shows that AI agents can indeed find exploitation strategies that evade detection, suggesting exchanges and regulators must develop better surveillance tools before deploying their own AI systems in trading. The findings also reveal a blind spot in traditional market models: when real-world data is noisy, AI's flexibility can beat expert knowledge—a warning that deploying unsupervised learning in finance without safeguards could create new vulnerabilities.
 
 ### MulTTiPop: A Multitrack Transcription Dataset for Pop Music
 - URL: https://paperplaine.com/papers/multtipop-a-multitrack-transcription
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Turning pose videos into measurements of body stress and muscle work
 - Summary: Researchers created BioModule, a lightweight add-on that converts standard 3D pose estimates from videos into biomechanical measurements—like joint forces, muscle activation, and movement efficiency—that matter for injury prevention and rehabilitation. The system works with any existing pose estimator without modifications, and the team built the first large-scale dataset pairing video recordings with precise biomechanical labels to train and test it.
 - Why it matters: Physical therapists, sports coaches, and ergonomists currently need expensive motion-capture labs with markers placed on patients' bodies to measure how joints load during movement. This work enables those same biomechanical insights from ordinary video, making detailed movement analysis accessible in clinics, gyms, and workplaces where cameras already exist. It could expand screening for injury risk and personalized rehabilitation to millions more people who can't afford specialized labs.
-
-### From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure
-- URL: https://paperplaine.com/papers/from-legacy-documentation-to
-- Category: Computer Science
-- Authors: Lea Roxanne Muth, Marian Margraf
-- arXiv: 2607.08288
-- Plain-English subtitle: Converting operator notes into official compliance documents without scanning critical systems
-- Summary: Researchers built an AI system that converts written descriptions of water treatment plants and other critical infrastructure into official compliance documents, without needing to scan the live systems. The system correctly identified 90% of known vulnerabilities and avoided fabricating attack paths by anchoring its reasoning to verified threat databases rather than relying on the AI's own knowledge.
-- Why it matters: Critical infrastructure like power plants and water utilities can't be actively scanned for security holes without risking operational failure. This pipeline lets operators generate auditable compliance reports from existing documentation, making their actual security posture visible to regulators. When errors do occur, they happen in the initial translation step rather than cascading through the entire analysis—meaning a human can quickly spot and fix a mistaken asset description before it wastes resources chasing irrelevant vulnerabilities.
-
-### A Comparative Review of Methods to Create a Composite Index for Sustainable and Inclusive Wellbeing
-- URL: https://paperplaine.com/papers/a-comparative-review-of
-- Category: Economics
-- Authors: Ricardo da Silva Vieira, Mario Biggeri, Peter Benczur et al.
-- arXiv: 2607.08153
-- Plain-English subtitle: How to measure a country's true wellbeing beyond just GDP
-- Summary: Measuring a nation's success requires looking far beyond GDP—but combining all the pieces of sustainable wellbeing into a single number is fraught with hidden choices. This review compares 13 methods for building such an index and finds that no single approach handles all the key ingredients fairly: none can simultaneously penalize inequality, respect environmental limits, account for trade-offs between countries, and measure things the way they actually interconnect.
-- Why it matters: Countries currently use GDP to guide trillion-dollar decisions on spending, regulation, and priority-setting—even though it ignores health, inequality, and environmental damage. A better wellbeing index could redirect policy toward what actually improves lives. The paper shows that how you build this index matters enormously: different methods rank countries in completely different orders, meaning the choice of measurement method itself becomes a political decision that affects which nations look successful and which look like they're failing.
-
-### AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding
-- URL: https://paperplaine.com/papers/autopilot-vqa-benchmarking-vision
-- Category: Computer Science · AI
-- Authors: Siddharth Damodharan, Radhika Gupta, Ali Alshami et al.
-- arXiv: 2607.08745
-- Plain-English subtitle: Testing whether AI dashcams can truly understand driving accidents
-- Summary: Researchers created AUTOPILOT-VQA, a benchmark that asks AI vision-language models detailed questions about real dashcam footage of accidents and near-misses. The test goes beyond simple object spotting to evaluate whether these systems can reason about safety-critical factors—from weather conditions to whether a crash was avoidable—mirroring the kind of judgment an autonomous car needs to make in dangerous moments.
-- Why it matters: Autonomous vehicles must reliably understand accidents to operate safely, but current AI systems are tested mainly on basic scene recognition rather than safety reasoning. This benchmark directly measures whether the models used in self-driving cars can handle the complex, split-second judgments that prevent crashes—exposing weaknesses before these systems are deployed on public roads.
 
 ## About
 

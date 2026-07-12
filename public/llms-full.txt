@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 421 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-11
+This file contains the complete plain-English text of all 424 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-12
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: OpenCoF: Learning to Reason Through Video Generation
+Subtitle: Teaching AI to reason by generating step-by-step videos instead of text
+URL: https://paperplaine.com/papers/opencof-learning-to-reason
+Category: Computer Science · AI
+Authors: Xinyan Chen, Ziyu Guo, Renrui Zhang et al.
+arXiv ID: 2607.08763
+arXiv URL: https://arxiv.org/abs/2607.08763
+Posted: 2026-07-12
+
+Summary: Researchers created a new dataset and video generation model that teaches AI systems to solve reasoning problems by generating sequences of video frames rather than text explanations. The model, called Wan-CoF, substantially outperformed existing video generators on four reasoning benchmarks by learning from diverse examples of visual problem-solving and using special tokens to track reasoning across frames.
+
+Why it matters: Video-based reasoning could help AI systems explain their logic in ways that are easier for humans to follow and verify, especially in domains where visual understanding matters—like robotics, medical diagnosis, or scientific discovery. This work also establishes a new training approach that could make AI reasoning more transparent and grounded in real-world sequences rather than abstract text.
+
+---
+Title: A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers
+Subtitle: Finding the right way to measure how policies spread to nearby people
+URL: https://paperplaine.com/papers/a-design-based-approach
+Category: Economics
+Authors: Yechan Park
+arXiv ID: 2607.08640
+arXiv URL: https://arxiv.org/abs/2607.08640
+Posted: 2026-07-12
+
+Summary: When governments run anti-poverty programs, the benefits often spread beyond the direct recipients to their neighbors and social connections. Researchers typically guess at how far these spillovers reach, but this paper shows how to let the data reveal the correct distance and shape instead. Applied to two major poverty-reduction programs, the method confirmed some previous estimates but rejected others—and the corrected distances produced substantially different estimates of how well the policies actually worked.
+
+Why it matters: Policy makers rely on accurate impact estimates to decide whether programs are worth the cost. If researchers measure spillovers using the wrong distance or formula, they systematically underestimate or overestimate program effects. This framework provides a testable, data-driven way to get the measurement right, which directly changes which policies look effective and how much funding they deserve.
+
+---
+Title: Can Reinforcement Learning Efficiently Discover Price Manipulation?
+Subtitle: Can AI discover and exploit price manipulation before regulators catch on?
+URL: https://paperplaine.com/papers/can-reinforcement-learning-efficiently
+Category: Quantitative Finance
+Authors: Ioanna-Yvonni Tsaknaki, Andrea Macrì, Fabrizio Lillo
+arXiv ID: 2607.06121
+arXiv URL: https://arxiv.org/abs/2607.06121
+Posted: 2026-07-12
+
+Summary: Researchers compared two approaches to finding price manipulation opportunities in financial markets: a traditional method that assumes it knows how prices work, and an artificial intelligence agent that learns patterns from raw data. For moderately volatile markets, the AI agent discovered profitable manipulation strategies using limited training data and actually outperformed the traditional method, even though the traditional method started with correct assumptions about how markets function.
+
+Why it matters: Financial regulators need to understand whether AI systems could discover market manipulation faster than humans can detect and prevent it. This work shows that AI agents can indeed find exploitation strategies that evade detection, suggesting exchanges and regulators must develop better surveillance tools before deploying their own AI systems in trading. The findings also reveal a blind spot in traditional market models: when real-world data is noisy, AI's flexibility can beat expert knowledge—a warning that deploying unsupervised learning in finance without safeguards could create new vulnerabilities.
 
 ---
 Title: MulTTiPop: A Multitrack Transcription Dataset for Pop Music
