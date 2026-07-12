@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 424 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 427 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 145 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 146 papers in archive.
+  - "SLORR: Simple and Efficient In-Training Low-Rank Regularization"
   - "OpenCoF: Learning to Reason Through Video Generation"
-  - "MulTTiPop: A Multitrack Transcription Dataset for Pop Music"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 36 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 37 papers in archive.
+  - "TRM-Raft: A Byzantine-Resistant Raft Consensus via Integrated Trust and Reputation Model"
   - "From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure"
-  - "Automated Compliance Mapping in Cloud Security with Domain-Adapted Sentence Transformers"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 34 papers in archive.
   - "Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine"
   - "Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 35 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 36 papers in archive.
+  - "Sharp bounds for stochastic proximal and projection estimators via radial dominance"
   - "K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy"
-  - "Latency-Aware Bid Acceptance under Operational Feasibility: A Public Benchmark with Hindsight Ceilings"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 34 papers in archive.
   - "DrugGen 2: A disease-aware language model for enhancing drug discovery"
   - "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Comparative Review of Methods to Create a Composite Index for Sustainable and Inclusive Wellbeing"
 
 ## 10 most recent papers
+
+### SLORR: Simple and Efficient In-Training Low-Rank Regularization
+- URL: https://paperplaine.com/papers/slorr-simple-and-efficient
+- Category: Computer Science · AI
+- Authors: David González-Martínez, Shiwei Liu
+- arXiv: 2607.08754
+- Plain-English subtitle: Making neural networks easier to shrink without losing what they've learned
+- Summary: Researchers created SLORR, a lightweight method that nudges neural networks toward simpler, more compressible structures during training—without requiring expensive mathematical operations or architectural changes. When tested on image recognition and large language models, SLORR let researchers compress models by significant amounts while keeping performance intact and adding less than 1% to training time.
+- Why it matters: Smaller neural networks cost less to run and store, which makes AI systems more practical for phones, edge devices, and resource-limited settings. SLORR achieves this compression without the usual trade-offs of either losing accuracy or slowing down training, making model compression accessible to more researchers and practitioners.
+
+### TRM-Raft: A Byzantine-Resistant Raft Consensus via Integrated Trust and Reputation Model
+- URL: https://paperplaine.com/papers/trm-raft-a-byzantine
+- Category: Computer Science
+- Authors: Jie Zhang, Xubo Fan, Xiaohong Li et al.
+- arXiv: 2607.08666
+- Plain-English subtitle: Making Raft consensus safe when some computers actively lie or cheat
+- Summary: Raft is a popular system for coordinating data across multiple computers, but it assumes failures are honest mistakes—it can't handle nodes that deliberately forge elections or tamper with data. Researchers added a trust-and-reputation layer that tracks each node's behavior, penalizes dishonest actions, and blocks untrustworthy nodes from leadership. In testing with 40% malicious nodes, the system kept bad leaders below 5% while losing less than 10% speed.
+- Why it matters: Raft powers critical infrastructure like service registries and blockchain systems. Without this fix, a single dishonest operator or hacked server could forge elections or corrupt records. This upgrade protects those systems without requiring a complete redesign or the heavy computational cost of older Byzantine-resistant protocols.
+
+### Sharp bounds for stochastic proximal and projection estimators via radial dominance
+- URL: https://paperplaine.com/papers/sharp-bounds-for-stochastic
+- Category: Mathematics
+- Authors: Gonzalo Contador, Pedro Pérez-Aros, Emilio Vilches
+- arXiv: 2607.08670
+- Plain-English subtitle: Proving how accurately random methods can solve convex optimization problems
+- Summary: Mathematicians have proven sharp bounds on how well stochastic methods can approximate solutions to convex optimization problems—the kind used constantly in machine learning and engineering. The work uses a technique called radial dominance to show exactly how the error shrinks as you add more random samples, and proves these rates are the best possible.
+- Why it matters: Optimization algorithms power everything from training neural networks to portfolio design, but engineers have long worked without knowing if their chosen method is efficient or wasteful. These bounds tell practitioners when stochastic approximation methods will work well and when the error rates are guaranteed tight—eliminating guesswork about algorithm quality.
 
 ### OpenCoF: Learning to Reason Through Video Generation
 - URL: https://paperplaine.com/papers/opencof-learning-to-reason
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When AI image generators seem accurate but actually produce unstable results
 - Summary: Diffusion models—the AI systems behind image generators—are usually trained to match real data distributions accurately, but this training goal doesn't guarantee the sampling process will remain numerically stable. Researchers constructed examples where a learned score function has negligibly small error by standard measures, yet its discretized sampling algorithm produces outputs with wildly diverging statistical properties, contradicting what the training metrics predicted.
 - Why it matters: Diffusion models power real products like DALL-E and Stable Diffusion. If a model passes standard accuracy tests but fails on numerical stability, it could generate bizarre or corrupted images on rare trajectories—failures that wouldn't be caught by conventional evaluation. The researchers also show that constraining the learned function to stay within known bounds fixes the problem, offering a practical safeguard for production systems.
-
-### Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine
-- URL: https://paperplaine.com/papers/approaching-carnot-efficiency-at
-- Category: Physics
-- Authors: Shogo Toma, Atsushi Noguchi, Ken Funo et al.
-- arXiv: 2607.08713
-- Plain-English subtitle: Building heat engines that squeeze out maximum efficiency without sacrificing power
-- Summary: Researchers designed a quantum heat engine using superconducting circuits that can approach the theoretical efficiency limit (Carnot efficiency) while still producing useful power—something impossible for classical engines. The trick is harnessing collective quantum effects that boost the engine's activity in ways classical systems cannot match.
-- Why it matters: Classical heat engines face a hard trade-off: boost efficiency and power drops, or maintain power and efficiency suffers. Cracking this constraint could reshape how we design future quantum devices and energy systems. This work proves the mechanism isn't just theoretical—it can actually be built and tested in real hardware.
-
-### K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy
-- URL: https://paperplaine.com/papers/k-spherical-horospherical-averages
-- Category: Mathematics
-- Authors: Sanghoon Kwon
-- arXiv: 2607.08704
-- Plain-English subtitle: How randomness spreads in abstract algebraic structures built on trees
-- Summary: A mathematician proved exact formulas for how averages spread across a specific type of abstract space called the Nagao quotient. The key insight is that two very different dynamical processes—one expanding outward, one shrinking inward—actually describe the same underlying structure on a tree. The formulas reveal when the spreading reaches perfect balance and when errors remain, giving quantitative bounds on the convergence.
-- Why it matters: These results resolve long-standing questions about equidistribution—how objects distribute evenly—in algebraic spaces that appear throughout modern number theory and representation theory. The exact error formulas allow mathematicians to move beyond just proving things converge 'eventually' and instead predict precisely how fast and where deviations occur, enabling more refined analysis of dynamical systems on these structures.
-
-### Pose-to-Biomechanics: Bridging 3D Human Pose Estimation and Biomechanical Attribute Prediction
-- URL: https://paperplaine.com/papers/pose-to-biomechanics-bridging
-- Category: Computer Science · AI
-- Authors: Ayda Eghbalian, Kevin Desai
-- arXiv: 2607.08725
-- Plain-English subtitle: Turning pose videos into measurements of body stress and muscle work
-- Summary: Researchers created BioModule, a lightweight add-on that converts standard 3D pose estimates from videos into biomechanical measurements—like joint forces, muscle activation, and movement efficiency—that matter for injury prevention and rehabilitation. The system works with any existing pose estimator without modifications, and the team built the first large-scale dataset pairing video recordings with precise biomechanical labels to train and test it.
-- Why it matters: Physical therapists, sports coaches, and ergonomists currently need expensive motion-capture labs with markers placed on patients' bodies to measure how joints load during movement. This work enables those same biomechanical insights from ordinary video, making detailed movement analysis accessible in clinics, gyms, and workplaces where cameras already exist. It could expand screening for injury risk and personalized rehabilitation to millions more people who can't afford specialized labs.
 
 ## About
 

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.08754",
+    "title": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
+    "authors": "David González-Martínez, Shiwei Liu",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-09T17:51:50Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Making neural networks easier to shrink without losing what they've learned",
+    "summary": "Researchers created SLORR, a lightweight method that nudges neural networks toward simpler, more compressible structures during training—without requiring expensive mathematical operations or architectural changes. When tested on image recognition and large language models, SLORR let researchers compress models by significant amounts while keeping performance intact and adding less than 1% to training time.",
+    "whyItMatters": "Smaller neural networks cost less to run and store, which makes AI systems more practical for phones, edge devices, and resource-limited settings. SLORR achieves this compression without the usual trade-offs of either losing accuracy or slowing down training, making model compression accessible to more researchers and practitioners.",
+    "fetchedAt": "2026-07-12T20:03:45.731Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 171
+    },
+    "slug": "slorr-simple-and-efficient"
+  },
+  {
+    "id": "2607.08666",
+    "title": "TRM-Raft: A Byzantine-Resistant Raft Consensus via Integrated Trust and Reputation Model",
+    "authors": "Jie Zhang, Xubo Fan, Xiaohong Li et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-07-09T16:34:46Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Making Raft consensus safe when some computers actively lie or cheat",
+    "summary": "Raft is a popular system for coordinating data across multiple computers, but it assumes failures are honest mistakes—it can't handle nodes that deliberately forge elections or tamper with data. Researchers added a trust-and-reputation layer that tracks each node's behavior, penalizes dishonest actions, and blocks untrustworthy nodes from leadership. In testing with 40% malicious nodes, the system kept bad leaders below 5% while losing less than 10% speed.",
+    "whyItMatters": "Raft powers critical infrastructure like service registries and blockchain systems. Without this fix, a single dishonest operator or hacked server could forge elections or corrupt records. This upgrade protects those systems without requiring a complete redesign or the heavy computational cost of older Byzantine-resistant protocols.",
+    "fetchedAt": "2026-07-12T20:03:48.854Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 1,
+      "pageCount": 11,
+      "wordCount": 171
+    },
+    "slug": "trm-raft-a-byzantine"
+  },
+  {
+    "id": "2607.08670",
+    "title": "Sharp bounds for stochastic proximal and projection estimators via radial dominance",
+    "authors": "Gonzalo Contador, Pedro Pérez-Aros, Emilio Vilches",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-07-09T16:35:22Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Proving how accurately random methods can solve convex optimization problems",
+    "summary": "Mathematicians have proven sharp bounds on how well stochastic methods can approximate solutions to convex optimization problems—the kind used constantly in machine learning and engineering. The work uses a technique called radial dominance to show exactly how the error shrinks as you add more random samples, and proves these rates are the best possible.",
+    "whyItMatters": "Optimization algorithms power everything from training neural networks to portfolio design, but engineers have long worked without knowing if their chosen method is efficient or wasteful. These bounds tell practitioners when stochastic approximation methods will work well and when the error rates are guaranteed tight—eliminating guesswork about algorithm quality.",
+    "fetchedAt": "2026-07-12T20:03:51.751Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 156
+    },
+    "slug": "sharp-bounds-for-stochastic"
+  },
+  {
     "id": "2607.08763",
     "title": "OpenCoF: Learning to Reason Through Video Generation",
     "authors": "Xinyan Chen, Ziyu Guo, Renrui Zhang et al.",
