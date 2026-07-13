@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.09623",
+    "title": "Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026",
+    "authors": "Nirjhar Das, Md. Al-Mamun Provath",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-10T17:22:49Z",
+    "publishedFormatted": "Jul 10, 2026",
+    "subtitle": "Teaching AI to know when it's confident enough to answer trivia",
+    "summary": "A two-agent system won a competition for answering trivia questions with both text and images by learning to judge its own confidence. The key insight: instead of trying to be right about everything, one agent learned when to answer risky questions fast (Tossup rounds) while the other focused on getting the exact answer correct when time wasn't critical (Bonus rounds)—achieving the highest overall score without needing large model ensembles or search tools.",
+    "whyItMatters": "Uncertainty management is a core problem in real-world AI deployments where systems must act despite incomplete information. This approach—using separate strategies for speed versus accuracy and teaching models to recognize weak signals—transfers directly to applications like medical diagnosis, customer support, and autonomous systems where knowing when to defer or answer confidently can prevent costly mistakes.",
+    "fetchedAt": "2026-07-13T10:25:12.249Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 10,
+      "wordCount": 203
+    },
+    "slug": "task-specific-multimodal-question"
+  },
+  {
+    "id": "2607.09660",
+    "title": "Nonlinear particle detectors across the Rindler firewall",
+    "authors": "Matheus H. Zambianco, Eduardo Martín-Martínez",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-07-10T17:59:23Z",
+    "publishedFormatted": "Jul 10, 2026",
+    "subtitle": "Why quantum detectors break down near black hole boundaries",
+    "summary": "Physicists discovered that certain quantum detectors fail catastrophically when they cross the edge of a black hole, producing mathematical infinities that can't be resolved. The breakdown happens specifically when detectors measure nonlinear properties like momentum or energy density, suggesting the popular \"firewall\" model of black hole boundaries may be fundamentally incompatible with how these detectors work.",
+    "whyItMatters": "Black hole boundaries remain one of the deepest unsolved puzzles in physics, sitting at the intersection of quantum mechanics and gravity. If the standard firewall model truly breaks down with certain detectors, it could force physicists to reconsider what actually happens at event horizons—potentially reshaping theories of how information behaves near black holes.",
+    "fetchedAt": "2026-07-13T10:25:16.855Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 133
+    },
+    "slug": "nonlinear-particle-detectors-across"
+  },
+  {
+    "id": "2607.09532",
+    "title": "Statistically Undetectable Backdoors in Deep Neural Networks",
+    "authors": "Andrej Bogdanov, Alon Rosen, Neekon Vafa",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-10T15:37:32Z",
+    "publishedFormatted": "Jul 10, 2026",
+    "subtitle": "Hidden sabotage in AI models that leaves no statistical fingerprints",
+    "summary": "Researchers have discovered how to plant hidden backdoors in neural networks that are mathematically invisible — even when someone inspects the entire trained model with complete access. Someone with this backdoor can instantly break the network's security, while people trying to attack the model without the backdoor would need longer than the age of the universe to do the same thing.",
+    "whyItMatters": "This reveals a critical vulnerability in how AI systems are trained and deployed. If someone controls the training process, they can sabotage a model in ways that look completely legitimate to any auditor or security check. This creates a significant asymmetry in power between those who train AI systems and those who use them — trustworthiness becomes nearly impossible to verify mathematically, even with full access to the model's internals.",
+    "fetchedAt": "2026-07-13T10:25:19.718Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 111
+    },
+    "slug": "statistically-undetectable-backdoors-in"
+  },
+  {
     "id": "2607.08754",
     "title": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
     "authors": "David González-Martínez, Shiwei Liu",

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 427 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-12
+This file contains the complete plain-English text of all 430 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-13
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026
+Subtitle: Teaching AI to know when it's confident enough to answer trivia
+URL: https://paperplaine.com/papers/task-specific-multimodal-question
+Category: Computer Science · AI
+Authors: Nirjhar Das, Md. Al-Mamun Provath
+arXiv ID: 2607.09623
+arXiv URL: https://arxiv.org/abs/2607.09623
+Posted: 2026-07-13
+
+Summary: A two-agent system won a competition for answering trivia questions with both text and images by learning to judge its own confidence. The key insight: instead of trying to be right about everything, one agent learned when to answer risky questions fast (Tossup rounds) while the other focused on getting the exact answer correct when time wasn't critical (Bonus rounds)—achieving the highest overall score without needing large model ensembles or search tools.
+
+Why it matters: Uncertainty management is a core problem in real-world AI deployments where systems must act despite incomplete information. This approach—using separate strategies for speed versus accuracy and teaching models to recognize weak signals—transfers directly to applications like medical diagnosis, customer support, and autonomous systems where knowing when to defer or answer confidently can prevent costly mistakes.
+
+---
+Title: Nonlinear particle detectors across the Rindler firewall
+Subtitle: Why quantum detectors break down near black hole boundaries
+URL: https://paperplaine.com/papers/nonlinear-particle-detectors-across
+Category: Physics
+Authors: Matheus H. Zambianco, Eduardo Martín-Martínez
+arXiv ID: 2607.09660
+arXiv URL: https://arxiv.org/abs/2607.09660
+Posted: 2026-07-13
+
+Summary: Physicists discovered that certain quantum detectors fail catastrophically when they cross the edge of a black hole, producing mathematical infinities that can't be resolved. The breakdown happens specifically when detectors measure nonlinear properties like momentum or energy density, suggesting the popular "firewall" model of black hole boundaries may be fundamentally incompatible with how these detectors work.
+
+Why it matters: Black hole boundaries remain one of the deepest unsolved puzzles in physics, sitting at the intersection of quantum mechanics and gravity. If the standard firewall model truly breaks down with certain detectors, it could force physicists to reconsider what actually happens at event horizons—potentially reshaping theories of how information behaves near black holes.
+
+---
+Title: Statistically Undetectable Backdoors in Deep Neural Networks
+Subtitle: Hidden sabotage in AI models that leaves no statistical fingerprints
+URL: https://paperplaine.com/papers/statistically-undetectable-backdoors-in
+Category: Statistics
+Authors: Andrej Bogdanov, Alon Rosen, Neekon Vafa
+arXiv ID: 2607.09532
+arXiv URL: https://arxiv.org/abs/2607.09532
+Posted: 2026-07-13
+
+Summary: Researchers have discovered how to plant hidden backdoors in neural networks that are mathematically invisible — even when someone inspects the entire trained model with complete access. Someone with this backdoor can instantly break the network's security, while people trying to attack the model without the backdoor would need longer than the age of the universe to do the same thing.
+
+Why it matters: This reveals a critical vulnerability in how AI systems are trained and deployed. If someone controls the training process, they can sabotage a model in ways that look completely legitimate to any auditor or security check. This creates a significant asymmetry in power between those who train AI systems and those who use them — trustworthiness becomes nearly impossible to verify mathematically, even with full access to the model's internals.
 
 ---
 Title: SLORR: Simple and Efficient In-Training Low-Rank Regularization

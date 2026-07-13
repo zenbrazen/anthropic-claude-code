@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 427 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 430 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 146 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 147 papers in archive.
+  - "Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026"
   - "SLORR: Simple and Efficient In-Training Low-Rank Regularization"
-  - "OpenCoF: Learning to Reason Through Video Generation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 37 papers in archive.
   - "TRM-Raft: A Byzantine-Resistant Raft Consensus via Integrated Trust and Reputation Model"
   - "From Legacy Documentation to OSCAL: An MCP-Based Agent Pipeline for Threat-Informed Continuous Compliance in Critical Infrastructure"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 34 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 35 papers in archive.
+  - "Nonlinear particle detectors across the Rindler firewall"
   - "Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine"
-  - "Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 36 papers in archive.
   - "Sharp bounds for stochastic proximal and projection estimators via radial dominance"
   - "K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 37 papers in archive.
   - "Can Reinforcement Learning Efficiently Discover Price Manipulation?"
   - "Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 36 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 37 papers in archive.
+  - "Statistically Undetectable Backdoors in Deep Neural Networks"
   - "Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks"
-  - "Avoiding unsafe sets when training with Langevin Dynamics"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 35 papers in archive.
   - "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems"
   - "The Cost of Lunar South-Polar Geometry, and Surface Beacons as the Efficient Fix: A Dilution-of-Precision Analysis"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Comparative Review of Methods to Create a Composite Index for Sustainable and Inclusive Wellbeing"
 
 ## 10 most recent papers
+
+### Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026
+- URL: https://paperplaine.com/papers/task-specific-multimodal-question
+- Category: Computer Science · AI
+- Authors: Nirjhar Das, Md. Al-Mamun Provath
+- arXiv: 2607.09623
+- Plain-English subtitle: Teaching AI to know when it's confident enough to answer trivia
+- Summary: A two-agent system won a competition for answering trivia questions with both text and images by learning to judge its own confidence. The key insight: instead of trying to be right about everything, one agent learned when to answer risky questions fast (Tossup rounds) while the other focused on getting the exact answer correct when time wasn't critical (Bonus rounds)—achieving the highest overall score without needing large model ensembles or search tools.
+- Why it matters: Uncertainty management is a core problem in real-world AI deployments where systems must act despite incomplete information. This approach—using separate strategies for speed versus accuracy and teaching models to recognize weak signals—transfers directly to applications like medical diagnosis, customer support, and autonomous systems where knowing when to defer or answer confidently can prevent costly mistakes.
+
+### Nonlinear particle detectors across the Rindler firewall
+- URL: https://paperplaine.com/papers/nonlinear-particle-detectors-across
+- Category: Physics
+- Authors: Matheus H. Zambianco, Eduardo Martín-Martínez
+- arXiv: 2607.09660
+- Plain-English subtitle: Why quantum detectors break down near black hole boundaries
+- Summary: Physicists discovered that certain quantum detectors fail catastrophically when they cross the edge of a black hole, producing mathematical infinities that can't be resolved. The breakdown happens specifically when detectors measure nonlinear properties like momentum or energy density, suggesting the popular "firewall" model of black hole boundaries may be fundamentally incompatible with how these detectors work.
+- Why it matters: Black hole boundaries remain one of the deepest unsolved puzzles in physics, sitting at the intersection of quantum mechanics and gravity. If the standard firewall model truly breaks down with certain detectors, it could force physicists to reconsider what actually happens at event horizons—potentially reshaping theories of how information behaves near black holes.
+
+### Statistically Undetectable Backdoors in Deep Neural Networks
+- URL: https://paperplaine.com/papers/statistically-undetectable-backdoors-in
+- Category: Statistics
+- Authors: Andrej Bogdanov, Alon Rosen, Neekon Vafa
+- arXiv: 2607.09532
+- Plain-English subtitle: Hidden sabotage in AI models that leaves no statistical fingerprints
+- Summary: Researchers have discovered how to plant hidden backdoors in neural networks that are mathematically invisible — even when someone inspects the entire trained model with complete access. Someone with this backdoor can instantly break the network's security, while people trying to attack the model without the backdoor would need longer than the age of the universe to do the same thing.
+- Why it matters: This reveals a critical vulnerability in how AI systems are trained and deployed. If someone controls the training process, they can sabotage a model in ways that look completely legitimate to any auditor or security check. This creates a significant asymmetry in power between those who train AI systems and those who use them — trustworthiness becomes nearly impossible to verify mathematically, even with full access to the model's internals.
 
 ### SLORR: Simple and Efficient In-Training Low-Rank Regularization
 - URL: https://paperplaine.com/papers/slorr-simple-and-efficient
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A dataset to test whether AI can accurately transcribe pop music into notes
 - Summary: Researchers created MulTTiPop, a collection of 572 pop music segments with matching digital note-by-note transcriptions, to measure how well AI systems can automatically convert recorded music into written musical notation. When tested on the best existing AI models, the results showed significant room for improvement—the top performer only correctly identified 38% of note onsets, the moment each note begins.
 - Why it matters: Automatic music transcription is a key step toward AI that can analyze, remix, and understand recorded music. This dataset gives researchers a reliable way to measure real progress on the problem. Better transcription systems could speed up music production, help musicians learn songs by ear, and improve music search and recommendation tools.
-
-### DrugGen 2: A disease-aware language model for enhancing drug discovery
-- URL: https://paperplaine.com/papers/druggen-2-a-disease
-- Category: Quantitative Biology
-- Authors: Ali Motahharynia, Mohammadreza Ghaffarzadeh-Esfahani, Mahsa Sheikholeslami et al.
-- arXiv: 2607.08404
-- Plain-English subtitle: AI that designs drugs while understanding the disease they'll treat
-- Summary: Researchers created DrugGen-2, an AI model that designs drug molecules by considering both the disease being treated and the specific protein target involved. When tested on diabetic kidney disease, the model generated drugs with stronger predicted binding to their targets than existing approved treatments like enalapril, while also producing more diverse and chemically valid candidates than earlier AI systems.
-- Why it matters: Current drug discovery AI tools ignore disease context, potentially missing how the same protein behaves differently across conditions. DrugGen-2 bridges this gap, which could speed up finding treatments for complex diseases where target proteins change behavior. This matters because it compresses a lengthy trial-and-error process—generating better drug candidates faster could accelerate development for conditions like diabetic nephropathy where current treatments remain suboptimal.
-
-### Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks
-- URL: https://paperplaine.com/papers/beyond-backpropagation-monte-carlo
-- Category: Statistics
-- Authors: Hong Zhao
-- arXiv: 2607.08406
-- Plain-English subtitle: Training neural networks without calculating gradients at all
-- Summary: A simple random-search algorithm can train deep neural networks without relying on backpropagation or gradients — the standard method that can cause training to fail. The method works by randomly tweaking each parameter and keeping changes that reduce errors, and successfully trained networks with over 20 layers, wide networks with thousands of neurons, and even Transformer models on image and language tasks.
-- Why it matters: Backpropagation's gradient calculations become unreliable in very deep networks, limiting how large and capable these systems can be. This gradient-free alternative sidesteps that problem entirely and works without requiring architectural tricks like batch normalization that researchers currently use as workarounds. If practical, it could unlock simpler ways to train neural networks and offer new insights into how these systems learn.
-
-### Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling
-- URL: https://paperplaine.com/papers/score-accuracy-along-the
-- Category: Computer Science · AI
-- Authors: Yiwei Zhou
-- arXiv: 2607.08757
-- Plain-English subtitle: When AI image generators seem accurate but actually produce unstable results
-- Summary: Diffusion models—the AI systems behind image generators—are usually trained to match real data distributions accurately, but this training goal doesn't guarantee the sampling process will remain numerically stable. Researchers constructed examples where a learned score function has negligibly small error by standard measures, yet its discretized sampling algorithm produces outputs with wildly diverging statistical properties, contradicting what the training metrics predicted.
-- Why it matters: Diffusion models power real products like DALL-E and Stable Diffusion. If a model passes standard accuracy tests but fails on numerical stability, it could generate bizarre or corrupted images on rare trajectories—failures that wouldn't be caught by conventional evaluation. The researchers also show that constraining the learned function to stay within known bounds fixes the problem, offering a practical safeguard for production systems.
 
 ## About
 
