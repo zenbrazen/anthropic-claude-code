@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.09438",
+    "title": "Test-Time Scaling for Small VLMs on Multilingual Visual MCQ",
+    "authors": "Spiros Baxevanakis, Peng-Jian Yang",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-10T14:09:04Z",
+    "publishedFormatted": "Jul 10, 2026",
+    "subtitle": "Why giving small AI models more thinking space beats fancier reasoning tricks",
+    "summary": "Small vision-language models can match larger ones on multilingual image questions through test-time scaling, but not in the way researchers expected. The real bottleneck isn't choosing between different reasoning paths—it's simply giving the model enough tokens to finish writing its answer. Fixing how the model formats its response and doubling the thinking budget from 1,000 to 2,000 tokens recovered most gains, while elaborate verification methods added almost nothing.",
+    "whyItMatters": "Smaller AI models are cheaper to run and deploy on phones or edge devices, but they've lagged behind large models on complex reasoning tasks. This work shows that smaller models don't need expensive new techniques—they just need simpler fixes and room to think. The approach achieved top performance on a major visual reasoning benchmark, suggesting that efficiency and capability aren't as far apart as once thought.",
+    "fetchedAt": "2026-07-13T20:08:21.954Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 14,
+      "wordCount": 197
+    },
+    "slug": "test-time-scaling-for"
+  },
+  {
+    "id": "2607.08379",
+    "title": "Classical versus Deep Mirror-Symmetry Scoring: A Benchmark of Thirteen Methods",
+    "authors": "Maximilian Woehrer",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-07-09T11:56:49Z",
+    "publishedFormatted": "Jul 9, 2026",
+    "subtitle": "Classical and deep learning methods for measuring mirror symmetry compared",
+    "summary": "Researchers tested 13 different methods for measuring how mirror-symmetric an image is, comparing traditional computer vision techniques against modern deep learning approaches. Deep learning won on harder tasks, but a classical method called HOG came surprisingly close while running 300 times faster on standard computers—suggesting that for practical symmetry measurement, the speed advantage of classical methods may outweigh deep learning's modest performance gains.",
+    "whyItMatters": "Symmetry scoring matters in medical imaging (spotting abnormalities), product design, and quality control. Most industries currently pick symmetry methods by guesswork rather than evidence. This benchmark gives engineers actual data to choose the right tool: if you need state-of-the-art accuracy and have GPU resources, use deep learning; if you need to process images fast on regular hardware, the classical HOG method is nearly as good and 300 times quicker.",
+    "fetchedAt": "2026-07-13T20:08:25.458Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 185
+    },
+    "slug": "classical-versus-deep-mirror"
+  },
+  {
+    "id": "2607.09230",
+    "title": "When Does Order Flow Matter? State-Dependent L2 Liquidity-State Transitions in Crypto Futures",
+    "authors": "Joohyoung Jeon",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-07-10T09:21:00Z",
+    "publishedFormatted": "Jul 10, 2026",
+    "subtitle": "How to predict when cryptocurrency markets will shift between calm and chaotic",
+    "summary": "When Bitcoin and Ethereum futures markets are about to change character—from stable to stressed, or vice versa—the current state of the order book is far more predictive than what's actually being bought and sold. A model based only on order-book snapshots beat interpretable trading models, and adding trade flow helped only modestly for Bitcoin and inconsistently for Ethereum, suggesting market microstructure models should start with liquidity state, not order flow.",
+    "whyItMatters": "Traders and risk managers need to know when market conditions are about to shift—it determines which strategies work and how much safety margin to keep. This research shows they should monitor the shape and depth of the order book itself rather than chasing fleeting trade signals. The state-first approach also gives machine-learning and AI-based trading systems a clearer foundation to build on, preventing them from overfit to noise.",
+    "fetchedAt": "2026-07-13T20:08:29.399Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 268
+    },
+    "slug": "when-does-order-flow"
+  },
+  {
     "id": "2607.09623",
     "title": "Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026",
     "authors": "Nirjhar Das, Md. Al-Mamun Provath",
