@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 433 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-13
+This file contains the complete plain-English text of all 436 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-14
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Time-Lag-Aware Deep Reinforcement Learning for Flexible Job-Shop Scheduling in PPVC Module Factories
+Subtitle: AI scheduler that handles factory downtime when modules wait to dry or cure
+URL: https://paperplaine.com/papers/time-lag-aware-deep
+Category: Computer Science · AI
+Authors: Ziheng Zhang, Wei Zhang
+arXiv ID: 2607.11725
+arXiv URL: https://arxiv.org/abs/2607.11725
+Posted: 2026-07-14
+
+Summary: Researchers built an AI system to schedule work in factories that build house modules, where long waits for concrete to cure and paint to dry create bottlenecks that traditional scheduling ignores. The AI reaches within 4% of the best possible schedule and outperforms both standard scheduling rules and genetic algorithms, even as factories get more congested.
+
+Why it matters: Factory delays from curing and drying can stretch production timelines by two-thirds—a problem that existing scheduling methods make worse by ignoring these lags entirely. This AI-based scheduler works without expensive software licenses, adapts to disruptions in seconds, and could speed up prefabricated construction timelines, making modular building faster and more cost-competitive with traditional methods.
+
+---
+Title: Political Power in International Trade
+Subtitle: Which countries would suffer most if major trade partners cut ties
+URL: https://paperplaine.com/papers/political-power-in-international
+Category: Economics
+Authors: Ashwin Bhattathiripad, Vipin P Veetil
+arXiv ID: 2607.09990
+arXiv URL: https://arxiv.org/abs/2607.09990
+Posted: 2026-07-14
+
+Summary: When countries sever trade relationships, the pain is rarely equal. Using data from the entire global supply network in 2022, researchers measured how much economic damage each country would suffer from breaking ties with major partners—and found stark imbalances: the United States has leverage over all its trading partners, China over all but one, and countries on the economic periphery like Belarus face devastating losses from severing ties with neighbors while barely denting those neighbors' economies. The asymmetry stems not from trade imbalances but from a country's position in the global network: central hubs can easily find alternatives, while dependent nations cannot.
+
+Why it matters: Trade negotiations and sanctions are built on assumptions about mutual vulnerability, but this research shows the leverage is wildly unequal. A country's actual bargaining power in trade disputes depends on how easily it can switch suppliers or find new buyers—something determined by its position in the global economy, not the size of its bilateral trade deficit. Policymakers threatening sanctions or trade restrictions often overestimate their leverage and underestimate the costs to their own economies if a partner retaliates by finding alternatives.
+
+---
+Title: Scaffold splits hide structural-frontier failures in ADMET models
+Subtitle: Standard drug-property tests miss critical failure zones in AI models
+URL: https://paperplaine.com/papers/scaffold-splits-hide-structural
+Category: Quantitative Biology
+Authors: Jiacheng Zheng, Chang Guo, Zixuan Wang et al.
+arXiv ID: 2607.10729
+arXiv URL: https://arxiv.org/abs/2607.10729
+Posted: 2026-07-14
+
+Summary: Drug-discovery AI models perform much worse than expected when tested on chemically unusual molecules, even when using supposedly rigorous evaluation methods. Researchers found that standard testing approaches hide these "structural frontier" failures — inflating measured accuracy by 87% to 130% — and that adding penalty-based safeguards to training doesn't fix the underlying problem.
+
+Why it matters: Drug companies rely on these AI models to screen millions of candidate molecules quickly. If models fail silently on unusual chemical structures, they could miss effective drugs or recommend dangerous compounds. This work reveals that current evaluation practices mask real weaknesses, meaning companies need better testing protocols before deploying these tools in actual drug discovery pipelines.
 
 ---
 Title: Test-Time Scaling for Small VLMs on Multilingual Visual MCQ
