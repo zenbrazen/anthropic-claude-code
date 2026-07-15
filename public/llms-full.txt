@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 438 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-14
+This file contains the complete plain-English text of all 441 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-15
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution
+Subtitle: Teaching AI agents to recognize when a task is actually simple
+URL: https://paperplaine.com/papers/do-ai-agents-know
+Category: Computer Science · AI
+Authors: Junjie Yin, Xinyu Feng
+arXiv ID: 2607.13034
+arXiv URL: https://arxiv.org/abs/2607.13034
+Posted: 2026-07-15
+
+Summary: AI agents waste enormous amounts of computing power on simple tasks by re-reading files and dependencies they've already seen, treating a one-line code edit like a full codebase audit. Researchers developed E3, a method that makes agents estimate task difficulty first, then expand their search only if something goes wrong—cutting costs by 85% and file inspections by 92% while maintaining 100% success rates on code-editing tasks.
+
+Why it matters: As AI agents handle more real engineering work, they burn through computing budgets and API costs needlessly. This approach directly reduces what companies spend on AI tools by making them work smarter rather than harder—and the real-world tests on live open-source code confirm the savings are genuine, not just theoretical.
+
+---
+Title: The Infraparticle Edge
+Subtitle: Why charged particles don't have sharp energy edges in quantum physics
+URL: https://paperplaine.com/papers/the-infraparticle-edge
+Category: Physics
+Authors: Soo-Jong Rey
+arXiv ID: 2607.13001
+arXiv URL: https://arxiv.org/abs/2607.13001
+Posted: 2026-07-15
+
+Summary: When charged particles emit photons, they don't have a single well-defined energy boundary—instead they fade out gradually at the edge, following a mathematical power law. Rey shows this fuzzy edge comes directly from soft photons we can't measure individually, and that the exact shape of this edge encodes information about how those unmeasured photons behave.
+
+Why it matters: Particle detectors can only measure particles down to a minimum energy threshold—softer photons get lost. Understanding how this measurement limit shapes what we observe at the edge of energy spectra is essential for extracting accurate particle properties from real experiments and for theoretical predictions in high-energy physics.
+
+---
+Title: Ensemble Controlled-Flow Filtering for Implicit Data Assimilation
+Subtitle: A new way to update weather models when sensors measure things indirectly
+URL: https://paperplaine.com/papers/ensemble-controlled-flow-filtering
+Category: Mathematics
+Authors: Zhuoyuan Li, Yue Zhao, Ming Li
+arXiv ID: 2607.12975
+arXiv URL: https://arxiv.org/abs/2607.12975
+Posted: 2026-07-15
+
+Summary: Scientists have developed a new method called the Ensemble Controlled-flow Filter that updates forecasts from dynamical systems when observations are complex, indirect, or only accessible through simulation. Unlike traditional filtering methods that assume observations are clean and straightforward, this approach works with messy real-world measurement mechanisms—including those that produce multiple possible outcomes or require running expensive computer simulations to interpret.
+
+Why it matters: Weather forecasting, climate modeling, and other complex systems often measure things indirectly: a satellite might infer temperature from radiation, or a sensor might measure a combination of quantities rather than one thing directly. Standard filtering techniques fail in these cases. This method makes it feasible to improve forecasts in situations where current tools break down, potentially extending accurate prediction windows for weather and other dynamical systems that rely on difficult-to-interpret observations.
 
 ---
 Title: A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol

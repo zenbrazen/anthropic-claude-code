@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 438 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 441 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 150 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 151 papers in archive.
+  - "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution"
   - "A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol"
-  - "Time-Lag-Aware Deep Reinforcement Learning for Flexible Job-Shop Scheduling in PPVC Module Factories"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 38 papers in archive.
   - "Closing the Loop: An Access-Control Architecture for Automated, Anomaly-Driven Network Revocation in IoT Deployments"
   - "TRM-Raft: A Byzantine-Resistant Raft Consensus via Integrated Trust and Reputation Model"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 35 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 36 papers in archive.
+  - "The Infraparticle Edge"
   - "Nonlinear particle detectors across the Rindler firewall"
-  - "Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 36 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 37 papers in archive.
+  - "Ensemble Controlled-Flow Filtering for Implicit Data Assimilation"
   - "Sharp bounds for stochastic proximal and projection estimators via radial dominance"
-  - "K-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 35 papers in archive.
   - "Scaffold splits hide structural-frontier failures in ADMET models"
   - "DrugGen 2: A disease-aware language model for enhancing drug discovery"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers"
 
 ## 10 most recent papers
+
+### Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution
+- URL: https://paperplaine.com/papers/do-ai-agents-know
+- Category: Computer Science · AI
+- Authors: Junjie Yin, Xinyu Feng
+- arXiv: 2607.13034
+- Plain-English subtitle: Teaching AI agents to recognize when a task is actually simple
+- Summary: AI agents waste enormous amounts of computing power on simple tasks by re-reading files and dependencies they've already seen, treating a one-line code edit like a full codebase audit. Researchers developed E3, a method that makes agents estimate task difficulty first, then expand their search only if something goes wrong—cutting costs by 85% and file inspections by 92% while maintaining 100% success rates on code-editing tasks.
+- Why it matters: As AI agents handle more real engineering work, they burn through computing budgets and API costs needlessly. This approach directly reduces what companies spend on AI tools by making them work smarter rather than harder—and the real-world tests on live open-source code confirm the savings are genuine, not just theoretical.
+
+### The Infraparticle Edge
+- URL: https://paperplaine.com/papers/the-infraparticle-edge
+- Category: Physics
+- Authors: Soo-Jong Rey
+- arXiv: 2607.13001
+- Plain-English subtitle: Why charged particles don't have sharp energy edges in quantum physics
+- Summary: When charged particles emit photons, they don't have a single well-defined energy boundary—instead they fade out gradually at the edge, following a mathematical power law. Rey shows this fuzzy edge comes directly from soft photons we can't measure individually, and that the exact shape of this edge encodes information about how those unmeasured photons behave.
+- Why it matters: Particle detectors can only measure particles down to a minimum energy threshold—softer photons get lost. Understanding how this measurement limit shapes what we observe at the edge of energy spectra is essential for extracting accurate particle properties from real experiments and for theoretical predictions in high-energy physics.
+
+### Ensemble Controlled-Flow Filtering for Implicit Data Assimilation
+- URL: https://paperplaine.com/papers/ensemble-controlled-flow-filtering
+- Category: Mathematics
+- Authors: Zhuoyuan Li, Yue Zhao, Ming Li
+- arXiv: 2607.12975
+- Plain-English subtitle: A new way to update weather models when sensors measure things indirectly
+- Summary: Scientists have developed a new method called the Ensemble Controlled-flow Filter that updates forecasts from dynamical systems when observations are complex, indirect, or only accessible through simulation. Unlike traditional filtering methods that assume observations are clean and straightforward, this approach works with messy real-world measurement mechanisms—including those that produce multiple possible outcomes or require running expensive computer simulations to interpret.
+- Why it matters: Weather forecasting, climate modeling, and other complex systems often measure things indirectly: a satellite might infer temperature from radiation, or a sensor might measure a combination of quantities rather than one thing directly. Standard filtering techniques fail in these cases. This method makes it feasible to improve forecasts in situations where current tools break down, potentially extending accurate prediction windows for weather and other dynamical systems that rely on difficult-to-interpret observations.
 
 ### A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol
 - URL: https://paperplaine.com/papers/a-durability-and-cross
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Classical and deep learning methods for measuring mirror symmetry compared
 - Summary: Researchers tested 13 different methods for measuring how mirror-symmetric an image is, comparing traditional computer vision techniques against modern deep learning approaches. Deep learning won on harder tasks, but a classical method called HOG came surprisingly close while running 300 times faster on standard computers—suggesting that for practical symmetry measurement, the speed advantage of classical methods may outweigh deep learning's modest performance gains.
 - Why it matters: Symmetry scoring matters in medical imaging (spotting abnormalities), product design, and quality control. Most industries currently pick symmetry methods by guesswork rather than evidence. This benchmark gives engineers actual data to choose the right tool: if you need state-of-the-art accuracy and have GPU resources, use deep learning; if you need to process images fast on regular hardware, the classical HOG method is nearly as good and 300 times quicker.
-
-### When Does Order Flow Matter? State-Dependent L2 Liquidity-State Transitions in Crypto Futures
-- URL: https://paperplaine.com/papers/when-does-order-flow
-- Category: Quantitative Finance
-- Authors: Joohyoung Jeon
-- arXiv: 2607.09230
-- Plain-English subtitle: How to predict when cryptocurrency markets will shift between calm and chaotic
-- Summary: When Bitcoin and Ethereum futures markets are about to change character—from stable to stressed, or vice versa—the current state of the order book is far more predictive than what's actually being bought and sold. A model based only on order-book snapshots beat interpretable trading models, and adding trade flow helped only modestly for Bitcoin and inconsistently for Ethereum, suggesting market microstructure models should start with liquidity state, not order flow.
-- Why it matters: Traders and risk managers need to know when market conditions are about to shift—it determines which strategies work and how much safety margin to keep. This research shows they should monitor the shape and depth of the order book itself rather than chasing fleeting trade signals. The state-first approach also gives machine-learning and AI-based trading systems a clearer foundation to build on, preventing them from overfit to noise.
-
-### Task-Specific Multimodal Question Answering Agents via Confidence Calibration and Incremental Reasoning for QANTA 2026
-- URL: https://paperplaine.com/papers/task-specific-multimodal-question
-- Category: Computer Science · AI
-- Authors: Nirjhar Das, Md. Al-Mamun Provath
-- arXiv: 2607.09623
-- Plain-English subtitle: Teaching AI to know when it's confident enough to answer trivia
-- Summary: A two-agent system won a competition for answering trivia questions with both text and images by learning to judge its own confidence. The key insight: instead of trying to be right about everything, one agent learned when to answer risky questions fast (Tossup rounds) while the other focused on getting the exact answer correct when time wasn't critical (Bonus rounds)—achieving the highest overall score without needing large model ensembles or search tools.
-- Why it matters: Uncertainty management is a core problem in real-world AI deployments where systems must act despite incomplete information. This approach—using separate strategies for speed versus accuracy and teaching models to recognize weak signals—transfers directly to applications like medical diagnosis, customer support, and autonomous systems where knowing when to defer or answer confidently can prevent costly mistakes.
-
-### Nonlinear particle detectors across the Rindler firewall
-- URL: https://paperplaine.com/papers/nonlinear-particle-detectors-across
-- Category: Physics
-- Authors: Matheus H. Zambianco, Eduardo Martín-Martínez
-- arXiv: 2607.09660
-- Plain-English subtitle: Why quantum detectors break down near black hole boundaries
-- Summary: Physicists discovered that certain quantum detectors fail catastrophically when they cross the edge of a black hole, producing mathematical infinities that can't be resolved. The breakdown happens specifically when detectors measure nonlinear properties like momentum or energy density, suggesting the popular "firewall" model of black hole boundaries may be fundamentally incompatible with how these detectors work.
-- Why it matters: Black hole boundaries remain one of the deepest unsolved puzzles in physics, sitting at the intersection of quantum mechanics and gravity. If the standard firewall model truly breaks down with certain detectors, it could force physicists to reconsider what actually happens at event horizons—potentially reshaping theories of how information behaves near black holes.
 
 ## About
 
