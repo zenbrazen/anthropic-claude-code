@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 444 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 447 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 152 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 153 papers in archive.
+  - "MetaPerch: Learning from metadata for bioacoustics foundation models"
   - "Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model"
-  - "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 38 papers in archive.
   - "Closing the Loop: An Access-Control Architecture for Automated, Anomaly-Driven Network Revocation in IoT Deployments"
   - "TRM-Raft: A Byzantine-Resistant Raft Consensus via Integrated Trust and Reputation Model"
@@ -42,12 +42,12 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 37 papers in archive.
   - "Ensemble Controlled-Flow Filtering for Implicit Data Assimilation"
   - "Sharp bounds for stochastic proximal and projection estimators via radial dominance"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 35 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 36 papers in archive.
+  - "A modular state-space model of human perception, cognition, and decision dynamics"
   - "Scaffold splits hide structural-frontier failures in ADMET models"
-  - "DrugGen 2: A disease-aware language model for enhancing drug discovery"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 38 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 39 papers in archive.
+  - "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers"
   - "When Does Order Flow Matter? State-Dependent L2 Liquidity-State Transitions in Crypto Futures"
-  - "Can Reinforcement Learning Efficiently Discover Price Manipulation?"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 38 papers in archive.
   - "An Extension to the Procedure for Developing Uncertainty-Consistent Shear Wave Velocity Profiles from Inversion of Experimental Surface Wave Dispersion Data"
   - "Statistically Undetectable Backdoors in Deep Neural Networks"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers"
 
 ## 10 most recent papers
+
+### MetaPerch: Learning from metadata for bioacoustics foundation models
+- URL: https://paperplaine.com/papers/metaperch-learning-from-metadata
+- Category: Computer Science · AI
+- Authors: Mustafa Chasmai, Vincent Dumoulin, Jenny Hamer
+- arXiv: 2607.14072
+- Plain-English subtitle: Using location and time clues to train better bird-call recognition AI
+- Summary: A new AI model called MetaPerch learns to identify bird and animal species from their sounds by also paying attention to metadata like where and when recordings were made. This approach outperforms models trained on acoustic data alone, because it learns that certain species appear in certain places at certain times—knowledge that helps it recognize calls even when recording conditions are poor or the species is in an unusual location.
+- Why it matters: Researchers deploy acoustic sensors across forests, wetlands, and other habitats to monitor wildlife populations and detect changes in ecosystems. A model that works reliably even when deployed in new locations or seasons could dramatically improve conservation efforts, making it practical to automatically identify endangered species and track biodiversity trends without requiring experts to listen to thousands of hours of recordings.
+
+### A modular state-space model of human perception, cognition, and decision dynamics
+- URL: https://paperplaine.com/papers/a-modular-state-space
+- Category: Quantitative Biology
+- Authors: Sven Schoonebeek, Anahita Jamshidnejad, Carlo Cenedese
+- arXiv: 2607.14078
+- Plain-English subtitle: A mathematical blueprint of how people perceive, think, and act in real time
+- Summary: Researchers built a mathematical model that tracks how the human mind moves from sensing the world to making decisions—treating perception, thought, and action as linked gears rather than a black box. The model reveals how attention, memory, and intention each shape behavior in ways that can be measured and understood. In a test with simulated movement therapy, a controller using this model kept people engaged better than simpler approaches.
+- Why it matters: Systems that adapt to humans—from rehabilitation robots to training software—currently either treat people as mysterious inputs-to-outputs or sacrifice mathematical rigor for interpretability. This framework does both: it lets engineers see *why* someone is making a choice (not just predict what they'll do) and gives them equations they can actually control. That means building assistive devices that adjust in real time based on what someone is actually thinking, not just what they're doing.
+
+### Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers
+- URL: https://paperplaine.com/papers/stablecoins-under-stress-in
+- Category: Quantitative Finance
+- Authors: Pietro Saggese, Michael Sigmund, Burkhard Raunig et al.
+- arXiv: 2607.08524
+- Plain-English subtitle: How stablecoins and crypto firms behaved when markets crashed
+- Summary: When major crypto and traditional finance crises hit, different types of crypto firms responded in opposite ways—retail customers pulled money out while institutional players withdrew funds—and stablecoins didn't protect everyone equally. By tracking actual transaction records from registered Austrian crypto firms, researchers found that during the Silicon Valley Bank collapse, stablecoins revealed hidden two-tier systems where some users couldn't access their money as promised.
+- Why it matters: As crypto markets grow more connected to banks and mainstream finance, regulators need to spot warning signs early. This direct measurement method—using actual company records instead of guesses—lets governments in any country monitor whether crypto assets could amplify a financial crisis, and whether stablecoins marketed as safe actually hold up when panic hits.
 
 ### Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model
 - URL: https://paperplaine.com/papers/audio-native-speech-recognition
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Can old teaching-feedback systems still work with today's AI?
 - Summary: A validated system for automatically sorting teacher feedback comments by topic and sentiment, built in 2019, still works well in 2026 even with newer AI models. Surprisingly, the newest frontier models don't improve sentiment classification over much cheaper alternatives, and the system transfers successfully to English feedback, suggesting the original protocol is robust across time and languages.
 - Why it matters: Universities accumulate massive amounts of teaching evaluations that go unread because processing them by hand is impractical. This work shows institutions can deploy automated feedback classification that stays reliable as AI tools improve and as their campuses grow multilingual—without needing to redesign or retrain expensive systems. The finding that cheaper models perform as well as frontier models on this task could cut operational costs significantly.
-
-### Closing the Loop: An Access-Control Architecture for Automated, Anomaly-Driven Network Revocation in IoT Deployments
-- URL: https://paperplaine.com/papers/closing-the-loop-an
-- Category: Computer Science
-- Authors: Muhammet Emir Korkmaz, Kemal Bicakci, Yusuf Uzunay
-- arXiv: 2607.11649
-- Plain-English subtitle: Automatically kicking compromised IoT devices off the network in milliseconds
-- Summary: When an IoT device starts behaving suspiciously, security systems can now detect it and boot it from the network in about a third of a second—without needing specialized equipment. The system uses standard protocols already installed in most networks, combines three different detection methods into a single model, and can permanently revoke a device's access while also disconnecting its active session.
-- Why it matters: IoT botnets and compromised sensors cause real damage because suspicious devices typically stay connected until someone manually investigates. This approach stops an infected device in under 400 milliseconds, severely limiting the window for attack. It works with off-the-shelf equipment, making it practical for hospitals, factories, and offices to deploy today rather than waiting for networks to upgrade.
-
-### Time-Lag-Aware Deep Reinforcement Learning for Flexible Job-Shop Scheduling in PPVC Module Factories
-- URL: https://paperplaine.com/papers/time-lag-aware-deep
-- Category: Computer Science · AI
-- Authors: Ziheng Zhang, Wei Zhang
-- arXiv: 2607.11725
-- Plain-English subtitle: AI scheduler that handles factory downtime when modules wait to dry or cure
-- Summary: Researchers built an AI system to schedule work in factories that build house modules, where long waits for concrete to cure and paint to dry create bottlenecks that traditional scheduling ignores. The AI reaches within 4% of the best possible schedule and outperforms both standard scheduling rules and genetic algorithms, even as factories get more congested.
-- Why it matters: Factory delays from curing and drying can stretch production timelines by two-thirds—a problem that existing scheduling methods make worse by ignoring these lags entirely. This AI-based scheduler works without expensive software licenses, adapts to disruptions in seconds, and could speed up prefabricated construction timelines, making modular building faster and more cost-competitive with traditional methods.
-
-### Political Power in International Trade
-- URL: https://paperplaine.com/papers/political-power-in-international
-- Category: Economics
-- Authors: Ashwin Bhattathiripad, Vipin P Veetil
-- arXiv: 2607.09990
-- Plain-English subtitle: Which countries would suffer most if major trade partners cut ties
-- Summary: When countries sever trade relationships, the pain is rarely equal. Using data from the entire global supply network in 2022, researchers measured how much economic damage each country would suffer from breaking ties with major partners—and found stark imbalances: the United States has leverage over all its trading partners, China over all but one, and countries on the economic periphery like Belarus face devastating losses from severing ties with neighbors while barely denting those neighbors' economies. The asymmetry stems not from trade imbalances but from a country's position in the global network: central hubs can easily find alternatives, while dependent nations cannot.
-- Why it matters: Trade negotiations and sanctions are built on assumptions about mutual vulnerability, but this research shows the leverage is wildly unequal. A country's actual bargaining power in trade disputes depends on how easily it can switch suppliers or find new buyers—something determined by its position in the global economy, not the size of its bilateral trade deficit. Policymakers threatening sanctions or trade restrictions often overestimate their leverage and underestimate the costs to their own economies if a partner retaliates by finding alternatives.
 
 ## About
 
