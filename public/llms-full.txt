@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 447 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 450 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study
+Subtitle: Reading ancient Manchu documents by matching each page to the right AI specialist
+URL: https://paperplaine.com/papers/multi-expert-routing-for
+Category: Computer Science · AI
+Authors: Zhan Chen, Jiqiao Ma, Chih-wen Kuo
+arXiv ID: 2607.14041
+arXiv URL: https://arxiv.org/abs/2607.14041
+Posted: 2026-07-16
+
+Summary: Researchers built a system that automatically sorts pages of historical Manchu documents by their visual style, then sends each page to the AI reader best suited for that style. The system achieved near-perfect sorting accuracy (99.3%) and matched the performance of a specialist reader for each style, even when some specialists hadn't been specifically trained for their final assignment.
+
+Why it matters: Historical documents in Manchu script exist in multiple distinct handwriting styles that confuse standard OCR systems, and labeled training data is scarce. This routing approach makes it practical to digitize large Manchu archives without needing massive amounts of labeled examples for every style—the system reuses existing trained models intelligently instead. It demonstrates a general technique for low-resource document digitization that could apply to other historical scripts and languages.
+
+---
+Title: Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles
+Subtitle: Planning drone routes that grab targets fast and beat gravity.
+URL: https://paperplaine.com/papers/dynamical-vehicle-orienteering-problem
+Category: Mathematics
+Authors: František Nekovář, Matej Novosad, Martin Saska et al.
+arXiv ID: 2607.13789
+arXiv URL: https://arxiv.org/abs/2607.13789
+Posted: 2026-07-16
+
+Summary: Researchers solved a new problem: getting drones to visit multiple targets and collect rewards within a time limit while accounting for real physics like gravity and acceleration limits. Their method improved on existing solutions by up to 37%, and they tested it on actual flying drones to prove it works.
+
+Why it matters: Drones carrying sensors or packages need to visit specific locations efficiently — think inspecting power lines, surveying disaster zones, or making deliveries. Current planning methods ignore physics, creating routes that drones can't actually fly. This work bridges that gap, producing real trajectories that drones can follow, which matters for any mission where time and fuel are tight.
+
+---
+Title: Plausible Deniability Guarantees for Whistleblowers
+Subtitle: Hiding which employees get audited so bosses can't identify whistleblowers
+URL: https://paperplaine.com/papers/plausible-deniability-guarantees-for
+Category: Computer Science
+Authors: Leo Richter, Matt J. Kusner
+arXiv ID: 2607.13928
+arXiv URL: https://arxiv.org/abs/2607.13928
+Posted: 2026-07-16
+
+Summary: Whistleblowers face retaliation when organizations discover who reported them, yet current protection systems lack rigorous privacy guarantees. Researchers developed a mathematically proven method that hides which employees are selected for audits well enough that an organization watching the selection process cannot identify reporters—and it performs dramatically better than simply choosing auditors at random.
+
+Why it matters: Whistleblowers expose fraud, safety violations, and corruption, but fear of being identified and punished silences most potential reporters. A system with formal privacy guarantees could encourage more people to come forward without fearing retaliation, making oversight mechanisms actually work in practice rather than existing mainly on paper.
 
 ---
 Title: MetaPerch: Learning from metadata for bioacoustics foundation models

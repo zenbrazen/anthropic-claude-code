@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.14041",
+    "title": "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study",
+    "authors": "Zhan Chen, Jiqiao Ma, Chih-wen Kuo",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-15T17:12:37Z",
+    "publishedFormatted": "Jul 15, 2026",
+    "subtitle": "Reading ancient Manchu documents by matching each page to the right AI specialist",
+    "summary": "Researchers built a system that automatically sorts pages of historical Manchu documents by their visual style, then sends each page to the AI reader best suited for that style. The system achieved near-perfect sorting accuracy (99.3%) and matched the performance of a specialist reader for each style, even when some specialists hadn't been specifically trained for their final assignment.",
+    "whyItMatters": "Historical documents in Manchu script exist in multiple distinct handwriting styles that confuse standard OCR systems, and labeled training data is scarce. This routing approach makes it practical to digitize large Manchu archives without needing massive amounts of labeled examples for every style—the system reuses existing trained models intelligently instead. It demonstrates a general technique for low-resource document digitization that could apply to other historical scripts and languages.",
+    "fetchedAt": "2026-07-16T19:57:58.611Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 165
+    },
+    "slug": "multi-expert-routing-for"
+  },
+  {
+    "id": "2607.13789",
+    "title": "Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles",
+    "authors": "František Nekovář, Matej Novosad, Martin Saska et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-07-15T12:48:18Z",
+    "publishedFormatted": "Jul 15, 2026",
+    "subtitle": "Planning drone routes that grab targets fast and beat gravity.",
+    "summary": "Researchers solved a new problem: getting drones to visit multiple targets and collect rewards within a time limit while accounting for real physics like gravity and acceleration limits. Their method improved on existing solutions by up to 37%, and they tested it on actual flying drones to prove it works.",
+    "whyItMatters": "Drones carrying sensors or packages need to visit specific locations efficiently — think inspecting power lines, surveying disaster zones, or making deliveries. Current planning methods ignore physics, creating routes that drones can't actually fly. This work bridges that gap, producing real trajectories that drones can follow, which matters for any mission where time and fuel are tight.",
+    "fetchedAt": "2026-07-16T19:58:01.661Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 230
+    },
+    "slug": "dynamical-vehicle-orienteering-problem"
+  },
+  {
+    "id": "2607.13928",
+    "title": "Plausible Deniability Guarantees for Whistleblowers",
+    "authors": "Leo Richter, Matt J. Kusner",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-07-15T15:09:55Z",
+    "publishedFormatted": "Jul 15, 2026",
+    "subtitle": "Hiding which employees get audited so bosses can't identify whistleblowers",
+    "summary": "Whistleblowers face retaliation when organizations discover who reported them, yet current protection systems lack rigorous privacy guarantees. Researchers developed a mathematically proven method that hides which employees are selected for audits well enough that an organization watching the selection process cannot identify reporters—and it performs dramatically better than simply choosing auditors at random.",
+    "whyItMatters": "Whistleblowers expose fraud, safety violations, and corruption, but fear of being identified and punished silences most potential reporters. A system with formal privacy guarantees could encourage more people to come forward without fearing retaliation, making oversight mechanisms actually work in practice rather than existing mainly on paper.",
+    "fetchedAt": "2026-07-16T19:58:04.361Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 196
+    },
+    "slug": "plausible-deniability-guarantees-for"
+  },
+  {
     "id": "2607.14072",
     "title": "MetaPerch: Learning from metadata for bioacoustics foundation models",
     "authors": "Mustafa Chasmai, Vincent Dumoulin, Jenny Hamer",

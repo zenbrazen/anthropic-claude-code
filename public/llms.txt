@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 447 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 450 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 153 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 154 papers in archive.
+  - "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study"
   - "MetaPerch: Learning from metadata for bioacoustics foundation models"
-  - "Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 38 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 39 papers in archive.
+  - "Plausible Deniability Guarantees for Whistleblowers"
   - "Closing the Loop: An Access-Control Architecture for Automated, Anomaly-Driven Network Revocation in IoT Deployments"
-  - "TRM-Raft: A Byzantine-Resistant Raft Consensus via Integrated Trust and Reputation Model"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 36 papers in archive.
   - "The Infraparticle Edge"
   - "Nonlinear particle detectors across the Rindler firewall"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 37 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 38 papers in archive.
+  - "Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles"
   - "Ensemble Controlled-Flow Filtering for Implicit Data Assimilation"
-  - "Sharp bounds for stochastic proximal and projection estimators via radial dominance"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 36 papers in archive.
   - "A modular state-space model of human perception, cognition, and decision dynamics"
   - "Scaffold splits hide structural-frontier failures in ADMET models"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers"
 
 ## 10 most recent papers
+
+### Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study
+- URL: https://paperplaine.com/papers/multi-expert-routing-for
+- Category: Computer Science · AI
+- Authors: Zhan Chen, Jiqiao Ma, Chih-wen Kuo
+- arXiv: 2607.14041
+- Plain-English subtitle: Reading ancient Manchu documents by matching each page to the right AI specialist
+- Summary: Researchers built a system that automatically sorts pages of historical Manchu documents by their visual style, then sends each page to the AI reader best suited for that style. The system achieved near-perfect sorting accuracy (99.3%) and matched the performance of a specialist reader for each style, even when some specialists hadn't been specifically trained for their final assignment.
+- Why it matters: Historical documents in Manchu script exist in multiple distinct handwriting styles that confuse standard OCR systems, and labeled training data is scarce. This routing approach makes it practical to digitize large Manchu archives without needing massive amounts of labeled examples for every style—the system reuses existing trained models intelligently instead. It demonstrates a general technique for low-resource document digitization that could apply to other historical scripts and languages.
+
+### Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles
+- URL: https://paperplaine.com/papers/dynamical-vehicle-orienteering-problem
+- Category: Mathematics
+- Authors: František Nekovář, Matej Novosad, Martin Saska et al.
+- arXiv: 2607.13789
+- Plain-English subtitle: Planning drone routes that grab targets fast and beat gravity.
+- Summary: Researchers solved a new problem: getting drones to visit multiple targets and collect rewards within a time limit while accounting for real physics like gravity and acceleration limits. Their method improved on existing solutions by up to 37%, and they tested it on actual flying drones to prove it works.
+- Why it matters: Drones carrying sensors or packages need to visit specific locations efficiently — think inspecting power lines, surveying disaster zones, or making deliveries. Current planning methods ignore physics, creating routes that drones can't actually fly. This work bridges that gap, producing real trajectories that drones can follow, which matters for any mission where time and fuel are tight.
+
+### Plausible Deniability Guarantees for Whistleblowers
+- URL: https://paperplaine.com/papers/plausible-deniability-guarantees-for
+- Category: Computer Science
+- Authors: Leo Richter, Matt J. Kusner
+- arXiv: 2607.13928
+- Plain-English subtitle: Hiding which employees get audited so bosses can't identify whistleblowers
+- Summary: Whistleblowers face retaliation when organizations discover who reported them, yet current protection systems lack rigorous privacy guarantees. Researchers developed a mathematically proven method that hides which employees are selected for audits well enough that an organization watching the selection process cannot identify reporters—and it performs dramatically better than simply choosing auditors at random.
+- Why it matters: Whistleblowers expose fraud, safety violations, and corruption, but fear of being identified and punished silences most potential reporters. A system with formal privacy guarantees could encourage more people to come forward without fearing retaliation, making oversight mechanisms actually work in practice rather than existing mainly on paper.
 
 ### MetaPerch: Learning from metadata for bioacoustics foundation models
 - URL: https://paperplaine.com/papers/metaperch-learning-from-metadata
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI agents to recognize when a task is actually simple
 - Summary: AI agents waste enormous amounts of computing power on simple tasks by re-reading files and dependencies they've already seen, treating a one-line code edit like a full codebase audit. Researchers developed E3, a method that makes agents estimate task difficulty first, then expand their search only if something goes wrong—cutting costs by 85% and file inspections by 92% while maintaining 100% success rates on code-editing tasks.
 - Why it matters: As AI agents handle more real engineering work, they burn through computing budgets and API costs needlessly. This approach directly reduces what companies spend on AI tools by making them work smarter rather than harder—and the real-world tests on live open-source code confirm the savings are genuine, not just theoretical.
-
-### The Infraparticle Edge
-- URL: https://paperplaine.com/papers/the-infraparticle-edge
-- Category: Physics
-- Authors: Soo-Jong Rey
-- arXiv: 2607.13001
-- Plain-English subtitle: Why charged particles don't have sharp energy edges in quantum physics
-- Summary: When charged particles emit photons, they don't have a single well-defined energy boundary—instead they fade out gradually at the edge, following a mathematical power law. Rey shows this fuzzy edge comes directly from soft photons we can't measure individually, and that the exact shape of this edge encodes information about how those unmeasured photons behave.
-- Why it matters: Particle detectors can only measure particles down to a minimum energy threshold—softer photons get lost. Understanding how this measurement limit shapes what we observe at the edge of energy spectra is essential for extracting accurate particle properties from real experiments and for theoretical predictions in high-energy physics.
-
-### Ensemble Controlled-Flow Filtering for Implicit Data Assimilation
-- URL: https://paperplaine.com/papers/ensemble-controlled-flow-filtering
-- Category: Mathematics
-- Authors: Zhuoyuan Li, Yue Zhao, Ming Li
-- arXiv: 2607.12975
-- Plain-English subtitle: A new way to update weather models when sensors measure things indirectly
-- Summary: Scientists have developed a new method called the Ensemble Controlled-flow Filter that updates forecasts from dynamical systems when observations are complex, indirect, or only accessible through simulation. Unlike traditional filtering methods that assume observations are clean and straightforward, this approach works with messy real-world measurement mechanisms—including those that produce multiple possible outcomes or require running expensive computer simulations to interpret.
-- Why it matters: Weather forecasting, climate modeling, and other complex systems often measure things indirectly: a satellite might infer temperature from radiation, or a sensor might measure a combination of quantities rather than one thing directly. Standard filtering techniques fail in these cases. This method makes it feasible to improve forecasts in situations where current tools break down, potentially extending accurate prediction windows for weather and other dynamical systems that rely on difficult-to-interpret observations.
-
-### A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol
-- URL: https://paperplaine.com/papers/a-durability-and-cross
-- Category: Computer Science · AI
-- Authors: Esteban U. Vega Barajas
-- arXiv: 2607.11873
-- Plain-English subtitle: Can old teaching-feedback systems still work with today's AI?
-- Summary: A validated system for automatically sorting teacher feedback comments by topic and sentiment, built in 2019, still works well in 2026 even with newer AI models. Surprisingly, the newest frontier models don't improve sentiment classification over much cheaper alternatives, and the system transfers successfully to English feedback, suggesting the original protocol is robust across time and languages.
-- Why it matters: Universities accumulate massive amounts of teaching evaluations that go unread because processing them by hand is impractical. This work shows institutions can deploy automated feedback classification that stays reliable as AI tools improve and as their campuses grow multilingual—without needing to redesign or retrain expensive systems. The finding that cheaper models perform as well as frontier models on this task could cut operational costs significantly.
 
 ## About
 
