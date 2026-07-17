@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 453 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 456 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-17
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Symbal: Detecting Systematic Misalignments in Model-Generated Captions
+Subtitle: Finding the hidden patterns in AI image-captioning mistakes
+URL: https://paperplaine.com/papers/symbal-detecting-systematic-misalignments
+Category: Computer Science · AI
+Authors: Maya Varma, Jean-Benoit Delbrouck, Sophie Ostmeier et al.
+arXiv ID: 2607.15216
+arXiv URL: https://arxiv.org/abs/2607.15216
+Posted: 2026-07-17
+
+Summary: AI systems that describe images often make the same mistakes repeatedly, triggered by specific visual features—like consistently mislabeling certain objects or ignoring details in particular settings. Researchers created Symbal, a tool that automatically detects these recurring error patterns and explains them in plain language, correctly identifying systematic problems in 63.8% of datasets tested, nearly four times better than existing methods.
+
+Why it matters: AI-generated image captions are increasingly used in real applications—from medical imaging systems to accessibility tools for the blind. If these systems have hidden, systematic blind spots, they could consistently mislead users in critical moments. Symbal lets organizations audit their caption datasets and catch these systematic failures before deployment, without needing access to the underlying AI model itself.
+
+---
+Title: Does Multi-Agent Debate Improve AI Feedback on Research Papers?
+Subtitle: Having AI debate itself doesn't improve feedback on economics research papers
+URL: https://paperplaine.com/papers/does-multi-agent-debate
+Category: Economics
+Authors: Tomas Havranek, Zuzana Irsova
+arXiv ID: 2607.14713
+arXiv URL: https://arxiv.org/abs/2607.14713
+Posted: 2026-07-17
+
+Summary: When economists evaluated three AI-generated reports on their own meta-analysis papers, they preferred a straightforward single AI review over two more elaborate multi-agent debate systems—even though one debate tool used 30 times more computational tokens. The finding challenges the assumption that having AI systems argue with each other produces better analysis, at least for research feedback in economics.
+
+Why it matters: As research institutions consider using AI to supplement or replace peer review, this suggests that more complex AI methods don't automatically produce more useful critique. The result is a cautionary finding for anyone designing AI feedback systems: computational sophistication alone doesn't guarantee better quality, and the people whose work is being evaluated remain the most reliable judges of what actually helps them improve their research.
+
+---
+Title: Subjective Risk Decomposition: A New View for Uncertainty Quantification
+Subtitle: Where uncertainty measures come from and why it matters
+URL: https://paperplaine.com/papers/subjective-risk-decomposition-a
+Category: Statistics
+Authors: Raghad Alamri, Michele Caprio, Gavin Brown
+arXiv ID: 2607.15196
+arXiv URL: https://arxiv.org/abs/2607.15196
+Posted: 2026-07-17
+
+Summary: Uncertainty in machine learning isn't a fundamental property that needs to be assumed—it's a mathematical consequence of the choices you make when setting up a prediction problem. The researchers show how two standard types of uncertainty (epistemic, which reflects what the model doesn't know, and aleatoric, which reflects randomness in the world) both emerge naturally from decomposing a loss function, and they connect this framework to learning theory in a way that unifies seemingly separate approaches across the field.
+
+Why it matters: Scientists and engineers building machine learning systems need to quantify uncertainty—to know when predictions are reliable and when they're guesses. This work provides a principled way to choose which uncertainty measures to use: instead of debating which is 'correct,' practitioners can now derive the right uncertainty decomposition directly from their loss function and the specific problem they're solving. That foundation makes uncertainty quantification less arbitrary and more tied to the actual goal of the model.
 
 ---
 Title: teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data

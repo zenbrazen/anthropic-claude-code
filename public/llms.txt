@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 453 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 456 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 155 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 156 papers in archive.
+  - "Symbal: Detecting Systematic Misalignments in Model-Generated Captions"
   - "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data"
-  - "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 39 papers in archive.
   - "Plausible Deniability Guarantees for Whistleblowers"
   - "Closing the Loop: An Access-Control Architecture for Automated, Anomaly-Driven Network Revocation in IoT Deployments"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 39 papers in archive.
   - "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers"
   - "When Does Order Flow Matter? State-Dependent L2 Liquidity-State Transitions in Crypto Futures"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 38 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 39 papers in archive.
+  - "Subjective Risk Decomposition: A New View for Uncertainty Quantification"
   - "An Extension to the Procedure for Developing Uncertainty-Consistent Shear Wave Velocity Profiles from Inversion of Experimental Surface Wave Dispersion Data"
-  - "Statistically Undetectable Backdoors in Deep Neural Networks"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 38 papers in archive.
   - "Modular-CAPA-Based Communication Systems: Joint Activation and Beamforming Design"
   - "Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 33 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 34 papers in archive.
+  - "Does Multi-Agent Debate Improve AI Feedback on Research Papers?"
   - "Political Power in International Trade"
-  - "A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers"
 
 ## 10 most recent papers
+
+### Symbal: Detecting Systematic Misalignments in Model-Generated Captions
+- URL: https://paperplaine.com/papers/symbal-detecting-systematic-misalignments
+- Category: Computer Science · AI
+- Authors: Maya Varma, Jean-Benoit Delbrouck, Sophie Ostmeier et al.
+- arXiv: 2607.15216
+- Plain-English subtitle: Finding the hidden patterns in AI image-captioning mistakes
+- Summary: AI systems that describe images often make the same mistakes repeatedly, triggered by specific visual features—like consistently mislabeling certain objects or ignoring details in particular settings. Researchers created Symbal, a tool that automatically detects these recurring error patterns and explains them in plain language, correctly identifying systematic problems in 63.8% of datasets tested, nearly four times better than existing methods.
+- Why it matters: AI-generated image captions are increasingly used in real applications—from medical imaging systems to accessibility tools for the blind. If these systems have hidden, systematic blind spots, they could consistently mislead users in critical moments. Symbal lets organizations audit their caption datasets and catch these systematic failures before deployment, without needing access to the underlying AI model itself.
+
+### Does Multi-Agent Debate Improve AI Feedback on Research Papers?
+- URL: https://paperplaine.com/papers/does-multi-agent-debate
+- Category: Economics
+- Authors: Tomas Havranek, Zuzana Irsova
+- arXiv: 2607.14713
+- Plain-English subtitle: Having AI debate itself doesn't improve feedback on economics research papers
+- Summary: When economists evaluated three AI-generated reports on their own meta-analysis papers, they preferred a straightforward single AI review over two more elaborate multi-agent debate systems—even though one debate tool used 30 times more computational tokens. The finding challenges the assumption that having AI systems argue with each other produces better analysis, at least for research feedback in economics.
+- Why it matters: As research institutions consider using AI to supplement or replace peer review, this suggests that more complex AI methods don't automatically produce more useful critique. The result is a cautionary finding for anyone designing AI feedback systems: computational sophistication alone doesn't guarantee better quality, and the people whose work is being evaluated remain the most reliable judges of what actually helps them improve their research.
+
+### Subjective Risk Decomposition: A New View for Uncertainty Quantification
+- URL: https://paperplaine.com/papers/subjective-risk-decomposition-a
+- Category: Statistics
+- Authors: Raghad Alamri, Michele Caprio, Gavin Brown
+- arXiv: 2607.15196
+- Plain-English subtitle: Where uncertainty measures come from and why it matters
+- Summary: Uncertainty in machine learning isn't a fundamental property that needs to be assumed—it's a mathematical consequence of the choices you make when setting up a prediction problem. The researchers show how two standard types of uncertainty (epistemic, which reflects what the model doesn't know, and aleatoric, which reflects randomness in the world) both emerge naturally from decomposing a loss function, and they connect this framework to learning theory in a way that unifies seemingly separate approaches across the field.
+- Why it matters: Scientists and engineers building machine learning systems need to quantify uncertainty—to know when predictions are reliable and when they're guesses. This work provides a principled way to choose which uncertainty measures to use: instead of debating which is 'correct,' practitioners can now derive the right uncertainty decomposition directly from their loss function and the specific problem they're solving. That foundation makes uncertainty quantification less arbitrary and more tied to the actual goal of the model.
 
 ### teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data
 - URL: https://paperplaine.com/papers/tellme-why-ain-t
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Using location and time clues to train better bird-call recognition AI
 - Summary: A new AI model called MetaPerch learns to identify bird and animal species from their sounds by also paying attention to metadata like where and when recordings were made. This approach outperforms models trained on acoustic data alone, because it learns that certain species appear in certain places at certain times—knowledge that helps it recognize calls even when recording conditions are poor or the species is in an unusual location.
 - Why it matters: Researchers deploy acoustic sensors across forests, wetlands, and other habitats to monitor wildlife populations and detect changes in ecosystems. A model that works reliably even when deployed in new locations or seasons could dramatically improve conservation efforts, making it practical to automatically identify endangered species and track biodiversity trends without requiring experts to listen to thousands of hours of recordings.
-
-### A modular state-space model of human perception, cognition, and decision dynamics
-- URL: https://paperplaine.com/papers/a-modular-state-space
-- Category: Quantitative Biology
-- Authors: Sven Schoonebeek, Anahita Jamshidnejad, Carlo Cenedese
-- arXiv: 2607.14078
-- Plain-English subtitle: A mathematical blueprint of how people perceive, think, and act in real time
-- Summary: Researchers built a mathematical model that tracks how the human mind moves from sensing the world to making decisions—treating perception, thought, and action as linked gears rather than a black box. The model reveals how attention, memory, and intention each shape behavior in ways that can be measured and understood. In a test with simulated movement therapy, a controller using this model kept people engaged better than simpler approaches.
-- Why it matters: Systems that adapt to humans—from rehabilitation robots to training software—currently either treat people as mysterious inputs-to-outputs or sacrifice mathematical rigor for interpretability. This framework does both: it lets engineers see *why* someone is making a choice (not just predict what they'll do) and gives them equations they can actually control. That means building assistive devices that adjust in real time based on what someone is actually thinking, not just what they're doing.
-
-### Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers
-- URL: https://paperplaine.com/papers/stablecoins-under-stress-in
-- Category: Quantitative Finance
-- Authors: Pietro Saggese, Michael Sigmund, Burkhard Raunig et al.
-- arXiv: 2607.08524
-- Plain-English subtitle: How stablecoins and crypto firms behaved when markets crashed
-- Summary: When major crypto and traditional finance crises hit, different types of crypto firms responded in opposite ways—retail customers pulled money out while institutional players withdrew funds—and stablecoins didn't protect everyone equally. By tracking actual transaction records from registered Austrian crypto firms, researchers found that during the Silicon Valley Bank collapse, stablecoins revealed hidden two-tier systems where some users couldn't access their money as promised.
-- Why it matters: As crypto markets grow more connected to banks and mainstream finance, regulators need to spot warning signs early. This direct measurement method—using actual company records instead of guesses—lets governments in any country monitor whether crypto assets could amplify a financial crisis, and whether stablecoins marketed as safe actually hold up when panic hits.
-
-### Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model
-- URL: https://paperplaine.com/papers/audio-native-speech-recognition
-- Category: Computer Science · AI
-- Authors: Harsha Vardhan Khurdula, Abhinav Kumar Singh, Yoeven D Khemlani et al.
-- arXiv: 2607.13013
-- Plain-English subtitle: A new approach to speech-to-text that rewrites entire transcripts at once instead of word-by-word
-- Summary: Researchers built a speech recognition system that generates complete transcripts in parallel rather than one word at a time, using a technique called diffusion that refines rough guesses over eight steps. The system achieved 6.6% word error rate on a standard benchmark — competitive with conventional approaches — while using a clever training method to connect audio features with text generation, and works across multiple languages with a single adapter.
-- Why it matters: Parallel transcription could speed up speech recognition in real-time applications by reducing latency, since all words are refined simultaneously rather than waiting for each word to be predicted sequentially. The multilingual capability with a single adapter means the system could be more practical to deploy globally without retraining separate models for each language.
 
 ## About
 
