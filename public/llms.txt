@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 450 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 453 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 154 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 155 papers in archive.
+  - "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data"
   - "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study"
-  - "MetaPerch: Learning from metadata for bioacoustics foundation models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 39 papers in archive.
   - "Plausible Deniability Guarantees for Whistleblowers"
   - "Closing the Loop: An Access-Control Architecture for Automated, Anomaly-Driven Network Revocation in IoT Deployments"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 36 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 37 papers in archive.
+  - "Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits"
   - "The Infraparticle Edge"
-  - "Nonlinear particle detectors across the Rindler firewall"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 38 papers in archive.
   - "Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles"
   - "Ensemble Controlled-Flow Filtering for Implicit Data Assimilation"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 38 papers in archive.
   - "An Extension to the Procedure for Developing Uncertainty-Consistent Shear Wave Velocity Profiles from Inversion of Experimental Surface Wave Dispersion Data"
   - "Statistically Undetectable Backdoors in Deep Neural Networks"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 37 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 38 papers in archive.
+  - "Modular-CAPA-Based Communication Systems: Joint Activation and Beamforming Design"
   - "Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs"
-  - "Classical versus Deep Mirror-Symmetry Scoring: A Benchmark of Thirteen Methods"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 33 papers in archive.
   - "Political Power in International Trade"
   - "A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers"
 
 ## 10 most recent papers
+
+### teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data
+- URL: https://paperplaine.com/papers/tellme-why-ain-t
+- Category: Computer Science · AI
+- Authors: Qiwei Li, Jorge Ortiz
+- arXiv: 2607.15254
+- Plain-English subtitle: Finding cause and effect in traffic using dashcam video and AI questions
+- Summary: Researchers built a system called teLLMe that answers causal questions about urban traffic by analyzing dashcam video data and natural-language queries. Instead of just showing correlations, the system uses causal inference techniques to estimate real effects — for example, how much rain actually increases traffic density — and explains its reasoning and uncertainty alongside each answer.
+- Why it matters: Traffic agencies have massive video datasets but can't easily extract causal insights about what truly causes congestion or unsafe conditions. This system lets non-experts ask plain-English questions about traffic and get transparent, reasoned answers that acknowledge uncertainty — speeding up hypothesis testing and helping agencies design better interventions without running expensive real-world experiments.
+
+### Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits
+- URL: https://paperplaine.com/papers/coulomb-blockade-in-microscopic
+- Category: Physics
+- Authors: R. Banerjee, L. P. Lindoy, M. Hegedus et al.
+- arXiv: 2607.15252
+- Plain-English subtitle: Tiny metal specs in quantum chips cause unexpected noise and signal loss
+- Summary: Researchers discovered that microscopic metallic grains embedded in quantum computer materials are a major source of signal degradation, matching the impact of the previously identified culprit known as two-level system defects. These grains are created during standard manufacturing and had been overlooked because existing diagnostic tools misidentified their damage as coming from other sources.
+- Why it matters: Quantum computers lose their computational power when their delicate quantum states decay—a process called decoherence. Scientists have spent years trying to eliminate the known sources of this decay, but progress has stalled because they were chasing the wrong problem. By identifying metallic grains as a major culprit, manufacturers now have a concrete target: changing fabrication processes to prevent these grains from forming in the first place, which could significantly extend how long quantum states survive and improve device performance.
+
+### Modular-CAPA-Based Communication Systems: Joint Activation and Beamforming Design
+- URL: https://paperplaine.com/papers/modular-capa-based-communication
+- Category: Engineering
+- Authors: Mengyu Qian, Xidong Mu, Li You et al.
+- arXiv: 2607.15148
+- Plain-English subtitle: Turning antenna arrays on and off to send data faster and more efficiently
+- Summary: Researchers found that wireless systems using continuous antenna arrays can achieve full performance while activating only some portions of the array at a time. The key is choosing which parts to switch on and how to shape the signal beams — a problem the team solved with an algorithm that nearly matches the performance of always-on systems but uses far less power.
+- Why it matters: Mobile networks consume enormous amounts of energy, and antenna arrays are among the biggest culprits. By activating only necessary parts of an antenna and smartly directing signals, this approach cuts power use without sacrificing data speeds — a direct win for reducing both operating costs and emissions in wireless infrastructure.
 
 ### Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study
 - URL: https://paperplaine.com/papers/multi-expert-routing-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A new approach to speech-to-text that rewrites entire transcripts at once instead of word-by-word
 - Summary: Researchers built a speech recognition system that generates complete transcripts in parallel rather than one word at a time, using a technique called diffusion that refines rough guesses over eight steps. The system achieved 6.6% word error rate on a standard benchmark — competitive with conventional approaches — while using a clever training method to connect audio features with text generation, and works across multiple languages with a single adapter.
 - Why it matters: Parallel transcription could speed up speech recognition in real-time applications by reducing latency, since all words are refined simultaneously rather than waiting for each word to be predicted sequentially. The multilingual capability with a single adapter means the system could be more practical to deploy globally without retraining separate models for each language.
-
-### An Extension to the Procedure for Developing Uncertainty-Consistent Shear Wave Velocity Profiles from Inversion of Experimental Surface Wave Dispersion Data
-- URL: https://paperplaine.com/papers/an-extension-to-the
-- Category: Statistics
-- Authors: Joseph P. Vantassel, Brady R. Cox
-- arXiv: 2607.12743
-- Plain-English subtitle: Getting reliable earthquake risk estimates from ground testing at multiple depths
-- Summary: When engineers test the ground to predict earthquake damage, they often deploy multiple measurement arrays at different sizes to probe deeper. This paper solves a longstanding problem: how to properly measure the uncertainty in those velocity measurements when data comes from mismatched array sizes. The fix works well for both simple and complex soil structures, producing reliable uncertainty estimates even when the raw velocity values themselves are uncertain.
-- Why it matters: Earthquake risk assessments that guide building codes and insurance depend on accurate, honest estimates of what we don't know about subsurface conditions. This work lets engineers use practical testing setups (multiple-sized arrays) while still rigorously quantifying uncertainty — rather than forcing a choice between depth of measurement or confidence in results. The method produces engineering metrics like site period that are more stable than the raw measurements, making them more useful for actual structural design decisions.
-
-### Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs
-- URL: https://paperplaine.com/papers/improving-autonomous-nano-drones
-- Category: Engineering
-- Authors: Vlad Niculescu, Lorenzo Lamberti, Francesco Conti et al.
-- arXiv: 2607.12593
-- Plain-English subtitle: Making tiny flying robots smarter while using less power and memory
-- Summary: Researchers automated the process of shrinking and optimizing the artificial intelligence that controls nano-drones, cutting memory use in half and speeding up the drone's decision-making by 1.6 times. The optimized system let a Crazyflie nano-drone fly twice as fast as before, avoid obstacles more sharply, and navigate turns—all while using less than 2% of the drone's power budget.
-- Why it matters: Nano-drones could soon monitor crops, inspect infrastructure, or search buildings in disaster zones, but only if their onboard AI runs fast enough on battery-powered chips no bigger than a coin. This work removes the tedious hand-tuning that currently slows development, making it practical to deploy smarter autonomous drones at scale and letting researchers focus on new applications instead of wrestling with optimization details.
-
-### Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution
-- URL: https://paperplaine.com/papers/do-ai-agents-know
-- Category: Computer Science · AI
-- Authors: Junjie Yin, Xinyu Feng
-- arXiv: 2607.13034
-- Plain-English subtitle: Teaching AI agents to recognize when a task is actually simple
-- Summary: AI agents waste enormous amounts of computing power on simple tasks by re-reading files and dependencies they've already seen, treating a one-line code edit like a full codebase audit. Researchers developed E3, a method that makes agents estimate task difficulty first, then expand their search only if something goes wrong—cutting costs by 85% and file inspections by 92% while maintaining 100% success rates on code-editing tasks.
-- Why it matters: As AI agents handle more real engineering work, they burn through computing budgets and API costs needlessly. This approach directly reduces what companies spend on AI tools by making them work smarter rather than harder—and the real-world tests on live open-source code confirm the savings are genuine, not just theoretical.
 
 ## About
 
