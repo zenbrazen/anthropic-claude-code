@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 456 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 459 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 156 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 157 papers in archive.
+  - "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions"
   - "Symbal: Detecting Systematic Misalignments in Model-Generated Captions"
-  - "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 39 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 40 papers in archive.
+  - "The Distributed Open-Source Vulnerability Ecosystem"
   - "Plausible Deniability Guarantees for Whistleblowers"
-  - "Closing the Loop: An Access-Control Architecture for Automated, Anomaly-Driven Network Revocation in IoT Deployments"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 37 papers in archive.
   - "Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits"
   - "The Infraparticle Edge"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 38 papers in archive.
   - "Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles"
   - "Ensemble Controlled-Flow Filtering for Implicit Data Assimilation"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 36 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 37 papers in archive.
+  - "Activity Regeneration from Silent States in Neuronal Networks with Transient Synaptic Memory"
   - "A modular state-space model of human perception, cognition, and decision dynamics"
-  - "Scaffold splits hide structural-frontier failures in ADMET models"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 39 papers in archive.
   - "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers"
   - "When Does Order Flow Matter? State-Dependent L2 Liquidity-State Transitions in Crypto Futures"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Political Power in International Trade"
 
 ## 10 most recent papers
+
+### SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions
+- URL: https://paperplaine.com/papers/scidiagramedit-learning-to-edit
+- Category: Computer Science · AI
+- Authors: Yasheng Sun, Zezi Zeng, Yifan Yang et al.
+- arXiv: 2607.15272
+- Plain-English subtitle: Teaching AI to edit scientific diagrams the way researchers actually revise them
+- Summary: Researchers created a system that learns to automatically edit scientific figures by studying how researchers revise papers on arXiv. The system takes natural-language instructions and modifies vector-based diagrams—the editable source files behind figures—by learning patterns from real before-and-after figure pairs extracted from actual manuscript revisions.
+- Why it matters: Editing figures consumes hours of researcher time during manuscript revisions. If this system scales, it could accelerate the revision cycle for scientific papers and reduce manual labor that adds no intellectual value. The approach also demonstrates that real-world revision patterns are useful training data for teaching AI to handle complex, structured visual content.
+
+### The Distributed Open-Source Vulnerability Ecosystem
+- URL: https://paperplaine.com/papers/the-distributed-open-source
+- Category: Computer Science
+- Authors: Peter Mandl, Paul Mandl
+- arXiv: 2607.14900
+- Plain-English subtitle: Why different security scanners give conflicting answers about software vulnerabilities
+- Summary: Security tools designed to find known software vulnerabilities often report different results when scanning the same code, even though they use the same public vulnerability databases. These disagreements don't just come from buggy scanners—they emerge from fundamental inconsistencies across the entire ecosystem where vulnerability information is created, shared, and interpreted.
+- Why it matters: When security teams get conflicting vulnerability reports, they can't trust either answer, leaving them unsure whether their software is actually at risk. Understanding where these conflicts originate makes it possible to design better testing methods that catch real gaps, standardize how vulnerability information is tracked, and help organizations make faster, more confident decisions about fixing their code.
+
+### Activity Regeneration from Silent States in Neuronal Networks with Transient Synaptic Memory
+- URL: https://paperplaine.com/papers/activity-regeneration-from-silent
+- Category: Quantitative Biology
+- Authors: Mozhgan Khanjanianpak, Alireza Valiadeh
+- arXiv: 2607.14000
+- Plain-English subtitle: How neurons remember and restart activity through hidden synaptic changes
+- Summary: Neurons can spontaneously restart firing even after going completely silent, and a new study shows this happens because of lingering chemical changes at synaptic connections. By measuring the pattern of these residual changes at the moment silence begins, researchers can predict whether a network will fire once and stop or regenerate activity cycles—suggesting that short-term memory lives in the structure of connections themselves, not just in active firing.
+- Why it matters: Understanding how networks restart from silent states could explain how brains maintain working memory and switch between different mental states without continuous neural chatter. The ability to predict network behavior from a snapshot of synaptic state, rather than watching the full dynamics unfold, offers a faster way to diagnose and potentially intervene in disorders where abnormal firing patterns emerge from hidden synaptic changes.
 
 ### Symbal: Detecting Systematic Misalignments in Model-Generated Captions
 - URL: https://paperplaine.com/papers/symbal-detecting-systematic-misalignments
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Reading ancient Manchu documents by matching each page to the right AI specialist
 - Summary: Researchers built a system that automatically sorts pages of historical Manchu documents by their visual style, then sends each page to the AI reader best suited for that style. The system achieved near-perfect sorting accuracy (99.3%) and matched the performance of a specialist reader for each style, even when some specialists hadn't been specifically trained for their final assignment.
 - Why it matters: Historical documents in Manchu script exist in multiple distinct handwriting styles that confuse standard OCR systems, and labeled training data is scarce. This routing approach makes it practical to digitize large Manchu archives without needing massive amounts of labeled examples for every style—the system reuses existing trained models intelligently instead. It demonstrates a general technique for low-resource document digitization that could apply to other historical scripts and languages.
-
-### Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles
-- URL: https://paperplaine.com/papers/dynamical-vehicle-orienteering-problem
-- Category: Mathematics
-- Authors: František Nekovář, Matej Novosad, Martin Saska et al.
-- arXiv: 2607.13789
-- Plain-English subtitle: Planning drone routes that grab targets fast and beat gravity.
-- Summary: Researchers solved a new problem: getting drones to visit multiple targets and collect rewards within a time limit while accounting for real physics like gravity and acceleration limits. Their method improved on existing solutions by up to 37%, and they tested it on actual flying drones to prove it works.
-- Why it matters: Drones carrying sensors or packages need to visit specific locations efficiently — think inspecting power lines, surveying disaster zones, or making deliveries. Current planning methods ignore physics, creating routes that drones can't actually fly. This work bridges that gap, producing real trajectories that drones can follow, which matters for any mission where time and fuel are tight.
-
-### Plausible Deniability Guarantees for Whistleblowers
-- URL: https://paperplaine.com/papers/plausible-deniability-guarantees-for
-- Category: Computer Science
-- Authors: Leo Richter, Matt J. Kusner
-- arXiv: 2607.13928
-- Plain-English subtitle: Hiding which employees get audited so bosses can't identify whistleblowers
-- Summary: Whistleblowers face retaliation when organizations discover who reported them, yet current protection systems lack rigorous privacy guarantees. Researchers developed a mathematically proven method that hides which employees are selected for audits well enough that an organization watching the selection process cannot identify reporters—and it performs dramatically better than simply choosing auditors at random.
-- Why it matters: Whistleblowers expose fraud, safety violations, and corruption, but fear of being identified and punished silences most potential reporters. A system with formal privacy guarantees could encourage more people to come forward without fearing retaliation, making oversight mechanisms actually work in practice rather than existing mainly on paper.
-
-### MetaPerch: Learning from metadata for bioacoustics foundation models
-- URL: https://paperplaine.com/papers/metaperch-learning-from-metadata
-- Category: Computer Science · AI
-- Authors: Mustafa Chasmai, Vincent Dumoulin, Jenny Hamer
-- arXiv: 2607.14072
-- Plain-English subtitle: Using location and time clues to train better bird-call recognition AI
-- Summary: A new AI model called MetaPerch learns to identify bird and animal species from their sounds by also paying attention to metadata like where and when recordings were made. This approach outperforms models trained on acoustic data alone, because it learns that certain species appear in certain places at certain times—knowledge that helps it recognize calls even when recording conditions are poor or the species is in an unusual location.
-- Why it matters: Researchers deploy acoustic sensors across forests, wetlands, and other habitats to monitor wildlife populations and detect changes in ecosystems. A model that works reliably even when deployed in new locations or seasons could dramatically improve conservation efforts, making it practical to automatically identify endangered species and track biodiversity trends without requiring experts to listen to thousands of hours of recordings.
 
 ## About
 

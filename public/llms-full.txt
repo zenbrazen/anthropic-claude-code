@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 456 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-17
+This file contains the complete plain-English text of all 459 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-18
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions
+Subtitle: Teaching AI to edit scientific diagrams the way researchers actually revise them
+URL: https://paperplaine.com/papers/scidiagramedit-learning-to-edit
+Category: Computer Science · AI
+Authors: Yasheng Sun, Zezi Zeng, Yifan Yang et al.
+arXiv ID: 2607.15272
+arXiv URL: https://arxiv.org/abs/2607.15272
+Posted: 2026-07-18
+
+Summary: Researchers created a system that learns to automatically edit scientific figures by studying how researchers revise papers on arXiv. The system takes natural-language instructions and modifies vector-based diagrams—the editable source files behind figures—by learning patterns from real before-and-after figure pairs extracted from actual manuscript revisions.
+
+Why it matters: Editing figures consumes hours of researcher time during manuscript revisions. If this system scales, it could accelerate the revision cycle for scientific papers and reduce manual labor that adds no intellectual value. The approach also demonstrates that real-world revision patterns are useful training data for teaching AI to handle complex, structured visual content.
+
+---
+Title: The Distributed Open-Source Vulnerability Ecosystem
+Subtitle: Why different security scanners give conflicting answers about software vulnerabilities
+URL: https://paperplaine.com/papers/the-distributed-open-source
+Category: Computer Science
+Authors: Peter Mandl, Paul Mandl
+arXiv ID: 2607.14900
+arXiv URL: https://arxiv.org/abs/2607.14900
+Posted: 2026-07-18
+
+Summary: Security tools designed to find known software vulnerabilities often report different results when scanning the same code, even though they use the same public vulnerability databases. These disagreements don't just come from buggy scanners—they emerge from fundamental inconsistencies across the entire ecosystem where vulnerability information is created, shared, and interpreted.
+
+Why it matters: When security teams get conflicting vulnerability reports, they can't trust either answer, leaving them unsure whether their software is actually at risk. Understanding where these conflicts originate makes it possible to design better testing methods that catch real gaps, standardize how vulnerability information is tracked, and help organizations make faster, more confident decisions about fixing their code.
+
+---
+Title: Activity Regeneration from Silent States in Neuronal Networks with Transient Synaptic Memory
+Subtitle: How neurons remember and restart activity through hidden synaptic changes
+URL: https://paperplaine.com/papers/activity-regeneration-from-silent
+Category: Quantitative Biology
+Authors: Mozhgan Khanjanianpak, Alireza Valiadeh
+arXiv ID: 2607.14000
+arXiv URL: https://arxiv.org/abs/2607.14000
+Posted: 2026-07-18
+
+Summary: Neurons can spontaneously restart firing even after going completely silent, and a new study shows this happens because of lingering chemical changes at synaptic connections. By measuring the pattern of these residual changes at the moment silence begins, researchers can predict whether a network will fire once and stop or regenerate activity cycles—suggesting that short-term memory lives in the structure of connections themselves, not just in active firing.
+
+Why it matters: Understanding how networks restart from silent states could explain how brains maintain working memory and switch between different mental states without continuous neural chatter. The ability to predict network behavior from a snapshot of synaptic state, rather than watching the full dynamics unfold, offers a faster way to diagnose and potentially intervene in disorders where abnormal firing patterns emerge from hidden synaptic changes.
 
 ---
 Title: Symbal: Detecting Systematic Misalignments in Model-Generated Captions
