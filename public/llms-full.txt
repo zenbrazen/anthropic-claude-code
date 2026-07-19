@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 465 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 468 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-19
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Concept-Guided Spatial Regularization for World Models in Atari Pong
+Subtitle: Why AI game-playing models fail to see what matters most
+URL: https://paperplaine.com/papers/concept-guided-spatial-regularization
+Category: Computer Science · AI
+Authors: Yukuan Lu, Zaishuo Xia, Weyl Lu et al.
+arXiv ID: 2607.15142
+arXiv URL: https://arxiv.org/abs/2607.15142
+Posted: 2026-07-19
+
+Summary: When researchers tested five leading AI systems trained to play Pong, they found the models made basic mistakes—the ball would vanish, move wrong, or pass through the paddle—even though the systems won games during training. A new technique that forces models to pay special attention to task-critical objects like the ball improved performance, but didn't fully solve the problem, suggesting deeper issues with how these systems learn to see.
+
+Why it matters: AI systems that build internal models of the world are increasingly used in robotics and planning tasks. If these models fail on simple games like Pong—losing track of the ball entirely—they'll likely struggle with real-world tasks where noticing key details matters for safety. This work reveals that winning at a game doesn't mean the AI actually understands what it's looking at, a gap that needs fixing before deploying such systems in high-stakes settings.
+
+---
+Title: Optimal photostimulation selection for iterative activity maps
+Subtitle: Smart shortcuts for mapping brain circuits without frying the tissue
+URL: https://paperplaine.com/papers/optimal-photostimulation-selection-for
+Category: Quantitative Biology
+Authors: Jacob J. Morra, Kaitlyn E. Fouke, Owen Traubert et al.
+arXiv ID: 2607.12930
+arXiv URL: https://arxiv.org/abs/2607.12930
+Posted: 2026-07-19
+
+Summary: Researchers developed OPhELIA, a method that picks which neurons to stimulate during brain-mapping experiments in an intelligent order, rather than testing all possible combinations. In zebrafish larvae, the approach recovered nearly complete brain connectivity maps using just 5% of the trials that brute-force methods would require—cutting experimental time, heat damage, and cost dramatically.
+
+Why it matters: Brain circuit mapping is currently so slow and damaging that scientists can only map tiny pieces of neural tissue. This method could enable much larger connectome maps in living animals, accelerating research into how neural circuits produce behavior and disease. Faster experiments also mean researchers can study more animals and conditions with the same resources.
+
+---
+Title: LIVE-RIS: Real-Time In-Flight Actuation of UAV-Mounted RIS
+Subtitle: Making flying wireless mirrors work reliably despite real-world turbulence
+URL: https://paperplaine.com/papers/live-ris-real-time
+Category: Engineering
+Authors: David Müller, Kevin Weinberger, Aydin Sezgin et al.
+arXiv ID: 2607.14851
+arXiv URL: https://arxiv.org/abs/2607.14851
+Posted: 2026-07-19
+
+Summary: Researchers built and tested the first working prototype of a reconfigurable intelligent surface—a device that bounces and shapes wireless signals—mounted on a flying drone. Using onboard sensors and prediction algorithms, they kept the system performing well even as the drone moved and vibrated, proving that the technology can work in real conditions rather than just in theory.
+
+Why it matters: 6G wireless networks could use flying intelligent surfaces to improve coverage in challenging terrain or during emergencies, but only if they stay stable and functional mid-flight. This prototype demonstrates they can be kept stable through motion prediction and real-time adjustment, clearing a major hurdle between theoretical promise and practical deployment.
 
 ---
 Title: On-Policy Delta Distillation

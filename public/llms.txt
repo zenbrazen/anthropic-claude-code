@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 465 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 468 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 159 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 160 papers in archive.
+  - "Concept-Guided Spatial Regularization for World Models in Atari Pong"
   - "On-Policy Delta Distillation"
-  - "Online Neural Space Time Memory for Dynamic Novel View Synthesis"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 40 papers in archive.
   - "The Distributed Open-Source Vulnerability Ecosystem"
   - "Plausible Deniability Guarantees for Whistleblowers"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 39 papers in archive.
   - "Data Driven Block Replacement Scheduling"
   - "Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 37 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 38 papers in archive.
+  - "Optimal photostimulation selection for iterative activity maps"
   - "Activity Regeneration from Silent States in Neuronal Networks with Transient Synaptic Memory"
-  - "A modular state-space model of human perception, cognition, and decision dynamics"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 40 papers in archive.
   - "Detecting unusual trading patterns on cryptocurrency exchanges by means of complexity measures"
   - "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 40 papers in archive.
   - "cGAP: Generalized Association Plots with HOMALS-Guided Heatmaps for Visualization of High-Dimensional Categorical Data"
   - "Subjective Risk Decomposition: A New View for Uncertainty Quantification"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 38 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 39 papers in archive.
+  - "LIVE-RIS: Real-Time In-Flight Actuation of UAV-Mounted RIS"
   - "Modular-CAPA-Based Communication Systems: Joint Activation and Beamforming Design"
-  - "Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 34 papers in archive.
   - "Does Multi-Agent Debate Improve AI Feedback on Research Papers?"
   - "Political Power in International Trade"
 
 ## 10 most recent papers
+
+### Concept-Guided Spatial Regularization for World Models in Atari Pong
+- URL: https://paperplaine.com/papers/concept-guided-spatial-regularization
+- Category: Computer Science · AI
+- Authors: Yukuan Lu, Zaishuo Xia, Weyl Lu et al.
+- arXiv: 2607.15142
+- Plain-English subtitle: Why AI game-playing models fail to see what matters most
+- Summary: When researchers tested five leading AI systems trained to play Pong, they found the models made basic mistakes—the ball would vanish, move wrong, or pass through the paddle—even though the systems won games during training. A new technique that forces models to pay special attention to task-critical objects like the ball improved performance, but didn't fully solve the problem, suggesting deeper issues with how these systems learn to see.
+- Why it matters: AI systems that build internal models of the world are increasingly used in robotics and planning tasks. If these models fail on simple games like Pong—losing track of the ball entirely—they'll likely struggle with real-world tasks where noticing key details matters for safety. This work reveals that winning at a game doesn't mean the AI actually understands what it's looking at, a gap that needs fixing before deploying such systems in high-stakes settings.
+
+### Optimal photostimulation selection for iterative activity maps
+- URL: https://paperplaine.com/papers/optimal-photostimulation-selection-for
+- Category: Quantitative Biology
+- Authors: Jacob J. Morra, Kaitlyn E. Fouke, Owen Traubert et al.
+- arXiv: 2607.12930
+- Plain-English subtitle: Smart shortcuts for mapping brain circuits without frying the tissue
+- Summary: Researchers developed OPhELIA, a method that picks which neurons to stimulate during brain-mapping experiments in an intelligent order, rather than testing all possible combinations. In zebrafish larvae, the approach recovered nearly complete brain connectivity maps using just 5% of the trials that brute-force methods would require—cutting experimental time, heat damage, and cost dramatically.
+- Why it matters: Brain circuit mapping is currently so slow and damaging that scientists can only map tiny pieces of neural tissue. This method could enable much larger connectome maps in living animals, accelerating research into how neural circuits produce behavior and disease. Faster experiments also mean researchers can study more animals and conditions with the same resources.
+
+### LIVE-RIS: Real-Time In-Flight Actuation of UAV-Mounted RIS
+- URL: https://paperplaine.com/papers/live-ris-real-time
+- Category: Engineering
+- Authors: David Müller, Kevin Weinberger, Aydin Sezgin et al.
+- arXiv: 2607.14851
+- Plain-English subtitle: Making flying wireless mirrors work reliably despite real-world turbulence
+- Summary: Researchers built and tested the first working prototype of a reconfigurable intelligent surface—a device that bounces and shapes wireless signals—mounted on a flying drone. Using onboard sensors and prediction algorithms, they kept the system performing well even as the drone moved and vibrated, proving that the technology can work in real conditions rather than just in theory.
+- Why it matters: 6G wireless networks could use flying intelligent surfaces to improve coverage in challenging terrain or during emergencies, but only if they stay stable and functional mid-flight. This prototype demonstrates they can be kept stable through motion prediction and real-time adjustment, clearing a major hurdle between theoretical promise and practical deployment.
 
 ### On-Policy Delta Distillation
 - URL: https://paperplaine.com/papers/on-policy-delta-distillation
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to edit scientific diagrams the way researchers actually revise them
 - Summary: Researchers created a system that learns to automatically edit scientific figures by studying how researchers revise papers on arXiv. The system takes natural-language instructions and modifies vector-based diagrams—the editable source files behind figures—by learning patterns from real before-and-after figure pairs extracted from actual manuscript revisions.
 - Why it matters: Editing figures consumes hours of researcher time during manuscript revisions. If this system scales, it could accelerate the revision cycle for scientific papers and reduce manual labor that adds no intellectual value. The approach also demonstrates that real-world revision patterns are useful training data for teaching AI to handle complex, structured visual content.
-
-### The Distributed Open-Source Vulnerability Ecosystem
-- URL: https://paperplaine.com/papers/the-distributed-open-source
-- Category: Computer Science
-- Authors: Peter Mandl, Paul Mandl
-- arXiv: 2607.14900
-- Plain-English subtitle: Why different security scanners give conflicting answers about software vulnerabilities
-- Summary: Security tools designed to find known software vulnerabilities often report different results when scanning the same code, even though they use the same public vulnerability databases. These disagreements don't just come from buggy scanners—they emerge from fundamental inconsistencies across the entire ecosystem where vulnerability information is created, shared, and interpreted.
-- Why it matters: When security teams get conflicting vulnerability reports, they can't trust either answer, leaving them unsure whether their software is actually at risk. Understanding where these conflicts originate makes it possible to design better testing methods that catch real gaps, standardize how vulnerability information is tracked, and help organizations make faster, more confident decisions about fixing their code.
-
-### Activity Regeneration from Silent States in Neuronal Networks with Transient Synaptic Memory
-- URL: https://paperplaine.com/papers/activity-regeneration-from-silent
-- Category: Quantitative Biology
-- Authors: Mozhgan Khanjanianpak, Alireza Valiadeh
-- arXiv: 2607.14000
-- Plain-English subtitle: How neurons remember and restart activity through hidden synaptic changes
-- Summary: Neurons can spontaneously restart firing even after going completely silent, and a new study shows this happens because of lingering chemical changes at synaptic connections. By measuring the pattern of these residual changes at the moment silence begins, researchers can predict whether a network will fire once and stop or regenerate activity cycles—suggesting that short-term memory lives in the structure of connections themselves, not just in active firing.
-- Why it matters: Understanding how networks restart from silent states could explain how brains maintain working memory and switch between different mental states without continuous neural chatter. The ability to predict network behavior from a snapshot of synaptic state, rather than watching the full dynamics unfold, offers a faster way to diagnose and potentially intervene in disorders where abnormal firing patterns emerge from hidden synaptic changes.
-
-### Symbal: Detecting Systematic Misalignments in Model-Generated Captions
-- URL: https://paperplaine.com/papers/symbal-detecting-systematic-misalignments
-- Category: Computer Science · AI
-- Authors: Maya Varma, Jean-Benoit Delbrouck, Sophie Ostmeier et al.
-- arXiv: 2607.15216
-- Plain-English subtitle: Finding the hidden patterns in AI image-captioning mistakes
-- Summary: AI systems that describe images often make the same mistakes repeatedly, triggered by specific visual features—like consistently mislabeling certain objects or ignoring details in particular settings. Researchers created Symbal, a tool that automatically detects these recurring error patterns and explains them in plain language, correctly identifying systematic problems in 63.8% of datasets tested, nearly four times better than existing methods.
-- Why it matters: AI-generated image captions are increasingly used in real applications—from medical imaging systems to accessibility tools for the blind. If these systems have hidden, systematic blind spots, they could consistently mislead users in critical moments. Symbal lets organizations audit their caption datasets and catch these systematic failures before deployment, without needing access to the underlying AI model itself.
 
 ## About
 
