@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 462 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 465 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 158 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 159 papers in archive.
+  - "On-Policy Delta Distillation"
   - "Online Neural Space Time Memory for Dynamic Novel View Synthesis"
-  - "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 40 papers in archive.
   - "The Distributed Open-Source Vulnerability Ecosystem"
   - "Plausible Deniability Guarantees for Whistleblowers"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 37 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 38 papers in archive.
+  - "Fast two-dimensional tensor-network contraction via subspace iteration"
   - "Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits"
-  - "The Infraparticle Edge"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 39 papers in archive.
   - "Data Driven Block Replacement Scheduling"
   - "Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 40 papers in archive.
   - "Detecting unusual trading patterns on cryptocurrency exchanges by means of complexity measures"
   - "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 39 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 40 papers in archive.
+  - "cGAP: Generalized Association Plots with HOMALS-Guided Heatmaps for Visualization of High-Dimensional Categorical Data"
   - "Subjective Risk Decomposition: A New View for Uncertainty Quantification"
-  - "An Extension to the Procedure for Developing Uncertainty-Consistent Shear Wave Velocity Profiles from Inversion of Experimental Surface Wave Dispersion Data"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 38 papers in archive.
   - "Modular-CAPA-Based Communication Systems: Joint Activation and Beamforming Design"
   - "Improving Autonomous Nano-drones Performance via Automated End-to-End Optimization and Deployment of DNNs"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Political Power in International Trade"
 
 ## 10 most recent papers
+
+### On-Policy Delta Distillation
+- URL: https://paperplaine.com/papers/on-policy-delta-distillation
+- Category: Computer Science · AI
+- Authors: Byeongho Heo, Jaehui Hwang, Sangdoo Yun et al.
+- arXiv: 2607.15161
+- Plain-English subtitle: Teaching AI to learn by copying what the teacher learned, not what it says
+- Summary: Researchers developed a new way to train reasoning AI models by having them copy the specific improvements a teacher model gained during training, rather than copying the teacher's final outputs. This approach, called On-Policy Delta Distillation, consistently outperformed standard methods across math, science, and coding tasks while requiring significantly less training time.
+- Why it matters: Most AI training is computationally expensive and relies on human feedback at scale. This method cuts training time substantially while maintaining strong performance, making it cheaper and faster to build AI systems that can reason through complex problems. The approach works because it focuses on transferring the actual reasoning improvements rather than surface-level mimicry, making the training signal more direct and effective.
+
+### cGAP: Generalized Association Plots with HOMALS-Guided Heatmaps for Visualization of High-Dimensional Categorical Data
+- URL: https://paperplaine.com/papers/cgap-generalized-association-plots
+- Category: Statistics
+- Authors: Chun-houh Chen, Shun-Chuan Chang, Chiun-How Kao et al.
+- arXiv: 2607.15018
+- Plain-English subtitle: Visualizing messy categorical data while keeping the original numbers visible
+- Summary: Researchers created cGAP, a visualization tool that makes sense of high-dimensional categorical data—like genetic markers, survey responses, or biological classifications—by embedding the data in a color-coded heatmap that preserves the original matrix while revealing hidden patterns. The approach uses a statistical embedding method called HOMALS to assign colors to similar data points, then reorders rows and columns to surface clusters and outliers that would otherwise remain buried in tables.
+- Why it matters: Most visualization tools for categorical data either collapse it into simplified charts that lose information or produce abstract plots that disconnect results from the original data—making it hard to trace why a pattern appeared and whether it's real. cGAP solves this by keeping the raw data visible while layering interpretable geometric structure on top, letting researchers across genetics, biomedicine, and social science spot meaningful patterns without sacrificing transparency or accuracy.
+
+### Fast two-dimensional tensor-network contraction via subspace iteration
+- URL: https://paperplaine.com/papers/fast-two-dimensional-tensor
+- Category: Physics
+- Authors: Yining Zhang, Philippe Corboz
+- arXiv: 2607.15158
+- Plain-English subtitle: Speeding up quantum simulations by doing math smarter, not harder
+- Summary: Physicists have developed a faster way to simulate quantum systems by replacing expensive mathematical operations with cheaper ones that run well on modern computers. The new method is up to 100 times faster than the previous standard approach, completing calculations on a single graphics processor that would have taken vastly longer before.
+- Why it matters: Quantum simulations help physicists understand materials and systems too complex to study experimentally, with applications ranging from discovering new superconductors to designing better batteries. Dramatically faster computation means researchers can tackle larger, more realistic quantum problems and get answers in hours instead of days or weeks, accelerating the pace of discovery in materials science and quantum physics.
 
 ### Online Neural Space Time Memory for Dynamic Novel View Synthesis
 - URL: https://paperplaine.com/papers/online-neural-space-time
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Finding the hidden patterns in AI image-captioning mistakes
 - Summary: AI systems that describe images often make the same mistakes repeatedly, triggered by specific visual features—like consistently mislabeling certain objects or ignoring details in particular settings. Researchers created Symbal, a tool that automatically detects these recurring error patterns and explains them in plain language, correctly identifying systematic problems in 63.8% of datasets tested, nearly four times better than existing methods.
 - Why it matters: AI-generated image captions are increasingly used in real applications—from medical imaging systems to accessibility tools for the blind. If these systems have hidden, systematic blind spots, they could consistently mislead users in critical moments. Symbal lets organizations audit their caption datasets and catch these systematic failures before deployment, without needing access to the underlying AI model itself.
-
-### Does Multi-Agent Debate Improve AI Feedback on Research Papers?
-- URL: https://paperplaine.com/papers/does-multi-agent-debate
-- Category: Economics
-- Authors: Tomas Havranek, Zuzana Irsova
-- arXiv: 2607.14713
-- Plain-English subtitle: Having AI debate itself doesn't improve feedback on economics research papers
-- Summary: When economists evaluated three AI-generated reports on their own meta-analysis papers, they preferred a straightforward single AI review over two more elaborate multi-agent debate systems—even though one debate tool used 30 times more computational tokens. The finding challenges the assumption that having AI systems argue with each other produces better analysis, at least for research feedback in economics.
-- Why it matters: As research institutions consider using AI to supplement or replace peer review, this suggests that more complex AI methods don't automatically produce more useful critique. The result is a cautionary finding for anyone designing AI feedback systems: computational sophistication alone doesn't guarantee better quality, and the people whose work is being evaluated remain the most reliable judges of what actually helps them improve their research.
-
-### Subjective Risk Decomposition: A New View for Uncertainty Quantification
-- URL: https://paperplaine.com/papers/subjective-risk-decomposition-a
-- Category: Statistics
-- Authors: Raghad Alamri, Michele Caprio, Gavin Brown
-- arXiv: 2607.15196
-- Plain-English subtitle: Where uncertainty measures come from and why it matters
-- Summary: Uncertainty in machine learning isn't a fundamental property that needs to be assumed—it's a mathematical consequence of the choices you make when setting up a prediction problem. The researchers show how two standard types of uncertainty (epistemic, which reflects what the model doesn't know, and aleatoric, which reflects randomness in the world) both emerge naturally from decomposing a loss function, and they connect this framework to learning theory in a way that unifies seemingly separate approaches across the field.
-- Why it matters: Scientists and engineers building machine learning systems need to quantify uncertainty—to know when predictions are reliable and when they're guesses. This work provides a principled way to choose which uncertainty measures to use: instead of debating which is 'correct,' practitioners can now derive the right uncertainty decomposition directly from their loss function and the specific problem they're solving. That foundation makes uncertainty quantification less arbitrary and more tied to the actual goal of the model.
-
-### teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data
-- URL: https://paperplaine.com/papers/tellme-why-ain-t
-- Category: Computer Science · AI
-- Authors: Qiwei Li, Jorge Ortiz
-- arXiv: 2607.15254
-- Plain-English subtitle: Finding cause and effect in traffic using dashcam video and AI questions
-- Summary: Researchers built a system called teLLMe that answers causal questions about urban traffic by analyzing dashcam video data and natural-language queries. Instead of just showing correlations, the system uses causal inference techniques to estimate real effects — for example, how much rain actually increases traffic density — and explains its reasoning and uncertainty alongside each answer.
-- Why it matters: Traffic agencies have massive video datasets but can't easily extract causal insights about what truly causes congestion or unsafe conditions. This system lets non-experts ask plain-English questions about traffic and get transparent, reasoned answers that acknowledge uncertainty — speeding up hypothesis testing and helping agencies design better interventions without running expensive real-world experiments.
 
 ## About
 

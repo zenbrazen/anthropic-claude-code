@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.15161",
+    "title": "On-Policy Delta Distillation",
+    "authors": "Byeongho Heo, Jaehui Hwang, Sangdoo Yun et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-16T16:07:19Z",
+    "publishedFormatted": "Jul 16, 2026",
+    "subtitle": "Teaching AI to learn by copying what the teacher learned, not what it says",
+    "summary": "Researchers developed a new way to train reasoning AI models by having them copy the specific improvements a teacher model gained during training, rather than copying the teacher's final outputs. This approach, called On-Policy Delta Distillation, consistently outperformed standard methods across math, science, and coding tasks while requiring significantly less training time.",
+    "whyItMatters": "Most AI training is computationally expensive and relies on human feedback at scale. This method cuts training time substantially while maintaining strong performance, making it cheaper and faster to build AI systems that can reason through complex problems. The approach works because it focuses on transferring the actual reasoning improvements rather than surface-level mimicry, making the training signal more direct and effective.",
+    "fetchedAt": "2026-07-19T09:04:10.362Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 165
+    },
+    "slug": "on-policy-delta-distillation"
+  },
+  {
+    "id": "2607.15018",
+    "title": "cGAP: Generalized Association Plots with HOMALS-Guided Heatmaps for Visualization of High-Dimensional Categorical Data",
+    "authors": "Chun-houh Chen, Shun-Chuan Chang, Chiun-How Kao et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-16T14:05:37Z",
+    "publishedFormatted": "Jul 16, 2026",
+    "subtitle": "Visualizing messy categorical data while keeping the original numbers visible",
+    "summary": "Researchers created cGAP, a visualization tool that makes sense of high-dimensional categorical data—like genetic markers, survey responses, or biological classifications—by embedding the data in a color-coded heatmap that preserves the original matrix while revealing hidden patterns. The approach uses a statistical embedding method called HOMALS to assign colors to similar data points, then reorders rows and columns to surface clusters and outliers that would otherwise remain buried in tables.",
+    "whyItMatters": "Most visualization tools for categorical data either collapse it into simplified charts that lose information or produce abstract plots that disconnect results from the original data—making it hard to trace why a pattern appeared and whether it's real. cGAP solves this by keeping the raw data visible while layering interpretable geometric structure on top, letting researchers across genetics, biomedicine, and social science spot meaningful patterns without sacrificing transparency or accuracy.",
+    "fetchedAt": "2026-07-19T09:04:13.759Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 237
+    },
+    "slug": "cgap-generalized-association-plots"
+  },
+  {
+    "id": "2607.15158",
+    "title": "Fast two-dimensional tensor-network contraction via subspace iteration",
+    "authors": "Yining Zhang, Philippe Corboz",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-07-16T16:00:54Z",
+    "publishedFormatted": "Jul 16, 2026",
+    "subtitle": "Speeding up quantum simulations by doing math smarter, not harder",
+    "summary": "Physicists have developed a faster way to simulate quantum systems by replacing expensive mathematical operations with cheaper ones that run well on modern computers. The new method is up to 100 times faster than the previous standard approach, completing calculations on a single graphics processor that would have taken vastly longer before.",
+    "whyItMatters": "Quantum simulations help physicists understand materials and systems too complex to study experimentally, with applications ranging from discovering new superconductors to designing better batteries. Dramatically faster computation means researchers can tackle larger, more realistic quantum problems and get answers in hours instead of days or weeks, accelerating the pace of discovery in materials science and quantum physics.",
+    "fetchedAt": "2026-07-19T09:04:16.495Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 116
+    },
+    "slug": "fast-two-dimensional-tensor"
+  },
+  {
     "id": "2607.15271",
     "title": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
     "authors": "Baback Elmieh, Lynn Tsai, Zeman Li et al.",
