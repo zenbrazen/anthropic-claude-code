@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 471 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 474 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-20
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: An Exam for Active Observers
+Subtitle: Why AI vision systems fail at looking carefully, the way humans do
+URL: https://paperplaine.com/papers/an-exam-for-active
+Category: Computer Science · AI
+Authors: Jiarui Zhang, Muzi Tao, Shangshang Wang et al.
+arXiv ID: 2607.16165
+arXiv URL: https://arxiv.org/abs/2607.16165
+Posted: 2026-07-20
+
+Summary: Today's most advanced AI image-understanding systems—including GPT-4.5 and Claude—cannot perform active observation, the repeated, purposeful looking that humans use to solve visual tasks. When tested on 17 new benchmark tasks designed to require this skill, the best model solved only 10.6% of items, while average humans scored 96.1%, suggesting a fundamental gap in how these systems perceive images.
+
+Why it matters: AI systems that cannot look carefully will fail at tasks requiring sustained visual attention—medical diagnosis, quality inspection, scientific analysis, and navigation in complex scenes. Even when given the ability to write their own code to re-examine images, current models produce unreliable results and cannot catch their own mistakes, pointing to a core architectural flaw that researchers must now address.
+
+---
+Title: Multidimensional stochastic liquidity in Kyle's model of informed trading
+Subtitle: How insider traders move prices when liquidity randomly fluctuates
+URL: https://paperplaine.com/papers/multidimensional-stochastic-liquidity-in
+Category: Quantitative Finance
+Authors: Ibrahim Ekren, Evangelos A. Nikitopoulos, Lu Vy
+arXiv ID: 2607.10934
+arXiv URL: https://arxiv.org/abs/2607.10934
+Posted: 2026-07-20
+
+Summary: When someone trades on private information, how fast should they reveal it to avoid detection? Researchers extended a classic model of insider trading to handle realistic conditions: multiple assets trading simultaneously and liquidity that changes unpredictably. They found that under certain mathematical conditions, informed traders follow a predictable strategy that creates prices moving proportionally to their trades—and the speed of information leakage adjusts automatically as market conditions shift.
+
+Why it matters: Financial regulators need to understand how insiders can exploit markets, and market-makers need realistic models to set spreads and manage risk. This work removes artificial simplifications from the standard textbook model, making it applicable to actual multi-asset markets where liquidity isn't constant. Better models of insider trading behavior help exchanges design surveillance systems and help firms price the true cost of trading when information is unevenly distributed.
+
+---
+Title: Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems
+Subtitle: Teaching AI to control complex systems using physics as a shortcut
+URL: https://paperplaine.com/papers/physics-enhanced-reinforcement-learning
+Category: Mathematics
+Authors: Matteo Tomasetto, Nicolò Botteghi, Gabriele Bruni et al.
+arXiv ID: 2607.16177
+arXiv URL: https://arxiv.org/abs/2607.16177
+Posted: 2026-07-20
+
+Summary: Researchers combined reinforcement learning with physics-based math to train AI controllers that need far fewer practice runs with real systems. The new approach, tested on navigation problems in turbulent flows, required significantly fewer environment interactions than standard AI methods while generalizing across different scenarios and scaling to high-dimensional control problems.
+
+Why it matters: Reinforcement learning typically demands thousands of interactions with a system before learning to control it well—prohibitively expensive for physical equipment like robots or aircraft. By embedding physics equations directly into the learning process, this method cuts the number of required trials dramatically, making AI control practical for expensive real-world systems where trial-and-error is costly or dangerous.
 
 ---
 Title: Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities

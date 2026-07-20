@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 471 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 474 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 161 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 162 papers in archive.
+  - "An Exam for Active Observers"
   - "Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities"
-  - "Concept-Guided Spatial Regularization for World Models in Atari Pong"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 41 papers in archive.
   - "AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation"
   - "The Distributed Open-Source Vulnerability Ecosystem"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 38 papers in archive.
   - "Fast two-dimensional tensor-network contraction via subspace iteration"
   - "Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 39 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 40 papers in archive.
+  - "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems"
   - "Data Driven Block Replacement Scheduling"
-  - "Dynamical Vehicle Orienteering Problem for Multi-Rotor Unmanned Aerial Vehicles"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 38 papers in archive.
   - "Optimal photostimulation selection for iterative activity maps"
   - "Activity Regeneration from Silent States in Neuronal Networks with Transient Synaptic Memory"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 40 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 41 papers in archive.
+  - "Multidimensional stochastic liquidity in Kyle's model of informed trading"
   - "Detecting unusual trading patterns on cryptocurrency exchanges by means of complexity measures"
-  - "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 40 papers in archive.
   - "cGAP: Generalized Association Plots with HOMALS-Guided Heatmaps for Visualization of High-Dimensional Categorical Data"
   - "Subjective Risk Decomposition: A New View for Uncertainty Quantification"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Does Multi-Agent Debate Improve AI Feedback on Research Papers?"
 
 ## 10 most recent papers
+
+### An Exam for Active Observers
+- URL: https://paperplaine.com/papers/an-exam-for-active
+- Category: Computer Science · AI
+- Authors: Jiarui Zhang, Muzi Tao, Shangshang Wang et al.
+- arXiv: 2607.16165
+- Plain-English subtitle: Why AI vision systems fail at looking carefully, the way humans do
+- Summary: Today's most advanced AI image-understanding systems—including GPT-4.5 and Claude—cannot perform active observation, the repeated, purposeful looking that humans use to solve visual tasks. When tested on 17 new benchmark tasks designed to require this skill, the best model solved only 10.6% of items, while average humans scored 96.1%, suggesting a fundamental gap in how these systems perceive images.
+- Why it matters: AI systems that cannot look carefully will fail at tasks requiring sustained visual attention—medical diagnosis, quality inspection, scientific analysis, and navigation in complex scenes. Even when given the ability to write their own code to re-examine images, current models produce unreliable results and cannot catch their own mistakes, pointing to a core architectural flaw that researchers must now address.
+
+### Multidimensional stochastic liquidity in Kyle's model of informed trading
+- URL: https://paperplaine.com/papers/multidimensional-stochastic-liquidity-in
+- Category: Quantitative Finance
+- Authors: Ibrahim Ekren, Evangelos A. Nikitopoulos, Lu Vy
+- arXiv: 2607.10934
+- Plain-English subtitle: How insider traders move prices when liquidity randomly fluctuates
+- Summary: When someone trades on private information, how fast should they reveal it to avoid detection? Researchers extended a classic model of insider trading to handle realistic conditions: multiple assets trading simultaneously and liquidity that changes unpredictably. They found that under certain mathematical conditions, informed traders follow a predictable strategy that creates prices moving proportionally to their trades—and the speed of information leakage adjusts automatically as market conditions shift.
+- Why it matters: Financial regulators need to understand how insiders can exploit markets, and market-makers need realistic models to set spreads and manage risk. This work removes artificial simplifications from the standard textbook model, making it applicable to actual multi-asset markets where liquidity isn't constant. Better models of insider trading behavior help exchanges design surveillance systems and help firms price the true cost of trading when information is unevenly distributed.
+
+### Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems
+- URL: https://paperplaine.com/papers/physics-enhanced-reinforcement-learning
+- Category: Mathematics
+- Authors: Matteo Tomasetto, Nicolò Botteghi, Gabriele Bruni et al.
+- arXiv: 2607.16177
+- Plain-English subtitle: Teaching AI to control complex systems using physics as a shortcut
+- Summary: Researchers combined reinforcement learning with physics-based math to train AI controllers that need far fewer practice runs with real systems. The new approach, tested on navigation problems in turbulent flows, required significantly fewer environment interactions than standard AI methods while generalizing across different scenarios and scaling to high-dimensional control problems.
+- Why it matters: Reinforcement learning typically demands thousands of interactions with a system before learning to control it well—prohibitively expensive for physical equipment like robots or aircraft. By embedding physics equations directly into the learning process, this method cuts the number of required trials dramatically, making AI control practical for expensive real-world systems where trial-and-error is costly or dangerous.
 
 ### Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities
 - URL: https://paperplaine.com/papers/evaluating-open-weight-llms
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to learn by copying what the teacher learned, not what it says
 - Summary: Researchers developed a new way to train reasoning AI models by having them copy the specific improvements a teacher model gained during training, rather than copying the teacher's final outputs. This approach, called On-Policy Delta Distillation, consistently outperformed standard methods across math, science, and coding tasks while requiring significantly less training time.
 - Why it matters: Most AI training is computationally expensive and relies on human feedback at scale. This method cuts training time substantially while maintaining strong performance, making it cheaper and faster to build AI systems that can reason through complex problems. The approach works because it focuses on transferring the actual reasoning improvements rather than surface-level mimicry, making the training signal more direct and effective.
-
-### cGAP: Generalized Association Plots with HOMALS-Guided Heatmaps for Visualization of High-Dimensional Categorical Data
-- URL: https://paperplaine.com/papers/cgap-generalized-association-plots
-- Category: Statistics
-- Authors: Chun-houh Chen, Shun-Chuan Chang, Chiun-How Kao et al.
-- arXiv: 2607.15018
-- Plain-English subtitle: Visualizing messy categorical data while keeping the original numbers visible
-- Summary: Researchers created cGAP, a visualization tool that makes sense of high-dimensional categorical data—like genetic markers, survey responses, or biological classifications—by embedding the data in a color-coded heatmap that preserves the original matrix while revealing hidden patterns. The approach uses a statistical embedding method called HOMALS to assign colors to similar data points, then reorders rows and columns to surface clusters and outliers that would otherwise remain buried in tables.
-- Why it matters: Most visualization tools for categorical data either collapse it into simplified charts that lose information or produce abstract plots that disconnect results from the original data—making it hard to trace why a pattern appeared and whether it's real. cGAP solves this by keeping the raw data visible while layering interpretable geometric structure on top, letting researchers across genetics, biomedicine, and social science spot meaningful patterns without sacrificing transparency or accuracy.
-
-### Fast two-dimensional tensor-network contraction via subspace iteration
-- URL: https://paperplaine.com/papers/fast-two-dimensional-tensor
-- Category: Physics
-- Authors: Yining Zhang, Philippe Corboz
-- arXiv: 2607.15158
-- Plain-English subtitle: Speeding up quantum simulations by doing math smarter, not harder
-- Summary: Physicists have developed a faster way to simulate quantum systems by replacing expensive mathematical operations with cheaper ones that run well on modern computers. The new method is up to 100 times faster than the previous standard approach, completing calculations on a single graphics processor that would have taken vastly longer before.
-- Why it matters: Quantum simulations help physicists understand materials and systems too complex to study experimentally, with applications ranging from discovering new superconductors to designing better batteries. Dramatically faster computation means researchers can tackle larger, more realistic quantum problems and get answers in hours instead of days or weeks, accelerating the pace of discovery in materials science and quantum physics.
-
-### Online Neural Space Time Memory for Dynamic Novel View Synthesis
-- URL: https://paperplaine.com/papers/online-neural-space-time
-- Category: Computer Science · AI
-- Authors: Baback Elmieh, Lynn Tsai, Zeman Li et al.
-- arXiv: 2607.15271
-- Plain-English subtitle: Making video viewpoint switching fast enough for real-time streaming
-- Summary: Researchers built a system that generates new camera angles from streaming video in real time while remembering what happened earlier—even when parts of the scene are temporarily hidden. The key breakthrough was updating the system's memory less often than processing each frame, cutting computational cost while using cross-view attention to handle how the scene changes between updates.
-- Why it matters: Real-time view synthesis from video is essential for live sports broadcasting, virtual reality streaming, and teleconferencing with dynamic backgrounds. This work removes a major bottleneck: previous methods either ran too slowly for live applications or forgot important details about the scene. Now systems can generate smooth, consistent new viewpoints without lag while maintaining memory of occluded regions over minutes of footage.
 
 ## About
 
