@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 477 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 480 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 163 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 164 papers in archive.
+  - "LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications"
   - "OR Else: A Differentiable Trust Region for Policy Optimization"
-  - "An Exam for Active Observers"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 41 papers in archive.
   - "AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation"
   - "The Distributed Open-Source Vulnerability Ecosystem"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 38 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 39 papers in archive.
+  - "Semi-fractality and localization on a chiral Cayley tree"
   - "Fast two-dimensional tensor-network contraction via subspace iteration"
-  - "Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 40 papers in archive.
   - "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems"
   - "Data Driven Block Replacement Scheduling"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 38 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 39 papers in archive.
+  - "STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex"
   - "Optimal photostimulation selection for iterative activity maps"
-  - "Activity Regeneration from Silent States in Neuronal Networks with Transient Synaptic Memory"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 41 papers in archive.
   - "Multidimensional stochastic liquidity in Kyle's model of informed trading"
   - "Detecting unusual trading patterns on cryptocurrency exchanges by means of complexity measures"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Does Multi-Agent Debate Improve AI Feedback on Research Papers?"
 
 ## 10 most recent papers
+
+### LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications
+- URL: https://paperplaine.com/papers/llms-and-agentic-ai
+- Category: Computer Science · AI
+- Authors: Daniela Rojas, Abdulwahab Albassam, Aidan G. Leung et al.
+- arXiv: 2607.18147
+- Plain-English subtitle: Making AI systems safe and reliable for managing electrical grids
+- Summary: AI systems designed to manage electrical grids produce answers that sound plausible but are often physically impossible or wrong. This paper shows that wrapping AI around trusted mathematical solvers—and verifying every answer before reporting it—cuts dangerous errors by 52% and reduces forecasting mistakes 7.5 to 9.5 times compared to AI alone.
+- Why it matters: Electrical grids need split-second decisions on power flow and equipment failures. If an AI gives a confident but wrong answer, it could trigger blackouts or equipment damage. This approach ensures the grid only acts on answers from verified solvers, not just plausible-sounding AI guesses, making AI tools safe enough to actually deploy in critical infrastructure.
+
+### STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex
+- URL: https://paperplaine.com/papers/stsbench-a-large-scale
+- Category: Quantitative Biology
+- Authors: Ethan B. Trepka, Ruobing Xia, Shude Zhu et al.
+- arXiv: 2607.15631
+- Plain-English subtitle: Building a massive brain dataset to decode how primates perceive motion and space
+- Summary: Researchers created STSBench, a dataset of recordings from over 2,000 neurons in a motion-sensing region of macaque brains—50 times larger than any previous collection—gathered while the animals watched thousands of natural videos. The dataset enables new computational models that predict how individual brain cells respond to movement and spatial information, and can even reconstruct what a monkey is watching based on its brain activity alone.
+- Why it matters: The ventral visual stream (object recognition) is already well-understood through similar datasets and neural models, but the dorsal stream (motion and spatial awareness) has lagged behind because neuroscientists lacked comparable data. STSBench closes that gap, allowing researchers to finally build and test theories about how brains encode motion and spatial navigation—work that could illuminate both healthy vision and how these processes break down in disease, and potentially improve artificial vision systems designed to interpret movement and space.
+
+### Semi-fractality and localization on a chiral Cayley tree
+- URL: https://paperplaine.com/papers/semi-fractality-and-localization
+- Category: Physics
+- Authors: Carlo Vanoni, Vladimir E. Kravtsov, Boris L. Altshuler
+- arXiv: 2607.18179
+- Plain-English subtitle: How random weak links create a strange quantum halfway state
+- Summary: Physicists discovered that quantum particles hopping on a branching network with randomly weak connections can enter an unusual state that is neither fully spread out nor fully trapped. The particles occupy most of the network, yet concentrate their energy in a way normally seen only in completely localized systems—a phenomenon the researchers call semi-fractality. By varying the strength of the weak links, they found the system can shift between this semi-fractal regime and complete localization, revealing a new intermediate form of quantum confinement.
+- Why it matters: This work reveals new ways that disorder and symmetry shape quantum behavior, findings that could refine how physicists design materials with tailored electronic properties. Understanding these intermediate quantum states might help predict behavior in disordered materials used in real devices, from semiconductors to quantum sensors, where weak connections between components significantly affect performance.
 
 ### OR Else: A Differentiable Trust Region for Policy Optimization
 - URL: https://paperplaine.com/papers/or-else-a-differentiable
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Using AI to turn messy car hacking reports into security blueprints
 - Summary: Researchers tested AI models at automatically converting vague descriptions of self-driving car vulnerabilities into structured security formats that experts can act on. The best models achieved 94% accuracy on identifying what systems are affected and 99% accuracy on classifying weakness types, though pinpointing specific attack methods remains difficult.
 - Why it matters: Self-driving cars face thousands of documented vulnerabilities scattered across databases in plain text that security teams can't efficiently parse. Automating the conversion to structured formats means defenders can spot patterns faster, prioritize which threats to patch first, and coordinate defenses across vehicle fleets—potentially shortening response times from weeks to days.
-
-### AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation
-- URL: https://paperplaine.com/papers/ai-watermark-evidence-fails
-- Category: Computer Science
-- Authors: Saifur Rahman Tamim, Amir Labib Khan
-- arXiv: 2607.16010
-- Plain-English subtitle: Why AI watermarks fail when lawyers need them most
-- Summary: Three widely-used watermarking systems for AI-generated text collapse under realistic attacks and fail legal evidence standards. When texts were slightly rewritten—a simple paraphrase—nearly every watermarked passage lost its identifying mark entirely: 100% loss for two methods, 98.3% for a third. Even before any attack, false-negative rates were already high (70–83%), meaning the systems missed AI-generated text they should have caught.
-- Why it matters: Governments are betting on watermarks to prove AI authorship in court and comply with laws like the EU AI Act and California's SB 942. These results show that current watermarks won't hold up under cross-examination or in forensic analysis—a lawyer could easily paraphrase a watermarked text to strip the mark, and a judge applying legal evidence standards would likely reject the watermark as proof at all. This creates a gap between what the law assumes watermarks can do and what they actually can.
-
-### Model Uncertainty under Non-Gaussian Errors: Bayesian Model Averaging and Selection in Stochastic Frontier Models
-- URL: https://paperplaine.com/papers/model-uncertainty-under-non
-- Category: Economics
-- Authors: Kamil Makieła
-- arXiv: 2607.14274
-- Plain-English subtitle: Choosing the right economic model when errors don't follow standard patterns
-- Summary: When economists measure how efficiently firms operate, they typically assume errors follow a bell curve—but real data often doesn't. This paper shows that using specialized statistical methods that account for skewed, non-normal errors can change which economic models researchers should choose and how confident they should be in their conclusions. The effect is strongest when measuring efficiency differences is most important.
-- Why it matters: Efficiency analysis affects major decisions: regulators use it to assess utility companies and hospitals, investors use it to value firms, and governments use it to benchmark public agencies. Using the wrong statistical assumptions can lead to systematically incorrect efficiency rankings. This work shows researchers can now check whether their choice of statistical model is driving their conclusions, rather than having those conclusions rest on an untested assumption about how errors behave.
-
-### Concept-Guided Spatial Regularization for World Models in Atari Pong
-- URL: https://paperplaine.com/papers/concept-guided-spatial-regularization
-- Category: Computer Science · AI
-- Authors: Yukuan Lu, Zaishuo Xia, Weyl Lu et al.
-- arXiv: 2607.15142
-- Plain-English subtitle: Why AI game-playing models fail to see what matters most
-- Summary: When researchers tested five leading AI systems trained to play Pong, they found the models made basic mistakes—the ball would vanish, move wrong, or pass through the paddle—even though the systems won games during training. A new technique that forces models to pay special attention to task-critical objects like the ball improved performance, but didn't fully solve the problem, suggesting deeper issues with how these systems learn to see.
-- Why it matters: AI systems that build internal models of the world are increasingly used in robotics and planning tasks. If these models fail on simple games like Pong—losing track of the ball entirely—they'll likely struggle with real-world tasks where noticing key details matters for safety. This work reveals that winning at a game doesn't mean the AI actually understands what it's looking at, a gap that needs fixing before deploying such systems in high-stakes settings.
 
 ## About
 

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 477 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 480 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-21
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications
+Subtitle: Making AI systems safe and reliable for managing electrical grids
+URL: https://paperplaine.com/papers/llms-and-agentic-ai
+Category: Computer Science · AI
+Authors: Daniela Rojas, Abdulwahab Albassam, Aidan G. Leung et al.
+arXiv ID: 2607.18147
+arXiv URL: https://arxiv.org/abs/2607.18147
+Posted: 2026-07-21
+
+Summary: AI systems designed to manage electrical grids produce answers that sound plausible but are often physically impossible or wrong. This paper shows that wrapping AI around trusted mathematical solvers—and verifying every answer before reporting it—cuts dangerous errors by 52% and reduces forecasting mistakes 7.5 to 9.5 times compared to AI alone.
+
+Why it matters: Electrical grids need split-second decisions on power flow and equipment failures. If an AI gives a confident but wrong answer, it could trigger blackouts or equipment damage. This approach ensures the grid only acts on answers from verified solvers, not just plausible-sounding AI guesses, making AI tools safe enough to actually deploy in critical infrastructure.
+
+---
+Title: STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex
+Subtitle: Building a massive brain dataset to decode how primates perceive motion and space
+URL: https://paperplaine.com/papers/stsbench-a-large-scale
+Category: Quantitative Biology
+Authors: Ethan B. Trepka, Ruobing Xia, Shude Zhu et al.
+arXiv ID: 2607.15631
+arXiv URL: https://arxiv.org/abs/2607.15631
+Posted: 2026-07-21
+
+Summary: Researchers created STSBench, a dataset of recordings from over 2,000 neurons in a motion-sensing region of macaque brains—50 times larger than any previous collection—gathered while the animals watched thousands of natural videos. The dataset enables new computational models that predict how individual brain cells respond to movement and spatial information, and can even reconstruct what a monkey is watching based on its brain activity alone.
+
+Why it matters: The ventral visual stream (object recognition) is already well-understood through similar datasets and neural models, but the dorsal stream (motion and spatial awareness) has lagged behind because neuroscientists lacked comparable data. STSBench closes that gap, allowing researchers to finally build and test theories about how brains encode motion and spatial navigation—work that could illuminate both healthy vision and how these processes break down in disease, and potentially improve artificial vision systems designed to interpret movement and space.
+
+---
+Title: Semi-fractality and localization on a chiral Cayley tree
+Subtitle: How random weak links create a strange quantum halfway state
+URL: https://paperplaine.com/papers/semi-fractality-and-localization
+Category: Physics
+Authors: Carlo Vanoni, Vladimir E. Kravtsov, Boris L. Altshuler
+arXiv ID: 2607.18179
+arXiv URL: https://arxiv.org/abs/2607.18179
+Posted: 2026-07-21
+
+Summary: Physicists discovered that quantum particles hopping on a branching network with randomly weak connections can enter an unusual state that is neither fully spread out nor fully trapped. The particles occupy most of the network, yet concentrate their energy in a way normally seen only in completely localized systems—a phenomenon the researchers call semi-fractality. By varying the strength of the weak links, they found the system can shift between this semi-fractal regime and complete localization, revealing a new intermediate form of quantum confinement.
+
+Why it matters: This work reveals new ways that disorder and symmetry shape quantum behavior, findings that could refine how physicists design materials with tailored electronic properties. Understanding these intermediate quantum states might help predict behavior in disordered materials used in real devices, from semiconductors to quantum sensors, where weak connections between components significantly affect performance.
 
 ---
 Title: OR Else: A Differentiable Trust Region for Policy Optimization
