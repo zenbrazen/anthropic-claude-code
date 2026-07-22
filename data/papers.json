@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.19306",
+    "title": "From Distances to Trajectories: Real-Time Signed Distance Function Mapping and Distance-Accelerated Motion Planning for UAVs",
+    "authors": "Jason Stanley, Zhirui Dai, Qihao Qian et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-21T17:18:46Z",
+    "publishedFormatted": "Jul 21, 2026",
+    "subtitle": "Drones that map obstacles and plan safe routes in real time",
+    "summary": "Researchers combined obstacle mapping and flight path planning into a single system that runs onboard drones in cluttered environments. The system uses a neural network to rapidly build distance maps from point clouds, then a specialized planner that carves out safe spherical zones to navigate through—finishing route planning in 1–3 seconds compared to 10 seconds for existing methods, while improving map accuracy by 22%.",
+    "whyItMatters": "Autonomous drones currently struggle to navigate complex indoor spaces like warehouses or rescue sites because mapping and planning happen separately and demand more computing power than onboard systems can provide. This approach cuts planning time by 70% and fits entirely on a drone's own hardware, enabling real-time navigation through cluttered environments without external computers or delays.",
+    "fetchedAt": "2026-07-22T20:08:39.305Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 239
+    },
+    "slug": "from-distances-to-trajectories"
+  },
+  {
+    "id": "2607.16622",
+    "title": "Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting",
+    "authors": "Mikhail Perepelitsa",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-07-18T03:47:16Z",
+    "publishedFormatted": "Jul 18, 2026",
+    "subtitle": "Why cryptocurrency networks take decades to balance after price shocks",
+    "summary": "Proof-of-Stake networks like Ethereum are so economically sluggish that token prices can stay wildly misaligned with their true value for years or decades after the network's fundamentals change. The paper models how different types of investors—passive funds versus active traders—push token prices in opposite directions, with passive staking compressing yields and concentrating ownership in fewer hands, while active traders paradoxically help distribute control more evenly.",
+    "whyItMatters": "If token prices stay detached from reality for 46 years on average, casual investors who buy during hype cycles face multi-decade losses before any correction. More critically, passive institutional staking threatens the decentralization that makes these networks trustworthy—concentrating voting power away from the actual users who rely on the network. Understanding which types of investment help or harm that balance is essential as billions flow into crypto staking.",
+    "fetchedAt": "2026-07-22T20:08:43.355Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 219
+    },
+    "slug": "proof-of-stake-dynamics"
+  },
+  {
+    "id": "2607.18866",
+    "title": "Optimizing Regret",
+    "authors": "Irene Aldridge",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-07-21T08:58:25Z",
+    "publishedFormatted": "Jul 21, 2026",
+    "subtitle": "How to make better decisions by learning from past mistakes mathematically",
+    "summary": "When you make decisions based on costs—whether picking investments or allocating resources—your mistakes follow a pattern: you tend to regret choices most when costs were high. This paper builds a complete mathematical toolkit for minimizing regret by exploiting this pattern, showing that the best strategy is often contrarian (doing the opposite of what costs suggest) and proving these methods converge to optimal solutions quickly, even with limited real-world data.",
+    "whyItMatters": "Portfolio managers and AI systems that allocate resources can now use these mathematical rules to systematically reduce regret and improve returns without needing perfect information. The framework applies directly to investment tilting strategies and large language models choosing how to distribute computational resources, making it practical for anyone optimizing decisions under uncertainty.",
+    "fetchedAt": "2026-07-22T20:08:46.744Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 107
+    },
+    "slug": "optimizing-regret"
+  },
+  {
     "id": "2607.19313",
     "title": "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information",
     "authors": "Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou et al.",

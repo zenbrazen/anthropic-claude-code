@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 483 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 486 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-22
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: From Distances to Trajectories: Real-Time Signed Distance Function Mapping and Distance-Accelerated Motion Planning for UAVs
+Subtitle: Drones that map obstacles and plan safe routes in real time
+URL: https://paperplaine.com/papers/from-distances-to-trajectories
+Category: Computer Science · AI
+Authors: Jason Stanley, Zhirui Dai, Qihao Qian et al.
+arXiv ID: 2607.19306
+arXiv URL: https://arxiv.org/abs/2607.19306
+Posted: 2026-07-22
+
+Summary: Researchers combined obstacle mapping and flight path planning into a single system that runs onboard drones in cluttered environments. The system uses a neural network to rapidly build distance maps from point clouds, then a specialized planner that carves out safe spherical zones to navigate through—finishing route planning in 1–3 seconds compared to 10 seconds for existing methods, while improving map accuracy by 22%.
+
+Why it matters: Autonomous drones currently struggle to navigate complex indoor spaces like warehouses or rescue sites because mapping and planning happen separately and demand more computing power than onboard systems can provide. This approach cuts planning time by 70% and fits entirely on a drone's own hardware, enabling real-time navigation through cluttered environments without external computers or delays.
+
+---
+Title: Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting
+Subtitle: Why cryptocurrency networks take decades to balance after price shocks
+URL: https://paperplaine.com/papers/proof-of-stake-dynamics
+Category: Quantitative Finance
+Authors: Mikhail Perepelitsa
+arXiv ID: 2607.16622
+arXiv URL: https://arxiv.org/abs/2607.16622
+Posted: 2026-07-22
+
+Summary: Proof-of-Stake networks like Ethereum are so economically sluggish that token prices can stay wildly misaligned with their true value for years or decades after the network's fundamentals change. The paper models how different types of investors—passive funds versus active traders—push token prices in opposite directions, with passive staking compressing yields and concentrating ownership in fewer hands, while active traders paradoxically help distribute control more evenly.
+
+Why it matters: If token prices stay detached from reality for 46 years on average, casual investors who buy during hype cycles face multi-decade losses before any correction. More critically, passive institutional staking threatens the decentralization that makes these networks trustworthy—concentrating voting power away from the actual users who rely on the network. Understanding which types of investment help or harm that balance is essential as billions flow into crypto staking.
+
+---
+Title: Optimizing Regret
+Subtitle: How to make better decisions by learning from past mistakes mathematically
+URL: https://paperplaine.com/papers/optimizing-regret
+Category: Economics
+Authors: Irene Aldridge
+arXiv ID: 2607.18866
+arXiv URL: https://arxiv.org/abs/2607.18866
+Posted: 2026-07-22
+
+Summary: When you make decisions based on costs—whether picking investments or allocating resources—your mistakes follow a pattern: you tend to regret choices most when costs were high. This paper builds a complete mathematical toolkit for minimizing regret by exploiting this pattern, showing that the best strategy is often contrarian (doing the opposite of what costs suggest) and proving these methods converge to optimal solutions quickly, even with limited real-world data.
+
+Why it matters: Portfolio managers and AI systems that allocate resources can now use these mathematical rules to systematically reduce regret and improve returns without needing perfect information. The framework applies directly to investment tilting strategies and large language models choosing how to distribute computational resources, making it practical for anyone optimizing decisions under uncertainty.
 
 ---
 Title: Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information
