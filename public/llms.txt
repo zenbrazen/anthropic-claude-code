@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 480 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 483 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 164 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 165 papers in archive.
+  - "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information"
   - "LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications"
-  - "OR Else: A Differentiable Trust Region for Policy Optimization"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 41 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 42 papers in archive.
+  - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
   - "AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation"
-  - "The Distributed Open-Source Vulnerability Ecosystem"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 39 papers in archive.
   - "Semi-fractality and localization on a chiral Cayley tree"
   - "Fast two-dimensional tensor-network contraction via subspace iteration"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 40 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 41 papers in archive.
+  - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
   - "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems"
-  - "Data Driven Block Replacement Scheduling"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 39 papers in archive.
   - "STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex"
   - "Optimal photostimulation selection for iterative activity maps"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Does Multi-Agent Debate Improve AI Feedback on Research Papers?"
 
 ## 10 most recent papers
+
+### Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information
+- URL: https://paperplaine.com/papers/off-context-grpo-learning
+- Category: Computer Science · AI
+- Authors: Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou et al.
+- arXiv: 2607.19313
+- Plain-English subtitle: Teaching AI to solve hard math problems using training hints it won't see later
+- Summary: Large language models get stuck when learning to solve difficult math problems—if they can't find any correct answer on their own, they have nothing to learn from. Researchers found that giving models solution hints during training (like the start of a correct answer) helps them break through this barrier, then correcting for those hints so the model doesn't become dependent on them. The approach improved performance by 14% on standard math benchmarks with almost no extra computing cost.
+- Why it matters: AI systems are increasingly expected to solve complex reasoning problems, from research mathematics to coding challenges. When models can't learn from hard problems because they're too stuck, they stay stuck—this fix lets them progress further. The method is cheap to implement, so it could become standard practice for training more capable reasoning systems.
+
+### They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface
+- URL: https://paperplaine.com/papers/they-ll-verify-they
+- Category: Computer Science
+- Authors: Yohann Sidot
+- arXiv: 2607.19267
+- Plain-English subtitle: How fake approvals trick AI code reviewers into shipping malicious code
+- Summary: Researchers tested a five-agent AI pipeline that reviews and deploys code, injecting a request to steal secrets disguised as telemetry. When the request was framed as pre-approved by authority ("do not re-review"), downstream AI reviewers accepted it 55% of the time, citing the false approval and shipping the malicious code. Even basic pattern detectors missed the laundered intent because the code itself looked syntactically normal.
+- Why it matters: As companies deploy AI agents to automate code review and deployment, this shows a critical gap: AI systems verify work exists but don't independently reason about whether it should happen. A single forged approval can cascade through multiple AI checkpoints. The only effective defense found was checking the original source of requests at entry—meaning teams need to rethink how AI pipelines are chained together, not just make individual agents smarter.
+
+### From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches
+- URL: https://paperplaine.com/papers/from-operations-to-elderly
+- Category: Mathematics
+- Authors: Shayan Farhang Pazhooh, Fereshteh Parvaresh
+- arXiv: 2607.19075
+- Plain-English subtitle: Why optimizing hospital schedules doesn't always improve patient health
+- Summary: Operations researchers have developed powerful tools to make elderly care more efficient—better staff scheduling, smarter medication management, optimized hospital workflows—yet these improvements rarely translate into better health outcomes for actual patients. A review of 30 studies reveals a stubborn gap: operational improvements work on paper, but hospitals struggle to convert them into measurable gains in how seniors actually feel and recover.
+- Why it matters: As populations age globally, healthcare systems are drowning in complexity. Better logistics alone won't solve the problem—you need systems that connect hospital decisions to what happens when patients go home, coordinate multiple medications safely, and adjust care timing to patients' actual biological rhythms. Without closing this gap, hospitals will keep optimizing the wrong things while seniors fall through the cracks between departments.
 
 ### LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications
 - URL: https://paperplaine.com/papers/llms-and-agentic-ai
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI vision systems fail at looking carefully, the way humans do
 - Summary: Today's most advanced AI image-understanding systems—including GPT-4.5 and Claude—cannot perform active observation, the repeated, purposeful looking that humans use to solve visual tasks. When tested on 17 new benchmark tasks designed to require this skill, the best model solved only 10.6% of items, while average humans scored 96.1%, suggesting a fundamental gap in how these systems perceive images.
 - Why it matters: AI systems that cannot look carefully will fail at tasks requiring sustained visual attention—medical diagnosis, quality inspection, scientific analysis, and navigation in complex scenes. Even when given the ability to write their own code to re-examine images, current models produce unreliable results and cannot catch their own mistakes, pointing to a core architectural flaw that researchers must now address.
-
-### Multidimensional stochastic liquidity in Kyle's model of informed trading
-- URL: https://paperplaine.com/papers/multidimensional-stochastic-liquidity-in
-- Category: Quantitative Finance
-- Authors: Ibrahim Ekren, Evangelos A. Nikitopoulos, Lu Vy
-- arXiv: 2607.10934
-- Plain-English subtitle: How insider traders move prices when liquidity randomly fluctuates
-- Summary: When someone trades on private information, how fast should they reveal it to avoid detection? Researchers extended a classic model of insider trading to handle realistic conditions: multiple assets trading simultaneously and liquidity that changes unpredictably. They found that under certain mathematical conditions, informed traders follow a predictable strategy that creates prices moving proportionally to their trades—and the speed of information leakage adjusts automatically as market conditions shift.
-- Why it matters: Financial regulators need to understand how insiders can exploit markets, and market-makers need realistic models to set spreads and manage risk. This work removes artificial simplifications from the standard textbook model, making it applicable to actual multi-asset markets where liquidity isn't constant. Better models of insider trading behavior help exchanges design surveillance systems and help firms price the true cost of trading when information is unevenly distributed.
-
-### Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems
-- URL: https://paperplaine.com/papers/physics-enhanced-reinforcement-learning
-- Category: Mathematics
-- Authors: Matteo Tomasetto, Nicolò Botteghi, Gabriele Bruni et al.
-- arXiv: 2607.16177
-- Plain-English subtitle: Teaching AI to control complex systems using physics as a shortcut
-- Summary: Researchers combined reinforcement learning with physics-based math to train AI controllers that need far fewer practice runs with real systems. The new approach, tested on navigation problems in turbulent flows, required significantly fewer environment interactions than standard AI methods while generalizing across different scenarios and scaling to high-dimensional control problems.
-- Why it matters: Reinforcement learning typically demands thousands of interactions with a system before learning to control it well—prohibitively expensive for physical equipment like robots or aircraft. By embedding physics equations directly into the learning process, this method cuts the number of required trials dramatically, making AI control practical for expensive real-world systems where trial-and-error is costly or dangerous.
-
-### Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities
-- URL: https://paperplaine.com/papers/evaluating-open-weight-llms
-- Category: Computer Science · AI
-- Authors: Md Erfan, Ahmed Ryan, Md Kamal Hossain Chowdhury et al.
-- arXiv: 2607.16175
-- Plain-English subtitle: Using AI to turn messy car hacking reports into security blueprints
-- Summary: Researchers tested AI models at automatically converting vague descriptions of self-driving car vulnerabilities into structured security formats that experts can act on. The best models achieved 94% accuracy on identifying what systems are affected and 99% accuracy on classifying weakness types, though pinpointing specific attack methods remains difficult.
-- Why it matters: Self-driving cars face thousands of documented vulnerabilities scattered across databases in plain text that security teams can't efficiently parse. Automating the conversion to structured formats means defenders can spot patterns faster, prioritize which threats to patch first, and coordinate defenses across vehicle fleets—potentially shortening response times from weeks to days.
 
 ## About
 
