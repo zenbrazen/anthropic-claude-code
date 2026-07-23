@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 486 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 489 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 166 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 167 papers in archive.
+  - "The Ethics of Autonomous AI Agents for Offensive Security"
   - "From Distances to Trajectories: Real-Time Signed Distance Function Mapping and Distance-Accelerated Motion Planning for UAVs"
-  - "Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 42 papers in archive.
   - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
   - "AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 39 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 40 papers in archive.
+  - "Corruption as a self-sustained collective state in political systems"
   - "Semi-fractality and localization on a chiral Cayley tree"
-  - "Fast two-dimensional tensor-network contraction via subspace iteration"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 41 papers in archive.
   - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
   - "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 42 papers in archive.
   - "Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting"
   - "Multidimensional stochastic liquidity in Kyle's model of informed trading"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 41 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 42 papers in archive.
+  - "Efficient Clustering with Provable Guardrails for LLM Inference at Scale"
   - "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference"
-  - "cGAP: Generalized Association Plots with HOMALS-Guided Heatmaps for Visualization of High-Dimensional Categorical Data"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 40 papers in archive.
   - "Articulated Humanoid Head for a Robot Receptionist Capable of Natural Human Interaction"
   - "LIVE-RIS: Real-Time In-Flight Actuation of UAV-Mounted RIS"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Model Uncertainty under Non-Gaussian Errors: Bayesian Model Averaging and Selection in Stochastic Frontier Models"
 
 ## 10 most recent papers
+
+### The Ethics of Autonomous AI Agents for Offensive Security
+- URL: https://paperplaine.com/papers/the-ethics-of-autonomous
+- Category: Computer Science · AI
+- Authors: Andreas Happe, Jürgen Cito, Jasmin Wachter
+- arXiv: 2607.20255
+- Plain-English subtitle: Who is responsible when AI hacking tools act unpredictably?
+- Summary: AI-powered hacking tools are becoming harder to control and predict than traditional security software, making it unclear who bears responsibility when something goes wrong. The technology lowers the skill barrier to launch attacks, gives results that can't be fully explained before or after they happen, and shifts advantage toward attackers — at least in the short term.
+- Why it matters: As AI hacking tools become easier to use and deploy, responsibility for attacks becomes murky: Is it the person using the tool, the company that built it, or the AI model provider? Current rules for dual-use technology and AI ethics don't address this blurred accountability, leaving organizations and regulators without clear guidance on who should be held liable. This matters for law enforcement investigations, corporate liability, and setting fair rules as the technology spreads.
+
+### Efficient Clustering with Provable Guardrails for LLM Inference at Scale
+- URL: https://paperplaine.com/papers/efficient-clustering-with-provable
+- Category: Statistics
+- Authors: Longshaokan Wang, Wai Tsang Keung, Punit Ghodasara et al.
+- arXiv: 2607.19704
+- Plain-English subtitle: Making AI chatbots cheaper by grouping similar questions safely
+- Summary: When companies run large language models for millions of users, the cost becomes crushing. This paper shows how to cluster similar user requests together, answer just one representative request per cluster, and safely give the same answer to everyone in that group—cutting costs and speed by 50 times. The key innovation is mathematical guarantees that each user's question is actually similar enough to its group's representative that they can share an answer without losing quality.
+- Why it matters: Running an AI chatbot for 38 million customers costs enormous amounts in computing power and causes frustrating delays. This method slashed those costs in half and made responses 50 times faster while keeping personalization intact—enabling companies to actually deploy AI services that would otherwise be too expensive to run at scale. The technique works because it mathematically proves each user gets grouped with genuinely similar requests, not arbitrary bucketing.
+
+### Corruption as a self-sustained collective state in political systems
+- URL: https://paperplaine.com/papers/corruption-as-a-self
+- Category: Physics
+- Authors: Nuno Crokidakis, Jaime L. C. da C. Filho
+- arXiv: 2607.20095
+- Plain-English subtitle: How corruption becomes self-reinforcing and nearly impossible to dislodge
+- Summary: A mathematical model shows that political corruption can become a stable, self-sustaining system rather than merely the sum of individual bad actors. Once corruption reaches a critical threshold in how officials interact and support each other, the system locks in place — small anti-corruption efforts fail to budge it, and corruption persists across elections and crises.
+- Why it matters: This explains why some governments stay corrupt even after scandals, leadership changes, or reform attempts. If corruption has become self-reinforcing rather than dependent on specific individuals, conventional fixes like prosecuting officials or passing new laws may fail. Understanding the threshold at which this shift happens could help policymakers identify when more aggressive, systemic interventions are needed rather than incremental reforms.
 
 ### From Distances to Trajectories: Real-Time Signed Distance Function Mapping and Distance-Accelerated Motion Planning for UAVs
 - URL: https://paperplaine.com/papers/from-distances-to-trajectories
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI systems safe and reliable for managing electrical grids
 - Summary: AI systems designed to manage electrical grids produce answers that sound plausible but are often physically impossible or wrong. This paper shows that wrapping AI around trusted mathematical solvers—and verifying every answer before reporting it—cuts dangerous errors by 52% and reduces forecasting mistakes 7.5 to 9.5 times compared to AI alone.
 - Why it matters: Electrical grids need split-second decisions on power flow and equipment failures. If an AI gives a confident but wrong answer, it could trigger blackouts or equipment damage. This approach ensures the grid only acts on answers from verified solvers, not just plausible-sounding AI guesses, making AI tools safe enough to actually deploy in critical infrastructure.
-
-### STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex
-- URL: https://paperplaine.com/papers/stsbench-a-large-scale
-- Category: Quantitative Biology
-- Authors: Ethan B. Trepka, Ruobing Xia, Shude Zhu et al.
-- arXiv: 2607.15631
-- Plain-English subtitle: Building a massive brain dataset to decode how primates perceive motion and space
-- Summary: Researchers created STSBench, a dataset of recordings from over 2,000 neurons in a motion-sensing region of macaque brains—50 times larger than any previous collection—gathered while the animals watched thousands of natural videos. The dataset enables new computational models that predict how individual brain cells respond to movement and spatial information, and can even reconstruct what a monkey is watching based on its brain activity alone.
-- Why it matters: The ventral visual stream (object recognition) is already well-understood through similar datasets and neural models, but the dorsal stream (motion and spatial awareness) has lagged behind because neuroscientists lacked comparable data. STSBench closes that gap, allowing researchers to finally build and test theories about how brains encode motion and spatial navigation—work that could illuminate both healthy vision and how these processes break down in disease, and potentially improve artificial vision systems designed to interpret movement and space.
-
-### Semi-fractality and localization on a chiral Cayley tree
-- URL: https://paperplaine.com/papers/semi-fractality-and-localization
-- Category: Physics
-- Authors: Carlo Vanoni, Vladimir E. Kravtsov, Boris L. Altshuler
-- arXiv: 2607.18179
-- Plain-English subtitle: How random weak links create a strange quantum halfway state
-- Summary: Physicists discovered that quantum particles hopping on a branching network with randomly weak connections can enter an unusual state that is neither fully spread out nor fully trapped. The particles occupy most of the network, yet concentrate their energy in a way normally seen only in completely localized systems—a phenomenon the researchers call semi-fractality. By varying the strength of the weak links, they found the system can shift between this semi-fractal regime and complete localization, revealing a new intermediate form of quantum confinement.
-- Why it matters: This work reveals new ways that disorder and symmetry shape quantum behavior, findings that could refine how physicists design materials with tailored electronic properties. Understanding these intermediate quantum states might help predict behavior in disordered materials used in real devices, from semiconductors to quantum sensors, where weak connections between components significantly affect performance.
-
-### OR Else: A Differentiable Trust Region for Policy Optimization
-- URL: https://paperplaine.com/papers/or-else-a-differentiable
-- Category: Computer Science · AI
-- Authors: Chinmay Rane, Kanishka Tyagi, Michael Manry
-- arXiv: 2607.18163
-- Plain-English subtitle: Smoother math for training AI to follow instructions better
-- Summary: Researchers tested a new mathematical approach called Output Reset (OR) as an alternative to the standard clipped method used in large language model training. When paired with one advantage-estimation method, OR produced higher reward scores; when paired with another, it showed more stable training but no score improvement—suggesting the approach changes how training works but with inconsistent payoffs depending on the setup.
-- Why it matters: Training methods that produce AI systems aligned with human preferences is a core challenge in making large language models safer and more reliable. This work identifies a concrete alternative to standard techniques and maps out where it helps and where it doesn't, giving practitioners a tested option to experiment with—though the mixed results mean it's not a universal upgrade.
 
 ## About
 
