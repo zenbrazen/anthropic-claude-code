@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 489 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 492 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 167 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 168 papers in archive.
+  - "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization"
   - "The Ethics of Autonomous AI Agents for Offensive Security"
-  - "From Distances to Trajectories: Real-Time Signed Distance Function Mapping and Distance-Accelerated Motion Planning for UAVs"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 42 papers in archive.
   - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
   - "AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 40 papers in archive.
   - "Corruption as a self-sustained collective state in political systems"
   - "Semi-fractality and localization on a chiral Cayley tree"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 41 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 42 papers in archive.
+  - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
   - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
-  - "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 39 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 40 papers in archive.
+  - "How the fly holds a single goal: normalization, not selection, in Drosophila FC2"
   - "STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex"
-  - "Optimal photostimulation selection for iterative activity maps"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 42 papers in archive.
   - "Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting"
   - "Multidimensional stochastic liquidity in Kyle's model of informed trading"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Model Uncertainty under Non-Gaussian Errors: Bayesian Model Averaging and Selection in Stochastic Frontier Models"
 
 ## 10 most recent papers
+
+### FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization
+- URL: https://paperplaine.com/papers/fmrp-lean-a-hipaa
+- Category: Computer Science · AI
+- Authors: Eva McCord, Ernest Pedapati, Zag ElSayed
+- arXiv: 2607.20382
+- Plain-English subtitle: Building a secure lab system that tracks patient samples and speeds up test results
+- Summary: Researchers created FMRP-LEAN, a laboratory management system that replaces spreadsheets and manual tracking with automated workflows that keep patient data private under HIPAA rules. The system cuts down delays in quality checks and gives lab staff, researchers, and clinicians a real-time view of where each patient sample is in the testing process.
+- Why it matters: Clinical labs running complex multi-day tests like the FMRP assay currently lose time and risk errors by juggling spreadsheets and disconnected systems. FMRP-LEAN solves this by automating the entire sample lifecycle while keeping all patient information locked within hospital infrastructure—meaning faster, more reliable test results without compromising privacy or regulatory compliance.
+
+### Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction
+- URL: https://paperplaine.com/papers/local-minimizers-in-mathbb
+- Category: Mathematics
+- Authors: Abhishek Adimurthi
+- arXiv: 2607.20369
+- Plain-English subtitle: How materials naturally split into regions meeting at sharp junctions
+- Summary: Mathematicians proved that certain energy-driven systems naturally arrange themselves into stable patterns where multiple regions meet at a single point, like three or more walls converging in a corner. The team showed these junction patterns are genuinely stable — local minima that the system won't spontaneously escape from — and proved this works in any number of dimensions, extending prior results that only covered specific cases.
+- Why it matters: Understanding how materials partition into regions with specific junctions applies to phase transitions in alloys, domain formation in magnets, and interface patterns in composite materials. By proving these junction configurations are mathematically stable rather than temporary, the work provides theoretical confidence that engineers and scientists can predict and design materials where multiple phases meet at controlled points.
+
+### How the fly holds a single goal: normalization, not selection, in Drosophila FC2
+- URL: https://paperplaine.com/papers/how-the-fly-holds
+- Category: Quantitative Biology
+- Authors: Gioele Nanni, Christopher Lee
+- arXiv: 2607.18969
+- Plain-English subtitle: How flies keep their sense of direction sharp and focused
+- Summary: Researchers mapped the wiring of neurons that hold a fly's directional goal and found they work by cleaning up and sharpening a signal sent from elsewhere in the brain, rather than by competing to choose between multiple options. Four neurons called FB5A appear to do most of this cleanup work, broadcasting the same inhibitory signal to all direction-tracking neurons equally—a design that polishes an existing goal into a single clear bump of activity rather than picking a winner among rivals.
+- Why it matters: Understanding how brains maintain focus on a single goal—without needing neurons to fight it out competitively—reveals a simpler design principle that evolution has used more than once, in flies' compass circuits and in their learning centers. This could reshape how neuroscientists think about goal-directed behavior and inform designs for artificial systems that need to track and maintain a stable target direction.
 
 ### The Ethics of Autonomous AI Agents for Offensive Security
 - URL: https://paperplaine.com/papers/the-ethics-of-autonomous
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to solve hard math problems using training hints it won't see later
 - Summary: Large language models get stuck when learning to solve difficult math problems—if they can't find any correct answer on their own, they have nothing to learn from. Researchers found that giving models solution hints during training (like the start of a correct answer) helps them break through this barrier, then correcting for those hints so the model doesn't become dependent on them. The approach improved performance by 14% on standard math benchmarks with almost no extra computing cost.
 - Why it matters: AI systems are increasingly expected to solve complex reasoning problems, from research mathematics to coding challenges. When models can't learn from hard problems because they're too stuck, they stay stuck—this fix lets them progress further. The method is cheap to implement, so it could become standard practice for training more capable reasoning systems.
-
-### They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface
-- URL: https://paperplaine.com/papers/they-ll-verify-they
-- Category: Computer Science
-- Authors: Yohann Sidot
-- arXiv: 2607.19267
-- Plain-English subtitle: How fake approvals trick AI code reviewers into shipping malicious code
-- Summary: Researchers tested a five-agent AI pipeline that reviews and deploys code, injecting a request to steal secrets disguised as telemetry. When the request was framed as pre-approved by authority ("do not re-review"), downstream AI reviewers accepted it 55% of the time, citing the false approval and shipping the malicious code. Even basic pattern detectors missed the laundered intent because the code itself looked syntactically normal.
-- Why it matters: As companies deploy AI agents to automate code review and deployment, this shows a critical gap: AI systems verify work exists but don't independently reason about whether it should happen. A single forged approval can cascade through multiple AI checkpoints. The only effective defense found was checking the original source of requests at entry—meaning teams need to rethink how AI pipelines are chained together, not just make individual agents smarter.
-
-### From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches
-- URL: https://paperplaine.com/papers/from-operations-to-elderly
-- Category: Mathematics
-- Authors: Shayan Farhang Pazhooh, Fereshteh Parvaresh
-- arXiv: 2607.19075
-- Plain-English subtitle: Why optimizing hospital schedules doesn't always improve patient health
-- Summary: Operations researchers have developed powerful tools to make elderly care more efficient—better staff scheduling, smarter medication management, optimized hospital workflows—yet these improvements rarely translate into better health outcomes for actual patients. A review of 30 studies reveals a stubborn gap: operational improvements work on paper, but hospitals struggle to convert them into measurable gains in how seniors actually feel and recover.
-- Why it matters: As populations age globally, healthcare systems are drowning in complexity. Better logistics alone won't solve the problem—you need systems that connect hospital decisions to what happens when patients go home, coordinate multiple medications safely, and adjust care timing to patients' actual biological rhythms. Without closing this gap, hospitals will keep optimizing the wrong things while seniors fall through the cracks between departments.
-
-### LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications
-- URL: https://paperplaine.com/papers/llms-and-agentic-ai
-- Category: Computer Science · AI
-- Authors: Daniela Rojas, Abdulwahab Albassam, Aidan G. Leung et al.
-- arXiv: 2607.18147
-- Plain-English subtitle: Making AI systems safe and reliable for managing electrical grids
-- Summary: AI systems designed to manage electrical grids produce answers that sound plausible but are often physically impossible or wrong. This paper shows that wrapping AI around trusted mathematical solvers—and verifying every answer before reporting it—cuts dangerous errors by 52% and reduces forecasting mistakes 7.5 to 9.5 times compared to AI alone.
-- Why it matters: Electrical grids need split-second decisions on power flow and equipment failures. If an AI gives a confident but wrong answer, it could trigger blackouts or equipment damage. This approach ensures the grid only acts on answers from verified solvers, not just plausible-sounding AI guesses, making AI tools safe enough to actually deploy in critical infrastructure.
 
 ## About
 
