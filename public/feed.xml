@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 20:08:51 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 09:21:19 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling</title>
+      <link>https://paperplaine.com/papers/graph-learning-on-ensembles</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/graph-learning-on-ensembles</guid>
+      <pubDate>Thu, 23 Jul 2026 17:42:51 GMT</pubDate>
+      <author>Aaron Feller, Kris Deibler, Maxim Secor</author>
+      <category>AI</category>
+      <description>Teaching AI to predict how molecules behave by modeling their shape-shifting in solution</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to predict how molecules behave by modeling their shape-shifting in solution</em></p><p>Molecules like cyclic peptides constantly twist and shift between different shapes in liquid, yet current AI models predict their properties from just a single frozen structure. Researchers built EnsembleEGNN, a neural network that encodes multiple conformations of the same molecule simultaneously, then pools them into a single prediction. The model outperformed sequence-only baselines, reaching 74% correlation with experimental properties when trained end-to-end—something that completely failed without access to 3D structural ensembles.</p><p><strong>Why it matters:</strong> Drug discovery relies on predicting how molecules will behave, and current shortcuts miss a crucial reality: molecules are not rigid shapes but dancing ensembles. This approach could speed up screening for new peptide drugs by accurately predicting their properties from realistic representations of how they actually move in cells. It opens a path toward foundation models that capture molecular dynamics, moving beyond static snapshots that have limited predictive power.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation</title>
+      <link>https://paperplaine.com/papers/toward-cryptographically-verifiable-authorization</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/toward-cryptographically-verifiable-authorization</guid>
+      <pubDate>Thu, 23 Jul 2026 13:55:02 GMT</pubDate>
+      <author>M. Llambí-Morillas, D. Fernández-Fernández</author>
+      <category>Comp Sci</category>
+      <description>Proving that AI agents have permission to act, without revealing secret rules</description>
+      <content:encoded><![CDATA[<p><em>Proving that AI agents have permission to act, without revealing secret rules</em></p><p>AI agents increasingly make decisions and access sensitive systems with little human supervision, but current security systems can't prove that a specific action was actually authorized. This paper proposes a mathematical framework using cryptography to create verifiable proof that an agent's request satisfies the right policies in the right situation—while keeping confidential details hidden. The researchers built a working prototype to show the idea is feasible.</p><p><strong>Why it matters:</strong> As autonomous AI systems handle more high-stakes tasks—from accessing medical records to controlling infrastructure—we need auditable proof that each action was legitimately authorized, not just that an identity was verified. This work addresses a gap in current AI security: distinguishing between who an agent is, what it's permitted to do, and what context it's operating in. Cryptographic verification could enable organizations to prove compliance to regulators and detect unauthorized agent actions that slip past human oversight.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Synthetic data generation framework for quality control automation in gravure printing</title>
+      <link>https://paperplaine.com/papers/synthetic-data-generation-framework</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/synthetic-data-generation-framework</guid>
+      <pubDate>Thu, 23 Jul 2026 17:55:21 GMT</pubDate>
+      <author>Korota Arsène Coulibaly, Mohamed Hamlich, Khalid Hmali et al.</author>
+      <category>Engineering</category>
+      <description>Creating fake defects to train machines that catch real printing flaws</description>
+      <content:encoded><![CDATA[<p><em>Creating fake defects to train machines that catch real printing flaws</em></p><p>A printing factory can now automate quality control without manually photographing thousands of defects. Researchers built software that generates synthetic images of common printing problems—creases, streaks, misalignment—and trained an AI detector on these fake images. When tested on real factory output, the detector caught defects with 80.9% accuracy, matching the performance of systems trained on actual photos.</p><p><strong>Why it matters:</strong> Rotogravure printing currently relies on human inspectors to spot flaws, a slow and inconsistent process that slows production. This framework eliminates months of manual photo collection, letting factories deploy automated quality control within days instead. Since the synthetic images are generated instantly at zero cost, even small printers can afford to automate their inspection lines.</p>]]></content:encoded>
+    </item>
     <item>
       <title>FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization</title>
       <link>https://paperplaine.com/papers/fmrp-lean-a-hipaa</link>

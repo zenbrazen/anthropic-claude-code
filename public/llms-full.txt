@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 492 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-23
+This file contains the complete plain-English text of all 495 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-24
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling
+Subtitle: Teaching AI to predict how molecules behave by modeling their shape-shifting in solution
+URL: https://paperplaine.com/papers/graph-learning-on-ensembles
+Category: Computer Science · AI
+Authors: Aaron Feller, Kris Deibler, Maxim Secor
+arXiv ID: 2607.21561
+arXiv URL: https://arxiv.org/abs/2607.21561
+Posted: 2026-07-24
+
+Summary: Molecules like cyclic peptides constantly twist and shift between different shapes in liquid, yet current AI models predict their properties from just a single frozen structure. Researchers built EnsembleEGNN, a neural network that encodes multiple conformations of the same molecule simultaneously, then pools them into a single prediction. The model outperformed sequence-only baselines, reaching 74% correlation with experimental properties when trained end-to-end—something that completely failed without access to 3D structural ensembles.
+
+Why it matters: Drug discovery relies on predicting how molecules will behave, and current shortcuts miss a crucial reality: molecules are not rigid shapes but dancing ensembles. This approach could speed up screening for new peptide drugs by accurately predicting their properties from realistic representations of how they actually move in cells. It opens a path toward foundation models that capture molecular dynamics, moving beyond static snapshots that have limited predictive power.
+
+---
+Title: Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation
+Subtitle: Proving that AI agents have permission to act, without revealing secret rules
+URL: https://paperplaine.com/papers/toward-cryptographically-verifiable-authorization
+Category: Computer Science
+Authors: M. Llambí-Morillas, D. Fernández-Fernández
+arXiv ID: 2607.21325
+arXiv URL: https://arxiv.org/abs/2607.21325
+Posted: 2026-07-24
+
+Summary: AI agents increasingly make decisions and access sensitive systems with little human supervision, but current security systems can't prove that a specific action was actually authorized. This paper proposes a mathematical framework using cryptography to create verifiable proof that an agent's request satisfies the right policies in the right situation—while keeping confidential details hidden. The researchers built a working prototype to show the idea is feasible.
+
+Why it matters: As autonomous AI systems handle more high-stakes tasks—from accessing medical records to controlling infrastructure—we need auditable proof that each action was legitimately authorized, not just that an identity was verified. This work addresses a gap in current AI security: distinguishing between who an agent is, what it's permitted to do, and what context it's operating in. Cryptographic verification could enable organizations to prove compliance to regulators and detect unauthorized agent actions that slip past human oversight.
+
+---
+Title: Synthetic data generation framework for quality control automation in gravure printing
+Subtitle: Creating fake defects to train machines that catch real printing flaws
+URL: https://paperplaine.com/papers/synthetic-data-generation-framework
+Category: Engineering
+Authors: Korota Arsène Coulibaly, Mohamed Hamlich, Khalid Hmali et al.
+arXiv ID: 2607.21577
+arXiv URL: https://arxiv.org/abs/2607.21577
+Posted: 2026-07-24
+
+Summary: A printing factory can now automate quality control without manually photographing thousands of defects. Researchers built software that generates synthetic images of common printing problems—creases, streaks, misalignment—and trained an AI detector on these fake images. When tested on real factory output, the detector caught defects with 80.9% accuracy, matching the performance of systems trained on actual photos.
+
+Why it matters: Rotogravure printing currently relies on human inspectors to spot flaws, a slow and inconsistent process that slows production. This framework eliminates months of manual photo collection, letting factories deploy automated quality control within days instead. Since the synthetic images are generated instantly at zero cost, even small printers can afford to automate their inspection lines.
 
 ---
 Title: FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 492 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 495 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 168 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 169 papers in archive.
+  - "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling"
   - "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization"
-  - "The Ethics of Autonomous AI Agents for Offensive Security"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 42 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 43 papers in archive.
+  - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
   - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
-  - "AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 40 papers in archive.
   - "Corruption as a self-sustained collective state in political systems"
   - "Semi-fractality and localization on a chiral Cayley tree"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Efficient Clustering with Provable Guardrails for LLM Inference at Scale"
   - "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 40 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 41 papers in archive.
+  - "Synthetic data generation framework for quality control automation in gravure printing"
   - "Articulated Humanoid Head for a Robot Receptionist Capable of Natural Human Interaction"
-  - "LIVE-RIS: Real-Time In-Flight Actuation of UAV-Mounted RIS"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 36 papers in archive.
   - "Optimizing Regret"
   - "Model Uncertainty under Non-Gaussian Errors: Bayesian Model Averaging and Selection in Stochastic Frontier Models"
 
 ## 10 most recent papers
+
+### Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling
+- URL: https://paperplaine.com/papers/graph-learning-on-ensembles
+- Category: Computer Science · AI
+- Authors: Aaron Feller, Kris Deibler, Maxim Secor
+- arXiv: 2607.21561
+- Plain-English subtitle: Teaching AI to predict how molecules behave by modeling their shape-shifting in solution
+- Summary: Molecules like cyclic peptides constantly twist and shift between different shapes in liquid, yet current AI models predict their properties from just a single frozen structure. Researchers built EnsembleEGNN, a neural network that encodes multiple conformations of the same molecule simultaneously, then pools them into a single prediction. The model outperformed sequence-only baselines, reaching 74% correlation with experimental properties when trained end-to-end—something that completely failed without access to 3D structural ensembles.
+- Why it matters: Drug discovery relies on predicting how molecules will behave, and current shortcuts miss a crucial reality: molecules are not rigid shapes but dancing ensembles. This approach could speed up screening for new peptide drugs by accurately predicting their properties from realistic representations of how they actually move in cells. It opens a path toward foundation models that capture molecular dynamics, moving beyond static snapshots that have limited predictive power.
+
+### Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation
+- URL: https://paperplaine.com/papers/toward-cryptographically-verifiable-authorization
+- Category: Computer Science
+- Authors: M. Llambí-Morillas, D. Fernández-Fernández
+- arXiv: 2607.21325
+- Plain-English subtitle: Proving that AI agents have permission to act, without revealing secret rules
+- Summary: AI agents increasingly make decisions and access sensitive systems with little human supervision, but current security systems can't prove that a specific action was actually authorized. This paper proposes a mathematical framework using cryptography to create verifiable proof that an agent's request satisfies the right policies in the right situation—while keeping confidential details hidden. The researchers built a working prototype to show the idea is feasible.
+- Why it matters: As autonomous AI systems handle more high-stakes tasks—from accessing medical records to controlling infrastructure—we need auditable proof that each action was legitimately authorized, not just that an identity was verified. This work addresses a gap in current AI security: distinguishing between who an agent is, what it's permitted to do, and what context it's operating in. Cryptographic verification could enable organizations to prove compliance to regulators and detect unauthorized agent actions that slip past human oversight.
+
+### Synthetic data generation framework for quality control automation in gravure printing
+- URL: https://paperplaine.com/papers/synthetic-data-generation-framework
+- Category: Engineering
+- Authors: Korota Arsène Coulibaly, Mohamed Hamlich, Khalid Hmali et al.
+- arXiv: 2607.21577
+- Plain-English subtitle: Creating fake defects to train machines that catch real printing flaws
+- Summary: A printing factory can now automate quality control without manually photographing thousands of defects. Researchers built software that generates synthetic images of common printing problems—creases, streaks, misalignment—and trained an AI detector on these fake images. When tested on real factory output, the detector caught defects with 80.9% accuracy, matching the performance of systems trained on actual photos.
+- Why it matters: Rotogravure printing currently relies on human inspectors to spot flaws, a slow and inconsistent process that slows production. This framework eliminates months of manual photo collection, letting factories deploy automated quality control within days instead. Since the synthetic images are generated instantly at zero cost, even small printers can afford to automate their inspection lines.
 
 ### FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization
 - URL: https://paperplaine.com/papers/fmrp-lean-a-hipaa
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Drones that map obstacles and plan safe routes in real time
 - Summary: Researchers combined obstacle mapping and flight path planning into a single system that runs onboard drones in cluttered environments. The system uses a neural network to rapidly build distance maps from point clouds, then a specialized planner that carves out safe spherical zones to navigate through—finishing route planning in 1–3 seconds compared to 10 seconds for existing methods, while improving map accuracy by 22%.
 - Why it matters: Autonomous drones currently struggle to navigate complex indoor spaces like warehouses or rescue sites because mapping and planning happen separately and demand more computing power than onboard systems can provide. This approach cuts planning time by 70% and fits entirely on a drone's own hardware, enabling real-time navigation through cluttered environments without external computers or delays.
-
-### Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting
-- URL: https://paperplaine.com/papers/proof-of-stake-dynamics
-- Category: Quantitative Finance
-- Authors: Mikhail Perepelitsa
-- arXiv: 2607.16622
-- Plain-English subtitle: Why cryptocurrency networks take decades to balance after price shocks
-- Summary: Proof-of-Stake networks like Ethereum are so economically sluggish that token prices can stay wildly misaligned with their true value for years or decades after the network's fundamentals change. The paper models how different types of investors—passive funds versus active traders—push token prices in opposite directions, with passive staking compressing yields and concentrating ownership in fewer hands, while active traders paradoxically help distribute control more evenly.
-- Why it matters: If token prices stay detached from reality for 46 years on average, casual investors who buy during hype cycles face multi-decade losses before any correction. More critically, passive institutional staking threatens the decentralization that makes these networks trustworthy—concentrating voting power away from the actual users who rely on the network. Understanding which types of investment help or harm that balance is essential as billions flow into crypto staking.
-
-### Optimizing Regret
-- URL: https://paperplaine.com/papers/optimizing-regret
-- Category: Economics
-- Authors: Irene Aldridge
-- arXiv: 2607.18866
-- Plain-English subtitle: How to make better decisions by learning from past mistakes mathematically
-- Summary: When you make decisions based on costs—whether picking investments or allocating resources—your mistakes follow a pattern: you tend to regret choices most when costs were high. This paper builds a complete mathematical toolkit for minimizing regret by exploiting this pattern, showing that the best strategy is often contrarian (doing the opposite of what costs suggest) and proving these methods converge to optimal solutions quickly, even with limited real-world data.
-- Why it matters: Portfolio managers and AI systems that allocate resources can now use these mathematical rules to systematically reduce regret and improve returns without needing perfect information. The framework applies directly to investment tilting strategies and large language models choosing how to distribute computational resources, making it practical for anyone optimizing decisions under uncertainty.
-
-### Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information
-- URL: https://paperplaine.com/papers/off-context-grpo-learning
-- Category: Computer Science · AI
-- Authors: Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou et al.
-- arXiv: 2607.19313
-- Plain-English subtitle: Teaching AI to solve hard math problems using training hints it won't see later
-- Summary: Large language models get stuck when learning to solve difficult math problems—if they can't find any correct answer on their own, they have nothing to learn from. Researchers found that giving models solution hints during training (like the start of a correct answer) helps them break through this barrier, then correcting for those hints so the model doesn't become dependent on them. The approach improved performance by 14% on standard math benchmarks with almost no extra computing cost.
-- Why it matters: AI systems are increasingly expected to solve complex reasoning problems, from research mathematics to coding challenges. When models can't learn from hard problems because they're too stuck, they stay stuck—this fix lets them progress further. The method is cheap to implement, so it could become standard practice for training more capable reasoning systems.
 
 ## About
 
