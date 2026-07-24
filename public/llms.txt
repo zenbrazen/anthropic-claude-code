@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 495 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 498 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 169 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 170 papers in archive.
+  - "Visual Contrastive Self-Distillation"
   - "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling"
-  - "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 43 papers in archive.
   - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
   - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 40 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 41 papers in archive.
+  - "Complexity transition in the Dicke model of light-matter interaction"
   - "Corruption as a self-sustained collective state in political systems"
-  - "Semi-fractality and localization on a chiral Cayley tree"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
   - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 40 papers in archive.
   - "How the fly holds a single goal: normalization, not selection, in Drosophila FC2"
   - "STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 42 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 43 papers in archive.
+  - "Retail Trader's Ruin: An Anatomy of Popular Signal Failure"
   - "Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting"
-  - "Multidimensional stochastic liquidity in Kyle's model of informed trading"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Efficient Clustering with Provable Guardrails for LLM Inference at Scale"
   - "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Model Uncertainty under Non-Gaussian Errors: Bayesian Model Averaging and Selection in Stochastic Frontier Models"
 
 ## 10 most recent papers
+
+### Visual Contrastive Self-Distillation
+- URL: https://paperplaine.com/papers/visual-contrastive-self-distillation
+- Category: Computer Science · AI
+- Authors: Yijun Liang, Yunjie Tian, Yijiang Li et al.
+- arXiv: 2607.21556
+- Plain-English subtitle: Teaching AI vision models to learn from their own mistakes without a separate teacher
+- Summary: Researchers created a simpler way for AI vision models to improve themselves by comparing how much an image actually matters to their answers. The method removes the need for a separate teacher model, special answers, or extra signals — and still improved performance by 4–5 percentage points across multiple models, reaching up to 76% accuracy on standard benchmarks.
+- Why it matters: Vision-language models power everything from image search to autonomous systems, so improving their accuracy directly translates to more reliable AI assistants and tools. This approach is simpler and cheaper than existing methods because it doesn't require maintaining a separate teacher model or expensive extra training signals, making it practical for real-world deployment.
+
+### Retail Trader's Ruin: An Anatomy of Popular Signal Failure
+- URL: https://paperplaine.com/papers/retail-trader-s-ruin
+- Category: Quantitative Finance
+- Authors: Adam Darmanin
+- arXiv: 2607.20093
+- Plain-English subtitle: Why popular trading tricks don't actually make money after costs
+- Summary: A systematic test of five widely promoted retail trading strategies—trend following, oscillators, candlestick patterns, volume rules, and calendar effects—found that four of them fail to deliver real profits after accounting for trading costs and statistical noise. The two remaining candidates, trend following and momentum, remain inconclusive because the data simply isn't large enough to settle the question either way.
+- Why it matters: Retail traders lose roughly $5 billion annually chasing strategies they find online or in trading books. This research provides concrete evidence that most popular signals don't work, which could spare individuals from sinking money into methods with no genuine edge. The rigorous testing framework also sets a higher standard for what claims about profitable trading strategies should actually prove before being promoted to the public.
+
+### Complexity transition in the Dicke model of light-matter interaction
+- URL: https://paperplaine.com/papers/complexity-transition-in-the
+- Category: Physics
+- Authors: Yicheng Zhang, Erhai Zhao
+- arXiv: 2607.21583
+- Plain-English subtitle: When quantum light-matter systems abruptly shift how they behave
+- Summary: Physicists discovered that tweaking how strongly light couples to atoms can trigger a sudden, sharp change in how chaotically a quantum system evolves—visible through a mathematical measure called Krylov complexity. The transition marks the boundary between two fundamentally different types of quantum behavior, where the system switches from being orderly and confined to becoming wild and spreading.
+- Why it matters: Understanding when and how quantum systems undergo these sharp transitions is crucial for controlling quantum computers and optical devices, where tiny changes in coupling strength could unexpectedly alter performance. This framework gives physicists a new tool to predict and detect phase transitions in quantum dynamics that don't show up in traditional equilibrium measurements, opening doors to better design of quantum technologies and detection of chaotic behavior in exotic quantum states.
 
 ### Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling
 - URL: https://paperplaine.com/papers/graph-learning-on-ensembles
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Who is responsible when AI hacking tools act unpredictably?
 - Summary: AI-powered hacking tools are becoming harder to control and predict than traditional security software, making it unclear who bears responsibility when something goes wrong. The technology lowers the skill barrier to launch attacks, gives results that can't be fully explained before or after they happen, and shifts advantage toward attackers — at least in the short term.
 - Why it matters: As AI hacking tools become easier to use and deploy, responsibility for attacks becomes murky: Is it the person using the tool, the company that built it, or the AI model provider? Current rules for dual-use technology and AI ethics don't address this blurred accountability, leaving organizations and regulators without clear guidance on who should be held liable. This matters for law enforcement investigations, corporate liability, and setting fair rules as the technology spreads.
-
-### Efficient Clustering with Provable Guardrails for LLM Inference at Scale
-- URL: https://paperplaine.com/papers/efficient-clustering-with-provable
-- Category: Statistics
-- Authors: Longshaokan Wang, Wai Tsang Keung, Punit Ghodasara et al.
-- arXiv: 2607.19704
-- Plain-English subtitle: Making AI chatbots cheaper by grouping similar questions safely
-- Summary: When companies run large language models for millions of users, the cost becomes crushing. This paper shows how to cluster similar user requests together, answer just one representative request per cluster, and safely give the same answer to everyone in that group—cutting costs and speed by 50 times. The key innovation is mathematical guarantees that each user's question is actually similar enough to its group's representative that they can share an answer without losing quality.
-- Why it matters: Running an AI chatbot for 38 million customers costs enormous amounts in computing power and causes frustrating delays. This method slashed those costs in half and made responses 50 times faster while keeping personalization intact—enabling companies to actually deploy AI services that would otherwise be too expensive to run at scale. The technique works because it mathematically proves each user gets grouped with genuinely similar requests, not arbitrary bucketing.
-
-### Corruption as a self-sustained collective state in political systems
-- URL: https://paperplaine.com/papers/corruption-as-a-self
-- Category: Physics
-- Authors: Nuno Crokidakis, Jaime L. C. da C. Filho
-- arXiv: 2607.20095
-- Plain-English subtitle: How corruption becomes self-reinforcing and nearly impossible to dislodge
-- Summary: A mathematical model shows that political corruption can become a stable, self-sustaining system rather than merely the sum of individual bad actors. Once corruption reaches a critical threshold in how officials interact and support each other, the system locks in place — small anti-corruption efforts fail to budge it, and corruption persists across elections and crises.
-- Why it matters: This explains why some governments stay corrupt even after scandals, leadership changes, or reform attempts. If corruption has become self-reinforcing rather than dependent on specific individuals, conventional fixes like prosecuting officials or passing new laws may fail. Understanding the threshold at which this shift happens could help policymakers identify when more aggressive, systemic interventions are needed rather than incremental reforms.
-
-### From Distances to Trajectories: Real-Time Signed Distance Function Mapping and Distance-Accelerated Motion Planning for UAVs
-- URL: https://paperplaine.com/papers/from-distances-to-trajectories
-- Category: Computer Science · AI
-- Authors: Jason Stanley, Zhirui Dai, Qihao Qian et al.
-- arXiv: 2607.19306
-- Plain-English subtitle: Drones that map obstacles and plan safe routes in real time
-- Summary: Researchers combined obstacle mapping and flight path planning into a single system that runs onboard drones in cluttered environments. The system uses a neural network to rapidly build distance maps from point clouds, then a specialized planner that carves out safe spherical zones to navigate through—finishing route planning in 1–3 seconds compared to 10 seconds for existing methods, while improving map accuracy by 22%.
-- Why it matters: Autonomous drones currently struggle to navigate complex indoor spaces like warehouses or rescue sites because mapping and planning happen separately and demand more computing power than onboard systems can provide. This approach cuts planning time by 70% and fits entirely on a drone's own hardware, enabling real-time navigation through cluttered environments without external computers or delays.
 
 ## About
 
