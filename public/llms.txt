@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 498 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 501 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 170 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 171 papers in archive.
+  - "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context"
   - "Visual Contrastive Self-Distillation"
-  - "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 43 papers in archive.
   - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
   - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 43 papers in archive.
   - "Retail Trader's Ruin: An Anatomy of Popular Signal Failure"
   - "Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 42 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 43 papers in archive.
+  - "Optimal use of a black-box learner in semiparametric estimation"
   - "Efficient Clustering with Provable Guardrails for LLM Inference at Scale"
-  - "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 41 papers in archive.
   - "Synthetic data generation framework for quality control automation in gravure printing"
   - "Articulated Humanoid Head for a Robot Receptionist Capable of Natural Human Interaction"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 36 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 37 papers in archive.
+  - "Accelerating fossil gas independence in Europe"
   - "Optimizing Regret"
-  - "Model Uncertainty under Non-Gaussian Errors: Bayesian Model Averaging and Selection in Stochastic Frontier Models"
 
 ## 10 most recent papers
+
+### Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context
+- URL: https://paperplaine.com/papers/windowed-mtp-removing-the
+- Category: Computer Science · AI
+- Authors: Alagappan Valliappan
+- arXiv: 2607.21535
+- Plain-English subtitle: Speeding up AI text generation at million-token lengths by cutting unnecessary draft memory
+- Summary: AI models use a fast 'draft' component to predict multiple tokens at once, then verify them in parallel for speed. But at million-token context lengths, the draft wastes energy reading the entire memory cache even though it only needs recent tokens—making it slower than having no draft at all. Windowed-MTP fixes this by letting the draft use only recent context, cutting its per-token cost by 28–44% while keeping the model's final output unchanged.
+- Why it matters: Large language models often process enormous documents, conversations, or codebases where context length now reaches a million tokens. Faster generation at these scales directly reduces latency for real users and cuts GPU memory overhead by reclaiming 7–11% of wasted cache. The technique is plug-and-play, requires no retraining, and works across different model architectures, making it immediately usable in production systems.
+
+### Accelerating fossil gas independence in Europe
+- URL: https://paperplaine.com/papers/accelerating-fossil-gas-independence
+- Category: Economics
+- Authors: Lukas Franken, Iegor Riepin, Tom Brown
+- arXiv: 2607.21048
+- Plain-English subtitle: How Europe can cut gas imports in half without breaking the bank
+- Summary: Europe could cut its natural gas consumption by 50% and eliminate dependence on imports for just 16 billion euros per year—comparable to what consumers already pay when gas prices rise slightly. Yet even with this dramatic reduction, Europe would remain vulnerable to global gas price swings because gas plants still set electricity prices across the continent.
+- Why it matters: Russia's weaponization of gas supplies has exposed Europe's strategic weakness. This research shows that energy independence is actually affordable, not a luxury. But it also reveals a trap: without additional safeguards, Europeans could still face price shocks from global markets even after becoming self-sufficient, meaning policy must go beyond just building alternatives to actually shield consumers from volatility.
+
+### Optimal use of a black-box learner in semiparametric estimation
+- URL: https://paperplaine.com/papers/optimal-use-of-a
+- Category: Statistics
+- Authors: Yihong Gu
+- arXiv: 2607.21541
+- Plain-English subtitle: Getting better estimates when you don't know how your data works
+- Summary: Researchers improved how statisticians extract reliable answers from messy real-world data when they use machine learning tools to fill in missing pieces. The new method removes a mathematical penalty that previous approaches carried unnecessarily, achieving sharper estimates with the same amount of data and computational effort.
+- Why it matters: Modern statistics often combines traditional techniques with machine learning, but most existing methods assume more about the data structure than they actually need—creating a drag on accuracy. This work tightens that requirement, directly improving the precision of estimates in fields ranging from medical research to economics where pinpointing the true effect of a treatment or variable is critical.
 
 ### Visual Contrastive Self-Distillation
 - URL: https://paperplaine.com/papers/visual-contrastive-self-distillation
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Building a secure lab system that tracks patient samples and speeds up test results
 - Summary: Researchers created FMRP-LEAN, a laboratory management system that replaces spreadsheets and manual tracking with automated workflows that keep patient data private under HIPAA rules. The system cuts down delays in quality checks and gives lab staff, researchers, and clinicians a real-time view of where each patient sample is in the testing process.
 - Why it matters: Clinical labs running complex multi-day tests like the FMRP assay currently lose time and risk errors by juggling spreadsheets and disconnected systems. FMRP-LEAN solves this by automating the entire sample lifecycle while keeping all patient information locked within hospital infrastructure—meaning faster, more reliable test results without compromising privacy or regulatory compliance.
-
-### Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction
-- URL: https://paperplaine.com/papers/local-minimizers-in-mathbb
-- Category: Mathematics
-- Authors: Abhishek Adimurthi
-- arXiv: 2607.20369
-- Plain-English subtitle: How materials naturally split into regions meeting at sharp junctions
-- Summary: Mathematicians proved that certain energy-driven systems naturally arrange themselves into stable patterns where multiple regions meet at a single point, like three or more walls converging in a corner. The team showed these junction patterns are genuinely stable — local minima that the system won't spontaneously escape from — and proved this works in any number of dimensions, extending prior results that only covered specific cases.
-- Why it matters: Understanding how materials partition into regions with specific junctions applies to phase transitions in alloys, domain formation in magnets, and interface patterns in composite materials. By proving these junction configurations are mathematically stable rather than temporary, the work provides theoretical confidence that engineers and scientists can predict and design materials where multiple phases meet at controlled points.
-
-### How the fly holds a single goal: normalization, not selection, in Drosophila FC2
-- URL: https://paperplaine.com/papers/how-the-fly-holds
-- Category: Quantitative Biology
-- Authors: Gioele Nanni, Christopher Lee
-- arXiv: 2607.18969
-- Plain-English subtitle: How flies keep their sense of direction sharp and focused
-- Summary: Researchers mapped the wiring of neurons that hold a fly's directional goal and found they work by cleaning up and sharpening a signal sent from elsewhere in the brain, rather than by competing to choose between multiple options. Four neurons called FB5A appear to do most of this cleanup work, broadcasting the same inhibitory signal to all direction-tracking neurons equally—a design that polishes an existing goal into a single clear bump of activity rather than picking a winner among rivals.
-- Why it matters: Understanding how brains maintain focus on a single goal—without needing neurons to fight it out competitively—reveals a simpler design principle that evolution has used more than once, in flies' compass circuits and in their learning centers. This could reshape how neuroscientists think about goal-directed behavior and inform designs for artificial systems that need to track and maintain a stable target direction.
-
-### The Ethics of Autonomous AI Agents for Offensive Security
-- URL: https://paperplaine.com/papers/the-ethics-of-autonomous
-- Category: Computer Science · AI
-- Authors: Andreas Happe, Jürgen Cito, Jasmin Wachter
-- arXiv: 2607.20255
-- Plain-English subtitle: Who is responsible when AI hacking tools act unpredictably?
-- Summary: AI-powered hacking tools are becoming harder to control and predict than traditional security software, making it unclear who bears responsibility when something goes wrong. The technology lowers the skill barrier to launch attacks, gives results that can't be fully explained before or after they happen, and shifts advantage toward attackers — at least in the short term.
-- Why it matters: As AI hacking tools become easier to use and deploy, responsibility for attacks becomes murky: Is it the person using the tool, the company that built it, or the AI model provider? Current rules for dual-use technology and AI ethics don't address this blurred accountability, leaving organizations and regulators without clear guidance on who should be held liable. This matters for law enforcement investigations, corporate liability, and setting fair rules as the technology spreads.
 
 ## About
 

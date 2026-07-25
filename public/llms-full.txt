@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 498 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-24
+This file contains the complete plain-English text of all 501 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-25
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context
+Subtitle: Speeding up AI text generation at million-token lengths by cutting unnecessary draft memory
+URL: https://paperplaine.com/papers/windowed-mtp-removing-the
+Category: Computer Science · AI
+Authors: Alagappan Valliappan
+arXiv ID: 2607.21535
+arXiv URL: https://arxiv.org/abs/2607.21535
+Posted: 2026-07-25
+
+Summary: AI models use a fast 'draft' component to predict multiple tokens at once, then verify them in parallel for speed. But at million-token context lengths, the draft wastes energy reading the entire memory cache even though it only needs recent tokens—making it slower than having no draft at all. Windowed-MTP fixes this by letting the draft use only recent context, cutting its per-token cost by 28–44% while keeping the model's final output unchanged.
+
+Why it matters: Large language models often process enormous documents, conversations, or codebases where context length now reaches a million tokens. Faster generation at these scales directly reduces latency for real users and cuts GPU memory overhead by reclaiming 7–11% of wasted cache. The technique is plug-and-play, requires no retraining, and works across different model architectures, making it immediately usable in production systems.
+
+---
+Title: Accelerating fossil gas independence in Europe
+Subtitle: How Europe can cut gas imports in half without breaking the bank
+URL: https://paperplaine.com/papers/accelerating-fossil-gas-independence
+Category: Economics
+Authors: Lukas Franken, Iegor Riepin, Tom Brown
+arXiv ID: 2607.21048
+arXiv URL: https://arxiv.org/abs/2607.21048
+Posted: 2026-07-25
+
+Summary: Europe could cut its natural gas consumption by 50% and eliminate dependence on imports for just 16 billion euros per year—comparable to what consumers already pay when gas prices rise slightly. Yet even with this dramatic reduction, Europe would remain vulnerable to global gas price swings because gas plants still set electricity prices across the continent.
+
+Why it matters: Russia's weaponization of gas supplies has exposed Europe's strategic weakness. This research shows that energy independence is actually affordable, not a luxury. But it also reveals a trap: without additional safeguards, Europeans could still face price shocks from global markets even after becoming self-sufficient, meaning policy must go beyond just building alternatives to actually shield consumers from volatility.
+
+---
+Title: Optimal use of a black-box learner in semiparametric estimation
+Subtitle: Getting better estimates when you don't know how your data works
+URL: https://paperplaine.com/papers/optimal-use-of-a
+Category: Statistics
+Authors: Yihong Gu
+arXiv ID: 2607.21541
+arXiv URL: https://arxiv.org/abs/2607.21541
+Posted: 2026-07-25
+
+Summary: Researchers improved how statisticians extract reliable answers from messy real-world data when they use machine learning tools to fill in missing pieces. The new method removes a mathematical penalty that previous approaches carried unnecessarily, achieving sharper estimates with the same amount of data and computational effort.
+
+Why it matters: Modern statistics often combines traditional techniques with machine learning, but most existing methods assume more about the data structure than they actually need—creating a drag on accuracy. This work tightens that requirement, directly improving the precision of estimates in fields ranging from medical research to economics where pinpointing the true effect of a treatment or variable is critical.
 
 ---
 Title: Visual Contrastive Self-Distillation

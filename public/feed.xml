@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2026 20:15:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 09:00:11 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context</title>
+      <link>https://paperplaine.com/papers/windowed-mtp-removing-the</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/windowed-mtp-removing-the</guid>
+      <pubDate>Thu, 23 Jul 2026 17:21:44 GMT</pubDate>
+      <author>Alagappan Valliappan</author>
+      <category>AI</category>
+      <description>Speeding up AI text generation at million-token lengths by cutting unnecessary draft memory</description>
+      <content:encoded><![CDATA[<p><em>Speeding up AI text generation at million-token lengths by cutting unnecessary draft memory</em></p><p>AI models use a fast 'draft' component to predict multiple tokens at once, then verify them in parallel for speed. But at million-token context lengths, the draft wastes energy reading the entire memory cache even though it only needs recent tokens—making it slower than having no draft at all. Windowed-MTP fixes this by letting the draft use only recent context, cutting its per-token cost by 28–44% while keeping the model's final output unchanged.</p><p><strong>Why it matters:</strong> Large language models often process enormous documents, conversations, or codebases where context length now reaches a million tokens. Faster generation at these scales directly reduces latency for real users and cuts GPU memory overhead by reclaiming 7–11% of wasted cache. The technique is plug-and-play, requires no retraining, and works across different model architectures, making it immediately usable in production systems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Accelerating fossil gas independence in Europe</title>
+      <link>https://paperplaine.com/papers/accelerating-fossil-gas-independence</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/accelerating-fossil-gas-independence</guid>
+      <pubDate>Thu, 23 Jul 2026 08:32:39 GMT</pubDate>
+      <author>Lukas Franken, Iegor Riepin, Tom Brown</author>
+      <category>Economics</category>
+      <description>How Europe can cut gas imports in half without breaking the bank</description>
+      <content:encoded><![CDATA[<p><em>How Europe can cut gas imports in half without breaking the bank</em></p><p>Europe could cut its natural gas consumption by 50% and eliminate dependence on imports for just 16 billion euros per year—comparable to what consumers already pay when gas prices rise slightly. Yet even with this dramatic reduction, Europe would remain vulnerable to global gas price swings because gas plants still set electricity prices across the continent.</p><p><strong>Why it matters:</strong> Russia's weaponization of gas supplies has exposed Europe's strategic weakness. This research shows that energy independence is actually affordable, not a luxury. But it also reveals a trap: without additional safeguards, Europeans could still face price shocks from global markets even after becoming self-sufficient, meaning policy must go beyond just building alternatives to actually shield consumers from volatility.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Optimal use of a black-box learner in semiparametric estimation</title>
+      <link>https://paperplaine.com/papers/optimal-use-of-a</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/optimal-use-of-a</guid>
+      <pubDate>Thu, 23 Jul 2026 17:26:17 GMT</pubDate>
+      <author>Yihong Gu</author>
+      <category>Statistics</category>
+      <description>Getting better estimates when you don&#39;t know how your data works</description>
+      <content:encoded><![CDATA[<p><em>Getting better estimates when you don't know how your data works</em></p><p>Researchers improved how statisticians extract reliable answers from messy real-world data when they use machine learning tools to fill in missing pieces. The new method removes a mathematical penalty that previous approaches carried unnecessarily, achieving sharper estimates with the same amount of data and computational effort.</p><p><strong>Why it matters:</strong> Modern statistics often combines traditional techniques with machine learning, but most existing methods assume more about the data structure than they actually need—creating a drag on accuracy. This work tightens that requirement, directly improving the precision of estimates in fields ranging from medical research to economics where pinpointing the true effect of a treatment or variable is critical.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Visual Contrastive Self-Distillation</title>
       <link>https://paperplaine.com/papers/visual-contrastive-self-distillation</link>

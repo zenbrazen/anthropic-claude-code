@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.21535",
+    "title": "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context",
+    "authors": "Alagappan Valliappan",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-23T17:21:44Z",
+    "publishedFormatted": "Jul 23, 2026",
+    "subtitle": "Speeding up AI text generation at million-token lengths by cutting unnecessary draft memory",
+    "summary": "AI models use a fast 'draft' component to predict multiple tokens at once, then verify them in parallel for speed. But at million-token context lengths, the draft wastes energy reading the entire memory cache even though it only needs recent tokens—making it slower than having no draft at all. Windowed-MTP fixes this by letting the draft use only recent context, cutting its per-token cost by 28–44% while keeping the model's final output unchanged.",
+    "whyItMatters": "Large language models often process enormous documents, conversations, or codebases where context length now reaches a million tokens. Faster generation at these scales directly reduces latency for real users and cuts GPU memory overhead by reclaiming 7–11% of wasted cache. The technique is plug-and-play, requires no retraining, and works across different model architectures, making it immediately usable in production systems.",
+    "fetchedAt": "2026-07-25T09:00:03.441Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 279
+    },
+    "slug": "windowed-mtp-removing-the"
+  },
+  {
+    "id": "2607.21048",
+    "title": "Accelerating fossil gas independence in Europe",
+    "authors": "Lukas Franken, Iegor Riepin, Tom Brown",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-07-23T08:32:39Z",
+    "publishedFormatted": "Jul 23, 2026",
+    "subtitle": "How Europe can cut gas imports in half without breaking the bank",
+    "summary": "Europe could cut its natural gas consumption by 50% and eliminate dependence on imports for just 16 billion euros per year—comparable to what consumers already pay when gas prices rise slightly. Yet even with this dramatic reduction, Europe would remain vulnerable to global gas price swings because gas plants still set electricity prices across the continent.",
+    "whyItMatters": "Russia's weaponization of gas supplies has exposed Europe's strategic weakness. This research shows that energy independence is actually affordable, not a luxury. But it also reveals a trap: without additional safeguards, Europeans could still face price shocks from global markets even after becoming self-sufficient, meaning policy must go beyond just building alternatives to actually shield consumers from volatility.",
+    "fetchedAt": "2026-07-25T09:00:07.182Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 154
+    },
+    "slug": "accelerating-fossil-gas-independence"
+  },
+  {
+    "id": "2607.21541",
+    "title": "Optimal use of a black-box learner in semiparametric estimation",
+    "authors": "Yihong Gu",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-23T17:26:17Z",
+    "publishedFormatted": "Jul 23, 2026",
+    "subtitle": "Getting better estimates when you don't know how your data works",
+    "summary": "Researchers improved how statisticians extract reliable answers from messy real-world data when they use machine learning tools to fill in missing pieces. The new method removes a mathematical penalty that previous approaches carried unnecessarily, achieving sharper estimates with the same amount of data and computational effort.",
+    "whyItMatters": "Modern statistics often combines traditional techniques with machine learning, but most existing methods assume more about the data structure than they actually need—creating a drag on accuracy. This work tightens that requirement, directly improving the precision of estimates in fields ranging from medical research to economics where pinpointing the true effect of a treatment or variable is critical.",
+    "fetchedAt": "2026-07-25T09:00:11.160Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 30,
+      "wordCount": 243
+    },
+    "slug": "optimal-use-of-a"
+  },
+  {
     "id": "2607.21556",
     "title": "Visual Contrastive Self-Distillation",
     "authors": "Yijun Liang, Yunjie Tian, Yijiang Li et al.",
