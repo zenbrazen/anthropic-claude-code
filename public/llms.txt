@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 501 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 504 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 171 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 172 papers in archive.
+  - "What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations"
   - "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context"
-  - "Visual Contrastive Self-Distillation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 43 papers in archive.
   - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
   - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
   - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 40 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 41 papers in archive.
+  - "Deep Shape Regression for Planar Curves with Multimodal Covariates"
   - "How the fly holds a single goal: normalization, not selection, in Drosophila FC2"
-  - "STSBench: A Large-Scale Dataset for Modeling Neuronal Activity in the Dorsal Stream of Primate Visual Cortex"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 43 papers in archive.
   - "Retail Trader's Ruin: An Anatomy of Popular Signal Failure"
   - "Proof-of-Stake Dynamics: The Elusive Price Anchor and Endogenous Volatility Harvesting"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 43 papers in archive.
   - "Optimal use of a black-box learner in semiparametric estimation"
   - "Efficient Clustering with Provable Guardrails for LLM Inference at Scale"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 41 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 42 papers in archive.
+  - "Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement"
   - "Synthetic data generation framework for quality control automation in gravure printing"
-  - "Articulated Humanoid Head for a Robot Receptionist Capable of Natural Human Interaction"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 37 papers in archive.
   - "Accelerating fossil gas independence in Europe"
   - "Optimizing Regret"
 
 ## 10 most recent papers
+
+### What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations
+- URL: https://paperplaine.com/papers/what-where-and-how
+- Category: Computer Science · AI
+- Authors: Piotr Wilam
+- arXiv: 2607.21491
+- Plain-English subtitle: Why different AI coding models build the same ideas in completely different ways
+- Summary: Two popular code-writing AI models agree on which programming concepts matter most, but they organize those concepts in their internal wiring in strikingly different ways. When tested on Python and Rust across both models, researchers found that what the models learn is universal, but how and where they learn it varies by model—suggesting that neural agreement is a property of ideas, not of computation itself.
+- Why it matters: Understanding how different AI models represent the same code concepts could improve model design, transfer learning, and interpretability. The finding that models share some neurons across languages but diverge in how they organize circuits reveals that current AI training doesn't converge on a single solution—which matters for predicting whether advances in one model will transfer to others, and for building more reliable code assistants.
+
+### Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement
+- URL: https://paperplaine.com/papers/real-time-eeg-cap
+- Category: Engineering
+- Authors: William Lehn-Schiøler, Mads Sverker Nilsson, Nicki Skafte Detlefsen
+- arXiv: 2607.20142
+- Plain-English subtitle: A camera that watches you put on an EEG cap and catches mistakes instantly
+- Summary: Researchers built a vision system that watches a webcam feed in real time to detect electrodes on an EEG cap and check whether they're placed in the right spots on the head. The system correctly identified electrode positions 94–97% of the time across different cap sizes and subjects, and runs fast enough on a regular computer to guide placement as it happens.
+- Why it matters: EEG tests require electrodes to be placed at precise locations on the scalp—mistakes mean bad data and wasted time. This system lets technicians see immediately whether electrodes are in the right position, reducing errors and training time. It works on standard laptops and cameras, making it practical for clinics and research labs that can't afford specialized equipment.
+
+### Deep Shape Regression for Planar Curves with Multimodal Covariates
+- URL: https://paperplaine.com/papers/deep-shape-regression-for
+- Category: Quantitative Biology
+- Authors: Manuel Pfeuffer, Roshan Prakash Rane, Hadya Yassin et al.
+- arXiv: 2607.19600
+- Plain-English subtitle: Predicting how brain shapes change using mixed types of medical data
+- Summary: Researchers developed a machine learning method that predicts how the outline of brain structures changes based on patient characteristics — combining different data types like age, genetics, and medical images in a single model. The approach automatically accounts for rotation and scaling differences that confuse standard statistical tools, and was tested on hippocampus scans from Alzheimer's disease patients, where it correctly identified how the brain region's shape shifts with disease progression.
+- Why it matters: Brain shape changes can signal disease progression or neurological decline, but current tools struggle to connect these changes to multiple patient factors simultaneously. This method handles the messy reality of medical data — some measurements come as numbers, others as images — making it possible to untangle which factors actually drive shape changes in conditions like Alzheimer's disease. That clarity could help clinicians spot early warning signs and design better targeted interventions.
 
 ### Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context
 - URL: https://paperplaine.com/papers/windowed-mtp-removing-the
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to predict how molecules behave by modeling their shape-shifting in solution
 - Summary: Molecules like cyclic peptides constantly twist and shift between different shapes in liquid, yet current AI models predict their properties from just a single frozen structure. Researchers built EnsembleEGNN, a neural network that encodes multiple conformations of the same molecule simultaneously, then pools them into a single prediction. The model outperformed sequence-only baselines, reaching 74% correlation with experimental properties when trained end-to-end—something that completely failed without access to 3D structural ensembles.
 - Why it matters: Drug discovery relies on predicting how molecules will behave, and current shortcuts miss a crucial reality: molecules are not rigid shapes but dancing ensembles. This approach could speed up screening for new peptide drugs by accurately predicting their properties from realistic representations of how they actually move in cells. It opens a path toward foundation models that capture molecular dynamics, moving beyond static snapshots that have limited predictive power.
-
-### Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation
-- URL: https://paperplaine.com/papers/toward-cryptographically-verifiable-authorization
-- Category: Computer Science
-- Authors: M. Llambí-Morillas, D. Fernández-Fernández
-- arXiv: 2607.21325
-- Plain-English subtitle: Proving that AI agents have permission to act, without revealing secret rules
-- Summary: AI agents increasingly make decisions and access sensitive systems with little human supervision, but current security systems can't prove that a specific action was actually authorized. This paper proposes a mathematical framework using cryptography to create verifiable proof that an agent's request satisfies the right policies in the right situation—while keeping confidential details hidden. The researchers built a working prototype to show the idea is feasible.
-- Why it matters: As autonomous AI systems handle more high-stakes tasks—from accessing medical records to controlling infrastructure—we need auditable proof that each action was legitimately authorized, not just that an identity was verified. This work addresses a gap in current AI security: distinguishing between who an agent is, what it's permitted to do, and what context it's operating in. Cryptographic verification could enable organizations to prove compliance to regulators and detect unauthorized agent actions that slip past human oversight.
-
-### Synthetic data generation framework for quality control automation in gravure printing
-- URL: https://paperplaine.com/papers/synthetic-data-generation-framework
-- Category: Engineering
-- Authors: Korota Arsène Coulibaly, Mohamed Hamlich, Khalid Hmali et al.
-- arXiv: 2607.21577
-- Plain-English subtitle: Creating fake defects to train machines that catch real printing flaws
-- Summary: A printing factory can now automate quality control without manually photographing thousands of defects. Researchers built software that generates synthetic images of common printing problems—creases, streaks, misalignment—and trained an AI detector on these fake images. When tested on real factory output, the detector caught defects with 80.9% accuracy, matching the performance of systems trained on actual photos.
-- Why it matters: Rotogravure printing currently relies on human inspectors to spot flaws, a slow and inconsistent process that slows production. This framework eliminates months of manual photo collection, letting factories deploy automated quality control within days instead. Since the synthetic images are generated instantly at zero cost, even small printers can afford to automate their inspection lines.
-
-### FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization
-- URL: https://paperplaine.com/papers/fmrp-lean-a-hipaa
-- Category: Computer Science · AI
-- Authors: Eva McCord, Ernest Pedapati, Zag ElSayed
-- arXiv: 2607.20382
-- Plain-English subtitle: Building a secure lab system that tracks patient samples and speeds up test results
-- Summary: Researchers created FMRP-LEAN, a laboratory management system that replaces spreadsheets and manual tracking with automated workflows that keep patient data private under HIPAA rules. The system cuts down delays in quality checks and gives lab staff, researchers, and clinicians a real-time view of where each patient sample is in the testing process.
-- Why it matters: Clinical labs running complex multi-day tests like the FMRP assay currently lose time and risk errors by juggling spreadsheets and disconnected systems. FMRP-LEAN solves this by automating the entire sample lifecycle while keeping all patient information locked within hospital infrastructure—meaning faster, more reliable test results without compromising privacy or regulatory compliance.
 
 ## About
 

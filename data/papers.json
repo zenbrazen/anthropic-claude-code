@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.21491",
+    "title": "What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations",
+    "authors": "Piotr Wilam",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-23T16:34:14Z",
+    "publishedFormatted": "Jul 23, 2026",
+    "subtitle": "Why different AI coding models build the same ideas in completely different ways",
+    "summary": "Two popular code-writing AI models agree on which programming concepts matter most, but they organize those concepts in their internal wiring in strikingly different ways. When tested on Python and Rust across both models, researchers found that what the models learn is universal, but how and where they learn it varies by model—suggesting that neural agreement is a property of ideas, not of computation itself.",
+    "whyItMatters": "Understanding how different AI models represent the same code concepts could improve model design, transfer learning, and interpretability. The finding that models share some neurons across languages but diverge in how they organize circuits reveals that current AI training doesn't converge on a single solution—which matters for predicting whether advances in one model will transfer to others, and for building more reliable code assistants.",
+    "fetchedAt": "2026-07-25T20:07:56.246Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 301
+    },
+    "slug": "what-where-and-how"
+  },
+  {
+    "id": "2607.20142",
+    "title": "Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement",
+    "authors": "William Lehn-Schiøler, Mads Sverker Nilsson, Nicki Skafte Detlefsen",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-07-22T13:44:22Z",
+    "publishedFormatted": "Jul 22, 2026",
+    "subtitle": "A camera that watches you put on an EEG cap and catches mistakes instantly",
+    "summary": "Researchers built a vision system that watches a webcam feed in real time to detect electrodes on an EEG cap and check whether they're placed in the right spots on the head. The system correctly identified electrode positions 94–97% of the time across different cap sizes and subjects, and runs fast enough on a regular computer to guide placement as it happens.",
+    "whyItMatters": "EEG tests require electrodes to be placed at precise locations on the scalp—mistakes mean bad data and wasted time. This system lets technicians see immediately whether electrodes are in the right position, reducing errors and training time. It works on standard laptops and cameras, making it practical for clinics and research labs that can't afford specialized equipment.",
+    "fetchedAt": "2026-07-25T20:07:59.426Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 170
+    },
+    "slug": "real-time-eeg-cap"
+  },
+  {
+    "id": "2607.19600",
+    "title": "Deep Shape Regression for Planar Curves with Multimodal Covariates",
+    "authors": "Manuel Pfeuffer, Roshan Prakash Rane, Hadya Yassin et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-07-21T22:04:17Z",
+    "publishedFormatted": "Jul 21, 2026",
+    "subtitle": "Predicting how brain shapes change using mixed types of medical data",
+    "summary": "Researchers developed a machine learning method that predicts how the outline of brain structures changes based on patient characteristics — combining different data types like age, genetics, and medical images in a single model. The approach automatically accounts for rotation and scaling differences that confuse standard statistical tools, and was tested on hippocampus scans from Alzheimer's disease patients, where it correctly identified how the brain region's shape shifts with disease progression.",
+    "whyItMatters": "Brain shape changes can signal disease progression or neurological decline, but current tools struggle to connect these changes to multiple patient factors simultaneously. This method handles the messy reality of medical data — some measurements come as numbers, others as images — making it possible to untangle which factors actually drive shape changes in conditions like Alzheimer's disease. That clarity could help clinicians spot early warning signs and design better targeted interventions.",
+    "fetchedAt": "2026-07-25T20:08:03.000Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 185
+    },
+    "slug": "deep-shape-regression-for"
+  },
+  {
     "id": "2607.21535",
     "title": "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context",
     "authors": "Alagappan Valliappan",

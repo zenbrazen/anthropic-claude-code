@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 501 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 504 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-25
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations
+Subtitle: Why different AI coding models build the same ideas in completely different ways
+URL: https://paperplaine.com/papers/what-where-and-how
+Category: Computer Science · AI
+Authors: Piotr Wilam
+arXiv ID: 2607.21491
+arXiv URL: https://arxiv.org/abs/2607.21491
+Posted: 2026-07-25
+
+Summary: Two popular code-writing AI models agree on which programming concepts matter most, but they organize those concepts in their internal wiring in strikingly different ways. When tested on Python and Rust across both models, researchers found that what the models learn is universal, but how and where they learn it varies by model—suggesting that neural agreement is a property of ideas, not of computation itself.
+
+Why it matters: Understanding how different AI models represent the same code concepts could improve model design, transfer learning, and interpretability. The finding that models share some neurons across languages but diverge in how they organize circuits reveals that current AI training doesn't converge on a single solution—which matters for predicting whether advances in one model will transfer to others, and for building more reliable code assistants.
+
+---
+Title: Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement
+Subtitle: A camera that watches you put on an EEG cap and catches mistakes instantly
+URL: https://paperplaine.com/papers/real-time-eeg-cap
+Category: Engineering
+Authors: William Lehn-Schiøler, Mads Sverker Nilsson, Nicki Skafte Detlefsen
+arXiv ID: 2607.20142
+arXiv URL: https://arxiv.org/abs/2607.20142
+Posted: 2026-07-25
+
+Summary: Researchers built a vision system that watches a webcam feed in real time to detect electrodes on an EEG cap and check whether they're placed in the right spots on the head. The system correctly identified electrode positions 94–97% of the time across different cap sizes and subjects, and runs fast enough on a regular computer to guide placement as it happens.
+
+Why it matters: EEG tests require electrodes to be placed at precise locations on the scalp—mistakes mean bad data and wasted time. This system lets technicians see immediately whether electrodes are in the right position, reducing errors and training time. It works on standard laptops and cameras, making it practical for clinics and research labs that can't afford specialized equipment.
+
+---
+Title: Deep Shape Regression for Planar Curves with Multimodal Covariates
+Subtitle: Predicting how brain shapes change using mixed types of medical data
+URL: https://paperplaine.com/papers/deep-shape-regression-for
+Category: Quantitative Biology
+Authors: Manuel Pfeuffer, Roshan Prakash Rane, Hadya Yassin et al.
+arXiv ID: 2607.19600
+arXiv URL: https://arxiv.org/abs/2607.19600
+Posted: 2026-07-25
+
+Summary: Researchers developed a machine learning method that predicts how the outline of brain structures changes based on patient characteristics — combining different data types like age, genetics, and medical images in a single model. The approach automatically accounts for rotation and scaling differences that confuse standard statistical tools, and was tested on hippocampus scans from Alzheimer's disease patients, where it correctly identified how the brain region's shape shifts with disease progression.
+
+Why it matters: Brain shape changes can signal disease progression or neurological decline, but current tools struggle to connect these changes to multiple patient factors simultaneously. This method handles the messy reality of medical data — some measurements come as numbers, others as images — making it possible to untangle which factors actually drive shape changes in conditions like Alzheimer's disease. That clarity could help clinicians spot early warning signs and design better targeted interventions.
 
 ---
 Title: Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context
