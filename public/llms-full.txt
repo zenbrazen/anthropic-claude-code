@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 507 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 510 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: 3D-Aware VLMs with Implicit and Explicit Geometries
+Subtitle: Teaching AI to understand 3D space from flat video footage
+URL: https://paperplaine.com/papers/3d-aware-vlms-with
+Category: Computer Science · AI
+Authors: Wenhao Li, Xueying Jiang, Quanhao Qian et al.
+arXiv ID: 2607.21595
+arXiv URL: https://arxiv.org/abs/2607.21595
+Posted: 2026-07-26
+
+Summary: Most AI vision systems trained on 2D images struggle to understand 3D spatial relationships—where objects are, how far apart they sit, how they move in three-dimensional space. Researchers created VLM-IE3D, which learns 3D geometry directly from regular video and adds that spatial understanding to vision-language models, enabling them to handle tasks like detecting objects in 3D scenes, pinpointing where things are in space, and reasoning about depth and distance.
+
+Why it matters: Current AI systems can describe what they see in images but can't reliably reason about 3D space, limiting their usefulness in robotics, autonomous vehicles, and 3D scene understanding. This approach works from ordinary video alone—no special 3D sensors required—making it cheaper and easier to deploy. Better 3D reasoning could improve safety in self-driving cars, enable robots to navigate and manipulate objects more accurately, and unlock new capabilities in AR and spatial computing applications.
+
+---
+Title: Cautious optimism for deep parameterized quantum circuits
+Subtitle: Bigger quantum machine learning models can actually work better, not worse
+URL: https://paperplaine.com/papers/cautious-optimism-for-deep
+Category: Statistics
+Authors: Marie Kempkes, Elies Gil-Fuster, Carlos Bravo-Prieto et al.
+arXiv ID: 2607.21409
+arXiv URL: https://arxiv.org/abs/2607.21409
+Posted: 2026-07-26
+
+Summary: Quantum machine learning models can get better at recognizing new patterns as they grow larger and more complex, defying the conventional expectation that bigger models overfit and fail on unseen data. This "double descent" behavior — where performance dips then recovers — was confirmed across multiple datasets and model sizes, grounded in mathematical analysis of how quantum circuits behave.
+
+Why it matters: Quantum computers are still in early stages, and researchers have worried that scaling up quantum machine learning models would hit the same wall as classical models: they'd memorize training data and fail on anything new. This work suggests that quantum circuits might naturally avoid that trap, making it more plausible to build larger, more capable quantum learning systems. It doesn't solve quantum machine learning yet, but it removes one major barrier to scaling up.
+
+---
+Title: Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models
+Subtitle: Why AI models that predict crypto price swings still lose money in practice
+URL: https://paperplaine.com/papers/predictive-extrema-unprofitable-policies
+Category: Quantitative Finance
+Authors: Ayoub Jadouli
+arXiv ID: 2607.19453
+arXiv URL: https://arxiv.org/abs/2607.19453
+Posted: 2026-07-26
+
+Summary: An audit of machine-learning models designed to predict extreme price movements and time trades on Binance found that none of them beat simply holding cryptocurrency—most lost 1–44% over their test periods even though the models accurately identified price patterns. The best-performing model predicted local price extrema with high precision but generated trading strategies that underperformed buy-and-hold by 2.80 percentage points after accounting for trading costs.
+
+Why it matters: This work exposes a common gap in cryptocurrency and algorithmic trading: accurate price prediction doesn't automatically translate into profitable trading decisions. The findings suggest that even when AI systems correctly identify when prices will peak or bottom, the costs and timing of acting on those predictions make the trades net negative—a crucial reality check for traders and firms considering expensive machine-learning systems to automate their market timing.
 
 ---
 Title: Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it
