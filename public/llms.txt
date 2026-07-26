@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 504 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 507 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 172 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 173 papers in archive.
+  - "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it"
   - "What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations"
-  - "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 43 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 44 papers in archive.
+  - "Advances in STV Margin Computation"
   - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
-  - "They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 41 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 42 papers in archive.
+  - "Fault-tolerant quantum algorithms for simulating atomic nuclei"
   - "Complexity transition in the Dicke model of light-matter interaction"
-  - "Corruption as a self-sustained collective state in political systems"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
   - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Optimizing Regret"
 
 ## 10 most recent papers
+
+### Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it
+- URL: https://paperplaine.com/papers/artificial-epanorthosis-why-large
+- Category: Computer Science · AI
+- Authors: Federico Boggia
+- arXiv: 2607.21498
+- Plain-English subtitle: Why AI keeps awkwardly correcting itself, and how to fix it
+- Summary: Large language models systematically overuse epanorthosis—a rhetorical trick where speakers correct themselves mid-sentence, like "This is not a course. It is a journey of transformation." The habit stems from training on promotional writing and reward signals that favor confident, emphatic phrasing. Researchers measured this quirk across different model sizes and writing genres, finding models use the figure about twice as often as humans in formal speech, but rarely in casual conversation—and developed simple techniques that cut the overuse by 50 to 75 percent.
+- Why it matters: As AI writing becomes more prevalent, models risk reshaping human writing style rather than the other way around. The misalignment between how AI and humans naturally write could gradually shift our own rhetorical habits if we normalize machine-generated text as a standard. The techniques demonstrated here—lightweight fixes that tune models to human baselines per genre—show that calibration, not elimination, is the practical goal: AI should match human style, not define it.
+
+### Advances in STV Margin Computation
+- URL: https://paperplaine.com/papers/advances-in-stv-margin
+- Category: Computer Science
+- Authors: Michelle Blom, Alexander Ek, Peter J. Stuckey et al.
+- arXiv: 2607.21178
+- Plain-English subtitle: How to check if an election result could actually be wrong
+- Summary: Researchers developed a faster way to calculate how many ballots would need to be changed to flip the outcome of a single transferable vote election. The method produces tighter, more realistic estimates of election safety margins, making it practical to verify real election results without recounting every ballot.
+- Why it matters: Election officials can now conduct targeted audits that check only a portion of ballots while still confirming the announced winners are correct. This saves money and time while catching errors or fraud that might otherwise go undetected—turning a theoretical safety measure into something actually usable by jurisdictions running ranked-choice voting elections.
+
+### Fault-tolerant quantum algorithms for simulating atomic nuclei
+- URL: https://paperplaine.com/papers/fault-tolerant-quantum-algorithms
+- Category: Physics
+- Authors: James Benstead, Michael Garn, Neil Gaspar et al.
+- arXiv: 2607.21563
+- Plain-English subtitle: How quantum computers could unlock the physics of atomic nuclei
+- Summary: Researchers have designed the first complete blueprint for using fault-tolerant quantum computers to simulate atomic nuclei — a problem that's been largely overlooked despite its similarities to chemistry simulations. The resource requirements for simulating certain nuclei (like magnesium-32) are comparable to current chemistry benchmarks, though simulating lighter nuclei would require substantially more computing power.
+- Why it matters: Nuclear physics problems are notoriously difficult to solve on classical computers, limiting our understanding of rare isotopes and nuclear reactions. Quantum computers could crack these problems, but only if physicists first figure out what they actually need to build — this paper provides those concrete blueprints. This work bridges two communities that rarely talk: nuclear physicists and quantum computing engineers, potentially unlocking new applications for quantum computers once the hardware matures.
 
 ### What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations
 - URL: https://paperplaine.com/papers/what-where-and-how
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI vision models to learn from their own mistakes without a separate teacher
 - Summary: Researchers created a simpler way for AI vision models to improve themselves by comparing how much an image actually matters to their answers. The method removes the need for a separate teacher model, special answers, or extra signals — and still improved performance by 4–5 percentage points across multiple models, reaching up to 76% accuracy on standard benchmarks.
 - Why it matters: Vision-language models power everything from image search to autonomous systems, so improving their accuracy directly translates to more reliable AI assistants and tools. This approach is simpler and cheaper than existing methods because it doesn't require maintaining a separate teacher model or expensive extra training signals, making it practical for real-world deployment.
-
-### Retail Trader's Ruin: An Anatomy of Popular Signal Failure
-- URL: https://paperplaine.com/papers/retail-trader-s-ruin
-- Category: Quantitative Finance
-- Authors: Adam Darmanin
-- arXiv: 2607.20093
-- Plain-English subtitle: Why popular trading tricks don't actually make money after costs
-- Summary: A systematic test of five widely promoted retail trading strategies—trend following, oscillators, candlestick patterns, volume rules, and calendar effects—found that four of them fail to deliver real profits after accounting for trading costs and statistical noise. The two remaining candidates, trend following and momentum, remain inconclusive because the data simply isn't large enough to settle the question either way.
-- Why it matters: Retail traders lose roughly $5 billion annually chasing strategies they find online or in trading books. This research provides concrete evidence that most popular signals don't work, which could spare individuals from sinking money into methods with no genuine edge. The rigorous testing framework also sets a higher standard for what claims about profitable trading strategies should actually prove before being promoted to the public.
-
-### Complexity transition in the Dicke model of light-matter interaction
-- URL: https://paperplaine.com/papers/complexity-transition-in-the
-- Category: Physics
-- Authors: Yicheng Zhang, Erhai Zhao
-- arXiv: 2607.21583
-- Plain-English subtitle: When quantum light-matter systems abruptly shift how they behave
-- Summary: Physicists discovered that tweaking how strongly light couples to atoms can trigger a sudden, sharp change in how chaotically a quantum system evolves—visible through a mathematical measure called Krylov complexity. The transition marks the boundary between two fundamentally different types of quantum behavior, where the system switches from being orderly and confined to becoming wild and spreading.
-- Why it matters: Understanding when and how quantum systems undergo these sharp transitions is crucial for controlling quantum computers and optical devices, where tiny changes in coupling strength could unexpectedly alter performance. This framework gives physicists a new tool to predict and detect phase transitions in quantum dynamics that don't show up in traditional equilibrium measurements, opening doors to better design of quantum technologies and detection of chaotic behavior in exotic quantum states.
-
-### Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling
-- URL: https://paperplaine.com/papers/graph-learning-on-ensembles
-- Category: Computer Science · AI
-- Authors: Aaron Feller, Kris Deibler, Maxim Secor
-- arXiv: 2607.21561
-- Plain-English subtitle: Teaching AI to predict how molecules behave by modeling their shape-shifting in solution
-- Summary: Molecules like cyclic peptides constantly twist and shift between different shapes in liquid, yet current AI models predict their properties from just a single frozen structure. Researchers built EnsembleEGNN, a neural network that encodes multiple conformations of the same molecule simultaneously, then pools them into a single prediction. The model outperformed sequence-only baselines, reaching 74% correlation with experimental properties when trained end-to-end—something that completely failed without access to 3D structural ensembles.
-- Why it matters: Drug discovery relies on predicting how molecules will behave, and current shortcuts miss a crucial reality: molecules are not rigid shapes but dancing ensembles. This approach could speed up screening for new peptide drugs by accurately predicting their properties from realistic representations of how they actually move in cells. It opens a path toward foundation models that capture molecular dynamics, moving beyond static snapshots that have limited predictive power.
 
 ## About
 

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 504 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-25
+This file contains the complete plain-English text of all 507 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it
+Subtitle: Why AI keeps awkwardly correcting itself, and how to fix it
+URL: https://paperplaine.com/papers/artificial-epanorthosis-why-large
+Category: Computer Science · AI
+Authors: Federico Boggia
+arXiv ID: 2607.21498
+arXiv URL: https://arxiv.org/abs/2607.21498
+Posted: 2026-07-26
+
+Summary: Large language models systematically overuse epanorthosis—a rhetorical trick where speakers correct themselves mid-sentence, like "This is not a course. It is a journey of transformation." The habit stems from training on promotional writing and reward signals that favor confident, emphatic phrasing. Researchers measured this quirk across different model sizes and writing genres, finding models use the figure about twice as often as humans in formal speech, but rarely in casual conversation—and developed simple techniques that cut the overuse by 50 to 75 percent.
+
+Why it matters: As AI writing becomes more prevalent, models risk reshaping human writing style rather than the other way around. The misalignment between how AI and humans naturally write could gradually shift our own rhetorical habits if we normalize machine-generated text as a standard. The techniques demonstrated here—lightweight fixes that tune models to human baselines per genre—show that calibration, not elimination, is the practical goal: AI should match human style, not define it.
+
+---
+Title: Advances in STV Margin Computation
+Subtitle: How to check if an election result could actually be wrong
+URL: https://paperplaine.com/papers/advances-in-stv-margin
+Category: Computer Science
+Authors: Michelle Blom, Alexander Ek, Peter J. Stuckey et al.
+arXiv ID: 2607.21178
+arXiv URL: https://arxiv.org/abs/2607.21178
+Posted: 2026-07-26
+
+Summary: Researchers developed a faster way to calculate how many ballots would need to be changed to flip the outcome of a single transferable vote election. The method produces tighter, more realistic estimates of election safety margins, making it practical to verify real election results without recounting every ballot.
+
+Why it matters: Election officials can now conduct targeted audits that check only a portion of ballots while still confirming the announced winners are correct. This saves money and time while catching errors or fraud that might otherwise go undetected—turning a theoretical safety measure into something actually usable by jurisdictions running ranked-choice voting elections.
+
+---
+Title: Fault-tolerant quantum algorithms for simulating atomic nuclei
+Subtitle: How quantum computers could unlock the physics of atomic nuclei
+URL: https://paperplaine.com/papers/fault-tolerant-quantum-algorithms
+Category: Physics
+Authors: James Benstead, Michael Garn, Neil Gaspar et al.
+arXiv ID: 2607.21563
+arXiv URL: https://arxiv.org/abs/2607.21563
+Posted: 2026-07-26
+
+Summary: Researchers have designed the first complete blueprint for using fault-tolerant quantum computers to simulate atomic nuclei — a problem that's been largely overlooked despite its similarities to chemistry simulations. The resource requirements for simulating certain nuclei (like magnesium-32) are comparable to current chemistry benchmarks, though simulating lighter nuclei would require substantially more computing power.
+
+Why it matters: Nuclear physics problems are notoriously difficult to solve on classical computers, limiting our understanding of rare isotopes and nuclear reactions. Quantum computers could crack these problems, but only if physicists first figure out what they actually need to build — this paper provides those concrete blueprints. This work bridges two communities that rarely talk: nuclear physicists and quantum computing engineers, potentially unlocking new applications for quantum computers once the hardware matures.
 
 ---
 Title: What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations
