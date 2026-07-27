@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 510 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 513 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 174 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 175 papers in archive.
+  - "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture"
   - "3D-Aware VLMs with Implicit and Explicit Geometries"
-  - "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 44 papers in archive.
   - "Advances in STV Margin Computation"
   - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
   - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 41 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 42 papers in archive.
+  - "Universal BCI Personalization: One API for Frozen EEG Trunks and Foundation Models"
   - "Deep Shape Regression for Planar Curves with Multimodal Covariates"
-  - "How the fly holds a single goal: normalization, not selection, in Drosophila FC2"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 44 papers in archive.
   - "Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models"
   - "Retail Trader's Ruin: An Anatomy of Popular Signal Failure"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 42 papers in archive.
   - "Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement"
   - "Synthetic data generation framework for quality control automation in gravure printing"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 37 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 38 papers in archive.
+  - "Measuring inequality and social stratification with Lorenz curvature"
   - "Accelerating fossil gas independence in Europe"
-  - "Optimizing Regret"
 
 ## 10 most recent papers
+
+### Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture
+- URL: https://paperplaine.com/papers/dynamic-capability-scoping-for
+- Category: Computer Science · AI
+- Authors: Halil Burak Noyan
+- arXiv: 2607.22445
+- Plain-English subtitle: Giving AI assistants only the permissions they need for each specific task
+- Summary: AI systems at companies typically get access to all tools they might ever need, creating a security gap if the AI goes rogue or gets hacked. Researchers designed a three-layer system that dynamically grants AI agents only the specific permissions required for their current task, and created a dataset of 600 realistic enterprise tasks labeled with minimum required permissions to test this approach. The method reduced security violations by 93% when refined alongside company policies.
+- Why it matters: Enterprise AI agents increasingly handle sensitive operations across finance, HR, and infrastructure. If an AI agent is compromised or behaves unpredictably, having unnecessary access credentials could let it cause real damage—transfer funds, delete records, or expose private data. Dynamic permission scoping shrinks that window of potential harm by default, rather than relying on detecting bad behavior after it happens. The released dataset gives security teams a concrete way to test whether their AI agents are respecting proper access boundaries.
+
+### Universal BCI Personalization: One API for Frozen EEG Trunks and Foundation Models
+- URL: https://paperplaine.com/papers/universal-bci-personalization-one
+- Category: Quantitative Biology
+- Authors: Sergey Musienko
+- arXiv: 2607.22397
+- Plain-English subtitle: One standardized adapter for brain-computer interfaces across incompatible models
+- Summary: Brain-computer interfaces rely on machine learning models trained to decode brain signals, but each model type requires its own custom personalization approach — making it expensive and slow to support multiple architectures. This paper presents Nimbus Personalizer, a single standardized adapter that works across five different model types and four datasets without modification, recovering most of the accuracy gains of full retraining while using a fraction of the calibration time.
+- Why it matters: Brain-computer interface companies currently need to build separate personalization pipelines for each model they want to support. A universal adapter means they can integrate once and swap between models freely as technology improves, cutting engineering complexity and time-to-market. For users, faster calibration means less time in the setup chair before the system is ready to use.
+
+### Measuring inequality and social stratification with Lorenz curvature
+- URL: https://paperplaine.com/papers/measuring-inequality-and-social
+- Category: Economics
+- Authors: Antti Hippeläinen
+- arXiv: 2607.22110
+- Plain-English subtitle: A new way to measure inequality using the shape of wealth distribution curves
+- Summary: Researchers created a new family of tools for measuring economic inequality by analyzing the curvature of Lorenz curves, which visualize how wealth is distributed across a population. The approach only fully satisfies standard inequality principles when set to its simplest form, and when tested against World Bank data across countries, it produces different rankings than existing inequality measures—especially for income-based comparisons.
+- Why it matters: Inequality measurements guide policy decisions on taxation, welfare, and development aid, so how we measure it shapes real outcomes for millions of people. This new method offers a mathematically cleaner alternative that could challenge current rankings of which countries are most unequal, potentially shifting where international attention and resources focus. The approach is also practical: its simplest version has a closed-form solution that makes calculations straightforward rather than computationally intensive.
 
 ### 3D-Aware VLMs with Implicit and Explicit Geometries
 - URL: https://paperplaine.com/papers/3d-aware-vlms-with
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why different AI coding models build the same ideas in completely different ways
 - Summary: Two popular code-writing AI models agree on which programming concepts matter most, but they organize those concepts in their internal wiring in strikingly different ways. When tested on Python and Rust across both models, researchers found that what the models learn is universal, but how and where they learn it varies by model—suggesting that neural agreement is a property of ideas, not of computation itself.
 - Why it matters: Understanding how different AI models represent the same code concepts could improve model design, transfer learning, and interpretability. The finding that models share some neurons across languages but diverge in how they organize circuits reveals that current AI training doesn't converge on a single solution—which matters for predicting whether advances in one model will transfer to others, and for building more reliable code assistants.
-
-### Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement
-- URL: https://paperplaine.com/papers/real-time-eeg-cap
-- Category: Engineering
-- Authors: William Lehn-Schiøler, Mads Sverker Nilsson, Nicki Skafte Detlefsen
-- arXiv: 2607.20142
-- Plain-English subtitle: A camera that watches you put on an EEG cap and catches mistakes instantly
-- Summary: Researchers built a vision system that watches a webcam feed in real time to detect electrodes on an EEG cap and check whether they're placed in the right spots on the head. The system correctly identified electrode positions 94–97% of the time across different cap sizes and subjects, and runs fast enough on a regular computer to guide placement as it happens.
-- Why it matters: EEG tests require electrodes to be placed at precise locations on the scalp—mistakes mean bad data and wasted time. This system lets technicians see immediately whether electrodes are in the right position, reducing errors and training time. It works on standard laptops and cameras, making it practical for clinics and research labs that can't afford specialized equipment.
-
-### Deep Shape Regression for Planar Curves with Multimodal Covariates
-- URL: https://paperplaine.com/papers/deep-shape-regression-for
-- Category: Quantitative Biology
-- Authors: Manuel Pfeuffer, Roshan Prakash Rane, Hadya Yassin et al.
-- arXiv: 2607.19600
-- Plain-English subtitle: Predicting how brain shapes change using mixed types of medical data
-- Summary: Researchers developed a machine learning method that predicts how the outline of brain structures changes based on patient characteristics — combining different data types like age, genetics, and medical images in a single model. The approach automatically accounts for rotation and scaling differences that confuse standard statistical tools, and was tested on hippocampus scans from Alzheimer's disease patients, where it correctly identified how the brain region's shape shifts with disease progression.
-- Why it matters: Brain shape changes can signal disease progression or neurological decline, but current tools struggle to connect these changes to multiple patient factors simultaneously. This method handles the messy reality of medical data — some measurements come as numbers, others as images — making it possible to untangle which factors actually drive shape changes in conditions like Alzheimer's disease. That clarity could help clinicians spot early warning signs and design better targeted interventions.
-
-### Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context
-- URL: https://paperplaine.com/papers/windowed-mtp-removing-the
-- Category: Computer Science · AI
-- Authors: Alagappan Valliappan
-- arXiv: 2607.21535
-- Plain-English subtitle: Speeding up AI text generation at million-token lengths by cutting unnecessary draft memory
-- Summary: AI models use a fast 'draft' component to predict multiple tokens at once, then verify them in parallel for speed. But at million-token context lengths, the draft wastes energy reading the entire memory cache even though it only needs recent tokens—making it slower than having no draft at all. Windowed-MTP fixes this by letting the draft use only recent context, cutting its per-token cost by 28–44% while keeping the model's final output unchanged.
-- Why it matters: Large language models often process enormous documents, conversations, or codebases where context length now reaches a million tokens. Faster generation at these scales directly reduces latency for real users and cuts GPU memory overhead by reclaiming 7–11% of wasted cache. The technique is plug-and-play, requires no retraining, and works across different model architectures, making it immediately usable in production systems.
 
 ## About
 
