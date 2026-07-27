@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 513 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 516 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 175 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 176 papers in archive.
+  - "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science"
   - "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture"
-  - "3D-Aware VLMs with Implicit and Explicit Geometries"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 44 papers in archive.
   - "Advances in STV Margin Computation"
   - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Fault-tolerant quantum algorithms for simulating atomic nuclei"
   - "Complexity transition in the Dicke model of light-matter interaction"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 42 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 43 papers in archive.
+  - "Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator"
   - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
-  - "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 42 papers in archive.
   - "Universal BCI Personalization: One API for Frozen EEG Trunks and Foundation Models"
   - "Deep Shape Regression for Planar Curves with Multimodal Covariates"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 44 papers in archive.
   - "Cautious optimism for deep parameterized quantum circuits"
   - "Optimal use of a black-box learner in semiparametric estimation"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 42 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 43 papers in archive.
+  - "A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise"
   - "Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement"
-  - "Synthetic data generation framework for quality control automation in gravure printing"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 38 papers in archive.
   - "Measuring inequality and social stratification with Lorenz curvature"
   - "Accelerating fossil gas independence in Europe"
 
 ## 10 most recent papers
+
+### Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science
+- URL: https://paperplaine.com/papers/opaque-epistemic-mediation-how
+- Category: Computer Science · AI
+- Authors: Davide Scarso, Hugo Noronha de Almeida, Joaquim Pina
+- arXiv: 2607.22513
+- Plain-English subtitle: Why the same AI gives wildly different answers about fringe science claims
+- Summary: When researchers asked four major AI systems to evaluate a pseudo-scientific claim about human genetics, they got strikingly different answers—and the same AI sometimes contradicted itself depending on how it was accessed or when it was tested. Grok's default versions rated the claim as credible (70–75 points), while competitors scored it 15–40; the pattern disappeared entirely when testing established evolutionary science, suggesting the difference wasn't about the topic but about how these systems were configured.
+- Why it matters: People increasingly turn to AI for factual questions, often trusting its answers as authoritative. This research shows that AI systems can validate fringe or false claims depending on invisible internal settings—system prompts, safety filters, updates—that neither users nor independent researchers can see. Without transparency about how these configurations shape what AI calls credible, the public has no way to know when they're getting filtered answers or how much to trust them.
+
+### A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise
+- URL: https://paperplaine.com/papers/a-hierarchical-likelihood-model
+- Category: Engineering
+- Authors: Nicolas Goeman, Pierre-Antoine Thouvenin, Pierre Chainais
+- arXiv: 2607.22330
+- Plain-English subtitle: Recovering hidden information when measurements are noisy and incomplete
+- Summary: When scientists try to reconstruct hidden information from messy, real-world measurements, they face a thorny problem: the data contains multiple types of noise and gaps. This paper presents a mathematical framework and efficient algorithm that handles all these complications at once, without requiring tedious manual tuning. Tests on astronomical data show it outperforms existing methods in both accuracy and speed.
+- Why it matters: Inverse problems appear everywhere—from medical imaging to geophysics to astronomy—where researchers must infer what they can't directly observe from imperfect measurements. Previous approaches required researchers to either ignore some noise sources or manually calibrate workaround models, both of which degrade results. This method automates the process and handles realistic conditions more faithfully, letting scientists spend time on science rather than fitting their tools.
+
+### Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator
+- URL: https://paperplaine.com/papers/data-driven-modeling-of
+- Category: Mathematics
+- Authors: David Oexle, Tobias Breiten, Myles D. Bohon
+- arXiv: 2607.22457
+- Plain-English subtitle: Using math to untangle the chaotic waves inside experimental rocket engines
+- Summary: Researchers used high-speed video of flame patterns inside a rotating detonation engine to build mathematical models that predict how the combustion waves behave. By applying a technique called Koopman operator theory to the flame data, they could break down complex, nonlinear wave interactions into simpler, understandable pieces—even capturing standing wave patterns and noise that standard methods miss.
+- Why it matters: Rotating detonation engines could be significantly more efficient than conventional combustors, but engineers first need to predict and control their unpredictable wave behavior. These models provide a practical tool to understand what's happening inside the engine in real time, which is essential for tuning operating conditions and preventing unwanted vibrations or instability that could damage hardware.
 
 ### Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture
 - URL: https://paperplaine.com/papers/dynamic-capability-scoping-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI keeps awkwardly correcting itself, and how to fix it
 - Summary: Large language models systematically overuse epanorthosis—a rhetorical trick where speakers correct themselves mid-sentence, like "This is not a course. It is a journey of transformation." The habit stems from training on promotional writing and reward signals that favor confident, emphatic phrasing. Researchers measured this quirk across different model sizes and writing genres, finding models use the figure about twice as often as humans in formal speech, but rarely in casual conversation—and developed simple techniques that cut the overuse by 50 to 75 percent.
 - Why it matters: As AI writing becomes more prevalent, models risk reshaping human writing style rather than the other way around. The misalignment between how AI and humans naturally write could gradually shift our own rhetorical habits if we normalize machine-generated text as a standard. The techniques demonstrated here—lightweight fixes that tune models to human baselines per genre—show that calibration, not elimination, is the practical goal: AI should match human style, not define it.
-
-### Advances in STV Margin Computation
-- URL: https://paperplaine.com/papers/advances-in-stv-margin
-- Category: Computer Science
-- Authors: Michelle Blom, Alexander Ek, Peter J. Stuckey et al.
-- arXiv: 2607.21178
-- Plain-English subtitle: How to check if an election result could actually be wrong
-- Summary: Researchers developed a faster way to calculate how many ballots would need to be changed to flip the outcome of a single transferable vote election. The method produces tighter, more realistic estimates of election safety margins, making it practical to verify real election results without recounting every ballot.
-- Why it matters: Election officials can now conduct targeted audits that check only a portion of ballots while still confirming the announced winners are correct. This saves money and time while catching errors or fraud that might otherwise go undetected—turning a theoretical safety measure into something actually usable by jurisdictions running ranked-choice voting elections.
-
-### Fault-tolerant quantum algorithms for simulating atomic nuclei
-- URL: https://paperplaine.com/papers/fault-tolerant-quantum-algorithms
-- Category: Physics
-- Authors: James Benstead, Michael Garn, Neil Gaspar et al.
-- arXiv: 2607.21563
-- Plain-English subtitle: How quantum computers could unlock the physics of atomic nuclei
-- Summary: Researchers have designed the first complete blueprint for using fault-tolerant quantum computers to simulate atomic nuclei — a problem that's been largely overlooked despite its similarities to chemistry simulations. The resource requirements for simulating certain nuclei (like magnesium-32) are comparable to current chemistry benchmarks, though simulating lighter nuclei would require substantially more computing power.
-- Why it matters: Nuclear physics problems are notoriously difficult to solve on classical computers, limiting our understanding of rare isotopes and nuclear reactions. Quantum computers could crack these problems, but only if physicists first figure out what they actually need to build — this paper provides those concrete blueprints. This work bridges two communities that rarely talk: nuclear physicists and quantum computing engineers, potentially unlocking new applications for quantum computers once the hardware matures.
-
-### What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations
-- URL: https://paperplaine.com/papers/what-where-and-how
-- Category: Computer Science · AI
-- Authors: Piotr Wilam
-- arXiv: 2607.21491
-- Plain-English subtitle: Why different AI coding models build the same ideas in completely different ways
-- Summary: Two popular code-writing AI models agree on which programming concepts matter most, but they organize those concepts in their internal wiring in strikingly different ways. When tested on Python and Rust across both models, researchers found that what the models learn is universal, but how and where they learn it varies by model—suggesting that neural agreement is a property of ideas, not of computation itself.
-- Why it matters: Understanding how different AI models represent the same code concepts could improve model design, transfer learning, and interpretability. The finding that models share some neurons across languages but diverge in how they organize circuits reveals that current AI training doesn't converge on a single solution—which matters for predicting whether advances in one model will transfer to others, and for building more reliable code assistants.
 
 ## About
 

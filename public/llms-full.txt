@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 513 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 516 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-27
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science
+Subtitle: Why the same AI gives wildly different answers about fringe science claims
+URL: https://paperplaine.com/papers/opaque-epistemic-mediation-how
+Category: Computer Science · AI
+Authors: Davide Scarso, Hugo Noronha de Almeida, Joaquim Pina
+arXiv ID: 2607.22513
+arXiv URL: https://arxiv.org/abs/2607.22513
+Posted: 2026-07-27
+
+Summary: When researchers asked four major AI systems to evaluate a pseudo-scientific claim about human genetics, they got strikingly different answers—and the same AI sometimes contradicted itself depending on how it was accessed or when it was tested. Grok's default versions rated the claim as credible (70–75 points), while competitors scored it 15–40; the pattern disappeared entirely when testing established evolutionary science, suggesting the difference wasn't about the topic but about how these systems were configured.
+
+Why it matters: People increasingly turn to AI for factual questions, often trusting its answers as authoritative. This research shows that AI systems can validate fringe or false claims depending on invisible internal settings—system prompts, safety filters, updates—that neither users nor independent researchers can see. Without transparency about how these configurations shape what AI calls credible, the public has no way to know when they're getting filtered answers or how much to trust them.
+
+---
+Title: A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise
+Subtitle: Recovering hidden information when measurements are noisy and incomplete
+URL: https://paperplaine.com/papers/a-hierarchical-likelihood-model
+Category: Engineering
+Authors: Nicolas Goeman, Pierre-Antoine Thouvenin, Pierre Chainais
+arXiv ID: 2607.22330
+arXiv URL: https://arxiv.org/abs/2607.22330
+Posted: 2026-07-27
+
+Summary: When scientists try to reconstruct hidden information from messy, real-world measurements, they face a thorny problem: the data contains multiple types of noise and gaps. This paper presents a mathematical framework and efficient algorithm that handles all these complications at once, without requiring tedious manual tuning. Tests on astronomical data show it outperforms existing methods in both accuracy and speed.
+
+Why it matters: Inverse problems appear everywhere—from medical imaging to geophysics to astronomy—where researchers must infer what they can't directly observe from imperfect measurements. Previous approaches required researchers to either ignore some noise sources or manually calibrate workaround models, both of which degrade results. This method automates the process and handles realistic conditions more faithfully, letting scientists spend time on science rather than fitting their tools.
+
+---
+Title: Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator
+Subtitle: Using math to untangle the chaotic waves inside experimental rocket engines
+URL: https://paperplaine.com/papers/data-driven-modeling-of
+Category: Mathematics
+Authors: David Oexle, Tobias Breiten, Myles D. Bohon
+arXiv ID: 2607.22457
+arXiv URL: https://arxiv.org/abs/2607.22457
+Posted: 2026-07-27
+
+Summary: Researchers used high-speed video of flame patterns inside a rotating detonation engine to build mathematical models that predict how the combustion waves behave. By applying a technique called Koopman operator theory to the flame data, they could break down complex, nonlinear wave interactions into simpler, understandable pieces—even capturing standing wave patterns and noise that standard methods miss.
+
+Why it matters: Rotating detonation engines could be significantly more efficient than conventional combustors, but engineers first need to predict and control their unpredictable wave behavior. These models provide a practical tool to understand what's happening inside the engine in real time, which is essential for tuning operating conditions and preventing unwanted vibrations or instability that could damage hardware.
 
 ---
 Title: Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture
