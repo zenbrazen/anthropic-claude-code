@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 519 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 522 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 177 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 178 papers in archive.
+  - "Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents"
   - "Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification"
-  - "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 44 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 45 papers in archive.
+  - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
   - "Advances in STV Margin Computation"
-  - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 43 papers in archive.
   - "Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion"
   - "Fault-tolerant quantum algorithms for simulating atomic nuclei"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 45 papers in archive.
   - "Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses"
   - "Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 44 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 45 papers in archive.
+  - "Frequency-Based Reservoir computing"
   - "Cautious optimism for deep parameterized quantum circuits"
-  - "Optimal use of a black-box learner in semiparametric estimation"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 43 papers in archive.
   - "A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise"
   - "Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Accelerating fossil gas independence in Europe"
 
 ## 10 most recent papers
+
+### Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents
+- URL: https://paperplaine.com/papers/agentic-permissions-policy-algebra
+- Category: Computer Science · AI
+- Authors: Arseny Kravchenko, Vadim Liventsev, Innokentii Konstantinov et al.
+- arXiv: 2607.24625
+- Plain-English subtitle: Letting AI agents safely explore risky data without locking up their entire memory
+- Summary: Large language model agents that handle mixed sensitive and public data are vulnerable to attacks that trick them into leaking secrets. A new security framework called APPA lets agents temporarily explore untrusted information in a sandboxed branch of their reasoning, then safely bring back only cleaned results to their main context—blocking data theft attempts that were successful 31–50% of the time while recovering much of the work capacity that traditional security methods sacrifice.
+- Why it matters: Autonomous AI agents are increasingly deployed to access real databases, customer records, and proprietary documents. A system that cuts successful data theft from one-in-three attempts to near zero while keeping agents useful enough to do their jobs makes it practical to deploy them on mixed public-private data without choosing between security and function.
+
+### Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines
+- URL: https://paperplaine.com/papers/denial-of-deadline-network
+- Category: Computer Science
+- Authors: Jhonatan Tavori, Gur-Eyal Sela, Ion Stoica et al.
+- arXiv: 2607.24692
+- Plain-English subtitle: How attackers can sabotage AI predictions by slowing down the system
+- Summary: Researchers discovered that distributed AI systems combining fast and slow prediction paths are vulnerable to a new type of attack: an attacker can flood the network with dummy requests to delay the slow, accurate path so badly that predictions arrive too late to be used. In a self-driving car test, 4,000 burst requests increased decision latency from 92 milliseconds to 2 seconds, cutting the accuracy benefit of the slower path in half and reducing object detection quality by 7 percentage points on average—with some rare objects like stop signs losing nearly half their detection accuracy.
+- Why it matters: Modern AI systems designed to be both fast and accurate rely on a backup slow path to improve predictions when time allows. This research reveals they can be attacked without stealing any model secrets or user data—only by congesting shared resources. Self-driving cars, drones, and other safety-critical systems using this architecture could fail to detect important objects in attacks, raising serious security questions for systems already deploying these hybrid inference designs.
+
+### Frequency-Based Reservoir computing
+- URL: https://paperplaine.com/papers/frequency-based-reservoir-computing
+- Category: Statistics
+- Authors: Arthur S Powanwe
+- arXiv: 2607.24420
+- Plain-English subtitle: Building smarter prediction machines by copying how the brain handles rhythms
+- Summary: A new approach to reservoir computing—a fast machine learning technique for forecasting time series—organizes the internal processing around frequencies instead of random connections. By modeling the system as independent oscillators tuned to different frequencies, the method performs as well as or better than traditional random reservoirs and can actually be optimized to improve short-term predictions, something random reservoirs cannot do.
+- Why it matters: Reservoir computing is already used for real-time forecasting in weather, finance, and engineering systems because it trains faster than deep neural networks. This frequency-based design makes it work better while also becoming interpretable—you can actually understand why it makes specific predictions—rather than operating as a black box. That combination of speed, accuracy, and explainability matters for applications where you need both reliable forecasts and the ability to trust why the system made them.
 
 ### Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification
 - URL: https://paperplaine.com/papers/co-learning-for-missing
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Giving AI assistants only the permissions they need for each specific task
 - Summary: AI systems at companies typically get access to all tools they might ever need, creating a security gap if the AI goes rogue or gets hacked. Researchers designed a three-layer system that dynamically grants AI agents only the specific permissions required for their current task, and created a dataset of 600 realistic enterprise tasks labeled with minimum required permissions to test this approach. The method reduced security violations by 93% when refined alongside company policies.
 - Why it matters: Enterprise AI agents increasingly handle sensitive operations across finance, HR, and infrastructure. If an AI agent is compromised or behaves unpredictably, having unnecessary access credentials could let it cause real damage—transfer funds, delete records, or expose private data. Dynamic permission scoping shrinks that window of potential harm by default, rather than relying on detecting bad behavior after it happens. The released dataset gives security teams a concrete way to test whether their AI agents are respecting proper access boundaries.
-
-### Universal BCI Personalization: One API for Frozen EEG Trunks and Foundation Models
-- URL: https://paperplaine.com/papers/universal-bci-personalization-one
-- Category: Quantitative Biology
-- Authors: Sergey Musienko
-- arXiv: 2607.22397
-- Plain-English subtitle: One standardized adapter for brain-computer interfaces across incompatible models
-- Summary: Brain-computer interfaces rely on machine learning models trained to decode brain signals, but each model type requires its own custom personalization approach — making it expensive and slow to support multiple architectures. This paper presents Nimbus Personalizer, a single standardized adapter that works across five different model types and four datasets without modification, recovering most of the accuracy gains of full retraining while using a fraction of the calibration time.
-- Why it matters: Brain-computer interface companies currently need to build separate personalization pipelines for each model they want to support. A universal adapter means they can integrate once and swap between models freely as technology improves, cutting engineering complexity and time-to-market. For users, faster calibration means less time in the setup chair before the system is ready to use.
-
-### Measuring inequality and social stratification with Lorenz curvature
-- URL: https://paperplaine.com/papers/measuring-inequality-and-social
-- Category: Economics
-- Authors: Antti Hippeläinen
-- arXiv: 2607.22110
-- Plain-English subtitle: A new way to measure inequality using the shape of wealth distribution curves
-- Summary: Researchers created a new family of tools for measuring economic inequality by analyzing the curvature of Lorenz curves, which visualize how wealth is distributed across a population. The approach only fully satisfies standard inequality principles when set to its simplest form, and when tested against World Bank data across countries, it produces different rankings than existing inequality measures—especially for income-based comparisons.
-- Why it matters: Inequality measurements guide policy decisions on taxation, welfare, and development aid, so how we measure it shapes real outcomes for millions of people. This new method offers a mathematically cleaner alternative that could challenge current rankings of which countries are most unequal, potentially shifting where international attention and resources focus. The approach is also practical: its simplest version has a closed-form solution that makes calculations straightforward rather than computationally intensive.
-
-### 3D-Aware VLMs with Implicit and Explicit Geometries
-- URL: https://paperplaine.com/papers/3d-aware-vlms-with
-- Category: Computer Science · AI
-- Authors: Wenhao Li, Xueying Jiang, Quanhao Qian et al.
-- arXiv: 2607.21595
-- Plain-English subtitle: Teaching AI to understand 3D space from flat video footage
-- Summary: Most AI vision systems trained on 2D images struggle to understand 3D spatial relationships—where objects are, how far apart they sit, how they move in three-dimensional space. Researchers created VLM-IE3D, which learns 3D geometry directly from regular video and adds that spatial understanding to vision-language models, enabling them to handle tasks like detecting objects in 3D scenes, pinpointing where things are in space, and reasoning about depth and distance.
-- Why it matters: Current AI systems can describe what they see in images but can't reliably reason about 3D space, limiting their usefulness in robotics, autonomous vehicles, and 3D scene understanding. This approach works from ordinary video alone—no special 3D sensors required—making it cheaper and easier to deploy. Better 3D reasoning could improve safety in self-driving cars, enable robots to navigate and manipulate objects more accurately, and unlock new capabilities in AR and spatial computing applications.
 
 ## About
 

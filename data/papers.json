@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.24625",
+    "title": "Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents",
+    "authors": "Arseny Kravchenko, Vadim Liventsev, Innokentii Konstantinov et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-27T16:19:45Z",
+    "publishedFormatted": "Jul 27, 2026",
+    "subtitle": "Letting AI agents safely explore risky data without locking up their entire memory",
+    "summary": "Large language model agents that handle mixed sensitive and public data are vulnerable to attacks that trick them into leaking secrets. A new security framework called APPA lets agents temporarily explore untrusted information in a sandboxed branch of their reasoning, then safely bring back only cleaned results to their main context—blocking data theft attempts that were successful 31–50% of the time while recovering much of the work capacity that traditional security methods sacrifice.",
+    "whyItMatters": "Autonomous AI agents are increasingly deployed to access real databases, customer records, and proprietary documents. A system that cuts successful data theft from one-in-three attempts to near zero while keeping agents useful enough to do their jobs makes it practical to deploy them on mixed public-private data without choosing between security and function.",
+    "fetchedAt": "2026-07-28T20:12:06.975Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 10,
+      "wordCount": 178
+    },
+    "slug": "agentic-permissions-policy-algebra"
+  },
+  {
+    "id": "2607.24692",
+    "title": "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines",
+    "authors": "Jhonatan Tavori, Gur-Eyal Sela, Ion Stoica et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-07-27T17:34:09Z",
+    "publishedFormatted": "Jul 27, 2026",
+    "subtitle": "How attackers can sabotage AI predictions by slowing down the system",
+    "summary": "Researchers discovered that distributed AI systems combining fast and slow prediction paths are vulnerable to a new type of attack: an attacker can flood the network with dummy requests to delay the slow, accurate path so badly that predictions arrive too late to be used. In a self-driving car test, 4,000 burst requests increased decision latency from 92 milliseconds to 2 seconds, cutting the accuracy benefit of the slower path in half and reducing object detection quality by 7 percentage points on average—with some rare objects like stop signs losing nearly half their detection accuracy.",
+    "whyItMatters": "Modern AI systems designed to be both fast and accurate rely on a backup slow path to improve predictions when time allows. This research reveals they can be attacked without stealing any model secrets or user data—only by congesting shared resources. Self-driving cars, drones, and other safety-critical systems using this architecture could fail to detect important objects in attacks, raising serious security questions for systems already deploying these hybrid inference designs.",
+    "fetchedAt": "2026-07-28T20:12:10.937Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 281
+    },
+    "slug": "denial-of-deadline-network"
+  },
+  {
+    "id": "2607.24420",
+    "title": "Frequency-Based Reservoir computing",
+    "authors": "Arthur S Powanwe",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-27T13:33:13Z",
+    "publishedFormatted": "Jul 27, 2026",
+    "subtitle": "Building smarter prediction machines by copying how the brain handles rhythms",
+    "summary": "A new approach to reservoir computing—a fast machine learning technique for forecasting time series—organizes the internal processing around frequencies instead of random connections. By modeling the system as independent oscillators tuned to different frequencies, the method performs as well as or better than traditional random reservoirs and can actually be optimized to improve short-term predictions, something random reservoirs cannot do.",
+    "whyItMatters": "Reservoir computing is already used for real-time forecasting in weather, finance, and engineering systems because it trains faster than deep neural networks. This frequency-based design makes it work better while also becoming interpretable—you can actually understand why it makes specific predictions—rather than operating as a black box. That combination of speed, accuracy, and explainability matters for applications where you need both reliable forecasts and the ability to trust why the system made them.",
+    "fetchedAt": "2026-07-28T20:12:14.490Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 252
+    },
+    "slug": "frequency-based-reservoir-computing"
+  },
+  {
     "id": "2607.24683",
     "title": "Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification",
     "authors": "Francisco Mena, Dino Ienco, Roberto Interdonato et al.",

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2026 09:36:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 20:12:15 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents</title>
+      <link>https://paperplaine.com/papers/agentic-permissions-policy-algebra</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/agentic-permissions-policy-algebra</guid>
+      <pubDate>Mon, 27 Jul 2026 16:19:45 GMT</pubDate>
+      <author>Arseny Kravchenko, Vadim Liventsev, Innokentii Konstantinov et al.</author>
+      <category>AI</category>
+      <description>Letting AI agents safely explore risky data without locking up their entire memory</description>
+      <content:encoded><![CDATA[<p><em>Letting AI agents safely explore risky data without locking up their entire memory</em></p><p>Large language model agents that handle mixed sensitive and public data are vulnerable to attacks that trick them into leaking secrets. A new security framework called APPA lets agents temporarily explore untrusted information in a sandboxed branch of their reasoning, then safely bring back only cleaned results to their main context—blocking data theft attempts that were successful 31–50% of the time while recovering much of the work capacity that traditional security methods sacrifice.</p><p><strong>Why it matters:</strong> Autonomous AI agents are increasingly deployed to access real databases, customer records, and proprietary documents. A system that cuts successful data theft from one-in-three attempts to near zero while keeping agents useful enough to do their jobs makes it practical to deploy them on mixed public-private data without choosing between security and function.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines</title>
+      <link>https://paperplaine.com/papers/denial-of-deadline-network</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/denial-of-deadline-network</guid>
+      <pubDate>Mon, 27 Jul 2026 17:34:09 GMT</pubDate>
+      <author>Jhonatan Tavori, Gur-Eyal Sela, Ion Stoica et al.</author>
+      <category>Comp Sci</category>
+      <description>How attackers can sabotage AI predictions by slowing down the system</description>
+      <content:encoded><![CDATA[<p><em>How attackers can sabotage AI predictions by slowing down the system</em></p><p>Researchers discovered that distributed AI systems combining fast and slow prediction paths are vulnerable to a new type of attack: an attacker can flood the network with dummy requests to delay the slow, accurate path so badly that predictions arrive too late to be used. In a self-driving car test, 4,000 burst requests increased decision latency from 92 milliseconds to 2 seconds, cutting the accuracy benefit of the slower path in half and reducing object detection quality by 7 percentage points on average—with some rare objects like stop signs losing nearly half their detection accuracy.</p><p><strong>Why it matters:</strong> Modern AI systems designed to be both fast and accurate rely on a backup slow path to improve predictions when time allows. This research reveals they can be attacked without stealing any model secrets or user data—only by congesting shared resources. Self-driving cars, drones, and other safety-critical systems using this architecture could fail to detect important objects in attacks, raising serious security questions for systems already deploying these hybrid inference designs.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Frequency-Based Reservoir computing</title>
+      <link>https://paperplaine.com/papers/frequency-based-reservoir-computing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/frequency-based-reservoir-computing</guid>
+      <pubDate>Mon, 27 Jul 2026 13:33:13 GMT</pubDate>
+      <author>Arthur S Powanwe</author>
+      <category>Statistics</category>
+      <description>Building smarter prediction machines by copying how the brain handles rhythms</description>
+      <content:encoded><![CDATA[<p><em>Building smarter prediction machines by copying how the brain handles rhythms</em></p><p>A new approach to reservoir computing—a fast machine learning technique for forecasting time series—organizes the internal processing around frequencies instead of random connections. By modeling the system as independent oscillators tuned to different frequencies, the method performs as well as or better than traditional random reservoirs and can actually be optimized to improve short-term predictions, something random reservoirs cannot do.</p><p><strong>Why it matters:</strong> Reservoir computing is already used for real-time forecasting in weather, finance, and engineering systems because it trains faster than deep neural networks. This frequency-based design makes it work better while also becoming interpretable—you can actually understand why it makes specific predictions—rather than operating as a black box. That combination of speed, accuracy, and explainability matters for applications where you need both reliable forecasts and the ability to trust why the system made them.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification</title>
       <link>https://paperplaine.com/papers/co-learning-for-missing</link>

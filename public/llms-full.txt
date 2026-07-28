@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 519 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 522 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-28
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents
+Subtitle: Letting AI agents safely explore risky data without locking up their entire memory
+URL: https://paperplaine.com/papers/agentic-permissions-policy-algebra
+Category: Computer Science · AI
+Authors: Arseny Kravchenko, Vadim Liventsev, Innokentii Konstantinov et al.
+arXiv ID: 2607.24625
+arXiv URL: https://arxiv.org/abs/2607.24625
+Posted: 2026-07-28
+
+Summary: Large language model agents that handle mixed sensitive and public data are vulnerable to attacks that trick them into leaking secrets. A new security framework called APPA lets agents temporarily explore untrusted information in a sandboxed branch of their reasoning, then safely bring back only cleaned results to their main context—blocking data theft attempts that were successful 31–50% of the time while recovering much of the work capacity that traditional security methods sacrifice.
+
+Why it matters: Autonomous AI agents are increasingly deployed to access real databases, customer records, and proprietary documents. A system that cuts successful data theft from one-in-three attempts to near zero while keeping agents useful enough to do their jobs makes it practical to deploy them on mixed public-private data without choosing between security and function.
+
+---
+Title: Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines
+Subtitle: How attackers can sabotage AI predictions by slowing down the system
+URL: https://paperplaine.com/papers/denial-of-deadline-network
+Category: Computer Science
+Authors: Jhonatan Tavori, Gur-Eyal Sela, Ion Stoica et al.
+arXiv ID: 2607.24692
+arXiv URL: https://arxiv.org/abs/2607.24692
+Posted: 2026-07-28
+
+Summary: Researchers discovered that distributed AI systems combining fast and slow prediction paths are vulnerable to a new type of attack: an attacker can flood the network with dummy requests to delay the slow, accurate path so badly that predictions arrive too late to be used. In a self-driving car test, 4,000 burst requests increased decision latency from 92 milliseconds to 2 seconds, cutting the accuracy benefit of the slower path in half and reducing object detection quality by 7 percentage points on average—with some rare objects like stop signs losing nearly half their detection accuracy.
+
+Why it matters: Modern AI systems designed to be both fast and accurate rely on a backup slow path to improve predictions when time allows. This research reveals they can be attacked without stealing any model secrets or user data—only by congesting shared resources. Self-driving cars, drones, and other safety-critical systems using this architecture could fail to detect important objects in attacks, raising serious security questions for systems already deploying these hybrid inference designs.
+
+---
+Title: Frequency-Based Reservoir computing
+Subtitle: Building smarter prediction machines by copying how the brain handles rhythms
+URL: https://paperplaine.com/papers/frequency-based-reservoir-computing
+Category: Statistics
+Authors: Arthur S Powanwe
+arXiv ID: 2607.24420
+arXiv URL: https://arxiv.org/abs/2607.24420
+Posted: 2026-07-28
+
+Summary: A new approach to reservoir computing—a fast machine learning technique for forecasting time series—organizes the internal processing around frequencies instead of random connections. By modeling the system as independent oscillators tuned to different frequencies, the method performs as well as or better than traditional random reservoirs and can actually be optimized to improve short-term predictions, something random reservoirs cannot do.
+
+Why it matters: Reservoir computing is already used for real-time forecasting in weather, finance, and engineering systems because it trains faster than deep neural networks. This frequency-based design makes it work better while also becoming interpretable—you can actually understand why it makes specific predictions—rather than operating as a black box. That combination of speed, accuracy, and explainability matters for applications where you need both reliable forecasts and the ability to trust why the system made them.
 
 ---
 Title: Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification
