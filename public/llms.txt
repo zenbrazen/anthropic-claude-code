@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 516 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 519 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 176 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 177 papers in archive.
+  - "Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification"
   - "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science"
-  - "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 44 papers in archive.
   - "Advances in STV Margin Computation"
   - "Toward cryptographically verifiable authorization for autonomous AI agents: A security hypothesis, preliminary formal model, and proof-of-concept implementation"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 42 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 43 papers in archive.
+  - "Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion"
   - "Fault-tolerant quantum algorithms for simulating atomic nuclei"
-  - "Complexity transition in the Dicke model of light-matter interaction"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 43 papers in archive.
   - "Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator"
   - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 42 papers in archive.
   - "Universal BCI Personalization: One API for Frozen EEG Trunks and Foundation Models"
   - "Deep Shape Regression for Planar Curves with Multimodal Covariates"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 44 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 45 papers in archive.
+  - "Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses"
   - "Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models"
-  - "Retail Trader's Ruin: An Anatomy of Popular Signal Failure"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 44 papers in archive.
   - "Cautious optimism for deep parameterized quantum circuits"
   - "Optimal use of a black-box learner in semiparametric estimation"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Accelerating fossil gas independence in Europe"
 
 ## 10 most recent papers
+
+### Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification
+- URL: https://paperplaine.com/papers/co-learning-for-missing
+- Category: Computer Science · AI
+- Authors: Francisco Mena, Dino Ienco, Roberto Interdonato et al.
+- arXiv: 2607.24683
+- Plain-English subtitle: Training AI systems that work even when some data sources suddenly disappear
+- Summary: Machine learning systems that combine multiple data sources—like text, images, and audio—perform better than those using a single source. But real systems often lose access to some sources unpredictably due to sensor failures or privacy concerns. Researchers developed a framework where different data sources learn to help each other compensate for missing information, and tested it on systems missing anywhere from one to nearly all of their data sources.
+- Why it matters: Autonomous vehicles, medical diagnostics, and industrial monitoring systems rely on multiple sensors and data types working together. When one component fails—a camera goes dark, a sensor malfunctions, or privacy rules block access to certain data—current systems often collapse. This approach lets systems keep working reasonably well even when critical data sources vanish unexpectedly, making real-world AI deployments more reliable and cheaper to maintain.
+
+### Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses
+- URL: https://paperplaine.com/papers/are-cryptocurrencies-real-financial
+- Category: Quantitative Finance
+- Authors: Marco Bianchetti, Camilla Ricci, Marco Scaringi
+- arXiv: 2607.21826
+- Plain-English subtitle: When cryptocurrency prices detach from reality and crash
+- Summary: Bitcoin and Ether show unmistakable mathematical signatures of financial bubbles—periods where prices spiral far beyond what fundamentals justify—weeks before they actually crash. Using models originally designed to detect stock market bubbles, researchers identified bubble conditions in Bitcoin during December 2017 and January 2018, and in Ether in June and January 2018, each time followed by major price collapses.
+- Why it matters: Cryptocurrencies remain largely driven by investor mood rather than underlying value, making them vulnerable to sudden crashes that can wipe out retail investors. These mathematical detection methods could help traders and fund managers spot dangerous bubble conditions before prices implode, offering a way to quantify the real risk in a market that often feels like pure speculation.
+
+### Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion
+- URL: https://paperplaine.com/papers/coincidence-free-certification-and
+- Category: Physics
+- Authors: M. G. Damaceno, G. H. dos Santos, N. Rubiano da Silva et al.
+- arXiv: 2607.24718
+- Plain-English subtitle: Testing quantum entanglement using simple light measurements instead of rare coincidences
+- Summary: Physicists have found a way to verify that pairs of photons are quantum-entangled without waiting around for the notoriously difficult task of catching both photons at the detector simultaneously. By flooding one part of the photon pair with bright classical light and measuring what comes out, they can now certify entanglement using ordinary intensity measurements—the same kind a simple camera makes. The team demonstrated this works across the full spatial properties of the photon pairs.
+- Why it matters: Most quantum light sources are painfully slow to characterize because coincidence counting—detecting both photons in a pair at the same instant—requires either waiting a very long time or using expensive, finicky equipment. This new method trades that bottleneck for a straightforward intensity measurement, making it practical to quickly assess and optimize photon pair sources in labs where space or budget is tight, or where getting perfect alignment is difficult.
 
 ### Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science
 - URL: https://paperplaine.com/papers/opaque-epistemic-mediation-how
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to understand 3D space from flat video footage
 - Summary: Most AI vision systems trained on 2D images struggle to understand 3D spatial relationships—where objects are, how far apart they sit, how they move in three-dimensional space. Researchers created VLM-IE3D, which learns 3D geometry directly from regular video and adds that spatial understanding to vision-language models, enabling them to handle tasks like detecting objects in 3D scenes, pinpointing where things are in space, and reasoning about depth and distance.
 - Why it matters: Current AI systems can describe what they see in images but can't reliably reason about 3D space, limiting their usefulness in robotics, autonomous vehicles, and 3D scene understanding. This approach works from ordinary video alone—no special 3D sensors required—making it cheaper and easier to deploy. Better 3D reasoning could improve safety in self-driving cars, enable robots to navigate and manipulate objects more accurately, and unlock new capabilities in AR and spatial computing applications.
-
-### Cautious optimism for deep parameterized quantum circuits
-- URL: https://paperplaine.com/papers/cautious-optimism-for-deep
-- Category: Statistics
-- Authors: Marie Kempkes, Elies Gil-Fuster, Carlos Bravo-Prieto et al.
-- arXiv: 2607.21409
-- Plain-English subtitle: Bigger quantum machine learning models can actually work better, not worse
-- Summary: Quantum machine learning models can get better at recognizing new patterns as they grow larger and more complex, defying the conventional expectation that bigger models overfit and fail on unseen data. This "double descent" behavior — where performance dips then recovers — was confirmed across multiple datasets and model sizes, grounded in mathematical analysis of how quantum circuits behave.
-- Why it matters: Quantum computers are still in early stages, and researchers have worried that scaling up quantum machine learning models would hit the same wall as classical models: they'd memorize training data and fail on anything new. This work suggests that quantum circuits might naturally avoid that trap, making it more plausible to build larger, more capable quantum learning systems. It doesn't solve quantum machine learning yet, but it removes one major barrier to scaling up.
-
-### Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models
-- URL: https://paperplaine.com/papers/predictive-extrema-unprofitable-policies
-- Category: Quantitative Finance
-- Authors: Ayoub Jadouli
-- arXiv: 2607.19453
-- Plain-English subtitle: Why AI models that predict crypto price swings still lose money in practice
-- Summary: An audit of machine-learning models designed to predict extreme price movements and time trades on Binance found that none of them beat simply holding cryptocurrency—most lost 1–44% over their test periods even though the models accurately identified price patterns. The best-performing model predicted local price extrema with high precision but generated trading strategies that underperformed buy-and-hold by 2.80 percentage points after accounting for trading costs.
-- Why it matters: This work exposes a common gap in cryptocurrency and algorithmic trading: accurate price prediction doesn't automatically translate into profitable trading decisions. The findings suggest that even when AI systems correctly identify when prices will peak or bottom, the costs and timing of acting on those predictions make the trades net negative—a crucial reality check for traders and firms considering expensive machine-learning systems to automate their market timing.
-
-### Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it
-- URL: https://paperplaine.com/papers/artificial-epanorthosis-why-large
-- Category: Computer Science · AI
-- Authors: Federico Boggia
-- arXiv: 2607.21498
-- Plain-English subtitle: Why AI keeps awkwardly correcting itself, and how to fix it
-- Summary: Large language models systematically overuse epanorthosis—a rhetorical trick where speakers correct themselves mid-sentence, like "This is not a course. It is a journey of transformation." The habit stems from training on promotional writing and reward signals that favor confident, emphatic phrasing. Researchers measured this quirk across different model sizes and writing genres, finding models use the figure about twice as often as humans in formal speech, but rarely in casual conversation—and developed simple techniques that cut the overuse by 50 to 75 percent.
-- Why it matters: As AI writing becomes more prevalent, models risk reshaping human writing style rather than the other way around. The misalignment between how AI and humans naturally write could gradually shift our own rhetorical habits if we normalize machine-generated text as a standard. The techniques demonstrated here—lightweight fixes that tune models to human baselines per genre—show that calibration, not elimination, is the practical goal: AI should match human style, not define it.
 
 ## About
 

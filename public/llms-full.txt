@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 516 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-27
+This file contains the complete plain-English text of all 519 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-28
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification
+Subtitle: Training AI systems that work even when some data sources suddenly disappear
+URL: https://paperplaine.com/papers/co-learning-for-missing
+Category: Computer Science · AI
+Authors: Francisco Mena, Dino Ienco, Roberto Interdonato et al.
+arXiv ID: 2607.24683
+arXiv URL: https://arxiv.org/abs/2607.24683
+Posted: 2026-07-28
+
+Summary: Machine learning systems that combine multiple data sources—like text, images, and audio—perform better than those using a single source. But real systems often lose access to some sources unpredictably due to sensor failures or privacy concerns. Researchers developed a framework where different data sources learn to help each other compensate for missing information, and tested it on systems missing anywhere from one to nearly all of their data sources.
+
+Why it matters: Autonomous vehicles, medical diagnostics, and industrial monitoring systems rely on multiple sensors and data types working together. When one component fails—a camera goes dark, a sensor malfunctions, or privacy rules block access to certain data—current systems often collapse. This approach lets systems keep working reasonably well even when critical data sources vanish unexpectedly, making real-world AI deployments more reliable and cheaper to maintain.
+
+---
+Title: Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses
+Subtitle: When cryptocurrency prices detach from reality and crash
+URL: https://paperplaine.com/papers/are-cryptocurrencies-real-financial
+Category: Quantitative Finance
+Authors: Marco Bianchetti, Camilla Ricci, Marco Scaringi
+arXiv ID: 2607.21826
+arXiv URL: https://arxiv.org/abs/2607.21826
+Posted: 2026-07-28
+
+Summary: Bitcoin and Ether show unmistakable mathematical signatures of financial bubbles—periods where prices spiral far beyond what fundamentals justify—weeks before they actually crash. Using models originally designed to detect stock market bubbles, researchers identified bubble conditions in Bitcoin during December 2017 and January 2018, and in Ether in June and January 2018, each time followed by major price collapses.
+
+Why it matters: Cryptocurrencies remain largely driven by investor mood rather than underlying value, making them vulnerable to sudden crashes that can wipe out retail investors. These mathematical detection methods could help traders and fund managers spot dangerous bubble conditions before prices implode, offering a way to quantify the real risk in a market that often feels like pure speculation.
+
+---
+Title: Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion
+Subtitle: Testing quantum entanglement using simple light measurements instead of rare coincidences
+URL: https://paperplaine.com/papers/coincidence-free-certification-and
+Category: Physics
+Authors: M. G. Damaceno, G. H. dos Santos, N. Rubiano da Silva et al.
+arXiv ID: 2607.24718
+arXiv URL: https://arxiv.org/abs/2607.24718
+Posted: 2026-07-28
+
+Summary: Physicists have found a way to verify that pairs of photons are quantum-entangled without waiting around for the notoriously difficult task of catching both photons at the detector simultaneously. By flooding one part of the photon pair with bright classical light and measuring what comes out, they can now certify entanglement using ordinary intensity measurements—the same kind a simple camera makes. The team demonstrated this works across the full spatial properties of the photon pairs.
+
+Why it matters: Most quantum light sources are painfully slow to characterize because coincidence counting—detecting both photons in a pair at the same instant—requires either waiting a very long time or using expensive, finicky equipment. This new method trades that bottleneck for a straightforward intensity measurement, making it practical to quickly assess and optimize photon pair sources in labs where space or budget is tight, or where getting perfect alignment is difficult.
 
 ---
 Title: Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science
