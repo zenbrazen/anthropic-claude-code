@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 522 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 525 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 178 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 179 papers in archive.
+  - "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities"
   - "Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents"
-  - "Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 45 papers in archive.
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
   - "Advances in STV Margin Computation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 43 papers in archive.
   - "Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion"
   - "Fault-tolerant quantum algorithms for simulating atomic nuclei"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 43 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 44 papers in archive.
+  - "Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees"
   - "Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator"
-  - "Local minimizers in \mathbb{R}^n of vector Allen-Cahn with an (n+1)-junction"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 42 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 43 papers in archive.
+  - "GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling"
   - "Universal BCI Personalization: One API for Frozen EEG Trunks and Foundation Models"
-  - "Deep Shape Regression for Planar Curves with Multimodal Covariates"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 45 papers in archive.
   - "Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses"
   - "Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Accelerating fossil gas independence in Europe"
 
 ## 10 most recent papers
+
+### MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities
+- URL: https://paperplaine.com/papers/modus-decoder-only-any
+- Category: Computer Science · AI
+- Authors: Mingqiao Ye, Zhaochong An, Zhitong Gao et al.
+- arXiv: 2607.25948
+- Plain-English subtitle: One model that turns any type of data into any other type
+- Summary: Researchers built a single AI model that can take any mix of inputs—images, text, audio, numbers—and produce any type of output, without needing specialized parts for each task. The model performs competitively with systems built specifically for individual jobs, while remaining flexible enough to chain outputs together or verify its own answers by generating data in multiple formats.
+- Why it matters: Most AI systems today are built separately for each task—one for image-to-text, another for audio-to-image, and so on. A single unified model cuts engineering complexity and lets researchers in fields like astronomy or ecology build multimodal systems without training from scratch each time. The open-source release means these tools are immediately available to scientists and companies working across different data types.
+
+### Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees
+- URL: https://paperplaine.com/papers/iterate-wronskians-over-mathbb
+- Category: Mathematics
+- Authors: Markuss G. Kenins, Arthemy V. Kiselev
+- arXiv: 2607.26039
+- Plain-English subtitle: How fast polynomials grow when you repeatedly apply a mathematical operation
+- Summary: Mathematicians proved that when you repeatedly apply a certain algebraic operation to polynomials, their complexity grows no faster than a specific sequence called the N-bonacci numbers. In special cases, polynomials actually reach this maximum growth rate, showing the bound is tight.
+- Why it matters: Understanding growth rates of polynomial operations matters for computer algebra systems and symbolic computation, where knowing worst-case complexity helps optimize algorithms. This result provides a provable ceiling on how quickly these operations can spiral in complexity, which improves estimates for computational cost and feasibility.
+
+### GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling
+- URL: https://paperplaine.com/papers/graphidyom-a-graph-native
+- Category: Quantitative Biology
+- Authors: Lluc Bono Rosselló
+- arXiv: 2607.25787
+- Plain-English subtitle: Making a music prediction model easier to use and understand
+- Summary: A researcher rebuilt a widely-used model that predicts what note comes next in music, translating it from an outdated programming language into modern Python. The new version exposes how the model stores and retrieves memories, making it possible to inspect, visualize, and modify the internal workings that drive its predictions.
+- Why it matters: IDyOM is the standard tool for testing theories about how humans anticipate music, but its technical barriers meant most researchers couldn't easily modify or integrate it into their own work. GraphIDyOM removes those barriers, potentially accelerating research into musical cognition, improving music recommendation systems, and enabling new interactive applications that respond to listener expectations in real time.
 
 ### Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents
 - URL: https://paperplaine.com/papers/agentic-permissions-policy-algebra
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why the same AI gives wildly different answers about fringe science claims
 - Summary: When researchers asked four major AI systems to evaluate a pseudo-scientific claim about human genetics, they got strikingly different answers—and the same AI sometimes contradicted itself depending on how it was accessed or when it was tested. Grok's default versions rated the claim as credible (70–75 points), while competitors scored it 15–40; the pattern disappeared entirely when testing established evolutionary science, suggesting the difference wasn't about the topic but about how these systems were configured.
 - Why it matters: People increasingly turn to AI for factual questions, often trusting its answers as authoritative. This research shows that AI systems can validate fringe or false claims depending on invisible internal settings—system prompts, safety filters, updates—that neither users nor independent researchers can see. Without transparency about how these configurations shape what AI calls credible, the public has no way to know when they're getting filtered answers or how much to trust them.
-
-### A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise
-- URL: https://paperplaine.com/papers/a-hierarchical-likelihood-model
-- Category: Engineering
-- Authors: Nicolas Goeman, Pierre-Antoine Thouvenin, Pierre Chainais
-- arXiv: 2607.22330
-- Plain-English subtitle: Recovering hidden information when measurements are noisy and incomplete
-- Summary: When scientists try to reconstruct hidden information from messy, real-world measurements, they face a thorny problem: the data contains multiple types of noise and gaps. This paper presents a mathematical framework and efficient algorithm that handles all these complications at once, without requiring tedious manual tuning. Tests on astronomical data show it outperforms existing methods in both accuracy and speed.
-- Why it matters: Inverse problems appear everywhere—from medical imaging to geophysics to astronomy—where researchers must infer what they can't directly observe from imperfect measurements. Previous approaches required researchers to either ignore some noise sources or manually calibrate workaround models, both of which degrade results. This method automates the process and handles realistic conditions more faithfully, letting scientists spend time on science rather than fitting their tools.
-
-### Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator
-- URL: https://paperplaine.com/papers/data-driven-modeling-of
-- Category: Mathematics
-- Authors: David Oexle, Tobias Breiten, Myles D. Bohon
-- arXiv: 2607.22457
-- Plain-English subtitle: Using math to untangle the chaotic waves inside experimental rocket engines
-- Summary: Researchers used high-speed video of flame patterns inside a rotating detonation engine to build mathematical models that predict how the combustion waves behave. By applying a technique called Koopman operator theory to the flame data, they could break down complex, nonlinear wave interactions into simpler, understandable pieces—even capturing standing wave patterns and noise that standard methods miss.
-- Why it matters: Rotating detonation engines could be significantly more efficient than conventional combustors, but engineers first need to predict and control their unpredictable wave behavior. These models provide a practical tool to understand what's happening inside the engine in real time, which is essential for tuning operating conditions and preventing unwanted vibrations or instability that could damage hardware.
-
-### Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture
-- URL: https://paperplaine.com/papers/dynamic-capability-scoping-for
-- Category: Computer Science · AI
-- Authors: Halil Burak Noyan
-- arXiv: 2607.22445
-- Plain-English subtitle: Giving AI assistants only the permissions they need for each specific task
-- Summary: AI systems at companies typically get access to all tools they might ever need, creating a security gap if the AI goes rogue or gets hacked. Researchers designed a three-layer system that dynamically grants AI agents only the specific permissions required for their current task, and created a dataset of 600 realistic enterprise tasks labeled with minimum required permissions to test this approach. The method reduced security violations by 93% when refined alongside company policies.
-- Why it matters: Enterprise AI agents increasingly handle sensitive operations across finance, HR, and infrastructure. If an AI agent is compromised or behaves unpredictably, having unnecessary access credentials could let it cause real damage—transfer funds, delete records, or expose private data. Dynamic permission scoping shrinks that window of potential harm by default, rather than relying on detecting bad behavior after it happens. The released dataset gives security teams a concrete way to test whether their AI agents are respecting proper access boundaries.
 
 ## About
 

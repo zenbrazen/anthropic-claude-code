@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 522 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-28
+This file contains the complete plain-English text of all 525 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-29
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities
+Subtitle: One model that turns any type of data into any other type
+URL: https://paperplaine.com/papers/modus-decoder-only-any
+Category: Computer Science · AI
+Authors: Mingqiao Ye, Zhaochong An, Zhitong Gao et al.
+arXiv ID: 2607.25948
+arXiv URL: https://arxiv.org/abs/2607.25948
+Posted: 2026-07-29
+
+Summary: Researchers built a single AI model that can take any mix of inputs—images, text, audio, numbers—and produce any type of output, without needing specialized parts for each task. The model performs competitively with systems built specifically for individual jobs, while remaining flexible enough to chain outputs together or verify its own answers by generating data in multiple formats.
+
+Why it matters: Most AI systems today are built separately for each task—one for image-to-text, another for audio-to-image, and so on. A single unified model cuts engineering complexity and lets researchers in fields like astronomy or ecology build multimodal systems without training from scratch each time. The open-source release means these tools are immediately available to scientists and companies working across different data types.
+
+---
+Title: Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees
+Subtitle: How fast polynomials grow when you repeatedly apply a mathematical operation
+URL: https://paperplaine.com/papers/iterate-wronskians-over-mathbb
+Category: Mathematics
+Authors: Markuss G. Kenins, Arthemy V. Kiselev
+arXiv ID: 2607.26039
+arXiv URL: https://arxiv.org/abs/2607.26039
+Posted: 2026-07-29
+
+Summary: Mathematicians proved that when you repeatedly apply a certain algebraic operation to polynomials, their complexity grows no faster than a specific sequence called the N-bonacci numbers. In special cases, polynomials actually reach this maximum growth rate, showing the bound is tight.
+
+Why it matters: Understanding growth rates of polynomial operations matters for computer algebra systems and symbolic computation, where knowing worst-case complexity helps optimize algorithms. This result provides a provable ceiling on how quickly these operations can spiral in complexity, which improves estimates for computational cost and feasibility.
+
+---
+Title: GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling
+Subtitle: Making a music prediction model easier to use and understand
+URL: https://paperplaine.com/papers/graphidyom-a-graph-native
+Category: Quantitative Biology
+Authors: Lluc Bono Rosselló
+arXiv ID: 2607.25787
+arXiv URL: https://arxiv.org/abs/2607.25787
+Posted: 2026-07-29
+
+Summary: A researcher rebuilt a widely-used model that predicts what note comes next in music, translating it from an outdated programming language into modern Python. The new version exposes how the model stores and retrieves memories, making it possible to inspect, visualize, and modify the internal workings that drive its predictions.
+
+Why it matters: IDyOM is the standard tool for testing theories about how humans anticipate music, but its technical barriers meant most researchers couldn't easily modify or integrate it into their own work. GraphIDyOM removes those barriers, potentially accelerating research into musical cognition, improving music recommendation systems, and enabling new interactive applications that respond to listener expectations in real time.
 
 ---
 Title: Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents
