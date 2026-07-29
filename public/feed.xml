@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 09:36:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 20:08:46 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>π\mathbf{R}^2: Reactive Real-time Flow Policies</title>
+      <link>https://paperplaine.com/papers/mathbf-r-2-reactive</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/mathbf-r-2-reactive</guid>
+      <pubDate>Tue, 28 Jul 2026 17:59:31 GMT</pubDate>
+      <author>Sungjae Park, Shubham Tulsiani</author>
+      <category>AI</category>
+      <description>Making robot control policies react fast enough to handle the unexpected</description>
+      <content:encoded><![CDATA[<p><em>Making robot control policies react fast enough to handle the unexpected</em></p><p>Current AI-powered robot controllers plan their moves in chunks and can't adjust mid-action, making them clumsy when things change unexpectedly. Researchers created πR², a new approach that lets robots react to what they sense right now while keeping powerful AI models and planning for multiple actions at once. On real robots, it replans about 4 times faster than existing methods and improves success rates by up to 30%.</p><p><strong>Why it matters:</strong> Robots trained with large AI models are increasingly useful, but they've been slow to react to surprises—a dropped object, a shifting surface, an unexpected obstacle. πR² lets them adjust course in real-time without slowing down, using the same powerful models. This means robots could handle messier, less predictable real-world tasks like assembly lines or warehouse work where conditions constantly shift.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>AI Strategy: How to Choose What AI Product to Implement</title>
+      <link>https://paperplaine.com/papers/ai-strategy-how-to</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/ai-strategy-how-to</guid>
+      <pubDate>Sun, 26 Jul 2026 16:05:39 GMT</pubDate>
+      <author>Foster Provost, Panos Ipeirotis</author>
+      <category>Economics</category>
+      <description>How to pick AI projects worth building before you know if they&#39;ll work</description>
+      <content:encoded><![CDATA[<p><em>How to pick AI projects worth building before you know if they'll work</em></p><p>Companies often can't tell which AI projects will actually pay off—two projects can look equally promising yet deserve opposite decisions. Researchers at real-estate brokerage Compass showed that a simple framework called expected ROI (eROI) breaks this deadlock by asking three separate questions before building anything: How valuable would it be if it worked? How likely is it to work? And what would implementation cost? This sidesteps the catch-22 that you can't estimate ROI without knowing if a project will succeed, yet can't know without building it first.</p><p><strong>Why it matters:</strong> Companies waste millions funding AI projects that look good on paper but fail in practice. By separating value, likelihood, and cost into independent judgments, teams can make smarter bets earlier—and avoid costly failures. The framework works even with rough estimates rather than precise numbers, making it practical for any organization deciding where to invest in AI.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis</title>
+      <link>https://paperplaine.com/papers/opera-offline-policy-guided</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/opera-offline-policy-guided</guid>
+      <pubDate>Mon, 27 Jul 2026 22:12:45 GMT</pubDate>
+      <author>Zihan Li, Feiyang Liu, Dandan Shan et al.</author>
+      <category>Engineering</category>
+      <description>One AI model that works across different hospitals without retraining</description>
+      <content:encoded><![CDATA[<p><em>One AI model that works across different hospitals without retraining</em></p><p>Researchers created OPERA, a system that combines multiple specialized AI models to analyze medical images from different scanners and hospitals without needing to retrain on new data. By learning how to route each image to the best-suited expert model during a short calibration phase, then adapting slightly at test time, OPERA maintained high accuracy across 9 different medical imaging datasets—including X-rays, CT scans, and MRI images—without the expensive cycle of retraining for each new setting.</p><p><strong>Why it matters:</strong> Medical AI systems often fail when deployed to new hospitals or scanners because patient populations and imaging protocols differ, forcing expensive and time-consuming retraining. OPERA eliminates this bottleneck: hospitals can deploy the same system across different equipment and patient groups without collecting new labeled data or sharing sensitive patient information. This makes it practical to build robust diagnostic AI that actually works in the real world, where retraining is rarely an option.</p>]]></content:encoded>
+    </item>
     <item>
       <title>MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities</title>
       <link>https://paperplaine.com/papers/modus-decoder-only-any</link>

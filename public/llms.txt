@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 525 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 528 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 179 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 180 papers in archive.
+  - "π\mathbf{R}^2: Reactive Real-time Flow Policies"
   - "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities"
-  - "Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 45 papers in archive.
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
   - "Advances in STV Margin Computation"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 45 papers in archive.
   - "Frequency-Based Reservoir computing"
   - "Cautious optimism for deep parameterized quantum circuits"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 43 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 44 papers in archive.
+  - "OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis"
   - "A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise"
-  - "Real-Time EEG Cap Electrode Detection for Guided Point-of-Care Placement"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 38 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 39 papers in archive.
+  - "AI Strategy: How to Choose What AI Product to Implement"
   - "Measuring inequality and social stratification with Lorenz curvature"
-  - "Accelerating fossil gas independence in Europe"
 
 ## 10 most recent papers
+
+### π\mathbf{R}^2: Reactive Real-time Flow Policies
+- URL: https://paperplaine.com/papers/mathbf-r-2-reactive
+- Category: Computer Science · AI
+- Authors: Sungjae Park, Shubham Tulsiani
+- arXiv: 2607.26055
+- Plain-English subtitle: Making robot control policies react fast enough to handle the unexpected
+- Summary: Current AI-powered robot controllers plan their moves in chunks and can't adjust mid-action, making them clumsy when things change unexpectedly. Researchers created πR², a new approach that lets robots react to what they sense right now while keeping powerful AI models and planning for multiple actions at once. On real robots, it replans about 4 times faster than existing methods and improves success rates by up to 30%.
+- Why it matters: Robots trained with large AI models are increasingly useful, but they've been slow to react to surprises—a dropped object, a shifting surface, an unexpected obstacle. πR² lets them adjust course in real-time without slowing down, using the same powerful models. This means robots could handle messier, less predictable real-world tasks like assembly lines or warehouse work where conditions constantly shift.
+
+### AI Strategy: How to Choose What AI Product to Implement
+- URL: https://paperplaine.com/papers/ai-strategy-how-to
+- Category: Economics
+- Authors: Foster Provost, Panos Ipeirotis
+- arXiv: 2607.23733
+- Plain-English subtitle: How to pick AI projects worth building before you know if they'll work
+- Summary: Companies often can't tell which AI projects will actually pay off—two projects can look equally promising yet deserve opposite decisions. Researchers at real-estate brokerage Compass showed that a simple framework called expected ROI (eROI) breaks this deadlock by asking three separate questions before building anything: How valuable would it be if it worked? How likely is it to work? And what would implementation cost? This sidesteps the catch-22 that you can't estimate ROI without knowing if a project will succeed, yet can't know without building it first.
+- Why it matters: Companies waste millions funding AI projects that look good on paper but fail in practice. By separating value, likelihood, and cost into independent judgments, teams can make smarter bets earlier—and avoid costly failures. The framework works even with rough estimates rather than precise numbers, making it practical for any organization deciding where to invest in AI.
+
+### OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis
+- URL: https://paperplaine.com/papers/opera-offline-policy-guided
+- Category: Engineering
+- Authors: Zihan Li, Feiyang Liu, Dandan Shan et al.
+- arXiv: 2607.25108
+- Plain-English subtitle: One AI model that works across different hospitals without retraining
+- Summary: Researchers created OPERA, a system that combines multiple specialized AI models to analyze medical images from different scanners and hospitals without needing to retrain on new data. By learning how to route each image to the best-suited expert model during a short calibration phase, then adapting slightly at test time, OPERA maintained high accuracy across 9 different medical imaging datasets—including X-rays, CT scans, and MRI images—without the expensive cycle of retraining for each new setting.
+- Why it matters: Medical AI systems often fail when deployed to new hospitals or scanners because patient populations and imaging protocols differ, forcing expensive and time-consuming retraining. OPERA eliminates this bottleneck: hospitals can deploy the same system across different equipment and patient groups without collecting new labeled data or sharing sensitive patient information. This makes it practical to build robust diagnostic AI that actually works in the real world, where retraining is rarely an option.
 
 ### MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities
 - URL: https://paperplaine.com/papers/modus-decoder-only-any
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Training AI systems that work even when some data sources suddenly disappear
 - Summary: Machine learning systems that combine multiple data sources—like text, images, and audio—perform better than those using a single source. But real systems often lose access to some sources unpredictably due to sensor failures or privacy concerns. Researchers developed a framework where different data sources learn to help each other compensate for missing information, and tested it on systems missing anywhere from one to nearly all of their data sources.
 - Why it matters: Autonomous vehicles, medical diagnostics, and industrial monitoring systems rely on multiple sensors and data types working together. When one component fails—a camera goes dark, a sensor malfunctions, or privacy rules block access to certain data—current systems often collapse. This approach lets systems keep working reasonably well even when critical data sources vanish unexpectedly, making real-world AI deployments more reliable and cheaper to maintain.
-
-### Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses
-- URL: https://paperplaine.com/papers/are-cryptocurrencies-real-financial
-- Category: Quantitative Finance
-- Authors: Marco Bianchetti, Camilla Ricci, Marco Scaringi
-- arXiv: 2607.21826
-- Plain-English subtitle: When cryptocurrency prices detach from reality and crash
-- Summary: Bitcoin and Ether show unmistakable mathematical signatures of financial bubbles—periods where prices spiral far beyond what fundamentals justify—weeks before they actually crash. Using models originally designed to detect stock market bubbles, researchers identified bubble conditions in Bitcoin during December 2017 and January 2018, and in Ether in June and January 2018, each time followed by major price collapses.
-- Why it matters: Cryptocurrencies remain largely driven by investor mood rather than underlying value, making them vulnerable to sudden crashes that can wipe out retail investors. These mathematical detection methods could help traders and fund managers spot dangerous bubble conditions before prices implode, offering a way to quantify the real risk in a market that often feels like pure speculation.
-
-### Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion
-- URL: https://paperplaine.com/papers/coincidence-free-certification-and
-- Category: Physics
-- Authors: M. G. Damaceno, G. H. dos Santos, N. Rubiano da Silva et al.
-- arXiv: 2607.24718
-- Plain-English subtitle: Testing quantum entanglement using simple light measurements instead of rare coincidences
-- Summary: Physicists have found a way to verify that pairs of photons are quantum-entangled without waiting around for the notoriously difficult task of catching both photons at the detector simultaneously. By flooding one part of the photon pair with bright classical light and measuring what comes out, they can now certify entanglement using ordinary intensity measurements—the same kind a simple camera makes. The team demonstrated this works across the full spatial properties of the photon pairs.
-- Why it matters: Most quantum light sources are painfully slow to characterize because coincidence counting—detecting both photons in a pair at the same instant—requires either waiting a very long time or using expensive, finicky equipment. This new method trades that bottleneck for a straightforward intensity measurement, making it practical to quickly assess and optimize photon pair sources in labs where space or budget is tight, or where getting perfect alignment is difficult.
-
-### Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science
-- URL: https://paperplaine.com/papers/opaque-epistemic-mediation-how
-- Category: Computer Science · AI
-- Authors: Davide Scarso, Hugo Noronha de Almeida, Joaquim Pina
-- arXiv: 2607.22513
-- Plain-English subtitle: Why the same AI gives wildly different answers about fringe science claims
-- Summary: When researchers asked four major AI systems to evaluate a pseudo-scientific claim about human genetics, they got strikingly different answers—and the same AI sometimes contradicted itself depending on how it was accessed or when it was tested. Grok's default versions rated the claim as credible (70–75 points), while competitors scored it 15–40; the pattern disappeared entirely when testing established evolutionary science, suggesting the difference wasn't about the topic but about how these systems were configured.
-- Why it matters: People increasingly turn to AI for factual questions, often trusting its answers as authoritative. This research shows that AI systems can validate fringe or false claims depending on invisible internal settings—system prompts, safety filters, updates—that neither users nor independent researchers can see. Without transparency about how these configurations shape what AI calls credible, the public has no way to know when they're getting filtered answers or how much to trust them.
 
 ## About
 

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.26055",
+    "title": "π\\mathbf{R}^2: Reactive Real-time Flow Policies",
+    "authors": "Sungjae Park, Shubham Tulsiani",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-28T17:59:31Z",
+    "publishedFormatted": "Jul 28, 2026",
+    "subtitle": "Making robot control policies react fast enough to handle the unexpected",
+    "summary": "Current AI-powered robot controllers plan their moves in chunks and can't adjust mid-action, making them clumsy when things change unexpectedly. Researchers created πR², a new approach that lets robots react to what they sense right now while keeping powerful AI models and planning for multiple actions at once. On real robots, it replans about 4 times faster than existing methods and improves success rates by up to 30%.",
+    "whyItMatters": "Robots trained with large AI models are increasingly useful, but they've been slow to react to surprises—a dropped object, a shifting surface, an unexpected obstacle. πR² lets them adjust course in real-time without slowing down, using the same powerful models. This means robots could handle messier, less predictable real-world tasks like assembly lines or warehouse work where conditions constantly shift.",
+    "fetchedAt": "2026-07-29T20:08:36.397Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 239
+    },
+    "slug": "mathbf-r-2-reactive"
+  },
+  {
+    "id": "2607.23733",
+    "title": "AI Strategy: How to Choose What AI Product to Implement",
+    "authors": "Foster Provost, Panos Ipeirotis",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-07-26T16:05:39Z",
+    "publishedFormatted": "Jul 26, 2026",
+    "subtitle": "How to pick AI projects worth building before you know if they'll work",
+    "summary": "Companies often can't tell which AI projects will actually pay off—two projects can look equally promising yet deserve opposite decisions. Researchers at real-estate brokerage Compass showed that a simple framework called expected ROI (eROI) breaks this deadlock by asking three separate questions before building anything: How valuable would it be if it worked? How likely is it to work? And what would implementation cost? This sidesteps the catch-22 that you can't estimate ROI without knowing if a project will succeed, yet can't know without building it first.",
+    "whyItMatters": "Companies waste millions funding AI projects that look good on paper but fail in practice. By separating value, likelihood, and cost into independent judgments, teams can make smarter bets earlier—and avoid costly failures. The framework works even with rough estimates rather than precise numbers, making it practical for any organization deciding where to invest in AI.",
+    "fetchedAt": "2026-07-29T20:08:41.952Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 260
+    },
+    "slug": "ai-strategy-how-to"
+  },
+  {
+    "id": "2607.25108",
+    "title": "OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis",
+    "authors": "Zihan Li, Feiyang Liu, Dandan Shan et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-07-27T22:12:45Z",
+    "publishedFormatted": "Jul 27, 2026",
+    "subtitle": "One AI model that works across different hospitals without retraining",
+    "summary": "Researchers created OPERA, a system that combines multiple specialized AI models to analyze medical images from different scanners and hospitals without needing to retrain on new data. By learning how to route each image to the best-suited expert model during a short calibration phase, then adapting slightly at test time, OPERA maintained high accuracy across 9 different medical imaging datasets—including X-rays, CT scans, and MRI images—without the expensive cycle of retraining for each new setting.",
+    "whyItMatters": "Medical AI systems often fail when deployed to new hospitals or scanners because patient populations and imaging protocols differ, forcing expensive and time-consuming retraining. OPERA eliminates this bottleneck: hospitals can deploy the same system across different equipment and patient groups without collecting new labeled data or sharing sensitive patient information. This makes it practical to build robust diagnostic AI that actually works in the real world, where retraining is rarely an option.",
+    "fetchedAt": "2026-07-29T20:08:45.977Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 234
+    },
+    "slug": "opera-offline-policy-guided"
+  },
+  {
     "id": "2607.25948",
     "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
     "authors": "Mingqiao Ye, Zhaochong An, Zhitong Gao et al.",
