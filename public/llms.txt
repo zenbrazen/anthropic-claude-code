@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 531 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 534 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 181 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 182 papers in archive.
+  - "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting"
   - "SciFigQual-Bench: A Benchmark for Scientific Figure Quality Assessment with Full-Manuscript Context"
-  - "π\mathbf{R}^2: Reactive Real-time Flow Policies"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 45 papers in archive.
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
   - "Advances in STV Margin Computation"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 44 papers in archive.
   - "Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees"
   - "Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 43 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 44 papers in archive.
+  - "A behavior-environment information loop drives sensory navigation"
   - "GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling"
-  - "Universal BCI Personalization: One API for Frozen EEG Trunks and Foundation Models"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 46 papers in archive.
   - "Dead Reckoning: Counting Your Customers Who Never Say Goodbye"
   - "Are cryptocurrencies real financial bubbles? Evidence from quantitative analyses"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 45 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 46 papers in archive.
+  - "Breaking the Curse with BAND: Nonparametric Distribution Estimation in High Dimensions"
   - "Frequency-Based Reservoir computing"
-  - "Cautious optimism for deep parameterized quantum circuits"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 44 papers in archive.
   - "OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis"
   - "A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Measuring inequality and social stratification with Lorenz curvature"
 
 ## 10 most recent papers
+
+### Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting
+- URL: https://paperplaine.com/papers/hierarchical-spatio-temporal-transformer
+- Category: Computer Science · AI
+- Authors: Filipa Lino, Bárbara Tavares, Carlos Santiago et al.
+- arXiv: 2607.27106
+- Plain-English subtitle: Making emergency room forecasts that add up across hospitals, regions, and nations
+- Summary: A new AI system called HierSTT predicts patient demand at emergency departments across three interconnected levels—individual hospitals, regional networks, and entire countries—in a single model. Unlike existing forecasting tools that predict at only one level and often produce contradictory numbers, HierSTT ensures that hospital predictions logically add up to regional forecasts, which add up to national totals, while improving accuracy by 32% over current best methods.
+- Why it matters: Hospital administrators, regional planners, and health officials currently work with forecasts that don't align, making it impossible to staff and resource hospitals efficiently. HierSTT's coherent predictions mean hospitals get reliable staffing numbers while regional and national planners can trust that totals match up, reducing wasted resources and improving patient care during predictable demand surges. The researchers also released data from 81 Portuguese hospitals, giving other healthcare systems a foundation for building similar tools.
+
+### Breaking the Curse with BAND: Nonparametric Distribution Estimation in High Dimensions
+- URL: https://paperplaine.com/papers/breaking-the-curse-with
+- Category: Statistics
+- Authors: Shuo-Chieh Huang, Chien-Ming Chi, Jau-er Chen
+- arXiv: 2607.26955
+- Plain-English subtitle: Estimating probability patterns in high-dimensional data without exponential slowdowns
+- Summary: A new method called BAND uses sparse networks to estimate what patterns exist in complex, high-dimensional datasets—breaking through a long-standing mathematical barrier that makes traditional approaches exponentially slower as data dimensions increase. The approach works on mixed data types (numbers, categories, time series) and achieves estimation speeds that scale polynomially rather than exponentially with dimension.
+- Why it matters: Many real-world problems—genomics, climate modeling, financial forecasting—involve hundreds or thousands of variables, making traditional statistical methods impractical. BAND makes these high-dimensional estimation problems computationally feasible, enabling faster and more reliable probability forecasts in domains where previous methods would simply take too long to produce usable results.
+
+### A behavior-environment information loop drives sensory navigation
+- URL: https://paperplaine.com/papers/a-behavior-environment-information
+- Category: Quantitative Biology
+- Authors: Kevin S. Chen, Matthew P. Leighton, Damon A. Clark et al.
+- arXiv: 2607.26295
+- Plain-English subtitle: How animals use sensing and movement as a two-way feedback loop to find food
+- Summary: Organisms navigate by constantly looping information between what they sense and how they move — and these two directions of information flow predict how well they navigate. Researchers measured this two-way coupling in bacteria, worms, flies, and AI agents, finding that the same principle explains navigation success across all of them, even though each creature uses completely different strategies.
+- Why it matters: Understanding how organisms actually navigate could improve robot design, from search-and-rescue drones to autonomous vehicles that need to find targets in unfamiliar environments. The framework also reveals what makes each creature's strategy work — why a bacterium tumbles the way it does, or how a fruit fly learned to track smells — which could lead to better biological pest control or faster algorithms for AI agents learning to explore.
 
 ### SciFigQual-Bench: A Benchmark for Scientific Figure Quality Assessment with Full-Manuscript Context
 - URL: https://paperplaine.com/papers/scifigqual-bench-a-benchmark
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: One model that turns any type of data into any other type
 - Summary: Researchers built a single AI model that can take any mix of inputs—images, text, audio, numbers—and produce any type of output, without needing specialized parts for each task. The model performs competitively with systems built specifically for individual jobs, while remaining flexible enough to chain outputs together or verify its own answers by generating data in multiple formats.
 - Why it matters: Most AI systems today are built separately for each task—one for image-to-text, another for audio-to-image, and so on. A single unified model cuts engineering complexity and lets researchers in fields like astronomy or ecology build multimodal systems without training from scratch each time. The open-source release means these tools are immediately available to scientists and companies working across different data types.
-
-### Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees
-- URL: https://paperplaine.com/papers/iterate-wronskians-over-mathbb
-- Category: Mathematics
-- Authors: Markuss G. Kenins, Arthemy V. Kiselev
-- arXiv: 2607.26039
-- Plain-English subtitle: How fast polynomials grow when you repeatedly apply a mathematical operation
-- Summary: Mathematicians proved that when you repeatedly apply a certain algebraic operation to polynomials, their complexity grows no faster than a specific sequence called the N-bonacci numbers. In special cases, polynomials actually reach this maximum growth rate, showing the bound is tight.
-- Why it matters: Understanding growth rates of polynomial operations matters for computer algebra systems and symbolic computation, where knowing worst-case complexity helps optimize algorithms. This result provides a provable ceiling on how quickly these operations can spiral in complexity, which improves estimates for computational cost and feasibility.
-
-### GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling
-- URL: https://paperplaine.com/papers/graphidyom-a-graph-native
-- Category: Quantitative Biology
-- Authors: Lluc Bono Rosselló
-- arXiv: 2607.25787
-- Plain-English subtitle: Making a music prediction model easier to use and understand
-- Summary: A researcher rebuilt a widely-used model that predicts what note comes next in music, translating it from an outdated programming language into modern Python. The new version exposes how the model stores and retrieves memories, making it possible to inspect, visualize, and modify the internal workings that drive its predictions.
-- Why it matters: IDyOM is the standard tool for testing theories about how humans anticipate music, but its technical barriers meant most researchers couldn't easily modify or integrate it into their own work. GraphIDyOM removes those barriers, potentially accelerating research into musical cognition, improving music recommendation systems, and enabling new interactive applications that respond to listener expectations in real time.
-
-### Agentic Permissions Policy Algebra for Taint Confinement in LLM Agents
-- URL: https://paperplaine.com/papers/agentic-permissions-policy-algebra
-- Category: Computer Science · AI
-- Authors: Arseny Kravchenko, Vadim Liventsev, Innokentii Konstantinov et al.
-- arXiv: 2607.24625
-- Plain-English subtitle: Letting AI agents safely explore risky data without locking up their entire memory
-- Summary: Large language model agents that handle mixed sensitive and public data are vulnerable to attacks that trick them into leaking secrets. A new security framework called APPA lets agents temporarily explore untrusted information in a sandboxed branch of their reasoning, then safely bring back only cleaned results to their main context—blocking data theft attempts that were successful 31–50% of the time while recovering much of the work capacity that traditional security methods sacrifice.
-- Why it matters: Autonomous AI agents are increasingly deployed to access real databases, customer records, and proprietary documents. A system that cuts successful data theft from one-in-three attempts to near zero while keeping agents useful enough to do their jobs makes it practical to deploy them on mixed public-private data without choosing between security and function.
 
 ## About
 
