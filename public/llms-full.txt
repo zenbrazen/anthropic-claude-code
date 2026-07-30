@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 528 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-29
+This file contains the complete plain-English text of all 531 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-30
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: SciFigQual-Bench: A Benchmark for Scientific Figure Quality Assessment with Full-Manuscript Context
+Subtitle: Teaching AI to judge whether scientific figures actually support their claims
+URL: https://paperplaine.com/papers/scifigqual-bench-a-benchmark
+Category: Computer Science · AI
+Authors: Zihan Deng, Chuanzhi Xu, Huiqi Liang et al.
+arXiv ID: 2607.27084
+arXiv URL: https://arxiv.org/abs/2607.27084
+Posted: 2026-07-30
+
+Summary: Researchers created a benchmark of over 6,300 scientific figures from top computer-science papers, each scored by experts on five qualities: clarity, layout, how well captions match images, relevance to the text, and whether the figure misleads. They then built an AI system that learned to evaluate figures the same way humans do, achieving 93% consistency with expert judgment—significantly better than existing image-quality tools, which weren't designed for scientific content.
+
+Why it matters: Scientific papers rely on figures to communicate results, but no automated system has existed to catch figures that are unclear, mislabeled, or misleading. This benchmark and AI tool could help journal editors and researchers spot problematic figures before publication, reducing the spread of poorly presented—or even deceptive—research findings.
+
+---
+Title: Dead Reckoning: Counting Your Customers Who Never Say Goodbye
+Subtitle: Why companies can't really know how many customers they still have
+URL: https://paperplaine.com/papers/dead-reckoning-counting-your
+Category: Quantitative Finance
+Authors: Karl T. Ulrich
+arXiv ID: 2607.18623
+arXiv URL: https://arxiv.org/abs/2607.18623
+Posted: 2026-07-30
+
+Summary: When customers stop buying without announcement, companies use statistical models to guess who's still active. But the paper shows these models are fundamentally unreliable: different reasonable assumptions produce customer counts that vary by a factor of 7.6 on the same dataset, even when predictions about near-term purchases match closely. The problem isn't bad math—it's that the models extrapolate infinitely far into the future, where verification is impossible.
+
+Why it matters: Companies use these customer counts for valuation, marketing budgets, and strategic decisions worth millions of dollars. When the same data can justify counts ranging from 3,654 to 27,734 active customers, leadership is making bets on a number with almost no reliable foundation. The paper shows the honest fix: report concrete, verifiable predictions over a fixed time horizon (like "18-month repeat purchase rate") instead of an extrapolated infinity, and if a total count must be given, present it as a wide range rather than false precision.
+
+---
+Title: Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades
+Subtitle: Why crypto crash warnings work differently depending on what triggers them
+URL: https://paperplaine.com/papers/where-does-the-criticality
+Category: Physics
+Authors: Ramon Marc Garcia Seuma
+arXiv ID: 2607.27070
+arXiv URL: https://arxiv.org/abs/2607.27070
+Posted: 2026-07-30
+
+Summary: A study of seven major Bitcoin liquidation crashes found no single early-warning signal that works across all events. Price showed telltale signs of instability before five crashes but completely failed to warn of two sudden news-driven collapses; only a compression in trading order-flow emerged as a consistent (though imperfect) precursor across all events. This suggests crypto crashes fall into at least two different types—those that build up gradually and those triggered suddenly by external shocks—each with its own fingerprint.
+
+Why it matters: Regulators and traders looking for a universal early-warning system for crypto derivatives crashes won't find one. The October 2025 crash, which wiped out 19 billion dollars, defied the most commonly cited warning signal. Understanding that different crashes have different signatures means any real-world alarm system would need to watch multiple indicators simultaneously and adapt its logic based on market conditions—a harder engineering problem than existing proposals assume.
 
 ---
 Title: π\mathbf{R}^2: Reactive Real-time Flow Policies
