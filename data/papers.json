@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.28575",
+    "title": "Algorithms for Structured Elections under Thiele Voting Rules",
+    "authors": "Alexandra Lassota, Krzysztof Sornat",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-30T17:37:14Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Making it faster to count votes when approval patterns follow a simple structure",
+    "summary": "Researchers found that a common voting method becomes much faster to compute when voters' approval choices follow a specific structure—where each candidate is approved by voters in a consecutive block. The team designed new algorithms that can solve what would otherwise be computationally intractable problems, and also cracked two long-standing open questions about how to quickly count votes under approval-based rules.",
+    "whyItMatters": "As organizations and governments adopt approval voting for committee selection, the ability to actually compute winners becomes essential. These algorithms make it practical to run Proportional Approval Voting on real-world elections where the approval patterns naturally cluster—a common scenario in actual voting data. This bridges the gap between voting theory and implementation by proving that structured real-world elections don't have the computational barriers that have limited these fairer voting systems' adoption.",
+    "fetchedAt": "2026-07-31T09:43:49.273Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 230
+    },
+    "slug": "algorithms-for-structured-elections"
+  },
+  {
+    "id": "2607.28191",
+    "title": "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data",
+    "authors": "Pouya Rajabi, Mohsen Toorani",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-07-30T13:28:39Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Letting hospitals train AI together without exposing patient brain data",
+    "summary": "Researchers created a system that lets multiple hospitals train a shared machine-learning model on EEG brain scans without sending anyone's actual patient data to a central server. The method uses mathematical masking and secret-sharing to hide individual hospital updates even from the aggregation server, and works whether you trust that server or assume it might cheat.",
+    "whyItMatters": "Hospitals can now collaborate on better AI models for brain disorders while keeping sensitive neurological data private and on-site. The tradeoff is real—adding strong privacy protections slows things down and requires more computation—but the semi-honest version adds only modest overhead, making it practical for real healthcare networks.",
+    "fetchedAt": "2026-07-31T09:43:52.068Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 175
+    },
+    "slug": "secure-aggregation-for-privacy"
+  },
+  {
+    "id": "2607.28387",
+    "title": "Eventually greedy best Egyptian underapproximations of rational numbers via optimal control",
+    "authors": "Vjekoslav Kovač, Quanyu Tang",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-07-30T15:43:43Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "A 75-year-old puzzle about breaking fractions into simpler pieces",
+    "summary": "Mathematicians have solved a problem posed by Erdős and Graham in the 1970s about ancient Egyptian fractions—a method of writing rational numbers as sums of unit fractions (fractions with numerator 1). The researchers proved that every positive rational number can be built using a 'greedy' approach that always picks the largest possible unit fraction at each step, whether or not you're allowed to repeat the same denominator.",
+    "whyItMatters": "Egyptian fractions aren't just historical curiosities—they appear in computer algorithms, cryptography, and number theory. This proof settles a foundational question about whether the simplest approximation method always works, which establishes new bounds on how large denominators can grow when repeatedly breaking down fractions. The work also introduces an optimal control framework that other researchers can now apply to similar problems in discrete mathematics.",
+    "fetchedAt": "2026-07-31T09:43:55.088Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 26,
+      "wordCount": 110
+    },
+    "slug": "eventually-greedy-best-egyptian"
+  },
+  {
     "id": "2607.27106",
     "title": "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting",
     "authors": "Filipa Lino, Bárbara Tavares, Carlos Santiago et al.",

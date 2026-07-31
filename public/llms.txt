@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 534 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 537 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 182 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 183 papers in archive.
+  - "Algorithms for Structured Elections under Thiele Voting Rules"
   - "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting"
-  - "SciFigQual-Bench: A Benchmark for Scientific Figure Quality Assessment with Full-Manuscript Context"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 45 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 46 papers in archive.
+  - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
-  - "Advances in STV Margin Computation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 44 papers in archive.
   - "Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades"
   - "Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 44 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 45 papers in archive.
+  - "Eventually greedy best Egyptian underapproximations of rational numbers via optimal control"
   - "Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees"
-  - "Data Driven Modeling of Nonlinear Dynamics in a Rotating Detonation Combustor via Finite Dimensional Approximations of the Koopman Operator"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 44 papers in archive.
   - "A behavior-environment information loop drives sensory navigation"
   - "GraphIDyOM: A graph-native Python reimplementation of IDyOM for musical expectation modelling"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Measuring inequality and social stratification with Lorenz curvature"
 
 ## 10 most recent papers
+
+### Algorithms for Structured Elections under Thiele Voting Rules
+- URL: https://paperplaine.com/papers/algorithms-for-structured-elections
+- Category: Computer Science · AI
+- Authors: Alexandra Lassota, Krzysztof Sornat
+- arXiv: 2607.28575
+- Plain-English subtitle: Making it faster to count votes when approval patterns follow a simple structure
+- Summary: Researchers found that a common voting method becomes much faster to compute when voters' approval choices follow a specific structure—where each candidate is approved by voters in a consecutive block. The team designed new algorithms that can solve what would otherwise be computationally intractable problems, and also cracked two long-standing open questions about how to quickly count votes under approval-based rules.
+- Why it matters: As organizations and governments adopt approval voting for committee selection, the ability to actually compute winners becomes essential. These algorithms make it practical to run Proportional Approval Voting on real-world elections where the approval patterns naturally cluster—a common scenario in actual voting data. This bridges the gap between voting theory and implementation by proving that structured real-world elections don't have the computational barriers that have limited these fairer voting systems' adoption.
+
+### Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data
+- URL: https://paperplaine.com/papers/secure-aggregation-for-privacy
+- Category: Computer Science
+- Authors: Pouya Rajabi, Mohsen Toorani
+- arXiv: 2607.28191
+- Plain-English subtitle: Letting hospitals train AI together without exposing patient brain data
+- Summary: Researchers created a system that lets multiple hospitals train a shared machine-learning model on EEG brain scans without sending anyone's actual patient data to a central server. The method uses mathematical masking and secret-sharing to hide individual hospital updates even from the aggregation server, and works whether you trust that server or assume it might cheat.
+- Why it matters: Hospitals can now collaborate on better AI models for brain disorders while keeping sensitive neurological data private and on-site. The tradeoff is real—adding strong privacy protections slows things down and requires more computation—but the semi-honest version adds only modest overhead, making it practical for real healthcare networks.
+
+### Eventually greedy best Egyptian underapproximations of rational numbers via optimal control
+- URL: https://paperplaine.com/papers/eventually-greedy-best-egyptian
+- Category: Mathematics
+- Authors: Vjekoslav Kovač, Quanyu Tang
+- arXiv: 2607.28387
+- Plain-English subtitle: A 75-year-old puzzle about breaking fractions into simpler pieces
+- Summary: Mathematicians have solved a problem posed by Erdős and Graham in the 1970s about ancient Egyptian fractions—a method of writing rational numbers as sums of unit fractions (fractions with numerator 1). The researchers proved that every positive rational number can be built using a 'greedy' approach that always picks the largest possible unit fraction at each step, whether or not you're allowed to repeat the same denominator.
+- Why it matters: Egyptian fractions aren't just historical curiosities—they appear in computer algorithms, cryptography, and number theory. This proof settles a foundational question about whether the simplest approximation method always works, which establishes new bounds on how large denominators can grow when repeatedly breaking down fractions. The work also introduces an optimal control framework that other researchers can now apply to similar problems in discrete mathematics.
 
 ### Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting
 - URL: https://paperplaine.com/papers/hierarchical-spatio-temporal-transformer
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making robot control policies react fast enough to handle the unexpected
 - Summary: Current AI-powered robot controllers plan their moves in chunks and can't adjust mid-action, making them clumsy when things change unexpectedly. Researchers created πR², a new approach that lets robots react to what they sense right now while keeping powerful AI models and planning for multiple actions at once. On real robots, it replans about 4 times faster than existing methods and improves success rates by up to 30%.
 - Why it matters: Robots trained with large AI models are increasingly useful, but they've been slow to react to surprises—a dropped object, a shifting surface, an unexpected obstacle. πR² lets them adjust course in real-time without slowing down, using the same powerful models. This means robots could handle messier, less predictable real-world tasks like assembly lines or warehouse work where conditions constantly shift.
-
-### AI Strategy: How to Choose What AI Product to Implement
-- URL: https://paperplaine.com/papers/ai-strategy-how-to
-- Category: Economics
-- Authors: Foster Provost, Panos Ipeirotis
-- arXiv: 2607.23733
-- Plain-English subtitle: How to pick AI projects worth building before you know if they'll work
-- Summary: Companies often can't tell which AI projects will actually pay off—two projects can look equally promising yet deserve opposite decisions. Researchers at real-estate brokerage Compass showed that a simple framework called expected ROI (eROI) breaks this deadlock by asking three separate questions before building anything: How valuable would it be if it worked? How likely is it to work? And what would implementation cost? This sidesteps the catch-22 that you can't estimate ROI without knowing if a project will succeed, yet can't know without building it first.
-- Why it matters: Companies waste millions funding AI projects that look good on paper but fail in practice. By separating value, likelihood, and cost into independent judgments, teams can make smarter bets earlier—and avoid costly failures. The framework works even with rough estimates rather than precise numbers, making it practical for any organization deciding where to invest in AI.
-
-### OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis
-- URL: https://paperplaine.com/papers/opera-offline-policy-guided
-- Category: Engineering
-- Authors: Zihan Li, Feiyang Liu, Dandan Shan et al.
-- arXiv: 2607.25108
-- Plain-English subtitle: One AI model that works across different hospitals without retraining
-- Summary: Researchers created OPERA, a system that combines multiple specialized AI models to analyze medical images from different scanners and hospitals without needing to retrain on new data. By learning how to route each image to the best-suited expert model during a short calibration phase, then adapting slightly at test time, OPERA maintained high accuracy across 9 different medical imaging datasets—including X-rays, CT scans, and MRI images—without the expensive cycle of retraining for each new setting.
-- Why it matters: Medical AI systems often fail when deployed to new hospitals or scanners because patient populations and imaging protocols differ, forcing expensive and time-consuming retraining. OPERA eliminates this bottleneck: hospitals can deploy the same system across different equipment and patient groups without collecting new labeled data or sharing sensitive patient information. This makes it practical to build robust diagnostic AI that actually works in the real world, where retraining is rarely an option.
-
-### MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities
-- URL: https://paperplaine.com/papers/modus-decoder-only-any
-- Category: Computer Science · AI
-- Authors: Mingqiao Ye, Zhaochong An, Zhitong Gao et al.
-- arXiv: 2607.25948
-- Plain-English subtitle: One model that turns any type of data into any other type
-- Summary: Researchers built a single AI model that can take any mix of inputs—images, text, audio, numbers—and produce any type of output, without needing specialized parts for each task. The model performs competitively with systems built specifically for individual jobs, while remaining flexible enough to chain outputs together or verify its own answers by generating data in multiple formats.
-- Why it matters: Most AI systems today are built separately for each task—one for image-to-text, another for audio-to-image, and so on. A single unified model cuts engineering complexity and lets researchers in fields like astronomy or ecology build multimodal systems without training from scratch each time. The open-source release means these tools are immediately available to scientists and companies working across different data types.
 
 ## About
 

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 534 papers currently in the Paper Plaine archive.
-Last updated: 2026-07-30
+This file contains the complete plain-English text of all 537 papers currently in the Paper Plaine archive.
+Last updated: 2026-07-31
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Algorithms for Structured Elections under Thiele Voting Rules
+Subtitle: Making it faster to count votes when approval patterns follow a simple structure
+URL: https://paperplaine.com/papers/algorithms-for-structured-elections
+Category: Computer Science · AI
+Authors: Alexandra Lassota, Krzysztof Sornat
+arXiv ID: 2607.28575
+arXiv URL: https://arxiv.org/abs/2607.28575
+Posted: 2026-07-31
+
+Summary: Researchers found that a common voting method becomes much faster to compute when voters' approval choices follow a specific structure—where each candidate is approved by voters in a consecutive block. The team designed new algorithms that can solve what would otherwise be computationally intractable problems, and also cracked two long-standing open questions about how to quickly count votes under approval-based rules.
+
+Why it matters: As organizations and governments adopt approval voting for committee selection, the ability to actually compute winners becomes essential. These algorithms make it practical to run Proportional Approval Voting on real-world elections where the approval patterns naturally cluster—a common scenario in actual voting data. This bridges the gap between voting theory and implementation by proving that structured real-world elections don't have the computational barriers that have limited these fairer voting systems' adoption.
+
+---
+Title: Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data
+Subtitle: Letting hospitals train AI together without exposing patient brain data
+URL: https://paperplaine.com/papers/secure-aggregation-for-privacy
+Category: Computer Science
+Authors: Pouya Rajabi, Mohsen Toorani
+arXiv ID: 2607.28191
+arXiv URL: https://arxiv.org/abs/2607.28191
+Posted: 2026-07-31
+
+Summary: Researchers created a system that lets multiple hospitals train a shared machine-learning model on EEG brain scans without sending anyone's actual patient data to a central server. The method uses mathematical masking and secret-sharing to hide individual hospital updates even from the aggregation server, and works whether you trust that server or assume it might cheat.
+
+Why it matters: Hospitals can now collaborate on better AI models for brain disorders while keeping sensitive neurological data private and on-site. The tradeoff is real—adding strong privacy protections slows things down and requires more computation—but the semi-honest version adds only modest overhead, making it practical for real healthcare networks.
+
+---
+Title: Eventually greedy best Egyptian underapproximations of rational numbers via optimal control
+Subtitle: A 75-year-old puzzle about breaking fractions into simpler pieces
+URL: https://paperplaine.com/papers/eventually-greedy-best-egyptian
+Category: Mathematics
+Authors: Vjekoslav Kovač, Quanyu Tang
+arXiv ID: 2607.28387
+arXiv URL: https://arxiv.org/abs/2607.28387
+Posted: 2026-07-31
+
+Summary: Mathematicians have solved a problem posed by Erdős and Graham in the 1970s about ancient Egyptian fractions—a method of writing rational numbers as sums of unit fractions (fractions with numerator 1). The researchers proved that every positive rational number can be built using a 'greedy' approach that always picks the largest possible unit fraction at each step, whether or not you're allowed to repeat the same denominator.
+
+Why it matters: Egyptian fractions aren't just historical curiosities—they appear in computer algorithms, cryptography, and number theory. This proof settles a foundational question about whether the simplest approximation method always works, which establishes new bounds on how large denominators can grow when repeatedly breaking down fractions. The work also introduces an optimal control framework that other researchers can now apply to similar problems in discrete mathematics.
 
 ---
 Title: Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting
