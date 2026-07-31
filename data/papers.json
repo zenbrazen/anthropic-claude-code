@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.28591",
+    "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+    "authors": "Haomin Qi, Xingliang Wang, Xuanqi Gao et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-30T17:44:31Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Mining real code changes to automatically create training tasks for AI coding assistants",
+    "summary": "Researchers created Change2Task, a system that mines a repository's history of merged pull requests and converts them into executable training tasks for coding agents. Starting from 1,130 source changes, the system successfully created verified tasks 80% of the time across five task types: bug fixes, feature additions, test generation, API migrations, and security repairs. The approach recovers 29% more usable tasks than simpler baselines and reduces computational costs by 11%.",
+    "whyItMatters": "Training coding agents requires thousands of realistic programming tasks paired with working code environments—a slow and expensive process to create by hand. Change2Task taps into the gold mine of real developer work already stored in code repositories, automatically extracting and validating tasks at scale. This unlocks faster, cheaper development of better AI coding assistants while reusing modern code environments instead of reconstructing them repeatedly.",
+    "fetchedAt": "2026-07-31T20:17:03.069Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 219
+    },
+    "slug": "change2task-from-repository-changes"
+  },
+  {
+    "id": "2607.28115",
+    "title": "When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS",
+    "authors": "Behrad Mousaei Shir-Mohammad, Seyed Reza Tavakoli, Mohammad Mohammadi et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-07-30T12:23:29Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Why bearing failure timelines don't match what vibration sensors actually show",
+    "summary": "Machines fail in predictable stages—but the standard way of labeling remaining lifespan (as a straight line over time) doesn't match what vibration sensors actually measure. Researchers built a new prediction system that accounts for three distinct failure phases, fitting a curve that bends to match real vibration behavior. On test bearings, this stage-aware approach cut prediction error by 10–15% compared to the traditional linear method.",
+    "whyItMatters": "Industrial bearing failures cause unplanned downtime and expensive repairs. Better predictions of when a bearing will actually fail—rather than guesses based on calendar time—let maintenance teams act at the right moment: not so early that they waste money on premature replacement, not so late that the machine breaks down. This method shows that off-the-shelf sensors can be more useful if the software interpreting them accounts for how machines truly degrade.",
+    "fetchedAt": "2026-07-31T20:17:07.470Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 221
+    },
+    "slug": "when-linear-rul-labels"
+  },
+  {
+    "id": "2607.28621",
+    "title": "Lifting Lifted Product Codes",
+    "authors": "Yuta Hirasaki, Jong Yeon Lee",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-07-30T17:59:18Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Building better quantum error-correcting codes by expanding their mathematical structure",
+    "summary": "Physicists have developed a systematic method to create larger and more efficient quantum error-correcting codes by mathematically \"lifting\" existing ones while keeping their core structure intact. The approach yields codes with better performance than previously available versions and makes it cheaper in terms of physical resources to perform reliable quantum operations on these codes.",
+    "whyItMatters": "Quantum computers need error correction to function reliably, and the overhead required—extra qubits and operations needed to protect against mistakes—is a major barrier to building practical machines. This work produces codes that require less overhead while maintaining error protection, directly reducing the resource demands of near-term quantum computers. The systematic construction framework also opens a path toward understanding whether quantum error correction can scale efficiently without relying on physical space and geometry, a theoretical question that matters for long-term quantum computing architecture.",
+    "fetchedAt": "2026-07-31T20:17:10.825Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 169
+    },
+    "slug": "lifting-lifted-product-codes"
+  },
+  {
     "id": "2607.28575",
     "title": "Algorithms for Structured Elections under Thiele Voting Rules",
     "authors": "Alexandra Lassota, Krzysztof Sornat",

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 537 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 540 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 183 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 184 papers in archive.
+  - "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments"
   - "Algorithms for Structured Elections under Thiele Voting Rules"
-  - "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 46 papers in archive.
   - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 44 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 45 papers in archive.
+  - "Lifting Lifted Product Codes"
   - "Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades"
-  - "Coincidence free certification and quantification of spatial entanglement with stimulated parametric down conversion"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 45 papers in archive.
   - "Eventually greedy best Egyptian underapproximations of rational numbers via optimal control"
   - "Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 46 papers in archive.
   - "Breaking the Curse with BAND: Nonparametric Distribution Estimation in High Dimensions"
   - "Frequency-Based Reservoir computing"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 44 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 45 papers in archive.
+  - "When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS"
   - "OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis"
-  - "A Hierarchical Likelihood Model for Non-linear Inverse Problems under Additive and Multiplicative Noise"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 39 papers in archive.
   - "AI Strategy: How to Choose What AI Product to Implement"
   - "Measuring inequality and social stratification with Lorenz curvature"
 
 ## 10 most recent papers
+
+### Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments
+- URL: https://paperplaine.com/papers/change2task-from-repository-changes
+- Category: Computer Science · AI
+- Authors: Haomin Qi, Xingliang Wang, Xuanqi Gao et al.
+- arXiv: 2607.28591
+- Plain-English subtitle: Mining real code changes to automatically create training tasks for AI coding assistants
+- Summary: Researchers created Change2Task, a system that mines a repository's history of merged pull requests and converts them into executable training tasks for coding agents. Starting from 1,130 source changes, the system successfully created verified tasks 80% of the time across five task types: bug fixes, feature additions, test generation, API migrations, and security repairs. The approach recovers 29% more usable tasks than simpler baselines and reduces computational costs by 11%.
+- Why it matters: Training coding agents requires thousands of realistic programming tasks paired with working code environments—a slow and expensive process to create by hand. Change2Task taps into the gold mine of real developer work already stored in code repositories, automatically extracting and validating tasks at scale. This unlocks faster, cheaper development of better AI coding assistants while reusing modern code environments instead of reconstructing them repeatedly.
+
+### When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS
+- URL: https://paperplaine.com/papers/when-linear-rul-labels
+- Category: Engineering
+- Authors: Behrad Mousaei Shir-Mohammad, Seyed Reza Tavakoli, Mohammad Mohammadi et al.
+- arXiv: 2607.28115
+- Plain-English subtitle: Why bearing failure timelines don't match what vibration sensors actually show
+- Summary: Machines fail in predictable stages—but the standard way of labeling remaining lifespan (as a straight line over time) doesn't match what vibration sensors actually measure. Researchers built a new prediction system that accounts for three distinct failure phases, fitting a curve that bends to match real vibration behavior. On test bearings, this stage-aware approach cut prediction error by 10–15% compared to the traditional linear method.
+- Why it matters: Industrial bearing failures cause unplanned downtime and expensive repairs. Better predictions of when a bearing will actually fail—rather than guesses based on calendar time—let maintenance teams act at the right moment: not so early that they waste money on premature replacement, not so late that the machine breaks down. This method shows that off-the-shelf sensors can be more useful if the software interpreting them accounts for how machines truly degrade.
+
+### Lifting Lifted Product Codes
+- URL: https://paperplaine.com/papers/lifting-lifted-product-codes
+- Category: Physics
+- Authors: Yuta Hirasaki, Jong Yeon Lee
+- arXiv: 2607.28621
+- Plain-English subtitle: Building better quantum error-correcting codes by expanding their mathematical structure
+- Summary: Physicists have developed a systematic method to create larger and more efficient quantum error-correcting codes by mathematically "lifting" existing ones while keeping their core structure intact. The approach yields codes with better performance than previously available versions and makes it cheaper in terms of physical resources to perform reliable quantum operations on these codes.
+- Why it matters: Quantum computers need error correction to function reliably, and the overhead required—extra qubits and operations needed to protect against mistakes—is a major barrier to building practical machines. This work produces codes that require less overhead while maintaining error protection, directly reducing the resource demands of near-term quantum computers. The systematic construction framework also opens a path toward understanding whether quantum error correction can scale efficiently without relying on physical space and geometry, a theoretical question that matters for long-term quantum computing architecture.
 
 ### Algorithms for Structured Elections under Thiele Voting Rules
 - URL: https://paperplaine.com/papers/algorithms-for-structured-elections
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to judge whether scientific figures actually support their claims
 - Summary: Researchers created a benchmark of over 6,300 scientific figures from top computer-science papers, each scored by experts on five qualities: clarity, layout, how well captions match images, relevance to the text, and whether the figure misleads. They then built an AI system that learned to evaluate figures the same way humans do, achieving 93% consistency with expert judgment—significantly better than existing image-quality tools, which weren't designed for scientific content.
 - Why it matters: Scientific papers rely on figures to communicate results, but no automated system has existed to catch figures that are unclear, mislabeled, or misleading. This benchmark and AI tool could help journal editors and researchers spot problematic figures before publication, reducing the spread of poorly presented—or even deceptive—research findings.
-
-### Dead Reckoning: Counting Your Customers Who Never Say Goodbye
-- URL: https://paperplaine.com/papers/dead-reckoning-counting-your
-- Category: Quantitative Finance
-- Authors: Karl T. Ulrich
-- arXiv: 2607.18623
-- Plain-English subtitle: Why companies can't really know how many customers they still have
-- Summary: When customers stop buying without announcement, companies use statistical models to guess who's still active. But the paper shows these models are fundamentally unreliable: different reasonable assumptions produce customer counts that vary by a factor of 7.6 on the same dataset, even when predictions about near-term purchases match closely. The problem isn't bad math—it's that the models extrapolate infinitely far into the future, where verification is impossible.
-- Why it matters: Companies use these customer counts for valuation, marketing budgets, and strategic decisions worth millions of dollars. When the same data can justify counts ranging from 3,654 to 27,734 active customers, leadership is making bets on a number with almost no reliable foundation. The paper shows the honest fix: report concrete, verifiable predictions over a fixed time horizon (like "18-month repeat purchase rate") instead of an extrapolated infinity, and if a total count must be given, present it as a wide range rather than false precision.
-
-### Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades
-- URL: https://paperplaine.com/papers/where-does-the-criticality
-- Category: Physics
-- Authors: Ramon Marc Garcia Seuma
-- arXiv: 2607.27070
-- Plain-English subtitle: Why crypto crash warnings work differently depending on what triggers them
-- Summary: A study of seven major Bitcoin liquidation crashes found no single early-warning signal that works across all events. Price showed telltale signs of instability before five crashes but completely failed to warn of two sudden news-driven collapses; only a compression in trading order-flow emerged as a consistent (though imperfect) precursor across all events. This suggests crypto crashes fall into at least two different types—those that build up gradually and those triggered suddenly by external shocks—each with its own fingerprint.
-- Why it matters: Regulators and traders looking for a universal early-warning system for crypto derivatives crashes won't find one. The October 2025 crash, which wiped out 19 billion dollars, defied the most commonly cited warning signal. Understanding that different crashes have different signatures means any real-world alarm system would need to watch multiple indicators simultaneously and adapt its logic based on market conditions—a harder engineering problem than existing proposals assume.
-
-### π\mathbf{R}^2: Reactive Real-time Flow Policies
-- URL: https://paperplaine.com/papers/mathbf-r-2-reactive
-- Category: Computer Science · AI
-- Authors: Sungjae Park, Shubham Tulsiani
-- arXiv: 2607.26055
-- Plain-English subtitle: Making robot control policies react fast enough to handle the unexpected
-- Summary: Current AI-powered robot controllers plan their moves in chunks and can't adjust mid-action, making them clumsy when things change unexpectedly. Researchers created πR², a new approach that lets robots react to what they sense right now while keeping powerful AI models and planning for multiple actions at once. On real robots, it replans about 4 times faster than existing methods and improves success rates by up to 30%.
-- Why it matters: Robots trained with large AI models are increasingly useful, but they've been slow to react to surprises—a dropped object, a shifting surface, an unexpected obstacle. πR² lets them adjust course in real-time without slowing down, using the same powerful models. This means robots could handle messier, less predictable real-world tasks like assembly lines or warehouse work where conditions constantly shift.
 
 ## About
 

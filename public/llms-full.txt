@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 537 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 540 papers currently in the Paper Plaine archive.
 Last updated: 2026-07-31
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments
+Subtitle: Mining real code changes to automatically create training tasks for AI coding assistants
+URL: https://paperplaine.com/papers/change2task-from-repository-changes
+Category: Computer Science · AI
+Authors: Haomin Qi, Xingliang Wang, Xuanqi Gao et al.
+arXiv ID: 2607.28591
+arXiv URL: https://arxiv.org/abs/2607.28591
+Posted: 2026-07-31
+
+Summary: Researchers created Change2Task, a system that mines a repository's history of merged pull requests and converts them into executable training tasks for coding agents. Starting from 1,130 source changes, the system successfully created verified tasks 80% of the time across five task types: bug fixes, feature additions, test generation, API migrations, and security repairs. The approach recovers 29% more usable tasks than simpler baselines and reduces computational costs by 11%.
+
+Why it matters: Training coding agents requires thousands of realistic programming tasks paired with working code environments—a slow and expensive process to create by hand. Change2Task taps into the gold mine of real developer work already stored in code repositories, automatically extracting and validating tasks at scale. This unlocks faster, cheaper development of better AI coding assistants while reusing modern code environments instead of reconstructing them repeatedly.
+
+---
+Title: When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS
+Subtitle: Why bearing failure timelines don't match what vibration sensors actually show
+URL: https://paperplaine.com/papers/when-linear-rul-labels
+Category: Engineering
+Authors: Behrad Mousaei Shir-Mohammad, Seyed Reza Tavakoli, Mohammad Mohammadi et al.
+arXiv ID: 2607.28115
+arXiv URL: https://arxiv.org/abs/2607.28115
+Posted: 2026-07-31
+
+Summary: Machines fail in predictable stages—but the standard way of labeling remaining lifespan (as a straight line over time) doesn't match what vibration sensors actually measure. Researchers built a new prediction system that accounts for three distinct failure phases, fitting a curve that bends to match real vibration behavior. On test bearings, this stage-aware approach cut prediction error by 10–15% compared to the traditional linear method.
+
+Why it matters: Industrial bearing failures cause unplanned downtime and expensive repairs. Better predictions of when a bearing will actually fail—rather than guesses based on calendar time—let maintenance teams act at the right moment: not so early that they waste money on premature replacement, not so late that the machine breaks down. This method shows that off-the-shelf sensors can be more useful if the software interpreting them accounts for how machines truly degrade.
+
+---
+Title: Lifting Lifted Product Codes
+Subtitle: Building better quantum error-correcting codes by expanding their mathematical structure
+URL: https://paperplaine.com/papers/lifting-lifted-product-codes
+Category: Physics
+Authors: Yuta Hirasaki, Jong Yeon Lee
+arXiv ID: 2607.28621
+arXiv URL: https://arxiv.org/abs/2607.28621
+Posted: 2026-07-31
+
+Summary: Physicists have developed a systematic method to create larger and more efficient quantum error-correcting codes by mathematically "lifting" existing ones while keeping their core structure intact. The approach yields codes with better performance than previously available versions and makes it cheaper in terms of physical resources to perform reliable quantum operations on these codes.
+
+Why it matters: Quantum computers need error correction to function reliably, and the overhead required—extra qubits and operations needed to protect against mistakes—is a major barrier to building practical machines. This work produces codes that require less overhead while maintaining error protection, directly reducing the resource demands of near-term quantum computers. The systematic construction framework also opens a path toward understanding whether quantum error correction can scale efficiently without relying on physical space and geometry, a theoretical question that matters for long-term quantum computing architecture.
 
 ---
 Title: Algorithms for Structured Elections under Thiele Voting Rules
