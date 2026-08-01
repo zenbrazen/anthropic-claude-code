@@ -1,5 +1,71 @@
 [
   {
+    "id": "2607.28525",
+    "title": "Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors",
+    "authors": "Neelam Akula, Surbhi Kumar, Murat Kantarcioglu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-30T17:01:20Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "When graph neural networks learn two tasks at once, which direction helps more?",
+    "summary": "When a neural network learns to predict on the same graph in two different ways—classifying nodes and predicting missing links—one direction of knowledge transfer works reliably while the other often fails. The researchers found that teaching the network link prediction first, then node classification, almost always improves performance on homophilic graphs (where similar nodes connect), but going the opposite direction produces fragile results that can actually hurt accuracy if not done carefully.",
+    "whyItMatters": "Many real-world systems—social networks, recommendation engines, knowledge graphs—need to make multiple kinds of predictions on the same underlying structure. This work provides the first reliable benchmark for when you can reuse what a network learns from one task to improve another, and shows that simple graph properties like homophily can tell you in advance whether sharing will help or hurt. That means engineers can avoid wasting computation on transfer learning strategies that will backfire.",
+    "fetchedAt": "2026-08-01T20:06:29.220Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 180
+    },
+    "slug": "same-graph-cross-task"
+  },
+  {
+    "id": "2607.26179",
+    "title": "Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition",
+    "authors": "Chandra Sripada, Richard Lewis",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-07-28T18:37:48Z",
+    "publishedFormatted": "Jul 28, 2026",
+    "subtitle": "Why AI language models think more like humans than we realized",
+    "summary": "Large language models and human brains organize information and make decisions using surprisingly similar principles, despite being built from completely different materials and learning in completely different ways. Researchers identified five major structural matches between how LLMs and humans think—from how they make inferences to how they learn from prediction errors—suggesting that these aren't coincidental surface similarities but reflect deeper truths about how intelligent systems work.",
+    "whyItMatters": "Understanding what LLMs and human cognition genuinely have in common could improve how we design, test, and predict the behavior of AI systems. It also helps us move past the assumption that AI intelligence is fundamentally alien, which has blocked clearer thinking about what these systems can and cannot do. This framework could guide better questions about when we should and shouldn't trust AI reasoning.",
+    "fetchedAt": "2026-08-01T20:06:32.625Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 134
+    },
+    "slug": "cognitive-convergence-deep-similarities"
+  },
+  {
+    "id": "2607.28567",
+    "title": "Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories",
+    "authors": "Mengfei Ran, Yifeng Shen, Ruijie Guan",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-07-30T17:33:42Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Making sense of messy medical records to find what actually causes outcomes",
+    "summary": "Doctors often track patients with lab tests and monitor readings taken at random times, creating fragmented records that standard statistical methods struggle to handle. This paper presents a new approach that converts these irregular histories into clean data states, then uses those states to answer causal questions—like whether a treatment actually changed a patient's outcome—while accounting for confounding and measurement bias. Tests on ICU data show the method works even when records are sparse or heavily skewed.",
+    "whyItMatters": "Hospital records are inherently messy: labs are ordered when doctors suspect problems, vital signs stream continuously but get recorded sporadically, and timing itself contains medical information. Current methods either throw away the timing and detail or ignore bias in what gets measured when. This approach handles all of that without requiring researchers to manually engineer summaries, making it possible to reliably answer causal questions from real electronic health records—which matters because many treatment decisions in medicine depend on understanding what actually works, not just what correlates with recovery.",
+    "fetchedAt": "2026-08-01T20:06:36.742Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 208
+    },
+    "slug": "doubly-robust-functional-representation"
+  },
+  {
     "id": "2607.28537",
     "title": "Graph Neural Network Force Fields for Spin Dynamics in Metallic Magnets",
     "authors": "Ali Rayat, Yunhao Fan, Gia-Wei Chern",

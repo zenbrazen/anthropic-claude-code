@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 542 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 545 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-01
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors
+Subtitle: When graph neural networks learn two tasks at once, which direction helps more?
+URL: https://paperplaine.com/papers/same-graph-cross-task
+Category: Computer Science · AI
+Authors: Neelam Akula, Surbhi Kumar, Murat Kantarcioglu et al.
+arXiv ID: 2607.28525
+arXiv URL: https://arxiv.org/abs/2607.28525
+Posted: 2026-08-01
+
+Summary: When a neural network learns to predict on the same graph in two different ways—classifying nodes and predicting missing links—one direction of knowledge transfer works reliably while the other often fails. The researchers found that teaching the network link prediction first, then node classification, almost always improves performance on homophilic graphs (where similar nodes connect), but going the opposite direction produces fragile results that can actually hurt accuracy if not done carefully.
+
+Why it matters: Many real-world systems—social networks, recommendation engines, knowledge graphs—need to make multiple kinds of predictions on the same underlying structure. This work provides the first reliable benchmark for when you can reuse what a network learns from one task to improve another, and shows that simple graph properties like homophily can tell you in advance whether sharing will help or hurt. That means engineers can avoid wasting computation on transfer learning strategies that will backfire.
+
+---
+Title: Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition
+Subtitle: Why AI language models think more like humans than we realized
+URL: https://paperplaine.com/papers/cognitive-convergence-deep-similarities
+Category: Quantitative Biology
+Authors: Chandra Sripada, Richard Lewis
+arXiv ID: 2607.26179
+arXiv URL: https://arxiv.org/abs/2607.26179
+Posted: 2026-08-01
+
+Summary: Large language models and human brains organize information and make decisions using surprisingly similar principles, despite being built from completely different materials and learning in completely different ways. Researchers identified five major structural matches between how LLMs and humans think—from how they make inferences to how they learn from prediction errors—suggesting that these aren't coincidental surface similarities but reflect deeper truths about how intelligent systems work.
+
+Why it matters: Understanding what LLMs and human cognition genuinely have in common could improve how we design, test, and predict the behavior of AI systems. It also helps us move past the assumption that AI intelligence is fundamentally alien, which has blocked clearer thinking about what these systems can and cannot do. This framework could guide better questions about when we should and shouldn't trust AI reasoning.
+
+---
+Title: Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories
+Subtitle: Making sense of messy medical records to find what actually causes outcomes
+URL: https://paperplaine.com/papers/doubly-robust-functional-representation
+Category: Statistics
+Authors: Mengfei Ran, Yifeng Shen, Ruijie Guan
+arXiv ID: 2607.28567
+arXiv URL: https://arxiv.org/abs/2607.28567
+Posted: 2026-08-01
+
+Summary: Doctors often track patients with lab tests and monitor readings taken at random times, creating fragmented records that standard statistical methods struggle to handle. This paper presents a new approach that converts these irregular histories into clean data states, then uses those states to answer causal questions—like whether a treatment actually changed a patient's outcome—while accounting for confounding and measurement bias. Tests on ICU data show the method works even when records are sparse or heavily skewed.
+
+Why it matters: Hospital records are inherently messy: labs are ordered when doctors suspect problems, vital signs stream continuously but get recorded sporadically, and timing itself contains medical information. Current methods either throw away the timing and detail or ignore bias in what gets measured when. This approach handles all of that without requiring researchers to manually engineer summaries, making it possible to reliably answer causal questions from real electronic health records—which matters because many treatment decisions in medicine depend on understanding what actually works, not just what correlates with recovery.
 
 ---
 Title: Graph Neural Network Force Fields for Spin Dynamics in Metallic Magnets

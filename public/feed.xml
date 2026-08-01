@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 09:07:10 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 20:06:37 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors</title>
+      <link>https://paperplaine.com/papers/same-graph-cross-task</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/same-graph-cross-task</guid>
+      <pubDate>Thu, 30 Jul 2026 17:01:20 GMT</pubDate>
+      <author>Neelam Akula, Surbhi Kumar, Murat Kantarcioglu et al.</author>
+      <category>AI</category>
+      <description>When graph neural networks learn two tasks at once, which direction helps more?</description>
+      <content:encoded><![CDATA[<p><em>When graph neural networks learn two tasks at once, which direction helps more?</em></p><p>When a neural network learns to predict on the same graph in two different ways—classifying nodes and predicting missing links—one direction of knowledge transfer works reliably while the other often fails. The researchers found that teaching the network link prediction first, then node classification, almost always improves performance on homophilic graphs (where similar nodes connect), but going the opposite direction produces fragile results that can actually hurt accuracy if not done carefully.</p><p><strong>Why it matters:</strong> Many real-world systems—social networks, recommendation engines, knowledge graphs—need to make multiple kinds of predictions on the same underlying structure. This work provides the first reliable benchmark for when you can reuse what a network learns from one task to improve another, and shows that simple graph properties like homophily can tell you in advance whether sharing will help or hurt. That means engineers can avoid wasting computation on transfer learning strategies that will backfire.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition</title>
+      <link>https://paperplaine.com/papers/cognitive-convergence-deep-similarities</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cognitive-convergence-deep-similarities</guid>
+      <pubDate>Tue, 28 Jul 2026 18:37:48 GMT</pubDate>
+      <author>Chandra Sripada, Richard Lewis</author>
+      <category>Biology</category>
+      <description>Why AI language models think more like humans than we realized</description>
+      <content:encoded><![CDATA[<p><em>Why AI language models think more like humans than we realized</em></p><p>Large language models and human brains organize information and make decisions using surprisingly similar principles, despite being built from completely different materials and learning in completely different ways. Researchers identified five major structural matches between how LLMs and humans think—from how they make inferences to how they learn from prediction errors—suggesting that these aren't coincidental surface similarities but reflect deeper truths about how intelligent systems work.</p><p><strong>Why it matters:</strong> Understanding what LLMs and human cognition genuinely have in common could improve how we design, test, and predict the behavior of AI systems. It also helps us move past the assumption that AI intelligence is fundamentally alien, which has blocked clearer thinking about what these systems can and cannot do. This framework could guide better questions about when we should and shouldn't trust AI reasoning.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories</title>
+      <link>https://paperplaine.com/papers/doubly-robust-functional-representation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/doubly-robust-functional-representation</guid>
+      <pubDate>Thu, 30 Jul 2026 17:33:42 GMT</pubDate>
+      <author>Mengfei Ran, Yifeng Shen, Ruijie Guan</author>
+      <category>Statistics</category>
+      <description>Making sense of messy medical records to find what actually causes outcomes</description>
+      <content:encoded><![CDATA[<p><em>Making sense of messy medical records to find what actually causes outcomes</em></p><p>Doctors often track patients with lab tests and monitor readings taken at random times, creating fragmented records that standard statistical methods struggle to handle. This paper presents a new approach that converts these irregular histories into clean data states, then uses those states to answer causal questions—like whether a treatment actually changed a patient's outcome—while accounting for confounding and measurement bias. Tests on ICU data show the method works even when records are sparse or heavily skewed.</p><p><strong>Why it matters:</strong> Hospital records are inherently messy: labs are ordered when doctors suspect problems, vital signs stream continuously but get recorded sporadically, and timing itself contains medical information. Current methods either throw away the timing and detail or ignore bias in what gets measured when. This approach handles all of that without requiring researchers to manually engineer summaries, making it possible to reliably answer causal questions from real electronic health records—which matters because many treatment decisions in medicine depend on understanding what actually works, not just what correlates with recovery.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Graph Neural Network Force Fields for Spin Dynamics in Metallic Magnets</title>
       <link>https://paperplaine.com/papers/graph-neural-network-force</link>
