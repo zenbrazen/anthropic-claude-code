@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 547 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 550 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 187 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 188 papers in archive.
+  - "Learning to Trace Seiberg Dualities"
   - "Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation"
-  - "Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 46 papers in archive.
   - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 45 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 46 papers in archive.
+  - "Quantum Chaos and Diffusive Transport from Geometric Randomness"
   - "Lifting Lifted Product Codes"
-  - "Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 46 papers in archive.
   - "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design"
   - "Eventually greedy best Egyptian underapproximations of rational numbers via optimal control"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 45 papers in archive.
   - "When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS"
   - "OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 39 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 40 papers in archive.
+  - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
   - "AI Strategy: How to Choose What AI Product to Implement"
-  - "Measuring inequality and social stratification with Lorenz curvature"
 
 ## 10 most recent papers
+
+### Learning to Trace Seiberg Dualities
+- URL: https://paperplaine.com/papers/learning-to-trace-seiberg
+- Category: Computer Science · AI
+- Authors: Jonathan J. Heckman, Shani Meynet, Alessandro Mininno et al.
+- arXiv: 2607.28628
+- Plain-English subtitle: Teaching AI to spot when two complex physics systems are secretly the same
+- Summary: Physicists used machine learning to solve a long-standing problem in theoretical physics: recognizing when two different-looking mathematical systems are actually equivalent through what's called a Seiberg duality. For moderately complex systems, neural networks outperformed traditional hand-coded algorithms at spotting these hidden equivalences, especially when combined with pathfinding techniques borrowed from navigation software.
+- Why it matters: Physicists have long struggled to verify dualities even when they know all the underlying rules—it's computationally expensive and error-prone. This work shows AI can be faster and more accurate, turning a theoretical bottleneck into a practical tool. More broadly, it demonstrates that complex physics problems can serve as meaningful tests for frontier AI models, helping researchers evaluate machine learning capabilities on genuinely hard scientific reasoning tasks rather than synthetic benchmarks.
+
+### Quantum Chaos and Diffusive Transport from Geometric Randomness
+- URL: https://paperplaine.com/papers/quantum-chaos-and-diffusive
+- Category: Physics
+- Authors: Bibek Saha, Abhishek Dhar, Sthitadhi Roy
+- arXiv: 2607.28579
+- Plain-English subtitle: How tangled wiring patterns alone can create quantum chaos without disorder
+- Summary: Quantum systems usually need defects or particle interactions to behave chaotically, but this work shows that geometry alone can do it. When quantum particles hop across randomly-wired networks, the shape and connectivity of those networks dictates whether chaos emerges—independent of any material disorder. Large networks generated robust chaos and smooth energy spreading, while thin, highly interconnected ones created a split personality: some particles localized in place while others moved freely.
+- Why it matters: Quantum chaos and diffusion are central to how quantum systems approach thermal equilibrium—a question with implications for quantum computers, which must avoid chaos to maintain coherence, and for fundamental physics exploring the quantum-to-classical boundary. This finding opens a new knob for controlling these behaviors without engineering material defects, potentially useful for designing quantum devices where geometry is easier to control than atomic-scale disorder.
+
+### Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth
+- URL: https://paperplaine.com/papers/boundary-induced-apparent-risk
+- Category: Economics
+- Authors: Ling Zhang, Boyan Xing, Zhenyu She et al.
+- arXiv: 2607.28230
+- Plain-English subtitle: Why approaching financial ruin makes even rational investors look risk-averse
+- Summary: When an investment system faces a hard stopping point—like bankruptcy—the mathematically optimal strategy changes dramatically. A new analysis shows that investors approaching this boundary should bet smaller amounts than traditional growth theory suggests, and this cautious behavior emerges purely from the boundary itself, not from personal fear of risk.
+- Why it matters: This explains a puzzling gap between how economic theory says people should invest and how they actually do near financial cliffs. The finding suggests that apparent risk aversion in real portfolios might be rational responses to real constraints rather than personality quirks—which could improve how we model everything from personal retirement planning to corporate risk management.
 
 ### Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation
 - URL: https://paperplaine.com/papers/stage-replay-divergence-follows
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Stopping bots from gaming crypto rewards while fairly rewarding real users
 - Summary: Most cryptocurrency reward programs can be easily exploited by fake accounts and bot networks, diverting money meant for genuine users. A new system called ZAPs uses a combination of fairness rules and fraud detection to block these attacks while ensuring that whales and protocol farmers can't dominate rewards—in live tests, it cut fraudulent reward capture by more than half while increasing participation from legitimate users by nearly half.
 - Why it matters: Cryptocurrency platforms spend billions on user incentives, but much of it currently leaks to bots and organized fraud rings instead of reaching real people. ZAPs could redirect tens of millions of dollars annually from attackers to legitimate users, making crypto programs more cost-effective for platforms and fairer for the people they're trying to attract.
-
-### Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments
-- URL: https://paperplaine.com/papers/change2task-from-repository-changes
-- Category: Computer Science · AI
-- Authors: Haomin Qi, Xingliang Wang, Xuanqi Gao et al.
-- arXiv: 2607.28591
-- Plain-English subtitle: Mining real code changes to automatically create training tasks for AI coding assistants
-- Summary: Researchers created Change2Task, a system that mines a repository's history of merged pull requests and converts them into executable training tasks for coding agents. Starting from 1,130 source changes, the system successfully created verified tasks 80% of the time across five task types: bug fixes, feature additions, test generation, API migrations, and security repairs. The approach recovers 29% more usable tasks than simpler baselines and reduces computational costs by 11%.
-- Why it matters: Training coding agents requires thousands of realistic programming tasks paired with working code environments—a slow and expensive process to create by hand. Change2Task taps into the gold mine of real developer work already stored in code repositories, automatically extracting and validating tasks at scale. This unlocks faster, cheaper development of better AI coding assistants while reusing modern code environments instead of reconstructing them repeatedly.
-
-### When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS
-- URL: https://paperplaine.com/papers/when-linear-rul-labels
-- Category: Engineering
-- Authors: Behrad Mousaei Shir-Mohammad, Seyed Reza Tavakoli, Mohammad Mohammadi et al.
-- arXiv: 2607.28115
-- Plain-English subtitle: Why bearing failure timelines don't match what vibration sensors actually show
-- Summary: Machines fail in predictable stages—but the standard way of labeling remaining lifespan (as a straight line over time) doesn't match what vibration sensors actually measure. Researchers built a new prediction system that accounts for three distinct failure phases, fitting a curve that bends to match real vibration behavior. On test bearings, this stage-aware approach cut prediction error by 10–15% compared to the traditional linear method.
-- Why it matters: Industrial bearing failures cause unplanned downtime and expensive repairs. Better predictions of when a bearing will actually fail—rather than guesses based on calendar time—let maintenance teams act at the right moment: not so early that they waste money on premature replacement, not so late that the machine breaks down. This method shows that off-the-shelf sensors can be more useful if the software interpreting them accounts for how machines truly degrade.
-
-### Lifting Lifted Product Codes
-- URL: https://paperplaine.com/papers/lifting-lifted-product-codes
-- Category: Physics
-- Authors: Yuta Hirasaki, Jong Yeon Lee
-- arXiv: 2607.28621
-- Plain-English subtitle: Building better quantum error-correcting codes by expanding their mathematical structure
-- Summary: Physicists have developed a systematic method to create larger and more efficient quantum error-correcting codes by mathematically "lifting" existing ones while keeping their core structure intact. The approach yields codes with better performance than previously available versions and makes it cheaper in terms of physical resources to perform reliable quantum operations on these codes.
-- Why it matters: Quantum computers need error correction to function reliably, and the overhead required—extra qubits and operations needed to protect against mistakes—is a major barrier to building practical machines. This work produces codes that require less overhead while maintaining error protection, directly reducing the resource demands of near-term quantum computers. The systematic construction framework also opens a path toward understanding whether quantum error correction can scale efficiently without relying on physical space and geometry, a theoretical question that matters for long-term quantum computing architecture.
 
 ## About
 
