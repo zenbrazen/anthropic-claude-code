@@ -1,5 +1,49 @@
 [
   {
+    "id": "2607.28495",
+    "title": "Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation",
+    "authors": "Alexander Boesgaard Lorup",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-07-30T16:41:40Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Why AI language models give different answers from the same starting point",
+    "summary": "When AI language models restart from a saved checkpoint, they sometimes produce different outputs even though they're starting from identical information. Researchers found that these differences stem from how the model's internal memory (the key-value cache) is reconstructed, not from the actual tokens themselves—and that using higher-precision math can eliminate the divergence entirely. By transplanting the memory from one model run into another, they proved the cache is the actual cause of the problem.",
+    "whyItMatters": "Language models are increasingly used for high-stakes decisions in medicine, law, and finance, where consistency matters. Right now, restarting a model from a checkpoint can silently produce different answers, creating a reproducibility problem that engineers can't easily detect. This work pinpoints exactly where the instability comes from, making it possible to either fix it (use higher precision math) or account for it (know when your model might diverge).",
+    "fetchedAt": "2026-08-02T09:07:36.871Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 207
+    },
+    "slug": "stage-replay-divergence-follows"
+  },
+  {
+    "id": "2607.28018",
+    "title": "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design",
+    "authors": "Davide Gagliardi, Alessio Zappone, Domenico Ciuonzo et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-07-30T11:07:34Z",
+    "publishedFormatted": "Jul 30, 2026",
+    "subtitle": "Making wireless networks smarter by optimizing surfaces that bounce signals",
+    "summary": "Researchers developed faster algorithms to optimize reconfigurable intelligent surfaces—mirrors that redirect wireless signals to improve network performance. The new methods run up to 10 times quicker than existing approaches while matching or beating their results, making them practical for real networks with thousands of signal-bouncing elements.",
+    "whyItMatters": "Future 5G and 6G networks rely on these smart surfaces to reach more users with less power, but current optimization methods are too slow to work at scale. Faster algorithms mean networks can automatically adjust these surfaces throughout the day, adapting to changing demand and coverage gaps—directly translating to better phone signals, lower energy costs, and more reliable service in more locations.",
+    "fetchedAt": "2026-08-02T09:07:39.808Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 168
+    },
+    "slug": "a-stochastic-optimization-framework"
+  },
+  {
     "id": "2607.28525",
     "title": "Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors",
     "authors": "Neelam Akula, Surbhi Kumar, Murat Kantarcioglu et al.",

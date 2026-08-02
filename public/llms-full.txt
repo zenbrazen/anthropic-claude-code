@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 545 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-01
+This file contains the complete plain-English text of all 547 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-02
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,34 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation
+Subtitle: Why AI language models give different answers from the same starting point
+URL: https://paperplaine.com/papers/stage-replay-divergence-follows
+Category: Computer Science · AI
+Authors: Alexander Boesgaard Lorup
+arXiv ID: 2607.28495
+arXiv URL: https://arxiv.org/abs/2607.28495
+Posted: 2026-08-02
+
+Summary: When AI language models restart from a saved checkpoint, they sometimes produce different outputs even though they're starting from identical information. Researchers found that these differences stem from how the model's internal memory (the key-value cache) is reconstructed, not from the actual tokens themselves—and that using higher-precision math can eliminate the divergence entirely. By transplanting the memory from one model run into another, they proved the cache is the actual cause of the problem.
+
+Why it matters: Language models are increasingly used for high-stakes decisions in medicine, law, and finance, where consistency matters. Right now, restarting a model from a checkpoint can silently produce different answers, creating a reproducibility problem that engineers can't easily detect. This work pinpoints exactly where the instability comes from, making it possible to either fix it (use higher precision math) or account for it (know when your model might diverge).
+
+---
+Title: A Stochastic Optimization Framework for RIS-Aided Wireless Network Design
+Subtitle: Making wireless networks smarter by optimizing surfaces that bounce signals
+URL: https://paperplaine.com/papers/a-stochastic-optimization-framework
+Category: Mathematics
+Authors: Davide Gagliardi, Alessio Zappone, Domenico Ciuonzo et al.
+arXiv ID: 2607.28018
+arXiv URL: https://arxiv.org/abs/2607.28018
+Posted: 2026-08-02
+
+Summary: Researchers developed faster algorithms to optimize reconfigurable intelligent surfaces—mirrors that redirect wireless signals to improve network performance. The new methods run up to 10 times quicker than existing approaches while matching or beating their results, making them practical for real networks with thousands of signal-bouncing elements.
+
+Why it matters: Future 5G and 6G networks rely on these smart surfaces to reach more users with less power, but current optimization methods are too slow to work at scale. Faster algorithms mean networks can automatically adjust these surfaces throughout the day, adapting to changing demand and coverage gaps—directly translating to better phone signals, lower energy costs, and more reliable service in more locations.
 
 ---
 Title: Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 545 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 547 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 186 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 187 papers in archive.
+  - "Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation"
   - "Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors"
-  - "Graph Neural Network Force Fields for Spin Dynamics in Metallic Magnets"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 46 papers in archive.
   - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 45 papers in archive.
   - "Lifting Lifted Product Codes"
   - "Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 45 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 46 papers in archive.
+  - "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design"
   - "Eventually greedy best Egyptian underapproximations of rational numbers via optimal control"
-  - "Iterate Wronskians over \mathbb{R}^d as N-ary brackets on \mathbb{R}[x^1,\ldots,x^d]: the N-bonacci numbers bound the highest total degrees"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 45 papers in archive.
   - "Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition"
   - "A behavior-environment information loop drives sensory navigation"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Measuring inequality and social stratification with Lorenz curvature"
 
 ## 10 most recent papers
+
+### Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation
+- URL: https://paperplaine.com/papers/stage-replay-divergence-follows
+- Category: Computer Science · AI
+- Authors: Alexander Boesgaard Lorup
+- arXiv: 2607.28495
+- Plain-English subtitle: Why AI language models give different answers from the same starting point
+- Summary: When AI language models restart from a saved checkpoint, they sometimes produce different outputs even though they're starting from identical information. Researchers found that these differences stem from how the model's internal memory (the key-value cache) is reconstructed, not from the actual tokens themselves—and that using higher-precision math can eliminate the divergence entirely. By transplanting the memory from one model run into another, they proved the cache is the actual cause of the problem.
+- Why it matters: Language models are increasingly used for high-stakes decisions in medicine, law, and finance, where consistency matters. Right now, restarting a model from a checkpoint can silently produce different answers, creating a reproducibility problem that engineers can't easily detect. This work pinpoints exactly where the instability comes from, making it possible to either fix it (use higher precision math) or account for it (know when your model might diverge).
+
+### A Stochastic Optimization Framework for RIS-Aided Wireless Network Design
+- URL: https://paperplaine.com/papers/a-stochastic-optimization-framework
+- Category: Mathematics
+- Authors: Davide Gagliardi, Alessio Zappone, Domenico Ciuonzo et al.
+- arXiv: 2607.28018
+- Plain-English subtitle: Making wireless networks smarter by optimizing surfaces that bounce signals
+- Summary: Researchers developed faster algorithms to optimize reconfigurable intelligent surfaces—mirrors that redirect wireless signals to improve network performance. The new methods run up to 10 times quicker than existing approaches while matching or beating their results, making them practical for real networks with thousands of signal-bouncing elements.
+- Why it matters: Future 5G and 6G networks rely on these smart surfaces to reach more users with less power, but current optimization methods are too slow to work at scale. Faster algorithms mean networks can automatically adjust these surfaces throughout the day, adapting to changing demand and coverage gaps—directly translating to better phone signals, lower energy costs, and more reliable service in more locations.
 
 ### Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors
 - URL: https://paperplaine.com/papers/same-graph-cross-task
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Building better quantum error-correcting codes by expanding their mathematical structure
 - Summary: Physicists have developed a systematic method to create larger and more efficient quantum error-correcting codes by mathematically "lifting" existing ones while keeping their core structure intact. The approach yields codes with better performance than previously available versions and makes it cheaper in terms of physical resources to perform reliable quantum operations on these codes.
 - Why it matters: Quantum computers need error correction to function reliably, and the overhead required—extra qubits and operations needed to protect against mistakes—is a major barrier to building practical machines. This work produces codes that require less overhead while maintaining error protection, directly reducing the resource demands of near-term quantum computers. The systematic construction framework also opens a path toward understanding whether quantum error correction can scale efficiently without relying on physical space and geometry, a theoretical question that matters for long-term quantum computing architecture.
-
-### Algorithms for Structured Elections under Thiele Voting Rules
-- URL: https://paperplaine.com/papers/algorithms-for-structured-elections
-- Category: Computer Science · AI
-- Authors: Alexandra Lassota, Krzysztof Sornat
-- arXiv: 2607.28575
-- Plain-English subtitle: Making it faster to count votes when approval patterns follow a simple structure
-- Summary: Researchers found that a common voting method becomes much faster to compute when voters' approval choices follow a specific structure—where each candidate is approved by voters in a consecutive block. The team designed new algorithms that can solve what would otherwise be computationally intractable problems, and also cracked two long-standing open questions about how to quickly count votes under approval-based rules.
-- Why it matters: As organizations and governments adopt approval voting for committee selection, the ability to actually compute winners becomes essential. These algorithms make it practical to run Proportional Approval Voting on real-world elections where the approval patterns naturally cluster—a common scenario in actual voting data. This bridges the gap between voting theory and implementation by proving that structured real-world elections don't have the computational barriers that have limited these fairer voting systems' adoption.
-
-### Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data
-- URL: https://paperplaine.com/papers/secure-aggregation-for-privacy
-- Category: Computer Science
-- Authors: Pouya Rajabi, Mohsen Toorani
-- arXiv: 2607.28191
-- Plain-English subtitle: Letting hospitals train AI together without exposing patient brain data
-- Summary: Researchers created a system that lets multiple hospitals train a shared machine-learning model on EEG brain scans without sending anyone's actual patient data to a central server. The method uses mathematical masking and secret-sharing to hide individual hospital updates even from the aggregation server, and works whether you trust that server or assume it might cheat.
-- Why it matters: Hospitals can now collaborate on better AI models for brain disorders while keeping sensitive neurological data private and on-site. The tradeoff is real—adding strong privacy protections slows things down and requires more computation—but the semi-honest version adds only modest overhead, making it practical for real healthcare networks.
 
 ## About
 
