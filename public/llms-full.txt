@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 553 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 556 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-03
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: FriendBench: Benchmarking Dyadic Familiarity Inference in Humans and Multimodal Large Language Models
+Subtitle: Can AI tell if two people already know each other from watching them talk?
+URL: https://paperplaine.com/papers/friendbench-benchmarking-dyadic-familiarity
+Category: Computer Science · AI
+Authors: Jeffrey M. Girard, Jason Z. Zheng, Jacqueline R. Vertino et al.
+arXiv ID: 2607.29602
+arXiv URL: https://arxiv.org/abs/2607.29602
+Posted: 2026-08-03
+
+Summary: Researchers created FriendBench, a test that asks whether two people in a 20-second conversation are strangers or already familiar with each other. The best AI systems matched human accuracy across video, audio, and text—but they got there differently: humans weighed both possibilities equally, while AI models were biased toward guessing "stranger." Interestingly, only humans actually benefited from watching body language and facial expressions; AI didn't gain much from video over speech alone.
+
+Why it matters: Detecting familiarity from behavior is crucial for AI assistants that need to navigate social contexts—whether moderating online interactions, analyzing team dynamics, or providing appropriate responses in social settings. The finding that current AI systems misread social cues in systematic ways shows where these models still lag behind humans, and highlights which behavioral channels (like visible nonverbal cues) remain underexploited in multimodal AI training.
+
+---
+Title: CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention
+Subtitle: Finding security flaws in chip designs before they become expensive problems
+URL: https://paperplaine.com/papers/cweep-a-lexical-static
+Category: Computer Science
+Authors: Bryan Kwan, Benjamin Tan
+arXiv ID: 2607.29604
+arXiv URL: https://arxiv.org/abs/2607.29604
+Posted: 2026-08-03
+
+Summary: Researchers created CWEEP, a tool that automatically scans the code used to design computer chips and finds security weaknesses before manufacturing. The tool pinpoints exactly where vulnerabilities hide in the code and suggests fixes—and it's nearly four times more accurate than existing methods, catching the right problems 61% of the time compared to 18% for previous approaches.
+
+Why it matters: Security flaws in chip hardware are catastrophically expensive to fix once manufactured, sometimes requiring complete redesigns worth millions. CWEEP catches these vulnerabilities early in development when they're cheap to repair, and it works without requiring teams of expensive security experts to manually review every line of code. This could significantly speed up secure chip design and reduce the risk of hardware-based attacks reaching consumers.
+
+---
+Title: Bits per Spike as a Betting Game: An Interpretable Unit for Held-Out Log-Likelihood in Neural Data Analysis
+Subtitle: Converting confusing neural statistics into seconds of recording time
+URL: https://paperplaine.com/papers/bits-per-spike-as
+Category: Quantitative Biology
+Authors: Alex H. Williams
+arXiv ID: 2607.28779
+arXiv URL: https://arxiv.org/abs/2607.28779
+Posted: 2026-08-03
+
+Summary: Neuroscientists comparing models of brain activity use a metric called "bits per spike," but this number is hard to interpret—is 0.34 bits good or bad? This paper translates bits per spike into a concrete unit: how many seconds of recorded neural data you'd need to prove one model is actually better than another. The conversion uses a betting framework borrowed from statistics, turning an abstract information measure into something directly meaningful.
+
+Why it matters: Neuroscientists spend months collecting expensive neural recordings to test competing models of how the brain works. This framework lets them know upfront whether a model improvement is large enough to matter—for instance, whether they need 120 milliseconds or 11 seconds of additional recording to confidently reject a simpler baseline model. That clarity helps researchers allocate limited recording time efficiently and judge whether their hard-won data actually supports their scientific claims.
 
 ---
 Title: The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations
