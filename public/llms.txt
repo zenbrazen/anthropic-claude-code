@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 550 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 553 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 188 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 189 papers in archive.
+  - "The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations"
   - "Learning to Trace Seiberg Dualities"
-  - "Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 46 papers in archive.
   - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
   - "Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 45 papers in archive.
   - "Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition"
   - "A behavior-environment information loop drives sensory navigation"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 47 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 48 papers in archive.
+  - "Effort-Centric Fairness in Lending Decisions"
   - "ZAPs: A Reward Attribution Framework for DeFi Ecosystems with Adversarial-Robust Scoring via Parallel Anomaly Ensemble Detection"
-  - "Dead Reckoning: Counting Your Customers Who Never Say Goodbye"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 47 papers in archive.
   - "Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories"
   - "Breaking the Curse with BAND: Nonparametric Distribution Estimation in High Dimensions"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 45 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 46 papers in archive.
+  - "Few-shot Deep Learning for Phase-Amplitude Aberration Correction in Transcranial Focused Ultrasound"
   - "When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS"
-  - "OPERA: Offline Policy-guided Expert Routing and Adaptation for Universal Biomedical Image Analysis"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 40 papers in archive.
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
   - "AI Strategy: How to Choose What AI Product to Implement"
 
 ## 10 most recent papers
+
+### The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations
+- URL: https://paperplaine.com/papers/the-theoretical-foundation-of
+- Category: Computer Science · AI
+- Authors: Ilya Mikhelson
+- arXiv: 2607.29624
+- Plain-English subtitle: AI exams that adapt in real time to find what students can actually do
+- Summary: Traditional tests either grade by what you got wrong or rely on nerve-wracking oral exams that mix actual knowledge with performance anxiety. This paper describes a new kind of automated test that converses with students like a tutor, asking follow-up questions that map exactly where their understanding breaks down—then measures what they learn through the scaffolding itself, not penalizing wrong turns along the way.
+- Why it matters: Students often score poorly on static tests not because they lack ability, but because the format punishes mistakes or triggers anxiety. A conversational, adaptive exam could separate real understanding from test-taking skill, giving teachers honest insight into what each student is ready to learn next—and students a fairer shot at demonstrating what they actually know.
+
+### Few-shot Deep Learning for Phase-Amplitude Aberration Correction in Transcranial Focused Ultrasound
+- URL: https://paperplaine.com/papers/few-shot-deep-learning
+- Category: Engineering
+- Authors: Minju Seol, Minjee Seo, Seonaeng Cho et al.
+- arXiv: 2607.29182
+- Plain-English subtitle: Using AI to fix how ultrasound beams scatter through skulls in seconds
+- Summary: Researchers developed an AI system that corrects distortions in focused ultrasound beams passing through the skull, which normally scatter and miss their targets. The system learned from diverse skull shapes and adapted to new patients with just ten data points, achieving accuracy within half a millimeter while running 2,500 times faster than conventional physics simulations.
+- Why it matters: Focused ultrasound is used to treat brain tumors, Parkinson's disease, and chronic pain without surgery, but skull distortions currently limit when and how well it works. This speedup transforms treatment planning from hours to seconds, making real-time beam adjustment possible during procedures and expanding which patients can safely receive the therapy.
+
+### Effort-Centric Fairness in Lending Decisions
+- URL: https://paperplaine.com/papers/effort-centric-fairness-in
+- Category: Quantitative Finance
+- Authors: Shiqi Fang, Zexun Chen, Jake Ansell
+- arXiv: 2607.28847
+- Plain-English subtitle: Why rejected loan applicants face unequal hurdles to approval
+- Summary: Standard fairness checks in credit scoring look only at who gets approved today, missing whether rejected applicants from different groups face steeper paths to future approval. Researchers developed a new measure called "effort parity" that calculates the minimum changes each applicant would need to make—like improving credit history or increasing income—to cross the approval threshold, then compares these burdens across demographic groups. Testing on mortgage data, they found rejected female applicants required significantly greater effort to reach approval even when existing fairness criteria appeared satisfied, but a targeted adjustment reduced this gap by over 50% with minimal impact on lending accuracy.
+- Why it matters: Lenders using standard fairness metrics could unknowingly maintain systemic barriers that disadvantage certain groups, effectively telling rejected applicants from one demographic "you need a 15% income boost" while telling others "you need a 5% boost." This framework makes those hidden inequalities visible and provides lenders concrete ways to address them—showing specific changes applicants could make and revealing exactly what the bank sacrifices (in risk or profit) to create fairer pathways. As regulators increasingly scrutinize algorithmic lending, understanding effort barriers becomes essential for genuinely equitable credit access.
 
 ### Learning to Trace Seiberg Dualities
 - URL: https://paperplaine.com/papers/learning-to-trace-seiberg
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI language models think more like humans than we realized
 - Summary: Large language models and human brains organize information and make decisions using surprisingly similar principles, despite being built from completely different materials and learning in completely different ways. Researchers identified five major structural matches between how LLMs and humans think—from how they make inferences to how they learn from prediction errors—suggesting that these aren't coincidental surface similarities but reflect deeper truths about how intelligent systems work.
 - Why it matters: Understanding what LLMs and human cognition genuinely have in common could improve how we design, test, and predict the behavior of AI systems. It also helps us move past the assumption that AI intelligence is fundamentally alien, which has blocked clearer thinking about what these systems can and cannot do. This framework could guide better questions about when we should and shouldn't trust AI reasoning.
-
-### Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories
-- URL: https://paperplaine.com/papers/doubly-robust-functional-representation
-- Category: Statistics
-- Authors: Mengfei Ran, Yifeng Shen, Ruijie Guan
-- arXiv: 2607.28567
-- Plain-English subtitle: Making sense of messy medical records to find what actually causes outcomes
-- Summary: Doctors often track patients with lab tests and monitor readings taken at random times, creating fragmented records that standard statistical methods struggle to handle. This paper presents a new approach that converts these irregular histories into clean data states, then uses those states to answer causal questions—like whether a treatment actually changed a patient's outcome—while accounting for confounding and measurement bias. Tests on ICU data show the method works even when records are sparse or heavily skewed.
-- Why it matters: Hospital records are inherently messy: labs are ordered when doctors suspect problems, vital signs stream continuously but get recorded sporadically, and timing itself contains medical information. Current methods either throw away the timing and detail or ignore bias in what gets measured when. This approach handles all of that without requiring researchers to manually engineer summaries, making it possible to reliably answer causal questions from real electronic health records—which matters because many treatment decisions in medicine depend on understanding what actually works, not just what correlates with recovery.
-
-### Graph Neural Network Force Fields for Spin Dynamics in Metallic Magnets
-- URL: https://paperplaine.com/papers/graph-neural-network-force
-- Category: Computer Science · AI
-- Authors: Ali Rayat, Yunhao Fan, Gia-Wei Chern
-- arXiv: 2607.28537
-- Plain-English subtitle: AI shortcuts for simulating how magnets behave without expensive calculations
-- Summary: Researchers created an artificial intelligence system that learns to predict the forces acting on electrons in magnetic metals, bypassing the need for repeated expensive quantum calculations. The approach cuts computational time dramatically while staying accurate across different types of magnetic arrangements, matching results from traditional simulations while running far faster.
-- Why it matters: Simulating magnetic materials currently requires solving complex quantum equations thousands of times—a process that limits what scientists can study to small systems or short timescales. This AI shortcut could enable simulations of realistic magnetic devices at practical scales and timescales, accelerating research into next-generation magnetic storage, computing, and energy technologies.
-
-### ZAPs: A Reward Attribution Framework for DeFi Ecosystems with Adversarial-Robust Scoring via Parallel Anomaly Ensemble Detection
-- URL: https://paperplaine.com/papers/zaps-a-reward-attribution
-- Category: Quantitative Finance
-- Authors: Girish G N, Ashutosh Sahoo, Ajay Bhat et al.
-- arXiv: 2607.27859
-- Plain-English subtitle: Stopping bots from gaming crypto rewards while fairly rewarding real users
-- Summary: Most cryptocurrency reward programs can be easily exploited by fake accounts and bot networks, diverting money meant for genuine users. A new system called ZAPs uses a combination of fairness rules and fraud detection to block these attacks while ensuring that whales and protocol farmers can't dominate rewards—in live tests, it cut fraudulent reward capture by more than half while increasing participation from legitimate users by nearly half.
-- Why it matters: Cryptocurrency platforms spend billions on user incentives, but much of it currently leaks to bots and organized fraud rings instead of reaching real people. ZAPs could redirect tens of millions of dollars annually from attackers to legitimate users, making crypto programs more cost-effective for platforms and fairer for the people they're trying to attract.
 
 ## About
 
