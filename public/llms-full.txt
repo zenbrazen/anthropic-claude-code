@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 559 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 562 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-04
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies
+Subtitle: Choosing a small set of backup plans when the world's rules are unclear
+URL: https://paperplaine.com/papers/optimizing-minimax-regret-in
+Category: Computer Science · AI
+Authors: Sterre Lutz, Daniël Vos, Matthijs T. J. Spaan et al.
+arXiv ID: 2608.02509
+arXiv URL: https://arxiv.org/abs/2608.02509
+Posted: 2026-08-04
+
+Summary: When a robot or AI system doesn't know exactly how its environment works, it must either commit to one strategy that works everywhere or prepare a separate plan for every possibility—both costly choices. This work shows how to prepare just a handful of versatile strategies in advance, then pick the best one once uncertainty clears up. The researchers found that jumping from one strategy to two cuts regret roughly in half, with diminishing returns afterward.
+
+Why it matters: Real autonomous systems—from medical devices to industrial controllers—often face regulatory or computational limits on how many different behaviors they can deploy. This approach lets operators hedge against uncertainty cheaply by preparing only 2–5 strategies instead of one inflexible plan or hundreds of custom ones. In settings where the true environment reveals itself seconds before execution begins, it's a practical middle ground between adaptation and constraint.
+
+---
+Title: Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow
+Subtitle: Why predictable trading patterns don't break efficient markets
+URL: https://paperplaine.com/papers/exactly-solvable-model-for
+Category: Quantitative Finance
+Authors: Yuki Sato, Shunta Fujiwara, Kiyoshi Kanazawa
+arXiv ID: 2608.00988
+arXiv URL: https://arxiv.org/abs/2608.00988
+Posted: 2026-08-04
+
+Summary: Financial markets show a strange contradiction: prices behave randomly over time, yet the orders that move prices follow predictable patterns. A new mathematical model resolves this paradox by showing that the square-root relationship between trade size and price movement is the missing piece—it ensures prices stay random even when order flow is predictable.
+
+Why it matters: This explains why markets remain efficient and unpredictable despite the fact that large traders' moves can be forecast. Understanding this mechanism helps regulators and market participants grasp the real-world limits of prediction-based trading strategies, and clarifies which market rules (like the square-root price-impact law) are essential for keeping financial markets fair and stable.
+
+---
+Title: Thermalization of open quantum systems with pseudomodes
+Subtitle: When quantum systems touch heat baths, do they settle into equilibrium?
+URL: https://paperplaine.com/papers/thermalization-of-open-quantum
+Category: Physics
+Authors: R. Kevin Kessing, Thibaut Lacroix, Susana F. Huelga et al.
+arXiv ID: 2608.02517
+arXiv URL: https://arxiv.org/abs/2608.02517
+Posted: 2026-08-04
+
+Summary: Physicists discovered that quantum systems interacting strongly with heat baths often fail to reach thermal equilibrium—even when the coupling is weak, which defies everyday thermodynamic intuition. The researchers identified specific conditions and parameter choices that restore equilibrium behavior, and showed how to combine different types of mathematical models to maintain consistent temperatures across the system.
+
+Why it matters: Quantum computers and other quantum devices must reliably reach thermal equilibrium to function predictably. These findings provide engineers with concrete rules for building accurate mathematical models of how quantum systems interact with their environments, ensuring simulations and predictions match real physical behavior rather than breaking down in unexpected ways.
 
 ---
 Title: Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework
