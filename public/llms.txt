@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 556 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 559 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 190 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 191 papers in archive.
+  - "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework"
   - "FriendBench: Benchmarking Dyadic Familiarity Inference in Humans and Multimodal Large Language Models"
-  - "The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 47 papers in archive.
   - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
   - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 48 papers in archive.
   - "Effort-Centric Fairness in Lending Decisions"
   - "ZAPs: A Reward Attribution Framework for DeFi Ecosystems with Adversarial-Robust Scoring via Parallel Anomaly Ensemble Detection"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 47 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 48 papers in archive.
+  - "Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees"
   - "Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories"
-  - "Breaking the Curse with BAND: Nonparametric Distribution Estimation in High Dimensions"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 46 papers in archive.
   - "Few-shot Deep Learning for Phase-Amplitude Aberration Correction in Transcranial Focused Ultrasound"
   - "When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 40 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 41 papers in archive.
+  - "AI Governance for Institutional Readiness in Finance"
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
-  - "AI Strategy: How to Choose What AI Product to Implement"
 
 ## 10 most recent papers
+
+### Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework
+- URL: https://paperplaine.com/papers/bridging-artificial-intelligence-and
+- Category: Computer Science · AI
+- Authors: Junjie Yin, Buxin She, Xinyu Feng et al.
+- arXiv: 2608.02599
+- Plain-English subtitle: Teaching AI to power engineers through runnable code, not just theory
+- Summary: Researchers built an open-source set of working Python notebooks that teach AI methods specifically for power-grid problems—from predicting electricity demand to controlling batteries and optimizing systems. A survey found 92% of power engineers hit roadblocks when trying to use AI tools, and 94% wanted hands-on training tailored to their field; the framework's first webinar attracted over 590 attendees, suggesting real demand for this kind of grounded, practical teaching.
+- Why it matters: Power grids are becoming more complex and AI-dependent, but most engineers learn generic AI techniques that don't transfer well to real grid challenges. These ready-to-run modules let engineers test and learn on actual power-system problems without starting from scratch, accelerating the adoption of AI tools that can improve grid reliability, forecast demand, and manage renewable energy storage more effectively.
+
+### AI Governance for Institutional Readiness in Finance
+- URL: https://paperplaine.com/papers/ai-governance-for-institutional
+- Category: Economics
+- Authors: Irene Aldridge, Steve Krawciw
+- arXiv: 2608.02311
+- Plain-English subtitle: Why AI traders need different safety rules than human fund managers
+- Summary: Finance firms are deploying AI systems that learn and change their own strategies over time, but 88% have no governance framework to oversee them. The problem isn't cultural resistance—it's that traditional safeguards assume static systems, while AI agents redesign themselves continuously. Researchers propose a four-layer governance structure with statistical tools to catch when an AI strategy drifts from its approved behavior, and show that when multiple firms adopt similar AI strategies, the risk of simultaneous losses jumps from 39% to 79%.
+- Why it matters: Uncontrolled AI drift in asset management could concentrate risk across the financial system without regulators or firms noticing until it's too late. The framework and 90-day implementation roadmap give institutions concrete tools to govern AI trading before it becomes a systemic failure point, similar to how correlated human fund managers amplified past market crashes—but faster and less visible.
+
+### Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees
+- URL: https://paperplaine.com/papers/aggregate-then-calibrate-for
+- Category: Statistics
+- Authors: Zejun Xie, Xintong Li, Guang Wang et al.
+- arXiv: 2608.02455
+- Plain-English subtitle: Combining human judges and AI scores for better decisions without ground truth
+- Summary: When assessing subjective things like essay quality or medical images, humans and AI models each have blind spots: humans disagree with each other, while AI learns from incomplete information. Researchers developed a two-stage method that first finds consensus among human judges, then uses that consensus to correct and calibrate AI scores. The approach outperformed using either humans or AI alone across multiple real-world tests.
+- Why it matters: Many high-stakes decisions—hiring, healthcare, academic grading—rely on assessment where there's no perfect right answer to check against. This method lets organizations systematically improve their judgment calls by combining what humans do well (comparing options) with what AI does well (spotting patterns). The theoretical guarantees mean practitioners can trust the approach even when human agreement is messy or incomplete.
 
 ### FriendBench: Benchmarking Dyadic Familiarity Inference in Humans and Multimodal Large Language Models
 - URL: https://paperplaine.com/papers/friendbench-benchmarking-dyadic-familiarity
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to spot when two complex physics systems are secretly the same
 - Summary: Physicists used machine learning to solve a long-standing problem in theoretical physics: recognizing when two different-looking mathematical systems are actually equivalent through what's called a Seiberg duality. For moderately complex systems, neural networks outperformed traditional hand-coded algorithms at spotting these hidden equivalences, especially when combined with pathfinding techniques borrowed from navigation software.
 - Why it matters: Physicists have long struggled to verify dualities even when they know all the underlying rules—it's computationally expensive and error-prone. This work shows AI can be faster and more accurate, turning a theoretical bottleneck into a practical tool. More broadly, it demonstrates that complex physics problems can serve as meaningful tests for frontier AI models, helping researchers evaluate machine learning capabilities on genuinely hard scientific reasoning tasks rather than synthetic benchmarks.
-
-### Quantum Chaos and Diffusive Transport from Geometric Randomness
-- URL: https://paperplaine.com/papers/quantum-chaos-and-diffusive
-- Category: Physics
-- Authors: Bibek Saha, Abhishek Dhar, Sthitadhi Roy
-- arXiv: 2607.28579
-- Plain-English subtitle: How tangled wiring patterns alone can create quantum chaos without disorder
-- Summary: Quantum systems usually need defects or particle interactions to behave chaotically, but this work shows that geometry alone can do it. When quantum particles hop across randomly-wired networks, the shape and connectivity of those networks dictates whether chaos emerges—independent of any material disorder. Large networks generated robust chaos and smooth energy spreading, while thin, highly interconnected ones created a split personality: some particles localized in place while others moved freely.
-- Why it matters: Quantum chaos and diffusion are central to how quantum systems approach thermal equilibrium—a question with implications for quantum computers, which must avoid chaos to maintain coherence, and for fundamental physics exploring the quantum-to-classical boundary. This finding opens a new knob for controlling these behaviors without engineering material defects, potentially useful for designing quantum devices where geometry is easier to control than atomic-scale disorder.
-
-### Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth
-- URL: https://paperplaine.com/papers/boundary-induced-apparent-risk
-- Category: Economics
-- Authors: Ling Zhang, Boyan Xing, Zhenyu She et al.
-- arXiv: 2607.28230
-- Plain-English subtitle: Why approaching financial ruin makes even rational investors look risk-averse
-- Summary: When an investment system faces a hard stopping point—like bankruptcy—the mathematically optimal strategy changes dramatically. A new analysis shows that investors approaching this boundary should bet smaller amounts than traditional growth theory suggests, and this cautious behavior emerges purely from the boundary itself, not from personal fear of risk.
-- Why it matters: This explains a puzzling gap between how economic theory says people should invest and how they actually do near financial cliffs. The finding suggests that apparent risk aversion in real portfolios might be rational responses to real constraints rather than personality quirks—which could improve how we model everything from personal retirement planning to corporate risk management.
-
-### Stage-Replay Divergence Follows the KV Cache: Fixed-Prefix Precision Controls and Bidirectional Cache Transplantation
-- URL: https://paperplaine.com/papers/stage-replay-divergence-follows
-- Category: Computer Science · AI
-- Authors: Alexander Boesgaard Lorup
-- arXiv: 2607.28495
-- Plain-English subtitle: Why AI language models give different answers from the same starting point
-- Summary: When AI language models restart from a saved checkpoint, they sometimes produce different outputs even though they're starting from identical information. Researchers found that these differences stem from how the model's internal memory (the key-value cache) is reconstructed, not from the actual tokens themselves—and that using higher-precision math can eliminate the divergence entirely. By transplanting the memory from one model run into another, they proved the cache is the actual cause of the problem.
-- Why it matters: Language models are increasingly used for high-stakes decisions in medicine, law, and finance, where consistency matters. Right now, restarting a model from a checkpoint can silently produce different answers, creating a reproducibility problem that engineers can't easily detect. This work pinpoints exactly where the instability comes from, making it possible to either fix it (use higher precision math) or account for it (know when your model might diverge).
 
 ## About
 

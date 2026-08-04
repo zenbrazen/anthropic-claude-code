@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 556 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-03
+This file contains the complete plain-English text of all 559 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-04
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework
+Subtitle: Teaching AI to power engineers through runnable code, not just theory
+URL: https://paperplaine.com/papers/bridging-artificial-intelligence-and
+Category: Computer Science · AI
+Authors: Junjie Yin, Buxin She, Xinyu Feng et al.
+arXiv ID: 2608.02599
+arXiv URL: https://arxiv.org/abs/2608.02599
+Posted: 2026-08-04
+
+Summary: Researchers built an open-source set of working Python notebooks that teach AI methods specifically for power-grid problems—from predicting electricity demand to controlling batteries and optimizing systems. A survey found 92% of power engineers hit roadblocks when trying to use AI tools, and 94% wanted hands-on training tailored to their field; the framework's first webinar attracted over 590 attendees, suggesting real demand for this kind of grounded, practical teaching.
+
+Why it matters: Power grids are becoming more complex and AI-dependent, but most engineers learn generic AI techniques that don't transfer well to real grid challenges. These ready-to-run modules let engineers test and learn on actual power-system problems without starting from scratch, accelerating the adoption of AI tools that can improve grid reliability, forecast demand, and manage renewable energy storage more effectively.
+
+---
+Title: AI Governance for Institutional Readiness in Finance
+Subtitle: Why AI traders need different safety rules than human fund managers
+URL: https://paperplaine.com/papers/ai-governance-for-institutional
+Category: Economics
+Authors: Irene Aldridge, Steve Krawciw
+arXiv ID: 2608.02311
+arXiv URL: https://arxiv.org/abs/2608.02311
+Posted: 2026-08-04
+
+Summary: Finance firms are deploying AI systems that learn and change their own strategies over time, but 88% have no governance framework to oversee them. The problem isn't cultural resistance—it's that traditional safeguards assume static systems, while AI agents redesign themselves continuously. Researchers propose a four-layer governance structure with statistical tools to catch when an AI strategy drifts from its approved behavior, and show that when multiple firms adopt similar AI strategies, the risk of simultaneous losses jumps from 39% to 79%.
+
+Why it matters: Uncontrolled AI drift in asset management could concentrate risk across the financial system without regulators or firms noticing until it's too late. The framework and 90-day implementation roadmap give institutions concrete tools to govern AI trading before it becomes a systemic failure point, similar to how correlated human fund managers amplified past market crashes—but faster and less visible.
+
+---
+Title: Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees
+Subtitle: Combining human judges and AI scores for better decisions without ground truth
+URL: https://paperplaine.com/papers/aggregate-then-calibrate-for
+Category: Statistics
+Authors: Zejun Xie, Xintong Li, Guang Wang et al.
+arXiv ID: 2608.02455
+arXiv URL: https://arxiv.org/abs/2608.02455
+Posted: 2026-08-04
+
+Summary: When assessing subjective things like essay quality or medical images, humans and AI models each have blind spots: humans disagree with each other, while AI learns from incomplete information. Researchers developed a two-stage method that first finds consensus among human judges, then uses that consensus to correct and calibrate AI scores. The approach outperformed using either humans or AI alone across multiple real-world tests.
+
+Why it matters: Many high-stakes decisions—hiring, healthcare, academic grading—rely on assessment where there's no perfect right answer to check against. This method lets organizations systematically improve their judgment calls by combining what humans do well (comparing options) with what AI does well (spotting patterns). The theoretical guarantees mean practitioners can trust the approach even when human agreement is messy or incomplete.
 
 ---
 Title: FriendBench: Benchmarking Dyadic Familiarity Inference in Humans and Multimodal Large Language Models
