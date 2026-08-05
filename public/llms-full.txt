@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 562 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-04
+This file contains the complete plain-English text of all 565 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-05
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory
+Subtitle: Building AI systems that balance multiple viewpoints instead of enforcing one worldview
+URL: https://paperplaine.com/papers/socially-grounded-agentic-ai
+Category: Computer Science · AI
+Authors: Matt Ratto, Abhishek Moturu, Daniel Silver
+arXiv ID: 2608.03910
+arXiv URL: https://arxiv.org/abs/2608.03910
+Posted: 2026-08-05
+
+Summary: When AI systems make decisions affecting diverse communities, treating everyone's values as identical doesn't work. This paper argues that AI designers should use social theory—studying how people actually organize, contest, and coordinate different perspectives in the real world—to build systems that recognize and respond to multiple legitimate viewpoints rather than flattening them into a single "correct" answer.
+
+Why it matters: AI increasingly makes decisions in contexts where different groups have genuinely conflicting but reasonable values: who counts as creditworthy, what counts as harmful speech, how to balance privacy against safety. Systems built on a single unified value set will predictably anger or harm people whose legitimate perspective was never represented. Using social theory to design AI that explicitly tracks roles, expertise, and power dynamics means decisions can be contested and explained in ways people actually recognize from their own communities.
+
+---
+Title: Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model
+Subtitle: AI learns to plan safer, faster liver tumor microwave treatments
+URL: https://paperplaine.com/papers/automatic-patient-specific-microwave
+Category: Engineering
+Authors: Seonaeng Cho, Minjee Seo, Minju Seol et al.
+arXiv ID: 2608.03086
+arXiv URL: https://arxiv.org/abs/2608.03086
+Posted: 2026-08-05
+
+Summary: Researchers built an AI model that predicts how microwave heat will destroy liver tumors, then used it to automatically design treatment plans 420 times faster than traditional computer simulations. On test cases, the AI's plans killed 54% more tumor tissue while damaging surrounding organs 55% less than plans designed by experienced doctors—and specialists confirmed the AI's recommendations were clinically safe to use.
+
+Why it matters: Microwave ablation is already a proven, minimally invasive way to treat liver cancer, but planning each treatment has meant long waits for computer simulations. This AI cuts that planning time from hours to minutes, which means doctors could personalize treatment on the day of surgery rather than days before. The AI also consistently beat experienced doctors' plans, potentially improving survival odds and reducing complications for thousands of patients undergoing this procedure annually.
+
+---
+Title: Persistent homology broadens the controllable subspace in human structural connectomes
+Subtitle: Finding better ways to steer brain networks by looking beyond simple connection counts
+URL: https://paperplaine.com/papers/persistent-homology-broadens-the
+Category: Quantitative Biology
+Authors: Carter Sale, Marco Coraggio, Mengsen Zhang et al.
+arXiv ID: 2608.03181
+arXiv URL: https://arxiv.org/abs/2608.03181
+Posted: 2026-08-05
+
+Summary: Researchers comparing two methods for identifying which brain regions should be targeted to control network activity found that a method based on topological structure and a traditional method based on connection strength cost nearly the same amount of energy—yet steer the brain in fundamentally different ways. The topology-based approach distributes its control across more dimensions of brain state space, giving it more flexibility to reach certain target brain states even when overall energy cost stays the same.
+
+Why it matters: For neuroscience, this means that choosing which brain regions to stimulate or target therapeutically affects not just how much energy is needed, but which brain states become reachable. Two interventions might cost the same overall but produce different outcomes—suggesting that existing energy-based calculations miss important information when designing treatments for neurological conditions or brain stimulation therapies.
 
 ---
 Title: Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies

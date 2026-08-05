@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 562 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 565 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 192 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 193 papers in archive.
+  - "Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory"
   - "Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies"
-  - "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 47 papers in archive.
   - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
   - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 46 papers in archive.
   - "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design"
   - "Eventually greedy best Egyptian underapproximations of rational numbers via optimal control"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 46 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 47 papers in archive.
+  - "Persistent homology broadens the controllable subspace in human structural connectomes"
   - "Bits per Spike as a Betting Game: An Interpretable Unit for Held-Out Log-Likelihood in Neural Data Analysis"
-  - "Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 49 papers in archive.
   - "Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow"
   - "Effort-Centric Fairness in Lending Decisions"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 48 papers in archive.
   - "Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees"
   - "Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 46 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 47 papers in archive.
+  - "Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model"
   - "Few-shot Deep Learning for Phase-Amplitude Aberration Correction in Transcranial Focused Ultrasound"
-  - "When Linear RUL Labels Disagree with Vibration Degradation: A Stage-Aware Target and Dual-Scale Predictor Evaluated on XJTU-SY and IMS"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 41 papers in archive.
   - "AI Governance for Institutional Readiness in Finance"
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory
+- URL: https://paperplaine.com/papers/socially-grounded-agentic-ai
+- Category: Computer Science · AI
+- Authors: Matt Ratto, Abhishek Moturu, Daniel Silver
+- arXiv: 2608.03910
+- Plain-English subtitle: Building AI systems that balance multiple viewpoints instead of enforcing one worldview
+- Summary: When AI systems make decisions affecting diverse communities, treating everyone's values as identical doesn't work. This paper argues that AI designers should use social theory—studying how people actually organize, contest, and coordinate different perspectives in the real world—to build systems that recognize and respond to multiple legitimate viewpoints rather than flattening them into a single "correct" answer.
+- Why it matters: AI increasingly makes decisions in contexts where different groups have genuinely conflicting but reasonable values: who counts as creditworthy, what counts as harmful speech, how to balance privacy against safety. Systems built on a single unified value set will predictably anger or harm people whose legitimate perspective was never represented. Using social theory to design AI that explicitly tracks roles, expertise, and power dynamics means decisions can be contested and explained in ways people actually recognize from their own communities.
+
+### Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model
+- URL: https://paperplaine.com/papers/automatic-patient-specific-microwave
+- Category: Engineering
+- Authors: Seonaeng Cho, Minjee Seo, Minju Seol et al.
+- arXiv: 2608.03086
+- Plain-English subtitle: AI learns to plan safer, faster liver tumor microwave treatments
+- Summary: Researchers built an AI model that predicts how microwave heat will destroy liver tumors, then used it to automatically design treatment plans 420 times faster than traditional computer simulations. On test cases, the AI's plans killed 54% more tumor tissue while damaging surrounding organs 55% less than plans designed by experienced doctors—and specialists confirmed the AI's recommendations were clinically safe to use.
+- Why it matters: Microwave ablation is already a proven, minimally invasive way to treat liver cancer, but planning each treatment has meant long waits for computer simulations. This AI cuts that planning time from hours to minutes, which means doctors could personalize treatment on the day of surgery rather than days before. The AI also consistently beat experienced doctors' plans, potentially improving survival odds and reducing complications for thousands of patients undergoing this procedure annually.
+
+### Persistent homology broadens the controllable subspace in human structural connectomes
+- URL: https://paperplaine.com/papers/persistent-homology-broadens-the
+- Category: Quantitative Biology
+- Authors: Carter Sale, Marco Coraggio, Mengsen Zhang et al.
+- arXiv: 2608.03181
+- Plain-English subtitle: Finding better ways to steer brain networks by looking beyond simple connection counts
+- Summary: Researchers comparing two methods for identifying which brain regions should be targeted to control network activity found that a method based on topological structure and a traditional method based on connection strength cost nearly the same amount of energy—yet steer the brain in fundamentally different ways. The topology-based approach distributes its control across more dimensions of brain state space, giving it more flexibility to reach certain target brain states even when overall energy cost stays the same.
+- Why it matters: For neuroscience, this means that choosing which brain regions to stimulate or target therapeutically affects not just how much energy is needed, but which brain states become reachable. Two interventions might cost the same overall but produce different outcomes—suggesting that existing energy-based calculations miss important information when designing treatments for neurological conditions or brain stimulation therapies.
 
 ### Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies
 - URL: https://paperplaine.com/papers/optimizing-minimax-regret-in
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Can AI tell if two people already know each other from watching them talk?
 - Summary: Researchers created FriendBench, a test that asks whether two people in a 20-second conversation are strangers or already familiar with each other. The best AI systems matched human accuracy across video, audio, and text—but they got there differently: humans weighed both possibilities equally, while AI models were biased toward guessing "stranger." Interestingly, only humans actually benefited from watching body language and facial expressions; AI didn't gain much from video over speech alone.
 - Why it matters: Detecting familiarity from behavior is crucial for AI assistants that need to navigate social contexts—whether moderating online interactions, analyzing team dynamics, or providing appropriate responses in social settings. The finding that current AI systems misread social cues in systematic ways shows where these models still lag behind humans, and highlights which behavioral channels (like visible nonverbal cues) remain underexploited in multimodal AI training.
-
-### CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention
-- URL: https://paperplaine.com/papers/cweep-a-lexical-static
-- Category: Computer Science
-- Authors: Bryan Kwan, Benjamin Tan
-- arXiv: 2607.29604
-- Plain-English subtitle: Finding security flaws in chip designs before they become expensive problems
-- Summary: Researchers created CWEEP, a tool that automatically scans the code used to design computer chips and finds security weaknesses before manufacturing. The tool pinpoints exactly where vulnerabilities hide in the code and suggests fixes—and it's nearly four times more accurate than existing methods, catching the right problems 61% of the time compared to 18% for previous approaches.
-- Why it matters: Security flaws in chip hardware are catastrophically expensive to fix once manufactured, sometimes requiring complete redesigns worth millions. CWEEP catches these vulnerabilities early in development when they're cheap to repair, and it works without requiring teams of expensive security experts to manually review every line of code. This could significantly speed up secure chip design and reduce the risk of hardware-based attacks reaching consumers.
-
-### Bits per Spike as a Betting Game: An Interpretable Unit for Held-Out Log-Likelihood in Neural Data Analysis
-- URL: https://paperplaine.com/papers/bits-per-spike-as
-- Category: Quantitative Biology
-- Authors: Alex H. Williams
-- arXiv: 2607.28779
-- Plain-English subtitle: Converting confusing neural statistics into seconds of recording time
-- Summary: Neuroscientists comparing models of brain activity use a metric called "bits per spike," but this number is hard to interpret—is 0.34 bits good or bad? This paper translates bits per spike into a concrete unit: how many seconds of recorded neural data you'd need to prove one model is actually better than another. The conversion uses a betting framework borrowed from statistics, turning an abstract information measure into something directly meaningful.
-- Why it matters: Neuroscientists spend months collecting expensive neural recordings to test competing models of how the brain works. This framework lets them know upfront whether a model improvement is large enough to matter—for instance, whether they need 120 milliseconds or 11 seconds of additional recording to confidently reject a simpler baseline model. That clarity helps researchers allocate limited recording time efficiently and judge whether their hard-won data actually supports their scientific claims.
-
-### The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations
-- URL: https://paperplaine.com/papers/the-theoretical-foundation-of
-- Category: Computer Science · AI
-- Authors: Ilya Mikhelson
-- arXiv: 2607.29624
-- Plain-English subtitle: AI exams that adapt in real time to find what students can actually do
-- Summary: Traditional tests either grade by what you got wrong or rely on nerve-wracking oral exams that mix actual knowledge with performance anxiety. This paper describes a new kind of automated test that converses with students like a tutor, asking follow-up questions that map exactly where their understanding breaks down—then measures what they learn through the scaffolding itself, not penalizing wrong turns along the way.
-- Why it matters: Students often score poorly on static tests not because they lack ability, but because the format punishes mistakes or triggers anxiety. A conversational, adaptive exam could separate real understanding from test-taking skill, giving teachers honest insight into what each student is ready to learn next—and students a fairer shot at demonstrating what they actually know.
 
 ## About
 
