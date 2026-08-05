@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 565 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 568 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-05
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?
+Subtitle: Can AI spot ways to speed up code that traditional compilers miss?
+URL: https://paperplaine.com/papers/can-large-language-models
+Category: Computer Science · AI
+Authors: Hailong Jiang, Feng Yu, Emran Hossain et al.
+arXiv ID: 2608.03983
+arXiv URL: https://arxiv.org/abs/2608.03983
+Posted: 2026-08-05
+
+Summary: Large language models can recover hidden semantic information from C/C++ code that compilers typically overlook, enabling performance optimizations the compilers would otherwise miss. In tests on 120 real and synthetic cases, the best-performing model generated correct optimization suggestions 94.8% of the time and delivered measurable speed improvements in 83.3% of cases.
+
+Why it matters: Compilers today are limited by what they can formally prove about code structure and behavior. If LLMs can reliably suggest valid optimizations that compilers can't find — and if those suggestions are verified before use — they could become a practical tool for making software faster without requiring programmers to manually rewrite their code. This is particularly valuable for performance-critical applications where even modest speed gains matter.
+
+---
+Title: Information-Geometric Forward Policy Training in GFlowNets
+Subtitle: Using geometry to train AI systems that generate better solutions faster
+URL: https://paperplaine.com/papers/information-geometric-forward-policy
+Category: Statistics
+Authors: Yordan Raykov, Rodrigo Veiga
+arXiv ID: 2608.03967
+arXiv URL: https://arxiv.org/abs/2608.03967
+Posted: 2026-08-05
+
+Summary: Researchers developed a new way to train generative flow networks—AI systems that learn to generate good solutions to complex problems—by borrowing mathematical tools from information geometry. The method automatically identifies which parts of a problem have structure that can be exploited, allowing the training algorithm to take smarter, more efficient steps toward better solutions.
+
+Why it matters: Generative flow networks are increasingly used to solve hard combinatorial problems in drug discovery, chip design, and optimization. This geometric approach makes training faster and more reliable by letting the algorithm adapt to the underlying problem structure rather than using one-size-fits-all updates, potentially cutting the computational cost of finding good solutions substantially.
+
+---
+Title: From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity
+Subtitle: A new way to color graphs reveals surprising patterns in complex networks
+URL: https://paperplaine.com/papers/from-b-coloring-to
+Category: Mathematics
+Authors: Jakub Balabán, Oliver Bukor
+arXiv ID: 2608.03819
+arXiv URL: https://arxiv.org/abs/2608.03819
+Posted: 2026-08-05
+
+Summary: Mathematicians have studied a new type of graph coloring rule called b*-coloring, which extends an older coloring method by adding an extra layer of connectivity requirements. They proved that certain sparse graphs—those with few short cycles—maintain their b*-chromatic number even when you remove parts of them, and they found families of regular networks where the b*-chromatic number is exactly one more than the network's degree.
+
+Why it matters: Graph coloring problems appear throughout computer science, from scheduling tasks to assigning radio frequencies and optimizing network designs. Understanding which graph properties stay stable under these coloring rules and which algorithms solve them efficiently helps researchers solve real-world optimization problems faster. The finding that b*-coloring becomes tractable on certain structured graphs could improve how we handle large-scale network problems where computation speed matters.
 
 ---
 Title: Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory

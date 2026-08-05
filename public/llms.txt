@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 565 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 568 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,27 +30,27 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 193 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 194 papers in archive.
+  - "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?"
   - "Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory"
-  - "Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 47 papers in archive.
   - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
   - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 47 papers in archive.
   - "Thermalization of open quantum systems with pseudomodes"
   - "Quantum Chaos and Diffusive Transport from Geometric Randomness"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 46 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 47 papers in archive.
+  - "From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity"
   - "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design"
-  - "Eventually greedy best Egyptian underapproximations of rational numbers via optimal control"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 47 papers in archive.
   - "Persistent homology broadens the controllable subspace in human structural connectomes"
   - "Bits per Spike as a Betting Game: An Interpretable Unit for Held-Out Log-Likelihood in Neural Data Analysis"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 49 papers in archive.
   - "Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow"
   - "Effort-Centric Fairness in Lending Decisions"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 48 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 49 papers in archive.
+  - "Information-Geometric Forward Policy Training in GFlowNets"
   - "Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees"
-  - "Doubly Robust Functional Representation Learning for Longitudinal Causal Inference with Irregular Histories"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 47 papers in archive.
   - "Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model"
   - "Few-shot Deep Learning for Phase-Amplitude Aberration Correction in Transcranial Focused Ultrasound"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?
+- URL: https://paperplaine.com/papers/can-large-language-models
+- Category: Computer Science · AI
+- Authors: Hailong Jiang, Feng Yu, Emran Hossain et al.
+- arXiv: 2608.03983
+- Plain-English subtitle: Can AI spot ways to speed up code that traditional compilers miss?
+- Summary: Large language models can recover hidden semantic information from C/C++ code that compilers typically overlook, enabling performance optimizations the compilers would otherwise miss. In tests on 120 real and synthetic cases, the best-performing model generated correct optimization suggestions 94.8% of the time and delivered measurable speed improvements in 83.3% of cases.
+- Why it matters: Compilers today are limited by what they can formally prove about code structure and behavior. If LLMs can reliably suggest valid optimizations that compilers can't find — and if those suggestions are verified before use — they could become a practical tool for making software faster without requiring programmers to manually rewrite their code. This is particularly valuable for performance-critical applications where even modest speed gains matter.
+
+### Information-Geometric Forward Policy Training in GFlowNets
+- URL: https://paperplaine.com/papers/information-geometric-forward-policy
+- Category: Statistics
+- Authors: Yordan Raykov, Rodrigo Veiga
+- arXiv: 2608.03967
+- Plain-English subtitle: Using geometry to train AI systems that generate better solutions faster
+- Summary: Researchers developed a new way to train generative flow networks—AI systems that learn to generate good solutions to complex problems—by borrowing mathematical tools from information geometry. The method automatically identifies which parts of a problem have structure that can be exploited, allowing the training algorithm to take smarter, more efficient steps toward better solutions.
+- Why it matters: Generative flow networks are increasingly used to solve hard combinatorial problems in drug discovery, chip design, and optimization. This geometric approach makes training faster and more reliable by letting the algorithm adapt to the underlying problem structure rather than using one-size-fits-all updates, potentially cutting the computational cost of finding good solutions substantially.
+
+### From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity
+- URL: https://paperplaine.com/papers/from-b-coloring-to
+- Category: Mathematics
+- Authors: Jakub Balabán, Oliver Bukor
+- arXiv: 2608.03819
+- Plain-English subtitle: A new way to color graphs reveals surprising patterns in complex networks
+- Summary: Mathematicians have studied a new type of graph coloring rule called b*-coloring, which extends an older coloring method by adding an extra layer of connectivity requirements. They proved that certain sparse graphs—those with few short cycles—maintain their b*-chromatic number even when you remove parts of them, and they found families of regular networks where the b*-chromatic number is exactly one more than the network's degree.
+- Why it matters: Graph coloring problems appear throughout computer science, from scheduling tasks to assigning radio frequencies and optimizing network designs. Understanding which graph properties stay stable under these coloring rules and which algorithms solve them efficiently helps researchers solve real-world optimization problems faster. The finding that b*-coloring becomes tractable on certain structured graphs could improve how we handle large-scale network problems where computation speed matters.
 
 ### Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory
 - URL: https://paperplaine.com/papers/socially-grounded-agentic-ai
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to power engineers through runnable code, not just theory
 - Summary: Researchers built an open-source set of working Python notebooks that teach AI methods specifically for power-grid problems—from predicting electricity demand to controlling batteries and optimizing systems. A survey found 92% of power engineers hit roadblocks when trying to use AI tools, and 94% wanted hands-on training tailored to their field; the framework's first webinar attracted over 590 attendees, suggesting real demand for this kind of grounded, practical teaching.
 - Why it matters: Power grids are becoming more complex and AI-dependent, but most engineers learn generic AI techniques that don't transfer well to real grid challenges. These ready-to-run modules let engineers test and learn on actual power-system problems without starting from scratch, accelerating the adoption of AI tools that can improve grid reliability, forecast demand, and manage renewable energy storage more effectively.
-
-### AI Governance for Institutional Readiness in Finance
-- URL: https://paperplaine.com/papers/ai-governance-for-institutional
-- Category: Economics
-- Authors: Irene Aldridge, Steve Krawciw
-- arXiv: 2608.02311
-- Plain-English subtitle: Why AI traders need different safety rules than human fund managers
-- Summary: Finance firms are deploying AI systems that learn and change their own strategies over time, but 88% have no governance framework to oversee them. The problem isn't cultural resistance—it's that traditional safeguards assume static systems, while AI agents redesign themselves continuously. Researchers propose a four-layer governance structure with statistical tools to catch when an AI strategy drifts from its approved behavior, and show that when multiple firms adopt similar AI strategies, the risk of simultaneous losses jumps from 39% to 79%.
-- Why it matters: Uncontrolled AI drift in asset management could concentrate risk across the financial system without regulators or firms noticing until it's too late. The framework and 90-day implementation roadmap give institutions concrete tools to govern AI trading before it becomes a systemic failure point, similar to how correlated human fund managers amplified past market crashes—but faster and less visible.
-
-### Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees
-- URL: https://paperplaine.com/papers/aggregate-then-calibrate-for
-- Category: Statistics
-- Authors: Zejun Xie, Xintong Li, Guang Wang et al.
-- arXiv: 2608.02455
-- Plain-English subtitle: Combining human judges and AI scores for better decisions without ground truth
-- Summary: When assessing subjective things like essay quality or medical images, humans and AI models each have blind spots: humans disagree with each other, while AI learns from incomplete information. Researchers developed a two-stage method that first finds consensus among human judges, then uses that consensus to correct and calibrate AI scores. The approach outperformed using either humans or AI alone across multiple real-world tests.
-- Why it matters: Many high-stakes decisions—hiring, healthcare, academic grading—rely on assessment where there's no perfect right answer to check against. This method lets organizations systematically improve their judgment calls by combining what humans do well (comparing options) with what AI does well (spotting patterns). The theoretical guarantees mean practitioners can trust the approach even when human agreement is messy or incomplete.
-
-### FriendBench: Benchmarking Dyadic Familiarity Inference in Humans and Multimodal Large Language Models
-- URL: https://paperplaine.com/papers/friendbench-benchmarking-dyadic-familiarity
-- Category: Computer Science · AI
-- Authors: Jeffrey M. Girard, Jason Z. Zheng, Jacqueline R. Vertino et al.
-- arXiv: 2607.29602
-- Plain-English subtitle: Can AI tell if two people already know each other from watching them talk?
-- Summary: Researchers created FriendBench, a test that asks whether two people in a 20-second conversation are strangers or already familiar with each other. The best AI systems matched human accuracy across video, audio, and text—but they got there differently: humans weighed both possibilities equally, while AI models were biased toward guessing "stranger." Interestingly, only humans actually benefited from watching body language and facial expressions; AI didn't gain much from video over speech alone.
-- Why it matters: Detecting familiarity from behavior is crucial for AI assistants that need to navigate social contexts—whether moderating online interactions, analyzing team dynamics, or providing appropriate responses in social settings. The finding that current AI systems misread social cues in systematic ways shows where these models still lag behind humans, and highlights which behavioral channels (like visible nonverbal cues) remain underexploited in multimodal AI training.
 
 ## About
 
