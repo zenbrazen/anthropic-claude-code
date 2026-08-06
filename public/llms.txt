@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 568 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 571 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 194 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 195 papers in archive.
+  - "Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models"
   - "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?"
-  - "Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 47 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 48 papers in archive.
+  - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
   - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
-  - "Secure Aggregation for Privacy-Preserving Federated Learning on Clinical EEG Data"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 47 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 48 papers in archive.
+  - "Stochastic Non-Linear Influence in Synchronisation Dynamics"
   - "Thermalization of open quantum systems with pseudomodes"
-  - "Quantum Chaos and Diffusive Transport from Geometric Randomness"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 47 papers in archive.
   - "From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity"
   - "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models
+- URL: https://paperplaine.com/papers/provable-limits-and-certified
+- Category: Computer Science · AI
+- Authors: Jianru Shen
+- arXiv: 2608.05064
+- Plain-English subtitle: When should a small AI model ask a human for help instead?
+- Summary: Small language models can learn to express how confident they are in their answers, but calibration techniques have strict limits. The researchers tested eleven models and found that while some scaling methods improve confidence accuracy down to 2% error, only a handful of models can be certified safe enough to work unsupervised even at a 20% risk tolerance—and none at 10%.
+- Why it matters: Small language models are increasingly deployed on phones, private servers, and edge devices where calling a human expert isn't always an option. This work provides the first mathematical proof of when a model's stated confidence is actually trustworthy enough to let it run alone, and when it must defer to a human—turning vague uncertainty into a measurable safety guarantee.
+
+### Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones
+- URL: https://paperplaine.com/papers/toward-practical-decentralized-proof
+- Category: Computer Science
+- Authors: Tamor Tomson, Eduardo Brito, Amnir Hadachi et al.
+- arXiv: 2608.04957
+- Plain-English subtitle: Building a system that proves you were actually there, not just claiming it
+- Summary: Researchers built a working prototype that uses nearby devices to verify when someone is physically present in a specific location—creating tamper-proof records that can't be faked or altered later. The system detected attempts to spoof location claims and operated reliably indoors, offering a practical foundation for location verification without relying on a single authority.
+- Why it matters: Today's location claims for deliveries, security checkpoints, and asset tracking are often based on self-reported data that's easy to fake and impossible to verify after the fact. A decentralized proof-of-location system would make it much harder to lie about where something or someone was, which matters for supply chains, insurance claims, and access control—anywhere that proving actual physical presence later becomes important.
+
+### Stochastic Non-Linear Influence in Synchronisation Dynamics
+- URL: https://paperplaine.com/papers/stochastic-non-linear-influence
+- Category: Physics
+- Authors: Hannah Gallant, Dale Roberts, Alexander Kalloniatis
+- arXiv: 2608.04749
+- Plain-English subtitle: How one person can subtly steer a group toward their goals
+- Summary: A mathematical model shows how a single external actor can influence a synchronized network by pulling it toward a different frequency. The researchers found critical tipping points: push too hard and the network fragments; adjust the pressure carefully and the group syncs up at a new frequency set by the influencer rather than their natural rhythm.
+- Why it matters: This applies directly to real-world scenarios where influencers—from political figures to algorithms to lobby groups—try to shift collective behavior: whether a crowd's opinion, a financial market's direction, or a population's shared beliefs. Understanding the limits of influence (when it succeeds versus when it backfires and causes the group to splinter) helps predict and design against unwanted manipulation.
 
 ### Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?
 - URL: https://paperplaine.com/papers/can-large-language-models
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Choosing a small set of backup plans when the world's rules are unclear
 - Summary: When a robot or AI system doesn't know exactly how its environment works, it must either commit to one strategy that works everywhere or prepare a separate plan for every possibility—both costly choices. This work shows how to prepare just a handful of versatile strategies in advance, then pick the best one once uncertainty clears up. The researchers found that jumping from one strategy to two cuts regret roughly in half, with diminishing returns afterward.
 - Why it matters: Real autonomous systems—from medical devices to industrial controllers—often face regulatory or computational limits on how many different behaviors they can deploy. This approach lets operators hedge against uncertainty cheaply by preparing only 2–5 strategies instead of one inflexible plan or hundreds of custom ones. In settings where the true environment reveals itself seconds before execution begins, it's a practical middle ground between adaptation and constraint.
-
-### Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow
-- URL: https://paperplaine.com/papers/exactly-solvable-model-for
-- Category: Quantitative Finance
-- Authors: Yuki Sato, Shunta Fujiwara, Kiyoshi Kanazawa
-- arXiv: 2608.00988
-- Plain-English subtitle: Why predictable trading patterns don't break efficient markets
-- Summary: Financial markets show a strange contradiction: prices behave randomly over time, yet the orders that move prices follow predictable patterns. A new mathematical model resolves this paradox by showing that the square-root relationship between trade size and price movement is the missing piece—it ensures prices stay random even when order flow is predictable.
-- Why it matters: This explains why markets remain efficient and unpredictable despite the fact that large traders' moves can be forecast. Understanding this mechanism helps regulators and market participants grasp the real-world limits of prediction-based trading strategies, and clarifies which market rules (like the square-root price-impact law) are essential for keeping financial markets fair and stable.
-
-### Thermalization of open quantum systems with pseudomodes
-- URL: https://paperplaine.com/papers/thermalization-of-open-quantum
-- Category: Physics
-- Authors: R. Kevin Kessing, Thibaut Lacroix, Susana F. Huelga et al.
-- arXiv: 2608.02517
-- Plain-English subtitle: When quantum systems touch heat baths, do they settle into equilibrium?
-- Summary: Physicists discovered that quantum systems interacting strongly with heat baths often fail to reach thermal equilibrium—even when the coupling is weak, which defies everyday thermodynamic intuition. The researchers identified specific conditions and parameter choices that restore equilibrium behavior, and showed how to combine different types of mathematical models to maintain consistent temperatures across the system.
-- Why it matters: Quantum computers and other quantum devices must reliably reach thermal equilibrium to function predictably. These findings provide engineers with concrete rules for building accurate mathematical models of how quantum systems interact with their environments, ensuring simulations and predictions match real physical behavior rather than breaking down in unexpected ways.
-
-### Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework
-- URL: https://paperplaine.com/papers/bridging-artificial-intelligence-and
-- Category: Computer Science · AI
-- Authors: Junjie Yin, Buxin She, Xinyu Feng et al.
-- arXiv: 2608.02599
-- Plain-English subtitle: Teaching AI to power engineers through runnable code, not just theory
-- Summary: Researchers built an open-source set of working Python notebooks that teach AI methods specifically for power-grid problems—from predicting electricity demand to controlling batteries and optimizing systems. A survey found 92% of power engineers hit roadblocks when trying to use AI tools, and 94% wanted hands-on training tailored to their field; the framework's first webinar attracted over 590 attendees, suggesting real demand for this kind of grounded, practical teaching.
-- Why it matters: Power grids are becoming more complex and AI-dependent, but most engineers learn generic AI techniques that don't transfer well to real grid challenges. These ready-to-run modules let engineers test and learn on actual power-system problems without starting from scratch, accelerating the adoption of AI tools that can improve grid reliability, forecast demand, and manage renewable energy storage more effectively.
 
 ## About
 

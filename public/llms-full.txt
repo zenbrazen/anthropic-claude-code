@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 568 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-05
+This file contains the complete plain-English text of all 571 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-06
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models
+Subtitle: When should a small AI model ask a human for help instead?
+URL: https://paperplaine.com/papers/provable-limits-and-certified
+Category: Computer Science · AI
+Authors: Jianru Shen
+arXiv ID: 2608.05064
+arXiv URL: https://arxiv.org/abs/2608.05064
+Posted: 2026-08-06
+
+Summary: Small language models can learn to express how confident they are in their answers, but calibration techniques have strict limits. The researchers tested eleven models and found that while some scaling methods improve confidence accuracy down to 2% error, only a handful of models can be certified safe enough to work unsupervised even at a 20% risk tolerance—and none at 10%.
+
+Why it matters: Small language models are increasingly deployed on phones, private servers, and edge devices where calling a human expert isn't always an option. This work provides the first mathematical proof of when a model's stated confidence is actually trustworthy enough to let it run alone, and when it must defer to a human—turning vague uncertainty into a measurable safety guarantee.
+
+---
+Title: Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones
+Subtitle: Building a system that proves you were actually there, not just claiming it
+URL: https://paperplaine.com/papers/toward-practical-decentralized-proof
+Category: Computer Science
+Authors: Tamor Tomson, Eduardo Brito, Amnir Hadachi et al.
+arXiv ID: 2608.04957
+arXiv URL: https://arxiv.org/abs/2608.04957
+Posted: 2026-08-06
+
+Summary: Researchers built a working prototype that uses nearby devices to verify when someone is physically present in a specific location—creating tamper-proof records that can't be faked or altered later. The system detected attempts to spoof location claims and operated reliably indoors, offering a practical foundation for location verification without relying on a single authority.
+
+Why it matters: Today's location claims for deliveries, security checkpoints, and asset tracking are often based on self-reported data that's easy to fake and impossible to verify after the fact. A decentralized proof-of-location system would make it much harder to lie about where something or someone was, which matters for supply chains, insurance claims, and access control—anywhere that proving actual physical presence later becomes important.
+
+---
+Title: Stochastic Non-Linear Influence in Synchronisation Dynamics
+Subtitle: How one person can subtly steer a group toward their goals
+URL: https://paperplaine.com/papers/stochastic-non-linear-influence
+Category: Physics
+Authors: Hannah Gallant, Dale Roberts, Alexander Kalloniatis
+arXiv ID: 2608.04749
+arXiv URL: https://arxiv.org/abs/2608.04749
+Posted: 2026-08-06
+
+Summary: A mathematical model shows how a single external actor can influence a synchronized network by pulling it toward a different frequency. The researchers found critical tipping points: push too hard and the network fragments; adjust the pressure carefully and the group syncs up at a new frequency set by the influencer rather than their natural rhythm.
+
+Why it matters: This applies directly to real-world scenarios where influencers—from political figures to algorithms to lobby groups—try to shift collective behavior: whether a crowd's opinion, a financial market's direction, or a population's shared beliefs. Understanding the limits of influence (when it succeeds versus when it backfires and causes the group to splinter) helps predict and design against unwanted manipulation.
 
 ---
 Title: Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?

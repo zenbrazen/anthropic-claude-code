@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.05064",
+    "title": "Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models",
+    "authors": "Jianru Shen",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-05T17:11:04Z",
+    "publishedFormatted": "Aug 5, 2026",
+    "subtitle": "When should a small AI model ask a human for help instead?",
+    "summary": "Small language models can learn to express how confident they are in their answers, but calibration techniques have strict limits. The researchers tested eleven models and found that while some scaling methods improve confidence accuracy down to 2% error, only a handful of models can be certified safe enough to work unsupervised even at a 20% risk tolerance—and none at 10%.",
+    "whyItMatters": "Small language models are increasingly deployed on phones, private servers, and edge devices where calling a human expert isn't always an option. This work provides the first mathematical proof of when a model's stated confidence is actually trustworthy enough to let it run alone, and when it must defer to a human—turning vague uncertainty into a measurable safety guarantee.",
+    "fetchedAt": "2026-08-06T09:38:28.532Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 189
+    },
+    "slug": "provable-limits-and-certified"
+  },
+  {
+    "id": "2608.04957",
+    "title": "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones",
+    "authors": "Tamor Tomson, Eduardo Brito, Amnir Hadachi et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-08-05T15:27:42Z",
+    "publishedFormatted": "Aug 5, 2026",
+    "subtitle": "Building a system that proves you were actually there, not just claiming it",
+    "summary": "Researchers built a working prototype that uses nearby devices to verify when someone is physically present in a specific location—creating tamper-proof records that can't be faked or altered later. The system detected attempts to spoof location claims and operated reliably indoors, offering a practical foundation for location verification without relying on a single authority.",
+    "whyItMatters": "Today's location claims for deliveries, security checkpoints, and asset tracking are often based on self-reported data that's easy to fake and impossible to verify after the fact. A decentralized proof-of-location system would make it much harder to lie about where something or someone was, which matters for supply chains, insurance claims, and access control—anywhere that proving actual physical presence later becomes important.",
+    "fetchedAt": "2026-08-06T09:38:31.201Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 3,
+      "pageCount": 14,
+      "wordCount": 199
+    },
+    "slug": "toward-practical-decentralized-proof"
+  },
+  {
+    "id": "2608.04749",
+    "title": "Stochastic Non-Linear Influence in Synchronisation Dynamics",
+    "authors": "Hannah Gallant, Dale Roberts, Alexander Kalloniatis",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-08-05T12:18:01Z",
+    "publishedFormatted": "Aug 5, 2026",
+    "subtitle": "How one person can subtly steer a group toward their goals",
+    "summary": "A mathematical model shows how a single external actor can influence a synchronized network by pulling it toward a different frequency. The researchers found critical tipping points: push too hard and the network fragments; adjust the pressure carefully and the group syncs up at a new frequency set by the influencer rather than their natural rhythm.",
+    "whyItMatters": "This applies directly to real-world scenarios where influencers—from political figures to algorithms to lobby groups—try to shift collective behavior: whether a crowd's opinion, a financial market's direction, or a population's shared beliefs. Understanding the limits of influence (when it succeeds versus when it backfires and causes the group to splinter) helps predict and design against unwanted manipulation.",
+    "fetchedAt": "2026-08-06T09:38:33.896Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 228
+    },
+    "slug": "stochastic-non-linear-influence"
+  },
+  {
     "id": "2608.03983",
     "title": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
     "authors": "Hailong Jiang, Feng Yu, Emran Hossain et al.",
