@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 574 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 577 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 196 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 197 papers in archive.
+  - "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents"
   - "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains"
-  - "Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 48 papers in archive.
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
   - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 48 papers in archive.
   - "Stochastic Non-Linear Influence in Synchronisation Dynamics"
   - "Thermalization of open quantum systems with pseudomodes"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 47 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 48 papers in archive.
+  - "Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links"
   - "From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity"
-  - "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 48 papers in archive.
   - "An entropic explanation of insistence on sameness in autism"
   - "Persistent homology broadens the controllable subspace in human structural connectomes"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 49 papers in archive.
   - "Information-Geometric Forward Policy Training in GFlowNets"
   - "Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 47 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 48 papers in archive.
+  - "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN"
   - "Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model"
-  - "Few-shot Deep Learning for Phase-Amplitude Aberration Correction in Transcranial Focused Ultrasound"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 41 papers in archive.
   - "AI Governance for Institutional Readiness in Finance"
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents
+- URL: https://paperplaine.com/papers/resourced-authority-a-mechanism
+- Category: Computer Science · AI
+- Authors: Praphul Chandra, Sujit Gujar, Ganesh Ghalme
+- arXiv: 2608.06353
+- Plain-English subtitle: Letting humans control AI by controlling its computing power
+- Summary: Researchers designed a system where groups of people can govern deployed AI agents by voting to allocate or withhold their computational resources. The mechanism works like a market where stakeholders cast votes using a special governance currency, which then converts into a compute budget that directly limits what the AI can do—making the humans' decisions automatically enforceable without extra policing.
+- Why it matters: As AI systems make important decisions in the real world, we need practical ways for humans to stay in control. This approach sidesteps the difficult problem of monitoring AI behavior by making the AI's physical resources contingent on human approval, similar to how a company's budget is contingent on board decisions. The biggest remaining challenge is preventing the AI itself from manipulating the human voters—which the authors identify as the mechanism's critical vulnerability.
+
+### Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links
+- URL: https://paperplaine.com/papers/squarefree-matrix-formulas-for
+- Category: Mathematics
+- Authors: Michal Jablonowski
+- arXiv: 2608.06372
+- Plain-English subtitle: A new way to calculate knot properties using graph patterns and matrices
+- Summary: Mathematicians have developed a uniform formula for calculating the CWR invariant—a number that distinguishes different knots and links—by translating knot diagrams into weighted graphs and extracting information from matrix traces. The method works for any complexity level and produces explicit closed formulas for specific cases, offering both theoretical insight and practical computational tools.
+- Why it matters: Knot invariants are central to understanding knot theory, with applications ranging from DNA topology to quantum physics. This work provides the first systematic method for computing one important invariant across all complexity levels, making it possible to distinguish and classify knots more efficiently. The graph-theoretic approach also opens doors to computational implementations that could handle larger or more complex knots than previous methods allowed.
+
+### TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN
+- URL: https://paperplaine.com/papers/tlnm-externally-validated-tooth
+- Category: Engineering
+- Authors: Arash Nedaei, Henna Tiensuu, Elina Väyrynen et al.
+- arXiv: 2608.06275
+- Plain-English subtitle: Using phone photos to automatically identify and count teeth for remote dental screening
+- Summary: A smartphone camera can automatically locate, identify, and map individual teeth in patient photos almost as reliably as professional dental imaging. The system, trained on over 1,200 annotated images, achieved 90% accuracy on external test data from different populations and phone models—suggesting it could work reliably across real-world conditions without costly equipment.
+- Why it matters: Billions of people lack access to affordable dental care, and this tool could enable basic tooth screening via smartphone for people in remote or low-resource areas. A freely available system that works with any phone camera could make early detection of oral disease faster and cheaper, potentially reducing the burden on overburdened dental clinics and letting people monitor their own teeth between professional visits.
 
 ### Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains
 - URL: https://paperplaine.com/papers/teaching-nemotron-greek-mining
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Can AI spot ways to speed up code that traditional compilers miss?
 - Summary: Large language models can recover hidden semantic information from C/C++ code that compilers typically overlook, enabling performance optimizations the compilers would otherwise miss. In tests on 120 real and synthetic cases, the best-performing model generated correct optimization suggestions 94.8% of the time and delivered measurable speed improvements in 83.3% of cases.
 - Why it matters: Compilers today are limited by what they can formally prove about code structure and behavior. If LLMs can reliably suggest valid optimizations that compilers can't find — and if those suggestions are verified before use — they could become a practical tool for making software faster without requiring programmers to manually rewrite their code. This is particularly valuable for performance-critical applications where even modest speed gains matter.
-
-### Information-Geometric Forward Policy Training in GFlowNets
-- URL: https://paperplaine.com/papers/information-geometric-forward-policy
-- Category: Statistics
-- Authors: Yordan Raykov, Rodrigo Veiga
-- arXiv: 2608.03967
-- Plain-English subtitle: Using geometry to train AI systems that generate better solutions faster
-- Summary: Researchers developed a new way to train generative flow networks—AI systems that learn to generate good solutions to complex problems—by borrowing mathematical tools from information geometry. The method automatically identifies which parts of a problem have structure that can be exploited, allowing the training algorithm to take smarter, more efficient steps toward better solutions.
-- Why it matters: Generative flow networks are increasingly used to solve hard combinatorial problems in drug discovery, chip design, and optimization. This geometric approach makes training faster and more reliable by letting the algorithm adapt to the underlying problem structure rather than using one-size-fits-all updates, potentially cutting the computational cost of finding good solutions substantially.
-
-### From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity
-- URL: https://paperplaine.com/papers/from-b-coloring-to
-- Category: Mathematics
-- Authors: Jakub Balabán, Oliver Bukor
-- arXiv: 2608.03819
-- Plain-English subtitle: A new way to color graphs reveals surprising patterns in complex networks
-- Summary: Mathematicians have studied a new type of graph coloring rule called b*-coloring, which extends an older coloring method by adding an extra layer of connectivity requirements. They proved that certain sparse graphs—those with few short cycles—maintain their b*-chromatic number even when you remove parts of them, and they found families of regular networks where the b*-chromatic number is exactly one more than the network's degree.
-- Why it matters: Graph coloring problems appear throughout computer science, from scheduling tasks to assigning radio frequencies and optimizing network designs. Understanding which graph properties stay stable under these coloring rules and which algorithms solve them efficiently helps researchers solve real-world optimization problems faster. The finding that b*-coloring becomes tractable on certain structured graphs could improve how we handle large-scale network problems where computation speed matters.
-
-### Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory
-- URL: https://paperplaine.com/papers/socially-grounded-agentic-ai
-- Category: Computer Science · AI
-- Authors: Matt Ratto, Abhishek Moturu, Daniel Silver
-- arXiv: 2608.03910
-- Plain-English subtitle: Building AI systems that balance multiple viewpoints instead of enforcing one worldview
-- Summary: When AI systems make decisions affecting diverse communities, treating everyone's values as identical doesn't work. This paper argues that AI designers should use social theory—studying how people actually organize, contest, and coordinate different perspectives in the real world—to build systems that recognize and respond to multiple legitimate viewpoints rather than flattening them into a single "correct" answer.
-- Why it matters: AI increasingly makes decisions in contexts where different groups have genuinely conflicting but reasonable values: who counts as creditworthy, what counts as harmful speech, how to balance privacy against safety. Systems built on a single unified value set will predictably anger or harm people whose legitimate perspective was never represented. Using social theory to design AI that explicitly tracks roles, expertise, and power dynamics means decisions can be contested and explained in ways people actually recognize from their own communities.
 
 ## About
 
