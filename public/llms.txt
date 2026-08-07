@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 577 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 580 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 197 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 198 papers in archive.
+  - "Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data"
   - "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents"
-  - "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 48 papers in archive.
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
   - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 48 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 49 papers in archive.
+  - "Multi-State Geometry of Density Matrices and Rectification Sum Rules"
   - "Stochastic Non-Linear Influence in Synchronisation Dynamics"
-  - "Thermalization of open quantum systems with pseudomodes"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 48 papers in archive.
   - "Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links"
   - "From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 50 papers in archive.
   - "Optimal Trading of Microstructure Mean Reversion"
   - "Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 49 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 50 papers in archive.
+  - "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning"
   - "Information-Geometric Forward Policy Training in GFlowNets"
-  - "Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 48 papers in archive.
   - "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN"
   - "Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data
+- URL: https://paperplaine.com/papers/tytan-interactive-neurosymbolic-construction
+- Category: Computer Science · AI
+- Authors: Donna Hooshmand, Shubham Shahi, Cameron Barrie et al.
+- arXiv: 2608.06331
+- Plain-English subtitle: Teaching AI to automatically map what's really in your databases
+- Summary: A new system called TYTAN can automatically figure out the structure and meaning of data in business databases by combining pattern-matching with AI language models, asking targeted clarifying questions when needed. In tests across eight real databases, it achieved perfect accuracy in finding every entity and executing data retrieval instructions correctly, and correctly identified semantic roles 92–100% of the time.
+- Why it matters: Most data analysis tools today require expensive hand-coded descriptions of what data means and how it connects — work that only specialists can do, takes weeks, and introduces errors. TYTAN eliminates this bottleneck, meaning businesses can stand up analytic systems faster, non-technical employees can query databases without waiting for expert help, and the process becomes more reliable.
+
+### Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning
+- URL: https://paperplaine.com/papers/stochastic-dynamics-on-persistence
+- Category: Statistics
+- Authors: Farzana Nasrin
+- arXiv: 2608.06276
+- Plain-English subtitle: Teaching computers to reshape data patterns while keeping what matters most
+- Summary: Researchers created a machine-learning system that can evolve topological diagrams—visual summaries of data structure—through controlled steps, like gradually editing a sketch. The system learns which changes to make by balancing three goals: matching target data patterns, preserving important topological features, and reducing complexity. Experiments show it can simplify messy diagrams while keeping their core structural information intact.
+- Why it matters: Topological diagrams are used to find meaningful patterns in complex datasets, from brain imaging to materials science. Currently, researchers treat these diagrams as fixed snapshots. This framework enables diagrams to evolve and adapt, opening the door to cleaner data summaries that retain what scientists actually care about—reducing noise without losing signal. This could make it easier to compare, compress, and understand high-dimensional data across fields.
+
+### Multi-State Geometry of Density Matrices and Rectification Sum Rules
+- URL: https://paperplaine.com/papers/multi-state-geometry-of
+- Category: Physics
+- Authors: Barry Bradlyn
+- arXiv: 2608.06326
+- Plain-English subtitle: A hidden geometry that shapes how materials respond to light and electricity
+- Summary: Physicists discovered that quantum materials possess a special geometric structure that determines how they bend light and generate electric current — even in messy, real-world conditions with disorder and interactions. By developing a new mathematical framework called the cQAC tensor, the researchers derived exact rules connecting this geometry to measurable electrical responses, and showed that geometric effects can dominate the total response in multiband insulators.
+- Why it matters: This work bridges theory and experiment by revealing which properties of quantum materials can actually be measured in the lab through rectification experiments. Since these geometric features persist at low temperatures despite disorder and interactions, physicists can now use simple electrical measurements to map out the hidden quantum geometry of materials — opening new ways to discover and design materials with useful nonlinear optical and electrical properties.
 
 ### Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents
 - URL: https://paperplaine.com/papers/resourced-authority-a-mechanism
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When should a small AI model ask a human for help instead?
 - Summary: Small language models can learn to express how confident they are in their answers, but calibration techniques have strict limits. The researchers tested eleven models and found that while some scaling methods improve confidence accuracy down to 2% error, only a handful of models can be certified safe enough to work unsupervised even at a 20% risk tolerance—and none at 10%.
 - Why it matters: Small language models are increasingly deployed on phones, private servers, and edge devices where calling a human expert isn't always an option. This work provides the first mathematical proof of when a model's stated confidence is actually trustworthy enough to let it run alone, and when it must defer to a human—turning vague uncertainty into a measurable safety guarantee.
-
-### Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones
-- URL: https://paperplaine.com/papers/toward-practical-decentralized-proof
-- Category: Computer Science
-- Authors: Tamor Tomson, Eduardo Brito, Amnir Hadachi et al.
-- arXiv: 2608.04957
-- Plain-English subtitle: Building a system that proves you were actually there, not just claiming it
-- Summary: Researchers built a working prototype that uses nearby devices to verify when someone is physically present in a specific location—creating tamper-proof records that can't be faked or altered later. The system detected attempts to spoof location claims and operated reliably indoors, offering a practical foundation for location verification without relying on a single authority.
-- Why it matters: Today's location claims for deliveries, security checkpoints, and asset tracking are often based on self-reported data that's easy to fake and impossible to verify after the fact. A decentralized proof-of-location system would make it much harder to lie about where something or someone was, which matters for supply chains, insurance claims, and access control—anywhere that proving actual physical presence later becomes important.
-
-### Stochastic Non-Linear Influence in Synchronisation Dynamics
-- URL: https://paperplaine.com/papers/stochastic-non-linear-influence
-- Category: Physics
-- Authors: Hannah Gallant, Dale Roberts, Alexander Kalloniatis
-- arXiv: 2608.04749
-- Plain-English subtitle: How one person can subtly steer a group toward their goals
-- Summary: A mathematical model shows how a single external actor can influence a synchronized network by pulling it toward a different frequency. The researchers found critical tipping points: push too hard and the network fragments; adjust the pressure carefully and the group syncs up at a new frequency set by the influencer rather than their natural rhythm.
-- Why it matters: This applies directly to real-world scenarios where influencers—from political figures to algorithms to lobby groups—try to shift collective behavior: whether a crowd's opinion, a financial market's direction, or a population's shared beliefs. Understanding the limits of influence (when it succeeds versus when it backfires and causes the group to splinter) helps predict and design against unwanted manipulation.
-
-### Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?
-- URL: https://paperplaine.com/papers/can-large-language-models
-- Category: Computer Science · AI
-- Authors: Hailong Jiang, Feng Yu, Emran Hossain et al.
-- arXiv: 2608.03983
-- Plain-English subtitle: Can AI spot ways to speed up code that traditional compilers miss?
-- Summary: Large language models can recover hidden semantic information from C/C++ code that compilers typically overlook, enabling performance optimizations the compilers would otherwise miss. In tests on 120 real and synthetic cases, the best-performing model generated correct optimization suggestions 94.8% of the time and delivered measurable speed improvements in 83.3% of cases.
-- Why it matters: Compilers today are limited by what they can formally prove about code structure and behavior. If LLMs can reliably suggest valid optimizations that compilers can't find — and if those suggestions are verified before use — they could become a practical tool for making software faster without requiring programmers to manually rewrite their code. This is particularly valuable for performance-critical applications where even modest speed gains matter.
 
 ## About
 
