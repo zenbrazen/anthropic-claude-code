@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 571 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-06
+This file contains the complete plain-English text of all 574 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-07
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains
+Subtitle: Building AI that can find and use Greek-language information accurately
+URL: https://paperplaine.com/papers/teaching-nemotron-greek-mining
+Category: Computer Science · AI
+Authors: Ayoub Kirouane, Christos Petrocheilos
+arXiv ID: 2608.05138
+arXiv URL: https://arxiv.org/abs/2608.05138
+Posted: 2026-08-07
+
+Summary: Researchers adapted NVIDIA's Nemotron AI system to work with Modern Greek, a language previously missing from major AI tools. After training on 65,773 Greek examples, their retrieval model's performance jumped from 0.362 to 0.835 on a standard measure, and their question-answering system improved from 29.4% to 66.9% correct answers—with much better accuracy in citing sources.
+
+Why it matters: Greek professionals in law, finance, energy, and medicine can now use AI systems that actually understand their language and documents instead of relying on generic multilingual tools that perform poorly on specialist Greek text. The researchers released their adapted models and a new Greek benchmark publicly, so other teams can build better Greek-language AI applications without starting from scratch.
+
+---
+Title: Optimal Trading of Microstructure Mean Reversion
+Subtitle: When to buy and sell stock prices that bounce back within seconds
+URL: https://paperplaine.com/papers/optimal-trading-of-microstructure
+Category: Quantitative Finance
+Authors: Lucas Rabechini Amaral
+arXiv ID: 2608.00885
+arXiv URL: https://arxiv.org/abs/2608.00885
+Posted: 2026-08-07
+
+Summary: Stock prices bounce around a true underlying value on timescales of seconds, creating predictable patterns traders can exploit. A researcher solved exactly when to buy and sell to capture these bounces while accounting for transaction costs, and found that the optimal strategy works like a trading band: buy when the price dips below a threshold, sell when it rises above, and wait in between. All profit comes from the option value of waiting for the price to move far enough to cover costs.
+
+Why it matters: High-frequency traders make money in the microsecond gaps between transactions—but only if they know when to move. This work gives the mathematical rule for the most profitable entry and exit points in that micro-market, accounting for the spreads that drain money on every trade. For active trading firms, this translates directly into sharper execution and higher returns from the same market opportunity.
+
+---
+Title: An entropic explanation of insistence on sameness in autism
+Subtitle: Why people with autism prefer familiar routines and resist unexpected changes
+URL: https://paperplaine.com/papers/an-entropic-explanation-of
+Category: Quantitative Biology
+Authors: Przemysław Śliwiński
+arXiv ID: 2608.04616
+arXiv URL: https://arxiv.org/abs/2608.04616
+Posted: 2026-08-07
+
+Summary: A new framework uses information theory to explain why autistic individuals often insist on sameness and resist unexpected changes: they are minimizing surprise and uncertainty in their environment. The model proposes that autistic cognition relies heavily on memory and prediction, so people with autism either learn new information to reduce uncertainty or restrict their environment to what they already know—and insistence on sameness reflects this second strategy.
+
+Why it matters: This framework could guide the design of therapies and care routines by treating them as optimization problems—essentially ways to gradually expand what someone finds familiar and predictable rather than forcing adaptation to unpredictability. It also offers a way to quantify and communicate difficult experiences like sensory overload and anxiety in autistic individuals, potentially helping caregivers and support programs respond more effectively to actual needs rather than guesswork.
 
 ---
 Title: Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models

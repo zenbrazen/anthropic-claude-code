@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 571 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 574 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 195 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 196 papers in archive.
+  - "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains"
   - "Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models"
-  - "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 48 papers in archive.
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
   - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
@@ -42,12 +42,12 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 47 papers in archive.
   - "From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity"
   - "A Stochastic Optimization Framework for RIS-Aided Wireless Network Design"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 47 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 48 papers in archive.
+  - "An entropic explanation of insistence on sameness in autism"
   - "Persistent homology broadens the controllable subspace in human structural connectomes"
-  - "Bits per Spike as a Betting Game: An Interpretable Unit for Held-Out Log-Likelihood in Neural Data Analysis"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 49 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 50 papers in archive.
+  - "Optimal Trading of Microstructure Mean Reversion"
   - "Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow"
-  - "Effort-Centric Fairness in Lending Decisions"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 49 papers in archive.
   - "Information-Geometric Forward Policy Training in GFlowNets"
   - "Aggregate-then-Calibrate for Human-centered Assessment with Theoretical Guarantees"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains
+- URL: https://paperplaine.com/papers/teaching-nemotron-greek-mining
+- Category: Computer Science · AI
+- Authors: Ayoub Kirouane, Christos Petrocheilos
+- arXiv: 2608.05138
+- Plain-English subtitle: Building AI that can find and use Greek-language information accurately
+- Summary: Researchers adapted NVIDIA's Nemotron AI system to work with Modern Greek, a language previously missing from major AI tools. After training on 65,773 Greek examples, their retrieval model's performance jumped from 0.362 to 0.835 on a standard measure, and their question-answering system improved from 29.4% to 66.9% correct answers—with much better accuracy in citing sources.
+- Why it matters: Greek professionals in law, finance, energy, and medicine can now use AI systems that actually understand their language and documents instead of relying on generic multilingual tools that perform poorly on specialist Greek text. The researchers released their adapted models and a new Greek benchmark publicly, so other teams can build better Greek-language AI applications without starting from scratch.
+
+### Optimal Trading of Microstructure Mean Reversion
+- URL: https://paperplaine.com/papers/optimal-trading-of-microstructure
+- Category: Quantitative Finance
+- Authors: Lucas Rabechini Amaral
+- arXiv: 2608.00885
+- Plain-English subtitle: When to buy and sell stock prices that bounce back within seconds
+- Summary: Stock prices bounce around a true underlying value on timescales of seconds, creating predictable patterns traders can exploit. A researcher solved exactly when to buy and sell to capture these bounces while accounting for transaction costs, and found that the optimal strategy works like a trading band: buy when the price dips below a threshold, sell when it rises above, and wait in between. All profit comes from the option value of waiting for the price to move far enough to cover costs.
+- Why it matters: High-frequency traders make money in the microsecond gaps between transactions—but only if they know when to move. This work gives the mathematical rule for the most profitable entry and exit points in that micro-market, accounting for the spreads that drain money on every trade. For active trading firms, this translates directly into sharper execution and higher returns from the same market opportunity.
+
+### An entropic explanation of insistence on sameness in autism
+- URL: https://paperplaine.com/papers/an-entropic-explanation-of
+- Category: Quantitative Biology
+- Authors: Przemysław Śliwiński
+- arXiv: 2608.04616
+- Plain-English subtitle: Why people with autism prefer familiar routines and resist unexpected changes
+- Summary: A new framework uses information theory to explain why autistic individuals often insist on sameness and resist unexpected changes: they are minimizing surprise and uncertainty in their environment. The model proposes that autistic cognition relies heavily on memory and prediction, so people with autism either learn new information to reduce uncertainty or restrict their environment to what they already know—and insistence on sameness reflects this second strategy.
+- Why it matters: This framework could guide the design of therapies and care routines by treating them as optimization problems—essentially ways to gradually expand what someone finds familiar and predictable rather than forcing adaptation to unpredictability. It also offers a way to quantify and communicate difficult experiences like sensory overload and anxiety in autistic individuals, potentially helping caregivers and support programs respond more effectively to actual needs rather than guesswork.
 
 ### Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models
 - URL: https://paperplaine.com/papers/provable-limits-and-certified
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Building AI systems that balance multiple viewpoints instead of enforcing one worldview
 - Summary: When AI systems make decisions affecting diverse communities, treating everyone's values as identical doesn't work. This paper argues that AI designers should use social theory—studying how people actually organize, contest, and coordinate different perspectives in the real world—to build systems that recognize and respond to multiple legitimate viewpoints rather than flattening them into a single "correct" answer.
 - Why it matters: AI increasingly makes decisions in contexts where different groups have genuinely conflicting but reasonable values: who counts as creditworthy, what counts as harmful speech, how to balance privacy against safety. Systems built on a single unified value set will predictably anger or harm people whose legitimate perspective was never represented. Using social theory to design AI that explicitly tracks roles, expertise, and power dynamics means decisions can be contested and explained in ways people actually recognize from their own communities.
-
-### Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model
-- URL: https://paperplaine.com/papers/automatic-patient-specific-microwave
-- Category: Engineering
-- Authors: Seonaeng Cho, Minjee Seo, Minju Seol et al.
-- arXiv: 2608.03086
-- Plain-English subtitle: AI learns to plan safer, faster liver tumor microwave treatments
-- Summary: Researchers built an AI model that predicts how microwave heat will destroy liver tumors, then used it to automatically design treatment plans 420 times faster than traditional computer simulations. On test cases, the AI's plans killed 54% more tumor tissue while damaging surrounding organs 55% less than plans designed by experienced doctors—and specialists confirmed the AI's recommendations were clinically safe to use.
-- Why it matters: Microwave ablation is already a proven, minimally invasive way to treat liver cancer, but planning each treatment has meant long waits for computer simulations. This AI cuts that planning time from hours to minutes, which means doctors could personalize treatment on the day of surgery rather than days before. The AI also consistently beat experienced doctors' plans, potentially improving survival odds and reducing complications for thousands of patients undergoing this procedure annually.
-
-### Persistent homology broadens the controllable subspace in human structural connectomes
-- URL: https://paperplaine.com/papers/persistent-homology-broadens-the
-- Category: Quantitative Biology
-- Authors: Carter Sale, Marco Coraggio, Mengsen Zhang et al.
-- arXiv: 2608.03181
-- Plain-English subtitle: Finding better ways to steer brain networks by looking beyond simple connection counts
-- Summary: Researchers comparing two methods for identifying which brain regions should be targeted to control network activity found that a method based on topological structure and a traditional method based on connection strength cost nearly the same amount of energy—yet steer the brain in fundamentally different ways. The topology-based approach distributes its control across more dimensions of brain state space, giving it more flexibility to reach certain target brain states even when overall energy cost stays the same.
-- Why it matters: For neuroscience, this means that choosing which brain regions to stimulate or target therapeutically affects not just how much energy is needed, but which brain states become reachable. Two interventions might cost the same overall but produce different outcomes—suggesting that existing energy-based calculations miss important information when designing treatments for neurological conditions or brain stimulation therapies.
-
-### Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies
-- URL: https://paperplaine.com/papers/optimizing-minimax-regret-in
-- Category: Computer Science · AI
-- Authors: Sterre Lutz, Daniël Vos, Matthijs T. J. Spaan et al.
-- arXiv: 2608.02509
-- Plain-English subtitle: Choosing a small set of backup plans when the world's rules are unclear
-- Summary: When a robot or AI system doesn't know exactly how its environment works, it must either commit to one strategy that works everywhere or prepare a separate plan for every possibility—both costly choices. This work shows how to prepare just a handful of versatile strategies in advance, then pick the best one once uncertainty clears up. The researchers found that jumping from one strategy to two cuts regret roughly in half, with diminishing returns afterward.
-- Why it matters: Real autonomous systems—from medical devices to industrial controllers—often face regulatory or computational limits on how many different behaviors they can deploy. This approach lets operators hedge against uncertainty cheaply by preparing only 2–5 strategies instead of one inflexible plan or hundreds of custom ones. In settings where the true environment reveals itself seconds before execution begins, it's a practical middle ground between adaptation and constraint.
 
 ## About
 
