@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.06329",
+    "title": "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents",
+    "authors": "Noam Koren, Roy Bar-Haim, Abigail Goldsteen",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-06T17:39:21Z",
+    "publishedFormatted": "Aug 6, 2026",
+    "subtitle": "A system for checking whether AI chatbot tests actually measure what they claim to",
+    "summary": "Researchers created a framework that uses AI judges to evaluate whether benchmarks used to test conversational agents are actually good measures of performance. The framework checks three key qualities—consistency, complexity, and how thoroughly benchmarks cover different behaviors—and identifies specific weaknesses. When tested against human judgment and against benchmarks intentionally made worse, the system reliably distinguished between high-quality and low-quality benchmarks.",
+    "whyItMatters": "Conversational AI is tested using benchmarks, but nobody has been systematically checking whether those benchmarks are reliable. A flawed benchmark might make a mediocre chatbot look better than it is, or reject a good one unfairly. This framework lets researchers and companies quickly spot when their test suites are inconsistent, oversimplified, or missing important real-world scenarios—before they ship products or publish misleading results about AI performance.",
+    "fetchedAt": "2026-08-08T07:48:28.836Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 124
+    },
+    "slug": "benchmarking-the-benchmarks-evaluating"
+  },
+  {
+    "id": "2608.05982",
+    "title": "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction",
+    "authors": "Pui Chung Siu, Claudia Cabrera, Mani Mudaliar et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-08-06T12:59:05Z",
+    "publishedFormatted": "Aug 6, 2026",
+    "subtitle": "Predicting which drug candidates will succeed using the biology known at the time",
+    "summary": "Most drugs fail in testing because their target wasn't actually causing the disease. Researchers built a knowledge graph that tracks how biomedical evidence changed over time, then used it to predict which drug candidates would advance from Phase II to Phase III trials using only the evidence available when those decisions were made. The approach outperformed direct evidence alone, especially for the 73% of candidates with no direct proof their target mattered.",
+    "whyItMatters": "Drug development costs billions and takes over a decade. If companies could identify failing programs earlier using historical evidence patterns, they could redirect resources to candidates with better odds of reaching patients. This tool lets sponsors test whether their judgment call was sound given what was actually known at the time—and might help prevent another 40–50% of Phase II failures tied to weak target-disease links.",
+    "fetchedAt": "2026-08-08T07:48:32.171Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 251
+    },
+    "slug": "thbkg-a-temporal-biomedical"
+  },
+  {
+    "id": "2608.06130",
+    "title": "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture",
+    "authors": "Leo Sambrook, Sampo Sovio",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-08-06T15:04:26Z",
+    "publishedFormatted": "Aug 6, 2026",
+    "subtitle": "Locking AI's signing keys in hardware to stop theft and misuse",
+    "summary": "AI agents that sign documents and authenticate systems currently store their cryptographic keys where any compromised program can steal them—a vulnerability exploited in a real incident in under five minutes. Researchers replaced software-based keys with hardware keystores (like TPMs or smart cards) that perform signing operations inside locked hardware, sending only results back to the AI. Testing against 12 injection attacks reduced success rates from 19.3% to 0%, with no false alarms on legitimate tasks.",
+    "whyItMatters": "As AI systems handle more high-stakes operations—signing code commits, issuing certificates, authenticating financial transactions—a stolen signing key becomes a critical liability. Hardware confinement means attackers cannot extract keys even if they fully compromise the AI system's software layer. This shifts the security boundary from software (which fails constantly) to tamper-resistant hardware, making credential theft orders of magnitude harder.",
+    "fetchedAt": "2026-08-08T07:48:37.565Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 201
+    },
+    "slug": "hardware-keystores-for-ai"
+  },
+  {
     "id": "2608.06331",
     "title": "Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data",
     "authors": "Donna Hooshmand, Shubham Shahi, Cameron Barrie et al.",

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Aug 2026 19:48:02 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 07:48:37 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents</title>
+      <link>https://paperplaine.com/papers/benchmarking-the-benchmarks-evaluating</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/benchmarking-the-benchmarks-evaluating</guid>
+      <pubDate>Thu, 06 Aug 2026 17:39:21 GMT</pubDate>
+      <author>Noam Koren, Roy Bar-Haim, Abigail Goldsteen</author>
+      <category>AI</category>
+      <description>A system for checking whether AI chatbot tests actually measure what they claim to</description>
+      <content:encoded><![CDATA[<p><em>A system for checking whether AI chatbot tests actually measure what they claim to</em></p><p>Researchers created a framework that uses AI judges to evaluate whether benchmarks used to test conversational agents are actually good measures of performance. The framework checks three key qualities—consistency, complexity, and how thoroughly benchmarks cover different behaviors—and identifies specific weaknesses. When tested against human judgment and against benchmarks intentionally made worse, the system reliably distinguished between high-quality and low-quality benchmarks.</p><p><strong>Why it matters:</strong> Conversational AI is tested using benchmarks, but nobody has been systematically checking whether those benchmarks are reliable. A flawed benchmark might make a mediocre chatbot look better than it is, or reject a good one unfairly. This framework lets researchers and companies quickly spot when their test suites are inconsistent, oversimplified, or missing important real-world scenarios—before they ship products or publish misleading results about AI performance.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction</title>
+      <link>https://paperplaine.com/papers/thbkg-a-temporal-biomedical</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/thbkg-a-temporal-biomedical</guid>
+      <pubDate>Thu, 06 Aug 2026 12:59:05 GMT</pubDate>
+      <author>Pui Chung Siu, Claudia Cabrera, Mani Mudaliar et al.</author>
+      <category>Biology</category>
+      <description>Predicting which drug candidates will succeed using the biology known at the time</description>
+      <content:encoded><![CDATA[<p><em>Predicting which drug candidates will succeed using the biology known at the time</em></p><p>Most drugs fail in testing because their target wasn't actually causing the disease. Researchers built a knowledge graph that tracks how biomedical evidence changed over time, then used it to predict which drug candidates would advance from Phase II to Phase III trials using only the evidence available when those decisions were made. The approach outperformed direct evidence alone, especially for the 73% of candidates with no direct proof their target mattered.</p><p><strong>Why it matters:</strong> Drug development costs billions and takes over a decade. If companies could identify failing programs earlier using historical evidence patterns, they could redirect resources to candidates with better odds of reaching patients. This tool lets sponsors test whether their judgment call was sound given what was actually known at the time—and might help prevent another 40–50% of Phase II failures tied to weak target-disease links.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture</title>
+      <link>https://paperplaine.com/papers/hardware-keystores-for-ai</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/hardware-keystores-for-ai</guid>
+      <pubDate>Thu, 06 Aug 2026 15:04:26 GMT</pubDate>
+      <author>Leo Sambrook, Sampo Sovio</author>
+      <category>Comp Sci</category>
+      <description>Locking AI&#39;s signing keys in hardware to stop theft and misuse</description>
+      <content:encoded><![CDATA[<p><em>Locking AI's signing keys in hardware to stop theft and misuse</em></p><p>AI agents that sign documents and authenticate systems currently store their cryptographic keys where any compromised program can steal them—a vulnerability exploited in a real incident in under five minutes. Researchers replaced software-based keys with hardware keystores (like TPMs or smart cards) that perform signing operations inside locked hardware, sending only results back to the AI. Testing against 12 injection attacks reduced success rates from 19.3% to 0%, with no false alarms on legitimate tasks.</p><p><strong>Why it matters:</strong> As AI systems handle more high-stakes operations—signing code commits, issuing certificates, authenticating financial transactions—a stolen signing key becomes a critical liability. Hardware confinement means attackers cannot extract keys even if they fully compromise the AI system's software layer. This shifts the security boundary from software (which fails constantly) to tamper-resistant hardware, making credential theft orders of magnitude harder.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data</title>
       <link>https://paperplaine.com/papers/tytan-interactive-neurosymbolic-construction</link>

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 580 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-07
+This file contains the complete plain-English text of all 583 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents
+Subtitle: A system for checking whether AI chatbot tests actually measure what they claim to
+URL: https://paperplaine.com/papers/benchmarking-the-benchmarks-evaluating
+Category: Computer Science · AI
+Authors: Noam Koren, Roy Bar-Haim, Abigail Goldsteen
+arXiv ID: 2608.06329
+arXiv URL: https://arxiv.org/abs/2608.06329
+Posted: 2026-08-08
+
+Summary: Researchers created a framework that uses AI judges to evaluate whether benchmarks used to test conversational agents are actually good measures of performance. The framework checks three key qualities—consistency, complexity, and how thoroughly benchmarks cover different behaviors—and identifies specific weaknesses. When tested against human judgment and against benchmarks intentionally made worse, the system reliably distinguished between high-quality and low-quality benchmarks.
+
+Why it matters: Conversational AI is tested using benchmarks, but nobody has been systematically checking whether those benchmarks are reliable. A flawed benchmark might make a mediocre chatbot look better than it is, or reject a good one unfairly. This framework lets researchers and companies quickly spot when their test suites are inconsistent, oversimplified, or missing important real-world scenarios—before they ship products or publish misleading results about AI performance.
+
+---
+Title: THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction
+Subtitle: Predicting which drug candidates will succeed using the biology known at the time
+URL: https://paperplaine.com/papers/thbkg-a-temporal-biomedical
+Category: Quantitative Biology
+Authors: Pui Chung Siu, Claudia Cabrera, Mani Mudaliar et al.
+arXiv ID: 2608.05982
+arXiv URL: https://arxiv.org/abs/2608.05982
+Posted: 2026-08-08
+
+Summary: Most drugs fail in testing because their target wasn't actually causing the disease. Researchers built a knowledge graph that tracks how biomedical evidence changed over time, then used it to predict which drug candidates would advance from Phase II to Phase III trials using only the evidence available when those decisions were made. The approach outperformed direct evidence alone, especially for the 73% of candidates with no direct proof their target mattered.
+
+Why it matters: Drug development costs billions and takes over a decade. If companies could identify failing programs earlier using historical evidence patterns, they could redirect resources to candidates with better odds of reaching patients. This tool lets sponsors test whether their judgment call was sound given what was actually known at the time—and might help prevent another 40–50% of Phase II failures tied to weak target-disease links.
+
+---
+Title: Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture
+Subtitle: Locking AI's signing keys in hardware to stop theft and misuse
+URL: https://paperplaine.com/papers/hardware-keystores-for-ai
+Category: Computer Science
+Authors: Leo Sambrook, Sampo Sovio
+arXiv ID: 2608.06130
+arXiv URL: https://arxiv.org/abs/2608.06130
+Posted: 2026-08-08
+
+Summary: AI agents that sign documents and authenticate systems currently store their cryptographic keys where any compromised program can steal them—a vulnerability exploited in a real incident in under five minutes. Researchers replaced software-based keys with hardware keystores (like TPMs or smart cards) that perform signing operations inside locked hardware, sending only results back to the AI. Testing against 12 injection attacks reduced success rates from 19.3% to 0%, with no false alarms on legitimate tasks.
+
+Why it matters: As AI systems handle more high-stakes operations—signing code commits, issuing certificates, authenticating financial transactions—a stolen signing key becomes a critical liability. Hardware confinement means attackers cannot extract keys even if they fully compromise the AI system's software layer. This shifts the security boundary from software (which fails constantly) to tamper-resistant hardware, making credential theft orders of magnitude harder.
 
 ---
 Title: Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data

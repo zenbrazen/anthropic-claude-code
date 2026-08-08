@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 580 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 583 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 198 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 199 papers in archive.
+  - "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents"
   - "Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data"
-  - "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 48 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 49 papers in archive.
+  - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
-  - "CWEEP: A Lexical Static Analysis Framework for CWE Early Prevention"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 49 papers in archive.
   - "Multi-State Geometry of Density Matrices and Rectification Sum Rules"
   - "Stochastic Non-Linear Influence in Synchronisation Dynamics"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 48 papers in archive.
   - "Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links"
   - "From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 48 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 49 papers in archive.
+  - "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction"
   - "An entropic explanation of insistence on sameness in autism"
-  - "Persistent homology broadens the controllable subspace in human structural connectomes"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 50 papers in archive.
   - "Optimal Trading of Microstructure Mean Reversion"
   - "Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents
+- URL: https://paperplaine.com/papers/benchmarking-the-benchmarks-evaluating
+- Category: Computer Science · AI
+- Authors: Noam Koren, Roy Bar-Haim, Abigail Goldsteen
+- arXiv: 2608.06329
+- Plain-English subtitle: A system for checking whether AI chatbot tests actually measure what they claim to
+- Summary: Researchers created a framework that uses AI judges to evaluate whether benchmarks used to test conversational agents are actually good measures of performance. The framework checks three key qualities—consistency, complexity, and how thoroughly benchmarks cover different behaviors—and identifies specific weaknesses. When tested against human judgment and against benchmarks intentionally made worse, the system reliably distinguished between high-quality and low-quality benchmarks.
+- Why it matters: Conversational AI is tested using benchmarks, but nobody has been systematically checking whether those benchmarks are reliable. A flawed benchmark might make a mediocre chatbot look better than it is, or reject a good one unfairly. This framework lets researchers and companies quickly spot when their test suites are inconsistent, oversimplified, or missing important real-world scenarios—before they ship products or publish misleading results about AI performance.
+
+### THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction
+- URL: https://paperplaine.com/papers/thbkg-a-temporal-biomedical
+- Category: Quantitative Biology
+- Authors: Pui Chung Siu, Claudia Cabrera, Mani Mudaliar et al.
+- arXiv: 2608.05982
+- Plain-English subtitle: Predicting which drug candidates will succeed using the biology known at the time
+- Summary: Most drugs fail in testing because their target wasn't actually causing the disease. Researchers built a knowledge graph that tracks how biomedical evidence changed over time, then used it to predict which drug candidates would advance from Phase II to Phase III trials using only the evidence available when those decisions were made. The approach outperformed direct evidence alone, especially for the 73% of candidates with no direct proof their target mattered.
+- Why it matters: Drug development costs billions and takes over a decade. If companies could identify failing programs earlier using historical evidence patterns, they could redirect resources to candidates with better odds of reaching patients. This tool lets sponsors test whether their judgment call was sound given what was actually known at the time—and might help prevent another 40–50% of Phase II failures tied to weak target-disease links.
+
+### Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture
+- URL: https://paperplaine.com/papers/hardware-keystores-for-ai
+- Category: Computer Science
+- Authors: Leo Sambrook, Sampo Sovio
+- arXiv: 2608.06130
+- Plain-English subtitle: Locking AI's signing keys in hardware to stop theft and misuse
+- Summary: AI agents that sign documents and authenticate systems currently store their cryptographic keys where any compromised program can steal them—a vulnerability exploited in a real incident in under five minutes. Researchers replaced software-based keys with hardware keystores (like TPMs or smart cards) that perform signing operations inside locked hardware, sending only results back to the AI. Testing against 12 injection attacks reduced success rates from 19.3% to 0%, with no false alarms on legitimate tasks.
+- Why it matters: As AI systems handle more high-stakes operations—signing code commits, issuing certificates, authenticating financial transactions—a stolen signing key becomes a critical liability. Hardware confinement means attackers cannot extract keys even if they fully compromise the AI system's software layer. This shifts the security boundary from software (which fails constantly) to tamper-resistant hardware, making credential theft orders of magnitude harder.
 
 ### Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data
 - URL: https://paperplaine.com/papers/tytan-interactive-neurosymbolic-construction
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Building AI that can find and use Greek-language information accurately
 - Summary: Researchers adapted NVIDIA's Nemotron AI system to work with Modern Greek, a language previously missing from major AI tools. After training on 65,773 Greek examples, their retrieval model's performance jumped from 0.362 to 0.835 on a standard measure, and their question-answering system improved from 29.4% to 66.9% correct answers—with much better accuracy in citing sources.
 - Why it matters: Greek professionals in law, finance, energy, and medicine can now use AI systems that actually understand their language and documents instead of relying on generic multilingual tools that perform poorly on specialist Greek text. The researchers released their adapted models and a new Greek benchmark publicly, so other teams can build better Greek-language AI applications without starting from scratch.
-
-### Optimal Trading of Microstructure Mean Reversion
-- URL: https://paperplaine.com/papers/optimal-trading-of-microstructure
-- Category: Quantitative Finance
-- Authors: Lucas Rabechini Amaral
-- arXiv: 2608.00885
-- Plain-English subtitle: When to buy and sell stock prices that bounce back within seconds
-- Summary: Stock prices bounce around a true underlying value on timescales of seconds, creating predictable patterns traders can exploit. A researcher solved exactly when to buy and sell to capture these bounces while accounting for transaction costs, and found that the optimal strategy works like a trading band: buy when the price dips below a threshold, sell when it rises above, and wait in between. All profit comes from the option value of waiting for the price to move far enough to cover costs.
-- Why it matters: High-frequency traders make money in the microsecond gaps between transactions—but only if they know when to move. This work gives the mathematical rule for the most profitable entry and exit points in that micro-market, accounting for the spreads that drain money on every trade. For active trading firms, this translates directly into sharper execution and higher returns from the same market opportunity.
-
-### An entropic explanation of insistence on sameness in autism
-- URL: https://paperplaine.com/papers/an-entropic-explanation-of
-- Category: Quantitative Biology
-- Authors: Przemysław Śliwiński
-- arXiv: 2608.04616
-- Plain-English subtitle: Why people with autism prefer familiar routines and resist unexpected changes
-- Summary: A new framework uses information theory to explain why autistic individuals often insist on sameness and resist unexpected changes: they are minimizing surprise and uncertainty in their environment. The model proposes that autistic cognition relies heavily on memory and prediction, so people with autism either learn new information to reduce uncertainty or restrict their environment to what they already know—and insistence on sameness reflects this second strategy.
-- Why it matters: This framework could guide the design of therapies and care routines by treating them as optimization problems—essentially ways to gradually expand what someone finds familiar and predictable rather than forcing adaptation to unpredictability. It also offers a way to quantify and communicate difficult experiences like sensory overload and anxiety in autistic individuals, potentially helping caregivers and support programs respond more effectively to actual needs rather than guesswork.
-
-### Provable Limits and Certified Deferral for Verbalized Uncertainty in Small Language Models
-- URL: https://paperplaine.com/papers/provable-limits-and-certified
-- Category: Computer Science · AI
-- Authors: Jianru Shen
-- arXiv: 2608.05064
-- Plain-English subtitle: When should a small AI model ask a human for help instead?
-- Summary: Small language models can learn to express how confident they are in their answers, but calibration techniques have strict limits. The researchers tested eleven models and found that while some scaling methods improve confidence accuracy down to 2% error, only a handful of models can be certified safe enough to work unsupervised even at a 20% risk tolerance—and none at 10%.
-- Why it matters: Small language models are increasingly deployed on phones, private servers, and edge devices where calling a human expert isn't always an option. This work provides the first mathematical proof of when a model's stated confidence is actually trustworthy enough to let it run alone, and when it must defer to a human—turning vague uncertainty into a measurable safety guarantee.
 
 ## About
 
