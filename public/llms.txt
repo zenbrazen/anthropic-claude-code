@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 583 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 586 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 199 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 200 papers in archive.
+  - "Does FLAIR super-resolution erase or hallucinate small white-matter lesions?"
   - "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents"
-  - "Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 49 papers in archive.
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 49 papers in archive.
   - "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction"
   - "An entropic explanation of insistence on sameness in autism"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 50 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 51 papers in archive.
+  - "Counterfactual Analysis via Large Language Models"
   - "Optimal Trading of Microstructure Mean Reversion"
-  - "Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 50 papers in archive.
   - "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning"
   - "Information-Geometric Forward Policy Training in GFlowNets"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 48 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 49 papers in archive.
+  - "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery"
   - "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN"
-  - "Automatic Patient-Specific Microwave Ablation Planning Accelerated by a Physics-Guided Deep Learning Model"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 41 papers in archive.
   - "AI Governance for Institutional Readiness in Finance"
   - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Does FLAIR super-resolution erase or hallucinate small white-matter lesions?
+- URL: https://paperplaine.com/papers/does-flair-super-resolution
+- Category: Computer Science · AI
+- Authors: Zahra Khodakarami, Yue Li, Pulkit Khandelwal et al.
+- arXiv: 2608.06311
+- Plain-English subtitle: When AI sharpens brain scans, does it hide tiny disease signs?
+- Summary: Researchers tested whether artificial intelligence methods that enhance low-resolution brain MRI scans preserve small white-matter lesions—signs of stroke risk and neurodegeneration. The dominant problem was erasure: AI tended to delete real small lesions rather than invent fake ones, and this worsened with thicker original scans. One method, ECLARE, recovered small lesions better than others, but none performed as well as the original high-resolution images.
+- Why it matters: Brain MRI scans in hospitals are routinely too thick to catch small lesions, and doctors increasingly use AI enhancement to sharpen them. If that enhancement erases real disease signs, patients could miss early warnings of stroke or dementia. This work shows which enhancement methods are safest—and that relying blindly on sharpened scans risks overlooking small but clinically important damage.
+
+### Counterfactual Analysis via Large Language Models
+- URL: https://paperplaine.com/papers/counterfactual-analysis-via-large
+- Category: Quantitative Finance
+- Authors: Zonghao Yang
+- arXiv: 2608.05367
+- Plain-English subtitle: Can AI predict how loan profits would change under different interest rates?
+- Summary: Researchers tested whether ChatGPT could predict how loan returns would change if interest rates were set differently—a type of "what-if" analysis critical for lenders deciding pricing strategy. With better prompting, ChatGPT's predictions improved significantly, reaching performance close to traditional machine-learning models, and the system showed it could reason through cause-and-effect relationships in loan outcomes.
+- Why it matters: Lenders make billions in decisions about interest rates, and accurate "what-if" modeling directly affects how profitable those decisions are. If LLMs can match or approach specialized algorithms for these predictions, lenders could use off-the-shelf AI tools instead of building expensive custom systems—potentially speeding up loan pricing decisions and making them accessible to smaller financial institutions.
+
+### Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery
+- URL: https://paperplaine.com/papers/accurate-localization-of-road
+- Category: Engineering
+- Authors: Jan Gawroński, Witold Czajewski
+- arXiv: 2608.05840
+- Plain-English subtitle: Finding exactly where cars are in traffic camera footage, not just rough boxes
+- Summary: When traffic cameras try to pinpoint a vehicle's location, simply using the center of the detected box produces large errors—especially for distant or elevated cameras. Researchers built a system that predicts where all four corners of a car's base touch the road, then calculates the true center from that shape. On real-world footage, this cut localization errors by over half, dropping median ground-plane error from 5.52 meters to 0.90 meters for medium-range vehicles.
+- Why it matters: Traffic systems need to know exactly where vehicles are to detect near-misses, manage congestion, and enforce speed limits. Current rough estimates fail for distant cars and angled views—the exact scenarios where crashes often begin. This method's precision could help catch unsafe driving patterns and improve intersection safety in real deployments.
 
 ### Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents
 - URL: https://paperplaine.com/papers/benchmarking-the-benchmarks-evaluating
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Letting humans control AI by controlling its computing power
 - Summary: Researchers designed a system where groups of people can govern deployed AI agents by voting to allocate or withhold their computational resources. The mechanism works like a market where stakeholders cast votes using a special governance currency, which then converts into a compute budget that directly limits what the AI can do—making the humans' decisions automatically enforceable without extra policing.
 - Why it matters: As AI systems make important decisions in the real world, we need practical ways for humans to stay in control. This approach sidesteps the difficult problem of monitoring AI behavior by making the AI's physical resources contingent on human approval, similar to how a company's budget is contingent on board decisions. The biggest remaining challenge is preventing the AI itself from manipulating the human voters—which the authors identify as the mechanism's critical vulnerability.
-
-### Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links
-- URL: https://paperplaine.com/papers/squarefree-matrix-formulas-for
-- Category: Mathematics
-- Authors: Michal Jablonowski
-- arXiv: 2608.06372
-- Plain-English subtitle: A new way to calculate knot properties using graph patterns and matrices
-- Summary: Mathematicians have developed a uniform formula for calculating the CWR invariant—a number that distinguishes different knots and links—by translating knot diagrams into weighted graphs and extracting information from matrix traces. The method works for any complexity level and produces explicit closed formulas for specific cases, offering both theoretical insight and practical computational tools.
-- Why it matters: Knot invariants are central to understanding knot theory, with applications ranging from DNA topology to quantum physics. This work provides the first systematic method for computing one important invariant across all complexity levels, making it possible to distinguish and classify knots more efficiently. The graph-theoretic approach also opens doors to computational implementations that could handle larger or more complex knots than previous methods allowed.
-
-### TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN
-- URL: https://paperplaine.com/papers/tlnm-externally-validated-tooth
-- Category: Engineering
-- Authors: Arash Nedaei, Henna Tiensuu, Elina Väyrynen et al.
-- arXiv: 2608.06275
-- Plain-English subtitle: Using phone photos to automatically identify and count teeth for remote dental screening
-- Summary: A smartphone camera can automatically locate, identify, and map individual teeth in patient photos almost as reliably as professional dental imaging. The system, trained on over 1,200 annotated images, achieved 90% accuracy on external test data from different populations and phone models—suggesting it could work reliably across real-world conditions without costly equipment.
-- Why it matters: Billions of people lack access to affordable dental care, and this tool could enable basic tooth screening via smartphone for people in remote or low-resource areas. A freely available system that works with any phone camera could make early detection of oral disease faster and cheaper, potentially reducing the burden on overburdened dental clinics and letting people monitor their own teeth between professional visits.
-
-### Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains
-- URL: https://paperplaine.com/papers/teaching-nemotron-greek-mining
-- Category: Computer Science · AI
-- Authors: Ayoub Kirouane, Christos Petrocheilos
-- arXiv: 2608.05138
-- Plain-English subtitle: Building AI that can find and use Greek-language information accurately
-- Summary: Researchers adapted NVIDIA's Nemotron AI system to work with Modern Greek, a language previously missing from major AI tools. After training on 65,773 Greek examples, their retrieval model's performance jumped from 0.362 to 0.835 on a standard measure, and their question-answering system improved from 29.4% to 66.9% correct answers—with much better accuracy in citing sources.
-- Why it matters: Greek professionals in law, finance, energy, and medicine can now use AI systems that actually understand their language and documents instead of relying on generic multilingual tools that perform poorly on specialist Greek text. The researchers released their adapted models and a new Greek benchmark publicly, so other teams can build better Greek-language AI applications without starting from scratch.
 
 ## About
 

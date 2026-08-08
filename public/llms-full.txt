@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 583 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 586 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Does FLAIR super-resolution erase or hallucinate small white-matter lesions?
+Subtitle: When AI sharpens brain scans, does it hide tiny disease signs?
+URL: https://paperplaine.com/papers/does-flair-super-resolution
+Category: Computer Science · AI
+Authors: Zahra Khodakarami, Yue Li, Pulkit Khandelwal et al.
+arXiv ID: 2608.06311
+arXiv URL: https://arxiv.org/abs/2608.06311
+Posted: 2026-08-08
+
+Summary: Researchers tested whether artificial intelligence methods that enhance low-resolution brain MRI scans preserve small white-matter lesions—signs of stroke risk and neurodegeneration. The dominant problem was erasure: AI tended to delete real small lesions rather than invent fake ones, and this worsened with thicker original scans. One method, ECLARE, recovered small lesions better than others, but none performed as well as the original high-resolution images.
+
+Why it matters: Brain MRI scans in hospitals are routinely too thick to catch small lesions, and doctors increasingly use AI enhancement to sharpen them. If that enhancement erases real disease signs, patients could miss early warnings of stroke or dementia. This work shows which enhancement methods are safest—and that relying blindly on sharpened scans risks overlooking small but clinically important damage.
+
+---
+Title: Counterfactual Analysis via Large Language Models
+Subtitle: Can AI predict how loan profits would change under different interest rates?
+URL: https://paperplaine.com/papers/counterfactual-analysis-via-large
+Category: Quantitative Finance
+Authors: Zonghao Yang
+arXiv ID: 2608.05367
+arXiv URL: https://arxiv.org/abs/2608.05367
+Posted: 2026-08-08
+
+Summary: Researchers tested whether ChatGPT could predict how loan returns would change if interest rates were set differently—a type of "what-if" analysis critical for lenders deciding pricing strategy. With better prompting, ChatGPT's predictions improved significantly, reaching performance close to traditional machine-learning models, and the system showed it could reason through cause-and-effect relationships in loan outcomes.
+
+Why it matters: Lenders make billions in decisions about interest rates, and accurate "what-if" modeling directly affects how profitable those decisions are. If LLMs can match or approach specialized algorithms for these predictions, lenders could use off-the-shelf AI tools instead of building expensive custom systems—potentially speeding up loan pricing decisions and making them accessible to smaller financial institutions.
+
+---
+Title: Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery
+Subtitle: Finding exactly where cars are in traffic camera footage, not just rough boxes
+URL: https://paperplaine.com/papers/accurate-localization-of-road
+Category: Engineering
+Authors: Jan Gawroński, Witold Czajewski
+arXiv ID: 2608.05840
+arXiv URL: https://arxiv.org/abs/2608.05840
+Posted: 2026-08-08
+
+Summary: When traffic cameras try to pinpoint a vehicle's location, simply using the center of the detected box produces large errors—especially for distant or elevated cameras. Researchers built a system that predicts where all four corners of a car's base touch the road, then calculates the true center from that shape. On real-world footage, this cut localization errors by over half, dropping median ground-plane error from 5.52 meters to 0.90 meters for medium-range vehicles.
+
+Why it matters: Traffic systems need to know exactly where vehicles are to detect near-misses, manage congestion, and enforce speed limits. Current rough estimates fail for distant cars and angled views—the exact scenarios where crashes often begin. This method's precision could help catch unsafe driving patterns and improve intersection safety in real deployments.
 
 ---
 Title: Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents
