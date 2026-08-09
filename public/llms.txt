@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 586 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 589 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 200 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 201 papers in archive.
+  - "Learning When to Trust via Selective Context Preference Optimization"
   - "Does FLAIR super-resolution erase or hallucinate small white-matter lesions?"
-  - "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 49 papers in archive.
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 49 papers in archive.
   - "Multi-State Geometry of Density Matrices and Rectification Sum Rules"
   - "Stochastic Non-Linear Influence in Synchronisation Dynamics"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 48 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 49 papers in archive.
+  - "The Benefits of an Integrated Approach for Stability-Constrained Power System Planning"
   - "Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links"
-  - "From b-Coloring to b^*-Coloring: Large Girth and Parameterized Complexity"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 49 papers in archive.
   - "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction"
   - "An entropic explanation of insistence on sameness in autism"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 49 papers in archive.
   - "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery"
   - "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 41 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 42 papers in archive.
+  - "Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail"
   - "AI Governance for Institutional Readiness in Finance"
-  - "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth"
 
 ## 10 most recent papers
+
+### Learning When to Trust via Selective Context Preference Optimization
+- URL: https://paperplaine.com/papers/learning-when-to-trust
+- Category: Computer Science · AI
+- Authors: Xian Sun, Wei Chow, Yingshuo Wang et al.
+- arXiv: 2608.06377
+- Plain-English subtitle: Teaching AI when to believe new information and when to ignore it
+- Summary: Language models often get confused by misleading external information—they either blindly trust it and produce wrong answers, or ignore all context and become useless. Researchers created a training method called SCOPE that teaches models to selectively trust context: accept it when it's correct or irrelevant, but reject it when it conflicts with what they already know correctly. The method reduced errors from misleading signals across multiple popular AI models while keeping their accuracy intact when the context was actually helpful.
+- Why it matters: AI systems increasingly pull information from external sources—search results, databases, user inputs—to answer questions. If they can't distinguish good information from bad, they'll either confidently give wrong answers or refuse to use helpful sources. This work offers a practical way to make AI systems more reliable in the real world, where context is often messy and mixed in quality.
+
+### Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail
+- URL: https://paperplaine.com/papers/benefits-of-shifting-passenger
+- Category: Economics
+- Authors: Kaijing Ding, Lu Dai, Mark Hansen
+- arXiv: 2608.05636
+- Plain-English subtitle: How California's high-speed rail could save airlines hundreds of millions in delay costs
+- Summary: California's proposed high-speed rail system could reduce flight delays at major airports by drawing passengers away from short-haul flights, saving airlines $51–88 million annually by 2029 and $235–392 million by 2033. The researchers traced how fewer planes taking off from San Francisco, Los Angeles, and San Diego would ease congestion at airports nationwide, reducing costly delays for all departing flights.
+- Why it matters: Airport congestion wastes money and passenger time—savings of hundreds of millions dollars could be reinvested in service improvements or passed to travelers. Fewer delayed flights also mean less fuel burned and lower emissions from planes sitting on tarmacs. These economic benefits provide a concrete case for high-speed rail investment beyond the usual environmental and commute-time arguments.
+
+### The Benefits of an Integrated Approach for Stability-Constrained Power System Planning
+- URL: https://paperplaine.com/papers/the-benefits-of-an
+- Category: Mathematics
+- Authors: Gereon Recht, Benedikt Jahn, Oussama Alaya et al.
+- arXiv: 2608.06349
+- Plain-English subtitle: Planning power grids so renewable energy doesn't destabilize the system
+- Summary: When solar and wind replace traditional power plants, grids lose the natural stability those plants provided. Researchers tested whether planning for stability from the start—rather than bolting it on afterward—saves money and picks better solutions. An integrated approach reduced total system costs and favored battery storage systems that can do double duty: storing energy and stabilizing the grid.
+- Why it matters: As renewable energy expands, grid operators face a real problem: the physical properties that kept old power systems stable are disappearing. Planning stability measures upfront instead of as an afterthought cuts costs and steers investment toward technology that works harder—like batteries that stabilize while they store. This directly affects how expensive it is to build grids that can reliably handle high renewable penetration.
 
 ### Does FLAIR super-resolution erase or hallucinate small white-matter lesions?
 - URL: https://paperplaine.com/papers/does-flair-super-resolution
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to automatically map what's really in your databases
 - Summary: A new system called TYTAN can automatically figure out the structure and meaning of data in business databases by combining pattern-matching with AI language models, asking targeted clarifying questions when needed. In tests across eight real databases, it achieved perfect accuracy in finding every entity and executing data retrieval instructions correctly, and correctly identified semantic roles 92–100% of the time.
 - Why it matters: Most data analysis tools today require expensive hand-coded descriptions of what data means and how it connects — work that only specialists can do, takes weeks, and introduces errors. TYTAN eliminates this bottleneck, meaning businesses can stand up analytic systems faster, non-technical employees can query databases without waiting for expert help, and the process becomes more reliable.
-
-### Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning
-- URL: https://paperplaine.com/papers/stochastic-dynamics-on-persistence
-- Category: Statistics
-- Authors: Farzana Nasrin
-- arXiv: 2608.06276
-- Plain-English subtitle: Teaching computers to reshape data patterns while keeping what matters most
-- Summary: Researchers created a machine-learning system that can evolve topological diagrams—visual summaries of data structure—through controlled steps, like gradually editing a sketch. The system learns which changes to make by balancing three goals: matching target data patterns, preserving important topological features, and reducing complexity. Experiments show it can simplify messy diagrams while keeping their core structural information intact.
-- Why it matters: Topological diagrams are used to find meaningful patterns in complex datasets, from brain imaging to materials science. Currently, researchers treat these diagrams as fixed snapshots. This framework enables diagrams to evolve and adapt, opening the door to cleaner data summaries that retain what scientists actually care about—reducing noise without losing signal. This could make it easier to compare, compress, and understand high-dimensional data across fields.
-
-### Multi-State Geometry of Density Matrices and Rectification Sum Rules
-- URL: https://paperplaine.com/papers/multi-state-geometry-of
-- Category: Physics
-- Authors: Barry Bradlyn
-- arXiv: 2608.06326
-- Plain-English subtitle: A hidden geometry that shapes how materials respond to light and electricity
-- Summary: Physicists discovered that quantum materials possess a special geometric structure that determines how they bend light and generate electric current — even in messy, real-world conditions with disorder and interactions. By developing a new mathematical framework called the cQAC tensor, the researchers derived exact rules connecting this geometry to measurable electrical responses, and showed that geometric effects can dominate the total response in multiband insulators.
-- Why it matters: This work bridges theory and experiment by revealing which properties of quantum materials can actually be measured in the lab through rectification experiments. Since these geometric features persist at low temperatures despite disorder and interactions, physicists can now use simple electrical measurements to map out the hidden quantum geometry of materials — opening new ways to discover and design materials with useful nonlinear optical and electrical properties.
-
-### Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents
-- URL: https://paperplaine.com/papers/resourced-authority-a-mechanism
-- Category: Computer Science · AI
-- Authors: Praphul Chandra, Sujit Gujar, Ganesh Ghalme
-- arXiv: 2608.06353
-- Plain-English subtitle: Letting humans control AI by controlling its computing power
-- Summary: Researchers designed a system where groups of people can govern deployed AI agents by voting to allocate or withhold their computational resources. The mechanism works like a market where stakeholders cast votes using a special governance currency, which then converts into a compute budget that directly limits what the AI can do—making the humans' decisions automatically enforceable without extra policing.
-- Why it matters: As AI systems make important decisions in the real world, we need practical ways for humans to stay in control. This approach sidesteps the difficult problem of monitoring AI behavior by making the AI's physical resources contingent on human approval, similar to how a company's budget is contingent on board decisions. The biggest remaining challenge is preventing the AI itself from manipulating the human voters—which the authors identify as the mechanism's critical vulnerability.
 
 ## About
 
