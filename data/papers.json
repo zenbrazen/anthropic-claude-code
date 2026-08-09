@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.06366",
+    "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+    "authors": "Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-06T17:57:37Z",
+    "publishedFormatted": "Aug 6, 2026",
+    "subtitle": "Automating the detective work that turns messy medical records into AI-ready data",
+    "summary": "Researchers built an AI system that automatically extracts and structures heart-failure data from fragmented medical records, a task that currently consumes nearly half of clinical data scientists' time. Testing on 500 patient records, the system created features that boosted predictive accuracy from 89.5% to 96.3% for one heart-failure type, while leaving an auditable trail showing exactly where each piece of data came from and why it was included.",
+    "whyItMatters": "Heart failure affects 6.7 million Americans, and developing better predictive AI requires months of tedious manual data work that slows research. If this approach scales, it could cut months off the time needed to build and validate heart-failure detection tools, freeing data scientists to focus on clinical strategy rather than data plumbing. The system's transparency—showing evidence and reasoning for every data choice—also matters for hospitals that need to defend AI decisions to regulators and doctors.",
+    "fetchedAt": "2026-08-09T19:27:38.674Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 186
+    },
+    "slug": "tracing-the-heart-an"
+  },
+  {
+    "id": "2608.06340",
+    "title": "Scalable estimation of VARMA models",
+    "authors": "Daniel Paulin, Victor Elvira",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-08-06T17:49:58Z",
+    "publishedFormatted": "Aug 6, 2026",
+    "subtitle": "Making complex time-series models practical for real-world data",
+    "summary": "Researchers created a new way to fit VARMA models—statistical tools that forecast how multiple variables change together over time—that works at practical scale for the first time. By reformulating the math and using Fourier techniques, they cut the computational cost per iteration from growing with data length to staying fixed, allowing the method to handle 10–40 variables where it previously failed or produced unreliable forecasts.",
+    "whyItMatters": "VARMA models are theoretically superior to simpler alternatives because they capture complex patterns with fewer parameters, but companies and researchers have avoided them for anything beyond small datasets due to prohibitive computational cost. This breakthrough removes that barrier, letting practitioners use better forecasts for demand planning, weather modeling, and air quality without switching to inferior approximations or waiting for impractical computation times.",
+    "fetchedAt": "2026-08-09T19:27:42.773Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 60,
+      "wordCount": 251
+    },
+    "slug": "scalable-estimation-of-varma"
+  },
+  {
+    "id": "2608.06303",
+    "title": "Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport",
+    "authors": "Didrik Palmqvist, Luca Magazzù, Milena Grifoni et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-08-06T17:21:51Z",
+    "publishedFormatted": "Aug 6, 2026",
+    "subtitle": "When nonlinear effects undermine the speed-accuracy tradeoff in quantum transport",
+    "summary": "Physicists tested whether fundamental speed-accuracy tradeoffs hold up in quantum systems when interactions are added. The bounds remained valid in some cases but broke down in others depending on how the system's interactions were defined—suggesting that nonlinearities pose a real threat to these limits that theorists had thought were rock-solid.",
+    "whyItMatters": "Quantum transport precision limits guide the design of quantum sensors, quantum computers, and nanoscale devices. If these bounds collapse under realistic nonlinear conditions, engineers building these systems need different design principles. The findings point toward which types of interactions are most dangerous to precision, helping researchers choose materials and operating conditions that maintain tight control over measurement accuracy.",
+    "fetchedAt": "2026-08-09T19:27:46.878Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 122
+    },
+    "slug": "impact-of-nonlinearities-on"
+  },
+  {
     "id": "2608.06377",
     "title": "Learning When to Trust via Selective Context Preference Optimization",
     "authors": "Xian Sun, Wei Chow, Yingshuo Wang et al.",

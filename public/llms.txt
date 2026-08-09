@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 589 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 592 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 201 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 202 papers in archive.
+  - "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering"
   - "Learning When to Trust via Selective Context Preference Optimization"
-  - "Does FLAIR super-resolution erase or hallucinate small white-matter lesions?"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 49 papers in archive.
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 49 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 50 papers in archive.
+  - "Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport"
   - "Multi-State Geometry of Density Matrices and Rectification Sum Rules"
-  - "Stochastic Non-Linear Influence in Synchronisation Dynamics"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 49 papers in archive.
   - "The Benefits of an Integrated Approach for Stability-Constrained Power System Planning"
   - "Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 51 papers in archive.
   - "Counterfactual Analysis via Large Language Models"
   - "Optimal Trading of Microstructure Mean Reversion"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 50 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 51 papers in archive.
+  - "Scalable estimation of VARMA models"
   - "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning"
-  - "Information-Geometric Forward Policy Training in GFlowNets"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 49 papers in archive.
   - "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery"
   - "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "AI Governance for Institutional Readiness in Finance"
 
 ## 10 most recent papers
+
+### Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering
+- URL: https://paperplaine.com/papers/tracing-the-heart-an
+- Category: Computer Science · AI
+- Authors: Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi et al.
+- arXiv: 2608.06366
+- Plain-English subtitle: Automating the detective work that turns messy medical records into AI-ready data
+- Summary: Researchers built an AI system that automatically extracts and structures heart-failure data from fragmented medical records, a task that currently consumes nearly half of clinical data scientists' time. Testing on 500 patient records, the system created features that boosted predictive accuracy from 89.5% to 96.3% for one heart-failure type, while leaving an auditable trail showing exactly where each piece of data came from and why it was included.
+- Why it matters: Heart failure affects 6.7 million Americans, and developing better predictive AI requires months of tedious manual data work that slows research. If this approach scales, it could cut months off the time needed to build and validate heart-failure detection tools, freeing data scientists to focus on clinical strategy rather than data plumbing. The system's transparency—showing evidence and reasoning for every data choice—also matters for hospitals that need to defend AI decisions to regulators and doctors.
+
+### Scalable estimation of VARMA models
+- URL: https://paperplaine.com/papers/scalable-estimation-of-varma
+- Category: Statistics
+- Authors: Daniel Paulin, Victor Elvira
+- arXiv: 2608.06340
+- Plain-English subtitle: Making complex time-series models practical for real-world data
+- Summary: Researchers created a new way to fit VARMA models—statistical tools that forecast how multiple variables change together over time—that works at practical scale for the first time. By reformulating the math and using Fourier techniques, they cut the computational cost per iteration from growing with data length to staying fixed, allowing the method to handle 10–40 variables where it previously failed or produced unreliable forecasts.
+- Why it matters: VARMA models are theoretically superior to simpler alternatives because they capture complex patterns with fewer parameters, but companies and researchers have avoided them for anything beyond small datasets due to prohibitive computational cost. This breakthrough removes that barrier, letting practitioners use better forecasts for demand planning, weather modeling, and air quality without switching to inferior approximations or waiting for impractical computation times.
+
+### Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport
+- URL: https://paperplaine.com/papers/impact-of-nonlinearities-on
+- Category: Physics
+- Authors: Didrik Palmqvist, Luca Magazzù, Milena Grifoni et al.
+- arXiv: 2608.06303
+- Plain-English subtitle: When nonlinear effects undermine the speed-accuracy tradeoff in quantum transport
+- Summary: Physicists tested whether fundamental speed-accuracy tradeoffs hold up in quantum systems when interactions are added. The bounds remained valid in some cases but broke down in others depending on how the system's interactions were defined—suggesting that nonlinearities pose a real threat to these limits that theorists had thought were rock-solid.
+- Why it matters: Quantum transport precision limits guide the design of quantum sensors, quantum computers, and nanoscale devices. If these bounds collapse under realistic nonlinear conditions, engineers building these systems need different design principles. The findings point toward which types of interactions are most dangerous to precision, helping researchers choose materials and operating conditions that maintain tight control over measurement accuracy.
 
 ### Learning When to Trust via Selective Context Preference Optimization
 - URL: https://paperplaine.com/papers/learning-when-to-trust
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A system for checking whether AI chatbot tests actually measure what they claim to
 - Summary: Researchers created a framework that uses AI judges to evaluate whether benchmarks used to test conversational agents are actually good measures of performance. The framework checks three key qualities—consistency, complexity, and how thoroughly benchmarks cover different behaviors—and identifies specific weaknesses. When tested against human judgment and against benchmarks intentionally made worse, the system reliably distinguished between high-quality and low-quality benchmarks.
 - Why it matters: Conversational AI is tested using benchmarks, but nobody has been systematically checking whether those benchmarks are reliable. A flawed benchmark might make a mediocre chatbot look better than it is, or reject a good one unfairly. This framework lets researchers and companies quickly spot when their test suites are inconsistent, oversimplified, or missing important real-world scenarios—before they ship products or publish misleading results about AI performance.
-
-### THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction
-- URL: https://paperplaine.com/papers/thbkg-a-temporal-biomedical
-- Category: Quantitative Biology
-- Authors: Pui Chung Siu, Claudia Cabrera, Mani Mudaliar et al.
-- arXiv: 2608.05982
-- Plain-English subtitle: Predicting which drug candidates will succeed using the biology known at the time
-- Summary: Most drugs fail in testing because their target wasn't actually causing the disease. Researchers built a knowledge graph that tracks how biomedical evidence changed over time, then used it to predict which drug candidates would advance from Phase II to Phase III trials using only the evidence available when those decisions were made. The approach outperformed direct evidence alone, especially for the 73% of candidates with no direct proof their target mattered.
-- Why it matters: Drug development costs billions and takes over a decade. If companies could identify failing programs earlier using historical evidence patterns, they could redirect resources to candidates with better odds of reaching patients. This tool lets sponsors test whether their judgment call was sound given what was actually known at the time—and might help prevent another 40–50% of Phase II failures tied to weak target-disease links.
-
-### Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture
-- URL: https://paperplaine.com/papers/hardware-keystores-for-ai
-- Category: Computer Science
-- Authors: Leo Sambrook, Sampo Sovio
-- arXiv: 2608.06130
-- Plain-English subtitle: Locking AI's signing keys in hardware to stop theft and misuse
-- Summary: AI agents that sign documents and authenticate systems currently store their cryptographic keys where any compromised program can steal them—a vulnerability exploited in a real incident in under five minutes. Researchers replaced software-based keys with hardware keystores (like TPMs or smart cards) that perform signing operations inside locked hardware, sending only results back to the AI. Testing against 12 injection attacks reduced success rates from 19.3% to 0%, with no false alarms on legitimate tasks.
-- Why it matters: As AI systems handle more high-stakes operations—signing code commits, issuing certificates, authenticating financial transactions—a stolen signing key becomes a critical liability. Hardware confinement means attackers cannot extract keys even if they fully compromise the AI system's software layer. This shifts the security boundary from software (which fails constantly) to tamper-resistant hardware, making credential theft orders of magnitude harder.
-
-### Tytan: Interactive Neurosymbolic Construction of Analytic Semantic Schemas from Relational Data
-- URL: https://paperplaine.com/papers/tytan-interactive-neurosymbolic-construction
-- Category: Computer Science · AI
-- Authors: Donna Hooshmand, Shubham Shahi, Cameron Barrie et al.
-- arXiv: 2608.06331
-- Plain-English subtitle: Teaching AI to automatically map what's really in your databases
-- Summary: A new system called TYTAN can automatically figure out the structure and meaning of data in business databases by combining pattern-matching with AI language models, asking targeted clarifying questions when needed. In tests across eight real databases, it achieved perfect accuracy in finding every entity and executing data retrieval instructions correctly, and correctly identified semantic roles 92–100% of the time.
-- Why it matters: Most data analysis tools today require expensive hand-coded descriptions of what data means and how it connects — work that only specialists can do, takes weeks, and introduces errors. TYTAN eliminates this bottleneck, meaning businesses can stand up analytic systems faster, non-technical employees can query databases without waiting for expert help, and the process becomes more reliable.
 
 ## About
 

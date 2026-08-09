@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 589 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 592 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-09
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering
+Subtitle: Automating the detective work that turns messy medical records into AI-ready data
+URL: https://paperplaine.com/papers/tracing-the-heart-an
+Category: Computer Science · AI
+Authors: Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi et al.
+arXiv ID: 2608.06366
+arXiv URL: https://arxiv.org/abs/2608.06366
+Posted: 2026-08-09
+
+Summary: Researchers built an AI system that automatically extracts and structures heart-failure data from fragmented medical records, a task that currently consumes nearly half of clinical data scientists' time. Testing on 500 patient records, the system created features that boosted predictive accuracy from 89.5% to 96.3% for one heart-failure type, while leaving an auditable trail showing exactly where each piece of data came from and why it was included.
+
+Why it matters: Heart failure affects 6.7 million Americans, and developing better predictive AI requires months of tedious manual data work that slows research. If this approach scales, it could cut months off the time needed to build and validate heart-failure detection tools, freeing data scientists to focus on clinical strategy rather than data plumbing. The system's transparency—showing evidence and reasoning for every data choice—also matters for hospitals that need to defend AI decisions to regulators and doctors.
+
+---
+Title: Scalable estimation of VARMA models
+Subtitle: Making complex time-series models practical for real-world data
+URL: https://paperplaine.com/papers/scalable-estimation-of-varma
+Category: Statistics
+Authors: Daniel Paulin, Victor Elvira
+arXiv ID: 2608.06340
+arXiv URL: https://arxiv.org/abs/2608.06340
+Posted: 2026-08-09
+
+Summary: Researchers created a new way to fit VARMA models—statistical tools that forecast how multiple variables change together over time—that works at practical scale for the first time. By reformulating the math and using Fourier techniques, they cut the computational cost per iteration from growing with data length to staying fixed, allowing the method to handle 10–40 variables where it previously failed or produced unreliable forecasts.
+
+Why it matters: VARMA models are theoretically superior to simpler alternatives because they capture complex patterns with fewer parameters, but companies and researchers have avoided them for anything beyond small datasets due to prohibitive computational cost. This breakthrough removes that barrier, letting practitioners use better forecasts for demand planning, weather modeling, and air quality without switching to inferior approximations or waiting for impractical computation times.
+
+---
+Title: Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport
+Subtitle: When nonlinear effects undermine the speed-accuracy tradeoff in quantum transport
+URL: https://paperplaine.com/papers/impact-of-nonlinearities-on
+Category: Physics
+Authors: Didrik Palmqvist, Luca Magazzù, Milena Grifoni et al.
+arXiv ID: 2608.06303
+arXiv URL: https://arxiv.org/abs/2608.06303
+Posted: 2026-08-09
+
+Summary: Physicists tested whether fundamental speed-accuracy tradeoffs hold up in quantum systems when interactions are added. The bounds remained valid in some cases but broke down in others depending on how the system's interactions were defined—suggesting that nonlinearities pose a real threat to these limits that theorists had thought were rock-solid.
+
+Why it matters: Quantum transport precision limits guide the design of quantum sensors, quantum computers, and nanoscale devices. If these bounds collapse under realistic nonlinear conditions, engineers building these systems need different design principles. The findings point toward which types of interactions are most dangerous to precision, helping researchers choose materials and operating conditions that maintain tight control over measurement accuracy.
 
 ---
 Title: Learning When to Trust via Selective Context Preference Optimization
