@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 595 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 598 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 203 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 204 papers in archive.
+  - "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents"
   - "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent"
-  - "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 49 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
+  - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
-  - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 50 papers in archive.
   - "Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport"
   - "Multi-State Geometry of Density Matrices and Rectification Sum Rules"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 49 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 50 papers in archive.
+  - "On the Optimal Laplacian Jordan Structure for Synchronizability"
   - "The Benefits of an Integrated Approach for Stability-Constrained Power System Planning"
-  - "Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 50 papers in archive.
   - "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity"
   - "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "AI Governance for Institutional Readiness in Finance"
 
 ## 10 most recent papers
+
+### PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents
+- URL: https://paperplaine.com/papers/psychoagent-an-affect-sensitive
+- Category: Computer Science · AI
+- Authors: Mohammad Amanlou, Parham Abed Azad, Farbod Davoodi et al.
+- arXiv: 2608.07438
+- Plain-English subtitle: Making AI remember emotional weight, not just matching keywords
+- Summary: A new system for AI assistants splits memory into facts and emotions, then retrieves past information based on what matters psychologically—not just topical similarity. In three conflict scenarios, this approach recovered conflict-critical details 40% more often than systems that treat all memories equally, though human raters couldn't consistently tell the difference in final conversation quality.
+- Why it matters: AI assistants today retrieve information like search engines: if you mention a topic, they pull up matching facts. But humans retrieve memories shaped by unresolved conflicts and emotional weight—what still bothers us. This work demonstrates a mechanism for building AI that prioritizes emotionally significant past events, potentially creating assistants that navigate complex, sensitive situations with better context awareness and more natural conversation flow.
+
+### SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies
+- URL: https://paperplaine.com/papers/sok-cryptographic-key-recovery
+- Category: Computer Science
+- Authors: Francisco Javier Becerra Sanchez, Antonio Ken Iannillo, Radu State
+- arXiv: 2608.07104
+- Plain-English subtitle: How to safely recover access to cryptocurrency wallets when keys are lost
+- Summary: When someone loses access to a cryptocurrency wallet, recovery mechanisms let them regain control—but they vary widely in how they work and where they place risk. This paper analyzed 77 different recovery systems across custody platforms and financial technologies, revealing that most recovery methods shift trust to third parties, create new abuse vulnerabilities, and leave recovery metadata unprotected.
+- Why it matters: Cryptocurrency users routinely lose access to accounts containing real money, and recovery is often their only option—yet most recovery systems force a dangerous choice between security and recoverability. This taxonomy helps wallet providers and developers understand the tradeoffs in existing approaches and identifies six specific gaps (like unprotected recovery metadata and poor lifecycle management) that create theft vulnerabilities. Better recovery design could prevent both devastating user losses and the security breaches that plague custody platforms today.
+
+### On the Optimal Laplacian Jordan Structure for Synchronizability
+- URL: https://paperplaine.com/papers/on-the-optimal-laplacian
+- Category: Mathematics
+- Authors: Luca Dieci, Cinzia Elia, Alessandro Pugliese
+- arXiv: 2608.07286
+- Plain-English subtitle: Finding the best network structure for synchronized systems to settle faster
+- Summary: When multiple systems are connected in a network, they can synchronize — lock into matching patterns — but how fast they sync depends on the network's mathematical structure. This paper identifies the precise network configurations that guarantee synchronization happens both reliably and as quickly as possible, with the added benefit of resisting small perturbations.
+- Why it matters: Synchronized networks appear everywhere: power grids must stay in sync to avoid blackouts, groups of robots coordinate through networked communication, and biological systems like fireflies flashing together rely on synchronization. By determining which network structures sync fastest and most robustly, engineers can design more stable and responsive systems across these applications.
 
 ### SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent
 - URL: https://paperplaine.com/papers/skillprox-self-evolving-agent
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI when to believe new information and when to ignore it
 - Summary: Language models often get confused by misleading external information—they either blindly trust it and produce wrong answers, or ignore all context and become useless. Researchers created a training method called SCOPE that teaches models to selectively trust context: accept it when it's correct or irrelevant, but reject it when it conflicts with what they already know correctly. The method reduced errors from misleading signals across multiple popular AI models while keeping their accuracy intact when the context was actually helpful.
 - Why it matters: AI systems increasingly pull information from external sources—search results, databases, user inputs—to answer questions. If they can't distinguish good information from bad, they'll either confidently give wrong answers or refuse to use helpful sources. This work offers a practical way to make AI systems more reliable in the real world, where context is often messy and mixed in quality.
-
-### Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail
-- URL: https://paperplaine.com/papers/benefits-of-shifting-passenger
-- Category: Economics
-- Authors: Kaijing Ding, Lu Dai, Mark Hansen
-- arXiv: 2608.05636
-- Plain-English subtitle: How California's high-speed rail could save airlines hundreds of millions in delay costs
-- Summary: California's proposed high-speed rail system could reduce flight delays at major airports by drawing passengers away from short-haul flights, saving airlines $51–88 million annually by 2029 and $235–392 million by 2033. The researchers traced how fewer planes taking off from San Francisco, Los Angeles, and San Diego would ease congestion at airports nationwide, reducing costly delays for all departing flights.
-- Why it matters: Airport congestion wastes money and passenger time—savings of hundreds of millions dollars could be reinvested in service improvements or passed to travelers. Fewer delayed flights also mean less fuel burned and lower emissions from planes sitting on tarmacs. These economic benefits provide a concrete case for high-speed rail investment beyond the usual environmental and commute-time arguments.
-
-### The Benefits of an Integrated Approach for Stability-Constrained Power System Planning
-- URL: https://paperplaine.com/papers/the-benefits-of-an
-- Category: Mathematics
-- Authors: Gereon Recht, Benedikt Jahn, Oussama Alaya et al.
-- arXiv: 2608.06349
-- Plain-English subtitle: Planning power grids so renewable energy doesn't destabilize the system
-- Summary: When solar and wind replace traditional power plants, grids lose the natural stability those plants provided. Researchers tested whether planning for stability from the start—rather than bolting it on afterward—saves money and picks better solutions. An integrated approach reduced total system costs and favored battery storage systems that can do double duty: storing energy and stabilizing the grid.
-- Why it matters: As renewable energy expands, grid operators face a real problem: the physical properties that kept old power systems stable are disappearing. Planning stability measures upfront instead of as an afterthought cuts costs and steers investment toward technology that works harder—like batteries that stabilize while they store. This directly affects how expensive it is to build grids that can reliably handle high renewable penetration.
-
-### Does FLAIR super-resolution erase or hallucinate small white-matter lesions?
-- URL: https://paperplaine.com/papers/does-flair-super-resolution
-- Category: Computer Science · AI
-- Authors: Zahra Khodakarami, Yue Li, Pulkit Khandelwal et al.
-- arXiv: 2608.06311
-- Plain-English subtitle: When AI sharpens brain scans, does it hide tiny disease signs?
-- Summary: Researchers tested whether artificial intelligence methods that enhance low-resolution brain MRI scans preserve small white-matter lesions—signs of stroke risk and neurodegeneration. The dominant problem was erasure: AI tended to delete real small lesions rather than invent fake ones, and this worsened with thicker original scans. One method, ECLARE, recovered small lesions better than others, but none performed as well as the original high-resolution images.
-- Why it matters: Brain MRI scans in hospitals are routinely too thick to catch small lesions, and doctors increasingly use AI enhancement to sharpen them. If that enhancement erases real disease signs, patients could miss early warnings of stroke or dementia. This work shows which enhancement methods are safest—and that relying blindly on sharpened scans risks overlooking small but clinically important damage.
 
 ## About
 

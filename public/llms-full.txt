@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 595 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 598 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-10
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents
+Subtitle: Making AI remember emotional weight, not just matching keywords
+URL: https://paperplaine.com/papers/psychoagent-an-affect-sensitive
+Category: Computer Science · AI
+Authors: Mohammad Amanlou, Parham Abed Azad, Farbod Davoodi et al.
+arXiv ID: 2608.07438
+arXiv URL: https://arxiv.org/abs/2608.07438
+Posted: 2026-08-10
+
+Summary: A new system for AI assistants splits memory into facts and emotions, then retrieves past information based on what matters psychologically—not just topical similarity. In three conflict scenarios, this approach recovered conflict-critical details 40% more often than systems that treat all memories equally, though human raters couldn't consistently tell the difference in final conversation quality.
+
+Why it matters: AI assistants today retrieve information like search engines: if you mention a topic, they pull up matching facts. But humans retrieve memories shaped by unresolved conflicts and emotional weight—what still bothers us. This work demonstrates a mechanism for building AI that prioritizes emotionally significant past events, potentially creating assistants that navigate complex, sensitive situations with better context awareness and more natural conversation flow.
+
+---
+Title: SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies
+Subtitle: How to safely recover access to cryptocurrency wallets when keys are lost
+URL: https://paperplaine.com/papers/sok-cryptographic-key-recovery
+Category: Computer Science
+Authors: Francisco Javier Becerra Sanchez, Antonio Ken Iannillo, Radu State
+arXiv ID: 2608.07104
+arXiv URL: https://arxiv.org/abs/2608.07104
+Posted: 2026-08-10
+
+Summary: When someone loses access to a cryptocurrency wallet, recovery mechanisms let them regain control—but they vary widely in how they work and where they place risk. This paper analyzed 77 different recovery systems across custody platforms and financial technologies, revealing that most recovery methods shift trust to third parties, create new abuse vulnerabilities, and leave recovery metadata unprotected.
+
+Why it matters: Cryptocurrency users routinely lose access to accounts containing real money, and recovery is often their only option—yet most recovery systems force a dangerous choice between security and recoverability. This taxonomy helps wallet providers and developers understand the tradeoffs in existing approaches and identifies six specific gaps (like unprotected recovery metadata and poor lifecycle management) that create theft vulnerabilities. Better recovery design could prevent both devastating user losses and the security breaches that plague custody platforms today.
+
+---
+Title: On the Optimal Laplacian Jordan Structure for Synchronizability
+Subtitle: Finding the best network structure for synchronized systems to settle faster
+URL: https://paperplaine.com/papers/on-the-optimal-laplacian
+Category: Mathematics
+Authors: Luca Dieci, Cinzia Elia, Alessandro Pugliese
+arXiv ID: 2608.07286
+arXiv URL: https://arxiv.org/abs/2608.07286
+Posted: 2026-08-10
+
+Summary: When multiple systems are connected in a network, they can synchronize — lock into matching patterns — but how fast they sync depends on the network's mathematical structure. This paper identifies the precise network configurations that guarantee synchronization happens both reliably and as quickly as possible, with the added benefit of resisting small perturbations.
+
+Why it matters: Synchronized networks appear everywhere: power grids must stay in sync to avoid blackouts, groups of robots coordinate through networked communication, and biological systems like fireflies flashing together rely on synchronization. By determining which network structures sync fastest and most robustly, engineers can design more stable and responsive systems across these applications.
 
 ---
 Title: SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent
