@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 592 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-09
+This file contains the complete plain-English text of all 595 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-10
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent
+Subtitle: Teaching AI agents to build and refine their own instruction libraries
+URL: https://paperplaine.com/papers/skillprox-self-evolving-agent
+Category: Computer Science · AI
+Authors: Mingxuan Zheng, Yujin Zhou, Chuxue Cao et al.
+arXiv ID: 2608.07449
+arXiv URL: https://arxiv.org/abs/2608.07449
+Posted: 2026-08-10
+
+Summary: When AI language models tackle similar tasks repeatedly, they can build up a library of reusable instructions—called skills—that live in the model's working memory rather than changing its weights. A new system called SkillProx improves how these skills evolve by adding explicit diagnosis of what goes wrong and a structured way to prune unhelpful knowledge, achieving 3 percentage points higher accuracy than previous methods across multiple benchmark tests.
+
+Why it matters: As AI agents take on more complex real-world tasks, the ability to learn and refine their own strategies becomes critical. SkillProx makes this learning process more transparent and efficient—you can audit which knowledge pieces actually help—and shows the approach generalizes to tasks the system has never seen before. This points toward AI systems that improve themselves more reliably without expensive retraining.
+
+---
+Title: Efficient Discrete Position Design for Movable Antenna Systems: Low Complexity and Robustness
+Subtitle: Making wireless antennas that move around work without slowing down networks
+URL: https://paperplaine.com/papers/efficient-discrete-position-design
+Category: Engineering
+Authors: Haonan Wang, Xianghao Yu, Rui Wang et al.
+arXiv ID: 2608.07413
+arXiv URL: https://arxiv.org/abs/2608.07413
+Posted: 2026-08-10
+
+Summary: Wireless antennas that can physically shift position promise better communication, but figuring out where to place them requires enormous computational effort. Researchers proved that the positioning problem has a special mathematical structure that lets them find near-optimal placements 34 times faster than existing methods, while still achieving 90% of the best possible performance even when channel measurements are slightly wrong.
+
+Why it matters: Movable antenna systems could significantly boost wireless network capacity and reliability, but they've been impractical because the positioning calculations would overwhelm real systems. This algorithm makes the computation fast enough for actual deployment without sacrificing performance—a necessary step before movable antennas appear in real phones, base stations, and 5G/6G networks.
+
+---
+Title: FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity
+Subtitle: How hospitals can share brain scans without revealing patient data
+URL: https://paperplaine.com/papers/feddose-federated-learning-framework
+Category: Quantitative Biology
+Authors: Deepank Girish, Yi Hao Chan, Yubin Zheng et al.
+arXiv ID: 2608.07393
+arXiv URL: https://arxiv.org/abs/2608.07393
+Posted: 2026-08-10
+
+Summary: Researchers developed FedDOSE, a new method that lets hospitals collaborate on analyzing brain scans while keeping patient information private. The system accounts for differences between hospital scanners and captures how brain connectivity changes over time, improving accuracy in diagnosing autism and ADHD by outperforming existing approaches.
+
+Why it matters: Brain disorder diagnosis currently requires pooling data from multiple hospitals—but sharing raw scans raises privacy concerns. FedDOSE lets hospitals train AI models together on their local data without sending scans elsewhere, while still achieving better diagnostic accuracy. This could accelerate research into neurodevelopmental disorders without compromising patient privacy.
 
 ---
 Title: Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering

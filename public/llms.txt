@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 592 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 595 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 202 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 203 papers in archive.
+  - "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent"
   - "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering"
-  - "Learning When to Trust via Selective Context Preference Optimization"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 49 papers in archive.
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
   - "Toward Practical Decentralized Proof-of-Location via Physical Witnessing Zones"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 49 papers in archive.
   - "The Benefits of an Integrated Approach for Stability-Constrained Power System Planning"
   - "Squarefree Matrix Formulas for the CWR Invariant of Alternating Knots and Links"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 49 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 50 papers in archive.
+  - "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity"
   - "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction"
-  - "An entropic explanation of insistence on sameness in autism"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 51 papers in archive.
   - "Counterfactual Analysis via Large Language Models"
   - "Optimal Trading of Microstructure Mean Reversion"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 51 papers in archive.
   - "Scalable estimation of VARMA models"
   - "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 49 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 50 papers in archive.
+  - "Efficient Discrete Position Design for Movable Antenna Systems: Low Complexity and Robustness"
   - "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery"
-  - "TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 42 papers in archive.
   - "Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail"
   - "AI Governance for Institutional Readiness in Finance"
 
 ## 10 most recent papers
+
+### SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent
+- URL: https://paperplaine.com/papers/skillprox-self-evolving-agent
+- Category: Computer Science · AI
+- Authors: Mingxuan Zheng, Yujin Zhou, Chuxue Cao et al.
+- arXiv: 2608.07449
+- Plain-English subtitle: Teaching AI agents to build and refine their own instruction libraries
+- Summary: When AI language models tackle similar tasks repeatedly, they can build up a library of reusable instructions—called skills—that live in the model's working memory rather than changing its weights. A new system called SkillProx improves how these skills evolve by adding explicit diagnosis of what goes wrong and a structured way to prune unhelpful knowledge, achieving 3 percentage points higher accuracy than previous methods across multiple benchmark tests.
+- Why it matters: As AI agents take on more complex real-world tasks, the ability to learn and refine their own strategies becomes critical. SkillProx makes this learning process more transparent and efficient—you can audit which knowledge pieces actually help—and shows the approach generalizes to tasks the system has never seen before. This points toward AI systems that improve themselves more reliably without expensive retraining.
+
+### Efficient Discrete Position Design for Movable Antenna Systems: Low Complexity and Robustness
+- URL: https://paperplaine.com/papers/efficient-discrete-position-design
+- Category: Engineering
+- Authors: Haonan Wang, Xianghao Yu, Rui Wang et al.
+- arXiv: 2608.07413
+- Plain-English subtitle: Making wireless antennas that move around work without slowing down networks
+- Summary: Wireless antennas that can physically shift position promise better communication, but figuring out where to place them requires enormous computational effort. Researchers proved that the positioning problem has a special mathematical structure that lets them find near-optimal placements 34 times faster than existing methods, while still achieving 90% of the best possible performance even when channel measurements are slightly wrong.
+- Why it matters: Movable antenna systems could significantly boost wireless network capacity and reliability, but they've been impractical because the positioning calculations would overwhelm real systems. This algorithm makes the computation fast enough for actual deployment without sacrificing performance—a necessary step before movable antennas appear in real phones, base stations, and 5G/6G networks.
+
+### FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity
+- URL: https://paperplaine.com/papers/feddose-federated-learning-framework
+- Category: Quantitative Biology
+- Authors: Deepank Girish, Yi Hao Chan, Yubin Zheng et al.
+- arXiv: 2608.07393
+- Plain-English subtitle: How hospitals can share brain scans without revealing patient data
+- Summary: Researchers developed FedDOSE, a new method that lets hospitals collaborate on analyzing brain scans while keeping patient information private. The system accounts for differences between hospital scanners and captures how brain connectivity changes over time, improving accuracy in diagnosing autism and ADHD by outperforming existing approaches.
+- Why it matters: Brain disorder diagnosis currently requires pooling data from multiple hospitals—but sharing raw scans raises privacy concerns. FedDOSE lets hospitals train AI models together on their local data without sending scans elsewhere, while still achieving better diagnostic accuracy. This could accelerate research into neurodevelopmental disorders without compromising patient privacy.
 
 ### Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering
 - URL: https://paperplaine.com/papers/tracing-the-heart-an
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When AI sharpens brain scans, does it hide tiny disease signs?
 - Summary: Researchers tested whether artificial intelligence methods that enhance low-resolution brain MRI scans preserve small white-matter lesions—signs of stroke risk and neurodegeneration. The dominant problem was erasure: AI tended to delete real small lesions rather than invent fake ones, and this worsened with thicker original scans. One method, ECLARE, recovered small lesions better than others, but none performed as well as the original high-resolution images.
 - Why it matters: Brain MRI scans in hospitals are routinely too thick to catch small lesions, and doctors increasingly use AI enhancement to sharpen them. If that enhancement erases real disease signs, patients could miss early warnings of stroke or dementia. This work shows which enhancement methods are safest—and that relying blindly on sharpened scans risks overlooking small but clinically important damage.
-
-### Counterfactual Analysis via Large Language Models
-- URL: https://paperplaine.com/papers/counterfactual-analysis-via-large
-- Category: Quantitative Finance
-- Authors: Zonghao Yang
-- arXiv: 2608.05367
-- Plain-English subtitle: Can AI predict how loan profits would change under different interest rates?
-- Summary: Researchers tested whether ChatGPT could predict how loan returns would change if interest rates were set differently—a type of "what-if" analysis critical for lenders deciding pricing strategy. With better prompting, ChatGPT's predictions improved significantly, reaching performance close to traditional machine-learning models, and the system showed it could reason through cause-and-effect relationships in loan outcomes.
-- Why it matters: Lenders make billions in decisions about interest rates, and accurate "what-if" modeling directly affects how profitable those decisions are. If LLMs can match or approach specialized algorithms for these predictions, lenders could use off-the-shelf AI tools instead of building expensive custom systems—potentially speeding up loan pricing decisions and making them accessible to smaller financial institutions.
-
-### Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery
-- URL: https://paperplaine.com/papers/accurate-localization-of-road
-- Category: Engineering
-- Authors: Jan Gawroński, Witold Czajewski
-- arXiv: 2608.05840
-- Plain-English subtitle: Finding exactly where cars are in traffic camera footage, not just rough boxes
-- Summary: When traffic cameras try to pinpoint a vehicle's location, simply using the center of the detected box produces large errors—especially for distant or elevated cameras. Researchers built a system that predicts where all four corners of a car's base touch the road, then calculates the true center from that shape. On real-world footage, this cut localization errors by over half, dropping median ground-plane error from 5.52 meters to 0.90 meters for medium-range vehicles.
-- Why it matters: Traffic systems need to know exactly where vehicles are to detect near-misses, manage congestion, and enforce speed limits. Current rough estimates fail for distant cars and angled views—the exact scenarios where crashes often begin. This method's precision could help catch unsafe driving patterns and improve intersection safety in real deployments.
-
-### Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents
-- URL: https://paperplaine.com/papers/benchmarking-the-benchmarks-evaluating
-- Category: Computer Science · AI
-- Authors: Noam Koren, Roy Bar-Haim, Abigail Goldsteen
-- arXiv: 2608.06329
-- Plain-English subtitle: A system for checking whether AI chatbot tests actually measure what they claim to
-- Summary: Researchers created a framework that uses AI judges to evaluate whether benchmarks used to test conversational agents are actually good measures of performance. The framework checks three key qualities—consistency, complexity, and how thoroughly benchmarks cover different behaviors—and identifies specific weaknesses. When tested against human judgment and against benchmarks intentionally made worse, the system reliably distinguished between high-quality and low-quality benchmarks.
-- Why it matters: Conversational AI is tested using benchmarks, but nobody has been systematically checking whether those benchmarks are reliable. A flawed benchmark might make a mediocre chatbot look better than it is, or reject a good one unfairly. This framework lets researchers and companies quickly spot when their test suites are inconsistent, oversimplified, or missing important real-world scenarios—before they ship products or publish misleading results about AI performance.
 
 ## About
 
