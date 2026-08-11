@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 598 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-10
+This file contains the complete plain-English text of all 600 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-11
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,34 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Multimodal Model Diffing for Feature Discovery and Control
+Subtitle: Opening the black box of AI vision models to see and control what they learn
+URL: https://paperplaine.com/papers/multimodal-model-diffing-for
+Category: Computer Science · AI
+Authors: Hunar Batra, Lachin Naghashyar, Ashkan Khakzar et al.
+arXiv ID: 2608.09928
+arXiv URL: https://arxiv.org/abs/2608.09928
+Posted: 2026-08-11
+
+Summary: Researchers created a method to identify which internal features of AI vision-and-language models drive specific behaviors—and then selectively turn those features on or off. By comparing how a base language model changes when trained on images, they discovered sparse, interpretable features that control tasks like reading text in images and understanding spatial layouts, and showed they could degrade unwanted behaviors by up to 24% without breaking general performance.
+
+Why it matters: As AI systems become more powerful and are deployed in real applications, being able to audit what's actually driving their decisions matters for safety and trust. This work provides a concrete toolkit for developers to find problematic features (like those underlying adversarial attacks) and remove them, rather than guessing blindly at how to make these systems behave. It's the difference between adjusting dials you can see versus hoping a sledgehammer approach doesn't break something important.
+
+---
+Title: FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings
+Subtitle: Spotting when financial AI finds the right answer in the wrong place
+URL: https://paperplaine.com/papers/finrank-an-evidence-grounded
+Category: Quantitative Finance
+Authors: Sasan Mansouri, Daniel Saad, Mark Wahrenburg et al.
+arXiv ID: 2608.07400
+arXiv URL: https://arxiv.org/abs/2608.07400
+Posted: 2026-08-11
+
+Summary: A new test for financial AI reveals a hidden problem: systems can answer questions about company finances correctly while pointing to the wrong evidence in SEC filings. The benchmark includes 1,185 real questions about company reports, with deliberately tricky wrong answers drawn from similar facts elsewhere in the same filing, earlier periods, or competitor companies. Even advanced AI systems struggle, with the best reaching only 45% accuracy when forced to find the right evidence, and dropping 13–20 percentage points when tested on hard-to-distinguish wrong answers.
+
+Why it matters: Investors, regulators, and analysts increasingly rely on AI to search financial documents for facts about companies. If an AI finds the correct number but attributes it to the wrong quarter or the wrong company, someone making a million-dollar decision based on that answer could lose everything. This benchmark forces developers to build systems that not only get the right answer but prove it came from the right place—making AI-powered financial research trustworthy enough to act on.
 
 ---
 Title: PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents

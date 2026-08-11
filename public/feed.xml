@@ -5,8 +5,28 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 19:51:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 08:10:21 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Multimodal Model Diffing for Feature Discovery and Control</title>
+      <link>https://paperplaine.com/papers/multimodal-model-diffing-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multimodal-model-diffing-for</guid>
+      <pubDate>Mon, 10 Aug 2026 17:59:30 GMT</pubDate>
+      <author>Hunar Batra, Lachin Naghashyar, Ashkan Khakzar et al.</author>
+      <category>AI</category>
+      <description>Opening the black box of AI vision models to see and control what they learn</description>
+      <content:encoded><![CDATA[<p><em>Opening the black box of AI vision models to see and control what they learn</em></p><p>Researchers created a method to identify which internal features of AI vision-and-language models drive specific behaviors—and then selectively turn those features on or off. By comparing how a base language model changes when trained on images, they discovered sparse, interpretable features that control tasks like reading text in images and understanding spatial layouts, and showed they could degrade unwanted behaviors by up to 24% without breaking general performance.</p><p><strong>Why it matters:</strong> As AI systems become more powerful and are deployed in real applications, being able to audit what's actually driving their decisions matters for safety and trust. This work provides a concrete toolkit for developers to find problematic features (like those underlying adversarial attacks) and remove them, rather than guessing blindly at how to make these systems behave. It's the difference between adjusting dials you can see versus hoping a sledgehammer approach doesn't break something important.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings</title>
+      <link>https://paperplaine.com/papers/finrank-an-evidence-grounded</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/finrank-an-evidence-grounded</guid>
+      <pubDate>Fri, 07 Aug 2026 16:45:39 GMT</pubDate>
+      <author>Sasan Mansouri, Daniel Saad, Mark Wahrenburg et al.</author>
+      <category>Finance</category>
+      <description>Spotting when financial AI finds the right answer in the wrong place</description>
+      <content:encoded><![CDATA[<p><em>Spotting when financial AI finds the right answer in the wrong place</em></p><p>A new test for financial AI reveals a hidden problem: systems can answer questions about company finances correctly while pointing to the wrong evidence in SEC filings. The benchmark includes 1,185 real questions about company reports, with deliberately tricky wrong answers drawn from similar facts elsewhere in the same filing, earlier periods, or competitor companies. Even advanced AI systems struggle, with the best reaching only 45% accuracy when forced to find the right evidence, and dropping 13–20 percentage points when tested on hard-to-distinguish wrong answers.</p><p><strong>Why it matters:</strong> Investors, regulators, and analysts increasingly rely on AI to search financial documents for facts about companies. If an AI finds the correct number but attributes it to the wrong quarter or the wrong company, someone making a million-dollar decision based on that answer could lose everything. This benchmark forces developers to build systems that not only get the right answer but prove it came from the right place—making AI-powered financial research trustworthy enough to act on.</p>]]></content:encoded>
+    </item>
     <item>
       <title>PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents</title>
       <link>https://paperplaine.com/papers/psychoagent-an-affect-sensitive</link>

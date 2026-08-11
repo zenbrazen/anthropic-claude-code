@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 598 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 600 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 204 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 205 papers in archive.
+  - "Multimodal Model Diffing for Feature Discovery and Control"
   - "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents"
-  - "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 50 papers in archive.
   - "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity"
   - "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 51 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 52 papers in archive.
+  - "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings"
   - "Counterfactual Analysis via Large Language Models"
-  - "Optimal Trading of Microstructure Mean Reversion"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 51 papers in archive.
   - "Scalable estimation of VARMA models"
   - "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "AI Governance for Institutional Readiness in Finance"
 
 ## 10 most recent papers
+
+### Multimodal Model Diffing for Feature Discovery and Control
+- URL: https://paperplaine.com/papers/multimodal-model-diffing-for
+- Category: Computer Science · AI
+- Authors: Hunar Batra, Lachin Naghashyar, Ashkan Khakzar et al.
+- arXiv: 2608.09928
+- Plain-English subtitle: Opening the black box of AI vision models to see and control what they learn
+- Summary: Researchers created a method to identify which internal features of AI vision-and-language models drive specific behaviors—and then selectively turn those features on or off. By comparing how a base language model changes when trained on images, they discovered sparse, interpretable features that control tasks like reading text in images and understanding spatial layouts, and showed they could degrade unwanted behaviors by up to 24% without breaking general performance.
+- Why it matters: As AI systems become more powerful and are deployed in real applications, being able to audit what's actually driving their decisions matters for safety and trust. This work provides a concrete toolkit for developers to find problematic features (like those underlying adversarial attacks) and remove them, rather than guessing blindly at how to make these systems behave. It's the difference between adjusting dials you can see versus hoping a sledgehammer approach doesn't break something important.
+
+### FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings
+- URL: https://paperplaine.com/papers/finrank-an-evidence-grounded
+- Category: Quantitative Finance
+- Authors: Sasan Mansouri, Daniel Saad, Mark Wahrenburg et al.
+- arXiv: 2608.07400
+- Plain-English subtitle: Spotting when financial AI finds the right answer in the wrong place
+- Summary: A new test for financial AI reveals a hidden problem: systems can answer questions about company finances correctly while pointing to the wrong evidence in SEC filings. The benchmark includes 1,185 real questions about company reports, with deliberately tricky wrong answers drawn from similar facts elsewhere in the same filing, earlier periods, or competitor companies. Even advanced AI systems struggle, with the best reaching only 45% accuracy when forced to find the right evidence, and dropping 13–20 percentage points when tested on hard-to-distinguish wrong answers.
+- Why it matters: Investors, regulators, and analysts increasingly rely on AI to search financial documents for facts about companies. If an AI finds the correct number but attributes it to the wrong quarter or the wrong company, someone making a million-dollar decision based on that answer could lose everything. This benchmark forces developers to build systems that not only get the right answer but prove it came from the right place—making AI-powered financial research trustworthy enough to act on.
 
 ### PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents
 - URL: https://paperplaine.com/papers/psychoagent-an-affect-sensitive
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making complex time-series models practical for real-world data
 - Summary: Researchers created a new way to fit VARMA models—statistical tools that forecast how multiple variables change together over time—that works at practical scale for the first time. By reformulating the math and using Fourier techniques, they cut the computational cost per iteration from growing with data length to staying fixed, allowing the method to handle 10–40 variables where it previously failed or produced unreliable forecasts.
 - Why it matters: VARMA models are theoretically superior to simpler alternatives because they capture complex patterns with fewer parameters, but companies and researchers have avoided them for anything beyond small datasets due to prohibitive computational cost. This breakthrough removes that barrier, letting practitioners use better forecasts for demand planning, weather modeling, and air quality without switching to inferior approximations or waiting for impractical computation times.
-
-### Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport
-- URL: https://paperplaine.com/papers/impact-of-nonlinearities-on
-- Category: Physics
-- Authors: Didrik Palmqvist, Luca Magazzù, Milena Grifoni et al.
-- arXiv: 2608.06303
-- Plain-English subtitle: When nonlinear effects undermine the speed-accuracy tradeoff in quantum transport
-- Summary: Physicists tested whether fundamental speed-accuracy tradeoffs hold up in quantum systems when interactions are added. The bounds remained valid in some cases but broke down in others depending on how the system's interactions were defined—suggesting that nonlinearities pose a real threat to these limits that theorists had thought were rock-solid.
-- Why it matters: Quantum transport precision limits guide the design of quantum sensors, quantum computers, and nanoscale devices. If these bounds collapse under realistic nonlinear conditions, engineers building these systems need different design principles. The findings point toward which types of interactions are most dangerous to precision, helping researchers choose materials and operating conditions that maintain tight control over measurement accuracy.
-
-### Learning When to Trust via Selective Context Preference Optimization
-- URL: https://paperplaine.com/papers/learning-when-to-trust
-- Category: Computer Science · AI
-- Authors: Xian Sun, Wei Chow, Yingshuo Wang et al.
-- arXiv: 2608.06377
-- Plain-English subtitle: Teaching AI when to believe new information and when to ignore it
-- Summary: Language models often get confused by misleading external information—they either blindly trust it and produce wrong answers, or ignore all context and become useless. Researchers created a training method called SCOPE that teaches models to selectively trust context: accept it when it's correct or irrelevant, but reject it when it conflicts with what they already know correctly. The method reduced errors from misleading signals across multiple popular AI models while keeping their accuracy intact when the context was actually helpful.
-- Why it matters: AI systems increasingly pull information from external sources—search results, databases, user inputs—to answer questions. If they can't distinguish good information from bad, they'll either confidently give wrong answers or refuse to use helpful sources. This work offers a practical way to make AI systems more reliable in the real world, where context is often messy and mixed in quality.
 
 ## About
 

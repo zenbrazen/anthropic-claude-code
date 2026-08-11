@@ -1,5 +1,49 @@
 [
   {
+    "id": "2608.09928",
+    "title": "Multimodal Model Diffing for Feature Discovery and Control",
+    "authors": "Hunar Batra, Lachin Naghashyar, Ashkan Khakzar et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-10T17:59:30Z",
+    "publishedFormatted": "Aug 10, 2026",
+    "subtitle": "Opening the black box of AI vision models to see and control what they learn",
+    "summary": "Researchers created a method to identify which internal features of AI vision-and-language models drive specific behaviors—and then selectively turn those features on or off. By comparing how a base language model changes when trained on images, they discovered sparse, interpretable features that control tasks like reading text in images and understanding spatial layouts, and showed they could degrade unwanted behaviors by up to 24% without breaking general performance.",
+    "whyItMatters": "As AI systems become more powerful and are deployed in real applications, being able to audit what's actually driving their decisions matters for safety and trust. This work provides a concrete toolkit for developers to find problematic features (like those underlying adversarial attacks) and remove them, rather than guessing blindly at how to make these systems behave. It's the difference between adjusting dials you can see versus hoping a sledgehammer approach doesn't break something important.",
+    "fetchedAt": "2026-08-11T08:08:07.776Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 244
+    },
+    "slug": "multimodal-model-diffing-for"
+  },
+  {
+    "id": "2608.07400",
+    "title": "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings",
+    "authors": "Sasan Mansouri, Daniel Saad, Mark Wahrenburg et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-08-07T16:45:39Z",
+    "publishedFormatted": "Aug 7, 2026",
+    "subtitle": "Spotting when financial AI finds the right answer in the wrong place",
+    "summary": "A new test for financial AI reveals a hidden problem: systems can answer questions about company finances correctly while pointing to the wrong evidence in SEC filings. The benchmark includes 1,185 real questions about company reports, with deliberately tricky wrong answers drawn from similar facts elsewhere in the same filing, earlier periods, or competitor companies. Even advanced AI systems struggle, with the best reaching only 45% accuracy when forced to find the right evidence, and dropping 13–20 percentage points when tested on hard-to-distinguish wrong answers.",
+    "whyItMatters": "Investors, regulators, and analysts increasingly rely on AI to search financial documents for facts about companies. If an AI finds the correct number but attributes it to the wrong quarter or the wrong company, someone making a million-dollar decision based on that answer could lose everything. This benchmark forces developers to build systems that not only get the right answer but prove it came from the right place—making AI-powered financial research trustworthy enough to act on.",
+    "fetchedAt": "2026-08-11T08:10:21.477Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 208
+    },
+    "slug": "finrank-an-evidence-grounded"
+  },
+  {
     "id": "2608.07438",
     "title": "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents",
     "authors": "Mohammad Amanlou, Parham Abed Azad, Farbod Davoodi et al.",
