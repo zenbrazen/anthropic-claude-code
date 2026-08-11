@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 600 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 603 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 205 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 206 papers in archive.
+  - "Fusion Training for Mathematical Generalization in Large Language Models"
   - "Multimodal Model Diffing for Feature Discovery and Control"
-  - "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 52 papers in archive.
   - "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings"
   - "Counterfactual Analysis via Large Language Models"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 51 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 52 papers in archive.
+  - "Context Is Not Authority: Structured Runtime Governance for Financial Market Agents"
   - "Scalable estimation of VARMA models"
-  - "Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 50 papers in archive.
   - "Efficient Discrete Position Design for Movable Antenna Systems: Low Complexity and Robustness"
   - "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 42 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 43 papers in archive.
+  - "Bias-robust causal inference for panel data"
   - "Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail"
-  - "AI Governance for Institutional Readiness in Finance"
 
 ## 10 most recent papers
+
+### Fusion Training for Mathematical Generalization in Large Language Models
+- URL: https://paperplaine.com/papers/fusion-training-for-mathematical
+- Category: Computer Science · AI
+- Authors: Congfeng Cao, Pengyu Zhang, Jelke Bloem
+- arXiv: 2608.09893
+- Plain-English subtitle: Training AI to think deeply and answer quickly at the same time
+- Summary: Teaching language models to both reason through hard problems and give quick answers creates a tension between the two skills—more training on fast answers actually weakens the model's ability to think carefully. The order and balance of training matter: the right schedule can reduce this damage, but the best approach depends on how much of each type of training data you use.
+- Why it matters: As AI assistants take on both simple customer-service tasks and complex problem-solving work, companies need both speed and accuracy. This research shows they can't maximize both equally in one model, and gives engineers concrete guidance on how to balance this trade-off depending on their actual needs.
+
+### Bias-robust causal inference for panel data
+- URL: https://paperplaine.com/papers/bias-robust-causal-inference
+- Category: Economics
+- Authors: Angelos Alexopoulos
+- arXiv: 2608.09837
+- Plain-English subtitle: Measuring treatment effects while accounting for guesswork in missing data
+- Summary: Economists often estimate what would have happened to people without a treatment by filling in missing data—but that guesswork can distort the final answer. This paper introduces a method that catches and corrects for this hidden error, reporting wider but more honest confidence intervals. The approach outperforms standard alternatives, especially when data is limited, keeping its accuracy promise even when the unobserved data patterns are partially misspecified.
+- Why it matters: Policy decisions about job training, tax credits, or health programs often rest on estimates from observational data where the counterfactual is guessed. Traditional methods claim narrow confidence intervals but deliver false certainty—the coverage is nearly zero when data is sparse. This method trades some precision for honesty: its stated margins actually contain the true answer, making it safer for policymakers to rely on.
+
+### Context Is Not Authority: Structured Runtime Governance for Financial Market Agents
+- URL: https://paperplaine.com/papers/context-is-not-authority
+- Category: Statistics
+- Authors: Rui Tang, Qiangqiang Liu, Yichi Zhang et al.
+- arXiv: 2608.09025
+- Plain-English subtitle: Stopping financial AI from acting on outdated or unauthorized information
+- Summary: Financial trading systems can misinterpret instructions or act on stale data, turning correct information into wrong trades. SAGE-Fin is a control system that verifies what a financial agent actually proposes to do—not just what it claims—and rechecks permissions whenever market conditions, account status, or policies change. Real-world testing at a digital-asset platform confirmed it caught cases where agents would have acted on outdated or missing authorization.
+- Why it matters: Financial errors move fast and cost real money. A trading system that silently acts on yesterday's permissions or misread instructions can execute unauthorized trades before anyone notices. SAGE-Fin forces the system to prove at runtime that each proposed action is still authorized, catching drift and stale data before execution. The platform's independent operations team found it practical enough to deploy on live customer requests, suggesting it can reduce the window where bad trades slip through.
 
 ### Multimodal Model Diffing for Feature Discovery and Control
 - URL: https://paperplaine.com/papers/multimodal-model-diffing-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making wireless antennas that move around work without slowing down networks
 - Summary: Wireless antennas that can physically shift position promise better communication, but figuring out where to place them requires enormous computational effort. Researchers proved that the positioning problem has a special mathematical structure that lets them find near-optimal placements 34 times faster than existing methods, while still achieving 90% of the best possible performance even when channel measurements are slightly wrong.
 - Why it matters: Movable antenna systems could significantly boost wireless network capacity and reliability, but they've been impractical because the positioning calculations would overwhelm real systems. This algorithm makes the computation fast enough for actual deployment without sacrificing performance—a necessary step before movable antennas appear in real phones, base stations, and 5G/6G networks.
-
-### FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity
-- URL: https://paperplaine.com/papers/feddose-federated-learning-framework
-- Category: Quantitative Biology
-- Authors: Deepank Girish, Yi Hao Chan, Yubin Zheng et al.
-- arXiv: 2608.07393
-- Plain-English subtitle: How hospitals can share brain scans without revealing patient data
-- Summary: Researchers developed FedDOSE, a new method that lets hospitals collaborate on analyzing brain scans while keeping patient information private. The system accounts for differences between hospital scanners and captures how brain connectivity changes over time, improving accuracy in diagnosing autism and ADHD by outperforming existing approaches.
-- Why it matters: Brain disorder diagnosis currently requires pooling data from multiple hospitals—but sharing raw scans raises privacy concerns. FedDOSE lets hospitals train AI models together on their local data without sending scans elsewhere, while still achieving better diagnostic accuracy. This could accelerate research into neurodevelopmental disorders without compromising patient privacy.
-
-### Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering
-- URL: https://paperplaine.com/papers/tracing-the-heart-an
-- Category: Computer Science · AI
-- Authors: Soorya Ram Shimgekar, Michelle Hu, Dorisa Shehi et al.
-- arXiv: 2608.06366
-- Plain-English subtitle: Automating the detective work that turns messy medical records into AI-ready data
-- Summary: Researchers built an AI system that automatically extracts and structures heart-failure data from fragmented medical records, a task that currently consumes nearly half of clinical data scientists' time. Testing on 500 patient records, the system created features that boosted predictive accuracy from 89.5% to 96.3% for one heart-failure type, while leaving an auditable trail showing exactly where each piece of data came from and why it was included.
-- Why it matters: Heart failure affects 6.7 million Americans, and developing better predictive AI requires months of tedious manual data work that slows research. If this approach scales, it could cut months off the time needed to build and validate heart-failure detection tools, freeing data scientists to focus on clinical strategy rather than data plumbing. The system's transparency—showing evidence and reasoning for every data choice—also matters for hospitals that need to defend AI decisions to regulators and doctors.
-
-### Scalable estimation of VARMA models
-- URL: https://paperplaine.com/papers/scalable-estimation-of-varma
-- Category: Statistics
-- Authors: Daniel Paulin, Victor Elvira
-- arXiv: 2608.06340
-- Plain-English subtitle: Making complex time-series models practical for real-world data
-- Summary: Researchers created a new way to fit VARMA models—statistical tools that forecast how multiple variables change together over time—that works at practical scale for the first time. By reformulating the math and using Fourier techniques, they cut the computational cost per iteration from growing with data length to staying fixed, allowing the method to handle 10–40 variables where it previously failed or produced unreliable forecasts.
-- Why it matters: VARMA models are theoretically superior to simpler alternatives because they capture complex patterns with fewer parameters, but companies and researchers have avoided them for anything beyond small datasets due to prohibitive computational cost. This breakthrough removes that barrier, letting practitioners use better forecasts for demand planning, weather modeling, and air quality without switching to inferior approximations or waiting for impractical computation times.
 
 ## About
 

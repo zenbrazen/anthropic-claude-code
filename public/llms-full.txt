@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 600 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 603 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-11
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Fusion Training for Mathematical Generalization in Large Language Models
+Subtitle: Training AI to think deeply and answer quickly at the same time
+URL: https://paperplaine.com/papers/fusion-training-for-mathematical
+Category: Computer Science · AI
+Authors: Congfeng Cao, Pengyu Zhang, Jelke Bloem
+arXiv ID: 2608.09893
+arXiv URL: https://arxiv.org/abs/2608.09893
+Posted: 2026-08-11
+
+Summary: Teaching language models to both reason through hard problems and give quick answers creates a tension between the two skills—more training on fast answers actually weakens the model's ability to think carefully. The order and balance of training matter: the right schedule can reduce this damage, but the best approach depends on how much of each type of training data you use.
+
+Why it matters: As AI assistants take on both simple customer-service tasks and complex problem-solving work, companies need both speed and accuracy. This research shows they can't maximize both equally in one model, and gives engineers concrete guidance on how to balance this trade-off depending on their actual needs.
+
+---
+Title: Bias-robust causal inference for panel data
+Subtitle: Measuring treatment effects while accounting for guesswork in missing data
+URL: https://paperplaine.com/papers/bias-robust-causal-inference
+Category: Economics
+Authors: Angelos Alexopoulos
+arXiv ID: 2608.09837
+arXiv URL: https://arxiv.org/abs/2608.09837
+Posted: 2026-08-11
+
+Summary: Economists often estimate what would have happened to people without a treatment by filling in missing data—but that guesswork can distort the final answer. This paper introduces a method that catches and corrects for this hidden error, reporting wider but more honest confidence intervals. The approach outperforms standard alternatives, especially when data is limited, keeping its accuracy promise even when the unobserved data patterns are partially misspecified.
+
+Why it matters: Policy decisions about job training, tax credits, or health programs often rest on estimates from observational data where the counterfactual is guessed. Traditional methods claim narrow confidence intervals but deliver false certainty—the coverage is nearly zero when data is sparse. This method trades some precision for honesty: its stated margins actually contain the true answer, making it safer for policymakers to rely on.
+
+---
+Title: Context Is Not Authority: Structured Runtime Governance for Financial Market Agents
+Subtitle: Stopping financial AI from acting on outdated or unauthorized information
+URL: https://paperplaine.com/papers/context-is-not-authority
+Category: Statistics
+Authors: Rui Tang, Qiangqiang Liu, Yichi Zhang et al.
+arXiv ID: 2608.09025
+arXiv URL: https://arxiv.org/abs/2608.09025
+Posted: 2026-08-11
+
+Summary: Financial trading systems can misinterpret instructions or act on stale data, turning correct information into wrong trades. SAGE-Fin is a control system that verifies what a financial agent actually proposes to do—not just what it claims—and rechecks permissions whenever market conditions, account status, or policies change. Real-world testing at a digital-asset platform confirmed it caught cases where agents would have acted on outdated or missing authorization.
+
+Why it matters: Financial errors move fast and cost real money. A trading system that silently acts on yesterday's permissions or misread instructions can execute unauthorized trades before anyone notices. SAGE-Fin forces the system to prove at runtime that each proposed action is still authorized, catching drift and stale data before execution. The platform's independent operations team found it practical enough to deploy on live customer requests, suggesting it can reduce the window where bad trades slip through.
 
 ---
 Title: Multimodal Model Diffing for Feature Discovery and Control

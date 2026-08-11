@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.09893",
+    "title": "Fusion Training for Mathematical Generalization in Large Language Models",
+    "authors": "Congfeng Cao, Pengyu Zhang, Jelke Bloem",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-10T17:41:19Z",
+    "publishedFormatted": "Aug 10, 2026",
+    "subtitle": "Training AI to think deeply and answer quickly at the same time",
+    "summary": "Teaching language models to both reason through hard problems and give quick answers creates a tension between the two skills—more training on fast answers actually weakens the model's ability to think carefully. The order and balance of training matter: the right schedule can reduce this damage, but the best approach depends on how much of each type of training data you use.",
+    "whyItMatters": "As AI assistants take on both simple customer-service tasks and complex problem-solving work, companies need both speed and accuracy. This research shows they can't maximize both equally in one model, and gives engineers concrete guidance on how to balance this trade-off depending on their actual needs.",
+    "fetchedAt": "2026-08-11T19:57:35.649Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 177
+    },
+    "slug": "fusion-training-for-mathematical"
+  },
+  {
+    "id": "2608.09837",
+    "title": "Bias-robust causal inference for panel data",
+    "authors": "Angelos Alexopoulos",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-08-10T16:54:29Z",
+    "publishedFormatted": "Aug 10, 2026",
+    "subtitle": "Measuring treatment effects while accounting for guesswork in missing data",
+    "summary": "Economists often estimate what would have happened to people without a treatment by filling in missing data—but that guesswork can distort the final answer. This paper introduces a method that catches and corrects for this hidden error, reporting wider but more honest confidence intervals. The approach outperforms standard alternatives, especially when data is limited, keeping its accuracy promise even when the unobserved data patterns are partially misspecified.",
+    "whyItMatters": "Policy decisions about job training, tax credits, or health programs often rest on estimates from observational data where the counterfactual is guessed. Traditional methods claim narrow confidence intervals but deliver false certainty—the coverage is nearly zero when data is sparse. This method trades some precision for honesty: its stated margins actually contain the true answer, making it safer for policymakers to rely on.",
+    "fetchedAt": "2026-08-11T19:57:39.957Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 12,
+      "wordCount": 149
+    },
+    "slug": "bias-robust-causal-inference"
+  },
+  {
+    "id": "2608.09025",
+    "title": "Context Is Not Authority: Structured Runtime Governance for Financial Market Agents",
+    "authors": "Rui Tang, Qiangqiang Liu, Yichi Zhang et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-08-10T02:26:07Z",
+    "publishedFormatted": "Aug 10, 2026",
+    "subtitle": "Stopping financial AI from acting on outdated or unauthorized information",
+    "summary": "Financial trading systems can misinterpret instructions or act on stale data, turning correct information into wrong trades. SAGE-Fin is a control system that verifies what a financial agent actually proposes to do—not just what it claims—and rechecks permissions whenever market conditions, account status, or policies change. Real-world testing at a digital-asset platform confirmed it caught cases where agents would have acted on outdated or missing authorization.",
+    "whyItMatters": "Financial errors move fast and cost real money. A trading system that silently acts on yesterday's permissions or misread instructions can execute unauthorized trades before anyone notices. SAGE-Fin forces the system to prove at runtime that each proposed action is still authorized, catching drift and stale data before execution. The platform's independent operations team found it practical enough to deploy on live customer requests, suggesting it can reduce the window where bad trades slip through.",
+    "fetchedAt": "2026-08-11T19:57:43.917Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 228
+    },
+    "slug": "context-is-not-authority"
+  },
+  {
     "id": "2608.09928",
     "title": "Multimodal Model Diffing for Feature Discovery and Control",
     "authors": "Hunar Batra, Lachin Naghashyar, Ashkan Khakzar et al.",
