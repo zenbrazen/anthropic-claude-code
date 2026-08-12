@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 605 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 608 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 207 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 208 papers in archive.
+  - "Attention-Path Fragility as an Uncertainty Signal in Large Language Models"
   - "From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop"
-  - "Fusion Training for Mathematical Generalization in Large Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 51 papers in archive.
   - "Work distribution for strongly coupled many-body open quantum systems"
   - "Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 50 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 51 papers in archive.
+  - "Threshold Structure of Optimal Policies in Restart POMDPs"
   - "On the Optimal Laplacian Jordan Structure for Synchronizability"
-  - "The Benefits of an Integrated Approach for Stability-Constrained Power System Planning"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 50 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 51 papers in archive.
+  - "How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers"
   - "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity"
-  - "THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 52 papers in archive.
   - "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings"
   - "Counterfactual Analysis via Large Language Models"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail"
 
 ## 10 most recent papers
+
+### Attention-Path Fragility as an Uncertainty Signal in Large Language Models
+- URL: https://paperplaine.com/papers/attention-path-fragility-as
+- Category: Computer Science · AI
+- Authors: Minsoo Kim, Sungyoung Ji, Kisung Moon et al.
+- arXiv: 2608.11138
+- Plain-English subtitle: When an AI's confident answers crumble under small changes, it's actually uncertain.
+- Summary: Large language models often sound confident even when they're wrong. Researchers found that true uncertainty shows up not just in the model's probability scores, but in whether the model's predictions collapse when its internal attention pathways are slightly perturbed. A new measurement called ASMI detects these fragile-but-confident answers and catches errors that standard confidence scores miss—cutting retained errors roughly in half on question-answering tasks.
+- Why it matters: When companies deploy AI systems to answer questions, they need to know which answers to trust and which to flag for human review. Current confidence measurements fail on a dangerous category: answers the model is certain about but gets wrong anyway. This technique spots those dangerous cases without requiring extra computation, making AI systems safer to deploy in real-world applications like medical Q&A, customer support, and fact-checking.
+
+### Threshold Structure of Optimal Policies in Restart POMDPs
+- URL: https://paperplaine.com/papers/threshold-structure-of-optimal
+- Category: Mathematics
+- Authors: Konstantin Avrachenkov, Alexey Piunovskiy, Yi Zhang
+- arXiv: 2608.10936
+- Plain-English subtitle: When to restart a guessing game to maximize your chances
+- Summary: When you're trying to control a system you can't fully observe, the best strategy often follows a simple rule: restart if too much time has passed since your last observation. Researchers proved this works across a broad class of problems, showing that optimal policies rely on clean thresholds based on elapsed time, and that better initial observations push these thresholds back further.
+- Why it matters: This result applies to real systems where you're forced to choose between letting something run blind or paying the cost to reset and observe it again—from equipment maintenance to sensor-based control. Knowing that the optimal choice always has this threshold structure means engineers can search for good policies much more efficiently instead of exploring countless complex strategies, and can confidently build control systems that follow intuitive restart-based rules.
+
+### How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers
+- URL: https://paperplaine.com/papers/how-many-labels-can
+- Category: Quantitative Biology
+- Authors: Eran Kopel
+- arXiv: 2608.10560
+- Plain-English subtitle: How many messages can a brain rhythm actually carry at once?
+- Summary: A new physics-based test shows that biological oscillators can carry only as many distinct labels as their quality factor allows—a limit set by how sharply tuned the oscillation is to a single frequency. When applied to proposed high-frequency brain signals, most candidates fail this test spectacularly: a recently proposed 30 GHz field in the cortex has a quality factor of just 0.19, meaning its signal spreads five times wider than the frequency it's supposed to carry, making distinct labels impossible to distinguish.
+- Why it matters: Neuroscientists have proposed multiple mechanisms for how the brain might encode information in oscillating signals—from electromagnetic fields to quantum effects in microtubules. This test provides a single, mechanism-independent standard to rule out implausible candidates before investing time and resources studying them. It eliminates most high-frequency proposals immediately, while showing that only the brain's low-frequency rhythms have the spectral sharpness needed to reliably carry multiple distinct signals.
 
 ### From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop
 - URL: https://paperplaine.com/papers/from-interpretability-to-control
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Spotting when financial AI finds the right answer in the wrong place
 - Summary: A new test for financial AI reveals a hidden problem: systems can answer questions about company finances correctly while pointing to the wrong evidence in SEC filings. The benchmark includes 1,185 real questions about company reports, with deliberately tricky wrong answers drawn from similar facts elsewhere in the same filing, earlier periods, or competitor companies. Even advanced AI systems struggle, with the best reaching only 45% accuracy when forced to find the right evidence, and dropping 13–20 percentage points when tested on hard-to-distinguish wrong answers.
 - Why it matters: Investors, regulators, and analysts increasingly rely on AI to search financial documents for facts about companies. If an AI finds the correct number but attributes it to the wrong quarter or the wrong company, someone making a million-dollar decision based on that answer could lose everything. This benchmark forces developers to build systems that not only get the right answer but prove it came from the right place—making AI-powered financial research trustworthy enough to act on.
-
-### PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents
-- URL: https://paperplaine.com/papers/psychoagent-an-affect-sensitive
-- Category: Computer Science · AI
-- Authors: Mohammad Amanlou, Parham Abed Azad, Farbod Davoodi et al.
-- arXiv: 2608.07438
-- Plain-English subtitle: Making AI remember emotional weight, not just matching keywords
-- Summary: A new system for AI assistants splits memory into facts and emotions, then retrieves past information based on what matters psychologically—not just topical similarity. In three conflict scenarios, this approach recovered conflict-critical details 40% more often than systems that treat all memories equally, though human raters couldn't consistently tell the difference in final conversation quality.
-- Why it matters: AI assistants today retrieve information like search engines: if you mention a topic, they pull up matching facts. But humans retrieve memories shaped by unresolved conflicts and emotional weight—what still bothers us. This work demonstrates a mechanism for building AI that prioritizes emotionally significant past events, potentially creating assistants that navigate complex, sensitive situations with better context awareness and more natural conversation flow.
-
-### SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies
-- URL: https://paperplaine.com/papers/sok-cryptographic-key-recovery
-- Category: Computer Science
-- Authors: Francisco Javier Becerra Sanchez, Antonio Ken Iannillo, Radu State
-- arXiv: 2608.07104
-- Plain-English subtitle: How to safely recover access to cryptocurrency wallets when keys are lost
-- Summary: When someone loses access to a cryptocurrency wallet, recovery mechanisms let them regain control—but they vary widely in how they work and where they place risk. This paper analyzed 77 different recovery systems across custody platforms and financial technologies, revealing that most recovery methods shift trust to third parties, create new abuse vulnerabilities, and leave recovery metadata unprotected.
-- Why it matters: Cryptocurrency users routinely lose access to accounts containing real money, and recovery is often their only option—yet most recovery systems force a dangerous choice between security and recoverability. This taxonomy helps wallet providers and developers understand the tradeoffs in existing approaches and identifies six specific gaps (like unprotected recovery metadata and poor lifecycle management) that create theft vulnerabilities. Better recovery design could prevent both devastating user losses and the security breaches that plague custody platforms today.
-
-### On the Optimal Laplacian Jordan Structure for Synchronizability
-- URL: https://paperplaine.com/papers/on-the-optimal-laplacian
-- Category: Mathematics
-- Authors: Luca Dieci, Cinzia Elia, Alessandro Pugliese
-- arXiv: 2608.07286
-- Plain-English subtitle: Finding the best network structure for synchronized systems to settle faster
-- Summary: When multiple systems are connected in a network, they can synchronize — lock into matching patterns — but how fast they sync depends on the network's mathematical structure. This paper identifies the precise network configurations that guarantee synchronization happens both reliably and as quickly as possible, with the added benefit of resisting small perturbations.
-- Why it matters: Synchronized networks appear everywhere: power grids must stay in sync to avoid blackouts, groups of robots coordinate through networked communication, and biological systems like fireflies flashing together rely on synchronization. By determining which network structures sync fastest and most robustly, engineers can design more stable and responsive systems across these applications.
 
 ## About
 

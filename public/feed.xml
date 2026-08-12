@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 08:16:26 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 19:58:05 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Attention-Path Fragility as an Uncertainty Signal in Large Language Models</title>
+      <link>https://paperplaine.com/papers/attention-path-fragility-as</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/attention-path-fragility-as</guid>
+      <pubDate>Tue, 11 Aug 2026 16:59:02 GMT</pubDate>
+      <author>Minsoo Kim, Sungyoung Ji, Kisung Moon et al.</author>
+      <category>AI</category>
+      <description>When an AI&#39;s confident answers crumble under small changes, it&#39;s actually uncertain.</description>
+      <content:encoded><![CDATA[<p><em>When an AI's confident answers crumble under small changes, it's actually uncertain.</em></p><p>Large language models often sound confident even when they're wrong. Researchers found that true uncertainty shows up not just in the model's probability scores, but in whether the model's predictions collapse when its internal attention pathways are slightly perturbed. A new measurement called ASMI detects these fragile-but-confident answers and catches errors that standard confidence scores miss—cutting retained errors roughly in half on question-answering tasks.</p><p><strong>Why it matters:</strong> When companies deploy AI systems to answer questions, they need to know which answers to trust and which to flag for human review. Current confidence measurements fail on a dangerous category: answers the model is certain about but gets wrong anyway. This technique spots those dangerous cases without requiring extra computation, making AI systems safer to deploy in real-world applications like medical Q&A, customer support, and fact-checking.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Threshold Structure of Optimal Policies in Restart POMDPs</title>
+      <link>https://paperplaine.com/papers/threshold-structure-of-optimal</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/threshold-structure-of-optimal</guid>
+      <pubDate>Tue, 11 Aug 2026 14:03:29 GMT</pubDate>
+      <author>Konstantin Avrachenkov, Alexey Piunovskiy, Yi Zhang</author>
+      <category>Math</category>
+      <description>When to restart a guessing game to maximize your chances</description>
+      <content:encoded><![CDATA[<p><em>When to restart a guessing game to maximize your chances</em></p><p>When you're trying to control a system you can't fully observe, the best strategy often follows a simple rule: restart if too much time has passed since your last observation. Researchers proved this works across a broad class of problems, showing that optimal policies rely on clean thresholds based on elapsed time, and that better initial observations push these thresholds back further.</p><p><strong>Why it matters:</strong> This result applies to real systems where you're forced to choose between letting something run blind or paying the cost to reset and observe it again—from equipment maintenance to sensor-based control. Knowing that the optimal choice always has this threshold structure means engineers can search for good policies much more efficiently instead of exploring countless complex strategies, and can confidently build control systems that follow intuitive restart-based rules.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers</title>
+      <link>https://paperplaine.com/papers/how-many-labels-can</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/how-many-labels-can</guid>
+      <pubDate>Tue, 11 Aug 2026 06:47:51 GMT</pubDate>
+      <author>Eran Kopel</author>
+      <category>Biology</category>
+      <description>How many messages can a brain rhythm actually carry at once?</description>
+      <content:encoded><![CDATA[<p><em>How many messages can a brain rhythm actually carry at once?</em></p><p>A new physics-based test shows that biological oscillators can carry only as many distinct labels as their quality factor allows—a limit set by how sharply tuned the oscillation is to a single frequency. When applied to proposed high-frequency brain signals, most candidates fail this test spectacularly: a recently proposed 30 GHz field in the cortex has a quality factor of just 0.19, meaning its signal spreads five times wider than the frequency it's supposed to carry, making distinct labels impossible to distinguish.</p><p><strong>Why it matters:</strong> Neuroscientists have proposed multiple mechanisms for how the brain might encode information in oscillating signals—from electromagnetic fields to quantum effects in microtubules. This test provides a single, mechanism-independent standard to rule out implausible candidates before investing time and resources studying them. It eliminates most high-frequency proposals immediately, while showing that only the brain's low-frequency rhythms have the spectral sharpness needed to reliably carry multiple distinct signals.</p>]]></content:encoded>
+    </item>
     <item>
       <title>From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop</title>
       <link>https://paperplaine.com/papers/from-interpretability-to-control</link>

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 605 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 608 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-12
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Attention-Path Fragility as an Uncertainty Signal in Large Language Models
+Subtitle: When an AI's confident answers crumble under small changes, it's actually uncertain.
+URL: https://paperplaine.com/papers/attention-path-fragility-as
+Category: Computer Science · AI
+Authors: Minsoo Kim, Sungyoung Ji, Kisung Moon et al.
+arXiv ID: 2608.11138
+arXiv URL: https://arxiv.org/abs/2608.11138
+Posted: 2026-08-12
+
+Summary: Large language models often sound confident even when they're wrong. Researchers found that true uncertainty shows up not just in the model's probability scores, but in whether the model's predictions collapse when its internal attention pathways are slightly perturbed. A new measurement called ASMI detects these fragile-but-confident answers and catches errors that standard confidence scores miss—cutting retained errors roughly in half on question-answering tasks.
+
+Why it matters: When companies deploy AI systems to answer questions, they need to know which answers to trust and which to flag for human review. Current confidence measurements fail on a dangerous category: answers the model is certain about but gets wrong anyway. This technique spots those dangerous cases without requiring extra computation, making AI systems safer to deploy in real-world applications like medical Q&A, customer support, and fact-checking.
+
+---
+Title: Threshold Structure of Optimal Policies in Restart POMDPs
+Subtitle: When to restart a guessing game to maximize your chances
+URL: https://paperplaine.com/papers/threshold-structure-of-optimal
+Category: Mathematics
+Authors: Konstantin Avrachenkov, Alexey Piunovskiy, Yi Zhang
+arXiv ID: 2608.10936
+arXiv URL: https://arxiv.org/abs/2608.10936
+Posted: 2026-08-12
+
+Summary: When you're trying to control a system you can't fully observe, the best strategy often follows a simple rule: restart if too much time has passed since your last observation. Researchers proved this works across a broad class of problems, showing that optimal policies rely on clean thresholds based on elapsed time, and that better initial observations push these thresholds back further.
+
+Why it matters: This result applies to real systems where you're forced to choose between letting something run blind or paying the cost to reset and observe it again—from equipment maintenance to sensor-based control. Knowing that the optimal choice always has this threshold structure means engineers can search for good policies much more efficiently instead of exploring countless complex strategies, and can confidently build control systems that follow intuitive restart-based rules.
+
+---
+Title: How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers
+Subtitle: How many messages can a brain rhythm actually carry at once?
+URL: https://paperplaine.com/papers/how-many-labels-can
+Category: Quantitative Biology
+Authors: Eran Kopel
+arXiv ID: 2608.10560
+arXiv URL: https://arxiv.org/abs/2608.10560
+Posted: 2026-08-12
+
+Summary: A new physics-based test shows that biological oscillators can carry only as many distinct labels as their quality factor allows—a limit set by how sharply tuned the oscillation is to a single frequency. When applied to proposed high-frequency brain signals, most candidates fail this test spectacularly: a recently proposed 30 GHz field in the cortex has a quality factor of just 0.19, meaning its signal spreads five times wider than the frequency it's supposed to carry, making distinct labels impossible to distinguish.
+
+Why it matters: Neuroscientists have proposed multiple mechanisms for how the brain might encode information in oscillating signals—from electromagnetic fields to quantum effects in microtubules. This test provides a single, mechanism-independent standard to rule out implausible candidates before investing time and resources studying them. It eliminates most high-frequency proposals immediately, while showing that only the brain's low-frequency rhythms have the spectral sharpness needed to reliably carry multiple distinct signals.
 
 ---
 Title: From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop
