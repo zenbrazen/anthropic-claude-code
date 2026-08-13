@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 608 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 611 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 208 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 209 papers in archive.
+  - "How to Spend Your Oracle Budget: Practical Guidance for Protein Structure Prediction Models"
   - "Attention-Path Fragility as an Uncertainty Signal in Large Language Models"
-  - "From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 51 papers in archive.
   - "How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers"
   - "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 52 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 53 papers in archive.
+  - "Sectoral inter-dependencies drive the loss of structural balance in signed financial networks"
   - "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings"
-  - "Counterfactual Analysis via Large Language Models"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 52 papers in archive.
   - "Context Is Not Authority: Structured Runtime Governance for Financial Market Agents"
   - "Scalable estimation of VARMA models"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 50 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 51 papers in archive.
+  - "Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2"
   - "Efficient Discrete Position Design for Movable Antenna Systems: Low Complexity and Robustness"
-  - "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 43 papers in archive.
   - "Bias-robust causal inference for panel data"
   - "Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail"
 
 ## 10 most recent papers
+
+### How to Spend Your Oracle Budget: Practical Guidance for Protein Structure Prediction Models
+- URL: https://paperplaine.com/papers/how-to-spend-your
+- Category: Computer Science · AI
+- Authors: Aleksandra Kalisz, Jack Simons, Krisztina Sinkovics et al.
+- arXiv: 2608.12192
+- Plain-English subtitle: Choosing the cheapest way to fix AI's protein-folding mistakes
+- Summary: Protein-prediction AI systems sometimes get the answer wrong, but checking their work costs money through lab experiments. Researchers tested four different strategies for spending a limited budget on these checks, and found that the best choice depends on how much you can afford to spend: one method wins at rock-bottom budgets, while others pull ahead as money increases.
+- Why it matters: Protein structure prediction is central to drug discovery and understanding disease, but current AI models are unreliable enough that researchers must experimentally validate their predictions. This work shows which verification strategies actually save money and time in practice, letting labs allocate scarce experimental resources more effectively rather than guessing which verification approach to use.
+
+### Sectoral inter-dependencies drive the loss of structural balance in signed financial networks
+- URL: https://paperplaine.com/papers/sectoral-inter-dependencies-drive
+- Category: Quantitative Finance
+- Authors: Kartik Dahake, Abhijit Chakraborty
+- arXiv: 2608.12023
+- Plain-English subtitle: Why stock market crashes spread between industries, not within them
+- Summary: During financial crises, the stock market's stability breaks down not because individual sectors fall apart internally, but because conflicts between sectors compound each other. Researchers analyzing S&P 500 data found that cross-sector tensions—like supply chain disruptions and inflation uncertainty—drive most of the structural instability seen during economic downturns.
+- Why it matters: Understanding where financial instability originates helps regulators and investors spot systemic risks earlier. Since crises spread through inter-sector connections rather than individual sector weakness, monitoring relationships between industries—like how energy prices affect manufacturing—becomes a more reliable warning system than watching any single sector alone.
+
+### Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2
+- URL: https://paperplaine.com/papers/effects-of-tool-wear
+- Category: Engineering
+- Authors: Alexander Müller, Maximilian Berndt, Hagen Schmidt et al.
+- arXiv: 2608.12163
+- Plain-English subtitle: Reading tool wear from the fingerprints it leaves on metal surfaces
+- Summary: When cutting tools wear down during machining, they leave telltale marks on the metal surface being cut. Researchers found that a single measurement of the groove pattern — specifically how steeply the worn cutting edge rises — captures 83–90% of the information needed to track tool wear throughout its entire life, making it possible to estimate wear from surface texture alone.
+- Why it matters: Manufacturers currently have to stop production and inspect tools directly to know when they're wearing out and need replacing. A reliable way to estimate wear from the surface pattern of finished parts could let factories monitor tool condition automatically using simple optical sensors, reducing downtime and preventing defective parts before they're made.
 
 ### Attention-Path Fragility as an Uncertainty Signal in Large Language Models
 - URL: https://paperplaine.com/papers/attention-path-fragility-as
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Measuring treatment effects while accounting for guesswork in missing data
 - Summary: Economists often estimate what would have happened to people without a treatment by filling in missing data—but that guesswork can distort the final answer. This paper introduces a method that catches and corrects for this hidden error, reporting wider but more honest confidence intervals. The approach outperforms standard alternatives, especially when data is limited, keeping its accuracy promise even when the unobserved data patterns are partially misspecified.
 - Why it matters: Policy decisions about job training, tax credits, or health programs often rest on estimates from observational data where the counterfactual is guessed. Traditional methods claim narrow confidence intervals but deliver false certainty—the coverage is nearly zero when data is sparse. This method trades some precision for honesty: its stated margins actually contain the true answer, making it safer for policymakers to rely on.
-
-### Context Is Not Authority: Structured Runtime Governance for Financial Market Agents
-- URL: https://paperplaine.com/papers/context-is-not-authority
-- Category: Statistics
-- Authors: Rui Tang, Qiangqiang Liu, Yichi Zhang et al.
-- arXiv: 2608.09025
-- Plain-English subtitle: Stopping financial AI from acting on outdated or unauthorized information
-- Summary: Financial trading systems can misinterpret instructions or act on stale data, turning correct information into wrong trades. SAGE-Fin is a control system that verifies what a financial agent actually proposes to do—not just what it claims—and rechecks permissions whenever market conditions, account status, or policies change. Real-world testing at a digital-asset platform confirmed it caught cases where agents would have acted on outdated or missing authorization.
-- Why it matters: Financial errors move fast and cost real money. A trading system that silently acts on yesterday's permissions or misread instructions can execute unauthorized trades before anyone notices. SAGE-Fin forces the system to prove at runtime that each proposed action is still authorized, catching drift and stale data before execution. The platform's independent operations team found it practical enough to deploy on live customer requests, suggesting it can reduce the window where bad trades slip through.
-
-### Multimodal Model Diffing for Feature Discovery and Control
-- URL: https://paperplaine.com/papers/multimodal-model-diffing-for
-- Category: Computer Science · AI
-- Authors: Hunar Batra, Lachin Naghashyar, Ashkan Khakzar et al.
-- arXiv: 2608.09928
-- Plain-English subtitle: Opening the black box of AI vision models to see and control what they learn
-- Summary: Researchers created a method to identify which internal features of AI vision-and-language models drive specific behaviors—and then selectively turn those features on or off. By comparing how a base language model changes when trained on images, they discovered sparse, interpretable features that control tasks like reading text in images and understanding spatial layouts, and showed they could degrade unwanted behaviors by up to 24% without breaking general performance.
-- Why it matters: As AI systems become more powerful and are deployed in real applications, being able to audit what's actually driving their decisions matters for safety and trust. This work provides a concrete toolkit for developers to find problematic features (like those underlying adversarial attacks) and remove them, rather than guessing blindly at how to make these systems behave. It's the difference between adjusting dials you can see versus hoping a sledgehammer approach doesn't break something important.
-
-### FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings
-- URL: https://paperplaine.com/papers/finrank-an-evidence-grounded
-- Category: Quantitative Finance
-- Authors: Sasan Mansouri, Daniel Saad, Mark Wahrenburg et al.
-- arXiv: 2608.07400
-- Plain-English subtitle: Spotting when financial AI finds the right answer in the wrong place
-- Summary: A new test for financial AI reveals a hidden problem: systems can answer questions about company finances correctly while pointing to the wrong evidence in SEC filings. The benchmark includes 1,185 real questions about company reports, with deliberately tricky wrong answers drawn from similar facts elsewhere in the same filing, earlier periods, or competitor companies. Even advanced AI systems struggle, with the best reaching only 45% accuracy when forced to find the right evidence, and dropping 13–20 percentage points when tested on hard-to-distinguish wrong answers.
-- Why it matters: Investors, regulators, and analysts increasingly rely on AI to search financial documents for facts about companies. If an AI finds the correct number but attributes it to the wrong quarter or the wrong company, someone making a million-dollar decision based on that answer could lose everything. This benchmark forces developers to build systems that not only get the right answer but prove it came from the right place—making AI-powered financial research trustworthy enough to act on.
 
 ## About
 
