@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 611 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 614 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 209 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 210 papers in archive.
+  - "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation"
   - "How to Spend Your Oracle Budget: Practical Guidance for Protein Structure Prediction Models"
-  - "Attention-Path Fragility as an Uncertainty Signal in Large Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 53 papers in archive.
   - "Sectoral inter-dependencies drive the loss of structural balance in signed financial networks"
   - "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 52 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 53 papers in archive.
+  - "A Quantum/Classical Example Oracle Separation for Making Things Up"
   - "Context Is Not Authority: Structured Runtime Governance for Financial Market Agents"
-  - "Scalable estimation of VARMA models"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 51 papers in archive.
   - "Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2"
   - "Efficient Discrete Position Design for Movable Antenna Systems: Low Complexity and Robustness"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 43 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 44 papers in archive.
+  - "Robustness over efficiency in climate coalitions: a bistable model and a map of architectures"
   - "Bias-robust causal inference for panel data"
-  - "Benefits of Shifting Passenger Traffic from Air to Rail: A Case Study of California High-Speed Rail"
 
 ## 10 most recent papers
+
+### DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation
+- URL: https://paperplaine.com/papers/dreamfly-causal-memory-and
+- Category: Computer Science · AI
+- Authors: Yan Deng, Fei Xu
+- arXiv: 2608.12308
+- Plain-English subtitle: Teaching drones to follow spoken directions by remembering where they've been
+- Summary: Researchers developed DreamFly, a system that helps aerial drones navigate using spoken instructions by combining three key improvements: keeping track of what the drone has seen recently, planning multiple steps ahead but only executing one at a time, and explicitly deciding when the mission is complete. The system achieved 32% success rates on unseen environments—higher than all existing methods—while making fewer navigation errors overall.
+- Why it matters: Drones that reliably follow human instructions could speed up search-and-rescue operations, infrastructure inspections, and autonomous delivery. Current systems struggle with partial information and poor planning horizons, causing them to fail or overshoot targets. This approach tackles those specific problems through better memory and decision-making, directly improving success rates on real navigation tasks.
+
+### Robustness over efficiency in climate coalitions: a bistable model and a map of architectures
+- URL: https://paperplaine.com/papers/robustness-over-efficiency-in
+- Category: Economics
+- Authors: Juergen Renn
+- arXiv: 2608.12143
+- Plain-English subtitle: Why climate deals need stability more than perfect efficiency
+- Summary: Countries joining climate agreements face a fundamental choice: design deals that maximize economic efficiency, or design them to survive political upheaval and defection. A new mathematical model shows this trade-off is unavoidable—and that robustness matters far more than economists typically assume. The model identifies which climate architectures are self-sustaining, which require a founding push, and which need continuous support to survive.
+- Why it matters: Current climate proposals focus on getting the best economic outcome per ton of carbon reduced. This research shows that's backwards: a less efficient deal that members stick with will outperform a perfectly designed deal that collapses when a government changes or a country breaks its promises. The analysis maps three real proposals—carbon currencies, border adjustments, and export rebates—to show which ones can ignite on their own and which will fail without constant diplomatic maintenance.
+
+### A Quantum/Classical Example Oracle Separation for Making Things Up
+- URL: https://paperplaine.com/papers/a-quantum-classical-example
+- Category: Statistics
+- Authors: Kenny Chen
+- arXiv: 2608.11648
+- Plain-English subtitle: When quantum computers learn faster from quantum data than classical data
+- Summary: Researchers proved that quantum computers can learn certain patterns significantly faster when trained on quantum data rather than classical data—something that was theoretically unclear before. Using a mathematical oracle construction, they demonstrated a concrete example where a quantum learner with quantum examples solves a problem efficiently, while the same quantum learner restricted to classical examples cannot.
+- Why it matters: This result clarifies a fundamental question about quantum computing's advantage in machine learning. If quantum data sources become available, quantum computers could provide speedups that aren't possible with purely classical training data—establishing a new dimension of quantum advantage beyond just computational power. This helps researchers understand where quantum machine learning will matter most in practice.
 
 ### How to Spend Your Oracle Budget: Practical Guidance for Protein Structure Prediction Models
 - URL: https://paperplaine.com/papers/how-to-spend-your
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI safety research shifted from explaining models to controlling them
 - Summary: Over six years, the field studying trustworthy AI moved away from trying to understand why existing models make decisions and toward actively steering new generative systems like ChatGPT to be truthful and safe. Truthfulness research jumped from nearly zero papers in 2021 to over one-third by 2026, while older methods for explaining black-box models declined—then resurged through new mechanistic approaches that peer into how models actually work.
 - Why it matters: As AI systems become more powerful and widely deployed, researchers need practical ways to keep them honest and safe rather than just understanding them after the fact. This shift shows the field is moving faster than the capabilities themselves, which is necessary if AI developers are to stay ahead of potential harms. The fact that all trust dimensions lit up simultaneously when ChatGPT arrived suggests future model releases will face immediate scrutiny on multiple fronts—something the research community is now better equipped to provide.
-
-### Work distribution for strongly coupled many-body open quantum systems
-- URL: https://paperplaine.com/papers/work-distribution-for-strongly
-- Category: Physics
-- Authors: H. T. M. Nghiem, T. A. Costi, S. Campbell et al.
-- arXiv: 2608.11196
-- Plain-English subtitle: How quantum systems absorb energy when suddenly forced out of balance
-- Summary: When a quantum system coupled tightly to its environment is suddenly disturbed, the amount of work it absorbs follows an unexpected pattern: near the minimum energy cost, the probability drops off according to a mathematical power law rather than smoothly. Researchers developed a precise computational method that captures this behavior exactly, even in the notoriously difficult regime where the system and environment are so strongly entangled that standard approximations fail.
-- Why it matters: Understanding how quantum systems actually respond to sudden changes is essential for designing quantum machines and computing devices that must operate while interacting with their surroundings. The power-law threshold behavior discovered here reveals universal signatures that experimentalists can measure, providing concrete predictions to test whether our models of quantum systems are correct—and where they break down in the real world.
-
-### Fusion Training for Mathematical Generalization in Large Language Models
-- URL: https://paperplaine.com/papers/fusion-training-for-mathematical
-- Category: Computer Science · AI
-- Authors: Congfeng Cao, Pengyu Zhang, Jelke Bloem
-- arXiv: 2608.09893
-- Plain-English subtitle: Training AI to think deeply and answer quickly at the same time
-- Summary: Teaching language models to both reason through hard problems and give quick answers creates a tension between the two skills—more training on fast answers actually weakens the model's ability to think carefully. The order and balance of training matter: the right schedule can reduce this damage, but the best approach depends on how much of each type of training data you use.
-- Why it matters: As AI assistants take on both simple customer-service tasks and complex problem-solving work, companies need both speed and accuracy. This research shows they can't maximize both equally in one model, and gives engineers concrete guidance on how to balance this trade-off depending on their actual needs.
-
-### Bias-robust causal inference for panel data
-- URL: https://paperplaine.com/papers/bias-robust-causal-inference
-- Category: Economics
-- Authors: Angelos Alexopoulos
-- arXiv: 2608.09837
-- Plain-English subtitle: Measuring treatment effects while accounting for guesswork in missing data
-- Summary: Economists often estimate what would have happened to people without a treatment by filling in missing data—but that guesswork can distort the final answer. This paper introduces a method that catches and corrects for this hidden error, reporting wider but more honest confidence intervals. The approach outperforms standard alternatives, especially when data is limited, keeping its accuracy promise even when the unobserved data patterns are partially misspecified.
-- Why it matters: Policy decisions about job training, tax credits, or health programs often rest on estimates from observational data where the counterfactual is guessed. Traditional methods claim narrow confidence intervals but deliver false certainty—the coverage is nearly zero when data is sparse. This method trades some precision for honesty: its stated margins actually contain the true answer, making it safer for policymakers to rely on.
 
 ## About
 
