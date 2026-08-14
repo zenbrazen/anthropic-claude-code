@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 614 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-13
+This file contains the complete plain-English text of all 617 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-14
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration
+Subtitle: A new way to discover equations hidden in messy, real-world data
+URL: https://paperplaine.com/papers/sparse-orthogonal-regression-technique
+Category: Computer Science · AI
+Authors: Sabin Roman, Ljupco Todorovski, Saso Dzeroski
+arXiv ID: 2608.13504
+arXiv URL: https://arxiv.org/abs/2608.13504
+Posted: 2026-08-14
+
+Summary: Researchers created SORT, a technique that learns mathematical equations directly from noisy, irregularly collected measurements by representing patterns in a carefully chosen coordinate system. Unlike existing methods that pick from fixed libraries of equations, SORT first captures the underlying structure as a compact mathematical expansion, then uses that to find simpler analytic forms—and works better when the usual equation libraries are incomplete or misleading.
+
+Why it matters: Scientists constantly need to reverse-engineer equations from experimental data—from climate models to drug metabolism to mechanical systems. SORT handles the messy realities of real measurements (noise, gaps, sampling errors) better than existing tools, and shifts the burden from brittle trial-and-error selection to intentional design of the mathematical framework. The same learned representation also enables fast approximation and calculation of complex integrals, making it useful across system modeling, prediction, and simulation.
+
+---
+Title: The Rosetta Stone and Levels of Principled Inference to the Experience of Another Mind
+Subtitle: A mathematical bridge to understanding what others actually experience
+URL: https://paperplaine.com/papers/the-rosetta-stone-and
+Category: Quantitative Biology
+Authors: Kallum Robinson, Giulio Tononi, Naotsugu Tsuchiya et al.
+arXiv ID: 2608.12030
+arXiv URL: https://arxiv.org/abs/2608.12030
+Posted: 2026-08-14
+
+Summary: Two major theories attempt to translate subjective experience into mathematical structures that could let us compare one mind to another. While neither can fully cross the gap between your inner life and someone else's, they establish formal rules for what we can justifiably infer about another's consciousness — moving beyond pure speculation to principled reasoning.
+
+Why it matters: For centuries, philosophers have had no systematic way to even discuss whether another person's experience resembles yours. These structural approaches create a shared framework where different minds can be meaningfully compared, which matters for everything from diagnosing consciousness in patients who can't communicate, to assessing animal sentience, to eventually building AI systems whose experiences we might actually understand rather than merely observe.
+
+---
+Title: Experimental Quantum Key Distribution in an Indefinite Causal Order
+Subtitle: Catching quantum eavesdroppers without throwing away your encryption key
+URL: https://paperplaine.com/papers/experimental-quantum-key-distribution
+Category: Physics
+Authors: Yann Valibouse, Martí Cladera-Rosselló, Michael Antesberger et al.
+arXiv ID: 2608.13561
+arXiv URL: https://arxiv.org/abs/2608.13561
+Posted: 2026-08-14
+
+Summary: Researchers created a quantum encryption system that detects eavesdropping in a radically different way: by putting the sender and receiver's operations into quantum superposition so their order becomes undefined. Unlike standard quantum encryption methods that require publicly revealing and discarding part of the raw key to spot tampering, this approach kept every bit potentially usable for the final key while still catching eavesdroppers 15% of the time per qubit.
+
+Why it matters: Quantum encryption is already theoretically secure, but current methods waste part of every key just to verify nobody has eavesdropped. If this principle can be refined into a working protocol, it could eliminate that waste—meaning stronger encryption with no efficiency penalty. The experiment proves the concept works in the lab, though real-world implementation still faces hurdles.
 
 ---
 Title: DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation

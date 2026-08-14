@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 614 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 617 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 210 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 211 papers in archive.
+  - "Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration"
   - "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation"
-  - "How to Spend Your Oracle Budget: Practical Guidance for Protein Structure Prediction Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 51 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 52 papers in archive.
+  - "Experimental Quantum Key Distribution in an Indefinite Causal Order"
   - "Work distribution for strongly coupled many-body open quantum systems"
-  - "Impact of Nonlinearities on Local Kinetic and Thermokinetic Uncertainty Relations in Bosonic Transport"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 51 papers in archive.
   - "Threshold Structure of Optimal Policies in Restart POMDPs"
   - "On the Optimal Laplacian Jordan Structure for Synchronizability"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 51 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 52 papers in archive.
+  - "The Rosetta Stone and Levels of Principled Inference to the Experience of Another Mind"
   - "How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers"
-  - "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 53 papers in archive.
   - "Sectoral inter-dependencies drive the loss of structural balance in signed financial networks"
   - "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Bias-robust causal inference for panel data"
 
 ## 10 most recent papers
+
+### Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration
+- URL: https://paperplaine.com/papers/sparse-orthogonal-regression-technique
+- Category: Computer Science · AI
+- Authors: Sabin Roman, Ljupco Todorovski, Saso Dzeroski
+- arXiv: 2608.13504
+- Plain-English subtitle: A new way to discover equations hidden in messy, real-world data
+- Summary: Researchers created SORT, a technique that learns mathematical equations directly from noisy, irregularly collected measurements by representing patterns in a carefully chosen coordinate system. Unlike existing methods that pick from fixed libraries of equations, SORT first captures the underlying structure as a compact mathematical expansion, then uses that to find simpler analytic forms—and works better when the usual equation libraries are incomplete or misleading.
+- Why it matters: Scientists constantly need to reverse-engineer equations from experimental data—from climate models to drug metabolism to mechanical systems. SORT handles the messy realities of real measurements (noise, gaps, sampling errors) better than existing tools, and shifts the burden from brittle trial-and-error selection to intentional design of the mathematical framework. The same learned representation also enables fast approximation and calculation of complex integrals, making it useful across system modeling, prediction, and simulation.
+
+### The Rosetta Stone and Levels of Principled Inference to the Experience of Another Mind
+- URL: https://paperplaine.com/papers/the-rosetta-stone-and
+- Category: Quantitative Biology
+- Authors: Kallum Robinson, Giulio Tononi, Naotsugu Tsuchiya et al.
+- arXiv: 2608.12030
+- Plain-English subtitle: A mathematical bridge to understanding what others actually experience
+- Summary: Two major theories attempt to translate subjective experience into mathematical structures that could let us compare one mind to another. While neither can fully cross the gap between your inner life and someone else's, they establish formal rules for what we can justifiably infer about another's consciousness — moving beyond pure speculation to principled reasoning.
+- Why it matters: For centuries, philosophers have had no systematic way to even discuss whether another person's experience resembles yours. These structural approaches create a shared framework where different minds can be meaningfully compared, which matters for everything from diagnosing consciousness in patients who can't communicate, to assessing animal sentience, to eventually building AI systems whose experiences we might actually understand rather than merely observe.
+
+### Experimental Quantum Key Distribution in an Indefinite Causal Order
+- URL: https://paperplaine.com/papers/experimental-quantum-key-distribution
+- Category: Physics
+- Authors: Yann Valibouse, Martí Cladera-Rosselló, Michael Antesberger et al.
+- arXiv: 2608.13561
+- Plain-English subtitle: Catching quantum eavesdroppers without throwing away your encryption key
+- Summary: Researchers created a quantum encryption system that detects eavesdropping in a radically different way: by putting the sender and receiver's operations into quantum superposition so their order becomes undefined. Unlike standard quantum encryption methods that require publicly revealing and discarding part of the raw key to spot tampering, this approach kept every bit potentially usable for the final key while still catching eavesdroppers 15% of the time per qubit.
+- Why it matters: Quantum encryption is already theoretically secure, but current methods waste part of every key just to verify nobody has eavesdropped. If this principle can be refined into a working protocol, it could eliminate that waste—meaning stronger encryption with no efficiency penalty. The experiment proves the concept works in the lab, though real-world implementation still faces hurdles.
 
 ### DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation
 - URL: https://paperplaine.com/papers/dreamfly-causal-memory-and
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When an AI's confident answers crumble under small changes, it's actually uncertain.
 - Summary: Large language models often sound confident even when they're wrong. Researchers found that true uncertainty shows up not just in the model's probability scores, but in whether the model's predictions collapse when its internal attention pathways are slightly perturbed. A new measurement called ASMI detects these fragile-but-confident answers and catches errors that standard confidence scores miss—cutting retained errors roughly in half on question-answering tasks.
 - Why it matters: When companies deploy AI systems to answer questions, they need to know which answers to trust and which to flag for human review. Current confidence measurements fail on a dangerous category: answers the model is certain about but gets wrong anyway. This technique spots those dangerous cases without requiring extra computation, making AI systems safer to deploy in real-world applications like medical Q&A, customer support, and fact-checking.
-
-### Threshold Structure of Optimal Policies in Restart POMDPs
-- URL: https://paperplaine.com/papers/threshold-structure-of-optimal
-- Category: Mathematics
-- Authors: Konstantin Avrachenkov, Alexey Piunovskiy, Yi Zhang
-- arXiv: 2608.10936
-- Plain-English subtitle: When to restart a guessing game to maximize your chances
-- Summary: When you're trying to control a system you can't fully observe, the best strategy often follows a simple rule: restart if too much time has passed since your last observation. Researchers proved this works across a broad class of problems, showing that optimal policies rely on clean thresholds based on elapsed time, and that better initial observations push these thresholds back further.
-- Why it matters: This result applies to real systems where you're forced to choose between letting something run blind or paying the cost to reset and observe it again—from equipment maintenance to sensor-based control. Knowing that the optimal choice always has this threshold structure means engineers can search for good policies much more efficiently instead of exploring countless complex strategies, and can confidently build control systems that follow intuitive restart-based rules.
-
-### How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers
-- URL: https://paperplaine.com/papers/how-many-labels-can
-- Category: Quantitative Biology
-- Authors: Eran Kopel
-- arXiv: 2608.10560
-- Plain-English subtitle: How many messages can a brain rhythm actually carry at once?
-- Summary: A new physics-based test shows that biological oscillators can carry only as many distinct labels as their quality factor allows—a limit set by how sharply tuned the oscillation is to a single frequency. When applied to proposed high-frequency brain signals, most candidates fail this test spectacularly: a recently proposed 30 GHz field in the cortex has a quality factor of just 0.19, meaning its signal spreads five times wider than the frequency it's supposed to carry, making distinct labels impossible to distinguish.
-- Why it matters: Neuroscientists have proposed multiple mechanisms for how the brain might encode information in oscillating signals—from electromagnetic fields to quantum effects in microtubules. This test provides a single, mechanism-independent standard to rule out implausible candidates before investing time and resources studying them. It eliminates most high-frequency proposals immediately, while showing that only the brain's low-frequency rhythms have the spectral sharpness needed to reliably carry multiple distinct signals.
-
-### From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop
-- URL: https://paperplaine.com/papers/from-interpretability-to-control
-- Category: Computer Science · AI
-- Authors: Rahul Gupta, Abhinav Mohanty, Anaelia Ovalle et al.
-- arXiv: 2608.11171
-- Plain-English subtitle: How AI safety research shifted from explaining models to controlling them
-- Summary: Over six years, the field studying trustworthy AI moved away from trying to understand why existing models make decisions and toward actively steering new generative systems like ChatGPT to be truthful and safe. Truthfulness research jumped from nearly zero papers in 2021 to over one-third by 2026, while older methods for explaining black-box models declined—then resurged through new mechanistic approaches that peer into how models actually work.
-- Why it matters: As AI systems become more powerful and widely deployed, researchers need practical ways to keep them honest and safe rather than just understanding them after the fact. This shift shows the field is moving faster than the capabilities themselves, which is necessary if AI developers are to stay ahead of potential harms. The fact that all trust dimensions lit up simultaneously when ChatGPT arrived suggests future model releases will face immediate scrutiny on multiple fronts—something the research community is now better equipped to provide.
 
 ## About
 
