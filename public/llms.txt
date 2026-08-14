@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 617 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 620 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 211 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 212 papers in archive.
+  - "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist"
   - "Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration"
-  - "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
   - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 52 papers in archive.
   - "Experimental Quantum Key Distribution in an Indefinite Causal Order"
   - "Work distribution for strongly coupled many-body open quantum systems"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 51 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 52 papers in archive.
+  - "Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization"
   - "Threshold Structure of Optimal Policies in Restart POMDPs"
-  - "On the Optimal Laplacian Jordan Structure for Synchronizability"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 52 papers in archive.
   - "The Rosetta Stone and Levels of Principled Inference to the Experience of Another Mind"
   - "How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 53 papers in archive.
   - "A Quantum/Classical Example Oracle Separation for Making Things Up"
   - "Context Is Not Authority: Structured Runtime Governance for Financial Market Agents"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 51 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 52 papers in archive.
+  - "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks"
   - "Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2"
-  - "Efficient Discrete Position Design for Movable Antenna Systems: Low Complexity and Robustness"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 44 papers in archive.
   - "Robustness over efficiency in climate coalitions: a bistable model and a map of architectures"
   - "Bias-robust causal inference for panel data"
 
 ## 10 most recent papers
+
+### OmniScientist: An Omni-Modal Omni-Discipline AI Scientist
+- URL: https://paperplaine.com/papers/omniscientist-an-omni-modal
+- Category: Computer Science · AI
+- Authors: Bobo Li, Hao Fei, Tianjie Ju et al.
+- arXiv: 2608.13558
+- Plain-English subtitle: AI that learns from raw data, not summaries, to conduct real science
+- Summary: Researchers built OmniScientist, an AI system that conducts scientific research directly from raw images, videos, audio, 3D structures, and other real data—not from prewritten summaries. When tested on 36 real research problems across multiple disciplines, the system completed full research workflows from data to finished manuscript in every case, and outperformed a version that only received simplified numerical summaries in 85% of head-to-head comparisons.
+- Why it matters: Current AI science tools skip the most important step: looking at actual evidence. OmniScientist shows that an AI can only make reliable discoveries if it processes raw data directly, catching subtle patterns and detecting problems that precomputed summaries would hide. This suggests a clearer path to building AI systems that can genuinely accelerate research across fields like biology, physics, and medicine—rather than just automating paperwork.
+
+### Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization
+- URL: https://paperplaine.com/papers/sampling-luck-masquerades-as
+- Category: Mathematics
+- Authors: Jinhyung Bae
+- arXiv: 2608.13087
+- Plain-English subtitle: Why AI solvers' improvements often vanish when properly tested
+- Summary: Researchers discovered that neural optimization solvers report improvements from smarter budget allocation that simply don't exist — they're statistical mirages created by testing on the same data used to find the allocation. When tested fairly on held-out data, the 2–3% gains vanish completely. However, under real-world conditions where data shifts, adaptive allocation does deliver genuine 11–12% gains, but only for some solvers.
+- Why it matters: This finding catches a widespread testing flaw that makes optimization algorithms look better than they are. When companies or researchers evaluate AI solvers this way, they publish fake improvements and waste effort optimizing something that doesn't work. The authors provide a correction procedure and checklist so future evaluations don't repeat this error — and show where real gains actually hide.
+
+### Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks
+- URL: https://paperplaine.com/papers/heterogeneity-aware-belief-synchronization
+- Category: Engineering
+- Authors: Muhammad Hannan Akram, Muhammad Abubakar Rashid, Wassi Haider Kabir et al.
+- arXiv: 2608.13394
+- Plain-English subtitle: Getting AI agents across satellites and drones to understand each other
+- Summary: Next-generation 6G networks will connect thousands of AI agents spread across satellites, drones, and ground devices that each learn differently and operate under different constraints. A new framework lets these mismatched AI systems understand each other's messages without being rebuilt to work together, by translating belief updates only when needed through shared edge servers. Tests show the approach keeps communication costs low while maintaining accurate shared understanding across the network.
+- Why it matters: As 6G networks become intelligence platforms rather than just pipes for data, coordinating thousands of heterogeneous AI agents becomes critical — from disaster response networks combining satellite imagery with drone sensors to autonomous vehicle fleets sharing road conditions. This framework removes the bottleneck of having to retrain or redesign every agent to match others, making it practical to deploy diverse AI systems that must work together without constant synchronization overhead or privacy exposure.
 
 ### Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration
 - URL: https://paperplaine.com/papers/sparse-orthogonal-regression-technique
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Choosing the cheapest way to fix AI's protein-folding mistakes
 - Summary: Protein-prediction AI systems sometimes get the answer wrong, but checking their work costs money through lab experiments. Researchers tested four different strategies for spending a limited budget on these checks, and found that the best choice depends on how much you can afford to spend: one method wins at rock-bottom budgets, while others pull ahead as money increases.
 - Why it matters: Protein structure prediction is central to drug discovery and understanding disease, but current AI models are unreliable enough that researchers must experimentally validate their predictions. This work shows which verification strategies actually save money and time in practice, letting labs allocate scarce experimental resources more effectively rather than guessing which verification approach to use.
-
-### Sectoral inter-dependencies drive the loss of structural balance in signed financial networks
-- URL: https://paperplaine.com/papers/sectoral-inter-dependencies-drive
-- Category: Quantitative Finance
-- Authors: Kartik Dahake, Abhijit Chakraborty
-- arXiv: 2608.12023
-- Plain-English subtitle: Why stock market crashes spread between industries, not within them
-- Summary: During financial crises, the stock market's stability breaks down not because individual sectors fall apart internally, but because conflicts between sectors compound each other. Researchers analyzing S&P 500 data found that cross-sector tensions—like supply chain disruptions and inflation uncertainty—drive most of the structural instability seen during economic downturns.
-- Why it matters: Understanding where financial instability originates helps regulators and investors spot systemic risks earlier. Since crises spread through inter-sector connections rather than individual sector weakness, monitoring relationships between industries—like how energy prices affect manufacturing—becomes a more reliable warning system than watching any single sector alone.
-
-### Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2
-- URL: https://paperplaine.com/papers/effects-of-tool-wear
-- Category: Engineering
-- Authors: Alexander Müller, Maximilian Berndt, Hagen Schmidt et al.
-- arXiv: 2608.12163
-- Plain-English subtitle: Reading tool wear from the fingerprints it leaves on metal surfaces
-- Summary: When cutting tools wear down during machining, they leave telltale marks on the metal surface being cut. Researchers found that a single measurement of the groove pattern — specifically how steeply the worn cutting edge rises — captures 83–90% of the information needed to track tool wear throughout its entire life, making it possible to estimate wear from surface texture alone.
-- Why it matters: Manufacturers currently have to stop production and inspect tools directly to know when they're wearing out and need replacing. A reliable way to estimate wear from the surface pattern of finished parts could let factories monitor tool condition automatically using simple optical sensors, reducing downtime and preventing defective parts before they're made.
-
-### Attention-Path Fragility as an Uncertainty Signal in Large Language Models
-- URL: https://paperplaine.com/papers/attention-path-fragility-as
-- Category: Computer Science · AI
-- Authors: Minsoo Kim, Sungyoung Ji, Kisung Moon et al.
-- arXiv: 2608.11138
-- Plain-English subtitle: When an AI's confident answers crumble under small changes, it's actually uncertain.
-- Summary: Large language models often sound confident even when they're wrong. Researchers found that true uncertainty shows up not just in the model's probability scores, but in whether the model's predictions collapse when its internal attention pathways are slightly perturbed. A new measurement called ASMI detects these fragile-but-confident answers and catches errors that standard confidence scores miss—cutting retained errors roughly in half on question-answering tasks.
-- Why it matters: When companies deploy AI systems to answer questions, they need to know which answers to trust and which to flag for human review. Current confidence measurements fail on a dangerous category: answers the model is certain about but gets wrong anyway. This technique spots those dangerous cases without requiring extra computation, making AI systems safer to deploy in real-world applications like medical Q&A, customer support, and fact-checking.
 
 ## About
 

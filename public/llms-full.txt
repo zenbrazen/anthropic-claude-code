@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 617 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 620 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-14
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: OmniScientist: An Omni-Modal Omni-Discipline AI Scientist
+Subtitle: AI that learns from raw data, not summaries, to conduct real science
+URL: https://paperplaine.com/papers/omniscientist-an-omni-modal
+Category: Computer Science · AI
+Authors: Bobo Li, Hao Fei, Tianjie Ju et al.
+arXiv ID: 2608.13558
+arXiv URL: https://arxiv.org/abs/2608.13558
+Posted: 2026-08-14
+
+Summary: Researchers built OmniScientist, an AI system that conducts scientific research directly from raw images, videos, audio, 3D structures, and other real data—not from prewritten summaries. When tested on 36 real research problems across multiple disciplines, the system completed full research workflows from data to finished manuscript in every case, and outperformed a version that only received simplified numerical summaries in 85% of head-to-head comparisons.
+
+Why it matters: Current AI science tools skip the most important step: looking at actual evidence. OmniScientist shows that an AI can only make reliable discoveries if it processes raw data directly, catching subtle patterns and detecting problems that precomputed summaries would hide. This suggests a clearer path to building AI systems that can genuinely accelerate research across fields like biology, physics, and medicine—rather than just automating paperwork.
+
+---
+Title: Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization
+Subtitle: Why AI solvers' improvements often vanish when properly tested
+URL: https://paperplaine.com/papers/sampling-luck-masquerades-as
+Category: Mathematics
+Authors: Jinhyung Bae
+arXiv ID: 2608.13087
+arXiv URL: https://arxiv.org/abs/2608.13087
+Posted: 2026-08-14
+
+Summary: Researchers discovered that neural optimization solvers report improvements from smarter budget allocation that simply don't exist — they're statistical mirages created by testing on the same data used to find the allocation. When tested fairly on held-out data, the 2–3% gains vanish completely. However, under real-world conditions where data shifts, adaptive allocation does deliver genuine 11–12% gains, but only for some solvers.
+
+Why it matters: This finding catches a widespread testing flaw that makes optimization algorithms look better than they are. When companies or researchers evaluate AI solvers this way, they publish fake improvements and waste effort optimizing something that doesn't work. The authors provide a correction procedure and checklist so future evaluations don't repeat this error — and show where real gains actually hide.
+
+---
+Title: Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks
+Subtitle: Getting AI agents across satellites and drones to understand each other
+URL: https://paperplaine.com/papers/heterogeneity-aware-belief-synchronization
+Category: Engineering
+Authors: Muhammad Hannan Akram, Muhammad Abubakar Rashid, Wassi Haider Kabir et al.
+arXiv ID: 2608.13394
+arXiv URL: https://arxiv.org/abs/2608.13394
+Posted: 2026-08-14
+
+Summary: Next-generation 6G networks will connect thousands of AI agents spread across satellites, drones, and ground devices that each learn differently and operate under different constraints. A new framework lets these mismatched AI systems understand each other's messages without being rebuilt to work together, by translating belief updates only when needed through shared edge servers. Tests show the approach keeps communication costs low while maintaining accurate shared understanding across the network.
+
+Why it matters: As 6G networks become intelligence platforms rather than just pipes for data, coordinating thousands of heterogeneous AI agents becomes critical — from disaster response networks combining satellite imagery with drone sensors to autonomous vehicle fleets sharing road conditions. This framework removes the bottleneck of having to retrain or redesign every agent to match others, making it practical to deploy diverse AI systems that must work together without constant synchronization overhead or privacy exposure.
 
 ---
 Title: Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration
