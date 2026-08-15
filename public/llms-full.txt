@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 620 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-14
+This file contains the complete plain-English text of all 623 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-15
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: QuoteBench: How Matched Scores Can Hide Command-Path Failures
+Subtitle: Why AI coding agents' test scores don't measure what actually happens
+URL: https://paperplaine.com/papers/quotebench-how-matched-scores
+Category: Computer Science · AI
+Authors: Shangao Li, Yao Zhang, Volker Tresp et al.
+arXiv ID: 2608.13547
+arXiv URL: https://arxiv.org/abs/2608.13547
+Posted: 2026-08-15
+
+Summary: When AI systems issue computer commands, the score measuring their success can hide massive failures that happen after the AI generates its answer. Researchers built QuoteBench to separate problems caused by the AI itself from problems introduced by how the system processes and executes those commands—and found that one AI model's apparent 3.6-point deficit actually concealed a 64.3-point gap masked by compensating errors elsewhere.
+
+Why it matters: AI coding agents are being deployed to write and run real commands on servers. If their test scores don't reflect actual execution failures, teams deploying these systems won't know when they're truly unreliable. This research shows that standard benchmarks can rank models backwards depending on how commands are processed, potentially leading organizations to trust agents that fail more often than measured.
+
+---
+Title: Defensive Boosting for Online Probabilistic Forecasting
+Subtitle: A smarter way to predict when conditions are uncertain or adversarial
+URL: https://paperplaine.com/papers/defensive-boosting-for-online
+Category: Statistics
+Authors: Georgy Noarov, Aaron Roth
+arXiv ID: 2608.13554
+arXiv URL: https://arxiv.org/abs/2608.13554
+Posted: 2026-08-15
+
+Summary: Researchers developed a forecasting algorithm that works well in two different scenarios—when you have good weak predictors available, and when you don't—without needing to choose which one beforehand. The method uses 10 to 100 times less computation than existing approaches while maintaining strong accuracy on both real and synthetic data streams.
+
+Why it matters: Many real-world prediction tasks face uncertain conditions where you don't know upfront whether your available tools will work well. This algorithm handles both cases simultaneously, making it practical for financial forecasting, weather prediction, and fraud detection systems that can't afford to fail or slow down when assumptions break down.
+
+---
+Title: FlowLOB: Efficient and Controllable Limit Order Book Generation with Flow Matching
+Subtitle: A faster way to simulate realistic stock market order flows for testing
+URL: https://paperplaine.com/papers/flowlob-efficient-and-controllable
+Category: Quantitative Finance
+Authors: Zhuohan Wang, Andreea Bacalum, Ollie Olby et al.
+arXiv ID: 2608.13096
+arXiv URL: https://arxiv.org/abs/2608.13096
+Posted: 2026-08-15
+
+Summary: Researchers created FlowLOB, a new tool that generates realistic simulations of limit order books—the electronic records of buy and sell orders at different prices—with much greater speed and control than existing methods. The system works by learning patterns from real Hong Kong Exchange trading data and can then create believable "what-if" scenarios for instruments it never saw during training, while using 10 times fewer computational steps than competing approaches to reach the same quality.
+
+Why it matters: Financial firms use order book simulators to test trading strategies and risk management without real money, making the speed and realism of simulation crucial. FlowLOB's efficiency means traders can run more scenario tests faster and cheaper, while its ability to control conditions—like simulating extreme market stress—helps firms prepare for rare but dangerous events. The zero-shot transfer to new stocks means a single trained model works across a brokerage's entire portfolio without retraining.
 
 ---
 Title: OmniScientist: An Omni-Modal Omni-Discipline AI Scientist
