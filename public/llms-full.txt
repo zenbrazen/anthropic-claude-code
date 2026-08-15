@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 623 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 626 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-15
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data
+Subtitle: Building a powerful AI model using only ethically sourced training data
+URL: https://paperplaine.com/papers/dfm-mimir-v1-an
+Category: Computer Science · AI
+Authors: Peter Schneider-Kamp, Jacob Nielsen, Gianluca Barmina et al.
+arXiv ID: 2608.13517
+arXiv URL: https://arxiv.org/abs/2608.13517
+Posted: 2026-08-15
+
+Summary: Researchers created Mimir v1, a 1-billion-parameter language model trained entirely on permissible datasets, and showed it performs as well as models twice its size. The model sets a new benchmark for Danish language tasks and matches larger competitors across 20 different tests covering English, math, code, and Danish—all without relying on scraped or questionable data sources.
+
+Why it matters: Most cutting-edge language models train on massive datasets of unclear origin, creating legal and ethical risks. Mimir v1 proves you can build competitive AI using only legally permissible data, potentially opening doors for researchers and companies who want powerful models without copyright or privacy concerns. The model is freely available, lowering barriers for smaller teams and non-English-speaking communities to develop their own language AI.
+
+---
+Title: LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles
+Subtitle: Why AI struggles to test hidden dangers in self-driving car software
+URL: https://paperplaine.com/papers/llm-assisted-dynamic-threat
+Category: Computer Science
+Authors: Md Wasiul Haque, Sagar Dasgupta, Mizanur Rahman et al.
+arXiv ID: 2608.13450
+arXiv URL: https://arxiv.org/abs/2608.13450
+Posted: 2026-08-15
+
+Summary: Researchers asked AI models to automatically create test programs that could confirm exploitable weaknesses in Autoware, an open-source autonomous vehicle system. The AI successfully generated candidate test harnesses, but only 64% compiled on the first try, and ultimately none revealed genuine vulnerabilities—not because the AI couldn't identify weak points, but because integrating those tests into the massive, interdependent codebase proved vastly harder than generating the tests themselves.
+
+Why it matters: Autonomous vehicles must be rigorously tested for security flaws that could affect steering, braking, and safety-critical decisions. This work reveals that the bottleneck isn't finding weaknesses or writing test code—it's the engineering overhead of actually running those tests against real production software. The finding redirects attention from AI capability to the real barrier: building testing infrastructure that works with complex vehicle software stacks.
+
+---
+Title: Ambient unitaries don't enable shallow group designs
+Subtitle: Why quantum shortcuts can't fake random unitaries
+URL: https://paperplaine.com/papers/ambient-unitaries-don-t
+Category: Physics
+Authors: Maxwell West, M. Cerezo, Martin Larocca
+arXiv ID: 2608.13528
+arXiv URL: https://arxiv.org/abs/2608.13528
+Posted: 2026-08-15
+
+Summary: Quantum computers need to generate random quantum operations for testing and calibration, but a new proof shows that shallow circuits—the speediest option—fundamentally cannot do this job for several important classes of operations. Even when you allow extra helper qubits and operations beyond the target group, the mathematical obstacle remains: you need circuit depth that grows with system size, not shrinks.
+
+Why it matters: Quantum engineers use random unitary sampling to benchmark hardware and validate quantum algorithms. This result means those benchmarking protocols will require substantially deeper circuits than researchers hoped, adding significant overhead to the time and resources needed to verify that quantum computers are working correctly.
 
 ---
 Title: QuoteBench: How Matched Scores Can Hide Command-Path Failures

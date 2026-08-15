@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 623 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 626 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 213 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 214 papers in archive.
+  - "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data"
   - "QuoteBench: How Matched Scores Can Hide Command-Path Failures"
-  - "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 50 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 51 papers in archive.
+  - "LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles"
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
-  - "Hardware Keystores for AI Agent Signing Workflows: A Zero-Trust MCP Enforcement Architecture"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 52 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 53 papers in archive.
+  - "Ambient unitaries don't enable shallow group designs"
   - "Experimental Quantum Key Distribution in an Indefinite Causal Order"
-  - "Work distribution for strongly coupled many-body open quantum systems"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 52 papers in archive.
   - "Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization"
   - "Threshold Structure of Optimal Policies in Restart POMDPs"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Bias-robust causal inference for panel data"
 
 ## 10 most recent papers
+
+### DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data
+- URL: https://paperplaine.com/papers/dfm-mimir-v1-an
+- Category: Computer Science · AI
+- Authors: Peter Schneider-Kamp, Jacob Nielsen, Gianluca Barmina et al.
+- arXiv: 2608.13517
+- Plain-English subtitle: Building a powerful AI model using only ethically sourced training data
+- Summary: Researchers created Mimir v1, a 1-billion-parameter language model trained entirely on permissible datasets, and showed it performs as well as models twice its size. The model sets a new benchmark for Danish language tasks and matches larger competitors across 20 different tests covering English, math, code, and Danish—all without relying on scraped or questionable data sources.
+- Why it matters: Most cutting-edge language models train on massive datasets of unclear origin, creating legal and ethical risks. Mimir v1 proves you can build competitive AI using only legally permissible data, potentially opening doors for researchers and companies who want powerful models without copyright or privacy concerns. The model is freely available, lowering barriers for smaller teams and non-English-speaking communities to develop their own language AI.
+
+### LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles
+- URL: https://paperplaine.com/papers/llm-assisted-dynamic-threat
+- Category: Computer Science
+- Authors: Md Wasiul Haque, Sagar Dasgupta, Mizanur Rahman et al.
+- arXiv: 2608.13450
+- Plain-English subtitle: Why AI struggles to test hidden dangers in self-driving car software
+- Summary: Researchers asked AI models to automatically create test programs that could confirm exploitable weaknesses in Autoware, an open-source autonomous vehicle system. The AI successfully generated candidate test harnesses, but only 64% compiled on the first try, and ultimately none revealed genuine vulnerabilities—not because the AI couldn't identify weak points, but because integrating those tests into the massive, interdependent codebase proved vastly harder than generating the tests themselves.
+- Why it matters: Autonomous vehicles must be rigorously tested for security flaws that could affect steering, braking, and safety-critical decisions. This work reveals that the bottleneck isn't finding weaknesses or writing test code—it's the engineering overhead of actually running those tests against real production software. The finding redirects attention from AI capability to the real barrier: building testing infrastructure that works with complex vehicle software stacks.
+
+### Ambient unitaries don't enable shallow group designs
+- URL: https://paperplaine.com/papers/ambient-unitaries-don-t
+- Category: Physics
+- Authors: Maxwell West, M. Cerezo, Martin Larocca
+- arXiv: 2608.13528
+- Plain-English subtitle: Why quantum shortcuts can't fake random unitaries
+- Summary: Quantum computers need to generate random quantum operations for testing and calibration, but a new proof shows that shallow circuits—the speediest option—fundamentally cannot do this job for several important classes of operations. Even when you allow extra helper qubits and operations beyond the target group, the mathematical obstacle remains: you need circuit depth that grows with system size, not shrinks.
+- Why it matters: Quantum engineers use random unitary sampling to benchmark hardware and validate quantum algorithms. This result means those benchmarking protocols will require substantially deeper circuits than researchers hoped, adding significant overhead to the time and resources needed to verify that quantum computers are working correctly.
 
 ### QuoteBench: How Matched Scores Can Hide Command-Path Failures
 - URL: https://paperplaine.com/papers/quotebench-how-matched-scores
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A new way to discover equations hidden in messy, real-world data
 - Summary: Researchers created SORT, a technique that learns mathematical equations directly from noisy, irregularly collected measurements by representing patterns in a carefully chosen coordinate system. Unlike existing methods that pick from fixed libraries of equations, SORT first captures the underlying structure as a compact mathematical expansion, then uses that to find simpler analytic forms—and works better when the usual equation libraries are incomplete or misleading.
 - Why it matters: Scientists constantly need to reverse-engineer equations from experimental data—from climate models to drug metabolism to mechanical systems. SORT handles the messy realities of real measurements (noise, gaps, sampling errors) better than existing tools, and shifts the burden from brittle trial-and-error selection to intentional design of the mathematical framework. The same learned representation also enables fast approximation and calculation of complex integrals, making it useful across system modeling, prediction, and simulation.
-
-### The Rosetta Stone and Levels of Principled Inference to the Experience of Another Mind
-- URL: https://paperplaine.com/papers/the-rosetta-stone-and
-- Category: Quantitative Biology
-- Authors: Kallum Robinson, Giulio Tononi, Naotsugu Tsuchiya et al.
-- arXiv: 2608.12030
-- Plain-English subtitle: A mathematical bridge to understanding what others actually experience
-- Summary: Two major theories attempt to translate subjective experience into mathematical structures that could let us compare one mind to another. While neither can fully cross the gap between your inner life and someone else's, they establish formal rules for what we can justifiably infer about another's consciousness — moving beyond pure speculation to principled reasoning.
-- Why it matters: For centuries, philosophers have had no systematic way to even discuss whether another person's experience resembles yours. These structural approaches create a shared framework where different minds can be meaningfully compared, which matters for everything from diagnosing consciousness in patients who can't communicate, to assessing animal sentience, to eventually building AI systems whose experiences we might actually understand rather than merely observe.
-
-### Experimental Quantum Key Distribution in an Indefinite Causal Order
-- URL: https://paperplaine.com/papers/experimental-quantum-key-distribution
-- Category: Physics
-- Authors: Yann Valibouse, Martí Cladera-Rosselló, Michael Antesberger et al.
-- arXiv: 2608.13561
-- Plain-English subtitle: Catching quantum eavesdroppers without throwing away your encryption key
-- Summary: Researchers created a quantum encryption system that detects eavesdropping in a radically different way: by putting the sender and receiver's operations into quantum superposition so their order becomes undefined. Unlike standard quantum encryption methods that require publicly revealing and discarding part of the raw key to spot tampering, this approach kept every bit potentially usable for the final key while still catching eavesdroppers 15% of the time per qubit.
-- Why it matters: Quantum encryption is already theoretically secure, but current methods waste part of every key just to verify nobody has eavesdropped. If this principle can be refined into a working protocol, it could eliminate that waste—meaning stronger encryption with no efficiency penalty. The experiment proves the concept works in the lab, though real-world implementation still faces hurdles.
-
-### DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation
-- URL: https://paperplaine.com/papers/dreamfly-causal-memory-and
-- Category: Computer Science · AI
-- Authors: Yan Deng, Fei Xu
-- arXiv: 2608.12308
-- Plain-English subtitle: Teaching drones to follow spoken directions by remembering where they've been
-- Summary: Researchers developed DreamFly, a system that helps aerial drones navigate using spoken instructions by combining three key improvements: keeping track of what the drone has seen recently, planning multiple steps ahead but only executing one at a time, and explicitly deciding when the mission is complete. The system achieved 32% success rates on unseen environments—higher than all existing methods—while making fewer navigation errors overall.
-- Why it matters: Drones that reliably follow human instructions could speed up search-and-rescue operations, infrastructure inspections, and autonomous delivery. Current systems struggle with partial information and poor planning horizons, causing them to fail or overshoot targets. This approach tackles those specific problems through better memory and decision-making, directly improving success rates on real navigation tasks.
 
 ## About
 
