@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 626 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-15
+This file contains the complete plain-English text of all 629 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination
+Subtitle: Breaking down medical AI decisions into traceable, explainable steps
+URL: https://paperplaine.com/papers/marc-v1-an-open
+Category: Computer Science · AI
+Authors: Saisha Shetty, Satvik Tripathi, Austin Lin et al.
+arXiv ID: 2608.13476
+arXiv URL: https://arxiv.org/abs/2608.13476
+Posted: 2026-08-16
+
+Summary: Researchers built MARC, an open-source system that replaces single black-box AI prompts with teams of specialized agents working together on clinical reasoning tasks. Each agent handles one part of the problem—extracting information, reasoning through it, generating answers, and checking the work—creating a transparent chain where doctors can see exactly where and why the AI reached its conclusion.
+
+Why it matters: Hospitals and clinics need to trust AI recommendations before using them in patient care. MARC's step-by-step approach lets doctors pinpoint which agent made an error, rather than staring at an unexplainable final answer. The system also works on regular computers without expensive cloud APIs, and can be configured by clinical staff through simple text files—no programming required—making AI reasoning tools actually usable in real medical settings.
+
+---
+Title: Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task
+Subtitle: How AI language models struggle when rules conflict with their training instincts
+URL: https://paperplaine.com/papers/conflict-and-congruency-effects
+Category: Quantitative Biology
+Authors: Xiaoyang Hu, Mike Angstadt, Shane Storks et al.
+arXiv ID: 2608.11510
+arXiv URL: https://arxiv.org/abs/2608.11510
+Posted: 2026-08-16
+
+Summary: Large language models show the same conflict effects that human brains do when default behaviors clash with explicit rules—six out of seven tested models performed worse when instructions contradicted their ingrained tendencies. Using attention analysis, researchers found that the models deploy different neural pathways depending on whether the rule agrees or conflicts with their defaults, suggesting these effects come from competition between learned patterns and real-time instructions rather than from a unified decision process.
+
+Why it matters: These findings reveal how AI systems make decisions when faced with competing demands, which matters for predicting when they'll follow explicit instructions reliably versus reverting to patterns baked into their training. Understanding this conflict mechanism could improve how we design prompts and fine-tune models to follow rules even when they contradict the model's default behavior—important for safety and reliability in high-stakes applications.
+
+---
+Title: CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers
+Subtitle: Knowing when to trust a powerful AI teacher's confident predictions
+URL: https://paperplaine.com/papers/cw-bass-v2-saturation
+Category: Engineering
+Authors: Ebenezer Tarubinga
+arXiv ID: 2608.12773
+arXiv URL: https://arxiv.org/abs/2608.12773
+Posted: 2026-08-16
+
+Summary: Modern image-segmentation systems now use exceptionally confident foundation models as teachers, but this creates a new problem: their confidence scores bunch up at the high end, making traditional filtering rules backfire. CW-BASS v2 solves this by automatically detecting when a teacher's confidence has saturated and switching to a different strategy—recovering the performance of hand-tuned systems without manual intervention.
+
+Why it matters: Semi-supervised image segmentation powers autonomous vehicles, medical imaging, and robotics—domains where labeled data is scarce and expensive. This method lets engineers deploy foundation models without spending weeks tuning hyperparameters for each new dataset, reducing development time and making these systems practical for real-world applications where strong teachers are now the norm.
 
 ---
 Title: DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data

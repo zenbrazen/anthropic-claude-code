@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 19:16:45 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 07:29:54 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination</title>
+      <link>https://paperplaine.com/papers/marc-v1-an-open</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/marc-v1-an-open</guid>
+      <pubDate>Thu, 13 Aug 2026 17:00:08 GMT</pubDate>
+      <author>Saisha Shetty, Satvik Tripathi, Austin Lin et al.</author>
+      <category>AI</category>
+      <description>Breaking down medical AI decisions into traceable, explainable steps</description>
+      <content:encoded><![CDATA[<p><em>Breaking down medical AI decisions into traceable, explainable steps</em></p><p>Researchers built MARC, an open-source system that replaces single black-box AI prompts with teams of specialized agents working together on clinical reasoning tasks. Each agent handles one part of the problem—extracting information, reasoning through it, generating answers, and checking the work—creating a transparent chain where doctors can see exactly where and why the AI reached its conclusion.</p><p><strong>Why it matters:</strong> Hospitals and clinics need to trust AI recommendations before using them in patient care. MARC's step-by-step approach lets doctors pinpoint which agent made an error, rather than staring at an unexplainable final answer. The system also works on regular computers without expensive cloud APIs, and can be configured by clinical staff through simple text files—no programming required—making AI reasoning tools actually usable in real medical settings.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task</title>
+      <link>https://paperplaine.com/papers/conflict-and-congruency-effects</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/conflict-and-congruency-effects</guid>
+      <pubDate>Tue, 11 Aug 2026 23:47:57 GMT</pubDate>
+      <author>Xiaoyang Hu, Mike Angstadt, Shane Storks et al.</author>
+      <category>Biology</category>
+      <description>How AI language models struggle when rules conflict with their training instincts</description>
+      <content:encoded><![CDATA[<p><em>How AI language models struggle when rules conflict with their training instincts</em></p><p>Large language models show the same conflict effects that human brains do when default behaviors clash with explicit rules—six out of seven tested models performed worse when instructions contradicted their ingrained tendencies. Using attention analysis, researchers found that the models deploy different neural pathways depending on whether the rule agrees or conflicts with their defaults, suggesting these effects come from competition between learned patterns and real-time instructions rather than from a unified decision process.</p><p><strong>Why it matters:</strong> These findings reveal how AI systems make decisions when faced with competing demands, which matters for predicting when they'll follow explicit instructions reliably versus reverting to patterns baked into their training. Understanding this conflict mechanism could improve how we design prompts and fine-tune models to follow rules even when they contradict the model's default behavior—important for safety and reliability in high-stakes applications.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers</title>
+      <link>https://paperplaine.com/papers/cw-bass-v2-saturation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cw-bass-v2-saturation</guid>
+      <pubDate>Thu, 13 Aug 2026 03:31:31 GMT</pubDate>
+      <author>Ebenezer Tarubinga</author>
+      <category>Engineering</category>
+      <description>Knowing when to trust a powerful AI teacher&#39;s confident predictions</description>
+      <content:encoded><![CDATA[<p><em>Knowing when to trust a powerful AI teacher's confident predictions</em></p><p>Modern image-segmentation systems now use exceptionally confident foundation models as teachers, but this creates a new problem: their confidence scores bunch up at the high end, making traditional filtering rules backfire. CW-BASS v2 solves this by automatically detecting when a teacher's confidence has saturated and switching to a different strategy—recovering the performance of hand-tuned systems without manual intervention.</p><p><strong>Why it matters:</strong> Semi-supervised image segmentation powers autonomous vehicles, medical imaging, and robotics—domains where labeled data is scarce and expensive. This method lets engineers deploy foundation models without spending weeks tuning hyperparameters for each new dataset, reducing development time and making these systems practical for real-world applications where strong teachers are now the norm.</p>]]></content:encoded>
+    </item>
     <item>
       <title>DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data</title>
       <link>https://paperplaine.com/papers/dfm-mimir-v1-an</link>

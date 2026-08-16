@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 626 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 629 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 214 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 215 papers in archive.
+  - "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination"
   - "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data"
-  - "QuoteBench: How Matched Scores Can Hide Command-Path Failures"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 51 papers in archive.
   - "LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles"
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 52 papers in archive.
   - "Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization"
   - "Threshold Structure of Optimal Policies in Restart POMDPs"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 52 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 53 papers in archive.
+  - "Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task"
   - "The Rosetta Stone and Levels of Principled Inference to the Experience of Another Mind"
-  - "How many labels can a biological oscillator carry? A quality-factor screen for proposed information carriers"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 54 papers in archive.
   - "FlowLOB: Efficient and Controllable Limit Order Book Generation with Flow Matching"
   - "Sectoral inter-dependencies drive the loss of structural balance in signed financial networks"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 54 papers in archive.
   - "Defensive Boosting for Online Probabilistic Forecasting"
   - "A Quantum/Classical Example Oracle Separation for Making Things Up"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 52 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 53 papers in archive.
+  - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
   - "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks"
-  - "Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 44 papers in archive.
   - "Robustness over efficiency in climate coalitions: a bistable model and a map of architectures"
   - "Bias-robust causal inference for panel data"
 
 ## 10 most recent papers
+
+### MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination
+- URL: https://paperplaine.com/papers/marc-v1-an-open
+- Category: Computer Science · AI
+- Authors: Saisha Shetty, Satvik Tripathi, Austin Lin et al.
+- arXiv: 2608.13476
+- Plain-English subtitle: Breaking down medical AI decisions into traceable, explainable steps
+- Summary: Researchers built MARC, an open-source system that replaces single black-box AI prompts with teams of specialized agents working together on clinical reasoning tasks. Each agent handles one part of the problem—extracting information, reasoning through it, generating answers, and checking the work—creating a transparent chain where doctors can see exactly where and why the AI reached its conclusion.
+- Why it matters: Hospitals and clinics need to trust AI recommendations before using them in patient care. MARC's step-by-step approach lets doctors pinpoint which agent made an error, rather than staring at an unexplainable final answer. The system also works on regular computers without expensive cloud APIs, and can be configured by clinical staff through simple text files—no programming required—making AI reasoning tools actually usable in real medical settings.
+
+### Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task
+- URL: https://paperplaine.com/papers/conflict-and-congruency-effects
+- Category: Quantitative Biology
+- Authors: Xiaoyang Hu, Mike Angstadt, Shane Storks et al.
+- arXiv: 2608.11510
+- Plain-English subtitle: How AI language models struggle when rules conflict with their training instincts
+- Summary: Large language models show the same conflict effects that human brains do when default behaviors clash with explicit rules—six out of seven tested models performed worse when instructions contradicted their ingrained tendencies. Using attention analysis, researchers found that the models deploy different neural pathways depending on whether the rule agrees or conflicts with their defaults, suggesting these effects come from competition between learned patterns and real-time instructions rather than from a unified decision process.
+- Why it matters: These findings reveal how AI systems make decisions when faced with competing demands, which matters for predicting when they'll follow explicit instructions reliably versus reverting to patterns baked into their training. Understanding this conflict mechanism could improve how we design prompts and fine-tune models to follow rules even when they contradict the model's default behavior—important for safety and reliability in high-stakes applications.
+
+### CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers
+- URL: https://paperplaine.com/papers/cw-bass-v2-saturation
+- Category: Engineering
+- Authors: Ebenezer Tarubinga
+- arXiv: 2608.12773
+- Plain-English subtitle: Knowing when to trust a powerful AI teacher's confident predictions
+- Summary: Modern image-segmentation systems now use exceptionally confident foundation models as teachers, but this creates a new problem: their confidence scores bunch up at the high end, making traditional filtering rules backfire. CW-BASS v2 solves this by automatically detecting when a teacher's confidence has saturated and switching to a different strategy—recovering the performance of hand-tuned systems without manual intervention.
+- Why it matters: Semi-supervised image segmentation powers autonomous vehicles, medical imaging, and robotics—domains where labeled data is scarce and expensive. This method lets engineers deploy foundation models without spending weeks tuning hyperparameters for each new dataset, reducing development time and making these systems practical for real-world applications where strong teachers are now the norm.
 
 ### DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data
 - URL: https://paperplaine.com/papers/dfm-mimir-v1-an
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: AI that learns from raw data, not summaries, to conduct real science
 - Summary: Researchers built OmniScientist, an AI system that conducts scientific research directly from raw images, videos, audio, 3D structures, and other real data—not from prewritten summaries. When tested on 36 real research problems across multiple disciplines, the system completed full research workflows from data to finished manuscript in every case, and outperformed a version that only received simplified numerical summaries in 85% of head-to-head comparisons.
 - Why it matters: Current AI science tools skip the most important step: looking at actual evidence. OmniScientist shows that an AI can only make reliable discoveries if it processes raw data directly, catching subtle patterns and detecting problems that precomputed summaries would hide. This suggests a clearer path to building AI systems that can genuinely accelerate research across fields like biology, physics, and medicine—rather than just automating paperwork.
-
-### Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization
-- URL: https://paperplaine.com/papers/sampling-luck-masquerades-as
-- Category: Mathematics
-- Authors: Jinhyung Bae
-- arXiv: 2608.13087
-- Plain-English subtitle: Why AI solvers' improvements often vanish when properly tested
-- Summary: Researchers discovered that neural optimization solvers report improvements from smarter budget allocation that simply don't exist — they're statistical mirages created by testing on the same data used to find the allocation. When tested fairly on held-out data, the 2–3% gains vanish completely. However, under real-world conditions where data shifts, adaptive allocation does deliver genuine 11–12% gains, but only for some solvers.
-- Why it matters: This finding catches a widespread testing flaw that makes optimization algorithms look better than they are. When companies or researchers evaluate AI solvers this way, they publish fake improvements and waste effort optimizing something that doesn't work. The authors provide a correction procedure and checklist so future evaluations don't repeat this error — and show where real gains actually hide.
-
-### Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks
-- URL: https://paperplaine.com/papers/heterogeneity-aware-belief-synchronization
-- Category: Engineering
-- Authors: Muhammad Hannan Akram, Muhammad Abubakar Rashid, Wassi Haider Kabir et al.
-- arXiv: 2608.13394
-- Plain-English subtitle: Getting AI agents across satellites and drones to understand each other
-- Summary: Next-generation 6G networks will connect thousands of AI agents spread across satellites, drones, and ground devices that each learn differently and operate under different constraints. A new framework lets these mismatched AI systems understand each other's messages without being rebuilt to work together, by translating belief updates only when needed through shared edge servers. Tests show the approach keeps communication costs low while maintaining accurate shared understanding across the network.
-- Why it matters: As 6G networks become intelligence platforms rather than just pipes for data, coordinating thousands of heterogeneous AI agents becomes critical — from disaster response networks combining satellite imagery with drone sensors to autonomous vehicle fleets sharing road conditions. This framework removes the bottleneck of having to retrain or redesign every agent to match others, making it practical to deploy diverse AI systems that must work together without constant synchronization overhead or privacy exposure.
-
-### Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration
-- URL: https://paperplaine.com/papers/sparse-orthogonal-regression-technique
-- Category: Computer Science · AI
-- Authors: Sabin Roman, Ljupco Todorovski, Saso Dzeroski
-- arXiv: 2608.13504
-- Plain-English subtitle: A new way to discover equations hidden in messy, real-world data
-- Summary: Researchers created SORT, a technique that learns mathematical equations directly from noisy, irregularly collected measurements by representing patterns in a carefully chosen coordinate system. Unlike existing methods that pick from fixed libraries of equations, SORT first captures the underlying structure as a compact mathematical expansion, then uses that to find simpler analytic forms—and works better when the usual equation libraries are incomplete or misleading.
-- Why it matters: Scientists constantly need to reverse-engineer equations from experimental data—from climate models to drug metabolism to mechanical systems. SORT handles the messy realities of real measurements (noise, gaps, sampling errors) better than existing tools, and shifts the burden from brittle trial-and-error selection to intentional design of the mathematical framework. The same learned representation also enables fast approximation and calculation of complex integrals, making it useful across system modeling, prediction, and simulation.
 
 ## About
 
