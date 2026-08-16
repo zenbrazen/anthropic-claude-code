@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 629 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 631 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,34 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification
+Subtitle: Teaching AI to pick the right tool for each image it sees
+URL: https://paperplaine.com/papers/mllm-routed-heterogeneous-ensembles
+Category: Computer Science · AI
+Authors: Daniel Perkins, John Squires, Janou Milligan et al.
+arXiv ID: 2608.13463
+arXiv URL: https://arxiv.org/abs/2608.13463
+Posted: 2026-08-16
+
+Summary: A new system called ARMDIL uses a language model to decide which type of image-recognition AI should analyze each photo, rather than forcing all images through the same model. The system combines three different AI approaches—each with different strengths—and routes incoming images to whichever one is best suited to that particular picture. It works nearly as well as custom-built routers while being far easier to update and explain.
+
+Why it matters: Current image recognition systems either excel at one specific task or struggle when handling diverse, unpredictable images from the real world. ARMDIL makes AI vision systems more flexible and reliable for general-purpose applications like robots and AI assistants that need to understand images from many different sources and conditions. It also produces explanations for its decisions in plain language, making it easier for people to understand why the system gave a particular answer.
+
+---
+Title: Retained hidden excess generates memory in price-limited markets
+Subtitle: How hidden price movements create predictable stock patterns
+URL: https://paperplaine.com/papers/retained-hidden-excess-generates
+Category: Quantitative Finance
+Authors: Debraj Das
+arXiv ID: 2608.08625
+arXiv URL: https://arxiv.org/abs/2608.08625
+Posted: 2026-08-16
+
+Summary: When stock exchanges cap daily price swings, the excess movement that gets cut off doesn't disappear—part of it bleeds into the next day, creating predictable patterns even though each day's shocks are independent. This hidden carryover makes stocks more likely to hit the same price limit again the next day, and when they do, the effect is proportional to how wide the price limit band is.
+
+Why it matters: In markets with price limits (common in Asia and during crises), traders can exploit this momentum to predict which direction a stock will move after hitting a limit. Understanding this mechanism helps regulators design better circuit breakers and helps investors avoid being caught off guard by what looks like random volatility but actually follows a predictable pattern tied to how wide the price bands are set.
 
 ---
 Title: MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination
