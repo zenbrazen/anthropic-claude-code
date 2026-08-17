@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 631 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 634 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 216 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 217 papers in archive.
+  - "A Survey of Large Models in Sports"
   - "MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification"
-  - "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 51 papers in archive.
   - "LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles"
   - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 53 papers in archive.
   - "Ambient unitaries don't enable shallow group designs"
   - "Experimental Quantum Key Distribution in an Indefinite Causal Order"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 52 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 53 papers in archive.
+  - "Optimizing bounds for energy-constrained optimal cooling problems in two dimensions"
   - "Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization"
-  - "Threshold Structure of Optimal Policies in Restart POMDPs"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 53 papers in archive.
   - "Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task"
   - "The Rosetta Stone and Levels of Principled Inference to the Experience of Another Mind"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 53 papers in archive.
   - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
   - "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 44 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 45 papers in archive.
+  - "Does life-satisfaction inequality measure societal inequality? A focal-value-rounding critique"
   - "Robustness over efficiency in climate coalitions: a bistable model and a map of architectures"
-  - "Bias-robust causal inference for panel data"
 
 ## 10 most recent papers
+
+### A Survey of Large Models in Sports
+- URL: https://paperplaine.com/papers/a-survey-of-large
+- Category: Computer Science · AI
+- Authors: Yichen Xu, Jianzhe Ma, Chuhan Wang et al.
+- arXiv: 2608.14377
+- Plain-English subtitle: How AI language models are transforming sports analysis and fan engagement
+- Summary: Large language models and multimodal AI systems are being deployed across sports to analyze games, predict outcomes, and enhance fan experiences. This survey catalogues over 100 applications—from real-time commentary generation to injury prediction—and identifies the datasets and benchmarks powering this emerging field.
+- Why it matters: Sports organizations already use AI for strategy and scouting; this research maps exactly where large language models create value versus where they fall short. Teams, broadcasters, and app developers can use this guide to invest in the AI tools most likely to improve performance or engagement rather than chasing overhyped applications. The field is still fragmented across different datasets and benchmarks, so this consolidation work helps prevent duplicated effort and wasted resources.
+
+### Optimizing bounds for energy-constrained optimal cooling problems in two dimensions
+- URL: https://paperplaine.com/papers/optimizing-bounds-for-energy
+- Category: Mathematics
+- Authors: Pedro Blöss Braga, Giovanni Fantuzzi
+- arXiv: 2608.14334
+- Plain-English subtitle: Finding the limits of how fast fluid can cool with limited energy
+- Summary: Researchers proved mathematical upper bounds on how efficiently a fluid can cool a region when given a fixed energy budget to drive the flow. For most geometries, cooling efficiency scales roughly with the square of the energy available; in circular domains, adding a logarithmic correction shows cooling improves more slowly than previously thought.
+- Why it matters: These bounds establish what's theoretically possible for cooling systems, giving engineers and designers a precise target for optimization. Knowing these limits helps distinguish between genuinely impossible designs and those that simply haven't been found yet—making research and development efforts more efficient by ruling out dead ends.
+
+### Does life-satisfaction inequality measure societal inequality? A focal-value-rounding critique
+- URL: https://paperplaine.com/papers/does-life-satisfaction-inequality
+- Category: Economics
+- Authors: C. P. Barrington-Leigh
+- arXiv: 2608.12667
+- Plain-English subtitle: Why happiness surveys may be measuring rounding habits, not actual inequality
+- Summary: When people rate their life satisfaction on 0–10 scales, many simplify their answer by choosing only 0, 5, or 10—a pattern that distorts measurements of inequality across countries. This "focal-value rounding" inflates measured inequality by about half the typical cross-country range, yet because the distortion is similar everywhere, country rankings survive mostly intact.
+- Why it matters: Researchers use life-satisfaction inequality as a way to measure whether societies are truly unequal in how well people live. If the metric is partly contaminated by how people round their answers rather than genuine differences in wellbeing, policy makers and economists could be acting on incomplete information—though this study shows the damage may be less severe than feared, since the distortion affects all countries roughly the same way.
 
 ### MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification
 - URL: https://paperplaine.com/papers/mllm-routed-heterogeneous-ensembles
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI struggles to test hidden dangers in self-driving car software
 - Summary: Researchers asked AI models to automatically create test programs that could confirm exploitable weaknesses in Autoware, an open-source autonomous vehicle system. The AI successfully generated candidate test harnesses, but only 64% compiled on the first try, and ultimately none revealed genuine vulnerabilities—not because the AI couldn't identify weak points, but because integrating those tests into the massive, interdependent codebase proved vastly harder than generating the tests themselves.
 - Why it matters: Autonomous vehicles must be rigorously tested for security flaws that could affect steering, braking, and safety-critical decisions. This work reveals that the bottleneck isn't finding weaknesses or writing test code—it's the engineering overhead of actually running those tests against real production software. The finding redirects attention from AI capability to the real barrier: building testing infrastructure that works with complex vehicle software stacks.
-
-### Ambient unitaries don't enable shallow group designs
-- URL: https://paperplaine.com/papers/ambient-unitaries-don-t
-- Category: Physics
-- Authors: Maxwell West, M. Cerezo, Martin Larocca
-- arXiv: 2608.13528
-- Plain-English subtitle: Why quantum shortcuts can't fake random unitaries
-- Summary: Quantum computers need to generate random quantum operations for testing and calibration, but a new proof shows that shallow circuits—the speediest option—fundamentally cannot do this job for several important classes of operations. Even when you allow extra helper qubits and operations beyond the target group, the mathematical obstacle remains: you need circuit depth that grows with system size, not shrinks.
-- Why it matters: Quantum engineers use random unitary sampling to benchmark hardware and validate quantum algorithms. This result means those benchmarking protocols will require substantially deeper circuits than researchers hoped, adding significant overhead to the time and resources needed to verify that quantum computers are working correctly.
-
-### QuoteBench: How Matched Scores Can Hide Command-Path Failures
-- URL: https://paperplaine.com/papers/quotebench-how-matched-scores
-- Category: Computer Science · AI
-- Authors: Shangao Li, Yao Zhang, Volker Tresp et al.
-- arXiv: 2608.13547
-- Plain-English subtitle: Why AI coding agents' test scores don't measure what actually happens
-- Summary: When AI systems issue computer commands, the score measuring their success can hide massive failures that happen after the AI generates its answer. Researchers built QuoteBench to separate problems caused by the AI itself from problems introduced by how the system processes and executes those commands—and found that one AI model's apparent 3.6-point deficit actually concealed a 64.3-point gap masked by compensating errors elsewhere.
-- Why it matters: AI coding agents are being deployed to write and run real commands on servers. If their test scores don't reflect actual execution failures, teams deploying these systems won't know when they're truly unreliable. This research shows that standard benchmarks can rank models backwards depending on how commands are processed, potentially leading organizations to trust agents that fail more often than measured.
-
-### Defensive Boosting for Online Probabilistic Forecasting
-- URL: https://paperplaine.com/papers/defensive-boosting-for-online
-- Category: Statistics
-- Authors: Georgy Noarov, Aaron Roth
-- arXiv: 2608.13554
-- Plain-English subtitle: A smarter way to predict when conditions are uncertain or adversarial
-- Summary: Researchers developed a forecasting algorithm that works well in two different scenarios—when you have good weak predictors available, and when you don't—without needing to choose which one beforehand. The method uses 10 to 100 times less computation than existing approaches while maintaining strong accuracy on both real and synthetic data streams.
-- Why it matters: Many real-world prediction tasks face uncertain conditions where you don't know upfront whether your available tools will work well. This algorithm handles both cases simultaneously, making it practical for financial forecasting, weather prediction, and fraud detection systems that can't afford to fail or slow down when assumptions break down.
 
 ## About
 
