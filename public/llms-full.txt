@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 634 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 637 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-17
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Split the Labor: Separating Evidence Interpretation from Decision Aggregation
+Subtitle: Why asking AI to read many sources at once often gets the math wrong
+URL: https://paperplaine.com/papers/split-the-labor-separating
+Category: Computer Science · AI
+Authors: Zhelun Wu
+arXiv ID: 2608.14509
+arXiv URL: https://arxiv.org/abs/2608.14509
+Posted: 2026-08-17
+
+Summary: When language models combine information from multiple sources to make decisions, they typically process everything together in one prompt—which conflates two separate problems that need different solutions. Researchers separated these tasks (interpreting individual sources versus aggregating their conclusions) and found that current systems suffer from "count-scale drift," where the decision threshold effectively shifts depending on how many sources are consulted. Using calibrated log-likelihood ratios instead of simple vote-counting fixes this problem across multiple types of AI systems, improving performance to 0.921 AUPRC from 0.805 on a medical prediction task.
+
+Why it matters: AI systems that combine evidence from multiple sources—medical diagnosis panels, content moderation systems, autonomous decision engines—currently make systematically different decisions depending on how many sources they consult, even when the actual evidence hasn't changed. This fix is purely mathematical and applies immediately to existing systems without architectural changes, potentially improving reliability in high-stakes domains where consistent decision-making is critical.
+
+---
+Title: Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary
+Subtitle: Combining two different detection methods to spot fake data more reliably
+URL: https://paperplaine.com/papers/revisiting-energy-based-tabular
+Category: Statistics
+Authors: Junichiro Niimi
+arXiv ID: 2608.14186
+arXiv URL: https://arxiv.org/abs/2608.14186
+Posted: 2026-08-17
+
+Summary: A decades-old machine learning technique called Deep Boltzmann Machines can reliably detect unusual patterns in spreadsheet-like data, and when paired with modern neural networks, it catches anomalies the network alone would miss. On two real-world datasets, this combination improved detection accuracy by 1.4% and 0.2% respectively—gains that held up across dozens of test runs.
+
+Why it matters: Spotting fraudulent transactions, network intrusions, or equipment failures in databases matters enormously for banks, security teams, and manufacturers. Current tools rely almost entirely on one detection approach, leaving blind spots. This work shows that dusting off an older technique and combining it with modern methods fills those gaps, making anomaly detection measurably more reliable without needing to retrain existing systems.
+
+---
+Title: Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States
+Subtitle: When quantum learning gets hard, it proves cryptography must work
+URL: https://paperplaine.com/papers/equivalence-between-average-case
+Category: Computer Science
+Authors: Alexandru Cojocaru, Laura Lewis
+arXiv ID: 2608.14331
+arXiv URL: https://arxiv.org/abs/2608.14331
+Posted: 2026-08-17
+
+Summary: Researchers proved that learning quantum systems becomes hard on average if and only if certain types of unbreakable quantum codes exist. This equivalence—the first proven for mixed quantum states—closes a gap between quantum cryptography and quantum learning theory that has puzzled computer scientists.
+
+Why it matters: Quantum computers threaten current encryption, making it urgent to understand what quantum systems can and cannot do. This result provides a formal bridge between two major areas of quantum computing, helping researchers design quantum-safe cryptographic systems and understand the fundamental limits of what quantum computers can learn about hidden information.
 
 ---
 Title: A Survey of Large Models in Sports

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 634 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 637 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 217 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 218 papers in archive.
+  - "Split the Labor: Separating Evidence Interpretation from Decision Aggregation"
   - "A Survey of Large Models in Sports"
-  - "MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 51 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 52 papers in archive.
+  - "Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States"
   - "LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles"
-  - "SoK: Cryptographic Key Recovery for Cryptoasset Custody and Financial Technologies"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 53 papers in archive.
   - "Ambient unitaries don't enable shallow group designs"
   - "Experimental Quantum Key Distribution in an Indefinite Causal Order"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 55 papers in archive.
   - "Retained hidden excess generates memory in price-limited markets"
   - "FlowLOB: Efficient and Controllable Limit Order Book Generation with Flow Matching"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 54 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 55 papers in archive.
+  - "Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary"
   - "Defensive Boosting for Online Probabilistic Forecasting"
-  - "A Quantum/Classical Example Oracle Separation for Making Things Up"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 53 papers in archive.
   - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
   - "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Robustness over efficiency in climate coalitions: a bistable model and a map of architectures"
 
 ## 10 most recent papers
+
+### Split the Labor: Separating Evidence Interpretation from Decision Aggregation
+- URL: https://paperplaine.com/papers/split-the-labor-separating
+- Category: Computer Science · AI
+- Authors: Zhelun Wu
+- arXiv: 2608.14509
+- Plain-English subtitle: Why asking AI to read many sources at once often gets the math wrong
+- Summary: When language models combine information from multiple sources to make decisions, they typically process everything together in one prompt—which conflates two separate problems that need different solutions. Researchers separated these tasks (interpreting individual sources versus aggregating their conclusions) and found that current systems suffer from "count-scale drift," where the decision threshold effectively shifts depending on how many sources are consulted. Using calibrated log-likelihood ratios instead of simple vote-counting fixes this problem across multiple types of AI systems, improving performance to 0.921 AUPRC from 0.805 on a medical prediction task.
+- Why it matters: AI systems that combine evidence from multiple sources—medical diagnosis panels, content moderation systems, autonomous decision engines—currently make systematically different decisions depending on how many sources they consult, even when the actual evidence hasn't changed. This fix is purely mathematical and applies immediately to existing systems without architectural changes, potentially improving reliability in high-stakes domains where consistent decision-making is critical.
+
+### Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary
+- URL: https://paperplaine.com/papers/revisiting-energy-based-tabular
+- Category: Statistics
+- Authors: Junichiro Niimi
+- arXiv: 2608.14186
+- Plain-English subtitle: Combining two different detection methods to spot fake data more reliably
+- Summary: A decades-old machine learning technique called Deep Boltzmann Machines can reliably detect unusual patterns in spreadsheet-like data, and when paired with modern neural networks, it catches anomalies the network alone would miss. On two real-world datasets, this combination improved detection accuracy by 1.4% and 0.2% respectively—gains that held up across dozens of test runs.
+- Why it matters: Spotting fraudulent transactions, network intrusions, or equipment failures in databases matters enormously for banks, security teams, and manufacturers. Current tools rely almost entirely on one detection approach, leaving blind spots. This work shows that dusting off an older technique and combining it with modern methods fills those gaps, making anomaly detection measurably more reliable without needing to retrain existing systems.
+
+### Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States
+- URL: https://paperplaine.com/papers/equivalence-between-average-case
+- Category: Computer Science
+- Authors: Alexandru Cojocaru, Laura Lewis
+- arXiv: 2608.14331
+- Plain-English subtitle: When quantum learning gets hard, it proves cryptography must work
+- Summary: Researchers proved that learning quantum systems becomes hard on average if and only if certain types of unbreakable quantum codes exist. This equivalence—the first proven for mixed quantum states—closes a gap between quantum cryptography and quantum learning theory that has puzzled computer scientists.
+- Why it matters: Quantum computers threaten current encryption, making it urgent to understand what quantum systems can and cannot do. This result provides a formal bridge between two major areas of quantum computing, helping researchers design quantum-safe cryptographic systems and understand the fundamental limits of what quantum computers can learn about hidden information.
 
 ### A Survey of Large Models in Sports
 - URL: https://paperplaine.com/papers/a-survey-of-large
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI language models struggle when rules conflict with their training instincts
 - Summary: Large language models show the same conflict effects that human brains do when default behaviors clash with explicit rules—six out of seven tested models performed worse when instructions contradicted their ingrained tendencies. Using attention analysis, researchers found that the models deploy different neural pathways depending on whether the rule agrees or conflicts with their defaults, suggesting these effects come from competition between learned patterns and real-time instructions rather than from a unified decision process.
 - Why it matters: These findings reveal how AI systems make decisions when faced with competing demands, which matters for predicting when they'll follow explicit instructions reliably versus reverting to patterns baked into their training. Understanding this conflict mechanism could improve how we design prompts and fine-tune models to follow rules even when they contradict the model's default behavior—important for safety and reliability in high-stakes applications.
-
-### CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers
-- URL: https://paperplaine.com/papers/cw-bass-v2-saturation
-- Category: Engineering
-- Authors: Ebenezer Tarubinga
-- arXiv: 2608.12773
-- Plain-English subtitle: Knowing when to trust a powerful AI teacher's confident predictions
-- Summary: Modern image-segmentation systems now use exceptionally confident foundation models as teachers, but this creates a new problem: their confidence scores bunch up at the high end, making traditional filtering rules backfire. CW-BASS v2 solves this by automatically detecting when a teacher's confidence has saturated and switching to a different strategy—recovering the performance of hand-tuned systems without manual intervention.
-- Why it matters: Semi-supervised image segmentation powers autonomous vehicles, medical imaging, and robotics—domains where labeled data is scarce and expensive. This method lets engineers deploy foundation models without spending weeks tuning hyperparameters for each new dataset, reducing development time and making these systems practical for real-world applications where strong teachers are now the norm.
-
-### DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data
-- URL: https://paperplaine.com/papers/dfm-mimir-v1-an
-- Category: Computer Science · AI
-- Authors: Peter Schneider-Kamp, Jacob Nielsen, Gianluca Barmina et al.
-- arXiv: 2608.13517
-- Plain-English subtitle: Building a powerful AI model using only ethically sourced training data
-- Summary: Researchers created Mimir v1, a 1-billion-parameter language model trained entirely on permissible datasets, and showed it performs as well as models twice its size. The model sets a new benchmark for Danish language tasks and matches larger competitors across 20 different tests covering English, math, code, and Danish—all without relying on scraped or questionable data sources.
-- Why it matters: Most cutting-edge language models train on massive datasets of unclear origin, creating legal and ethical risks. Mimir v1 proves you can build competitive AI using only legally permissible data, potentially opening doors for researchers and companies who want powerful models without copyright or privacy concerns. The model is freely available, lowering barriers for smaller teams and non-English-speaking communities to develop their own language AI.
-
-### LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles
-- URL: https://paperplaine.com/papers/llm-assisted-dynamic-threat
-- Category: Computer Science
-- Authors: Md Wasiul Haque, Sagar Dasgupta, Mizanur Rahman et al.
-- arXiv: 2608.13450
-- Plain-English subtitle: Why AI struggles to test hidden dangers in self-driving car software
-- Summary: Researchers asked AI models to automatically create test programs that could confirm exploitable weaknesses in Autoware, an open-source autonomous vehicle system. The AI successfully generated candidate test harnesses, but only 64% compiled on the first try, and ultimately none revealed genuine vulnerabilities—not because the AI couldn't identify weak points, but because integrating those tests into the massive, interdependent codebase proved vastly harder than generating the tests themselves.
-- Why it matters: Autonomous vehicles must be rigorously tested for security flaws that could affect steering, braking, and safety-critical decisions. This work reveals that the bottleneck isn't finding weaknesses or writing test code—it's the engineering overhead of actually running those tests against real production software. The finding redirects attention from AI capability to the real barrier: building testing infrastructure that works with complex vehicle software stacks.
 
 ## About
 

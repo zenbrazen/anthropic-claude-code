@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 07:52:19 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 19:22:24 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Split the Labor: Separating Evidence Interpretation from Decision Aggregation</title>
+      <link>https://paperplaine.com/papers/split-the-labor-separating</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/split-the-labor-separating</guid>
+      <pubDate>Fri, 14 Aug 2026 17:24:55 GMT</pubDate>
+      <author>Zhelun Wu</author>
+      <category>AI</category>
+      <description>Why asking AI to read many sources at once often gets the math wrong</description>
+      <content:encoded><![CDATA[<p><em>Why asking AI to read many sources at once often gets the math wrong</em></p><p>When language models combine information from multiple sources to make decisions, they typically process everything together in one prompt—which conflates two separate problems that need different solutions. Researchers separated these tasks (interpreting individual sources versus aggregating their conclusions) and found that current systems suffer from "count-scale drift," where the decision threshold effectively shifts depending on how many sources are consulted. Using calibrated log-likelihood ratios instead of simple vote-counting fixes this problem across multiple types of AI systems, improving performance to 0.921 AUPRC from 0.805 on a medical prediction task.</p><p><strong>Why it matters:</strong> AI systems that combine evidence from multiple sources—medical diagnosis panels, content moderation systems, autonomous decision engines—currently make systematically different decisions depending on how many sources they consult, even when the actual evidence hasn't changed. This fix is purely mathematical and applies immediately to existing systems without architectural changes, potentially improving reliability in high-stakes domains where consistent decision-making is critical.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary</title>
+      <link>https://paperplaine.com/papers/revisiting-energy-based-tabular</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/revisiting-energy-based-tabular</guid>
+      <pubDate>Fri, 14 Aug 2026 11:04:02 GMT</pubDate>
+      <author>Junichiro Niimi</author>
+      <category>Statistics</category>
+      <description>Combining two different detection methods to spot fake data more reliably</description>
+      <content:encoded><![CDATA[<p><em>Combining two different detection methods to spot fake data more reliably</em></p><p>A decades-old machine learning technique called Deep Boltzmann Machines can reliably detect unusual patterns in spreadsheet-like data, and when paired with modern neural networks, it catches anomalies the network alone would miss. On two real-world datasets, this combination improved detection accuracy by 1.4% and 0.2% respectively—gains that held up across dozens of test runs.</p><p><strong>Why it matters:</strong> Spotting fraudulent transactions, network intrusions, or equipment failures in databases matters enormously for banks, security teams, and manufacturers. Current tools rely almost entirely on one detection approach, leaving blind spots. This work shows that dusting off an older technique and combining it with modern methods fills those gaps, making anomaly detection measurably more reliable without needing to retrain existing systems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States</title>
+      <link>https://paperplaine.com/papers/equivalence-between-average-case</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/equivalence-between-average-case</guid>
+      <pubDate>Fri, 14 Aug 2026 14:20:46 GMT</pubDate>
+      <author>Alexandru Cojocaru, Laura Lewis</author>
+      <category>Comp Sci</category>
+      <description>When quantum learning gets hard, it proves cryptography must work</description>
+      <content:encoded><![CDATA[<p><em>When quantum learning gets hard, it proves cryptography must work</em></p><p>Researchers proved that learning quantum systems becomes hard on average if and only if certain types of unbreakable quantum codes exist. This equivalence—the first proven for mixed quantum states—closes a gap between quantum cryptography and quantum learning theory that has puzzled computer scientists.</p><p><strong>Why it matters:</strong> Quantum computers threaten current encryption, making it urgent to understand what quantum systems can and cannot do. This result provides a formal bridge between two major areas of quantum computing, helping researchers design quantum-safe cryptographic systems and understand the fundamental limits of what quantum computers can learn about hidden information.</p>]]></content:encoded>
+    </item>
     <item>
       <title>A Survey of Large Models in Sports</title>
       <link>https://paperplaine.com/papers/a-survey-of-large</link>
