@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 640 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 643 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 219 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 220 papers in archive.
+  - "Quipu: A Governed Bitemporal Knowledge Graph Store"
   - "Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text"
-  - "Split the Labor: Separating Evidence Interpretation from Decision Aggregation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 52 papers in archive.
   - "Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States"
   - "LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 54 papers in archive.
   - "Order-Sensitive Fast-Synapse Limits in Sparse Excitatory-Inhibitory Threshold-Reset Networks"
   - "Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 55 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 56 papers in archive.
+  - "Is the medium the message? Social disclosure channels and firm risk"
   - "Retained hidden excess generates memory in price-limited markets"
-  - "FlowLOB: Efficient and Controllable Limit Order Book Generation with Flow Matching"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 55 papers in archive.
   - "Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary"
   - "Defensive Boosting for Online Probabilistic Forecasting"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 53 papers in archive.
   - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
   - "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 45 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 46 papers in archive.
+  - "A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior"
   - "Does life-satisfaction inequality measure societal inequality? A focal-value-rounding critique"
-  - "Robustness over efficiency in climate coalitions: a bistable model and a map of architectures"
 
 ## 10 most recent papers
+
+### Quipu: A Governed Bitemporal Knowledge Graph Store
+- URL: https://paperplaine.com/papers/quipu-a-governed-bitemporal
+- Category: Computer Science · AI
+- Authors: Steve Brown
+- arXiv: 2608.16813
+- Plain-English subtitle: A database that keeps AI agents honest about what they write
+- Summary: When AI agents write data to knowledge graphs, existing databases use outdated rules designed for human curators: they accept writes first and check them later, trust all writers equally, and keep minimal history. Quipu inverts this approach, forcing every write through a governance gate before acceptance, tracking complete time histories with trust labels, and treating governance rules themselves as queryable facts—catching all six planted defects in testing versus zero catches in ungated systems.
+- Why it matters: As AI systems increasingly generate and share information autonomously, the stakes of unchecked writes grow. Quipu makes governance verifiable through audit trails that live inside the database itself, so organizations can answer "Did this agent follow our rules?" as a simple query rather than manual forensics. Testing shows it answers all real governance questions correctly while reducing false claims by up to 87.5% compared to baseline approaches.
+
+### Is the medium the message? Social disclosure channels and firm risk
+- URL: https://paperplaine.com/papers/is-the-medium-the
+- Category: Quantitative Finance
+- Authors: Andreas G. F. Hoepner, Blerita Korca, Frank Schiemann et al.
+- arXiv: 2608.15212
+- Plain-English subtitle: Where companies announce social issues shapes how investors view risk
+- Summary: Companies that disclose social and labor issues for the first time through SEC filings see their stock risk increase, while ongoing disclosures in sustainability reports lower risk. The channel matters as much as the message: unexpected information published in SEC filings signals genuine news, whereas routine updates in dedicated sustainability reports reassure investors.
+- Why it matters: Investors trade billions based on how they perceive company risk, and this research shows that the same social disclosure can either alarm or comfort investors depending on where it appears. Companies planning to disclose social problems face a real choice: burying new concerns in standard SEC filings will likely spook markets, while establishing regular sustainability reporting and integrating disclosure into financial reports can actually reduce perceived risk. Regulators and investors should treat first-time SEC social disclosures as material signals worth attention.
+
+### A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior
+- URL: https://paperplaine.com/papers/a-neurofinance-framework-for
+- Category: Economics
+- Authors: Pascal Stiefenhofer
+- arXiv: 2608.14930
+- Plain-English subtitle: How your brain's valuation shifts your sense of financial time
+- Summary: The way your brain evaluates investments physically reshapes your subjective experience of time—meaning two financially identical choices can feel different lengths depending on neural activity. Brain imaging of 1,183 investment decisions revealed that when neural valuation states diverge, people subsequently make different financial choices, even when the objective facts stay the same.
+- Why it matters: Standard financial models assume people experience time the same way regardless of what they're deciding. This research shows the brain actually stretches or compresses financial time based on valuation activity, which could explain why investors make inconsistent choices between mathematically equivalent options and why the same delay feels different in different emotional states.
 
 ### Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text
 - URL: https://paperplaine.com/papers/towards-computational-provenance-carrying
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI language models are transforming sports analysis and fan engagement
 - Summary: Large language models and multimodal AI systems are being deployed across sports to analyze games, predict outcomes, and enhance fan experiences. This survey catalogues over 100 applications—from real-time commentary generation to injury prediction—and identifies the datasets and benchmarks powering this emerging field.
 - Why it matters: Sports organizations already use AI for strategy and scouting; this research maps exactly where large language models create value versus where they fall short. Teams, broadcasters, and app developers can use this guide to invest in the AI tools most likely to improve performance or engagement rather than chasing overhyped applications. The field is still fragmented across different datasets and benchmarks, so this consolidation work helps prevent duplicated effort and wasted resources.
-
-### Optimizing bounds for energy-constrained optimal cooling problems in two dimensions
-- URL: https://paperplaine.com/papers/optimizing-bounds-for-energy
-- Category: Mathematics
-- Authors: Pedro Blöss Braga, Giovanni Fantuzzi
-- arXiv: 2608.14334
-- Plain-English subtitle: Finding the limits of how fast fluid can cool with limited energy
-- Summary: Researchers proved mathematical upper bounds on how efficiently a fluid can cool a region when given a fixed energy budget to drive the flow. For most geometries, cooling efficiency scales roughly with the square of the energy available; in circular domains, adding a logarithmic correction shows cooling improves more slowly than previously thought.
-- Why it matters: These bounds establish what's theoretically possible for cooling systems, giving engineers and designers a precise target for optimization. Knowing these limits helps distinguish between genuinely impossible designs and those that simply haven't been found yet—making research and development efforts more efficient by ruling out dead ends.
-
-### Does life-satisfaction inequality measure societal inequality? A focal-value-rounding critique
-- URL: https://paperplaine.com/papers/does-life-satisfaction-inequality
-- Category: Economics
-- Authors: C. P. Barrington-Leigh
-- arXiv: 2608.12667
-- Plain-English subtitle: Why happiness surveys may be measuring rounding habits, not actual inequality
-- Summary: When people rate their life satisfaction on 0–10 scales, many simplify their answer by choosing only 0, 5, or 10—a pattern that distorts measurements of inequality across countries. This "focal-value rounding" inflates measured inequality by about half the typical cross-country range, yet because the distortion is similar everywhere, country rankings survive mostly intact.
-- Why it matters: Researchers use life-satisfaction inequality as a way to measure whether societies are truly unequal in how well people live. If the metric is partly contaminated by how people round their answers rather than genuine differences in wellbeing, policy makers and economists could be acting on incomplete information—though this study shows the damage may be less severe than feared, since the distortion affects all countries roughly the same way.
-
-### MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification
-- URL: https://paperplaine.com/papers/mllm-routed-heterogeneous-ensembles
-- Category: Computer Science · AI
-- Authors: Daniel Perkins, John Squires, Janou Milligan et al.
-- arXiv: 2608.13463
-- Plain-English subtitle: Teaching AI to pick the right tool for each image it sees
-- Summary: A new system called ARMDIL uses a language model to decide which type of image-recognition AI should analyze each photo, rather than forcing all images through the same model. The system combines three different AI approaches—each with different strengths—and routes incoming images to whichever one is best suited to that particular picture. It works nearly as well as custom-built routers while being far easier to update and explain.
-- Why it matters: Current image recognition systems either excel at one specific task or struggle when handling diverse, unpredictable images from the real world. ARMDIL makes AI vision systems more flexible and reliable for general-purpose applications like robots and AI assistants that need to understand images from many different sources and conditions. It also produces explanations for its decisions in plain language, making it easier for people to understand why the system gave a particular answer.
 
 ## About
 
