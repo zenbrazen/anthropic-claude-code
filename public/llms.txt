@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 643 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 646 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 220 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 221 papers in archive.
+  - "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation"
   - "Quipu: A Governed Bitemporal Knowledge Graph Store"
-  - "Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 52 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 53 papers in archive.
+  - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
   - "Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States"
-  - "LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 54 papers in archive.
   - "Spectral Edge Rigidity of Quantum Chaotic States"
   - "Ambient unitaries don't enable shallow group designs"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 53 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 54 papers in archive.
+  - "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform"
   - "Optimizing bounds for energy-constrained optimal cooling problems in two dimensions"
-  - "Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 54 papers in archive.
   - "Order-Sensitive Fast-Synapse Limits in Sparse Excitatory-Inhibitory Threshold-Reset Networks"
   - "Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Does life-satisfaction inequality measure societal inequality? A focal-value-rounding critique"
 
 ## 10 most recent papers
+
+### From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation
+- URL: https://paperplaine.com/papers/from-corpora-to-co
+- Category: Computer Science · AI
+- Authors: Xingjian Wang, Zhao Wang, Taihang Hu et al.
+- arXiv: 2608.18076
+- Plain-English subtitle: Building image generators by teaching skills in the right order
+- Summary: Researchers built a new system for training image-generation AI that organizes training data around learning dependencies—teaching fundamental skills before advanced ones—rather than treating each task separately. The approach created a 440-million-image dataset and produced models that handle text-to-image generation and image editing with broader visual coverage and better skill transfer than conventional methods.
+- Why it matters: Image generators trained this way perform better across multiple tasks without needing separate specialized models, reducing computational waste and engineering overhead. This suggests that how data is sequenced during training matters as much as the data itself—a finding that could improve efficiency in training other large AI systems.
+
+### The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform
+- URL: https://paperplaine.com/papers/the-geometric-laplace-transform
+- Category: Mathematics
+- Authors: Manel Velasco, Arnau Dòria-Cerezo, Isiah Zaplana
+- arXiv: 2608.18043
+- Plain-English subtitle: Extending a classic math tool to work with geometric algebra
+- Summary: Researchers have defined the Laplace transform—a fundamental mathematical tool for solving differential equations—to work within geometric algebra, a system that handles multidimensional spaces and rotations. This extension applies to geometric algebras with signature 5 or lower, filling a gap needed for modeling and controlling real-world systems like electrical circuits.
+- Why it matters: Engineers designing electrical circuits and other dynamical systems increasingly want to use geometric algebra because it naturally represents rotations and multidimensional transformations. Without a properly defined Laplace transform in this framework, they have to convert between different mathematical systems, losing efficiency and clarity. This work removes that barrier, letting engineers stay within geometric algebra from problem setup through solution.
+
+### Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models
+- URL: https://paperplaine.com/papers/diff-ddos-realistic-cyber
+- Category: Computer Science
+- Authors: Bilal Hussain, Xiao Tang, Qinghe Du et al.
+- arXiv: 2608.17796
+- Plain-English subtitle: Making DDoS attack detectors work with realistic threats instead of fake ones
+- Summary: Current AI systems that catch DDoS attacks on 5G networks fail badly when facing real attacks, losing 47 to 100 percent accuracy. Researchers built a new tool using diffusion models to create realistic fake attacks, then used those to train detectors until they stayed accurate against the real thing—recovering 79 to 100 percent accuracy depending on attack type.
+- Why it matters: 5G networks power critical infrastructure like hospitals and power grids. Today's DDoS detectors are brittle and collapse when attackers adapt their methods slightly, creating serious security gaps. This technique lets companies test and harden their defenses against realistic attacks before deployment, rather than discovering failures during an actual breach.
 
 ### Quipu: A Governed Bitemporal Knowledge Graph Store
 - URL: https://paperplaine.com/papers/quipu-a-governed-bitemporal
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why asking AI to read many sources at once often gets the math wrong
 - Summary: When language models combine information from multiple sources to make decisions, they typically process everything together in one prompt—which conflates two separate problems that need different solutions. Researchers separated these tasks (interpreting individual sources versus aggregating their conclusions) and found that current systems suffer from "count-scale drift," where the decision threshold effectively shifts depending on how many sources are consulted. Using calibrated log-likelihood ratios instead of simple vote-counting fixes this problem across multiple types of AI systems, improving performance to 0.921 AUPRC from 0.805 on a medical prediction task.
 - Why it matters: AI systems that combine evidence from multiple sources—medical diagnosis panels, content moderation systems, autonomous decision engines—currently make systematically different decisions depending on how many sources they consult, even when the actual evidence hasn't changed. This fix is purely mathematical and applies immediately to existing systems without architectural changes, potentially improving reliability in high-stakes domains where consistent decision-making is critical.
-
-### Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary
-- URL: https://paperplaine.com/papers/revisiting-energy-based-tabular
-- Category: Statistics
-- Authors: Junichiro Niimi
-- arXiv: 2608.14186
-- Plain-English subtitle: Combining two different detection methods to spot fake data more reliably
-- Summary: A decades-old machine learning technique called Deep Boltzmann Machines can reliably detect unusual patterns in spreadsheet-like data, and when paired with modern neural networks, it catches anomalies the network alone would miss. On two real-world datasets, this combination improved detection accuracy by 1.4% and 0.2% respectively—gains that held up across dozens of test runs.
-- Why it matters: Spotting fraudulent transactions, network intrusions, or equipment failures in databases matters enormously for banks, security teams, and manufacturers. Current tools rely almost entirely on one detection approach, leaving blind spots. This work shows that dusting off an older technique and combining it with modern methods fills those gaps, making anomaly detection measurably more reliable without needing to retrain existing systems.
-
-### Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States
-- URL: https://paperplaine.com/papers/equivalence-between-average-case
-- Category: Computer Science
-- Authors: Alexandru Cojocaru, Laura Lewis
-- arXiv: 2608.14331
-- Plain-English subtitle: When quantum learning gets hard, it proves cryptography must work
-- Summary: Researchers proved that learning quantum systems becomes hard on average if and only if certain types of unbreakable quantum codes exist. This equivalence—the first proven for mixed quantum states—closes a gap between quantum cryptography and quantum learning theory that has puzzled computer scientists.
-- Why it matters: Quantum computers threaten current encryption, making it urgent to understand what quantum systems can and cannot do. This result provides a formal bridge between two major areas of quantum computing, helping researchers design quantum-safe cryptographic systems and understand the fundamental limits of what quantum computers can learn about hidden information.
-
-### A Survey of Large Models in Sports
-- URL: https://paperplaine.com/papers/a-survey-of-large
-- Category: Computer Science · AI
-- Authors: Yichen Xu, Jianzhe Ma, Chuhan Wang et al.
-- arXiv: 2608.14377
-- Plain-English subtitle: How AI language models are transforming sports analysis and fan engagement
-- Summary: Large language models and multimodal AI systems are being deployed across sports to analyze games, predict outcomes, and enhance fan experiences. This survey catalogues over 100 applications—from real-time commentary generation to injury prediction—and identifies the datasets and benchmarks powering this emerging field.
-- Why it matters: Sports organizations already use AI for strategy and scouting; this research maps exactly where large language models create value versus where they fall short. Teams, broadcasters, and app developers can use this guide to invest in the AI tools most likely to improve performance or engagement rather than chasing overhyped applications. The field is still fragmented across different datasets and benchmarks, so this consolidation work helps prevent duplicated effort and wasted resources.
 
 ## About
 

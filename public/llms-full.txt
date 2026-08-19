@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 643 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-18
+This file contains the complete plain-English text of all 646 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-19
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation
+Subtitle: Building image generators by teaching skills in the right order
+URL: https://paperplaine.com/papers/from-corpora-to-co
+Category: Computer Science · AI
+Authors: Xingjian Wang, Zhao Wang, Taihang Hu et al.
+arXiv ID: 2608.18076
+arXiv URL: https://arxiv.org/abs/2608.18076
+Posted: 2026-08-19
+
+Summary: Researchers built a new system for training image-generation AI that organizes training data around learning dependencies—teaching fundamental skills before advanced ones—rather than treating each task separately. The approach created a 440-million-image dataset and produced models that handle text-to-image generation and image editing with broader visual coverage and better skill transfer than conventional methods.
+
+Why it matters: Image generators trained this way perform better across multiple tasks without needing separate specialized models, reducing computational waste and engineering overhead. This suggests that how data is sequenced during training matters as much as the data itself—a finding that could improve efficiency in training other large AI systems.
+
+---
+Title: The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform
+Subtitle: Extending a classic math tool to work with geometric algebra
+URL: https://paperplaine.com/papers/the-geometric-laplace-transform
+Category: Mathematics
+Authors: Manel Velasco, Arnau Dòria-Cerezo, Isiah Zaplana
+arXiv ID: 2608.18043
+arXiv URL: https://arxiv.org/abs/2608.18043
+Posted: 2026-08-19
+
+Summary: Researchers have defined the Laplace transform—a fundamental mathematical tool for solving differential equations—to work within geometric algebra, a system that handles multidimensional spaces and rotations. This extension applies to geometric algebras with signature 5 or lower, filling a gap needed for modeling and controlling real-world systems like electrical circuits.
+
+Why it matters: Engineers designing electrical circuits and other dynamical systems increasingly want to use geometric algebra because it naturally represents rotations and multidimensional transformations. Without a properly defined Laplace transform in this framework, they have to convert between different mathematical systems, losing efficiency and clarity. This work removes that barrier, letting engineers stay within geometric algebra from problem setup through solution.
+
+---
+Title: Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models
+Subtitle: Making DDoS attack detectors work with realistic threats instead of fake ones
+URL: https://paperplaine.com/papers/diff-ddos-realistic-cyber
+Category: Computer Science
+Authors: Bilal Hussain, Xiao Tang, Qinghe Du et al.
+arXiv ID: 2608.17796
+arXiv URL: https://arxiv.org/abs/2608.17796
+Posted: 2026-08-19
+
+Summary: Current AI systems that catch DDoS attacks on 5G networks fail badly when facing real attacks, losing 47 to 100 percent accuracy. Researchers built a new tool using diffusion models to create realistic fake attacks, then used those to train detectors until they stayed accurate against the real thing—recovering 79 to 100 percent accuracy depending on attack type.
+
+Why it matters: 5G networks power critical infrastructure like hospitals and power grids. Today's DDoS detectors are brittle and collapse when attackers adapt their methods slightly, creating serious security gaps. This technique lets companies test and harden their defenses against realistic attacks before deployment, rather than discovering failures during an actual breach.
 
 ---
 Title: Quipu: A Governed Bitemporal Knowledge Graph Store

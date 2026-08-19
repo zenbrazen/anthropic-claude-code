@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.18076",
+    "title": "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
+    "authors": "Xingjian Wang, Zhao Wang, Taihang Hu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-18T17:59:01Z",
+    "publishedFormatted": "Aug 18, 2026",
+    "subtitle": "Building image generators by teaching skills in the right order",
+    "summary": "Researchers built a new system for training image-generation AI that organizes training data around learning dependencies—teaching fundamental skills before advanced ones—rather than treating each task separately. The approach created a 440-million-image dataset and produced models that handle text-to-image generation and image editing with broader visual coverage and better skill transfer than conventional methods.",
+    "whyItMatters": "Image generators trained this way perform better across multiple tasks without needing separate specialized models, reducing computational waste and engineering overhead. This suggests that how data is sequenced during training matters as much as the data itself—a finding that could improve efficiency in training other large AI systems.",
+    "fetchedAt": "2026-08-19T07:36:59.680Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 196
+    },
+    "slug": "from-corpora-to-co"
+  },
+  {
+    "id": "2608.18043",
+    "title": "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform",
+    "authors": "Manel Velasco, Arnau Dòria-Cerezo, Isiah Zaplana",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-08-18T17:38:46Z",
+    "publishedFormatted": "Aug 18, 2026",
+    "subtitle": "Extending a classic math tool to work with geometric algebra",
+    "summary": "Researchers have defined the Laplace transform—a fundamental mathematical tool for solving differential equations—to work within geometric algebra, a system that handles multidimensional spaces and rotations. This extension applies to geometric algebras with signature 5 or lower, filling a gap needed for modeling and controlling real-world systems like electrical circuits.",
+    "whyItMatters": "Engineers designing electrical circuits and other dynamical systems increasingly want to use geometric algebra because it naturally represents rotations and multidimensional transformations. Without a properly defined Laplace transform in this framework, they have to convert between different mathematical systems, losing efficiency and clarity. This work removes that barrier, letting engineers stay within geometric algebra from problem setup through solution.",
+    "fetchedAt": "2026-08-19T07:37:02.717Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 42,
+      "wordCount": 114
+    },
+    "slug": "the-geometric-laplace-transform"
+  },
+  {
+    "id": "2608.17796",
+    "title": "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models",
+    "authors": "Bilal Hussain, Xiao Tang, Qinghe Du et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-08-18T13:56:47Z",
+    "publishedFormatted": "Aug 18, 2026",
+    "subtitle": "Making DDoS attack detectors work with realistic threats instead of fake ones",
+    "summary": "Current AI systems that catch DDoS attacks on 5G networks fail badly when facing real attacks, losing 47 to 100 percent accuracy. Researchers built a new tool using diffusion models to create realistic fake attacks, then used those to train detectors until they stayed accurate against the real thing—recovering 79 to 100 percent accuracy depending on attack type.",
+    "whyItMatters": "5G networks power critical infrastructure like hospitals and power grids. Today's DDoS detectors are brittle and collapse when attackers adapt their methods slightly, creating serious security gaps. This technique lets companies test and harden their defenses against realistic attacks before deployment, rather than discovering failures during an actual breach.",
+    "fetchedAt": "2026-08-19T07:37:05.393Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 197
+    },
+    "slug": "diff-ddos-realistic-cyber"
+  },
+  {
     "id": "2608.16813",
     "title": "Quipu: A Governed Bitemporal Knowledge Graph Store",
     "authors": "Steve Brown",
