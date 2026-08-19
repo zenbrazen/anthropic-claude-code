@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 646 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 649 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-19
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents
+Subtitle: Why imperfect AI feedback won't ruin learning robots
+URL: https://paperplaine.com/papers/policy-invariant-reward-shaping
+Category: Computer Science · AI
+Authors: Christophe D. Hounwanou, John Emeka Eze, Yaé U. Gaba
+arXiv ID: 2608.18008
+arXiv URL: https://arxiv.org/abs/2608.18008
+Posted: 2026-08-19
+
+Summary: When large language models guide reinforcement learning agents, the AI feedback doesn't need to be perfect to work. Researchers proved mathematically that even inaccurate language model scores preserve the optimal strategy an agent learns, and tested this claim on systems where the misleading feedback was twenty times stronger than the true signal.
+
+Why it matters: Building AI systems that combine language models with learning agents is becoming standard practice, but engineers haven't had theoretical assurance that imperfect feedback won't poison the results. This work provides that assurance, letting teams use language model guidance without needing to validate every single score—saving engineering time on systems where language model feedback is cheaper and faster than manually annotated data.
+
+---
+Title: The Zonotopic Mixture Filter
+Subtitle: Tracking systems that work with both probability and hard boundaries
+URL: https://paperplaine.com/papers/the-zonotopic-mixture-filter
+Category: Engineering
+Authors: Rodrigo A. González, Angel L. Cedeño, Vicenç Puig
+arXiv ID: 2608.17897
+arXiv URL: https://arxiv.org/abs/2608.17897
+Posted: 2026-08-19
+
+Summary: Engineers have created a new way to estimate the location and state of moving objects that combines two previously separate approaches: probabilistic methods that use probability distributions, and guaranteed-bounds methods that promise hard limits on error. The zonotopic mixture filter splits the difference by treating noise as coming from one of several bounded sets chosen at random, then uses multiple parallel tracking systems weighted by their probability of being correct. The method guarantees it will give the right answer a specified percentage of the time while still respecting hard physical bounds.
+
+Why it matters: State estimation is critical in robotics, autonomous vehicles, power grids, and aerospace—anywhere you need to know what's happening in a system based on noisy sensor data. This approach gives engineers certainty about worst-case scenarios (like aircraft safety margins) without ignoring the statistical patterns in real-world noise, combining safety guarantees with realistic performance. For systems where both statistical accuracy and hard worst-case bounds matter, this eliminates the need to choose between two competing frameworks.
+
+---
+Title: Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry
+Subtitle: How a small AI model learns to sort invoices—and what geometry reveals about why
+URL: https://paperplaine.com/papers/where-a-small-language
+Category: Statistics
+Authors: Emma Ceccherini, Daniel Lawson, Anjulika Salhan
+arXiv ID: 2608.18033
+arXiv URL: https://arxiv.org/abs/2608.18033
+Posted: 2026-08-19
+
+Summary: A small language model trained on a single computer reached 96% accuracy at automatically sorting invoices into the correct accounting categories, outperforming larger zero-shot AI systems. The researchers discovered that the model's success hinges on geometric patterns in how it represents financial language—clusters of similar invoices that map closely to vendor identity—and found a surprising mismatch: structured invoice formats that help human accountants actually make the AI model perform worse.
+
+Why it matters: Companies increasingly automate invoice sorting for tax compliance and financial reporting, but relying on large cloud-based AI creates cost and security risks. This work shows that smaller, in-house models can match or beat expensive alternatives while keeping sensitive financial data private—and only need about 100 labeled invoices per new client to work well. Understanding *how* these models make decisions through geometry rather than black-box predictions also lets accountants spot when something has gone wrong.
 
 ---
 Title: From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2026 07:37:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 19:19:56 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents</title>
+      <link>https://paperplaine.com/papers/policy-invariant-reward-shaping</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/policy-invariant-reward-shaping</guid>
+      <pubDate>Tue, 18 Aug 2026 16:55:46 GMT</pubDate>
+      <author>Christophe D. Hounwanou, John Emeka Eze, Yaé U. Gaba</author>
+      <category>AI</category>
+      <description>Why imperfect AI feedback won&#39;t ruin learning robots</description>
+      <content:encoded><![CDATA[<p><em>Why imperfect AI feedback won't ruin learning robots</em></p><p>When large language models guide reinforcement learning agents, the AI feedback doesn't need to be perfect to work. Researchers proved mathematically that even inaccurate language model scores preserve the optimal strategy an agent learns, and tested this claim on systems where the misleading feedback was twenty times stronger than the true signal.</p><p><strong>Why it matters:</strong> Building AI systems that combine language models with learning agents is becoming standard practice, but engineers haven't had theoretical assurance that imperfect feedback won't poison the results. This work provides that assurance, letting teams use language model guidance without needing to validate every single score—saving engineering time on systems where language model feedback is cheaper and faster than manually annotated data.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Zonotopic Mixture Filter</title>
+      <link>https://paperplaine.com/papers/the-zonotopic-mixture-filter</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-zonotopic-mixture-filter</guid>
+      <pubDate>Tue, 18 Aug 2026 15:29:36 GMT</pubDate>
+      <author>Rodrigo A. González, Angel L. Cedeño, Vicenç Puig</author>
+      <category>Engineering</category>
+      <description>Tracking systems that work with both probability and hard boundaries</description>
+      <content:encoded><![CDATA[<p><em>Tracking systems that work with both probability and hard boundaries</em></p><p>Engineers have created a new way to estimate the location and state of moving objects that combines two previously separate approaches: probabilistic methods that use probability distributions, and guaranteed-bounds methods that promise hard limits on error. The zonotopic mixture filter splits the difference by treating noise as coming from one of several bounded sets chosen at random, then uses multiple parallel tracking systems weighted by their probability of being correct. The method guarantees it will give the right answer a specified percentage of the time while still respecting hard physical bounds.</p><p><strong>Why it matters:</strong> State estimation is critical in robotics, autonomous vehicles, power grids, and aerospace—anywhere you need to know what's happening in a system based on noisy sensor data. This approach gives engineers certainty about worst-case scenarios (like aircraft safety margins) without ignoring the statistical patterns in real-world noise, combining safety guarantees with realistic performance. For systems where both statistical accuracy and hard worst-case bounds matter, this eliminates the need to choose between two competing frameworks.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry</title>
+      <link>https://paperplaine.com/papers/where-a-small-language</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/where-a-small-language</guid>
+      <pubDate>Tue, 18 Aug 2026 17:28:01 GMT</pubDate>
+      <author>Emma Ceccherini, Daniel Lawson, Anjulika Salhan</author>
+      <category>Statistics</category>
+      <description>How a small AI model learns to sort invoices—and what geometry reveals about why</description>
+      <content:encoded><![CDATA[<p><em>How a small AI model learns to sort invoices—and what geometry reveals about why</em></p><p>A small language model trained on a single computer reached 96% accuracy at automatically sorting invoices into the correct accounting categories, outperforming larger zero-shot AI systems. The researchers discovered that the model's success hinges on geometric patterns in how it represents financial language—clusters of similar invoices that map closely to vendor identity—and found a surprising mismatch: structured invoice formats that help human accountants actually make the AI model perform worse.</p><p><strong>Why it matters:</strong> Companies increasingly automate invoice sorting for tax compliance and financial reporting, but relying on large cloud-based AI creates cost and security risks. This work shows that smaller, in-house models can match or beat expensive alternatives while keeping sensitive financial data private—and only need about 100 labeled invoices per new client to work well. Understanding *how* these models make decisions through geometry rather than black-box predictions also lets accountants spot when something has gone wrong.</p>]]></content:encoded>
+    </item>
     <item>
       <title>From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation</title>
       <link>https://paperplaine.com/papers/from-corpora-to-co</link>

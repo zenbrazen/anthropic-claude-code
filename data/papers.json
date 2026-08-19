@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.18008",
+    "title": "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents",
+    "authors": "Christophe D. Hounwanou, John Emeka Eze, Yaé U. Gaba",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-18T16:55:46Z",
+    "publishedFormatted": "Aug 18, 2026",
+    "subtitle": "Why imperfect AI feedback won't ruin learning robots",
+    "summary": "When large language models guide reinforcement learning agents, the AI feedback doesn't need to be perfect to work. Researchers proved mathematically that even inaccurate language model scores preserve the optimal strategy an agent learns, and tested this claim on systems where the misleading feedback was twenty times stronger than the true signal.",
+    "whyItMatters": "Building AI systems that combine language models with learning agents is becoming standard practice, but engineers haven't had theoretical assurance that imperfect feedback won't poison the results. This work provides that assurance, letting teams use language model guidance without needing to validate every single score—saving engineering time on systems where language model feedback is cheaper and faster than manually annotated data.",
+    "fetchedAt": "2026-08-19T19:19:48.221Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 103
+    },
+    "slug": "policy-invariant-reward-shaping"
+  },
+  {
+    "id": "2608.17897",
+    "title": "The Zonotopic Mixture Filter",
+    "authors": "Rodrigo A. González, Angel L. Cedeño, Vicenç Puig",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-08-18T15:29:36Z",
+    "publishedFormatted": "Aug 18, 2026",
+    "subtitle": "Tracking systems that work with both probability and hard boundaries",
+    "summary": "Engineers have created a new way to estimate the location and state of moving objects that combines two previously separate approaches: probabilistic methods that use probability distributions, and guaranteed-bounds methods that promise hard limits on error. The zonotopic mixture filter splits the difference by treating noise as coming from one of several bounded sets chosen at random, then uses multiple parallel tracking systems weighted by their probability of being correct. The method guarantees it will give the right answer a specified percentage of the time while still respecting hard physical bounds.",
+    "whyItMatters": "State estimation is critical in robotics, autonomous vehicles, power grids, and aerospace—anywhere you need to know what's happening in a system based on noisy sensor data. This approach gives engineers certainty about worst-case scenarios (like aircraft safety margins) without ignoring the statistical patterns in real-world noise, combining safety guarantees with realistic performance. For systems where both statistical accuracy and hard worst-case bounds matter, this eliminates the need to choose between two competing frameworks.",
+    "fetchedAt": "2026-08-19T19:19:52.034Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 160
+    },
+    "slug": "the-zonotopic-mixture-filter"
+  },
+  {
+    "id": "2608.18033",
+    "title": "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry",
+    "authors": "Emma Ceccherini, Daniel Lawson, Anjulika Salhan",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-08-18T17:28:01Z",
+    "publishedFormatted": "Aug 18, 2026",
+    "subtitle": "How a small AI model learns to sort invoices—and what geometry reveals about why",
+    "summary": "A small language model trained on a single computer reached 96% accuracy at automatically sorting invoices into the correct accounting categories, outperforming larger zero-shot AI systems. The researchers discovered that the model's success hinges on geometric patterns in how it represents financial language—clusters of similar invoices that map closely to vendor identity—and found a surprising mismatch: structured invoice formats that help human accountants actually make the AI model perform worse.",
+    "whyItMatters": "Companies increasingly automate invoice sorting for tax compliance and financial reporting, but relying on large cloud-based AI creates cost and security risks. This work shows that smaller, in-house models can match or beat expensive alternatives while keeping sensitive financial data private—and only need about 100 labeled invoices per new client to work well. Understanding *how* these models make decisions through geometry rather than black-box predictions also lets accountants spot when something has gone wrong.",
+    "fetchedAt": "2026-08-19T19:19:55.830Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 225
+    },
+    "slug": "where-a-small-language"
+  },
+  {
     "id": "2608.18076",
     "title": "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
     "authors": "Xingjian Wang, Zhao Wang, Taihang Hu et al.",

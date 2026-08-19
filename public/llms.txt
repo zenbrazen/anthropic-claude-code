@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 646 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 649 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 221 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 222 papers in archive.
+  - "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents"
   - "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation"
-  - "Quipu: A Governed Bitemporal Knowledge Graph Store"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 53 papers in archive.
   - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
   - "Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 56 papers in archive.
   - "Is the medium the message? Social disclosure channels and firm risk"
   - "Retained hidden excess generates memory in price-limited markets"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 55 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 56 papers in archive.
+  - "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry"
   - "Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary"
-  - "Defensive Boosting for Online Probabilistic Forecasting"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 53 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 54 papers in archive.
+  - "The Zonotopic Mixture Filter"
   - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
-  - "Heterogeneity-Aware Belief Synchronization for Semantic Communication in AI-Native 6G Networks"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 46 papers in archive.
   - "A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior"
   - "Does life-satisfaction inequality measure societal inequality? A focal-value-rounding critique"
 
 ## 10 most recent papers
+
+### Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents
+- URL: https://paperplaine.com/papers/policy-invariant-reward-shaping
+- Category: Computer Science · AI
+- Authors: Christophe D. Hounwanou, John Emeka Eze, Yaé U. Gaba
+- arXiv: 2608.18008
+- Plain-English subtitle: Why imperfect AI feedback won't ruin learning robots
+- Summary: When large language models guide reinforcement learning agents, the AI feedback doesn't need to be perfect to work. Researchers proved mathematically that even inaccurate language model scores preserve the optimal strategy an agent learns, and tested this claim on systems where the misleading feedback was twenty times stronger than the true signal.
+- Why it matters: Building AI systems that combine language models with learning agents is becoming standard practice, but engineers haven't had theoretical assurance that imperfect feedback won't poison the results. This work provides that assurance, letting teams use language model guidance without needing to validate every single score—saving engineering time on systems where language model feedback is cheaper and faster than manually annotated data.
+
+### The Zonotopic Mixture Filter
+- URL: https://paperplaine.com/papers/the-zonotopic-mixture-filter
+- Category: Engineering
+- Authors: Rodrigo A. González, Angel L. Cedeño, Vicenç Puig
+- arXiv: 2608.17897
+- Plain-English subtitle: Tracking systems that work with both probability and hard boundaries
+- Summary: Engineers have created a new way to estimate the location and state of moving objects that combines two previously separate approaches: probabilistic methods that use probability distributions, and guaranteed-bounds methods that promise hard limits on error. The zonotopic mixture filter splits the difference by treating noise as coming from one of several bounded sets chosen at random, then uses multiple parallel tracking systems weighted by their probability of being correct. The method guarantees it will give the right answer a specified percentage of the time while still respecting hard physical bounds.
+- Why it matters: State estimation is critical in robotics, autonomous vehicles, power grids, and aerospace—anywhere you need to know what's happening in a system based on noisy sensor data. This approach gives engineers certainty about worst-case scenarios (like aircraft safety margins) without ignoring the statistical patterns in real-world noise, combining safety guarantees with realistic performance. For systems where both statistical accuracy and hard worst-case bounds matter, this eliminates the need to choose between two competing frameworks.
+
+### Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry
+- URL: https://paperplaine.com/papers/where-a-small-language
+- Category: Statistics
+- Authors: Emma Ceccherini, Daniel Lawson, Anjulika Salhan
+- arXiv: 2608.18033
+- Plain-English subtitle: How a small AI model learns to sort invoices—and what geometry reveals about why
+- Summary: A small language model trained on a single computer reached 96% accuracy at automatically sorting invoices into the correct accounting categories, outperforming larger zero-shot AI systems. The researchers discovered that the model's success hinges on geometric patterns in how it represents financial language—clusters of similar invoices that map closely to vendor identity—and found a surprising mismatch: structured invoice formats that help human accountants actually make the AI model perform worse.
+- Why it matters: Companies increasingly automate invoice sorting for tax compliance and financial reporting, but relying on large cloud-based AI creates cost and security risks. This work shows that smaller, in-house models can match or beat expensive alternatives while keeping sensitive financial data private—and only need about 100 labeled invoices per new client to work well. Understanding *how* these models make decisions through geometry rather than black-box predictions also lets accountants spot when something has gone wrong.
 
 ### From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation
 - URL: https://paperplaine.com/papers/from-corpora-to-co
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Hiding proof of how an AI reached its answer inside the answer itself
 - Summary: Researchers embedded hidden fingerprints into text generated by AI models that reveal which internal computational path the model used to reach its answer—even when different paths produce identical outputs. In controlled tests with both simple neural networks and transformers, a detector could later read these fingerprints and identify the verified internal state that was actually used, succeeding on all 128 test cases.
 - Why it matters: Today's AI systems are black boxes: you see the answer but not how the model produced it. If AI systems could cryptographically prove which computational steps they took, it would enable auditing, safety verification, and accountability—critical for high-stakes applications like medical diagnosis or financial decisions where knowing the reasoning matters as much as the result.
-
-### Spectral Edge Rigidity of Quantum Chaotic States
-- URL: https://paperplaine.com/papers/spectral-edge-rigidity-of
-- Category: Physics
-- Authors: Joaquim Telles de Miranda, Tobias Micklitz
-- arXiv: 2608.16847
-- Plain-English subtitle: Why quantum chaos behaves differently at energy spectrum edges
-- Summary: Chaotic quantum systems have a hidden structure at their energy edges that makes them surprisingly resistant to disturbance. Researchers found that states at the spectral edge are about one-third as sensitive to small changes as states in the middle of the spectrum, following a universal mathematical pattern that depends on whether the system has time-reversal symmetry.
-- Why it matters: Understanding how quantum states respond to perturbations is essential for building stable quantum computers and sensors. These results reveal that the ground state and lowest-energy states of chaotic quantum systems are inherently more protected from environmental noise than previously thought, which could improve the reliability of quantum devices operating at low energies.
-
-### Order-Sensitive Fast-Synapse Limits in Sparse Excitatory-Inhibitory Threshold-Reset Networks
-- URL: https://paperplaine.com/papers/order-sensitive-fast-synapse
-- Category: Quantitative Biology
-- Authors: Tonic Song
-- arXiv: 2608.16701
-- Plain-English subtitle: When neurons fire depends on which signals arrive first, not just their strength
-- Summary: A neuron's response to mixed excitatory and inhibitory signals depends critically on which type arrives first—a detail that weak mathematical convergence alone cannot capture. Two neural network models with identical overall signal strength but opposite arrival orders can produce opposite firing outcomes, and this order-dependent effect persists even in large, sparse networks.
-- Why it matters: Current mathematical models of neural networks often treat incoming signals as interchangeable if their total strength converges properly. This work shows that assumption breaks down for threshold-based neurons: the timing order of excitation versus inhibition fundamentally changes the network's behavior. Understanding this could improve how neuroscientists and engineers predict neural circuit responses and design more accurate models of brain computation.
-
-### Split the Labor: Separating Evidence Interpretation from Decision Aggregation
-- URL: https://paperplaine.com/papers/split-the-labor-separating
-- Category: Computer Science · AI
-- Authors: Zhelun Wu
-- arXiv: 2608.14509
-- Plain-English subtitle: Why asking AI to read many sources at once often gets the math wrong
-- Summary: When language models combine information from multiple sources to make decisions, they typically process everything together in one prompt—which conflates two separate problems that need different solutions. Researchers separated these tasks (interpreting individual sources versus aggregating their conclusions) and found that current systems suffer from "count-scale drift," where the decision threshold effectively shifts depending on how many sources are consulted. Using calibrated log-likelihood ratios instead of simple vote-counting fixes this problem across multiple types of AI systems, improving performance to 0.921 AUPRC from 0.805 on a medical prediction task.
-- Why it matters: AI systems that combine evidence from multiple sources—medical diagnosis panels, content moderation systems, autonomous decision engines—currently make systematically different decisions depending on how many sources they consult, even when the actual evidence hasn't changed. This fix is purely mathematical and applies immediately to existing systems without architectural changes, potentially improving reliability in high-stakes domains where consistent decision-making is critical.
 
 ## About
 
