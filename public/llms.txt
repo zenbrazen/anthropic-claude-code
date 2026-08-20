@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 652 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 655 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 223 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 224 papers in archive.
+  - "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning"
   - "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training"
-  - "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 53 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 54 papers in archive.
+  - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
   - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
-  - "Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 54 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 55 papers in archive.
+  - "Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules"
   - "Spectral Edge Rigidity of Quantum Chaotic States"
-  - "Ambient unitaries don't enable shallow group designs"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 54 papers in archive.
   - "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform"
   - "Optimizing bounds for energy-constrained optimal cooling problems in two dimensions"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior"
 
 ## 10 most recent papers
+
+### Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning
+- URL: https://paperplaine.com/papers/beyond-teacher-likelihood-group
+- Category: Computer Science · AI
+- Authors: Zhu Zhang, Jixun Wang, Xiaoang Xu et al.
+- arXiv: 2608.19181
+- Plain-English subtitle: Teaching AI to think across entire documents instead of word by word
+- Summary: AI models trained on their own outputs using teacher feedback often make locally reasonable mistakes when tasks require evidence scattered across long documents. Researchers diagnosed this problem and created GC-OPD, a method that aligns token-level feedback with task-level scoring, improving performance by 11 percentage points on long-context reasoning benchmarks.
+- Why it matters: Long-context tasks like research synthesis and document analysis require AI to track information across thousands of words. Current training methods miss this challenge by optimizing one word at a time, causing models to miss distributed evidence or violate task constraints. This approach fixes that mismatch and shows measurable gains on real benchmarks, making AI more reliable for work that demands careful attention to entire documents.
+
+### SiNMULI: Novel Signed Network Approach for Malicious URL Identification
+- URL: https://paperplaine.com/papers/sinmuli-novel-signed-network
+- Category: Computer Science
+- Authors: Avijit Gayen, Sayan Mondal, Angshuman Jana
+- arXiv: 2608.19190
+- Plain-English subtitle: Using social networks to spot malicious websites instead of analyzing their content
+- Summary: Researchers developed a new method to identify dangerous websites by analyzing the links pointing to them—treating the problem like a social network where connections between websites are either trustworthy or suspicious. The approach achieved 99.89% accuracy on real-world data and works without needing to learn from labeled examples, making it more adaptable than existing techniques as attackers change their tactics.
+- Why it matters: Phishing scams and malware distribution cost individuals and businesses billions annually. This method could be deployed immediately without requiring constant retraining, and because it analyzes link patterns rather than website content, it resists evasion techniques that criminals use to hide their true purpose. It also explains why it flagged a site as dangerous—crucial for security teams investigating alerts.
+
+### Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules
+- URL: https://paperplaine.com/papers/electrostriction-in-a-bose
+- Category: Physics
+- Authors: Haneul Kwak, Ian Stevenson, Weijun Yuan et al.
+- arXiv: 2608.19180
+- Plain-English subtitle: How to squeeze and spin a quantum gas made of molecules
+- Summary: Physicists created a bizarre state of matter—a Bose-Einstein condensate of dipolar molecules—and discovered they could stretch it into an ellipse using carefully tuned microwave fields. By twisting the orientation of these fields, they could make the entire condensate rotate, offering a new way to study exotic quantum behaviors like vortices and superfluidity in systems dominated by long-range interactions.
+- Why it matters: Rotating quantum gases are laboratories for studying deep physics that's hard to access otherwise—phenomena like superfluidity and supersolidity that break ordinary rules. This electrostriction technique gives experimenters a practical knob to turn, making it easier to create and manipulate these extreme states and test predictions about how matter behaves when quantum effects and molecular interactions collide.
 
 ### Discretizing Continuous Time Series for Imputation with Masked Diffusion Training
 - URL: https://paperplaine.com/papers/discretizing-continuous-time-series
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Building image generators by teaching skills in the right order
 - Summary: Researchers built a new system for training image-generation AI that organizes training data around learning dependencies—teaching fundamental skills before advanced ones—rather than treating each task separately. The approach created a 440-million-image dataset and produced models that handle text-to-image generation and image editing with broader visual coverage and better skill transfer than conventional methods.
 - Why it matters: Image generators trained this way perform better across multiple tasks without needing separate specialized models, reducing computational waste and engineering overhead. This suggests that how data is sequenced during training matters as much as the data itself—a finding that could improve efficiency in training other large AI systems.
-
-### The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform
-- URL: https://paperplaine.com/papers/the-geometric-laplace-transform
-- Category: Mathematics
-- Authors: Manel Velasco, Arnau Dòria-Cerezo, Isiah Zaplana
-- arXiv: 2608.18043
-- Plain-English subtitle: Extending a classic math tool to work with geometric algebra
-- Summary: Researchers have defined the Laplace transform—a fundamental mathematical tool for solving differential equations—to work within geometric algebra, a system that handles multidimensional spaces and rotations. This extension applies to geometric algebras with signature 5 or lower, filling a gap needed for modeling and controlling real-world systems like electrical circuits.
-- Why it matters: Engineers designing electrical circuits and other dynamical systems increasingly want to use geometric algebra because it naturally represents rotations and multidimensional transformations. Without a properly defined Laplace transform in this framework, they have to convert between different mathematical systems, losing efficiency and clarity. This work removes that barrier, letting engineers stay within geometric algebra from problem setup through solution.
-
-### Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models
-- URL: https://paperplaine.com/papers/diff-ddos-realistic-cyber
-- Category: Computer Science
-- Authors: Bilal Hussain, Xiao Tang, Qinghe Du et al.
-- arXiv: 2608.17796
-- Plain-English subtitle: Making DDoS attack detectors work with realistic threats instead of fake ones
-- Summary: Current AI systems that catch DDoS attacks on 5G networks fail badly when facing real attacks, losing 47 to 100 percent accuracy. Researchers built a new tool using diffusion models to create realistic fake attacks, then used those to train detectors until they stayed accurate against the real thing—recovering 79 to 100 percent accuracy depending on attack type.
-- Why it matters: 5G networks power critical infrastructure like hospitals and power grids. Today's DDoS detectors are brittle and collapse when attackers adapt their methods slightly, creating serious security gaps. This technique lets companies test and harden their defenses against realistic attacks before deployment, rather than discovering failures during an actual breach.
-
-### Quipu: A Governed Bitemporal Knowledge Graph Store
-- URL: https://paperplaine.com/papers/quipu-a-governed-bitemporal
-- Category: Computer Science · AI
-- Authors: Steve Brown
-- arXiv: 2608.16813
-- Plain-English subtitle: A database that keeps AI agents honest about what they write
-- Summary: When AI agents write data to knowledge graphs, existing databases use outdated rules designed for human curators: they accept writes first and check them later, trust all writers equally, and keep minimal history. Quipu inverts this approach, forcing every write through a governance gate before acceptance, tracking complete time histories with trust labels, and treating governance rules themselves as queryable facts—catching all six planted defects in testing versus zero catches in ungated systems.
-- Why it matters: As AI systems increasingly generate and share information autonomously, the stakes of unchecked writes grow. Quipu makes governance verifiable through audit trails that live inside the database itself, so organizations can answer "Did this agent follow our rules?" as a simple query rather than manual forensics. Testing shows it answers all real governance questions correctly while reducing false claims by up to 87.5% compared to baseline approaches.
 
 ## About
 

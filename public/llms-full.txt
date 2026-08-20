@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 652 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 655 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-20
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning
+Subtitle: Teaching AI to think across entire documents instead of word by word
+URL: https://paperplaine.com/papers/beyond-teacher-likelihood-group
+Category: Computer Science · AI
+Authors: Zhu Zhang, Jixun Wang, Xiaoang Xu et al.
+arXiv ID: 2608.19181
+arXiv URL: https://arxiv.org/abs/2608.19181
+Posted: 2026-08-20
+
+Summary: AI models trained on their own outputs using teacher feedback often make locally reasonable mistakes when tasks require evidence scattered across long documents. Researchers diagnosed this problem and created GC-OPD, a method that aligns token-level feedback with task-level scoring, improving performance by 11 percentage points on long-context reasoning benchmarks.
+
+Why it matters: Long-context tasks like research synthesis and document analysis require AI to track information across thousands of words. Current training methods miss this challenge by optimizing one word at a time, causing models to miss distributed evidence or violate task constraints. This approach fixes that mismatch and shows measurable gains on real benchmarks, making AI more reliable for work that demands careful attention to entire documents.
+
+---
+Title: SiNMULI: Novel Signed Network Approach for Malicious URL Identification
+Subtitle: Using social networks to spot malicious websites instead of analyzing their content
+URL: https://paperplaine.com/papers/sinmuli-novel-signed-network
+Category: Computer Science
+Authors: Avijit Gayen, Sayan Mondal, Angshuman Jana
+arXiv ID: 2608.19190
+arXiv URL: https://arxiv.org/abs/2608.19190
+Posted: 2026-08-20
+
+Summary: Researchers developed a new method to identify dangerous websites by analyzing the links pointing to them—treating the problem like a social network where connections between websites are either trustworthy or suspicious. The approach achieved 99.89% accuracy on real-world data and works without needing to learn from labeled examples, making it more adaptable than existing techniques as attackers change their tactics.
+
+Why it matters: Phishing scams and malware distribution cost individuals and businesses billions annually. This method could be deployed immediately without requiring constant retraining, and because it analyzes link patterns rather than website content, it resists evasion techniques that criminals use to hide their true purpose. It also explains why it flagged a site as dangerous—crucial for security teams investigating alerts.
+
+---
+Title: Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules
+Subtitle: How to squeeze and spin a quantum gas made of molecules
+URL: https://paperplaine.com/papers/electrostriction-in-a-bose
+Category: Physics
+Authors: Haneul Kwak, Ian Stevenson, Weijun Yuan et al.
+arXiv ID: 2608.19180
+arXiv URL: https://arxiv.org/abs/2608.19180
+Posted: 2026-08-20
+
+Summary: Physicists created a bizarre state of matter—a Bose-Einstein condensate of dipolar molecules—and discovered they could stretch it into an ellipse using carefully tuned microwave fields. By twisting the orientation of these fields, they could make the entire condensate rotate, offering a new way to study exotic quantum behaviors like vortices and superfluidity in systems dominated by long-range interactions.
+
+Why it matters: Rotating quantum gases are laboratories for studying deep physics that's hard to access otherwise—phenomena like superfluidity and supersolidity that break ordinary rules. This electrostriction technique gives experimenters a practical knob to turn, making it easier to create and manipulate these extreme states and test predictions about how matter behaves when quantum effects and molecular interactions collide.
 
 ---
 Title: Discretizing Continuous Time Series for Imputation with Masked Diffusion Training
