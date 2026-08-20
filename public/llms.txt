@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 649 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 652 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 222 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 223 papers in archive.
+  - "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training"
   - "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents"
-  - "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 53 papers in archive.
   - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
   - "Equivalence Between Average-Case Hardness of Learning and Cryptography for Mixed Quantum States"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 54 papers in archive.
   - "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform"
   - "Optimizing bounds for energy-constrained optimal cooling problems in two dimensions"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 54 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 55 papers in archive.
+  - "DMT-Dens: Density-preserving manifold visualization for biological data"
   - "Order-Sensitive Fast-Synapse Limits in Sparse Excitatory-Inhibitory Threshold-Reset Networks"
-  - "Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 56 papers in archive.
   - "Is the medium the message? Social disclosure channels and firm risk"
   - "Retained hidden excess generates memory in price-limited markets"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 54 papers in archive.
   - "The Zonotopic Mixture Filter"
   - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 46 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 47 papers in archive.
+  - "Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections"
   - "A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior"
-  - "Does life-satisfaction inequality measure societal inequality? A focal-value-rounding critique"
 
 ## 10 most recent papers
+
+### Discretizing Continuous Time Series for Imputation with Masked Diffusion Training
+- URL: https://paperplaine.com/papers/discretizing-continuous-time-series
+- Category: Computer Science · AI
+- Authors: Dongbin Kim, Seungyun Lee, Geonwoo Shin et al.
+- arXiv: 2608.19119
+- Plain-English subtitle: A smarter way to fill in missing data points in time series
+- Summary: Researchers developed a new method called MDTIM that fills in missing values in time series data—like temperature readings with gaps or stock prices with incomplete records—by treating masked (missing) and observed values as fundamentally different things during training. Rather than training on noise prediction like existing approaches, the model learns to directly predict the actual missing values, and a new discretization technique lets it handle continuous data while maintaining awareness of the ordering between values.
+- Why it matters: Time series data with gaps are everywhere: weather stations with sensor failures, medical monitoring with dropped readings, industrial equipment with interrupted logging. Better imputation means more reliable downstream analysis and forecasting, reducing errors in climate models, patient diagnostics, and predictive maintenance. This approach outperformed existing methods across different types and amounts of missing data, suggesting it could become a standard tool for cleaning real-world time series in practice.
+
+### Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections
+- URL: https://paperplaine.com/papers/europe-s-climate-ambition
+- Category: Economics
+- Authors: Jacopo Ghirri, Carlos Rodriguez-Pardo, Lara Aleluia Reis et al.
+- arXiv: 2608.18690
+- Plain-English subtitle: Europe will miss its climate targets by a third without urgent policy changes
+- Summary: Europe's current trajectory will overshoot its 2030 climate target by 35%, according to machine learning projections of emissions across all EU countries through 2023. While renewable energy is cutting power sector emissions as planned, transportation has barely improved and now accounts for over one-third of total emissions, revealing a gap that spans nearly all member states rather than concentrating in a few laggards.
+- Why it matters: The EU has staked its global climate credibility on the 55% reduction target, but hitting it now requires far more aggressive intervention than current policies deliver. Transportation's structural slowness—affecting countries across the bloc—means the problem can't be solved by a few policy fixes; Europe needs wholesale changes to how people and goods move, not just incremental tweaks to existing measures.
+
+### DMT-Dens: Density-preserving manifold visualization for biological data
+- URL: https://paperplaine.com/papers/dmt-dens-density-preserving
+- Category: Quantitative Biology
+- Authors: Ruizhe Wang, Yixuan Dong, Bolin Yang et al.
+- arXiv: 2608.17571
+- Plain-English subtitle: A better way to visualize rare cells without distorting the crowded ones
+- Summary: Scientists created DMT-Dens, a visualization tool that displays high-dimensional biological data while accurately preserving density patterns — keeping crowded regions visibly dense and sparse regions visibly sparse. Unlike existing methods, it prevents the visual distortion that can make rare or transitional cell states hard to spot or misinterpret their actual frequency in a sample.
+- Why it matters: Cell biologists rely on these visualizations to understand which cell types are common, which are rare, and which represent transitions between states — critical for discovering new cell populations and understanding disease progression. Distorted density patterns have led researchers to misidentify the prevalence of rare cells, potentially steering biological discovery in the wrong direction. DMT-Dens lets biologists see the true distribution of their samples, making it easier to catch genuinely rare events and understand the actual landscape of cell diversity.
 
 ### Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents
 - URL: https://paperplaine.com/papers/policy-invariant-reward-shaping
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A database that keeps AI agents honest about what they write
 - Summary: When AI agents write data to knowledge graphs, existing databases use outdated rules designed for human curators: they accept writes first and check them later, trust all writers equally, and keep minimal history. Quipu inverts this approach, forcing every write through a governance gate before acceptance, tracking complete time histories with trust labels, and treating governance rules themselves as queryable facts—catching all six planted defects in testing versus zero catches in ungated systems.
 - Why it matters: As AI systems increasingly generate and share information autonomously, the stakes of unchecked writes grow. Quipu makes governance verifiable through audit trails that live inside the database itself, so organizations can answer "Did this agent follow our rules?" as a simple query rather than manual forensics. Testing shows it answers all real governance questions correctly while reducing false claims by up to 87.5% compared to baseline approaches.
-
-### Is the medium the message? Social disclosure channels and firm risk
-- URL: https://paperplaine.com/papers/is-the-medium-the
-- Category: Quantitative Finance
-- Authors: Andreas G. F. Hoepner, Blerita Korca, Frank Schiemann et al.
-- arXiv: 2608.15212
-- Plain-English subtitle: Where companies announce social issues shapes how investors view risk
-- Summary: Companies that disclose social and labor issues for the first time through SEC filings see their stock risk increase, while ongoing disclosures in sustainability reports lower risk. The channel matters as much as the message: unexpected information published in SEC filings signals genuine news, whereas routine updates in dedicated sustainability reports reassure investors.
-- Why it matters: Investors trade billions based on how they perceive company risk, and this research shows that the same social disclosure can either alarm or comfort investors depending on where it appears. Companies planning to disclose social problems face a real choice: burying new concerns in standard SEC filings will likely spook markets, while establishing regular sustainability reporting and integrating disclosure into financial reports can actually reduce perceived risk. Regulators and investors should treat first-time SEC social disclosures as material signals worth attention.
-
-### A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior
-- URL: https://paperplaine.com/papers/a-neurofinance-framework-for
-- Category: Economics
-- Authors: Pascal Stiefenhofer
-- arXiv: 2608.14930
-- Plain-English subtitle: How your brain's valuation shifts your sense of financial time
-- Summary: The way your brain evaluates investments physically reshapes your subjective experience of time—meaning two financially identical choices can feel different lengths depending on neural activity. Brain imaging of 1,183 investment decisions revealed that when neural valuation states diverge, people subsequently make different financial choices, even when the objective facts stay the same.
-- Why it matters: Standard financial models assume people experience time the same way regardless of what they're deciding. This research shows the brain actually stretches or compresses financial time based on valuation activity, which could explain why investors make inconsistent choices between mathematically equivalent options and why the same delay feels different in different emotional states.
-
-### Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text
-- URL: https://paperplaine.com/papers/towards-computational-provenance-carrying
-- Category: Computer Science · AI
-- Authors: Benjamin Belay
-- arXiv: 2608.16868
-- Plain-English subtitle: Hiding proof of how an AI reached its answer inside the answer itself
-- Summary: Researchers embedded hidden fingerprints into text generated by AI models that reveal which internal computational path the model used to reach its answer—even when different paths produce identical outputs. In controlled tests with both simple neural networks and transformers, a detector could later read these fingerprints and identify the verified internal state that was actually used, succeeding on all 128 test cases.
-- Why it matters: Today's AI systems are black boxes: you see the answer but not how the model produced it. If AI systems could cryptographically prove which computational steps they took, it would enable auditing, safety verification, and accountability—critical for high-stakes applications like medical diagnosis or financial decisions where knowing the reasoning matters as much as the result.
 
 ## About
 

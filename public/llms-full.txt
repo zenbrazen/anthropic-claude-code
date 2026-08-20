@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 649 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-19
+This file contains the complete plain-English text of all 652 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-20
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Discretizing Continuous Time Series for Imputation with Masked Diffusion Training
+Subtitle: A smarter way to fill in missing data points in time series
+URL: https://paperplaine.com/papers/discretizing-continuous-time-series
+Category: Computer Science · AI
+Authors: Dongbin Kim, Seungyun Lee, Geonwoo Shin et al.
+arXiv ID: 2608.19119
+arXiv URL: https://arxiv.org/abs/2608.19119
+Posted: 2026-08-20
+
+Summary: Researchers developed a new method called MDTIM that fills in missing values in time series data—like temperature readings with gaps or stock prices with incomplete records—by treating masked (missing) and observed values as fundamentally different things during training. Rather than training on noise prediction like existing approaches, the model learns to directly predict the actual missing values, and a new discretization technique lets it handle continuous data while maintaining awareness of the ordering between values.
+
+Why it matters: Time series data with gaps are everywhere: weather stations with sensor failures, medical monitoring with dropped readings, industrial equipment with interrupted logging. Better imputation means more reliable downstream analysis and forecasting, reducing errors in climate models, patient diagnostics, and predictive maintenance. This approach outperformed existing methods across different types and amounts of missing data, suggesting it could become a standard tool for cleaning real-world time series in practice.
+
+---
+Title: Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections
+Subtitle: Europe will miss its climate targets by a third without urgent policy changes
+URL: https://paperplaine.com/papers/europe-s-climate-ambition
+Category: Economics
+Authors: Jacopo Ghirri, Carlos Rodriguez-Pardo, Lara Aleluia Reis et al.
+arXiv ID: 2608.18690
+arXiv URL: https://arxiv.org/abs/2608.18690
+Posted: 2026-08-20
+
+Summary: Europe's current trajectory will overshoot its 2030 climate target by 35%, according to machine learning projections of emissions across all EU countries through 2023. While renewable energy is cutting power sector emissions as planned, transportation has barely improved and now accounts for over one-third of total emissions, revealing a gap that spans nearly all member states rather than concentrating in a few laggards.
+
+Why it matters: The EU has staked its global climate credibility on the 55% reduction target, but hitting it now requires far more aggressive intervention than current policies deliver. Transportation's structural slowness—affecting countries across the bloc—means the problem can't be solved by a few policy fixes; Europe needs wholesale changes to how people and goods move, not just incremental tweaks to existing measures.
+
+---
+Title: DMT-Dens: Density-preserving manifold visualization for biological data
+Subtitle: A better way to visualize rare cells without distorting the crowded ones
+URL: https://paperplaine.com/papers/dmt-dens-density-preserving
+Category: Quantitative Biology
+Authors: Ruizhe Wang, Yixuan Dong, Bolin Yang et al.
+arXiv ID: 2608.17571
+arXiv URL: https://arxiv.org/abs/2608.17571
+Posted: 2026-08-20
+
+Summary: Scientists created DMT-Dens, a visualization tool that displays high-dimensional biological data while accurately preserving density patterns — keeping crowded regions visibly dense and sparse regions visibly sparse. Unlike existing methods, it prevents the visual distortion that can make rare or transitional cell states hard to spot or misinterpret their actual frequency in a sample.
+
+Why it matters: Cell biologists rely on these visualizations to understand which cell types are common, which are rare, and which represent transitions between states — critical for discovering new cell populations and understanding disease progression. Distorted density patterns have led researchers to misidentify the prevalence of rare cells, potentially steering biological discovery in the wrong direction. DMT-Dens lets biologists see the true distribution of their samples, making it easier to catch genuinely rare events and understand the actual landscape of cell diversity.
 
 ---
 Title: Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.19119",
+    "title": "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training",
+    "authors": "Dongbin Kim, Seungyun Lee, Geonwoo Shin et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-19T17:16:27Z",
+    "publishedFormatted": "Aug 19, 2026",
+    "subtitle": "A smarter way to fill in missing data points in time series",
+    "summary": "Researchers developed a new method called MDTIM that fills in missing values in time series data—like temperature readings with gaps or stock prices with incomplete records—by treating masked (missing) and observed values as fundamentally different things during training. Rather than training on noise prediction like existing approaches, the model learns to directly predict the actual missing values, and a new discretization technique lets it handle continuous data while maintaining awareness of the ordering between values.",
+    "whyItMatters": "Time series data with gaps are everywhere: weather stations with sensor failures, medical monitoring with dropped readings, industrial equipment with interrupted logging. Better imputation means more reliable downstream analysis and forecasting, reducing errors in climate models, patient diagnostics, and predictive maintenance. This approach outperformed existing methods across different types and amounts of missing data, suggesting it could become a standard tool for cleaning real-world time series in practice.",
+    "fetchedAt": "2026-08-20T07:39:41.594Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 173
+    },
+    "slug": "discretizing-continuous-time-series"
+  },
+  {
+    "id": "2608.18690",
+    "title": "Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections",
+    "authors": "Jacopo Ghirri, Carlos Rodriguez-Pardo, Lara Aleluia Reis et al.",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-08-19T08:41:35Z",
+    "publishedFormatted": "Aug 19, 2026",
+    "subtitle": "Europe will miss its climate targets by a third without urgent policy changes",
+    "summary": "Europe's current trajectory will overshoot its 2030 climate target by 35%, according to machine learning projections of emissions across all EU countries through 2023. While renewable energy is cutting power sector emissions as planned, transportation has barely improved and now accounts for over one-third of total emissions, revealing a gap that spans nearly all member states rather than concentrating in a few laggards.",
+    "whyItMatters": "The EU has staked its global climate credibility on the 55% reduction target, but hitting it now requires far more aggressive intervention than current policies deliver. Transportation's structural slowness—affecting countries across the bloc—means the problem can't be solved by a few policy fixes; Europe needs wholesale changes to how people and goods move, not just incremental tweaks to existing measures.",
+    "fetchedAt": "2026-08-20T07:39:45.088Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 167
+    },
+    "slug": "europe-s-climate-ambition"
+  },
+  {
+    "id": "2608.17571",
+    "title": "DMT-Dens: Density-preserving manifold visualization for biological data",
+    "authors": "Ruizhe Wang, Yixuan Dong, Bolin Yang et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-08-18T09:30:51Z",
+    "publishedFormatted": "Aug 18, 2026",
+    "subtitle": "A better way to visualize rare cells without distorting the crowded ones",
+    "summary": "Scientists created DMT-Dens, a visualization tool that displays high-dimensional biological data while accurately preserving density patterns — keeping crowded regions visibly dense and sparse regions visibly sparse. Unlike existing methods, it prevents the visual distortion that can make rare or transitional cell states hard to spot or misinterpret their actual frequency in a sample.",
+    "whyItMatters": "Cell biologists rely on these visualizations to understand which cell types are common, which are rare, and which represent transitions between states — critical for discovering new cell populations and understanding disease progression. Distorted density patterns have led researchers to misidentify the prevalence of rare cells, potentially steering biological discovery in the wrong direction. DMT-Dens lets biologists see the true distribution of their samples, making it easier to catch genuinely rare events and understand the actual landscape of cell diversity.",
+    "fetchedAt": "2026-08-20T07:39:48.533Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 128
+    },
+    "slug": "dmt-dens-density-preserving"
+  },
+  {
     "id": "2608.18008",
     "title": "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents",
     "authors": "Christophe D. Hounwanou, John Emeka Eze, Yaé U. Gaba",
