@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.20255",
+    "title": "Transfer Learning in Nonparametric Regression with Deep ReLU Networks",
+    "authors": "Junpeng Ren, Carlos Misael Madrid Padilla, Yanzhen Chen et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-20T16:53:00Z",
+    "publishedFormatted": "Aug 20, 2026",
+    "subtitle": "How AI learns from multiple groups faster by finding what they share",
+    "summary": "A new method lets machine learning models train on data from multiple groups — like hospitals or regions — by first finding what they have in common, then learning what makes each group different. When built with deep neural networks, this approach can handle high-dimensional problems that would normally require exponentially more data, and learns faster when groups are genuinely similar.",
+    "whyItMatters": "Many real problems involve related but distinct groups: different hospitals treating the same disease, or predictive models that need to work across countries with local variations. This method reduces the data each group needs to contribute while still capturing their unique patterns, making it practical to deploy personalized AI systems without requiring massive datasets from every location or organization.",
+    "fetchedAt": "2026-08-21T19:20:53.612Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 158
+    },
+    "slug": "transfer-learning-in-nonparametric"
+  },
+  {
+    "id": "2608.20186",
+    "title": "Decoding silent reading from non-invasive EEG",
+    "authors": "Ingo Marquardt, Anthilia Alchanat, Priyanka Jain",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-08-20T15:41:05Z",
+    "publishedFormatted": "Aug 20, 2026",
+    "subtitle": "Reading what someone is silently reading just from their brain waves",
+    "summary": "Researchers successfully decoded which words people were silently reading by analyzing their brain activity through EEG, correctly identifying words from a large vocabulary in the top 10 guesses over 60% of the time. The system improved with more data and showed no signs of hitting a ceiling, suggesting that with enough brain recordings, accuracy could keep climbing.",
+    "whyItMatters": "This is a step toward brain-computer interfaces that could help people who cannot speak or move — eventually allowing them to communicate their thoughts directly. The finding that the method kept improving with more data suggests that with denser recordings or better technology, we might eventually decode thoughts with practical accuracy. Understanding which brain signals carry word meaning also reveals how the brain processes language silently.",
+    "fetchedAt": "2026-08-21T19:20:57.543Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 45,
+      "wordCount": 252
+    },
+    "slug": "decoding-silent-reading-from"
+  },
+  {
+    "id": "2608.19908",
+    "title": "A Layered Simplex Architecture for Large Alphabets",
+    "authors": "Meir Feder, Yaniv Fogel, Ruediger Urbanke",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-08-20T11:24:39Z",
+    "publishedFormatted": "Aug 20, 2026",
+    "subtitle": "A simpler way to guess unknown probabilities from limited data",
+    "summary": "Researchers developed a new method for estimating probability distributions when dealing with huge sets of possible outcomes—like predicting which words appear next in text. The method is remarkably simple: it multiplies random samples together and renormalizes them, yet it performs as well as or better than established techniques like Good-Turing across diverse real-world tests, without requiring manual tuning of parameters.",
+    "whyItMatters": "Probability estimation is central to compression, language modeling, and machine learning. This method works reliably across different alphabet sizes and data quantities without needing to adjust knobs by hand—a major practical advantage. The work also reveals a precise mathematical pattern: prediction cost scales directly with how fast new items appear in your data, which offers clearer insight into what makes some estimation problems harder than others.",
+    "fetchedAt": "2026-08-21T19:21:01.187Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 30,
+      "wordCount": 206
+    },
+    "slug": "a-layered-simplex-architecture"
+  },
+  {
     "id": "2608.20204",
     "title": "ContractScrub: A benchmark for final review of legal contracts",
     "authors": "Yejin Bang, Kirsty Fielding, Brandan Oliver et al.",

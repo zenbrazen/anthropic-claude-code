@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 658 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 661 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 225 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 226 papers in archive.
+  - "Transfer Learning in Nonparametric Regression with Deep ReLU Networks"
   - "ContractScrub: A benchmark for final review of legal contracts"
-  - "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 54 papers in archive.
   - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
   - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 55 papers in archive.
   - "Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft"
   - "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 55 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 56 papers in archive.
+  - "Decoding silent reading from non-invasive EEG"
   - "DMT-Dens: Density-preserving manifold visualization for biological data"
-  - "Order-Sensitive Fast-Synapse Limits in Sparse Excitatory-Inhibitory Threshold-Reset Networks"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 57 papers in archive.
   - "Concentrated Liquidity Provision: a Reinforcement Learning Perspective"
   - "Is the medium the message? Social disclosure channels and firm risk"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 56 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 57 papers in archive.
+  - "A Layered Simplex Architecture for Large Alphabets"
   - "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry"
-  - "Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 54 papers in archive.
   - "The Zonotopic Mixture Filter"
   - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior"
 
 ## 10 most recent papers
+
+### Transfer Learning in Nonparametric Regression with Deep ReLU Networks
+- URL: https://paperplaine.com/papers/transfer-learning-in-nonparametric
+- Category: Computer Science · AI
+- Authors: Junpeng Ren, Carlos Misael Madrid Padilla, Yanzhen Chen et al.
+- arXiv: 2608.20255
+- Plain-English subtitle: How AI learns from multiple groups faster by finding what they share
+- Summary: A new method lets machine learning models train on data from multiple groups — like hospitals or regions — by first finding what they have in common, then learning what makes each group different. When built with deep neural networks, this approach can handle high-dimensional problems that would normally require exponentially more data, and learns faster when groups are genuinely similar.
+- Why it matters: Many real problems involve related but distinct groups: different hospitals treating the same disease, or predictive models that need to work across countries with local variations. This method reduces the data each group needs to contribute while still capturing their unique patterns, making it practical to deploy personalized AI systems without requiring massive datasets from every location or organization.
+
+### Decoding silent reading from non-invasive EEG
+- URL: https://paperplaine.com/papers/decoding-silent-reading-from
+- Category: Quantitative Biology
+- Authors: Ingo Marquardt, Anthilia Alchanat, Priyanka Jain
+- arXiv: 2608.20186
+- Plain-English subtitle: Reading what someone is silently reading just from their brain waves
+- Summary: Researchers successfully decoded which words people were silently reading by analyzing their brain activity through EEG, correctly identifying words from a large vocabulary in the top 10 guesses over 60% of the time. The system improved with more data and showed no signs of hitting a ceiling, suggesting that with enough brain recordings, accuracy could keep climbing.
+- Why it matters: This is a step toward brain-computer interfaces that could help people who cannot speak or move — eventually allowing them to communicate their thoughts directly. The finding that the method kept improving with more data suggests that with denser recordings or better technology, we might eventually decode thoughts with practical accuracy. Understanding which brain signals carry word meaning also reveals how the brain processes language silently.
+
+### A Layered Simplex Architecture for Large Alphabets
+- URL: https://paperplaine.com/papers/a-layered-simplex-architecture
+- Category: Statistics
+- Authors: Meir Feder, Yaniv Fogel, Ruediger Urbanke
+- arXiv: 2608.19908
+- Plain-English subtitle: A simpler way to guess unknown probabilities from limited data
+- Summary: Researchers developed a new method for estimating probability distributions when dealing with huge sets of possible outcomes—like predicting which words appear next in text. The method is remarkably simple: it multiplies random samples together and renormalizes them, yet it performs as well as or better than established techniques like Good-Turing across diverse real-world tests, without requiring manual tuning of parameters.
+- Why it matters: Probability estimation is central to compression, language modeling, and machine learning. This method works reliably across different alphabet sizes and data quantities without needing to adjust knobs by hand—a major practical advantage. The work also reveals a precise mathematical pattern: prediction cost scales directly with how fast new items appear in your data, which offers clearer insight into what makes some estimation problems harder than others.
 
 ### ContractScrub: A benchmark for final review of legal contracts
 - URL: https://paperplaine.com/papers/contractscrub-a-benchmark-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A smarter way to fill in missing data points in time series
 - Summary: Researchers developed a new method called MDTIM that fills in missing values in time series data—like temperature readings with gaps or stock prices with incomplete records—by treating masked (missing) and observed values as fundamentally different things during training. Rather than training on noise prediction like existing approaches, the model learns to directly predict the actual missing values, and a new discretization technique lets it handle continuous data while maintaining awareness of the ordering between values.
 - Why it matters: Time series data with gaps are everywhere: weather stations with sensor failures, medical monitoring with dropped readings, industrial equipment with interrupted logging. Better imputation means more reliable downstream analysis and forecasting, reducing errors in climate models, patient diagnostics, and predictive maintenance. This approach outperformed existing methods across different types and amounts of missing data, suggesting it could become a standard tool for cleaning real-world time series in practice.
-
-### Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections
-- URL: https://paperplaine.com/papers/europe-s-climate-ambition
-- Category: Economics
-- Authors: Jacopo Ghirri, Carlos Rodriguez-Pardo, Lara Aleluia Reis et al.
-- arXiv: 2608.18690
-- Plain-English subtitle: Europe will miss its climate targets by a third without urgent policy changes
-- Summary: Europe's current trajectory will overshoot its 2030 climate target by 35%, according to machine learning projections of emissions across all EU countries through 2023. While renewable energy is cutting power sector emissions as planned, transportation has barely improved and now accounts for over one-third of total emissions, revealing a gap that spans nearly all member states rather than concentrating in a few laggards.
-- Why it matters: The EU has staked its global climate credibility on the 55% reduction target, but hitting it now requires far more aggressive intervention than current policies deliver. Transportation's structural slowness—affecting countries across the bloc—means the problem can't be solved by a few policy fixes; Europe needs wholesale changes to how people and goods move, not just incremental tweaks to existing measures.
-
-### DMT-Dens: Density-preserving manifold visualization for biological data
-- URL: https://paperplaine.com/papers/dmt-dens-density-preserving
-- Category: Quantitative Biology
-- Authors: Ruizhe Wang, Yixuan Dong, Bolin Yang et al.
-- arXiv: 2608.17571
-- Plain-English subtitle: A better way to visualize rare cells without distorting the crowded ones
-- Summary: Scientists created DMT-Dens, a visualization tool that displays high-dimensional biological data while accurately preserving density patterns — keeping crowded regions visibly dense and sparse regions visibly sparse. Unlike existing methods, it prevents the visual distortion that can make rare or transitional cell states hard to spot or misinterpret their actual frequency in a sample.
-- Why it matters: Cell biologists rely on these visualizations to understand which cell types are common, which are rare, and which represent transitions between states — critical for discovering new cell populations and understanding disease progression. Distorted density patterns have led researchers to misidentify the prevalence of rare cells, potentially steering biological discovery in the wrong direction. DMT-Dens lets biologists see the true distribution of their samples, making it easier to catch genuinely rare events and understand the actual landscape of cell diversity.
-
-### Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents
-- URL: https://paperplaine.com/papers/policy-invariant-reward-shaping
-- Category: Computer Science · AI
-- Authors: Christophe D. Hounwanou, John Emeka Eze, Yaé U. Gaba
-- arXiv: 2608.18008
-- Plain-English subtitle: Why imperfect AI feedback won't ruin learning robots
-- Summary: When large language models guide reinforcement learning agents, the AI feedback doesn't need to be perfect to work. Researchers proved mathematically that even inaccurate language model scores preserve the optimal strategy an agent learns, and tested this claim on systems where the misleading feedback was twenty times stronger than the true signal.
-- Why it matters: Building AI systems that combine language models with learning agents is becoming standard practice, but engineers haven't had theoretical assurance that imperfect feedback won't poison the results. This work provides that assurance, letting teams use language model guidance without needing to validate every single score—saving engineering time on systems where language model feedback is cheaper and faster than manually annotated data.
 
 ## About
 
