@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 655 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 658 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 224 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 225 papers in archive.
+  - "ContractScrub: A benchmark for final review of legal contracts"
   - "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning"
-  - "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 54 papers in archive.
   - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
   - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 55 papers in archive.
   - "Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules"
   - "Spectral Edge Rigidity of Quantum Chaotic States"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 54 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 55 papers in archive.
+  - "Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft"
   - "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform"
-  - "Optimizing bounds for energy-constrained optimal cooling problems in two dimensions"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 55 papers in archive.
   - "DMT-Dens: Density-preserving manifold visualization for biological data"
   - "Order-Sensitive Fast-Synapse Limits in Sparse Excitatory-Inhibitory Threshold-Reset Networks"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 56 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 57 papers in archive.
+  - "Concentrated Liquidity Provision: a Reinforcement Learning Perspective"
   - "Is the medium the message? Social disclosure channels and firm risk"
-  - "Retained hidden excess generates memory in price-limited markets"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 56 papers in archive.
   - "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry"
   - "Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior"
 
 ## 10 most recent papers
+
+### ContractScrub: A benchmark for final review of legal contracts
+- URL: https://paperplaine.com/papers/contractscrub-a-benchmark-for
+- Category: Computer Science · AI
+- Authors: Yejin Bang, Kirsty Fielding, Brandan Oliver et al.
+- arXiv: 2608.20204
+- Plain-English subtitle: Testing whether AI can catch hidden mistakes in legal contracts
+- Summary: Researchers created the first test to measure how well AI language models can spot errors in legal contracts—a task lawyers spend hours doing by hand. The results were sobering: even the most advanced models caught fewer than 75% of mistakes, revealing a significant gap between how well these systems perform on general tests and how well they work on real legal documents.
+- Why it matters: Contract review is expensive, tedious work that consumes thousands of lawyer hours annually. If AI could reliably automate it, firms could cut costs and speed up deals. This benchmark shows that current AI systems aren't ready for the task despite their strong general capabilities—meaning companies relying on these tools for legal review could miss costly errors, and the field needs better, domain-specific AI development before automation is safe to deploy.
+
+### Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft
+- URL: https://paperplaine.com/papers/taming-the-tilt-a
+- Category: Mathematics
+- Authors: Daniel Milz, Marc May, Andreas Seefried et al.
+- arXiv: 2608.20300
+- Plain-English subtitle: Making flying taxi-like aircraft easier and safer for pilots to control
+- Summary: Researchers designed a control system that lets pilots fly experimental electric aircraft through multiple flight modes—from vertical takeoff to forward flight—using intuitive stick movements and tactile feedback, without overloading them with complexity. Tests in a full-motion simulator showed the system transitions smoothly between flight phases and doesn't significantly slow down the aircraft compared to simpler controls.
+- Why it matters: Electric vertical takeoff aircraft (eVTOLs) could replace helicopters and short-haul flights, but their complexity makes them dangerous to pilot. A control system that reduces pilot workload while maintaining performance is essential for these aircraft to become practical and safe for commercial use—especially as companies race to deploy air taxis in cities.
+
+### Concentrated Liquidity Provision: a Reinforcement Learning Perspective
+- URL: https://paperplaine.com/papers/concentrated-liquidity-provision-a
+- Category: Quantitative Finance
+- Authors: Georgios Chionas, Charalampos Kleitsikas, Stefanos Leonardos et al.
+- arXiv: 2608.19389
+- Plain-English subtitle: When to shuffle your crypto holdings to maximize profits
+- Summary: When people provide liquidity to decentralized exchanges like Uniswap, they face constant choices: when to rebalance their positions and which price ranges to bet on. Researchers used reinforcement learning—a form of artificial intelligence that learns through trial and error—to discover winning strategies, and found that the best approaches adapt to market conditions by accounting for mispricing, rebalancing costs, and how confident the AI is about future prices.
+- Why it matters: Liquidity providers lose money in volatile markets, and bad timing on rebalancing can wipe out gains. These AI-learned strategies reduced catastrophic losses during market swings compared to simpler approaches, which could help individual traders avoid the kind of sudden, outsized losses that have become common in decentralized finance.
 
 ### Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning
 - URL: https://paperplaine.com/papers/beyond-teacher-likelihood-group
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why imperfect AI feedback won't ruin learning robots
 - Summary: When large language models guide reinforcement learning agents, the AI feedback doesn't need to be perfect to work. Researchers proved mathematically that even inaccurate language model scores preserve the optimal strategy an agent learns, and tested this claim on systems where the misleading feedback was twenty times stronger than the true signal.
 - Why it matters: Building AI systems that combine language models with learning agents is becoming standard practice, but engineers haven't had theoretical assurance that imperfect feedback won't poison the results. This work provides that assurance, letting teams use language model guidance without needing to validate every single score—saving engineering time on systems where language model feedback is cheaper and faster than manually annotated data.
-
-### The Zonotopic Mixture Filter
-- URL: https://paperplaine.com/papers/the-zonotopic-mixture-filter
-- Category: Engineering
-- Authors: Rodrigo A. González, Angel L. Cedeño, Vicenç Puig
-- arXiv: 2608.17897
-- Plain-English subtitle: Tracking systems that work with both probability and hard boundaries
-- Summary: Engineers have created a new way to estimate the location and state of moving objects that combines two previously separate approaches: probabilistic methods that use probability distributions, and guaranteed-bounds methods that promise hard limits on error. The zonotopic mixture filter splits the difference by treating noise as coming from one of several bounded sets chosen at random, then uses multiple parallel tracking systems weighted by their probability of being correct. The method guarantees it will give the right answer a specified percentage of the time while still respecting hard physical bounds.
-- Why it matters: State estimation is critical in robotics, autonomous vehicles, power grids, and aerospace—anywhere you need to know what's happening in a system based on noisy sensor data. This approach gives engineers certainty about worst-case scenarios (like aircraft safety margins) without ignoring the statistical patterns in real-world noise, combining safety guarantees with realistic performance. For systems where both statistical accuracy and hard worst-case bounds matter, this eliminates the need to choose between two competing frameworks.
-
-### Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry
-- URL: https://paperplaine.com/papers/where-a-small-language
-- Category: Statistics
-- Authors: Emma Ceccherini, Daniel Lawson, Anjulika Salhan
-- arXiv: 2608.18033
-- Plain-English subtitle: How a small AI model learns to sort invoices—and what geometry reveals about why
-- Summary: A small language model trained on a single computer reached 96% accuracy at automatically sorting invoices into the correct accounting categories, outperforming larger zero-shot AI systems. The researchers discovered that the model's success hinges on geometric patterns in how it represents financial language—clusters of similar invoices that map closely to vendor identity—and found a surprising mismatch: structured invoice formats that help human accountants actually make the AI model perform worse.
-- Why it matters: Companies increasingly automate invoice sorting for tax compliance and financial reporting, but relying on large cloud-based AI creates cost and security risks. This work shows that smaller, in-house models can match or beat expensive alternatives while keeping sensitive financial data private—and only need about 100 labeled invoices per new client to work well. Understanding *how* these models make decisions through geometry rather than black-box predictions also lets accountants spot when something has gone wrong.
-
-### From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation
-- URL: https://paperplaine.com/papers/from-corpora-to-co
-- Category: Computer Science · AI
-- Authors: Xingjian Wang, Zhao Wang, Taihang Hu et al.
-- arXiv: 2608.18076
-- Plain-English subtitle: Building image generators by teaching skills in the right order
-- Summary: Researchers built a new system for training image-generation AI that organizes training data around learning dependencies—teaching fundamental skills before advanced ones—rather than treating each task separately. The approach created a 440-million-image dataset and produced models that handle text-to-image generation and image editing with broader visual coverage and better skill transfer than conventional methods.
-- Why it matters: Image generators trained this way perform better across multiple tasks without needing separate specialized models, reducing computational waste and engineering overhead. This suggests that how data is sequenced during training matters as much as the data itself—a finding that could improve efficiency in training other large AI systems.
 
 ## About
 
