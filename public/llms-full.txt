@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 664 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 667 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-22
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization
+Subtitle: Teaching AI to remember documents without looking them up during answers
+URL: https://paperplaine.com/papers/inject-align-recover-staged
+Category: Computer Science · AI
+Authors: Qian Kou, Xiaofeng Shi, Xiaosong Qiu et al.
+arXiv ID: 2608.20281
+arXiv URL: https://arxiv.org/abs/2608.20281
+Posted: 2026-08-22
+
+Summary: Large language models typically need to retrieve source documents when answering questions about them. Researchers developed a three-stage training method called IAR that lets models internalize document knowledge permanently, so they can answer questions accurately without retrieval — improving domain-specific accuracy by 3.6 percentage points while maintaining general reasoning skills across multiple AI models.
+
+Why it matters: Most AI systems today rely on retrieving relevant documents in real time, which is slow and fails when documents aren't available or are missed by search. A model that permanently learns document content could answer faster and more reliably in settings like customer support, medical records, or legal document systems — where the same documents are queried repeatedly and immediate retrieval isn't always possible.
+
+---
+Title: Auditing Cross-Lingual Fairness in Language Model Watermarking
+Subtitle: Why watermarks on AI text work differently across world languages
+URL: https://paperplaine.com/papers/auditing-cross-lingual-fairness
+Category: Computer Science
+Authors: Alexander Nemecek, Osama Zafar, Debargha Ganguly et al.
+arXiv ID: 2608.20047
+arXiv URL: https://arxiv.org/abs/2608.20047
+Posted: 2026-08-22
+
+Summary: Watermarking schemes that hide invisible marks in AI-generated text work unevenly across languages, with gaps driven by fundamental linguistic differences rather than random variation. Testing six watermarking methods across eleven languages revealed that performance gaps cluster by language family—not individual languages—suggesting the problem is baked into how these schemes handle different grammatical structures and writing systems.
+
+Why it matters: As AI systems deploy globally, watermarks are a key tool for detecting machine-generated content in moderation and authenticity verification. If watermarks fail silently for speakers of certain languages, some users get strong detection while others face unreliable protection. The framework here provides a concrete way to audit these gaps before deployment, rather than discovering them after problems emerge at scale.
+
+---
+Title: Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in
+Subtitle: How banks' debt can absorb losses automatically without formal bailouts
+URL: https://paperplaine.com/papers/systemic-risk-in-financial
+Category: Quantitative Finance
+Authors: Jason Roderick Donaldson, Giorgia Piacentino, Xiaobo Yu
+arXiv ID: 2608.13979
+arXiv URL: https://arxiv.org/abs/2608.13979
+Posted: 2026-08-22
+
+Summary: Banks can use certain types of debt to automatically shift losses to creditors when financial shocks hit, without needing government intervention or court-ordered restructuring. The researchers found that this "backdoor bail-in" actually makes interconnected banking networks more stable, not less—reversing conventional wisdom that links indebtedness to fragility.
+
+Why it matters: Banks currently rely on government rescues or lengthy legal processes to manage crises, both costly and slow. If interbank debt is structured correctly, losses get absorbed automatically during stress, potentially limiting contagion without taxpayer bailouts. The researchers also explain why real banking networks adopt core-periphery structures: they're harder to destabilize, even if they don't perfectly optimize risk-sharing.
 
 ---
 Title: ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models

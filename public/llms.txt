@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 664 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 667 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 227 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 228 papers in archive.
+  - "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization"
   - "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models"
-  - "Transfer Learning in Nonparametric Regression with Deep ReLU Networks"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 54 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 55 papers in archive.
+  - "Auditing Cross-Lingual Fairness in Language Model Watermarking"
   - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
-  - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 56 papers in archive.
   - "Shift or curtail? How much data-center flexibility is worth depends on the host power grid"
   - "Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 56 papers in archive.
   - "Decoding silent reading from non-invasive EEG"
   - "DMT-Dens: Density-preserving manifold visualization for biological data"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 57 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 58 papers in archive.
+  - "Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in"
   - "Concentrated Liquidity Provision: a Reinforcement Learning Perspective"
-  - "Is the medium the message? Social disclosure channels and firm risk"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 57 papers in archive.
   - "A Layered Simplex Architecture for Large Alphabets"
   - "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections"
 
 ## 10 most recent papers
+
+### Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization
+- URL: https://paperplaine.com/papers/inject-align-recover-staged
+- Category: Computer Science · AI
+- Authors: Qian Kou, Xiaofeng Shi, Xiaosong Qiu et al.
+- arXiv: 2608.20281
+- Plain-English subtitle: Teaching AI to remember documents without looking them up during answers
+- Summary: Large language models typically need to retrieve source documents when answering questions about them. Researchers developed a three-stage training method called IAR that lets models internalize document knowledge permanently, so they can answer questions accurately without retrieval — improving domain-specific accuracy by 3.6 percentage points while maintaining general reasoning skills across multiple AI models.
+- Why it matters: Most AI systems today rely on retrieving relevant documents in real time, which is slow and fails when documents aren't available or are missed by search. A model that permanently learns document content could answer faster and more reliably in settings like customer support, medical records, or legal document systems — where the same documents are queried repeatedly and immediate retrieval isn't always possible.
+
+### Auditing Cross-Lingual Fairness in Language Model Watermarking
+- URL: https://paperplaine.com/papers/auditing-cross-lingual-fairness
+- Category: Computer Science
+- Authors: Alexander Nemecek, Osama Zafar, Debargha Ganguly et al.
+- arXiv: 2608.20047
+- Plain-English subtitle: Why watermarks on AI text work differently across world languages
+- Summary: Watermarking schemes that hide invisible marks in AI-generated text work unevenly across languages, with gaps driven by fundamental linguistic differences rather than random variation. Testing six watermarking methods across eleven languages revealed that performance gaps cluster by language family—not individual languages—suggesting the problem is baked into how these schemes handle different grammatical structures and writing systems.
+- Why it matters: As AI systems deploy globally, watermarks are a key tool for detecting machine-generated content in moderation and authenticity verification. If watermarks fail silently for speakers of certain languages, some users get strong detection while others face unreliable protection. The framework here provides a concrete way to audit these gaps before deployment, rather than discovering them after problems emerge at scale.
+
+### Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in
+- URL: https://paperplaine.com/papers/systemic-risk-in-financial
+- Category: Quantitative Finance
+- Authors: Jason Roderick Donaldson, Giorgia Piacentino, Xiaobo Yu
+- arXiv: 2608.13979
+- Plain-English subtitle: How banks' debt can absorb losses automatically without formal bailouts
+- Summary: Banks can use certain types of debt to automatically shift losses to creditors when financial shocks hit, without needing government intervention or court-ordered restructuring. The researchers found that this "backdoor bail-in" actually makes interconnected banking networks more stable, not less—reversing conventional wisdom that links indebtedness to fragility.
+- Why it matters: Banks currently rely on government rescues or lengthy legal processes to manage crises, both costly and slow. If interbank debt is structured correctly, losses get absorbed automatically during stress, potentially limiting contagion without taxpayer bailouts. The researchers also explain why real banking networks adopt core-periphery structures: they're harder to destabilize, even if they don't perfectly optimize risk-sharing.
 
 ### ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models
 - URL: https://paperplaine.com/papers/conceptguard-benchmarking-context-sensitive
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Testing whether AI can catch hidden mistakes in legal contracts
 - Summary: Researchers created the first test to measure how well AI language models can spot errors in legal contracts—a task lawyers spend hours doing by hand. The results were sobering: even the most advanced models caught fewer than 75% of mistakes, revealing a significant gap between how well these systems perform on general tests and how well they work on real legal documents.
 - Why it matters: Contract review is expensive, tedious work that consumes thousands of lawyer hours annually. If AI could reliably automate it, firms could cut costs and speed up deals. This benchmark shows that current AI systems aren't ready for the task despite their strong general capabilities—meaning companies relying on these tools for legal review could miss costly errors, and the field needs better, domain-specific AI development before automation is safe to deploy.
-
-### Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft
-- URL: https://paperplaine.com/papers/taming-the-tilt-a
-- Category: Mathematics
-- Authors: Daniel Milz, Marc May, Andreas Seefried et al.
-- arXiv: 2608.20300
-- Plain-English subtitle: Making flying taxi-like aircraft easier and safer for pilots to control
-- Summary: Researchers designed a control system that lets pilots fly experimental electric aircraft through multiple flight modes—from vertical takeoff to forward flight—using intuitive stick movements and tactile feedback, without overloading them with complexity. Tests in a full-motion simulator showed the system transitions smoothly between flight phases and doesn't significantly slow down the aircraft compared to simpler controls.
-- Why it matters: Electric vertical takeoff aircraft (eVTOLs) could replace helicopters and short-haul flights, but their complexity makes them dangerous to pilot. A control system that reduces pilot workload while maintaining performance is essential for these aircraft to become practical and safe for commercial use—especially as companies race to deploy air taxis in cities.
-
-### Concentrated Liquidity Provision: a Reinforcement Learning Perspective
-- URL: https://paperplaine.com/papers/concentrated-liquidity-provision-a
-- Category: Quantitative Finance
-- Authors: Georgios Chionas, Charalampos Kleitsikas, Stefanos Leonardos et al.
-- arXiv: 2608.19389
-- Plain-English subtitle: When to shuffle your crypto holdings to maximize profits
-- Summary: When people provide liquidity to decentralized exchanges like Uniswap, they face constant choices: when to rebalance their positions and which price ranges to bet on. Researchers used reinforcement learning—a form of artificial intelligence that learns through trial and error—to discover winning strategies, and found that the best approaches adapt to market conditions by accounting for mispricing, rebalancing costs, and how confident the AI is about future prices.
-- Why it matters: Liquidity providers lose money in volatile markets, and bad timing on rebalancing can wipe out gains. These AI-learned strategies reduced catastrophic losses during market swings compared to simpler approaches, which could help individual traders avoid the kind of sudden, outsized losses that have become common in decentralized finance.
-
-### Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning
-- URL: https://paperplaine.com/papers/beyond-teacher-likelihood-group
-- Category: Computer Science · AI
-- Authors: Zhu Zhang, Jixun Wang, Xiaoang Xu et al.
-- arXiv: 2608.19181
-- Plain-English subtitle: Teaching AI to think across entire documents instead of word by word
-- Summary: AI models trained on their own outputs using teacher feedback often make locally reasonable mistakes when tasks require evidence scattered across long documents. Researchers diagnosed this problem and created GC-OPD, a method that aligns token-level feedback with task-level scoring, improving performance by 11 percentage points on long-context reasoning benchmarks.
-- Why it matters: Long-context tasks like research synthesis and document analysis require AI to track information across thousands of words. Current training methods miss this challenge by optimizing one word at a time, causing models to miss distributed evidence or violate task constraints. This approach fixes that mismatch and shows measurable gains on real benchmarks, making AI more reliable for work that demands careful attention to entire documents.
 
 ## About
 
