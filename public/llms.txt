@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 661 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 664 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 226 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 227 papers in archive.
+  - "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models"
   - "Transfer Learning in Nonparametric Regression with Deep ReLU Networks"
-  - "ContractScrub: A benchmark for final review of legal contracts"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 54 papers in archive.
   - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
   - "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 55 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 56 papers in archive.
+  - "Shift or curtail? How much data-center flexibility is worth depends on the host power grid"
   - "Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules"
-  - "Spectral Edge Rigidity of Quantum Chaotic States"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 55 papers in archive.
   - "Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft"
   - "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 54 papers in archive.
   - "The Zonotopic Mixture Filter"
   - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 47 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 48 papers in archive.
+  - "Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use"
   - "Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections"
-  - "A Neurofinance Framework for Subjective Temporal Perception, Risk, and Investment Behavior"
 
 ## 10 most recent papers
+
+### ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models
+- URL: https://paperplaine.com/papers/conceptguard-benchmarking-context-sensitive
+- Category: Computer Science · AI
+- Authors: Sahil Kale, Ian Harris
+- arXiv: 2608.20338
+- Plain-English subtitle: Teaching AI to forget bad uses of ideas while keeping good ones
+- Summary: Current methods for removing harmful knowledge from AI systems are too crude—they treat facts as isolated pieces rather than concepts that can be used in multiple ways. Researchers created ConceptGuard, a new benchmark that tests whether AI can eliminate dangerous applications of a concept (like using chemistry for weapons) while preserving safe ones (like using it for medicine), and found that existing unlearning techniques fail this more realistic test.
+- Why it matters: As AI systems become more powerful, the ability to selectively remove harmful knowledge matters for safety and deployment. Today's unlearning methods can't reliably distinguish between harmful and helpful uses of the same concept, meaning a system might either keep dangerous capabilities intact or strip away genuinely useful knowledge. ConceptGuard provides a concrete way to test whether new safety techniques actually work in real-world scenarios where knowledge has multiple valid and invalid applications.
+
+### Shift or curtail? How much data-center flexibility is worth depends on the host power grid
+- URL: https://paperplaine.com/papers/shift-or-curtail-how
+- Category: Physics
+- Authors: Saroj Khanal, Geon Roh, Boyu Yao et al.
+- arXiv: 2608.19622
+- Plain-English subtitle: When data centers should shift work versus reduce power use
+- Summary: How data centers operate flexibly—by moving computing tasks around or cutting power when needed—can delay expensive power grid expansion, but which strategy works best depends entirely on where the data center sits. In a fossil-fuel-heavy grid like PJM's, shifting work between regions cuts costs by 6–19%; in a carbon-capped grid like Korea's, timing workloads for solar hours works better and avoids building costly batteries.
+- Why it matters: Data centers now consume as much electricity as entire countries, forcing utilities to build expensive new power plants and transmission lines. If data centers can flexibly adjust when and where they use power, they can defer or eliminate billions of dollars in grid infrastructure investment—but only if their flexibility matches what the local grid actually needs. A one-size-fits-all approach to data-center flexibility wastes money; utilities and operators need different strategies depending on whether they're managing fossil fuels, renewable peaks, or carbon caps.
+
+### Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use
+- URL: https://paperplaine.com/papers/governing-delegation-to-generative
+- Category: Economics
+- Authors: Jorge Fábrega
+- arXiv: 2608.17624
+- Plain-English subtitle: When people use AI for work versus play, how they direct it changes
+- Summary: When people shift from personal to work tasks, they plan their AI instructions more carefully upfront rather than fixing outputs as they go. The effect is stronger on direct API use than on Claude.ai, suggesting that different interfaces pull people toward different ways of controlling AI — planned direction versus real-time course correction.
+- Why it matters: As AI becomes embedded in workplaces, managers and organizations need to understand that the same tool behaves differently depending on how people access it. Work contexts naturally push people toward specifying tasks clearly before execution, while chat interfaces encourage tinkering and feedback loops. This shapes what traces of human control remain in AI decisions — a critical issue for accountability, audits, and knowing who is really responsible when something goes wrong.
 
 ### Transfer Learning in Nonparametric Regression with Deep ReLU Networks
 - URL: https://paperplaine.com/papers/transfer-learning-in-nonparametric
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to think across entire documents instead of word by word
 - Summary: AI models trained on their own outputs using teacher feedback often make locally reasonable mistakes when tasks require evidence scattered across long documents. Researchers diagnosed this problem and created GC-OPD, a method that aligns token-level feedback with task-level scoring, improving performance by 11 percentage points on long-context reasoning benchmarks.
 - Why it matters: Long-context tasks like research synthesis and document analysis require AI to track information across thousands of words. Current training methods miss this challenge by optimizing one word at a time, causing models to miss distributed evidence or violate task constraints. This approach fixes that mismatch and shows measurable gains on real benchmarks, making AI more reliable for work that demands careful attention to entire documents.
-
-### SiNMULI: Novel Signed Network Approach for Malicious URL Identification
-- URL: https://paperplaine.com/papers/sinmuli-novel-signed-network
-- Category: Computer Science
-- Authors: Avijit Gayen, Sayan Mondal, Angshuman Jana
-- arXiv: 2608.19190
-- Plain-English subtitle: Using social networks to spot malicious websites instead of analyzing their content
-- Summary: Researchers developed a new method to identify dangerous websites by analyzing the links pointing to them—treating the problem like a social network where connections between websites are either trustworthy or suspicious. The approach achieved 99.89% accuracy on real-world data and works without needing to learn from labeled examples, making it more adaptable than existing techniques as attackers change their tactics.
-- Why it matters: Phishing scams and malware distribution cost individuals and businesses billions annually. This method could be deployed immediately without requiring constant retraining, and because it analyzes link patterns rather than website content, it resists evasion techniques that criminals use to hide their true purpose. It also explains why it flagged a site as dangerous—crucial for security teams investigating alerts.
-
-### Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules
-- URL: https://paperplaine.com/papers/electrostriction-in-a-bose
-- Category: Physics
-- Authors: Haneul Kwak, Ian Stevenson, Weijun Yuan et al.
-- arXiv: 2608.19180
-- Plain-English subtitle: How to squeeze and spin a quantum gas made of molecules
-- Summary: Physicists created a bizarre state of matter—a Bose-Einstein condensate of dipolar molecules—and discovered they could stretch it into an ellipse using carefully tuned microwave fields. By twisting the orientation of these fields, they could make the entire condensate rotate, offering a new way to study exotic quantum behaviors like vortices and superfluidity in systems dominated by long-range interactions.
-- Why it matters: Rotating quantum gases are laboratories for studying deep physics that's hard to access otherwise—phenomena like superfluidity and supersolidity that break ordinary rules. This electrostriction technique gives experimenters a practical knob to turn, making it easier to create and manipulate these extreme states and test predictions about how matter behaves when quantum effects and molecular interactions collide.
-
-### Discretizing Continuous Time Series for Imputation with Masked Diffusion Training
-- URL: https://paperplaine.com/papers/discretizing-continuous-time-series
-- Category: Computer Science · AI
-- Authors: Dongbin Kim, Seungyun Lee, Geonwoo Shin et al.
-- arXiv: 2608.19119
-- Plain-English subtitle: A smarter way to fill in missing data points in time series
-- Summary: Researchers developed a new method called MDTIM that fills in missing values in time series data—like temperature readings with gaps or stock prices with incomplete records—by treating masked (missing) and observed values as fundamentally different things during training. Rather than training on noise prediction like existing approaches, the model learns to directly predict the actual missing values, and a new discretization technique lets it handle continuous data while maintaining awareness of the ordering between values.
-- Why it matters: Time series data with gaps are everywhere: weather stations with sensor failures, medical monitoring with dropped readings, industrial equipment with interrupted logging. Better imputation means more reliable downstream analysis and forecasting, reducing errors in climate models, patient diagnostics, and predictive maintenance. This approach outperformed existing methods across different types and amounts of missing data, suggesting it could become a standard tool for cleaning real-world time series in practice.
 
 ## About
 

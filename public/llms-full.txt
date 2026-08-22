@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 661 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-21
+This file contains the complete plain-English text of all 664 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-22
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models
+Subtitle: Teaching AI to forget bad uses of ideas while keeping good ones
+URL: https://paperplaine.com/papers/conceptguard-benchmarking-context-sensitive
+Category: Computer Science · AI
+Authors: Sahil Kale, Ian Harris
+arXiv ID: 2608.20338
+arXiv URL: https://arxiv.org/abs/2608.20338
+Posted: 2026-08-22
+
+Summary: Current methods for removing harmful knowledge from AI systems are too crude—they treat facts as isolated pieces rather than concepts that can be used in multiple ways. Researchers created ConceptGuard, a new benchmark that tests whether AI can eliminate dangerous applications of a concept (like using chemistry for weapons) while preserving safe ones (like using it for medicine), and found that existing unlearning techniques fail this more realistic test.
+
+Why it matters: As AI systems become more powerful, the ability to selectively remove harmful knowledge matters for safety and deployment. Today's unlearning methods can't reliably distinguish between harmful and helpful uses of the same concept, meaning a system might either keep dangerous capabilities intact or strip away genuinely useful knowledge. ConceptGuard provides a concrete way to test whether new safety techniques actually work in real-world scenarios where knowledge has multiple valid and invalid applications.
+
+---
+Title: Shift or curtail? How much data-center flexibility is worth depends on the host power grid
+Subtitle: When data centers should shift work versus reduce power use
+URL: https://paperplaine.com/papers/shift-or-curtail-how
+Category: Physics
+Authors: Saroj Khanal, Geon Roh, Boyu Yao et al.
+arXiv ID: 2608.19622
+arXiv URL: https://arxiv.org/abs/2608.19622
+Posted: 2026-08-22
+
+Summary: How data centers operate flexibly—by moving computing tasks around or cutting power when needed—can delay expensive power grid expansion, but which strategy works best depends entirely on where the data center sits. In a fossil-fuel-heavy grid like PJM's, shifting work between regions cuts costs by 6–19%; in a carbon-capped grid like Korea's, timing workloads for solar hours works better and avoids building costly batteries.
+
+Why it matters: Data centers now consume as much electricity as entire countries, forcing utilities to build expensive new power plants and transmission lines. If data centers can flexibly adjust when and where they use power, they can defer or eliminate billions of dollars in grid infrastructure investment—but only if their flexibility matches what the local grid actually needs. A one-size-fits-all approach to data-center flexibility wastes money; utilities and operators need different strategies depending on whether they're managing fossil fuels, renewable peaks, or carbon caps.
+
+---
+Title: Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use
+Subtitle: When people use AI for work versus play, how they direct it changes
+URL: https://paperplaine.com/papers/governing-delegation-to-generative
+Category: Economics
+Authors: Jorge Fábrega
+arXiv ID: 2608.17624
+arXiv URL: https://arxiv.org/abs/2608.17624
+Posted: 2026-08-22
+
+Summary: When people shift from personal to work tasks, they plan their AI instructions more carefully upfront rather than fixing outputs as they go. The effect is stronger on direct API use than on Claude.ai, suggesting that different interfaces pull people toward different ways of controlling AI — planned direction versus real-time course correction.
+
+Why it matters: As AI becomes embedded in workplaces, managers and organizations need to understand that the same tool behaves differently depending on how people access it. Work contexts naturally push people toward specifying tasks clearly before execution, while chat interfaces encourage tinkering and feedback loops. This shapes what traces of human control remain in AI decisions — a critical issue for accountability, audits, and knowing who is really responsible when something goes wrong.
 
 ---
 Title: Transfer Learning in Nonparametric Regression with Deep ReLU Networks
