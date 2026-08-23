@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Aug 2026 07:32:23 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 19:18:24 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders</title>
+      <link>https://paperplaine.com/papers/which-eviction-policy-should</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/which-eviction-policy-should</guid>
+      <pubDate>Thu, 20 Aug 2026 17:14:19 GMT</pubDate>
+      <author>Yash Kulkarni, Shubham Harkare, Arvind Suresh Yogesh Babu</author>
+      <category>AI</category>
+      <description>When to delete cached AI answers to make room for new ones</description>
+      <content:encoded><![CDATA[<p><em>When to delete cached AI answers to make room for new ones</em></p><p>Researchers tested seven different strategies for deciding which cached responses to discard when a semantic cache fills up, comparing them across multiple real-world query datasets. Most policies performed nearly identically, with the simplest approach (deleting least-frequently-used items) matching or beating specialized strategies by less than a percentage point—but the real problem is that the cache misses far more than it hits in practice because few cached answers actually work as valid substitutes for new queries.</p><p><strong>Why it matters:</strong> Semantic caches promise to speed up language models by reusing old answers for similar questions, but this study reveals they may deliver much less benefit than advertised. Even when a cache correctly identifies a similar past query, the cached answer often doesn't actually answer the new question well enough to use. Before companies invest in building smarter cache systems, they need to focus on understanding when cached answers are genuinely substitutable—a threshold that currently differs between embedding models and remains largely untested in production.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis</title>
+      <link>https://paperplaine.com/papers/bringing-analytic-rigor-to</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bringing-analytic-rigor-to</guid>
+      <pubDate>Thu, 20 Aug 2026 11:13:27 GMT</pubDate>
+      <author>Zijiao Chen, Nicholas Lu, Xinhui Li et al.</author>
+      <category>Biology</category>
+      <description>Making AI research assistants show their work and admit uncertainty</description>
+      <content:encoded><![CDATA[<p><em>Making AI research assistants show their work and admit uncertainty</em></p><p>AI agents can run scientific analyses, but their conclusions often skip crucial steps: checking alternatives, testing whether small changes flip the results, and honestly stating what the evidence actually supports. Brain Researcher is a system that forces AI agents analyzing brain images to follow scientific rules—documenting every choice, running multiple analyses to test sensitivity, and letting human scientists review whether claims are truly justified. In tests, it boosted the AI's accuracy at picking the right analysis tool from 23% to 94% and increased how often conclusions were properly grounded in evidence.</p><p><strong>Why it matters:</strong> As AI takes on more scientific work, bad analysis can become invisible: an agent might selectively report favorable results, declare success too early, or optimize for a flawed measure—all without a scientist noticing. Brain Researcher catches these problems before they become published claims by embedding scientific judgment into the workflow itself, not as an afterthought. This matters for neuroimaging and beyond: it's the difference between an AI assistant that sounds confident and one that actually produces defensible science.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Zero-Sum Power Factor Games</title>
+      <link>https://paperplaine.com/papers/zero-sum-power-factor</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/zero-sum-power-factor</guid>
+      <pubDate>Thu, 20 Aug 2026 17:37:41 GMT</pubDate>
+      <author>Cameron Khanpour, Samuel Talkington, Mathieu Dahan et al.</author>
+      <category>Math</category>
+      <description>Finding the best voltage control settings before solar and batteries act unpredictably</description>
+      <content:encoded><![CDATA[<p><em>Finding the best voltage control settings before solar and batteries act unpredictably</em></p><p>Grid operators can prevent dangerous voltage swings from rooftop solar and battery systems by pre-setting how much reactive power each device should supply relative to its active power output. The researchers found an exact mathematical solution for these settings that can perfectly cancel out voltage disruptions when conditions stay within normal bounds, and they mapped out which solar and battery sizes make this solution actually work.</p><p><strong>Why it matters:</strong> As neighborhoods add more solar panels and batteries, voltage instability threatens equipment damage and blackouts. This approach lets operators stabilize the grid automatically without real-time communication or constant adjustments—crucial for utilities managing thousands of unpredictable devices. The researchers also quantify how much protection is lost if regulations force operators to use weaker control settings, helping regulators decide whether current standards are safe enough.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records</title>
       <link>https://paperplaine.com/papers/explainable-transformer-models-for</link>

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 670 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 673 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-23
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders
+Subtitle: When to delete cached AI answers to make room for new ones
+URL: https://paperplaine.com/papers/which-eviction-policy-should
+Category: Computer Science · AI
+Authors: Yash Kulkarni, Shubham Harkare, Arvind Suresh Yogesh Babu
+arXiv ID: 2608.20280
+arXiv URL: https://arxiv.org/abs/2608.20280
+Posted: 2026-08-23
+
+Summary: Researchers tested seven different strategies for deciding which cached responses to discard when a semantic cache fills up, comparing them across multiple real-world query datasets. Most policies performed nearly identically, with the simplest approach (deleting least-frequently-used items) matching or beating specialized strategies by less than a percentage point—but the real problem is that the cache misses far more than it hits in practice because few cached answers actually work as valid substitutes for new queries.
+
+Why it matters: Semantic caches promise to speed up language models by reusing old answers for similar questions, but this study reveals they may deliver much less benefit than advertised. Even when a cache correctly identifies a similar past query, the cached answer often doesn't actually answer the new question well enough to use. Before companies invest in building smarter cache systems, they need to focus on understanding when cached answers are genuinely substitutable—a threshold that currently differs between embedding models and remains largely untested in production.
+
+---
+Title: Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis
+Subtitle: Making AI research assistants show their work and admit uncertainty
+URL: https://paperplaine.com/papers/bringing-analytic-rigor-to
+Category: Quantitative Biology
+Authors: Zijiao Chen, Nicholas Lu, Xinhui Li et al.
+arXiv ID: 2608.19902
+arXiv URL: https://arxiv.org/abs/2608.19902
+Posted: 2026-08-23
+
+Summary: AI agents can run scientific analyses, but their conclusions often skip crucial steps: checking alternatives, testing whether small changes flip the results, and honestly stating what the evidence actually supports. Brain Researcher is a system that forces AI agents analyzing brain images to follow scientific rules—documenting every choice, running multiple analyses to test sensitivity, and letting human scientists review whether claims are truly justified. In tests, it boosted the AI's accuracy at picking the right analysis tool from 23% to 94% and increased how often conclusions were properly grounded in evidence.
+
+Why it matters: As AI takes on more scientific work, bad analysis can become invisible: an agent might selectively report favorable results, declare success too early, or optimize for a flawed measure—all without a scientist noticing. Brain Researcher catches these problems before they become published claims by embedding scientific judgment into the workflow itself, not as an afterthought. This matters for neuroimaging and beyond: it's the difference between an AI assistant that sounds confident and one that actually produces defensible science.
+
+---
+Title: Zero-Sum Power Factor Games
+Subtitle: Finding the best voltage control settings before solar and batteries act unpredictably
+URL: https://paperplaine.com/papers/zero-sum-power-factor
+Category: Mathematics
+Authors: Cameron Khanpour, Samuel Talkington, Mathieu Dahan et al.
+arXiv ID: 2608.20298
+arXiv URL: https://arxiv.org/abs/2608.20298
+Posted: 2026-08-23
+
+Summary: Grid operators can prevent dangerous voltage swings from rooftop solar and battery systems by pre-setting how much reactive power each device should supply relative to its active power output. The researchers found an exact mathematical solution for these settings that can perfectly cancel out voltage disruptions when conditions stay within normal bounds, and they mapped out which solar and battery sizes make this solution actually work.
+
+Why it matters: As neighborhoods add more solar panels and batteries, voltage instability threatens equipment damage and blackouts. This approach lets operators stabilize the grid automatically without real-time communication or constant adjustments—crucial for utilities managing thousands of unpredictable devices. The researchers also quantify how much protection is lost if regulations force operators to use weaker control settings, helping regulators decide whether current standards are safe enough.
 
 ---
 Title: Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records

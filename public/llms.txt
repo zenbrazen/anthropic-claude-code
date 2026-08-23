@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 670 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 673 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 229 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 230 papers in archive.
+  - "Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders"
   - "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records"
-  - "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 55 papers in archive.
   - "Auditing Cross-Lingual Fairness in Language Model Watermarking"
   - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 56 papers in archive.
   - "Shift or curtail? How much data-center flexibility is worth depends on the host power grid"
   - "Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 55 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 56 papers in archive.
+  - "Zero-Sum Power Factor Games"
   - "Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft"
-  - "The geometric Laplace transform: Definition, existence and properties of the Geometric Algebra Laplace transform"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 56 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 57 papers in archive.
+  - "Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis"
   - "Decoding silent reading from non-invasive EEG"
-  - "DMT-Dens: Density-preserving manifold visualization for biological data"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 58 papers in archive.
   - "Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in"
   - "Concentrated Liquidity Provision: a Reinforcement Learning Perspective"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections"
 
 ## 10 most recent papers
+
+### Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders
+- URL: https://paperplaine.com/papers/which-eviction-policy-should
+- Category: Computer Science · AI
+- Authors: Yash Kulkarni, Shubham Harkare, Arvind Suresh Yogesh Babu
+- arXiv: 2608.20280
+- Plain-English subtitle: When to delete cached AI answers to make room for new ones
+- Summary: Researchers tested seven different strategies for deciding which cached responses to discard when a semantic cache fills up, comparing them across multiple real-world query datasets. Most policies performed nearly identically, with the simplest approach (deleting least-frequently-used items) matching or beating specialized strategies by less than a percentage point—but the real problem is that the cache misses far more than it hits in practice because few cached answers actually work as valid substitutes for new queries.
+- Why it matters: Semantic caches promise to speed up language models by reusing old answers for similar questions, but this study reveals they may deliver much less benefit than advertised. Even when a cache correctly identifies a similar past query, the cached answer often doesn't actually answer the new question well enough to use. Before companies invest in building smarter cache systems, they need to focus on understanding when cached answers are genuinely substitutable—a threshold that currently differs between embedding models and remains largely untested in production.
+
+### Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis
+- URL: https://paperplaine.com/papers/bringing-analytic-rigor-to
+- Category: Quantitative Biology
+- Authors: Zijiao Chen, Nicholas Lu, Xinhui Li et al.
+- arXiv: 2608.19902
+- Plain-English subtitle: Making AI research assistants show their work and admit uncertainty
+- Summary: AI agents can run scientific analyses, but their conclusions often skip crucial steps: checking alternatives, testing whether small changes flip the results, and honestly stating what the evidence actually supports. Brain Researcher is a system that forces AI agents analyzing brain images to follow scientific rules—documenting every choice, running multiple analyses to test sensitivity, and letting human scientists review whether claims are truly justified. In tests, it boosted the AI's accuracy at picking the right analysis tool from 23% to 94% and increased how often conclusions were properly grounded in evidence.
+- Why it matters: As AI takes on more scientific work, bad analysis can become invisible: an agent might selectively report favorable results, declare success too early, or optimize for a flawed measure—all without a scientist noticing. Brain Researcher catches these problems before they become published claims by embedding scientific judgment into the workflow itself, not as an afterthought. This matters for neuroimaging and beyond: it's the difference between an AI assistant that sounds confident and one that actually produces defensible science.
+
+### Zero-Sum Power Factor Games
+- URL: https://paperplaine.com/papers/zero-sum-power-factor
+- Category: Mathematics
+- Authors: Cameron Khanpour, Samuel Talkington, Mathieu Dahan et al.
+- arXiv: 2608.20298
+- Plain-English subtitle: Finding the best voltage control settings before solar and batteries act unpredictably
+- Summary: Grid operators can prevent dangerous voltage swings from rooftop solar and battery systems by pre-setting how much reactive power each device should supply relative to its active power output. The researchers found an exact mathematical solution for these settings that can perfectly cancel out voltage disruptions when conditions stay within normal bounds, and they mapped out which solar and battery sizes make this solution actually work.
+- Why it matters: As neighborhoods add more solar panels and batteries, voltage instability threatens equipment damage and blackouts. This approach lets operators stabilize the grid automatically without real-time communication or constant adjustments—crucial for utilities managing thousands of unpredictable devices. The researchers also quantify how much protection is lost if regulations force operators to use weaker control settings, helping regulators decide whether current standards are safe enough.
 
 ### Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records
 - URL: https://paperplaine.com/papers/explainable-transformer-models-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to forget bad uses of ideas while keeping good ones
 - Summary: Current methods for removing harmful knowledge from AI systems are too crude—they treat facts as isolated pieces rather than concepts that can be used in multiple ways. Researchers created ConceptGuard, a new benchmark that tests whether AI can eliminate dangerous applications of a concept (like using chemistry for weapons) while preserving safe ones (like using it for medicine), and found that existing unlearning techniques fail this more realistic test.
 - Why it matters: As AI systems become more powerful, the ability to selectively remove harmful knowledge matters for safety and deployment. Today's unlearning methods can't reliably distinguish between harmful and helpful uses of the same concept, meaning a system might either keep dangerous capabilities intact or strip away genuinely useful knowledge. ConceptGuard provides a concrete way to test whether new safety techniques actually work in real-world scenarios where knowledge has multiple valid and invalid applications.
-
-### Shift or curtail? How much data-center flexibility is worth depends on the host power grid
-- URL: https://paperplaine.com/papers/shift-or-curtail-how
-- Category: Physics
-- Authors: Saroj Khanal, Geon Roh, Boyu Yao et al.
-- arXiv: 2608.19622
-- Plain-English subtitle: When data centers should shift work versus reduce power use
-- Summary: How data centers operate flexibly—by moving computing tasks around or cutting power when needed—can delay expensive power grid expansion, but which strategy works best depends entirely on where the data center sits. In a fossil-fuel-heavy grid like PJM's, shifting work between regions cuts costs by 6–19%; in a carbon-capped grid like Korea's, timing workloads for solar hours works better and avoids building costly batteries.
-- Why it matters: Data centers now consume as much electricity as entire countries, forcing utilities to build expensive new power plants and transmission lines. If data centers can flexibly adjust when and where they use power, they can defer or eliminate billions of dollars in grid infrastructure investment—but only if their flexibility matches what the local grid actually needs. A one-size-fits-all approach to data-center flexibility wastes money; utilities and operators need different strategies depending on whether they're managing fossil fuels, renewable peaks, or carbon caps.
-
-### Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use
-- URL: https://paperplaine.com/papers/governing-delegation-to-generative
-- Category: Economics
-- Authors: Jorge Fábrega
-- arXiv: 2608.17624
-- Plain-English subtitle: When people use AI for work versus play, how they direct it changes
-- Summary: When people shift from personal to work tasks, they plan their AI instructions more carefully upfront rather than fixing outputs as they go. The effect is stronger on direct API use than on Claude.ai, suggesting that different interfaces pull people toward different ways of controlling AI — planned direction versus real-time course correction.
-- Why it matters: As AI becomes embedded in workplaces, managers and organizations need to understand that the same tool behaves differently depending on how people access it. Work contexts naturally push people toward specifying tasks clearly before execution, while chat interfaces encourage tinkering and feedback loops. This shapes what traces of human control remain in AI decisions — a critical issue for accountability, audits, and knowing who is really responsible when something goes wrong.
-
-### Transfer Learning in Nonparametric Regression with Deep ReLU Networks
-- URL: https://paperplaine.com/papers/transfer-learning-in-nonparametric
-- Category: Computer Science · AI
-- Authors: Junpeng Ren, Carlos Misael Madrid Padilla, Yanzhen Chen et al.
-- arXiv: 2608.20255
-- Plain-English subtitle: How AI learns from multiple groups faster by finding what they share
-- Summary: A new method lets machine learning models train on data from multiple groups — like hospitals or regions — by first finding what they have in common, then learning what makes each group different. When built with deep neural networks, this approach can handle high-dimensional problems that would normally require exponentially more data, and learns faster when groups are genuinely similar.
-- Why it matters: Many real problems involve related but distinct groups: different hospitals treating the same disease, or predictive models that need to work across countries with local variations. This method reduces the data each group needs to contribute while still capturing their unique patterns, making it practical to deploy personalized AI systems without requiring massive datasets from every location or organization.
 
 ## About
 
