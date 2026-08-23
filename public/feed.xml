@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Aug 2026 19:18:03 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 07:32:23 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records</title>
+      <link>https://paperplaine.com/papers/explainable-transformer-models-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/explainable-transformer-models-for</guid>
+      <pubDate>Thu, 20 Aug 2026 17:54:17 GMT</pubDate>
+      <author>Jun Ni Du, Lukas Adamek, Maxim Kryukov et al.</author>
+      <category>AI</category>
+      <description>Making AI predictions from medical records transparent enough for doctors to trust</description>
+      <content:encoded><![CDATA[<p><em>Making AI predictions from medical records transparent enough for doctors to trust</em></p><p>Researchers built an AI model trained on 75 million patient records that predicts medical outcomes from electronic health records while explaining which specific test results and clinical events drove each prediction. The model performs as well as or better than existing systems on standard medical prediction tasks, and its explanations align with known clinical risk factors—meaning doctors can see why the AI made each recommendation.</p><p><strong>Why it matters:</strong> Hospitals increasingly rely on AI to flag high-risk patients, but if doctors can't understand the reasoning, they either ignore the alerts or follow them blindly, both dangerous. This model closes that gap by showing which lab values and medical events mattered most for each prediction, letting clinicians verify the logic before acting. The approach works across different medical conditions and prediction types, so it could be deployed broadly across healthcare systems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth</title>
+      <link>https://paperplaine.com/papers/loss-resilient-semantic-communication</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/loss-resilient-semantic-communication</guid>
+      <pubDate>Thu, 20 Aug 2026 03:11:01 GMT</pubDate>
+      <author>Shengshi Yao, Jincheng Dai, Sixian Wang et al.</author>
+      <category>Engineering</category>
+      <description>Sending pictures over terrible internet without losing quality when data packets vanish</description>
+      <content:encoded><![CDATA[<p><em>Sending pictures over terrible internet without losing quality when data packets vanish</em></p><p>Researchers created a new system called ResiGLC that sends images and video over extremely slow internet connections while surviving packet loss—the random data drops that plague poor-quality networks. By borrowing prediction techniques from language models, the system can guess what missing data should be and recover images with better quality than current methods, even when 10–30% of packets disappear in transit.</p><p><strong>Why it matters:</strong> Extreme-low bandwidth communication matters for disaster zones, remote areas, and satellite links where bandwidth is scarce and connections are unreliable. Current compression systems fail catastrophically when packets drop—a single lost chunk can ruin an entire image. This work means emergency responders, rural clinics, and field researchers can transmit usable images and video over connections that would otherwise be too broken to work with, without needing to compress the data even further and lose critical details.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application</title>
+      <link>https://paperplaine.com/papers/multivariate-spatio-temporal-regression</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multivariate-spatio-temporal-regression</guid>
+      <pubDate>Thu, 20 Aug 2026 06:01:16 GMT</pubDate>
+      <author>Ryuei Nishii, Saeko Ohta, Shojiro Tanaka</author>
+      <category>Statistics</category>
+      <description>A statistical toolkit for untangling spatial, temporal, and cross-variable relationships in data</description>
+      <content:encoded><![CDATA[<p><em>A statistical toolkit for untangling spatial, temporal, and cross-variable relationships in data</em></p><p>Researchers developed a flexible statistical framework that can detect and model how multiple outcomes influence each other across space and time — for instance, how pollution levels in neighboring cities and past months predict current conditions. Tests on real data from 198 Japanese municipalities showed the method successfully identifies which types of spatial and temporal connections matter most, removing nearly all unexplained spatial patterns from the results.</p><p><strong>Why it matters:</strong> Policy makers often need to predict outcomes like employment, pollution, or disease spread across regions and years, but existing methods force them to choose between oversimplified models or treating each location and outcome separately. This framework lets analysts automatically discover which connections actually exist in their data, making forecasts more accurate and revealing hidden regional interdependencies that single-location models would miss.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization</title>
       <link>https://paperplaine.com/papers/inject-align-recover-staged</link>

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 667 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 670 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 228 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 229 papers in archive.
+  - "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records"
   - "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization"
-  - "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 55 papers in archive.
   - "Auditing Cross-Lingual Fairness in Language Model Watermarking"
   - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 58 papers in archive.
   - "Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in"
   - "Concentrated Liquidity Provision: a Reinforcement Learning Perspective"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 57 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 58 papers in archive.
+  - "Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application"
   - "A Layered Simplex Architecture for Large Alphabets"
-  - "Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 54 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 55 papers in archive.
+  - "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth"
   - "The Zonotopic Mixture Filter"
-  - "CW-BASS v2: Saturation-Aware Pseudo-Label Selection for Semi-Supervised Segmentation under Foundation-Model Teachers"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 48 papers in archive.
   - "Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use"
   - "Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections"
 
 ## 10 most recent papers
+
+### Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records
+- URL: https://paperplaine.com/papers/explainable-transformer-models-for
+- Category: Computer Science · AI
+- Authors: Jun Ni Du, Lukas Adamek, Maxim Kryukov et al.
+- arXiv: 2608.20315
+- Plain-English subtitle: Making AI predictions from medical records transparent enough for doctors to trust
+- Summary: Researchers built an AI model trained on 75 million patient records that predicts medical outcomes from electronic health records while explaining which specific test results and clinical events drove each prediction. The model performs as well as or better than existing systems on standard medical prediction tasks, and its explanations align with known clinical risk factors—meaning doctors can see why the AI made each recommendation.
+- Why it matters: Hospitals increasingly rely on AI to flag high-risk patients, but if doctors can't understand the reasoning, they either ignore the alerts or follow them blindly, both dangerous. This model closes that gap by showing which lab values and medical events mattered most for each prediction, letting clinicians verify the logic before acting. The approach works across different medical conditions and prediction types, so it could be deployed broadly across healthcare systems.
+
+### Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth
+- URL: https://paperplaine.com/papers/loss-resilient-semantic-communication
+- Category: Engineering
+- Authors: Shengshi Yao, Jincheng Dai, Sixian Wang et al.
+- arXiv: 2608.19590
+- Plain-English subtitle: Sending pictures over terrible internet without losing quality when data packets vanish
+- Summary: Researchers created a new system called ResiGLC that sends images and video over extremely slow internet connections while surviving packet loss—the random data drops that plague poor-quality networks. By borrowing prediction techniques from language models, the system can guess what missing data should be and recover images with better quality than current methods, even when 10–30% of packets disappear in transit.
+- Why it matters: Extreme-low bandwidth communication matters for disaster zones, remote areas, and satellite links where bandwidth is scarce and connections are unreliable. Current compression systems fail catastrophically when packets drop—a single lost chunk can ruin an entire image. This work means emergency responders, rural clinics, and field researchers can transmit usable images and video over connections that would otherwise be too broken to work with, without needing to compress the data even further and lose critical details.
+
+### Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application
+- URL: https://paperplaine.com/papers/multivariate-spatio-temporal-regression
+- Category: Statistics
+- Authors: Ryuei Nishii, Saeko Ohta, Shojiro Tanaka
+- arXiv: 2608.19664
+- Plain-English subtitle: A statistical toolkit for untangling spatial, temporal, and cross-variable relationships in data
+- Summary: Researchers developed a flexible statistical framework that can detect and model how multiple outcomes influence each other across space and time — for instance, how pollution levels in neighboring cities and past months predict current conditions. Tests on real data from 198 Japanese municipalities showed the method successfully identifies which types of spatial and temporal connections matter most, removing nearly all unexplained spatial patterns from the results.
+- Why it matters: Policy makers often need to predict outcomes like employment, pollution, or disease spread across regions and years, but existing methods force them to choose between oversimplified models or treating each location and outcome separately. This framework lets analysts automatically discover which connections actually exist in their data, making forecasts more accurate and revealing hidden regional interdependencies that single-location models would miss.
 
 ### Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization
 - URL: https://paperplaine.com/papers/inject-align-recover-staged
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI learns from multiple groups faster by finding what they share
 - Summary: A new method lets machine learning models train on data from multiple groups — like hospitals or regions — by first finding what they have in common, then learning what makes each group different. When built with deep neural networks, this approach can handle high-dimensional problems that would normally require exponentially more data, and learns faster when groups are genuinely similar.
 - Why it matters: Many real problems involve related but distinct groups: different hospitals treating the same disease, or predictive models that need to work across countries with local variations. This method reduces the data each group needs to contribute while still capturing their unique patterns, making it practical to deploy personalized AI systems without requiring massive datasets from every location or organization.
-
-### Decoding silent reading from non-invasive EEG
-- URL: https://paperplaine.com/papers/decoding-silent-reading-from
-- Category: Quantitative Biology
-- Authors: Ingo Marquardt, Anthilia Alchanat, Priyanka Jain
-- arXiv: 2608.20186
-- Plain-English subtitle: Reading what someone is silently reading just from their brain waves
-- Summary: Researchers successfully decoded which words people were silently reading by analyzing their brain activity through EEG, correctly identifying words from a large vocabulary in the top 10 guesses over 60% of the time. The system improved with more data and showed no signs of hitting a ceiling, suggesting that with enough brain recordings, accuracy could keep climbing.
-- Why it matters: This is a step toward brain-computer interfaces that could help people who cannot speak or move — eventually allowing them to communicate their thoughts directly. The finding that the method kept improving with more data suggests that with denser recordings or better technology, we might eventually decode thoughts with practical accuracy. Understanding which brain signals carry word meaning also reveals how the brain processes language silently.
-
-### A Layered Simplex Architecture for Large Alphabets
-- URL: https://paperplaine.com/papers/a-layered-simplex-architecture
-- Category: Statistics
-- Authors: Meir Feder, Yaniv Fogel, Ruediger Urbanke
-- arXiv: 2608.19908
-- Plain-English subtitle: A simpler way to guess unknown probabilities from limited data
-- Summary: Researchers developed a new method for estimating probability distributions when dealing with huge sets of possible outcomes—like predicting which words appear next in text. The method is remarkably simple: it multiplies random samples together and renormalizes them, yet it performs as well as or better than established techniques like Good-Turing across diverse real-world tests, without requiring manual tuning of parameters.
-- Why it matters: Probability estimation is central to compression, language modeling, and machine learning. This method works reliably across different alphabet sizes and data quantities without needing to adjust knobs by hand—a major practical advantage. The work also reveals a precise mathematical pattern: prediction cost scales directly with how fast new items appear in your data, which offers clearer insight into what makes some estimation problems harder than others.
-
-### ContractScrub: A benchmark for final review of legal contracts
-- URL: https://paperplaine.com/papers/contractscrub-a-benchmark-for
-- Category: Computer Science · AI
-- Authors: Yejin Bang, Kirsty Fielding, Brandan Oliver et al.
-- arXiv: 2608.20204
-- Plain-English subtitle: Testing whether AI can catch hidden mistakes in legal contracts
-- Summary: Researchers created the first test to measure how well AI language models can spot errors in legal contracts—a task lawyers spend hours doing by hand. The results were sobering: even the most advanced models caught fewer than 75% of mistakes, revealing a significant gap between how well these systems perform on general tests and how well they work on real legal documents.
-- Why it matters: Contract review is expensive, tedious work that consumes thousands of lawyer hours annually. If AI could reliably automate it, firms could cut costs and speed up deals. This benchmark shows that current AI systems aren't ready for the task despite their strong general capabilities—meaning companies relying on these tools for legal review could miss costly errors, and the field needs better, domain-specific AI development before automation is safe to deploy.
 
 ## About
 

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 667 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-22
+This file contains the complete plain-English text of all 670 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-23
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records
+Subtitle: Making AI predictions from medical records transparent enough for doctors to trust
+URL: https://paperplaine.com/papers/explainable-transformer-models-for
+Category: Computer Science · AI
+Authors: Jun Ni Du, Lukas Adamek, Maxim Kryukov et al.
+arXiv ID: 2608.20315
+arXiv URL: https://arxiv.org/abs/2608.20315
+Posted: 2026-08-23
+
+Summary: Researchers built an AI model trained on 75 million patient records that predicts medical outcomes from electronic health records while explaining which specific test results and clinical events drove each prediction. The model performs as well as or better than existing systems on standard medical prediction tasks, and its explanations align with known clinical risk factors—meaning doctors can see why the AI made each recommendation.
+
+Why it matters: Hospitals increasingly rely on AI to flag high-risk patients, but if doctors can't understand the reasoning, they either ignore the alerts or follow them blindly, both dangerous. This model closes that gap by showing which lab values and medical events mattered most for each prediction, letting clinicians verify the logic before acting. The approach works across different medical conditions and prediction types, so it could be deployed broadly across healthcare systems.
+
+---
+Title: Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth
+Subtitle: Sending pictures over terrible internet without losing quality when data packets vanish
+URL: https://paperplaine.com/papers/loss-resilient-semantic-communication
+Category: Engineering
+Authors: Shengshi Yao, Jincheng Dai, Sixian Wang et al.
+arXiv ID: 2608.19590
+arXiv URL: https://arxiv.org/abs/2608.19590
+Posted: 2026-08-23
+
+Summary: Researchers created a new system called ResiGLC that sends images and video over extremely slow internet connections while surviving packet loss—the random data drops that plague poor-quality networks. By borrowing prediction techniques from language models, the system can guess what missing data should be and recover images with better quality than current methods, even when 10–30% of packets disappear in transit.
+
+Why it matters: Extreme-low bandwidth communication matters for disaster zones, remote areas, and satellite links where bandwidth is scarce and connections are unreliable. Current compression systems fail catastrophically when packets drop—a single lost chunk can ruin an entire image. This work means emergency responders, rural clinics, and field researchers can transmit usable images and video over connections that would otherwise be too broken to work with, without needing to compress the data even further and lose critical details.
+
+---
+Title: Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application
+Subtitle: A statistical toolkit for untangling spatial, temporal, and cross-variable relationships in data
+URL: https://paperplaine.com/papers/multivariate-spatio-temporal-regression
+Category: Statistics
+Authors: Ryuei Nishii, Saeko Ohta, Shojiro Tanaka
+arXiv ID: 2608.19664
+arXiv URL: https://arxiv.org/abs/2608.19664
+Posted: 2026-08-23
+
+Summary: Researchers developed a flexible statistical framework that can detect and model how multiple outcomes influence each other across space and time — for instance, how pollution levels in neighboring cities and past months predict current conditions. Tests on real data from 198 Japanese municipalities showed the method successfully identifies which types of spatial and temporal connections matter most, removing nearly all unexplained spatial patterns from the results.
+
+Why it matters: Policy makers often need to predict outcomes like employment, pollution, or disease spread across regions and years, but existing methods force them to choose between oversimplified models or treating each location and outcome separately. This framework lets analysts automatically discover which connections actually exist in their data, making forecasts more accurate and revealing hidden regional interdependencies that single-location models would miss.
 
 ---
 Title: Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization

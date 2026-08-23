@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.20315",
+    "title": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
+    "authors": "Jun Ni Du, Lukas Adamek, Maxim Kryukov et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-20T17:54:17Z",
+    "publishedFormatted": "Aug 20, 2026",
+    "subtitle": "Making AI predictions from medical records transparent enough for doctors to trust",
+    "summary": "Researchers built an AI model trained on 75 million patient records that predicts medical outcomes from electronic health records while explaining which specific test results and clinical events drove each prediction. The model performs as well as or better than existing systems on standard medical prediction tasks, and its explanations align with known clinical risk factors—meaning doctors can see why the AI made each recommendation.",
+    "whyItMatters": "Hospitals increasingly rely on AI to flag high-risk patients, but if doctors can't understand the reasoning, they either ignore the alerts or follow them blindly, both dangerous. This model closes that gap by showing which lab values and medical events mattered most for each prediction, letting clinicians verify the logic before acting. The approach works across different medical conditions and prediction types, so it could be deployed broadly across healthcare systems.",
+    "fetchedAt": "2026-08-23T07:32:15.487Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 191
+    },
+    "slug": "explainable-transformer-models-for"
+  },
+  {
+    "id": "2608.19590",
+    "title": "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth",
+    "authors": "Shengshi Yao, Jincheng Dai, Sixian Wang et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-08-20T03:11:01Z",
+    "publishedFormatted": "Aug 20, 2026",
+    "subtitle": "Sending pictures over terrible internet without losing quality when data packets vanish",
+    "summary": "Researchers created a new system called ResiGLC that sends images and video over extremely slow internet connections while surviving packet loss—the random data drops that plague poor-quality networks. By borrowing prediction techniques from language models, the system can guess what missing data should be and recover images with better quality than current methods, even when 10–30% of packets disappear in transit.",
+    "whyItMatters": "Extreme-low bandwidth communication matters for disaster zones, remote areas, and satellite links where bandwidth is scarce and connections are unreliable. Current compression systems fail catastrophically when packets drop—a single lost chunk can ruin an entire image. This work means emergency responders, rural clinics, and field researchers can transmit usable images and video over connections that would otherwise be too broken to work with, without needing to compress the data even further and lose critical details.",
+    "fetchedAt": "2026-08-23T07:32:20.077Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 3,
+      "pageCount": 14,
+      "wordCount": 226
+    },
+    "slug": "loss-resilient-semantic-communication"
+  },
+  {
+    "id": "2608.19664",
+    "title": "Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application",
+    "authors": "Ryuei Nishii, Saeko Ohta, Shojiro Tanaka",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-08-20T06:01:16Z",
+    "publishedFormatted": "Aug 20, 2026",
+    "subtitle": "A statistical toolkit for untangling spatial, temporal, and cross-variable relationships in data",
+    "summary": "Researchers developed a flexible statistical framework that can detect and model how multiple outcomes influence each other across space and time — for instance, how pollution levels in neighboring cities and past months predict current conditions. Tests on real data from 198 Japanese municipalities showed the method successfully identifies which types of spatial and temporal connections matter most, removing nearly all unexplained spatial patterns from the results.",
+    "whyItMatters": "Policy makers often need to predict outcomes like employment, pollution, or disease spread across regions and years, but existing methods force them to choose between oversimplified models or treating each location and outcome separately. This framework lets analysts automatically discover which connections actually exist in their data, making forecasts more accurate and revealing hidden regional interdependencies that single-location models would miss.",
+    "fetchedAt": "2026-08-23T07:32:23.511Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 208
+    },
+    "slug": "multivariate-spatio-temporal-regression"
+  },
+  {
     "id": "2608.20281",
     "title": "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization",
     "authors": "Qian Kou, Xiaofeng Shi, Xiaosong Qiu et al.",
