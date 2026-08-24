@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.21209",
+    "title": "Personalized Privacy Control in LLMs via Attention Head Intervention",
+    "authors": "Junseok Kim, Nakyeong Yang, Kyomin Jung",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-21T15:22:20Z",
+    "publishedFormatted": "Aug 21, 2026",
+    "subtitle": "Making AI respect different people's privacy wishes, not just general rules",
+    "summary": "Large language models trained to follow generic privacy rules ignore individual user preferences more than half the time. Researchers built a benchmark to test personalized privacy (where different users have different comfort levels with sharing information) and developed a method that adjusts how the AI's internal attention mechanisms work at inference time, significantly improving compliance with each user's specific privacy boundaries.",
+    "whyItMatters": "As AI systems gain access to personal data through email, calendars, and messaging apps, a one-size-fits-all privacy approach fails—some users are comfortable sharing health information while others aren't. This work provides both a way to measure whether AI respects individual privacy preferences and a practical fix that works without retraining the model, making it feasible to deploy personalized privacy controls in real AI assistants today.",
+    "fetchedAt": "2026-08-24T19:23:39.333Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 147
+    },
+    "slug": "personalized-privacy-control-in"
+  },
+  {
+    "id": "2608.21159",
+    "title": "AID-Guard: Stateful Authorization for Delegated Agent Effects",
+    "authors": "Yingzhe Tong, Leyu Dai, Songhui Guo",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-08-21T14:31:29Z",
+    "publishedFormatted": "Aug 21, 2026",
+    "subtitle": "Keeping AI agents from accidentally doing the same task twice",
+    "summary": "When AI agents use external tools, a single approved request can accidentally trigger multiple effects if something goes wrong in delivery or recovery. AID-Guard is a new system that tracks authorization through the entire lifecycle — from approval through retries and crashes — ensuring one approved action produces exactly one real-world effect. In testing with Stripe and Resend payment systems, the protocol prevented all 44 simulated attacks while allowing legitimate requests through.",
+    "whyItMatters": "As AI agents increasingly handle financial transactions, account changes, and other irreversible actions, duplicate effects from retry failures could charge customers twice, send duplicate emails, or create orphaned database records. AID-Guard closes a gap where traditional \"request approval\" stops working once delivery gets messy — a gap that exists in most current AI agent frameworks. This matters because real systems crash, timeouts happen, and networks lose responses; a robust authorization system needs to survive that chaos without creating accidental duplicates.",
+    "fetchedAt": "2026-08-24T19:23:43.266Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 243
+    },
+    "slug": "aid-guard-stateful-authorization"
+  },
+  {
+    "id": "2608.21329",
+    "title": "Quantum annealing through a first-order phase transition: field theory approach",
+    "authors": "Diego Andrés Rivera Orona, Predrag Punoševac, Nikolai A. Sinitsyn",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-08-21T17:36:42Z",
+    "publishedFormatted": "Aug 21, 2026",
+    "subtitle": "Why quantum computers get stuck during certain computational shortcuts",
+    "summary": "When quantum computers use a computational shortcut called annealing to solve problems, they can get trapped in a dead-end state if the problem crosses a certain type of phase transition. Researchers developed a mathematical framework predicting how many errors pile up during this trap, finding that the error rate follows predictable power-law patterns that shift sharply depending on the problem parameters.",
+    "whyItMatters": "Quantum computers are still prone to errors that reduce their usefulness for real problems. This work gives engineers a way to detect when a computational approach will hit these problematic transition points and sidestep them entirely, improving the reliability of quantum computations. Recognizing these signatures could be the difference between a quantum computer solving a problem correctly or wasting time stuck in a computational dead end.",
+    "fetchedAt": "2026-08-24T19:23:46.250Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 10,
+      "wordCount": 121
+    },
+    "slug": "quantum-annealing-through-a"
+  },
+  {
     "id": "2608.21305",
     "title": "Re^3Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning",
     "authors": "Haonan Jia, Shichao Dong, Zenghui Sun et al.",

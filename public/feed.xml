@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Aug 2026 07:57:21 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 19:23:46 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Personalized Privacy Control in LLMs via Attention Head Intervention</title>
+      <link>https://paperplaine.com/papers/personalized-privacy-control-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/personalized-privacy-control-in</guid>
+      <pubDate>Fri, 21 Aug 2026 15:22:20 GMT</pubDate>
+      <author>Junseok Kim, Nakyeong Yang, Kyomin Jung</author>
+      <category>AI</category>
+      <description>Making AI respect different people&#39;s privacy wishes, not just general rules</description>
+      <content:encoded><![CDATA[<p><em>Making AI respect different people's privacy wishes, not just general rules</em></p><p>Large language models trained to follow generic privacy rules ignore individual user preferences more than half the time. Researchers built a benchmark to test personalized privacy (where different users have different comfort levels with sharing information) and developed a method that adjusts how the AI's internal attention mechanisms work at inference time, significantly improving compliance with each user's specific privacy boundaries.</p><p><strong>Why it matters:</strong> As AI systems gain access to personal data through email, calendars, and messaging apps, a one-size-fits-all privacy approach fails—some users are comfortable sharing health information while others aren't. This work provides both a way to measure whether AI respects individual privacy preferences and a practical fix that works without retraining the model, making it feasible to deploy personalized privacy controls in real AI assistants today.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>AID-Guard: Stateful Authorization for Delegated Agent Effects</title>
+      <link>https://paperplaine.com/papers/aid-guard-stateful-authorization</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/aid-guard-stateful-authorization</guid>
+      <pubDate>Fri, 21 Aug 2026 14:31:29 GMT</pubDate>
+      <author>Yingzhe Tong, Leyu Dai, Songhui Guo</author>
+      <category>Comp Sci</category>
+      <description>Keeping AI agents from accidentally doing the same task twice</description>
+      <content:encoded><![CDATA[<p><em>Keeping AI agents from accidentally doing the same task twice</em></p><p>When AI agents use external tools, a single approved request can accidentally trigger multiple effects if something goes wrong in delivery or recovery. AID-Guard is a new system that tracks authorization through the entire lifecycle — from approval through retries and crashes — ensuring one approved action produces exactly one real-world effect. In testing with Stripe and Resend payment systems, the protocol prevented all 44 simulated attacks while allowing legitimate requests through.</p><p><strong>Why it matters:</strong> As AI agents increasingly handle financial transactions, account changes, and other irreversible actions, duplicate effects from retry failures could charge customers twice, send duplicate emails, or create orphaned database records. AID-Guard closes a gap where traditional "request approval" stops working once delivery gets messy — a gap that exists in most current AI agent frameworks. This matters because real systems crash, timeouts happen, and networks lose responses; a robust authorization system needs to survive that chaos without creating accidental duplicates.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Quantum annealing through a first-order phase transition: field theory approach</title>
+      <link>https://paperplaine.com/papers/quantum-annealing-through-a</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/quantum-annealing-through-a</guid>
+      <pubDate>Fri, 21 Aug 2026 17:36:42 GMT</pubDate>
+      <author>Diego Andrés Rivera Orona, Predrag Punoševac, Nikolai A. Sinitsyn</author>
+      <category>Physics</category>
+      <description>Why quantum computers get stuck during certain computational shortcuts</description>
+      <content:encoded><![CDATA[<p><em>Why quantum computers get stuck during certain computational shortcuts</em></p><p>When quantum computers use a computational shortcut called annealing to solve problems, they can get trapped in a dead-end state if the problem crosses a certain type of phase transition. Researchers developed a mathematical framework predicting how many errors pile up during this trap, finding that the error rate follows predictable power-law patterns that shift sharply depending on the problem parameters.</p><p><strong>Why it matters:</strong> Quantum computers are still prone to errors that reduce their usefulness for real problems. This work gives engineers a way to detect when a computational approach will hit these problematic transition points and sidestep them entirely, improving the reliability of quantum computations. Recognizing these signatures could be the difference between a quantum computer solving a problem correctly or wasting time stuck in a computational dead end.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Re^3Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning</title>
       <link>https://paperplaine.com/papers/re-3cap-retrieval-guided</link>

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 676 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 679 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 231 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 232 papers in archive.
+  - "Personalized Privacy Control in LLMs via Attention Head Intervention"
   - "Re^3Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning"
-  - "Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 55 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 56 papers in archive.
+  - "AID-Guard: Stateful Authorization for Delegated Agent Effects"
   - "Auditing Cross-Lingual Fairness in Language Model Watermarking"
-  - "SiNMULI: Novel Signed Network Approach for Malicious URL Identification"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 56 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 57 papers in archive.
+  - "Quantum annealing through a first-order phase transition: field theory approach"
   - "Shift or curtail? How much data-center flexibility is worth depends on the host power grid"
-  - "Electrostriction in a Bose-Einstein Condensate of Dipolar Molecules"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 56 papers in archive.
   - "Zero-Sum Power Factor Games"
   - "Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use"
 
 ## 10 most recent papers
+
+### Personalized Privacy Control in LLMs via Attention Head Intervention
+- URL: https://paperplaine.com/papers/personalized-privacy-control-in
+- Category: Computer Science · AI
+- Authors: Junseok Kim, Nakyeong Yang, Kyomin Jung
+- arXiv: 2608.21209
+- Plain-English subtitle: Making AI respect different people's privacy wishes, not just general rules
+- Summary: Large language models trained to follow generic privacy rules ignore individual user preferences more than half the time. Researchers built a benchmark to test personalized privacy (where different users have different comfort levels with sharing information) and developed a method that adjusts how the AI's internal attention mechanisms work at inference time, significantly improving compliance with each user's specific privacy boundaries.
+- Why it matters: As AI systems gain access to personal data through email, calendars, and messaging apps, a one-size-fits-all privacy approach fails—some users are comfortable sharing health information while others aren't. This work provides both a way to measure whether AI respects individual privacy preferences and a practical fix that works without retraining the model, making it feasible to deploy personalized privacy controls in real AI assistants today.
+
+### AID-Guard: Stateful Authorization for Delegated Agent Effects
+- URL: https://paperplaine.com/papers/aid-guard-stateful-authorization
+- Category: Computer Science
+- Authors: Yingzhe Tong, Leyu Dai, Songhui Guo
+- arXiv: 2608.21159
+- Plain-English subtitle: Keeping AI agents from accidentally doing the same task twice
+- Summary: When AI agents use external tools, a single approved request can accidentally trigger multiple effects if something goes wrong in delivery or recovery. AID-Guard is a new system that tracks authorization through the entire lifecycle — from approval through retries and crashes — ensuring one approved action produces exactly one real-world effect. In testing with Stripe and Resend payment systems, the protocol prevented all 44 simulated attacks while allowing legitimate requests through.
+- Why it matters: As AI agents increasingly handle financial transactions, account changes, and other irreversible actions, duplicate effects from retry failures could charge customers twice, send duplicate emails, or create orphaned database records. AID-Guard closes a gap where traditional "request approval" stops working once delivery gets messy — a gap that exists in most current AI agent frameworks. This matters because real systems crash, timeouts happen, and networks lose responses; a robust authorization system needs to survive that chaos without creating accidental duplicates.
+
+### Quantum annealing through a first-order phase transition: field theory approach
+- URL: https://paperplaine.com/papers/quantum-annealing-through-a
+- Category: Physics
+- Authors: Diego Andrés Rivera Orona, Predrag Punoševac, Nikolai A. Sinitsyn
+- arXiv: 2608.21329
+- Plain-English subtitle: Why quantum computers get stuck during certain computational shortcuts
+- Summary: When quantum computers use a computational shortcut called annealing to solve problems, they can get trapped in a dead-end state if the problem crosses a certain type of phase transition. Researchers developed a mathematical framework predicting how many errors pile up during this trap, finding that the error rate follows predictable power-law patterns that shift sharply depending on the problem parameters.
+- Why it matters: Quantum computers are still prone to errors that reduce their usefulness for real problems. This work gives engineers a way to detect when a computational approach will hit these problematic transition points and sidestep them entirely, improving the reliability of quantum computations. Recognizing these signatures could be the difference between a quantum computer solving a problem correctly or wasting time stuck in a computational dead end.
 
 ### Re^3Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning
 - URL: https://paperplaine.com/papers/re-3cap-retrieval-guided
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI predictions from medical records transparent enough for doctors to trust
 - Summary: Researchers built an AI model trained on 75 million patient records that predicts medical outcomes from electronic health records while explaining which specific test results and clinical events drove each prediction. The model performs as well as or better than existing systems on standard medical prediction tasks, and its explanations align with known clinical risk factors—meaning doctors can see why the AI made each recommendation.
 - Why it matters: Hospitals increasingly rely on AI to flag high-risk patients, but if doctors can't understand the reasoning, they either ignore the alerts or follow them blindly, both dangerous. This model closes that gap by showing which lab values and medical events mattered most for each prediction, letting clinicians verify the logic before acting. The approach works across different medical conditions and prediction types, so it could be deployed broadly across healthcare systems.
-
-### Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth
-- URL: https://paperplaine.com/papers/loss-resilient-semantic-communication
-- Category: Engineering
-- Authors: Shengshi Yao, Jincheng Dai, Sixian Wang et al.
-- arXiv: 2608.19590
-- Plain-English subtitle: Sending pictures over terrible internet without losing quality when data packets vanish
-- Summary: Researchers created a new system called ResiGLC that sends images and video over extremely slow internet connections while surviving packet loss—the random data drops that plague poor-quality networks. By borrowing prediction techniques from language models, the system can guess what missing data should be and recover images with better quality than current methods, even when 10–30% of packets disappear in transit.
-- Why it matters: Extreme-low bandwidth communication matters for disaster zones, remote areas, and satellite links where bandwidth is scarce and connections are unreliable. Current compression systems fail catastrophically when packets drop—a single lost chunk can ruin an entire image. This work means emergency responders, rural clinics, and field researchers can transmit usable images and video over connections that would otherwise be too broken to work with, without needing to compress the data even further and lose critical details.
-
-### Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application
-- URL: https://paperplaine.com/papers/multivariate-spatio-temporal-regression
-- Category: Statistics
-- Authors: Ryuei Nishii, Saeko Ohta, Shojiro Tanaka
-- arXiv: 2608.19664
-- Plain-English subtitle: A statistical toolkit for untangling spatial, temporal, and cross-variable relationships in data
-- Summary: Researchers developed a flexible statistical framework that can detect and model how multiple outcomes influence each other across space and time — for instance, how pollution levels in neighboring cities and past months predict current conditions. Tests on real data from 198 Japanese municipalities showed the method successfully identifies which types of spatial and temporal connections matter most, removing nearly all unexplained spatial patterns from the results.
-- Why it matters: Policy makers often need to predict outcomes like employment, pollution, or disease spread across regions and years, but existing methods force them to choose between oversimplified models or treating each location and outcome separately. This framework lets analysts automatically discover which connections actually exist in their data, making forecasts more accurate and revealing hidden regional interdependencies that single-location models would miss.
-
-### Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization
-- URL: https://paperplaine.com/papers/inject-align-recover-staged
-- Category: Computer Science · AI
-- Authors: Qian Kou, Xiaofeng Shi, Xiaosong Qiu et al.
-- arXiv: 2608.20281
-- Plain-English subtitle: Teaching AI to remember documents without looking them up during answers
-- Summary: Large language models typically need to retrieve source documents when answering questions about them. Researchers developed a three-stage training method called IAR that lets models internalize document knowledge permanently, so they can answer questions accurately without retrieval — improving domain-specific accuracy by 3.6 percentage points while maintaining general reasoning skills across multiple AI models.
-- Why it matters: Most AI systems today rely on retrieving relevant documents in real time, which is slow and fails when documents aren't available or are missed by search. A model that permanently learns document content could answer faster and more reliably in settings like customer support, medical records, or legal document systems — where the same documents are queried repeatedly and immediate retrieval isn't always possible.
 
 ## About
 
