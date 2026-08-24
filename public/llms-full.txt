@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 673 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-23
+This file contains the complete plain-English text of all 676 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-24
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Re^3Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning
+Subtitle: Teaching AI to write better image descriptions by looking up similar examples
+URL: https://paperplaine.com/papers/re-3cap-retrieval-guided
+Category: Computer Science · AI
+Authors: Haonan Jia, Shichao Dong, Zenghui Sun et al.
+arXiv ID: 2608.21305
+arXiv URL: https://arxiv.org/abs/2608.21305
+Posted: 2026-08-24
+
+Summary: A new method called Re³Cap improves how AI systems describe images by having them search for similar images and captions to catch mistakes. The technique outperforms previous approaches by up to 8.64% on standard image captioning benchmarks, without needing humans to label additional training data.
+
+Why it matters: Image captioning powers accessibility tools for blind and low-vision users, product recommendations in e-commerce, and content moderation at scale. Better captions mean more accurate descriptions that don't miss important details or invent objects that aren't there—directly improving the reliability of systems millions of people depend on daily.
+
+---
+Title: Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories
+Subtitle: Why standard price data can fool researchers about how uncertain their estimates really are
+URL: https://paperplaine.com/papers/across-design-uncertainty-in
+Category: Economics
+Authors: Pedro Cadahia Delgado
+arXiv ID: 2608.21334
+arXiv URL: https://arxiv.org/abs/2608.21334
+Posted: 2026-08-24
+
+Summary: When researchers measure price changes from real-world data, they typically underestimate how much their estimates might vary simply because they only observe one possible sequence of price movements. A new analysis shows that this hidden uncertainty accounts for over 97% of estimation error in typical pricing datasets—but standard statistical techniques completely miss it. The solution: researchers need to actively design how price data gets collected rather than passively relying on whatever prices happen to be recorded.
+
+Why it matters: Price data feeds into inflation estimates, wage negotiations, and policy decisions across economics and business. If researchers systematically underestimate the true range of uncertainty in their findings, they may report confident conclusions that are actually fragile. The paper's results suggest that better data design—ensuring prices move independently across different regions or products rather than moving together—could roughly double the reliability of these estimates.
+
+---
+Title: The Price of Permission: Classification Uncertainty in Constrained Capital Markets
+Subtitle: When Islamic finance rules change, who actually buys the stocks?
+URL: https://paperplaine.com/papers/the-price-of-permission
+Category: Quantitative Finance
+Authors: Abdulrahman Qadi, Akash Sharma, Francesca Medda
+arXiv ID: 2608.12634
+arXiv URL: https://arxiv.org/abs/2608.12634
+Posted: 2026-08-24
+
+Summary: When a stock becomes eligible to buy under Islamic finance rules, its price typically rises 1.76 to 2.25 percentage points over the next few weeks — but only if the stock trades frequently enough and the permission change is official. The effect disappears for less-traded stocks and doesn't show up consistently across different Islamic screening standards, suggesting the price bump reflects real demand from newly-permitted investors rather than a universal market rule.
+
+Why it matters: Islamic finance restrictions exclude $2+ trillion in global assets from many stocks, making permission status a major determinant of who can invest and when. Traders and fund managers need to know whether newly-permitted stocks are cheap relative to risk (a buying opportunity) or whether the price has already adjusted for the permission change (no edge). This research shows the answer depends on the stock's liquidity and whether the permission comes from an official regulatory body — helping portfolio managers decide when classification changes actually matter for trading.
 
 ---
 Title: Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders
