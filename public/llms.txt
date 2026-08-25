@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 679 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 682 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,27 +30,27 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 232 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 233 papers in archive.
+  - "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams"
   - "Personalized Privacy Control in LLMs via Attention Head Intervention"
-  - "Re^3Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 56 papers in archive.
   - "AID-Guard: Stateful Authorization for Delegated Agent Effects"
   - "Auditing Cross-Lingual Fairness in Language Model Watermarking"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 57 papers in archive.
   - "Quantum annealing through a first-order phase transition: field theory approach"
   - "Shift or curtail? How much data-center flexibility is worth depends on the host power grid"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 56 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 57 papers in archive.
+  - "Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design"
   - "Zero-Sum Power Factor Games"
-  - "Taming the Tilt: A Unified Pilot Control Concept for Transformational eVTOL Aircraft"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 57 papers in archive.
   - "Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis"
   - "Decoding silent reading from non-invasive EEG"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 59 papers in archive.
   - "The Price of Permission: Classification Uncertainty in Constrained Capital Markets"
   - "Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 58 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 59 papers in archive.
+  - "Hierarchical Exponential-Gaussian Mixtures for Watch-Time Distribution Prediction"
   - "Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application"
-  - "A Layered Simplex Architecture for Large Alphabets"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 55 papers in archive.
   - "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth"
   - "The Zonotopic Mixture Filter"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use"
 
 ## 10 most recent papers
+
+### The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams
+- URL: https://paperplaine.com/papers/the-interaction-tax-when
+- Category: Computer Science · AI
+- Authors: Summer Eunhyung Ann, Haokun Liu, Chenhao Tan
+- arXiv: 2608.23541
+- Plain-English subtitle: Why talking too much makes AI teams less creative
+- Summary: When multiple AI models share their complete solutions with each other, they quickly converge on the same answer within a single round, eliminating the diversity that made having multiple models useful in the first place. Across 11 optimization tasks with equal budgets, having agents work independently produced better results than letting them see each other's full outputs, because interaction caused them to stick with the first solution they encountered rather than exploring different approaches.
+- Why it matters: As companies build larger AI systems by combining multiple models, this work reveals a hidden cost: unrestricted communication between agents can actually make the system worse, not better. The practical implication is straightforward—teams need to control what information agents share and when, rather than assuming more interaction always helps. This could reshape how companies design multi-agent systems, shifting focus from how many models they use to what those models are allowed to tell each other.
+
+### Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design
+- URL: https://paperplaine.com/papers/dynamic-inversion-an-incrementally
+- Category: Mathematics
+- Authors: Daniel Milz, Gertjan Looye
+- arXiv: 2608.23229
+- Plain-English subtitle: How planes learn to fly better by simplifying the math
+- Summary: Flight engineers have developed a family of related control techniques that tell planes how to respond to pilot commands by using acceleration sensors instead of complex mathematical models. The newer versions, called incremental methods, are simpler and more forgiving of imperfect airplane models, but they create new design tradeoffs that engineers are still learning to navigate.
+- Why it matters: Simpler control systems make planes safer and cheaper to design—they're less sensitive to errors in how engineers model the aircraft, which means they work better across different planes and changing conditions. Better control methods also let engineers more easily add safety features like automatic stall prevention or fault recovery without redesigning the entire system from scratch.
+
+### Hierarchical Exponential-Gaussian Mixtures for Watch-Time Distribution Prediction
+- URL: https://paperplaine.com/papers/hierarchical-exponential-gaussian-mixtures
+- Category: Statistics
+- Authors: Sofia Gulevskaia, Mikhail Trapeznikov, Aleksandr Poslavsky et al.
+- arXiv: 2608.23356
+- Plain-English subtitle: Fixing the math behind predicting how long people watch short videos
+- Summary: A new statistical method predicts how long people will watch short videos by modeling the full range of possible watch times—from people who quit immediately to those who watch all the way through. The approach fixes three critical problems in prior methods: collapsed variance, redundant components, and inactive parts of the model. In a real-world test with millions of videos, it improved ranking accuracy and made predictions more stable and interpretable.
+- Why it matters: Video platforms make billions in ad revenue based on which videos they show you. Better watch-time predictions mean more accurate recommendations, which keeps people engaged longer and generates more advertising impressions. The production test showed statistically significant increases in user engagement, translating directly to platform value.
 
 ### Personalized Privacy Control in LLMs via Attention Head Intervention
 - URL: https://paperplaine.com/papers/personalized-privacy-control-in
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When to delete cached AI answers to make room for new ones
 - Summary: Researchers tested seven different strategies for deciding which cached responses to discard when a semantic cache fills up, comparing them across multiple real-world query datasets. Most policies performed nearly identically, with the simplest approach (deleting least-frequently-used items) matching or beating specialized strategies by less than a percentage point—but the real problem is that the cache misses far more than it hits in practice because few cached answers actually work as valid substitutes for new queries.
 - Why it matters: Semantic caches promise to speed up language models by reusing old answers for similar questions, but this study reveals they may deliver much less benefit than advertised. Even when a cache correctly identifies a similar past query, the cached answer often doesn't actually answer the new question well enough to use. Before companies invest in building smarter cache systems, they need to focus on understanding when cached answers are genuinely substitutable—a threshold that currently differs between embedding models and remains largely untested in production.
-
-### Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis
-- URL: https://paperplaine.com/papers/bringing-analytic-rigor-to
-- Category: Quantitative Biology
-- Authors: Zijiao Chen, Nicholas Lu, Xinhui Li et al.
-- arXiv: 2608.19902
-- Plain-English subtitle: Making AI research assistants show their work and admit uncertainty
-- Summary: AI agents can run scientific analyses, but their conclusions often skip crucial steps: checking alternatives, testing whether small changes flip the results, and honestly stating what the evidence actually supports. Brain Researcher is a system that forces AI agents analyzing brain images to follow scientific rules—documenting every choice, running multiple analyses to test sensitivity, and letting human scientists review whether claims are truly justified. In tests, it boosted the AI's accuracy at picking the right analysis tool from 23% to 94% and increased how often conclusions were properly grounded in evidence.
-- Why it matters: As AI takes on more scientific work, bad analysis can become invisible: an agent might selectively report favorable results, declare success too early, or optimize for a flawed measure—all without a scientist noticing. Brain Researcher catches these problems before they become published claims by embedding scientific judgment into the workflow itself, not as an afterthought. This matters for neuroimaging and beyond: it's the difference between an AI assistant that sounds confident and one that actually produces defensible science.
-
-### Zero-Sum Power Factor Games
-- URL: https://paperplaine.com/papers/zero-sum-power-factor
-- Category: Mathematics
-- Authors: Cameron Khanpour, Samuel Talkington, Mathieu Dahan et al.
-- arXiv: 2608.20298
-- Plain-English subtitle: Finding the best voltage control settings before solar and batteries act unpredictably
-- Summary: Grid operators can prevent dangerous voltage swings from rooftop solar and battery systems by pre-setting how much reactive power each device should supply relative to its active power output. The researchers found an exact mathematical solution for these settings that can perfectly cancel out voltage disruptions when conditions stay within normal bounds, and they mapped out which solar and battery sizes make this solution actually work.
-- Why it matters: As neighborhoods add more solar panels and batteries, voltage instability threatens equipment damage and blackouts. This approach lets operators stabilize the grid automatically without real-time communication or constant adjustments—crucial for utilities managing thousands of unpredictable devices. The researchers also quantify how much protection is lost if regulations force operators to use weaker control settings, helping regulators decide whether current standards are safe enough.
-
-### Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records
-- URL: https://paperplaine.com/papers/explainable-transformer-models-for
-- Category: Computer Science · AI
-- Authors: Jun Ni Du, Lukas Adamek, Maxim Kryukov et al.
-- arXiv: 2608.20315
-- Plain-English subtitle: Making AI predictions from medical records transparent enough for doctors to trust
-- Summary: Researchers built an AI model trained on 75 million patient records that predicts medical outcomes from electronic health records while explaining which specific test results and clinical events drove each prediction. The model performs as well as or better than existing systems on standard medical prediction tasks, and its explanations align with known clinical risk factors—meaning doctors can see why the AI made each recommendation.
-- Why it matters: Hospitals increasingly rely on AI to flag high-risk patients, but if doctors can't understand the reasoning, they either ignore the alerts or follow them blindly, both dangerous. This model closes that gap by showing which lab values and medical events mattered most for each prediction, letting clinicians verify the logic before acting. The approach works across different medical conditions and prediction types, so it could be deployed broadly across healthcare systems.
 
 ## About
 

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 679 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-24
+This file contains the complete plain-English text of all 682 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-25
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams
+Subtitle: Why talking too much makes AI teams less creative
+URL: https://paperplaine.com/papers/the-interaction-tax-when
+Category: Computer Science · AI
+Authors: Summer Eunhyung Ann, Haokun Liu, Chenhao Tan
+arXiv ID: 2608.23541
+arXiv URL: https://arxiv.org/abs/2608.23541
+Posted: 2026-08-25
+
+Summary: When multiple AI models share their complete solutions with each other, they quickly converge on the same answer within a single round, eliminating the diversity that made having multiple models useful in the first place. Across 11 optimization tasks with equal budgets, having agents work independently produced better results than letting them see each other's full outputs, because interaction caused them to stick with the first solution they encountered rather than exploring different approaches.
+
+Why it matters: As companies build larger AI systems by combining multiple models, this work reveals a hidden cost: unrestricted communication between agents can actually make the system worse, not better. The practical implication is straightforward—teams need to control what information agents share and when, rather than assuming more interaction always helps. This could reshape how companies design multi-agent systems, shifting focus from how many models they use to what those models are allowed to tell each other.
+
+---
+Title: Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design
+Subtitle: How planes learn to fly better by simplifying the math
+URL: https://paperplaine.com/papers/dynamic-inversion-an-incrementally
+Category: Mathematics
+Authors: Daniel Milz, Gertjan Looye
+arXiv ID: 2608.23229
+arXiv URL: https://arxiv.org/abs/2608.23229
+Posted: 2026-08-25
+
+Summary: Flight engineers have developed a family of related control techniques that tell planes how to respond to pilot commands by using acceleration sensors instead of complex mathematical models. The newer versions, called incremental methods, are simpler and more forgiving of imperfect airplane models, but they create new design tradeoffs that engineers are still learning to navigate.
+
+Why it matters: Simpler control systems make planes safer and cheaper to design—they're less sensitive to errors in how engineers model the aircraft, which means they work better across different planes and changing conditions. Better control methods also let engineers more easily add safety features like automatic stall prevention or fault recovery without redesigning the entire system from scratch.
+
+---
+Title: Hierarchical Exponential-Gaussian Mixtures for Watch-Time Distribution Prediction
+Subtitle: Fixing the math behind predicting how long people watch short videos
+URL: https://paperplaine.com/papers/hierarchical-exponential-gaussian-mixtures
+Category: Statistics
+Authors: Sofia Gulevskaia, Mikhail Trapeznikov, Aleksandr Poslavsky et al.
+arXiv ID: 2608.23356
+arXiv URL: https://arxiv.org/abs/2608.23356
+Posted: 2026-08-25
+
+Summary: A new statistical method predicts how long people will watch short videos by modeling the full range of possible watch times—from people who quit immediately to those who watch all the way through. The approach fixes three critical problems in prior methods: collapsed variance, redundant components, and inactive parts of the model. In a real-world test with millions of videos, it improved ranking accuracy and made predictions more stable and interpretable.
+
+Why it matters: Video platforms make billions in ad revenue based on which videos they show you. Better watch-time predictions mean more accurate recommendations, which keeps people engaged longer and generates more advertising impressions. The production test showed statistically significant increases in user engagement, translating directly to platform value.
 
 ---
 Title: Personalized Privacy Control in LLMs via Attention Head Intervention
