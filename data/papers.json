@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.23474",
+    "title": "What's the Catch? Evaluating Temporal Consistency in Vision-Language Models",
+    "authors": "Marek Hradil, Danae Sánchez Villegas",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-24T16:40:49Z",
+    "publishedFormatted": "Aug 24, 2026",
+    "subtitle": "Why AI vision models fail to spot when videos don't make sense",
+    "summary": "Vision-language models excel at analyzing individual images and frames but largely fail to detect when video sequences violate temporal logic — such as when consecutive frames are swapped. Researchers created TimeCatch, a benchmark using simple anomalies like frame swaps and noise insertions, and found that while these AI systems spot obvious corruptions within single frames, they perform near chance-level when asked to notice temporal inconsistencies that humans catch easily.",
+    "whyItMatters": "As vision-language models are increasingly deployed for safety-critical tasks like video surveillance, autonomous driving, and content moderation, this blind spot poses a real risk. An AI system might confidently approve a manipulated or nonsensical video sequence because it processes frames in isolation rather than understanding whether they form a coherent story. The TimeCatch benchmark gives researchers a concrete tool to measure and fix this weakness before these models are trusted with high-stakes decisions.",
+    "fetchedAt": "2026-08-25T19:25:39.618Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 17,
+      "wordCount": 198
+    },
+    "slug": "what-s-the-catch"
+  },
+  {
+    "id": "2608.22790",
+    "title": "Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion",
+    "authors": "Chia-Hsiang Lin, Jian-Kai Huang, Si-Sheng Young et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-08-24T04:21:13Z",
+    "publishedFormatted": "Aug 24, 2026",
+    "subtitle": "Turning basic satellite images into detailed color maps without heavy computation",
+    "summary": "A new method called PAINT converts standard Landsat satellite images into much richer hyperspectral images—expanding from 7 color bands to 172—while avoiding the massive computational burden that usually makes this task impractical. When applied to land classification tasks, the method improved accuracy from 79% to 92%, demonstrating that these AI-enhanced images capture ground details far better than the originals.",
+    "whyItMatters": "Global hyperspectral satellites are expensive and rare, but Landsat data is freely available worldwide. This technique makes it possible to monitor Earth's surface—for crop health, mineral deposits, water quality, and environmental change—at hyperspectral quality using existing satellites. That's a significant expansion of what we can observe globally without waiting for new hardware to launch.",
+    "fetchedAt": "2026-08-25T19:25:43.033Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 218
+    },
+    "slug": "interpretable-landsat-to-hyperspectral"
+  },
+  {
+    "id": "2608.22768",
+    "title": "The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring",
+    "authors": "Jihwan Woo",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-08-24T03:43:09Z",
+    "publishedFormatted": "Aug 24, 2026",
+    "subtitle": "How leveraged funds hide systemic risk by watching the wrong numbers",
+    "summary": "When multiple leveraged exchange-traded funds trade related assets, they create hidden feedback loops that single-product monitoring completely misses. Researchers found that watching each fund individually reports 'safe' while the full system is actually unstable, and in Korea's 2026 crisis, invisible spillover from one fund's rebalancing accounted for 41% of price swings in another asset.",
+    "whyItMatters": "Regulators and exchanges currently monitor leveraged funds one at a time, meaning they cannot see the cascade risks that emerge when funds rebalance together. The Korean case shows these blind spots are real and costly: investors in Samsung Electronics experienced large, unmeasured price moves caused by rebalancing in a separate stock complex. Fixing this requires monitoring the entire web of connected funds, not each in isolation.",
+    "fetchedAt": "2026-08-25T19:25:46.624Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 10,
+      "wordCount": 272
+    },
+    "slug": "the-loop-gain-matrix"
+  },
+  {
     "id": "2608.23541",
     "title": "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams",
     "authors": "Summer Eunhyung Ann, Haokun Liu, Chenhao Tan",

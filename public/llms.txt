@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 682 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 685 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 233 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 234 papers in archive.
+  - "What's the Catch? Evaluating Temporal Consistency in Vision-Language Models"
   - "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams"
-  - "Personalized Privacy Control in LLMs via Attention Head Intervention"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 56 papers in archive.
   - "AID-Guard: Stateful Authorization for Delegated Agent Effects"
   - "Auditing Cross-Lingual Fairness in Language Model Watermarking"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 57 papers in archive.
   - "Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis"
   - "Decoding silent reading from non-invasive EEG"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 59 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 60 papers in archive.
+  - "The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring"
   - "The Price of Permission: Classification Uncertainty in Constrained Capital Markets"
-  - "Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 59 papers in archive.
   - "Hierarchical Exponential-Gaussian Mixtures for Watch-Time Distribution Prediction"
   - "Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 55 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 56 papers in archive.
+  - "Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion"
   - "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth"
-  - "The Zonotopic Mixture Filter"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 49 papers in archive.
   - "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories"
   - "Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use"
 
 ## 10 most recent papers
+
+### What's the Catch? Evaluating Temporal Consistency in Vision-Language Models
+- URL: https://paperplaine.com/papers/what-s-the-catch
+- Category: Computer Science · AI
+- Authors: Marek Hradil, Danae Sánchez Villegas
+- arXiv: 2608.23474
+- Plain-English subtitle: Why AI vision models fail to spot when videos don't make sense
+- Summary: Vision-language models excel at analyzing individual images and frames but largely fail to detect when video sequences violate temporal logic — such as when consecutive frames are swapped. Researchers created TimeCatch, a benchmark using simple anomalies like frame swaps and noise insertions, and found that while these AI systems spot obvious corruptions within single frames, they perform near chance-level when asked to notice temporal inconsistencies that humans catch easily.
+- Why it matters: As vision-language models are increasingly deployed for safety-critical tasks like video surveillance, autonomous driving, and content moderation, this blind spot poses a real risk. An AI system might confidently approve a manipulated or nonsensical video sequence because it processes frames in isolation rather than understanding whether they form a coherent story. The TimeCatch benchmark gives researchers a concrete tool to measure and fix this weakness before these models are trusted with high-stakes decisions.
+
+### Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion
+- URL: https://paperplaine.com/papers/interpretable-landsat-to-hyperspectral
+- Category: Engineering
+- Authors: Chia-Hsiang Lin, Jian-Kai Huang, Si-Sheng Young et al.
+- arXiv: 2608.22790
+- Plain-English subtitle: Turning basic satellite images into detailed color maps without heavy computation
+- Summary: A new method called PAINT converts standard Landsat satellite images into much richer hyperspectral images—expanding from 7 color bands to 172—while avoiding the massive computational burden that usually makes this task impractical. When applied to land classification tasks, the method improved accuracy from 79% to 92%, demonstrating that these AI-enhanced images capture ground details far better than the originals.
+- Why it matters: Global hyperspectral satellites are expensive and rare, but Landsat data is freely available worldwide. This technique makes it possible to monitor Earth's surface—for crop health, mineral deposits, water quality, and environmental change—at hyperspectral quality using existing satellites. That's a significant expansion of what we can observe globally without waiting for new hardware to launch.
+
+### The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring
+- URL: https://paperplaine.com/papers/the-loop-gain-matrix
+- Category: Quantitative Finance
+- Authors: Jihwan Woo
+- arXiv: 2608.22768
+- Plain-English subtitle: How leveraged funds hide systemic risk by watching the wrong numbers
+- Summary: When multiple leveraged exchange-traded funds trade related assets, they create hidden feedback loops that single-product monitoring completely misses. Researchers found that watching each fund individually reports 'safe' while the full system is actually unstable, and in Korea's 2026 crisis, invisible spillover from one fund's rebalancing accounted for 41% of price swings in another asset.
+- Why it matters: Regulators and exchanges currently monitor leveraged funds one at a time, meaning they cannot see the cascade risks that emerge when funds rebalance together. The Korean case shows these blind spots are real and costly: investors in Samsung Electronics experienced large, unmeasured price moves caused by rebalancing in a separate stock complex. Fixing this requires monitoring the entire web of connected funds, not each in isolation.
 
 ### The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams
 - URL: https://paperplaine.com/papers/the-interaction-tax-when
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to write better image descriptions by looking up similar examples
 - Summary: A new method called Re³Cap improves how AI systems describe images by having them search for similar images and captions to catch mistakes. The technique outperforms previous approaches by up to 8.64% on standard image captioning benchmarks, without needing humans to label additional training data.
 - Why it matters: Image captioning powers accessibility tools for blind and low-vision users, product recommendations in e-commerce, and content moderation at scale. Better captions mean more accurate descriptions that don't miss important details or invent objects that aren't there—directly improving the reliability of systems millions of people depend on daily.
-
-### Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories
-- URL: https://paperplaine.com/papers/across-design-uncertainty-in
-- Category: Economics
-- Authors: Pedro Cadahia Delgado
-- arXiv: 2608.21334
-- Plain-English subtitle: Why standard price data can fool researchers about how uncertain their estimates really are
-- Summary: When researchers measure price changes from real-world data, they typically underestimate how much their estimates might vary simply because they only observe one possible sequence of price movements. A new analysis shows that this hidden uncertainty accounts for over 97% of estimation error in typical pricing datasets—but standard statistical techniques completely miss it. The solution: researchers need to actively design how price data gets collected rather than passively relying on whatever prices happen to be recorded.
-- Why it matters: Price data feeds into inflation estimates, wage negotiations, and policy decisions across economics and business. If researchers systematically underestimate the true range of uncertainty in their findings, they may report confident conclusions that are actually fragile. The paper's results suggest that better data design—ensuring prices move independently across different regions or products rather than moving together—could roughly double the reliability of these estimates.
-
-### The Price of Permission: Classification Uncertainty in Constrained Capital Markets
-- URL: https://paperplaine.com/papers/the-price-of-permission
-- Category: Quantitative Finance
-- Authors: Abdulrahman Qadi, Akash Sharma, Francesca Medda
-- arXiv: 2608.12634
-- Plain-English subtitle: When Islamic finance rules change, who actually buys the stocks?
-- Summary: When a stock becomes eligible to buy under Islamic finance rules, its price typically rises 1.76 to 2.25 percentage points over the next few weeks — but only if the stock trades frequently enough and the permission change is official. The effect disappears for less-traded stocks and doesn't show up consistently across different Islamic screening standards, suggesting the price bump reflects real demand from newly-permitted investors rather than a universal market rule.
-- Why it matters: Islamic finance restrictions exclude $2+ trillion in global assets from many stocks, making permission status a major determinant of who can invest and when. Traders and fund managers need to know whether newly-permitted stocks are cheap relative to risk (a buying opportunity) or whether the price has already adjusted for the permission change (no edge). This research shows the answer depends on the stock's liquidity and whether the permission comes from an official regulatory body — helping portfolio managers decide when classification changes actually matter for trading.
-
-### Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders
-- URL: https://paperplaine.com/papers/which-eviction-policy-should
-- Category: Computer Science · AI
-- Authors: Yash Kulkarni, Shubham Harkare, Arvind Suresh Yogesh Babu
-- arXiv: 2608.20280
-- Plain-English subtitle: When to delete cached AI answers to make room for new ones
-- Summary: Researchers tested seven different strategies for deciding which cached responses to discard when a semantic cache fills up, comparing them across multiple real-world query datasets. Most policies performed nearly identically, with the simplest approach (deleting least-frequently-used items) matching or beating specialized strategies by less than a percentage point—but the real problem is that the cache misses far more than it hits in practice because few cached answers actually work as valid substitutes for new queries.
-- Why it matters: Semantic caches promise to speed up language models by reusing old answers for similar questions, but this study reveals they may deliver much less benefit than advertised. Even when a cache correctly identifies a similar past query, the cached answer often doesn't actually answer the new question well enough to use. Before companies invest in building smarter cache systems, they need to focus on understanding when cached answers are genuinely substitutable—a threshold that currently differs between embedding models and remains largely untested in production.
 
 ## About
 

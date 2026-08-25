@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 682 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 685 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-25
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: What's the Catch? Evaluating Temporal Consistency in Vision-Language Models
+Subtitle: Why AI vision models fail to spot when videos don't make sense
+URL: https://paperplaine.com/papers/what-s-the-catch
+Category: Computer Science · AI
+Authors: Marek Hradil, Danae Sánchez Villegas
+arXiv ID: 2608.23474
+arXiv URL: https://arxiv.org/abs/2608.23474
+Posted: 2026-08-25
+
+Summary: Vision-language models excel at analyzing individual images and frames but largely fail to detect when video sequences violate temporal logic — such as when consecutive frames are swapped. Researchers created TimeCatch, a benchmark using simple anomalies like frame swaps and noise insertions, and found that while these AI systems spot obvious corruptions within single frames, they perform near chance-level when asked to notice temporal inconsistencies that humans catch easily.
+
+Why it matters: As vision-language models are increasingly deployed for safety-critical tasks like video surveillance, autonomous driving, and content moderation, this blind spot poses a real risk. An AI system might confidently approve a manipulated or nonsensical video sequence because it processes frames in isolation rather than understanding whether they form a coherent story. The TimeCatch benchmark gives researchers a concrete tool to measure and fix this weakness before these models are trusted with high-stakes decisions.
+
+---
+Title: Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion
+Subtitle: Turning basic satellite images into detailed color maps without heavy computation
+URL: https://paperplaine.com/papers/interpretable-landsat-to-hyperspectral
+Category: Engineering
+Authors: Chia-Hsiang Lin, Jian-Kai Huang, Si-Sheng Young et al.
+arXiv ID: 2608.22790
+arXiv URL: https://arxiv.org/abs/2608.22790
+Posted: 2026-08-25
+
+Summary: A new method called PAINT converts standard Landsat satellite images into much richer hyperspectral images—expanding from 7 color bands to 172—while avoiding the massive computational burden that usually makes this task impractical. When applied to land classification tasks, the method improved accuracy from 79% to 92%, demonstrating that these AI-enhanced images capture ground details far better than the originals.
+
+Why it matters: Global hyperspectral satellites are expensive and rare, but Landsat data is freely available worldwide. This technique makes it possible to monitor Earth's surface—for crop health, mineral deposits, water quality, and environmental change—at hyperspectral quality using existing satellites. That's a significant expansion of what we can observe globally without waiting for new hardware to launch.
+
+---
+Title: The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring
+Subtitle: How leveraged funds hide systemic risk by watching the wrong numbers
+URL: https://paperplaine.com/papers/the-loop-gain-matrix
+Category: Quantitative Finance
+Authors: Jihwan Woo
+arXiv ID: 2608.22768
+arXiv URL: https://arxiv.org/abs/2608.22768
+Posted: 2026-08-25
+
+Summary: When multiple leveraged exchange-traded funds trade related assets, they create hidden feedback loops that single-product monitoring completely misses. Researchers found that watching each fund individually reports 'safe' while the full system is actually unstable, and in Korea's 2026 crisis, invisible spillover from one fund's rebalancing accounted for 41% of price swings in another asset.
+
+Why it matters: Regulators and exchanges currently monitor leveraged funds one at a time, meaning they cannot see the cascade risks that emerge when funds rebalance together. The Korean case shows these blind spots are real and costly: investors in Samsung Electronics experienced large, unmeasured price moves caused by rebalancing in a separate stock complex. Fixing this requires monitoring the entire web of connected funds, not each in isolation.
 
 ---
 Title: The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams
