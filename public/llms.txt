@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 685 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 688 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 234 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 235 papers in archive.
+  - "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing"
   - "What's the Catch? Evaluating Temporal Consistency in Vision-Language Models"
-  - "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 56 papers in archive.
   - "AID-Guard: Stateful Authorization for Delegated Agent Effects"
   - "Auditing Cross-Lingual Fairness in Language Model Watermarking"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 57 papers in archive.
   - "Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design"
   - "Zero-Sum Power Factor Games"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 57 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 58 papers in archive.
+  - "Beauty is in the ELBO of the Beholder: A Variational Account of Processing Fluency in Face Perception"
   - "Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis"
-  - "Decoding silent reading from non-invasive EEG"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 60 papers in archive.
   - "The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring"
   - "The Price of Permission: Classification Uncertainty in Constrained Capital Markets"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 56 papers in archive.
   - "Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion"
   - "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 49 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 50 papers in archive.
+  - "Learning Whom to Trust : Decision-Generated Credibility in Social Learning"
   - "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories"
-  - "Governing Delegation to Generative Artificial Intelligence: Human Direction, Work-Related Orientation, and Modes of Use"
 
 ## 10 most recent papers
+
+### StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing
+- URL: https://paperplaine.com/papers/stepguard-learning-step-level
+- Category: Computer Science · AI
+- Authors: Zhijie Zheng, Yu Li, Chen Qian et al.
+- arXiv: 2608.24777
+- Plain-English subtitle: Teaching AI to stop dangerous tool use before it happens
+- Summary: Researchers created StepGuard, a safety system that catches risky actions by AI agents right before they execute—like blocking a file deletion or unauthorized data access. The system cuts successful attacks by 77% while barely slowing down the AI's useful work (dropping performance by less than 3%).
+- Why it matters: AI agents that interact with real systems—reading files, sending emails, modifying databases—pose serious security risks if they go rogue or get hijacked. Current safety checks only look back after damage is done. StepGuard shifts protection to the moment of decision, making it harder for attackers or malfunctioning systems to cause harm without sacrificing the AI's ability to do legitimate work.
+
+### Learning Whom to Trust : Decision-Generated Credibility in Social Learning
+- URL: https://paperplaine.com/papers/learning-whom-to-trust
+- Category: Economics
+- Authors: Gabriel Bontemps, Abhishek Banerjee
+- arXiv: 2608.24851
+- Plain-English subtitle: How people's confidence in their own choices shapes whom others trust.
+- Summary: When people learn from each other, they naturally pay more attention to confident sources—but this can backfire. A mathematical model of learning agents reveals a dangerous pattern: moderate information sharing helps groups correct early mistakes, but strong social influence can trap entire populations in a shared wrong belief. The model also identifies a paradox: confidence helps people learn better when making private decisions, yet the same confidence makes false ideas spread faster among groups.
+- Why it matters: Online platforms and social networks amplify the voices of confident speakers, often regardless of accuracy. This work predicts exactly when that amplification helps versus harms collective understanding—and suggests that limiting how widely confident wrong ideas travel could prevent communities from locking into large-scale false consensus.
+
+### Beauty is in the ELBO of the Beholder: A Variational Account of Processing Fluency in Face Perception
+- URL: https://paperplaine.com/papers/beauty-is-in-the
+- Category: Quantitative Biology
+- Authors: Francisco M. López, Jochen Triesch
+- arXiv: 2608.24219
+- Plain-English subtitle: Why our brains find symmetrical, average faces more beautiful
+- Summary: Faces we find attractive are easier for our brains to process — they match statistical patterns our visual system encounters most often. Researchers trained artificial neural networks on face images without any beauty labels, then checked whether the networks' internal representations matched human attractiveness ratings. Across multiple datasets, faces rated as attractive aligned with directions in the network's latent space that required the least computational effort to encode, and these "beauty directions" emerged consistently even when networks were retrained from scratch.
+- Why it matters: This work bridges neuroscience and artificial intelligence by showing that aesthetic pleasure may be rooted in processing efficiency rather than arbitrary cultural preferences. Understanding what makes faces attractive has applications in facial recognition systems, cosmetic surgery planning, and media design — and suggests that beauty judgments might be partly universal rather than entirely learned.
 
 ### What's the Catch? Evaluating Temporal Consistency in Vision-Language Models
 - URL: https://paperplaine.com/papers/what-s-the-catch
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI respect different people's privacy wishes, not just general rules
 - Summary: Large language models trained to follow generic privacy rules ignore individual user preferences more than half the time. Researchers built a benchmark to test personalized privacy (where different users have different comfort levels with sharing information) and developed a method that adjusts how the AI's internal attention mechanisms work at inference time, significantly improving compliance with each user's specific privacy boundaries.
 - Why it matters: As AI systems gain access to personal data through email, calendars, and messaging apps, a one-size-fits-all privacy approach fails—some users are comfortable sharing health information while others aren't. This work provides both a way to measure whether AI respects individual privacy preferences and a practical fix that works without retraining the model, making it feasible to deploy personalized privacy controls in real AI assistants today.
-
-### AID-Guard: Stateful Authorization for Delegated Agent Effects
-- URL: https://paperplaine.com/papers/aid-guard-stateful-authorization
-- Category: Computer Science
-- Authors: Yingzhe Tong, Leyu Dai, Songhui Guo
-- arXiv: 2608.21159
-- Plain-English subtitle: Keeping AI agents from accidentally doing the same task twice
-- Summary: When AI agents use external tools, a single approved request can accidentally trigger multiple effects if something goes wrong in delivery or recovery. AID-Guard is a new system that tracks authorization through the entire lifecycle — from approval through retries and crashes — ensuring one approved action produces exactly one real-world effect. In testing with Stripe and Resend payment systems, the protocol prevented all 44 simulated attacks while allowing legitimate requests through.
-- Why it matters: As AI agents increasingly handle financial transactions, account changes, and other irreversible actions, duplicate effects from retry failures could charge customers twice, send duplicate emails, or create orphaned database records. AID-Guard closes a gap where traditional "request approval" stops working once delivery gets messy — a gap that exists in most current AI agent frameworks. This matters because real systems crash, timeouts happen, and networks lose responses; a robust authorization system needs to survive that chaos without creating accidental duplicates.
-
-### Quantum annealing through a first-order phase transition: field theory approach
-- URL: https://paperplaine.com/papers/quantum-annealing-through-a
-- Category: Physics
-- Authors: Diego Andrés Rivera Orona, Predrag Punoševac, Nikolai A. Sinitsyn
-- arXiv: 2608.21329
-- Plain-English subtitle: Why quantum computers get stuck during certain computational shortcuts
-- Summary: When quantum computers use a computational shortcut called annealing to solve problems, they can get trapped in a dead-end state if the problem crosses a certain type of phase transition. Researchers developed a mathematical framework predicting how many errors pile up during this trap, finding that the error rate follows predictable power-law patterns that shift sharply depending on the problem parameters.
-- Why it matters: Quantum computers are still prone to errors that reduce their usefulness for real problems. This work gives engineers a way to detect when a computational approach will hit these problematic transition points and sidestep them entirely, improving the reliability of quantum computations. Recognizing these signatures could be the difference between a quantum computer solving a problem correctly or wasting time stuck in a computational dead end.
-
-### Re^3Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning
-- URL: https://paperplaine.com/papers/re-3cap-retrieval-guided
-- Category: Computer Science · AI
-- Authors: Haonan Jia, Shichao Dong, Zenghui Sun et al.
-- arXiv: 2608.21305
-- Plain-English subtitle: Teaching AI to write better image descriptions by looking up similar examples
-- Summary: A new method called Re³Cap improves how AI systems describe images by having them search for similar images and captions to catch mistakes. The technique outperforms previous approaches by up to 8.64% on standard image captioning benchmarks, without needing humans to label additional training data.
-- Why it matters: Image captioning powers accessibility tools for blind and low-vision users, product recommendations in e-commerce, and content moderation at scale. Better captions mean more accurate descriptions that don't miss important details or invent objects that aren't there—directly improving the reliability of systems millions of people depend on daily.
 
 ## About
 

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 685 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-25
+This file contains the complete plain-English text of all 688 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing
+Subtitle: Teaching AI to stop dangerous tool use before it happens
+URL: https://paperplaine.com/papers/stepguard-learning-step-level
+Category: Computer Science · AI
+Authors: Zhijie Zheng, Yu Li, Chen Qian et al.
+arXiv ID: 2608.24777
+arXiv URL: https://arxiv.org/abs/2608.24777
+Posted: 2026-08-26
+
+Summary: Researchers created StepGuard, a safety system that catches risky actions by AI agents right before they execute—like blocking a file deletion or unauthorized data access. The system cuts successful attacks by 77% while barely slowing down the AI's useful work (dropping performance by less than 3%).
+
+Why it matters: AI agents that interact with real systems—reading files, sending emails, modifying databases—pose serious security risks if they go rogue or get hijacked. Current safety checks only look back after damage is done. StepGuard shifts protection to the moment of decision, making it harder for attackers or malfunctioning systems to cause harm without sacrificing the AI's ability to do legitimate work.
+
+---
+Title: Learning Whom to Trust : Decision-Generated Credibility in Social Learning
+Subtitle: How people's confidence in their own choices shapes whom others trust.
+URL: https://paperplaine.com/papers/learning-whom-to-trust
+Category: Economics
+Authors: Gabriel Bontemps, Abhishek Banerjee
+arXiv ID: 2608.24851
+arXiv URL: https://arxiv.org/abs/2608.24851
+Posted: 2026-08-26
+
+Summary: When people learn from each other, they naturally pay more attention to confident sources—but this can backfire. A mathematical model of learning agents reveals a dangerous pattern: moderate information sharing helps groups correct early mistakes, but strong social influence can trap entire populations in a shared wrong belief. The model also identifies a paradox: confidence helps people learn better when making private decisions, yet the same confidence makes false ideas spread faster among groups.
+
+Why it matters: Online platforms and social networks amplify the voices of confident speakers, often regardless of accuracy. This work predicts exactly when that amplification helps versus harms collective understanding—and suggests that limiting how widely confident wrong ideas travel could prevent communities from locking into large-scale false consensus.
+
+---
+Title: Beauty is in the ELBO of the Beholder: A Variational Account of Processing Fluency in Face Perception
+Subtitle: Why our brains find symmetrical, average faces more beautiful
+URL: https://paperplaine.com/papers/beauty-is-in-the
+Category: Quantitative Biology
+Authors: Francisco M. López, Jochen Triesch
+arXiv ID: 2608.24219
+arXiv URL: https://arxiv.org/abs/2608.24219
+Posted: 2026-08-26
+
+Summary: Faces we find attractive are easier for our brains to process — they match statistical patterns our visual system encounters most often. Researchers trained artificial neural networks on face images without any beauty labels, then checked whether the networks' internal representations matched human attractiveness ratings. Across multiple datasets, faces rated as attractive aligned with directions in the network's latent space that required the least computational effort to encode, and these "beauty directions" emerged consistently even when networks were retrained from scratch.
+
+Why it matters: This work bridges neuroscience and artificial intelligence by showing that aesthetic pleasure may be rooted in processing efficiency rather than arbitrary cultural preferences. Understanding what makes faces attractive has applications in facial recognition systems, cosmetic surgery planning, and media design — and suggests that beauty judgments might be partly universal rather than entirely learned.
 
 ---
 Title: What's the Catch? Evaluating Temporal Consistency in Vision-Language Models
