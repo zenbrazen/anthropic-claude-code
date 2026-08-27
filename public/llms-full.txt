@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 691 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-26
+This file contains the complete plain-English text of all 694 papers currently in the Paper Plaine archive.
+Last updated: 2026-08-27
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving
+Subtitle: Stopping self-driving cars before they crash by catching confused decisions early
+URL: https://paperplaine.com/papers/gating-before-commitment-anticipating
+Category: Computer Science · AI
+Authors: Cong Xu, Ravi Sankar
+arXiv ID: 2608.26074
+arXiv URL: https://arxiv.org/abs/2608.26074
+Posted: 2026-08-27
+
+Summary: Autonomous vehicles often misinterpret what other road users intend to do, leading to planning failures that cause crashes. Researchers added a decision-checking layer that spots these misinterpretations 161 milliseconds before a crash would occur, successfully preventing collisions in all test scenarios by halting the planned maneuver before it's too late.
+
+Why it matters: Autonomous vehicles today commit to driving maneuvers before they fully understand what surrounding vehicles will do next. This work demonstrates that catching misunderstandings just before execution — rather than trying to prevent them or recovering after — can reliably prevent collisions that current systems cannot avoid. A 161 millisecond safety window is the difference between a near-miss and a fatal crash.
+
+---
+Title: Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study
+Subtitle: Teaching AI to understand an endangered indigenous language with minimal data
+URL: https://paperplaine.com/papers/fine-tuning-whisper-for
+Category: Statistics
+Authors: Leonardo Duart, Tiago Fonseca, Thiago Chacón
+arXiv ID: 2608.26060
+arXiv URL: https://arxiv.org/abs/2608.26060
+Posted: 2026-08-27
+
+Summary: Researchers adapted Whisper, an AI speech recognition system, to recognize Baniwa, an indigenous language spoken across Brazil, Colombia, and Venezuela with very few digital recordings. Using just 32 minutes of transcribed audio, the system correctly identified about 6 in 10 words — the first baseline for Baniwa speech recognition and proof that multilingual AI models can work with extremely limited training data.
+
+Why it matters: Indigenous languages like Baniwa are disappearing as fewer people speak them, and digital tools almost never exist for them because companies focus on major languages. This work shows that endangered language communities don't need massive datasets to build functional speech recognition tools—they can leverage existing AI systems trained on major languages. This creates a practical pathway for documenting and preserving languages that otherwise leave no digital record.
+
+---
+Title: Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation
+Subtitle: Finding hidden connections in financial networks when you can only see the outputs
+URL: https://paperplaine.com/papers/output-only-identification-and
+Category: Quantitative Finance
+Authors: Jihwan Woo
+arXiv ID: 2608.25844
+arXiv URL: https://arxiv.org/abs/2608.25844
+Posted: 2026-08-27
+
+Summary: When financial systems like leveraged funds automatically rebalance their portfolios, they create feedback loops that ripple across markets—but those ripples are hard to measure because traders can't directly observe how each connection works. This paper shows how to map those hidden connections using only public information (like fund disclosures) and observed market movements, even without access to the internal trading signals. The method works by exploiting the predictable patterns created when rebalancing rules change over time.
+
+Why it matters: Financial regulators and risk managers need to understand how feedback loops between funds, exchanges, and other market participants could amplify market stress or trigger cascading failures. This technique lets them reconstruct those hidden networks from public data alone, making it possible to spot dangerous feedback loops before they destabilize markets—without requiring firms to disclose their internal trading rules.
 
 ---
 Title: Design and Empirical Characterization of a Hardware-Realized Turing Machine with Automated Card-Based Programming

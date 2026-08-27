@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 691 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 694 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 236 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 237 papers in archive.
+  - "Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving"
   - "Design and Empirical Characterization of a Hardware-Realized Turing Machine with Automated Card-Based Programming"
-  - "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 57 papers in archive.
   - "Security Education in Higher Education through AI-Powered Gamification"
   - "AID-Guard: Stateful Authorization for Delegated Agent Effects"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 58 papers in archive.
   - "Beauty is in the ELBO of the Beholder: A Variational Account of Processing Fluency in Face Perception"
   - "Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 60 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 61 papers in archive.
+  - "Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation"
   - "The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring"
-  - "The Price of Permission: Classification Uncertainty in Constrained Capital Markets"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 59 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 60 papers in archive.
+  - "Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study"
   - "Hierarchical Exponential-Gaussian Mixtures for Watch-Time Distribution Prediction"
-  - "Multivariate Spatio-Temporal Regression with Penalized Model Selection and an Empirical Application"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 56 papers in archive.
   - "Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion"
   - "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories"
 
 ## 10 most recent papers
+
+### Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving
+- URL: https://paperplaine.com/papers/gating-before-commitment-anticipating
+- Category: Computer Science · AI
+- Authors: Cong Xu, Ravi Sankar
+- arXiv: 2608.26074
+- Plain-English subtitle: Stopping self-driving cars before they crash by catching confused decisions early
+- Summary: Autonomous vehicles often misinterpret what other road users intend to do, leading to planning failures that cause crashes. Researchers added a decision-checking layer that spots these misinterpretations 161 milliseconds before a crash would occur, successfully preventing collisions in all test scenarios by halting the planned maneuver before it's too late.
+- Why it matters: Autonomous vehicles today commit to driving maneuvers before they fully understand what surrounding vehicles will do next. This work demonstrates that catching misunderstandings just before execution — rather than trying to prevent them or recovering after — can reliably prevent collisions that current systems cannot avoid. A 161 millisecond safety window is the difference between a near-miss and a fatal crash.
+
+### Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study
+- URL: https://paperplaine.com/papers/fine-tuning-whisper-for
+- Category: Statistics
+- Authors: Leonardo Duart, Tiago Fonseca, Thiago Chacón
+- arXiv: 2608.26060
+- Plain-English subtitle: Teaching AI to understand an endangered indigenous language with minimal data
+- Summary: Researchers adapted Whisper, an AI speech recognition system, to recognize Baniwa, an indigenous language spoken across Brazil, Colombia, and Venezuela with very few digital recordings. Using just 32 minutes of transcribed audio, the system correctly identified about 6 in 10 words — the first baseline for Baniwa speech recognition and proof that multilingual AI models can work with extremely limited training data.
+- Why it matters: Indigenous languages like Baniwa are disappearing as fewer people speak them, and digital tools almost never exist for them because companies focus on major languages. This work shows that endangered language communities don't need massive datasets to build functional speech recognition tools—they can leverage existing AI systems trained on major languages. This creates a practical pathway for documenting and preserving languages that otherwise leave no digital record.
+
+### Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation
+- URL: https://paperplaine.com/papers/output-only-identification-and
+- Category: Quantitative Finance
+- Authors: Jihwan Woo
+- arXiv: 2608.25844
+- Plain-English subtitle: Finding hidden connections in financial networks when you can only see the outputs
+- Summary: When financial systems like leveraged funds automatically rebalance their portfolios, they create feedback loops that ripple across markets—but those ripples are hard to measure because traders can't directly observe how each connection works. This paper shows how to map those hidden connections using only public information (like fund disclosures) and observed market movements, even without access to the internal trading signals. The method works by exploiting the predictable patterns created when rebalancing rules change over time.
+- Why it matters: Financial regulators and risk managers need to understand how feedback loops between funds, exchanges, and other market participants could amplify market stress or trigger cascading failures. This technique lets them reconstruct those hidden networks from public data alone, making it possible to spot dangerous feedback loops before they destabilize markets—without requiring firms to disclose their internal trading rules.
 
 ### Design and Empirical Characterization of a Hardware-Realized Turing Machine with Automated Card-Based Programming
 - URL: https://paperplaine.com/papers/design-and-empirical-characterization
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI vision models fail to spot when videos don't make sense
 - Summary: Vision-language models excel at analyzing individual images and frames but largely fail to detect when video sequences violate temporal logic — such as when consecutive frames are swapped. Researchers created TimeCatch, a benchmark using simple anomalies like frame swaps and noise insertions, and found that while these AI systems spot obvious corruptions within single frames, they perform near chance-level when asked to notice temporal inconsistencies that humans catch easily.
 - Why it matters: As vision-language models are increasingly deployed for safety-critical tasks like video surveillance, autonomous driving, and content moderation, this blind spot poses a real risk. An AI system might confidently approve a manipulated or nonsensical video sequence because it processes frames in isolation rather than understanding whether they form a coherent story. The TimeCatch benchmark gives researchers a concrete tool to measure and fix this weakness before these models are trusted with high-stakes decisions.
-
-### Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion
-- URL: https://paperplaine.com/papers/interpretable-landsat-to-hyperspectral
-- Category: Engineering
-- Authors: Chia-Hsiang Lin, Jian-Kai Huang, Si-Sheng Young et al.
-- arXiv: 2608.22790
-- Plain-English subtitle: Turning basic satellite images into detailed color maps without heavy computation
-- Summary: A new method called PAINT converts standard Landsat satellite images into much richer hyperspectral images—expanding from 7 color bands to 172—while avoiding the massive computational burden that usually makes this task impractical. When applied to land classification tasks, the method improved accuracy from 79% to 92%, demonstrating that these AI-enhanced images capture ground details far better than the originals.
-- Why it matters: Global hyperspectral satellites are expensive and rare, but Landsat data is freely available worldwide. This technique makes it possible to monitor Earth's surface—for crop health, mineral deposits, water quality, and environmental change—at hyperspectral quality using existing satellites. That's a significant expansion of what we can observe globally without waiting for new hardware to launch.
-
-### The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring
-- URL: https://paperplaine.com/papers/the-loop-gain-matrix
-- Category: Quantitative Finance
-- Authors: Jihwan Woo
-- arXiv: 2608.22768
-- Plain-English subtitle: How leveraged funds hide systemic risk by watching the wrong numbers
-- Summary: When multiple leveraged exchange-traded funds trade related assets, they create hidden feedback loops that single-product monitoring completely misses. Researchers found that watching each fund individually reports 'safe' while the full system is actually unstable, and in Korea's 2026 crisis, invisible spillover from one fund's rebalancing accounted for 41% of price swings in another asset.
-- Why it matters: Regulators and exchanges currently monitor leveraged funds one at a time, meaning they cannot see the cascade risks that emerge when funds rebalance together. The Korean case shows these blind spots are real and costly: investors in Samsung Electronics experienced large, unmeasured price moves caused by rebalancing in a separate stock complex. Fixing this requires monitoring the entire web of connected funds, not each in isolation.
-
-### The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams
-- URL: https://paperplaine.com/papers/the-interaction-tax-when
-- Category: Computer Science · AI
-- Authors: Summer Eunhyung Ann, Haokun Liu, Chenhao Tan
-- arXiv: 2608.23541
-- Plain-English subtitle: Why talking too much makes AI teams less creative
-- Summary: When multiple AI models share their complete solutions with each other, they quickly converge on the same answer within a single round, eliminating the diversity that made having multiple models useful in the first place. Across 11 optimization tasks with equal budgets, having agents work independently produced better results than letting them see each other's full outputs, because interaction caused them to stick with the first solution they encountered rather than exploring different approaches.
-- Why it matters: As companies build larger AI systems by combining multiple models, this work reveals a hidden cost: unrestricted communication between agents can actually make the system worse, not better. The practical implication is straightforward—teams need to control what information agents share and when, rather than assuming more interaction always helps. This could reshape how companies design multi-agent systems, shifting focus from how many models they use to what those models are allowed to tell each other.
 
 ## About
 
