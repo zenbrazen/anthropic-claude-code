@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 694 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 697 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 237 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 238 papers in archive.
+  - "PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference"
   - "Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving"
-  - "Design and Empirical Characterization of a Hardware-Realized Turing Machine with Automated Card-Based Programming"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 57 papers in archive.
   - "Security Education in Higher Education through AI-Powered Gamification"
   - "AID-Guard: Stateful Authorization for Delegated Agent Effects"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 58 papers in archive.
   - "Geometry-controlled correlated electric-field noise in enclosed ion traps from billiard return spectra"
   - "Quantum annealing through a first-order phase transition: field theory approach"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 57 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 58 papers in archive.
+  - "Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing"
   - "Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design"
-  - "Zero-Sum Power Factor Games"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 58 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 59 papers in archive.
+  - "The Von-Neumann State-Space Transformer for neural decoding"
   - "Beauty is in the ELBO of the Beholder: A Variational Account of Processing Fluency in Face Perception"
-  - "Bringing analytic rigor to agentic AI for science: The Brain Researcher platform for neuroimaging data analysis"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 61 papers in archive.
   - "Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation"
   - "The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories"
 
 ## 10 most recent papers
+
+### PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference
+- URL: https://paperplaine.com/papers/pace-a-unified-condense
+- Category: Computer Science · AI
+- Authors: Junjie Liu, Shengyuan Ye, Xu Chen
+- arXiv: 2608.27206
+- Plain-English subtitle: Cutting AI vision processing time by three times without losing accuracy
+- Summary: A new method called PACE speeds up vision-language models by trimming unnecessary visual information before and after the initial encoding step. The technique retains 94% of the model's original accuracy while using only 10% of the visual data, making responses three times faster.
+- Why it matters: Vision-language models are used in everything from medical image analysis to autonomous vehicles, but their slowness makes real-time applications impractical and expensive to run. This speedup could make these models practical for live customer service bots, instant image search, and time-sensitive visual tasks—while cutting the computational cost of running them on servers.
+
+### Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing
+- URL: https://paperplaine.com/papers/correcting-connectivity-in-arc
+- Category: Mathematics
+- Authors: Omer Gurevich, Maor Matityahu, Tal Mor et al.
+- arXiv: 2608.26894
+- Plain-English subtitle: Fixing a quantum computing shortcut that breaks delivery route planning
+- Summary: A standard quantum approach to vehicle routing sometimes produces nonsensical answers—routes that don't connect back to the depot. Researchers added a mathematical fix that guarantees valid solutions and proved it works with a polynomial-sized penalty, then tested it on a real quantum computer where the original method failed 78% of the time on small problems.
+- Why it matters: Quantum computers are being explored to solve logistics problems that classical computers struggle with at scale. But if they give invalid answers, they're useless. This work shows how to build in safeguards that force quantum solvers to respect real-world constraints—a necessary step before these machines can handle actual delivery networks.
+
+### The Von-Neumann State-Space Transformer for neural decoding
+- URL: https://paperplaine.com/papers/the-von-neumann-state
+- Category: Quantitative Biology
+- Authors: Morteza Sarafyazd
+- arXiv: 2608.25088
+- Plain-English subtitle: A more efficient way to decode brain signals from limited recordings
+- Summary: Researchers created a new neural network model that decodes brain activity far more accurately from small datasets than existing methods. The model works by using a low-dimensional instruction set to generate different computation patterns for each piece of data, mimicking how the brain itself appears to route information efficiently through a small number of underlying signals.
+- Why it matters: Brain-computer interfaces and neuroscience studies often have access to limited recordings, making current methods impractical. This model cuts the data needed for reliable decoding by a substantial margin, which could accelerate research into how the motor cortex controls movement and speed up development of prosthetics and rehabilitation tools that depend on accurately reading neural signals.
 
 ### Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving
 - URL: https://paperplaine.com/papers/gating-before-commitment-anticipating
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to stop dangerous tool use before it happens
 - Summary: Researchers created StepGuard, a safety system that catches risky actions by AI agents right before they execute—like blocking a file deletion or unauthorized data access. The system cuts successful attacks by 77% while barely slowing down the AI's useful work (dropping performance by less than 3%).
 - Why it matters: AI agents that interact with real systems—reading files, sending emails, modifying databases—pose serious security risks if they go rogue or get hijacked. Current safety checks only look back after damage is done. StepGuard shifts protection to the moment of decision, making it harder for attackers or malfunctioning systems to cause harm without sacrificing the AI's ability to do legitimate work.
-
-### Learning Whom to Trust : Decision-Generated Credibility in Social Learning
-- URL: https://paperplaine.com/papers/learning-whom-to-trust
-- Category: Economics
-- Authors: Gabriel Bontemps, Abhishek Banerjee
-- arXiv: 2608.24851
-- Plain-English subtitle: How people's confidence in their own choices shapes whom others trust.
-- Summary: When people learn from each other, they naturally pay more attention to confident sources—but this can backfire. A mathematical model of learning agents reveals a dangerous pattern: moderate information sharing helps groups correct early mistakes, but strong social influence can trap entire populations in a shared wrong belief. The model also identifies a paradox: confidence helps people learn better when making private decisions, yet the same confidence makes false ideas spread faster among groups.
-- Why it matters: Online platforms and social networks amplify the voices of confident speakers, often regardless of accuracy. This work predicts exactly when that amplification helps versus harms collective understanding—and suggests that limiting how widely confident wrong ideas travel could prevent communities from locking into large-scale false consensus.
-
-### Beauty is in the ELBO of the Beholder: A Variational Account of Processing Fluency in Face Perception
-- URL: https://paperplaine.com/papers/beauty-is-in-the
-- Category: Quantitative Biology
-- Authors: Francisco M. López, Jochen Triesch
-- arXiv: 2608.24219
-- Plain-English subtitle: Why our brains find symmetrical, average faces more beautiful
-- Summary: Faces we find attractive are easier for our brains to process — they match statistical patterns our visual system encounters most often. Researchers trained artificial neural networks on face images without any beauty labels, then checked whether the networks' internal representations matched human attractiveness ratings. Across multiple datasets, faces rated as attractive aligned with directions in the network's latent space that required the least computational effort to encode, and these "beauty directions" emerged consistently even when networks were retrained from scratch.
-- Why it matters: This work bridges neuroscience and artificial intelligence by showing that aesthetic pleasure may be rooted in processing efficiency rather than arbitrary cultural preferences. Understanding what makes faces attractive has applications in facial recognition systems, cosmetic surgery planning, and media design — and suggests that beauty judgments might be partly universal rather than entirely learned.
-
-### What's the Catch? Evaluating Temporal Consistency in Vision-Language Models
-- URL: https://paperplaine.com/papers/what-s-the-catch
-- Category: Computer Science · AI
-- Authors: Marek Hradil, Danae Sánchez Villegas
-- arXiv: 2608.23474
-- Plain-English subtitle: Why AI vision models fail to spot when videos don't make sense
-- Summary: Vision-language models excel at analyzing individual images and frames but largely fail to detect when video sequences violate temporal logic — such as when consecutive frames are swapped. Researchers created TimeCatch, a benchmark using simple anomalies like frame swaps and noise insertions, and found that while these AI systems spot obvious corruptions within single frames, they perform near chance-level when asked to notice temporal inconsistencies that humans catch easily.
-- Why it matters: As vision-language models are increasingly deployed for safety-critical tasks like video surveillance, autonomous driving, and content moderation, this blind spot poses a real risk. An AI system might confidently approve a manipulated or nonsensical video sequence because it processes frames in isolation rather than understanding whether they form a coherent story. The TimeCatch benchmark gives researchers a concrete tool to measure and fix this weakness before these models are trusted with high-stakes decisions.
 
 ## About
 

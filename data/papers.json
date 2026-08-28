@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.27206",
+    "title": "PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference",
+    "authors": "Junjie Liu, Shengyuan Ye, Xu Chen",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-27T14:52:09Z",
+    "publishedFormatted": "Aug 27, 2026",
+    "subtitle": "Cutting AI vision processing time by three times without losing accuracy",
+    "summary": "A new method called PACE speeds up vision-language models by trimming unnecessary visual information before and after the initial encoding step. The technique retains 94% of the model's original accuracy while using only 10% of the visual data, making responses three times faster.",
+    "whyItMatters": "Vision-language models are used in everything from medical image analysis to autonomous vehicles, but their slowness makes real-time applications impractical and expensive to run. This speedup could make these models practical for live customer service bots, instant image search, and time-sensitive visual tasks—while cutting the computational cost of running them on servers.",
+    "fetchedAt": "2026-08-28T02:24:08.229Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 22,
+      "wordCount": 200
+    },
+    "slug": "pace-a-unified-condense"
+  },
+  {
+    "id": "2608.26894",
+    "title": "Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing",
+    "authors": "Omer Gurevich, Maor Matityahu, Tal Mor et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-08-27T09:48:35Z",
+    "publishedFormatted": "Aug 27, 2026",
+    "subtitle": "Fixing a quantum computing shortcut that breaks delivery route planning",
+    "summary": "A standard quantum approach to vehicle routing sometimes produces nonsensical answers—routes that don't connect back to the depot. Researchers added a mathematical fix that guarantees valid solutions and proved it works with a polynomial-sized penalty, then tested it on a real quantum computer where the original method failed 78% of the time on small problems.",
+    "whyItMatters": "Quantum computers are being explored to solve logistics problems that classical computers struggle with at scale. But if they give invalid answers, they're useless. This work shows how to build in safeguards that force quantum solvers to respect real-world constraints—a necessary step before these machines can handle actual delivery networks.",
+    "fetchedAt": "2026-08-28T02:24:11.119Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 227
+    },
+    "slug": "correcting-connectivity-in-arc"
+  },
+  {
+    "id": "2608.25088",
+    "title": "The Von-Neumann State-Space Transformer for neural decoding",
+    "authors": "Morteza Sarafyazd",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-08-25T19:28:33Z",
+    "publishedFormatted": "Aug 25, 2026",
+    "subtitle": "A more efficient way to decode brain signals from limited recordings",
+    "summary": "Researchers created a new neural network model that decodes brain activity far more accurately from small datasets than existing methods. The model works by using a low-dimensional instruction set to generate different computation patterns for each piece of data, mimicking how the brain itself appears to route information efficiently through a small number of underlying signals.",
+    "whyItMatters": "Brain-computer interfaces and neuroscience studies often have access to limited recordings, making current methods impractical. This model cuts the data needed for reliable decoding by a substantial margin, which could accelerate research into how the motor cortex controls movement and speed up development of prosthetics and rehabilitation tools that depend on accurately reading neural signals.",
+    "fetchedAt": "2026-08-28T02:24:14.102Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 263
+    },
+    "slug": "the-von-neumann-state"
+  },
+  {
     "id": "2608.26074",
     "title": "Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving",
     "authors": "Cong Xu, Ravi Sankar",
