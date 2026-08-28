@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2026 02:24:14 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 19:16:13 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling</title>
+      <link>https://paperplaine.com/papers/scaling-graph-neural-networks</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/scaling-graph-neural-networks</guid>
+      <pubDate>Thu, 27 Aug 2026 17:41:33 GMT</pubDate>
+      <author>Maksim Utushkin, Andrei Ovsiannikov, Alexander D&#39;yakonov</author>
+      <category>AI</category>
+      <description>Making friend suggestions work at massive scale without exploding in memory</description>
+      <content:encoded><![CDATA[<p><em>Making friend suggestions work at massive scale without exploding in memory</em></p><p>Researchers built a friend-recommendation system that works on social networks with hundreds of millions of users by solving two critical engineering problems: compressing user identity data by 98 percent and speeding up searches through friend lists by 100-fold. In real-world tests at production scale, the system increased friend additions from recommendations by 16 percent.</p><p><strong>Why it matters:</strong> Social platforms need to recommend friends to hundreds of millions of people simultaneously, but existing approaches either waste enormous amounts of memory or become too slow to serve recommendations in real time. This work makes both problems solvable without tradeoffs — the same system that fits in memory also responds fast enough for live use. Platforms can now deploy more sophisticated recommendation logic without building expensive new infrastructure.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Spectral Fingerprints of Gauge Theories on a Quantum Computer</title>
+      <link>https://paperplaine.com/papers/spectral-fingerprints-of-gauge</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/spectral-fingerprints-of-gauge</guid>
+      <pubDate>Thu, 27 Aug 2026 17:59:51 GMT</pubDate>
+      <author>Graham Van Goffrier, Debasish Banerjee, Bipasha Chakraborty et al.</author>
+      <category>Physics</category>
+      <description>Reading the complete energy signature of quantum particle theories on near-term quantum computers</description>
+      <content:encoded><![CDATA[<p><em>Reading the complete energy signature of quantum particle theories on near-term quantum computers</em></p><p>Researchers developed a quantum algorithm that can map out the full range of energy levels in complex particle theories, revealing everything from their ground state behavior to how they heat up. They tested it on a specific gauge theory using circuits small enough to run on today's superconducting quantum computers, and showed the method uses about half the qubits normally needed while naturally resisting quantum measurement errors.</p><p><strong>Why it matters:</strong> Gauge theories describe how fundamental forces work, but studying them fully requires either massive classical computers or quantum computers we don't yet have. This algorithm works with the imperfect quantum hardware available now, potentially letting physicists explore physics that was previously out of reach—and the qubit-saving techniques here could make other quantum simulations more practical sooner.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT</title>
+      <link>https://paperplaine.com/papers/physical-layer-fingerprint-space</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/physical-layer-fingerprint-space</guid>
+      <pubDate>Thu, 27 Aug 2026 14:16:01 GMT</pubDate>
+      <author>Chenming Zhang, Aiqun Hu</author>
+      <category>Engineering</category>
+      <description>How many industrial devices can be uniquely identified by their electrical signatures</description>
+      <content:encoded><![CDATA[<p><em>How many industrial devices can be uniquely identified by their electrical signatures</em></p><p>Factory networks can identify Ethernet devices by analyzing tiny electrical quirks in their transmitted signals—a kind of hardware fingerprint. This paper calculates that standard industrial Ethernet devices (100BASE-TX) can create roughly 30 billion distinguishable electrical signatures, and experiments on real network cards confirm the method works reliably in practice.</p><p><strong>Why it matters:</strong> Industrial facilities need to stop unauthorized devices from impersonating legitimate equipment on their networks. Physical-layer fingerprinting offers a defense that doesn't rely on passwords or certificates—it's built into the hardware itself. This capacity analysis tells engineers whether fingerprinting can actually scale across large factories with thousands of devices, and the results show it can reliably distinguish between different network cards under real-world conditions.</p>]]></content:encoded>
+    </item>
     <item>
       <title>PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference</title>
       <link>https://paperplaine.com/papers/pace-a-unified-condense</link>

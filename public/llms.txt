@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 697 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 700 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 238 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 239 papers in archive.
+  - "Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling"
   - "PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference"
-  - "Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 57 papers in archive.
   - "Security Education in Higher Education through AI-Powered Gamification"
   - "AID-Guard: Stateful Authorization for Delegated Agent Effects"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 58 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 59 papers in archive.
+  - "Spectral Fingerprints of Gauge Theories on a Quantum Computer"
   - "Geometry-controlled correlated electric-field noise in enclosed ion traps from billiard return spectra"
-  - "Quantum annealing through a first-order phase transition: field theory approach"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 58 papers in archive.
   - "Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing"
   - "Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 60 papers in archive.
   - "Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study"
   - "Hierarchical Exponential-Gaussian Mixtures for Watch-Time Distribution Prediction"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 56 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 57 papers in archive.
+  - "Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT"
   - "Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion"
-  - "Loss-Resilient Semantic Communication over Packet-Loss Networks at Extreme-Low Bandwidth"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 50 papers in archive.
   - "Learning Whom to Trust : Decision-Generated Credibility in Social Learning"
   - "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories"
 
 ## 10 most recent papers
+
+### Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling
+- URL: https://paperplaine.com/papers/scaling-graph-neural-networks
+- Category: Computer Science · AI
+- Authors: Maksim Utushkin, Andrei Ovsiannikov, Alexander D'yakonov
+- arXiv: 2608.27413
+- Plain-English subtitle: Making friend suggestions work at massive scale without exploding in memory
+- Summary: Researchers built a friend-recommendation system that works on social networks with hundreds of millions of users by solving two critical engineering problems: compressing user identity data by 98 percent and speeding up searches through friend lists by 100-fold. In real-world tests at production scale, the system increased friend additions from recommendations by 16 percent.
+- Why it matters: Social platforms need to recommend friends to hundreds of millions of people simultaneously, but existing approaches either waste enormous amounts of memory or become too slow to serve recommendations in real time. This work makes both problems solvable without tradeoffs — the same system that fits in memory also responds fast enough for live use. Platforms can now deploy more sophisticated recommendation logic without building expensive new infrastructure.
+
+### Spectral Fingerprints of Gauge Theories on a Quantum Computer
+- URL: https://paperplaine.com/papers/spectral-fingerprints-of-gauge
+- Category: Physics
+- Authors: Graham Van Goffrier, Debasish Banerjee, Bipasha Chakraborty et al.
+- arXiv: 2608.27457
+- Plain-English subtitle: Reading the complete energy signature of quantum particle theories on near-term quantum computers
+- Summary: Researchers developed a quantum algorithm that can map out the full range of energy levels in complex particle theories, revealing everything from their ground state behavior to how they heat up. They tested it on a specific gauge theory using circuits small enough to run on today's superconducting quantum computers, and showed the method uses about half the qubits normally needed while naturally resisting quantum measurement errors.
+- Why it matters: Gauge theories describe how fundamental forces work, but studying them fully requires either massive classical computers or quantum computers we don't yet have. This algorithm works with the imperfect quantum hardware available now, potentially letting physicists explore physics that was previously out of reach—and the qubit-saving techniques here could make other quantum simulations more practical sooner.
+
+### Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT
+- URL: https://paperplaine.com/papers/physical-layer-fingerprint-space
+- Category: Engineering
+- Authors: Chenming Zhang, Aiqun Hu
+- arXiv: 2608.27164
+- Plain-English subtitle: How many industrial devices can be uniquely identified by their electrical signatures
+- Summary: Factory networks can identify Ethernet devices by analyzing tiny electrical quirks in their transmitted signals—a kind of hardware fingerprint. This paper calculates that standard industrial Ethernet devices (100BASE-TX) can create roughly 30 billion distinguishable electrical signatures, and experiments on real network cards confirm the method works reliably in practice.
+- Why it matters: Industrial facilities need to stop unauthorized devices from impersonating legitimate equipment on their networks. Physical-layer fingerprinting offers a defense that doesn't rely on passwords or certificates—it's built into the hardware itself. This capacity analysis tells engineers whether fingerprinting can actually scale across large factories with thousands of devices, and the results show it can reliably distinguish between different network cards under real-world conditions.
 
 ### PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference
 - URL: https://paperplaine.com/papers/pace-a-unified-condense
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A self-running machine that computes with moving tape and punched cards
 - Summary: Researchers built a physical Turing Machine—the theoretical foundation of all computers—that can run multiple programs automatically without a human operator stopping to reset it between each step. The key innovation was an optical card reader that decodes punched-card instructions with 90% accuracy, improving from 75% by using an adaptive algorithm that handles uneven lighting, and the entire system's outputs matched software simulations perfectly across all test programs.
 - Why it matters: This is the first fully autonomous, reprogrammable physical Turing Machine, moving beyond museum demonstrations that require constant manual tweaking. While not practical for real computing, it bridges theory and hardware in a way that helps educators, computer scientists, and engineers understand how abstract computation actually works in the physical world—and demonstrates techniques for reliable sensing and mechanical precision that apply to robotics, CNC machines, and automated card-reading systems.
-
-### Security Education in Higher Education through AI-Powered Gamification
-- URL: https://paperplaine.com/papers/security-education-in-higher
-- Category: Computer Science
-- Authors: Bingjun Li, Christopher Buzaid, Weihao Qu
-- arXiv: 2608.24778
-- Plain-English subtitle: Using games and AI to make cybersecurity training actually stick with students
-- Summary: College students engaged more with cybersecurity lessons when they learned through short mobile games powered by AI rather than traditional videos. The games covered practical threats like password theft and phone scams using quiz-based, narrative, and simulation formats, and both technical experts and general students showed improved attention to security topics.
-- Why it matters: As cyberattacks grow more sophisticated and AI-generated, colleges need better ways to teach students to recognize threats. Games that hold attention could mean more graduates actually understand how to protect themselves and their employers—rather than zoning out through mandatory training videos. This approach could scale across institutions to reach thousands of students who might otherwise ignore security education.
-
-### Geometry-controlled correlated electric-field noise in enclosed ion traps from billiard return spectra
-- URL: https://paperplaine.com/papers/geometry-controlled-correlated-electric
-- Category: Physics
-- Authors: Ayush Nadiger
-- arXiv: 2608.24770
-- Plain-English subtitle: How trap shape controls noise that wobbles trapped ions
-- Summary: The shape and size of an ion trap's metal walls directly control the electric-field noise that disturbs trapped ions—and closing the trap makes normal vibrations noisier while tangential ones quieter. Using geometry and billiard-ball mathematics, researchers predicted exactly how different trap configurations alter noise across all ion positions simultaneously, with implications for quantum computing gates that depend on stable ions.
-- Why it matters: Ion traps are a leading platform for quantum computers, where trapped ions must remain undisturbed to perform reliable calculations. This work shows that engineers can reduce heating noise—one of the main sources of quantum errors—by simply adjusting the trap's metal enclosure. The ability to predict noise patterns from geometry alone gives designers a practical tool to optimize trap performance before building hardware.
-
-### StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing
-- URL: https://paperplaine.com/papers/stepguard-learning-step-level
-- Category: Computer Science · AI
-- Authors: Zhijie Zheng, Yu Li, Chen Qian et al.
-- arXiv: 2608.24777
-- Plain-English subtitle: Teaching AI to stop dangerous tool use before it happens
-- Summary: Researchers created StepGuard, a safety system that catches risky actions by AI agents right before they execute—like blocking a file deletion or unauthorized data access. The system cuts successful attacks by 77% while barely slowing down the AI's useful work (dropping performance by less than 3%).
-- Why it matters: AI agents that interact with real systems—reading files, sending emails, modifying databases—pose serious security risks if they go rogue or get hijacked. Current safety checks only look back after damage is done. StepGuard shifts protection to the moment of decision, making it harder for attackers or malfunctioning systems to cause harm without sacrificing the AI's ability to do legitimate work.
 
 ## About
 

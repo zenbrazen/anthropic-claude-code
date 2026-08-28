@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 697 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 700 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-28
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling
+Subtitle: Making friend suggestions work at massive scale without exploding in memory
+URL: https://paperplaine.com/papers/scaling-graph-neural-networks
+Category: Computer Science · AI
+Authors: Maksim Utushkin, Andrei Ovsiannikov, Alexander D'yakonov
+arXiv ID: 2608.27413
+arXiv URL: https://arxiv.org/abs/2608.27413
+Posted: 2026-08-28
+
+Summary: Researchers built a friend-recommendation system that works on social networks with hundreds of millions of users by solving two critical engineering problems: compressing user identity data by 98 percent and speeding up searches through friend lists by 100-fold. In real-world tests at production scale, the system increased friend additions from recommendations by 16 percent.
+
+Why it matters: Social platforms need to recommend friends to hundreds of millions of people simultaneously, but existing approaches either waste enormous amounts of memory or become too slow to serve recommendations in real time. This work makes both problems solvable without tradeoffs — the same system that fits in memory also responds fast enough for live use. Platforms can now deploy more sophisticated recommendation logic without building expensive new infrastructure.
+
+---
+Title: Spectral Fingerprints of Gauge Theories on a Quantum Computer
+Subtitle: Reading the complete energy signature of quantum particle theories on near-term quantum computers
+URL: https://paperplaine.com/papers/spectral-fingerprints-of-gauge
+Category: Physics
+Authors: Graham Van Goffrier, Debasish Banerjee, Bipasha Chakraborty et al.
+arXiv ID: 2608.27457
+arXiv URL: https://arxiv.org/abs/2608.27457
+Posted: 2026-08-28
+
+Summary: Researchers developed a quantum algorithm that can map out the full range of energy levels in complex particle theories, revealing everything from their ground state behavior to how they heat up. They tested it on a specific gauge theory using circuits small enough to run on today's superconducting quantum computers, and showed the method uses about half the qubits normally needed while naturally resisting quantum measurement errors.
+
+Why it matters: Gauge theories describe how fundamental forces work, but studying them fully requires either massive classical computers or quantum computers we don't yet have. This algorithm works with the imperfect quantum hardware available now, potentially letting physicists explore physics that was previously out of reach—and the qubit-saving techniques here could make other quantum simulations more practical sooner.
+
+---
+Title: Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT
+Subtitle: How many industrial devices can be uniquely identified by their electrical signatures
+URL: https://paperplaine.com/papers/physical-layer-fingerprint-space
+Category: Engineering
+Authors: Chenming Zhang, Aiqun Hu
+arXiv ID: 2608.27164
+arXiv URL: https://arxiv.org/abs/2608.27164
+Posted: 2026-08-28
+
+Summary: Factory networks can identify Ethernet devices by analyzing tiny electrical quirks in their transmitted signals—a kind of hardware fingerprint. This paper calculates that standard industrial Ethernet devices (100BASE-TX) can create roughly 30 billion distinguishable electrical signatures, and experiments on real network cards confirm the method works reliably in practice.
+
+Why it matters: Industrial facilities need to stop unauthorized devices from impersonating legitimate equipment on their networks. Physical-layer fingerprinting offers a defense that doesn't rely on passwords or certificates—it's built into the hardware itself. This capacity analysis tells engineers whether fingerprinting can actually scale across large factories with thousands of devices, and the results show it can reliably distinguish between different network cards under real-world conditions.
 
 ---
 Title: PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference
