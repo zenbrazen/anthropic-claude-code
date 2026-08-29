@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 706 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 709 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 241 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 242 papers in archive.
+  - "Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models"
   - "SWE-Prime: Fewer Trajectories, Better Performance"
-  - "CorporateBench: Large-Scale Q&amp;A Benchmarking with Temporal Knowledge Bases"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 58 papers in archive.
   - "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?"
   - "Security Education in Higher Education through AI-Powered Gamification"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 59 papers in archive.
   - "Spectral Fingerprints of Gauge Theories on a Quantum Computer"
   - "Geometry-controlled correlated electric-field noise in enclosed ion traps from billiard return spectra"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 58 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 59 papers in archive.
+  - "On supporting affine functionals for Entanglement of Formation"
   - "Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing"
-  - "Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 60 papers in archive.
   - "Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems"
   - "The Von-Neumann State-Space Transformer for neural decoding"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 61 papers in archive.
   - "A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
   - "Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 57 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 58 papers in archive.
+  - "Lowering the Barrier to AI-Driven Inspection: A No-Code Workflow for Automated Structural Defect Detection"
   - "Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT"
-  - "Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 50 papers in archive.
   - "Learning Whom to Trust : Decision-Generated Credibility in Social Learning"
   - "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories"
 
 ## 10 most recent papers
+
+### Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models
+- URL: https://paperplaine.com/papers/successive-capacity-growth-task
+- Category: Computer Science · AI
+- Authors: Frederik Berenz
+- arXiv: 2608.27367
+- Plain-English subtitle: AI models that grow smarter only when tasks demand it
+- Summary: Researchers developed a method called Successive Capacity Growth that lets AI vision models start tiny and expand only when needed, rather than being built large from the start. On complex vision tasks, the approach achieved 20% better performance while using 56 times fewer parameters than fixed large models, and even beat those large models on simpler tasks by 23%.
+- Why it matters: AI training consumes enormous computational resources and energy. This approach cuts the parameters needed by more than half while improving accuracy, which translates directly to cheaper training, faster inference, and lower energy costs. Since many real-world applications use models far more powerful than their tasks require, this adaptive scaling could make AI systems dramatically more efficient at deployment.
+
+### On supporting affine functionals for Entanglement of Formation
+- URL: https://paperplaine.com/papers/on-supporting-affine-functionals
+- Category: Mathematics
+- Authors: A. S. Holevo, M. E. Shirokov
+- arXiv: 2608.27363
+- Plain-English subtitle: A mathematical trap in quantum entanglement that breaks a widely-held assumption
+- Summary: A basic assumption about quantum entanglement has been wrong. Many physicists have assumed that for any quantum state, you can find a mathematical tool (called a supporting affine functional) that perfectly characterizes its entanglement. This paper shows that assumption fails—even in the simplest possible case of two basic quantum particles—when those particles are in certain kinds of states.
+- Why it matters: Entanglement of Formation is a central concept in quantum information theory, used in everything from quantum computing to quantum cryptography. If the mathematical framework physicists have been using doesn't actually work as promised, then calculations and proofs relying on that framework may be unreliable. This paper forces researchers to be more careful about when they can safely use these mathematical shortcuts and identifies which quantum states need special handling.
+
+### Lowering the Barrier to AI-Driven Inspection: A No-Code Workflow for Automated Structural Defect Detection
+- URL: https://paperplaine.com/papers/lowering-the-barrier-to
+- Category: Engineering
+- Authors: Michael Holm, Tanner McElroy, Xinghang Zhang et al.
+- arXiv: 2608.25176
+- Plain-English subtitle: Making AI crack detection work without learning to code
+- Summary: Engineers have built YOLOEZ, a free tool that spots structural defects like cracks and damage using artificial intelligence—without requiring users to write code or have machine learning expertise. It beats older computer vision methods while cutting through the technical hurdles that have kept AI inspection tools from spreading beyond research labs.
+- Why it matters: Bridges and buildings rely on spotting damage early to prevent catastrophic failure and plan repairs efficiently. Right now, structural inspections are mostly done by eye, which is slow and inconsistent. By putting AI-powered defect detection in the hands of engineers and inspectors without specialized programming skills, this tool could make inspections faster, more accurate, and cheaper—turning predictive maintenance from rare to routine across infrastructure.
 
 ### SWE-Prime: Fewer Trajectories, Better Performance
 - URL: https://paperplaine.com/papers/swe-prime-fewer-trajectories
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making friend suggestions work at massive scale without exploding in memory
 - Summary: Researchers built a friend-recommendation system that works on social networks with hundreds of millions of users by solving two critical engineering problems: compressing user identity data by 98 percent and speeding up searches through friend lists by 100-fold. In real-world tests at production scale, the system increased friend additions from recommendations by 16 percent.
 - Why it matters: Social platforms need to recommend friends to hundreds of millions of people simultaneously, but existing approaches either waste enormous amounts of memory or become too slow to serve recommendations in real time. This work makes both problems solvable without tradeoffs — the same system that fits in memory also responds fast enough for live use. Platforms can now deploy more sophisticated recommendation logic without building expensive new infrastructure.
-
-### Spectral Fingerprints of Gauge Theories on a Quantum Computer
-- URL: https://paperplaine.com/papers/spectral-fingerprints-of-gauge
-- Category: Physics
-- Authors: Graham Van Goffrier, Debasish Banerjee, Bipasha Chakraborty et al.
-- arXiv: 2608.27457
-- Plain-English subtitle: Reading the complete energy signature of quantum particle theories on near-term quantum computers
-- Summary: Researchers developed a quantum algorithm that can map out the full range of energy levels in complex particle theories, revealing everything from their ground state behavior to how they heat up. They tested it on a specific gauge theory using circuits small enough to run on today's superconducting quantum computers, and showed the method uses about half the qubits normally needed while naturally resisting quantum measurement errors.
-- Why it matters: Gauge theories describe how fundamental forces work, but studying them fully requires either massive classical computers or quantum computers we don't yet have. This algorithm works with the imperfect quantum hardware available now, potentially letting physicists explore physics that was previously out of reach—and the qubit-saving techniques here could make other quantum simulations more practical sooner.
-
-### Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT
-- URL: https://paperplaine.com/papers/physical-layer-fingerprint-space
-- Category: Engineering
-- Authors: Chenming Zhang, Aiqun Hu
-- arXiv: 2608.27164
-- Plain-English subtitle: How many industrial devices can be uniquely identified by their electrical signatures
-- Summary: Factory networks can identify Ethernet devices by analyzing tiny electrical quirks in their transmitted signals—a kind of hardware fingerprint. This paper calculates that standard industrial Ethernet devices (100BASE-TX) can create roughly 30 billion distinguishable electrical signatures, and experiments on real network cards confirm the method works reliably in practice.
-- Why it matters: Industrial facilities need to stop unauthorized devices from impersonating legitimate equipment on their networks. Physical-layer fingerprinting offers a defense that doesn't rely on passwords or certificates—it's built into the hardware itself. This capacity analysis tells engineers whether fingerprinting can actually scale across large factories with thousands of devices, and the results show it can reliably distinguish between different network cards under real-world conditions.
-
-### PACE: A Unified Condense-and-Extract Paradigm for Fast VLM Inference
-- URL: https://paperplaine.com/papers/pace-a-unified-condense
-- Category: Computer Science · AI
-- Authors: Junjie Liu, Shengyuan Ye, Xu Chen
-- arXiv: 2608.27206
-- Plain-English subtitle: Cutting AI vision processing time by three times without losing accuracy
-- Summary: A new method called PACE speeds up vision-language models by trimming unnecessary visual information before and after the initial encoding step. The technique retains 94% of the model's original accuracy while using only 10% of the visual data, making responses three times faster.
-- Why it matters: Vision-language models are used in everything from medical image analysis to autonomous vehicles, but their slowness makes real-time applications impractical and expensive to run. This speedup could make these models practical for live customer service bots, instant image search, and time-sensitive visual tasks—while cutting the computational cost of running them on servers.
 
 ## About
 
