@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 703 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 706 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 240 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 241 papers in archive.
+  - "SWE-Prime: Fewer Trajectories, Better Performance"
   - "CorporateBench: Large-Scale Q&amp;A Benchmarking with Temporal Knowledge Bases"
-  - "Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 58 papers in archive.
   - "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?"
   - "Security Education in Higher Education through AI-Powered Gamification"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 58 papers in archive.
   - "Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing"
   - "Dynamic Inversion: An Incrementally Evolving Methodology for Flight Control Design"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 59 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 60 papers in archive.
+  - "Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems"
   - "The Von-Neumann State-Space Transformer for neural decoding"
-  - "Beauty is in the ELBO of the Beholder: A Variational Account of Processing Fluency in Face Perception"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 62 papers in archive.
   - "Your AI, On a Dial: Controlling Investment Bias in LLMs with a Single Neuron"
   - "Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 60 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 61 papers in archive.
+  - "A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
   - "Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study"
-  - "Hierarchical Exponential-Gaussian Mixtures for Watch-Time Distribution Prediction"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 57 papers in archive.
   - "Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT"
   - "Interpretable Landsat-to-Hyperspectral Dual Super-Resolution Without Large Matrix Inversion"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories"
 
 ## 10 most recent papers
+
+### SWE-Prime: Fewer Trajectories, Better Performance
+- URL: https://paperplaine.com/papers/swe-prime-fewer-trajectories
+- Category: Computer Science · AI
+- Authors: Dewu Zheng, Ruizhe Ye, Yanlin Wang et al.
+- arXiv: 2608.27449
+- Plain-English subtitle: Cutting training data in half actually makes AI better at fixing code
+- Summary: Researchers found that training AI models to fix software bugs works better when you use only 10% of successful examples—but pick them carefully. The key is filtering out steps that are inefficient or risky, even when the overall fix works, improving performance by up to 24% compared to using all the data.
+- Why it matters: Software companies spend enormous resources collecting and labeling training data for AI coding assistants. This work shows they can achieve better results with far less data, cutting costs and training time while actually improving the quality of the AI's solutions. It also reveals a blind spot: more data isn't always better if that data contains bad practices buried inside otherwise successful fixes.
+
+### Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems
+- URL: https://paperplaine.com/papers/directed-walks-shape-a
+- Category: Quantitative Biology
+- Authors: Thiparat Chotibut, Ewa Gudowska-Nowak, Maciej A. Nowak
+- arXiv: 2608.25030
+- Plain-English subtitle: Why complex systems always waste energy in predictable patterns
+- Summary: Systems with nonreciprocal interactions — where A influences B differently than B influences A — produce entropy (disorder and wasted energy) at rates that follow a universal mathematical pattern, regardless of how the system is organized. The researchers show that this square-root relationship emerges from the geometry of directed paths through the network, not from the system's detailed structure or how many components it has.
+- Why it matters: Understanding how biological and engineered networks waste energy matters for designing efficient systems — from neural circuits to chemical reactions to supply chains. This work reveals that the efficiency loss follows a predictable formula across radically different system types, which could help engineers set realistic performance targets and predict where to intervene to reduce waste.
+
+### A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning
+- URL: https://paperplaine.com/papers/a-finite-sample-analysis
+- Category: Statistics
+- Authors: Zijie Cheng, Xiang Li, Yang Peng et al.
+- arXiv: 2608.27313
+- Plain-English subtitle: How fast AI learns to predict full outcome ranges, not just average rewards
+- Summary: Researchers proved that a specific learning algorithm can reliably teach AI systems to predict the full distribution of possible rewards—not just the average—even with limited training data. The algorithm converges to accurate predictions at a rate that doesn't get worse as you add more prediction points, solving a long-standing question about when and how fast this kind of learning actually works.
+- Why it matters: Distributional reinforcement learning helps AI agents make better decisions in uncertain environments by understanding the full range of what might happen, not just the typical outcome. This proof provides the first formal guarantee that the method works reliably, which gives engineers confidence to use it in real systems where data is expensive or risky to collect—like robotics or medical applications.
 
 ### CorporateBench: Large-Scale Q&amp;A Benchmarking with Temporal Knowledge Bases
 - URL: https://paperplaine.com/papers/corporatebench-large-scale-q
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Cutting AI vision processing time by three times without losing accuracy
 - Summary: A new method called PACE speeds up vision-language models by trimming unnecessary visual information before and after the initial encoding step. The technique retains 94% of the model's original accuracy while using only 10% of the visual data, making responses three times faster.
 - Why it matters: Vision-language models are used in everything from medical image analysis to autonomous vehicles, but their slowness makes real-time applications impractical and expensive to run. This speedup could make these models practical for live customer service bots, instant image search, and time-sensitive visual tasks—while cutting the computational cost of running them on servers.
-
-### Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing
-- URL: https://paperplaine.com/papers/correcting-connectivity-in-arc
-- Category: Mathematics
-- Authors: Omer Gurevich, Maor Matityahu, Tal Mor et al.
-- arXiv: 2608.26894
-- Plain-English subtitle: Fixing a quantum computing shortcut that breaks delivery route planning
-- Summary: A standard quantum approach to vehicle routing sometimes produces nonsensical answers—routes that don't connect back to the depot. Researchers added a mathematical fix that guarantees valid solutions and proved it works with a polynomial-sized penalty, then tested it on a real quantum computer where the original method failed 78% of the time on small problems.
-- Why it matters: Quantum computers are being explored to solve logistics problems that classical computers struggle with at scale. But if they give invalid answers, they're useless. This work shows how to build in safeguards that force quantum solvers to respect real-world constraints—a necessary step before these machines can handle actual delivery networks.
-
-### The Von-Neumann State-Space Transformer for neural decoding
-- URL: https://paperplaine.com/papers/the-von-neumann-state
-- Category: Quantitative Biology
-- Authors: Morteza Sarafyazd
-- arXiv: 2608.25088
-- Plain-English subtitle: A more efficient way to decode brain signals from limited recordings
-- Summary: Researchers created a new neural network model that decodes brain activity far more accurately from small datasets than existing methods. The model works by using a low-dimensional instruction set to generate different computation patterns for each piece of data, mimicking how the brain itself appears to route information efficiently through a small number of underlying signals.
-- Why it matters: Brain-computer interfaces and neuroscience studies often have access to limited recordings, making current methods impractical. This model cuts the data needed for reliable decoding by a substantial margin, which could accelerate research into how the motor cortex controls movement and speed up development of prosthetics and rehabilitation tools that depend on accurately reading neural signals.
-
-### Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving
-- URL: https://paperplaine.com/papers/gating-before-commitment-anticipating
-- Category: Computer Science · AI
-- Authors: Cong Xu, Ravi Sankar
-- arXiv: 2608.26074
-- Plain-English subtitle: Stopping self-driving cars before they crash by catching confused decisions early
-- Summary: Autonomous vehicles often misinterpret what other road users intend to do, leading to planning failures that cause crashes. Researchers added a decision-checking layer that spots these misinterpretations 161 milliseconds before a crash would occur, successfully preventing collisions in all test scenarios by halting the planned maneuver before it's too late.
-- Why it matters: Autonomous vehicles today commit to driving maneuvers before they fully understand what surrounding vehicles will do next. This work demonstrates that catching misunderstandings just before execution — rather than trying to prevent them or recovering after — can reliably prevent collisions that current systems cannot avoid. A 161 millisecond safety window is the difference between a near-miss and a fatal crash.
 
 ## About
 

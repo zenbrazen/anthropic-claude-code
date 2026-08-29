@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 703 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 706 papers currently in the Paper Plaine archive.
 Last updated: 2026-08-29
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: SWE-Prime: Fewer Trajectories, Better Performance
+Subtitle: Cutting training data in half actually makes AI better at fixing code
+URL: https://paperplaine.com/papers/swe-prime-fewer-trajectories
+Category: Computer Science · AI
+Authors: Dewu Zheng, Ruizhe Ye, Yanlin Wang et al.
+arXiv ID: 2608.27449
+arXiv URL: https://arxiv.org/abs/2608.27449
+Posted: 2026-08-29
+
+Summary: Researchers found that training AI models to fix software bugs works better when you use only 10% of successful examples—but pick them carefully. The key is filtering out steps that are inefficient or risky, even when the overall fix works, improving performance by up to 24% compared to using all the data.
+
+Why it matters: Software companies spend enormous resources collecting and labeling training data for AI coding assistants. This work shows they can achieve better results with far less data, cutting costs and training time while actually improving the quality of the AI's solutions. It also reveals a blind spot: more data isn't always better if that data contains bad practices buried inside otherwise successful fixes.
+
+---
+Title: Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems
+Subtitle: Why complex systems always waste energy in predictable patterns
+URL: https://paperplaine.com/papers/directed-walks-shape-a
+Category: Quantitative Biology
+Authors: Thiparat Chotibut, Ewa Gudowska-Nowak, Maciej A. Nowak
+arXiv ID: 2608.25030
+arXiv URL: https://arxiv.org/abs/2608.25030
+Posted: 2026-08-29
+
+Summary: Systems with nonreciprocal interactions — where A influences B differently than B influences A — produce entropy (disorder and wasted energy) at rates that follow a universal mathematical pattern, regardless of how the system is organized. The researchers show that this square-root relationship emerges from the geometry of directed paths through the network, not from the system's detailed structure or how many components it has.
+
+Why it matters: Understanding how biological and engineered networks waste energy matters for designing efficient systems — from neural circuits to chemical reactions to supply chains. This work reveals that the efficiency loss follows a predictable formula across radically different system types, which could help engineers set realistic performance targets and predict where to intervene to reduce waste.
+
+---
+Title: A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning
+Subtitle: How fast AI learns to predict full outcome ranges, not just average rewards
+URL: https://paperplaine.com/papers/a-finite-sample-analysis
+Category: Statistics
+Authors: Zijie Cheng, Xiang Li, Yang Peng et al.
+arXiv ID: 2608.27313
+arXiv URL: https://arxiv.org/abs/2608.27313
+Posted: 2026-08-29
+
+Summary: Researchers proved that a specific learning algorithm can reliably teach AI systems to predict the full distribution of possible rewards—not just the average—even with limited training data. The algorithm converges to accurate predictions at a rate that doesn't get worse as you add more prediction points, solving a long-standing question about when and how fast this kind of learning actually works.
+
+Why it matters: Distributional reinforcement learning helps AI agents make better decisions in uncertain environments by understanding the full range of what might happen, not just the typical outcome. This proof provides the first formal guarantee that the method works reliably, which gives engineers confidence to use it in real systems where data is expensive or risky to collect—like robotics or medical applications.
 
 ---
 Title: CorporateBench: Large-Scale Q&amp;A Benchmarking with Temporal Knowledge Bases
