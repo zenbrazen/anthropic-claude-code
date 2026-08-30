@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.27454",
+    "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+    "authors": "Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-27T17:59:11Z",
+    "publishedFormatted": "Aug 27, 2026",
+    "subtitle": "Teaching AI agents to remember and reuse what they learn from experience",
+    "summary": "Researchers built WikiSkill, a system that lets AI agents collect lessons from their past attempts and store them in a shared knowledge base—like a persistent wiki—that improves their problem-solving over time. Agents using WikiSkill solved tasks better than those without, and smaller AI models equipped with evolved skills outperformed much larger models that lacked them.",
+    "whyItMatters": "As AI systems tackle more complex problems, they waste enormous computational effort rediscovering solutions repeatedly. WikiSkill lets agents build and share knowledge efficiently, so each new problem-solving attempt compounds on prior experience. The finding that smaller models with evolved skills beat larger models without them suggests we could accomplish more with less hardware—cutting energy costs and computational waste significantly.",
+    "fetchedAt": "2026-08-30T21:48:26.076Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 201
+    },
+    "slug": "wikiskill-compiling-agent-experience"
+  },
+  {
+    "id": "2608.27234",
+    "title": "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control",
+    "authors": "Dylan Girrens, Guangjing Wang",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-08-27T15:17:18Z",
+    "publishedFormatted": "Aug 27, 2026",
+    "subtitle": "Protecting AI agents from poisoned data across multiple conversations",
+    "summary": "AI assistants that remember past work and pull from untrusted websites are vulnerable to attackers who slip malicious data into their memory or sources — then exploit it in future tasks. Researchers built SPA, a system that makes the agent plan out its full approach before executing it, then tracks data flows like a security auditor, stopping poisoned information from reaching sensitive actions. In tests, this reduced successful attacks from common rates down to nearly zero.",
+    "whyItMatters": "As AI agents handle more real work — scheduling, filing forms, accessing accounts — they become targets for attackers who can slip false information into websites or documents the agent reads. A poisoned fact lodged in the agent's memory could reactivate in an unguarded moment weeks later and cause damage. SPA's approach means companies deploying persistent AI agents can do so without accepting uncontrolled security risk from data sources outside their control.",
+    "fetchedAt": "2026-08-30T21:48:29.783Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 192
+    },
+    "slug": "spa-securing-persistent-llm"
+  },
+  {
+    "id": "2608.22497",
+    "title": "Reflexivity from Hierarchical Causality",
+    "authors": "Tim Gebbie",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-08-23T16:32:38Z",
+    "publishedFormatted": "Aug 23, 2026",
+    "subtitle": "How financial markets' top-down rules create self-reinforcing feedback loops",
+    "summary": "When higher-level market rules constrain what trades are allowed, they create a feedback loop where the rules themselves influence the timing and sequence of trades—which then feeds back up to reshape those same rules. The paper shows that this top-down constraint, combined with how individual trades happen in real time, can generate multiple competing causal pathways even when the underlying trading mechanics follow predictable patterns.",
+    "whyItMatters": "Market reflexivity—where prices influence the rules governing trading, which then change prices—has long been observed but poorly understood mathematically. This framework clarifies how regulatory constraints and trading mechanics interlock to create self-reinforcing market dynamics, which matters for predicting when interventions (like circuit breakers or position limits) will work as intended versus when they'll trigger unintended cascades.",
+    "fetchedAt": "2026-08-30T21:48:32.999Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 7,
+      "wordCount": 145
+    },
+    "slug": "reflexivity-from-hierarchical-causality"
+  },
+  {
     "id": "2608.27286",
     "title": "MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework",
     "authors": "Hai-tao Yu, Nan Min, Zheng Fang et al.",

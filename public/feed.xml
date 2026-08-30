@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2026 12:36:59 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 21:48:33 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution</title>
+      <link>https://paperplaine.com/papers/wikiskill-compiling-agent-experience</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/wikiskill-compiling-agent-experience</guid>
+      <pubDate>Thu, 27 Aug 2026 17:59:11 GMT</pubDate>
+      <author>Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng et al.</author>
+      <category>AI</category>
+      <description>Teaching AI agents to remember and reuse what they learn from experience</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI agents to remember and reuse what they learn from experience</em></p><p>Researchers built WikiSkill, a system that lets AI agents collect lessons from their past attempts and store them in a shared knowledge base—like a persistent wiki—that improves their problem-solving over time. Agents using WikiSkill solved tasks better than those without, and smaller AI models equipped with evolved skills outperformed much larger models that lacked them.</p><p><strong>Why it matters:</strong> As AI systems tackle more complex problems, they waste enormous computational effort rediscovering solutions repeatedly. WikiSkill lets agents build and share knowledge efficiently, so each new problem-solving attempt compounds on prior experience. The finding that smaller models with evolved skills beat larger models without them suggests we could accomplish more with less hardware—cutting energy costs and computational waste significantly.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control</title>
+      <link>https://paperplaine.com/papers/spa-securing-persistent-llm</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/spa-securing-persistent-llm</guid>
+      <pubDate>Thu, 27 Aug 2026 15:17:18 GMT</pubDate>
+      <author>Dylan Girrens, Guangjing Wang</author>
+      <category>Comp Sci</category>
+      <description>Protecting AI agents from poisoned data across multiple conversations</description>
+      <content:encoded><![CDATA[<p><em>Protecting AI agents from poisoned data across multiple conversations</em></p><p>AI assistants that remember past work and pull from untrusted websites are vulnerable to attackers who slip malicious data into their memory or sources — then exploit it in future tasks. Researchers built SPA, a system that makes the agent plan out its full approach before executing it, then tracks data flows like a security auditor, stopping poisoned information from reaching sensitive actions. In tests, this reduced successful attacks from common rates down to nearly zero.</p><p><strong>Why it matters:</strong> As AI agents handle more real work — scheduling, filing forms, accessing accounts — they become targets for attackers who can slip false information into websites or documents the agent reads. A poisoned fact lodged in the agent's memory could reactivate in an unguarded moment weeks later and cause damage. SPA's approach means companies deploying persistent AI agents can do so without accepting uncontrolled security risk from data sources outside their control.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Reflexivity from Hierarchical Causality</title>
+      <link>https://paperplaine.com/papers/reflexivity-from-hierarchical-causality</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/reflexivity-from-hierarchical-causality</guid>
+      <pubDate>Sun, 23 Aug 2026 16:32:38 GMT</pubDate>
+      <author>Tim Gebbie</author>
+      <category>Finance</category>
+      <description>How financial markets&#39; top-down rules create self-reinforcing feedback loops</description>
+      <content:encoded><![CDATA[<p><em>How financial markets' top-down rules create self-reinforcing feedback loops</em></p><p>When higher-level market rules constrain what trades are allowed, they create a feedback loop where the rules themselves influence the timing and sequence of trades—which then feeds back up to reshape those same rules. The paper shows that this top-down constraint, combined with how individual trades happen in real time, can generate multiple competing causal pathways even when the underlying trading mechanics follow predictable patterns.</p><p><strong>Why it matters:</strong> Market reflexivity—where prices influence the rules governing trading, which then change prices—has long been observed but poorly understood mathematically. This framework clarifies how regulatory constraints and trading mechanics interlock to create self-reinforcing market dynamics, which matters for predicting when interventions (like circuit breakers or position limits) will work as intended versus when they'll trigger unintended cascades.</p>]]></content:encoded>
+    </item>
     <item>
       <title>MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework</title>
       <link>https://paperplaine.com/papers/mm-spectrum-multimodal-multi</link>

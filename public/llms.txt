@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 712 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 715 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 243 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 244 papers in archive.
+  - "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution"
   - "MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework"
-  - "Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 58 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 59 papers in archive.
+  - "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control"
   - "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?"
-  - "Security Education in Higher Education through AI-Powered Gamification"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 60 papers in archive.
   - "Krylov Break Times from an Inhomogeneous Lieb--Robinson Light Cone"
   - "Spectral Fingerprints of Gauge Theories on a Quantum Computer"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 60 papers in archive.
   - "Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems"
   - "The Von-Neumann State-Space Transformer for neural decoding"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 62 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 63 papers in archive.
+  - "Reflexivity from Hierarchical Causality"
   - "Your AI, On a Dial: Controlling Investment Bias in LLMs with a Single Neuron"
-  - "Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 61 papers in archive.
   - "A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
   - "Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Learning Whom to Trust : Decision-Generated Credibility in Social Learning"
 
 ## 10 most recent papers
+
+### WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution
+- URL: https://paperplaine.com/papers/wikiskill-compiling-agent-experience
+- Category: Computer Science · AI
+- Authors: Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng et al.
+- arXiv: 2608.27454
+- Plain-English subtitle: Teaching AI agents to remember and reuse what they learn from experience
+- Summary: Researchers built WikiSkill, a system that lets AI agents collect lessons from their past attempts and store them in a shared knowledge base—like a persistent wiki—that improves their problem-solving over time. Agents using WikiSkill solved tasks better than those without, and smaller AI models equipped with evolved skills outperformed much larger models that lacked them.
+- Why it matters: As AI systems tackle more complex problems, they waste enormous computational effort rediscovering solutions repeatedly. WikiSkill lets agents build and share knowledge efficiently, so each new problem-solving attempt compounds on prior experience. The finding that smaller models with evolved skills beat larger models without them suggests we could accomplish more with less hardware—cutting energy costs and computational waste significantly.
+
+### SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control
+- URL: https://paperplaine.com/papers/spa-securing-persistent-llm
+- Category: Computer Science
+- Authors: Dylan Girrens, Guangjing Wang
+- arXiv: 2608.27234
+- Plain-English subtitle: Protecting AI agents from poisoned data across multiple conversations
+- Summary: AI assistants that remember past work and pull from untrusted websites are vulnerable to attackers who slip malicious data into their memory or sources — then exploit it in future tasks. Researchers built SPA, a system that makes the agent plan out its full approach before executing it, then tracks data flows like a security auditor, stopping poisoned information from reaching sensitive actions. In tests, this reduced successful attacks from common rates down to nearly zero.
+- Why it matters: As AI agents handle more real work — scheduling, filing forms, accessing accounts — they become targets for attackers who can slip false information into websites or documents the agent reads. A poisoned fact lodged in the agent's memory could reactivate in an unguarded moment weeks later and cause damage. SPA's approach means companies deploying persistent AI agents can do so without accepting uncontrolled security risk from data sources outside their control.
+
+### Reflexivity from Hierarchical Causality
+- URL: https://paperplaine.com/papers/reflexivity-from-hierarchical-causality
+- Category: Quantitative Finance
+- Authors: Tim Gebbie
+- arXiv: 2608.22497
+- Plain-English subtitle: How financial markets' top-down rules create self-reinforcing feedback loops
+- Summary: When higher-level market rules constrain what trades are allowed, they create a feedback loop where the rules themselves influence the timing and sequence of trades—which then feeds back up to reshape those same rules. The paper shows that this top-down constraint, combined with how individual trades happen in real time, can generate multiple competing causal pathways even when the underlying trading mechanics follow predictable patterns.
+- Why it matters: Market reflexivity—where prices influence the rules governing trading, which then change prices—has long been observed but poorly understood mathematically. This framework clarifies how regulatory constraints and trading mechanics interlock to create self-reinforcing market dynamics, which matters for predicting when interventions (like circuit breakers or position limits) will work as intended versus when they'll trigger unintended cascades.
 
 ### MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework
 - URL: https://paperplaine.com/papers/mm-spectrum-multimodal-multi
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Cutting training data in half actually makes AI better at fixing code
 - Summary: Researchers found that training AI models to fix software bugs works better when you use only 10% of successful examples—but pick them carefully. The key is filtering out steps that are inefficient or risky, even when the overall fix works, improving performance by up to 24% compared to using all the data.
 - Why it matters: Software companies spend enormous resources collecting and labeling training data for AI coding assistants. This work shows they can achieve better results with far less data, cutting costs and training time while actually improving the quality of the AI's solutions. It also reveals a blind spot: more data isn't always better if that data contains bad practices buried inside otherwise successful fixes.
-
-### Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems
-- URL: https://paperplaine.com/papers/directed-walks-shape-a
-- Category: Quantitative Biology
-- Authors: Thiparat Chotibut, Ewa Gudowska-Nowak, Maciej A. Nowak
-- arXiv: 2608.25030
-- Plain-English subtitle: Why complex systems always waste energy in predictable patterns
-- Summary: Systems with nonreciprocal interactions — where A influences B differently than B influences A — produce entropy (disorder and wasted energy) at rates that follow a universal mathematical pattern, regardless of how the system is organized. The researchers show that this square-root relationship emerges from the geometry of directed paths through the network, not from the system's detailed structure or how many components it has.
-- Why it matters: Understanding how biological and engineered networks waste energy matters for designing efficient systems — from neural circuits to chemical reactions to supply chains. This work reveals that the efficiency loss follows a predictable formula across radically different system types, which could help engineers set realistic performance targets and predict where to intervene to reduce waste.
-
-### A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning
-- URL: https://paperplaine.com/papers/a-finite-sample-analysis
-- Category: Statistics
-- Authors: Zijie Cheng, Xiang Li, Yang Peng et al.
-- arXiv: 2608.27313
-- Plain-English subtitle: How fast AI learns to predict full outcome ranges, not just average rewards
-- Summary: Researchers proved that a specific learning algorithm can reliably teach AI systems to predict the full distribution of possible rewards—not just the average—even with limited training data. The algorithm converges to accurate predictions at a rate that doesn't get worse as you add more prediction points, solving a long-standing question about when and how fast this kind of learning actually works.
-- Why it matters: Distributional reinforcement learning helps AI agents make better decisions in uncertain environments by understanding the full range of what might happen, not just the typical outcome. This proof provides the first formal guarantee that the method works reliably, which gives engineers confidence to use it in real systems where data is expensive or risky to collect—like robotics or medical applications.
-
-### CorporateBench: Large-Scale Q&amp;A Benchmarking with Temporal Knowledge Bases
-- URL: https://paperplaine.com/papers/corporatebench-large-scale-q
-- Category: Computer Science · AI
-- Authors: Sil Hamilton, Albert Yu Sun, Oscar J. Romero et al.
-- arXiv: 2608.27391
-- Plain-English subtitle: Testing whether AI can actually handle the mountains of real corporate documents
-- Summary: Researchers created CorporateBench, a large-scale test for AI systems that answer questions about corporate documents, using over 230,000 synthetic but internally consistent papers. When tested on five major language models, performance dropped significantly as document volume grew closer to what companies actually deal with — revealing a gap between how well these systems work in labs and how they'd perform on real corporate communication networks.
-- Why it matters: Companies increasingly deploy AI to search internal emails, reports, and knowledge bases, but there's been no realistic way to test whether these systems will actually work at scale before rolling them out. CorporateBench gives developers a standardized measure to catch failures before they happen in production, potentially preventing costly mistakes like AI systems giving executives wrong answers about contracts, policy, or business decisions.
 
 ## About
 
