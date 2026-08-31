@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 715 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 718 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 244 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 245 papers in archive.
+  - "Acquire, Repair, Preserve: A Diagnosis-Guided Post-Training Recipe for Small-Model Dialogue Game Agents"
   - "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution"
-  - "MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 59 papers in archive.
   - "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control"
   - "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 59 papers in archive.
   - "On supporting affine functionals for Entanglement of Formation"
   - "Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 60 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 61 papers in archive.
+  - "Neuromorphic architectures as numerical solvers for computational neuroscience"
   - "Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems"
-  - "The Von-Neumann State-Space Transformer for neural decoding"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 63 papers in archive.
   - "Reflexivity from Hierarchical Causality"
   - "Your AI, On a Dial: Controlling Investment Bias in LLMs with a Single Neuron"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 61 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 62 papers in archive.
+  - "Learning a Size-Weight Frontier for Synthetic-Augmented Inference"
   - "A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
-  - "Fine-Tuning Whisper for Automatic Speech Recognition in Baniwa: A Preliminary Study"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 58 papers in archive.
   - "Lowering the Barrier to AI-Driven Inspection: A No-Code Workflow for Automated Structural Defect Detection"
   - "Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Learning Whom to Trust : Decision-Generated Credibility in Social Learning"
 
 ## 10 most recent papers
+
+### Acquire, Repair, Preserve: A Diagnosis-Guided Post-Training Recipe for Small-Model Dialogue Game Agents
+- URL: https://paperplaine.com/papers/acquire-repair-preserve-a
+- Category: Computer Science · AI
+- Authors: Nan Li
+- arXiv: 2608.28458
+- Plain-English subtitle: Teaching small AI models to play dialogue games without forgetting what they just learned
+- Summary: A small 2-billion-parameter AI model trained on dialogue games improved its performance roughly 4-fold by fixing three specific problems: it didn't participate in enough game scenarios, it kept making the same mistakes within conversations, and it sometimes ignored feedback it had just received. The researchers used targeted retraining to address each issue, raising the model's score from 10.67 to 38.92 on a standard benchmark.
+- Why it matters: Dialogue games reveal weaknesses that static tests miss—a model must track what's happened, follow new rules, and adapt to feedback. This work shows that small, accessible models can reach usable performance with the right training approach, making interactive AI applications feasible without massive computational resources. However, the method still struggles with completely new game variants, suggesting that true flexibility remains a hard problem.
+
+### Neuromorphic architectures as numerical solvers for computational neuroscience
+- URL: https://paperplaine.com/papers/neuromorphic-architectures-as-numerical
+- Category: Quantitative Biology
+- Authors: Jakob Jordan, Ole Richter, Congyang Li et al.
+- arXiv: 2608.28387
+- Plain-English subtitle: Making brain-mimicking computers work for models without electrical spikes
+- Summary: Neuromorphic computers—machines designed to work like brains—are typically built around artificial neurons that fire spikes, like real neurons do. This paper shows that a different class of brain models, which simulate neurons as continuously changing signals rather than discrete pulses, can run more efficiently on neuromorphic hardware using specialized numerical techniques. The researchers converted an existing neuromorphic chip into a "spikeless" system and demonstrated it uses less energy and produces less delay than standard approaches.
+- Why it matters: Most neuromorphic chips today are engineered around spike-based computation, which doesn't match how many brain-inspired models actually work. This research expands what problems neuromorphic hardware can solve efficiently, potentially unlocking its use for broader classes of neuroscience simulations and AI applications that currently require conventional computers. For researchers running large-scale brain simulations, this could mean significantly lower power consumption.
+
+### Learning a Size-Weight Frontier for Synthetic-Augmented Inference
+- URL: https://paperplaine.com/papers/learning-a-size-weight
+- Category: Statistics
+- Authors: Chengpiao Huang, Kaizheng Wang
+- arXiv: 2608.28576
+- Plain-English subtitle: How much fake data can you safely mix with real data?
+- Summary: When researchers use synthetic data to fill gaps in real observations, they risk getting wrong answers if they're not careful about how much synthetic data to use. This paper presents a method that identifies exactly how many synthetic samples can be safely mixed with real data—and at what weight—while still producing reliable results. In tests combining AI-generated responses with real survey data, the approach maintained accuracy while shrinking confidence intervals by substantial margins.
+- Why it matters: Synthetic data is cheap and fast to generate, but mistakes in using it waste time and money on flawed conclusions. This framework lets practitioners know precisely when they can trust their results, making it practical to combine real and synthetic data without guessing about reliability. For surveys, medical studies, and other research constrained by small sample sizes, this could make the difference between usable insights and misleading ones.
 
 ### WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution
 - URL: https://paperplaine.com/papers/wikiskill-compiling-agent-experience
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: AI models that grow smarter only when tasks demand it
 - Summary: Researchers developed a method called Successive Capacity Growth that lets AI vision models start tiny and expand only when needed, rather than being built large from the start. On complex vision tasks, the approach achieved 20% better performance while using 56 times fewer parameters than fixed large models, and even beat those large models on simpler tasks by 23%.
 - Why it matters: AI training consumes enormous computational resources and energy. This approach cuts the parameters needed by more than half while improving accuracy, which translates directly to cheaper training, faster inference, and lower energy costs. Since many real-world applications use models far more powerful than their tasks require, this adaptive scaling could make AI systems dramatically more efficient at deployment.
-
-### On supporting affine functionals for Entanglement of Formation
-- URL: https://paperplaine.com/papers/on-supporting-affine-functionals
-- Category: Mathematics
-- Authors: A. S. Holevo, M. E. Shirokov
-- arXiv: 2608.27363
-- Plain-English subtitle: A mathematical trap in quantum entanglement that breaks a widely-held assumption
-- Summary: A basic assumption about quantum entanglement has been wrong. Many physicists have assumed that for any quantum state, you can find a mathematical tool (called a supporting affine functional) that perfectly characterizes its entanglement. This paper shows that assumption fails—even in the simplest possible case of two basic quantum particles—when those particles are in certain kinds of states.
-- Why it matters: Entanglement of Formation is a central concept in quantum information theory, used in everything from quantum computing to quantum cryptography. If the mathematical framework physicists have been using doesn't actually work as promised, then calculations and proofs relying on that framework may be unreliable. This paper forces researchers to be more careful about when they can safely use these mathematical shortcuts and identifies which quantum states need special handling.
-
-### Lowering the Barrier to AI-Driven Inspection: A No-Code Workflow for Automated Structural Defect Detection
-- URL: https://paperplaine.com/papers/lowering-the-barrier-to
-- Category: Engineering
-- Authors: Michael Holm, Tanner McElroy, Xinghang Zhang et al.
-- arXiv: 2608.25176
-- Plain-English subtitle: Making AI crack detection work without learning to code
-- Summary: Engineers have built YOLOEZ, a free tool that spots structural defects like cracks and damage using artificial intelligence—without requiring users to write code or have machine learning expertise. It beats older computer vision methods while cutting through the technical hurdles that have kept AI inspection tools from spreading beyond research labs.
-- Why it matters: Bridges and buildings rely on spotting damage early to prevent catastrophic failure and plan repairs efficiently. Right now, structural inspections are mostly done by eye, which is slow and inconsistent. By putting AI-powered defect detection in the hands of engineers and inspectors without specialized programming skills, this tool could make inspections faster, more accurate, and cheaper—turning predictive maintenance from rare to routine across infrastructure.
-
-### SWE-Prime: Fewer Trajectories, Better Performance
-- URL: https://paperplaine.com/papers/swe-prime-fewer-trajectories
-- Category: Computer Science · AI
-- Authors: Dewu Zheng, Ruizhe Ye, Yanlin Wang et al.
-- arXiv: 2608.27449
-- Plain-English subtitle: Cutting training data in half actually makes AI better at fixing code
-- Summary: Researchers found that training AI models to fix software bugs works better when you use only 10% of successful examples—but pick them carefully. The key is filtering out steps that are inefficient or risky, even when the overall fix works, improving performance by up to 24% compared to using all the data.
-- Why it matters: Software companies spend enormous resources collecting and labeling training data for AI coding assistants. This work shows they can achieve better results with far less data, cutting costs and training time while actually improving the quality of the AI's solutions. It also reveals a blind spot: more data isn't always better if that data contains bad practices buried inside otherwise successful fixes.
 
 ## About
 

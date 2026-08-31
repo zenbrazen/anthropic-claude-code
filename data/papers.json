@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.28458",
+    "title": "Acquire, Repair, Preserve: A Diagnosis-Guided Post-Training Recipe for Small-Model Dialogue Game Agents",
+    "authors": "Nan Li",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-28T15:47:47Z",
+    "publishedFormatted": "Aug 28, 2026",
+    "subtitle": "Teaching small AI models to play dialogue games without forgetting what they just learned",
+    "summary": "A small 2-billion-parameter AI model trained on dialogue games improved its performance roughly 4-fold by fixing three specific problems: it didn't participate in enough game scenarios, it kept making the same mistakes within conversations, and it sometimes ignored feedback it had just received. The researchers used targeted retraining to address each issue, raising the model's score from 10.67 to 38.92 on a standard benchmark.",
+    "whyItMatters": "Dialogue games reveal weaknesses that static tests miss—a model must track what's happened, follow new rules, and adapt to feedback. This work shows that small, accessible models can reach usable performance with the right training approach, making interactive AI applications feasible without massive computational resources. However, the method still struggles with completely new game variants, suggesting that true flexibility remains a hard problem.",
+    "fetchedAt": "2026-08-31T14:51:18.648Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 14,
+      "wordCount": 191
+    },
+    "slug": "acquire-repair-preserve-a"
+  },
+  {
+    "id": "2608.28387",
+    "title": "Neuromorphic architectures as numerical solvers for computational neuroscience",
+    "authors": "Jakob Jordan, Ole Richter, Congyang Li et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-08-28T14:43:41Z",
+    "publishedFormatted": "Aug 28, 2026",
+    "subtitle": "Making brain-mimicking computers work for models without electrical spikes",
+    "summary": "Neuromorphic computers—machines designed to work like brains—are typically built around artificial neurons that fire spikes, like real neurons do. This paper shows that a different class of brain models, which simulate neurons as continuously changing signals rather than discrete pulses, can run more efficiently on neuromorphic hardware using specialized numerical techniques. The researchers converted an existing neuromorphic chip into a \"spikeless\" system and demonstrated it uses less energy and produces less delay than standard approaches.",
+    "whyItMatters": "Most neuromorphic chips today are engineered around spike-based computation, which doesn't match how many brain-inspired models actually work. This research expands what problems neuromorphic hardware can solve efficiently, potentially unlocking its use for broader classes of neuroscience simulations and AI applications that currently require conventional computers. For researchers running large-scale brain simulations, this could mean significantly lower power consumption.",
+    "fetchedAt": "2026-08-31T14:51:22.550Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 184
+    },
+    "slug": "neuromorphic-architectures-as-numerical"
+  },
+  {
+    "id": "2608.28576",
+    "title": "Learning a Size-Weight Frontier for Synthetic-Augmented Inference",
+    "authors": "Chengpiao Huang, Kaizheng Wang",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-08-28T17:52:33Z",
+    "publishedFormatted": "Aug 28, 2026",
+    "subtitle": "How much fake data can you safely mix with real data?",
+    "summary": "When researchers use synthetic data to fill gaps in real observations, they risk getting wrong answers if they're not careful about how much synthetic data to use. This paper presents a method that identifies exactly how many synthetic samples can be safely mixed with real data—and at what weight—while still producing reliable results. In tests combining AI-generated responses with real survey data, the approach maintained accuracy while shrinking confidence intervals by substantial margins.",
+    "whyItMatters": "Synthetic data is cheap and fast to generate, but mistakes in using it waste time and money on flawed conclusions. This framework lets practitioners know precisely when they can trust their results, making it practical to combine real and synthetic data without guessing about reliability. For surveys, medical studies, and other research constrained by small sample sizes, this could make the difference between usable insights and misleading ones.",
+    "fetchedAt": "2026-08-31T14:51:26.312Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 128
+    },
+    "slug": "learning-a-size-weight"
+  },
+  {
     "id": "2608.27454",
     "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
     "authors": "Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng et al.",
