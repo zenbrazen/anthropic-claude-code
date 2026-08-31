@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 718 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 721 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 245 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 246 papers in archive.
+  - "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL"
   - "Acquire, Repair, Preserve: A Diagnosis-Guided Post-Training Recipe for Small-Model Dialogue Game Agents"
-  - "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 59 papers in archive.
   - "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control"
   - "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 62 papers in archive.
   - "Learning a Size-Weight Frontier for Synthetic-Augmented Inference"
   - "A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 58 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 59 papers in archive.
+  - "Optimal Adversarial Testing: Extracting Honest Test Results from Dishonest Test Takers"
   - "Lowering the Barrier to AI-Driven Inspection: A No-Code Workflow for Automated Structural Defect Detection"
-  - "Physical-Layer Fingerprint-Space Capacity Analysis for 100BASE-TX Devices in IIoT"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 51 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 52 papers in archive.
+  - "An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity"
   - "Sophistication in GenAI Use: Field Evidence from a Large Firm"
-  - "Learning Whom to Trust : Decision-Generated Credibility in Social Learning"
 
 ## 10 most recent papers
+
+### ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL
+- URL: https://paperplaine.com/papers/contextpilot-teaching-agents-for
+- Category: Computer Science · AI
+- Authors: Zhuoshi Pan, Qizhi Pei, Junru Lu et al.
+- arXiv: 2608.28476
+- Plain-English subtitle: Teaching AI agents to organize their own memory while solving complex tasks
+- Summary: Researchers created ContextPilot, a system that lets AI language models actively manage and compress their own working memory as they solve multi-step problems. The approach adds new memory-management tools and a smarter training method that rewards the most impactful decisions, allowing models to reach better answers while keeping their context 30–50% smaller than before.
+- Why it matters: As AI agents tackle longer and more complex tasks, they accumulate massive amounts of context that slows them down and costs more to run. By teaching models to edit their own memory intelligently, ContextPilot makes them faster and cheaper to operate without sacrificing accuracy—a practical gain for any real-world AI system handling lengthy customer conversations, research queries, or multi-step planning.
+
+### An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity
+- URL: https://paperplaine.com/papers/an-anonymized-urn-based
+- Category: Economics
+- Authors: Václav Kratochvíl, Radim Jiroušek, Klára Šimůnková et al.
+- arXiv: 2608.26358
+- Plain-English subtitle: How people bet differently when odds are clear versus murky
+- Summary: Researchers collected 4,486 decisions from 246 people choosing how much to wager on colored balls drawn from urns—sometimes with known odds, sometimes with unknown odds. The dataset reveals how people's willingness to pay shifts when uncertainty becomes ambiguous rather than simply risky, with online participants also rating how uncertain they felt about each choice.
+- Why it matters: Understanding how people behave under ambiguous uncertainty matters for everything from financial regulation to insurance pricing to public health policy, where real decisions often involve incomplete information. This dataset is large and detailed enough that researchers can now test competing theories about ambiguity-aversion side by side, and replicate findings that might otherwise stay trapped in individual labs.
+
+### Optimal Adversarial Testing: Extracting Honest Test Results from Dishonest Test Takers
+- URL: https://paperplaine.com/papers/optimal-adversarial-testing-extracting
+- Category: Engineering
+- Authors: Owen Cox, April Xu, Weiyu Xu
+- arXiv: 2608.28362
+- Plain-English subtitle: How to design fair tests that work even when people cheat
+- Summary: When test takers cheat—especially using AI—honest results become impossible to trust. Researchers developed a strategy that identifies likely cheaters and retests them with harder security measures, using dynamic programming to figure out the cheapest and most effective way to catch and correct dishonest answers.
+- Why it matters: As cheating becomes more sophisticated and widespread, exams and performance evaluations risk becoming useless. This approach lets institutions maintain test validity without throwing out results or suspecting everyone—crucial for hiring, admissions, and quality control where a few bad actors can corrupt decisions affecting thousands of people.
 
 ### Acquire, Repair, Preserve: A Diagnosis-Guided Post-Training Recipe for Small-Model Dialogue Game Agents
 - URL: https://paperplaine.com/papers/acquire-repair-preserve-a
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to read molecular fingerprints when some signals are weak or missing
 - Summary: A new AI system called MM-Spectrum can figure out the structure of molecules by combining multiple types of spectroscopic data—like different ways of measuring how molecules absorb light—even when some measurements are weak or unavailable. The key innovation is a routing mechanism that recognizes when different data streams have unequal quality or importance, preventing the system from getting confused by mismatched signals.
 - Why it matters: Identifying molecular structures is essential in drug discovery, materials science, and chemistry labs, but real-world spectroscopy data is messy and incomplete. This system works reliably even with partial information, which could speed up molecular analysis when some measurement methods fail or produce poor results. It could reduce both the cost and time needed to identify unknown compounds.
-
-### Krylov Break Times from an Inhomogeneous Lieb--Robinson Light Cone
-- URL: https://paperplaine.com/papers/krylov-break-times-from
-- Category: Physics
-- Authors: Shunji Matsuura, Yoji Kawamura, Joseph Salfi et al.
-- arXiv: 2608.27399
-- Plain-English subtitle: How long quantum computer shortcuts stay reliable before they break
-- Summary: Physicists have figured out when a common computational shortcut for quantum systems becomes unreliable. The shortcut—called Krylov truncation—works by approximating quantum behavior using a smaller, manageable system, but information leaks and errors grow over time. The research shows that the method breaks down after a time directly proportional to how the quantum information spreads across the system, with accuracy degrading like a round trip where information must travel out to the edge of the approximation and back.
-- Why it matters: Quantum computers and simulators rely on Krylov methods to model systems that would otherwise be too large to handle. Knowing exactly how long these approximations remain trustworthy—not just in theory but with precise bounds—lets engineers set realistic expectations for how long a calculation can run before errors accumulate beyond tolerance. This is essential for deciding whether a quantum algorithm is practical for real problems.
-
-### Sophistication in GenAI Use: Field Evidence from a Large Firm
-- URL: https://paperplaine.com/papers/sophistication-in-genai-use
-- Category: Economics
-- Authors: Nicholas J. Hallman, Zachary T. Kowaleski, Anu Puvvada et al.
-- arXiv: 2608.27364
-- Plain-English subtitle: Why some employees get far more out of AI than others
-- Summary: Researchers analyzed over 700,000 AI prompts from nearly 4,000 back-office employees at a large firm and found that seniority and job function—not training programs—predict how effectively people use AI. Senior workers and those in strategy-focused roles asked more sophisticated questions and got better results, while generic AI training courses produced no lasting improvement in how people worked.
-- Why it matters: Companies spending millions on AI training for their workforce may be wasting money if those programs don't address how employees' actual domain knowledge shapes their AI use. The findings suggest managers should focus on matching AI tools to senior experts and strategic teams rather than rolling out one-size-fits-all training—and that simply teaching people to use AI tools matters far less than what they already know about their work.
-
-### Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models
-- URL: https://paperplaine.com/papers/successive-capacity-growth-task
-- Category: Computer Science · AI
-- Authors: Frederik Berenz
-- arXiv: 2608.27367
-- Plain-English subtitle: AI models that grow smarter only when tasks demand it
-- Summary: Researchers developed a method called Successive Capacity Growth that lets AI vision models start tiny and expand only when needed, rather than being built large from the start. On complex vision tasks, the approach achieved 20% better performance while using 56 times fewer parameters than fixed large models, and even beat those large models on simpler tasks by 23%.
-- Why it matters: AI training consumes enormous computational resources and energy. This approach cuts the parameters needed by more than half while improving accuracy, which translates directly to cheaper training, faster inference, and lower energy costs. Since many real-world applications use models far more powerful than their tasks require, this adaptive scaling could make AI systems dramatically more efficient at deployment.
 
 ## About
 
