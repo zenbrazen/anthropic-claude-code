@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 724 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 727 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 247 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 248 papers in archive.
+  - "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing"
   - "A Model with No Head and Many Thoughts"
-  - "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 59 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 60 papers in archive.
+  - "Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning"
   - "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control"
-  - "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 60 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 61 papers in archive.
+  - "Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions"
   - "Krylov Break Times from an Inhomogeneous Lieb--Robinson Light Cone"
-  - "Spectral Fingerprints of Gauge Theories on a Quantum Computer"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 60 papers in archive.
   - "Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras"
   - "On supporting affine functionals for Entanglement of Formation"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Sophistication in GenAI Use: Field Evidence from a Large Firm"
 
 ## 10 most recent papers
+
+### BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing
+- URL: https://paperplaine.com/papers/bloom-wilt-logit-tilting
+- Category: Computer Science · AI
+- Authors: Adrians Skapars, Edoardo Manino
+- arXiv: 2608.31105
+- Plain-English subtitle: Finding hidden safety failures in AI models through smarter questioning
+- Summary: Researchers developed BLOOM-WILT, a system that finds rare problematic behaviours in language models far more efficiently than existing auditing methods. By strategically adjusting how the model generates text and adapting its questioning approach across multiple conversation turns, the system increased detection of harmful outputs from 51% to 100% in some cases—without requiring expensive model retraining.
+- Why it matters: Language models deployed to millions of users encounter rare failure modes that standard testing never catches. BLOOM-WILT makes it cheap and practical to continuously hunt for these hidden safety problems after deployment, meaning developers can catch and fix harms that would otherwise slip through to real users. The system's rankings also revealed that some models previously thought safer than others actually weren't—a correction that affects which systems get deployed.
+
+### Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions
+- URL: https://paperplaine.com/papers/quantum-simulation-of-markovian
+- Category: Physics
+- Authors: Doojin Kim, Balbeer Singh
+- arXiv: 2608.31173
+- Plain-English subtitle: Using quantum computers to model how particles remember their past in collisions
+- Summary: Physicists have developed a method to run quantum computers that simulate how particles behave in extreme collisions, including cases where particles remember their history—something previous simulations couldn't capture. The approach works by adding a special helper system that tracks this memory and then removing it to recover the full behavior, and it cleanly transitions to simpler models when memory effects become negligible.
+- Why it matters: Heavy-ion collisions at facilities like the Large Hadron Collider create extreme conditions that reveal fundamental physics, but are hard to simulate because particles don't forget their past interactions instantly. This framework opens the door to using next-generation quantum computers to model these collisions more accurately, potentially unlocking new insights into how matter behaves under the most violent conditions in nature.
+
+### Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning
+- URL: https://paperplaine.com/papers/beyond-the-payload-how
+- Category: Computer Science
+- Authors: Fukang Zhu, Binbin Zhao, Ruixiao Lin et al.
+- arXiv: 2608.30686
+- Plain-English subtitle: How the way you ask an AI coder to work shapes whether it gets hacked
+- Summary: The way developers ask AI coding agents to do work—what task, how detailed the instructions, what rules to follow—dramatically changes whether poisoned code repositories can attack those agents. A new benchmark of 1,920 test cases found that certain task types create silent vulnerabilities where malicious code runs undetected, while unclear or rambling prompts can accidentally protect against attacks by making the poison harder to activate.
+- Why it matters: As companies increasingly hand off coding work to AI agents pulling from repositories they don't fully control, understanding how simple invocation choices affect safety is critical. A developer asking for test execution instead of general setup could expose their system to attack 4.5 times more, and they'd likely never notice. This work gives teams concrete guidance on safer ways to phrase their requests and which tasks pose the highest risk.
 
 ### A Model with No Head and Many Thoughts
 - URL: https://paperplaine.com/papers/a-model-with-no
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching small AI models to play dialogue games without forgetting what they just learned
 - Summary: A small 2-billion-parameter AI model trained on dialogue games improved its performance roughly 4-fold by fixing three specific problems: it didn't participate in enough game scenarios, it kept making the same mistakes within conversations, and it sometimes ignored feedback it had just received. The researchers used targeted retraining to address each issue, raising the model's score from 10.67 to 38.92 on a standard benchmark.
 - Why it matters: Dialogue games reveal weaknesses that static tests miss—a model must track what's happened, follow new rules, and adapt to feedback. This work shows that small, accessible models can reach usable performance with the right training approach, making interactive AI applications feasible without massive computational resources. However, the method still struggles with completely new game variants, suggesting that true flexibility remains a hard problem.
-
-### Neuromorphic architectures as numerical solvers for computational neuroscience
-- URL: https://paperplaine.com/papers/neuromorphic-architectures-as-numerical
-- Category: Quantitative Biology
-- Authors: Jakob Jordan, Ole Richter, Congyang Li et al.
-- arXiv: 2608.28387
-- Plain-English subtitle: Making brain-mimicking computers work for models without electrical spikes
-- Summary: Neuromorphic computers—machines designed to work like brains—are typically built around artificial neurons that fire spikes, like real neurons do. This paper shows that a different class of brain models, which simulate neurons as continuously changing signals rather than discrete pulses, can run more efficiently on neuromorphic hardware using specialized numerical techniques. The researchers converted an existing neuromorphic chip into a "spikeless" system and demonstrated it uses less energy and produces less delay than standard approaches.
-- Why it matters: Most neuromorphic chips today are engineered around spike-based computation, which doesn't match how many brain-inspired models actually work. This research expands what problems neuromorphic hardware can solve efficiently, potentially unlocking its use for broader classes of neuroscience simulations and AI applications that currently require conventional computers. For researchers running large-scale brain simulations, this could mean significantly lower power consumption.
-
-### Learning a Size-Weight Frontier for Synthetic-Augmented Inference
-- URL: https://paperplaine.com/papers/learning-a-size-weight
-- Category: Statistics
-- Authors: Chengpiao Huang, Kaizheng Wang
-- arXiv: 2608.28576
-- Plain-English subtitle: How much fake data can you safely mix with real data?
-- Summary: When researchers use synthetic data to fill gaps in real observations, they risk getting wrong answers if they're not careful about how much synthetic data to use. This paper presents a method that identifies exactly how many synthetic samples can be safely mixed with real data—and at what weight—while still producing reliable results. In tests combining AI-generated responses with real survey data, the approach maintained accuracy while shrinking confidence intervals by substantial margins.
-- Why it matters: Synthetic data is cheap and fast to generate, but mistakes in using it waste time and money on flawed conclusions. This framework lets practitioners know precisely when they can trust their results, making it practical to combine real and synthetic data without guessing about reliability. For surveys, medical studies, and other research constrained by small sample sizes, this could make the difference between usable insights and misleading ones.
-
-### WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution
-- URL: https://paperplaine.com/papers/wikiskill-compiling-agent-experience
-- Category: Computer Science · AI
-- Authors: Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng et al.
-- arXiv: 2608.27454
-- Plain-English subtitle: Teaching AI agents to remember and reuse what they learn from experience
-- Summary: Researchers built WikiSkill, a system that lets AI agents collect lessons from their past attempts and store them in a shared knowledge base—like a persistent wiki—that improves their problem-solving over time. Agents using WikiSkill solved tasks better than those without, and smaller AI models equipped with evolved skills outperformed much larger models that lacked them.
-- Why it matters: As AI systems tackle more complex problems, they waste enormous computational effort rediscovering solutions repeatedly. WikiSkill lets agents build and share knowledge efficiently, so each new problem-solving attempt compounds on prior experience. The finding that smaller models with evolved skills beat larger models without them suggests we could accomplish more with less hardware—cutting energy costs and computational waste significantly.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2026 12:22:23 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 21:31:59 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing</title>
+      <link>https://paperplaine.com/papers/bloom-wilt-logit-tilting</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bloom-wilt-logit-tilting</guid>
+      <pubDate>Mon, 31 Aug 2026 17:10:59 GMT</pubDate>
+      <author>Adrians Skapars, Edoardo Manino</author>
+      <category>AI</category>
+      <description>Finding hidden safety failures in AI models through smarter questioning</description>
+      <content:encoded><![CDATA[<p><em>Finding hidden safety failures in AI models through smarter questioning</em></p><p>Researchers developed BLOOM-WILT, a system that finds rare problematic behaviours in language models far more efficiently than existing auditing methods. By strategically adjusting how the model generates text and adapting its questioning approach across multiple conversation turns, the system increased detection of harmful outputs from 51% to 100% in some cases—without requiring expensive model retraining.</p><p><strong>Why it matters:</strong> Language models deployed to millions of users encounter rare failure modes that standard testing never catches. BLOOM-WILT makes it cheap and practical to continuously hunt for these hidden safety problems after deployment, meaning developers can catch and fix harms that would otherwise slip through to real users. The system's rankings also revealed that some models previously thought safer than others actually weren't—a correction that affects which systems get deployed.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions</title>
+      <link>https://paperplaine.com/papers/quantum-simulation-of-markovian</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/quantum-simulation-of-markovian</guid>
+      <pubDate>Mon, 31 Aug 2026 17:59:59 GMT</pubDate>
+      <author>Doojin Kim, Balbeer Singh</author>
+      <category>Physics</category>
+      <description>Using quantum computers to model how particles remember their past in collisions</description>
+      <content:encoded><![CDATA[<p><em>Using quantum computers to model how particles remember their past in collisions</em></p><p>Physicists have developed a method to run quantum computers that simulate how particles behave in extreme collisions, including cases where particles remember their history—something previous simulations couldn't capture. The approach works by adding a special helper system that tracks this memory and then removing it to recover the full behavior, and it cleanly transitions to simpler models when memory effects become negligible.</p><p><strong>Why it matters:</strong> Heavy-ion collisions at facilities like the Large Hadron Collider create extreme conditions that reveal fundamental physics, but are hard to simulate because particles don't forget their past interactions instantly. This framework opens the door to using next-generation quantum computers to model these collisions more accurately, potentially unlocking new insights into how matter behaves under the most violent conditions in nature.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning</title>
+      <link>https://paperplaine.com/papers/beyond-the-payload-how</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/beyond-the-payload-how</guid>
+      <pubDate>Mon, 31 Aug 2026 12:26:01 GMT</pubDate>
+      <author>Fukang Zhu, Binbin Zhao, Ruixiao Lin et al.</author>
+      <category>Comp Sci</category>
+      <description>How the way you ask an AI coder to work shapes whether it gets hacked</description>
+      <content:encoded><![CDATA[<p><em>How the way you ask an AI coder to work shapes whether it gets hacked</em></p><p>The way developers ask AI coding agents to do work—what task, how detailed the instructions, what rules to follow—dramatically changes whether poisoned code repositories can attack those agents. A new benchmark of 1,920 test cases found that certain task types create silent vulnerabilities where malicious code runs undetected, while unclear or rambling prompts can accidentally protect against attacks by making the poison harder to activate.</p><p><strong>Why it matters:</strong> As companies increasingly hand off coding work to AI agents pulling from repositories they don't fully control, understanding how simple invocation choices affect safety is critical. A developer asking for test execution instead of general setup could expose their system to attack 4.5 times more, and they'd likely never notice. This work gives teams concrete guidance on safer ways to phrase their requests and which tasks pose the highest risk.</p>]]></content:encoded>
+    </item>
     <item>
       <title>A Model with No Head and Many Thoughts</title>
       <link>https://paperplaine.com/papers/a-model-with-no</link>

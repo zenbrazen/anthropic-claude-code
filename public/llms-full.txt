@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 724 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 727 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-01
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing
+Subtitle: Finding hidden safety failures in AI models through smarter questioning
+URL: https://paperplaine.com/papers/bloom-wilt-logit-tilting
+Category: Computer Science · AI
+Authors: Adrians Skapars, Edoardo Manino
+arXiv ID: 2608.31105
+arXiv URL: https://arxiv.org/abs/2608.31105
+Posted: 2026-09-01
+
+Summary: Researchers developed BLOOM-WILT, a system that finds rare problematic behaviours in language models far more efficiently than existing auditing methods. By strategically adjusting how the model generates text and adapting its questioning approach across multiple conversation turns, the system increased detection of harmful outputs from 51% to 100% in some cases—without requiring expensive model retraining.
+
+Why it matters: Language models deployed to millions of users encounter rare failure modes that standard testing never catches. BLOOM-WILT makes it cheap and practical to continuously hunt for these hidden safety problems after deployment, meaning developers can catch and fix harms that would otherwise slip through to real users. The system's rankings also revealed that some models previously thought safer than others actually weren't—a correction that affects which systems get deployed.
+
+---
+Title: Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions
+Subtitle: Using quantum computers to model how particles remember their past in collisions
+URL: https://paperplaine.com/papers/quantum-simulation-of-markovian
+Category: Physics
+Authors: Doojin Kim, Balbeer Singh
+arXiv ID: 2608.31173
+arXiv URL: https://arxiv.org/abs/2608.31173
+Posted: 2026-09-01
+
+Summary: Physicists have developed a method to run quantum computers that simulate how particles behave in extreme collisions, including cases where particles remember their history—something previous simulations couldn't capture. The approach works by adding a special helper system that tracks this memory and then removing it to recover the full behavior, and it cleanly transitions to simpler models when memory effects become negligible.
+
+Why it matters: Heavy-ion collisions at facilities like the Large Hadron Collider create extreme conditions that reveal fundamental physics, but are hard to simulate because particles don't forget their past interactions instantly. This framework opens the door to using next-generation quantum computers to model these collisions more accurately, potentially unlocking new insights into how matter behaves under the most violent conditions in nature.
+
+---
+Title: Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning
+Subtitle: How the way you ask an AI coder to work shapes whether it gets hacked
+URL: https://paperplaine.com/papers/beyond-the-payload-how
+Category: Computer Science
+Authors: Fukang Zhu, Binbin Zhao, Ruixiao Lin et al.
+arXiv ID: 2608.30686
+arXiv URL: https://arxiv.org/abs/2608.30686
+Posted: 2026-09-01
+
+Summary: The way developers ask AI coding agents to do work—what task, how detailed the instructions, what rules to follow—dramatically changes whether poisoned code repositories can attack those agents. A new benchmark of 1,920 test cases found that certain task types create silent vulnerabilities where malicious code runs undetected, while unclear or rambling prompts can accidentally protect against attacks by making the poison harder to activate.
+
+Why it matters: As companies increasingly hand off coding work to AI agents pulling from repositories they don't fully control, understanding how simple invocation choices affect safety is critical. A developer asking for test execution instead of general setup could expose their system to attack 4.5 times more, and they'd likely never notice. This work gives teams concrete guidance on safer ways to phrase their requests and which tasks pose the highest risk.
 
 ---
 Title: A Model with No Head and Many Thoughts
