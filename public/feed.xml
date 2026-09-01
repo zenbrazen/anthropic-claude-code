@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2026 23:05:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 12:22:23 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A Model with No Head and Many Thoughts</title>
+      <link>https://paperplaine.com/papers/a-model-with-no</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/a-model-with-no</guid>
+      <pubDate>Mon, 31 Aug 2026 16:45:41 GMT</pubDate>
+      <author>Nikita Koriagin, Yaroslav Aksenov, George Bredis et al.</author>
+      <category>AI</category>
+      <description>Letting AI think in continuous space instead of forcing words at every step</description>
+      <content:encoded><![CDATA[<p><em>Letting AI think in continuous space instead of forcing words at every step</em></p><p>Researchers found that large language models can reason more effectively when they skip the expensive step of converting thoughts into words during intermediate reasoning. By working directly in continuous mathematical space during chain-of-thought steps—and only converting to words at the end—the method improved reasoning accuracy while cutting computational cost per step.</p><p><strong>Why it matters:</strong> Language models spend enormous compute power converting every intermediate thought into discrete tokens, even though these internal reasoning steps are never seen by users. This work shows those internal steps don't need to be tokenized at all, potentially making AI systems faster and cheaper to run while improving their ability to solve hard problems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices</title>
+      <link>https://paperplaine.com/papers/optimal-block-time-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/optimal-block-time-for</guid>
+      <pubDate>Mon, 31 Aug 2026 06:36:20 GMT</pubDate>
+      <author>Nils Bundi</author>
+      <category>Finance</category>
+      <description>Why making blockchain blocks faster doesn&#39;t always help liquidity providers</description>
+      <content:encoded><![CDATA[<p><em>Why making blockchain blocks faster doesn't always help liquidity providers</em></p><p>When prices jump suddenly instead of moving smoothly, making blockchain blocks faster stops helping liquidity providers avoid losses at a certain point. Researchers found that roughly one-quarter of losses at Ethereum come from these sudden price jumps that no block speed can prevent, and this fraction grows even larger on faster chains like Solana.</p><p><strong>Why it matters:</strong> Blockchain developers often assume faster blocks help protect traders who provide liquidity to exchanges, but this research shows there's a hard limit to what speed can achieve. The optimal block time turns out to be around 8 seconds regardless of how big the pool is or how volatile prices are—meaning some losses are structural to markets with sudden price movements and cannot be engineered away.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras</title>
+      <link>https://paperplaine.com/papers/properties-of-the-mathcal</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/properties-of-the-mathcal</guid>
+      <pubDate>Mon, 31 Aug 2026 16:58:36 GMT</pubDate>
+      <author>Rishabh Goswami, Alfilgen Sebandal</author>
+      <category>Math</category>
+      <description>When do algebraic structures built from weighted graphs behave predictably?</description>
+      <content:encoded><![CDATA[<p><em>When do algebraic structures built from weighted graphs behave predictably?</em></p><p>Mathematicians studying weighted Leavitt path algebras—algebraic structures built from graphs with numbered edges—have identified when certain key properties hold or fail. The work characterizes exactly when these algebras can be simplified without losing information, and when their building blocks can be cancelled out like numbers in multiplication.</p><p><strong>Why it matters:</strong> Leavitt path algebras appear in operator theory, symbolic dynamics, and quantum physics. Understanding when these algebras have predictable structural properties lets mathematicians and physicists apply them reliably in theory and computation, and simplifies the problem of determining when two seemingly different weighted graphs produce equivalent algebraic structures.</p>]]></content:encoded>
+    </item>
     <item>
       <title>ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL</title>
       <link>https://paperplaine.com/papers/contextpilot-teaching-agents-for</link>

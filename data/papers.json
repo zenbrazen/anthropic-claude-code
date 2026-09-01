@@ -1,5 +1,71 @@
 [
   {
+    "id": "2608.31069",
+    "title": "A Model with No Head and Many Thoughts",
+    "authors": "Nikita Koriagin, Yaroslav Aksenov, George Bredis et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-08-31T16:45:41Z",
+    "publishedFormatted": "Aug 31, 2026",
+    "subtitle": "Letting AI think in continuous space instead of forcing words at every step",
+    "summary": "Researchers found that large language models can reason more effectively when they skip the expensive step of converting thoughts into words during intermediate reasoning. By working directly in continuous mathematical space during chain-of-thought steps—and only converting to words at the end—the method improved reasoning accuracy while cutting computational cost per step.",
+    "whyItMatters": "Language models spend enormous compute power converting every intermediate thought into discrete tokens, even though these internal reasoning steps are never seen by users. This work shows those internal steps don't need to be tokenized at all, potentially making AI systems faster and cheaper to run while improving their ability to solve hard problems.",
+    "fetchedAt": "2026-09-01T12:22:15.981Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 110
+    },
+    "slug": "a-model-with-no"
+  },
+  {
+    "id": "2608.30321",
+    "title": "Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices",
+    "authors": "Nils Bundi",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-08-31T06:36:20Z",
+    "publishedFormatted": "Aug 31, 2026",
+    "subtitle": "Why making blockchain blocks faster doesn't always help liquidity providers",
+    "summary": "When prices jump suddenly instead of moving smoothly, making blockchain blocks faster stops helping liquidity providers avoid losses at a certain point. Researchers found that roughly one-quarter of losses at Ethereum come from these sudden price jumps that no block speed can prevent, and this fraction grows even larger on faster chains like Solana.",
+    "whyItMatters": "Blockchain developers often assume faster blocks help protect traders who provide liquidity to exchanges, but this research shows there's a hard limit to what speed can achieve. The optimal block time turns out to be around 8 seconds regardless of how big the pool is or how volatile prices are—meaning some losses are structural to markets with sudden price movements and cannot be engineered away.",
+    "fetchedAt": "2026-09-01T12:22:19.393Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 25,
+      "wordCount": 236
+    },
+    "slug": "optimal-block-time-for"
+  },
+  {
+    "id": "2608.31087",
+    "title": "Properties of the \\mathcal V-Monoid of Weighted Leavitt Path Algebras",
+    "authors": "Rishabh Goswami, Alfilgen Sebandal",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-08-31T16:58:36Z",
+    "publishedFormatted": "Aug 31, 2026",
+    "subtitle": "When do algebraic structures built from weighted graphs behave predictably?",
+    "summary": "Mathematicians studying weighted Leavitt path algebras—algebraic structures built from graphs with numbered edges—have identified when certain key properties hold or fail. The work characterizes exactly when these algebras can be simplified without losing information, and when their building blocks can be cancelled out like numbers in multiplication.",
+    "whyItMatters": "Leavitt path algebras appear in operator theory, symbolic dynamics, and quantum physics. Understanding when these algebras have predictable structural properties lets mathematicians and physicists apply them reliably in theory and computation, and simplifies the problem of determining when two seemingly different weighted graphs produce equivalent algebraic structures.",
+    "fetchedAt": "2026-09-01T12:22:22.533Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 168
+    },
+    "slug": "properties-of-the-mathcal"
+  },
+  {
     "id": "2608.28476",
     "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
     "authors": "Zhuoshi Pan, Qizhi Pei, Junru Lu et al.",

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 721 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 724 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 246 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 247 papers in archive.
+  - "A Model with No Head and Many Thoughts"
   - "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL"
-  - "Acquire, Repair, Preserve: A Diagnosis-Guided Post-Training Recipe for Small-Model Dialogue Game Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 59 papers in archive.
   - "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control"
   - "Do User-Authored Permission Policies Improve Protection Against AI Agent Overreach?"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 60 papers in archive.
   - "Krylov Break Times from an Inhomogeneous Lieb--Robinson Light Cone"
   - "Spectral Fingerprints of Gauge Theories on a Quantum Computer"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 59 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 60 papers in archive.
+  - "Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras"
   - "On supporting affine functionals for Entanglement of Formation"
-  - "Correcting Connectivity in Arc-Based QUBO Models for Fixed-Fleet Vehicle Routing"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 61 papers in archive.
   - "Neuromorphic architectures as numerical solvers for computational neuroscience"
   - "Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 63 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 64 papers in archive.
+  - "Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices"
   - "Reflexivity from Hierarchical Causality"
-  - "Your AI, On a Dial: Controlling Investment Bias in LLMs with a Single Neuron"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 62 papers in archive.
   - "Learning a Size-Weight Frontier for Synthetic-Augmented Inference"
   - "A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Sophistication in GenAI Use: Field Evidence from a Large Firm"
 
 ## 10 most recent papers
+
+### A Model with No Head and Many Thoughts
+- URL: https://paperplaine.com/papers/a-model-with-no
+- Category: Computer Science · AI
+- Authors: Nikita Koriagin, Yaroslav Aksenov, George Bredis et al.
+- arXiv: 2608.31069
+- Plain-English subtitle: Letting AI think in continuous space instead of forcing words at every step
+- Summary: Researchers found that large language models can reason more effectively when they skip the expensive step of converting thoughts into words during intermediate reasoning. By working directly in continuous mathematical space during chain-of-thought steps—and only converting to words at the end—the method improved reasoning accuracy while cutting computational cost per step.
+- Why it matters: Language models spend enormous compute power converting every intermediate thought into discrete tokens, even though these internal reasoning steps are never seen by users. This work shows those internal steps don't need to be tokenized at all, potentially making AI systems faster and cheaper to run while improving their ability to solve hard problems.
+
+### Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices
+- URL: https://paperplaine.com/papers/optimal-block-time-for
+- Category: Quantitative Finance
+- Authors: Nils Bundi
+- arXiv: 2608.30321
+- Plain-English subtitle: Why making blockchain blocks faster doesn't always help liquidity providers
+- Summary: When prices jump suddenly instead of moving smoothly, making blockchain blocks faster stops helping liquidity providers avoid losses at a certain point. Researchers found that roughly one-quarter of losses at Ethereum come from these sudden price jumps that no block speed can prevent, and this fraction grows even larger on faster chains like Solana.
+- Why it matters: Blockchain developers often assume faster blocks help protect traders who provide liquidity to exchanges, but this research shows there's a hard limit to what speed can achieve. The optimal block time turns out to be around 8 seconds regardless of how big the pool is or how volatile prices are—meaning some losses are structural to markets with sudden price movements and cannot be engineered away.
+
+### Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras
+- URL: https://paperplaine.com/papers/properties-of-the-mathcal
+- Category: Mathematics
+- Authors: Rishabh Goswami, Alfilgen Sebandal
+- arXiv: 2608.31087
+- Plain-English subtitle: When do algebraic structures built from weighted graphs behave predictably?
+- Summary: Mathematicians studying weighted Leavitt path algebras—algebraic structures built from graphs with numbered edges—have identified when certain key properties hold or fail. The work characterizes exactly when these algebras can be simplified without losing information, and when their building blocks can be cancelled out like numbers in multiplication.
+- Why it matters: Leavitt path algebras appear in operator theory, symbolic dynamics, and quantum physics. Understanding when these algebras have predictable structural properties lets mathematicians and physicists apply them reliably in theory and computation, and simplifies the problem of determining when two seemingly different weighted graphs produce equivalent algebraic structures.
 
 ### ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL
 - URL: https://paperplaine.com/papers/contextpilot-teaching-agents-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI agents to remember and reuse what they learn from experience
 - Summary: Researchers built WikiSkill, a system that lets AI agents collect lessons from their past attempts and store them in a shared knowledge base—like a persistent wiki—that improves their problem-solving over time. Agents using WikiSkill solved tasks better than those without, and smaller AI models equipped with evolved skills outperformed much larger models that lacked them.
 - Why it matters: As AI systems tackle more complex problems, they waste enormous computational effort rediscovering solutions repeatedly. WikiSkill lets agents build and share knowledge efficiently, so each new problem-solving attempt compounds on prior experience. The finding that smaller models with evolved skills beat larger models without them suggests we could accomplish more with less hardware—cutting energy costs and computational waste significantly.
-
-### SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control
-- URL: https://paperplaine.com/papers/spa-securing-persistent-llm
-- Category: Computer Science
-- Authors: Dylan Girrens, Guangjing Wang
-- arXiv: 2608.27234
-- Plain-English subtitle: Protecting AI agents from poisoned data across multiple conversations
-- Summary: AI assistants that remember past work and pull from untrusted websites are vulnerable to attackers who slip malicious data into their memory or sources — then exploit it in future tasks. Researchers built SPA, a system that makes the agent plan out its full approach before executing it, then tracks data flows like a security auditor, stopping poisoned information from reaching sensitive actions. In tests, this reduced successful attacks from common rates down to nearly zero.
-- Why it matters: As AI agents handle more real work — scheduling, filing forms, accessing accounts — they become targets for attackers who can slip false information into websites or documents the agent reads. A poisoned fact lodged in the agent's memory could reactivate in an unguarded moment weeks later and cause damage. SPA's approach means companies deploying persistent AI agents can do so without accepting uncontrolled security risk from data sources outside their control.
-
-### Reflexivity from Hierarchical Causality
-- URL: https://paperplaine.com/papers/reflexivity-from-hierarchical-causality
-- Category: Quantitative Finance
-- Authors: Tim Gebbie
-- arXiv: 2608.22497
-- Plain-English subtitle: How financial markets' top-down rules create self-reinforcing feedback loops
-- Summary: When higher-level market rules constrain what trades are allowed, they create a feedback loop where the rules themselves influence the timing and sequence of trades—which then feeds back up to reshape those same rules. The paper shows that this top-down constraint, combined with how individual trades happen in real time, can generate multiple competing causal pathways even when the underlying trading mechanics follow predictable patterns.
-- Why it matters: Market reflexivity—where prices influence the rules governing trading, which then change prices—has long been observed but poorly understood mathematically. This framework clarifies how regulatory constraints and trading mechanics interlock to create self-reinforcing market dynamics, which matters for predicting when interventions (like circuit breakers or position limits) will work as intended versus when they'll trigger unintended cascades.
-
-### MM-Spectrum: Multimodal Multi-spectral Molecular Structural Elucidation with a Stable MoE Framework
-- URL: https://paperplaine.com/papers/mm-spectrum-multimodal-multi
-- Category: Computer Science · AI
-- Authors: Hai-tao Yu, Nan Min, Zheng Fang et al.
-- arXiv: 2608.27286
-- Plain-English subtitle: Teaching AI to read molecular fingerprints when some signals are weak or missing
-- Summary: A new AI system called MM-Spectrum can figure out the structure of molecules by combining multiple types of spectroscopic data—like different ways of measuring how molecules absorb light—even when some measurements are weak or unavailable. The key innovation is a routing mechanism that recognizes when different data streams have unequal quality or importance, preventing the system from getting confused by mismatched signals.
-- Why it matters: Identifying molecular structures is essential in drug discovery, materials science, and chemistry labs, but real-world spectroscopy data is messy and incomplete. This system works reliably even with partial information, which could speed up molecular analysis when some measurement methods fail or produce poor results. It could reduce both the cost and time needed to identify unknown compounds.
 
 ## About
 

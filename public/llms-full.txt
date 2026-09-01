@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 721 papers currently in the Paper Plaine archive.
-Last updated: 2026-08-31
+This file contains the complete plain-English text of all 724 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-01
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: A Model with No Head and Many Thoughts
+Subtitle: Letting AI think in continuous space instead of forcing words at every step
+URL: https://paperplaine.com/papers/a-model-with-no
+Category: Computer Science · AI
+Authors: Nikita Koriagin, Yaroslav Aksenov, George Bredis et al.
+arXiv ID: 2608.31069
+arXiv URL: https://arxiv.org/abs/2608.31069
+Posted: 2026-09-01
+
+Summary: Researchers found that large language models can reason more effectively when they skip the expensive step of converting thoughts into words during intermediate reasoning. By working directly in continuous mathematical space during chain-of-thought steps—and only converting to words at the end—the method improved reasoning accuracy while cutting computational cost per step.
+
+Why it matters: Language models spend enormous compute power converting every intermediate thought into discrete tokens, even though these internal reasoning steps are never seen by users. This work shows those internal steps don't need to be tokenized at all, potentially making AI systems faster and cheaper to run while improving their ability to solve hard problems.
+
+---
+Title: Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices
+Subtitle: Why making blockchain blocks faster doesn't always help liquidity providers
+URL: https://paperplaine.com/papers/optimal-block-time-for
+Category: Quantitative Finance
+Authors: Nils Bundi
+arXiv ID: 2608.30321
+arXiv URL: https://arxiv.org/abs/2608.30321
+Posted: 2026-09-01
+
+Summary: When prices jump suddenly instead of moving smoothly, making blockchain blocks faster stops helping liquidity providers avoid losses at a certain point. Researchers found that roughly one-quarter of losses at Ethereum come from these sudden price jumps that no block speed can prevent, and this fraction grows even larger on faster chains like Solana.
+
+Why it matters: Blockchain developers often assume faster blocks help protect traders who provide liquidity to exchanges, but this research shows there's a hard limit to what speed can achieve. The optimal block time turns out to be around 8 seconds regardless of how big the pool is or how volatile prices are—meaning some losses are structural to markets with sudden price movements and cannot be engineered away.
+
+---
+Title: Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras
+Subtitle: When do algebraic structures built from weighted graphs behave predictably?
+URL: https://paperplaine.com/papers/properties-of-the-mathcal
+Category: Mathematics
+Authors: Rishabh Goswami, Alfilgen Sebandal
+arXiv ID: 2608.31087
+arXiv URL: https://arxiv.org/abs/2608.31087
+Posted: 2026-09-01
+
+Summary: Mathematicians studying weighted Leavitt path algebras—algebraic structures built from graphs with numbered edges—have identified when certain key properties hold or fail. The work characterizes exactly when these algebras can be simplified without losing information, and when their building blocks can be cancelled out like numbers in multiplication.
+
+Why it matters: Leavitt path algebras appear in operator theory, symbolic dynamics, and quantum physics. Understanding when these algebras have predictable structural properties lets mathematicians and physicists apply them reliably in theory and computation, and simplifies the problem of determining when two seemingly different weighted graphs produce equivalent algebraic structures.
 
 ---
 Title: ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL
