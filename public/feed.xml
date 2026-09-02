@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2026 11:57:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 21:30:14 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs</title>
+      <link>https://paperplaine.com/papers/scaling-near-optimal-sft</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/scaling-near-optimal-sft</guid>
+      <pubDate>Tue, 01 Sep 2026 17:39:55 GMT</pubDate>
+      <author>Jingtan Wang, Arun Verma, Xiaoqiang Lin et al.</author>
+      <category>AI</category>
+      <description>Finding the sweet spot for training data without expensive trial and error</description>
+      <content:encoded><![CDATA[<p><em>Finding the sweet spot for training data without expensive trial and error</em></p><p>When training large language models, teams must split their annotation budget between two techniques: supervised fine-tuning (SFT) and reinforcement learning (RL). Rather than hunting for one perfect ratio, this work identifies a "near-optimal region"—a wide range of allocations that all perform nearly as well. The key finding: this region reliably transfers from small experimental models to large production models, so teams can run cheap small-scale experiments to figure out a good allocation without expensive large-model testing.</p><p><strong>Why it matters:</strong> Training large language models is expensive, and knowing how to divide limited annotation resources between SFT and RL can save significant cost without sacrificing performance. This approach lets teams run quick experiments on small models to confidently set their budget split for large models, avoiding wasteful full-scale trial-and-error. The method also adapts when the cost difference between SFT and RL data changes, making it practical for real-world budget constraints.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty</title>
+      <link>https://paperplaine.com/papers/generalized-semi-infinite-programming</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/generalized-semi-infinite-programming</guid>
+      <pubDate>Tue, 01 Sep 2026 17:05:14 GMT</pubDate>
+      <author>J. Wehbeh, E. C. Kerrigan, E. Scaccia</author>
+      <category>Math</category>
+      <description>Solving control problems where danger zones shift based on your actions</description>
+      <content:encoded><![CDATA[<p><em>Solving control problems where danger zones shift based on your actions</em></p><p>A new mathematical method solves a class of control problems where the constraints or risks depend on what the system is currently doing — a situation that has stumped existing approaches. The method converts these tricky problems into a form that standard optimization software can handle, and the authors proved it reliably finds good solutions even for nonlinear systems like tumbling satellites.</p><p><strong>Why it matters:</strong> Many real control systems face uncertainty that changes with their own state or decisions — a robot's collision risk depends on where it is, a satellite's tumbling depends on its spin rate. Previous methods either couldn't handle this, required custom solvers that didn't scale up, or only worked for simple cases. This approach uses standard software and applies broadly, making it practical to design safer, more robust controllers for aerospace, robotics, and other safety-critical applications.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems</title>
+      <link>https://paperplaine.com/papers/analog-db-an-agent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/analog-db-an-agent</guid>
+      <pubDate>Tue, 01 Sep 2026 14:22:37 GMT</pubDate>
+      <author>Danial Noori Zadeh, Mohamed B. Elamien</author>
+      <category>Engineering</category>
+      <description>A shareable library that lets AI design analog circuits from reusable pieces</description>
+      <content:encoded><![CDATA[<p><em>A shareable library that lets AI design analog circuits from reusable pieces</em></p><p>Researchers created an open-source database that stores analog circuit designs in a format that can be shared freely, retargeted to different manufacturing processes, and automatically discovered by AI agents. When tested on voltage regulators, AI using the database caught design flaws—including missing circuit components—that a conventional sizing-only approach missed, and fixed failing circuits in one to three iterations.</p><p><strong>Why it matters:</strong> Analog circuit design currently requires extensive trial-and-error and knowledge locked behind non-disclosure agreements, slowing innovation and limiting who can participate. This database removes those barriers by making proven designs reusable and machine-readable, enabling AI tools to find and adapt existing solutions automatically. For companies and researchers, that means faster design cycles and fewer errors; for the field, it means knowledge can accumulate and compound rather than staying trapped in individual labs.</p>]]></content:encoded>
+    </item>
     <item>
       <title>The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally</title>
       <link>https://paperplaine.com/papers/the-structure-of-quantization</link>
