@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 727 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 730 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 248 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 249 papers in archive.
+  - "The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally"
   - "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing"
-  - "A Model with No Head and Many Thoughts"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 60 papers in archive.
   - "Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning"
   - "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 60 papers in archive.
   - "Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras"
   - "On supporting affine functionals for Entanglement of Formation"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 61 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 62 papers in archive.
+  - "Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts"
   - "Neuromorphic architectures as numerical solvers for computational neuroscience"
-  - "Directed walks shape a universal square-root law of entropy production rate in nonreciprocal systems"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 64 papers in archive.
   - "Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices"
   - "Reflexivity from Hierarchical Causality"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 62 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 63 papers in archive.
+  - "On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study"
   - "Learning a Size-Weight Frontier for Synthetic-Augmented Inference"
-  - "A Finite Sample Analysis for Quantile Temporal Difference Learning in Distributional Reinforcement Learning"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 59 papers in archive.
   - "Optimal Adversarial Testing: Extracting Honest Test Results from Dishonest Test Takers"
   - "Lowering the Barrier to AI-Driven Inspection: A No-Code Workflow for Automated Structural Defect Detection"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Sophistication in GenAI Use: Field Evidence from a Large Firm"
 
 ## 10 most recent papers
+
+### The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally
+- URL: https://paperplaine.com/papers/the-structure-of-quantization
+- Category: Computer Science · AI
+- Authors: Jundong Hu, Shekar Ramachandran
+- arXiv: 2609.01587
+- Plain-English subtitle: How to spend extra precision budget when shrinking AI models
+- Summary: When AI models are compressed to run faster and cheaper, the damage isn't concentrated in a few critical layers—it spreads across roughly half the model's layers. Counterintuitively, applying finer-grained compression uniformly across the entire model recovers accuracy better than surgically fixing the layers that seem most broken, outperforming targeted repairs by 21–52 percentage points.
+- Why it matters: As companies deploy larger language models on phones, servers, and edge devices, quantization compression is essential to cut costs and latency. This finding changes how engineers should allocate limited precision budgets: instead of hunting for problem layers, spreading improvements evenly across the model works better in practice and is simpler to implement. This could reduce the engineering overhead of tuning quantization for each new model.
+
+### On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study
+- URL: https://paperplaine.com/papers/on-the-reliability-of
+- Category: Statistics
+- Authors: Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein
+- arXiv: 2609.01410
+- Plain-English subtitle: When synthetic data helps machine learning, and when it doesn't
+- Summary: Researchers created a mathematical framework to predict when artificially generated data actually improves classification accuracy on imbalanced datasets. They found that higher-quality synthetic data doesn't always lead to better predictions—what matters is how closely the generated data matches the real data's distribution, measured by a metric called Wasserstein discrepancy.
+- Why it matters: Machine learning teams routinely use synthetic data to fix imbalanced datasets, but have lacked clear guidance on which generation methods work best. This framework provides a principled way to evaluate synthetic data quality before deploying it, potentially saving teams from investing time in high-fidelity generators that won't improve actual performance. It also shows that simpler oversampling methods are sometimes more reliable than complex generative models—a finding that could reshape how practitioners choose their augmentation strategy.
+
+### Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts
+- URL: https://paperplaine.com/papers/benchmarking-peptide-protein-affinity
+- Category: Quantitative Biology
+- Authors: Jiaxin Tian, Darren An, Jun Li
+- arXiv: 2608.30175
+- Plain-English subtitle: Testing whether AI can predict drug-like peptide binding when it sees new targets
+- Summary: Researchers tested ten different methods for predicting how strongly peptides bind to proteins, using 11,349 binding measurements split into three realistic scenarios: recognizing patterns in similar peptides, making predictions within known targets, and predicting binding to entirely new target proteins. The best method changed depending on the scenario—fingerprints worked best for familiar targets, but a model called HELM-BERT performed better when targets were completely new. Performance dropped significantly (from 0.67 to 0.53 correlation) when moving from known to unknown targets, showing that current methods struggle with genuine generalization.
+- Why it matters: Drug discovery relies on predicting how experimental molecules will bind their targets before expensive testing begins. This work exposes a critical gap: most peptide-binding models are benchmarked in unrealistic conditions and would fail in the real world, where researchers must predict binding to new disease targets they've never seen before. The findings demand that future benchmarks test what actually matters—whether methods can handle unfamiliar targets—and reveal which representation strategies hold up under that harder test.
 
 ### BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing
 - URL: https://paperplaine.com/papers/bloom-wilt-logit-tilting
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI agents to organize their own memory while solving complex tasks
 - Summary: Researchers created ContextPilot, a system that lets AI language models actively manage and compress their own working memory as they solve multi-step problems. The approach adds new memory-management tools and a smarter training method that rewards the most impactful decisions, allowing models to reach better answers while keeping their context 30–50% smaller than before.
 - Why it matters: As AI agents tackle longer and more complex tasks, they accumulate massive amounts of context that slows them down and costs more to run. By teaching models to edit their own memory intelligently, ContextPilot makes them faster and cheaper to operate without sacrificing accuracy—a practical gain for any real-world AI system handling lengthy customer conversations, research queries, or multi-step planning.
-
-### An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity
-- URL: https://paperplaine.com/papers/an-anonymized-urn-based
-- Category: Economics
-- Authors: Václav Kratochvíl, Radim Jiroušek, Klára Šimůnková et al.
-- arXiv: 2608.26358
-- Plain-English subtitle: How people bet differently when odds are clear versus murky
-- Summary: Researchers collected 4,486 decisions from 246 people choosing how much to wager on colored balls drawn from urns—sometimes with known odds, sometimes with unknown odds. The dataset reveals how people's willingness to pay shifts when uncertainty becomes ambiguous rather than simply risky, with online participants also rating how uncertain they felt about each choice.
-- Why it matters: Understanding how people behave under ambiguous uncertainty matters for everything from financial regulation to insurance pricing to public health policy, where real decisions often involve incomplete information. This dataset is large and detailed enough that researchers can now test competing theories about ambiguity-aversion side by side, and replicate findings that might otherwise stay trapped in individual labs.
-
-### Optimal Adversarial Testing: Extracting Honest Test Results from Dishonest Test Takers
-- URL: https://paperplaine.com/papers/optimal-adversarial-testing-extracting
-- Category: Engineering
-- Authors: Owen Cox, April Xu, Weiyu Xu
-- arXiv: 2608.28362
-- Plain-English subtitle: How to design fair tests that work even when people cheat
-- Summary: When test takers cheat—especially using AI—honest results become impossible to trust. Researchers developed a strategy that identifies likely cheaters and retests them with harder security measures, using dynamic programming to figure out the cheapest and most effective way to catch and correct dishonest answers.
-- Why it matters: As cheating becomes more sophisticated and widespread, exams and performance evaluations risk becoming useless. This approach lets institutions maintain test validity without throwing out results or suspecting everyone—crucial for hiring, admissions, and quality control where a few bad actors can corrupt decisions affecting thousands of people.
-
-### Acquire, Repair, Preserve: A Diagnosis-Guided Post-Training Recipe for Small-Model Dialogue Game Agents
-- URL: https://paperplaine.com/papers/acquire-repair-preserve-a
-- Category: Computer Science · AI
-- Authors: Nan Li
-- arXiv: 2608.28458
-- Plain-English subtitle: Teaching small AI models to play dialogue games without forgetting what they just learned
-- Summary: A small 2-billion-parameter AI model trained on dialogue games improved its performance roughly 4-fold by fixing three specific problems: it didn't participate in enough game scenarios, it kept making the same mistakes within conversations, and it sometimes ignored feedback it had just received. The researchers used targeted retraining to address each issue, raising the model's score from 10.67 to 38.92 on a standard benchmark.
-- Why it matters: Dialogue games reveal weaknesses that static tests miss—a model must track what's happened, follow new rules, and adapt to feedback. This work shows that small, accessible models can reach usable performance with the right training approach, making interactive AI applications feasible without massive computational resources. However, the method still struggles with completely new game variants, suggesting that true flexibility remains a hard problem.
 
 ## About
 

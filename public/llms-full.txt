@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 727 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-01
+This file contains the complete plain-English text of all 730 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-02
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally
+Subtitle: How to spend extra precision budget when shrinking AI models
+URL: https://paperplaine.com/papers/the-structure-of-quantization
+Category: Computer Science · AI
+Authors: Jundong Hu, Shekar Ramachandran
+arXiv ID: 2609.01587
+arXiv URL: https://arxiv.org/abs/2609.01587
+Posted: 2026-09-02
+
+Summary: When AI models are compressed to run faster and cheaper, the damage isn't concentrated in a few critical layers—it spreads across roughly half the model's layers. Counterintuitively, applying finer-grained compression uniformly across the entire model recovers accuracy better than surgically fixing the layers that seem most broken, outperforming targeted repairs by 21–52 percentage points.
+
+Why it matters: As companies deploy larger language models on phones, servers, and edge devices, quantization compression is essential to cut costs and latency. This finding changes how engineers should allocate limited precision budgets: instead of hunting for problem layers, spreading improvements evenly across the model works better in practice and is simpler to implement. This could reduce the engineering overhead of tuning quantization for each new model.
+
+---
+Title: On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study
+Subtitle: When synthetic data helps machine learning, and when it doesn't
+URL: https://paperplaine.com/papers/on-the-reliability-of
+Category: Statistics
+Authors: Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein
+arXiv ID: 2609.01410
+arXiv URL: https://arxiv.org/abs/2609.01410
+Posted: 2026-09-02
+
+Summary: Researchers created a mathematical framework to predict when artificially generated data actually improves classification accuracy on imbalanced datasets. They found that higher-quality synthetic data doesn't always lead to better predictions—what matters is how closely the generated data matches the real data's distribution, measured by a metric called Wasserstein discrepancy.
+
+Why it matters: Machine learning teams routinely use synthetic data to fix imbalanced datasets, but have lacked clear guidance on which generation methods work best. This framework provides a principled way to evaluate synthetic data quality before deploying it, potentially saving teams from investing time in high-fidelity generators that won't improve actual performance. It also shows that simpler oversampling methods are sometimes more reliable than complex generative models—a finding that could reshape how practitioners choose their augmentation strategy.
+
+---
+Title: Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts
+Subtitle: Testing whether AI can predict drug-like peptide binding when it sees new targets
+URL: https://paperplaine.com/papers/benchmarking-peptide-protein-affinity
+Category: Quantitative Biology
+Authors: Jiaxin Tian, Darren An, Jun Li
+arXiv ID: 2608.30175
+arXiv URL: https://arxiv.org/abs/2608.30175
+Posted: 2026-09-02
+
+Summary: Researchers tested ten different methods for predicting how strongly peptides bind to proteins, using 11,349 binding measurements split into three realistic scenarios: recognizing patterns in similar peptides, making predictions within known targets, and predicting binding to entirely new target proteins. The best method changed depending on the scenario—fingerprints worked best for familiar targets, but a model called HELM-BERT performed better when targets were completely new. Performance dropped significantly (from 0.67 to 0.53 correlation) when moving from known to unknown targets, showing that current methods struggle with genuine generalization.
+
+Why it matters: Drug discovery relies on predicting how experimental molecules will bind their targets before expensive testing begins. This work exposes a critical gap: most peptide-binding models are benchmarked in unrealistic conditions and would fail in the real world, where researchers must predict binding to new disease targets they've never seen before. The findings demand that future benchmarks test what actually matters—whether methods can handle unfamiliar targets—and reveal which representation strategies hold up under that harder test.
 
 ---
 Title: BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing

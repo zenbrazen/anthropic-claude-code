@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.01587",
+    "title": "The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally",
+    "authors": "Jundong Hu, Shekar Ramachandran",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-01T17:53:41Z",
+    "publishedFormatted": "Sep 1, 2026",
+    "subtitle": "How to spend extra precision budget when shrinking AI models",
+    "summary": "When AI models are compressed to run faster and cheaper, the damage isn't concentrated in a few critical layers—it spreads across roughly half the model's layers. Counterintuitively, applying finer-grained compression uniformly across the entire model recovers accuracy better than surgically fixing the layers that seem most broken, outperforming targeted repairs by 21–52 percentage points.",
+    "whyItMatters": "As companies deploy larger language models on phones, servers, and edge devices, quantization compression is essential to cut costs and latency. This finding changes how engineers should allocate limited precision budgets: instead of hunting for problem layers, spreading improvements evenly across the model works better in practice and is simpler to implement. This could reduce the engineering overhead of tuning quantization for each new model.",
+    "fetchedAt": "2026-09-02T11:57:49.637Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 11,
+      "wordCount": 242
+    },
+    "slug": "the-structure-of-quantization"
+  },
+  {
+    "id": "2609.01410",
+    "title": "On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study",
+    "authors": "Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-09-01T15:30:24Z",
+    "publishedFormatted": "Sep 1, 2026",
+    "subtitle": "When synthetic data helps machine learning, and when it doesn't",
+    "summary": "Researchers created a mathematical framework to predict when artificially generated data actually improves classification accuracy on imbalanced datasets. They found that higher-quality synthetic data doesn't always lead to better predictions—what matters is how closely the generated data matches the real data's distribution, measured by a metric called Wasserstein discrepancy.",
+    "whyItMatters": "Machine learning teams routinely use synthetic data to fix imbalanced datasets, but have lacked clear guidance on which generation methods work best. This framework provides a principled way to evaluate synthetic data quality before deploying it, potentially saving teams from investing time in high-fidelity generators that won't improve actual performance. It also shows that simpler oversampling methods are sometimes more reliable than complex generative models—a finding that could reshape how practitioners choose their augmentation strategy.",
+    "fetchedAt": "2026-09-02T11:57:52.981Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 206
+    },
+    "slug": "on-the-reliability-of"
+  },
+  {
+    "id": "2608.30175",
+    "title": "Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts",
+    "authors": "Jiaxin Tian, Darren An, Jun Li",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-08-31T02:56:26Z",
+    "publishedFormatted": "Aug 31, 2026",
+    "subtitle": "Testing whether AI can predict drug-like peptide binding when it sees new targets",
+    "summary": "Researchers tested ten different methods for predicting how strongly peptides bind to proteins, using 11,349 binding measurements split into three realistic scenarios: recognizing patterns in similar peptides, making predictions within known targets, and predicting binding to entirely new target proteins. The best method changed depending on the scenario—fingerprints worked best for familiar targets, but a model called HELM-BERT performed better when targets were completely new. Performance dropped significantly (from 0.67 to 0.53 correlation) when moving from known to unknown targets, showing that current methods struggle with genuine generalization.",
+    "whyItMatters": "Drug discovery relies on predicting how experimental molecules will bind their targets before expensive testing begins. This work exposes a critical gap: most peptide-binding models are benchmarked in unrealistic conditions and would fail in the real world, where researchers must predict binding to new disease targets they've never seen before. The findings demand that future benchmarks test what actually matters—whether methods can handle unfamiliar targets—and reveal which representation strategies hold up under that harder test.",
+    "fetchedAt": "2026-09-02T11:57:57.250Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 204
+    },
+    "slug": "benchmarking-peptide-protein-affinity"
+  },
+  {
     "id": "2608.31105",
     "title": "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing",
     "authors": "Adrians Skapars, Edoardo Manino",
