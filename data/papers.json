@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.02797",
+    "title": "Dutch Books for Language Models",
+    "authors": "Isaiah Andrews, Suproteem Sarkar",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-02T16:31:47Z",
+    "publishedFormatted": "Sep 2, 2026",
+    "subtitle": "Why language models make contradictory predictions you can profit from",
+    "summary": "Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.",
+    "whyItMatters": "People rely on language models to estimate the odds of consequential events—from personal financial decisions to disaster preparedness. If the model's probability estimates are internally contradictory, users who trust them to guide real decisions could make systematically poor choices. This work identifies a concrete way to measure when and why models fail at this task, which could help developers spot and fix coherence problems before these systems influence high-stakes decisions.",
+    "fetchedAt": "2026-09-03T21:32:19.116Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 186
+    },
+    "slug": "dutch-books-for-language"
+  },
+  {
+    "id": "2609.01832",
+    "title": "Interpretable Symptom Vectors for Depression in a Large Language Model",
+    "authors": "Fangyi Zhu, Ajay Subramanian, Allison Constant et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-09-01T20:07:03Z",
+    "publishedFormatted": "Sep 1, 2026",
+    "subtitle": "Finding where depression symptoms hide inside AI language models",
+    "summary": "Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.",
+    "whyItMatters": "Depression today is usually reduced to a single score, ignoring the fact that patients suffer different symptom mixes. If AI tools can be designed to measure individual symptoms accurately and in ways doctors understand, they could help clinicians spot which patients need which treatments. This work shows it's possible to build depression-screening tools that are both powerful and transparent about how they reach their conclusions, potentially making AI more trustworthy in mental health care.",
+    "fetchedAt": "2026-09-03T21:32:22.984Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 26,
+      "wordCount": 179
+    },
+    "slug": "interpretable-symptom-vectors-for"
+  },
+  {
+    "id": "2609.02736",
+    "title": "QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays",
+    "authors": "Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-09-02T15:43:37Z",
+    "publishedFormatted": "Sep 2, 2026",
+    "subtitle": "A faster simulator to help robots tune quantum computers automatically",
+    "summary": "Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.",
+    "whyItMatters": "Quantum dot arrays are a leading candidate for building scalable quantum computers, but manually tuning thousands of voltage gates is a bottleneck. QArray+ lets researchers simulate realistic device behavior at scale and train machine-learning models to handle this tuning automatically—dramatically reducing the expert labor required to operate these devices and accelerating progress toward practical quantum hardware.",
+    "fetchedAt": "2026-09-03T21:32:26.593Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 188
+    },
+    "slug": "qarray-a-physics-informed"
+  },
+  {
     "id": "2609.02876",
     "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
     "authors": "Alessio Spurio Mancini",

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2026 11:56:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 21:32:27 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Dutch Books for Language Models</title>
+      <link>https://paperplaine.com/papers/dutch-books-for-language</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/dutch-books-for-language</guid>
+      <pubDate>Wed, 02 Sep 2026 16:31:47 GMT</pubDate>
+      <author>Isaiah Andrews, Suproteem Sarkar</author>
+      <category>AI</category>
+      <description>Why language models make contradictory predictions you can profit from</description>
+      <content:encoded><![CDATA[<p><em>Why language models make contradictory predictions you can profit from</em></p><p>Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.</p><p><strong>Why it matters:</strong> People rely on language models to estimate the odds of consequential events—from personal financial decisions to disaster preparedness. If the model's probability estimates are internally contradictory, users who trust them to guide real decisions could make systematically poor choices. This work identifies a concrete way to measure when and why models fail at this task, which could help developers spot and fix coherence problems before these systems influence high-stakes decisions.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Interpretable Symptom Vectors for Depression in a Large Language Model</title>
+      <link>https://paperplaine.com/papers/interpretable-symptom-vectors-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/interpretable-symptom-vectors-for</guid>
+      <pubDate>Tue, 01 Sep 2026 20:07:03 GMT</pubDate>
+      <author>Fangyi Zhu, Ajay Subramanian, Allison Constant et al.</author>
+      <category>Biology</category>
+      <description>Finding where depression symptoms hide inside AI language models</description>
+      <content:encoded><![CDATA[<p><em>Finding where depression symptoms hide inside AI language models</em></p><p>Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.</p><p><strong>Why it matters:</strong> Depression today is usually reduced to a single score, ignoring the fact that patients suffer different symptom mixes. If AI tools can be designed to measure individual symptoms accurately and in ways doctors understand, they could help clinicians spot which patients need which treatments. This work shows it's possible to build depression-screening tools that are both powerful and transparent about how they reach their conclusions, potentially making AI more trustworthy in mental health care.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays</title>
+      <link>https://paperplaine.com/papers/qarray-a-physics-informed</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/qarray-a-physics-informed</guid>
+      <pubDate>Wed, 02 Sep 2026 15:43:37 GMT</pubDate>
+      <author>Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.</author>
+      <category>Physics</category>
+      <description>A faster simulator to help robots tune quantum computers automatically</description>
+      <content:encoded><![CDATA[<p><em>A faster simulator to help robots tune quantum computers automatically</em></p><p>Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.</p><p><strong>Why it matters:</strong> Quantum dot arrays are a leading candidate for building scalable quantum computers, but manually tuning thousands of voltage gates is a bottleneck. QArray+ lets researchers simulate realistic device behavior at scale and train machine-learning models to handle this tuning automatically—dramatically reducing the expert labor required to operate these devices and accelerating progress toward practical quantum hardware.</p>]]></content:encoded>
+    </item>
     <item>
       <title>GRADSOLVE: fast exact gradients for ODE ensembles on GPUs</title>
       <link>https://paperplaine.com/papers/gradsolve-fast-exact-gradients</link>

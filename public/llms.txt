@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 736 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 739 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 251 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 252 papers in archive.
+  - "Dutch Books for Language Models"
   - "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs"
-  - "Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 61 papers in archive.
   - "When Does Authorization End? Effect Closure at Provider Boundaries"
   - "Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 61 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 62 papers in archive.
+  - "QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays"
   - "Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions"
-  - "Krylov Break Times from an Inhomogeneous Lieb--Robinson Light Cone"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 61 papers in archive.
   - "Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty"
   - "Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 62 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 63 papers in archive.
+  - "Interpretable Symptom Vectors for Depression in a Large Language Model"
   - "Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts"
-  - "Neuromorphic architectures as numerical solvers for computational neuroscience"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 65 papers in archive.
   - "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance"
   - "Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Sophistication in GenAI Use: Field Evidence from a Large Firm"
 
 ## 10 most recent papers
+
+### Dutch Books for Language Models
+- URL: https://paperplaine.com/papers/dutch-books-for-language
+- Category: Computer Science · AI
+- Authors: Isaiah Andrews, Suproteem Sarkar
+- arXiv: 2609.02797
+- Plain-English subtitle: Why language models make contradictory predictions you can profit from
+- Summary: Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.
+- Why it matters: People rely on language models to estimate the odds of consequential events—from personal financial decisions to disaster preparedness. If the model's probability estimates are internally contradictory, users who trust them to guide real decisions could make systematically poor choices. This work identifies a concrete way to measure when and why models fail at this task, which could help developers spot and fix coherence problems before these systems influence high-stakes decisions.
+
+### Interpretable Symptom Vectors for Depression in a Large Language Model
+- URL: https://paperplaine.com/papers/interpretable-symptom-vectors-for
+- Category: Quantitative Biology
+- Authors: Fangyi Zhu, Ajay Subramanian, Allison Constant et al.
+- arXiv: 2609.01832
+- Plain-English subtitle: Finding where depression symptoms hide inside AI language models
+- Summary: Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.
+- Why it matters: Depression today is usually reduced to a single score, ignoring the fact that patients suffer different symptom mixes. If AI tools can be designed to measure individual symptoms accurately and in ways doctors understand, they could help clinicians spot which patients need which treatments. This work shows it's possible to build depression-screening tools that are both powerful and transparent about how they reach their conclusions, potentially making AI more trustworthy in mental health care.
+
+### QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays
+- URL: https://paperplaine.com/papers/qarray-a-physics-informed
+- Category: Physics
+- Authors: Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.
+- arXiv: 2609.02736
+- Plain-English subtitle: A faster simulator to help robots tune quantum computers automatically
+- Summary: Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.
+- Why it matters: Quantum dot arrays are a leading candidate for building scalable quantum computers, but manually tuning thousands of voltage gates is a bottleneck. QArray+ lets researchers simulate realistic device behavior at scale and train machine-learning models to handle this tuning automatically—dramatically reducing the expert labor required to operate these devices and accelerating progress toward practical quantum hardware.
 
 ### GRADSOLVE: fast exact gradients for ODE ensembles on GPUs
 - URL: https://paperplaine.com/papers/gradsolve-fast-exact-gradients
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How to spend extra precision budget when shrinking AI models
 - Summary: When AI models are compressed to run faster and cheaper, the damage isn't concentrated in a few critical layers—it spreads across roughly half the model's layers. Counterintuitively, applying finer-grained compression uniformly across the entire model recovers accuracy better than surgically fixing the layers that seem most broken, outperforming targeted repairs by 21–52 percentage points.
 - Why it matters: As companies deploy larger language models on phones, servers, and edge devices, quantization compression is essential to cut costs and latency. This finding changes how engineers should allocate limited precision budgets: instead of hunting for problem layers, spreading improvements evenly across the model works better in practice and is simpler to implement. This could reduce the engineering overhead of tuning quantization for each new model.
-
-### On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study
-- URL: https://paperplaine.com/papers/on-the-reliability-of
-- Category: Statistics
-- Authors: Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein
-- arXiv: 2609.01410
-- Plain-English subtitle: When synthetic data helps machine learning, and when it doesn't
-- Summary: Researchers created a mathematical framework to predict when artificially generated data actually improves classification accuracy on imbalanced datasets. They found that higher-quality synthetic data doesn't always lead to better predictions—what matters is how closely the generated data matches the real data's distribution, measured by a metric called Wasserstein discrepancy.
-- Why it matters: Machine learning teams routinely use synthetic data to fix imbalanced datasets, but have lacked clear guidance on which generation methods work best. This framework provides a principled way to evaluate synthetic data quality before deploying it, potentially saving teams from investing time in high-fidelity generators that won't improve actual performance. It also shows that simpler oversampling methods are sometimes more reliable than complex generative models—a finding that could reshape how practitioners choose their augmentation strategy.
-
-### Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts
-- URL: https://paperplaine.com/papers/benchmarking-peptide-protein-affinity
-- Category: Quantitative Biology
-- Authors: Jiaxin Tian, Darren An, Jun Li
-- arXiv: 2608.30175
-- Plain-English subtitle: Testing whether AI can predict drug-like peptide binding when it sees new targets
-- Summary: Researchers tested ten different methods for predicting how strongly peptides bind to proteins, using 11,349 binding measurements split into three realistic scenarios: recognizing patterns in similar peptides, making predictions within known targets, and predicting binding to entirely new target proteins. The best method changed depending on the scenario—fingerprints worked best for familiar targets, but a model called HELM-BERT performed better when targets were completely new. Performance dropped significantly (from 0.67 to 0.53 correlation) when moving from known to unknown targets, showing that current methods struggle with genuine generalization.
-- Why it matters: Drug discovery relies on predicting how experimental molecules will bind their targets before expensive testing begins. This work exposes a critical gap: most peptide-binding models are benchmarked in unrealistic conditions and would fail in the real world, where researchers must predict binding to new disease targets they've never seen before. The findings demand that future benchmarks test what actually matters—whether methods can handle unfamiliar targets—and reveal which representation strategies hold up under that harder test.
-
-### BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing
-- URL: https://paperplaine.com/papers/bloom-wilt-logit-tilting
-- Category: Computer Science · AI
-- Authors: Adrians Skapars, Edoardo Manino
-- arXiv: 2608.31105
-- Plain-English subtitle: Finding hidden safety failures in AI models through smarter questioning
-- Summary: Researchers developed BLOOM-WILT, a system that finds rare problematic behaviours in language models far more efficiently than existing auditing methods. By strategically adjusting how the model generates text and adapting its questioning approach across multiple conversation turns, the system increased detection of harmful outputs from 51% to 100% in some cases—without requiring expensive model retraining.
-- Why it matters: Language models deployed to millions of users encounter rare failure modes that standard testing never catches. BLOOM-WILT makes it cheap and practical to continuously hunt for these hidden safety problems after deployment, meaning developers can catch and fix harms that would otherwise slip through to real users. The system's rankings also revealed that some models previously thought safer than others actually weren't—a correction that affects which systems get deployed.
 
 ## About
 
