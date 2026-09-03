@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 733 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-02
+This file contains the complete plain-English text of all 736 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-03
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: GRADSOLVE: fast exact gradients for ODE ensembles on GPUs
+Subtitle: Computing derivatives for physics simulations 5–14 times faster on GPUs
+URL: https://paperplaine.com/papers/gradsolve-fast-exact-gradients
+Category: Computer Science · AI
+Authors: Alessio Spurio Mancini
+arXiv ID: 2609.02876
+arXiv URL: https://arxiv.org/abs/2609.02876
+Posted: 2026-09-03
+
+Summary: Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.
+
+Why it matters: Physics-based machine learning — training models of fluid dynamics, molecular systems, or climate patterns — requires computing gradients thousands or millions of times. A 5–14x speedup cuts training time dramatically, making it practical to fit larger models or run more experiments on the same hardware. This directly reduces computational cost and time-to-result for fields from drug discovery to climate science.
+
+---
+Title: When Does Authorization End? Effect Closure at Provider Boundaries
+Subtitle: When does a permission actually stop working, even after you revoke it?
+URL: https://paperplaine.com/papers/when-does-authorization-end
+Category: Computer Science
+Authors: Igor Santos-Grueiro
+arXiv ID: 2609.02866
+arXiv URL: https://arxiv.org/abs/2609.02866
+Posted: 2026-09-03
+
+Summary: When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.
+
+Why it matters: Permission systems are the backbone of security in cloud platforms and distributed software. If revoking access doesn't actually stop all paths to action—like a merge happening with the wrong code, or a message publishing after removal—attackers can exploit the gap between when you think something is locked down and when it actually is. The fixes tested on Kafka show that proper closure checking can block these risks without slowing down legitimate operations.
+
+---
+Title: Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance
+Subtitle: Keeping AI financial agents from acting without explicit human approval.
+URL: https://paperplaine.com/papers/authority-inference-separation-in
+Category: Quantitative Finance
+Authors: Hui Gong, Michail Samawi, Francesca Medda
+arXiv ID: 2608.30519
+arXiv URL: https://arxiv.org/abs/2608.30519
+Posted: 2026-09-03
+
+Summary: When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.
+
+Why it matters: AI-driven trading and financial services are growing, but if an AI agent can both decide and execute a trade, a single bug or adversarial prompt could drain an account or lock up client money before anyone notices. This system creates an enforced separation: the AI proposes, but humans and pre-set rules decide whether the proposal actually runs. Banks and fintech firms adopting this approach get an auditable record of *why* each trade was approved or blocked, reducing rogue-agent risk and making it possible to prove later who was responsible for any losses.
 
 ---
 Title: Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.02876",
+    "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+    "authors": "Alessio Spurio Mancini",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-02T17:56:10Z",
+    "publishedFormatted": "Sep 2, 2026",
+    "subtitle": "Computing derivatives for physics simulations 5–14 times faster on GPUs",
+    "summary": "Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.",
+    "whyItMatters": "Physics-based machine learning — training models of fluid dynamics, molecular systems, or climate patterns — requires computing gradients thousands or millions of times. A 5–14x speedup cuts training time dramatically, making it practical to fit larger models or run more experiments on the same hardware. This directly reduces computational cost and time-to-result for fields from drug discovery to climate science.",
+    "fetchedAt": "2026-09-03T11:56:26.663Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 38,
+      "wordCount": 219
+    },
+    "slug": "gradsolve-fast-exact-gradients"
+  },
+  {
+    "id": "2609.02866",
+    "title": "When Does Authorization End? Effect Closure at Provider Boundaries",
+    "authors": "Igor Santos-Grueiro",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-02T17:50:39Z",
+    "publishedFormatted": "Sep 2, 2026",
+    "subtitle": "When does a permission actually stop working, even after you revoke it?",
+    "summary": "When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.",
+    "whyItMatters": "Permission systems are the backbone of security in cloud platforms and distributed software. If revoking access doesn't actually stop all paths to action—like a merge happening with the wrong code, or a message publishing after removal—attackers can exploit the gap between when you think something is locked down and when it actually is. The fixes tested on Kafka show that proper closure checking can block these risks without slowing down legitimate operations.",
+    "fetchedAt": "2026-09-03T11:56:30.135Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 273
+    },
+    "slug": "when-does-authorization-end"
+  },
+  {
+    "id": "2608.30519",
+    "title": "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance",
+    "authors": "Hui Gong, Michail Samawi, Francesca Medda",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-08-31T09:53:18Z",
+    "publishedFormatted": "Aug 31, 2026",
+    "subtitle": "Keeping AI financial agents from acting without explicit human approval.",
+    "summary": "When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.",
+    "whyItMatters": "AI-driven trading and financial services are growing, but if an AI agent can both decide and execute a trade, a single bug or adversarial prompt could drain an account or lock up client money before anyone notices. This system creates an enforced separation: the AI proposes, but humans and pre-set rules decide whether the proposal actually runs. Banks and fintech firms adopting this approach get an auditable record of *why* each trade was approved or blocked, reducing rogue-agent risk and making it possible to prove later who was responsible for any losses.",
+    "fetchedAt": "2026-09-03T11:56:34.678Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 238
+    },
+    "slug": "authority-inference-separation-in"
+  },
+  {
     "id": "2609.01573",
     "title": "Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs",
     "authors": "Jingtan Wang, Arun Verma, Xiaoqiang Lin et al.",

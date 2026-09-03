@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 733 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 736 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 250 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 251 papers in archive.
+  - "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs"
   - "Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs"
-  - "The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 60 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 61 papers in archive.
+  - "When Does Authorization End? Effect Closure at Provider Boundaries"
   - "Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning"
-  - "SPA: Securing Persistent LLM Agents Across Queries with Plan-First Information-Flow Control"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 61 papers in archive.
   - "Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions"
   - "Krylov Break Times from an Inhomogeneous Lieb--Robinson Light Cone"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 62 papers in archive.
   - "Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts"
   - "Neuromorphic architectures as numerical solvers for computational neuroscience"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 64 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 65 papers in archive.
+  - "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance"
   - "Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices"
-  - "Reflexivity from Hierarchical Causality"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 63 papers in archive.
   - "On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study"
   - "Learning a Size-Weight Frontier for Synthetic-Augmented Inference"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Sophistication in GenAI Use: Field Evidence from a Large Firm"
 
 ## 10 most recent papers
+
+### GRADSOLVE: fast exact gradients for ODE ensembles on GPUs
+- URL: https://paperplaine.com/papers/gradsolve-fast-exact-gradients
+- Category: Computer Science · AI
+- Authors: Alessio Spurio Mancini
+- arXiv: 2609.02876
+- Plain-English subtitle: Computing derivatives for physics simulations 5–14 times faster on GPUs
+- Summary: Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.
+- Why it matters: Physics-based machine learning — training models of fluid dynamics, molecular systems, or climate patterns — requires computing gradients thousands or millions of times. A 5–14x speedup cuts training time dramatically, making it practical to fit larger models or run more experiments on the same hardware. This directly reduces computational cost and time-to-result for fields from drug discovery to climate science.
+
+### When Does Authorization End? Effect Closure at Provider Boundaries
+- URL: https://paperplaine.com/papers/when-does-authorization-end
+- Category: Computer Science
+- Authors: Igor Santos-Grueiro
+- arXiv: 2609.02866
+- Plain-English subtitle: When does a permission actually stop working, even after you revoke it?
+- Summary: When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.
+- Why it matters: Permission systems are the backbone of security in cloud platforms and distributed software. If revoking access doesn't actually stop all paths to action—like a merge happening with the wrong code, or a message publishing after removal—attackers can exploit the gap between when you think something is locked down and when it actually is. The fixes tested on Kafka show that proper closure checking can block these risks without slowing down legitimate operations.
+
+### Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance
+- URL: https://paperplaine.com/papers/authority-inference-separation-in
+- Category: Quantitative Finance
+- Authors: Hui Gong, Michail Samawi, Francesca Medda
+- arXiv: 2608.30519
+- Plain-English subtitle: Keeping AI financial agents from acting without explicit human approval.
+- Summary: When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.
+- Why it matters: AI-driven trading and financial services are growing, but if an AI agent can both decide and execute a trade, a single bug or adversarial prompt could drain an account or lock up client money before anyone notices. This system creates an enforced separation: the AI proposes, but humans and pre-set rules decide whether the proposal actually runs. Banks and fintech firms adopting this approach get an auditable record of *why* each trade was approved or blocked, reducing rogue-agent risk and making it possible to prove later who was responsible for any losses.
 
 ### Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs
 - URL: https://paperplaine.com/papers/scaling-near-optimal-sft
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Finding hidden safety failures in AI models through smarter questioning
 - Summary: Researchers developed BLOOM-WILT, a system that finds rare problematic behaviours in language models far more efficiently than existing auditing methods. By strategically adjusting how the model generates text and adapting its questioning approach across multiple conversation turns, the system increased detection of harmful outputs from 51% to 100% in some cases—without requiring expensive model retraining.
 - Why it matters: Language models deployed to millions of users encounter rare failure modes that standard testing never catches. BLOOM-WILT makes it cheap and practical to continuously hunt for these hidden safety problems after deployment, meaning developers can catch and fix harms that would otherwise slip through to real users. The system's rankings also revealed that some models previously thought safer than others actually weren't—a correction that affects which systems get deployed.
-
-### Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions
-- URL: https://paperplaine.com/papers/quantum-simulation-of-markovian
-- Category: Physics
-- Authors: Doojin Kim, Balbeer Singh
-- arXiv: 2608.31173
-- Plain-English subtitle: Using quantum computers to model how particles remember their past in collisions
-- Summary: Physicists have developed a method to run quantum computers that simulate how particles behave in extreme collisions, including cases where particles remember their history—something previous simulations couldn't capture. The approach works by adding a special helper system that tracks this memory and then removing it to recover the full behavior, and it cleanly transitions to simpler models when memory effects become negligible.
-- Why it matters: Heavy-ion collisions at facilities like the Large Hadron Collider create extreme conditions that reveal fundamental physics, but are hard to simulate because particles don't forget their past interactions instantly. This framework opens the door to using next-generation quantum computers to model these collisions more accurately, potentially unlocking new insights into how matter behaves under the most violent conditions in nature.
-
-### Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning
-- URL: https://paperplaine.com/papers/beyond-the-payload-how
-- Category: Computer Science
-- Authors: Fukang Zhu, Binbin Zhao, Ruixiao Lin et al.
-- arXiv: 2608.30686
-- Plain-English subtitle: How the way you ask an AI coder to work shapes whether it gets hacked
-- Summary: The way developers ask AI coding agents to do work—what task, how detailed the instructions, what rules to follow—dramatically changes whether poisoned code repositories can attack those agents. A new benchmark of 1,920 test cases found that certain task types create silent vulnerabilities where malicious code runs undetected, while unclear or rambling prompts can accidentally protect against attacks by making the poison harder to activate.
-- Why it matters: As companies increasingly hand off coding work to AI agents pulling from repositories they don't fully control, understanding how simple invocation choices affect safety is critical. A developer asking for test execution instead of general setup could expose their system to attack 4.5 times more, and they'd likely never notice. This work gives teams concrete guidance on safer ways to phrase their requests and which tasks pose the highest risk.
-
-### A Model with No Head and Many Thoughts
-- URL: https://paperplaine.com/papers/a-model-with-no
-- Category: Computer Science · AI
-- Authors: Nikita Koriagin, Yaroslav Aksenov, George Bredis et al.
-- arXiv: 2608.31069
-- Plain-English subtitle: Letting AI think in continuous space instead of forcing words at every step
-- Summary: Researchers found that large language models can reason more effectively when they skip the expensive step of converting thoughts into words during intermediate reasoning. By working directly in continuous mathematical space during chain-of-thought steps—and only converting to words at the end—the method improved reasoning accuracy while cutting computational cost per step.
-- Why it matters: Language models spend enormous compute power converting every intermediate thought into discrete tokens, even though these internal reasoning steps are never seen by users. This work shows those internal steps don't need to be tokenized at all, potentially making AI systems faster and cheaper to run while improving their ability to solve hard problems.
 
 ## About
 
