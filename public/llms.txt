@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 742 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 745 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 253 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 254 papers in archive.
+  - "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize"
   - "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions"
-  - "Dutch Books for Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 61 papers in archive.
   - "When Does Authorization End? Effect Closure at Provider Boundaries"
   - "Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 62 papers in archive.
   - "QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays"
   - "Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 61 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 62 papers in archive.
+  - "Transversality Conditions for Boundary Constraints Defined by Differential Equations"
   - "Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty"
-  - "Properties of the \mathcal V-Monoid of Weighted Leavitt Path Algebras"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 63 papers in archive.
   - "Interpretable Symptom Vectors for Depression in a Large Language Model"
   - "Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 65 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 66 papers in archive.
+  - "Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets"
   - "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance"
-  - "Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 64 papers in archive.
   - "Spectral characteristics of autoencoder parameters as a vector representation of data"
   - "On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity"
 
 ## 10 most recent papers
+
+### ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize
+- URL: https://paperplaine.com/papers/espo-error-structured-prompt
+- Category: Computer Science · AI
+- Authors: Lihao Liu, Peng Tang, Kunwar Yashraj Singh et al.
+- arXiv: 2609.04197
+- Plain-English subtitle: Making AI prompts shorter, smarter, and more reliable
+- Summary: A new method called ESPO improves how AI systems are optimized through text instructions, achieving 3.76 percentage points higher accuracy than previous approaches while cutting prompt length by nearly half. The key innovation is breaking optimization into three distinct phases—identifying error patterns, generating diverse candidate solutions, and selecting the most stable ones—which prevents the bloat that plagued earlier methods where longer prompts didn't actually work better.
+- Why it matters: Shorter prompts mean faster and cheaper AI inference—critical when running language models at scale. The method works reliably across different AI models and tasks, from math problems to question-answering, making it immediately practical for companies deploying these systems. Better accuracy with less computational overhead directly reduces both development time and operational costs.
+
+### Transversality Conditions for Boundary Constraints Defined by Differential Equations
+- URL: https://paperplaine.com/papers/transversality-conditions-for-boundary
+- Category: Mathematics
+- Authors: Isaac M Ross
+- arXiv: 2609.04084
+- Plain-English subtitle: Finding the right conditions to optimize journeys through multi-body systems
+- Summary: This paper solves a long-standing puzzle in trajectory optimization: how to find the mathematically optimal path when a spacecraft must satisfy conditions defined by equations rather than fixed points. The solution introduces new rules for when a trajectory satisfies these equation-based constraints, revealing that optimal paths sometimes behave in counterintuitive ways that don't match classical optimization theory.
+- Why it matters: Space missions to distant planets and asteroids often require trajectories that satisfy complex dynamic constraints—like staying in a certain orbital relationship to multiple bodies. Without these new transversality conditions, engineers can't reliably verify whether a proposed path is truly optimal or just locally good. This work gives mission planners the mathematical foundation to confidently design fuel-efficient routes through the solar system.
+
+### Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets
+- URL: https://paperplaine.com/papers/tempting-the-agent-the
+- Category: Quantitative Finance
+- Authors: Federico Gatta, Manuel Naviglio, Francesco Tarantelli
+- arXiv: 2609.02992
+- Plain-English subtitle: When AI agents can dump their identity, does reputation still keep them honest?
+- Summary: When an AI agent can abandon its reputation and start fresh with a new identity at low cost, reputation stops working as a disciplinary force. Researchers modeled this problem mathematically and found that an agent's willingness to cheat depends on how expensive it is to reset identities, how quickly reputation fades, and how much customers care about past performance—showing that cheap identity switches can make reputation nearly useless at preventing fraud.
+- Why it matters: As autonomous AI agents increasingly handle money and services on blockchain systems, this matters directly: if an agent can trash its reputation and get a new one cheaply, it has every incentive to take shortcuts and cut corners until it's caught, then simply disappear and restart. The research identifies which market designs actually prevent this—and which don't—so platforms can build systems where agents genuinely have skin in the game.
 
 ### Compile by Training: Turning Natural-Language Specifications into Local Neural Functions
 - URL: https://paperplaine.com/papers/compile-by-training-turning
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Computing derivatives for physics simulations 5–14 times faster on GPUs
 - Summary: Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.
 - Why it matters: Physics-based machine learning — training models of fluid dynamics, molecular systems, or climate patterns — requires computing gradients thousands or millions of times. A 5–14x speedup cuts training time dramatically, making it practical to fit larger models or run more experiments on the same hardware. This directly reduces computational cost and time-to-result for fields from drug discovery to climate science.
-
-### When Does Authorization End? Effect Closure at Provider Boundaries
-- URL: https://paperplaine.com/papers/when-does-authorization-end
-- Category: Computer Science
-- Authors: Igor Santos-Grueiro
-- arXiv: 2609.02866
-- Plain-English subtitle: When does a permission actually stop working, even after you revoke it?
-- Summary: When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.
-- Why it matters: Permission systems are the backbone of security in cloud platforms and distributed software. If revoking access doesn't actually stop all paths to action—like a merge happening with the wrong code, or a message publishing after removal—attackers can exploit the gap between when you think something is locked down and when it actually is. The fixes tested on Kafka show that proper closure checking can block these risks without slowing down legitimate operations.
-
-### Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance
-- URL: https://paperplaine.com/papers/authority-inference-separation-in
-- Category: Quantitative Finance
-- Authors: Hui Gong, Michail Samawi, Francesca Medda
-- arXiv: 2608.30519
-- Plain-English subtitle: Keeping AI financial agents from acting without explicit human approval.
-- Summary: When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.
-- Why it matters: AI-driven trading and financial services are growing, but if an AI agent can both decide and execute a trade, a single bug or adversarial prompt could drain an account or lock up client money before anyone notices. This system creates an enforced separation: the AI proposes, but humans and pre-set rules decide whether the proposal actually runs. Banks and fintech firms adopting this approach get an auditable record of *why* each trade was approved or blocked, reducing rogue-agent risk and making it possible to prove later who was responsible for any losses.
-
-### Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs
-- URL: https://paperplaine.com/papers/scaling-near-optimal-sft
-- Category: Computer Science · AI
-- Authors: Jingtan Wang, Arun Verma, Xiaoqiang Lin et al.
-- arXiv: 2609.01573
-- Plain-English subtitle: Finding the sweet spot for training data without expensive trial and error
-- Summary: When training large language models, teams must split their annotation budget between two techniques: supervised fine-tuning (SFT) and reinforcement learning (RL). Rather than hunting for one perfect ratio, this work identifies a "near-optimal region"—a wide range of allocations that all perform nearly as well. The key finding: this region reliably transfers from small experimental models to large production models, so teams can run cheap small-scale experiments to figure out a good allocation without expensive large-model testing.
-- Why it matters: Training large language models is expensive, and knowing how to divide limited annotation resources between SFT and RL can save significant cost without sacrificing performance. This approach lets teams run quick experiments on small models to confidently set their budget split for large models, avoiding wasteful full-scale trial-and-error. The method also adapts when the cost difference between SFT and RL data changes, making it practical for real-world budget constraints.
 
 ## About
 

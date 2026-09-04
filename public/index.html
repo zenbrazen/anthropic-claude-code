@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com#page","name":"Paper Plaine — arXiv Research, Plain and Simple","url":"https://paperplaine.com","description":"Fresh research from arXiv explained in plain English, updated twice daily. Covering AI, physics, math, biology, economics, and more.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Compile by Training: Turning Natural-Language Specifications into Local Neural Functions","author":"Yuntian Deng, Pengyu Nie, Stuart Shieber","url":"https://paperplaine.com/papers/compile-by-training-turning","datePublished":"2026-09-03T17:59:49Z","description":"Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Off-policy causal estimation in networks","author":"Sahil Loomba, Dean Eckles","url":"https://paperplaine.com/papers/off-policy-causal-estimation","datePublished":"2026-09-02T15:56:53Z","description":"When one person's treatment affects their neighbors' outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Spectral characteristics of autoencoder parameters as a vector representation of data","author":"Maria Nikitina, Anton Bishuk, Oleg Bakhteev","url":"https://paperplaine.com/papers/spectral-characteristics-of-autoencoder","datePublished":"2026-09-03T07:59:19Z","description":"A trained autoencoder's internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Dutch Books for Language Models","author":"Isaiah Andrews, Suproteem Sarkar","url":"https://paperplaine.com/papers/dutch-books-for-language","datePublished":"2026-09-02T16:31:47Z","description":"Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Interpretable Symptom Vectors for Depression in a Large Language Model","author":"Fangyi Zhu, Ajay Subramanian, Allison Constant et al.","url":"https://paperplaine.com/papers/interpretable-symptom-vectors-for","datePublished":"2026-09-01T20:07:03Z","description":"Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays","author":"Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.","url":"https://paperplaine.com/papers/qarray-a-physics-informed","datePublished":"2026-09-02T15:43:37Z","description":"Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"GRADSOLVE: fast exact gradients for ODE ensembles on GPUs","author":"Alessio Spurio Mancini","url":"https://paperplaine.com/papers/gradsolve-fast-exact-gradients","datePublished":"2026-09-02T17:56:10Z","description":"Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"When Does Authorization End? Effect Closure at Provider Boundaries","author":"Igor Santos-Grueiro","url":"https://paperplaine.com/papers/when-does-authorization-end","datePublished":"2026-09-02T17:50:39Z","description":"When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance","author":"Hui Gong, Michail Samawi, Francesca Medda","url":"https://paperplaine.com/papers/authority-inference-separation-in","datePublished":"2026-08-31T09:53:18Z","description":"When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs","author":"Jingtan Wang, Arun Verma, Xiaoqiang Lin et al.","url":"https://paperplaine.com/papers/scaling-near-optimal-sft","datePublished":"2026-09-01T17:39:55Z","description":"When training large language models, teams must split their annotation budget between two techniques: supervised fine-tuning (SFT) and reinforcement learning (RL). Rather than hunting for one perfect ratio, this work identifies a \"near-optimal region\"—a wide range of allocations that all perform nearly as well. The key finding: this region reliably transfers from small experimental models to large production models, so teams can run cheap small-scale experiments to figure out a good allocation without expensive large-model testing.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty","author":"J. Wehbeh, E. C. Kerrigan, E. Scaccia","url":"https://paperplaine.com/papers/generalized-semi-infinite-programming","datePublished":"2026-09-01T17:05:14Z","description":"A new mathematical method solves a class of control problems where the constraints or risks depend on what the system is currently doing — a situation that has stumped existing approaches. The method converts these tricky problems into a form that standard optimization software can handle, and the authors proved it reliably finds good solutions even for nonlinear systems like tumbling satellites.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems","author":"Danial Noori Zadeh, Mohamed B. Elamien","url":"https://paperplaine.com/papers/analog-db-an-agent","datePublished":"2026-09-01T14:22:37Z","description":"Researchers created an open-source database that stores analog circuit designs in a format that can be shared freely, retargeted to different manufacturing processes, and automatically discovered by AI agents. When tested on voltage regulators, AI using the database caught design flaws—including missing circuit components—that a conventional sizing-only approach missed, and fixed failing circuits in one to three iterations.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}],"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://paperplaine.com"}]}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com#page","name":"Paper Plaine — arXiv Research, Plain and Simple","url":"https://paperplaine.com","description":"Fresh research from arXiv explained in plain English, updated twice daily. Covering AI, physics, math, biology, economics, and more.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize","author":"Lihao Liu, Peng Tang, Kunwar Yashraj Singh et al.","url":"https://paperplaine.com/papers/espo-error-structured-prompt","datePublished":"2026-09-03T17:59:37Z","description":"A new method called ESPO improves how AI systems are optimized through text instructions, achieving 3.76 percentage points higher accuracy than previous approaches while cutting prompt length by nearly half. The key innovation is breaking optimization into three distinct phases—identifying error patterns, generating diverse candidate solutions, and selecting the most stable ones—which prevents the bloat that plagued earlier methods where longer prompts didn't actually work better.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Transversality Conditions for Boundary Constraints Defined by Differential Equations","author":"Isaac M Ross","url":"https://paperplaine.com/papers/transversality-conditions-for-boundary","datePublished":"2026-09-03T16:51:10Z","description":"This paper solves a long-standing puzzle in trajectory optimization: how to find the mathematically optimal path when a spacecraft must satisfy conditions defined by equations rather than fixed points. The solution introduces new rules for when a trajectory satisfies these equation-based constraints, revealing that optimal paths sometimes behave in counterintuitive ways that don't match classical optimization theory.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets","author":"Federico Gatta, Manuel Naviglio, Francesco Tarantelli","url":"https://paperplaine.com/papers/tempting-the-agent-the","datePublished":"2026-09-02T15:47:12Z","description":"When an AI agent can abandon its reputation and start fresh with a new identity at low cost, reputation stops working as a disciplinary force. Researchers modeled this problem mathematically and found that an agent's willingness to cheat depends on how expensive it is to reset identities, how quickly reputation fades, and how much customers care about past performance—showing that cheap identity switches can make reputation nearly useless at preventing fraud.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Compile by Training: Turning Natural-Language Specifications into Local Neural Functions","author":"Yuntian Deng, Pengyu Nie, Stuart Shieber","url":"https://paperplaine.com/papers/compile-by-training-turning","datePublished":"2026-09-03T17:59:49Z","description":"Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Off-policy causal estimation in networks","author":"Sahil Loomba, Dean Eckles","url":"https://paperplaine.com/papers/off-policy-causal-estimation","datePublished":"2026-09-02T15:56:53Z","description":"When one person's treatment affects their neighbors' outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Spectral characteristics of autoencoder parameters as a vector representation of data","author":"Maria Nikitina, Anton Bishuk, Oleg Bakhteev","url":"https://paperplaine.com/papers/spectral-characteristics-of-autoencoder","datePublished":"2026-09-03T07:59:19Z","description":"A trained autoencoder's internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Dutch Books for Language Models","author":"Isaiah Andrews, Suproteem Sarkar","url":"https://paperplaine.com/papers/dutch-books-for-language","datePublished":"2026-09-02T16:31:47Z","description":"Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Interpretable Symptom Vectors for Depression in a Large Language Model","author":"Fangyi Zhu, Ajay Subramanian, Allison Constant et al.","url":"https://paperplaine.com/papers/interpretable-symptom-vectors-for","datePublished":"2026-09-01T20:07:03Z","description":"Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays","author":"Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.","url":"https://paperplaine.com/papers/qarray-a-physics-informed","datePublished":"2026-09-02T15:43:37Z","description":"Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"GRADSOLVE: fast exact gradients for ODE ensembles on GPUs","author":"Alessio Spurio Mancini","url":"https://paperplaine.com/papers/gradsolve-fast-exact-gradients","datePublished":"2026-09-02T17:56:10Z","description":"Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"When Does Authorization End? Effect Closure at Provider Boundaries","author":"Igor Santos-Grueiro","url":"https://paperplaine.com/papers/when-does-authorization-end","datePublished":"2026-09-02T17:50:39Z","description":"When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance","author":"Hui Gong, Michail Samawi, Francesca Medda","url":"https://paperplaine.com/papers/authority-inference-separation-in","datePublished":"2026-08-31T09:53:18Z","description":"When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}],"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://paperplaine.com"}]}}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,15 +362,15 @@
 </svg>
 <aside class="site-sidebar" aria-label="Site statistics">
   <div class="sidebar-stat">
-    <span class="sidebar-num">742</span>
+    <span class="sidebar-num">745</span>
     <span class="sidebar-label">Total Posts</span>
   </div>
   <div class="sidebar-stat">
-    <span class="sidebar-num">3</span>
+    <span class="sidebar-num">6</span>
     <span class="sidebar-label">New Posts Today</span>
   </div>
   <div class="sidebar-stat">
-    <span class="sidebar-num">21</span>
+    <span class="sidebar-num">24</span>
     <span class="sidebar-label">New Posts This Month</span>
   </div></aside>
 <div class="page">
@@ -405,6 +405,90 @@
   </nav>
   <main id="entries">
     
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Computer Science · AI</span>
+      <span>Sep 4, 2026</span>
+    </div>
+    <h2 class="entry-title"><a href="/papers/espo-error-structured-prompt" class="entry-title-link">ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize</a></h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Making AI prompts shorter, smarter, and more reliable</p>
+    <p class="byline">
+      Lihao Liu, Peng Tang, Kunwar Yashraj Singh et al.
+      <br><span class="arxiv-id">arXiv:2609.04197</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">A new method called ESPO improves how AI systems are optimized through text instructions, achieving 3.76 percentage points higher accuracy than previous approaches while cutting prompt length by nearly half. The key innovation is breaking optimization into three distinct phases—identifying error patterns, generating diverse candidate solutions, and selecting the most stable ones—which prevents the bloat that plagued earlier methods where longer prompts didn&#39;t actually work better.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Shorter prompts mean faster and cheaper AI inference—critical when running language models at scale. The method works reliably across different AI models and tasks, from math problems to question-answering, making it immediately practical for companies deploying these systems. Better accuracy with less computational overhead directly reduces both development time and operational costs.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2609.04197" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Sep 3, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Mathematics</span>
+      <span>Sep 4, 2026</span>
+    </div>
+    <h2 class="entry-title"><a href="/papers/transversality-conditions-for-boundary" class="entry-title-link">Transversality Conditions for Boundary Constraints Defined by Differential Equations</a></h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Finding the right conditions to optimize journeys through multi-body systems</p>
+    <p class="byline">
+      Isaac M Ross
+      <br><span class="arxiv-id">arXiv:2609.04084</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">This paper solves a long-standing puzzle in trajectory optimization: how to find the mathematically optimal path when a spacecraft must satisfy conditions defined by equations rather than fixed points. The solution introduces new rules for when a trajectory satisfies these equation-based constraints, revealing that optimal paths sometimes behave in counterintuitive ways that don&#39;t match classical optimization theory.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Space missions to distant planets and asteroids often require trajectories that satisfy complex dynamic constraints—like staying in a certain orbital relationship to multiple bodies. Without these new transversality conditions, engineers can&#39;t reliably verify whether a proposed path is truly optimal or just locally good. This work gives mission planners the mathematical foundation to confidently design fuel-efficient routes through the solar system.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2609.04084" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Sep 3, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Quantitative Finance</span>
+      <span>Sep 4, 2026</span>
+    </div>
+    <h2 class="entry-title"><a href="/papers/tempting-the-agent-the" class="entry-title-link">Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets</a></h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>When AI agents can dump their identity, does reputation still keep them honest?</p>
+    <p class="byline">
+      Federico Gatta, Manuel Naviglio, Francesco Tarantelli
+      <br><span class="arxiv-id">arXiv:2609.02992</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">When an AI agent can abandon its reputation and start fresh with a new identity at low cost, reputation stops working as a disciplinary force. Researchers modeled this problem mathematically and found that an agent&#39;s willingness to cheat depends on how expensive it is to reset identities, how quickly reputation fades, and how much customers care about past performance—showing that cheap identity switches can make reputation nearly useless at preventing fraud.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">As autonomous AI agents increasingly handle money and services on blockchain systems, this matters directly: if an agent can trash its reputation and get a new one cheaply, it has every incentive to take shortcuts and cut corners until it&#39;s caught, then simply disappear and restart. The research identifies which market designs actually prevent this—and which don&#39;t—so platforms can build systems where agents genuinely have skin in the game.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2609.02992" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Sep 2, 2026</span>
+    </div>
+  </article>
+
   <article class="entry" style="border-bottom: 3px solid var(--rule);">
     <div class="entry-meta">
       <span class="category">Computer Science · AI</span>
@@ -629,7 +713,7 @@
     </div>
   </article>
 
-  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+  <article class="entry" style="border-bottom: 6px double var(--rule);">
     <div class="entry-meta">
       <span class="category">Quantitative Finance</span>
       <span>Sep 3, 2026</span>
@@ -656,98 +740,14 @@
       <span class="stamp">Posted on arXiv · Aug 31, 2026</span>
     </div>
   </article>
-
-  <article class="entry" style="border-bottom: 3px solid var(--rule);">
-    <div class="entry-meta">
-      <span class="category">Computer Science · AI</span>
-      <span>Sep 2, 2026</span>
-    </div>
-    <h2 class="entry-title"><a href="/papers/scaling-near-optimal-sft" class="entry-title-link">Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs</a></h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Finding the sweet spot for training data without expensive trial and error</p>
-    <p class="byline">
-      Jingtan Wang, Arun Verma, Xiaoqiang Lin et al.
-      <br><span class="arxiv-id">arXiv:2609.01573</span>
-    </p>
-    <div class="entry-body">
-      <div class="col-summary">
-        <div class="section-label">Summary</div>
-        <p class="summary-text">When training large language models, teams must split their annotation budget between two techniques: supervised fine-tuning (SFT) and reinforcement learning (RL). Rather than hunting for one perfect ratio, this work identifies a &quot;near-optimal region&quot;—a wide range of allocations that all perform nearly as well. The key finding: this region reliably transfers from small experimental models to large production models, so teams can run cheap small-scale experiments to figure out a good allocation without expensive large-model testing.</p>
-      </div>
-      <div class="col-divider"></div>
-      <div class="col-matters">
-        <div class="section-label">Why it matters</div>
-        <p class="matters-text">Training large language models is expensive, and knowing how to divide limited annotation resources between SFT and RL can save significant cost without sacrificing performance. This approach lets teams run quick experiments on small models to confidently set their budget split for large models, avoiding wasteful full-scale trial-and-error. The method also adapts when the cost difference between SFT and RL data changes, making it practical for real-world budget constraints.</p>
-      </div>
-    </div>
-    <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2609.01573" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · Sep 1, 2026</span>
-    </div>
-  </article>
-
-  <article class="entry" style="border-bottom: 3px solid var(--rule);">
-    <div class="entry-meta">
-      <span class="category">Mathematics</span>
-      <span>Sep 2, 2026</span>
-    </div>
-    <h2 class="entry-title"><a href="/papers/generalized-semi-infinite-programming" class="entry-title-link">Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty</a></h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Solving control problems where danger zones shift based on your actions</p>
-    <p class="byline">
-      J. Wehbeh, E. C. Kerrigan, E. Scaccia
-      <br><span class="arxiv-id">arXiv:2609.01538</span>
-    </p>
-    <div class="entry-body">
-      <div class="col-summary">
-        <div class="section-label">Summary</div>
-        <p class="summary-text">A new mathematical method solves a class of control problems where the constraints or risks depend on what the system is currently doing — a situation that has stumped existing approaches. The method converts these tricky problems into a form that standard optimization software can handle, and the authors proved it reliably finds good solutions even for nonlinear systems like tumbling satellites.</p>
-      </div>
-      <div class="col-divider"></div>
-      <div class="col-matters">
-        <div class="section-label">Why it matters</div>
-        <p class="matters-text">Many real control systems face uncertainty that changes with their own state or decisions — a robot&#39;s collision risk depends on where it is, a satellite&#39;s tumbling depends on its spin rate. Previous methods either couldn&#39;t handle this, required custom solvers that didn&#39;t scale up, or only worked for simple cases. This approach uses standard software and applies broadly, making it practical to design safer, more robust controllers for aerospace, robotics, and other safety-critical applications.</p>
-      </div>
-    </div>
-    <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2609.01538" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · Sep 1, 2026</span>
-    </div>
-  </article>
-
-  <article class="entry" style="border-bottom: 6px double var(--rule);">
-    <div class="entry-meta">
-      <span class="category">Engineering</span>
-      <span>Sep 2, 2026</span>
-    </div>
-    <h2 class="entry-title"><a href="/papers/analog-db-an-agent" class="entry-title-link">Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems</a></h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>A shareable library that lets AI design analog circuits from reusable pieces</p>
-    <p class="byline">
-      Danial Noori Zadeh, Mohamed B. Elamien
-      <br><span class="arxiv-id">arXiv:2609.01286</span>
-    </p>
-    <div class="entry-body">
-      <div class="col-summary">
-        <div class="section-label">Summary</div>
-        <p class="summary-text">Researchers created an open-source database that stores analog circuit designs in a format that can be shared freely, retargeted to different manufacturing processes, and automatically discovered by AI agents. When tested on voltage regulators, AI using the database caught design flaws—including missing circuit components—that a conventional sizing-only approach missed, and fixed failing circuits in one to three iterations.</p>
-      </div>
-      <div class="col-divider"></div>
-      <div class="col-matters">
-        <div class="section-label">Why it matters</div>
-        <p class="matters-text">Analog circuit design currently requires extensive trial-and-error and knowledge locked behind non-disclosure agreements, slowing innovation and limiting who can participate. This database removes those barriers by making proven designs reusable and machine-readable, enabling AI tools to find and adapt existing solutions automatically. For companies and researchers, that means faster design cycles and fewer errors; for the field, it means knowledge can accumulate and compound rather than staying trapped in individual labs.</p>
-      </div>
-    </div>
-    <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2609.01286" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · Sep 1, 2026</span>
-    </div>
-  </article>
   <nav class="pagination" aria-label="Page navigation">
     <span class="page-nav page-nav--off">← Newer</span>
-    <div class="page-numbers"><span class="page-num page-num--active">1</span><a href="/page/2" class="page-num">2</a><a href="/page/3" class="page-num">3</a><span class="page-ellipsis">…</span><a href="/page/62" class="page-num">62</a></div>
+    <div class="page-numbers"><span class="page-num page-num--active">1</span><a href="/page/2" class="page-num">2</a><a href="/page/3" class="page-num">3</a><span class="page-ellipsis">…</span><a href="/page/63" class="page-num">63</a></div>
     <a href="/page/2" class="page-nav page-nav-next">Older →</a>
   </nav>
   </main>
   <footer class="site-footer">
-    <div class="mobile-stats" aria-label="Site statistics"><div class="mobile-stats-stat"><span class="mobile-stats-num">742</span><span class="mobile-stats-label">Total Posts</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">3</span><span class="mobile-stats-label">New Today</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">21</span><span class="mobile-stats-label">This Month</span></div></div>
+    <div class="mobile-stats" aria-label="Site statistics"><div class="mobile-stats-stat"><span class="mobile-stats-num">745</span><span class="mobile-stats-label">Total Posts</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">6</span><span class="mobile-stats-label">New Today</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">24</span><span class="mobile-stats-label">This Month</span></div></div>
     <nav class="footer-nav" aria-label="Site links">
       <a href="/about">About/Contact</a>
       <a href="/privacy">Privacy</a>
