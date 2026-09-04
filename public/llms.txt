@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 739 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 742 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 252 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 253 papers in archive.
+  - "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions"
   - "Dutch Books for Language Models"
-  - "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 61 papers in archive.
   - "When Does Authorization End? Effect Closure at Provider Boundaries"
   - "Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 65 papers in archive.
   - "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance"
   - "Optimal Block Time for AMM Liquidity Providers under Jump-Diffusion Prices"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 63 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 64 papers in archive.
+  - "Spectral characteristics of autoencoder parameters as a vector representation of data"
   - "On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study"
-  - "Learning a Size-Weight Frontier for Synthetic-Augmented Inference"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 60 papers in archive.
   - "Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems"
   - "Optimal Adversarial Testing: Extracting Honest Test Results from Dishonest Test Takers"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 52 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 53 papers in archive.
+  - "Off-policy causal estimation in networks"
   - "An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity"
-  - "Sophistication in GenAI Use: Field Evidence from a Large Firm"
 
 ## 10 most recent papers
+
+### Compile by Training: Turning Natural-Language Specifications into Local Neural Functions
+- URL: https://paperplaine.com/papers/compile-by-training-turning
+- Category: Computer Science · AI
+- Authors: Yuntian Deng, Pengyu Nie, Stuart Shieber
+- arXiv: 2609.04199
+- Plain-English subtitle: Teaching small AI models to handle specific text tasks without calling expensive services
+- Summary: Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.
+- Why it matters: Companies waste money and time sending every user request to remote AI services, creating delays and dependency on external providers. This approach lets organizations bake specific tasks directly into their products as lightweight functions that run instantly on-device, cutting costs and latency while maintaining accuracy on real-world problems.
+
+### Off-policy causal estimation in networks
+- URL: https://paperplaine.com/papers/off-policy-causal-estimation
+- Category: Economics
+- Authors: Sahil Loomba, Dean Eckles
+- arXiv: 2609.02756
+- Plain-English subtitle: Measuring treatment effects when people influence each other's outcomes
+- Summary: When one person's treatment affects their neighbors' outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.
+- Why it matters: Social media platforms, public health campaigns, and online marketplaces all operate in networked settings where one person's treatment ripples to others. Current methods for estimating causal effects assume people are isolated — a false assumption that leads to wrong answers. This work enables experimenters to reliably estimate what new policies would accomplish, and to quantify their uncertainty when the network structure is only partially understood.
+
+### Spectral characteristics of autoencoder parameters as a vector representation of data
+- URL: https://paperplaine.com/papers/spectral-characteristics-of-autoencoder
+- Category: Statistics
+- Authors: Maria Nikitina, Anton Bishuk, Oleg Bakhteev
+- arXiv: 2609.03495
+- Plain-English subtitle: What a neural network's weights reveal about the data it learned from
+- Summary: A trained autoencoder's internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.
+- Why it matters: This could let researchers quickly identify what data a neural network has seen, which matters for detecting model theft, understanding training data composition, and auditing AI systems for bias or unwanted memorization. It also suggests a simpler way to compare and categorize trained models based on their internals alone.
 
 ### Dutch Books for Language Models
 - URL: https://paperplaine.com/papers/dutch-books-for-language
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Finding the sweet spot for training data without expensive trial and error
 - Summary: When training large language models, teams must split their annotation budget between two techniques: supervised fine-tuning (SFT) and reinforcement learning (RL). Rather than hunting for one perfect ratio, this work identifies a "near-optimal region"—a wide range of allocations that all perform nearly as well. The key finding: this region reliably transfers from small experimental models to large production models, so teams can run cheap small-scale experiments to figure out a good allocation without expensive large-model testing.
 - Why it matters: Training large language models is expensive, and knowing how to divide limited annotation resources between SFT and RL can save significant cost without sacrificing performance. This approach lets teams run quick experiments on small models to confidently set their budget split for large models, avoiding wasteful full-scale trial-and-error. The method also adapts when the cost difference between SFT and RL data changes, making it practical for real-world budget constraints.
-
-### Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty
-- URL: https://paperplaine.com/papers/generalized-semi-infinite-programming
-- Category: Mathematics
-- Authors: J. Wehbeh, E. C. Kerrigan, E. Scaccia
-- arXiv: 2609.01538
-- Plain-English subtitle: Solving control problems where danger zones shift based on your actions
-- Summary: A new mathematical method solves a class of control problems where the constraints or risks depend on what the system is currently doing — a situation that has stumped existing approaches. The method converts these tricky problems into a form that standard optimization software can handle, and the authors proved it reliably finds good solutions even for nonlinear systems like tumbling satellites.
-- Why it matters: Many real control systems face uncertainty that changes with their own state or decisions — a robot's collision risk depends on where it is, a satellite's tumbling depends on its spin rate. Previous methods either couldn't handle this, required custom solvers that didn't scale up, or only worked for simple cases. This approach uses standard software and applies broadly, making it practical to design safer, more robust controllers for aerospace, robotics, and other safety-critical applications.
-
-### Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems
-- URL: https://paperplaine.com/papers/analog-db-an-agent
-- Category: Engineering
-- Authors: Danial Noori Zadeh, Mohamed B. Elamien
-- arXiv: 2609.01286
-- Plain-English subtitle: A shareable library that lets AI design analog circuits from reusable pieces
-- Summary: Researchers created an open-source database that stores analog circuit designs in a format that can be shared freely, retargeted to different manufacturing processes, and automatically discovered by AI agents. When tested on voltage regulators, AI using the database caught design flaws—including missing circuit components—that a conventional sizing-only approach missed, and fixed failing circuits in one to three iterations.
-- Why it matters: Analog circuit design currently requires extensive trial-and-error and knowledge locked behind non-disclosure agreements, slowing innovation and limiting who can participate. This database removes those barriers by making proven designs reusable and machine-readable, enabling AI tools to find and adapt existing solutions automatically. For companies and researchers, that means faster design cycles and fewer errors; for the field, it means knowledge can accumulate and compound rather than staying trapped in individual labs.
-
-### The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally
-- URL: https://paperplaine.com/papers/the-structure-of-quantization
-- Category: Computer Science · AI
-- Authors: Jundong Hu, Shekar Ramachandran
-- arXiv: 2609.01587
-- Plain-English subtitle: How to spend extra precision budget when shrinking AI models
-- Summary: When AI models are compressed to run faster and cheaper, the damage isn't concentrated in a few critical layers—it spreads across roughly half the model's layers. Counterintuitively, applying finer-grained compression uniformly across the entire model recovers accuracy better than surgically fixing the layers that seem most broken, outperforming targeted repairs by 21–52 percentage points.
-- Why it matters: As companies deploy larger language models on phones, servers, and edge devices, quantization compression is essential to cut costs and latency. This finding changes how engineers should allocate limited precision budgets: instead of hunting for problem layers, spreading improvements evenly across the model works better in practice and is simpler to implement. This could reduce the engineering overhead of tuning quantization for each new model.
 
 ## About
 

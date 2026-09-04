@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2026 21:32:27 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 11:58:53 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Compile by Training: Turning Natural-Language Specifications into Local Neural Functions</title>
+      <link>https://paperplaine.com/papers/compile-by-training-turning</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/compile-by-training-turning</guid>
+      <pubDate>Thu, 03 Sep 2026 17:59:49 GMT</pubDate>
+      <author>Yuntian Deng, Pengyu Nie, Stuart Shieber</author>
+      <category>AI</category>
+      <description>Teaching small AI models to handle specific text tasks without calling expensive services</description>
+      <content:encoded><![CDATA[<p><em>Teaching small AI models to handle specific text tasks without calling expensive services</em></p><p>Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.</p><p><strong>Why it matters:</strong> Companies waste money and time sending every user request to remote AI services, creating delays and dependency on external providers. This approach lets organizations bake specific tasks directly into their products as lightweight functions that run instantly on-device, cutting costs and latency while maintaining accuracy on real-world problems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Off-policy causal estimation in networks</title>
+      <link>https://paperplaine.com/papers/off-policy-causal-estimation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/off-policy-causal-estimation</guid>
+      <pubDate>Wed, 02 Sep 2026 15:56:53 GMT</pubDate>
+      <author>Sahil Loomba, Dean Eckles</author>
+      <category>Economics</category>
+      <description>Measuring treatment effects when people influence each other&#39;s outcomes</description>
+      <content:encoded><![CDATA[<p><em>Measuring treatment effects when people influence each other's outcomes</em></p><p>When one person's treatment affects their neighbors' outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.</p><p><strong>Why it matters:</strong> Social media platforms, public health campaigns, and online marketplaces all operate in networked settings where one person's treatment ripples to others. Current methods for estimating causal effects assume people are isolated — a false assumption that leads to wrong answers. This work enables experimenters to reliably estimate what new policies would accomplish, and to quantify their uncertainty when the network structure is only partially understood.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Spectral characteristics of autoencoder parameters as a vector representation of data</title>
+      <link>https://paperplaine.com/papers/spectral-characteristics-of-autoencoder</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/spectral-characteristics-of-autoencoder</guid>
+      <pubDate>Thu, 03 Sep 2026 07:59:19 GMT</pubDate>
+      <author>Maria Nikitina, Anton Bishuk, Oleg Bakhteev</author>
+      <category>Statistics</category>
+      <description>What a neural network&#39;s weights reveal about the data it learned from</description>
+      <content:encoded><![CDATA[<p><em>What a neural network's weights reveal about the data it learned from</em></p><p>A trained autoencoder's internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.</p><p><strong>Why it matters:</strong> This could let researchers quickly identify what data a neural network has seen, which matters for detecting model theft, understanding training data composition, and auditing AI systems for bias or unwanted memorization. It also suggests a simpler way to compare and categorize trained models based on their internals alone.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Dutch Books for Language Models</title>
       <link>https://paperplaine.com/papers/dutch-books-for-language</link>

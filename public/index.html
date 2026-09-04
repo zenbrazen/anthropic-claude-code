@@ -25,7 +25,7 @@
 <link rel="alternate" type="application/rss+xml" title="Paper Plaine" href="https://paperplaine.com/feed.xml">
 
 <!-- JSON-LD structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com#page","name":"Paper Plaine — arXiv Research, Plain and Simple","url":"https://paperplaine.com","description":"Fresh research from arXiv explained in plain English, updated twice daily. Covering AI, physics, math, biology, economics, and more.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Dutch Books for Language Models","author":"Isaiah Andrews, Suproteem Sarkar","url":"https://paperplaine.com/papers/dutch-books-for-language","datePublished":"2026-09-02T16:31:47Z","description":"Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Interpretable Symptom Vectors for Depression in a Large Language Model","author":"Fangyi Zhu, Ajay Subramanian, Allison Constant et al.","url":"https://paperplaine.com/papers/interpretable-symptom-vectors-for","datePublished":"2026-09-01T20:07:03Z","description":"Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays","author":"Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.","url":"https://paperplaine.com/papers/qarray-a-physics-informed","datePublished":"2026-09-02T15:43:37Z","description":"Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"GRADSOLVE: fast exact gradients for ODE ensembles on GPUs","author":"Alessio Spurio Mancini","url":"https://paperplaine.com/papers/gradsolve-fast-exact-gradients","datePublished":"2026-09-02T17:56:10Z","description":"Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"When Does Authorization End? Effect Closure at Provider Boundaries","author":"Igor Santos-Grueiro","url":"https://paperplaine.com/papers/when-does-authorization-end","datePublished":"2026-09-02T17:50:39Z","description":"When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance","author":"Hui Gong, Michail Samawi, Francesca Medda","url":"https://paperplaine.com/papers/authority-inference-separation-in","datePublished":"2026-08-31T09:53:18Z","description":"When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs","author":"Jingtan Wang, Arun Verma, Xiaoqiang Lin et al.","url":"https://paperplaine.com/papers/scaling-near-optimal-sft","datePublished":"2026-09-01T17:39:55Z","description":"When training large language models, teams must split their annotation budget between two techniques: supervised fine-tuning (SFT) and reinforcement learning (RL). Rather than hunting for one perfect ratio, this work identifies a \"near-optimal region\"—a wide range of allocations that all perform nearly as well. The key finding: this region reliably transfers from small experimental models to large production models, so teams can run cheap small-scale experiments to figure out a good allocation without expensive large-model testing.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty","author":"J. Wehbeh, E. C. Kerrigan, E. Scaccia","url":"https://paperplaine.com/papers/generalized-semi-infinite-programming","datePublished":"2026-09-01T17:05:14Z","description":"A new mathematical method solves a class of control problems where the constraints or risks depend on what the system is currently doing — a situation that has stumped existing approaches. The method converts these tricky problems into a form that standard optimization software can handle, and the authors proved it reliably finds good solutions even for nonlinear systems like tumbling satellites.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems","author":"Danial Noori Zadeh, Mohamed B. Elamien","url":"https://paperplaine.com/papers/analog-db-an-agent","datePublished":"2026-09-01T14:22:37Z","description":"Researchers created an open-source database that stores analog circuit designs in a format that can be shared freely, retargeted to different manufacturing processes, and automatically discovered by AI agents. When tested on voltage regulators, AI using the database caught design flaws—including missing circuit components—that a conventional sizing-only approach missed, and fixed failing circuits in one to three iterations.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally","author":"Jundong Hu, Shekar Ramachandran","url":"https://paperplaine.com/papers/the-structure-of-quantization","datePublished":"2026-09-01T17:53:41Z","description":"When AI models are compressed to run faster and cheaper, the damage isn't concentrated in a few critical layers—it spreads across roughly half the model's layers. Counterintuitively, applying finer-grained compression uniformly across the entire model recovers accuracy better than surgically fixing the layers that seem most broken, outperforming targeted repairs by 21–52 percentage points.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study","author":"Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein","url":"https://paperplaine.com/papers/on-the-reliability-of","datePublished":"2026-09-01T15:30:24Z","description":"Researchers created a mathematical framework to predict when artificially generated data actually improves classification accuracy on imbalanced datasets. They found that higher-quality synthetic data doesn't always lead to better predictions—what matters is how closely the generated data matches the real data's distribution, measured by a metric called Wasserstein discrepancy.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts","author":"Jiaxin Tian, Darren An, Jun Li","url":"https://paperplaine.com/papers/benchmarking-peptide-protein-affinity","datePublished":"2026-08-31T02:56:26Z","description":"Researchers tested ten different methods for predicting how strongly peptides bind to proteins, using 11,349 binding measurements split into three realistic scenarios: recognizing patterns in similar peptides, making predictions within known targets, and predicting binding to entirely new target proteins. The best method changed depending on the scenario—fingerprints worked best for familiar targets, but a model called HELM-BERT performed better when targets were completely new. Performance dropped significantly (from 0.67 to 0.53 correlation) when moving from known to unknown targets, showing that current methods struggle with genuine generalization.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}],"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://paperplaine.com"}]}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://paperplaine.com/#website","name":"Paper Plaine","url":"https://paperplaine.com","description":"arXiv research papers explained in plain English, updated twice daily.","inLanguage":"en"},{"@type":"CollectionPage","@id":"https://paperplaine.com#page","name":"Paper Plaine — arXiv Research, Plain and Simple","url":"https://paperplaine.com","description":"Fresh research from arXiv explained in plain English, updated twice daily. Covering AI, physics, math, biology, economics, and more.","isPartOf":{"@id":"https://paperplaine.com/#website"},"hasPart":[{"@type":"ScholarlyArticle","headline":"Compile by Training: Turning Natural-Language Specifications into Local Neural Functions","author":"Yuntian Deng, Pengyu Nie, Stuart Shieber","url":"https://paperplaine.com/papers/compile-by-training-turning","datePublished":"2026-09-03T17:59:49Z","description":"Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Off-policy causal estimation in networks","author":"Sahil Loomba, Dean Eckles","url":"https://paperplaine.com/papers/off-policy-causal-estimation","datePublished":"2026-09-02T15:56:53Z","description":"When one person's treatment affects their neighbors' outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Spectral characteristics of autoencoder parameters as a vector representation of data","author":"Maria Nikitina, Anton Bishuk, Oleg Bakhteev","url":"https://paperplaine.com/papers/spectral-characteristics-of-autoencoder","datePublished":"2026-09-03T07:59:19Z","description":"A trained autoencoder's internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Dutch Books for Language Models","author":"Isaiah Andrews, Suproteem Sarkar","url":"https://paperplaine.com/papers/dutch-books-for-language","datePublished":"2026-09-02T16:31:47Z","description":"Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Interpretable Symptom Vectors for Depression in a Large Language Model","author":"Fangyi Zhu, Ajay Subramanian, Allison Constant et al.","url":"https://paperplaine.com/papers/interpretable-symptom-vectors-for","datePublished":"2026-09-01T20:07:03Z","description":"Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays","author":"Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.","url":"https://paperplaine.com/papers/qarray-a-physics-informed","datePublished":"2026-09-02T15:43:37Z","description":"Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"GRADSOLVE: fast exact gradients for ODE ensembles on GPUs","author":"Alessio Spurio Mancini","url":"https://paperplaine.com/papers/gradsolve-fast-exact-gradients","datePublished":"2026-09-02T17:56:10Z","description":"Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"When Does Authorization End? Effect Closure at Provider Boundaries","author":"Igor Santos-Grueiro","url":"https://paperplaine.com/papers/when-does-authorization-end","datePublished":"2026-09-02T17:50:39Z","description":"When you revoke someone's permission to do something, that permission might still let them act through work already in progress—even after the revocation succeeds. Researchers built a tool called EFFECTBOUND that can check whether a system truly blocks all these hidden paths, and found real vulnerabilities in GitHub, Kubernetes, NATS, and Kafka where revoked permissions could still take effect.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance","author":"Hui Gong, Michail Samawi, Francesca Medda","url":"https://paperplaine.com/papers/authority-inference-separation-in","datePublished":"2026-08-31T09:53:18Z","description":"When AI agents make financial decisions, they shouldn't be able to execute trades just because they can think them up. Researchers built a system called Authority-Inference Separation that forces a separate human-controlled approval step before any AI-proposed trade can run—checking the agent's identity, the owner's account limits, the specific risk policy, and exact transaction details. In tests against 36 simulated attacks that fooled baseline systems, the new approach blocked all attacks while still approving legitimate trades.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs","author":"Jingtan Wang, Arun Verma, Xiaoqiang Lin et al.","url":"https://paperplaine.com/papers/scaling-near-optimal-sft","datePublished":"2026-09-01T17:39:55Z","description":"When training large language models, teams must split their annotation budget between two techniques: supervised fine-tuning (SFT) and reinforcement learning (RL). Rather than hunting for one perfect ratio, this work identifies a \"near-optimal region\"—a wide range of allocations that all perform nearly as well. The key finding: this region reliably transfers from small experimental models to large production models, so teams can run cheap small-scale experiments to figure out a good allocation without expensive large-model testing.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty","author":"J. Wehbeh, E. C. Kerrigan, E. Scaccia","url":"https://paperplaine.com/papers/generalized-semi-infinite-programming","datePublished":"2026-09-01T17:05:14Z","description":"A new mathematical method solves a class of control problems where the constraints or risks depend on what the system is currently doing — a situation that has stumped existing approaches. The method converts these tricky problems into a form that standard optimization software can handle, and the authors proved it reliably finds good solutions even for nonlinear systems like tumbling satellites.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}},{"@type":"ScholarlyArticle","headline":"Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems","author":"Danial Noori Zadeh, Mohamed B. Elamien","url":"https://paperplaine.com/papers/analog-db-an-agent","datePublished":"2026-09-01T14:22:37Z","description":"Researchers created an open-source database that stores analog circuit designs in a format that can be shared freely, retargeted to different manufacturing processes, and automatically discovered by AI agents. When tested on voltage regulators, AI using the database caught design flaws—including missing circuit components—that a conventional sizing-only approach missed, and fixed failing circuits in one to three iterations.","isPartOf":{"@type":"WebSite","name":"Paper Plaine","url":"https://paperplaine.com"}}],"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://paperplaine.com"}]}}]}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,15 +362,15 @@
 </svg>
 <aside class="site-sidebar" aria-label="Site statistics">
   <div class="sidebar-stat">
-    <span class="sidebar-num">739</span>
+    <span class="sidebar-num">742</span>
     <span class="sidebar-label">Total Posts</span>
   </div>
   <div class="sidebar-stat">
-    <span class="sidebar-num">6</span>
+    <span class="sidebar-num">3</span>
     <span class="sidebar-label">New Posts Today</span>
   </div>
   <div class="sidebar-stat">
-    <span class="sidebar-num">18</span>
+    <span class="sidebar-num">21</span>
     <span class="sidebar-label">New Posts This Month</span>
   </div></aside>
 <div class="page">
@@ -405,6 +405,90 @@
   </nav>
   <main id="entries">
     
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Computer Science · AI</span>
+      <span>Sep 4, 2026</span>
+    </div>
+    <h2 class="entry-title"><a href="/papers/compile-by-training-turning" class="entry-title-link">Compile by Training: Turning Natural-Language Specifications into Local Neural Functions</a></h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Teaching small AI models to handle specific text tasks without calling expensive services</p>
+    <p class="byline">
+      Yuntian Deng, Pengyu Nie, Stuart Shieber
+      <br><span class="arxiv-id">arXiv:2609.04199</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Companies waste money and time sending every user request to remote AI services, creating delays and dependency on external providers. This approach lets organizations bake specific tasks directly into their products as lightweight functions that run instantly on-device, cutting costs and latency while maintaining accuracy on real-world problems.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2609.04199" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Sep 3, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Economics</span>
+      <span>Sep 4, 2026</span>
+    </div>
+    <h2 class="entry-title"><a href="/papers/off-policy-causal-estimation" class="entry-title-link">Off-policy causal estimation in networks</a></h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Measuring treatment effects when people influence each other&#39;s outcomes</p>
+    <p class="byline">
+      Sahil Loomba, Dean Eckles
+      <br><span class="arxiv-id">arXiv:2609.02756</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">When one person&#39;s treatment affects their neighbors&#39; outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">Social media platforms, public health campaigns, and online marketplaces all operate in networked settings where one person&#39;s treatment ripples to others. Current methods for estimating causal effects assume people are isolated — a false assumption that leads to wrong answers. This work enables experimenters to reliably estimate what new policies would accomplish, and to quantify their uncertainty when the network structure is only partially understood.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2609.02756" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Sep 2, 2026</span>
+    </div>
+  </article>
+
+  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+    <div class="entry-meta">
+      <span class="category">Statistics</span>
+      <span>Sep 4, 2026</span>
+    </div>
+    <h2 class="entry-title"><a href="/papers/spectral-characteristics-of-autoencoder" class="entry-title-link">Spectral characteristics of autoencoder parameters as a vector representation of data</a></h2>
+    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>What a neural network&#39;s weights reveal about the data it learned from</p>
+    <p class="byline">
+      Maria Nikitina, Anton Bishuk, Oleg Bakhteev
+      <br><span class="arxiv-id">arXiv:2609.03495</span>
+    </p>
+    <div class="entry-body">
+      <div class="col-summary">
+        <div class="section-label">Summary</div>
+        <p class="summary-text">A trained autoencoder&#39;s internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.</p>
+      </div>
+      <div class="col-divider"></div>
+      <div class="col-matters">
+        <div class="section-label">Why it matters</div>
+        <p class="matters-text">This could let researchers quickly identify what data a neural network has seen, which matters for detecting model theft, understanding training data composition, and auditing AI systems for bias or unwanted memorization. It also suggests a simpler way to compare and categorize trained models based on their internals alone.</p>
+      </div>
+    </div>
+    <div class="entry-footer">
+      <a href="https://arxiv.org/abs/2609.03495" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
+      <span class="stamp">Posted on arXiv · Sep 3, 2026</span>
+    </div>
+  </article>
+
   <article class="entry" style="border-bottom: 3px solid var(--rule);">
     <div class="entry-meta">
       <span class="category">Computer Science · AI</span>
@@ -629,7 +713,7 @@
     </div>
   </article>
 
-  <article class="entry" style="border-bottom: 3px solid var(--rule);">
+  <article class="entry" style="border-bottom: 6px double var(--rule);">
     <div class="entry-meta">
       <span class="category">Engineering</span>
       <span>Sep 2, 2026</span>
@@ -656,90 +740,6 @@
       <span class="stamp">Posted on arXiv · Sep 1, 2026</span>
     </div>
   </article>
-
-  <article class="entry" style="border-bottom: 3px solid var(--rule);">
-    <div class="entry-meta">
-      <span class="category">Computer Science · AI</span>
-      <span>Sep 2, 2026</span>
-    </div>
-    <h2 class="entry-title"><a href="/papers/the-structure-of-quantization" class="entry-title-link">The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally</a></h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>How to spend extra precision budget when shrinking AI models</p>
-    <p class="byline">
-      Jundong Hu, Shekar Ramachandran
-      <br><span class="arxiv-id">arXiv:2609.01587</span>
-    </p>
-    <div class="entry-body">
-      <div class="col-summary">
-        <div class="section-label">Summary</div>
-        <p class="summary-text">When AI models are compressed to run faster and cheaper, the damage isn&#39;t concentrated in a few critical layers—it spreads across roughly half the model&#39;s layers. Counterintuitively, applying finer-grained compression uniformly across the entire model recovers accuracy better than surgically fixing the layers that seem most broken, outperforming targeted repairs by 21–52 percentage points.</p>
-      </div>
-      <div class="col-divider"></div>
-      <div class="col-matters">
-        <div class="section-label">Why it matters</div>
-        <p class="matters-text">As companies deploy larger language models on phones, servers, and edge devices, quantization compression is essential to cut costs and latency. This finding changes how engineers should allocate limited precision budgets: instead of hunting for problem layers, spreading improvements evenly across the model works better in practice and is simpler to implement. This could reduce the engineering overhead of tuning quantization for each new model.</p>
-      </div>
-    </div>
-    <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2609.01587" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · Sep 1, 2026</span>
-    </div>
-  </article>
-
-  <article class="entry" style="border-bottom: 3px solid var(--rule);">
-    <div class="entry-meta">
-      <span class="category">Statistics</span>
-      <span>Sep 2, 2026</span>
-    </div>
-    <h2 class="entry-title"><a href="/papers/on-the-reliability-of" class="entry-title-link">On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study</a></h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>When synthetic data helps machine learning, and when it doesn&#39;t</p>
-    <p class="byline">
-      Chathurika S Abeykoon, Mathias Nthiani Muia, Mallory Goldstein
-      <br><span class="arxiv-id">arXiv:2609.01410</span>
-    </p>
-    <div class="entry-body">
-      <div class="col-summary">
-        <div class="section-label">Summary</div>
-        <p class="summary-text">Researchers created a mathematical framework to predict when artificially generated data actually improves classification accuracy on imbalanced datasets. They found that higher-quality synthetic data doesn&#39;t always lead to better predictions—what matters is how closely the generated data matches the real data&#39;s distribution, measured by a metric called Wasserstein discrepancy.</p>
-      </div>
-      <div class="col-divider"></div>
-      <div class="col-matters">
-        <div class="section-label">Why it matters</div>
-        <p class="matters-text">Machine learning teams routinely use synthetic data to fix imbalanced datasets, but have lacked clear guidance on which generation methods work best. This framework provides a principled way to evaluate synthetic data quality before deploying it, potentially saving teams from investing time in high-fidelity generators that won&#39;t improve actual performance. It also shows that simpler oversampling methods are sometimes more reliable than complex generative models—a finding that could reshape how practitioners choose their augmentation strategy.</p>
-      </div>
-    </div>
-    <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2609.01410" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · Sep 1, 2026</span>
-    </div>
-  </article>
-
-  <article class="entry" style="border-bottom: 6px double var(--rule);">
-    <div class="entry-meta">
-      <span class="category">Quantitative Biology</span>
-      <span>Sep 2, 2026</span>
-    </div>
-    <h2 class="entry-title"><a href="/papers/benchmarking-peptide-protein-affinity" class="entry-title-link">Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts</a></h2>
-    <p class="entry-subtitle"><svg class="entry-plane" aria-hidden="true"><use href="#plane"/></svg>Testing whether AI can predict drug-like peptide binding when it sees new targets</p>
-    <p class="byline">
-      Jiaxin Tian, Darren An, Jun Li
-      <br><span class="arxiv-id">arXiv:2608.30175</span>
-    </p>
-    <div class="entry-body">
-      <div class="col-summary">
-        <div class="section-label">Summary</div>
-        <p class="summary-text">Researchers tested ten different methods for predicting how strongly peptides bind to proteins, using 11,349 binding measurements split into three realistic scenarios: recognizing patterns in similar peptides, making predictions within known targets, and predicting binding to entirely new target proteins. The best method changed depending on the scenario—fingerprints worked best for familiar targets, but a model called HELM-BERT performed better when targets were completely new. Performance dropped significantly (from 0.67 to 0.53 correlation) when moving from known to unknown targets, showing that current methods struggle with genuine generalization.</p>
-      </div>
-      <div class="col-divider"></div>
-      <div class="col-matters">
-        <div class="section-label">Why it matters</div>
-        <p class="matters-text">Drug discovery relies on predicting how experimental molecules will bind their targets before expensive testing begins. This work exposes a critical gap: most peptide-binding models are benchmarked in unrealistic conditions and would fail in the real world, where researchers must predict binding to new disease targets they&#39;ve never seen before. The findings demand that future benchmarks test what actually matters—whether methods can handle unfamiliar targets—and reveal which representation strategies hold up under that harder test.</p>
-      </div>
-    </div>
-    <div class="entry-footer">
-      <a href="https://arxiv.org/abs/2608.30175" class="read-link" target="_blank" rel="noopener">Read on arXiv</a>
-      <span class="stamp">Posted on arXiv · Aug 31, 2026</span>
-    </div>
-  </article>
   <nav class="pagination" aria-label="Page navigation">
     <span class="page-nav page-nav--off">← Newer</span>
     <div class="page-numbers"><span class="page-num page-num--active">1</span><a href="/page/2" class="page-num">2</a><a href="/page/3" class="page-num">3</a><span class="page-ellipsis">…</span><a href="/page/62" class="page-num">62</a></div>
@@ -747,7 +747,7 @@
   </nav>
   </main>
   <footer class="site-footer">
-    <div class="mobile-stats" aria-label="Site statistics"><div class="mobile-stats-stat"><span class="mobile-stats-num">739</span><span class="mobile-stats-label">Total Posts</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">6</span><span class="mobile-stats-label">New Today</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">18</span><span class="mobile-stats-label">This Month</span></div></div>
+    <div class="mobile-stats" aria-label="Site statistics"><div class="mobile-stats-stat"><span class="mobile-stats-num">742</span><span class="mobile-stats-label">Total Posts</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">3</span><span class="mobile-stats-label">New Today</span></div><div class="mobile-stats-stat"><span class="mobile-stats-num">21</span><span class="mobile-stats-label">This Month</span></div></div>
     <nav class="footer-nav" aria-label="Site links">
       <a href="/about">About/Contact</a>
       <a href="/privacy">Privacy</a>

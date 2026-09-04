@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 739 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-03
+This file contains the complete plain-English text of all 742 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-04
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Compile by Training: Turning Natural-Language Specifications into Local Neural Functions
+Subtitle: Teaching small AI models to handle specific text tasks without calling expensive services
+URL: https://paperplaine.com/papers/compile-by-training-turning
+Category: Computer Science · AI
+Authors: Yuntian Deng, Pengyu Nie, Stuart Shieber
+arXiv ID: 2609.04199
+arXiv URL: https://arxiv.org/abs/2609.04199
+Posted: 2026-09-04
+
+Summary: Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.
+
+Why it matters: Companies waste money and time sending every user request to remote AI services, creating delays and dependency on external providers. This approach lets organizations bake specific tasks directly into their products as lightweight functions that run instantly on-device, cutting costs and latency while maintaining accuracy on real-world problems.
+
+---
+Title: Off-policy causal estimation in networks
+Subtitle: Measuring treatment effects when people influence each other's outcomes
+URL: https://paperplaine.com/papers/off-policy-causal-estimation
+Category: Economics
+Authors: Sahil Loomba, Dean Eckles
+arXiv ID: 2609.02756
+arXiv URL: https://arxiv.org/abs/2609.02756
+Posted: 2026-09-04
+
+Summary: When one person's treatment affects their neighbors' outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.
+
+Why it matters: Social media platforms, public health campaigns, and online marketplaces all operate in networked settings where one person's treatment ripples to others. Current methods for estimating causal effects assume people are isolated — a false assumption that leads to wrong answers. This work enables experimenters to reliably estimate what new policies would accomplish, and to quantify their uncertainty when the network structure is only partially understood.
+
+---
+Title: Spectral characteristics of autoencoder parameters as a vector representation of data
+Subtitle: What a neural network's weights reveal about the data it learned from
+URL: https://paperplaine.com/papers/spectral-characteristics-of-autoencoder
+Category: Statistics
+Authors: Maria Nikitina, Anton Bishuk, Oleg Bakhteev
+arXiv ID: 2609.03495
+arXiv URL: https://arxiv.org/abs/2609.03495
+Posted: 2026-09-04
+
+Summary: A trained autoencoder's internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.
+
+Why it matters: This could let researchers quickly identify what data a neural network has seen, which matters for detecting model theft, understanding training data composition, and auditing AI systems for bias or unwanted memorization. It also suggests a simpler way to compare and categorize trained models based on their internals alone.
 
 ---
 Title: Dutch Books for Language Models
