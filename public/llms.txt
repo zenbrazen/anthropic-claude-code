@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 748 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 751 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 255 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 256 papers in archive.
+  - "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views"
   - "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning"
-  - "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 62 papers in archive.
   - "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference"
   - "When Does Authorization End? Effect Closure at Provider Boundaries"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 62 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 63 papers in archive.
+  - "Parameterised graph theory for tensor networks: entanglement rerouting, structural simplification, and agnostic tomography"
   - "QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays"
-  - "Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 62 papers in archive.
   - "Transversality Conditions for Boundary Constraints Defined by Differential Equations"
   - "Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 63 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 64 papers in archive.
+  - "Axonal delay dispersion decides whether a neuron detects an event or a sequence, and predicts cortical column diameter"
   - "Interpretable Symptom Vectors for Depression in a Large Language Model"
-  - "Benchmarking Peptide-Protein Affinity Prediction Across Peptide and Target Shifts"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 66 papers in archive.
   - "Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets"
   - "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity"
 
 ## 10 most recent papers
+
+### Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views
+- URL: https://paperplaine.com/papers/knowledge-acquisition-during-pre
+- Category: Computer Science · AI
+- Authors: Joseph Lee, Yidi Huang, Dokyoon Kim et al.
+- arXiv: 2609.04180
+- Plain-English subtitle: Why showing AI the same idea multiple ways helps it learn better
+- Summary: Large language models learn facts more effectively when trained on different rewordings of the same knowledge, even when the total number of training examples stays constant. Surprisingly, this benefit holds across different sizes of training batches and types of knowledge, and works regardless of whether the rewordings come from a strong or weak source model.
+- Why it matters: This explains a real puzzle about why diverse training data improves AI performance—variety in how information is presented teaches the model more than simple repetition alone. The finding could guide how companies prepare training data for language models, suggesting that investing in diverse reformulations of key facts and concepts produces smarter AI systems with the same computational budget.
+
+### Parameterised graph theory for tensor networks: entanglement rerouting, structural simplification, and agnostic tomography
+- URL: https://paperplaine.com/papers/parameterised-graph-theory-for
+- Category: Physics
+- Authors: Matthias C. Caro, Natalie McHugh, Sergii Strelchuk
+- arXiv: 2609.04165
+- Plain-English subtitle: Finding shortcuts to describe quantum systems using graph structure
+- Summary: Researchers showed that certain mathematical properties of a system's connection graph determine how efficiently you can describe that system using simplified quantum representations. They identified three key graph measures—cutwidth, tree-cutwidth, and a new parameter called learning complexity—that control both the overhead needed for these simplified descriptions and how many measurements you need to learn the system from scratch.
+- Why it matters: Quantum systems are notoriously hard to describe and measure. This work gives physicists a concrete way to predict when a quantum state can be stored and learned efficiently just by looking at its graph structure, potentially speeding up how quickly quantum systems can be characterized in experiments and simulations. It also shows how to extract accurate descriptions of arbitrary quantum states even when they don't perfectly match the simplified forms being used.
+
+### Axonal delay dispersion decides whether a neuron detects an event or a sequence, and predicts cortical column diameter
+- URL: https://paperplaine.com/papers/axonal-delay-dispersion-decides
+- Category: Quantitative Biology
+- Authors: Cheng Bi, Jipeng Sun
+- arXiv: 2609.04195
+- Plain-English subtitle: How wire spacing in the brain decides what neurons recognize
+- Summary: A neuron's ability to detect a single synchronized burst versus a specific sequence of inputs depends on one physical property: how spread out the conduction delays are on its receiving branches. The researchers show that this single measurement—which maps onto the anatomical difference between myelinated and unmyelinated connections in the brain—acts as a computational switch, and that this same property predicts the actual diameter of cortical columns, one of the brain's fundamental structural units.
+- Why it matters: This work reveals that anatomy directly determines what computations neurons can perform. Because the brain's wiring can now be understood as encoding specific detection capabilities, neuroscientists can predict what kinds of signals a region of cortex can process just by measuring its physical structure. It also suggests that the brain's choice between myelinated and unmyelinated connections isn't simply about speed—it's about switching neurons between fundamentally different modes of information processing.
 
 ### Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning
 - URL: https://paperplaine.com/papers/seeing-before-synthesizing-vlm
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching small AI models to handle specific text tasks without calling expensive services
 - Summary: Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.
 - Why it matters: Companies waste money and time sending every user request to remote AI services, creating delays and dependency on external providers. This approach lets organizations bake specific tasks directly into their products as lightweight functions that run instantly on-device, cutting costs and latency while maintaining accuracy on real-world problems.
-
-### Off-policy causal estimation in networks
-- URL: https://paperplaine.com/papers/off-policy-causal-estimation
-- Category: Economics
-- Authors: Sahil Loomba, Dean Eckles
-- arXiv: 2609.02756
-- Plain-English subtitle: Measuring treatment effects when people influence each other's outcomes
-- Summary: When one person's treatment affects their neighbors' outcomes — common in social networks — researchers face a puzzle: how do you estimate what would happen under a different policy than the one that generated your data? This paper solves that puzzle by constructing weights that mathematically transport data from one policy to another, even when interference patterns are misspecified, and provides tools to measure the resulting bias-variance trade-off.
-- Why it matters: Social media platforms, public health campaigns, and online marketplaces all operate in networked settings where one person's treatment ripples to others. Current methods for estimating causal effects assume people are isolated — a false assumption that leads to wrong answers. This work enables experimenters to reliably estimate what new policies would accomplish, and to quantify their uncertainty when the network structure is only partially understood.
-
-### Spectral characteristics of autoencoder parameters as a vector representation of data
-- URL: https://paperplaine.com/papers/spectral-characteristics-of-autoencoder
-- Category: Statistics
-- Authors: Maria Nikitina, Anton Bishuk, Oleg Bakhteev
-- arXiv: 2609.03495
-- Plain-English subtitle: What a neural network's weights reveal about the data it learned from
-- Summary: A trained autoencoder's internal parameters contain a fingerprint of the data it learned from. Researchers showed that by analyzing the mathematical structure of these parameters—specifically their singular values—you can tell which datasets a model was trained on with high accuracy, without ever looking at the original data or using complicated reconstruction methods.
-- Why it matters: This could let researchers quickly identify what data a neural network has seen, which matters for detecting model theft, understanding training data composition, and auditing AI systems for bias or unwanted memorization. It also suggests a simpler way to compare and categorize trained models based on their internals alone.
-
-### Dutch Books for Language Models
-- URL: https://paperplaine.com/papers/dutch-books-for-language
-- Category: Computer Science · AI
-- Authors: Isaiah Andrews, Suproteem Sarkar
-- arXiv: 2609.02797
-- Plain-English subtitle: Why language models make contradictory predictions you can profit from
-- Summary: Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.
-- Why it matters: People rely on language models to estimate the odds of consequential events—from personal financial decisions to disaster preparedness. If the model's probability estimates are internally contradictory, users who trust them to guide real decisions could make systematically poor choices. This work identifies a concrete way to measure when and why models fail at this task, which could help developers spot and fix coherence problems before these systems influence high-stakes decisions.
 
 ## About
 

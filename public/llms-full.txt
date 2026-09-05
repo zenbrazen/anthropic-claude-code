@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 748 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 751 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-05
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views
+Subtitle: Why showing AI the same idea multiple ways helps it learn better
+URL: https://paperplaine.com/papers/knowledge-acquisition-during-pre
+Category: Computer Science · AI
+Authors: Joseph Lee, Yidi Huang, Dokyoon Kim et al.
+arXiv ID: 2609.04180
+arXiv URL: https://arxiv.org/abs/2609.04180
+Posted: 2026-09-05
+
+Summary: Large language models learn facts more effectively when trained on different rewordings of the same knowledge, even when the total number of training examples stays constant. Surprisingly, this benefit holds across different sizes of training batches and types of knowledge, and works regardless of whether the rewordings come from a strong or weak source model.
+
+Why it matters: This explains a real puzzle about why diverse training data improves AI performance—variety in how information is presented teaches the model more than simple repetition alone. The finding could guide how companies prepare training data for language models, suggesting that investing in diverse reformulations of key facts and concepts produces smarter AI systems with the same computational budget.
+
+---
+Title: Parameterised graph theory for tensor networks: entanglement rerouting, structural simplification, and agnostic tomography
+Subtitle: Finding shortcuts to describe quantum systems using graph structure
+URL: https://paperplaine.com/papers/parameterised-graph-theory-for
+Category: Physics
+Authors: Matthias C. Caro, Natalie McHugh, Sergii Strelchuk
+arXiv ID: 2609.04165
+arXiv URL: https://arxiv.org/abs/2609.04165
+Posted: 2026-09-05
+
+Summary: Researchers showed that certain mathematical properties of a system's connection graph determine how efficiently you can describe that system using simplified quantum representations. They identified three key graph measures—cutwidth, tree-cutwidth, and a new parameter called learning complexity—that control both the overhead needed for these simplified descriptions and how many measurements you need to learn the system from scratch.
+
+Why it matters: Quantum systems are notoriously hard to describe and measure. This work gives physicists a concrete way to predict when a quantum state can be stored and learned efficiently just by looking at its graph structure, potentially speeding up how quickly quantum systems can be characterized in experiments and simulations. It also shows how to extract accurate descriptions of arbitrary quantum states even when they don't perfectly match the simplified forms being used.
+
+---
+Title: Axonal delay dispersion decides whether a neuron detects an event or a sequence, and predicts cortical column diameter
+Subtitle: How wire spacing in the brain decides what neurons recognize
+URL: https://paperplaine.com/papers/axonal-delay-dispersion-decides
+Category: Quantitative Biology
+Authors: Cheng Bi, Jipeng Sun
+arXiv ID: 2609.04195
+arXiv URL: https://arxiv.org/abs/2609.04195
+Posted: 2026-09-05
+
+Summary: A neuron's ability to detect a single synchronized burst versus a specific sequence of inputs depends on one physical property: how spread out the conduction delays are on its receiving branches. The researchers show that this single measurement—which maps onto the anatomical difference between myelinated and unmyelinated connections in the brain—acts as a computational switch, and that this same property predicts the actual diameter of cortical columns, one of the brain's fundamental structural units.
+
+Why it matters: This work reveals that anatomy directly determines what computations neurons can perform. Because the brain's wiring can now be understood as encoding specific detection capabilities, neuroscientists can predict what kinds of signals a region of cortex can process just by measuring its physical structure. It also suggests that the brain's choice between myelinated and unmyelinated connections isn't simply about speed—it's about switching neurons between fundamentally different modes of information processing.
 
 ---
 Title: Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning
