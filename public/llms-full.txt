@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 745 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-04
+This file contains the complete plain-English text of all 748 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-05
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning
+Subtitle: Teaching AI to find the exact moments between events in videos
+URL: https://paperplaine.com/papers/seeing-before-synthesizing-vlm
+Category: Computer Science · AI
+Authors: Ye-Chan Kim, Seunghee Choi, SeungJu Cha et al.
+arXiv ID: 2609.04183
+arXiv URL: https://arxiv.org/abs/2609.04183
+Posted: 2026-09-05
+
+Summary: When AI tries to describe everything happening in a long video, it struggles to pinpoint exactly when one event ends and another begins — especially the transition moments in between. This paper introduces a method that uses a visual language model to spot these transitions by analyzing what's actually visible in each frame, then uses that insight to precisely locate and describe event boundaries, outperforming previous approaches on standard video datasets.
+
+Why it matters: Better video understanding helps real applications like video search engines, automated video editing, and accessibility tools that describe videos for people with vision loss. Rather than guessing that transitions occur at fixed points, this approach finds them where they actually happen visually, making descriptions more accurate and timestamps more useful.
+
+---
+Title: RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models
+Subtitle: Testing whether seizure-detection AI actually works in messy real-world hospitals
+URL: https://paperplaine.com/papers/robustseiz-an-open-source
+Category: Engineering
+Authors: Mohammad Mohammadi, Alireza Zarei
+arXiv ID: 2609.04007
+arXiv URL: https://arxiv.org/abs/2609.04007
+Posted: 2026-09-05
+
+Summary: Seizure-detection algorithms perform well on clean training data but can fail when hospitals add noise, equipment variation, or interference—problems that don't show up in standard tests. Researchers created RobustSeiz, an open-source stress-testing tool that deliberately introduces realistic disruptions to see how robust these AI systems really are before they're deployed to patients.
+
+Why it matters: Seizure detection is a safety-critical task: a false negative could mean missing a life-threatening event, while false alarms waste hospital resources and cause patient anxiety. By standardizing how hospitals test these systems against real-world messiness—not just pristine lab data—RobustSeiz helps ensure that AI seizure detectors are actually reliable enough to trust in operating rooms and intensive care units.
+
+---
+Title: Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference
+Subtitle: A faster way to prove an AI wrote something, without slowing it down
+URL: https://paperplaine.com/papers/flip-don-t-shuffle
+Category: Computer Science
+Authors: Simone Ceppi, Ignacio Sanchez
+arXiv ID: 2609.03844
+arXiv URL: https://arxiv.org/abs/2609.03844
+Posted: 2026-09-05
+
+Summary: Researchers created a new watermarking method for large language models that identifies AI-generated text while running 6000 times faster than existing techniques and adding less than 1% to generation speed. The method works by making a single random decision per word instead of searching through lists or running complex procedures, yet maintains the same ability to detect AI text with statistical certainty.
+
+Why it matters: As AI-generated text becomes harder to distinguish from human writing, watermarks are a leading tool to prove authenticity—but existing methods slow down text generation noticeably. This technique is fast enough to deploy at scale without slowing down AI services, making it practical for real-world use in detecting plagiarism, academic cheating, and AI-generated misinformation.
 
 ---
 Title: ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize

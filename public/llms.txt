@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 745 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 748 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 254 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 255 papers in archive.
+  - "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning"
   - "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize"
-  - "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 61 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 62 papers in archive.
+  - "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference"
   - "When Does Authorization End? Effect Closure at Provider Boundaries"
-  - "Beyond the Payload: How User Invocation Shapes Coding Agent Vulnerability to Repository Poisoning"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 62 papers in archive.
   - "QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays"
   - "Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 64 papers in archive.
   - "Spectral characteristics of autoencoder parameters as a vector representation of data"
   - "On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 60 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 61 papers in archive.
+  - "RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models"
   - "Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems"
-  - "Optimal Adversarial Testing: Extracting Honest Test Results from Dishonest Test Takers"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 53 papers in archive.
   - "Off-policy causal estimation in networks"
   - "An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity"
 
 ## 10 most recent papers
+
+### Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning
+- URL: https://paperplaine.com/papers/seeing-before-synthesizing-vlm
+- Category: Computer Science · AI
+- Authors: Ye-Chan Kim, Seunghee Choi, SeungJu Cha et al.
+- arXiv: 2609.04183
+- Plain-English subtitle: Teaching AI to find the exact moments between events in videos
+- Summary: When AI tries to describe everything happening in a long video, it struggles to pinpoint exactly when one event ends and another begins — especially the transition moments in between. This paper introduces a method that uses a visual language model to spot these transitions by analyzing what's actually visible in each frame, then uses that insight to precisely locate and describe event boundaries, outperforming previous approaches on standard video datasets.
+- Why it matters: Better video understanding helps real applications like video search engines, automated video editing, and accessibility tools that describe videos for people with vision loss. Rather than guessing that transitions occur at fixed points, this approach finds them where they actually happen visually, making descriptions more accurate and timestamps more useful.
+
+### RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models
+- URL: https://paperplaine.com/papers/robustseiz-an-open-source
+- Category: Engineering
+- Authors: Mohammad Mohammadi, Alireza Zarei
+- arXiv: 2609.04007
+- Plain-English subtitle: Testing whether seizure-detection AI actually works in messy real-world hospitals
+- Summary: Seizure-detection algorithms perform well on clean training data but can fail when hospitals add noise, equipment variation, or interference—problems that don't show up in standard tests. Researchers created RobustSeiz, an open-source stress-testing tool that deliberately introduces realistic disruptions to see how robust these AI systems really are before they're deployed to patients.
+- Why it matters: Seizure detection is a safety-critical task: a false negative could mean missing a life-threatening event, while false alarms waste hospital resources and cause patient anxiety. By standardizing how hospitals test these systems against real-world messiness—not just pristine lab data—RobustSeiz helps ensure that AI seizure detectors are actually reliable enough to trust in operating rooms and intensive care units.
+
+### Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference
+- URL: https://paperplaine.com/papers/flip-don-t-shuffle
+- Category: Computer Science
+- Authors: Simone Ceppi, Ignacio Sanchez
+- arXiv: 2609.03844
+- Plain-English subtitle: A faster way to prove an AI wrote something, without slowing it down
+- Summary: Researchers created a new watermarking method for large language models that identifies AI-generated text while running 6000 times faster than existing techniques and adding less than 1% to generation speed. The method works by making a single random decision per word instead of searching through lists or running complex procedures, yet maintains the same ability to detect AI text with statistical certainty.
+- Why it matters: As AI-generated text becomes harder to distinguish from human writing, watermarks are a leading tool to prove authenticity—but existing methods slow down text generation noticeably. This technique is fast enough to deploy at scale without slowing down AI services, making it practical for real-world use in detecting plagiarism, academic cheating, and AI-generated misinformation.
 
 ### ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize
 - URL: https://paperplaine.com/papers/espo-error-structured-prompt
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why language models make contradictory predictions you can profit from
 - Summary: Language models make probabilistic forecasts that contain internal contradictions—you could set up bets against their predictions and guarantee a profit. Researchers tested this by generating stock market scenarios and finding that language models' probability estimates violate basic logical consistency, with contradictions growing worse when events are logically related and worsening dramatically when irrelevant details are added to the scenario.
 - Why it matters: People rely on language models to estimate the odds of consequential events—from personal financial decisions to disaster preparedness. If the model's probability estimates are internally contradictory, users who trust them to guide real decisions could make systematically poor choices. This work identifies a concrete way to measure when and why models fail at this task, which could help developers spot and fix coherence problems before these systems influence high-stakes decisions.
-
-### Interpretable Symptom Vectors for Depression in a Large Language Model
-- URL: https://paperplaine.com/papers/interpretable-symptom-vectors-for
-- Category: Quantitative Biology
-- Authors: Fangyi Zhu, Ajay Subramanian, Allison Constant et al.
-- arXiv: 2609.01832
-- Plain-English subtitle: Finding where depression symptoms hide inside AI language models
-- Summary: Researchers discovered that AI language models like Gemma internally represent the different symptoms of depression in a way that matches how clinicians assess them. By examining the model's internal computations, they found a specific layer where mood problems, physical symptoms, and suicidality thoughts separate into distinct patterns, and they could read these patterns directly from the model's thinking process — even on new patient descriptions the model had never seen before.
-- Why it matters: Depression today is usually reduced to a single score, ignoring the fact that patients suffer different symptom mixes. If AI tools can be designed to measure individual symptoms accurately and in ways doctors understand, they could help clinicians spot which patients need which treatments. This work shows it's possible to build depression-screening tools that are both powerful and transparent about how they reach their conclusions, potentially making AI more trustworthy in mental health care.
-
-### QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays
-- URL: https://paperplaine.com/papers/qarray-a-physics-informed
-- Category: Physics
-- Authors: Pranav Vaidhyanathan, Barnaby van Straaten, Alice Petrillo et al.
-- arXiv: 2609.02736
-- Plain-English subtitle: A faster simulator to help robots tune quantum computers automatically
-- Summary: Scientists built QArray+, a physics simulator that runs on graphics processors and can model how quantum dot arrays behave in real time—not just at equilibrium. The simulator is 1,000× faster than earlier tools and captures the non-equilibrium dynamics that matter when measuring quantum states quickly, making it practical to generate the training data needed to automate device tuning.
-- Why it matters: Quantum dot arrays are a leading candidate for building scalable quantum computers, but manually tuning thousands of voltage gates is a bottleneck. QArray+ lets researchers simulate realistic device behavior at scale and train machine-learning models to handle this tuning automatically—dramatically reducing the expert labor required to operate these devices and accelerating progress toward practical quantum hardware.
-
-### GRADSOLVE: fast exact gradients for ODE ensembles on GPUs
-- URL: https://paperplaine.com/papers/gradsolve-fast-exact-gradients
-- Category: Computer Science · AI
-- Authors: Alessio Spurio Mancini
-- arXiv: 2609.02876
-- Plain-English subtitle: Computing derivatives for physics simulations 5–14 times faster on GPUs
-- Summary: Scientists and engineers often need to calculate how the solutions to differential equations change when they tweak the underlying parameters — a task called computing gradients. GRADSOLVE, a new GPU-accelerated tool, does this 5.6 to 14.1 times faster than existing methods by recording the steps a solver takes and replaying them at fixed intervals, rather than trying to differentiate an adaptive algorithm on the fly.
-- Why it matters: Physics-based machine learning — training models of fluid dynamics, molecular systems, or climate patterns — requires computing gradients thousands or millions of times. A 5–14x speedup cuts training time dramatically, making it practical to fit larger models or run more experiments on the same hardware. This directly reduces computational cost and time-to-result for fields from drug discovery to climate science.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Sep 2026 21:10:15 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 11:08:09 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning</title>
+      <link>https://paperplaine.com/papers/seeing-before-synthesizing-vlm</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/seeing-before-synthesizing-vlm</guid>
+      <pubDate>Thu, 03 Sep 2026 17:58:02 GMT</pubDate>
+      <author>Ye-Chan Kim, Seunghee Choi, SeungJu Cha et al.</author>
+      <category>AI</category>
+      <description>Teaching AI to find the exact moments between events in videos</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to find the exact moments between events in videos</em></p><p>When AI tries to describe everything happening in a long video, it struggles to pinpoint exactly when one event ends and another begins — especially the transition moments in between. This paper introduces a method that uses a visual language model to spot these transitions by analyzing what's actually visible in each frame, then uses that insight to precisely locate and describe event boundaries, outperforming previous approaches on standard video datasets.</p><p><strong>Why it matters:</strong> Better video understanding helps real applications like video search engines, automated video editing, and accessibility tools that describe videos for people with vision loss. Rather than guessing that transitions occur at fixed points, this approach finds them where they actually happen visually, making descriptions more accurate and timestamps more useful.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models</title>
+      <link>https://paperplaine.com/papers/robustseiz-an-open-source</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/robustseiz-an-open-source</guid>
+      <pubDate>Thu, 03 Sep 2026 15:45:52 GMT</pubDate>
+      <author>Mohammad Mohammadi, Alireza Zarei</author>
+      <category>Engineering</category>
+      <description>Testing whether seizure-detection AI actually works in messy real-world hospitals</description>
+      <content:encoded><![CDATA[<p><em>Testing whether seizure-detection AI actually works in messy real-world hospitals</em></p><p>Seizure-detection algorithms perform well on clean training data but can fail when hospitals add noise, equipment variation, or interference—problems that don't show up in standard tests. Researchers created RobustSeiz, an open-source stress-testing tool that deliberately introduces realistic disruptions to see how robust these AI systems really are before they're deployed to patients.</p><p><strong>Why it matters:</strong> Seizure detection is a safety-critical task: a false negative could mean missing a life-threatening event, while false alarms waste hospital resources and cause patient anxiety. By standardizing how hospitals test these systems against real-world messiness—not just pristine lab data—RobustSeiz helps ensure that AI seizure detectors are actually reliable enough to trust in operating rooms and intensive care units.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Flip, Don&#39;t Shuffle: Watermarking LLMs at the Speed of Inference</title>
+      <link>https://paperplaine.com/papers/flip-don-t-shuffle</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/flip-don-t-shuffle</guid>
+      <pubDate>Thu, 03 Sep 2026 13:38:49 GMT</pubDate>
+      <author>Simone Ceppi, Ignacio Sanchez</author>
+      <category>Comp Sci</category>
+      <description>A faster way to prove an AI wrote something, without slowing it down</description>
+      <content:encoded><![CDATA[<p><em>A faster way to prove an AI wrote something, without slowing it down</em></p><p>Researchers created a new watermarking method for large language models that identifies AI-generated text while running 6000 times faster than existing techniques and adding less than 1% to generation speed. The method works by making a single random decision per word instead of searching through lists or running complex procedures, yet maintains the same ability to detect AI text with statistical certainty.</p><p><strong>Why it matters:</strong> As AI-generated text becomes harder to distinguish from human writing, watermarks are a leading tool to prove authenticity—but existing methods slow down text generation noticeably. This technique is fast enough to deploy at scale without slowing down AI services, making it practical for real-world use in detecting plagiarism, academic cheating, and AI-generated misinformation.</p>]]></content:encoded>
+    </item>
     <item>
       <title>ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize</title>
       <link>https://paperplaine.com/papers/espo-error-structured-prompt</link>

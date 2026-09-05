@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.04183",
+    "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
+    "authors": "Ye-Chan Kim, Seunghee Choi, SeungJu Cha et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-03T17:58:02Z",
+    "publishedFormatted": "Sep 3, 2026",
+    "subtitle": "Teaching AI to find the exact moments between events in videos",
+    "summary": "When AI tries to describe everything happening in a long video, it struggles to pinpoint exactly when one event ends and another begins — especially the transition moments in between. This paper introduces a method that uses a visual language model to spot these transitions by analyzing what's actually visible in each frame, then uses that insight to precisely locate and describe event boundaries, outperforming previous approaches on standard video datasets.",
+    "whyItMatters": "Better video understanding helps real applications like video search engines, automated video editing, and accessibility tools that describe videos for people with vision loss. Rather than guessing that transitions occur at fixed points, this approach finds them where they actually happen visually, making descriptions more accurate and timestamps more useful.",
+    "fetchedAt": "2026-09-05T11:08:02.494Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 139
+    },
+    "slug": "seeing-before-synthesizing-vlm"
+  },
+  {
+    "id": "2609.04007",
+    "title": "RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models",
+    "authors": "Mohammad Mohammadi, Alireza Zarei",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-03T15:45:52Z",
+    "publishedFormatted": "Sep 3, 2026",
+    "subtitle": "Testing whether seizure-detection AI actually works in messy real-world hospitals",
+    "summary": "Seizure-detection algorithms perform well on clean training data but can fail when hospitals add noise, equipment variation, or interference—problems that don't show up in standard tests. Researchers created RobustSeiz, an open-source stress-testing tool that deliberately introduces realistic disruptions to see how robust these AI systems really are before they're deployed to patients.",
+    "whyItMatters": "Seizure detection is a safety-critical task: a false negative could mean missing a life-threatening event, while false alarms waste hospital resources and cause patient anxiety. By standardizing how hospitals test these systems against real-world messiness—not just pristine lab data—RobustSeiz helps ensure that AI seizure detectors are actually reliable enough to trust in operating rooms and intensive care units.",
+    "fetchedAt": "2026-09-05T11:08:05.816Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 169
+    },
+    "slug": "robustseiz-an-open-source"
+  },
+  {
+    "id": "2609.03844",
+    "title": "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference",
+    "authors": "Simone Ceppi, Ignacio Sanchez",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-03T13:38:49Z",
+    "publishedFormatted": "Sep 3, 2026",
+    "subtitle": "A faster way to prove an AI wrote something, without slowing it down",
+    "summary": "Researchers created a new watermarking method for large language models that identifies AI-generated text while running 6000 times faster than existing techniques and adding less than 1% to generation speed. The method works by making a single random decision per word instead of searching through lists or running complex procedures, yet maintains the same ability to detect AI text with statistical certainty.",
+    "whyItMatters": "As AI-generated text becomes harder to distinguish from human writing, watermarks are a leading tool to prove authenticity—but existing methods slow down text generation noticeably. This technique is fast enough to deploy at scale without slowing down AI services, making it practical for real-world use in detecting plagiarism, academic cheating, and AI-generated misinformation.",
+    "fetchedAt": "2026-09-05T11:08:08.975Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 180
+    },
+    "slug": "flip-don-t-shuffle"
+  },
+  {
     "id": "2609.04197",
     "title": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
     "authors": "Lihao Liu, Peng Tang, Kunwar Yashraj Singh et al.",
