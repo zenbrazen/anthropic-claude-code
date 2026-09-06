@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2026 20:53:25 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 11:31:32 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When Models Edit Too Much: On the Fidelity of Minimal Code Edits</title>
+      <link>https://paperplaine.com/papers/when-models-edit-too</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/when-models-edit-too</guid>
+      <pubDate>Thu, 03 Sep 2026 16:36:05 GMT</pubDate>
+      <author>Tongyao Zhu, Wei Hern Lim, Min-Yen Kan</author>
+      <category>AI</category>
+      <description>Why AI code fixes often rewrite too much, and how to stop them</description>
+      <content:encoded><![CDATA[<p><em>Why AI code fixes often rewrite too much, and how to stop them</em></p><p>Large language models tasked with fixing bugs in code tend to rewrite far more than necessary, even when they produce correct results. Researchers measured this over-editing problem across top AI models and found that a simple instruction to preserve the original code reduced unnecessary changes by 26% while actually improving fix accuracy by 2.3 points.</p><p><strong>Why it matters:</strong> Code reviews are a standard part of software development, and reviewers struggle more with large, sweeping rewrites than minimal patches—even when both are technically correct. This work shows that AI can be trained to fix bugs while respecting the original design, making AI-assisted coding practical for real teams who need changes they can actually understand and approve.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Mean-field equilibrium of heterogeneous agents under market impact</title>
+      <link>https://paperplaine.com/papers/mean-field-equilibrium-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/mean-field-equilibrium-of</guid>
+      <pubDate>Wed, 02 Sep 2026 19:51:04 GMT</pubDate>
+      <author>Joseph Leclère, Mathieu Rosenbaum</author>
+      <category>Finance</category>
+      <description>How traders with different time horizons shape prices through collective action</description>
+      <content:encoded><![CDATA[<p><em>How traders with different time horizons shape prices through collective action</em></p><p>When traders act on forecasts over different time periods—some thinking seconds ahead, others days or weeks—their collective buying and selling pushes prices up and down in predictable ways. This paper shows mathematically how an equilibrium emerges: traders anticipate both future signals and the market impact from others' moves, and at balance, the price's predictable component cancels out, leaving only random noise plus the collective footprint of their positions.</p><p><strong>Why it matters:</strong> Understanding how market impact accumulates across traders with mismatched time horizons helps regulators and traders predict price movements and volatility patterns. The model explains why prices sometimes appear smoother or choppier depending on the mix of fast and slow traders in a market—knowledge that affects how exchanges are designed and how large trades should be executed to minimize disruption.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models</title>
+      <link>https://paperplaine.com/papers/how-perturbations-propagate-a</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/how-perturbations-propagate-a</guid>
+      <pubDate>Thu, 03 Sep 2026 03:17:25 GMT</pubDate>
+      <author>Dun Li Chan, Emily Liu, Niyathi Allu et al.</author>
+      <category>Statistics</category>
+      <description>What happens inside AI language models when text gets scrambled or corrupted</description>
+      <content:encoded><![CDATA[<p><em>What happens inside AI language models when text gets scrambled or corrupted</em></p><p>When language models encounter typos, garbled text, or shuffled words, the damage spreads differently depending on the type of error and where you measure it. Researchers found that looking only at final output—whether the model gets the answer right—misses crucial information about how the model's internal representations break down, and different errors leave distinct patterns of disruption inside the model that don't always correlate with behavioral mistakes.</p><p><strong>Why it matters:</strong> Language models power chatbots, search engines, and writing tools that real users interact with through imperfect inputs—voice transcription errors, typos, garbled PDFs. This work reveals that a model might produce reasonable-sounding output while its internal workings are partially corrupted, masking fragility that only shows up under specific stresses. Understanding these hidden failure modes is essential for deploying language models in safety-critical contexts and for building systems that degrade gracefully rather than confidently producing wrong answers.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views</title>
       <link>https://paperplaine.com/papers/knowledge-acquisition-during-pre</link>

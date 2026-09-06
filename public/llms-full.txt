@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 751 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-05
+This file contains the complete plain-English text of all 754 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-06
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: When Models Edit Too Much: On the Fidelity of Minimal Code Edits
+Subtitle: Why AI code fixes often rewrite too much, and how to stop them
+URL: https://paperplaine.com/papers/when-models-edit-too
+Category: Computer Science · AI
+Authors: Tongyao Zhu, Wei Hern Lim, Min-Yen Kan
+arXiv ID: 2609.04061
+arXiv URL: https://arxiv.org/abs/2609.04061
+Posted: 2026-09-06
+
+Summary: Large language models tasked with fixing bugs in code tend to rewrite far more than necessary, even when they produce correct results. Researchers measured this over-editing problem across top AI models and found that a simple instruction to preserve the original code reduced unnecessary changes by 26% while actually improving fix accuracy by 2.3 points.
+
+Why it matters: Code reviews are a standard part of software development, and reviewers struggle more with large, sweeping rewrites than minimal patches—even when both are technically correct. This work shows that AI can be trained to fix bugs while respecting the original design, making AI-assisted coding practical for real teams who need changes they can actually understand and approve.
+
+---
+Title: Mean-field equilibrium of heterogeneous agents under market impact
+Subtitle: How traders with different time horizons shape prices through collective action
+URL: https://paperplaine.com/papers/mean-field-equilibrium-of
+Category: Quantitative Finance
+Authors: Joseph Leclère, Mathieu Rosenbaum
+arXiv ID: 2609.03115
+arXiv URL: https://arxiv.org/abs/2609.03115
+Posted: 2026-09-06
+
+Summary: When traders act on forecasts over different time periods—some thinking seconds ahead, others days or weeks—their collective buying and selling pushes prices up and down in predictable ways. This paper shows mathematically how an equilibrium emerges: traders anticipate both future signals and the market impact from others' moves, and at balance, the price's predictable component cancels out, leaving only random noise plus the collective footprint of their positions.
+
+Why it matters: Understanding how market impact accumulates across traders with mismatched time horizons helps regulators and traders predict price movements and volatility patterns. The model explains why prices sometimes appear smoother or choppier depending on the mix of fast and slow traders in a market—knowledge that affects how exchanges are designed and how large trades should be executed to minimize disruption.
+
+---
+Title: How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models
+Subtitle: What happens inside AI language models when text gets scrambled or corrupted
+URL: https://paperplaine.com/papers/how-perturbations-propagate-a
+Category: Statistics
+Authors: Dun Li Chan, Emily Liu, Niyathi Allu et al.
+arXiv ID: 2609.03322
+arXiv URL: https://arxiv.org/abs/2609.03322
+Posted: 2026-09-06
+
+Summary: When language models encounter typos, garbled text, or shuffled words, the damage spreads differently depending on the type of error and where you measure it. Researchers found that looking only at final output—whether the model gets the answer right—misses crucial information about how the model's internal representations break down, and different errors leave distinct patterns of disruption inside the model that don't always correlate with behavioral mistakes.
+
+Why it matters: Language models power chatbots, search engines, and writing tools that real users interact with through imperfect inputs—voice transcription errors, typos, garbled PDFs. This work reveals that a model might produce reasonable-sounding output while its internal workings are partially corrupted, masking fragility that only shows up under specific stresses. Understanding these hidden failure modes is essential for deploying language models in safety-critical contexts and for building systems that degrade gracefully rather than confidently producing wrong answers.
 
 ---
 Title: Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views

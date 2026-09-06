@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 751 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 754 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 256 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 257 papers in archive.
+  - "When Models Edit Too Much: On the Fidelity of Minimal Code Edits"
   - "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views"
-  - "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 62 papers in archive.
   - "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference"
   - "When Does Authorization End? Effect Closure at Provider Boundaries"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 64 papers in archive.
   - "Axonal delay dispersion decides whether a neuron detects an event or a sequence, and predicts cortical column diameter"
   - "Interpretable Symptom Vectors for Depression in a Large Language Model"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 66 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 67 papers in archive.
+  - "Mean-field equilibrium of heterogeneous agents under market impact"
   - "Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets"
-  - "Authority-Inference Separation in Agentic Finance: First-Line Control, Blockchain Enforcement, and Replayable Assurance"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 64 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 65 papers in archive.
+  - "How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models"
   - "Spectral characteristics of autoencoder parameters as a vector representation of data"
-  - "On the Reliability of Generative Augmentation: A Wasserstein-Based Theoretical and Empirical Study"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 61 papers in archive.
   - "RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models"
   - "Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity"
 
 ## 10 most recent papers
+
+### When Models Edit Too Much: On the Fidelity of Minimal Code Edits
+- URL: https://paperplaine.com/papers/when-models-edit-too
+- Category: Computer Science · AI
+- Authors: Tongyao Zhu, Wei Hern Lim, Min-Yen Kan
+- arXiv: 2609.04061
+- Plain-English subtitle: Why AI code fixes often rewrite too much, and how to stop them
+- Summary: Large language models tasked with fixing bugs in code tend to rewrite far more than necessary, even when they produce correct results. Researchers measured this over-editing problem across top AI models and found that a simple instruction to preserve the original code reduced unnecessary changes by 26% while actually improving fix accuracy by 2.3 points.
+- Why it matters: Code reviews are a standard part of software development, and reviewers struggle more with large, sweeping rewrites than minimal patches—even when both are technically correct. This work shows that AI can be trained to fix bugs while respecting the original design, making AI-assisted coding practical for real teams who need changes they can actually understand and approve.
+
+### Mean-field equilibrium of heterogeneous agents under market impact
+- URL: https://paperplaine.com/papers/mean-field-equilibrium-of
+- Category: Quantitative Finance
+- Authors: Joseph Leclère, Mathieu Rosenbaum
+- arXiv: 2609.03115
+- Plain-English subtitle: How traders with different time horizons shape prices through collective action
+- Summary: When traders act on forecasts over different time periods—some thinking seconds ahead, others days or weeks—their collective buying and selling pushes prices up and down in predictable ways. This paper shows mathematically how an equilibrium emerges: traders anticipate both future signals and the market impact from others' moves, and at balance, the price's predictable component cancels out, leaving only random noise plus the collective footprint of their positions.
+- Why it matters: Understanding how market impact accumulates across traders with mismatched time horizons helps regulators and traders predict price movements and volatility patterns. The model explains why prices sometimes appear smoother or choppier depending on the mix of fast and slow traders in a market—knowledge that affects how exchanges are designed and how large trades should be executed to minimize disruption.
+
+### How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models
+- URL: https://paperplaine.com/papers/how-perturbations-propagate-a
+- Category: Statistics
+- Authors: Dun Li Chan, Emily Liu, Niyathi Allu et al.
+- arXiv: 2609.03322
+- Plain-English subtitle: What happens inside AI language models when text gets scrambled or corrupted
+- Summary: When language models encounter typos, garbled text, or shuffled words, the damage spreads differently depending on the type of error and where you measure it. Researchers found that looking only at final output—whether the model gets the answer right—misses crucial information about how the model's internal representations break down, and different errors leave distinct patterns of disruption inside the model that don't always correlate with behavioral mistakes.
+- Why it matters: Language models power chatbots, search engines, and writing tools that real users interact with through imperfect inputs—voice transcription errors, typos, garbled PDFs. This work reveals that a model might produce reasonable-sounding output while its internal workings are partially corrupted, masking fragility that only shows up under specific stresses. Understanding these hidden failure modes is essential for deploying language models in safety-critical contexts and for building systems that degrade gracefully rather than confidently producing wrong answers.
 
 ### Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views
 - URL: https://paperplaine.com/papers/knowledge-acquisition-during-pre
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI prompts shorter, smarter, and more reliable
 - Summary: A new method called ESPO improves how AI systems are optimized through text instructions, achieving 3.76 percentage points higher accuracy than previous approaches while cutting prompt length by nearly half. The key innovation is breaking optimization into three distinct phases—identifying error patterns, generating diverse candidate solutions, and selecting the most stable ones—which prevents the bloat that plagued earlier methods where longer prompts didn't actually work better.
 - Why it matters: Shorter prompts mean faster and cheaper AI inference—critical when running language models at scale. The method works reliably across different AI models and tasks, from math problems to question-answering, making it immediately practical for companies deploying these systems. Better accuracy with less computational overhead directly reduces both development time and operational costs.
-
-### Transversality Conditions for Boundary Constraints Defined by Differential Equations
-- URL: https://paperplaine.com/papers/transversality-conditions-for-boundary
-- Category: Mathematics
-- Authors: Isaac M Ross
-- arXiv: 2609.04084
-- Plain-English subtitle: Finding the right conditions to optimize journeys through multi-body systems
-- Summary: This paper solves a long-standing puzzle in trajectory optimization: how to find the mathematically optimal path when a spacecraft must satisfy conditions defined by equations rather than fixed points. The solution introduces new rules for when a trajectory satisfies these equation-based constraints, revealing that optimal paths sometimes behave in counterintuitive ways that don't match classical optimization theory.
-- Why it matters: Space missions to distant planets and asteroids often require trajectories that satisfy complex dynamic constraints—like staying in a certain orbital relationship to multiple bodies. Without these new transversality conditions, engineers can't reliably verify whether a proposed path is truly optimal or just locally good. This work gives mission planners the mathematical foundation to confidently design fuel-efficient routes through the solar system.
-
-### Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets
-- URL: https://paperplaine.com/papers/tempting-the-agent-the
-- Category: Quantitative Finance
-- Authors: Federico Gatta, Manuel Naviglio, Francesco Tarantelli
-- arXiv: 2609.02992
-- Plain-English subtitle: When AI agents can dump their identity, does reputation still keep them honest?
-- Summary: When an AI agent can abandon its reputation and start fresh with a new identity at low cost, reputation stops working as a disciplinary force. Researchers modeled this problem mathematically and found that an agent's willingness to cheat depends on how expensive it is to reset identities, how quickly reputation fades, and how much customers care about past performance—showing that cheap identity switches can make reputation nearly useless at preventing fraud.
-- Why it matters: As autonomous AI agents increasingly handle money and services on blockchain systems, this matters directly: if an agent can trash its reputation and get a new one cheaply, it has every incentive to take shortcuts and cut corners until it's caught, then simply disappear and restart. The research identifies which market designs actually prevent this—and which don't—so platforms can build systems where agents genuinely have skin in the game.
-
-### Compile by Training: Turning Natural-Language Specifications into Local Neural Functions
-- URL: https://paperplaine.com/papers/compile-by-training-turning
-- Category: Computer Science · AI
-- Authors: Yuntian Deng, Pengyu Nie, Stuart Shieber
-- arXiv: 2609.04199
-- Plain-English subtitle: Teaching small AI models to handle specific text tasks without calling expensive services
-- Summary: Researchers developed a method that converts natural-language instructions into small, reusable AI functions that run locally without needing to call expensive remote models. On difficult test cases where other approaches failed entirely, their method achieved 83.6% accuracy while producing functions that can be stored, shared, and combined like ordinary software — though generating them takes about a minute rather than seconds.
-- Why it matters: Companies waste money and time sending every user request to remote AI services, creating delays and dependency on external providers. This approach lets organizations bake specific tasks directly into their products as lightweight functions that run instantly on-device, cutting costs and latency while maintaining accuracy on real-world problems.
 
 ## About
 
