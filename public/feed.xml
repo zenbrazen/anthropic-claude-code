@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2026 11:31:32 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 21:00:09 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rethinking On-Policy Distillation of Large Language Models II: One Training Example</title>
+      <link>https://paperplaine.com/papers/rethinking-on-policy-distillation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/rethinking-on-policy-distillation</guid>
+      <pubDate>Thu, 03 Sep 2026 17:54:38 GMT</pubDate>
+      <author>Zixuan Fu, Bingxiang He, Yuxin Zuo et al.</author>
+      <category>AI</category>
+      <description>Training AI assistants on a single example works better than expected</description>
+      <content:encoded><![CDATA[<p><em>Training AI assistants on a single example works better than expected</em></p><p>Researchers trained smaller AI models to mimic larger ones using just one example, and found the smaller model kept improving for hundreds of training steps and recovered most of the performance gains from using thousands of examples. The breakthrough comes from understanding what matters: a single example exposes the student model to 71.5% of the different situations (called "states") that training on full datasets reaches, but the student absorbs that information slowly—the real bottleneck isn't data scarcity but the model's learning speed.</p><p><strong>Why it matters:</strong> AI labs spend enormous resources generating training data to improve large language models. This work shows that data efficiency matters far less than we thought—adding more examples helps slightly, but the real constraint is giving the student model enough training time to actually learn from whatever data it sees. Labs could cut data collection costs significantly while achieving nearly identical results, and should instead focus on making the learning process itself faster.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Limits of Stochastic Semigroups and Block-Triangular Majorisation</title>
+      <link>https://paperplaine.com/papers/limits-of-stochastic-semigroups</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/limits-of-stochastic-semigroups</guid>
+      <pubDate>Thu, 03 Sep 2026 16:34:39 GMT</pubDate>
+      <author>Fabio Deelan Cunden, Jakub Czartowski, Giovanni Gramegna et al.</author>
+      <category>Math</category>
+      <description>When math operations switch order, they reveal hidden structures in randomness</description>
+      <content:encoded><![CDATA[<p><em>When math operations switch order, they reveal hidden structures in randomness</em></p><p>Mathematicians discovered that two fundamental operations on random systems don't always give the same result when applied in different orders—a property called non-commutativity. By studying what happens when you push these systems to their limits, they found the resulting structures follow a surprising block pattern that's stricter than previously known forms of mathematical order.</p><p><strong>Why it matters:</strong> This work clarifies how disorder and randomness behave at extremes, which matters for fields ranging from statistical physics to information theory. The new framework—block-triangular majorisation—fills a conceptual gap between existing models and may help researchers better predict and control systems far from equilibrium, from biological networks to quantum computing.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Competitive Market Behavior of LLMs</title>
+      <link>https://paperplaine.com/papers/competitive-market-behavior-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/competitive-market-behavior-of</guid>
+      <pubDate>Wed, 02 Sep 2026 13:24:42 GMT</pubDate>
+      <author>Pawel Struski, Jakub Swistak, Inez Okulska et al.</author>
+      <category>Economics</category>
+      <description>When AI agents replace humans in markets, efficiency breaks down</description>
+      <content:encoded><![CDATA[<p><em>When AI agents replace humans in markets, efficiency breaks down</em></p><p>When researchers replaced human traders with AI language models in a classic economic experiment, the markets failed to reach equilibrium and produced worse resource allocation than human-run markets. The AI agents showed wildly different trading behaviors depending on which model they used, and analysis of their reasoning revealed they switched from strategic thinking to impulsive "let's just trade now" urgency.</p><p><strong>Why it matters:</strong> As companies deploy large language models as autonomous economic agents—in trading, bidding systems, and marketplace negotiations—these results show that markets designed for human behavior may malfunction with AI. The inefficient allocations mean potential losses for buyers and sellers, and the unpredictability across different AI models creates risk for anyone building systems that mix human and AI traders.</p>]]></content:encoded>
+    </item>
     <item>
       <title>When Models Edit Too Much: On the Fidelity of Minimal Code Edits</title>
       <link>https://paperplaine.com/papers/when-models-edit-too</link>

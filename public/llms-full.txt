@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 754 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 757 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-06
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Rethinking On-Policy Distillation of Large Language Models II: One Training Example
+Subtitle: Training AI assistants on a single example works better than expected
+URL: https://paperplaine.com/papers/rethinking-on-policy-distillation
+Category: Computer Science · AI
+Authors: Zixuan Fu, Bingxiang He, Yuxin Zuo et al.
+arXiv ID: 2609.04172
+arXiv URL: https://arxiv.org/abs/2609.04172
+Posted: 2026-09-06
+
+Summary: Researchers trained smaller AI models to mimic larger ones using just one example, and found the smaller model kept improving for hundreds of training steps and recovered most of the performance gains from using thousands of examples. The breakthrough comes from understanding what matters: a single example exposes the student model to 71.5% of the different situations (called "states") that training on full datasets reaches, but the student absorbs that information slowly—the real bottleneck isn't data scarcity but the model's learning speed.
+
+Why it matters: AI labs spend enormous resources generating training data to improve large language models. This work shows that data efficiency matters far less than we thought—adding more examples helps slightly, but the real constraint is giving the student model enough training time to actually learn from whatever data it sees. Labs could cut data collection costs significantly while achieving nearly identical results, and should instead focus on making the learning process itself faster.
+
+---
+Title: Limits of Stochastic Semigroups and Block-Triangular Majorisation
+Subtitle: When math operations switch order, they reveal hidden structures in randomness
+URL: https://paperplaine.com/papers/limits-of-stochastic-semigroups
+Category: Mathematics
+Authors: Fabio Deelan Cunden, Jakub Czartowski, Giovanni Gramegna et al.
+arXiv ID: 2609.04057
+arXiv URL: https://arxiv.org/abs/2609.04057
+Posted: 2026-09-06
+
+Summary: Mathematicians discovered that two fundamental operations on random systems don't always give the same result when applied in different orders—a property called non-commutativity. By studying what happens when you push these systems to their limits, they found the resulting structures follow a surprising block pattern that's stricter than previously known forms of mathematical order.
+
+Why it matters: This work clarifies how disorder and randomness behave at extremes, which matters for fields ranging from statistical physics to information theory. The new framework—block-triangular majorisation—fills a conceptual gap between existing models and may help researchers better predict and control systems far from equilibrium, from biological networks to quantum computing.
+
+---
+Title: Competitive Market Behavior of LLMs
+Subtitle: When AI agents replace humans in markets, efficiency breaks down
+URL: https://paperplaine.com/papers/competitive-market-behavior-of
+Category: Economics
+Authors: Pawel Struski, Jakub Swistak, Inez Okulska et al.
+arXiv ID: 2609.02580
+arXiv URL: https://arxiv.org/abs/2609.02580
+Posted: 2026-09-06
+
+Summary: When researchers replaced human traders with AI language models in a classic economic experiment, the markets failed to reach equilibrium and produced worse resource allocation than human-run markets. The AI agents showed wildly different trading behaviors depending on which model they used, and analysis of their reasoning revealed they switched from strategic thinking to impulsive "let's just trade now" urgency.
+
+Why it matters: As companies deploy large language models as autonomous economic agents—in trading, bidding systems, and marketplace negotiations—these results show that markets designed for human behavior may malfunction with AI. The inefficient allocations mean potential losses for buyers and sellers, and the unpredictability across different AI models creates risk for anyone building systems that mix human and AI traders.
 
 ---
 Title: When Models Edit Too Much: On the Fidelity of Minimal Code Edits

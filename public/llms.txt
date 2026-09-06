@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 754 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 757 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 257 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 258 papers in archive.
+  - "Rethinking On-Policy Distillation of Large Language Models II: One Training Example"
   - "When Models Edit Too Much: On the Fidelity of Minimal Code Edits"
-  - "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 62 papers in archive.
   - "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference"
   - "When Does Authorization End? Effect Closure at Provider Boundaries"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 63 papers in archive.
   - "Parameterised graph theory for tensor networks: entanglement rerouting, structural simplification, and agnostic tomography"
   - "QArray+: A physics-informed GPU-accelerated simulator for quantum dot arrays"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 62 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 63 papers in archive.
+  - "Limits of Stochastic Semigroups and Block-Triangular Majorisation"
   - "Transversality Conditions for Boundary Constraints Defined by Differential Equations"
-  - "Generalized Semi-Infinite Programming for Robust Optimal Control with Decision-Dependent Uncertainty"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 64 papers in archive.
   - "Axonal delay dispersion decides whether a neuron detects an event or a sequence, and predicts cortical column diameter"
   - "Interpretable Symptom Vectors for Depression in a Large Language Model"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 61 papers in archive.
   - "RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models"
   - "Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 53 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 54 papers in archive.
+  - "Competitive Market Behavior of LLMs"
   - "Off-policy causal estimation in networks"
-  - "An Anonymized Urn-Based Experimental Dataset on Decision-Making under Risk and Ambiguity"
 
 ## 10 most recent papers
+
+### Rethinking On-Policy Distillation of Large Language Models II: One Training Example
+- URL: https://paperplaine.com/papers/rethinking-on-policy-distillation
+- Category: Computer Science · AI
+- Authors: Zixuan Fu, Bingxiang He, Yuxin Zuo et al.
+- arXiv: 2609.04172
+- Plain-English subtitle: Training AI assistants on a single example works better than expected
+- Summary: Researchers trained smaller AI models to mimic larger ones using just one example, and found the smaller model kept improving for hundreds of training steps and recovered most of the performance gains from using thousands of examples. The breakthrough comes from understanding what matters: a single example exposes the student model to 71.5% of the different situations (called "states") that training on full datasets reaches, but the student absorbs that information slowly—the real bottleneck isn't data scarcity but the model's learning speed.
+- Why it matters: AI labs spend enormous resources generating training data to improve large language models. This work shows that data efficiency matters far less than we thought—adding more examples helps slightly, but the real constraint is giving the student model enough training time to actually learn from whatever data it sees. Labs could cut data collection costs significantly while achieving nearly identical results, and should instead focus on making the learning process itself faster.
+
+### Limits of Stochastic Semigroups and Block-Triangular Majorisation
+- URL: https://paperplaine.com/papers/limits-of-stochastic-semigroups
+- Category: Mathematics
+- Authors: Fabio Deelan Cunden, Jakub Czartowski, Giovanni Gramegna et al.
+- arXiv: 2609.04057
+- Plain-English subtitle: When math operations switch order, they reveal hidden structures in randomness
+- Summary: Mathematicians discovered that two fundamental operations on random systems don't always give the same result when applied in different orders—a property called non-commutativity. By studying what happens when you push these systems to their limits, they found the resulting structures follow a surprising block pattern that's stricter than previously known forms of mathematical order.
+- Why it matters: This work clarifies how disorder and randomness behave at extremes, which matters for fields ranging from statistical physics to information theory. The new framework—block-triangular majorisation—fills a conceptual gap between existing models and may help researchers better predict and control systems far from equilibrium, from biological networks to quantum computing.
+
+### Competitive Market Behavior of LLMs
+- URL: https://paperplaine.com/papers/competitive-market-behavior-of
+- Category: Economics
+- Authors: Pawel Struski, Jakub Swistak, Inez Okulska et al.
+- arXiv: 2609.02580
+- Plain-English subtitle: When AI agents replace humans in markets, efficiency breaks down
+- Summary: When researchers replaced human traders with AI language models in a classic economic experiment, the markets failed to reach equilibrium and produced worse resource allocation than human-run markets. The AI agents showed wildly different trading behaviors depending on which model they used, and analysis of their reasoning revealed they switched from strategic thinking to impulsive "let's just trade now" urgency.
+- Why it matters: As companies deploy large language models as autonomous economic agents—in trading, bidding systems, and marketplace negotiations—these results show that markets designed for human behavior may malfunction with AI. The inefficient allocations mean potential losses for buyers and sellers, and the unpredictability across different AI models creates risk for anyone building systems that mix human and AI traders.
 
 ### When Models Edit Too Much: On the Fidelity of Minimal Code Edits
 - URL: https://paperplaine.com/papers/when-models-edit-too
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to find the exact moments between events in videos
 - Summary: When AI tries to describe everything happening in a long video, it struggles to pinpoint exactly when one event ends and another begins — especially the transition moments in between. This paper introduces a method that uses a visual language model to spot these transitions by analyzing what's actually visible in each frame, then uses that insight to precisely locate and describe event boundaries, outperforming previous approaches on standard video datasets.
 - Why it matters: Better video understanding helps real applications like video search engines, automated video editing, and accessibility tools that describe videos for people with vision loss. Rather than guessing that transitions occur at fixed points, this approach finds them where they actually happen visually, making descriptions more accurate and timestamps more useful.
-
-### RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models
-- URL: https://paperplaine.com/papers/robustseiz-an-open-source
-- Category: Engineering
-- Authors: Mohammad Mohammadi, Alireza Zarei
-- arXiv: 2609.04007
-- Plain-English subtitle: Testing whether seizure-detection AI actually works in messy real-world hospitals
-- Summary: Seizure-detection algorithms perform well on clean training data but can fail when hospitals add noise, equipment variation, or interference—problems that don't show up in standard tests. Researchers created RobustSeiz, an open-source stress-testing tool that deliberately introduces realistic disruptions to see how robust these AI systems really are before they're deployed to patients.
-- Why it matters: Seizure detection is a safety-critical task: a false negative could mean missing a life-threatening event, while false alarms waste hospital resources and cause patient anxiety. By standardizing how hospitals test these systems against real-world messiness—not just pristine lab data—RobustSeiz helps ensure that AI seizure detectors are actually reliable enough to trust in operating rooms and intensive care units.
-
-### Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference
-- URL: https://paperplaine.com/papers/flip-don-t-shuffle
-- Category: Computer Science
-- Authors: Simone Ceppi, Ignacio Sanchez
-- arXiv: 2609.03844
-- Plain-English subtitle: A faster way to prove an AI wrote something, without slowing it down
-- Summary: Researchers created a new watermarking method for large language models that identifies AI-generated text while running 6000 times faster than existing techniques and adding less than 1% to generation speed. The method works by making a single random decision per word instead of searching through lists or running complex procedures, yet maintains the same ability to detect AI text with statistical certainty.
-- Why it matters: As AI-generated text becomes harder to distinguish from human writing, watermarks are a leading tool to prove authenticity—but existing methods slow down text generation noticeably. This technique is fast enough to deploy at scale without slowing down AI services, making it practical for real-world use in detecting plagiarism, academic cheating, and AI-generated misinformation.
-
-### ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize
-- URL: https://paperplaine.com/papers/espo-error-structured-prompt
-- Category: Computer Science · AI
-- Authors: Lihao Liu, Peng Tang, Kunwar Yashraj Singh et al.
-- arXiv: 2609.04197
-- Plain-English subtitle: Making AI prompts shorter, smarter, and more reliable
-- Summary: A new method called ESPO improves how AI systems are optimized through text instructions, achieving 3.76 percentage points higher accuracy than previous approaches while cutting prompt length by nearly half. The key innovation is breaking optimization into three distinct phases—identifying error patterns, generating diverse candidate solutions, and selecting the most stable ones—which prevents the bloat that plagued earlier methods where longer prompts didn't actually work better.
-- Why it matters: Shorter prompts mean faster and cheaper AI inference—critical when running language models at scale. The method works reliably across different AI models and tasks, from math problems to question-answering, making it immediately practical for companies deploying these systems. Better accuracy with less computational overhead directly reduces both development time and operational costs.
 
 ## About
 
