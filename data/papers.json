@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.05274",
+    "title": "How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method",
+    "authors": "Konstantin Grotov, Valentin Malykh",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-04T15:30:22Z",
+    "publishedFormatted": "Sep 4, 2026",
+    "subtitle": "Stopping AI coding agents before they make expensive mistakes",
+    "summary": "AI systems built to write code often fail confidently—executing bad decisions that only become apparent after wasting time and money. Researchers developed a method to detect when a coding agent is about to fail, using only its text output, then demonstrated that blocking these high-risk actions cuts execution errors by 6–8 percentage points and reduces token costs by 14–19%.",
+    "whyItMatters": "AI coding assistants are increasingly deployed in real development workflows, where each failed attempt costs compute time and developer attention. This method catches failures before execution happens, making expensive AI agents practical enough to deploy at scale. The technique works across different AI models and generalizes to new tasks without retraining, suggesting it could become a standard safety layer for any black-box AI agent used in high-cost settings.",
+    "fetchedAt": "2026-09-07T21:51:38.780Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 3,
+      "pageCount": 11,
+      "wordCount": 167
+    },
+    "slug": "how-to-speculate-about"
+  },
+  {
+    "id": "2609.05212",
+    "title": "PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders",
+    "authors": "Chloé Hashimoto-Cullen, Ghislain Agoua, Benjamin Guedj et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-09-04T14:44:20Z",
+    "publishedFormatted": "Sep 4, 2026",
+    "subtitle": "When AI learns time patterns, proving it will work on new data",
+    "summary": "Researchers created mathematical guarantees for variational autoencoders—AI models that learn to compress and reconstruct time series data—showing they will generalize to new, unseen sequences. Crucially, these guarantees don't weaken as time series get longer, a major advance over previous theory that assumed data points were independent.",
+    "whyItMatters": "Variational autoencoders are already deployed in energy grids, hospitals, and financial systems to forecast and detect anomalies in time-dependent data. Without theoretical guarantees, there's no principled way to know when these models are reliably learning patterns versus just memorizing training data. This work provides that foundation, letting practitioners understand when these models are safe to trust on new real-world sequences.",
+    "fetchedAt": "2026-09-07T21:51:41.929Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 144
+    },
+    "slug": "pac-bayesian-reconstruction-guarantees"
+  },
+  {
+    "id": "2609.05390",
+    "title": "Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective",
+    "authors": "Ngoc-Son Duong, Trung-Hieu Nguyen, Quang-Truong Can",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-04T17:41:13Z",
+    "publishedFormatted": "Sep 4, 2026",
+    "subtitle": "Making radar and wireless signals work together without wasting power",
+    "summary": "Radar and communication systems traditionally require separate equipment, but new technology can merge them into one. This paper solves the engineering problem of designing a single radio signal that works well for both tasks while using the least power possible—and can actually be built with existing hardware.",
+    "whyItMatters": "Dual-use radar-and-communication systems could cut the size, weight, and power consumption of devices ranging from autonomous vehicles to satellites. Military and civilian applications have pushed for this for years, but the signals had to work better at one job than the other. This approach makes the tradeoff explicit and finds the most efficient balance, potentially opening the door to equipment that does both jobs simultaneously.",
+    "fetchedAt": "2026-09-07T21:51:45.302Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 164
+    },
+    "slug": "energy-efficient-waveform-design"
+  },
+  {
     "id": "2609.05395",
     "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
     "authors": "Dain Kim, Eungi Cho, Kyumin Kim et al.",

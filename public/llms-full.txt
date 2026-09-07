@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 760 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 763 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-07
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method
+Subtitle: Stopping AI coding agents before they make expensive mistakes
+URL: https://paperplaine.com/papers/how-to-speculate-about
+Category: Computer Science · AI
+Authors: Konstantin Grotov, Valentin Malykh
+arXiv ID: 2609.05274
+arXiv URL: https://arxiv.org/abs/2609.05274
+Posted: 2026-09-07
+
+Summary: AI systems built to write code often fail confidently—executing bad decisions that only become apparent after wasting time and money. Researchers developed a method to detect when a coding agent is about to fail, using only its text output, then demonstrated that blocking these high-risk actions cuts execution errors by 6–8 percentage points and reduces token costs by 14–19%.
+
+Why it matters: AI coding assistants are increasingly deployed in real development workflows, where each failed attempt costs compute time and developer attention. This method catches failures before execution happens, making expensive AI agents practical enough to deploy at scale. The technique works across different AI models and generalizes to new tasks without retraining, suggesting it could become a standard safety layer for any black-box AI agent used in high-cost settings.
+
+---
+Title: PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders
+Subtitle: When AI learns time patterns, proving it will work on new data
+URL: https://paperplaine.com/papers/pac-bayesian-reconstruction-guarantees
+Category: Statistics
+Authors: Chloé Hashimoto-Cullen, Ghislain Agoua, Benjamin Guedj et al.
+arXiv ID: 2609.05212
+arXiv URL: https://arxiv.org/abs/2609.05212
+Posted: 2026-09-07
+
+Summary: Researchers created mathematical guarantees for variational autoencoders—AI models that learn to compress and reconstruct time series data—showing they will generalize to new, unseen sequences. Crucially, these guarantees don't weaken as time series get longer, a major advance over previous theory that assumed data points were independent.
+
+Why it matters: Variational autoencoders are already deployed in energy grids, hospitals, and financial systems to forecast and detect anomalies in time-dependent data. Without theoretical guarantees, there's no principled way to know when these models are reliably learning patterns versus just memorizing training data. This work provides that foundation, letting practitioners understand when these models are safe to trust on new real-world sequences.
+
+---
+Title: Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective
+Subtitle: Making radar and wireless signals work together without wasting power
+URL: https://paperplaine.com/papers/energy-efficient-waveform-design
+Category: Engineering
+Authors: Ngoc-Son Duong, Trung-Hieu Nguyen, Quang-Truong Can
+arXiv ID: 2609.05390
+arXiv URL: https://arxiv.org/abs/2609.05390
+Posted: 2026-09-07
+
+Summary: Radar and communication systems traditionally require separate equipment, but new technology can merge them into one. This paper solves the engineering problem of designing a single radio signal that works well for both tasks while using the least power possible—and can actually be built with existing hardware.
+
+Why it matters: Dual-use radar-and-communication systems could cut the size, weight, and power consumption of devices ranging from autonomous vehicles to satellites. Military and civilian applications have pushed for this for years, but the signals had to work better at one job than the other. This approach makes the tradeoff explicit and finds the most efficient balance, potentially opening the door to equipment that does both jobs simultaneously.
 
 ---
 Title: Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe

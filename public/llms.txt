@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 760 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 763 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 259 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 260 papers in archive.
+  - "How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method"
   - "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe"
-  - "Rethinking On-Policy Distillation of Large Language Models II: One Training Example"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 63 papers in archive.
   - "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls"
   - "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 67 papers in archive.
   - "Mean-field equilibrium of heterogeneous agents under market impact"
   - "Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 65 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 66 papers in archive.
+  - "PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders"
   - "How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models"
-  - "Spectral characteristics of autoencoder parameters as a vector representation of data"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 61 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 62 papers in archive.
+  - "Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective"
   - "RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models"
-  - "Analog-DB: An Agent-First Analog Integrated Circuit Database, From Blocks to Systems"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 54 papers in archive.
   - "Competitive Market Behavior of LLMs"
   - "Off-policy causal estimation in networks"
 
 ## 10 most recent papers
+
+### How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method
+- URL: https://paperplaine.com/papers/how-to-speculate-about
+- Category: Computer Science · AI
+- Authors: Konstantin Grotov, Valentin Malykh
+- arXiv: 2609.05274
+- Plain-English subtitle: Stopping AI coding agents before they make expensive mistakes
+- Summary: AI systems built to write code often fail confidently—executing bad decisions that only become apparent after wasting time and money. Researchers developed a method to detect when a coding agent is about to fail, using only its text output, then demonstrated that blocking these high-risk actions cuts execution errors by 6–8 percentage points and reduces token costs by 14–19%.
+- Why it matters: AI coding assistants are increasingly deployed in real development workflows, where each failed attempt costs compute time and developer attention. This method catches failures before execution happens, making expensive AI agents practical enough to deploy at scale. The technique works across different AI models and generalizes to new tasks without retraining, suggesting it could become a standard safety layer for any black-box AI agent used in high-cost settings.
+
+### PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders
+- URL: https://paperplaine.com/papers/pac-bayesian-reconstruction-guarantees
+- Category: Statistics
+- Authors: Chloé Hashimoto-Cullen, Ghislain Agoua, Benjamin Guedj et al.
+- arXiv: 2609.05212
+- Plain-English subtitle: When AI learns time patterns, proving it will work on new data
+- Summary: Researchers created mathematical guarantees for variational autoencoders—AI models that learn to compress and reconstruct time series data—showing they will generalize to new, unseen sequences. Crucially, these guarantees don't weaken as time series get longer, a major advance over previous theory that assumed data points were independent.
+- Why it matters: Variational autoencoders are already deployed in energy grids, hospitals, and financial systems to forecast and detect anomalies in time-dependent data. Without theoretical guarantees, there's no principled way to know when these models are reliably learning patterns versus just memorizing training data. This work provides that foundation, letting practitioners understand when these models are safe to trust on new real-world sequences.
+
+### Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective
+- URL: https://paperplaine.com/papers/energy-efficient-waveform-design
+- Category: Engineering
+- Authors: Ngoc-Son Duong, Trung-Hieu Nguyen, Quang-Truong Can
+- arXiv: 2609.05390
+- Plain-English subtitle: Making radar and wireless signals work together without wasting power
+- Summary: Radar and communication systems traditionally require separate equipment, but new technology can merge them into one. This paper solves the engineering problem of designing a single radio signal that works well for both tasks while using the least power possible—and can actually be built with existing hardware.
+- Why it matters: Dual-use radar-and-communication systems could cut the size, weight, and power consumption of devices ranging from autonomous vehicles to satellites. Military and civilian applications have pushed for this for years, but the signals had to work better at one job than the other. This approach makes the tradeoff explicit and finds the most efficient balance, potentially opening the door to equipment that does both jobs simultaneously.
 
 ### Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe
 - URL: https://paperplaine.com/papers/multi-step-tool-calling
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI code fixes often rewrite too much, and how to stop them
 - Summary: Large language models tasked with fixing bugs in code tend to rewrite far more than necessary, even when they produce correct results. Researchers measured this over-editing problem across top AI models and found that a simple instruction to preserve the original code reduced unnecessary changes by 26% while actually improving fix accuracy by 2.3 points.
 - Why it matters: Code reviews are a standard part of software development, and reviewers struggle more with large, sweeping rewrites than minimal patches—even when both are technically correct. This work shows that AI can be trained to fix bugs while respecting the original design, making AI-assisted coding practical for real teams who need changes they can actually understand and approve.
-
-### Mean-field equilibrium of heterogeneous agents under market impact
-- URL: https://paperplaine.com/papers/mean-field-equilibrium-of
-- Category: Quantitative Finance
-- Authors: Joseph Leclère, Mathieu Rosenbaum
-- arXiv: 2609.03115
-- Plain-English subtitle: How traders with different time horizons shape prices through collective action
-- Summary: When traders act on forecasts over different time periods—some thinking seconds ahead, others days or weeks—their collective buying and selling pushes prices up and down in predictable ways. This paper shows mathematically how an equilibrium emerges: traders anticipate both future signals and the market impact from others' moves, and at balance, the price's predictable component cancels out, leaving only random noise plus the collective footprint of their positions.
-- Why it matters: Understanding how market impact accumulates across traders with mismatched time horizons helps regulators and traders predict price movements and volatility patterns. The model explains why prices sometimes appear smoother or choppier depending on the mix of fast and slow traders in a market—knowledge that affects how exchanges are designed and how large trades should be executed to minimize disruption.
-
-### How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models
-- URL: https://paperplaine.com/papers/how-perturbations-propagate-a
-- Category: Statistics
-- Authors: Dun Li Chan, Emily Liu, Niyathi Allu et al.
-- arXiv: 2609.03322
-- Plain-English subtitle: What happens inside AI language models when text gets scrambled or corrupted
-- Summary: When language models encounter typos, garbled text, or shuffled words, the damage spreads differently depending on the type of error and where you measure it. Researchers found that looking only at final output—whether the model gets the answer right—misses crucial information about how the model's internal representations break down, and different errors leave distinct patterns of disruption inside the model that don't always correlate with behavioral mistakes.
-- Why it matters: Language models power chatbots, search engines, and writing tools that real users interact with through imperfect inputs—voice transcription errors, typos, garbled PDFs. This work reveals that a model might produce reasonable-sounding output while its internal workings are partially corrupted, masking fragility that only shows up under specific stresses. Understanding these hidden failure modes is essential for deploying language models in safety-critical contexts and for building systems that degrade gracefully rather than confidently producing wrong answers.
-
-### Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views
-- URL: https://paperplaine.com/papers/knowledge-acquisition-during-pre
-- Category: Computer Science · AI
-- Authors: Joseph Lee, Yidi Huang, Dokyoon Kim et al.
-- arXiv: 2609.04180
-- Plain-English subtitle: Why showing AI the same idea multiple ways helps it learn better
-- Summary: Large language models learn facts more effectively when trained on different rewordings of the same knowledge, even when the total number of training examples stays constant. Surprisingly, this benefit holds across different sizes of training batches and types of knowledge, and works regardless of whether the rewordings come from a strong or weak source model.
-- Why it matters: This explains a real puzzle about why diverse training data improves AI performance—variety in how information is presented teaches the model more than simple repetition alone. The finding could guide how companies prepare training data for language models, suggesting that investing in diverse reformulations of key facts and concepts produces smarter AI systems with the same computational budget.
 
 ## About
 
