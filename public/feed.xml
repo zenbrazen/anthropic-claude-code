@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2026 21:00:09 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 13:17:39 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe</title>
+      <link>https://paperplaine.com/papers/multi-step-tool-calling</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multi-step-tool-calling</guid>
+      <pubDate>Fri, 04 Sep 2026 17:44:52 GMT</pubDate>
+      <author>Dain Kim, Eungi Cho, Kyumin Kim et al.</author>
+      <category>AI</category>
+      <description>Making open-source AI assistants better at chaining government services together</description>
+      <content:encoded><![CDATA[<p><em>Making open-source AI assistants better at chaining government services together</em></p><p>Open-source AI models struggle when they need to chain multiple steps across government APIs—calling one service, using its result to call another, and so on. Researchers created a benchmark of 145 real Korean government tasks to measure this gap, then built a technique that learns which tool combinations actually work by testing them live, generating training data that teaches smaller models to perform nearly as well as much larger ones.</p><p><strong>Why it matters:</strong> As governments adopt open-source AI to protect citizen data, they need systems that can actually navigate their own services reliably. This work shows that a smaller, cheaper model can now handle complex multi-step government requests—making it practical for public agencies to deploy capable AI agents without buying expensive proprietary systems or hosting massive models.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls</title>
+      <link>https://paperplaine.com/papers/continuity-security-context-contracts</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/continuity-security-context-contracts</guid>
+      <pubDate>Fri, 04 Sep 2026 15:26:35 GMT</pubDate>
+      <author>Chris Zheng, Geng Yang</author>
+      <category>Comp Sci</category>
+      <description>Preventing AI agents from losing track of who authorized what</description>
+      <content:encoded><![CDATA[<p><em>Preventing AI agents from losing track of who authorized what</em></p><p>When AI systems chain together multiple security checks—tracking who gave permission, enforcing policies, logging actions—critical authorization information gets lost between steps, creating dangerous gaps. Researchers built CONTINUITY, a framework that cryptographically locks security context in place as requests move through an agent's components, ensuring every final action traces back to valid permission. In 2,560 simulated attacks across 128 fault scenarios, the system prevented all harmful actions while completing legitimate tasks without false alarms.</p><p><strong>Why it matters:</strong> AI systems already combine multiple security tools, but gaps between them are invisible until something goes wrong—and then it's often too late. This framework makes those gaps detectable and fixable before deployment. For organizations building AI agents that handle sensitive decisions (financial transfers, data access, system commands), it's the difference between security theater and actual verification that each action was genuinely authorized.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>High-Order Triadic Functional Connectivity in the Brain and Beyond</title>
+      <link>https://paperplaine.com/papers/high-order-triadic-functional</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/high-order-triadic-functional</guid>
+      <pubDate>Thu, 03 Sep 2026 15:21:18 GMT</pubDate>
+      <author>Qiang Li, Masoud Seraji, Yu-Ping Wang et al.</author>
+      <category>Biology</category>
+      <description>Brain networks organized by triplets of regions, not just pairs</description>
+      <content:encoded><![CDATA[<p><em>Brain networks organized by triplets of regions, not just pairs</em></p><p>Brain connectivity studies have focused on how two regions talk to each other, but the brain actually works through more complex three-way interactions. Researchers developed a method to map these "triadic" connections—statistical relationships among groups of three brain regions—and found they reveal distinct organizational patterns that simple pairwise analysis misses, providing richer detail about how the brain coordinates activity during rest and active tasks.</p><p><strong>Why it matters:</strong> Current brain imaging analysis might be throwing away crucial information about how cognition actually works. By capturing three-way interactions instead of just pairs, researchers can build more complete maps of brain organization, which could improve diagnosis of neurological conditions, refine understanding of how thoughts and behaviors emerge from neural activity, and provide a more accurate foundation for future brain-computer interfaces and treatments.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Rethinking On-Policy Distillation of Large Language Models II: One Training Example</title>
       <link>https://paperplaine.com/papers/rethinking-on-policy-distillation</link>
