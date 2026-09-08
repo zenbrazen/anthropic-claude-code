@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.05337",
+    "title": "Variational Continuation for Double Pendulum Periodic Orbits",
+    "authors": "Leo Yao, Ziming Liu, Max Tegmark",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-04T16:42:51Z",
+    "publishedFormatted": "Sep 4, 2026",
+    "subtitle": "Using machine learning to find hidden repeating patterns in swinging pendulums",
+    "summary": "Researchers developed an automated method to find periodic orbits—repeating motion patterns—in dynamical systems like double pendulums, using techniques borrowed from machine learning instead of hand-written equations. The approach discovered previously unknown periodic orbits where both pendulum masses are always in motion, never coming to rest simultaneously.",
+    "whyItMatters": "Finding periodic orbits is fundamental to understanding chaotic systems in physics, engineering, and climate modeling. By automating this search process, the method makes it faster and easier to map the hidden structures within complex systems, potentially accelerating discovery in fields ranging from spacecraft dynamics to understanding turbulence.",
+    "fetchedAt": "2026-09-08T21:31:42.594Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 160
+    },
+    "slug": "variational-continuation-for-double"
+  },
+  {
+    "id": "2609.05408",
+    "title": "Towards Scaling Quantum Fine-Tuning of Foundational Time Series Models for Classification",
+    "authors": "Sang Hyub Kim, Julien Baglio, Rajiv Krishnakumar et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-09-04T17:56:24Z",
+    "publishedFormatted": "Sep 4, 2026",
+    "subtitle": "How quantum circuits can learn better from AI time-series models by feeding them information faster",
+    "summary": "Researchers tried using quantum circuits to improve a classical AI model that predicts power-grid events, but discovered that simply adding more qubits didn't help—the bottleneck was how fast information could enter the quantum system. They developed a new design called \"wings\" that act as auxiliary circuits, allowing information to flow in through a faster pathway. With this fix, a 12-qubit core system improved from 83.6% to 85.2% accuracy when two wing modules were added, with each wing delivering measurable gains.",
+    "whyItMatters": "Power grids need accurate early warning systems to prevent blackouts and equipment damage. If quantum circuits can genuinely outperform classical approaches on these classification tasks—and scale up to handle real-world complexity—they could eventually process grid data faster and catch dangerous patterns sooner. The wing architecture also offers a general blueprint for building practical quantum systems, showing that carefully designed information pathways matter more than raw qubit counts.",
+    "fetchedAt": "2026-09-08T21:31:46.672Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 12,
+      "wordCount": 238
+    },
+    "slug": "towards-scaling-quantum-fine"
+  },
+  {
+    "id": "2609.05258",
+    "title": "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization",
+    "authors": "Sihan Ge, Yichen Lin, Chenyu Zhou et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-09-04T15:19:38Z",
+    "publishedFormatted": "Sep 4, 2026",
+    "subtitle": "Teaching AI to ask clarifying questions before solving business math problems",
+    "summary": "When companies describe optimization problems to AI in plain language, they often leave out crucial details—missing constraints, hidden objectives, or business rules that completely change the right answer. Researchers built a benchmark and an AI system that learns to recognize these gaps and ask targeted clarifying questions before attempting to solve the problem, rather than blindly modeling incomplete information.",
+    "whyItMatters": "Operations research teams rely on optimization models to make million-dollar decisions about supply chains, scheduling, and resource allocation. If an AI formulates a model based on an incomplete or misunderstood problem statement, the resulting \"solution\" could be useless or actively harmful. Teaching AI systems to pause and ask clarifying questions before modeling—rather than guessing at missing details—is essential for making these tools trustworthy enough to use in real business contexts.",
+    "fetchedAt": "2026-09-08T21:31:49.684Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 180
+    },
+    "slug": "ask-before-you-optimize"
+  },
+  {
     "id": "2609.05339",
     "title": "Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability",
     "authors": "Ankit Goyal, Jaideep Ray",
