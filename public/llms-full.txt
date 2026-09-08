@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 763 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-07
+This file contains the complete plain-English text of all 766 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability
+Subtitle: Why AI agents forget when their underlying models change
+URL: https://paperplaine.com/papers/does-your-agent-s
+Category: Computer Science · AI
+Authors: Ankit Goyal, Jaideep Ray
+arXiv ID: 2609.05339
+arXiv URL: https://arxiv.org/abs/2609.05339
+Posted: 2026-09-08
+
+Summary: When an AI system gets a software upgrade, its stored memories often become unreliable—sometimes losing 13 percentage points of accuracy overnight. Researchers tested four ways of storing agent memories and found that rigid, structured formats (like knowledge graphs with fixed fields) survive model upgrades nearly intact, while flexible, compressed notes become deeply dependent on the specific model that created them and fail unpredictably when that model is replaced.
+
+Why it matters: Companies regularly upgrade their AI models to improve performance, but this study shows those upgrades can silently corrupt an agent's ability to recall past conversations and learned information. The findings provide concrete guidance: organizations upgrading AI systems should either use rigid data structures that don't degrade, keep backup copies of raw conversation history for recovery, or accept that some agent memories will need to be rebuilt from scratch—not just hoped for.
+
+---
+Title: Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing
+Subtitle: Why AI's investment breakthroughs don't always translate to real profits
+URL: https://paperplaine.com/papers/artificial-intelligence-in-equity
+Category: Quantitative Finance
+Authors: Linsen Zhu, Mengqing Cai
+arXiv ID: 2609.04917
+arXiv URL: https://arxiv.org/abs/2609.04917
+Posted: 2026-09-08
+
+Summary: AI systems show genuine progress at predicting markets and processing financial news, but almost none consistently make money after accounting for trading costs and real-world constraints. The gap between what AI can predict and what actually turns a profit is larger and more persistent than most published studies suggest.
+
+Why it matters: Investors and firms betting on AI-driven trading strategies need honest accounting of what works. The paper exposes common statistical traps—like testing strategies on old data or cherry-picking winners—that make mediocre systems look brilliant. Without addressing these flaws, money will keep flowing to strategies that underperform, while genuinely profitable AI approaches remain harder to identify.
+
+---
+Title: What Would it Cost to End Extreme Poverty?
+Subtitle: How much money would actually end extreme global poverty?
+URL: https://paperplaine.com/papers/what-would-it-cost
+Category: Economics
+Authors: Roshni Sahoo, Joshua Blumenstock, Paul Niehaus et al.
+arXiv ID: 2609.02013
+arXiv URL: https://arxiv.org/abs/2609.02013
+Posted: 2026-09-08
+
+Summary: Ending extreme poverty worldwide would cost about $211 billion per year—roughly 0.28% of global GDP—if money went directly to the poorest households, according to analysis of poverty data from 34 countries covering three-quarters of the world's poor. This is far cheaper than providing universal basic income to everyone, though it does cost four times more than simply closing the poverty gap if distribution were perfectly efficient.
+
+Why it matters: The finding gives policymakers a concrete budget figure for what ending extreme poverty would actually require, making it easier to evaluate whether current aid spending is adequate or whether ending poverty is a genuinely affordable goal. At less than one-third of one percent of global GDP, the cost is small enough that the obstacle to ending poverty is primarily political will rather than economic impossibility.
 
 ---
 Title: How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method

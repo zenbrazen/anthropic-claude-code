@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 763 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 766 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 260 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 261 papers in archive.
+  - "Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability"
   - "How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method"
-  - "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 63 papers in archive.
   - "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls"
   - "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 65 papers in archive.
   - "High-Order Triadic Functional Connectivity in the Brain and Beyond"
   - "Axonal delay dispersion decides whether a neuron detects an event or a sequence, and predicts cortical column diameter"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 67 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 68 papers in archive.
+  - "Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing"
   - "Mean-field equilibrium of heterogeneous agents under market impact"
-  - "Tempting the Agent: The Economics of Reputation without Persistent Identity in AI Agent Markets"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 66 papers in archive.
   - "PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders"
   - "How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 62 papers in archive.
   - "Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective"
   - "RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 54 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 55 papers in archive.
+  - "What Would it Cost to End Extreme Poverty?"
   - "Competitive Market Behavior of LLMs"
-  - "Off-policy causal estimation in networks"
 
 ## 10 most recent papers
+
+### Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability
+- URL: https://paperplaine.com/papers/does-your-agent-s
+- Category: Computer Science · AI
+- Authors: Ankit Goyal, Jaideep Ray
+- arXiv: 2609.05339
+- Plain-English subtitle: Why AI agents forget when their underlying models change
+- Summary: When an AI system gets a software upgrade, its stored memories often become unreliable—sometimes losing 13 percentage points of accuracy overnight. Researchers tested four ways of storing agent memories and found that rigid, structured formats (like knowledge graphs with fixed fields) survive model upgrades nearly intact, while flexible, compressed notes become deeply dependent on the specific model that created them and fail unpredictably when that model is replaced.
+- Why it matters: Companies regularly upgrade their AI models to improve performance, but this study shows those upgrades can silently corrupt an agent's ability to recall past conversations and learned information. The findings provide concrete guidance: organizations upgrading AI systems should either use rigid data structures that don't degrade, keep backup copies of raw conversation history for recovery, or accept that some agent memories will need to be rebuilt from scratch—not just hoped for.
+
+### Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing
+- URL: https://paperplaine.com/papers/artificial-intelligence-in-equity
+- Category: Quantitative Finance
+- Authors: Linsen Zhu, Mengqing Cai
+- arXiv: 2609.04917
+- Plain-English subtitle: Why AI's investment breakthroughs don't always translate to real profits
+- Summary: AI systems show genuine progress at predicting markets and processing financial news, but almost none consistently make money after accounting for trading costs and real-world constraints. The gap between what AI can predict and what actually turns a profit is larger and more persistent than most published studies suggest.
+- Why it matters: Investors and firms betting on AI-driven trading strategies need honest accounting of what works. The paper exposes common statistical traps—like testing strategies on old data or cherry-picking winners—that make mediocre systems look brilliant. Without addressing these flaws, money will keep flowing to strategies that underperform, while genuinely profitable AI approaches remain harder to identify.
+
+### What Would it Cost to End Extreme Poverty?
+- URL: https://paperplaine.com/papers/what-would-it-cost
+- Category: Economics
+- Authors: Roshni Sahoo, Joshua Blumenstock, Paul Niehaus et al.
+- arXiv: 2609.02013
+- Plain-English subtitle: How much money would actually end extreme global poverty?
+- Summary: Ending extreme poverty worldwide would cost about $211 billion per year—roughly 0.28% of global GDP—if money went directly to the poorest households, according to analysis of poverty data from 34 countries covering three-quarters of the world's poor. This is far cheaper than providing universal basic income to everyone, though it does cost four times more than simply closing the poverty gap if distribution were perfectly efficient.
+- Why it matters: The finding gives policymakers a concrete budget figure for what ending extreme poverty would actually require, making it easier to evaluate whether current aid spending is adequate or whether ending poverty is a genuinely affordable goal. At less than one-third of one percent of global GDP, the cost is small enough that the obstacle to ending poverty is primarily political will rather than economic impossibility.
 
 ### How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method
 - URL: https://paperplaine.com/papers/how-to-speculate-about
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Training AI assistants on a single example works better than expected
 - Summary: Researchers trained smaller AI models to mimic larger ones using just one example, and found the smaller model kept improving for hundreds of training steps and recovered most of the performance gains from using thousands of examples. The breakthrough comes from understanding what matters: a single example exposes the student model to 71.5% of the different situations (called "states") that training on full datasets reaches, but the student absorbs that information slowly—the real bottleneck isn't data scarcity but the model's learning speed.
 - Why it matters: AI labs spend enormous resources generating training data to improve large language models. This work shows that data efficiency matters far less than we thought—adding more examples helps slightly, but the real constraint is giving the student model enough training time to actually learn from whatever data it sees. Labs could cut data collection costs significantly while achieving nearly identical results, and should instead focus on making the learning process itself faster.
-
-### Limits of Stochastic Semigroups and Block-Triangular Majorisation
-- URL: https://paperplaine.com/papers/limits-of-stochastic-semigroups
-- Category: Mathematics
-- Authors: Fabio Deelan Cunden, Jakub Czartowski, Giovanni Gramegna et al.
-- arXiv: 2609.04057
-- Plain-English subtitle: When math operations switch order, they reveal hidden structures in randomness
-- Summary: Mathematicians discovered that two fundamental operations on random systems don't always give the same result when applied in different orders—a property called non-commutativity. By studying what happens when you push these systems to their limits, they found the resulting structures follow a surprising block pattern that's stricter than previously known forms of mathematical order.
-- Why it matters: This work clarifies how disorder and randomness behave at extremes, which matters for fields ranging from statistical physics to information theory. The new framework—block-triangular majorisation—fills a conceptual gap between existing models and may help researchers better predict and control systems far from equilibrium, from biological networks to quantum computing.
-
-### Competitive Market Behavior of LLMs
-- URL: https://paperplaine.com/papers/competitive-market-behavior-of
-- Category: Economics
-- Authors: Pawel Struski, Jakub Swistak, Inez Okulska et al.
-- arXiv: 2609.02580
-- Plain-English subtitle: When AI agents replace humans in markets, efficiency breaks down
-- Summary: When researchers replaced human traders with AI language models in a classic economic experiment, the markets failed to reach equilibrium and produced worse resource allocation than human-run markets. The AI agents showed wildly different trading behaviors depending on which model they used, and analysis of their reasoning revealed they switched from strategic thinking to impulsive "let's just trade now" urgency.
-- Why it matters: As companies deploy large language models as autonomous economic agents—in trading, bidding systems, and marketplace negotiations—these results show that markets designed for human behavior may malfunction with AI. The inefficient allocations mean potential losses for buyers and sellers, and the unpredictability across different AI models creates risk for anyone building systems that mix human and AI traders.
-
-### When Models Edit Too Much: On the Fidelity of Minimal Code Edits
-- URL: https://paperplaine.com/papers/when-models-edit-too
-- Category: Computer Science · AI
-- Authors: Tongyao Zhu, Wei Hern Lim, Min-Yen Kan
-- arXiv: 2609.04061
-- Plain-English subtitle: Why AI code fixes often rewrite too much, and how to stop them
-- Summary: Large language models tasked with fixing bugs in code tend to rewrite far more than necessary, even when they produce correct results. Researchers measured this over-editing problem across top AI models and found that a simple instruction to preserve the original code reduced unnecessary changes by 26% while actually improving fix accuracy by 2.3 points.
-- Why it matters: Code reviews are a standard part of software development, and reviewers struggle more with large, sweeping rewrites than minimal patches—even when both are technically correct. This work shows that AI can be trained to fix bugs while respecting the original design, making AI-assisted coding practical for real teams who need changes they can actually understand and approve.
 
 ## About
 
