@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 769 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 772 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 262 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 263 papers in archive.
+  - "Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs"
   - "Variational Continuation for Double Pendulum Periodic Orbits"
-  - "Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 63 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 64 papers in archive.
+  - "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring"
   - "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls"
-  - "Flip, Don't Shuffle: Watermarking LLMs at the Speed of Inference"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 64 papers in archive.
   - "Towards Scaling Quantum Fine-Tuning of Foundational Time Series Models for Classification"
   - "Parameterised graph theory for tensor networks: entanglement rerouting, structural simplification, and agnostic tomography"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 64 papers in archive.
   - "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization"
   - "Limits of Stochastic Semigroups and Block-Triangular Majorisation"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 65 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 66 papers in archive.
+  - "Why shared attention vectors fail: a case for outcome-indexed tuning"
   - "High-Order Triadic Functional Connectivity in the Brain and Beyond"
-  - "Axonal delay dispersion decides whether a neuron detects an event or a sequence, and predicts cortical column diameter"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 68 papers in archive.
   - "Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing"
   - "Mean-field equilibrium of heterogeneous agents under market impact"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Competitive Market Behavior of LLMs"
 
 ## 10 most recent papers
+
+### Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs
+- URL: https://paperplaine.com/papers/canonical-color-as-a
+- Category: Computer Science · AI
+- Authors: Xiaofu Chen, Stella Frank, Yova Kementchedjhieva
+- arXiv: 2609.09124
+- Plain-English subtitle: How AI vision systems infer the 'right' color of objects from black-and-white images
+- Summary: Vision AI systems can reconstruct what color an object should be—even from grayscale images where no color information exists—by learning conceptual associations between objects and their canonical colors. This ability appears tied directly to how well the system identifies the object itself, suggesting the AI has built an abstract understanding that goes beyond surface-level visual features.
+- Why it matters: This reveals that AI vision systems absorb conceptual knowledge about the world, not just pixel patterns. Understanding what kinds of abstract reasoning are baked into these systems helps researchers debug when vision-language models fail, spot when they're making assumptions rather than observing, and design better ways to test whether AI actually understands concepts or just pattern-matches.
+
+### ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring
+- URL: https://paperplaine.com/papers/zk-trace-certified-collusion
+- Category: Computer Science
+- Authors: Redwanul Karim, Nisha L. Raichur, Lucas Heublein et al.
+- arXiv: 2609.08763
+- Plain-English subtitle: Catching who leaked a GPS monitoring system without needing their help
+- Summary: When organizations share GPS-monitoring software with multiple partner stations, any one of them might leak it to competitors or adversaries. This paper presents a system that embeds hidden fingerprints into each copy and uses cryptographic verification to identify the leaker afterward—even if they refuse to cooperate. In experiments, the system correctly identified all single leakers and traced over 99% of cases where two people collaborated, while falsely accusing an innocent party less than 0.1% of the time.
+- Why it matters: GPS signals are critical infrastructure for power grids, financial networks, and autonomous vehicles. Organizations that share monitoring tools with partners need a way to deter and catch people who sell leaked copies to hostile actors. This system makes betrayal traceable without requiring the leaker's consent, which changes the game for protecting sensitive surveillance infrastructure.
+
+### Why shared attention vectors fail: a case for outcome-indexed tuning
+- URL: https://paperplaine.com/papers/why-shared-attention-vectors
+- Category: Quantitative Biology
+- Authors: Lenard Dome
+- arXiv: 2609.08615
+- Plain-English subtitle: Why learning systems break when juggling multiple goals at once
+- Summary: When machine learning models try to predict multiple outcomes simultaneously using a single shared attention mechanism, the system collapses and fails to learn. A new approach using outcome-indexed attention matrices fixes this problem, allowing models to maintain stable learning across multiple prediction targets.
+- Why it matters: Most real-world systems need to make multiple predictions at once—medical AI might diagnose disease while predicting treatment response, or autonomous vehicles must anticipate both pedestrian location and vehicle speed. Current attention methods fail under these conditions. This fix could make multi-task learning systems more reliable and generalizable, improving performance wherever models need to balance competing prediction goals.
 
 ### Variational Continuation for Double Pendulum Periodic Orbits
 - URL: https://paperplaine.com/papers/variational-continuation-for-double
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Stopping AI coding agents before they make expensive mistakes
 - Summary: AI systems built to write code often fail confidently—executing bad decisions that only become apparent after wasting time and money. Researchers developed a method to detect when a coding agent is about to fail, using only its text output, then demonstrated that blocking these high-risk actions cuts execution errors by 6–8 percentage points and reduces token costs by 14–19%.
 - Why it matters: AI coding assistants are increasingly deployed in real development workflows, where each failed attempt costs compute time and developer attention. This method catches failures before execution happens, making expensive AI agents practical enough to deploy at scale. The technique works across different AI models and generalizes to new tasks without retraining, suggesting it could become a standard safety layer for any black-box AI agent used in high-cost settings.
-
-### PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders
-- URL: https://paperplaine.com/papers/pac-bayesian-reconstruction-guarantees
-- Category: Statistics
-- Authors: Chloé Hashimoto-Cullen, Ghislain Agoua, Benjamin Guedj et al.
-- arXiv: 2609.05212
-- Plain-English subtitle: When AI learns time patterns, proving it will work on new data
-- Summary: Researchers created mathematical guarantees for variational autoencoders—AI models that learn to compress and reconstruct time series data—showing they will generalize to new, unseen sequences. Crucially, these guarantees don't weaken as time series get longer, a major advance over previous theory that assumed data points were independent.
-- Why it matters: Variational autoencoders are already deployed in energy grids, hospitals, and financial systems to forecast and detect anomalies in time-dependent data. Without theoretical guarantees, there's no principled way to know when these models are reliably learning patterns versus just memorizing training data. This work provides that foundation, letting practitioners understand when these models are safe to trust on new real-world sequences.
-
-### Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective
-- URL: https://paperplaine.com/papers/energy-efficient-waveform-design
-- Category: Engineering
-- Authors: Ngoc-Son Duong, Trung-Hieu Nguyen, Quang-Truong Can
-- arXiv: 2609.05390
-- Plain-English subtitle: Making radar and wireless signals work together without wasting power
-- Summary: Radar and communication systems traditionally require separate equipment, but new technology can merge them into one. This paper solves the engineering problem of designing a single radio signal that works well for both tasks while using the least power possible—and can actually be built with existing hardware.
-- Why it matters: Dual-use radar-and-communication systems could cut the size, weight, and power consumption of devices ranging from autonomous vehicles to satellites. Military and civilian applications have pushed for this for years, but the signals had to work better at one job than the other. This approach makes the tradeoff explicit and finds the most efficient balance, potentially opening the door to equipment that does both jobs simultaneously.
-
-### Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe
-- URL: https://paperplaine.com/papers/multi-step-tool-calling
-- Category: Computer Science · AI
-- Authors: Dain Kim, Eungi Cho, Kyumin Kim et al.
-- arXiv: 2609.05395
-- Plain-English subtitle: Making open-source AI assistants better at chaining government services together
-- Summary: Open-source AI models struggle when they need to chain multiple steps across government APIs—calling one service, using its result to call another, and so on. Researchers created a benchmark of 145 real Korean government tasks to measure this gap, then built a technique that learns which tool combinations actually work by testing them live, generating training data that teaches smaller models to perform nearly as well as much larger ones.
-- Why it matters: As governments adopt open-source AI to protect citizen data, they need systems that can actually navigate their own services reliably. This work shows that a smaller, cheaper model can now handle complex multi-step government requests—making it practical for public agencies to deploy capable AI agents without buying expensive proprietary systems or hosting massive models.
 
 ## About
 

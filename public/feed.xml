@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2026 21:31:50 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 12:09:34 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs</title>
+      <link>https://paperplaine.com/papers/canonical-color-as-a</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/canonical-color-as-a</guid>
+      <pubDate>Tue, 08 Sep 2026 17:50:09 GMT</pubDate>
+      <author>Xiaofu Chen, Stella Frank, Yova Kementchedjhieva</author>
+      <category>AI</category>
+      <description>How AI vision systems infer the &#39;right&#39; color of objects from black-and-white images</description>
+      <content:encoded><![CDATA[<p><em>How AI vision systems infer the 'right' color of objects from black-and-white images</em></p><p>Vision AI systems can reconstruct what color an object should be—even from grayscale images where no color information exists—by learning conceptual associations between objects and their canonical colors. This ability appears tied directly to how well the system identifies the object itself, suggesting the AI has built an abstract understanding that goes beyond surface-level visual features.</p><p><strong>Why it matters:</strong> This reveals that AI vision systems absorb conceptual knowledge about the world, not just pixel patterns. Understanding what kinds of abstract reasoning are baked into these systems helps researchers debug when vision-language models fail, spot when they're making assumptions rather than observing, and design better ways to test whether AI actually understands concepts or just pattern-matches.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring</title>
+      <link>https://paperplaine.com/papers/zk-trace-certified-collusion</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/zk-trace-certified-collusion</guid>
+      <pubDate>Tue, 08 Sep 2026 14:00:29 GMT</pubDate>
+      <author>Redwanul Karim, Nisha L. Raichur, Lucas Heublein et al.</author>
+      <category>Comp Sci</category>
+      <description>Catching who leaked a GPS monitoring system without needing their help</description>
+      <content:encoded><![CDATA[<p><em>Catching who leaked a GPS monitoring system without needing their help</em></p><p>When organizations share GPS-monitoring software with multiple partner stations, any one of them might leak it to competitors or adversaries. This paper presents a system that embeds hidden fingerprints into each copy and uses cryptographic verification to identify the leaker afterward—even if they refuse to cooperate. In experiments, the system correctly identified all single leakers and traced over 99% of cases where two people collaborated, while falsely accusing an innocent party less than 0.1% of the time.</p><p><strong>Why it matters:</strong> GPS signals are critical infrastructure for power grids, financial networks, and autonomous vehicles. Organizations that share monitoring tools with partners need a way to deter and catch people who sell leaked copies to hostile actors. This system makes betrayal traceable without requiring the leaker's consent, which changes the game for protecting sensitive surveillance infrastructure.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Why shared attention vectors fail: a case for outcome-indexed tuning</title>
+      <link>https://paperplaine.com/papers/why-shared-attention-vectors</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/why-shared-attention-vectors</guid>
+      <pubDate>Tue, 08 Sep 2026 11:52:08 GMT</pubDate>
+      <author>Lenard Dome</author>
+      <category>Biology</category>
+      <description>Why learning systems break when juggling multiple goals at once</description>
+      <content:encoded><![CDATA[<p><em>Why learning systems break when juggling multiple goals at once</em></p><p>When machine learning models try to predict multiple outcomes simultaneously using a single shared attention mechanism, the system collapses and fails to learn. A new approach using outcome-indexed attention matrices fixes this problem, allowing models to maintain stable learning across multiple prediction targets.</p><p><strong>Why it matters:</strong> Most real-world systems need to make multiple predictions at once—medical AI might diagnose disease while predicting treatment response, or autonomous vehicles must anticipate both pedestrian location and vehicle speed. Current attention methods fail under these conditions. This fix could make multi-task learning systems more reliable and generalizable, improving performance wherever models need to balance competing prediction goals.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Variational Continuation for Double Pendulum Periodic Orbits</title>
       <link>https://paperplaine.com/papers/variational-continuation-for-double</link>

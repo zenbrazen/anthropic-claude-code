@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 769 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-08
+This file contains the complete plain-English text of all 772 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-09
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs
+Subtitle: How AI vision systems infer the 'right' color of objects from black-and-white images
+URL: https://paperplaine.com/papers/canonical-color-as-a
+Category: Computer Science · AI
+Authors: Xiaofu Chen, Stella Frank, Yova Kementchedjhieva
+arXiv ID: 2609.09124
+arXiv URL: https://arxiv.org/abs/2609.09124
+Posted: 2026-09-09
+
+Summary: Vision AI systems can reconstruct what color an object should be—even from grayscale images where no color information exists—by learning conceptual associations between objects and their canonical colors. This ability appears tied directly to how well the system identifies the object itself, suggesting the AI has built an abstract understanding that goes beyond surface-level visual features.
+
+Why it matters: This reveals that AI vision systems absorb conceptual knowledge about the world, not just pixel patterns. Understanding what kinds of abstract reasoning are baked into these systems helps researchers debug when vision-language models fail, spot when they're making assumptions rather than observing, and design better ways to test whether AI actually understands concepts or just pattern-matches.
+
+---
+Title: ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring
+Subtitle: Catching who leaked a GPS monitoring system without needing their help
+URL: https://paperplaine.com/papers/zk-trace-certified-collusion
+Category: Computer Science
+Authors: Redwanul Karim, Nisha L. Raichur, Lucas Heublein et al.
+arXiv ID: 2609.08763
+arXiv URL: https://arxiv.org/abs/2609.08763
+Posted: 2026-09-09
+
+Summary: When organizations share GPS-monitoring software with multiple partner stations, any one of them might leak it to competitors or adversaries. This paper presents a system that embeds hidden fingerprints into each copy and uses cryptographic verification to identify the leaker afterward—even if they refuse to cooperate. In experiments, the system correctly identified all single leakers and traced over 99% of cases where two people collaborated, while falsely accusing an innocent party less than 0.1% of the time.
+
+Why it matters: GPS signals are critical infrastructure for power grids, financial networks, and autonomous vehicles. Organizations that share monitoring tools with partners need a way to deter and catch people who sell leaked copies to hostile actors. This system makes betrayal traceable without requiring the leaker's consent, which changes the game for protecting sensitive surveillance infrastructure.
+
+---
+Title: Why shared attention vectors fail: a case for outcome-indexed tuning
+Subtitle: Why learning systems break when juggling multiple goals at once
+URL: https://paperplaine.com/papers/why-shared-attention-vectors
+Category: Quantitative Biology
+Authors: Lenard Dome
+arXiv ID: 2609.08615
+arXiv URL: https://arxiv.org/abs/2609.08615
+Posted: 2026-09-09
+
+Summary: When machine learning models try to predict multiple outcomes simultaneously using a single shared attention mechanism, the system collapses and fails to learn. A new approach using outcome-indexed attention matrices fixes this problem, allowing models to maintain stable learning across multiple prediction targets.
+
+Why it matters: Most real-world systems need to make multiple predictions at once—medical AI might diagnose disease while predicting treatment response, or autonomous vehicles must anticipate both pedestrian location and vehicle speed. Current attention methods fail under these conditions. This fix could make multi-task learning systems more reliable and generalizable, improving performance wherever models need to balance competing prediction goals.
 
 ---
 Title: Variational Continuation for Double Pendulum Periodic Orbits

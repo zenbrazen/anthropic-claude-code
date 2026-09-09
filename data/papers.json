@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.09124",
+    "title": "Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs",
+    "authors": "Xiaofu Chen, Stella Frank, Yova Kementchedjhieva",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-08T17:50:09Z",
+    "publishedFormatted": "Sep 8, 2026",
+    "subtitle": "How AI vision systems infer the 'right' color of objects from black-and-white images",
+    "summary": "Vision AI systems can reconstruct what color an object should be—even from grayscale images where no color information exists—by learning conceptual associations between objects and their canonical colors. This ability appears tied directly to how well the system identifies the object itself, suggesting the AI has built an abstract understanding that goes beyond surface-level visual features.",
+    "whyItMatters": "This reveals that AI vision systems absorb conceptual knowledge about the world, not just pixel patterns. Understanding what kinds of abstract reasoning are baked into these systems helps researchers debug when vision-language models fail, spot when they're making assumptions rather than observing, and design better ways to test whether AI actually understands concepts or just pattern-matches.",
+    "fetchedAt": "2026-09-09T12:09:27.991Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 12,
+      "wordCount": 141
+    },
+    "slug": "canonical-color-as-a"
+  },
+  {
+    "id": "2609.08763",
+    "title": "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring",
+    "authors": "Redwanul Karim, Nisha L. Raichur, Lucas Heublein et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-08T14:00:29Z",
+    "publishedFormatted": "Sep 8, 2026",
+    "subtitle": "Catching who leaked a GPS monitoring system without needing their help",
+    "summary": "When organizations share GPS-monitoring software with multiple partner stations, any one of them might leak it to competitors or adversaries. This paper presents a system that embeds hidden fingerprints into each copy and uses cryptographic verification to identify the leaker afterward—even if they refuse to cooperate. In experiments, the system correctly identified all single leakers and traced over 99% of cases where two people collaborated, while falsely accusing an innocent party less than 0.1% of the time.",
+    "whyItMatters": "GPS signals are critical infrastructure for power grids, financial networks, and autonomous vehicles. Organizations that share monitoring tools with partners need a way to deter and catch people who sell leaked copies to hostile actors. This system makes betrayal traceable without requiring the leaker's consent, which changes the game for protecting sensitive surveillance infrastructure.",
+    "fetchedAt": "2026-09-09T12:09:31.517Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 186
+    },
+    "slug": "zk-trace-certified-collusion"
+  },
+  {
+    "id": "2609.08615",
+    "title": "Why shared attention vectors fail: a case for outcome-indexed tuning",
+    "authors": "Lenard Dome",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-09-08T11:52:08Z",
+    "publishedFormatted": "Sep 8, 2026",
+    "subtitle": "Why learning systems break when juggling multiple goals at once",
+    "summary": "When machine learning models try to predict multiple outcomes simultaneously using a single shared attention mechanism, the system collapses and fails to learn. A new approach using outcome-indexed attention matrices fixes this problem, allowing models to maintain stable learning across multiple prediction targets.",
+    "whyItMatters": "Most real-world systems need to make multiple predictions at once—medical AI might diagnose disease while predicting treatment response, or autonomous vehicles must anticipate both pedestrian location and vehicle speed. Current attention methods fail under these conditions. This fix could make multi-task learning systems more reliable and generalizable, improving performance wherever models need to balance competing prediction goals.",
+    "fetchedAt": "2026-09-09T12:09:34.295Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 157
+    },
+    "slug": "why-shared-attention-vectors"
+  },
+  {
     "id": "2609.05337",
     "title": "Variational Continuation for Double Pendulum Periodic Orbits",
     "authors": "Leo Yao, Ziming Liu, Max Tegmark",
