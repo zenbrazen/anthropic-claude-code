@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2026 12:09:34 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 21:28:05 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation</title>
+      <link>https://paperplaine.com/papers/entropy-regularized-rank-masked</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/entropy-regularized-rank-masked</guid>
+      <pubDate>Tue, 08 Sep 2026 17:54:13 GMT</pubDate>
+      <author>Jiacheng Xu, Feng Chen, Xiuneng Xu et al.</author>
+      <category>AI</category>
+      <description>Teaching AI to improve code without needing correct answers</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to improve code without needing correct answers</em></p><p>Existing methods for improving AI code generators at test time rely on comparing final answers directly, which doesn't work for code since programs can be identical in function but written differently. Researchers developed a system that instead tests candidate programs against hidden test cases derived from the problem itself, rewarding programs that behave the same way—and using a safeguard against programs that cheat their way to false consensus. The approach substantially increased the percentage of coding tasks solved correctly.</p><p><strong>Why it matters:</strong> Code generation AI often needs to improve after deployment, but without knowing the right answers, there's been no reliable way to train it to get better. This work makes that possible for the first time, enabling code generators to self-improve on real-world problems they encounter. The gains were significant across multiple coding benchmarks and transfer scenarios, suggesting the method could make deployed code systems smarter over time without human intervention.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Measuring DeFi Risk</title>
+      <link>https://paperplaine.com/papers/measuring-defi-risk</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/measuring-defi-risk</guid>
+      <pubDate>Mon, 07 Sep 2026 19:07:26 GMT</pubDate>
+      <author>Jeremy Bertomeu, Xiumin Martin, Ibrahima Sall</author>
+      <category>Economics</category>
+      <description>A simple early-warning system for DeFi lending&#39;s hidden risks</description>
+      <content:encoded><![CDATA[<p><em>A simple early-warning system for DeFi lending's hidden risks</em></p><p>DeFi lending platforms grew to $40 billion in deposits by May 2022 by matching people who want to borrow against cryptocurrency with depositors seeking returns, but researchers developed a framework using only public deposit and borrowing data to measure whether these systems can actually pay back what they promise. Applying this to major platforms, they found the systems became dangerously fragile by mid-2021, with real risk that the dollar-pegged coins backing deposits could lose value if cryptocurrency prices swing sharply.</p><p><strong>Why it matters:</strong> DeFi lending now handles tens of billions in real money, and depositors often don't understand the risks they're taking. This framework gives regulators and platforms a concrete way to spot trouble before it happens—similar to how banks monitor their capital reserves. As DeFi shifts toward using actual dollars instead of just cryptocurrency collateral, having a reliable risk-measurement system becomes essential to prevent another crypto collapse that could wipe out ordinary investors.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild</title>
+      <link>https://paperplaine.com/papers/spheriverse-3d-scene-understanding</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/spheriverse-3d-scene-understanding</guid>
+      <pubDate>Tue, 08 Sep 2026 16:47:25 GMT</pubDate>
+      <author>Fei Teng, Sheng Wu, Mengfei Duan et al.</author>
+      <category>Engineering</category>
+      <description>Teaching AI to understand 3D scenes from 360-degree camera views</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to understand 3D scenes from 360-degree camera views</em></p><p>Researchers created a new dataset of 64,400 paired spherical images and 3D laser scans to help computers understand what's in a scene from all angles at once. They also built a new method called SphereOcc that outperforms existing approaches by better bridging the gap between how 360-degree cameras record the world and how computers need to represent it internally.</p><p><strong>Why it matters:</strong> Self-driving cars, robots, and autonomous systems need to understand their surroundings in 3D to navigate safely. Spherical cameras capture far more visual context than narrow-view cameras, but existing AI methods waste this advantage by struggling to convert the circular view into usable 3D understanding. This work makes that conversion work significantly better, potentially improving how robots and autonomous vehicles perceive and respond to complex real-world scenes.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs</title>
       <link>https://paperplaine.com/papers/canonical-color-as-a</link>

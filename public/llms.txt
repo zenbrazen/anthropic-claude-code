@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 772 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 775 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 263 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 264 papers in archive.
+  - "Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation"
   - "Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs"
-  - "Variational Continuation for Double Pendulum Periodic Orbits"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 64 papers in archive.
   - "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring"
   - "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 66 papers in archive.
   - "PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders"
   - "How Perturbations Propagate: A Multi-Level Analysis of Robustness in Large Language Models"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 62 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 63 papers in archive.
+  - "Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild"
   - "Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective"
-  - "RobustSeiz: An Open-Source Framework for Benchmarking the Robustness of EEG Seizure Detection Models"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 55 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 56 papers in archive.
+  - "Measuring DeFi Risk"
   - "What Would it Cost to End Extreme Poverty?"
-  - "Competitive Market Behavior of LLMs"
 
 ## 10 most recent papers
+
+### Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation
+- URL: https://paperplaine.com/papers/entropy-regularized-rank-masked
+- Category: Computer Science · AI
+- Authors: Jiacheng Xu, Feng Chen, Xiuneng Xu et al.
+- arXiv: 2609.09135
+- Plain-English subtitle: Teaching AI to improve code without needing correct answers
+- Summary: Existing methods for improving AI code generators at test time rely on comparing final answers directly, which doesn't work for code since programs can be identical in function but written differently. Researchers developed a system that instead tests candidate programs against hidden test cases derived from the problem itself, rewarding programs that behave the same way—and using a safeguard against programs that cheat their way to false consensus. The approach substantially increased the percentage of coding tasks solved correctly.
+- Why it matters: Code generation AI often needs to improve after deployment, but without knowing the right answers, there's been no reliable way to train it to get better. This work makes that possible for the first time, enabling code generators to self-improve on real-world problems they encounter. The gains were significant across multiple coding benchmarks and transfer scenarios, suggesting the method could make deployed code systems smarter over time without human intervention.
+
+### Measuring DeFi Risk
+- URL: https://paperplaine.com/papers/measuring-defi-risk
+- Category: Economics
+- Authors: Jeremy Bertomeu, Xiumin Martin, Ibrahima Sall
+- arXiv: 2609.07902
+- Plain-English subtitle: A simple early-warning system for DeFi lending's hidden risks
+- Summary: DeFi lending platforms grew to $40 billion in deposits by May 2022 by matching people who want to borrow against cryptocurrency with depositors seeking returns, but researchers developed a framework using only public deposit and borrowing data to measure whether these systems can actually pay back what they promise. Applying this to major platforms, they found the systems became dangerously fragile by mid-2021, with real risk that the dollar-pegged coins backing deposits could lose value if cryptocurrency prices swing sharply.
+- Why it matters: DeFi lending now handles tens of billions in real money, and depositors often don't understand the risks they're taking. This framework gives regulators and platforms a concrete way to spot trouble before it happens—similar to how banks monitor their capital reserves. As DeFi shifts toward using actual dollars instead of just cryptocurrency collateral, having a reliable risk-measurement system becomes essential to prevent another crypto collapse that could wipe out ordinary investors.
+
+### Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild
+- URL: https://paperplaine.com/papers/spheriverse-3d-scene-understanding
+- Category: Engineering
+- Authors: Fei Teng, Sheng Wu, Mengfei Duan et al.
+- arXiv: 2609.09012
+- Plain-English subtitle: Teaching AI to understand 3D scenes from 360-degree camera views
+- Summary: Researchers created a new dataset of 64,400 paired spherical images and 3D laser scans to help computers understand what's in a scene from all angles at once. They also built a new method called SphereOcc that outperforms existing approaches by better bridging the gap between how 360-degree cameras record the world and how computers need to represent it internally.
+- Why it matters: Self-driving cars, robots, and autonomous systems need to understand their surroundings in 3D to navigate safely. Spherical cameras capture far more visual context than narrow-view cameras, but existing AI methods waste this advantage by struggling to convert the circular view into usable 3D understanding. This work makes that conversion work significantly better, potentially improving how robots and autonomous vehicles perceive and respond to complex real-world scenes.
 
 ### Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs
 - URL: https://paperplaine.com/papers/canonical-color-as-a
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI agents forget when their underlying models change
 - Summary: When an AI system gets a software upgrade, its stored memories often become unreliable—sometimes losing 13 percentage points of accuracy overnight. Researchers tested four ways of storing agent memories and found that rigid, structured formats (like knowledge graphs with fixed fields) survive model upgrades nearly intact, while flexible, compressed notes become deeply dependent on the specific model that created them and fail unpredictably when that model is replaced.
 - Why it matters: Companies regularly upgrade their AI models to improve performance, but this study shows those upgrades can silently corrupt an agent's ability to recall past conversations and learned information. The findings provide concrete guidance: organizations upgrading AI systems should either use rigid data structures that don't degrade, keep backup copies of raw conversation history for recovery, or accept that some agent memories will need to be rebuilt from scratch—not just hoped for.
-
-### Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing
-- URL: https://paperplaine.com/papers/artificial-intelligence-in-equity
-- Category: Quantitative Finance
-- Authors: Linsen Zhu, Mengqing Cai
-- arXiv: 2609.04917
-- Plain-English subtitle: Why AI's investment breakthroughs don't always translate to real profits
-- Summary: AI systems show genuine progress at predicting markets and processing financial news, but almost none consistently make money after accounting for trading costs and real-world constraints. The gap between what AI can predict and what actually turns a profit is larger and more persistent than most published studies suggest.
-- Why it matters: Investors and firms betting on AI-driven trading strategies need honest accounting of what works. The paper exposes common statistical traps—like testing strategies on old data or cherry-picking winners—that make mediocre systems look brilliant. Without addressing these flaws, money will keep flowing to strategies that underperform, while genuinely profitable AI approaches remain harder to identify.
-
-### What Would it Cost to End Extreme Poverty?
-- URL: https://paperplaine.com/papers/what-would-it-cost
-- Category: Economics
-- Authors: Roshni Sahoo, Joshua Blumenstock, Paul Niehaus et al.
-- arXiv: 2609.02013
-- Plain-English subtitle: How much money would actually end extreme global poverty?
-- Summary: Ending extreme poverty worldwide would cost about $211 billion per year—roughly 0.28% of global GDP—if money went directly to the poorest households, according to analysis of poverty data from 34 countries covering three-quarters of the world's poor. This is far cheaper than providing universal basic income to everyone, though it does cost four times more than simply closing the poverty gap if distribution were perfectly efficient.
-- Why it matters: The finding gives policymakers a concrete budget figure for what ending extreme poverty would actually require, making it easier to evaluate whether current aid spending is adequate or whether ending poverty is a genuinely affordable goal. At less than one-third of one percent of global GDP, the cost is small enough that the obstacle to ending poverty is primarily political will rather than economic impossibility.
-
-### How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method
-- URL: https://paperplaine.com/papers/how-to-speculate-about
-- Category: Computer Science · AI
-- Authors: Konstantin Grotov, Valentin Malykh
-- arXiv: 2609.05274
-- Plain-English subtitle: Stopping AI coding agents before they make expensive mistakes
-- Summary: AI systems built to write code often fail confidently—executing bad decisions that only become apparent after wasting time and money. Researchers developed a method to detect when a coding agent is about to fail, using only its text output, then demonstrated that blocking these high-risk actions cuts execution errors by 6–8 percentage points and reduces token costs by 14–19%.
-- Why it matters: AI coding assistants are increasingly deployed in real development workflows, where each failed attempt costs compute time and developer attention. This method catches failures before execution happens, making expensive AI agents practical enough to deploy at scale. The technique works across different AI models and generalizes to new tasks without retraining, suggesting it could become a standard safety layer for any black-box AI agent used in high-cost settings.
 
 ## About
 

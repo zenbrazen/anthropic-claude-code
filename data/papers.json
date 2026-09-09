@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.09135",
+    "title": "Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation",
+    "authors": "Jiacheng Xu, Feng Chen, Xiuneng Xu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-08T17:54:13Z",
+    "publishedFormatted": "Sep 8, 2026",
+    "subtitle": "Teaching AI to improve code without needing correct answers",
+    "summary": "Existing methods for improving AI code generators at test time rely on comparing final answers directly, which doesn't work for code since programs can be identical in function but written differently. Researchers developed a system that instead tests candidate programs against hidden test cases derived from the problem itself, rewarding programs that behave the same way—and using a safeguard against programs that cheat their way to false consensus. The approach substantially increased the percentage of coding tasks solved correctly.",
+    "whyItMatters": "Code generation AI often needs to improve after deployment, but without knowing the right answers, there's been no reliable way to train it to get better. This work makes that possible for the first time, enabling code generators to self-improve on real-world problems they encounter. The gains were significant across multiple coding benchmarks and transfer scenarios, suggesting the method could make deployed code systems smarter over time without human intervention.",
+    "fetchedAt": "2026-09-09T21:27:31.442Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 15,
+      "wordCount": 151
+    },
+    "slug": "entropy-regularized-rank-masked"
+  },
+  {
+    "id": "2609.07902",
+    "title": "Measuring DeFi Risk",
+    "authors": "Jeremy Bertomeu, Xiumin Martin, Ibrahima Sall",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-09-07T19:07:26Z",
+    "publishedFormatted": "Sep 7, 2026",
+    "subtitle": "A simple early-warning system for DeFi lending's hidden risks",
+    "summary": "DeFi lending platforms grew to $40 billion in deposits by May 2022 by matching people who want to borrow against cryptocurrency with depositors seeking returns, but researchers developed a framework using only public deposit and borrowing data to measure whether these systems can actually pay back what they promise. Applying this to major platforms, they found the systems became dangerously fragile by mid-2021, with real risk that the dollar-pegged coins backing deposits could lose value if cryptocurrency prices swing sharply.",
+    "whyItMatters": "DeFi lending now handles tens of billions in real money, and depositors often don't understand the risks they're taking. This framework gives regulators and platforms a concrete way to spot trouble before it happens—similar to how banks monitor their capital reserves. As DeFi shifts toward using actual dollars instead of just cryptocurrency collateral, having a reliable risk-measurement system becomes essential to prevent another crypto collapse that could wipe out ordinary investors.",
+    "fetchedAt": "2026-09-09T21:27:51.122Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 143
+    },
+    "slug": "measuring-defi-risk"
+  },
+  {
+    "id": "2609.09012",
+    "title": "Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild",
+    "authors": "Fei Teng, Sheng Wu, Mengfei Duan et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-08T16:47:25Z",
+    "publishedFormatted": "Sep 8, 2026",
+    "subtitle": "Teaching AI to understand 3D scenes from 360-degree camera views",
+    "summary": "Researchers created a new dataset of 64,400 paired spherical images and 3D laser scans to help computers understand what's in a scene from all angles at once. They also built a new method called SphereOcc that outperforms existing approaches by better bridging the gap between how 360-degree cameras record the world and how computers need to represent it internally.",
+    "whyItMatters": "Self-driving cars, robots, and autonomous systems need to understand their surroundings in 3D to navigate safely. Spherical cameras capture far more visual context than narrow-view cameras, but existing AI methods waste this advantage by struggling to convert the circular view into usable 3D understanding. This work makes that conversion work significantly better, potentially improving how robots and autonomous vehicles perceive and respond to complex real-world scenes.",
+    "fetchedAt": "2026-09-09T21:28:05.033Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 206
+    },
+    "slug": "spheriverse-3d-scene-understanding"
+  },
+  {
     "id": "2609.09124",
     "title": "Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs",
     "authors": "Xiaofu Chen, Stella Frank, Yova Kementchedjhieva",
