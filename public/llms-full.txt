@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 775 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-09
+This file contains the complete plain-English text of all 778 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-10
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Forgetting Only What Matters: Layer-Selective Unlearning toward Robust LLMs
+Subtitle: Making AI forget secrets without breaking what it knows
+URL: https://paperplaine.com/papers/forgetting-only-what-matters
+Category: Computer Science · AI
+Authors: Ravi Ranjan, Olivera Kotevska, Agoritsa Polyzou
+arXiv ID: 2609.10439
+arXiv URL: https://arxiv.org/abs/2609.10439
+Posted: 2026-09-10
+
+Summary: A new technique called FOM-UL surgically removes sensitive information from AI language models by targeting only the specific layers that store it, rather than clumsily retraining the entire model. The method also survives a common compression step called quantization, where forgotten information often sneaks back in—keeping unwanted knowledge suppressed even after the model is shrunk for deployment.
+
+Why it matters: Companies need a faster, cheaper way to remove copyrighted text, private data, or other problematic content from AI models they've already trained, without starting from scratch. This method does that while keeping the model's actual performance intact—and critically, it doesn't fail when engineers compress the model to make it run on phones or cheap servers, a step where competing unlearning techniques tend to fall apart.
+
+---
+Title: A statistical approach to bias in zero-shot learning: the lens of handwriting recognition
+Subtitle: Fixing AI's blind spot when recognizing things it's never seen before
+URL: https://paperplaine.com/papers/a-statistical-approach-to
+Category: Statistics
+Authors: Clarence Chew, Gim Siang Chia, Sukalpa Chanda et al.
+arXiv ID: 2609.10084
+arXiv URL: https://arxiv.org/abs/2609.10084
+Posted: 2026-09-10
+
+Summary: AI systems trained on familiar examples tend to assume new data belongs to those familiar categories, even when it doesn't. This paper fixes that bias using a statistical two-step process: first, an existing recognition system makes its best guess, then a second layer corrects for the known tendency to misclassify. Testing on handwriting recognition, the method improved accuracy by over 20% on unseen words and works with any existing recognition system plugged in.
+
+Why it matters: Many real-world recognition tasks involve categories the system has never encountered—new medical diagnoses, emerging languages, novel products. The bias toward familiar categories can cause serious misidentifications. This fix is modular and works with existing systems without redesigning them, making it practical to deploy across medical imaging, document processing, and other fields where recognizing truly new things matters.
+
+---
+Title: Adaptive Entangled Game Modules in Artificial General Intelligence
+Subtitle: Stock traders act like entangled quantum systems, not rational individuals
+URL: https://paperplaine.com/papers/adaptive-entangled-game-modules
+Category: Quantitative Finance
+Authors: Haochen Li, Xinshuai Guo, Jingdong Ouyang et al.
+arXiv ID: 2609.09226
+arXiv URL: https://arxiv.org/abs/2609.09226
+Posted: 2026-09-10
+
+Summary: Researchers analyzing Chinese stock market trading found that 89% of trader decisions follow patterns predicted by a quantum-inspired model of interconnected, adaptive agents—far more than the less than 5% explained by traditional finance's assumption of independent rational actors. Traders also show sudden shifts in their decision-making when exposed to news and events, suggesting their brains operate through entangled mechanisms similar to quantum systems rather than through isolated rational calculation.
+
+Why it matters: Financial forecasting has relied for decades on models assuming traders act independently and rationally, which consistently fail to predict real market behavior. This research suggests that AI systems trained on quantum-inspired brain models could predict market movements and trader behavior far more accurately than current systems, potentially improving everything from trading algorithms to risk management and policy design. It also points toward building artificial intelligence that mimics how human brains actually work—through interconnected adaptive systems—rather than through brute-force neural networks that require trillions of hidden parameters.
 
 ---
 Title: Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation

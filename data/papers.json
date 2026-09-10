@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.10439",
+    "title": "Forgetting Only What Matters: Layer-Selective Unlearning toward Robust LLMs",
+    "authors": "Ravi Ranjan, Olivera Kotevska, Agoritsa Polyzou",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-09T16:50:41Z",
+    "publishedFormatted": "Sep 9, 2026",
+    "subtitle": "Making AI forget secrets without breaking what it knows",
+    "summary": "A new technique called FOM-UL surgically removes sensitive information from AI language models by targeting only the specific layers that store it, rather than clumsily retraining the entire model. The method also survives a common compression step called quantization, where forgotten information often sneaks back in—keeping unwanted knowledge suppressed even after the model is shrunk for deployment.",
+    "whyItMatters": "Companies need a faster, cheaper way to remove copyrighted text, private data, or other problematic content from AI models they've already trained, without starting from scratch. This method does that while keeping the model's actual performance intact—and critically, it doesn't fail when engineers compress the model to make it run on phones or cheap servers, a step where competing unlearning techniques tend to fall apart.",
+    "fetchedAt": "2026-09-10T12:03:58.246Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 22,
+      "wordCount": 226
+    },
+    "slug": "forgetting-only-what-matters"
+  },
+  {
+    "id": "2609.10084",
+    "title": "A statistical approach to bias in zero-shot learning: the lens of handwriting recognition",
+    "authors": "Clarence Chew, Gim Siang Chia, Sukalpa Chanda et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-09-09T12:06:49Z",
+    "publishedFormatted": "Sep 9, 2026",
+    "subtitle": "Fixing AI's blind spot when recognizing things it's never seen before",
+    "summary": "AI systems trained on familiar examples tend to assume new data belongs to those familiar categories, even when it doesn't. This paper fixes that bias using a statistical two-step process: first, an existing recognition system makes its best guess, then a second layer corrects for the known tendency to misclassify. Testing on handwriting recognition, the method improved accuracy by over 20% on unseen words and works with any existing recognition system plugged in.",
+    "whyItMatters": "Many real-world recognition tasks involve categories the system has never encountered—new medical diagnoses, emerging languages, novel products. The bias toward familiar categories can cause serious misidentifications. This fix is modular and works with existing systems without redesigning them, making it practical to deploy across medical imaging, document processing, and other fields where recognizing truly new things matters.",
+    "fetchedAt": "2026-09-10T12:04:02.121Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 280
+    },
+    "slug": "a-statistical-approach-to"
+  },
+  {
+    "id": "2609.09226",
+    "title": "Adaptive Entangled Game Modules in Artificial General Intelligence",
+    "authors": "Haochen Li, Xinshuai Guo, Jingdong Ouyang et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-09-07T09:44:12Z",
+    "publishedFormatted": "Sep 7, 2026",
+    "subtitle": "Stock traders act like entangled quantum systems, not rational individuals",
+    "summary": "Researchers analyzing Chinese stock market trading found that 89% of trader decisions follow patterns predicted by a quantum-inspired model of interconnected, adaptive agents—far more than the less than 5% explained by traditional finance's assumption of independent rational actors. Traders also show sudden shifts in their decision-making when exposed to news and events, suggesting their brains operate through entangled mechanisms similar to quantum systems rather than through isolated rational calculation.",
+    "whyItMatters": "Financial forecasting has relied for decades on models assuming traders act independently and rationally, which consistently fail to predict real market behavior. This research suggests that AI systems trained on quantum-inspired brain models could predict market movements and trader behavior far more accurately than current systems, potentially improving everything from trading algorithms to risk management and policy design. It also points toward building artificial intelligence that mimics how human brains actually work—through interconnected adaptive systems—rather than through brute-force neural networks that require trillions of hidden parameters.",
+    "fetchedAt": "2026-09-10T12:04:06.168Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 235
+    },
+    "slug": "adaptive-entangled-game-modules"
+  },
+  {
     "id": "2609.09135",
     "title": "Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation",
     "authors": "Jiacheng Xu, Feng Chen, Xiuneng Xu et al.",

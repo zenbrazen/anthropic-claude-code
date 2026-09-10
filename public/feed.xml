@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2026 21:28:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 12:04:06 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Forgetting Only What Matters: Layer-Selective Unlearning toward Robust LLMs</title>
+      <link>https://paperplaine.com/papers/forgetting-only-what-matters</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/forgetting-only-what-matters</guid>
+      <pubDate>Wed, 09 Sep 2026 16:50:41 GMT</pubDate>
+      <author>Ravi Ranjan, Olivera Kotevska, Agoritsa Polyzou</author>
+      <category>AI</category>
+      <description>Making AI forget secrets without breaking what it knows</description>
+      <content:encoded><![CDATA[<p><em>Making AI forget secrets without breaking what it knows</em></p><p>A new technique called FOM-UL surgically removes sensitive information from AI language models by targeting only the specific layers that store it, rather than clumsily retraining the entire model. The method also survives a common compression step called quantization, where forgotten information often sneaks back in—keeping unwanted knowledge suppressed even after the model is shrunk for deployment.</p><p><strong>Why it matters:</strong> Companies need a faster, cheaper way to remove copyrighted text, private data, or other problematic content from AI models they've already trained, without starting from scratch. This method does that while keeping the model's actual performance intact—and critically, it doesn't fail when engineers compress the model to make it run on phones or cheap servers, a step where competing unlearning techniques tend to fall apart.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A statistical approach to bias in zero-shot learning: the lens of handwriting recognition</title>
+      <link>https://paperplaine.com/papers/a-statistical-approach-to</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/a-statistical-approach-to</guid>
+      <pubDate>Wed, 09 Sep 2026 12:06:49 GMT</pubDate>
+      <author>Clarence Chew, Gim Siang Chia, Sukalpa Chanda et al.</author>
+      <category>Statistics</category>
+      <description>Fixing AI&#39;s blind spot when recognizing things it&#39;s never seen before</description>
+      <content:encoded><![CDATA[<p><em>Fixing AI's blind spot when recognizing things it's never seen before</em></p><p>AI systems trained on familiar examples tend to assume new data belongs to those familiar categories, even when it doesn't. This paper fixes that bias using a statistical two-step process: first, an existing recognition system makes its best guess, then a second layer corrects for the known tendency to misclassify. Testing on handwriting recognition, the method improved accuracy by over 20% on unseen words and works with any existing recognition system plugged in.</p><p><strong>Why it matters:</strong> Many real-world recognition tasks involve categories the system has never encountered—new medical diagnoses, emerging languages, novel products. The bias toward familiar categories can cause serious misidentifications. This fix is modular and works with existing systems without redesigning them, making it practical to deploy across medical imaging, document processing, and other fields where recognizing truly new things matters.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Adaptive Entangled Game Modules in Artificial General Intelligence</title>
+      <link>https://paperplaine.com/papers/adaptive-entangled-game-modules</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/adaptive-entangled-game-modules</guid>
+      <pubDate>Mon, 07 Sep 2026 09:44:12 GMT</pubDate>
+      <author>Haochen Li, Xinshuai Guo, Jingdong Ouyang et al.</author>
+      <category>Finance</category>
+      <description>Stock traders act like entangled quantum systems, not rational individuals</description>
+      <content:encoded><![CDATA[<p><em>Stock traders act like entangled quantum systems, not rational individuals</em></p><p>Researchers analyzing Chinese stock market trading found that 89% of trader decisions follow patterns predicted by a quantum-inspired model of interconnected, adaptive agents—far more than the less than 5% explained by traditional finance's assumption of independent rational actors. Traders also show sudden shifts in their decision-making when exposed to news and events, suggesting their brains operate through entangled mechanisms similar to quantum systems rather than through isolated rational calculation.</p><p><strong>Why it matters:</strong> Financial forecasting has relied for decades on models assuming traders act independently and rationally, which consistently fail to predict real market behavior. This research suggests that AI systems trained on quantum-inspired brain models could predict market movements and trader behavior far more accurately than current systems, potentially improving everything from trading algorithms to risk management and policy design. It also points toward building artificial intelligence that mimics how human brains actually work—through interconnected adaptive systems—rather than through brute-force neural networks that require trillions of hidden parameters.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation</title>
       <link>https://paperplaine.com/papers/entropy-regularized-rank-masked</link>
