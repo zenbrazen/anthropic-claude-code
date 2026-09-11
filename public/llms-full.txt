@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 781 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-10
+This file contains the complete plain-English text of all 784 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-11
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: General Quantification of Covariate and Concept Shifts
+Subtitle: Measuring how machine learning models fail when data changes unexpectedly
+URL: https://paperplaine.com/papers/general-quantification-of-covariate
+Category: Computer Science · AI
+Authors: Hongbo Chen, Li Charlie Xia
+arXiv ID: 2609.11918
+arXiv URL: https://arxiv.org/abs/2609.11918
+Posted: 2026-09-11
+
+Summary: When machine learning models trained on one dataset face new, different data in the real world, they often fail — but predicting exactly how much worse they'll perform has proven theoretically elusive. This paper fixes the broken mathematical definitions used to measure these failures and introduces a new method that actually works across different types of problems, allowing researchers to estimate performance drops before deployment.
+
+Why it matters: Machine learning systems deployed in hospitals, cars, and financial systems encounter shifted data constantly — loan applicants look different than training examples, disease patterns evolve, weather patterns change. This work provides a practical tool to measure and predict accuracy loss in advance, helping engineers decide whether a model is safe to deploy or needs retraining before real-world consequences occur.
+
+---
+Title: scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning
+Subtitle: Predicting which patients will respond to drugs before treatment even starts
+URL: https://paperplaine.com/papers/scdeft-a-deep-learning
+Category: Quantitative Biology
+Authors: Murthy Devarakonda
+arXiv ID: 2609.10831
+arXiv URL: https://arxiv.org/abs/2609.10831
+Posted: 2026-09-11
+
+Summary: A new machine learning system called scDEFT can predict which inflammatory bowel disease patients will respond to a drug by analyzing their individual cells before they start treatment — achieving 70% accuracy where standard methods guess at random. The system also identifies which specific genes and cellular changes drive the difference between responders and non-responders, offering a mechanistic explanation for why identical drugs work for some patients but not others.
+
+Why it matters: Doctors could use this approach to match patients with drugs that will actually work for them before wasting months on ineffective treatment. For inflammatory bowel disease and potentially other conditions, this could spare patients unnecessary side effects and speed them toward therapies that help. The method also pinpoints which genes to target with new drugs, directly informing drug development.
+
+---
+Title: Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding
+Subtitle: Answering questions about long videos without processing every frame each time
+URL: https://paperplaine.com/papers/caption-once-frames-on
+Category: Computer Science
+Authors: Weitong Cai, Hang Zhang, Yukai Huang et al.
+arXiv ID: 2609.11899
+arXiv URL: https://arxiv.org/abs/2609.11899
+Posted: 2026-09-11
+
+Summary: A new system lets edge devices understand hours-long videos efficiently by separating what needs pictures from what doesn't. It runs one captioning pass upfront to create a searchable story skeleton, then only retrieves actual video frames when a question specifically needs visual details like text or appearance—cutting the computing work dramatically while keeping accuracy high.
+
+Why it matters: Video analysis on phones, cameras, and other edge devices is bottlenecked by bandwidth and battery. This approach could enable real-time video understanding for surveillance, security, and accessibility apps without constantly streaming frames to the cloud or draining device power. The efficiency gains are concrete: you get strong accuracy with far less visual data flowing in and out.
 
 ---
 Title: JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition

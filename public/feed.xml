@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Sep 2026 21:20:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 12:02:13 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>General Quantification of Covariate and Concept Shifts</title>
+      <link>https://paperplaine.com/papers/general-quantification-of-covariate</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/general-quantification-of-covariate</guid>
+      <pubDate>Thu, 10 Sep 2026 17:57:52 GMT</pubDate>
+      <author>Hongbo Chen, Li Charlie Xia</author>
+      <category>AI</category>
+      <description>Measuring how machine learning models fail when data changes unexpectedly</description>
+      <content:encoded><![CDATA[<p><em>Measuring how machine learning models fail when data changes unexpectedly</em></p><p>When machine learning models trained on one dataset face new, different data in the real world, they often fail — but predicting exactly how much worse they'll perform has proven theoretically elusive. This paper fixes the broken mathematical definitions used to measure these failures and introduces a new method that actually works across different types of problems, allowing researchers to estimate performance drops before deployment.</p><p><strong>Why it matters:</strong> Machine learning systems deployed in hospitals, cars, and financial systems encounter shifted data constantly — loan applicants look different than training examples, disease patterns evolve, weather patterns change. This work provides a practical tool to measure and predict accuracy loss in advance, helping engineers decide whether a model is safe to deploy or needs retraining before real-world consequences occur.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning</title>
+      <link>https://paperplaine.com/papers/scdeft-a-deep-learning</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/scdeft-a-deep-learning</guid>
+      <pubDate>Wed, 09 Sep 2026 21:02:21 GMT</pubDate>
+      <author>Murthy Devarakonda</author>
+      <category>Biology</category>
+      <description>Predicting which patients will respond to drugs before treatment even starts</description>
+      <content:encoded><![CDATA[<p><em>Predicting which patients will respond to drugs before treatment even starts</em></p><p>A new machine learning system called scDEFT can predict which inflammatory bowel disease patients will respond to a drug by analyzing their individual cells before they start treatment — achieving 70% accuracy where standard methods guess at random. The system also identifies which specific genes and cellular changes drive the difference between responders and non-responders, offering a mechanistic explanation for why identical drugs work for some patients but not others.</p><p><strong>Why it matters:</strong> Doctors could use this approach to match patients with drugs that will actually work for them before wasting months on ineffective treatment. For inflammatory bowel disease and potentially other conditions, this could spare patients unnecessary side effects and speed them toward therapies that help. The method also pinpoints which genes to target with new drugs, directly informing drug development.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding</title>
+      <link>https://paperplaine.com/papers/caption-once-frames-on</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/caption-once-frames-on</guid>
+      <pubDate>Thu, 10 Sep 2026 17:53:59 GMT</pubDate>
+      <author>Weitong Cai, Hang Zhang, Yukai Huang et al.</author>
+      <category>Comp Sci</category>
+      <description>Answering questions about long videos without processing every frame each time</description>
+      <content:encoded><![CDATA[<p><em>Answering questions about long videos without processing every frame each time</em></p><p>A new system lets edge devices understand hours-long videos efficiently by separating what needs pictures from what doesn't. It runs one captioning pass upfront to create a searchable story skeleton, then only retrieves actual video frames when a question specifically needs visual details like text or appearance—cutting the computing work dramatically while keeping accuracy high.</p><p><strong>Why it matters:</strong> Video analysis on phones, cameras, and other edge devices is bottlenecked by bandwidth and battery. This approach could enable real-time video understanding for surveillance, security, and accessibility apps without constantly streaming frames to the cloud or draining device power. The efficiency gains are concrete: you get strong accuracy with far less visual data flowing in and out.</p>]]></content:encoded>
+    </item>
     <item>
       <title>JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition</title>
       <link>https://paperplaine.com/papers/jarvisgui-towards-cross-device</link>

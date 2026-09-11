@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 781 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 784 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 266 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 267 papers in archive.
+  - "General Quantification of Covariate and Concept Shifts"
   - "JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition"
-  - "Forgetting Only What Matters: Layer-Selective Unlearning toward Robust LLMs"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 64 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 65 papers in archive.
+  - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
   - "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring"
-  - "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 65 papers in archive.
   - "Private communication via zero-private-capacity quantum channels"
   - "Towards Scaling Quantum Fine-Tuning of Foundational Time Series Models for Classification"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 65 papers in archive.
   - "Observability and controllability for the Schrödinger equation on polyhedra"
   - "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 66 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 67 papers in archive.
+  - "scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning"
   - "Why shared attention vectors fail: a case for outcome-indexed tuning"
-  - "High-Order Triadic Functional Connectivity in the Brain and Beyond"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 69 papers in archive.
   - "Adaptive Entangled Game Modules in Artificial General Intelligence"
   - "Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "What Would it Cost to End Extreme Poverty?"
 
 ## 10 most recent papers
+
+### General Quantification of Covariate and Concept Shifts
+- URL: https://paperplaine.com/papers/general-quantification-of-covariate
+- Category: Computer Science · AI
+- Authors: Hongbo Chen, Li Charlie Xia
+- arXiv: 2609.11918
+- Plain-English subtitle: Measuring how machine learning models fail when data changes unexpectedly
+- Summary: When machine learning models trained on one dataset face new, different data in the real world, they often fail — but predicting exactly how much worse they'll perform has proven theoretically elusive. This paper fixes the broken mathematical definitions used to measure these failures and introduces a new method that actually works across different types of problems, allowing researchers to estimate performance drops before deployment.
+- Why it matters: Machine learning systems deployed in hospitals, cars, and financial systems encounter shifted data constantly — loan applicants look different than training examples, disease patterns evolve, weather patterns change. This work provides a practical tool to measure and predict accuracy loss in advance, helping engineers decide whether a model is safe to deploy or needs retraining before real-world consequences occur.
+
+### scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning
+- URL: https://paperplaine.com/papers/scdeft-a-deep-learning
+- Category: Quantitative Biology
+- Authors: Murthy Devarakonda
+- arXiv: 2609.10831
+- Plain-English subtitle: Predicting which patients will respond to drugs before treatment even starts
+- Summary: A new machine learning system called scDEFT can predict which inflammatory bowel disease patients will respond to a drug by analyzing their individual cells before they start treatment — achieving 70% accuracy where standard methods guess at random. The system also identifies which specific genes and cellular changes drive the difference between responders and non-responders, offering a mechanistic explanation for why identical drugs work for some patients but not others.
+- Why it matters: Doctors could use this approach to match patients with drugs that will actually work for them before wasting months on ineffective treatment. For inflammatory bowel disease and potentially other conditions, this could spare patients unnecessary side effects and speed them toward therapies that help. The method also pinpoints which genes to target with new drugs, directly informing drug development.
+
+### Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding
+- URL: https://paperplaine.com/papers/caption-once-frames-on
+- Category: Computer Science
+- Authors: Weitong Cai, Hang Zhang, Yukai Huang et al.
+- arXiv: 2609.11899
+- Plain-English subtitle: Answering questions about long videos without processing every frame each time
+- Summary: A new system lets edge devices understand hours-long videos efficiently by separating what needs pictures from what doesn't. It runs one captioning pass upfront to create a searchable story skeleton, then only retrieves actual video frames when a question specifically needs visual details like text or appearance—cutting the computing work dramatically while keeping accuracy high.
+- Why it matters: Video analysis on phones, cameras, and other edge devices is bottlenecked by bandwidth and battery. This approach could enable real-time video understanding for surveillance, security, and accessibility apps without constantly streaming frames to the cloud or draining device power. The efficiency gains are concrete: you get strong accuracy with far less visual data flowing in and out.
 
 ### JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition
 - URL: https://paperplaine.com/papers/jarvisgui-towards-cross-device
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to improve code without needing correct answers
 - Summary: Existing methods for improving AI code generators at test time rely on comparing final answers directly, which doesn't work for code since programs can be identical in function but written differently. Researchers developed a system that instead tests candidate programs against hidden test cases derived from the problem itself, rewarding programs that behave the same way—and using a safeguard against programs that cheat their way to false consensus. The approach substantially increased the percentage of coding tasks solved correctly.
 - Why it matters: Code generation AI often needs to improve after deployment, but without knowing the right answers, there's been no reliable way to train it to get better. This work makes that possible for the first time, enabling code generators to self-improve on real-world problems they encounter. The gains were significant across multiple coding benchmarks and transfer scenarios, suggesting the method could make deployed code systems smarter over time without human intervention.
-
-### Measuring DeFi Risk
-- URL: https://paperplaine.com/papers/measuring-defi-risk
-- Category: Economics
-- Authors: Jeremy Bertomeu, Xiumin Martin, Ibrahima Sall
-- arXiv: 2609.07902
-- Plain-English subtitle: A simple early-warning system for DeFi lending's hidden risks
-- Summary: DeFi lending platforms grew to $40 billion in deposits by May 2022 by matching people who want to borrow against cryptocurrency with depositors seeking returns, but researchers developed a framework using only public deposit and borrowing data to measure whether these systems can actually pay back what they promise. Applying this to major platforms, they found the systems became dangerously fragile by mid-2021, with real risk that the dollar-pegged coins backing deposits could lose value if cryptocurrency prices swing sharply.
-- Why it matters: DeFi lending now handles tens of billions in real money, and depositors often don't understand the risks they're taking. This framework gives regulators and platforms a concrete way to spot trouble before it happens—similar to how banks monitor their capital reserves. As DeFi shifts toward using actual dollars instead of just cryptocurrency collateral, having a reliable risk-measurement system becomes essential to prevent another crypto collapse that could wipe out ordinary investors.
-
-### Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild
-- URL: https://paperplaine.com/papers/spheriverse-3d-scene-understanding
-- Category: Engineering
-- Authors: Fei Teng, Sheng Wu, Mengfei Duan et al.
-- arXiv: 2609.09012
-- Plain-English subtitle: Teaching AI to understand 3D scenes from 360-degree camera views
-- Summary: Researchers created a new dataset of 64,400 paired spherical images and 3D laser scans to help computers understand what's in a scene from all angles at once. They also built a new method called SphereOcc that outperforms existing approaches by better bridging the gap between how 360-degree cameras record the world and how computers need to represent it internally.
-- Why it matters: Self-driving cars, robots, and autonomous systems need to understand their surroundings in 3D to navigate safely. Spherical cameras capture far more visual context than narrow-view cameras, but existing AI methods waste this advantage by struggling to convert the circular view into usable 3D understanding. This work makes that conversion work significantly better, potentially improving how robots and autonomous vehicles perceive and respond to complex real-world scenes.
-
-### Canonical Color as a Lens into Concept Decodability in Vision Encoders and VLMs
-- URL: https://paperplaine.com/papers/canonical-color-as-a
-- Category: Computer Science · AI
-- Authors: Xiaofu Chen, Stella Frank, Yova Kementchedjhieva
-- arXiv: 2609.09124
-- Plain-English subtitle: How AI vision systems infer the 'right' color of objects from black-and-white images
-- Summary: Vision AI systems can reconstruct what color an object should be—even from grayscale images where no color information exists—by learning conceptual associations between objects and their canonical colors. This ability appears tied directly to how well the system identifies the object itself, suggesting the AI has built an abstract understanding that goes beyond surface-level visual features.
-- Why it matters: This reveals that AI vision systems absorb conceptual knowledge about the world, not just pixel patterns. Understanding what kinds of abstract reasoning are baked into these systems helps researchers debug when vision-language models fail, spot when they're making assumptions rather than observing, and design better ways to test whether AI actually understands concepts or just pattern-matches.
 
 ## About
 
