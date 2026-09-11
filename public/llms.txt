@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 784 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 787 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 267 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 268 papers in archive.
+  - "Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models"
   - "General Quantification of Covariate and Concept Shifts"
-  - "JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 65 papers in archive.
   - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
   - "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 67 papers in archive.
   - "A statistical approach to bias in zero-shot learning: the lens of handwriting recognition"
   - "PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 63 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 64 papers in archive.
+  - "Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology"
   - "Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild"
-  - "Energy-Efficient Waveform Design for ISAC Systems: An Ambiguity-Domain QoS Perspective"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 56 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 57 papers in archive.
+  - "Italian Business-to-Business Invoicing Data: A Network Analysis"
   - "Measuring DeFi Risk"
-  - "What Would it Cost to End Extreme Poverty?"
 
 ## 10 most recent papers
+
+### Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models
+- URL: https://paperplaine.com/papers/explainability-assistant-a-conversational
+- Category: Computer Science · AI
+- Authors: Rodion Krjutškov, Eduard Barbu, Nikos Sakkas et al.
+- arXiv: 2609.11860
+- Plain-English subtitle: Chatting with AI to understand why buildings use so much energy
+- Summary: Researchers built a conversational system that lets building managers ask natural questions about energy forecasting models instead of staring at technical dashboards. The system correctly understands 94% of questions asked, compared to 76.8% in previous attempts, and energy experts unanimously preferred talking to it over traditional interfaces.
+- Why it matters: Building operators make real decisions about heating, cooling, and power use based on energy forecasts—but they often can't trust models they don't understand. A system that explains predictions through normal conversation means managers can catch errors, spot patterns, and actually act on what the AI recommends rather than guessing or ignoring it entirely.
+
+### Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology
+- URL: https://paperplaine.com/papers/differentially-private-eeg-feature
+- Category: Engineering
+- Authors: Noman Sadiq, Mohsen Toorani
+- arXiv: 2609.11777
+- Plain-English subtitle: Adding noise to brain scans to hide patient identity without ruining diagnosis
+- Summary: When hospitals share EEG brain recordings for research, simply removing names isn't enough to protect patients—sophisticated analysis can still re-identify them. This study tested whether adding carefully calibrated random noise to EEG features can hide individual identity while keeping the data useful for AI diagnosis tools, finding that the approach works but requires precise tuning to avoid destroying the signal's clinical value.
+- Why it matters: Healthcare systems need to share EEG data to improve AI diagnostic tools, but current privacy safeguards are inadequate for high-dimensional brain recordings. This research provides a practical framework hospitals can use to anonymize EEG data before sharing it with researchers, reducing the risk of patient re-identification while maintaining the data quality needed for developing better clinical decision-support systems.
+
+### Italian Business-to-Business Invoicing Data: A Network Analysis
+- URL: https://paperplaine.com/papers/italian-business-to-business
+- Category: Economics
+- Authors: Valerio Astuti, Daniele Piras
+- arXiv: 2609.10227
+- Plain-English subtitle: Mapping Italy's hidden web of business connections through tax records
+- Summary: Italian researchers mapped the entire network of business-to-business relationships using invoicing data from the country's tax office, revealing that the economy follows a "scale-free" structure where a small number of firms are disproportionately important to the whole system. A handful of suppliers and buyers wield far more influence over production flows than most other companies, and firms have easier access to multiple buyers than to multiple reliable suppliers.
+- Why it matters: Understanding which firms are truly central to the economy helps policymakers predict how disruptions—like supply chain shocks or bankruptcies—will ripple through the system. Companies in concentrated supplier positions become critical pressure points; losing them hurts more firms downstream. This map also reveals why some regions and industries are more economically fragile than others, information that's essential for designing targeted interventions during crises.
 
 ### General Quantification of Covariate and Concept Shifts
 - URL: https://paperplaine.com/papers/general-quantification-of-covariate
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI forget secrets without breaking what it knows
 - Summary: A new technique called FOM-UL surgically removes sensitive information from AI language models by targeting only the specific layers that store it, rather than clumsily retraining the entire model. The method also survives a common compression step called quantization, where forgotten information often sneaks back in—keeping unwanted knowledge suppressed even after the model is shrunk for deployment.
 - Why it matters: Companies need a faster, cheaper way to remove copyrighted text, private data, or other problematic content from AI models they've already trained, without starting from scratch. This method does that while keeping the model's actual performance intact—and critically, it doesn't fail when engineers compress the model to make it run on phones or cheap servers, a step where competing unlearning techniques tend to fall apart.
-
-### A statistical approach to bias in zero-shot learning: the lens of handwriting recognition
-- URL: https://paperplaine.com/papers/a-statistical-approach-to
-- Category: Statistics
-- Authors: Clarence Chew, Gim Siang Chia, Sukalpa Chanda et al.
-- arXiv: 2609.10084
-- Plain-English subtitle: Fixing AI's blind spot when recognizing things it's never seen before
-- Summary: AI systems trained on familiar examples tend to assume new data belongs to those familiar categories, even when it doesn't. This paper fixes that bias using a statistical two-step process: first, an existing recognition system makes its best guess, then a second layer corrects for the known tendency to misclassify. Testing on handwriting recognition, the method improved accuracy by over 20% on unseen words and works with any existing recognition system plugged in.
-- Why it matters: Many real-world recognition tasks involve categories the system has never encountered—new medical diagnoses, emerging languages, novel products. The bias toward familiar categories can cause serious misidentifications. This fix is modular and works with existing systems without redesigning them, making it practical to deploy across medical imaging, document processing, and other fields where recognizing truly new things matters.
-
-### Adaptive Entangled Game Modules in Artificial General Intelligence
-- URL: https://paperplaine.com/papers/adaptive-entangled-game-modules
-- Category: Quantitative Finance
-- Authors: Haochen Li, Xinshuai Guo, Jingdong Ouyang et al.
-- arXiv: 2609.09226
-- Plain-English subtitle: Stock traders act like entangled quantum systems, not rational individuals
-- Summary: Researchers analyzing Chinese stock market trading found that 89% of trader decisions follow patterns predicted by a quantum-inspired model of interconnected, adaptive agents—far more than the less than 5% explained by traditional finance's assumption of independent rational actors. Traders also show sudden shifts in their decision-making when exposed to news and events, suggesting their brains operate through entangled mechanisms similar to quantum systems rather than through isolated rational calculation.
-- Why it matters: Financial forecasting has relied for decades on models assuming traders act independently and rationally, which consistently fail to predict real market behavior. This research suggests that AI systems trained on quantum-inspired brain models could predict market movements and trader behavior far more accurately than current systems, potentially improving everything from trading algorithms to risk management and policy design. It also points toward building artificial intelligence that mimics how human brains actually work—through interconnected adaptive systems—rather than through brute-force neural networks that require trillions of hidden parameters.
-
-### Entropy-Regularized Rank-Masked Policy Optimization for Test-Time Reinforcement Learning in Code Generation
-- URL: https://paperplaine.com/papers/entropy-regularized-rank-masked
-- Category: Computer Science · AI
-- Authors: Jiacheng Xu, Feng Chen, Xiuneng Xu et al.
-- arXiv: 2609.09135
-- Plain-English subtitle: Teaching AI to improve code without needing correct answers
-- Summary: Existing methods for improving AI code generators at test time rely on comparing final answers directly, which doesn't work for code since programs can be identical in function but written differently. Researchers developed a system that instead tests candidate programs against hidden test cases derived from the problem itself, rewarding programs that behave the same way—and using a safeguard against programs that cheat their way to false consensus. The approach substantially increased the percentage of coding tasks solved correctly.
-- Why it matters: Code generation AI often needs to improve after deployment, but without knowing the right answers, there's been no reliable way to train it to get better. This work makes that possible for the first time, enabling code generators to self-improve on real-world problems they encounter. The gains were significant across multiple coding benchmarks and transfer scenarios, suggesting the method could make deployed code systems smarter over time without human intervention.
 
 ## About
 
