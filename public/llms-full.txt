@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 787 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-11
+This file contains the complete plain-English text of all 790 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-12
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport
+Subtitle: Tailoring image generation schedules to match how each model actually learns
+URL: https://paperplaine.com/papers/model-aware-schedules-improve
+Category: Computer Science · AI
+Authors: Luyi Jia, Boyan Zhang, Yilun Liu et al.
+arXiv ID: 2609.11842
+arXiv URL: https://arxiv.org/abs/2609.11842
+Posted: 2026-09-12
+
+Summary: Researchers developed a way to customize the step-by-step schedules that guide image-generation AI models like DALL-E, by measuring how well each model predicts at different noise levels. The method produced a 38.6% improvement in image quality for one leading approach on standard benchmarks, and surprisingly, the optimal schedules followed similar patterns across different models and training setups.
+
+Why it matters: Current image generators use one-size-fits-all schedules that don't account for how individual models actually perform. This work lets you extract better results from existing models without retraining them from scratch—the improvement template even works when frozen and applied to new models, potentially making high-quality image generation faster and cheaper across the board.
+
+---
+Title: Unfriendly partitions of locally finite Borel graphs
+Subtitle: When mathematicians can't color a graph fairly, no matter how they try
+URL: https://paperplaine.com/papers/unfriendly-partitions-of-locally
+Category: Mathematics
+Authors: José de Jesús Pelayo-Gómez
+arXiv ID: 2609.11919
+arXiv URL: https://arxiv.org/abs/2609.11919
+Posted: 2026-09-12
+
+Summary: A mathematician has solved a long-standing question by proving that some infinitely large networks cannot be split into two groups where no group contains all neighbors of any single point—a property called an unfriendly partition. However, the paper also shows that networks with maximum degree four (where each point connects to at most four others) can always be split this way if they have certain structural features like cycles.
+
+Why it matters: Graph coloring problems appear in scheduling, map coloring, and conflict resolution algorithms. Understanding when fair partitions are and aren't possible helps computer scientists know which real-world network problems have solutions and which don't, preventing wasted effort on impossible tasks.
+
+---
+Title: AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers
+Subtitle: Why the power grid can't keep up with AI's explosive electricity hunger
+URL: https://paperplaine.com/papers/ai-for-ai-optimizing
+Category: Quantitative Finance
+Authors: Alexander Crosier, Kyle Onghai, Ronnie Sircar
+arXiv ID: 2609.08166
+arXiv URL: https://arxiv.org/abs/2609.08166
+Posted: 2026-09-12
+
+Summary: AI data centers are demanding electricity faster than power plants can be built, driving up energy prices with no relief in sight. Using mathematical models that account for real-world uncertainties—from construction delays to the risk of building too much capacity—researchers found that even when investors know demand is soaring, they still hesitate to build enough new power plants, because they fear overbuilding and losing money.
+
+Why it matters: As AI companies expand, electricity costs will keep rising unless investors become more willing to take on the risk of building excess capacity. Higher power prices ripple through AI services, potentially making them more expensive for everyone and slowing innovation. The analysis reveals that relying on market incentives alone won't solve this bottleneck—policymakers may need to step in to coordinate grid expansion with data-center growth.
 
 ---
 Title: Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 787 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 790 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 268 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 269 papers in archive.
+  - "Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport"
   - "Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models"
-  - "General Quantification of Covariate and Concept Shifts"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 65 papers in archive.
   - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
   - "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 65 papers in archive.
   - "Private communication via zero-private-capacity quantum channels"
   - "Towards Scaling Quantum Fine-Tuning of Foundational Time Series Models for Classification"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 65 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 66 papers in archive.
+  - "Unfriendly partitions of locally finite Borel graphs"
   - "Observability and controllability for the Schrödinger equation on polyhedra"
-  - "Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 67 papers in archive.
   - "scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning"
   - "Why shared attention vectors fail: a case for outcome-indexed tuning"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 69 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 70 papers in archive.
+  - "AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers"
   - "Adaptive Entangled Game Modules in Artificial General Intelligence"
-  - "Artificial Intelligence in Equity and Crypto Markets: Progress, Profitability Evidence, and the Limits of Automated Investing"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 67 papers in archive.
   - "A statistical approach to bias in zero-shot learning: the lens of handwriting recognition"
   - "PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport
+- URL: https://paperplaine.com/papers/model-aware-schedules-improve
+- Category: Computer Science · AI
+- Authors: Luyi Jia, Boyan Zhang, Yilun Liu et al.
+- arXiv: 2609.11842
+- Plain-English subtitle: Tailoring image generation schedules to match how each model actually learns
+- Summary: Researchers developed a way to customize the step-by-step schedules that guide image-generation AI models like DALL-E, by measuring how well each model predicts at different noise levels. The method produced a 38.6% improvement in image quality for one leading approach on standard benchmarks, and surprisingly, the optimal schedules followed similar patterns across different models and training setups.
+- Why it matters: Current image generators use one-size-fits-all schedules that don't account for how individual models actually perform. This work lets you extract better results from existing models without retraining them from scratch—the improvement template even works when frozen and applied to new models, potentially making high-quality image generation faster and cheaper across the board.
+
+### Unfriendly partitions of locally finite Borel graphs
+- URL: https://paperplaine.com/papers/unfriendly-partitions-of-locally
+- Category: Mathematics
+- Authors: José de Jesús Pelayo-Gómez
+- arXiv: 2609.11919
+- Plain-English subtitle: When mathematicians can't color a graph fairly, no matter how they try
+- Summary: A mathematician has solved a long-standing question by proving that some infinitely large networks cannot be split into two groups where no group contains all neighbors of any single point—a property called an unfriendly partition. However, the paper also shows that networks with maximum degree four (where each point connects to at most four others) can always be split this way if they have certain structural features like cycles.
+- Why it matters: Graph coloring problems appear in scheduling, map coloring, and conflict resolution algorithms. Understanding when fair partitions are and aren't possible helps computer scientists know which real-world network problems have solutions and which don't, preventing wasted effort on impossible tasks.
+
+### AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers
+- URL: https://paperplaine.com/papers/ai-for-ai-optimizing
+- Category: Quantitative Finance
+- Authors: Alexander Crosier, Kyle Onghai, Ronnie Sircar
+- arXiv: 2609.08166
+- Plain-English subtitle: Why the power grid can't keep up with AI's explosive electricity hunger
+- Summary: AI data centers are demanding electricity faster than power plants can be built, driving up energy prices with no relief in sight. Using mathematical models that account for real-world uncertainties—from construction delays to the risk of building too much capacity—researchers found that even when investors know demand is soaring, they still hesitate to build enough new power plants, because they fear overbuilding and losing money.
+- Why it matters: As AI companies expand, electricity costs will keep rising unless investors become more willing to take on the risk of building excess capacity. Higher power prices ripple through AI services, potentially making them more expensive for everyone and slowing innovation. The analysis reveals that relying on market incentives alone won't solve this bottleneck—policymakers may need to step in to coordinate grid expansion with data-center growth.
 
 ### Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models
 - URL: https://paperplaine.com/papers/explainability-assistant-a-conversational
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Testing AI agents that must coordinate tasks across phones, computers, and tablets
 - Summary: Researchers created JarvisGUI, a benchmark that tests whether AI agents can handle workflows spanning multiple devices—like transferring data from a phone to a laptop and then to a desktop. When tested on Android, Windows, and Ubuntu machines simultaneously, even the best existing agents failed to keep track of shared information, understand context across platforms, or manage complex chains of dependent steps—capabilities essential for real-world use.
 - Why it matters: Most AI agent testing today happens on isolated single-device tasks, giving an inflated sense of how ready these systems are for actual work. JarvisGUI reveals a fundamental weakness: agents can't reliably move data between your phone and computer or maintain consistency across platforms. Until this gap closes, GUI agents won't be trustworthy for common workflows like research projects, file organization, or data processing that naturally span multiple devices.
-
-### Private communication via zero-private-capacity quantum channels
-- URL: https://paperplaine.com/papers/private-communication-via-zero
-- Category: Physics
-- Authors: Chengkai Zhu, Xin Wang
-- arXiv: 2609.10520
-- Plain-English subtitle: Two useless quantum channels become secretly useful together
-- Summary: Two quantum communication channels that are individually worthless for private messaging can actually transmit secret information when used together—a phenomenon physicists thought was impossible. By combining a four-level quantum channel with a qubit erasure channel, researchers achieved over 0.0001903 private bits per use, proving that a channel's individual capacity doesn't fully predict its value for secure communication.
-- Why it matters: Quantum communication systems need to send secret messages that eavesdroppers can't intercept. This discovery suggests that engineers could combine multiple apparently unusable quantum channels to create working secure communication systems—opening unexpected possibilities for building quantum networks and revealing fundamental limits of how privacy works in the quantum world.
-
-### Observability and controllability for the Schrödinger equation on polyhedra
-- URL: https://paperplaine.com/papers/observability-and-controllability-for
-- Category: Mathematics
-- Authors: Wei Qu, Zhiwen Duan
-- arXiv: 2609.10096
-- Plain-English subtitle: Steering quantum waves inside angular boxes with minimal control
-- Summary: Mathematicians proved that quantum waves trapped inside polyhedra (angular, multi-faced shapes) can be observed and steered using controls placed only near the shape's corners and edges. The result applies when the wave's initial state is smooth enough, and remarkably, controlling the wave this way is just as efficient as controlling individual quantum energy states.
-- Why it matters: Quantum control problems appear in emerging technologies like quantum computing and precision measurement devices. This work removes a major theoretical gap by extending control methods to realistic geometric boundaries—most real quantum systems don't sit in perfectly smooth domains. The finding that corners and edges are sufficient control points could simplify engineering of quantum devices by reducing where actuators need to be placed.
-
-### Forgetting Only What Matters: Layer-Selective Unlearning toward Robust LLMs
-- URL: https://paperplaine.com/papers/forgetting-only-what-matters
-- Category: Computer Science · AI
-- Authors: Ravi Ranjan, Olivera Kotevska, Agoritsa Polyzou
-- arXiv: 2609.10439
-- Plain-English subtitle: Making AI forget secrets without breaking what it knows
-- Summary: A new technique called FOM-UL surgically removes sensitive information from AI language models by targeting only the specific layers that store it, rather than clumsily retraining the entire model. The method also survives a common compression step called quantization, where forgotten information often sneaks back in—keeping unwanted knowledge suppressed even after the model is shrunk for deployment.
-- Why it matters: Companies need a faster, cheaper way to remove copyrighted text, private data, or other problematic content from AI models they've already trained, without starting from scratch. This method does that while keeping the model's actual performance intact—and critically, it doesn't fail when engineers compress the model to make it run on phones or cheap servers, a step where competing unlearning techniques tend to fall apart.
 
 ## About
 
