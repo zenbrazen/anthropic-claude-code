@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 790 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 793 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-12
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay
+Subtitle: Making game-solving algorithms 80 times faster on graphics processors
+URL: https://paperplaine.com/papers/gpu-cfr-80x-faster
+Category: Computer Science · AI
+Authors: Boning Li, Longbo Huang
+arXiv ID: 2609.11923
+arXiv URL: https://arxiv.org/abs/2609.11923
+Posted: 2026-09-12
+
+Summary: Researchers created GPU-CFR, a compiler that speeds up counterfactual regret minimization—a mathematical technique for finding optimal strategies in complex games—by 80 times on graphics processors. The key insight: for any fixed game, the entire computation pattern stays the same across iterations, so the compiler can record it once and replay it efficiently rather than re-launching thousands of tiny operations each round.
+
+Why it matters: Counterfactual regret minimization is the algorithm behind poker AI and other game-playing systems that must handle astronomical numbers of possible game states. Making it 80 times faster means solving games that would take days now takes hours, and solving larger games becomes practical. This directly accelerates AI research on strategic decision-making and competitive reasoning.
+
+---
+Title: EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity
+Subtitle: Quantum security might not need classical puzzles to work
+URL: https://paperplaine.com/papers/efi-pairs-without-one
+Category: Computer Science
+Authors: Atul Mantri
+arXiv ID: 2609.11901
+arXiv URL: https://arxiv.org/abs/2609.11901
+Posted: 2026-09-12
+
+Summary: Researchers proved that one type of quantum building block can exist without another, even though the reverse relationship was known. They constructed an oracle—a hypothetical answering machine—where quantum security states survive intact while classical puzzles vanish entirely, showing these two candidates for quantum cryptography are fundamentally different.
+
+Why it matters: Quantum cryptography researchers have been searching for the absolute minimum assumptions needed to build secure systems. This work narrows that search by proving one leading candidate (EFI pairs) stands independently from the other (one-way puzzles), redirecting research effort toward which direction actually matters for practical quantum security.
+
+---
+Title: Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races
+Subtitle: How a new race starting format gives runners hidden speed advantages
+URL: https://paperplaine.com/papers/estimating-the-time-advantage
+Category: Physics
+Authors: Tade Souaiaia
+arXiv ID: 2609.10833
+arXiv URL: https://arxiv.org/abs/2609.10833
+Posted: 2026-09-12
+
+Summary: Recent middle-distance world records have benefited from a relatively new starting configuration that places some athletes in front groups on outside lanes, reducing the distance they run on tight curves. Using video analysis and physics modeling, researchers found this advantage ranges from 0.1 to over 1 second depending on the event—enough to be the difference between breaking a world record and running a great but unremarkable race.
+
+Why it matters: As shoe technology gets blamed for recent record-breaking performances, this finding shows that race logistics play an equally important but previously invisible role. Athletes and race organizers should now account for start configuration when comparing performances across different eras, and future records might need to be evaluated differently depending on how the race was structured.
 
 ---
 Title: Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport

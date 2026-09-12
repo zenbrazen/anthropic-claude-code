@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 790 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 793 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 269 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 270 papers in archive.
+  - "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay"
   - "Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport"
-  - "Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 65 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 66 papers in archive.
+  - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
   - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
-  - "ZK-Trace: Certified Collusion Tracing with Zero-Knowledge Credentials for Federated GNSS Interference Monitoring"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 65 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 66 papers in archive.
+  - "Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races"
   - "Private communication via zero-private-capacity quantum channels"
-  - "Towards Scaling Quantum Fine-Tuning of Foundational Time Series Models for Classification"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 66 papers in archive.
   - "Unfriendly partitions of locally finite Borel graphs"
   - "Observability and controllability for the Schrödinger equation on polyhedra"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay
+- URL: https://paperplaine.com/papers/gpu-cfr-80x-faster
+- Category: Computer Science · AI
+- Authors: Boning Li, Longbo Huang
+- arXiv: 2609.11923
+- Plain-English subtitle: Making game-solving algorithms 80 times faster on graphics processors
+- Summary: Researchers created GPU-CFR, a compiler that speeds up counterfactual regret minimization—a mathematical technique for finding optimal strategies in complex games—by 80 times on graphics processors. The key insight: for any fixed game, the entire computation pattern stays the same across iterations, so the compiler can record it once and replay it efficiently rather than re-launching thousands of tiny operations each round.
+- Why it matters: Counterfactual regret minimization is the algorithm behind poker AI and other game-playing systems that must handle astronomical numbers of possible game states. Making it 80 times faster means solving games that would take days now takes hours, and solving larger games becomes practical. This directly accelerates AI research on strategic decision-making and competitive reasoning.
+
+### EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity
+- URL: https://paperplaine.com/papers/efi-pairs-without-one
+- Category: Computer Science
+- Authors: Atul Mantri
+- arXiv: 2609.11901
+- Plain-English subtitle: Quantum security might not need classical puzzles to work
+- Summary: Researchers proved that one type of quantum building block can exist without another, even though the reverse relationship was known. They constructed an oracle—a hypothetical answering machine—where quantum security states survive intact while classical puzzles vanish entirely, showing these two candidates for quantum cryptography are fundamentally different.
+- Why it matters: Quantum cryptography researchers have been searching for the absolute minimum assumptions needed to build secure systems. This work narrows that search by proving one leading candidate (EFI pairs) stands independently from the other (one-way puzzles), redirecting research effort toward which direction actually matters for practical quantum security.
+
+### Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races
+- URL: https://paperplaine.com/papers/estimating-the-time-advantage
+- Category: Physics
+- Authors: Tade Souaiaia
+- arXiv: 2609.10833
+- Plain-English subtitle: How a new race starting format gives runners hidden speed advantages
+- Summary: Recent middle-distance world records have benefited from a relatively new starting configuration that places some athletes in front groups on outside lanes, reducing the distance they run on tight curves. Using video analysis and physics modeling, researchers found this advantage ranges from 0.1 to over 1 second depending on the event—enough to be the difference between breaking a world record and running a great but unremarkable race.
+- Why it matters: As shoe technology gets blamed for recent record-breaking performances, this finding shows that race logistics play an equally important but previously invisible role. Athletes and race organizers should now account for start configuration when comparing performances across different eras, and future records might need to be evaluated differently depending on how the race was structured.
 
 ### Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport
 - URL: https://paperplaine.com/papers/model-aware-schedules-improve
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Measuring how machine learning models fail when data changes unexpectedly
 - Summary: When machine learning models trained on one dataset face new, different data in the real world, they often fail — but predicting exactly how much worse they'll perform has proven theoretically elusive. This paper fixes the broken mathematical definitions used to measure these failures and introduces a new method that actually works across different types of problems, allowing researchers to estimate performance drops before deployment.
 - Why it matters: Machine learning systems deployed in hospitals, cars, and financial systems encounter shifted data constantly — loan applicants look different than training examples, disease patterns evolve, weather patterns change. This work provides a practical tool to measure and predict accuracy loss in advance, helping engineers decide whether a model is safe to deploy or needs retraining before real-world consequences occur.
-
-### scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning
-- URL: https://paperplaine.com/papers/scdeft-a-deep-learning
-- Category: Quantitative Biology
-- Authors: Murthy Devarakonda
-- arXiv: 2609.10831
-- Plain-English subtitle: Predicting which patients will respond to drugs before treatment even starts
-- Summary: A new machine learning system called scDEFT can predict which inflammatory bowel disease patients will respond to a drug by analyzing their individual cells before they start treatment — achieving 70% accuracy where standard methods guess at random. The system also identifies which specific genes and cellular changes drive the difference between responders and non-responders, offering a mechanistic explanation for why identical drugs work for some patients but not others.
-- Why it matters: Doctors could use this approach to match patients with drugs that will actually work for them before wasting months on ineffective treatment. For inflammatory bowel disease and potentially other conditions, this could spare patients unnecessary side effects and speed them toward therapies that help. The method also pinpoints which genes to target with new drugs, directly informing drug development.
-
-### Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding
-- URL: https://paperplaine.com/papers/caption-once-frames-on
-- Category: Computer Science
-- Authors: Weitong Cai, Hang Zhang, Yukai Huang et al.
-- arXiv: 2609.11899
-- Plain-English subtitle: Answering questions about long videos without processing every frame each time
-- Summary: A new system lets edge devices understand hours-long videos efficiently by separating what needs pictures from what doesn't. It runs one captioning pass upfront to create a searchable story skeleton, then only retrieves actual video frames when a question specifically needs visual details like text or appearance—cutting the computing work dramatically while keeping accuracy high.
-- Why it matters: Video analysis on phones, cameras, and other edge devices is bottlenecked by bandwidth and battery. This approach could enable real-time video understanding for surveillance, security, and accessibility apps without constantly streaming frames to the cloud or draining device power. The efficiency gains are concrete: you get strong accuracy with far less visual data flowing in and out.
-
-### JarvisGUI: Towards Cross-Device GUI Agents with Dynamic Task Composition
-- URL: https://paperplaine.com/papers/jarvisgui-towards-cross-device
-- Category: Computer Science · AI
-- Authors: Zixiang Chen, Yuheng Lu, Zihao Cheng et al.
-- arXiv: 2609.10451
-- Plain-English subtitle: Testing AI agents that must coordinate tasks across phones, computers, and tablets
-- Summary: Researchers created JarvisGUI, a benchmark that tests whether AI agents can handle workflows spanning multiple devices—like transferring data from a phone to a laptop and then to a desktop. When tested on Android, Windows, and Ubuntu machines simultaneously, even the best existing agents failed to keep track of shared information, understand context across platforms, or manage complex chains of dependent steps—capabilities essential for real-world use.
-- Why it matters: Most AI agent testing today happens on isolated single-device tasks, giving an inflated sense of how ready these systems are for actual work. JarvisGUI reveals a fundamental weakness: agents can't reliably move data between your phone and computer or maintain consistency across platforms. Until this gap closes, GUI agents won't be trustworthy for common workflows like research projects, file organization, or data processing that naturally span multiple devices.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Sep 2026 11:28:44 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 21:08:10 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay</title>
+      <link>https://paperplaine.com/papers/gpu-cfr-80x-faster</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/gpu-cfr-80x-faster</guid>
+      <pubDate>Thu, 10 Sep 2026 17:58:14 GMT</pubDate>
+      <author>Boning Li, Longbo Huang</author>
+      <category>AI</category>
+      <description>Making game-solving algorithms 80 times faster on graphics processors</description>
+      <content:encoded><![CDATA[<p><em>Making game-solving algorithms 80 times faster on graphics processors</em></p><p>Researchers created GPU-CFR, a compiler that speeds up counterfactual regret minimization—a mathematical technique for finding optimal strategies in complex games—by 80 times on graphics processors. The key insight: for any fixed game, the entire computation pattern stays the same across iterations, so the compiler can record it once and replay it efficiently rather than re-launching thousands of tiny operations each round.</p><p><strong>Why it matters:</strong> Counterfactual regret minimization is the algorithm behind poker AI and other game-playing systems that must handle astronomical numbers of possible game states. Making it 80 times faster means solving games that would take days now takes hours, and solving larger games becomes practical. This directly accelerates AI research on strategic decision-making and competitive reasoning.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity</title>
+      <link>https://paperplaine.com/papers/efi-pairs-without-one</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/efi-pairs-without-one</guid>
+      <pubDate>Thu, 10 Sep 2026 17:54:55 GMT</pubDate>
+      <author>Atul Mantri</author>
+      <category>Comp Sci</category>
+      <description>Quantum security might not need classical puzzles to work</description>
+      <content:encoded><![CDATA[<p><em>Quantum security might not need classical puzzles to work</em></p><p>Researchers proved that one type of quantum building block can exist without another, even though the reverse relationship was known. They constructed an oracle—a hypothetical answering machine—where quantum security states survive intact while classical puzzles vanish entirely, showing these two candidates for quantum cryptography are fundamentally different.</p><p><strong>Why it matters:</strong> Quantum cryptography researchers have been searching for the absolute minimum assumptions needed to build secure systems. This work narrows that search by proving one leading candidate (EFI pairs) stands independently from the other (one-way puzzles), redirecting research effort toward which direction actually matters for practical quantum security.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races</title>
+      <link>https://paperplaine.com/papers/estimating-the-time-advantage</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/estimating-the-time-advantage</guid>
+      <pubDate>Wed, 09 Sep 2026 21:04:57 GMT</pubDate>
+      <author>Tade Souaiaia</author>
+      <category>Physics</category>
+      <description>How a new race starting format gives runners hidden speed advantages</description>
+      <content:encoded><![CDATA[<p><em>How a new race starting format gives runners hidden speed advantages</em></p><p>Recent middle-distance world records have benefited from a relatively new starting configuration that places some athletes in front groups on outside lanes, reducing the distance they run on tight curves. Using video analysis and physics modeling, researchers found this advantage ranges from 0.1 to over 1 second depending on the event—enough to be the difference between breaking a world record and running a great but unremarkable race.</p><p><strong>Why it matters:</strong> As shoe technology gets blamed for recent record-breaking performances, this finding shows that race logistics play an equally important but previously invisible role. Athletes and race organizers should now account for start configuration when comparing performances across different eras, and future records might need to be evaluated differently depending on how the race was structured.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport</title>
       <link>https://paperplaine.com/papers/model-aware-schedules-improve</link>

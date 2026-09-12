@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.11923",
+    "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+    "authors": "Boning Li, Longbo Huang",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-10T17:58:14Z",
+    "publishedFormatted": "Sep 10, 2026",
+    "subtitle": "Making game-solving algorithms 80 times faster on graphics processors",
+    "summary": "Researchers created GPU-CFR, a compiler that speeds up counterfactual regret minimization—a mathematical technique for finding optimal strategies in complex games—by 80 times on graphics processors. The key insight: for any fixed game, the entire computation pattern stays the same across iterations, so the compiler can record it once and replay it efficiently rather than re-launching thousands of tiny operations each round.",
+    "whyItMatters": "Counterfactual regret minimization is the algorithm behind poker AI and other game-playing systems that must handle astronomical numbers of possible game states. Making it 80 times faster means solving games that would take days now takes hours, and solving larger games becomes practical. This directly accelerates AI research on strategic decision-making and competitive reasoning.",
+    "fetchedAt": "2026-09-12T21:08:04.503Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 299
+    },
+    "slug": "gpu-cfr-80x-faster"
+  },
+  {
+    "id": "2609.11901",
+    "title": "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity",
+    "authors": "Atul Mantri",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-10T17:54:55Z",
+    "publishedFormatted": "Sep 10, 2026",
+    "subtitle": "Quantum security might not need classical puzzles to work",
+    "summary": "Researchers proved that one type of quantum building block can exist without another, even though the reverse relationship was known. They constructed an oracle—a hypothetical answering machine—where quantum security states survive intact while classical puzzles vanish entirely, showing these two candidates for quantum cryptography are fundamentally different.",
+    "whyItMatters": "Quantum cryptography researchers have been searching for the absolute minimum assumptions needed to build secure systems. This work narrows that search by proving one leading candidate (EFI pairs) stands independently from the other (one-way puzzles), redirecting research effort toward which direction actually matters for practical quantum security.",
+    "fetchedAt": "2026-09-12T21:08:07.246Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 267
+    },
+    "slug": "efi-pairs-without-one"
+  },
+  {
+    "id": "2609.10833",
+    "title": "Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races",
+    "authors": "Tade Souaiaia",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-09-09T21:04:57Z",
+    "publishedFormatted": "Sep 9, 2026",
+    "subtitle": "How a new race starting format gives runners hidden speed advantages",
+    "summary": "Recent middle-distance world records have benefited from a relatively new starting configuration that places some athletes in front groups on outside lanes, reducing the distance they run on tight curves. Using video analysis and physics modeling, researchers found this advantage ranges from 0.1 to over 1 second depending on the event—enough to be the difference between breaking a world record and running a great but unremarkable race.",
+    "whyItMatters": "As shoe technology gets blamed for recent record-breaking performances, this finding shows that race logistics play an equally important but previously invisible role. Athletes and race organizers should now account for start configuration when comparing performances across different eras, and future records might need to be evaluated differently depending on how the race was structured.",
+    "fetchedAt": "2026-09-12T21:08:10.316Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 195
+    },
+    "slug": "estimating-the-time-advantage"
+  },
+  {
     "id": "2609.11842",
     "title": "Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport",
     "authors": "Luyi Jia, Boyan Zhang, Yilun Liu et al.",
