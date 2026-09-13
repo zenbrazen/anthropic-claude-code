@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 794 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 795 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 271 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 272 papers in archive.
+  - "MindTopo: Can Foundation Models Reason in Topological Space?"
   - "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact"
-  - "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 66 papers in archive.
   - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
   - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
@@ -59,6 +59,15 @@ Each paper entry contains:
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### MindTopo: Can Foundation Models Reason in Topological Space?
+- URL: https://paperplaine.com/papers/mindtopo-can-foundation-models
+- Category: Computer Science · AI
+- Authors: Yunfei Ge, Anbang Liu, Qineng Wang et al.
+- arXiv: 2609.11900
+- Plain-English subtitle: Do AI models understand shapes that bend but don't break?
+- Summary: AI models can identify topological relationships like holes and connectivity when asked directly, but struggle dramatically when they have to plan actions in environments where those relationships matter. Even the best-performing model fell far short of human-level performance, and when models generated their own observations to plan with, they frequently violated the very topological rules they were supposed to be reasoning about.
+- Why it matters: Topological reasoning—understanding which spatial properties survive deformation—is fundamental to navigation, manipulation, and physical reasoning. Current AI systems that power robots and autonomous agents may be unable to reliably predict or plan for situations involving tangles, holes, or continuous deformation, potentially causing failures in real-world tasks like robotic manipulation or path planning through complex environments.
 
 ### Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact
 - URL: https://paperplaine.com/papers/generative-marketing-mix-modeling
@@ -140,15 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Adding noise to brain scans to hide patient identity without ruining diagnosis
 - Summary: When hospitals share EEG brain recordings for research, simply removing names isn't enough to protect patients—sophisticated analysis can still re-identify them. This study tested whether adding carefully calibrated random noise to EEG features can hide individual identity while keeping the data useful for AI diagnosis tools, finding that the approach works but requires precise tuning to avoid destroying the signal's clinical value.
 - Why it matters: Healthcare systems need to share EEG data to improve AI diagnostic tools, but current privacy safeguards are inadequate for high-dimensional brain recordings. This research provides a practical framework hospitals can use to anonymize EEG data before sharing it with researchers, reducing the risk of patient re-identification while maintaining the data quality needed for developing better clinical decision-support systems.
-
-### Italian Business-to-Business Invoicing Data: A Network Analysis
-- URL: https://paperplaine.com/papers/italian-business-to-business
-- Category: Economics
-- Authors: Valerio Astuti, Daniele Piras
-- arXiv: 2609.10227
-- Plain-English subtitle: Mapping Italy's hidden web of business connections through tax records
-- Summary: Italian researchers mapped the entire network of business-to-business relationships using invoicing data from the country's tax office, revealing that the economy follows a "scale-free" structure where a small number of firms are disproportionately important to the whole system. A handful of suppliers and buyers wield far more influence over production flows than most other companies, and firms have easier access to multiple buyers than to multiple reliable suppliers.
-- Why it matters: Understanding which firms are truly central to the economy helps policymakers predict how disruptions—like supply chain shocks or bankruptcies—will ripple through the system. Companies in concentrated supplier positions become critical pressure points; losing them hurts more firms downstream. This map also reveals why some regions and industries are more economically fragile than others, information that's essential for designing targeted interventions during crises.
 
 ## About
 
