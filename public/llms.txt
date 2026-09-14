@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 796 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 799 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 273 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 274 papers in archive.
+  - "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation"
   - "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant"
-  - "MindTopo: Can Foundation Models Reason in Topological Space?"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 66 papers in archive.
   - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
   - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 67 papers in archive.
   - "scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning"
   - "Why shared attention vectors fail: a case for outcome-indexed tuning"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 70 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 71 papers in archive.
+  - "dexamine: A Python package for Uniswap event data on Ethereum"
   - "AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers"
-  - "Adaptive Entangled Game Modules in Artificial General Intelligence"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 67 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 68 papers in archive.
+  - "ForkSCOPE: Charting the Agentic Garden of Forking Paths"
   - "A statistical approach to bias in zero-shot learning: the lens of handwriting recognition"
-  - "PAC-Bayesian Reconstruction Guarantees for Time Series Variational Autoencoders"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 64 papers in archive.
   - "Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology"
   - "Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation
+- URL: https://paperplaine.com/papers/cma-ot-hierarchical-expert
+- Category: Computer Science · AI
+- Authors: Jinting Wang, Chenxing Li, Dong Yu et al.
+- arXiv: 2609.13118
+- Plain-English subtitle: Teaching AI to compose music that matches dance moves by learning from expert examples
+- Summary: Researchers created a new method for generating music that syncs with dance videos by having an AI learn from expert music examples at multiple levels of detail. The approach uses a step-by-step learning strategy and a mathematical technique called optimal transport to bridge the gap between sparse dance cues and the rich information needed for coherent, musical compositions. Tests show the method produces music with better rhythm synchronization and musical quality than existing approaches.
+- Why it matters: Better dance-to-music generation could enable faster content creation for music videos, choreography software, and interactive entertainment where musicians currently spend hours hand-composing accompaniment. This technique also demonstrates a general approach—learning from expert examples at multiple levels—that could improve other AI tasks where the input is simple but the output needs to be complex and coherent, like generating detailed images from brief descriptions.
+
+### ForkSCOPE: Charting the Agentic Garden of Forking Paths
+- URL: https://paperplaine.com/papers/forkscope-charting-the-agentic
+- Category: Statistics
+- Authors: Arjun Balaji, Batuhan Duru Yeltekin, Tian Zheng
+- arXiv: 2609.12438
+- Plain-English subtitle: Making sense of hundreds of different ways to analyze the same data
+- Summary: When researchers analyze data, they make dozens of small choices—what variables to include, how to handle missing values, which statistical tests to run—and different choices lead to different answers. This paper presents ForkSCOPE, a tool that lets AI generate hundreds of complete analyses automatically, then maps out all these different decision paths in a way humans can actually understand and explore. Instead of forcing analyses into a predetermined category system, ForkSCOPE learns the structure from the analyses themselves, making it possible to scale up without losing insight.
+- Why it matters: Scientists often disagree about what findings "really mean" because the same dataset can tell different stories depending on analytical choices. ForkSCOPE helps researchers see the full landscape of defensible analyses and spot where small decisions flip conclusions—making it harder to accidentally pick only the results that support a preferred answer. This transparency is especially urgent as AI automates more research; without tools like this, we risk trading human bias for algorithmic black boxes that no one can audit.
+
+### dexamine: A Python package for Uniswap event data on Ethereum
+- URL: https://paperplaine.com/papers/dexamine-a-python-package
+- Category: Quantitative Finance
+- Authors: Magnus Hansson
+- arXiv: 2609.10407
+- Plain-English subtitle: A tool for turning Ethereum trading records into usable research data
+- Summary: Researchers created dexamine, a Python package that transforms raw blockchain records from Uniswap trades into structured data that researchers can actually analyze. The tool extracts token quantities, pool conditions, transaction order, and gas costs from Ethereum's public ledger—converting opaque blockchain logs into readable observations of who traded what, when, and at what cost.
+- Why it matters: Decentralized finance operates entirely on public blockchains, but the data is locked in cryptic transaction records that are nearly impossible for researchers to interpret by hand. dexamine makes it feasible to study how prices actually form in decentralized markets, how liquidity providers behave, and whether these exchanges function efficiently—questions that matter as these platforms handle billions in trading volume but operate outside traditional market oversight.
 
 ### MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant
 - URL: https://paperplaine.com/papers/mp-bench-evaluating-voice
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Tailoring image generation schedules to match how each model actually learns
 - Summary: Researchers developed a way to customize the step-by-step schedules that guide image-generation AI models like DALL-E, by measuring how well each model predicts at different noise levels. The method produced a 38.6% improvement in image quality for one leading approach on standard benchmarks, and surprisingly, the optimal schedules followed similar patterns across different models and training setups.
 - Why it matters: Current image generators use one-size-fits-all schedules that don't account for how individual models actually perform. This work lets you extract better results from existing models without retraining them from scratch—the improvement template even works when frozen and applied to new models, potentially making high-quality image generation faster and cheaper across the board.
-
-### Unfriendly partitions of locally finite Borel graphs
-- URL: https://paperplaine.com/papers/unfriendly-partitions-of-locally
-- Category: Mathematics
-- Authors: José de Jesús Pelayo-Gómez
-- arXiv: 2609.11919
-- Plain-English subtitle: When mathematicians can't color a graph fairly, no matter how they try
-- Summary: A mathematician has solved a long-standing question by proving that some infinitely large networks cannot be split into two groups where no group contains all neighbors of any single point—a property called an unfriendly partition. However, the paper also shows that networks with maximum degree four (where each point connects to at most four others) can always be split this way if they have certain structural features like cycles.
-- Why it matters: Graph coloring problems appear in scheduling, map coloring, and conflict resolution algorithms. Understanding when fair partitions are and aren't possible helps computer scientists know which real-world network problems have solutions and which don't, preventing wasted effort on impossible tasks.
-
-### AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers
-- URL: https://paperplaine.com/papers/ai-for-ai-optimizing
-- Category: Quantitative Finance
-- Authors: Alexander Crosier, Kyle Onghai, Ronnie Sircar
-- arXiv: 2609.08166
-- Plain-English subtitle: Why the power grid can't keep up with AI's explosive electricity hunger
-- Summary: AI data centers are demanding electricity faster than power plants can be built, driving up energy prices with no relief in sight. Using mathematical models that account for real-world uncertainties—from construction delays to the risk of building too much capacity—researchers found that even when investors know demand is soaring, they still hesitate to build enough new power plants, because they fear overbuilding and losing money.
-- Why it matters: As AI companies expand, electricity costs will keep rising unless investors become more willing to take on the risk of building excess capacity. Higher power prices ripple through AI services, potentially making them more expensive for everyone and slowing innovation. The analysis reveals that relying on market incentives alone won't solve this bottleneck—policymakers may need to step in to coordinate grid expansion with data-center growth.
-
-### Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models
-- URL: https://paperplaine.com/papers/explainability-assistant-a-conversational
-- Category: Computer Science · AI
-- Authors: Rodion Krjutškov, Eduard Barbu, Nikos Sakkas et al.
-- arXiv: 2609.11860
-- Plain-English subtitle: Chatting with AI to understand why buildings use so much energy
-- Summary: Researchers built a conversational system that lets building managers ask natural questions about energy forecasting models instead of staring at technical dashboards. The system correctly understands 94% of questions asked, compared to 76.8% in previous attempts, and energy experts unanimously preferred talking to it over traditional interfaces.
-- Why it matters: Building operators make real decisions about heating, cooling, and power use based on energy forecasts—but they often can't trust models they don't understand. A system that explains predictions through normal conversation means managers can catch errors, spot patterns, and actually act on what the AI recommends rather than guessing or ignoring it entirely.
 
 ## About
 

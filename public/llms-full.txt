@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 796 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 799 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-14
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation
+Subtitle: Teaching AI to compose music that matches dance moves by learning from expert examples
+URL: https://paperplaine.com/papers/cma-ot-hierarchical-expert
+Category: Computer Science · AI
+Authors: Jinting Wang, Chenxing Li, Dong Yu et al.
+arXiv ID: 2609.13118
+arXiv URL: https://arxiv.org/abs/2609.13118
+Posted: 2026-09-14
+
+Summary: Researchers created a new method for generating music that syncs with dance videos by having an AI learn from expert music examples at multiple levels of detail. The approach uses a step-by-step learning strategy and a mathematical technique called optimal transport to bridge the gap between sparse dance cues and the rich information needed for coherent, musical compositions. Tests show the method produces music with better rhythm synchronization and musical quality than existing approaches.
+
+Why it matters: Better dance-to-music generation could enable faster content creation for music videos, choreography software, and interactive entertainment where musicians currently spend hours hand-composing accompaniment. This technique also demonstrates a general approach—learning from expert examples at multiple levels—that could improve other AI tasks where the input is simple but the output needs to be complex and coherent, like generating detailed images from brief descriptions.
+
+---
+Title: ForkSCOPE: Charting the Agentic Garden of Forking Paths
+Subtitle: Making sense of hundreds of different ways to analyze the same data
+URL: https://paperplaine.com/papers/forkscope-charting-the-agentic
+Category: Statistics
+Authors: Arjun Balaji, Batuhan Duru Yeltekin, Tian Zheng
+arXiv ID: 2609.12438
+arXiv URL: https://arxiv.org/abs/2609.12438
+Posted: 2026-09-14
+
+Summary: When researchers analyze data, they make dozens of small choices—what variables to include, how to handle missing values, which statistical tests to run—and different choices lead to different answers. This paper presents ForkSCOPE, a tool that lets AI generate hundreds of complete analyses automatically, then maps out all these different decision paths in a way humans can actually understand and explore. Instead of forcing analyses into a predetermined category system, ForkSCOPE learns the structure from the analyses themselves, making it possible to scale up without losing insight.
+
+Why it matters: Scientists often disagree about what findings "really mean" because the same dataset can tell different stories depending on analytical choices. ForkSCOPE helps researchers see the full landscape of defensible analyses and spot where small decisions flip conclusions—making it harder to accidentally pick only the results that support a preferred answer. This transparency is especially urgent as AI automates more research; without tools like this, we risk trading human bias for algorithmic black boxes that no one can audit.
+
+---
+Title: dexamine: A Python package for Uniswap event data on Ethereum
+Subtitle: A tool for turning Ethereum trading records into usable research data
+URL: https://paperplaine.com/papers/dexamine-a-python-package
+Category: Quantitative Finance
+Authors: Magnus Hansson
+arXiv ID: 2609.10407
+arXiv URL: https://arxiv.org/abs/2609.10407
+Posted: 2026-09-14
+
+Summary: Researchers created dexamine, a Python package that transforms raw blockchain records from Uniswap trades into structured data that researchers can actually analyze. The tool extracts token quantities, pool conditions, transaction order, and gas costs from Ethereum's public ledger—converting opaque blockchain logs into readable observations of who traded what, when, and at what cost.
+
+Why it matters: Decentralized finance operates entirely on public blockchains, but the data is locked in cryptic transaction records that are nearly impossible for researchers to interpret by hand. dexamine makes it feasible to study how prices actually form in decentralized markets, how liquidity providers behave, and whether these exchanges function efficiently—questions that matter as these platforms handle billions in trading volume but operate outside traditional market oversight.
 
 ---
 Title: MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant
