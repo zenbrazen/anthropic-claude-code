@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 801 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 804 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 275 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 276 papers in archive.
+  - "Per-Matrix Optimality Is Not Enough: Three-Level Optimization for Low-Rank LLM Compression"
   - "Before You Poll with LLMs: A Deliberative Diagnostic Framework"
-  - "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 66 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 67 papers in archive.
+  - "Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities"
   - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
-  - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 67 papers in archive.
   - "Achieving perfect completeness for one- and two-message quantum proof systems"
   - "Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 66 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 67 papers in archive.
+  - "Augmented singular cohomology, uniform matroids, and real-rootedness"
   - "Unfriendly partitions of locally finite Borel graphs"
-  - "Observability and controllability for the Schrödinger equation on polyhedra"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 67 papers in archive.
   - "scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning"
   - "Why shared attention vectors fail: a case for outcome-indexed tuning"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### Per-Matrix Optimality Is Not Enough: Three-Level Optimization for Low-Rank LLM Compression
+- URL: https://paperplaine.com/papers/per-matrix-optimality-is
+- Category: Computer Science · AI
+- Authors: Huicheng Zhang, Xiyao Feng, Ze-Tong Li et al.
+- arXiv: 2609.15838
+- Plain-English subtitle: Squeezing AI language models down without losing their intelligence
+- Summary: Researchers found a three-step method for compressing large language models that works much better than existing approaches. By optimizing at three different levels—individual matrices, groups of matrices, and the entire model—they reduced errors that usually pile up during compression, cutting WikiText-2 perplexity from 42.1 all the way down to 11.4 on a 60% compressed model.
+- Why it matters: Smaller language models run faster and cheaper on everyday devices. This technique lets you compress models to 60% of their original size while keeping them far more intelligent than simpler methods produce, which could make advanced AI accessible on phones and laptops instead of requiring expensive servers.
+
+### Augmented singular cohomology, uniform matroids, and real-rootedness
+- URL: https://paperplaine.com/papers/augmented-singular-cohomology-uniform
+- Category: Mathematics
+- Authors: Kyle Binder, Lorenzo Vecchi
+- arXiv: 2609.15946
+- Plain-English subtitle: Why certain mathematical polynomials always have real number roots
+- Summary: Mathematicians proved that polynomial equations arising from a specific geometric construction in matroid theory always have real number solutions—resolving a longstanding conjecture. The finding applies to "uniform matroids," abstract structures that model symmetry and independence, and extends an earlier result about a related class of polynomials.
+- Why it matters: Real-rootedness is rare and valuable in mathematics because polynomials with this property tend to have special algebraic structure and combinatorial meaning. This proof deepens our understanding of how abstract mathematical objects like matroids encode information in polynomial form, and creates tools that mathematicians can use to verify or rule out proposed structures in related areas of algebra and geometry.
+
+### Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities
+- URL: https://paperplaine.com/papers/adversarial-testing-of-automated
+- Category: Computer Science
+- Authors: Fares Trad, Simin Chen, Hung Viet Pham et al.
+- arXiv: 2609.15963
+- Plain-English subtitle: Can attackers trick AI code-fixing tools into introducing security holes?
+- Summary: Researchers created 750 misleading bug reports designed to trick AI agents into automatically fixing code in ways that look correct but contain hidden security vulnerabilities. The AI systems fell for the trap more than half the time, successfully inserting malicious code in 51.7% of cases. Even existing safety checks failed to catch most of these booby-trapped fixes, with detection tools catching only 39–62% of the bad patches.
+- Why it matters: As companies move toward fully automated code repair without human review, attackers could inject adversarial bug reports into public repositories to silently compromise production systems. The discovery that current detection systems catch less than two-thirds of these attacks means organizations deploying autonomous repair agents are currently vulnerable to a new class of supply-chain attacks that don't require direct access to source code.
 
 ### Before You Poll with LLMs: A Deliberative Diagnostic Framework
 - URL: https://paperplaine.com/papers/before-you-poll-with
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Do AI models understand shapes that bend but don't break?
 - Summary: AI models can identify topological relationships like holes and connectivity when asked directly, but struggle dramatically when they have to plan actions in environments where those relationships matter. Even the best-performing model fell far short of human-level performance, and when models generated their own observations to plan with, they frequently violated the very topological rules they were supposed to be reasoning about.
 - Why it matters: Topological reasoning—understanding which spatial properties survive deformation—is fundamental to navigation, manipulation, and physical reasoning. Current AI systems that power robots and autonomous agents may be unable to reliably predict or plan for situations involving tangles, holes, or continuous deformation, potentially causing failures in real-world tasks like robotic manipulation or path planning through complex environments.
-
-### Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact
-- URL: https://paperplaine.com/papers/generative-marketing-mix-modeling
-- Category: Computer Science · AI
-- Authors: Masahiro Kato, Daiki Honma, Taka Kato
-- arXiv: 2609.11915
-- Plain-English subtitle: Measuring how often AI mentions your brand, and whether it drives sales
-- Summary: As generative AI systems like ChatGPT answer customer questions, companies want to know whether being mentioned actually increases sales—but there's no standard way to measure this. Researchers created a new statistical method that combines data on how often a company appears in AI-generated answers with information about whether users actually notice those mentions, then traces the link to real business outcomes. The method works by comparing what would happen under different strategies for getting AI systems to feature a brand.
-- Why it matters: Companies are now spending money to appear in generative AI results, but they've had no reliable way to know if that spending works. This method gives them a tool to measure whether AI mentions actually convert to customers or revenue—letting them decide which AI marketing strategies are worth the investment, rather than guessing.
-
-### GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay
-- URL: https://paperplaine.com/papers/gpu-cfr-80x-faster
-- Category: Computer Science · AI
-- Authors: Boning Li, Longbo Huang
-- arXiv: 2609.11923
-- Plain-English subtitle: Making game-solving algorithms 80 times faster on graphics processors
-- Summary: Researchers created GPU-CFR, a compiler that speeds up counterfactual regret minimization—a mathematical technique for finding optimal strategies in complex games—by 80 times on graphics processors. The key insight: for any fixed game, the entire computation pattern stays the same across iterations, so the compiler can record it once and replay it efficiently rather than re-launching thousands of tiny operations each round.
-- Why it matters: Counterfactual regret minimization is the algorithm behind poker AI and other game-playing systems that must handle astronomical numbers of possible game states. Making it 80 times faster means solving games that would take days now takes hours, and solving larger games becomes practical. This directly accelerates AI research on strategic decision-making and competitive reasoning.
-
-### EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity
-- URL: https://paperplaine.com/papers/efi-pairs-without-one
-- Category: Computer Science
-- Authors: Atul Mantri
-- arXiv: 2609.11901
-- Plain-English subtitle: Quantum security might not need classical puzzles to work
-- Summary: Researchers proved that one type of quantum building block can exist without another, even though the reverse relationship was known. They constructed an oracle—a hypothetical answering machine—where quantum security states survive intact while classical puzzles vanish entirely, showing these two candidates for quantum cryptography are fundamentally different.
-- Why it matters: Quantum cryptography researchers have been searching for the absolute minimum assumptions needed to build secure systems. This work narrows that search by proving one leading candidate (EFI pairs) stands independently from the other (one-way puzzles), redirecting research effort toward which direction actually matters for practical quantum security.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Sep 2026 12:29:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 21:52:57 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Per-Matrix Optimality Is Not Enough: Three-Level Optimization for Low-Rank LLM Compression</title>
+      <link>https://paperplaine.com/papers/per-matrix-optimality-is</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/per-matrix-optimality-is</guid>
+      <pubDate>Mon, 14 Sep 2026 16:36:46 GMT</pubDate>
+      <author>Huicheng Zhang, Xiyao Feng, Ze-Tong Li et al.</author>
+      <category>AI</category>
+      <description>Squeezing AI language models down without losing their intelligence</description>
+      <content:encoded><![CDATA[<p><em>Squeezing AI language models down without losing their intelligence</em></p><p>Researchers found a three-step method for compressing large language models that works much better than existing approaches. By optimizing at three different levels—individual matrices, groups of matrices, and the entire model—they reduced errors that usually pile up during compression, cutting WikiText-2 perplexity from 42.1 all the way down to 11.4 on a 60% compressed model.</p><p><strong>Why it matters:</strong> Smaller language models run faster and cheaper on everyday devices. This technique lets you compress models to 60% of their original size while keeping them far more intelligent than simpler methods produce, which could make advanced AI accessible on phones and laptops instead of requiring expensive servers.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Augmented singular cohomology, uniform matroids, and real-rootedness</title>
+      <link>https://paperplaine.com/papers/augmented-singular-cohomology-uniform</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/augmented-singular-cohomology-uniform</guid>
+      <pubDate>Mon, 14 Sep 2026 17:46:53 GMT</pubDate>
+      <author>Kyle Binder, Lorenzo Vecchi</author>
+      <category>Math</category>
+      <description>Why certain mathematical polynomials always have real number roots</description>
+      <content:encoded><![CDATA[<p><em>Why certain mathematical polynomials always have real number roots</em></p><p>Mathematicians proved that polynomial equations arising from a specific geometric construction in matroid theory always have real number solutions—resolving a longstanding conjecture. The finding applies to "uniform matroids," abstract structures that model symmetry and independence, and extends an earlier result about a related class of polynomials.</p><p><strong>Why it matters:</strong> Real-rootedness is rare and valuable in mathematics because polynomials with this property tend to have special algebraic structure and combinatorial meaning. This proof deepens our understanding of how abstract mathematical objects like matroids encode information in polynomial form, and creates tools that mathematicians can use to verify or rule out proposed structures in related areas of algebra and geometry.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities</title>
+      <link>https://paperplaine.com/papers/adversarial-testing-of-automated</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/adversarial-testing-of-automated</guid>
+      <pubDate>Mon, 14 Sep 2026 17:53:49 GMT</pubDate>
+      <author>Fares Trad, Simin Chen, Hung Viet Pham et al.</author>
+      <category>Comp Sci</category>
+      <description>Can attackers trick AI code-fixing tools into introducing security holes?</description>
+      <content:encoded><![CDATA[<p><em>Can attackers trick AI code-fixing tools into introducing security holes?</em></p><p>Researchers created 750 misleading bug reports designed to trick AI agents into automatically fixing code in ways that look correct but contain hidden security vulnerabilities. The AI systems fell for the trap more than half the time, successfully inserting malicious code in 51.7% of cases. Even existing safety checks failed to catch most of these booby-trapped fixes, with detection tools catching only 39–62% of the bad patches.</p><p><strong>Why it matters:</strong> As companies move toward fully automated code repair without human review, attackers could inject adversarial bug reports into public repositories to silently compromise production systems. The discovery that current detection systems catch less than two-thirds of these attacks means organizations deploying autonomous repair agents are currently vulnerable to a new class of supply-chain attacks that don't require direct access to source code.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Before You Poll with LLMs: A Deliberative Diagnostic Framework</title>
       <link>https://paperplaine.com/papers/before-you-poll-with</link>
