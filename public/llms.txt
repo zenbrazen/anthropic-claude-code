@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 799 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 801 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 274 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 275 papers in archive.
+  - "Before You Poll with LLMs: A Deliberative Diagnostic Framework"
   - "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation"
-  - "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 66 papers in archive.
   - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
   - "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 66 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 67 papers in archive.
+  - "Achieving perfect completeness for one- and two-message quantum proof systems"
   - "Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races"
-  - "Private communication via zero-private-capacity quantum channels"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 66 papers in archive.
   - "Unfriendly partitions of locally finite Borel graphs"
   - "Observability and controllability for the Schrödinger equation on polyhedra"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### Before You Poll with LLMs: A Deliberative Diagnostic Framework
+- URL: https://paperplaine.com/papers/before-you-poll-with
+- Category: Computer Science · AI
+- Authors: Ahmed Wali, Hassaan Tayyab
+- arXiv: 2609.15849
+- Plain-English subtitle: Do AI chatbots change their minds like real people do?
+- Summary: When researchers tested whether AI chatbots update their political opinions after hearing new arguments—the way human minds actually work—all five leading models failed. GPT-5.1 became more hostile to opposing views after balanced information, while Gemini and Claude overcorrected by shifting beliefs 5–7 times harder than humans do, and DeepSeek barely budged at all.
+- Why it matters: Companies are increasingly using AI chatbots to simulate public opinion and predict how real people will react to policies or campaigns. If these simulations don't match how human opinions actually change when people encounter new information, the forecasts will be systematically wrong—potentially leading organizations to misread public support or design policies based on distorted predictions of what people will accept.
+
+### Achieving perfect completeness for one- and two-message quantum proof systems
+- URL: https://paperplaine.com/papers/achieving-perfect-completeness-for
+- Category: Physics
+- Authors: Yupan Liu, Thomas Vidick
+- arXiv: 2609.15926
+- Plain-English subtitle: Quantum computers can now verify proofs with perfect accuracy in just one or two messages
+- Summary: Researchers solved a 20-year-old puzzle about quantum proof systems by showing that even single-message and two-message quantum proofs can achieve perfect completeness—meaning a quantum computer can verify correct solutions without ever mistakenly rejecting them. The breakthrough uses new mathematical techniques to construct quantum certifications that work flawlessly, closing gaps that persisted even as three-message systems were cracked decades ago.
+- Why it matters: This advances our understanding of the limits of quantum computing and verification. Proof systems are fundamental to quantum cryptography and computational theory; knowing exactly what quantum computers can verify with perfect accuracy reshapes what's theoretically possible in quantum information processing and helps engineers design more efficient quantum verification protocols for real systems.
 
 ### CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation
 - URL: https://paperplaine.com/papers/cma-ot-hierarchical-expert
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Quantum security might not need classical puzzles to work
 - Summary: Researchers proved that one type of quantum building block can exist without another, even though the reverse relationship was known. They constructed an oracle—a hypothetical answering machine—where quantum security states survive intact while classical puzzles vanish entirely, showing these two candidates for quantum cryptography are fundamentally different.
 - Why it matters: Quantum cryptography researchers have been searching for the absolute minimum assumptions needed to build secure systems. This work narrows that search by proving one leading candidate (EFI pairs) stands independently from the other (one-way puzzles), redirecting research effort toward which direction actually matters for practical quantum security.
-
-### Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races
-- URL: https://paperplaine.com/papers/estimating-the-time-advantage
-- Category: Physics
-- Authors: Tade Souaiaia
-- arXiv: 2609.10833
-- Plain-English subtitle: How a new race starting format gives runners hidden speed advantages
-- Summary: Recent middle-distance world records have benefited from a relatively new starting configuration that places some athletes in front groups on outside lanes, reducing the distance they run on tight curves. Using video analysis and physics modeling, researchers found this advantage ranges from 0.1 to over 1 second depending on the event—enough to be the difference between breaking a world record and running a great but unremarkable race.
-- Why it matters: As shoe technology gets blamed for recent record-breaking performances, this finding shows that race logistics play an equally important but previously invisible role. Athletes and race organizers should now account for start configuration when comparing performances across different eras, and future records might need to be evaluated differently depending on how the race was structured.
-
-### Model-Aware Schedules Improve Generation via Fiberwise Optimal Transport
-- URL: https://paperplaine.com/papers/model-aware-schedules-improve
-- Category: Computer Science · AI
-- Authors: Luyi Jia, Boyan Zhang, Yilun Liu et al.
-- arXiv: 2609.11842
-- Plain-English subtitle: Tailoring image generation schedules to match how each model actually learns
-- Summary: Researchers developed a way to customize the step-by-step schedules that guide image-generation AI models like DALL-E, by measuring how well each model predicts at different noise levels. The method produced a 38.6% improvement in image quality for one leading approach on standard benchmarks, and surprisingly, the optimal schedules followed similar patterns across different models and training setups.
-- Why it matters: Current image generators use one-size-fits-all schedules that don't account for how individual models actually perform. This work lets you extract better results from existing models without retraining them from scratch—the improvement template even works when frozen and applied to new models, potentially making high-quality image generation faster and cheaper across the board.
 
 ## About
 
