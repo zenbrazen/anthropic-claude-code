@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 806 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 807 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,20 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs
+Subtitle: Compressing speech audio more efficiently by treating each processing layer separately
+URL: https://paperplaine.com/papers/lace-layer-wise-compression
+Category: Computer Science · AI
+Authors: Thanapat Trachu, Samuele Cornell, William Chen et al.
+arXiv ID: 2609.17509
+arXiv URL: https://arxiv.org/abs/2609.17509
+Posted: 2026-09-16
+
+Summary: Neural audio codecs used in AI speech systems generate very long sequences that slow down computation. LACE solves this by compressing audio differently at each layer of processing rather than forcing all layers to use the same compression boundaries, achieving better sound quality at faster speeds. When tested on speech synthesis, LACE delivered competitive quality while speeding up inference.
+
+Why it matters: Speech AI systems power voice assistants, real-time translation, and text-to-speech tools. Reducing their computational demands means these services can run faster and cheaper on smaller devices. LACE's approach—treating each processing layer independently—is a practical technique that other audio AI systems can adopt to improve both efficiency and quality.
 
 ---
 Title: ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents

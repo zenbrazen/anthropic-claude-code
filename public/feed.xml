@@ -5,8 +5,18 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Sep 2026 12:26:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 21:51:04 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs</title>
+      <link>https://paperplaine.com/papers/lace-layer-wise-compression</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/lace-layer-wise-compression</guid>
+      <pubDate>Tue, 15 Sep 2026 17:46:51 GMT</pubDate>
+      <author>Thanapat Trachu, Samuele Cornell, William Chen et al.</author>
+      <category>AI</category>
+      <description>Compressing speech audio more efficiently by treating each processing layer separately</description>
+      <content:encoded><![CDATA[<p><em>Compressing speech audio more efficiently by treating each processing layer separately</em></p><p>Neural audio codecs used in AI speech systems generate very long sequences that slow down computation. LACE solves this by compressing audio differently at each layer of processing rather than forcing all layers to use the same compression boundaries, achieving better sound quality at faster speeds. When tested on speech synthesis, LACE delivered competitive quality while speeding up inference.</p><p><strong>Why it matters:</strong> Speech AI systems power voice assistants, real-time translation, and text-to-speech tools. Reducing their computational demands means these services can run faster and cheaper on smaller devices. LACE's approach—treating each processing layer independently—is a practical technique that other audio AI systems can adopt to improve both efficiency and quality.</p>]]></content:encoded>
+    </item>
     <item>
       <title>ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents</title>
       <link>https://paperplaine.com/papers/sciencebuddy-recursive-in-recursive</link>
