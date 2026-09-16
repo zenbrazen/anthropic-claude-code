@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 804 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 806 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 276 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 277 papers in archive.
+  - "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents"
   - "Per-Matrix Optimality Is Not Enough: Three-Level Optimization for Low-Rank LLM Compression"
-  - "Before You Poll with LLMs: A Deliberative Diagnostic Framework"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 67 papers in archive.
   - "Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities"
   - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 67 papers in archive.
   - "Augmented singular cohomology, uniform matroids, and real-rootedness"
   - "Unfriendly partitions of locally finite Borel graphs"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 67 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 68 papers in archive.
+  - "URCHIN: A Horizontal Spiking Language Model for Data-Constrained Pretraining"
   - "scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning"
-  - "Why shared attention vectors fail: a case for outcome-indexed tuning"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 71 papers in archive.
   - "dexamine: A Python package for Uniswap event data on Ethereum"
   - "AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents
+- URL: https://paperplaine.com/papers/sciencebuddy-recursive-in-recursive
+- Category: Computer Science · AI
+- Authors: Shuhan Xue, Jianyuan Zhong, Ziyuan Nan et al.
+- arXiv: 2609.17523
+- Plain-English subtitle: An AI that learns and improves by working alongside actual scientists
+- Summary: ScienceBuddy is an interactive workspace where AI agents improve themselves through direct collaboration with researchers. The system uses a two-layered learning approach: it refines how it tackles problems while simultaneously training its underlying model, turning researcher feedback into fuel for continuous improvement across tasks like literature review, hypothesis generation, and experimental design.
+- Why it matters: Most scientific AI tools are static—once deployed, they stop learning. ScienceBuddy evolves in real time as researchers use it, meaning the tool gets smarter the more it's deployed in actual labs. This could accelerate discovery by letting AI and human experts complement each other continuously rather than in one-off interactions, and by making cutting-edge AI capabilities accessible to working scientists without requiring them to retrain models themselves.
+
+### URCHIN: A Horizontal Spiking Language Model for Data-Constrained Pretraining
+- URL: https://paperplaine.com/papers/urchin-a-horizontal-spiking
+- Category: Quantitative Biology
+- Authors: Po-Han Chiang
+- arXiv: 2609.13899
+- Plain-English subtitle: Building a brain-like language model that learns from limited data
+- Summary: Researchers created URCHIN, a language model with only 128 neurons organized like a biological brain, that learns language from child-scale datasets rather than the entire internet. The model works identically whether run on a computer's GPU for training or deployed directly on a phone or specialized brain-mimicking chip without any conversion step.
+- Why it matters: Most language models require massive computing power and internet-scale data. URCHIN shows that brain-like architecture can match performance on limited budgets, opening the door to language AI that runs efficiently on phones, edge devices, and specialized neuromorphic hardware without costly retraining or conversion. This could make language models practical for low-power devices and remote areas without cloud access.
 
 ### Per-Matrix Optimality Is Not Enough: Three-Level Optimization for Low-Rank LLM Compression
 - URL: https://paperplaine.com/papers/per-matrix-optimality-is
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A tool for turning Ethereum trading records into usable research data
 - Summary: Researchers created dexamine, a Python package that transforms raw blockchain records from Uniswap trades into structured data that researchers can actually analyze. The tool extracts token quantities, pool conditions, transaction order, and gas costs from Ethereum's public ledger—converting opaque blockchain logs into readable observations of who traded what, when, and at what cost.
 - Why it matters: Decentralized finance operates entirely on public blockchains, but the data is locked in cryptic transaction records that are nearly impossible for researchers to interpret by hand. dexamine makes it feasible to study how prices actually form in decentralized markets, how liquidity providers behave, and whether these exchanges function efficiently—questions that matter as these platforms handle billions in trading volume but operate outside traditional market oversight.
-
-### MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant
-- URL: https://paperplaine.com/papers/mp-bench-evaluating-voice
-- Category: Computer Science · AI
-- Authors: Yi-Jen Shih, Shih-Yun Shan Kuan, Guan-Ting Lin et al.
-- arXiv: 2609.13076
-- Plain-English subtitle: Why voice assistants fail at joining group conversations
-- Summary: Voice assistants can handle one-on-one chats reasonably well, but they stumble badly in group settings. When tested on a new benchmark called MP-Bench, 12 popular voice agents scored at or below 22% on understanding group conversations and performed near random chance at knowing when to speak—exposing a major gap between lab performance and real-world group dynamics.
-- Why it matters: Voice assistants are increasingly built into homes, cars, and offices where they'll encounter multiple people talking at once. Until they can understand who's speaking, follow conversational flow, and know when it's appropriate to jump in, they'll either stay silent when useful or interrupt awkwardly. This benchmark provides the first standard way to measure and improve that capability, which is essential before these agents can actually work well in family dinners, meetings, or shared spaces.
-
-### MindTopo: Can Foundation Models Reason in Topological Space?
-- URL: https://paperplaine.com/papers/mindtopo-can-foundation-models
-- Category: Computer Science · AI
-- Authors: Yunfei Ge, Anbang Liu, Qineng Wang et al.
-- arXiv: 2609.11900
-- Plain-English subtitle: Do AI models understand shapes that bend but don't break?
-- Summary: AI models can identify topological relationships like holes and connectivity when asked directly, but struggle dramatically when they have to plan actions in environments where those relationships matter. Even the best-performing model fell far short of human-level performance, and when models generated their own observations to plan with, they frequently violated the very topological rules they were supposed to be reasoning about.
-- Why it matters: Topological reasoning—understanding which spatial properties survive deformation—is fundamental to navigation, manipulation, and physical reasoning. Current AI systems that power robots and autonomous agents may be unable to reliably predict or plan for situations involving tangles, holes, or continuous deformation, potentially causing failures in real-world tasks like robotic manipulation or path planning through complex environments.
 
 ## About
 

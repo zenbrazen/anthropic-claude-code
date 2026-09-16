@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 804 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-15
+This file contains the complete plain-English text of all 806 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,34 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents
+Subtitle: An AI that learns and improves by working alongside actual scientists
+URL: https://paperplaine.com/papers/sciencebuddy-recursive-in-recursive
+Category: Computer Science · AI
+Authors: Shuhan Xue, Jianyuan Zhong, Ziyuan Nan et al.
+arXiv ID: 2609.17523
+arXiv URL: https://arxiv.org/abs/2609.17523
+Posted: 2026-09-16
+
+Summary: ScienceBuddy is an interactive workspace where AI agents improve themselves through direct collaboration with researchers. The system uses a two-layered learning approach: it refines how it tackles problems while simultaneously training its underlying model, turning researcher feedback into fuel for continuous improvement across tasks like literature review, hypothesis generation, and experimental design.
+
+Why it matters: Most scientific AI tools are static—once deployed, they stop learning. ScienceBuddy evolves in real time as researchers use it, meaning the tool gets smarter the more it's deployed in actual labs. This could accelerate discovery by letting AI and human experts complement each other continuously rather than in one-off interactions, and by making cutting-edge AI capabilities accessible to working scientists without requiring them to retrain models themselves.
+
+---
+Title: URCHIN: A Horizontal Spiking Language Model for Data-Constrained Pretraining
+Subtitle: Building a brain-like language model that learns from limited data
+URL: https://paperplaine.com/papers/urchin-a-horizontal-spiking
+Category: Quantitative Biology
+Authors: Po-Han Chiang
+arXiv ID: 2609.13899
+arXiv URL: https://arxiv.org/abs/2609.13899
+Posted: 2026-09-16
+
+Summary: Researchers created URCHIN, a language model with only 128 neurons organized like a biological brain, that learns language from child-scale datasets rather than the entire internet. The model works identically whether run on a computer's GPU for training or deployed directly on a phone or specialized brain-mimicking chip without any conversion step.
+
+Why it matters: Most language models require massive computing power and internet-scale data. URCHIN shows that brain-like architecture can match performance on limited budgets, opening the door to language AI that runs efficiently on phones, edge devices, and specialized neuromorphic hardware without costly retraining or conversion. This could make language models practical for low-power devices and remote areas without cloud access.
 
 ---
 Title: Per-Matrix Optimality Is Not Enough: Three-Level Optimization for Low-Rank LLM Compression
