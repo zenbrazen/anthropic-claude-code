@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 810 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 813 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 279 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 280 papers in archive.
+  - "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments"
   - "Objective vs. Search: Decomposing What Makes a Good Tokeniser"
-  - "LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 67 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 68 papers in archive.
+  - "Hamming Ideals and Grobner Bases for ISD-like Syndrome Decoding"
   - "Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities"
-  - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 67 papers in archive.
   - "Achieving perfect completeness for one- and two-message quantum proof systems"
   - "Estimating the Time Advantage of Split-Staggered Starts in Record-Breaking Middle-Distance Races"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 65 papers in archive.
   - "Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing"
   - "Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 57 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 58 papers in archive.
+  - "Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making"
   - "Italian Business-to-Business Invoicing Data: A Network Analysis"
-  - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments
+- URL: https://paperplaine.com/papers/scienceide-turning-world-s
+- Category: Computer Science · AI
+- Authors: Hejia Geng, Zesen Huang, Haoyang Li et al.
+- arXiv: 2609.19134
+- Plain-English subtitle: Teaching AI to learn from decades of scientific code and experiments
+- Summary: Researchers created ScienceIDE, a system that converts scientific code repositories into learning environments where AI agents can practice real scientific tasks like fixing code and running experiments. The resulting models (PhAI-IDE) showed improvements not only at scientific programming but also at general reasoning and knowledge tasks, suggesting that learning from real scientific work improves AI across the board.
+- Why it matters: Scientific software contains decades of hard-won knowledge about how to model complex systems, but that knowledge has been locked away in fragmented code that AI systems couldn't easily learn from. This infrastructure unlocks that resource, potentially accelerating the development of AI that can actually assist scientists with real research problems rather than just solving abstract benchmarks.
+
+### Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making
+- URL: https://paperplaine.com/papers/recursive-reasoning-or-statistical
+- Category: Economics
+- Authors: Yu Liu, Wenwen Li, Yifan Dou et al.
+- arXiv: 2609.18591
+- Plain-English subtitle: When AI agents learn from patterns instead of actually thinking strategically
+- Summary: Large language models appear to improve their decisions in multi-agent games by studying past interactions, but new research shows they're mostly just recognizing statistical patterns rather than reasoning through strategy. When researchers scrambled the patterns in historical data, the AI's performance collapsed back to baseline—suggesting the apparent learning was pattern-matching, not genuine strategic thinking.
+- Why it matters: As companies deploy AI agents in real negotiation, trading, and coordination scenarios, it matters whether these systems are actually understanding the strategic landscape or just memorizing surface-level correlations. An agent that only recognizes patterns will fail catastrophically once the environment shifts—exactly when strategic reasoning would adapt. This work reveals a blind spot in how well current AI agents can handle genuinely complex multi-party interactions.
+
+### Hamming Ideals and Grobner Bases for ISD-like Syndrome Decoding
+- URL: https://paperplaine.com/papers/hamming-ideals-and-grobner
+- Category: Computer Science
+- Authors: Roberto La Scala, Marco Marchesin, Sharwan K. Tiwari
+- arXiv: 2609.18866
+- Plain-English subtitle: A new algebraic method for breaking error-correcting codes faster
+- Summary: Researchers developed a hybrid approach that combines algebra and combinatorial search to solve the Syndrome Decoding Problem, a fundamental challenge in code-breaking and cryptography. By reformulating the mathematical constraints using Grobner bases—a technique for solving systems of polynomial equations—and strategically fixing only part of the information set rather than all of it, the method reduces the computational burden of brute-force search. Tests on parameters from the NIST-standardized Classic McEliece cryptosystem show the approach is computationally feasible and suggests algebraic methods could compete with traditional decoding algorithms.
+- Why it matters: Classic McEliece and similar code-based cryptosystems are leading candidates for post-quantum cryptography—encryption that remains secure even if quantum computers arrive. This work demonstrates that algebraic techniques, previously thought impractical for this problem, can actually be competitive. Understanding exactly how fast these new methods work is critical for assessing whether current cryptographic standards will hold up, or whether the security margins need to be larger to stay ahead of algorithmic advances.
 
 ### Objective vs. Search: Decomposing What Makes a Good Tokeniser
 - URL: https://paperplaine.com/papers/objective-vs-search-decomposing
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Squeezing AI language models down without losing their intelligence
 - Summary: Researchers found a three-step method for compressing large language models that works much better than existing approaches. By optimizing at three different levels—individual matrices, groups of matrices, and the entire model—they reduced errors that usually pile up during compression, cutting WikiText-2 perplexity from 42.1 all the way down to 11.4 on a 60% compressed model.
 - Why it matters: Smaller language models run faster and cheaper on everyday devices. This technique lets you compress models to 60% of their original size while keeping them far more intelligent than simpler methods produce, which could make advanced AI accessible on phones and laptops instead of requiring expensive servers.
-
-### Augmented singular cohomology, uniform matroids, and real-rootedness
-- URL: https://paperplaine.com/papers/augmented-singular-cohomology-uniform
-- Category: Mathematics
-- Authors: Kyle Binder, Lorenzo Vecchi
-- arXiv: 2609.15946
-- Plain-English subtitle: Why certain mathematical polynomials always have real number roots
-- Summary: Mathematicians proved that polynomial equations arising from a specific geometric construction in matroid theory always have real number solutions—resolving a longstanding conjecture. The finding applies to "uniform matroids," abstract structures that model symmetry and independence, and extends an earlier result about a related class of polynomials.
-- Why it matters: Real-rootedness is rare and valuable in mathematics because polynomials with this property tend to have special algebraic structure and combinatorial meaning. This proof deepens our understanding of how abstract mathematical objects like matroids encode information in polynomial form, and creates tools that mathematicians can use to verify or rule out proposed structures in related areas of algebra and geometry.
-
-### Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities
-- URL: https://paperplaine.com/papers/adversarial-testing-of-automated
-- Category: Computer Science
-- Authors: Fares Trad, Simin Chen, Hung Viet Pham et al.
-- arXiv: 2609.15963
-- Plain-English subtitle: Can attackers trick AI code-fixing tools into introducing security holes?
-- Summary: Researchers created 750 misleading bug reports designed to trick AI agents into automatically fixing code in ways that look correct but contain hidden security vulnerabilities. The AI systems fell for the trap more than half the time, successfully inserting malicious code in 51.7% of cases. Even existing safety checks failed to catch most of these booby-trapped fixes, with detection tools catching only 39–62% of the bad patches.
-- Why it matters: As companies move toward fully automated code repair without human review, attackers could inject adversarial bug reports into public repositories to silently compromise production systems. The discovery that current detection systems catch less than two-thirds of these attacks means organizations deploying autonomous repair agents are currently vulnerable to a new class of supply-chain attacks that don't require direct access to source code.
-
-### Before You Poll with LLMs: A Deliberative Diagnostic Framework
-- URL: https://paperplaine.com/papers/before-you-poll-with
-- Category: Computer Science · AI
-- Authors: Ahmed Wali, Hassaan Tayyab
-- arXiv: 2609.15849
-- Plain-English subtitle: Do AI chatbots change their minds like real people do?
-- Summary: When researchers tested whether AI chatbots update their political opinions after hearing new arguments—the way human minds actually work—all five leading models failed. GPT-5.1 became more hostile to opposing views after balanced information, while Gemini and Claude overcorrected by shifting beliefs 5–7 times harder than humans do, and DeepSeek barely budged at all.
-- Why it matters: Companies are increasingly using AI chatbots to simulate public opinion and predict how real people will react to policies or campaigns. If these simulations don't match how human opinions actually change when people encounter new information, the forecasts will be systematically wrong—potentially leading organizations to misread public support or design policies based on distorted predictions of what people will accept.
 
 ## About
 

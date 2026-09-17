@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 810 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 813 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-17
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments
+Subtitle: Teaching AI to learn from decades of scientific code and experiments
+URL: https://paperplaine.com/papers/scienceide-turning-world-s
+Category: Computer Science · AI
+Authors: Hejia Geng, Zesen Huang, Haoyang Li et al.
+arXiv ID: 2609.19134
+arXiv URL: https://arxiv.org/abs/2609.19134
+Posted: 2026-09-17
+
+Summary: Researchers created ScienceIDE, a system that converts scientific code repositories into learning environments where AI agents can practice real scientific tasks like fixing code and running experiments. The resulting models (PhAI-IDE) showed improvements not only at scientific programming but also at general reasoning and knowledge tasks, suggesting that learning from real scientific work improves AI across the board.
+
+Why it matters: Scientific software contains decades of hard-won knowledge about how to model complex systems, but that knowledge has been locked away in fragmented code that AI systems couldn't easily learn from. This infrastructure unlocks that resource, potentially accelerating the development of AI that can actually assist scientists with real research problems rather than just solving abstract benchmarks.
+
+---
+Title: Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making
+Subtitle: When AI agents learn from patterns instead of actually thinking strategically
+URL: https://paperplaine.com/papers/recursive-reasoning-or-statistical
+Category: Economics
+Authors: Yu Liu, Wenwen Li, Yifan Dou et al.
+arXiv ID: 2609.18591
+arXiv URL: https://arxiv.org/abs/2609.18591
+Posted: 2026-09-17
+
+Summary: Large language models appear to improve their decisions in multi-agent games by studying past interactions, but new research shows they're mostly just recognizing statistical patterns rather than reasoning through strategy. When researchers scrambled the patterns in historical data, the AI's performance collapsed back to baseline—suggesting the apparent learning was pattern-matching, not genuine strategic thinking.
+
+Why it matters: As companies deploy AI agents in real negotiation, trading, and coordination scenarios, it matters whether these systems are actually understanding the strategic landscape or just memorizing surface-level correlations. An agent that only recognizes patterns will fail catastrophically once the environment shifts—exactly when strategic reasoning would adapt. This work reveals a blind spot in how well current AI agents can handle genuinely complex multi-party interactions.
+
+---
+Title: Hamming Ideals and Grobner Bases for ISD-like Syndrome Decoding
+Subtitle: A new algebraic method for breaking error-correcting codes faster
+URL: https://paperplaine.com/papers/hamming-ideals-and-grobner
+Category: Computer Science
+Authors: Roberto La Scala, Marco Marchesin, Sharwan K. Tiwari
+arXiv ID: 2609.18866
+arXiv URL: https://arxiv.org/abs/2609.18866
+Posted: 2026-09-17
+
+Summary: Researchers developed a hybrid approach that combines algebra and combinatorial search to solve the Syndrome Decoding Problem, a fundamental challenge in code-breaking and cryptography. By reformulating the mathematical constraints using Grobner bases—a technique for solving systems of polynomial equations—and strategically fixing only part of the information set rather than all of it, the method reduces the computational burden of brute-force search. Tests on parameters from the NIST-standardized Classic McEliece cryptosystem show the approach is computationally feasible and suggests algebraic methods could compete with traditional decoding algorithms.
+
+Why it matters: Classic McEliece and similar code-based cryptosystems are leading candidates for post-quantum cryptography—encryption that remains secure even if quantum computers arrive. This work demonstrates that algebraic techniques, previously thought impractical for this problem, can actually be competitive. Understanding exactly how fast these new methods work is critical for assessing whether current cryptographic standards will hold up, or whether the security margins need to be larger to stay ahead of algorithmic advances.
 
 ---
 Title: Objective vs. Search: Decomposing What Makes a Good Tokeniser
