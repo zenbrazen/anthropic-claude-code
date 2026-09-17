@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 807 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-16
+This file contains the complete plain-English text of all 810 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-17
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Objective vs. Search: Decomposing What Makes a Good Tokeniser
+Subtitle: Why how tokenisers search matters more than what they optimise for
+URL: https://paperplaine.com/papers/objective-vs-search-decomposing
+Category: Computer Science · AI
+Authors: Ahmetcan Yavuz, Clara Meister, Tiago Pimentel
+arXiv ID: 2609.19145
+arXiv URL: https://arxiv.org/abs/2609.19145
+Posted: 2026-09-17
+
+Summary: Two major tokenisation algorithms used in language models differ in two ways: what they optimise for (compression or likelihood) and how they search for solutions (building up or pruning down). By testing all four combinations, researchers found that the search method matters far more than the objective — bottom-up tokenisers consistently performed better at compressing text, regardless of what they were optimising for.
+
+Why it matters: Tokenisers are the first step in how language models process text, and small improvements here compound across billions of uses. This work removes confusion about which design choices actually drive performance, letting engineers build more efficient tokenisers and potentially faster, cheaper language models.
+
+---
+Title: Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing
+Subtitle: A smarter way to convert raw camera images into photos you can actually see
+URL: https://paperplaine.com/papers/visual-autoregressive-priors-for
+Category: Engineering
+Authors: Tailai Chen, Xiaotong Luo, Yuan Gao et al.
+arXiv ID: 2609.18302
+arXiv URL: https://arxiv.org/abs/2609.18302
+Posted: 2026-09-17
+
+Summary: Researchers used a large neural network trained to predict images step-by-step to convert raw camera sensor data into viewable photographs. The method improved image quality by about 0.6 decibels in standard tests and reduced visible artifacts by 21%, even when working with only 3% of its parameters active — but struggles with getting colors exactly right when camera information is incomplete.
+
+Why it matters: Smartphones and cameras often can't record full color and brightness information in bright sunlight or low light. Better RAW-to-photo conversion means cameras could capture usable images in difficult lighting without losing detail to overexposure or noise. The real bottleneck the researchers identified — accurate color correction without camera metadata — points to where phone makers and camera makers should focus next to unlock better photos.
+
+---
+Title: How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction
+Subtitle: How many labeled examples you need to pick the better AI model
+URL: https://paperplaine.com/papers/how-many-labels-does
+Category: Statistics
+Authors: Tetsuji Kuboyama
+arXiv ID: 2609.18622
+arXiv URL: https://arxiv.org/abs/2609.18622
+Posted: 2026-09-17
+
+Summary: When two AI classifiers make the same predictions, you might still need to label new examples to figure out which one actually performs better—because they can rank their confidence differently. This paper shows that you need roughly 56% of your available labels on average to confidently declare a winner, though the exact number depends on what performance metric you care about and how many models you're comparing.
+
+Why it matters: Labeling data is expensive and time-consuming. This work tells practitioners exactly how much of their budget they can safely skip when comparing models, or conversely, when they need to invest in more labels to make a reliable choice. On real image-classification tasks, the difference between a confident pick and a tentative one meant reading anywhere from 50% to 90% of available labels—a concrete guide for allocating labeling costs.
 
 ---
 Title: LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs

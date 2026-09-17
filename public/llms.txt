@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 807 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 810 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 278 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 279 papers in archive.
+  - "Objective vs. Search: Decomposing What Makes a Good Tokeniser"
   - "LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs"
-  - "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 67 papers in archive.
   - "Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities"
   - "EFI Pairs Without One-Way Puzzles: Oracle Separations from Communication Complexity"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 71 papers in archive.
   - "dexamine: A Python package for Uniswap event data on Ethereum"
   - "AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 68 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 69 papers in archive.
+  - "How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction"
   - "ForkSCOPE: Charting the Agentic Garden of Forking Paths"
-  - "A statistical approach to bias in zero-shot learning: the lens of handwriting recognition"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 64 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 65 papers in archive.
+  - "Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing"
   - "Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology"
-  - "Spheriverse: 3D Scene Understanding from Spherical Observations in the Wild"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 57 papers in archive.
   - "Italian Business-to-Business Invoicing Data: A Network Analysis"
   - "Measuring DeFi Risk"
 
 ## 10 most recent papers
+
+### Objective vs. Search: Decomposing What Makes a Good Tokeniser
+- URL: https://paperplaine.com/papers/objective-vs-search-decomposing
+- Category: Computer Science · AI
+- Authors: Ahmetcan Yavuz, Clara Meister, Tiago Pimentel
+- arXiv: 2609.19145
+- Plain-English subtitle: Why how tokenisers search matters more than what they optimise for
+- Summary: Two major tokenisation algorithms used in language models differ in two ways: what they optimise for (compression or likelihood) and how they search for solutions (building up or pruning down). By testing all four combinations, researchers found that the search method matters far more than the objective — bottom-up tokenisers consistently performed better at compressing text, regardless of what they were optimising for.
+- Why it matters: Tokenisers are the first step in how language models process text, and small improvements here compound across billions of uses. This work removes confusion about which design choices actually drive performance, letting engineers build more efficient tokenisers and potentially faster, cheaper language models.
+
+### Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing
+- URL: https://paperplaine.com/papers/visual-autoregressive-priors-for
+- Category: Engineering
+- Authors: Tailai Chen, Xiaotong Luo, Yuan Gao et al.
+- arXiv: 2609.18302
+- Plain-English subtitle: A smarter way to convert raw camera images into photos you can actually see
+- Summary: Researchers used a large neural network trained to predict images step-by-step to convert raw camera sensor data into viewable photographs. The method improved image quality by about 0.6 decibels in standard tests and reduced visible artifacts by 21%, even when working with only 3% of its parameters active — but struggles with getting colors exactly right when camera information is incomplete.
+- Why it matters: Smartphones and cameras often can't record full color and brightness information in bright sunlight or low light. Better RAW-to-photo conversion means cameras could capture usable images in difficult lighting without losing detail to overexposure or noise. The real bottleneck the researchers identified — accurate color correction without camera metadata — points to where phone makers and camera makers should focus next to unlock better photos.
+
+### How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction
+- URL: https://paperplaine.com/papers/how-many-labels-does
+- Category: Statistics
+- Authors: Tetsuji Kuboyama
+- arXiv: 2609.18622
+- Plain-English subtitle: How many labeled examples you need to pick the better AI model
+- Summary: When two AI classifiers make the same predictions, you might still need to label new examples to figure out which one actually performs better—because they can rank their confidence differently. This paper shows that you need roughly 56% of your available labels on average to confidently declare a winner, though the exact number depends on what performance metric you care about and how many models you're comparing.
+- Why it matters: Labeling data is expensive and time-consuming. This work tells practitioners exactly how much of their budget they can safely skip when comparing models, or conversely, when they need to invest in more labels to make a reliable choice. On real image-classification tasks, the difference between a confident pick and a tentative one meant reading anywhere from 50% to 90% of available labels—a concrete guide for allocating labeling costs.
 
 ### LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs
 - URL: https://paperplaine.com/papers/lace-layer-wise-compression
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Do AI chatbots change their minds like real people do?
 - Summary: When researchers tested whether AI chatbots update their political opinions after hearing new arguments—the way human minds actually work—all five leading models failed. GPT-5.1 became more hostile to opposing views after balanced information, while Gemini and Claude overcorrected by shifting beliefs 5–7 times harder than humans do, and DeepSeek barely budged at all.
 - Why it matters: Companies are increasingly using AI chatbots to simulate public opinion and predict how real people will react to policies or campaigns. If these simulations don't match how human opinions actually change when people encounter new information, the forecasts will be systematically wrong—potentially leading organizations to misread public support or design policies based on distorted predictions of what people will accept.
-
-### Achieving perfect completeness for one- and two-message quantum proof systems
-- URL: https://paperplaine.com/papers/achieving-perfect-completeness-for
-- Category: Physics
-- Authors: Yupan Liu, Thomas Vidick
-- arXiv: 2609.15926
-- Plain-English subtitle: Quantum computers can now verify proofs with perfect accuracy in just one or two messages
-- Summary: Researchers solved a 20-year-old puzzle about quantum proof systems by showing that even single-message and two-message quantum proofs can achieve perfect completeness—meaning a quantum computer can verify correct solutions without ever mistakenly rejecting them. The breakthrough uses new mathematical techniques to construct quantum certifications that work flawlessly, closing gaps that persisted even as three-message systems were cracked decades ago.
-- Why it matters: This advances our understanding of the limits of quantum computing and verification. Proof systems are fundamental to quantum cryptography and computational theory; knowing exactly what quantum computers can verify with perfect accuracy reshapes what's theoretically possible in quantum information processing and helps engineers design more efficient quantum verification protocols for real systems.
-
-### CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation
-- URL: https://paperplaine.com/papers/cma-ot-hierarchical-expert
-- Category: Computer Science · AI
-- Authors: Jinting Wang, Chenxing Li, Dong Yu et al.
-- arXiv: 2609.13118
-- Plain-English subtitle: Teaching AI to compose music that matches dance moves by learning from expert examples
-- Summary: Researchers created a new method for generating music that syncs with dance videos by having an AI learn from expert music examples at multiple levels of detail. The approach uses a step-by-step learning strategy and a mathematical technique called optimal transport to bridge the gap between sparse dance cues and the rich information needed for coherent, musical compositions. Tests show the method produces music with better rhythm synchronization and musical quality than existing approaches.
-- Why it matters: Better dance-to-music generation could enable faster content creation for music videos, choreography software, and interactive entertainment where musicians currently spend hours hand-composing accompaniment. This technique also demonstrates a general approach—learning from expert examples at multiple levels—that could improve other AI tasks where the input is simple but the output needs to be complex and coherent, like generating detailed images from brief descriptions.
-
-### ForkSCOPE: Charting the Agentic Garden of Forking Paths
-- URL: https://paperplaine.com/papers/forkscope-charting-the-agentic
-- Category: Statistics
-- Authors: Arjun Balaji, Batuhan Duru Yeltekin, Tian Zheng
-- arXiv: 2609.12438
-- Plain-English subtitle: Making sense of hundreds of different ways to analyze the same data
-- Summary: When researchers analyze data, they make dozens of small choices—what variables to include, how to handle missing values, which statistical tests to run—and different choices lead to different answers. This paper presents ForkSCOPE, a tool that lets AI generate hundreds of complete analyses automatically, then maps out all these different decision paths in a way humans can actually understand and explore. Instead of forcing analyses into a predetermined category system, ForkSCOPE learns the structure from the analyses themselves, making it possible to scale up without losing insight.
-- Why it matters: Scientists often disagree about what findings "really mean" because the same dataset can tell different stories depending on analytical choices. ForkSCOPE helps researchers see the full landscape of defensible analyses and spot where small decisions flip conclusions—making it harder to accidentally pick only the results that support a preferred answer. This transparency is especially urgent as AI automates more research; without tools like this, we risk trading human bias for algorithmic black boxes that no one can audit.
 
 ## About
 

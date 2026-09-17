@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Sep 2026 21:51:04 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 12:25:46 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Objective vs. Search: Decomposing What Makes a Good Tokeniser</title>
+      <link>https://paperplaine.com/papers/objective-vs-search-decomposing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/objective-vs-search-decomposing</guid>
+      <pubDate>Wed, 16 Sep 2026 17:59:45 GMT</pubDate>
+      <author>Ahmetcan Yavuz, Clara Meister, Tiago Pimentel</author>
+      <category>AI</category>
+      <description>Why how tokenisers search matters more than what they optimise for</description>
+      <content:encoded><![CDATA[<p><em>Why how tokenisers search matters more than what they optimise for</em></p><p>Two major tokenisation algorithms used in language models differ in two ways: what they optimise for (compression or likelihood) and how they search for solutions (building up or pruning down). By testing all four combinations, researchers found that the search method matters far more than the objective — bottom-up tokenisers consistently performed better at compressing text, regardless of what they were optimising for.</p><p><strong>Why it matters:</strong> Tokenisers are the first step in how language models process text, and small improvements here compound across billions of uses. This work removes confusion about which design choices actually drive performance, letting engineers build more efficient tokenisers and potentially faster, cheaper language models.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing</title>
+      <link>https://paperplaine.com/papers/visual-autoregressive-priors-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/visual-autoregressive-priors-for</guid>
+      <pubDate>Wed, 16 Sep 2026 08:24:26 GMT</pubDate>
+      <author>Tailai Chen, Xiaotong Luo, Yuan Gao et al.</author>
+      <category>Engineering</category>
+      <description>A smarter way to convert raw camera images into photos you can actually see</description>
+      <content:encoded><![CDATA[<p><em>A smarter way to convert raw camera images into photos you can actually see</em></p><p>Researchers used a large neural network trained to predict images step-by-step to convert raw camera sensor data into viewable photographs. The method improved image quality by about 0.6 decibels in standard tests and reduced visible artifacts by 21%, even when working with only 3% of its parameters active — but struggles with getting colors exactly right when camera information is incomplete.</p><p><strong>Why it matters:</strong> Smartphones and cameras often can't record full color and brightness information in bright sunlight or low light. Better RAW-to-photo conversion means cameras could capture usable images in difficult lighting without losing detail to overexposure or noise. The real bottleneck the researchers identified — accurate color correction without camera metadata — points to where phone makers and camera makers should focus next to unlock better photos.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction</title>
+      <link>https://paperplaine.com/papers/how-many-labels-does</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/how-many-labels-does</guid>
+      <pubDate>Wed, 16 Sep 2026 13:10:59 GMT</pubDate>
+      <author>Tetsuji Kuboyama</author>
+      <category>Statistics</category>
+      <description>How many labeled examples you need to pick the better AI model</description>
+      <content:encoded><![CDATA[<p><em>How many labeled examples you need to pick the better AI model</em></p><p>When two AI classifiers make the same predictions, you might still need to label new examples to figure out which one actually performs better—because they can rank their confidence differently. This paper shows that you need roughly 56% of your available labels on average to confidently declare a winner, though the exact number depends on what performance metric you care about and how many models you're comparing.</p><p><strong>Why it matters:</strong> Labeling data is expensive and time-consuming. This work tells practitioners exactly how much of their budget they can safely skip when comparing models, or conversely, when they need to invest in more labels to make a reliable choice. On real image-classification tasks, the difference between a confident pick and a tentative one meant reading anywhere from 50% to 90% of available labels—a concrete guide for allocating labeling costs.</p>]]></content:encoded>
+    </item>
     <item>
       <title>LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs</title>
       <link>https://paperplaine.com/papers/lace-layer-wise-compression</link>

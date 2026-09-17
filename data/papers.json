@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.19145",
+    "title": "Objective vs. Search: Decomposing What Makes a Good Tokeniser",
+    "authors": "Ahmetcan Yavuz, Clara Meister, Tiago Pimentel",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-16T17:59:45Z",
+    "publishedFormatted": "Sep 16, 2026",
+    "subtitle": "Why how tokenisers search matters more than what they optimise for",
+    "summary": "Two major tokenisation algorithms used in language models differ in two ways: what they optimise for (compression or likelihood) and how they search for solutions (building up or pruning down). By testing all four combinations, researchers found that the search method matters far more than the objective — bottom-up tokenisers consistently performed better at compressing text, regardless of what they were optimising for.",
+    "whyItMatters": "Tokenisers are the first step in how language models process text, and small improvements here compound across billions of uses. This work removes confusion about which design choices actually drive performance, letting engineers build more efficient tokenisers and potentially faster, cheaper language models.",
+    "fetchedAt": "2026-09-17T12:25:38.344Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 20,
+      "wordCount": 173
+    },
+    "slug": "objective-vs-search-decomposing"
+  },
+  {
+    "id": "2609.18302",
+    "title": "Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing",
+    "authors": "Tailai Chen, Xiaotong Luo, Yuan Gao et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-16T08:24:26Z",
+    "publishedFormatted": "Sep 16, 2026",
+    "subtitle": "A smarter way to convert raw camera images into photos you can actually see",
+    "summary": "Researchers used a large neural network trained to predict images step-by-step to convert raw camera sensor data into viewable photographs. The method improved image quality by about 0.6 decibels in standard tests and reduced visible artifacts by 21%, even when working with only 3% of its parameters active — but struggles with getting colors exactly right when camera information is incomplete.",
+    "whyItMatters": "Smartphones and cameras often can't record full color and brightness information in bright sunlight or low light. Better RAW-to-photo conversion means cameras could capture usable images in difficult lighting without losing detail to overexposure or noise. The real bottleneck the researchers identified — accurate color correction without camera metadata — points to where phone makers and camera makers should focus next to unlock better photos.",
+    "fetchedAt": "2026-09-17T12:25:41.975Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 147
+    },
+    "slug": "visual-autoregressive-priors-for"
+  },
+  {
+    "id": "2609.18622",
+    "title": "How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction",
+    "authors": "Tetsuji Kuboyama",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-09-16T13:10:59Z",
+    "publishedFormatted": "Sep 16, 2026",
+    "subtitle": "How many labeled examples you need to pick the better AI model",
+    "summary": "When two AI classifiers make the same predictions, you might still need to label new examples to figure out which one actually performs better—because they can rank their confidence differently. This paper shows that you need roughly 56% of your available labels on average to confidently declare a winner, though the exact number depends on what performance metric you care about and how many models you're comparing.",
+    "whyItMatters": "Labeling data is expensive and time-consuming. This work tells practitioners exactly how much of their budget they can safely skip when comparing models, or conversely, when they need to invest in more labels to make a reliable choice. On real image-classification tasks, the difference between a confident pick and a tentative one meant reading anywhere from 50% to 90% of available labels—a concrete guide for allocating labeling costs.",
+    "fetchedAt": "2026-09-17T12:25:45.432Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 187
+    },
+    "slug": "how-many-labels-does"
+  },
+  {
     "id": "2609.17509",
     "title": "LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs",
     "authors": "Thanapat Trachu, Samuele Cornell, William Chen et al.",
