@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 816 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 819 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 281 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 282 papers in archive.
+  - "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations"
   - "How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?"
-  - "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 68 papers in archive.
   - "Hamming Ideals and Grobner Bases for ISD-like Syndrome Decoding"
   - "Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 68 papers in archive.
   - "Global Minima of the Thomson Problem in a Disk: A Molecular Dynamics Approach with Fixed Border Charges"
   - "Augmented singular cohomology, uniform matroids, and real-rootedness"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 68 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 69 papers in archive.
+  - "Sharpness-Aware Minimization (SAM) Improves Classification Accuracy of Bacterial Raman Spectral Data Enabling Portable Diagnostics"
   - "URCHIN: A Horizontal Spiking Language Model for Data-Constrained Pretraining"
-  - "scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 71 papers in archive.
   - "dexamine: A Python package for Uniswap event data on Ethereum"
   - "AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 69 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 70 papers in archive.
+  - "Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation"
   - "How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction"
-  - "ForkSCOPE: Charting the Agentic Garden of Forking Paths"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 65 papers in archive.
   - "Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing"
   - "Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Italian Business-to-Business Invoicing Data: A Network Analysis"
 
 ## 10 most recent papers
+
+### Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations
+- URL: https://paperplaine.com/papers/harm-laundering-in-gpt
+- Category: Computer Science · AI
+- Authors: Sarah Wyer, Sue Black, Noura Al Moubayed
+- arXiv: 2609.20779
+- Plain-English subtitle: Why safer AI models still harbor hidden gender discrimination
+- Summary: Safety updates to GPT models don't eliminate gender discrimination—they disguise it. Researchers analyzed 450,000 text completions and found that explicit sexual violence against women disappeared in newer models, but was replaced by subtler harms: women's output became 36% less diverse in topic, men gained positive traits women didn't, and harmful content like framing breast cancer as a men's rights issue now scores as non-toxic by standard safety measures.
+- Why it matters: Companies use toxicity scores to prove their AI models are getting safer with each update. This work shows those scores are misleading. A model can appear cleaner by standard measures while actually distributing gender-based harms more effectively—just in forms that existing safety tools don't catch. This means current methods for auditing AI fairness are insufficient, and organizations need better ways to detect discrimination that evolves rather than disappears.
+
+### Sharpness-Aware Minimization (SAM) Improves Classification Accuracy of Bacterial Raman Spectral Data Enabling Portable Diagnostics
+- URL: https://paperplaine.com/papers/sharpness-aware-minimization-sam
+- Category: Quantitative Biology
+- Authors: Kaitlin Zareno, Jarett Dewbury, Siamak K. Sorooshyari et al.
+- arXiv: 2609.19453
+- Plain-English subtitle: A smarter AI technique that reads bacterial fingerprints from light scattered off cells
+- Summary: Researchers used a machine-learning technique called Sharpness-Aware Minimization to analyze bacterial Raman spectral data—light patterns that reveal which bacteria are present—and improved classification accuracy by up to 10.5%. The approach works reliably across different patient populations and requires less data preprocessing than existing methods, making it practical for clinical use.
+- Why it matters: Antibiotic resistance kills hundreds of thousands of people today and is projected to kill 10 million yearly by 2050, with the worst impact in poor regions that lack access to diagnostic labs. This technique enables portable machines to identify resistant bacteria in hours instead of days, giving doctors time to choose the right antibiotic before infections spiral. Faster diagnosis directly translates to better survival rates and slower spread of resistance.
+
+### Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation
+- URL: https://paperplaine.com/papers/prediction-powered-smoothing-and
+- Category: Statistics
+- Authors: Sho Kawano, Zehang Richard Li, Paul A. Parker
+- arXiv: 2609.20758
+- Plain-English subtitle: Getting accurate AI scores when you can't test everything
+- Summary: When AI systems perform differently across different types of tasks or conversations, testing them thoroughly is expensive. This paper introduces a method called prediction-powered smoothing that borrows information from well-tested domains to get better estimates in domains with few test results, while also providing a new way to validate which estimation approach works best. The technique improved accuracy and maintained reliable confidence intervals across real benchmarks and deployed AI systems.
+- Why it matters: AI developers need to know how well their systems perform on specific task types and user groups before deployment, but labeling enough examples in every category is costly. This method lets evaluators get accurate performance estimates while testing fewer examples—reducing the time and expense of AI evaluation without sacrificing confidence in the results. The validation tool also helps teams choose the right estimation approach automatically, rather than guessing or holding out expensive test data.
 
 ### How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?
 - URL: https://paperplaine.com/papers/how-does-distribution-shift
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why how tokenisers search matters more than what they optimise for
 - Summary: Two major tokenisation algorithms used in language models differ in two ways: what they optimise for (compression or likelihood) and how they search for solutions (building up or pruning down). By testing all four combinations, researchers found that the search method matters far more than the objective — bottom-up tokenisers consistently performed better at compressing text, regardless of what they were optimising for.
 - Why it matters: Tokenisers are the first step in how language models process text, and small improvements here compound across billions of uses. This work removes confusion about which design choices actually drive performance, letting engineers build more efficient tokenisers and potentially faster, cheaper language models.
-
-### Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing
-- URL: https://paperplaine.com/papers/visual-autoregressive-priors-for
-- Category: Engineering
-- Authors: Tailai Chen, Xiaotong Luo, Yuan Gao et al.
-- arXiv: 2609.18302
-- Plain-English subtitle: A smarter way to convert raw camera images into photos you can actually see
-- Summary: Researchers used a large neural network trained to predict images step-by-step to convert raw camera sensor data into viewable photographs. The method improved image quality by about 0.6 decibels in standard tests and reduced visible artifacts by 21%, even when working with only 3% of its parameters active — but struggles with getting colors exactly right when camera information is incomplete.
-- Why it matters: Smartphones and cameras often can't record full color and brightness information in bright sunlight or low light. Better RAW-to-photo conversion means cameras could capture usable images in difficult lighting without losing detail to overexposure or noise. The real bottleneck the researchers identified — accurate color correction without camera metadata — points to where phone makers and camera makers should focus next to unlock better photos.
-
-### How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction
-- URL: https://paperplaine.com/papers/how-many-labels-does
-- Category: Statistics
-- Authors: Tetsuji Kuboyama
-- arXiv: 2609.18622
-- Plain-English subtitle: How many labeled examples you need to pick the better AI model
-- Summary: When two AI classifiers make the same predictions, you might still need to label new examples to figure out which one actually performs better—because they can rank their confidence differently. This paper shows that you need roughly 56% of your available labels on average to confidently declare a winner, though the exact number depends on what performance metric you care about and how many models you're comparing.
-- Why it matters: Labeling data is expensive and time-consuming. This work tells practitioners exactly how much of their budget they can safely skip when comparing models, or conversely, when they need to invest in more labels to make a reliable choice. On real image-classification tasks, the difference between a confident pick and a tentative one meant reading anywhere from 50% to 90% of available labels—a concrete guide for allocating labeling costs.
-
-### LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs
-- URL: https://paperplaine.com/papers/lace-layer-wise-compression
-- Category: Computer Science · AI
-- Authors: Thanapat Trachu, Samuele Cornell, William Chen et al.
-- arXiv: 2609.17509
-- Plain-English subtitle: Compressing speech audio more efficiently by treating each processing layer separately
-- Summary: Neural audio codecs used in AI speech systems generate very long sequences that slow down computation. LACE solves this by compressing audio differently at each layer of processing rather than forcing all layers to use the same compression boundaries, achieving better sound quality at faster speeds. When tested on speech synthesis, LACE delivered competitive quality while speeding up inference.
-- Why it matters: Speech AI systems power voice assistants, real-time translation, and text-to-speech tools. Reducing their computational demands means these services can run faster and cheaper on smaller devices. LACE's approach—treating each processing layer independently—is a practical technique that other audio AI systems can adopt to improve both efficiency and quality.
 
 ## About
 

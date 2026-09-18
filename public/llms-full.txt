@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 816 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 819 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-18
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations
+Subtitle: Why safer AI models still harbor hidden gender discrimination
+URL: https://paperplaine.com/papers/harm-laundering-in-gpt
+Category: Computer Science · AI
+Authors: Sarah Wyer, Sue Black, Noura Al Moubayed
+arXiv ID: 2609.20779
+arXiv URL: https://arxiv.org/abs/2609.20779
+Posted: 2026-09-18
+
+Summary: Safety updates to GPT models don't eliminate gender discrimination—they disguise it. Researchers analyzed 450,000 text completions and found that explicit sexual violence against women disappeared in newer models, but was replaced by subtler harms: women's output became 36% less diverse in topic, men gained positive traits women didn't, and harmful content like framing breast cancer as a men's rights issue now scores as non-toxic by standard safety measures.
+
+Why it matters: Companies use toxicity scores to prove their AI models are getting safer with each update. This work shows those scores are misleading. A model can appear cleaner by standard measures while actually distributing gender-based harms more effectively—just in forms that existing safety tools don't catch. This means current methods for auditing AI fairness are insufficient, and organizations need better ways to detect discrimination that evolves rather than disappears.
+
+---
+Title: Sharpness-Aware Minimization (SAM) Improves Classification Accuracy of Bacterial Raman Spectral Data Enabling Portable Diagnostics
+Subtitle: A smarter AI technique that reads bacterial fingerprints from light scattered off cells
+URL: https://paperplaine.com/papers/sharpness-aware-minimization-sam
+Category: Quantitative Biology
+Authors: Kaitlin Zareno, Jarett Dewbury, Siamak K. Sorooshyari et al.
+arXiv ID: 2609.19453
+arXiv URL: https://arxiv.org/abs/2609.19453
+Posted: 2026-09-18
+
+Summary: Researchers used a machine-learning technique called Sharpness-Aware Minimization to analyze bacterial Raman spectral data—light patterns that reveal which bacteria are present—and improved classification accuracy by up to 10.5%. The approach works reliably across different patient populations and requires less data preprocessing than existing methods, making it practical for clinical use.
+
+Why it matters: Antibiotic resistance kills hundreds of thousands of people today and is projected to kill 10 million yearly by 2050, with the worst impact in poor regions that lack access to diagnostic labs. This technique enables portable machines to identify resistant bacteria in hours instead of days, giving doctors time to choose the right antibiotic before infections spiral. Faster diagnosis directly translates to better survival rates and slower spread of resistance.
+
+---
+Title: Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation
+Subtitle: Getting accurate AI scores when you can't test everything
+URL: https://paperplaine.com/papers/prediction-powered-smoothing-and
+Category: Statistics
+Authors: Sho Kawano, Zehang Richard Li, Paul A. Parker
+arXiv ID: 2609.20758
+arXiv URL: https://arxiv.org/abs/2609.20758
+Posted: 2026-09-18
+
+Summary: When AI systems perform differently across different types of tasks or conversations, testing them thoroughly is expensive. This paper introduces a method called prediction-powered smoothing that borrows information from well-tested domains to get better estimates in domains with few test results, while also providing a new way to validate which estimation approach works best. The technique improved accuracy and maintained reliable confidence intervals across real benchmarks and deployed AI systems.
+
+Why it matters: AI developers need to know how well their systems perform on specific task types and user groups before deployment, but labeling enough examples in every category is costly. This method lets evaluators get accurate performance estimates while testing fewer examples—reducing the time and expense of AI evaluation without sacrificing confidence in the results. The validation tool also helps teams choose the right estimation approach automatically, rather than guessing or holding out expensive test data.
 
 ---
 Title: How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?
