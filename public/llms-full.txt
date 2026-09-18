@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 813 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-17
+This file contains the complete plain-English text of all 816 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-18
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?
+Subtitle: When AI models trained on old airplane data help predict new ones
+URL: https://paperplaine.com/papers/how-does-distribution-shift
+Category: Computer Science · AI
+Authors: Pochinapeddi Sai Bhargav, Nithin Somasekharan, Rohit Sunil Kanchi et al.
+arXiv ID: 2609.20814
+arXiv URL: https://arxiv.org/abs/2609.20814
+Posted: 2026-09-18
+
+Summary: Training an AI model on airfoil aerodynamics from one aircraft family before fine-tuning it on a different family cuts the amount of new training data needed by 2–3 times—but only when the physics being modeled stays the same. When researchers added a more complex turbulence model to the target task, the pretraining advantage shrank significantly, suggesting that mismatches between source and target problems can erase what looks like a helpful shortcut.
+
+Why it matters: Computational fluid dynamics simulations are expensive and time-consuming. If engineers can reuse models trained on similar past problems, they could dramatically reduce the cost of designing new aircraft or engines. This research shows pretraining works well for incremental design changes, but warns that it breaks down when the underlying physics or modeled phenomena differ—a critical caveat for deploying these models in real engineering pipelines.
+
+---
+Title: The dynamics of early transoceanic voyages: A resource-coupled model of crew health and survival
+Subtitle: How food and disease shaped crew survival on early ocean voyages
+URL: https://paperplaine.com/papers/the-dynamics-of-early
+Category: Physics
+Authors: Nuno Crokidakis
+arXiv ID: 2609.20430
+arXiv URL: https://arxiv.org/abs/2609.20430
+Posted: 2026-09-18
+
+Summary: A mathematical model of Age of Discovery voyages reveals how depleting food and water supplies triggered disease in crews, even when most sailors technically survived. The model shows that provisioning levels didn't just determine who lived or died—they determined whether enough healthy crew members remained to actually operate the ship.
+
+Why it matters: Understanding what killed explorers and disabled their expeditions matters for understanding why some voyages succeeded and others failed despite similar routes and distances. The finding that a ship could have survivors yet lack enough functional crew to navigate or manage the vessel reframes how we interpret historical records of exploration, and demonstrates how simple mathematical models can reveal hidden dynamics in historical events.
+
+---
+Title: Global Minima of the Thomson Problem in a Disk: A Molecular Dynamics Approach with Fixed Border Charges
+Subtitle: Finding the most stable arrangements of repelling particles in a confined space
+URL: https://paperplaine.com/papers/global-minima-of-the
+Category: Mathematics
+Authors: Georgiy K. Lavrov, Eduard G. Nikonov
+arXiv ID: 2609.20777
+arXiv URL: https://arxiv.org/abs/2609.20777
+Posted: 2026-09-18
+
+Summary: Researchers discovered new optimal arrangements for 60, 61, 92, and 99 mutually repelling charged particles confined to a disk using computational simulations. These arrangements are more stable than any previously found, with the new solutions improving on the best-known energies by measurable margins and showing clear, reproducible symmetry patterns.
+
+Why it matters: Understanding how charged particles arrange themselves in confined spaces applies to real systems from quantum dots in electronics to how atomic nuclei might organize under extreme conditions. The improved configurations provide stronger benchmarks for testing computational methods and could inform the design of materials and devices that depend on precise particle arrangements.
 
 ---
 Title: ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments
