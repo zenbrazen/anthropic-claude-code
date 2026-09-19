@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 822 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 825 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 283 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 284 papers in archive.
+  - "Paint-Anything: Unified Any-Color Control for Image Generation and Editing"
   - "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision"
-  - "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 69 papers in archive.
   - "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions"
   - "Hamming Ideals and Grobner Bases for ISD-like Syndrome Decoding"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 68 papers in archive.
   - "The dynamics of early transoceanic voyages: A resource-coupled model of crew health and survival"
   - "Achieving perfect completeness for one- and two-message quantum proof systems"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 68 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 69 papers in archive.
+  - "Distributionally Robust Federated Learning with Multi-Source Data"
   - "Global Minima of the Thomson Problem in a Disk: A Molecular Dynamics Approach with Fixed Border Charges"
-  - "Augmented singular cohomology, uniform matroids, and real-rootedness"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 69 papers in archive.
   - "Sharpness-Aware Minimization (SAM) Improves Classification Accuracy of Bacterial Raman Spectral Data Enabling Portable Diagnostics"
   - "URCHIN: A Horizontal Spiking Language Model for Data-Constrained Pretraining"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 70 papers in archive.
   - "Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation"
   - "How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 65 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 66 papers in archive.
+  - "MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band"
   - "Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing"
-  - "Differentially Private EEG Feature Anonymization: A Privacy-Utility Case Study in Clinical Neurophysiology"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 58 papers in archive.
   - "Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making"
   - "Italian Business-to-Business Invoicing Data: A Network Analysis"
 
 ## 10 most recent papers
+
+### Paint-Anything: Unified Any-Color Control for Image Generation and Editing
+- URL: https://paperplaine.com/papers/paint-anything-unified-any
+- Category: Computer Science · AI
+- Authors: Ji Xie, Dewei Zhou, Xinyu Huang et al.
+- arXiv: 2609.20816
+- Plain-English subtitle: Teaching AI to paint objects in exactly the colors designers specify
+- Summary: A new system called Paint-Anything lets designers specify exact colors for objects in AI-generated or edited images using standard hex color codes—the same format used in web design. The researchers built a training dataset of 500,000 images with precise color labels and invented a method that uses pure-color reference images during early training stages, then switches to real photos for refinement, improving color accuracy by 85% on generation tasks and 28% on editing.
+- Why it matters: Professional designers and creative tools need precise color control to match brand guidelines, product specifications, or client requirements. Current AI image generators produce colors that are close but not exact—a car might be the right shade of red, but not the specific red a manufacturer needs. Paint-Anything solves this by letting users input exact hex values and actually get those colors, making AI tools usable for real design work instead of just creative exploration.
+
+### Distributionally Robust Federated Learning with Multi-Source Data
+- URL: https://paperplaine.com/papers/distributionally-robust-federated-learning
+- Category: Mathematics
+- Authors: Yingzhu Liu, Zhongkui Li, Pengcheng You et al.
+- arXiv: 2609.20501
+- Plain-English subtitle: Making federated learning work when data is messy and unpredictable
+- Summary: Federated learning trains shared models using private data from many sources, but real-world data often differs wildly between clients in ways that are hard to predict. This paper shows how to build more robust models by letting each client have its own uncertainty buffer rather than forcing one worst-case scenario across everyone—and proves the approach actually works on unseen data.
+- Why it matters: Federated learning powers systems like predictive keyboards and health research networks where data can't leave users' devices. When these systems fail to handle messy real-world data distributions, they make poor predictions for certain groups of users. This work makes federated learning more reliable when you can't afford to collect perfect statistics upfront, which is common in privacy-sensitive domains where data is limited.
+
+### MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band
+- URL: https://paperplaine.com/papers/magnetar-multipath-guided-spatial
+- Category: Engineering
+- Authors: Haozhe Lei, Ruibin Chen, Yuhan Jiang et al.
+- arXiv: 2609.20670
+- Plain-English subtitle: Teaching robots to pinpoint hidden radio transmitters in cluttered rooms
+- Summary: A robot trying to locate a radio transmitter in a typical room faces a difficult problem: the radio signal bounces off walls, making it impossible to know from a single measurement whether the transmitter is in front, behind, or to the side. Researchers developed MAGNETAR, a neural network that solves this by computing all plausible combinations of transmitter location and antenna direction rather than guessing a single answer. The system was trained on simulated 10 GHz radio signals and validated on real robot measurements, outperforming simpler approaches that only estimate position.
+- Why it matters: Robots searching for transmitters—whether for equipment localization in factories, rescue operations in disaster zones, or detecting interference sources in communication networks—currently struggle in realistic indoor settings where signals bounce unpredictably. By computing the full range of possibilities instead of one best guess, MAGNETAR gives robots a more honest picture of their uncertainty, allowing them to make smarter search decisions and requiring fewer measurements to pin down a target's actual location and orientation.
 
 ### Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision
 - URL: https://paperplaine.com/papers/workspace-models-lightweight-robotic
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When AI models trained on old airplane data help predict new ones
 - Summary: Training an AI model on airfoil aerodynamics from one aircraft family before fine-tuning it on a different family cuts the amount of new training data needed by 2–3 times—but only when the physics being modeled stays the same. When researchers added a more complex turbulence model to the target task, the pretraining advantage shrank significantly, suggesting that mismatches between source and target problems can erase what looks like a helpful shortcut.
 - Why it matters: Computational fluid dynamics simulations are expensive and time-consuming. If engineers can reuse models trained on similar past problems, they could dramatically reduce the cost of designing new aircraft or engines. This research shows pretraining works well for incremental design changes, but warns that it breaks down when the underlying physics or modeled phenomena differ—a critical caveat for deploying these models in real engineering pipelines.
-
-### The dynamics of early transoceanic voyages: A resource-coupled model of crew health and survival
-- URL: https://paperplaine.com/papers/the-dynamics-of-early
-- Category: Physics
-- Authors: Nuno Crokidakis
-- arXiv: 2609.20430
-- Plain-English subtitle: How food and disease shaped crew survival on early ocean voyages
-- Summary: A mathematical model of Age of Discovery voyages reveals how depleting food and water supplies triggered disease in crews, even when most sailors technically survived. The model shows that provisioning levels didn't just determine who lived or died—they determined whether enough healthy crew members remained to actually operate the ship.
-- Why it matters: Understanding what killed explorers and disabled their expeditions matters for understanding why some voyages succeeded and others failed despite similar routes and distances. The finding that a ship could have survivors yet lack enough functional crew to navigate or manage the vessel reframes how we interpret historical records of exploration, and demonstrates how simple mathematical models can reveal hidden dynamics in historical events.
-
-### Global Minima of the Thomson Problem in a Disk: A Molecular Dynamics Approach with Fixed Border Charges
-- URL: https://paperplaine.com/papers/global-minima-of-the
-- Category: Mathematics
-- Authors: Georgiy K. Lavrov, Eduard G. Nikonov
-- arXiv: 2609.20777
-- Plain-English subtitle: Finding the most stable arrangements of repelling particles in a confined space
-- Summary: Researchers discovered new optimal arrangements for 60, 61, 92, and 99 mutually repelling charged particles confined to a disk using computational simulations. These arrangements are more stable than any previously found, with the new solutions improving on the best-known energies by measurable margins and showing clear, reproducible symmetry patterns.
-- Why it matters: Understanding how charged particles arrange themselves in confined spaces applies to real systems from quantum dots in electronics to how atomic nuclei might organize under extreme conditions. The improved configurations provide stronger benchmarks for testing computational methods and could inform the design of materials and devices that depend on precise particle arrangements.
-
-### ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments
-- URL: https://paperplaine.com/papers/scienceide-turning-world-s
-- Category: Computer Science · AI
-- Authors: Hejia Geng, Zesen Huang, Haoyang Li et al.
-- arXiv: 2609.19134
-- Plain-English subtitle: Teaching AI to learn from decades of scientific code and experiments
-- Summary: Researchers created ScienceIDE, a system that converts scientific code repositories into learning environments where AI agents can practice real scientific tasks like fixing code and running experiments. The resulting models (PhAI-IDE) showed improvements not only at scientific programming but also at general reasoning and knowledge tasks, suggesting that learning from real scientific work improves AI across the board.
-- Why it matters: Scientific software contains decades of hard-won knowledge about how to model complex systems, but that knowledge has been locked away in fragmented code that AI systems couldn't easily learn from. This infrastructure unlocks that resource, potentially accelerating the development of AI that can actually assist scientists with real research problems rather than just solving abstract benchmarks.
 
 ## About
 

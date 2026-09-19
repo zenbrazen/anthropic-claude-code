@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.20816",
+    "title": "Paint-Anything: Unified Any-Color Control for Image Generation and Editing",
+    "authors": "Ji Xie, Dewei Zhou, Xinyu Huang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-17T17:59:30Z",
+    "publishedFormatted": "Sep 17, 2026",
+    "subtitle": "Teaching AI to paint objects in exactly the colors designers specify",
+    "summary": "A new system called Paint-Anything lets designers specify exact colors for objects in AI-generated or edited images using standard hex color codes—the same format used in web design. The researchers built a training dataset of 500,000 images with precise color labels and invented a method that uses pure-color reference images during early training stages, then switches to real photos for refinement, improving color accuracy by 85% on generation tasks and 28% on editing.",
+    "whyItMatters": "Professional designers and creative tools need precise color control to match brand guidelines, product specifications, or client requirements. Current AI image generators produce colors that are close but not exact—a car might be the right shade of red, but not the specific red a manufacturer needs. Paint-Anything solves this by letting users input exact hex values and actually get those colors, making AI tools usable for real design work instead of just creative exploration.",
+    "fetchedAt": "2026-09-19T21:13:07.385Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 193
+    },
+    "slug": "paint-anything-unified-any"
+  },
+  {
+    "id": "2609.20501",
+    "title": "Distributionally Robust Federated Learning with Multi-Source Data",
+    "authors": "Yingzhu Liu, Zhongkui Li, Pengcheng You et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-09-17T14:48:22Z",
+    "publishedFormatted": "Sep 17, 2026",
+    "subtitle": "Making federated learning work when data is messy and unpredictable",
+    "summary": "Federated learning trains shared models using private data from many sources, but real-world data often differs wildly between clients in ways that are hard to predict. This paper shows how to build more robust models by letting each client have its own uncertainty buffer rather than forcing one worst-case scenario across everyone—and proves the approach actually works on unseen data.",
+    "whyItMatters": "Federated learning powers systems like predictive keyboards and health research networks where data can't leave users' devices. When these systems fail to handle messy real-world data distributions, they make poor predictions for certain groups of users. This work makes federated learning more reliable when you can't afford to collect perfect statistics upfront, which is common in privacy-sensitive domains where data is limited.",
+    "fetchedAt": "2026-09-19T21:13:10.447Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 133
+    },
+    "slug": "distributionally-robust-federated-learning"
+  },
+  {
+    "id": "2609.20670",
+    "title": "MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band",
+    "authors": "Haozhe Lei, Ruibin Chen, Yuhan Jiang et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-17T16:44:59Z",
+    "publishedFormatted": "Sep 17, 2026",
+    "subtitle": "Teaching robots to pinpoint hidden radio transmitters in cluttered rooms",
+    "summary": "A robot trying to locate a radio transmitter in a typical room faces a difficult problem: the radio signal bounces off walls, making it impossible to know from a single measurement whether the transmitter is in front, behind, or to the side. Researchers developed MAGNETAR, a neural network that solves this by computing all plausible combinations of transmitter location and antenna direction rather than guessing a single answer. The system was trained on simulated 10 GHz radio signals and validated on real robot measurements, outperforming simpler approaches that only estimate position.",
+    "whyItMatters": "Robots searching for transmitters—whether for equipment localization in factories, rescue operations in disaster zones, or detecting interference sources in communication networks—currently struggle in realistic indoor settings where signals bounce unpredictably. By computing the full range of possibilities instead of one best guess, MAGNETAR gives robots a more honest picture of their uncertainty, allowing them to make smarter search decisions and requiring fewer measurements to pin down a target's actual location and orientation.",
+    "fetchedAt": "2026-09-19T21:13:13.977Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 128
+    },
+    "slug": "magnetar-multipath-guided-spatial"
+  },
+  {
     "id": "2609.20820",
     "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
     "authors": "Nitish Dashora, Douglas Chen, Idan Shenfeld et al.",
