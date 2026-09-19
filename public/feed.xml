@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Sep 2026 21:22:58 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 11:47:31 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision</title>
+      <link>https://paperplaine.com/papers/workspace-models-lightweight-robotic</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/workspace-models-lightweight-robotic</guid>
+      <pubDate>Thu, 17 Sep 2026 17:59:53 GMT</pubDate>
+      <author>Nitish Dashora, Douglas Chen, Idan Shenfeld et al.</author>
+      <category>AI</category>
+      <description>Teaching robots to remember what matters using AI shortcuts</description>
+      <content:encoded><![CDATA[<p><em>Teaching robots to remember what matters using AI shortcuts</em></p><p>Robots performing complex tasks need to remember relevant past events, but constantly querying large language models to figure out what's important is slow and expensive. Researchers developed a lightweight memory system called a "workspace token" that learns during training which information matters, then uses that knowledge during deployment without needing the expensive AI queries. The result: robots solve memory-intensive tasks faster and with better performance than older approaches.</p><p><strong>Why it matters:</strong> Robotic systems deployed in manufacturing, surgery, and logistics need to work quickly with limited computational resources. By cutting the expensive AI reasoning requirements at runtime while actually improving task performance, this approach makes complex robotic automation more practical and cost-effective to deploy in real-world settings where speed and reliability matter.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions</title>
+      <link>https://paperplaine.com/papers/worst-case-hidden-vehicle</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/worst-case-hidden-vehicle</guid>
+      <pubDate>Thu, 17 Sep 2026 14:33:23 GMT</pubDate>
+      <author>Ruichen Tan, Zengxiang Lei, Satish Ukkusuri</author>
+      <category>Comp Sci</category>
+      <description>Finding the worst-case hidden drivers that self-driving cars can&#39;t see</description>
+      <content:encoded><![CDATA[<p><em>Finding the worst-case hidden drivers that self-driving cars can't see</em></p><p>Autonomous vehicles often lose sight of other cars behind buildings or parked vehicles, forcing them to guess what might be hiding there. Researchers developed a method that systematically searches for the most dangerous hidden-vehicle scenarios—ones that could cause collisions even if the self-driving car responds optimally. Testing on real driving data, the method found six avoidable crashes that simpler prediction methods would have missed.</p><p><strong>Why it matters:</strong> Self-driving cars currently rely on guessing what hidden vehicles might do, which leaves dangerous edge cases undetected. This method identifies genuine worst-case threats before they happen, allowing engineers to either redesign car behavior or flag scenarios where human takeover is needed. For safety-critical deployment, catching these six types of failure modes before a car hits the road could prevent real collisions.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA</title>
+      <link>https://paperplaine.com/papers/clean-scores-buried-evidence</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/clean-scores-buried-evidence</guid>
+      <pubDate>Mon, 14 Sep 2026 10:11:58 GMT</pubDate>
+      <author>Luis M. Sánchez</author>
+      <category>Finance</category>
+      <description>Why AI financial auditors confidently make up explanations for real numbers</description>
+      <content:encoded><![CDATA[<p><em>Why AI financial auditors confidently make up explanations for real numbers</em></p><p>Frontier AI models score well on standard document-reading tests but fail badly when evidence is hidden or hard to find—making more errors, calling more tools, and costing more money per correct answer. In real-world use, these systems mix accurate numbers with fabricated explanations, and their confidence scores don't warn you when they're wrong. The problem isn't the math; it's that models can confidently invent the reasoning behind it.</p><p><strong>Why it matters:</strong> When a human analyst signs off on a financial due diligence report or a defense decision, they're putting their name on claims they may not have verified themselves if they trusted an AI agent's confident-sounding explanation. If that explanation is fabricated—even alongside correct numbers—the person signing bears the legal and professional cost. Proper AI auditing in high-stakes domains requires tracking not just whether an answer is right, but proving exactly where each claim came from in the source material.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations</title>
       <link>https://paperplaine.com/papers/harm-laundering-in-gpt</link>

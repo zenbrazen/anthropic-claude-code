@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 819 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 822 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 282 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 283 papers in archive.
+  - "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision"
   - "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations"
-  - "How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 68 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 69 papers in archive.
+  - "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions"
   - "Hamming Ideals and Grobner Bases for ISD-like Syndrome Decoding"
-  - "Adversarial Testing of Automated Program Repair Agents for Security Vulnerabilities"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 68 papers in archive.
   - "The dynamics of early transoceanic voyages: A resource-coupled model of crew health and survival"
   - "Achieving perfect completeness for one- and two-message quantum proof systems"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 69 papers in archive.
   - "Sharpness-Aware Minimization (SAM) Improves Classification Accuracy of Bacterial Raman Spectral Data Enabling Portable Diagnostics"
   - "URCHIN: A Horizontal Spiking Language Model for Data-Constrained Pretraining"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 71 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 72 papers in archive.
+  - "Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA"
   - "dexamine: A Python package for Uniswap event data on Ethereum"
-  - "AI for AI: Optimizing Additional Infrastructure Build-out to Power Artificial Intelligence Data Centers"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 70 papers in archive.
   - "Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation"
   - "How Many Labels Does Model Choice Need? Certificates and Budgets for Selective Prediction"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Italian Business-to-Business Invoicing Data: A Network Analysis"
 
 ## 10 most recent papers
+
+### Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision
+- URL: https://paperplaine.com/papers/workspace-models-lightweight-robotic
+- Category: Computer Science · AI
+- Authors: Nitish Dashora, Douglas Chen, Idan Shenfeld et al.
+- arXiv: 2609.20820
+- Plain-English subtitle: Teaching robots to remember what matters using AI shortcuts
+- Summary: Robots performing complex tasks need to remember relevant past events, but constantly querying large language models to figure out what's important is slow and expensive. Researchers developed a lightweight memory system called a "workspace token" that learns during training which information matters, then uses that knowledge during deployment without needing the expensive AI queries. The result: robots solve memory-intensive tasks faster and with better performance than older approaches.
+- Why it matters: Robotic systems deployed in manufacturing, surgery, and logistics need to work quickly with limited computational resources. By cutting the expensive AI reasoning requirements at runtime while actually improving task performance, this approach makes complex robotic automation more practical and cost-effective to deploy in real-world settings where speed and reliability matter.
+
+### Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions
+- URL: https://paperplaine.com/papers/worst-case-hidden-vehicle
+- Category: Computer Science
+- Authors: Ruichen Tan, Zengxiang Lei, Satish Ukkusuri
+- arXiv: 2609.20480
+- Plain-English subtitle: Finding the worst-case hidden drivers that self-driving cars can't see
+- Summary: Autonomous vehicles often lose sight of other cars behind buildings or parked vehicles, forcing them to guess what might be hiding there. Researchers developed a method that systematically searches for the most dangerous hidden-vehicle scenarios—ones that could cause collisions even if the self-driving car responds optimally. Testing on real driving data, the method found six avoidable crashes that simpler prediction methods would have missed.
+- Why it matters: Self-driving cars currently rely on guessing what hidden vehicles might do, which leaves dangerous edge cases undetected. This method identifies genuine worst-case threats before they happen, allowing engineers to either redesign car behavior or flag scenarios where human takeover is needed. For safety-critical deployment, catching these six types of failure modes before a car hits the road could prevent real collisions.
+
+### Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA
+- URL: https://paperplaine.com/papers/clean-scores-buried-evidence
+- Category: Quantitative Finance
+- Authors: Luis M. Sánchez
+- arXiv: 2609.15319
+- Plain-English subtitle: Why AI financial auditors confidently make up explanations for real numbers
+- Summary: Frontier AI models score well on standard document-reading tests but fail badly when evidence is hidden or hard to find—making more errors, calling more tools, and costing more money per correct answer. In real-world use, these systems mix accurate numbers with fabricated explanations, and their confidence scores don't warn you when they're wrong. The problem isn't the math; it's that models can confidently invent the reasoning behind it.
+- Why it matters: When a human analyst signs off on a financial due diligence report or a defense decision, they're putting their name on claims they may not have verified themselves if they trusted an AI agent's confident-sounding explanation. If that explanation is fabricated—even alongside correct numbers—the person signing bears the legal and professional cost. Proper AI auditing in high-stakes domains requires tracking not just whether an answer is right, but proving exactly where each claim came from in the source material.
 
 ### Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations
 - URL: https://paperplaine.com/papers/harm-laundering-in-gpt
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to learn from decades of scientific code and experiments
 - Summary: Researchers created ScienceIDE, a system that converts scientific code repositories into learning environments where AI agents can practice real scientific tasks like fixing code and running experiments. The resulting models (PhAI-IDE) showed improvements not only at scientific programming but also at general reasoning and knowledge tasks, suggesting that learning from real scientific work improves AI across the board.
 - Why it matters: Scientific software contains decades of hard-won knowledge about how to model complex systems, but that knowledge has been locked away in fragmented code that AI systems couldn't easily learn from. This infrastructure unlocks that resource, potentially accelerating the development of AI that can actually assist scientists with real research problems rather than just solving abstract benchmarks.
-
-### Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making
-- URL: https://paperplaine.com/papers/recursive-reasoning-or-statistical
-- Category: Economics
-- Authors: Yu Liu, Wenwen Li, Yifan Dou et al.
-- arXiv: 2609.18591
-- Plain-English subtitle: When AI agents learn from patterns instead of actually thinking strategically
-- Summary: Large language models appear to improve their decisions in multi-agent games by studying past interactions, but new research shows they're mostly just recognizing statistical patterns rather than reasoning through strategy. When researchers scrambled the patterns in historical data, the AI's performance collapsed back to baseline—suggesting the apparent learning was pattern-matching, not genuine strategic thinking.
-- Why it matters: As companies deploy AI agents in real negotiation, trading, and coordination scenarios, it matters whether these systems are actually understanding the strategic landscape or just memorizing surface-level correlations. An agent that only recognizes patterns will fail catastrophically once the environment shifts—exactly when strategic reasoning would adapt. This work reveals a blind spot in how well current AI agents can handle genuinely complex multi-party interactions.
-
-### Hamming Ideals and Grobner Bases for ISD-like Syndrome Decoding
-- URL: https://paperplaine.com/papers/hamming-ideals-and-grobner
-- Category: Computer Science
-- Authors: Roberto La Scala, Marco Marchesin, Sharwan K. Tiwari
-- arXiv: 2609.18866
-- Plain-English subtitle: A new algebraic method for breaking error-correcting codes faster
-- Summary: Researchers developed a hybrid approach that combines algebra and combinatorial search to solve the Syndrome Decoding Problem, a fundamental challenge in code-breaking and cryptography. By reformulating the mathematical constraints using Grobner bases—a technique for solving systems of polynomial equations—and strategically fixing only part of the information set rather than all of it, the method reduces the computational burden of brute-force search. Tests on parameters from the NIST-standardized Classic McEliece cryptosystem show the approach is computationally feasible and suggests algebraic methods could compete with traditional decoding algorithms.
-- Why it matters: Classic McEliece and similar code-based cryptosystems are leading candidates for post-quantum cryptography—encryption that remains secure even if quantum computers arrive. This work demonstrates that algebraic techniques, previously thought impractical for this problem, can actually be competitive. Understanding exactly how fast these new methods work is critical for assessing whether current cryptographic standards will hold up, or whether the security margins need to be larger to stay ahead of algorithmic advances.
-
-### Objective vs. Search: Decomposing What Makes a Good Tokeniser
-- URL: https://paperplaine.com/papers/objective-vs-search-decomposing
-- Category: Computer Science · AI
-- Authors: Ahmetcan Yavuz, Clara Meister, Tiago Pimentel
-- arXiv: 2609.19145
-- Plain-English subtitle: Why how tokenisers search matters more than what they optimise for
-- Summary: Two major tokenisation algorithms used in language models differ in two ways: what they optimise for (compression or likelihood) and how they search for solutions (building up or pruning down). By testing all four combinations, researchers found that the search method matters far more than the objective — bottom-up tokenisers consistently performed better at compressing text, regardless of what they were optimising for.
-- Why it matters: Tokenisers are the first step in how language models process text, and small improvements here compound across billions of uses. This work removes confusion about which design choices actually drive performance, letting engineers build more efficient tokenisers and potentially faster, cheaper language models.
 
 ## About
 

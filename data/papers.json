@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.20820",
+    "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
+    "authors": "Nitish Dashora, Douglas Chen, Idan Shenfeld et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-17T17:59:53Z",
+    "publishedFormatted": "Sep 17, 2026",
+    "subtitle": "Teaching robots to remember what matters using AI shortcuts",
+    "summary": "Robots performing complex tasks need to remember relevant past events, but constantly querying large language models to figure out what's important is slow and expensive. Researchers developed a lightweight memory system called a \"workspace token\" that learns during training which information matters, then uses that knowledge during deployment without needing the expensive AI queries. The result: robots solve memory-intensive tasks faster and with better performance than older approaches.",
+    "whyItMatters": "Robotic systems deployed in manufacturing, surgery, and logistics need to work quickly with limited computational resources. By cutting the expensive AI reasoning requirements at runtime while actually improving task performance, this approach makes complex robotic automation more practical and cost-effective to deploy in real-world settings where speed and reliability matter.",
+    "fetchedAt": "2026-09-19T11:47:22.838Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 26,
+      "wordCount": 171
+    },
+    "slug": "workspace-models-lightweight-robotic"
+  },
+  {
+    "id": "2609.20480",
+    "title": "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions",
+    "authors": "Ruichen Tan, Zengxiang Lei, Satish Ukkusuri",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-17T14:33:23Z",
+    "publishedFormatted": "Sep 17, 2026",
+    "subtitle": "Finding the worst-case hidden drivers that self-driving cars can't see",
+    "summary": "Autonomous vehicles often lose sight of other cars behind buildings or parked vehicles, forcing them to guess what might be hiding there. Researchers developed a method that systematically searches for the most dangerous hidden-vehicle scenarios—ones that could cause collisions even if the self-driving car responds optimally. Testing on real driving data, the method found six avoidable crashes that simpler prediction methods would have missed.",
+    "whyItMatters": "Self-driving cars currently rely on guessing what hidden vehicles might do, which leaves dangerous edge cases undetected. This method identifies genuine worst-case threats before they happen, allowing engineers to either redesign car behavior or flag scenarios where human takeover is needed. For safety-critical deployment, catching these six types of failure modes before a car hits the road could prevent real collisions.",
+    "fetchedAt": "2026-09-19T11:47:25.891Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 154
+    },
+    "slug": "worst-case-hidden-vehicle"
+  },
+  {
+    "id": "2609.15319",
+    "title": "Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA",
+    "authors": "Luis M. Sánchez",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-09-14T10:11:58Z",
+    "publishedFormatted": "Sep 14, 2026",
+    "subtitle": "Why AI financial auditors confidently make up explanations for real numbers",
+    "summary": "Frontier AI models score well on standard document-reading tests but fail badly when evidence is hidden or hard to find—making more errors, calling more tools, and costing more money per correct answer. In real-world use, these systems mix accurate numbers with fabricated explanations, and their confidence scores don't warn you when they're wrong. The problem isn't the math; it's that models can confidently invent the reasoning behind it.",
+    "whyItMatters": "When a human analyst signs off on a financial due diligence report or a defense decision, they're putting their name on claims they may not have verified themselves if they trusted an AI agent's confident-sounding explanation. If that explanation is fabricated—even alongside correct numbers—the person signing bears the legal and professional cost. Proper AI auditing in high-stakes domains requires tracking not just whether an answer is right, but proving exactly where each claim came from in the source material.",
+    "fetchedAt": "2026-09-19T11:47:31.141Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 154
+    },
+    "slug": "clean-scores-buried-evidence"
+  },
+  {
     "id": "2609.20779",
     "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
     "authors": "Sarah Wyer, Sue Black, Noura Al Moubayed",
