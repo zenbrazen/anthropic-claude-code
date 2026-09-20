@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 825 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-19
+This file contains the complete plain-English text of all 828 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-20
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: GeoAAC: Geometry-Based Adaptive Action Chunking from Denoising Trajectories in VLA Policies
+Subtitle: Teaching robots when to pause and reconsider their next move
+URL: https://paperplaine.com/papers/geoaac-geometry-based-adaptive
+Category: Computer Science · AI
+Authors: Xin Chen, Sen Chen, Yujuan Ding et al.
+arXiv ID: 2609.20776
+arXiv URL: https://arxiv.org/abs/2609.20776
+Posted: 2026-09-20
+
+Summary: Robots executing multi-step tasks often plan several actions at once—but different moments call for different levels of caution. Researchers developed a method that automatically adjusts how many steps a robot commits to based on how confident it is in its current prediction, rather than always planning the same fixed number of steps ahead. On real robot manipulation tasks, this raised success rates from 53% to 74%.
+
+Why it matters: Current robotic systems use rigid planning windows that don't adapt to task difficulty—a robot might commit to 10 steps forward while picking up a fragile object (risky) or only 2 steps while moving across open space (wasteful). This work lets robots tighten their grip on planning when stakes are high and relax it when conditions are stable, making manipulation tasks substantially more reliable without retraining the underlying system.
+
+---
+Title: Unpriced Internal Externalities and Structural Inefficiency in Organizations
+Subtitle: Why organizations waste effort on improvements that secretly work against each other
+URL: https://paperplaine.com/papers/unpriced-internal-externalities-and
+Category: Economics
+Authors: Jan van de Poll
+arXiv ID: 2609.20462
+arXiv URL: https://arxiv.org/abs/2609.20462
+Posted: 2026-09-20
+
+Summary: Organizations often invest heavily in better processes, technology, and governance but see disappointing results — and a new framework explains why. The problem isn't usually poor incentives or hidden information, but rather that internal systems create conflicting effects: a new IT system might speed up one department while slowing another, or a governance rule might improve compliance while hampering innovation. When these opposing effects cancel each other out, organizations waste effort even with perfect execution, and no amount of optimization can fix it until the conflict itself is addressed first.
+
+Why it matters: Most organizations tackle inefficiency by reallocating effort or tweaking incentives, but this framework shows those efforts fail when the real problem is structural conflict. The research suggests a different playbook: diagnose and resolve these internal contradictions before attempting any other improvements. This could dramatically change how executives design organizational changes, suggesting they should first redesign conflicting mechanisms rather than spend money on optimization efforts that are doomed to cancel out.
+
+---
+Title: Sharp spectral norm concentration of sparse random tensors
+Subtitle: Predicting how chaotic multi-dimensional data arrays actually behave
+URL: https://paperplaine.com/papers/sharp-spectral-norm-concentration
+Category: Statistics
+Authors: Zhixin Zhou, Yizhe Zhu
+arXiv ID: 2609.20520
+arXiv URL: https://arxiv.org/abs/2609.20520
+Posted: 2026-09-20
+
+Summary: Mathematicians proved that sparse random tensors—multi-dimensional arrays filled mostly with zeros and some random ones—concentrate tightly around their average size, with a bound that eliminates an unnecessary logarithmic factor from prior work. This means we can now predict how wildly such arrays will deviate from their expected behavior with sharper mathematical guarantees.
+
+Why it matters: Tensors appear throughout machine learning, signal processing, and network analysis. Tighter concentration bounds help engineers and researchers build more reliable algorithms by giving them better predictions of when random high-dimensional data will behave unexpectedly. The log-free improvement also streamlines proofs in graph theory and helps analyze random hypergraph structures more precisely.
 
 ---
 Title: Paint-Anything: Unified Any-Color Control for Image Generation and Editing
