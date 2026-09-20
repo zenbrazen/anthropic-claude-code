@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.20754",
+    "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
+    "authors": "Mingxuan Zhang, Xiaowen Wang, Anupma Sharan et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-17T17:41:31Z",
+    "publishedFormatted": "Sep 17, 2026",
+    "subtitle": "Teaching support bots to learn from similar problems at every step",
+    "summary": "When customer support systems look for similar past cases to solve a new problem, they typically treat old cases as complete documents—missing the fact that troubleshooting happens in stages. RAFT treats each historical case as a timeline of steps and matches cases based on where they are in the process, not just their final outcome. On real issues from Apache's bug tracker and a synthetic Windows Server benchmark, RAFT found relevant past cases more consistently than standard approaches, especially in the middle stages of troubleshooting.",
+    "whyItMatters": "Support agents waste time when they retrieve irrelevant historical cases or miss the ones that would actually help. By matching cases at intermediate steps rather than treating them as static snapshots, this approach could reduce the time spent searching for guidance and improve the accuracy of the solutions suggested to customers. The researchers released their benchmark and code, giving support teams a concrete tool to improve how their systems learn from history.",
+    "fetchedAt": "2026-09-20T21:08:00.290Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 190
+    },
+    "slug": "raft-a-stateful-retrieval"
+  },
+  {
+    "id": "2609.20802",
+    "title": "Locally optimized variational evolution for quantum many-body systems",
+    "authors": "Carolin Wille, Max Marvell, Lauren Stewart et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-09-17T17:56:31Z",
+    "publishedFormatted": "Sep 17, 2026",
+    "subtitle": "Simulating quantum systems by tracking only what you can actually measure",
+    "summary": "Physicists have developed a new method for simulating quantum systems that sidesteps the astronomical computational cost by focusing on local properties instead of the entire quantum state. The approach works because in many real quantum systems, local measurements—like temperature at a specific point—don't actually depend on the full microscopic details of the whole system, especially once it reaches thermal equilibrium. The team demonstrated the method on current quantum computers, showing it can capture the right physics while being practical enough to run on noisy hardware.",
+    "whyItMatters": "Current quantum computers struggle with simulating large quantum systems because tracking the complete state grows exponentially harder with size. By targeting only the local properties people actually care about measuring—temperatures, pressures, energy flows—this method cuts through that complexity. The approach works on today's real quantum hardware despite their noise and errors, opening a path to using current machines for practical simulations before we have perfect quantum computers.",
+    "fetchedAt": "2026-09-20T21:08:03.651Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 191
+    },
+    "slug": "locally-optimized-variational-evolution"
+  },
+  {
+    "id": "2609.15918",
+    "title": "Decision-Related Cognitive Signatures from Fast-Slow Dynamics: A Low-Dimensional Observation-Operator Framework",
+    "authors": "Furkan Emre Isik, Ali Demirci",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-09-14T17:30:06Z",
+    "publishedFormatted": "Sep 14, 2026",
+    "subtitle": "How two-speed brain dynamics produce the patterns we see in repeated decisions",
+    "summary": "A mathematical model of decision-making built from fast and slow competing processes can generate the four main temporal patterns observed in repeated choices: persistence, directional switches, alternating patterns, and sudden shifts. The researchers show this simple two-dimensional system is sufficient to produce these observable behaviors without needing to specify what's actually happening in the brain itself.",
+    "whyItMatters": "Understanding the mathematical structure underlying decision patterns could help neuroscientists interpret brain activity during repeated choices and predict how decision-making will change under different conditions. The framework separates what we can actually measure (choice sequences over time) from hidden brain dynamics, making it easier to test theories about decision-making without assuming we know the exact neural mechanisms.",
+    "fetchedAt": "2026-09-20T21:08:06.862Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 197
+    },
+    "slug": "decision-related-cognitive-signatures"
+  },
+  {
     "id": "2609.20776",
     "title": "GeoAAC: Geometry-Based Adaptive Action Chunking from Denoising Trajectories in VLA Policies",
     "authors": "Xin Chen, Sen Chen, Yujuan Ding et al.",
