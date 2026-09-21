@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 834 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 837 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 287 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 288 papers in archive.
+  - "Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents"
   - "DiaVLo: Diagnosing Behaviours of Vision-Language Models"
-  - "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 70 papers in archive.
   - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
   - "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 69 papers in archive.
   - "Locally optimized variational evolution for quantum many-body systems"
   - "The dynamics of early transoceanic voyages: A resource-coupled model of crew health and survival"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 69 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 70 papers in archive.
+  - "On the Injectivity of Elementary Symmetric Partitions and the Multiset Recovery Problem"
   - "Distributionally Robust Federated Learning with Multi-Source Data"
-  - "Global Minima of the Thomson Problem in a Disk: A Molecular Dynamics Approach with Fixed Border Charges"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 70 papers in archive.
   - "Decision-Related Cognitive Signatures from Fast-Slow Dynamics: A Low-Dimensional Observation-Operator Framework"
   - "Sharpness-Aware Minimization (SAM) Improves Classification Accuracy of Bacterial Raman Spectral Data Enabling Portable Diagnostics"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 71 papers in archive.
   - "Sharp spectral norm concentration of sparse random tensors"
   - "Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 66 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 67 papers in archive.
+  - "RTLViT: real-time lensless reconstruction with a lightweight vision transformer"
   - "MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band"
-  - "Visual Autoregressive Priors for RAW-to-sRGB Image Signal Processing"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 59 papers in archive.
   - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
   - "Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making"
 
 ## 10 most recent papers
+
+### Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents
+- URL: https://paperplaine.com/papers/bayesian-belief-layer-for
+- Category: Computer Science · AI
+- Authors: Hafsa Akbar, Daniel Platnick, Marjan Alirezaie et al.
+- arXiv: 2609.21997
+- Plain-English subtitle: Making AI agents' opinions transparent and controllable in social simulations
+- Summary: Large language models used in social simulations change their opinions unpredictably, hidden inside their text generation. Researchers added a simple belief-tracking layer that separates what an agent actually believes from how it speaks, using a single number to control how stubborn each agent is. This lets them reliably produce three different kinds of group dynamics — consensus, lasting disagreement, or minority influence — and catch hidden biases that would otherwise go unnoticed.
+- Why it matters: Social simulations with AI agents are increasingly used to study how misinformation spreads, how groups make decisions, and how social movements form. If the agents' opinion changes happens invisibly and can't be controlled or audited, researchers can't trust their results or explain why a simulation turned out the way it did. This method makes it possible to verify that a simulation is actually modeling the social dynamics researchers intended, rather than accidentally encoding whatever biases the AI model learned during training.
+
+### On the Injectivity of Elementary Symmetric Partitions and the Multiset Recovery Problem
+- URL: https://paperplaine.com/papers/on-the-injectivity-of
+- Category: Mathematics
+- Authors: Ziyao Sun
+- arXiv: 2609.21922
+- Plain-English subtitle: When can you recover a collection of numbers from their combined products?
+- Summary: Mathematicians solved a 67-year-old puzzle about whether you can uniquely recover a multiset of numbers from information derived from their symmetric products. The answer depends on both the size of the multiset and a specific mathematical property called the Moser root set — and for certain cases like six-element sets, there are at most two possible original collections that produce the same output.
+- Why it matters: This result bridges a forgotten 1957 problem with modern partition theory, settling long-standing questions about uniqueness and ambiguity in mathematical reconstruction. The techniques developed here may apply to other areas where information must be reliably recovered from compressed or combined data.
+
+### RTLViT: real-time lensless reconstruction with a lightweight vision transformer
+- URL: https://paperplaine.com/papers/rtlvit-real-time-lensless
+- Category: Engineering
+- Authors: Leyla A. Kabuli, Vasilisa Ponomarenko, Laura Waller
+- arXiv: 2609.21042
+- Plain-English subtitle: Turning blurry sensor patterns into sharp photos instantly on your phone
+- Summary: Researchers created RTLViT, a lightweight AI system that reconstructs clear images from the blurry patterns captured by lensless cameras — devices with no traditional lens that are far simpler and smaller than regular cameras. The system works 15 times faster than larger AI approaches while actually producing better images, and it runs directly on smartphones and laptops in real time.
+- Why it matters: Lensless cameras could be built directly into phones and other devices since they need no bulky lens, but only if the image reconstruction can happen instantly without draining the battery. RTLViT makes this practical by doing the job with minimal computation, opening the path to thinner phones, better hidden cameras for security systems, and ultra-compact imaging for medical or scientific devices.
 
 ### DiaVLo: Diagnosing Behaviours of Vision-Language Models
 - URL: https://paperplaine.com/papers/diavlo-diagnosing-behaviours-of
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching robots when to pause and reconsider their next move
 - Summary: Robots executing multi-step tasks often plan several actions at once—but different moments call for different levels of caution. Researchers developed a method that automatically adjusts how many steps a robot commits to based on how confident it is in its current prediction, rather than always planning the same fixed number of steps ahead. On real robot manipulation tasks, this raised success rates from 53% to 74%.
 - Why it matters: Current robotic systems use rigid planning windows that don't adapt to task difficulty—a robot might commit to 10 steps forward while picking up a fragile object (risky) or only 2 steps while moving across open space (wasteful). This work lets robots tighten their grip on planning when stakes are high and relax it when conditions are stable, making manipulation tasks substantially more reliable without retraining the underlying system.
-
-### Unpriced Internal Externalities and Structural Inefficiency in Organizations
-- URL: https://paperplaine.com/papers/unpriced-internal-externalities-and
-- Category: Economics
-- Authors: Jan van de Poll
-- arXiv: 2609.20462
-- Plain-English subtitle: Why organizations waste effort on improvements that secretly work against each other
-- Summary: Organizations often invest heavily in better processes, technology, and governance but see disappointing results — and a new framework explains why. The problem isn't usually poor incentives or hidden information, but rather that internal systems create conflicting effects: a new IT system might speed up one department while slowing another, or a governance rule might improve compliance while hampering innovation. When these opposing effects cancel each other out, organizations waste effort even with perfect execution, and no amount of optimization can fix it until the conflict itself is addressed first.
-- Why it matters: Most organizations tackle inefficiency by reallocating effort or tweaking incentives, but this framework shows those efforts fail when the real problem is structural conflict. The research suggests a different playbook: diagnose and resolve these internal contradictions before attempting any other improvements. This could dramatically change how executives design organizational changes, suggesting they should first redesign conflicting mechanisms rather than spend money on optimization efforts that are doomed to cancel out.
-
-### Sharp spectral norm concentration of sparse random tensors
-- URL: https://paperplaine.com/papers/sharp-spectral-norm-concentration
-- Category: Statistics
-- Authors: Zhixin Zhou, Yizhe Zhu
-- arXiv: 2609.20520
-- Plain-English subtitle: Predicting how chaotic multi-dimensional data arrays actually behave
-- Summary: Mathematicians proved that sparse random tensors—multi-dimensional arrays filled mostly with zeros and some random ones—concentrate tightly around their average size, with a bound that eliminates an unnecessary logarithmic factor from prior work. This means we can now predict how wildly such arrays will deviate from their expected behavior with sharper mathematical guarantees.
-- Why it matters: Tensors appear throughout machine learning, signal processing, and network analysis. Tighter concentration bounds help engineers and researchers build more reliable algorithms by giving them better predictions of when random high-dimensional data will behave unexpectedly. The log-free improvement also streamlines proofs in graph theory and helps analyze random hypergraph structures more precisely.
-
-### Paint-Anything: Unified Any-Color Control for Image Generation and Editing
-- URL: https://paperplaine.com/papers/paint-anything-unified-any
-- Category: Computer Science · AI
-- Authors: Ji Xie, Dewei Zhou, Xinyu Huang et al.
-- arXiv: 2609.20816
-- Plain-English subtitle: Teaching AI to paint objects in exactly the colors designers specify
-- Summary: A new system called Paint-Anything lets designers specify exact colors for objects in AI-generated or edited images using standard hex color codes—the same format used in web design. The researchers built a training dataset of 500,000 images with precise color labels and invented a method that uses pure-color reference images during early training stages, then switches to real photos for refinement, improving color accuracy by 85% on generation tasks and 28% on editing.
-- Why it matters: Professional designers and creative tools need precise color control to match brand guidelines, product specifications, or client requirements. Current AI image generators produce colors that are close but not exact—a car might be the right shade of red, but not the specific red a manufacturer needs. Paint-Anything solves this by letting users input exact hex values and actually get those colors, making AI tools usable for real design work instead of just creative exploration.
 
 ## About
 

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 834 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 837 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-21
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents
+Subtitle: Making AI agents' opinions transparent and controllable in social simulations
+URL: https://paperplaine.com/papers/bayesian-belief-layer-for
+Category: Computer Science · AI
+Authors: Hafsa Akbar, Daniel Platnick, Marjan Alirezaie et al.
+arXiv ID: 2609.21997
+arXiv URL: https://arxiv.org/abs/2609.21997
+Posted: 2026-09-21
+
+Summary: Large language models used in social simulations change their opinions unpredictably, hidden inside their text generation. Researchers added a simple belief-tracking layer that separates what an agent actually believes from how it speaks, using a single number to control how stubborn each agent is. This lets them reliably produce three different kinds of group dynamics — consensus, lasting disagreement, or minority influence — and catch hidden biases that would otherwise go unnoticed.
+
+Why it matters: Social simulations with AI agents are increasingly used to study how misinformation spreads, how groups make decisions, and how social movements form. If the agents' opinion changes happens invisibly and can't be controlled or audited, researchers can't trust their results or explain why a simulation turned out the way it did. This method makes it possible to verify that a simulation is actually modeling the social dynamics researchers intended, rather than accidentally encoding whatever biases the AI model learned during training.
+
+---
+Title: On the Injectivity of Elementary Symmetric Partitions and the Multiset Recovery Problem
+Subtitle: When can you recover a collection of numbers from their combined products?
+URL: https://paperplaine.com/papers/on-the-injectivity-of
+Category: Mathematics
+Authors: Ziyao Sun
+arXiv ID: 2609.21922
+arXiv URL: https://arxiv.org/abs/2609.21922
+Posted: 2026-09-21
+
+Summary: Mathematicians solved a 67-year-old puzzle about whether you can uniquely recover a multiset of numbers from information derived from their symmetric products. The answer depends on both the size of the multiset and a specific mathematical property called the Moser root set — and for certain cases like six-element sets, there are at most two possible original collections that produce the same output.
+
+Why it matters: This result bridges a forgotten 1957 problem with modern partition theory, settling long-standing questions about uniqueness and ambiguity in mathematical reconstruction. The techniques developed here may apply to other areas where information must be reliably recovered from compressed or combined data.
+
+---
+Title: RTLViT: real-time lensless reconstruction with a lightweight vision transformer
+Subtitle: Turning blurry sensor patterns into sharp photos instantly on your phone
+URL: https://paperplaine.com/papers/rtlvit-real-time-lensless
+Category: Engineering
+Authors: Leyla A. Kabuli, Vasilisa Ponomarenko, Laura Waller
+arXiv ID: 2609.21042
+arXiv URL: https://arxiv.org/abs/2609.21042
+Posted: 2026-09-21
+
+Summary: Researchers created RTLViT, a lightweight AI system that reconstructs clear images from the blurry patterns captured by lensless cameras — devices with no traditional lens that are far simpler and smaller than regular cameras. The system works 15 times faster than larger AI approaches while actually producing better images, and it runs directly on smartphones and laptops in real time.
+
+Why it matters: Lensless cameras could be built directly into phones and other devices since they need no bulky lens, but only if the image reconstruction can happen instantly without draining the battery. RTLViT makes this practical by doing the job with minimal computation, opening the path to thinner phones, better hidden cameras for security systems, and ultra-compact imaging for medical or scientific devices.
 
 ---
 Title: DiaVLo: Diagnosing Behaviours of Vision-Language Models
