@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 831 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-20
+This file contains the complete plain-English text of all 834 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-21
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: DiaVLo: Diagnosing Behaviours of Vision-Language Models
+Subtitle: Finding hidden biases in AI models that understand images and text
+URL: https://paperplaine.com/papers/diavlo-diagnosing-behaviours-of
+Category: Computer Science · AI
+Authors: Lorenzo Corti, Jie Yang
+arXiv ID: 2609.22008
+arXiv URL: https://arxiv.org/abs/2609.22008
+Posted: 2026-09-21
+
+Summary: A new diagnostic tool called DiaVLo can identify what vision-language models actually do—and whether they match what we want them to do. By examining how these AI systems process images and text together, the tool surfaces misalignments between intended and real behavior, and pinpoints which concepts most strongly influence the model's decisions.
+
+Why it matters: Vision-language models power everything from medical image analysis to content moderation, so knowing what they actually do—not just what they're supposed to do—is essential before deploying them. DiaVLo makes those hidden behaviors visible, helping developers catch problems like unfair associations or dangerous shortcuts before the system reaches users.
+
+---
+Title: CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation
+Subtitle: Which AI safety filters actually work best when combined together
+URL: https://paperplaine.com/papers/cascade-against-jailbreaks-combination
+Category: Computer Science
+Authors: Jiale Luo, Eric Han
+arXiv ID: 2609.21793
+arXiv URL: https://arxiv.org/abs/2609.21793
+Posted: 2026-09-21
+
+Summary: Researchers tested 19 different jailbreak attacks against 15 AI safety defenses to find the best way to stack them. No single defense blocked all attacks, but combining the right ones across different stages of the AI system blocked most attacks without making the AI less useful.
+
+Why it matters: As AI systems become more widely deployed, companies need concrete guidance on how to defend them against adversaries trying to trick them into harmful outputs. This work shows how to layer defenses in order of effectiveness, helping engineers make practical decisions about which safety tools to deploy where in their AI pipelines.
+
+---
+Title: Model-Free Passive Execution via Order-Level Shadowing
+Subtitle: A simpler way to place trades by copying what others are already doing
+URL: https://paperplaine.com/papers/model-free-passive-execution
+Category: Quantitative Finance
+Authors: Vincent Maciejewski
+arXiv ID: 2609.18019
+arXiv URL: https://arxiv.org/abs/2609.18019
+Posted: 2026-09-21
+
+Summary: A new trading algorithm called Shadow-PPOV places orders by simply mimicking other traders' behavior rather than relying on predictions or models. Tested on a year of stock index futures data, it achieves competitive execution quality without needing to forecast prices or analyze market conditions — it just follows what it observes.
+
+Why it matters: Trading algorithms currently require complex models to decide where and when to place orders, creating opportunities for errors and unexpected costs. A model-free approach that works equally well means traders can execute large orders more reliably and with less computational overhead, while also providing a clearer baseline for measuring whether fancy prediction models actually deliver better results than simple observation.
 
 ---
 Title: RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents

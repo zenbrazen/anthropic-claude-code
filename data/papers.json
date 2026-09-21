@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.22008",
+    "title": "DiaVLo: Diagnosing Behaviours of Vision-Language Models",
+    "authors": "Lorenzo Corti, Jie Yang",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-18T17:06:44Z",
+    "publishedFormatted": "Sep 18, 2026",
+    "subtitle": "Finding hidden biases in AI models that understand images and text",
+    "summary": "A new diagnostic tool called DiaVLo can identify what vision-language models actually do—and whether they match what we want them to do. By examining how these AI systems process images and text together, the tool surfaces misalignments between intended and real behavior, and pinpoints which concepts most strongly influence the model's decisions.",
+    "whyItMatters": "Vision-language models power everything from medical image analysis to content moderation, so knowing what they actually do—not just what they're supposed to do—is essential before deploying them. DiaVLo makes those hidden behaviors visible, helping developers catch problems like unfair associations or dangerous shortcuts before the system reaches users.",
+    "fetchedAt": "2026-09-21T13:39:05.412Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 34,
+      "wordCount": 131
+    },
+    "slug": "diavlo-diagnosing-behaviours-of"
+  },
+  {
+    "id": "2609.21793",
+    "title": "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation",
+    "authors": "Jiale Luo, Eric Han",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-18T14:06:00Z",
+    "publishedFormatted": "Sep 18, 2026",
+    "subtitle": "Which AI safety filters actually work best when combined together",
+    "summary": "Researchers tested 19 different jailbreak attacks against 15 AI safety defenses to find the best way to stack them. No single defense blocked all attacks, but combining the right ones across different stages of the AI system blocked most attacks without making the AI less useful.",
+    "whyItMatters": "As AI systems become more widely deployed, companies need concrete guidance on how to defend them against adversaries trying to trick them into harmful outputs. This work shows how to layer defenses in order of effectiveness, helping engineers make practical decisions about which safety tools to deploy where in their AI pipelines.",
+    "fetchedAt": "2026-09-21T13:39:07.805Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 134
+    },
+    "slug": "cascade-against-jailbreaks-combination"
+  },
+  {
+    "id": "2609.18019",
+    "title": "Model-Free Passive Execution via Order-Level Shadowing",
+    "authors": "Vincent Maciejewski",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-09-16T02:16:13Z",
+    "publishedFormatted": "Sep 16, 2026",
+    "subtitle": "A simpler way to place trades by copying what others are already doing",
+    "summary": "A new trading algorithm called Shadow-PPOV places orders by simply mimicking other traders' behavior rather than relying on predictions or models. Tested on a year of stock index futures data, it achieves competitive execution quality without needing to forecast prices or analyze market conditions — it just follows what it observes.",
+    "whyItMatters": "Trading algorithms currently require complex models to decide where and when to place orders, creating opportunities for errors and unexpected costs. A model-free approach that works equally well means traders can execute large orders more reliably and with less computational overhead, while also providing a clearer baseline for measuring whether fancy prediction models actually deliver better results than simple observation.",
+    "fetchedAt": "2026-09-21T13:39:12.402Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 274
+    },
+    "slug": "model-free-passive-execution"
+  },
+  {
     "id": "2609.20754",
     "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
     "authors": "Mingxuan Zhang, Xiaowen Wang, Anupma Sharan et al.",
