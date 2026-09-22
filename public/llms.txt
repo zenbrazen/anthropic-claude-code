@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 837 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 840 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 288 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 289 papers in archive.
+  - "DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation"
   - "Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents"
-  - "DiaVLo: Diagnosing Behaviours of Vision-Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 70 papers in archive.
   - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
   - "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 73 papers in archive.
   - "Model-Free Passive Execution via Order-Level Shadowing"
   - "Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 71 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 72 papers in archive.
+  - "Augmented Hypothesis Testing with Persona-Based LLM Simulations"
   - "Sharp spectral norm concentration of sparse random tensors"
-  - "Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 67 papers in archive.
   - "RTLViT: real-time lensless reconstruction with a lightweight vision transformer"
   - "MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 59 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 60 papers in archive.
+  - "Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem"
   - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
-  - "Recursive Reasoning or Statistical Extrapolation? In-Context Learning in Multi-Agent Interdependent Decision-Making"
 
 ## 10 most recent papers
+
+### DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation
+- URL: https://paperplaine.com/papers/dextacwam-a-visuo-tactile
+- Category: Computer Science · AI
+- Authors: Haoran Yuan, Zekai Wang, Boning Shao et al.
+- arXiv: 2609.24976
+- Plain-English subtitle: Teaching robots to feel what they see during delicate hand tasks
+- Summary: Researchers built a system that combines touch and vision to help robots perform delicate manipulation tasks like in-hand object rotation and manipulation. The system outperformed existing approaches on all six tested tasks, nearly doubling the success rate (70.6 versus 38.0), because it actually modeled how contact forces change over time rather than just sensing them passively.
+- Why it matters: Robots currently struggle with fine-motor tasks that require constant feedback about finger contact — tasks humans do effortlessly. This approach works with existing pretrained vision systems and learns from just 100 demonstrations per task, making it practical to deploy on real robotic hands without months of retraining. Better dexterous robots could accelerate automation in assembly lines, surgery, and delicate manufacturing where precision and feel matter.
+
+### Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem
+- URL: https://paperplaine.com/papers/firm-valuation-when-ai
+- Category: Economics
+- Authors: Walter Kurz, Wojtek Stricker, Stefan Marx et al.
+- arXiv: 2609.24181
+- Plain-English subtitle: How to value AI companies when their future depends on unproven breakthroughs
+- Summary: Standard valuation methods treat AI integration as a black box, burying crucial assumptions about whether key technical milestones will succeed. This paper proposes a structured framework that breaks down an AI company's value into specific, testable options—each with its own success probability—so investors and auditors can see exactly which bets drive the valuation. Applied to an AI energy software company, the method revealed that risk concentrates in later-stage bets, not the initial product launch.
+- Why it matters: AI company valuations swing wildly because nobody has a clear, auditable way to price them—traditional methods compress all the uncertainty into vague numbers. This framework gives investors, lenders, and acquirers a transparent way to understand what has to go right for a deal to make sense, and where the real risks actually sit. That matters most in M&A due diligence, where a buyer needs to know whether they're overpaying for speculative AI bets or betting on proven capabilities.
+
+### Augmented Hypothesis Testing with Persona-Based LLM Simulations
+- URL: https://paperplaine.com/papers/augmented-hypothesis-testing-with
+- Category: Statistics
+- Authors: Ziyad Benomar, Aymen Al Marjani, Paul Missault et al.
+- arXiv: 2609.24629
+- Plain-English subtitle: Using AI predictions to run cheaper, faster experiments without sacrificing accuracy
+- Summary: Researchers developed a new statistical framework that uses predictions from AI models—including those from persona-based language models—to shrink the sample sizes needed for A/B tests while maintaining statistical rigor. The method works even when the AI predictions are imperfect, automatically downweighting unreliable signals while extracting useful information from accurate ones. In experiments on real datasets, the approach reduced the cost of testing by substantial margins without compromising the validity of results.
+- Why it matters: A/B testing is the standard way companies validate decisions, but it's slow and expensive—you need to wait weeks or months and recruit thousands of users. This framework could let companies run valid experiments with 50% fewer participants or shorter timelines by feeding in cheap AI predictions alongside real user data. The method is robust to bad predictions, so teams can experiment with this approach even if they're uncertain how good their models are.
 
 ### Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents
 - URL: https://paperplaine.com/papers/bayesian-belief-layer-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching support bots to learn from similar problems at every step
 - Summary: When customer support systems look for similar past cases to solve a new problem, they typically treat old cases as complete documents—missing the fact that troubleshooting happens in stages. RAFT treats each historical case as a timeline of steps and matches cases based on where they are in the process, not just their final outcome. On real issues from Apache's bug tracker and a synthetic Windows Server benchmark, RAFT found relevant past cases more consistently than standard approaches, especially in the middle stages of troubleshooting.
 - Why it matters: Support agents waste time when they retrieve irrelevant historical cases or miss the ones that would actually help. By matching cases at intermediate steps rather than treating them as static snapshots, this approach could reduce the time spent searching for guidance and improve the accuracy of the solutions suggested to customers. The researchers released their benchmark and code, giving support teams a concrete tool to improve how their systems learn from history.
-
-### Locally optimized variational evolution for quantum many-body systems
-- URL: https://paperplaine.com/papers/locally-optimized-variational-evolution
-- Category: Physics
-- Authors: Carolin Wille, Max Marvell, Lauren Stewart et al.
-- arXiv: 2609.20802
-- Plain-English subtitle: Simulating quantum systems by tracking only what you can actually measure
-- Summary: Physicists have developed a new method for simulating quantum systems that sidesteps the astronomical computational cost by focusing on local properties instead of the entire quantum state. The approach works because in many real quantum systems, local measurements—like temperature at a specific point—don't actually depend on the full microscopic details of the whole system, especially once it reaches thermal equilibrium. The team demonstrated the method on current quantum computers, showing it can capture the right physics while being practical enough to run on noisy hardware.
-- Why it matters: Current quantum computers struggle with simulating large quantum systems because tracking the complete state grows exponentially harder with size. By targeting only the local properties people actually care about measuring—temperatures, pressures, energy flows—this method cuts through that complexity. The approach works on today's real quantum hardware despite their noise and errors, opening a path to using current machines for practical simulations before we have perfect quantum computers.
-
-### Decision-Related Cognitive Signatures from Fast-Slow Dynamics: A Low-Dimensional Observation-Operator Framework
-- URL: https://paperplaine.com/papers/decision-related-cognitive-signatures
-- Category: Quantitative Biology
-- Authors: Furkan Emre Isik, Ali Demirci
-- arXiv: 2609.15918
-- Plain-English subtitle: How two-speed brain dynamics produce the patterns we see in repeated decisions
-- Summary: A mathematical model of decision-making built from fast and slow competing processes can generate the four main temporal patterns observed in repeated choices: persistence, directional switches, alternating patterns, and sudden shifts. The researchers show this simple two-dimensional system is sufficient to produce these observable behaviors without needing to specify what's actually happening in the brain itself.
-- Why it matters: Understanding the mathematical structure underlying decision patterns could help neuroscientists interpret brain activity during repeated choices and predict how decision-making will change under different conditions. The framework separates what we can actually measure (choice sequences over time) from hidden brain dynamics, making it easier to test theories about decision-making without assuming we know the exact neural mechanisms.
-
-### GeoAAC: Geometry-Based Adaptive Action Chunking from Denoising Trajectories in VLA Policies
-- URL: https://paperplaine.com/papers/geoaac-geometry-based-adaptive
-- Category: Computer Science · AI
-- Authors: Xin Chen, Sen Chen, Yujuan Ding et al.
-- arXiv: 2609.20776
-- Plain-English subtitle: Teaching robots when to pause and reconsider their next move
-- Summary: Robots executing multi-step tasks often plan several actions at once—but different moments call for different levels of caution. Researchers developed a method that automatically adjusts how many steps a robot commits to based on how confident it is in its current prediction, rather than always planning the same fixed number of steps ahead. On real robot manipulation tasks, this raised success rates from 53% to 74%.
-- Why it matters: Current robotic systems use rigid planning windows that don't adapt to task difficulty—a robot might commit to 10 steps forward while picking up a fragile object (risky) or only 2 steps while moving across open space (wasteful). This work lets robots tighten their grip on planning when stakes are high and relax it when conditions are stable, making manipulation tasks substantially more reliable without retraining the underlying system.
 
 ## About
 

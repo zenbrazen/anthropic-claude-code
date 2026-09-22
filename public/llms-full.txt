@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 837 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-21
+This file contains the complete plain-English text of all 840 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-22
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation
+Subtitle: Teaching robots to feel what they see during delicate hand tasks
+URL: https://paperplaine.com/papers/dextacwam-a-visuo-tactile
+Category: Computer Science · AI
+Authors: Haoran Yuan, Zekai Wang, Boning Shao et al.
+arXiv ID: 2609.24976
+arXiv URL: https://arxiv.org/abs/2609.24976
+Posted: 2026-09-22
+
+Summary: Researchers built a system that combines touch and vision to help robots perform delicate manipulation tasks like in-hand object rotation and manipulation. The system outperformed existing approaches on all six tested tasks, nearly doubling the success rate (70.6 versus 38.0), because it actually modeled how contact forces change over time rather than just sensing them passively.
+
+Why it matters: Robots currently struggle with fine-motor tasks that require constant feedback about finger contact — tasks humans do effortlessly. This approach works with existing pretrained vision systems and learns from just 100 demonstrations per task, making it practical to deploy on real robotic hands without months of retraining. Better dexterous robots could accelerate automation in assembly lines, surgery, and delicate manufacturing where precision and feel matter.
+
+---
+Title: Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem
+Subtitle: How to value AI companies when their future depends on unproven breakthroughs
+URL: https://paperplaine.com/papers/firm-valuation-when-ai
+Category: Economics
+Authors: Walter Kurz, Wojtek Stricker, Stefan Marx et al.
+arXiv ID: 2609.24181
+arXiv URL: https://arxiv.org/abs/2609.24181
+Posted: 2026-09-22
+
+Summary: Standard valuation methods treat AI integration as a black box, burying crucial assumptions about whether key technical milestones will succeed. This paper proposes a structured framework that breaks down an AI company's value into specific, testable options—each with its own success probability—so investors and auditors can see exactly which bets drive the valuation. Applied to an AI energy software company, the method revealed that risk concentrates in later-stage bets, not the initial product launch.
+
+Why it matters: AI company valuations swing wildly because nobody has a clear, auditable way to price them—traditional methods compress all the uncertainty into vague numbers. This framework gives investors, lenders, and acquirers a transparent way to understand what has to go right for a deal to make sense, and where the real risks actually sit. That matters most in M&A due diligence, where a buyer needs to know whether they're overpaying for speculative AI bets or betting on proven capabilities.
+
+---
+Title: Augmented Hypothesis Testing with Persona-Based LLM Simulations
+Subtitle: Using AI predictions to run cheaper, faster experiments without sacrificing accuracy
+URL: https://paperplaine.com/papers/augmented-hypothesis-testing-with
+Category: Statistics
+Authors: Ziyad Benomar, Aymen Al Marjani, Paul Missault et al.
+arXiv ID: 2609.24629
+arXiv URL: https://arxiv.org/abs/2609.24629
+Posted: 2026-09-22
+
+Summary: Researchers developed a new statistical framework that uses predictions from AI models—including those from persona-based language models—to shrink the sample sizes needed for A/B tests while maintaining statistical rigor. The method works even when the AI predictions are imperfect, automatically downweighting unreliable signals while extracting useful information from accurate ones. In experiments on real datasets, the approach reduced the cost of testing by substantial margins without compromising the validity of results.
+
+Why it matters: A/B testing is the standard way companies validate decisions, but it's slow and expensive—you need to wait weeks or months and recruit thousands of users. This framework could let companies run valid experiments with 50% fewer participants or shorter timelines by feeding in cheap AI predictions alongside real user data. The method is robust to bad predictions, so teams can experiment with this approach even if they're uncertain how good their models are.
 
 ---
 Title: Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents
