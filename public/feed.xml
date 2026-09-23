@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2026 12:34:17 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 21:57:21 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem</title>
+      <link>https://paperplaine.com/papers/a2m-trace-optimized-agent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/a2m-trace-optimized-agent</guid>
+      <pubDate>Tue, 22 Sep 2026 17:41:34 GMT</pubDate>
+      <author>Laizhen Li, Xuan Wang, Peicheng Zhao et al.</author>
+      <category>AI</category>
+      <description>How attackers can trick AI agents into using malicious tools</description>
+      <content:encoded><![CDATA[<p><em>How attackers can trick AI agents into using malicious tools</em></p><p>Researchers discovered a way to hijack AI agents that rely on the Model Context Protocol by making fake tools look attractive and trustworthy. On standard benchmarks, the attack method achieved a 93.6% success rate at tricking agents into using attacker-controlled tools, and could inflate computational costs by over 30 times while stealing data or corrupting the agent's reasoning.</p><p><strong>Why it matters:</strong> As AI systems increasingly delegate tasks to third-party tools and services, this attack reveals a critical vulnerability in how they decide what to trust. Companies deploying these agent systems could face stolen data, unexpected massive bills, or AI systems that produce unreliable results—making tool verification and isolation essential before these systems reach production.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing</title>
+      <link>https://paperplaine.com/papers/a-decentralized-partially-observable</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/a-decentralized-partially-observable</guid>
+      <pubDate>Tue, 22 Sep 2026 17:56:46 GMT</pubDate>
+      <author>Xiaoxing Ren, Thomas Parisini, Andreas A. Malikopoulos</author>
+      <category>Statistics</category>
+      <description>How teams make good decisions when information arrives late and nobody sees everything</description>
+      <content:encoded><![CDATA[<p><em>How teams make good decisions when information arrives late and nobody sees everything</em></p><p>A new method lets groups of decision-makers work together effectively even when each person has incomplete information, nobody knows how the system works ahead of time, and updates reach the team with delays. The approach doesn't require a central coordinator—each member independently learns the situation and computes their own strategy, yet still converges on decisions nearly as good as if they had perfect information and central planning.</p><p><strong>Why it matters:</strong> Real-world teams—whether autonomous vehicles coordinating on a road, hospitals sharing patient data, or robots collaborating in the field—rarely have perfect visibility or instant communication. This method lets them operate without bottlenecks, central controllers, or prior system knowledge, while maintaining strong performance guarantees. It scales because no single point of failure exists, and each agent runs its own learning process from delayed, partial data.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Orlicz space relaxation of total variation denoising</title>
+      <link>https://paperplaine.com/papers/orlicz-space-relaxation-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/orlicz-space-relaxation-of</guid>
+      <pubDate>Tue, 22 Sep 2026 16:17:24 GMT</pubDate>
+      <author>Christian Clason, Tobias Unterberger</author>
+      <category>Math</category>
+      <description>Smoothing blurry image edges without creating artificial stair-step artifacts</description>
+      <content:encoded><![CDATA[<p><em>Smoothing blurry image edges without creating artificial stair-step artifacts</em></p><p>Mathematicians have improved a classic image-denoising technique by using a logarithmic correction that activates only where image gradients are soft and diffuse. The new method eliminates the blocky "stair-step" artifacts that plague standard denoising while preserving sharp edges and keeping computational costs reasonable.</p><p><strong>Why it matters:</strong> Image denoising is fundamental to medical imaging, astronomy, and photography—anywhere noisy pictures need cleaning. The stair-stepping problem is a real nuisance that forces users to choose between removing noise or keeping smooth transitions. This approach offers a way to have both, potentially improving image quality in applications where both noise reduction and subtle gradient rendering matter.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation</title>
       <link>https://paperplaine.com/papers/measuring-the-serving-stack</link>

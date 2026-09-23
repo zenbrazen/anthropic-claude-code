@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.26761",
+    "title": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
+    "authors": "Laizhen Li, Xuan Wang, Peicheng Zhao et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-22T17:41:34Z",
+    "publishedFormatted": "Sep 22, 2026",
+    "subtitle": "How attackers can trick AI agents into using malicious tools",
+    "summary": "Researchers discovered a way to hijack AI agents that rely on the Model Context Protocol by making fake tools look attractive and trustworthy. On standard benchmarks, the attack method achieved a 93.6% success rate at tricking agents into using attacker-controlled tools, and could inflate computational costs by over 30 times while stealing data or corrupting the agent's reasoning.",
+    "whyItMatters": "As AI systems increasingly delegate tasks to third-party tools and services, this attack reveals a critical vulnerability in how they decide what to trust. Companies deploying these agent systems could face stolen data, unexpected massive bills, or AI systems that produce unreliable results—making tool verification and isolation essential before these systems reach production.",
+    "fetchedAt": "2026-09-23T21:57:14.983Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 152
+    },
+    "slug": "a2m-trace-optimized-agent"
+  },
+  {
+    "id": "2609.26783",
+    "title": "A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing",
+    "authors": "Xiaoxing Ren, Thomas Parisini, Andreas A. Malikopoulos",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-09-22T17:56:46Z",
+    "publishedFormatted": "Sep 22, 2026",
+    "subtitle": "How teams make good decisions when information arrives late and nobody sees everything",
+    "summary": "A new method lets groups of decision-makers work together effectively even when each person has incomplete information, nobody knows how the system works ahead of time, and updates reach the team with delays. The approach doesn't require a central coordinator—each member independently learns the situation and computes their own strategy, yet still converges on decisions nearly as good as if they had perfect information and central planning.",
+    "whyItMatters": "Real-world teams—whether autonomous vehicles coordinating on a road, hospitals sharing patient data, or robots collaborating in the field—rarely have perfect visibility or instant communication. This method lets them operate without bottlenecks, central controllers, or prior system knowledge, while maintaining strong performance guarantees. It scales because no single point of failure exists, and each agent runs its own learning process from delayed, partial data.",
+    "fetchedAt": "2026-09-23T21:57:18.382Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 150
+    },
+    "slug": "a-decentralized-partially-observable"
+  },
+  {
+    "id": "2609.26645",
+    "title": "Orlicz space relaxation of total variation denoising",
+    "authors": "Christian Clason, Tobias Unterberger",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-09-22T16:17:24Z",
+    "publishedFormatted": "Sep 22, 2026",
+    "subtitle": "Smoothing blurry image edges without creating artificial stair-step artifacts",
+    "summary": "Mathematicians have improved a classic image-denoising technique by using a logarithmic correction that activates only where image gradients are soft and diffuse. The new method eliminates the blocky \"stair-step\" artifacts that plague standard denoising while preserving sharp edges and keeping computational costs reasonable.",
+    "whyItMatters": "Image denoising is fundamental to medical imaging, astronomy, and photography—anywhere noisy pictures need cleaning. The stair-stepping problem is a real nuisance that forces users to choose between removing noise or keeping smooth transitions. This approach offers a way to have both, potentially improving image quality in applications where both noise reduction and subtle gradient rendering matter.",
+    "fetchedAt": "2026-09-23T21:57:21.562Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 155
+    },
+    "slug": "orlicz-space-relaxation-of"
+  },
+  {
     "id": "2609.26693",
     "title": "Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation",
     "authors": "Lijuan Tang, Yuemeng Zheng",

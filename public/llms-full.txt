@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 846 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 849 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-23
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem
+Subtitle: How attackers can trick AI agents into using malicious tools
+URL: https://paperplaine.com/papers/a2m-trace-optimized-agent
+Category: Computer Science · AI
+Authors: Laizhen Li, Xuan Wang, Peicheng Zhao et al.
+arXiv ID: 2609.26761
+arXiv URL: https://arxiv.org/abs/2609.26761
+Posted: 2026-09-23
+
+Summary: Researchers discovered a way to hijack AI agents that rely on the Model Context Protocol by making fake tools look attractive and trustworthy. On standard benchmarks, the attack method achieved a 93.6% success rate at tricking agents into using attacker-controlled tools, and could inflate computational costs by over 30 times while stealing data or corrupting the agent's reasoning.
+
+Why it matters: As AI systems increasingly delegate tasks to third-party tools and services, this attack reveals a critical vulnerability in how they decide what to trust. Companies deploying these agent systems could face stolen data, unexpected massive bills, or AI systems that produce unreliable results—making tool verification and isolation essential before these systems reach production.
+
+---
+Title: A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing
+Subtitle: How teams make good decisions when information arrives late and nobody sees everything
+URL: https://paperplaine.com/papers/a-decentralized-partially-observable
+Category: Statistics
+Authors: Xiaoxing Ren, Thomas Parisini, Andreas A. Malikopoulos
+arXiv ID: 2609.26783
+arXiv URL: https://arxiv.org/abs/2609.26783
+Posted: 2026-09-23
+
+Summary: A new method lets groups of decision-makers work together effectively even when each person has incomplete information, nobody knows how the system works ahead of time, and updates reach the team with delays. The approach doesn't require a central coordinator—each member independently learns the situation and computes their own strategy, yet still converges on decisions nearly as good as if they had perfect information and central planning.
+
+Why it matters: Real-world teams—whether autonomous vehicles coordinating on a road, hospitals sharing patient data, or robots collaborating in the field—rarely have perfect visibility or instant communication. This method lets them operate without bottlenecks, central controllers, or prior system knowledge, while maintaining strong performance guarantees. It scales because no single point of failure exists, and each agent runs its own learning process from delayed, partial data.
+
+---
+Title: Orlicz space relaxation of total variation denoising
+Subtitle: Smoothing blurry image edges without creating artificial stair-step artifacts
+URL: https://paperplaine.com/papers/orlicz-space-relaxation-of
+Category: Mathematics
+Authors: Christian Clason, Tobias Unterberger
+arXiv ID: 2609.26645
+arXiv URL: https://arxiv.org/abs/2609.26645
+Posted: 2026-09-23
+
+Summary: Mathematicians have improved a classic image-denoising technique by using a logarithmic correction that activates only where image gradients are soft and diffuse. The new method eliminates the blocky "stair-step" artifacts that plague standard denoising while preserving sharp edges and keeping computational costs reasonable.
+
+Why it matters: Image denoising is fundamental to medical imaging, astronomy, and photography—anywhere noisy pictures need cleaning. The stair-stepping problem is a real nuisance that forces users to choose between removing noise or keeping smooth transitions. This approach offers a way to have both, potentially improving image quality in applications where both noise reduction and subtle gradient rendering matter.
 
 ---
 Title: Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation
