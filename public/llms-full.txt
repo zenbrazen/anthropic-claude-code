@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 843 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-22
+This file contains the complete plain-English text of all 846 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-23
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation
+Subtitle: When testing AI tools, the software running them skews the results
+URL: https://paperplaine.com/papers/measuring-the-serving-stack
+Category: Computer Science · AI
+Authors: Lijuan Tang, Yuemeng Zheng
+arXiv ID: 2609.26693
+arXiv URL: https://arxiv.org/abs/2609.26693
+Posted: 2026-09-23
+
+Summary: When researchers test whether AI models can correctly call tools (like calculators or databases), the results depend as much on the serving software as on the model itself. Different serving platforms reject or format the same request differently, and measurement errors—like miscounting failures as model mistakes—can artificially inflate or deflate reported success rates by up to 55 percentage points.
+
+Why it matters: AI tool-use benchmarks are widely used to compare models and guide adoption decisions. If a model appears to fail at tool-calling when it's actually the serving software that's the bottleneck, researchers might reject a capable model or choose an inferior alternative. This work provides a checklist for separating genuine model limitations from serving-layer artifacts, making benchmarks more reliable.
+
+---
+Title: Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning
+Subtitle: Teaching computers to automatically map the moving parts of your voice box
+URL: https://paperplaine.com/papers/laryngeal-structure-segmentation-in
+Category: Engineering
+Authors: Sardar Nafis Bin Ali, Mohsen Zayernouri, Dimitar D. Deliyski et al.
+arXiv ID: 2609.26636
+arXiv URL: https://arxiv.org/abs/2609.26636
+Posted: 2026-09-23
+
+Summary: Researchers trained artificial intelligence systems to automatically identify and outline five key structures in high-speed videos of the larynx—the vocal folds, arytenoid cartilages, epiglottis, aryepiglottic folds, and the opening between the vocal folds—achieving over 95% accuracy. The breakthrough was applying this method to natural connected speech rather than just sustained vowels, where tissue movement and video quality make the task far harder.
+
+Why it matters: Voice doctors currently spend significant time manually analyzing frame-by-frame videos to diagnose hoarseness, paralysis, and other laryngeal disorders. This automated approach could speed up diagnosis, make measurements more consistent across patients, and enable early detection of voice problems by spotting abnormal laryngeal patterns that doctors might miss by eye. It particularly matters for detecting voice disorders that only appear during natural speech, not during simple sustained vowel tests.
+
+---
+Title: SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity
+Subtitle: A testing ground for AI trading strategies in modern crypto markets
+URL: https://paperplaine.com/papers/saife-gym-model-based
+Category: Quantitative Finance
+Authors: Georgios Chionas, Charalampos Kleitsikas, Stefanos Leonardos et al.
+arXiv ID: 2609.17788
+arXiv URL: https://arxiv.org/abs/2609.17788
+Posted: 2026-09-23
+
+Summary: Researchers built SAiFE-gym, a simulation tool that lets computer scientists train artificial intelligence agents to make trading decisions in concentrated liquidity markets—a newer type of crypto exchange where liquidity providers can flexibly adjust where they deploy their capital to maximize fees. The tool decomposes these complex markets into manageable parts and runs fast enough to train reinforcement learning models, and tests show AI agents can learn effective strategies even when market conditions are unpredictable.
+
+Why it matters: As decentralized finance grows, liquidity providers need better tools to decide where to place their capital. This simulator lets researchers develop and test AI strategies before deploying them with real money, reducing losses from bad decisions and accelerating the development of smarter automated trading. It also gives academics a standardized way to study how these modern markets actually work.
 
 ---
 Title: Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.26693",
+    "title": "Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation",
+    "authors": "Lijuan Tang, Yuemeng Zheng",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-22T16:48:17Z",
+    "publishedFormatted": "Sep 22, 2026",
+    "subtitle": "When testing AI tools, the software running them skews the results",
+    "summary": "When researchers test whether AI models can correctly call tools (like calculators or databases), the results depend as much on the serving software as on the model itself. Different serving platforms reject or format the same request differently, and measurement errors—like miscounting failures as model mistakes—can artificially inflate or deflate reported success rates by up to 55 percentage points.",
+    "whyItMatters": "AI tool-use benchmarks are widely used to compare models and guide adoption decisions. If a model appears to fail at tool-calling when it's actually the serving software that's the bottleneck, researchers might reject a capable model or choose an inferior alternative. This work provides a checklist for separating genuine model limitations from serving-layer artifacts, making benchmarks more reliable.",
+    "fetchedAt": "2026-09-23T12:34:10.372Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 9,
+      "wordCount": 199
+    },
+    "slug": "measuring-the-serving-stack"
+  },
+  {
+    "id": "2609.26636",
+    "title": "Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning",
+    "authors": "Sardar Nafis Bin Ali, Mohsen Zayernouri, Dimitar D. Deliyski et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-22T16:09:40Z",
+    "publishedFormatted": "Sep 22, 2026",
+    "subtitle": "Teaching computers to automatically map the moving parts of your voice box",
+    "summary": "Researchers trained artificial intelligence systems to automatically identify and outline five key structures in high-speed videos of the larynx—the vocal folds, arytenoid cartilages, epiglottis, aryepiglottic folds, and the opening between the vocal folds—achieving over 95% accuracy. The breakthrough was applying this method to natural connected speech rather than just sustained vowels, where tissue movement and video quality make the task far harder.",
+    "whyItMatters": "Voice doctors currently spend significant time manually analyzing frame-by-frame videos to diagnose hoarseness, paralysis, and other laryngeal disorders. This automated approach could speed up diagnosis, make measurements more consistent across patients, and enable early detection of voice problems by spotting abnormal laryngeal patterns that doctors might miss by eye. It particularly matters for detecting voice disorders that only appear during natural speech, not during simple sustained vowel tests.",
+    "fetchedAt": "2026-09-23T12:34:13.989Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 258
+    },
+    "slug": "laryngeal-structure-segmentation-in"
+  },
+  {
+    "id": "2609.17788",
+    "title": "SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity",
+    "authors": "Georgios Chionas, Charalampos Kleitsikas, Stefanos Leonardos et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-09-15T19:53:47Z",
+    "publishedFormatted": "Sep 15, 2026",
+    "subtitle": "A testing ground for AI trading strategies in modern crypto markets",
+    "summary": "Researchers built SAiFE-gym, a simulation tool that lets computer scientists train artificial intelligence agents to make trading decisions in concentrated liquidity markets—a newer type of crypto exchange where liquidity providers can flexibly adjust where they deploy their capital to maximize fees. The tool decomposes these complex markets into manageable parts and runs fast enough to train reinforcement learning models, and tests show AI agents can learn effective strategies even when market conditions are unpredictable.",
+    "whyItMatters": "As decentralized finance grows, liquidity providers need better tools to decide where to place their capital. This simulator lets researchers develop and test AI strategies before deploying them with real money, reducing losses from bad decisions and accelerating the development of smarter automated trading. It also gives academics a standardized way to study how these modern markets actually work.",
+    "fetchedAt": "2026-09-23T12:34:16.963Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 132
+    },
+    "slug": "saife-gym-model-based"
+  },
+  {
     "id": "2609.24965",
     "title": "Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences",
     "authors": "Boyuan Deng, Shuyi Fan, Hongyang Zhang et al.",

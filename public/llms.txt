@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 843 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 846 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 290 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 291 papers in archive.
+  - "Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation"
   - "Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences"
-  - "DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 70 papers in archive.
   - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
   - "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 71 papers in archive.
   - "Foundation-model-based multi-label phenotyping of combined hyperkinetic movement disorders"
   - "Decision-Related Cognitive Signatures from Fast-Slow Dynamics: A Low-Dimensional Observation-Operator Framework"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 73 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 74 papers in archive.
+  - "SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity"
   - "Model-Free Passive Execution via Order-Level Shadowing"
-  - "Clean Scores, Buried Evidence, and Confident Wrong: A Receipt-Based Audit of Frontier Agentic QA"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 72 papers in archive.
   - "Augmented Hypothesis Testing with Persona-Based LLM Simulations"
   - "Sharp spectral norm concentration of sparse random tensors"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 67 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 68 papers in archive.
+  - "Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning"
   - "RTLViT: real-time lensless reconstruction with a lightweight vision transformer"
-  - "MAGNETAR: Multipath-Guided Spatial Posteriors for Transmitter Pose Inference in the Upper Mid-Band"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 60 papers in archive.
   - "Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem"
   - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
 
 ## 10 most recent papers
+
+### Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation
+- URL: https://paperplaine.com/papers/measuring-the-serving-stack
+- Category: Computer Science · AI
+- Authors: Lijuan Tang, Yuemeng Zheng
+- arXiv: 2609.26693
+- Plain-English subtitle: When testing AI tools, the software running them skews the results
+- Summary: When researchers test whether AI models can correctly call tools (like calculators or databases), the results depend as much on the serving software as on the model itself. Different serving platforms reject or format the same request differently, and measurement errors—like miscounting failures as model mistakes—can artificially inflate or deflate reported success rates by up to 55 percentage points.
+- Why it matters: AI tool-use benchmarks are widely used to compare models and guide adoption decisions. If a model appears to fail at tool-calling when it's actually the serving software that's the bottleneck, researchers might reject a capable model or choose an inferior alternative. This work provides a checklist for separating genuine model limitations from serving-layer artifacts, making benchmarks more reliable.
+
+### Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning
+- URL: https://paperplaine.com/papers/laryngeal-structure-segmentation-in
+- Category: Engineering
+- Authors: Sardar Nafis Bin Ali, Mohsen Zayernouri, Dimitar D. Deliyski et al.
+- arXiv: 2609.26636
+- Plain-English subtitle: Teaching computers to automatically map the moving parts of your voice box
+- Summary: Researchers trained artificial intelligence systems to automatically identify and outline five key structures in high-speed videos of the larynx—the vocal folds, arytenoid cartilages, epiglottis, aryepiglottic folds, and the opening between the vocal folds—achieving over 95% accuracy. The breakthrough was applying this method to natural connected speech rather than just sustained vowels, where tissue movement and video quality make the task far harder.
+- Why it matters: Voice doctors currently spend significant time manually analyzing frame-by-frame videos to diagnose hoarseness, paralysis, and other laryngeal disorders. This automated approach could speed up diagnosis, make measurements more consistent across patients, and enable early detection of voice problems by spotting abnormal laryngeal patterns that doctors might miss by eye. It particularly matters for detecting voice disorders that only appear during natural speech, not during simple sustained vowel tests.
+
+### SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity
+- URL: https://paperplaine.com/papers/saife-gym-model-based
+- Category: Quantitative Finance
+- Authors: Georgios Chionas, Charalampos Kleitsikas, Stefanos Leonardos et al.
+- arXiv: 2609.17788
+- Plain-English subtitle: A testing ground for AI trading strategies in modern crypto markets
+- Summary: Researchers built SAiFE-gym, a simulation tool that lets computer scientists train artificial intelligence agents to make trading decisions in concentrated liquidity markets—a newer type of crypto exchange where liquidity providers can flexibly adjust where they deploy their capital to maximize fees. The tool decomposes these complex markets into manageable parts and runs fast enough to train reinforcement learning models, and tests show AI agents can learn effective strategies even when market conditions are unpredictable.
+- Why it matters: As decentralized finance grows, liquidity providers need better tools to decide where to place their capital. This simulator lets researchers develop and test AI strategies before deploying them with real money, reducing losses from bad decisions and accelerating the development of smarter automated trading. It also gives academics a standardized way to study how these modern markets actually work.
 
 ### Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences
 - URL: https://paperplaine.com/papers/jev-for-scientific-decisions
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI agents' opinions transparent and controllable in social simulations
 - Summary: Large language models used in social simulations change their opinions unpredictably, hidden inside their text generation. Researchers added a simple belief-tracking layer that separates what an agent actually believes from how it speaks, using a single number to control how stubborn each agent is. This lets them reliably produce three different kinds of group dynamics — consensus, lasting disagreement, or minority influence — and catch hidden biases that would otherwise go unnoticed.
 - Why it matters: Social simulations with AI agents are increasingly used to study how misinformation spreads, how groups make decisions, and how social movements form. If the agents' opinion changes happens invisibly and can't be controlled or audited, researchers can't trust their results or explain why a simulation turned out the way it did. This method makes it possible to verify that a simulation is actually modeling the social dynamics researchers intended, rather than accidentally encoding whatever biases the AI model learned during training.
-
-### On the Injectivity of Elementary Symmetric Partitions and the Multiset Recovery Problem
-- URL: https://paperplaine.com/papers/on-the-injectivity-of
-- Category: Mathematics
-- Authors: Ziyao Sun
-- arXiv: 2609.21922
-- Plain-English subtitle: When can you recover a collection of numbers from their combined products?
-- Summary: Mathematicians solved a 67-year-old puzzle about whether you can uniquely recover a multiset of numbers from information derived from their symmetric products. The answer depends on both the size of the multiset and a specific mathematical property called the Moser root set — and for certain cases like six-element sets, there are at most two possible original collections that produce the same output.
-- Why it matters: This result bridges a forgotten 1957 problem with modern partition theory, settling long-standing questions about uniqueness and ambiguity in mathematical reconstruction. The techniques developed here may apply to other areas where information must be reliably recovered from compressed or combined data.
-
-### RTLViT: real-time lensless reconstruction with a lightweight vision transformer
-- URL: https://paperplaine.com/papers/rtlvit-real-time-lensless
-- Category: Engineering
-- Authors: Leyla A. Kabuli, Vasilisa Ponomarenko, Laura Waller
-- arXiv: 2609.21042
-- Plain-English subtitle: Turning blurry sensor patterns into sharp photos instantly on your phone
-- Summary: Researchers created RTLViT, a lightweight AI system that reconstructs clear images from the blurry patterns captured by lensless cameras — devices with no traditional lens that are far simpler and smaller than regular cameras. The system works 15 times faster than larger AI approaches while actually producing better images, and it runs directly on smartphones and laptops in real time.
-- Why it matters: Lensless cameras could be built directly into phones and other devices since they need no bulky lens, but only if the image reconstruction can happen instantly without draining the battery. RTLViT makes this practical by doing the job with minimal computation, opening the path to thinner phones, better hidden cameras for security systems, and ultra-compact imaging for medical or scientific devices.
-
-### DiaVLo: Diagnosing Behaviours of Vision-Language Models
-- URL: https://paperplaine.com/papers/diavlo-diagnosing-behaviours-of
-- Category: Computer Science · AI
-- Authors: Lorenzo Corti, Jie Yang
-- arXiv: 2609.22008
-- Plain-English subtitle: Finding hidden biases in AI models that understand images and text
-- Summary: A new diagnostic tool called DiaVLo can identify what vision-language models actually do—and whether they match what we want them to do. By examining how these AI systems process images and text together, the tool surfaces misalignments between intended and real behavior, and pinpoints which concepts most strongly influence the model's decisions.
-- Why it matters: Vision-language models power everything from medical image analysis to content moderation, so knowing what they actually do—not just what they're supposed to do—is essential before deploying them. DiaVLo makes those hidden behaviors visible, helping developers catch problems like unfair associations or dangerous shortcuts before the system reaches users.
 
 ## About
 
