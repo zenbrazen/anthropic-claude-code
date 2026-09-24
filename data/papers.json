@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.28358",
+    "title": "MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference",
+    "authors": "Romain Facq, Sami Ben Ali, Olivier Sentieys",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-23T16:30:48Z",
+    "publishedFormatted": "Sep 23, 2026",
+    "subtitle": "Making neural networks 7 times smaller without losing accuracy",
+    "summary": "Researchers developed MicroQonv, a technique that shrinks the memory footprint of neural networks during training and use by up to 7.5 times while keeping accuracy nearly identical. The method reorders how convolutional layers—the building blocks that power image recognition—compress their data, cutting unnecessary data movement in half for weights and up to nine times for intermediate calculations.",
+    "whyItMatters": "Smaller models run faster and cheaper on phones, edge devices, and data centers. This technique enables object detection systems like YOLO to cut their memory demands by 3.5 times while maintaining real-world accuracy, making it practical to deploy powerful AI on devices with limited power and storage. It also unlocks four-bit compression for continual learning on edge devices—scenarios where models must adapt to new tasks without forgetting old ones—boosting accuracy by up to 11%.",
+    "fetchedAt": "2026-09-24T21:54:55.283Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 12,
+      "wordCount": 194
+    },
+    "slug": "microqonv-reshaping-convolution-tensors"
+  },
+  {
+    "id": "2609.27207",
+    "title": "BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection",
+    "authors": "Jeffrey M. Dick",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-09-23T01:15:44Z",
+    "publishedFormatted": "Sep 23, 2026",
+    "subtitle": "Can gut bacteria samples detect cancer? Testing across 26 studies to find out.",
+    "summary": "Researchers benchmarked different methods for detecting cancer from gut microbiome samples across 2,040 sequencing runs from 26 studies. Classical machine learning models achieved 77% accuracy on recent unseen data for cancer diagnosis, while deep learning approaches underperformed—suggesting that simpler statistical methods may be more reliable for this task. Colorectal cancer proved easier to detect than breast cancer using the same bacterial signatures.",
+    "whyItMatters": "If gut microbiome testing becomes reliable for cancer screening, it could enable earlier detection through a non-invasive sample. This benchmark reveals that published microbiome-cancer studies often don't hold up when tested on newer data, exposing a real problem: many reported results may not work in real clinical settings. The finding that classical methods beat trendy deep learning here challenges the assumption that fancier AI automatically works better for medical diagnosis.",
+    "fetchedAt": "2026-09-24T21:54:58.839Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 192
+    },
+    "slug": "brecol-benchmarking-classical-and"
+  },
+  {
+    "id": "2609.27636",
+    "title": "Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany",
+    "authors": "Walter Kurz",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-09-23T10:00:16Z",
+    "publishedFormatted": "Sep 23, 2026",
+    "subtitle": "Building AI systems for insurers that follow Europe's strict financial rules",
+    "summary": "Insurance companies operating in Austria and Germany can now use a blueprint for deploying multiple AI agents that work together while staying compliant with Solvency II regulations and the EU's AI Act. The framework breaks the insurer into specialized AI agents—each handling capital, underwriting, fraud detection, or claims—with human oversight built in and an overseer agent ensuring all decisions follow legal and financial safety rules.",
+    "whyItMatters": "Insurance regulators across Europe have grown stricter about how companies deploy AI, especially when those systems make decisions about risk and money. This architecture gives insurers a concrete, auditable way to use AI without accidentally violating regulations or losing the ability to explain how decisions were made—reducing legal risk and compliance costs. It also ensures humans stay in control at critical decision points, which regulators increasingly demand.",
+    "fetchedAt": "2026-09-24T21:55:02.706Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 203
+    },
+    "slug": "multi-agent-ai-architecture"
+  },
+  {
     "id": "2609.28409",
     "title": "Learning Holographic Reduced Representations with Clifford Variational Autoencoders",
     "authors": "Mohamed Malek Abid, P. Michael Furlong",

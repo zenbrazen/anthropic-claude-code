@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2026 12:33:03 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 21:55:03 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference</title>
+      <link>https://paperplaine.com/papers/microqonv-reshaping-convolution-tensors</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/microqonv-reshaping-convolution-tensors</guid>
+      <pubDate>Wed, 23 Sep 2026 16:30:48 GMT</pubDate>
+      <author>Romain Facq, Sami Ben Ali, Olivier Sentieys</author>
+      <category>AI</category>
+      <description>Making neural networks 7 times smaller without losing accuracy</description>
+      <content:encoded><![CDATA[<p><em>Making neural networks 7 times smaller without losing accuracy</em></p><p>Researchers developed MicroQonv, a technique that shrinks the memory footprint of neural networks during training and use by up to 7.5 times while keeping accuracy nearly identical. The method reorders how convolutional layers—the building blocks that power image recognition—compress their data, cutting unnecessary data movement in half for weights and up to nine times for intermediate calculations.</p><p><strong>Why it matters:</strong> Smaller models run faster and cheaper on phones, edge devices, and data centers. This technique enables object detection systems like YOLO to cut their memory demands by 3.5 times while maintaining real-world accuracy, making it practical to deploy powerful AI on devices with limited power and storage. It also unlocks four-bit compression for continual learning on edge devices—scenarios where models must adapt to new tasks without forgetting old ones—boosting accuracy by up to 11%.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection</title>
+      <link>https://paperplaine.com/papers/brecol-benchmarking-classical-and</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/brecol-benchmarking-classical-and</guid>
+      <pubDate>Wed, 23 Sep 2026 01:15:44 GMT</pubDate>
+      <author>Jeffrey M. Dick</author>
+      <category>Biology</category>
+      <description>Can gut bacteria samples detect cancer? Testing across 26 studies to find out.</description>
+      <content:encoded><![CDATA[<p><em>Can gut bacteria samples detect cancer? Testing across 26 studies to find out.</em></p><p>Researchers benchmarked different methods for detecting cancer from gut microbiome samples across 2,040 sequencing runs from 26 studies. Classical machine learning models achieved 77% accuracy on recent unseen data for cancer diagnosis, while deep learning approaches underperformed—suggesting that simpler statistical methods may be more reliable for this task. Colorectal cancer proved easier to detect than breast cancer using the same bacterial signatures.</p><p><strong>Why it matters:</strong> If gut microbiome testing becomes reliable for cancer screening, it could enable earlier detection through a non-invasive sample. This benchmark reveals that published microbiome-cancer studies often don't hold up when tested on newer data, exposing a real problem: many reported results may not work in real clinical settings. The finding that classical methods beat trendy deep learning here challenges the assumption that fancier AI automatically works better for medical diagnosis.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany</title>
+      <link>https://paperplaine.com/papers/multi-agent-ai-architecture</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multi-agent-ai-architecture</guid>
+      <pubDate>Wed, 23 Sep 2026 10:00:16 GMT</pubDate>
+      <author>Walter Kurz</author>
+      <category>Finance</category>
+      <description>Building AI systems for insurers that follow Europe&#39;s strict financial rules</description>
+      <content:encoded><![CDATA[<p><em>Building AI systems for insurers that follow Europe's strict financial rules</em></p><p>Insurance companies operating in Austria and Germany can now use a blueprint for deploying multiple AI agents that work together while staying compliant with Solvency II regulations and the EU's AI Act. The framework breaks the insurer into specialized AI agents—each handling capital, underwriting, fraud detection, or claims—with human oversight built in and an overseer agent ensuring all decisions follow legal and financial safety rules.</p><p><strong>Why it matters:</strong> Insurance regulators across Europe have grown stricter about how companies deploy AI, especially when those systems make decisions about risk and money. This architecture gives insurers a concrete, auditable way to use AI without accidentally violating regulations or losing the ability to explain how decisions were made—reducing legal risk and compliance costs. It also ensures humans stay in control at critical decision points, which regulators increasingly demand.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Learning Holographic Reduced Representations with Clifford Variational Autoencoders</title>
       <link>https://paperplaine.com/papers/learning-holographic-reduced-representations</link>

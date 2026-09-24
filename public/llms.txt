@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 852 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 855 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 293 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 294 papers in archive.
+  - "MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference"
   - "Learning Holographic Reduced Representations with Clifford Variational Autoencoders"
-  - "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 71 papers in archive.
   - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
   - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
@@ -42,12 +42,12 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 71 papers in archive.
   - "Orlicz space relaxation of total variation denoising"
   - "On the Injectivity of Elementary Symmetric Partitions and the Multiset Recovery Problem"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 71 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 72 papers in archive.
+  - "BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection"
   - "Foundation-model-based multi-label phenotyping of combined hyperkinetic movement disorders"
-  - "Decision-Related Cognitive Signatures from Fast-Slow Dynamics: A Low-Dimensional Observation-Operator Framework"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 74 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 75 papers in archive.
+  - "Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany"
   - "SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity"
-  - "Model-Free Passive Execution via Order-Level Shadowing"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 73 papers in archive.
   - "A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing"
   - "Augmented Hypothesis Testing with Persona-Based LLM Simulations"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
 
 ## 10 most recent papers
+
+### MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference
+- URL: https://paperplaine.com/papers/microqonv-reshaping-convolution-tensors
+- Category: Computer Science · AI
+- Authors: Romain Facq, Sami Ben Ali, Olivier Sentieys
+- arXiv: 2609.28358
+- Plain-English subtitle: Making neural networks 7 times smaller without losing accuracy
+- Summary: Researchers developed MicroQonv, a technique that shrinks the memory footprint of neural networks during training and use by up to 7.5 times while keeping accuracy nearly identical. The method reorders how convolutional layers—the building blocks that power image recognition—compress their data, cutting unnecessary data movement in half for weights and up to nine times for intermediate calculations.
+- Why it matters: Smaller models run faster and cheaper on phones, edge devices, and data centers. This technique enables object detection systems like YOLO to cut their memory demands by 3.5 times while maintaining real-world accuracy, making it practical to deploy powerful AI on devices with limited power and storage. It also unlocks four-bit compression for continual learning on edge devices—scenarios where models must adapt to new tasks without forgetting old ones—boosting accuracy by up to 11%.
+
+### BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection
+- URL: https://paperplaine.com/papers/brecol-benchmarking-classical-and
+- Category: Quantitative Biology
+- Authors: Jeffrey M. Dick
+- arXiv: 2609.27207
+- Plain-English subtitle: Can gut bacteria samples detect cancer? Testing across 26 studies to find out.
+- Summary: Researchers benchmarked different methods for detecting cancer from gut microbiome samples across 2,040 sequencing runs from 26 studies. Classical machine learning models achieved 77% accuracy on recent unseen data for cancer diagnosis, while deep learning approaches underperformed—suggesting that simpler statistical methods may be more reliable for this task. Colorectal cancer proved easier to detect than breast cancer using the same bacterial signatures.
+- Why it matters: If gut microbiome testing becomes reliable for cancer screening, it could enable earlier detection through a non-invasive sample. This benchmark reveals that published microbiome-cancer studies often don't hold up when tested on newer data, exposing a real problem: many reported results may not work in real clinical settings. The finding that classical methods beat trendy deep learning here challenges the assumption that fancier AI automatically works better for medical diagnosis.
+
+### Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany
+- URL: https://paperplaine.com/papers/multi-agent-ai-architecture
+- Category: Quantitative Finance
+- Authors: Walter Kurz
+- arXiv: 2609.27636
+- Plain-English subtitle: Building AI systems for insurers that follow Europe's strict financial rules
+- Summary: Insurance companies operating in Austria and Germany can now use a blueprint for deploying multiple AI agents that work together while staying compliant with Solvency II regulations and the EU's AI Act. The framework breaks the insurer into specialized AI agents—each handling capital, underwriting, fraud detection, or claims—with human oversight built in and an overseer agent ensuring all decisions follow legal and financial safety rules.
+- Why it matters: Insurance regulators across Europe have grown stricter about how companies deploy AI, especially when those systems make decisions about risk and money. This architecture gives insurers a concrete, auditable way to use AI without accidentally violating regulations or losing the ability to explain how decisions were made—reducing legal risk and compliance costs. It also ensures humans stay in control at critical decision points, which regulators increasingly demand.
 
 ### Learning Holographic Reduced Representations with Clifford Variational Autoencoders
 - URL: https://paperplaine.com/papers/learning-holographic-reduced-representations
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When testing AI tools, the software running them skews the results
 - Summary: When researchers test whether AI models can correctly call tools (like calculators or databases), the results depend as much on the serving software as on the model itself. Different serving platforms reject or format the same request differently, and measurement errors—like miscounting failures as model mistakes—can artificially inflate or deflate reported success rates by up to 55 percentage points.
 - Why it matters: AI tool-use benchmarks are widely used to compare models and guide adoption decisions. If a model appears to fail at tool-calling when it's actually the serving software that's the bottleneck, researchers might reject a capable model or choose an inferior alternative. This work provides a checklist for separating genuine model limitations from serving-layer artifacts, making benchmarks more reliable.
-
-### Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning
-- URL: https://paperplaine.com/papers/laryngeal-structure-segmentation-in
-- Category: Engineering
-- Authors: Sardar Nafis Bin Ali, Mohsen Zayernouri, Dimitar D. Deliyski et al.
-- arXiv: 2609.26636
-- Plain-English subtitle: Teaching computers to automatically map the moving parts of your voice box
-- Summary: Researchers trained artificial intelligence systems to automatically identify and outline five key structures in high-speed videos of the larynx—the vocal folds, arytenoid cartilages, epiglottis, aryepiglottic folds, and the opening between the vocal folds—achieving over 95% accuracy. The breakthrough was applying this method to natural connected speech rather than just sustained vowels, where tissue movement and video quality make the task far harder.
-- Why it matters: Voice doctors currently spend significant time manually analyzing frame-by-frame videos to diagnose hoarseness, paralysis, and other laryngeal disorders. This automated approach could speed up diagnosis, make measurements more consistent across patients, and enable early detection of voice problems by spotting abnormal laryngeal patterns that doctors might miss by eye. It particularly matters for detecting voice disorders that only appear during natural speech, not during simple sustained vowel tests.
-
-### SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity
-- URL: https://paperplaine.com/papers/saife-gym-model-based
-- Category: Quantitative Finance
-- Authors: Georgios Chionas, Charalampos Kleitsikas, Stefanos Leonardos et al.
-- arXiv: 2609.17788
-- Plain-English subtitle: A testing ground for AI trading strategies in modern crypto markets
-- Summary: Researchers built SAiFE-gym, a simulation tool that lets computer scientists train artificial intelligence agents to make trading decisions in concentrated liquidity markets—a newer type of crypto exchange where liquidity providers can flexibly adjust where they deploy their capital to maximize fees. The tool decomposes these complex markets into manageable parts and runs fast enough to train reinforcement learning models, and tests show AI agents can learn effective strategies even when market conditions are unpredictable.
-- Why it matters: As decentralized finance grows, liquidity providers need better tools to decide where to place their capital. This simulator lets researchers develop and test AI strategies before deploying them with real money, reducing losses from bad decisions and accelerating the development of smarter automated trading. It also gives academics a standardized way to study how these modern markets actually work.
-
-### Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences
-- URL: https://paperplaine.com/papers/jev-for-scientific-decisions
-- Category: Computer Science · AI
-- Authors: Boyuan Deng, Shuyi Fan, Hongyang Zhang et al.
-- arXiv: 2609.24965
-- Plain-English subtitle: How AI picks the right meaning before scientists do math
-- Summary: When scientists need to compare experimental groups, the way they define what counts as the same—a culture, a treatment, a reference point—changes everything. Researchers tested an AI component called Jev that makes these semantic choices before calculations happen, comparing it against five other approaches across ten real scientific scenarios. Jev matched the best alternatives at picking the right definitions, but the team found that wrong choices in one area could silently change the numbers downstream without breaking the final answer—a hidden risk.
-- Why it matters: Scientists rely on automated workflows to process data faster, but if an AI picks the wrong interpretation of what's being measured, the final numbers could be wrong in ways that don't trigger any warning. This work shows that checking only the final answer isn't enough—you have to audit the semantic choices and intermediate values the system actually used, or errors can slip through undetected.
 
 ## About
 
