@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 849 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 852 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 292 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 293 papers in archive.
+  - "Learning Holographic Reduced Representations with Clifford Variational Autoencoders"
   - "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem"
-  - "Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 70 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 71 papers in archive.
+  - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
   - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
-  - "Worst-Case Hidden-Vehicle Trajectory Search in Spatiotemporal Occlusion Regions"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 70 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 71 papers in archive.
+  - "Analog neutral-atom for in-memory processing in quantum reservoir computing"
   - "Fisher-information training of optical sensing front ends from natural fluctuations"
-  - "Locally optimized variational evolution for quantum many-body systems"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 71 papers in archive.
   - "Orlicz space relaxation of total variation denoising"
   - "On the Injectivity of Elementary Symmetric Partitions and the Multiset Recovery Problem"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
 
 ## 10 most recent papers
+
+### Learning Holographic Reduced Representations with Clifford Variational Autoencoders
+- URL: https://paperplaine.com/papers/learning-holographic-reduced-representations
+- Category: Computer Science · AI
+- Authors: Mohamed Malek Abid, P. Michael Furlong
+- arXiv: 2609.28409
+- Plain-English subtitle: Bridging AI perception and symbolic reasoning using geometric algebra
+- Summary: Researchers created Clifford-VAE, a new type of neural network that learns to represent images in a geometric space designed for symbolic reasoning. On standard image datasets, it matches the performance of existing methods while excelling at tasks that require combining and separating symbolic structures—addressing a long-standing gap between how AI perceives raw data and how it performs logical reasoning.
+- Why it matters: Current AI systems struggle to ground visual perception directly into symbolic reasoning frameworks that support logical operations. This technique could enable AI systems to learn visual representations that naturally support reasoning tasks like assembling multi-part concepts, recovering missing information, and maintaining consistent symbolic structures—moving closer to systems that combine perception and reasoning in a unified way.
+
+### Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice
+- URL: https://paperplaine.com/papers/pinpointing-super-quadratic-quantum
+- Category: Computer Science
+- Authors: Carsten Schubert, Niklas Paskarbeit, Maximilian J. Kramer et al.
+- arXiv: 2609.28226
+- Plain-English subtitle: Measuring quantum computers' real advantage when cracking codes with leaked information
+- Summary: Quantum computers can break certain types of encryption far faster than classical computers when given hints about the answer—but nobody had a reliable way to measure exactly how much faster. This paper provides the first practical method to calculate the quantum speedup precisely, showing it can reach nearly 4 times faster in realistic cryptographic scenarios, compared to the theoretical maximum of 2 times previously thought possible.
+- Why it matters: As quantum computers improve, cryptanalysts and security experts need to know which encryption methods are truly at risk and by how much. This work lets them plug in real leaked information (like power consumption patterns from executing code) and calculate the exact vulnerability window—critical for deciding when to retire current encryption standards and which systems need updating first.
+
+### Analog neutral-atom for in-memory processing in quantum reservoir computing
+- URL: https://paperplaine.com/papers/analog-neutral-atom-for
+- Category: Physics
+- Authors: Luca Nigro, Gian Luca Giorgi, Enrico Prati et al.
+- arXiv: 2609.28441
+- Plain-English subtitle: How to build quantum computers that remember what just happened
+- Summary: Researchers showed how to create quantum computers that naturally remember recent information without external help—a critical feature for processing time-dependent data. By carefully controlling how quantum states decay in arrays of neutral atoms, they achieved computational memory with just 5 atoms and demonstrated the system can solve complex real-world prediction problems like forecasting chaotic time series.
+- Why it matters: Current quantum computers struggle to process sequential information because they lack internal memory. This work provides a practical blueprint for adding that memory to near-term quantum devices, potentially enabling quantum computers to tackle real applications in signal processing, prediction, and control systems that classical computers find difficult. The findings show this is achievable with small numbers of atoms, making it feasible for devices that exist today.
 
 ### A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem
 - URL: https://paperplaine.com/papers/a2m-trace-optimized-agent
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI picks the right meaning before scientists do math
 - Summary: When scientists need to compare experimental groups, the way they define what counts as the same—a culture, a treatment, a reference point—changes everything. Researchers tested an AI component called Jev that makes these semantic choices before calculations happen, comparing it against five other approaches across ten real scientific scenarios. Jev matched the best alternatives at picking the right definitions, but the team found that wrong choices in one area could silently change the numbers downstream without breaking the final answer—a hidden risk.
 - Why it matters: Scientists rely on automated workflows to process data faster, but if an AI picks the wrong interpretation of what's being measured, the final numbers could be wrong in ways that don't trigger any warning. This work shows that checking only the final answer isn't enough—you have to audit the semantic choices and intermediate values the system actually used, or errors can slip through undetected.
-
-### Foundation-model-based multi-label phenotyping of combined hyperkinetic movement disorders
-- URL: https://paperplaine.com/papers/foundation-model-based-multi
-- Category: Quantitative Biology
-- Authors: Laura Cif, Zohra Souei, Diane Demailly et al.
-- arXiv: 2609.22369
-- Plain-English subtitle: AI that spots multiple movement disorders in videos, without markers or retaining
-- Summary: Researchers combined two AI foundation models to identify eight different hyperkinetic movement disorders from video alone, without requiring special markers or sensors. Trained on just 25 people, the system transferred directly to new pediatric and adult datasets with zero false positives for dystonia and near-perfect detection of tremor, outperforming standard keypoint-tracking methods on high-confidence diagnoses.
-- Why it matters: Movement disorders are notoriously hard to diagnose consistently because even expert clinicians disagree on what they're seeing. A reliable, automated video-based system that works across ages and different clinical settings could make diagnosis faster, cheaper, and more consistent worldwide — eliminating the need for specialized equipment or travel to expert centers, while reducing the guesswork that currently leads to delayed or missed diagnoses.
-
-### Fisher-information training of optical sensing front ends from natural fluctuations
-- URL: https://paperplaine.com/papers/fisher-information-training-of
-- Category: Physics
-- Authors: Abhinav Sinha, Kai Wang
-- arXiv: 2609.24915
-- Plain-English subtitle: Training optical sensors to peak performance using nature's own random variations
-- Summary: Researchers developed a way to automatically tune optical sensors without needing to deliberately vary parameters or know how the instrument responds. By watching how natural fluctuations affect measurement accuracy, the system can learn optimal configurations on its own—reaching the theoretical limits of what quantum physics allows for tasks like measuring star positions and separations.
-- Why it matters: This removes a major practical barrier to adaptive optical systems used in astronomy, microscopy, and sensing. Instead of requiring careful calibration measurements or mathematical models of instrument behavior, sensors can now tune themselves in real time using only the data they naturally collect, making these systems cheaper to deploy and easier to operate in the field.
-
-### DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation
-- URL: https://paperplaine.com/papers/dextacwam-a-visuo-tactile
-- Category: Computer Science · AI
-- Authors: Haoran Yuan, Zekai Wang, Boning Shao et al.
-- arXiv: 2609.24976
-- Plain-English subtitle: Teaching robots to feel what they see during delicate hand tasks
-- Summary: Researchers built a system that combines touch and vision to help robots perform delicate manipulation tasks like in-hand object rotation and manipulation. The system outperformed existing approaches on all six tested tasks, nearly doubling the success rate (70.6 versus 38.0), because it actually modeled how contact forces change over time rather than just sensing them passively.
-- Why it matters: Robots currently struggle with fine-motor tasks that require constant feedback about finger contact — tasks humans do effortlessly. This approach works with existing pretrained vision systems and learns from just 100 demonstrations per task, making it practical to deploy on real robotic hands without months of retraining. Better dexterous robots could accelerate automation in assembly lines, surgery, and delicate manufacturing where precision and feel matter.
 
 ## About
 
