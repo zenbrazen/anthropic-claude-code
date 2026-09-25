@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 855 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-24
+This file contains the complete plain-English text of all 858 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-25
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech
+Subtitle: Why AI struggles to fact-check spoken claims, even when it handles written text perfectly
+URL: https://paperplaine.com/papers/to-trust-or-not
+Category: Computer Science · AI
+Authors: Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri
+arXiv ID: 2609.30227
+arXiv URL: https://arxiv.org/abs/2609.30227
+Posted: 2026-09-25
+
+Summary: Researchers created VeriSpeak, a dataset of nearly 4,000 spoken claims to test whether AI systems trained on text can verify facts from speech. They found a striking gap: the same AI that catches false claims in writing often misses them when those claims are spoken aloud. Simply retrieving relevant information didn't help much—the models got confused comparing retrieved text to spoken claims—but combining retrieval with explicit reasoning jumped accuracy to 86%.
+
+Why it matters: Misinformation now spreads heavily through podcasts, videos, and social media clips rather than just articles. Current fact-checking tools work on text, leaving spoken misinformation largely unchecked. This work shows why adapting those tools to audio is harder than expected and points toward solutions, which could help platforms and news organizations catch false claims before they spread through video and voice content.
+
+---
+Title: Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision
+Subtitle: Creating detailed terrain maps from lower-resolution training data
+URL: https://paperplaine.com/papers/efficient-continuous-dem-reconstruction
+Category: Engineering
+Authors: Zekai Shi, Meng Zhang, Haokun Zhang et al.
+arXiv ID: 2609.29864
+arXiv URL: https://arxiv.org/abs/2609.29864
+Posted: 2026-09-25
+
+Summary: Scientists developed SCOPE, a method that reconstructs high-resolution terrain maps from lower-resolution training data by learning a reusable mathematical representation of the landscape. When predicting terrain at three times finer detail than training allowed, the method reduced error by roughly 12% compared to standard upscaling, while computing costs increased by only 2%—meaning sharper maps without proportional slowdown.
+
+Why it matters: Satellite and airborne mapping systems collect terrain data at various resolutions, but high-resolution reference maps are expensive and rare. This technique lets researchers build accurate detailed elevation models from whatever coarse reference data exists, making precision Earth observation cheaper and faster for applications like flood forecasting, infrastructure planning, and environmental monitoring.
+
+---
+Title: GridSFM: A Foundation Model for Solving AC Optimal Power Flow
+Subtitle: A neural network that solves power grid optimization for any size network
+URL: https://paperplaine.com/papers/gridsfm-a-foundation-model
+Category: Mathematics
+Authors: Luke Bhan, Weiwei Yang, Margaret Capetz et al.
+arXiv ID: 2609.30173
+arXiv URL: https://arxiv.org/abs/2609.30173
+Posted: 2026-09-25
+
+Summary: Researchers built GridSFM, a foundation model that learns how to manage electricity flow across power grids of vastly different sizes—from 500 to 10,000 buses—without retraining from scratch. When tested on an unseen 10,000-bus grid, the model predicted optimal costs with just 2.45% error, and needed only 100 examples from a new grid to adapt, outperforming neural networks built for single grids despite being trained on less data.
+
+Why it matters: Power grid operators must constantly solve complex optimization problems to balance electricity supply and demand efficiently, which currently relies on slow mathematical solvers. A model that can run instantly across grids of any size could speed up grid management by hours during emergencies or rapid demand shifts, reducing both computational cost and the risk of blackouts. The authors released their code and data publicly so utilities and researchers can start using this approach immediately rather than building from scratch.
 
 ---
 Title: MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2026 21:55:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 12:34:33 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech</title>
+      <link>https://paperplaine.com/papers/to-trust-or-not</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/to-trust-or-not</guid>
+      <pubDate>Thu, 24 Sep 2026 17:50:40 GMT</pubDate>
+      <author>Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri</author>
+      <category>AI</category>
+      <description>Why AI struggles to fact-check spoken claims, even when it handles written text perfectly</description>
+      <content:encoded><![CDATA[<p><em>Why AI struggles to fact-check spoken claims, even when it handles written text perfectly</em></p><p>Researchers created VeriSpeak, a dataset of nearly 4,000 spoken claims to test whether AI systems trained on text can verify facts from speech. They found a striking gap: the same AI that catches false claims in writing often misses them when those claims are spoken aloud. Simply retrieving relevant information didn't help much—the models got confused comparing retrieved text to spoken claims—but combining retrieval with explicit reasoning jumped accuracy to 86%.</p><p><strong>Why it matters:</strong> Misinformation now spreads heavily through podcasts, videos, and social media clips rather than just articles. Current fact-checking tools work on text, leaving spoken misinformation largely unchecked. This work shows why adapting those tools to audio is harder than expected and points toward solutions, which could help platforms and news organizations catch false claims before they spread through video and voice content.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision</title>
+      <link>https://paperplaine.com/papers/efficient-continuous-dem-reconstruction</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/efficient-continuous-dem-reconstruction</guid>
+      <pubDate>Thu, 24 Sep 2026 14:23:59 GMT</pubDate>
+      <author>Zekai Shi, Meng Zhang, Haokun Zhang et al.</author>
+      <category>Engineering</category>
+      <description>Creating detailed terrain maps from lower-resolution training data</description>
+      <content:encoded><![CDATA[<p><em>Creating detailed terrain maps from lower-resolution training data</em></p><p>Scientists developed SCOPE, a method that reconstructs high-resolution terrain maps from lower-resolution training data by learning a reusable mathematical representation of the landscape. When predicting terrain at three times finer detail than training allowed, the method reduced error by roughly 12% compared to standard upscaling, while computing costs increased by only 2%—meaning sharper maps without proportional slowdown.</p><p><strong>Why it matters:</strong> Satellite and airborne mapping systems collect terrain data at various resolutions, but high-resolution reference maps are expensive and rare. This technique lets researchers build accurate detailed elevation models from whatever coarse reference data exists, making precision Earth observation cheaper and faster for applications like flood forecasting, infrastructure planning, and environmental monitoring.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>GridSFM: A Foundation Model for Solving AC Optimal Power Flow</title>
+      <link>https://paperplaine.com/papers/gridsfm-a-foundation-model</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/gridsfm-a-foundation-model</guid>
+      <pubDate>Thu, 24 Sep 2026 17:25:06 GMT</pubDate>
+      <author>Luke Bhan, Weiwei Yang, Margaret Capetz et al.</author>
+      <category>Math</category>
+      <description>A neural network that solves power grid optimization for any size network</description>
+      <content:encoded><![CDATA[<p><em>A neural network that solves power grid optimization for any size network</em></p><p>Researchers built GridSFM, a foundation model that learns how to manage electricity flow across power grids of vastly different sizes—from 500 to 10,000 buses—without retraining from scratch. When tested on an unseen 10,000-bus grid, the model predicted optimal costs with just 2.45% error, and needed only 100 examples from a new grid to adapt, outperforming neural networks built for single grids despite being trained on less data.</p><p><strong>Why it matters:</strong> Power grid operators must constantly solve complex optimization problems to balance electricity supply and demand efficiently, which currently relies on slow mathematical solvers. A model that can run instantly across grids of any size could speed up grid management by hours during emergencies or rapid demand shifts, reducing both computational cost and the risk of blackouts. The authors released their code and data publicly so utilities and researchers can start using this approach immediately rather than building from scratch.</p>]]></content:encoded>
+    </item>
     <item>
       <title>MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference</title>
       <link>https://paperplaine.com/papers/microqonv-reshaping-convolution-tensors</link>

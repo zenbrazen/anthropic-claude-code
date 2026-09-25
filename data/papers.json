@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.30227",
+    "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
+    "authors": "Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-24T17:50:40Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "Why AI struggles to fact-check spoken claims, even when it handles written text perfectly",
+    "summary": "Researchers created VeriSpeak, a dataset of nearly 4,000 spoken claims to test whether AI systems trained on text can verify facts from speech. They found a striking gap: the same AI that catches false claims in writing often misses them when those claims are spoken aloud. Simply retrieving relevant information didn't help much—the models got confused comparing retrieved text to spoken claims—but combining retrieval with explicit reasoning jumped accuracy to 86%.",
+    "whyItMatters": "Misinformation now spreads heavily through podcasts, videos, and social media clips rather than just articles. Current fact-checking tools work on text, leaving spoken misinformation largely unchecked. This work shows why adapting those tools to audio is harder than expected and points toward solutions, which could help platforms and news organizations catch false claims before they spread through video and voice content.",
+    "fetchedAt": "2026-09-25T12:34:25.870Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 180
+    },
+    "slug": "to-trust-or-not"
+  },
+  {
+    "id": "2609.29864",
+    "title": "Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision",
+    "authors": "Zekai Shi, Meng Zhang, Haokun Zhang et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-24T14:23:59Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "Creating detailed terrain maps from lower-resolution training data",
+    "summary": "Scientists developed SCOPE, a method that reconstructs high-resolution terrain maps from lower-resolution training data by learning a reusable mathematical representation of the landscape. When predicting terrain at three times finer detail than training allowed, the method reduced error by roughly 12% compared to standard upscaling, while computing costs increased by only 2%—meaning sharper maps without proportional slowdown.",
+    "whyItMatters": "Satellite and airborne mapping systems collect terrain data at various resolutions, but high-resolution reference maps are expensive and rare. This technique lets researchers build accurate detailed elevation models from whatever coarse reference data exists, making precision Earth observation cheaper and faster for applications like flood forecasting, infrastructure planning, and environmental monitoring.",
+    "fetchedAt": "2026-09-25T12:34:29.310Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 208
+    },
+    "slug": "efficient-continuous-dem-reconstruction"
+  },
+  {
+    "id": "2609.30173",
+    "title": "GridSFM: A Foundation Model for Solving AC Optimal Power Flow",
+    "authors": "Luke Bhan, Weiwei Yang, Margaret Capetz et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-09-24T17:25:06Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "A neural network that solves power grid optimization for any size network",
+    "summary": "Researchers built GridSFM, a foundation model that learns how to manage electricity flow across power grids of vastly different sizes—from 500 to 10,000 buses—without retraining from scratch. When tested on an unseen 10,000-bus grid, the model predicted optimal costs with just 2.45% error, and needed only 100 examples from a new grid to adapt, outperforming neural networks built for single grids despite being trained on less data.",
+    "whyItMatters": "Power grid operators must constantly solve complex optimization problems to balance electricity supply and demand efficiently, which currently relies on slow mathematical solvers. A model that can run instantly across grids of any size could speed up grid management by hours during emergencies or rapid demand shifts, reducing both computational cost and the risk of blackouts. The authors released their code and data publicly so utilities and researchers can start using this approach immediately rather than building from scratch.",
+    "fetchedAt": "2026-09-25T12:34:33.066Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 240
+    },
+    "slug": "gridsfm-a-foundation-model"
+  },
+  {
     "id": "2609.28358",
     "title": "MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference",
     "authors": "Romain Facq, Sami Ben Ali, Olivier Sentieys",

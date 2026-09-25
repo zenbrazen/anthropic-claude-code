@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 855 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 858 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 294 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 295 papers in archive.
+  - "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech"
   - "MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference"
-  - "Learning Holographic Reduced Representations with Clifford Variational Autoencoders"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 71 papers in archive.
   - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
   - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 71 papers in archive.
   - "Analog neutral-atom for in-memory processing in quantum reservoir computing"
   - "Fisher-information training of optical sensing front ends from natural fluctuations"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 71 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 72 papers in archive.
+  - "GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
   - "Orlicz space relaxation of total variation denoising"
-  - "On the Injectivity of Elementary Symmetric Partitions and the Multiset Recovery Problem"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 72 papers in archive.
   - "BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection"
   - "Foundation-model-based multi-label phenotyping of combined hyperkinetic movement disorders"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 73 papers in archive.
   - "A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing"
   - "Augmented Hypothesis Testing with Persona-Based LLM Simulations"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 68 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 69 papers in archive.
+  - "Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision"
   - "Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning"
-  - "RTLViT: real-time lensless reconstruction with a lightweight vision transformer"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 60 papers in archive.
   - "Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem"
   - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
 
 ## 10 most recent papers
+
+### To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech
+- URL: https://paperplaine.com/papers/to-trust-or-not
+- Category: Computer Science · AI
+- Authors: Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri
+- arXiv: 2609.30227
+- Plain-English subtitle: Why AI struggles to fact-check spoken claims, even when it handles written text perfectly
+- Summary: Researchers created VeriSpeak, a dataset of nearly 4,000 spoken claims to test whether AI systems trained on text can verify facts from speech. They found a striking gap: the same AI that catches false claims in writing often misses them when those claims are spoken aloud. Simply retrieving relevant information didn't help much—the models got confused comparing retrieved text to spoken claims—but combining retrieval with explicit reasoning jumped accuracy to 86%.
+- Why it matters: Misinformation now spreads heavily through podcasts, videos, and social media clips rather than just articles. Current fact-checking tools work on text, leaving spoken misinformation largely unchecked. This work shows why adapting those tools to audio is harder than expected and points toward solutions, which could help platforms and news organizations catch false claims before they spread through video and voice content.
+
+### Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision
+- URL: https://paperplaine.com/papers/efficient-continuous-dem-reconstruction
+- Category: Engineering
+- Authors: Zekai Shi, Meng Zhang, Haokun Zhang et al.
+- arXiv: 2609.29864
+- Plain-English subtitle: Creating detailed terrain maps from lower-resolution training data
+- Summary: Scientists developed SCOPE, a method that reconstructs high-resolution terrain maps from lower-resolution training data by learning a reusable mathematical representation of the landscape. When predicting terrain at three times finer detail than training allowed, the method reduced error by roughly 12% compared to standard upscaling, while computing costs increased by only 2%—meaning sharper maps without proportional slowdown.
+- Why it matters: Satellite and airborne mapping systems collect terrain data at various resolutions, but high-resolution reference maps are expensive and rare. This technique lets researchers build accurate detailed elevation models from whatever coarse reference data exists, making precision Earth observation cheaper and faster for applications like flood forecasting, infrastructure planning, and environmental monitoring.
+
+### GridSFM: A Foundation Model for Solving AC Optimal Power Flow
+- URL: https://paperplaine.com/papers/gridsfm-a-foundation-model
+- Category: Mathematics
+- Authors: Luke Bhan, Weiwei Yang, Margaret Capetz et al.
+- arXiv: 2609.30173
+- Plain-English subtitle: A neural network that solves power grid optimization for any size network
+- Summary: Researchers built GridSFM, a foundation model that learns how to manage electricity flow across power grids of vastly different sizes—from 500 to 10,000 buses—without retraining from scratch. When tested on an unseen 10,000-bus grid, the model predicted optimal costs with just 2.45% error, and needed only 100 examples from a new grid to adapt, outperforming neural networks built for single grids despite being trained on less data.
+- Why it matters: Power grid operators must constantly solve complex optimization problems to balance electricity supply and demand efficiently, which currently relies on slow mathematical solvers. A model that can run instantly across grids of any size could speed up grid management by hours during emergencies or rapid demand shifts, reducing both computational cost and the risk of blackouts. The authors released their code and data publicly so utilities and researchers can start using this approach immediately rather than building from scratch.
 
 ### MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference
 - URL: https://paperplaine.com/papers/microqonv-reshaping-convolution-tensors
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How attackers can trick AI agents into using malicious tools
 - Summary: Researchers discovered a way to hijack AI agents that rely on the Model Context Protocol by making fake tools look attractive and trustworthy. On standard benchmarks, the attack method achieved a 93.6% success rate at tricking agents into using attacker-controlled tools, and could inflate computational costs by over 30 times while stealing data or corrupting the agent's reasoning.
 - Why it matters: As AI systems increasingly delegate tasks to third-party tools and services, this attack reveals a critical vulnerability in how they decide what to trust. Companies deploying these agent systems could face stolen data, unexpected massive bills, or AI systems that produce unreliable results—making tool verification and isolation essential before these systems reach production.
-
-### A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing
-- URL: https://paperplaine.com/papers/a-decentralized-partially-observable
-- Category: Statistics
-- Authors: Xiaoxing Ren, Thomas Parisini, Andreas A. Malikopoulos
-- arXiv: 2609.26783
-- Plain-English subtitle: How teams make good decisions when information arrives late and nobody sees everything
-- Summary: A new method lets groups of decision-makers work together effectively even when each person has incomplete information, nobody knows how the system works ahead of time, and updates reach the team with delays. The approach doesn't require a central coordinator—each member independently learns the situation and computes their own strategy, yet still converges on decisions nearly as good as if they had perfect information and central planning.
-- Why it matters: Real-world teams—whether autonomous vehicles coordinating on a road, hospitals sharing patient data, or robots collaborating in the field—rarely have perfect visibility or instant communication. This method lets them operate without bottlenecks, central controllers, or prior system knowledge, while maintaining strong performance guarantees. It scales because no single point of failure exists, and each agent runs its own learning process from delayed, partial data.
-
-### Orlicz space relaxation of total variation denoising
-- URL: https://paperplaine.com/papers/orlicz-space-relaxation-of
-- Category: Mathematics
-- Authors: Christian Clason, Tobias Unterberger
-- arXiv: 2609.26645
-- Plain-English subtitle: Smoothing blurry image edges without creating artificial stair-step artifacts
-- Summary: Mathematicians have improved a classic image-denoising technique by using a logarithmic correction that activates only where image gradients are soft and diffuse. The new method eliminates the blocky "stair-step" artifacts that plague standard denoising while preserving sharp edges and keeping computational costs reasonable.
-- Why it matters: Image denoising is fundamental to medical imaging, astronomy, and photography—anywhere noisy pictures need cleaning. The stair-stepping problem is a real nuisance that forces users to choose between removing noise or keeping smooth transitions. This approach offers a way to have both, potentially improving image quality in applications where both noise reduction and subtle gradient rendering matter.
-
-### Measuring the Serving Stack Instead of the Model: Hidden Confounds in Local Tool-Use Evaluation
-- URL: https://paperplaine.com/papers/measuring-the-serving-stack
-- Category: Computer Science · AI
-- Authors: Lijuan Tang, Yuemeng Zheng
-- arXiv: 2609.26693
-- Plain-English subtitle: When testing AI tools, the software running them skews the results
-- Summary: When researchers test whether AI models can correctly call tools (like calculators or databases), the results depend as much on the serving software as on the model itself. Different serving platforms reject or format the same request differently, and measurement errors—like miscounting failures as model mistakes—can artificially inflate or deflate reported success rates by up to 55 percentage points.
-- Why it matters: AI tool-use benchmarks are widely used to compare models and guide adoption decisions. If a model appears to fail at tool-calling when it's actually the serving software that's the bottleneck, researchers might reject a capable model or choose an inferior alternative. This work provides a checklist for separating genuine model limitations from serving-layer artifacts, making benchmarks more reliable.
 
 ## About
 
