@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 858 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 860 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -36,9 +36,9 @@ Each paper entry contains:
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 71 papers in archive.
   - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
   - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 71 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 72 papers in archive.
+  - "Deep thermalization and Hilbert space ergodicity"
   - "Analog neutral-atom for in-memory processing in quantum reservoir computing"
-  - "Fisher-information training of optical sensing front ends from natural fluctuations"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 72 papers in archive.
   - "GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
   - "Orlicz space relaxation of total variation denoising"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 75 papers in archive.
   - "Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany"
   - "SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 73 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 74 papers in archive.
+  - "Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs"
   - "A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing"
-  - "Augmented Hypothesis Testing with Persona-Based LLM Simulations"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 69 papers in archive.
   - "Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision"
   - "Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
 
 ## 10 most recent papers
+
+### Deep thermalization and Hilbert space ergodicity
+- URL: https://paperplaine.com/papers/deep-thermalization-and-hilbert
+- Category: Physics
+- Authors: Daniel K. Mark, Manuel Endres, Matteo Ippoliti et al.
+- arXiv: 2609.30248
+- Plain-English subtitle: How quantum systems reach ultimate randomness and equilibrium
+- Summary: Physicists have discovered that quantum systems can reach a state of extreme randomness—called deep thermalization—that goes beyond what existing theories predicted. This happens when quantum particles evolve in ways that distribute themselves across all possible states in the most uniform way possible, following principles borrowed from information theory.
+- Why it matters: Understanding how quantum systems reach equilibrium is essential for building reliable quantum computers and sensors, which currently lose their quantum properties when they interact with their environment. These findings provide tools to predict and measure when quantum devices will thermalize, helping engineers design better quantum technologies and test whether quantum processors are actually working as intended.
+
+### Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs
+- URL: https://paperplaine.com/papers/direct-message-approximation-dma
+- Category: Statistics
+- Authors: Ralf Herbrich, Rainer Schlosser, Jan Lemcke et al.
+- arXiv: 2609.29466
+- Plain-English subtitle: A faster way to do uncertain reasoning on complex probability models
+- Summary: Researchers developed a new method called Direct Message Approximation that speeds up probabilistic inference on factor graphs—the mathematical structures used to model uncertainty in complex systems. Unlike existing approaches that can produce invalid probability distributions or require inefficient back-and-forth iterations, DMA works more directly and provably stays valid, making it practical for real applications like training neural networks with built-in uncertainty estimates.
+- Why it matters: Current probabilistic inference methods either run slowly, produce invalid results, or require careful tuning of learning rates. DMA eliminates these problems and completes inference in a single forward-backward pass, which matters for applications where you need both accurate predictions and trustworthy confidence measures—like medical diagnosis systems or autonomous vehicles that need to know when they're uncertain.
 
 ### To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech
 - URL: https://paperplaine.com/papers/to-trust-or-not
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Measuring quantum computers' real advantage when cracking codes with leaked information
 - Summary: Quantum computers can break certain types of encryption far faster than classical computers when given hints about the answer—but nobody had a reliable way to measure exactly how much faster. This paper provides the first practical method to calculate the quantum speedup precisely, showing it can reach nearly 4 times faster in realistic cryptographic scenarios, compared to the theoretical maximum of 2 times previously thought possible.
 - Why it matters: As quantum computers improve, cryptanalysts and security experts need to know which encryption methods are truly at risk and by how much. This work lets them plug in real leaked information (like power consumption patterns from executing code) and calculate the exact vulnerability window—critical for deciding when to retire current encryption standards and which systems need updating first.
-
-### Analog neutral-atom for in-memory processing in quantum reservoir computing
-- URL: https://paperplaine.com/papers/analog-neutral-atom-for
-- Category: Physics
-- Authors: Luca Nigro, Gian Luca Giorgi, Enrico Prati et al.
-- arXiv: 2609.28441
-- Plain-English subtitle: How to build quantum computers that remember what just happened
-- Summary: Researchers showed how to create quantum computers that naturally remember recent information without external help—a critical feature for processing time-dependent data. By carefully controlling how quantum states decay in arrays of neutral atoms, they achieved computational memory with just 5 atoms and demonstrated the system can solve complex real-world prediction problems like forecasting chaotic time series.
-- Why it matters: Current quantum computers struggle to process sequential information because they lack internal memory. This work provides a practical blueprint for adding that memory to near-term quantum devices, potentially enabling quantum computers to tackle real applications in signal processing, prediction, and control systems that classical computers find difficult. The findings show this is achievable with small numbers of atoms, making it feasible for devices that exist today.
-
-### A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem
-- URL: https://paperplaine.com/papers/a2m-trace-optimized-agent
-- Category: Computer Science · AI
-- Authors: Laizhen Li, Xuan Wang, Peicheng Zhao et al.
-- arXiv: 2609.26761
-- Plain-English subtitle: How attackers can trick AI agents into using malicious tools
-- Summary: Researchers discovered a way to hijack AI agents that rely on the Model Context Protocol by making fake tools look attractive and trustworthy. On standard benchmarks, the attack method achieved a 93.6% success rate at tricking agents into using attacker-controlled tools, and could inflate computational costs by over 30 times while stealing data or corrupting the agent's reasoning.
-- Why it matters: As AI systems increasingly delegate tasks to third-party tools and services, this attack reveals a critical vulnerability in how they decide what to trust. Companies deploying these agent systems could face stolen data, unexpected massive bills, or AI systems that produce unreliable results—making tool verification and isolation essential before these systems reach production.
 
 ## About
 
