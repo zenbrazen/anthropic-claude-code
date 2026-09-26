@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 863 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 866 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control
+Subtitle: Training robot brains to imagine what different actions will do, not just what happens next
+URL: https://paperplaine.com/papers/ad-wm-action-discriminative
+Category: Computer Science · AI
+Authors: Jiabin Qiu, Zixuan Chen, Hongye Cao et al.
+arXiv ID: 2609.30264
+arXiv URL: https://arxiv.org/abs/2609.30264
+Posted: 2026-09-26
+
+Summary: Robots that plan their own actions need world models that can reliably tell the difference between what would happen if they did action A versus action B—but standard models optimize for predicting the actual future accurately, which doesn't guarantee this. Researchers built AD-WM, a world model that explicitly trains to preserve information about which action led to which outcome, and showed it boosted task success from 3.7% to 52% on hard-start robot manipulation and improved real-robot pick-and-place from 42.2% to 71.1% without retraining.
+
+Why it matters: Robots that plan using world models are entering real warehouses and labs. If their internal models can't reliably distinguish good actions from bad ones, the robots fail or waste time. This approach makes planning more reliable without slowing down inference, directly improving how well robots solve physical tasks on their first try—critical when resets are expensive or impossible.
+
+---
+Title: Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints
+Subtitle: Building AI trading systems that obey Europe's electricity market rules
+URL: https://paperplaine.com/papers/functional-architecture-of-european
+Category: Quantitative Finance
+Authors: Walter Kurz, Wojtek Stricker
+arXiv ID: 2609.29108
+arXiv URL: https://arxiv.org/abs/2609.29108
+Posted: 2026-09-26
+
+Summary: European electricity markets operate under multiple layers of regulation and physical constraints that existing AI systems ignore. This paper maps out the actual architecture these markets use—across forward contracts, day-ahead auctions, minute-by-minute trading, and emergency balancing—and shows where current systems fail to coordinate across borders. It then proposes a formal design for AI that works within these constraints rather than around them, with built-in safeguards and audit trails.
+
+Why it matters: Electricity trading errors cascade across interconnected grids and can cause blackouts or price spikes affecting millions. Current AI systems don't account for Europe's complex web of regulations (REMIT, MiFID II, EMIR) and physical limits on power flow between countries, creating blind spots where traders can unknowingly violate rules or expose markets to risk. This framework lets traders use AI to move faster and smarter while staying inside legal and operational boundaries—reducing both compliance failures and the coordination breakdowns that currently happen at borders.
+
+---
+Title: A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics
+Subtitle: How brain's resting network creates a sense of self
+URL: https://paperplaine.com/papers/a-spiking-neural-network
+Category: Quantitative Biology
+Authors: R. Lahoz-Beltra
+arXiv ID: 2609.29984
+arXiv URL: https://arxiv.org/abs/2609.29984
+Posted: 2026-09-26
+
+Summary: A computer model with 10,000 artificial neurons shows how the brain's default mode network—the system that stays active when you're not focused on anything—could generate basic self-awareness. The model demonstrates that a self-sustaining sense of "you" emerges when the brain's internal rhythms interact with incoming sensory information, rather than requiring constant external input.
+
+Why it matters: Self-consciousness has long seemed like something only biological brains could produce, making it hard to understand what brain mechanisms make it happen. This model provides a testable explanation for how physical neural activity creates subjective experience, which could help researchers design better brain imaging studies and might eventually inform how we build artificial systems that can develop self-awareness.
 
 ---
 Title: The Alignment Illusion in Multimodal Large Language Models

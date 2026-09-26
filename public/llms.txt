@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 863 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 866 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 296 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 297 papers in archive.
+  - "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control"
   - "The Alignment Illusion in Multimodal Large Language Models"
-  - "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 72 papers in archive.
   - "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data"
   - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
@@ -42,12 +42,12 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 72 papers in archive.
   - "GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
   - "Orlicz space relaxation of total variation denoising"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 72 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 73 papers in archive.
+  - "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics"
   - "BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection"
-  - "Foundation-model-based multi-label phenotyping of combined hyperkinetic movement disorders"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 75 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 76 papers in archive.
+  - "Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints"
   - "Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany"
-  - "SAiFE-gym: Model-based Environments for Automated Market Making with Concentrated Liquidity"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 74 papers in archive.
   - "Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs"
   - "A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem"
 
 ## 10 most recent papers
+
+### AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control
+- URL: https://paperplaine.com/papers/ad-wm-action-discriminative
+- Category: Computer Science · AI
+- Authors: Jiabin Qiu, Zixuan Chen, Hongye Cao et al.
+- arXiv: 2609.30264
+- Plain-English subtitle: Training robot brains to imagine what different actions will do, not just what happens next
+- Summary: Robots that plan their own actions need world models that can reliably tell the difference between what would happen if they did action A versus action B—but standard models optimize for predicting the actual future accurately, which doesn't guarantee this. Researchers built AD-WM, a world model that explicitly trains to preserve information about which action led to which outcome, and showed it boosted task success from 3.7% to 52% on hard-start robot manipulation and improved real-robot pick-and-place from 42.2% to 71.1% without retraining.
+- Why it matters: Robots that plan using world models are entering real warehouses and labs. If their internal models can't reliably distinguish good actions from bad ones, the robots fail or waste time. This approach makes planning more reliable without slowing down inference, directly improving how well robots solve physical tasks on their first try—critical when resets are expensive or impossible.
+
+### Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints
+- URL: https://paperplaine.com/papers/functional-architecture-of-european
+- Category: Quantitative Finance
+- Authors: Walter Kurz, Wojtek Stricker
+- arXiv: 2609.29108
+- Plain-English subtitle: Building AI trading systems that obey Europe's electricity market rules
+- Summary: European electricity markets operate under multiple layers of regulation and physical constraints that existing AI systems ignore. This paper maps out the actual architecture these markets use—across forward contracts, day-ahead auctions, minute-by-minute trading, and emergency balancing—and shows where current systems fail to coordinate across borders. It then proposes a formal design for AI that works within these constraints rather than around them, with built-in safeguards and audit trails.
+- Why it matters: Electricity trading errors cascade across interconnected grids and can cause blackouts or price spikes affecting millions. Current AI systems don't account for Europe's complex web of regulations (REMIT, MiFID II, EMIR) and physical limits on power flow between countries, creating blind spots where traders can unknowingly violate rules or expose markets to risk. This framework lets traders use AI to move faster and smarter while staying inside legal and operational boundaries—reducing both compliance failures and the coordination breakdowns that currently happen at borders.
+
+### A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics
+- URL: https://paperplaine.com/papers/a-spiking-neural-network
+- Category: Quantitative Biology
+- Authors: R. Lahoz-Beltra
+- arXiv: 2609.29984
+- Plain-English subtitle: How brain's resting network creates a sense of self
+- Summary: A computer model with 10,000 artificial neurons shows how the brain's default mode network—the system that stays active when you're not focused on anything—could generate basic self-awareness. The model demonstrates that a self-sustaining sense of "you" emerges when the brain's internal rhythms interact with incoming sensory information, rather than requiring constant external input.
+- Why it matters: Self-consciousness has long seemed like something only biological brains could produce, making it hard to understand what brain mechanisms make it happen. This model provides a testable explanation for how physical neural activity creates subjective experience, which could help researchers design better brain imaging studies and might eventually inform how we build artificial systems that can develop self-awareness.
 
 ### The Alignment Illusion in Multimodal Large Language Models
 - URL: https://paperplaine.com/papers/the-alignment-illusion-in
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Creating detailed terrain maps from lower-resolution training data
 - Summary: Scientists developed SCOPE, a method that reconstructs high-resolution terrain maps from lower-resolution training data by learning a reusable mathematical representation of the landscape. When predicting terrain at three times finer detail than training allowed, the method reduced error by roughly 12% compared to standard upscaling, while computing costs increased by only 2%—meaning sharper maps without proportional slowdown.
 - Why it matters: Satellite and airborne mapping systems collect terrain data at various resolutions, but high-resolution reference maps are expensive and rare. This technique lets researchers build accurate detailed elevation models from whatever coarse reference data exists, making precision Earth observation cheaper and faster for applications like flood forecasting, infrastructure planning, and environmental monitoring.
-
-### GridSFM: A Foundation Model for Solving AC Optimal Power Flow
-- URL: https://paperplaine.com/papers/gridsfm-a-foundation-model
-- Category: Mathematics
-- Authors: Luke Bhan, Weiwei Yang, Margaret Capetz et al.
-- arXiv: 2609.30173
-- Plain-English subtitle: A neural network that solves power grid optimization for any size network
-- Summary: Researchers built GridSFM, a foundation model that learns how to manage electricity flow across power grids of vastly different sizes—from 500 to 10,000 buses—without retraining from scratch. When tested on an unseen 10,000-bus grid, the model predicted optimal costs with just 2.45% error, and needed only 100 examples from a new grid to adapt, outperforming neural networks built for single grids despite being trained on less data.
-- Why it matters: Power grid operators must constantly solve complex optimization problems to balance electricity supply and demand efficiently, which currently relies on slow mathematical solvers. A model that can run instantly across grids of any size could speed up grid management by hours during emergencies or rapid demand shifts, reducing both computational cost and the risk of blackouts. The authors released their code and data publicly so utilities and researchers can start using this approach immediately rather than building from scratch.
-
-### MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference
-- URL: https://paperplaine.com/papers/microqonv-reshaping-convolution-tensors
-- Category: Computer Science · AI
-- Authors: Romain Facq, Sami Ben Ali, Olivier Sentieys
-- arXiv: 2609.28358
-- Plain-English subtitle: Making neural networks 7 times smaller without losing accuracy
-- Summary: Researchers developed MicroQonv, a technique that shrinks the memory footprint of neural networks during training and use by up to 7.5 times while keeping accuracy nearly identical. The method reorders how convolutional layers—the building blocks that power image recognition—compress their data, cutting unnecessary data movement in half for weights and up to nine times for intermediate calculations.
-- Why it matters: Smaller models run faster and cheaper on phones, edge devices, and data centers. This technique enables object detection systems like YOLO to cut their memory demands by 3.5 times while maintaining real-world accuracy, making it practical to deploy powerful AI on devices with limited power and storage. It also unlocks four-bit compression for continual learning on edge devices—scenarios where models must adapt to new tasks without forgetting old ones—boosting accuracy by up to 11%.
-
-### BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection
-- URL: https://paperplaine.com/papers/brecol-benchmarking-classical-and
-- Category: Quantitative Biology
-- Authors: Jeffrey M. Dick
-- arXiv: 2609.27207
-- Plain-English subtitle: Can gut bacteria samples detect cancer? Testing across 26 studies to find out.
-- Summary: Researchers benchmarked different methods for detecting cancer from gut microbiome samples across 2,040 sequencing runs from 26 studies. Classical machine learning models achieved 77% accuracy on recent unseen data for cancer diagnosis, while deep learning approaches underperformed—suggesting that simpler statistical methods may be more reliable for this task. Colorectal cancer proved easier to detect than breast cancer using the same bacterial signatures.
-- Why it matters: If gut microbiome testing becomes reliable for cancer screening, it could enable earlier detection through a non-invasive sample. This benchmark reveals that published microbiome-cancer studies often don't hold up when tested on newer data, exposing a real problem: many reported results may not work in real clinical settings. The finding that classical methods beat trendy deep learning here challenges the assumption that fancier AI automatically works better for medical diagnosis.
 
 ## About
 

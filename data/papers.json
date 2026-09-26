@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.30264",
+    "title": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control",
+    "authors": "Jiabin Qiu, Zixuan Chen, Hongye Cao et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-24T17:59:41Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "Training robot brains to imagine what different actions will do, not just what happens next",
+    "summary": "Robots that plan their own actions need world models that can reliably tell the difference between what would happen if they did action A versus action B—but standard models optimize for predicting the actual future accurately, which doesn't guarantee this. Researchers built AD-WM, a world model that explicitly trains to preserve information about which action led to which outcome, and showed it boosted task success from 3.7% to 52% on hard-start robot manipulation and improved real-robot pick-and-place from 42.2% to 71.1% without retraining.",
+    "whyItMatters": "Robots that plan using world models are entering real warehouses and labs. If their internal models can't reliably distinguish good actions from bad ones, the robots fail or waste time. This approach makes planning more reliable without slowing down inference, directly improving how well robots solve physical tasks on their first try—critical when resets are expensive or impossible.",
+    "fetchedAt": "2026-09-26T21:44:18.307Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 206
+    },
+    "slug": "ad-wm-action-discriminative"
+  },
+  {
+    "id": "2609.29108",
+    "title": "Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints",
+    "authors": "Walter Kurz, Wojtek Stricker",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-09-24T06:39:15Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "Building AI trading systems that obey Europe's electricity market rules",
+    "summary": "European electricity markets operate under multiple layers of regulation and physical constraints that existing AI systems ignore. This paper maps out the actual architecture these markets use—across forward contracts, day-ahead auctions, minute-by-minute trading, and emergency balancing—and shows where current systems fail to coordinate across borders. It then proposes a formal design for AI that works within these constraints rather than around them, with built-in safeguards and audit trails.",
+    "whyItMatters": "Electricity trading errors cascade across interconnected grids and can cause blackouts or price spikes affecting millions. Current AI systems don't account for Europe's complex web of regulations (REMIT, MiFID II, EMIR) and physical limits on power flow between countries, creating blind spots where traders can unknowingly violate rules or expose markets to risk. This framework lets traders use AI to move faster and smarter while staying inside legal and operational boundaries—reducing both compliance failures and the coordination breakdowns that currently happen at borders.",
+    "fetchedAt": "2026-09-26T21:44:21.970Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 12,
+      "wordCount": 149
+    },
+    "slug": "functional-architecture-of-european"
+  },
+  {
+    "id": "2609.29984",
+    "title": "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics",
+    "authors": "R. Lahoz-Beltra",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-09-24T15:34:27Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "How brain's resting network creates a sense of self",
+    "summary": "A computer model with 10,000 artificial neurons shows how the brain's default mode network—the system that stays active when you're not focused on anything—could generate basic self-awareness. The model demonstrates that a self-sustaining sense of \"you\" emerges when the brain's internal rhythms interact with incoming sensory information, rather than requiring constant external input.",
+    "whyItMatters": "Self-consciousness has long seemed like something only biological brains could produce, making it hard to understand what brain mechanisms make it happen. This model provides a testable explanation for how physical neural activity creates subjective experience, which could help researchers design better brain imaging studies and might eventually inform how we build artificial systems that can develop self-awareness.",
+    "fetchedAt": "2026-09-26T21:44:24.767Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 144
+    },
+    "slug": "a-spiking-neural-network"
+  },
+  {
     "id": "2609.30210",
     "title": "The Alignment Illusion in Multimodal Large Language Models",
     "authors": "Hong-Han Wang, Yuntao Wang, Hu Ding",
