@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2026 21:55:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 12:03:46 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The Alignment Illusion in Multimodal Large Language Models</title>
+      <link>https://paperplaine.com/papers/the-alignment-illusion-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-alignment-illusion-in</guid>
+      <pubDate>Thu, 24 Sep 2026 17:42:29 GMT</pubDate>
+      <author>Hong-Han Wang, Yuntao Wang, Hu Ding</author>
+      <category>AI</category>
+      <description>Why alignment metrics fool us about how AI processes images and text together</description>
+      <content:encoded><![CDATA[<p><em>Why alignment metrics fool us about how AI processes images and text together</em></p><p>Researchers discovered that standard measurements of how well images and text align inside AI models are misleading. When they corrupted images with random noise, the models failed at tasks, but the alignment metrics didn't notice—suggesting these metrics measure something other than actual image understanding. The problem comes down to how the language-processing part of the model geometry works, not genuine integration of visual content.</p><p><strong>Why it matters:</strong> AI developers currently rely on alignment scores to understand whether their multimodal models are properly learning to combine images and text. This research shows those scores can give false confidence—a model might appear well-aligned internally while actually failing to process images correctly. Using better geometric measurements (the PA gap) instead could help researchers actually diagnose when their models aren't learning cross-modal understanding, leading to faster detection of failures before deployment.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data</title>
+      <link>https://paperplaine.com/papers/semmsa-latent-semantic-aided</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/semmsa-latent-semantic-aided</guid>
+      <pubDate>Thu, 24 Sep 2026 17:55:31 GMT</pubDate>
+      <author>Wenhao Li, Zhibin Wu, Chong Xiao et al.</author>
+      <category>Comp Sci</category>
+      <description>Understanding emotions from videos even when audio or visuals go missing</description>
+      <content:encoded><![CDATA[<p><em>Understanding emotions from videos even when audio or visuals go missing</em></p><p>When analyzing sentiment in videos, audio, and text together, missing data usually forces systems to guess or fill in gaps poorly. A new method called SemMSA uses language models to build a solid semantic foundation that works with all three types of information simultaneously, avoiding unreliable reconstruction and achieving better accuracy on standard benchmarks.</p><p><strong>Why it matters:</strong> Video platforms, content moderation systems, and customer feedback analysis often face incomplete data—broken audio, poor video quality, or missing captions. Better sentiment detection with incomplete data means more reliable content understanding without requiring perfect recordings, making automated systems more practical for real-world video analysis.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Multi-Dimensional Matching</title>
+      <link>https://paperplaine.com/papers/multi-dimensional-matching</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multi-dimensional-matching</guid>
+      <pubDate>Thu, 24 Sep 2026 15:14:18 GMT</pubDate>
+      <author>Irene Aldridge</author>
+      <category>Economics</category>
+      <description>A faster way to match people with things using their key features</description>
+      <content:encoded><![CDATA[<p><em>A faster way to match people with things using their key features</em></p><p>A new matching algorithm solves a complex pairing problem by reducing it to a simple one-dimensional sort, running in milliseconds even for thousands of matches. It guarantees optimal fairness outcomes and holds up against random disruptions, though people could still game the system if motivated to misreport their preferences.</p><p><strong>Why it matters:</strong> Matching algorithms power everything from job boards to housing allocations to AI shopping assistants. This method is orders of magnitude faster than existing approaches, making fair matching practical for real-time applications at scale. The trade-off—strong fairness guarantees but exploitable by strategic misreporting—gives institutions a clear choice about which risks matter most.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Deep thermalization and Hilbert space ergodicity</title>
       <link>https://paperplaine.com/papers/deep-thermalization-and-hilbert</link>

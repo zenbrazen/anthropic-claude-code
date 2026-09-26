@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 860 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-25
+This file contains the complete plain-English text of all 863 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: The Alignment Illusion in Multimodal Large Language Models
+Subtitle: Why alignment metrics fool us about how AI processes images and text together
+URL: https://paperplaine.com/papers/the-alignment-illusion-in
+Category: Computer Science · AI
+Authors: Hong-Han Wang, Yuntao Wang, Hu Ding
+arXiv ID: 2609.30210
+arXiv URL: https://arxiv.org/abs/2609.30210
+Posted: 2026-09-26
+
+Summary: Researchers discovered that standard measurements of how well images and text align inside AI models are misleading. When they corrupted images with random noise, the models failed at tasks, but the alignment metrics didn't notice—suggesting these metrics measure something other than actual image understanding. The problem comes down to how the language-processing part of the model geometry works, not genuine integration of visual content.
+
+Why it matters: AI developers currently rely on alignment scores to understand whether their multimodal models are properly learning to combine images and text. This research shows those scores can give false confidence—a model might appear well-aligned internally while actually failing to process images correctly. Using better geometric measurements (the PA gap) instead could help researchers actually diagnose when their models aren't learning cross-modal understanding, leading to faster detection of failures before deployment.
+
+---
+Title: SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data
+Subtitle: Understanding emotions from videos even when audio or visuals go missing
+URL: https://paperplaine.com/papers/semmsa-latent-semantic-aided
+Category: Computer Science
+Authors: Wenhao Li, Zhibin Wu, Chong Xiao et al.
+arXiv ID: 2609.30238
+arXiv URL: https://arxiv.org/abs/2609.30238
+Posted: 2026-09-26
+
+Summary: When analyzing sentiment in videos, audio, and text together, missing data usually forces systems to guess or fill in gaps poorly. A new method called SemMSA uses language models to build a solid semantic foundation that works with all three types of information simultaneously, avoiding unreliable reconstruction and achieving better accuracy on standard benchmarks.
+
+Why it matters: Video platforms, content moderation systems, and customer feedback analysis often face incomplete data—broken audio, poor video quality, or missing captions. Better sentiment detection with incomplete data means more reliable content understanding without requiring perfect recordings, making automated systems more practical for real-world video analysis.
+
+---
+Title: Multi-Dimensional Matching
+Subtitle: A faster way to match people with things using their key features
+URL: https://paperplaine.com/papers/multi-dimensional-matching
+Category: Economics
+Authors: Irene Aldridge
+arXiv ID: 2609.29958
+arXiv URL: https://arxiv.org/abs/2609.29958
+Posted: 2026-09-26
+
+Summary: A new matching algorithm solves a complex pairing problem by reducing it to a simple one-dimensional sort, running in milliseconds even for thousands of matches. It guarantees optimal fairness outcomes and holds up against random disruptions, though people could still game the system if motivated to misreport their preferences.
+
+Why it matters: Matching algorithms power everything from job boards to housing allocations to AI shopping assistants. This method is orders of magnitude faster than existing approaches, making fair matching practical for real-time applications at scale. The trade-off—strong fairness guarantees but exploitable by strategic misreporting—gives institutions a clear choice about which risks matter most.
 
 ---
 Title: Deep thermalization and Hilbert space ergodicity

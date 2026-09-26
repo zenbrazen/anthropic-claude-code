@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 860 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 863 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 295 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 296 papers in archive.
+  - "The Alignment Illusion in Multimodal Large Language Models"
   - "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech"
-  - "MicroQonv: Reshaping Convolution Tensors for Efficient Microscaling in Training and Inference"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 71 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 72 papers in archive.
+  - "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data"
   - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
-  - "CASCADE Against Jailbreaks: Combination Across Stages with Controlled Attack-Defense Evaluation"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 72 papers in archive.
   - "Deep thermalization and Hilbert space ergodicity"
   - "Analog neutral-atom for in-memory processing in quantum reservoir computing"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 69 papers in archive.
   - "Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision"
   - "Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 60 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 61 papers in archive.
+  - "Multi-Dimensional Matching"
   - "Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem"
-  - "Unpriced Internal Externalities and Structural Inefficiency in Organizations"
 
 ## 10 most recent papers
+
+### The Alignment Illusion in Multimodal Large Language Models
+- URL: https://paperplaine.com/papers/the-alignment-illusion-in
+- Category: Computer Science · AI
+- Authors: Hong-Han Wang, Yuntao Wang, Hu Ding
+- arXiv: 2609.30210
+- Plain-English subtitle: Why alignment metrics fool us about how AI processes images and text together
+- Summary: Researchers discovered that standard measurements of how well images and text align inside AI models are misleading. When they corrupted images with random noise, the models failed at tasks, but the alignment metrics didn't notice—suggesting these metrics measure something other than actual image understanding. The problem comes down to how the language-processing part of the model geometry works, not genuine integration of visual content.
+- Why it matters: AI developers currently rely on alignment scores to understand whether their multimodal models are properly learning to combine images and text. This research shows those scores can give false confidence—a model might appear well-aligned internally while actually failing to process images correctly. Using better geometric measurements (the PA gap) instead could help researchers actually diagnose when their models aren't learning cross-modal understanding, leading to faster detection of failures before deployment.
+
+### SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data
+- URL: https://paperplaine.com/papers/semmsa-latent-semantic-aided
+- Category: Computer Science
+- Authors: Wenhao Li, Zhibin Wu, Chong Xiao et al.
+- arXiv: 2609.30238
+- Plain-English subtitle: Understanding emotions from videos even when audio or visuals go missing
+- Summary: When analyzing sentiment in videos, audio, and text together, missing data usually forces systems to guess or fill in gaps poorly. A new method called SemMSA uses language models to build a solid semantic foundation that works with all three types of information simultaneously, avoiding unreliable reconstruction and achieving better accuracy on standard benchmarks.
+- Why it matters: Video platforms, content moderation systems, and customer feedback analysis often face incomplete data—broken audio, poor video quality, or missing captions. Better sentiment detection with incomplete data means more reliable content understanding without requiring perfect recordings, making automated systems more practical for real-world video analysis.
+
+### Multi-Dimensional Matching
+- URL: https://paperplaine.com/papers/multi-dimensional-matching
+- Category: Economics
+- Authors: Irene Aldridge
+- arXiv: 2609.29958
+- Plain-English subtitle: A faster way to match people with things using their key features
+- Summary: A new matching algorithm solves a complex pairing problem by reducing it to a simple one-dimensional sort, running in milliseconds even for thousands of matches. It guarantees optimal fairness outcomes and holds up against random disruptions, though people could still game the system if motivated to misreport their preferences.
+- Why it matters: Matching algorithms power everything from job boards to housing allocations to AI shopping assistants. This method is orders of magnitude faster than existing approaches, making fair matching practical for real-time applications at scale. The trade-off—strong fairness guarantees but exploitable by strategic misreporting—gives institutions a clear choice about which risks matter most.
 
 ### Deep thermalization and Hilbert space ergodicity
 - URL: https://paperplaine.com/papers/deep-thermalization-and-hilbert
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Can gut bacteria samples detect cancer? Testing across 26 studies to find out.
 - Summary: Researchers benchmarked different methods for detecting cancer from gut microbiome samples across 2,040 sequencing runs from 26 studies. Classical machine learning models achieved 77% accuracy on recent unseen data for cancer diagnosis, while deep learning approaches underperformed—suggesting that simpler statistical methods may be more reliable for this task. Colorectal cancer proved easier to detect than breast cancer using the same bacterial signatures.
 - Why it matters: If gut microbiome testing becomes reliable for cancer screening, it could enable earlier detection through a non-invasive sample. This benchmark reveals that published microbiome-cancer studies often don't hold up when tested on newer data, exposing a real problem: many reported results may not work in real clinical settings. The finding that classical methods beat trendy deep learning here challenges the assumption that fancier AI automatically works better for medical diagnosis.
-
-### Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany
-- URL: https://paperplaine.com/papers/multi-agent-ai-architecture
-- Category: Quantitative Finance
-- Authors: Walter Kurz
-- arXiv: 2609.27636
-- Plain-English subtitle: Building AI systems for insurers that follow Europe's strict financial rules
-- Summary: Insurance companies operating in Austria and Germany can now use a blueprint for deploying multiple AI agents that work together while staying compliant with Solvency II regulations and the EU's AI Act. The framework breaks the insurer into specialized AI agents—each handling capital, underwriting, fraud detection, or claims—with human oversight built in and an overseer agent ensuring all decisions follow legal and financial safety rules.
-- Why it matters: Insurance regulators across Europe have grown stricter about how companies deploy AI, especially when those systems make decisions about risk and money. This architecture gives insurers a concrete, auditable way to use AI without accidentally violating regulations or losing the ability to explain how decisions were made—reducing legal risk and compliance costs. It also ensures humans stay in control at critical decision points, which regulators increasingly demand.
-
-### Learning Holographic Reduced Representations with Clifford Variational Autoencoders
-- URL: https://paperplaine.com/papers/learning-holographic-reduced-representations
-- Category: Computer Science · AI
-- Authors: Mohamed Malek Abid, P. Michael Furlong
-- arXiv: 2609.28409
-- Plain-English subtitle: Bridging AI perception and symbolic reasoning using geometric algebra
-- Summary: Researchers created Clifford-VAE, a new type of neural network that learns to represent images in a geometric space designed for symbolic reasoning. On standard image datasets, it matches the performance of existing methods while excelling at tasks that require combining and separating symbolic structures—addressing a long-standing gap between how AI perceives raw data and how it performs logical reasoning.
-- Why it matters: Current AI systems struggle to ground visual perception directly into symbolic reasoning frameworks that support logical operations. This technique could enable AI systems to learn visual representations that naturally support reasoning tasks like assembling multi-part concepts, recovering missing information, and maintaining consistent symbolic structures—moving closer to systems that combine perception and reasoning in a unified way.
-
-### Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice
-- URL: https://paperplaine.com/papers/pinpointing-super-quadratic-quantum
-- Category: Computer Science
-- Authors: Carsten Schubert, Niklas Paskarbeit, Maximilian J. Kramer et al.
-- arXiv: 2609.28226
-- Plain-English subtitle: Measuring quantum computers' real advantage when cracking codes with leaked information
-- Summary: Quantum computers can break certain types of encryption far faster than classical computers when given hints about the answer—but nobody had a reliable way to measure exactly how much faster. This paper provides the first practical method to calculate the quantum speedup precisely, showing it can reach nearly 4 times faster in realistic cryptographic scenarios, compared to the theoretical maximum of 2 times previously thought possible.
-- Why it matters: As quantum computers improve, cryptanalysts and security experts need to know which encryption methods are truly at risk and by how much. This work lets them plug in real leaked information (like power consumption patterns from executing code) and calculate the exact vulnerability window—critical for deciding when to retire current encryption standards and which systems need updating first.
 
 ## About
 

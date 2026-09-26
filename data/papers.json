@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.30210",
+    "title": "The Alignment Illusion in Multimodal Large Language Models",
+    "authors": "Hong-Han Wang, Yuntao Wang, Hu Ding",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-24T17:42:29Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "Why alignment metrics fool us about how AI processes images and text together",
+    "summary": "Researchers discovered that standard measurements of how well images and text align inside AI models are misleading. When they corrupted images with random noise, the models failed at tasks, but the alignment metrics didn't notice—suggesting these metrics measure something other than actual image understanding. The problem comes down to how the language-processing part of the model geometry works, not genuine integration of visual content.",
+    "whyItMatters": "AI developers currently rely on alignment scores to understand whether their multimodal models are properly learning to combine images and text. This research shows those scores can give false confidence—a model might appear well-aligned internally while actually failing to process images correctly. Using better geometric measurements (the PA gap) instead could help researchers actually diagnose when their models aren't learning cross-modal understanding, leading to faster detection of failures before deployment.",
+    "fetchedAt": "2026-09-26T12:03:39.381Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 236
+    },
+    "slug": "the-alignment-illusion-in"
+  },
+  {
+    "id": "2609.30238",
+    "title": "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data",
+    "authors": "Wenhao Li, Zhibin Wu, Chong Xiao et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-24T17:55:31Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "Understanding emotions from videos even when audio or visuals go missing",
+    "summary": "When analyzing sentiment in videos, audio, and text together, missing data usually forces systems to guess or fill in gaps poorly. A new method called SemMSA uses language models to build a solid semantic foundation that works with all three types of information simultaneously, avoiding unreliable reconstruction and achieving better accuracy on standard benchmarks.",
+    "whyItMatters": "Video platforms, content moderation systems, and customer feedback analysis often face incomplete data—broken audio, poor video quality, or missing captions. Better sentiment detection with incomplete data means more reliable content understanding without requiring perfect recordings, making automated systems more practical for real-world video analysis.",
+    "fetchedAt": "2026-09-26T12:03:42.626Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 212
+    },
+    "slug": "semmsa-latent-semantic-aided"
+  },
+  {
+    "id": "2609.29958",
+    "title": "Multi-Dimensional Matching",
+    "authors": "Irene Aldridge",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-09-24T15:14:18Z",
+    "publishedFormatted": "Sep 24, 2026",
+    "subtitle": "A faster way to match people with things using their key features",
+    "summary": "A new matching algorithm solves a complex pairing problem by reducing it to a simple one-dimensional sort, running in milliseconds even for thousands of matches. It guarantees optimal fairness outcomes and holds up against random disruptions, though people could still game the system if motivated to misreport their preferences.",
+    "whyItMatters": "Matching algorithms power everything from job boards to housing allocations to AI shopping assistants. This method is orders of magnitude faster than existing approaches, making fair matching practical for real-time applications at scale. The trade-off—strong fairness guarantees but exploitable by strategic misreporting—gives institutions a clear choice about which risks matter most.",
+    "fetchedAt": "2026-09-26T12:03:45.448Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 107
+    },
+    "slug": "multi-dimensional-matching"
+  },
+  {
     "id": "2609.30248",
     "title": "Deep thermalization and Hilbert space ergodicity",
     "authors": "Daniel K. Mark, Manuel Endres, Matteo Ippoliti et al.",
