@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 866 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-26
+This file contains the complete plain-English text of all 869 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-27
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Rolling-WAM: World Action Models with Rolling Imagination
+Subtitle: Making robot planning 4.5 times faster by spreading out prediction work
+URL: https://paperplaine.com/papers/rolling-wam-world-action
+Category: Computer Science · AI
+Authors: Yinghua Zhou, Junjie Ye, Yiqi Zhao et al.
+arXiv ID: 2609.30247
+arXiv URL: https://arxiv.org/abs/2609.30247
+Posted: 2026-09-27
+
+Summary: Robots that predict and plan their own movements often waste time redoing all their calculations from scratch every time they need to react. Rolling-WAM spreads this work across multiple planning cycles, keeping partial predictions from the previous step and refining them gradually, which speeds up real-time responsiveness 4.5 times while maintaining the same accuracy on manipulation tasks.
+
+Why it matters: Robots working alongside humans or in dynamic environments need to react quickly to unexpected changes—dropped objects, moving obstacles, or new instructions. The 4.5x speedup means robots can adjust their grip, path, or approach in time to actually respond to what's happening, rather than finishing their calculations after the moment has passed. This is the difference between a robot that reacts and one that merely predicts.
+
+---
+Title: Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections
+Subtitle: Moving wireless surfaces to charge devices and send data simultaneously
+URL: https://paperplaine.com/papers/leveraging-movable-element-stars
+Category: Engineering
+Authors: Muhammad Asif, Asim Ihsan, Irfan Muhammad et al.
+arXiv ID: 2609.30172
+arXiv URL: https://arxiv.org/abs/2609.30172
+Posted: 2026-09-27
+
+Summary: Researchers developed a wireless system that charges devices and transmits data at the same time using surfaces with movable elements that can change position. The system handles real-world complications like imperfect signal measurements and hardware defects, and delivers stronger performance than existing methods when tested across multiple configurations.
+
+Why it matters: Wireless power transfer could reduce charging infrastructure costs and enable devices in remote or hard-to-reach locations to receive both data and power from a single system. The ability to move reflecting surfaces adds a new dimension for improving signal strength, which matters as wireless networks become denser and more devices compete for the same airspace.
+
+---
+Title: High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization
+Subtitle: Making impossible physics calculations possible by thinking in layers instead of full spaces
+URL: https://paperplaine.com/papers/high-dimensional-extreme-eigenvalue
+Category: Mathematics
+Authors: Pengfei Hao, Renfeng Peng, Yang Kuang et al.
+arXiv ID: 2609.30138
+arXiv URL: https://arxiv.org/abs/2609.30138
+Posted: 2026-09-27
+
+Summary: Physicists and chemists constantly hit a wall when trying to simulate molecular behavior or quantum systems—the math explodes into billions of dimensions that computers can't handle. This paper shows that by reformulating these problems using a special compressed format (tensor train), you can solve them 10–100 times faster while using a fraction of the memory, without losing accuracy.
+
+Why it matters: Simulating molecular vibrations and quantum systems is fundamental to drug discovery, materials science, and chemistry—fields where computational bottlenecks currently delay research by months or force scientists to use crude approximations. This method could let researchers run simulations on standard computers that would otherwise require expensive supercomputers, speeding up everything from designing new medicines to developing better batteries.
 
 ---
 Title: AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control

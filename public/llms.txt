@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 866 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 869 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 297 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 298 papers in archive.
+  - "Rolling-WAM: World Action Models with Rolling Imagination"
   - "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control"
-  - "The Alignment Illusion in Multimodal Large Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 72 papers in archive.
   - "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data"
   - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 72 papers in archive.
   - "Deep thermalization and Hilbert space ergodicity"
   - "Analog neutral-atom for in-memory processing in quantum reservoir computing"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 72 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 73 papers in archive.
+  - "High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization"
   - "GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
-  - "Orlicz space relaxation of total variation denoising"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 73 papers in archive.
   - "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics"
   - "BreCol: Benchmarking Classical and Deep-Learning Methods for Microbiome-Based Cancer Detection"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 74 papers in archive.
   - "Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs"
   - "A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 69 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 70 papers in archive.
+  - "Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections"
   - "Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision"
-  - "Laryngeal Structure Segmentation in High-Speed Videoendoscopy Using Deep Learning"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 61 papers in archive.
   - "Multi-Dimensional Matching"
   - "Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem"
 
 ## 10 most recent papers
+
+### Rolling-WAM: World Action Models with Rolling Imagination
+- URL: https://paperplaine.com/papers/rolling-wam-world-action
+- Category: Computer Science · AI
+- Authors: Yinghua Zhou, Junjie Ye, Yiqi Zhao et al.
+- arXiv: 2609.30247
+- Plain-English subtitle: Making robot planning 4.5 times faster by spreading out prediction work
+- Summary: Robots that predict and plan their own movements often waste time redoing all their calculations from scratch every time they need to react. Rolling-WAM spreads this work across multiple planning cycles, keeping partial predictions from the previous step and refining them gradually, which speeds up real-time responsiveness 4.5 times while maintaining the same accuracy on manipulation tasks.
+- Why it matters: Robots working alongside humans or in dynamic environments need to react quickly to unexpected changes—dropped objects, moving obstacles, or new instructions. The 4.5x speedup means robots can adjust their grip, path, or approach in time to actually respond to what's happening, rather than finishing their calculations after the moment has passed. This is the difference between a robot that reacts and one that merely predicts.
+
+### Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections
+- URL: https://paperplaine.com/papers/leveraging-movable-element-stars
+- Category: Engineering
+- Authors: Muhammad Asif, Asim Ihsan, Irfan Muhammad et al.
+- arXiv: 2609.30172
+- Plain-English subtitle: Moving wireless surfaces to charge devices and send data simultaneously
+- Summary: Researchers developed a wireless system that charges devices and transmits data at the same time using surfaces with movable elements that can change position. The system handles real-world complications like imperfect signal measurements and hardware defects, and delivers stronger performance than existing methods when tested across multiple configurations.
+- Why it matters: Wireless power transfer could reduce charging infrastructure costs and enable devices in remote or hard-to-reach locations to receive both data and power from a single system. The ability to move reflecting surfaces adds a new dimension for improving signal strength, which matters as wireless networks become denser and more devices compete for the same airspace.
+
+### High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization
+- URL: https://paperplaine.com/papers/high-dimensional-extreme-eigenvalue
+- Category: Mathematics
+- Authors: Pengfei Hao, Renfeng Peng, Yang Kuang et al.
+- arXiv: 2609.30138
+- Plain-English subtitle: Making impossible physics calculations possible by thinking in layers instead of full spaces
+- Summary: Physicists and chemists constantly hit a wall when trying to simulate molecular behavior or quantum systems—the math explodes into billions of dimensions that computers can't handle. This paper shows that by reformulating these problems using a special compressed format (tensor train), you can solve them 10–100 times faster while using a fraction of the memory, without losing accuracy.
+- Why it matters: Simulating molecular vibrations and quantum systems is fundamental to drug discovery, materials science, and chemistry—fields where computational bottlenecks currently delay research by months or force scientists to use crude approximations. This method could let researchers run simulations on standard computers that would otherwise require expensive supercomputers, speeding up everything from designing new medicines to developing better batteries.
 
 ### AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control
 - URL: https://paperplaine.com/papers/ad-wm-action-discriminative
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How quantum systems reach ultimate randomness and equilibrium
 - Summary: Physicists have discovered that quantum systems can reach a state of extreme randomness—called deep thermalization—that goes beyond what existing theories predicted. This happens when quantum particles evolve in ways that distribute themselves across all possible states in the most uniform way possible, following principles borrowed from information theory.
 - Why it matters: Understanding how quantum systems reach equilibrium is essential for building reliable quantum computers and sensors, which currently lose their quantum properties when they interact with their environment. These findings provide tools to predict and measure when quantum devices will thermalize, helping engineers design better quantum technologies and test whether quantum processors are actually working as intended.
-
-### Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs
-- URL: https://paperplaine.com/papers/direct-message-approximation-dma
-- Category: Statistics
-- Authors: Ralf Herbrich, Rainer Schlosser, Jan Lemcke et al.
-- arXiv: 2609.29466
-- Plain-English subtitle: A faster way to do uncertain reasoning on complex probability models
-- Summary: Researchers developed a new method called Direct Message Approximation that speeds up probabilistic inference on factor graphs—the mathematical structures used to model uncertainty in complex systems. Unlike existing approaches that can produce invalid probability distributions or require inefficient back-and-forth iterations, DMA works more directly and provably stays valid, making it practical for real applications like training neural networks with built-in uncertainty estimates.
-- Why it matters: Current probabilistic inference methods either run slowly, produce invalid results, or require careful tuning of learning rates. DMA eliminates these problems and completes inference in a single forward-backward pass, which matters for applications where you need both accurate predictions and trustworthy confidence measures—like medical diagnosis systems or autonomous vehicles that need to know when they're uncertain.
-
-### To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech
-- URL: https://paperplaine.com/papers/to-trust-or-not
-- Category: Computer Science · AI
-- Authors: Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri
-- arXiv: 2609.30227
-- Plain-English subtitle: Why AI struggles to fact-check spoken claims, even when it handles written text perfectly
-- Summary: Researchers created VeriSpeak, a dataset of nearly 4,000 spoken claims to test whether AI systems trained on text can verify facts from speech. They found a striking gap: the same AI that catches false claims in writing often misses them when those claims are spoken aloud. Simply retrieving relevant information didn't help much—the models got confused comparing retrieved text to spoken claims—but combining retrieval with explicit reasoning jumped accuracy to 86%.
-- Why it matters: Misinformation now spreads heavily through podcasts, videos, and social media clips rather than just articles. Current fact-checking tools work on text, leaving spoken misinformation largely unchecked. This work shows why adapting those tools to audio is harder than expected and points toward solutions, which could help platforms and news organizations catch false claims before they spread through video and voice content.
-
-### Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision
-- URL: https://paperplaine.com/papers/efficient-continuous-dem-reconstruction
-- Category: Engineering
-- Authors: Zekai Shi, Meng Zhang, Haokun Zhang et al.
-- arXiv: 2609.29864
-- Plain-English subtitle: Creating detailed terrain maps from lower-resolution training data
-- Summary: Scientists developed SCOPE, a method that reconstructs high-resolution terrain maps from lower-resolution training data by learning a reusable mathematical representation of the landscape. When predicting terrain at three times finer detail than training allowed, the method reduced error by roughly 12% compared to standard upscaling, while computing costs increased by only 2%—meaning sharper maps without proportional slowdown.
-- Why it matters: Satellite and airborne mapping systems collect terrain data at various resolutions, but high-resolution reference maps are expensive and rare. This technique lets researchers build accurate detailed elevation models from whatever coarse reference data exists, making precision Earth observation cheaper and faster for applications like flood forecasting, infrastructure planning, and environmental monitoring.
 
 ## About
 
