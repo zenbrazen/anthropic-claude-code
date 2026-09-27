@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 869 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 872 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 298 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 299 papers in archive.
+  - "Coding Agents for Generalized Task and Motion Planning Problems"
   - "Rolling-WAM: World Action Models with Rolling Imagination"
-  - "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 72 papers in archive.
   - "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data"
   - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 76 papers in archive.
   - "Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints"
   - "Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 74 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 75 papers in archive.
+  - "Nuclear Norm-Regularized Bayesian Matrix Completion"
   - "Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs"
-  - "A Decentralized Partially Observable Team Decision Methodology with Delayed Information Sharing"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 70 papers in archive.
   - "Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections"
   - "Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 61 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 62 papers in archive.
+  - "Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X"
   - "Multi-Dimensional Matching"
-  - "Firm Valuation When AI Shapes the Business Model: A Milestone-Based Real-Options Framework for the AI Valuation Uncertainty Problem"
 
 ## 10 most recent papers
+
+### Coding Agents for Generalized Task and Motion Planning Problems
+- URL: https://paperplaine.com/papers/coding-agents-for-generalized
+- Category: Computer Science · AI
+- Authors: Matteo Merler, Bowen Li, Josh Roy et al.
+- arXiv: 2609.30233
+- Plain-English subtitle: How AI learns to write robot plans that work on new problems
+- Summary: AI systems can write programs that solve robot planning problems better than hand-coded solutions, and these programs work on new situations the AI never saw before. Three different AI models generated programs that succeeded 56% to 95% of the time across 28 different robotic tasks, beating both traditional planners and previous AI approaches.
+- Why it matters: Building robots that can handle different tasks usually requires experts to manually design planning systems from scratch. If AI can automatically write these programs instead, it cuts the engineering work needed and makes robots faster at solving new problems—the agents used 10 times less computation per task. This could shrink the time between designing a robot task and getting it working in the real world.
+
+### Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X
+- URL: https://paperplaine.com/papers/why-does-misinformation-propagate
+- Category: Economics
+- Authors: Pan Li, Shuang Gao
+- arXiv: 2609.28947
+- Plain-English subtitle: Why false claims spread faster on X than factual posts
+- Summary: X's recommendation algorithm treats all engagement equally—counting likes and quick retweets the same as thoughtful replies and quotes. Misinformation spreads faster because it triggers more instant reactions, flooding it with recommendation amplification. A simple fix—requiring tweets to generate thoughtful engagement before boosting them widely—could redirect exposure away from false claims without reducing overall engagement.
+- Why it matters: Misinformation shapes elections, public health decisions, and political polarization. If a change to X's algorithm can slow the spread of false claims without sacrificing user engagement or suppressing legitimate content, platforms have a concrete tool they can deploy immediately. This diagnosis pins responsibility on a specific technical choice rather than blaming users or the nature of falsehood itself.
+
+### Nuclear Norm-Regularized Bayesian Matrix Completion
+- URL: https://paperplaine.com/papers/nuclear-norm-regularized-bayesian
+- Category: Statistics
+- Authors: Calvin Tolbert
+- arXiv: 2609.30078
+- Plain-English subtitle: A faster way to guess missing numbers and measure uncertainty simultaneously
+- Summary: Researchers created the first algorithm that can quickly estimate missing entries in large tables of data while also quantifying how confident that estimate is. The method works even when the underlying noise level is unknown, which is how real-world data problems usually appear—and it comes with a mathematical guarantee that the algorithm will finish in reasonable time.
+- Why it matters: Many practical problems—from Netflix recommendations to estimating economic outcomes—require filling in missing data. Previous methods either gave single guesses with no confidence intervals, or were too slow to be practical. This algorithm means systems can now provide both an estimate and a range of plausible values, helping decision-makers understand not just what the answer might be, but how much they should trust it.
 
 ### Rolling-WAM: World Action Models with Rolling Imagination
 - URL: https://paperplaine.com/papers/rolling-wam-world-action
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why alignment metrics fool us about how AI processes images and text together
 - Summary: Researchers discovered that standard measurements of how well images and text align inside AI models are misleading. When they corrupted images with random noise, the models failed at tasks, but the alignment metrics didn't notice—suggesting these metrics measure something other than actual image understanding. The problem comes down to how the language-processing part of the model geometry works, not genuine integration of visual content.
 - Why it matters: AI developers currently rely on alignment scores to understand whether their multimodal models are properly learning to combine images and text. This research shows those scores can give false confidence—a model might appear well-aligned internally while actually failing to process images correctly. Using better geometric measurements (the PA gap) instead could help researchers actually diagnose when their models aren't learning cross-modal understanding, leading to faster detection of failures before deployment.
-
-### SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data
-- URL: https://paperplaine.com/papers/semmsa-latent-semantic-aided
-- Category: Computer Science
-- Authors: Wenhao Li, Zhibin Wu, Chong Xiao et al.
-- arXiv: 2609.30238
-- Plain-English subtitle: Understanding emotions from videos even when audio or visuals go missing
-- Summary: When analyzing sentiment in videos, audio, and text together, missing data usually forces systems to guess or fill in gaps poorly. A new method called SemMSA uses language models to build a solid semantic foundation that works with all three types of information simultaneously, avoiding unreliable reconstruction and achieving better accuracy on standard benchmarks.
-- Why it matters: Video platforms, content moderation systems, and customer feedback analysis often face incomplete data—broken audio, poor video quality, or missing captions. Better sentiment detection with incomplete data means more reliable content understanding without requiring perfect recordings, making automated systems more practical for real-world video analysis.
-
-### Multi-Dimensional Matching
-- URL: https://paperplaine.com/papers/multi-dimensional-matching
-- Category: Economics
-- Authors: Irene Aldridge
-- arXiv: 2609.29958
-- Plain-English subtitle: A faster way to match people with things using their key features
-- Summary: A new matching algorithm solves a complex pairing problem by reducing it to a simple one-dimensional sort, running in milliseconds even for thousands of matches. It guarantees optimal fairness outcomes and holds up against random disruptions, though people could still game the system if motivated to misreport their preferences.
-- Why it matters: Matching algorithms power everything from job boards to housing allocations to AI shopping assistants. This method is orders of magnitude faster than existing approaches, making fair matching practical for real-time applications at scale. The trade-off—strong fairness guarantees but exploitable by strategic misreporting—gives institutions a clear choice about which risks matter most.
-
-### Deep thermalization and Hilbert space ergodicity
-- URL: https://paperplaine.com/papers/deep-thermalization-and-hilbert
-- Category: Physics
-- Authors: Daniel K. Mark, Manuel Endres, Matteo Ippoliti et al.
-- arXiv: 2609.30248
-- Plain-English subtitle: How quantum systems reach ultimate randomness and equilibrium
-- Summary: Physicists have discovered that quantum systems can reach a state of extreme randomness—called deep thermalization—that goes beyond what existing theories predicted. This happens when quantum particles evolve in ways that distribute themselves across all possible states in the most uniform way possible, following principles borrowed from information theory.
-- Why it matters: Understanding how quantum systems reach equilibrium is essential for building reliable quantum computers and sensors, which currently lose their quantum properties when they interact with their environment. These findings provide tools to predict and measure when quantum devices will thermalize, helping engineers design better quantum technologies and test whether quantum processors are actually working as intended.
 
 ## About
 

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 869 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 872 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-27
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Coding Agents for Generalized Task and Motion Planning Problems
+Subtitle: How AI learns to write robot plans that work on new problems
+URL: https://paperplaine.com/papers/coding-agents-for-generalized
+Category: Computer Science · AI
+Authors: Matteo Merler, Bowen Li, Josh Roy et al.
+arXiv ID: 2609.30233
+arXiv URL: https://arxiv.org/abs/2609.30233
+Posted: 2026-09-27
+
+Summary: AI systems can write programs that solve robot planning problems better than hand-coded solutions, and these programs work on new situations the AI never saw before. Three different AI models generated programs that succeeded 56% to 95% of the time across 28 different robotic tasks, beating both traditional planners and previous AI approaches.
+
+Why it matters: Building robots that can handle different tasks usually requires experts to manually design planning systems from scratch. If AI can automatically write these programs instead, it cuts the engineering work needed and makes robots faster at solving new problems—the agents used 10 times less computation per task. This could shrink the time between designing a robot task and getting it working in the real world.
+
+---
+Title: Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X
+Subtitle: Why false claims spread faster on X than factual posts
+URL: https://paperplaine.com/papers/why-does-misinformation-propagate
+Category: Economics
+Authors: Pan Li, Shuang Gao
+arXiv ID: 2609.28947
+arXiv URL: https://arxiv.org/abs/2609.28947
+Posted: 2026-09-27
+
+Summary: X's recommendation algorithm treats all engagement equally—counting likes and quick retweets the same as thoughtful replies and quotes. Misinformation spreads faster because it triggers more instant reactions, flooding it with recommendation amplification. A simple fix—requiring tweets to generate thoughtful engagement before boosting them widely—could redirect exposure away from false claims without reducing overall engagement.
+
+Why it matters: Misinformation shapes elections, public health decisions, and political polarization. If a change to X's algorithm can slow the spread of false claims without sacrificing user engagement or suppressing legitimate content, platforms have a concrete tool they can deploy immediately. This diagnosis pins responsibility on a specific technical choice rather than blaming users or the nature of falsehood itself.
+
+---
+Title: Nuclear Norm-Regularized Bayesian Matrix Completion
+Subtitle: A faster way to guess missing numbers and measure uncertainty simultaneously
+URL: https://paperplaine.com/papers/nuclear-norm-regularized-bayesian
+Category: Statistics
+Authors: Calvin Tolbert
+arXiv ID: 2609.30078
+arXiv URL: https://arxiv.org/abs/2609.30078
+Posted: 2026-09-27
+
+Summary: Researchers created the first algorithm that can quickly estimate missing entries in large tables of data while also quantifying how confident that estimate is. The method works even when the underlying noise level is unknown, which is how real-world data problems usually appear—and it comes with a mathematical guarantee that the algorithm will finish in reasonable time.
+
+Why it matters: Many practical problems—from Netflix recommendations to estimating economic outcomes—require filling in missing data. Previous methods either gave single guesses with no confidence intervals, or were too slow to be practical. This algorithm means systems can now provide both an estimate and a range of plausible values, helping decision-makers understand not just what the answer might be, but how much they should trust it.
 
 ---
 Title: Rolling-WAM: World Action Models with Rolling Imagination
