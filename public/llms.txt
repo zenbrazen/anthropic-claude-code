@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 875 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 878 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 300 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 301 papers in archive.
+  - "Online Learning via Learned Latent Bayesian Tracking"
   - "PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents"
-  - "Coding Agents for Generalized Task and Motion Planning Problems"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 72 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 73 papers in archive.
+  - "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
   - "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data"
-  - "Pinpointing Super-Quadratic Quantum Enumeration Speedups: Exact and Certified Evaluation of the Guessing-Moment Exponent under Product-Distribution Advice"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 73 papers in archive.
   - "Exact Characterization of the Holevo Bound by a Quantum Fisher Information Family"
   - "Deep thermalization and Hilbert space ergodicity"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 73 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 74 papers in archive.
+  - "Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport"
   - "High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization"
-  - "GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 74 papers in archive.
   - "FlatClip: A Geometry-Aware Surface-Level Baseline for fMRI Representation Learning"
   - "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Multi-Dimensional Matching"
 
 ## 10 most recent papers
+
+### Online Learning via Learned Latent Bayesian Tracking
+- URL: https://paperplaine.com/papers/online-learning-via-learned
+- Category: Computer Science · AI
+- Authors: Guy Gerson, Tomer Raviv, Nir Shlezinger et al.
+- arXiv: 2609.31559
+- Plain-English subtitle: Learning how to update AI models fast when conditions change
+- Summary: Most AI models freeze after training, but the real world constantly shifts. This paper shows how to let models adapt in real-time to new data by learning a low-dimensional "shortcut" space where Bayesian filtering (a statistical technique for updating beliefs) becomes computationally feasible. On wireless signal detection and image recognition tasks, the method adapts faster and more accurately than existing approaches while staying computationally efficient.
+- Why it matters: Real-world AI systems—from wireless receivers to medical imaging to autonomous vehicles—face constantly changing conditions. Current methods either don't adapt or are too slow and expensive to run on edge devices. This work makes fast, principled adaptation practical by learning the right geometric space for the problem, enabling models to stay accurate without retraining when conditions shift.
+
+### Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport
+- URL: https://paperplaine.com/papers/beyond-empirical-support-structured
+- Category: Mathematics
+- Authors: Haixiang Sun, Andrew L. Liu
+- arXiv: 2609.31470
+- Plain-English subtitle: Generating realistic worst-case scenarios to test AI system reliability
+- Summary: Machine learning systems often fail on unusual cases they've never seen before. This paper introduces a new method called Sinkhorn Boundary Outlier Generation (SBOG) that deliberately creates realistic extreme examples—anomalies in time series data, unusual images, and other edge cases—to stress-test AI systems before deployment. Unlike existing approaches that produce random oddities, SBOG creates outliers that stay semantically grounded while pushing into genuinely risky territory, helping developers spot vulnerabilities their training data couldn't reveal.
+- Why it matters: In high-stakes domains like healthcare, finance, and autonomous vehicles, AI failures on rare scenarios can be catastrophic. Current methods for finding weaknesses rely on finite historical data or crude perturbations, leaving dangerous blind spots. SBOG produces structured, informative test cases that expose real vulnerabilities—allowing engineers to patch systems before they encounter unexpected conditions in the real world, not after.
+
+### How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks
+- URL: https://paperplaine.com/papers/how-much-must-a
+- Category: Computer Science
+- Authors: Tingyi Lin, Jiazhuo Li, Ruoran Lai
+- arXiv: 2609.31379
+- Plain-English subtitle: How much information can secret transaction pools safely leak?
+- Summary: Researchers discovered exactly how much information about a pending trade can leak from a private transaction pool before attackers can profitably sandwich it. Even when a pool hides the full transaction size, knowing just the lower bound of that size—and the trade's direction—is enough for attackers to reliably profit, while the upper bound turns out to be irrelevant.
+- Why it matters: Private pools are sold as protection against sandwich attacks, but this work shows their privacy guarantees have hard limits. A pool operator now knows precisely what to hide and what can safely be revealed—information that could be baked into privacy layer designs to give traders genuine protection without making pools unnecessarily opaque.
 
 ### PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents
 - URL: https://paperplaine.com/papers/pricebench-a-diagnostic-benchmark
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making robot planning 4.5 times faster by spreading out prediction work
 - Summary: Robots that predict and plan their own movements often waste time redoing all their calculations from scratch every time they need to react. Rolling-WAM spreads this work across multiple planning cycles, keeping partial predictions from the previous step and refining them gradually, which speeds up real-time responsiveness 4.5 times while maintaining the same accuracy on manipulation tasks.
 - Why it matters: Robots working alongside humans or in dynamic environments need to react quickly to unexpected changes—dropped objects, moving obstacles, or new instructions. The 4.5x speedup means robots can adjust their grip, path, or approach in time to actually respond to what's happening, rather than finishing their calculations after the moment has passed. This is the difference between a robot that reacts and one that merely predicts.
-
-### Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections
-- URL: https://paperplaine.com/papers/leveraging-movable-element-stars
-- Category: Engineering
-- Authors: Muhammad Asif, Asim Ihsan, Irfan Muhammad et al.
-- arXiv: 2609.30172
-- Plain-English subtitle: Moving wireless surfaces to charge devices and send data simultaneously
-- Summary: Researchers developed a wireless system that charges devices and transmits data at the same time using surfaces with movable elements that can change position. The system handles real-world complications like imperfect signal measurements and hardware defects, and delivers stronger performance than existing methods when tested across multiple configurations.
-- Why it matters: Wireless power transfer could reduce charging infrastructure costs and enable devices in remote or hard-to-reach locations to receive both data and power from a single system. The ability to move reflecting surfaces adds a new dimension for improving signal strength, which matters as wireless networks become denser and more devices compete for the same airspace.
-
-### High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization
-- URL: https://paperplaine.com/papers/high-dimensional-extreme-eigenvalue
-- Category: Mathematics
-- Authors: Pengfei Hao, Renfeng Peng, Yang Kuang et al.
-- arXiv: 2609.30138
-- Plain-English subtitle: Making impossible physics calculations possible by thinking in layers instead of full spaces
-- Summary: Physicists and chemists constantly hit a wall when trying to simulate molecular behavior or quantum systems—the math explodes into billions of dimensions that computers can't handle. This paper shows that by reformulating these problems using a special compressed format (tensor train), you can solve them 10–100 times faster while using a fraction of the memory, without losing accuracy.
-- Why it matters: Simulating molecular vibrations and quantum systems is fundamental to drug discovery, materials science, and chemistry—fields where computational bottlenecks currently delay research by months or force scientists to use crude approximations. This method could let researchers run simulations on standard computers that would otherwise require expensive supercomputers, speeding up everything from designing new medicines to developing better batteries.
-
-### AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control
-- URL: https://paperplaine.com/papers/ad-wm-action-discriminative
-- Category: Computer Science · AI
-- Authors: Jiabin Qiu, Zixuan Chen, Hongye Cao et al.
-- arXiv: 2609.30264
-- Plain-English subtitle: Training robot brains to imagine what different actions will do, not just what happens next
-- Summary: Robots that plan their own actions need world models that can reliably tell the difference between what would happen if they did action A versus action B—but standard models optimize for predicting the actual future accurately, which doesn't guarantee this. Researchers built AD-WM, a world model that explicitly trains to preserve information about which action led to which outcome, and showed it boosted task success from 3.7% to 52% on hard-start robot manipulation and improved real-robot pick-and-place from 42.2% to 71.1% without retraining.
-- Why it matters: Robots that plan using world models are entering real warehouses and labs. If their internal models can't reliably distinguish good actions from bad ones, the robots fail or waste time. This approach makes planning more reliable without slowing down inference, directly improving how well robots solve physical tasks on their first try—critical when resets are expensive or impossible.
 
 ## About
 

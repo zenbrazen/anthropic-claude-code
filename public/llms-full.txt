@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 875 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 878 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-28
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Online Learning via Learned Latent Bayesian Tracking
+Subtitle: Learning how to update AI models fast when conditions change
+URL: https://paperplaine.com/papers/online-learning-via-learned
+Category: Computer Science · AI
+Authors: Guy Gerson, Tomer Raviv, Nir Shlezinger et al.
+arXiv ID: 2609.31559
+arXiv URL: https://arxiv.org/abs/2609.31559
+Posted: 2026-09-28
+
+Summary: Most AI models freeze after training, but the real world constantly shifts. This paper shows how to let models adapt in real-time to new data by learning a low-dimensional "shortcut" space where Bayesian filtering (a statistical technique for updating beliefs) becomes computationally feasible. On wireless signal detection and image recognition tasks, the method adapts faster and more accurately than existing approaches while staying computationally efficient.
+
+Why it matters: Real-world AI systems—from wireless receivers to medical imaging to autonomous vehicles—face constantly changing conditions. Current methods either don't adapt or are too slow and expensive to run on edge devices. This work makes fast, principled adaptation practical by learning the right geometric space for the problem, enabling models to stay accurate without retraining when conditions shift.
+
+---
+Title: Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport
+Subtitle: Generating realistic worst-case scenarios to test AI system reliability
+URL: https://paperplaine.com/papers/beyond-empirical-support-structured
+Category: Mathematics
+Authors: Haixiang Sun, Andrew L. Liu
+arXiv ID: 2609.31470
+arXiv URL: https://arxiv.org/abs/2609.31470
+Posted: 2026-09-28
+
+Summary: Machine learning systems often fail on unusual cases they've never seen before. This paper introduces a new method called Sinkhorn Boundary Outlier Generation (SBOG) that deliberately creates realistic extreme examples—anomalies in time series data, unusual images, and other edge cases—to stress-test AI systems before deployment. Unlike existing approaches that produce random oddities, SBOG creates outliers that stay semantically grounded while pushing into genuinely risky territory, helping developers spot vulnerabilities their training data couldn't reveal.
+
+Why it matters: In high-stakes domains like healthcare, finance, and autonomous vehicles, AI failures on rare scenarios can be catastrophic. Current methods for finding weaknesses rely on finite historical data or crude perturbations, leaving dangerous blind spots. SBOG produces structured, informative test cases that expose real vulnerabilities—allowing engineers to patch systems before they encounter unexpected conditions in the real world, not after.
+
+---
+Title: How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks
+Subtitle: How much information can secret transaction pools safely leak?
+URL: https://paperplaine.com/papers/how-much-must-a
+Category: Computer Science
+Authors: Tingyi Lin, Jiazhuo Li, Ruoran Lai
+arXiv ID: 2609.31379
+arXiv URL: https://arxiv.org/abs/2609.31379
+Posted: 2026-09-28
+
+Summary: Researchers discovered exactly how much information about a pending trade can leak from a private transaction pool before attackers can profitably sandwich it. Even when a pool hides the full transaction size, knowing just the lower bound of that size—and the trade's direction—is enough for attackers to reliably profit, while the upper bound turns out to be irrelevant.
+
+Why it matters: Private pools are sold as protection against sandwich attacks, but this work shows their privacy guarantees have hard limits. A pool operator now knows precisely what to hide and what can safely be revealed—information that could be baked into privacy layer designs to give traders genuine protection without making pools unnecessarily opaque.
 
 ---
 Title: PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents

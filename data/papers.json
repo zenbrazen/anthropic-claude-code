@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.31559",
+    "title": "Online Learning via Learned Latent Bayesian Tracking",
+    "authors": "Guy Gerson, Tomer Raviv, Nir Shlezinger et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-25T17:27:14Z",
+    "publishedFormatted": "Sep 25, 2026",
+    "subtitle": "Learning how to update AI models fast when conditions change",
+    "summary": "Most AI models freeze after training, but the real world constantly shifts. This paper shows how to let models adapt in real-time to new data by learning a low-dimensional \"shortcut\" space where Bayesian filtering (a statistical technique for updating beliefs) becomes computationally feasible. On wireless signal detection and image recognition tasks, the method adapts faster and more accurately than existing approaches while staying computationally efficient.",
+    "whyItMatters": "Real-world AI systems—from wireless receivers to medical imaging to autonomous vehicles—face constantly changing conditions. Current methods either don't adapt or are too slow and expensive to run on edge devices. This work makes fast, principled adaptation practical by learning the right geometric space for the problem, enabling models to stay accurate without retraining when conditions shift.",
+    "fetchedAt": "2026-09-28T23:36:42.758Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 208
+    },
+    "slug": "online-learning-via-learned"
+  },
+  {
+    "id": "2609.31470",
+    "title": "Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport",
+    "authors": "Haixiang Sun, Andrew L. Liu",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-09-25T16:18:02Z",
+    "publishedFormatted": "Sep 25, 2026",
+    "subtitle": "Generating realistic worst-case scenarios to test AI system reliability",
+    "summary": "Machine learning systems often fail on unusual cases they've never seen before. This paper introduces a new method called Sinkhorn Boundary Outlier Generation (SBOG) that deliberately creates realistic extreme examples—anomalies in time series data, unusual images, and other edge cases—to stress-test AI systems before deployment. Unlike existing approaches that produce random oddities, SBOG creates outliers that stay semantically grounded while pushing into genuinely risky territory, helping developers spot vulnerabilities their training data couldn't reveal.",
+    "whyItMatters": "In high-stakes domains like healthcare, finance, and autonomous vehicles, AI failures on rare scenarios can be catastrophic. Current methods for finding weaknesses rely on finite historical data or crude perturbations, leaving dangerous blind spots. SBOG produces structured, informative test cases that expose real vulnerabilities—allowing engineers to patch systems before they encounter unexpected conditions in the real world, not after.",
+    "fetchedAt": "2026-09-28T23:36:46.115Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 176
+    },
+    "slug": "beyond-empirical-support-structured"
+  },
+  {
+    "id": "2609.31379",
+    "title": "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks",
+    "authors": "Tingyi Lin, Jiazhuo Li, Ruoran Lai",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-25T15:15:24Z",
+    "publishedFormatted": "Sep 25, 2026",
+    "subtitle": "How much information can secret transaction pools safely leak?",
+    "summary": "Researchers discovered exactly how much information about a pending trade can leak from a private transaction pool before attackers can profitably sandwich it. Even when a pool hides the full transaction size, knowing just the lower bound of that size—and the trade's direction—is enough for attackers to reliably profit, while the upper bound turns out to be irrelevant.",
+    "whyItMatters": "Private pools are sold as protection against sandwich attacks, but this work shows their privacy guarantees have hard limits. A pool operator now knows precisely what to hide and what can safely be revealed—information that could be baked into privacy layer designs to give traders genuine protection without making pools unnecessarily opaque.",
+    "fetchedAt": "2026-09-28T23:36:49.161Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 23,
+      "wordCount": 223
+    },
+    "slug": "how-much-must-a"
+  },
+  {
     "id": "2609.31468",
     "title": "PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents",
     "authors": "Pavel Kireyev",

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2026 14:58:29 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 23:36:49 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Online Learning via Learned Latent Bayesian Tracking</title>
+      <link>https://paperplaine.com/papers/online-learning-via-learned</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/online-learning-via-learned</guid>
+      <pubDate>Fri, 25 Sep 2026 17:27:14 GMT</pubDate>
+      <author>Guy Gerson, Tomer Raviv, Nir Shlezinger et al.</author>
+      <category>AI</category>
+      <description>Learning how to update AI models fast when conditions change</description>
+      <content:encoded><![CDATA[<p><em>Learning how to update AI models fast when conditions change</em></p><p>Most AI models freeze after training, but the real world constantly shifts. This paper shows how to let models adapt in real-time to new data by learning a low-dimensional "shortcut" space where Bayesian filtering (a statistical technique for updating beliefs) becomes computationally feasible. On wireless signal detection and image recognition tasks, the method adapts faster and more accurately than existing approaches while staying computationally efficient.</p><p><strong>Why it matters:</strong> Real-world AI systems—from wireless receivers to medical imaging to autonomous vehicles—face constantly changing conditions. Current methods either don't adapt or are too slow and expensive to run on edge devices. This work makes fast, principled adaptation practical by learning the right geometric space for the problem, enabling models to stay accurate without retraining when conditions shift.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport</title>
+      <link>https://paperplaine.com/papers/beyond-empirical-support-structured</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/beyond-empirical-support-structured</guid>
+      <pubDate>Fri, 25 Sep 2026 16:18:02 GMT</pubDate>
+      <author>Haixiang Sun, Andrew L. Liu</author>
+      <category>Math</category>
+      <description>Generating realistic worst-case scenarios to test AI system reliability</description>
+      <content:encoded><![CDATA[<p><em>Generating realistic worst-case scenarios to test AI system reliability</em></p><p>Machine learning systems often fail on unusual cases they've never seen before. This paper introduces a new method called Sinkhorn Boundary Outlier Generation (SBOG) that deliberately creates realistic extreme examples—anomalies in time series data, unusual images, and other edge cases—to stress-test AI systems before deployment. Unlike existing approaches that produce random oddities, SBOG creates outliers that stay semantically grounded while pushing into genuinely risky territory, helping developers spot vulnerabilities their training data couldn't reveal.</p><p><strong>Why it matters:</strong> In high-stakes domains like healthcare, finance, and autonomous vehicles, AI failures on rare scenarios can be catastrophic. Current methods for finding weaknesses rely on finite historical data or crude perturbations, leaving dangerous blind spots. SBOG produces structured, informative test cases that expose real vulnerabilities—allowing engineers to patch systems before they encounter unexpected conditions in the real world, not after.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks</title>
+      <link>https://paperplaine.com/papers/how-much-must-a</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/how-much-must-a</guid>
+      <pubDate>Fri, 25 Sep 2026 15:15:24 GMT</pubDate>
+      <author>Tingyi Lin, Jiazhuo Li, Ruoran Lai</author>
+      <category>Comp Sci</category>
+      <description>How much information can secret transaction pools safely leak?</description>
+      <content:encoded><![CDATA[<p><em>How much information can secret transaction pools safely leak?</em></p><p>Researchers discovered exactly how much information about a pending trade can leak from a private transaction pool before attackers can profitably sandwich it. Even when a pool hides the full transaction size, knowing just the lower bound of that size—and the trade's direction—is enough for attackers to reliably profit, while the upper bound turns out to be irrelevant.</p><p><strong>Why it matters:</strong> Private pools are sold as protection against sandwich attacks, but this work shows their privacy guarantees have hard limits. A pool operator now knows precisely what to hide and what can safely be revealed—information that could be baked into privacy layer designs to give traders genuine protection without making pools unnecessarily opaque.</p>]]></content:encoded>
+    </item>
     <item>
       <title>PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents</title>
       <link>https://paperplaine.com/papers/pricebench-a-diagnostic-benchmark</link>
