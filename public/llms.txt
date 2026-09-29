@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 878 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 881 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 301 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 302 papers in archive.
+  - "Neural Harmonic Measure Operator"
   - "Online Learning via Learned Latent Bayesian Tracking"
-  - "PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 73 papers in archive.
   - "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
   - "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 74 papers in archive.
   - "FlatClip: A Geometry-Aware Surface-Level Baseline for fMRI Representation Learning"
   - "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 76 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 77 papers in archive.
+  - "Evolution of Market Microstructure in the Age of AI"
   - "Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints"
-  - "Multi-Agent AI Architecture for Regulated Insurers: A generic AI framework under Solvency II and the AI Act in Austria and Germany"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 75 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 76 papers in archive.
+  - "Guided Uncertainty-Aware Robust Domain Transfer"
   - "Nuclear Norm-Regularized Bayesian Matrix Completion"
-  - "Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 70 papers in archive.
   - "Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections"
   - "Efficient Continuous DEM Reconstruction under Limited Target-Resolution Supervision"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Multi-Dimensional Matching"
 
 ## 10 most recent papers
+
+### Neural Harmonic Measure Operator
+- URL: https://paperplaine.com/papers/neural-harmonic-measure-operator
+- Category: Computer Science · AI
+- Authors: Jinjin He, Sinan Wang, Yuchen Sun et al.
+- arXiv: 2609.35752
+- Plain-English subtitle: Training AI to solve complex math problems that shift shape without starting over
+- Summary: Researchers created a neural network that learns to solve a common family of mathematical problems (elliptic PDEs) on shapes that change size and form. Once trained on a single shape, the same network solves the same equation instantly on new shapes and with different boundary conditions, without retraining—a feat previous AI solvers couldn't achieve.
+- Why it matters: These equations describe heat flow, fluid dynamics, and stress in materials across engineering and physics. Current solvers either require expensive retraining for each new shape or sacrifice accuracy. This approach cuts computational cost while maintaining quality, making complex simulations faster for design, manufacturing, and scientific discovery.
+
+### Evolution of Market Microstructure in the Age of AI
+- URL: https://paperplaine.com/papers/evolution-of-market-microstructure
+- Category: Quantitative Finance
+- Authors: Irene Aldridge
+- arXiv: 2609.33058
+- Plain-English subtitle: How trading technology keeps reshaping who gets what at what price
+- Summary: Markets have been rebuilt five times over—from human traders to computer algorithms to AI agents—each shift changing what traders must reveal and what they can hide. At each step, new rules emerge that try to allocate goods fairly and efficiently, but trade-offs persist: speed, secrecy, and control over order sequencing remain in tension, and no design solves them all.
+- Why it matters: As AI agents increasingly execute trades and discover new strategies, market designers face a familiar but harder problem: preventing collusion, extracting unfair value, and ensuring ordinary traders aren't systematically disadvantaged. Understanding how past shifts in technology broke and remade market rules gives us tools to spot where the next generation of trading systems will fail—and where to intervene before they do.
+
+### Guided Uncertainty-Aware Robust Domain Transfer
+- URL: https://paperplaine.com/papers/guided-uncertainty-aware-robust
+- Category: Statistics
+- Authors: Xin Xiong, Zijian Guo, Tianxi Cai
+- arXiv: 2609.35654
+- Plain-English subtitle: Keeping medical AI accurate as hospitals and patient populations change
+- Summary: A new statistical method called GUARD lets hospitals update AI models used for clinical decisions without fully retraining them from scratch, using only small amounts of new labeled patient data. The approach combines information from multiple hospitals and accounts for uncertainty in predictions, keeping models accurate over years even as patient populations and hospital systems shift.
+- Why it matters: Hospitals currently face a hard choice: either expensively retrain AI models with new data, or watch prediction accuracy collapse as patient populations change and new electronic health record systems come online. GUARD solves this by updating models incrementally with minimal labeled data—a rheumatoid arthritis prediction model tested on real hospital records stayed accurate over multiple years using only dozens of labeled cases per year, where standard methods degraded sharply. This could let hospitals deploy AI confidently without constantly rebuilding models from scratch.
 
 ### Online Learning via Learned Latent Bayesian Tracking
 - URL: https://paperplaine.com/papers/online-learning-via-learned
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI learns to write robot plans that work on new problems
 - Summary: AI systems can write programs that solve robot planning problems better than hand-coded solutions, and these programs work on new situations the AI never saw before. Three different AI models generated programs that succeeded 56% to 95% of the time across 28 different robotic tasks, beating both traditional planners and previous AI approaches.
 - Why it matters: Building robots that can handle different tasks usually requires experts to manually design planning systems from scratch. If AI can automatically write these programs instead, it cuts the engineering work needed and makes robots faster at solving new problems—the agents used 10 times less computation per task. This could shrink the time between designing a robot task and getting it working in the real world.
-
-### Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X
-- URL: https://paperplaine.com/papers/why-does-misinformation-propagate
-- Category: Economics
-- Authors: Pan Li, Shuang Gao
-- arXiv: 2609.28947
-- Plain-English subtitle: Why false claims spread faster on X than factual posts
-- Summary: X's recommendation algorithm treats all engagement equally—counting likes and quick retweets the same as thoughtful replies and quotes. Misinformation spreads faster because it triggers more instant reactions, flooding it with recommendation amplification. A simple fix—requiring tweets to generate thoughtful engagement before boosting them widely—could redirect exposure away from false claims without reducing overall engagement.
-- Why it matters: Misinformation shapes elections, public health decisions, and political polarization. If a change to X's algorithm can slow the spread of false claims without sacrificing user engagement or suppressing legitimate content, platforms have a concrete tool they can deploy immediately. This diagnosis pins responsibility on a specific technical choice rather than blaming users or the nature of falsehood itself.
-
-### Nuclear Norm-Regularized Bayesian Matrix Completion
-- URL: https://paperplaine.com/papers/nuclear-norm-regularized-bayesian
-- Category: Statistics
-- Authors: Calvin Tolbert
-- arXiv: 2609.30078
-- Plain-English subtitle: A faster way to guess missing numbers and measure uncertainty simultaneously
-- Summary: Researchers created the first algorithm that can quickly estimate missing entries in large tables of data while also quantifying how confident that estimate is. The method works even when the underlying noise level is unknown, which is how real-world data problems usually appear—and it comes with a mathematical guarantee that the algorithm will finish in reasonable time.
-- Why it matters: Many practical problems—from Netflix recommendations to estimating economic outcomes—require filling in missing data. Previous methods either gave single guesses with no confidence intervals, or were too slow to be practical. This algorithm means systems can now provide both an estimate and a range of plausible values, helping decision-makers understand not just what the answer might be, but how much they should trust it.
-
-### Rolling-WAM: World Action Models with Rolling Imagination
-- URL: https://paperplaine.com/papers/rolling-wam-world-action
-- Category: Computer Science · AI
-- Authors: Yinghua Zhou, Junjie Ye, Yiqi Zhao et al.
-- arXiv: 2609.30247
-- Plain-English subtitle: Making robot planning 4.5 times faster by spreading out prediction work
-- Summary: Robots that predict and plan their own movements often waste time redoing all their calculations from scratch every time they need to react. Rolling-WAM spreads this work across multiple planning cycles, keeping partial predictions from the previous step and refining them gradually, which speeds up real-time responsiveness 4.5 times while maintaining the same accuracy on manipulation tasks.
-- Why it matters: Robots working alongside humans or in dynamic environments need to react quickly to unexpected changes—dropped objects, moving obstacles, or new instructions. The 4.5x speedup means robots can adjust their grip, path, or approach in time to actually respond to what's happening, rather than finishing their calculations after the moment has passed. This is the difference between a robot that reacts and one that merely predicts.
 
 ## About
 

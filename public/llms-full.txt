@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 878 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-28
+This file contains the complete plain-English text of all 881 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-29
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Neural Harmonic Measure Operator
+Subtitle: Training AI to solve complex math problems that shift shape without starting over
+URL: https://paperplaine.com/papers/neural-harmonic-measure-operator
+Category: Computer Science · AI
+Authors: Jinjin He, Sinan Wang, Yuchen Sun et al.
+arXiv ID: 2609.35752
+arXiv URL: https://arxiv.org/abs/2609.35752
+Posted: 2026-09-29
+
+Summary: Researchers created a neural network that learns to solve a common family of mathematical problems (elliptic PDEs) on shapes that change size and form. Once trained on a single shape, the same network solves the same equation instantly on new shapes and with different boundary conditions, without retraining—a feat previous AI solvers couldn't achieve.
+
+Why it matters: These equations describe heat flow, fluid dynamics, and stress in materials across engineering and physics. Current solvers either require expensive retraining for each new shape or sacrifice accuracy. This approach cuts computational cost while maintaining quality, making complex simulations faster for design, manufacturing, and scientific discovery.
+
+---
+Title: Evolution of Market Microstructure in the Age of AI
+Subtitle: How trading technology keeps reshaping who gets what at what price
+URL: https://paperplaine.com/papers/evolution-of-market-microstructure
+Category: Quantitative Finance
+Authors: Irene Aldridge
+arXiv ID: 2609.33058
+arXiv URL: https://arxiv.org/abs/2609.33058
+Posted: 2026-09-29
+
+Summary: Markets have been rebuilt five times over—from human traders to computer algorithms to AI agents—each shift changing what traders must reveal and what they can hide. At each step, new rules emerge that try to allocate goods fairly and efficiently, but trade-offs persist: speed, secrecy, and control over order sequencing remain in tension, and no design solves them all.
+
+Why it matters: As AI agents increasingly execute trades and discover new strategies, market designers face a familiar but harder problem: preventing collusion, extracting unfair value, and ensuring ordinary traders aren't systematically disadvantaged. Understanding how past shifts in technology broke and remade market rules gives us tools to spot where the next generation of trading systems will fail—and where to intervene before they do.
+
+---
+Title: Guided Uncertainty-Aware Robust Domain Transfer
+Subtitle: Keeping medical AI accurate as hospitals and patient populations change
+URL: https://paperplaine.com/papers/guided-uncertainty-aware-robust
+Category: Statistics
+Authors: Xin Xiong, Zijian Guo, Tianxi Cai
+arXiv ID: 2609.35654
+arXiv URL: https://arxiv.org/abs/2609.35654
+Posted: 2026-09-29
+
+Summary: A new statistical method called GUARD lets hospitals update AI models used for clinical decisions without fully retraining them from scratch, using only small amounts of new labeled patient data. The approach combines information from multiple hospitals and accounts for uncertainty in predictions, keeping models accurate over years even as patient populations and hospital systems shift.
+
+Why it matters: Hospitals currently face a hard choice: either expensively retrain AI models with new data, or watch prediction accuracy collapse as patient populations change and new electronic health record systems come online. GUARD solves this by updating models incrementally with minimal labeled data—a rheumatoid arthritis prediction model tested on real hospital records stayed accurate over multiple years using only dozens of labeled cases per year, where standard methods degraded sharply. This could let hospitals deploy AI confidently without constantly rebuilding models from scratch.
 
 ---
 Title: Online Learning via Learned Latent Bayesian Tracking
