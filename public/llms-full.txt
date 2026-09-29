@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 881 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 884 papers currently in the Paper Plaine archive.
 Last updated: 2026-09-29
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: A Unified Uncertainty Representation for Graph Neural Networks via Doubly-Spectral Stochastic Expansion
+Subtitle: One model that catches when graph AI systems make unreliable predictions
+URL: https://paperplaine.com/papers/a-unified-uncertainty-representation
+Category: Computer Science · AI
+Authors: Fred Xu, Thomas Markovich, Florence Regol et al.
+arXiv ID: 2609.35703
+arXiv URL: https://arxiv.org/abs/2609.35703
+Posted: 2026-09-29
+
+Summary: Researchers built a single neural network representation that simultaneously detects when graph neural networks are unreliable, adjusts confidence scores appropriately, and maintains accuracy even when data shifts unexpectedly. In head-to-head tests on 14 benchmark datasets, it outperformed competing methods at measuring prediction confidence without needing extra correction steps, and showed the strongest performance when data characteristics changed.
+
+Why it matters: Graph neural networks power recommendation systems, drug discovery, and fraud detection—domains where wrong answers carry real costs. Today, deploying them safely requires running multiple separate models to check reliability, increasing complexity and computational burden. This unified approach lets a single model handle all three critical checks at once, making it cheaper and faster to deploy trustworthy AI systems in production.
+
+---
+Title: Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome
+Subtitle: Why a fruit fly's brain network mixes information far slower than expected
+URL: https://paperplaine.com/papers/pre-registered-spectral-and
+Category: Quantitative Biology
+Authors: Eran Kopel
+arXiv ID: 2609.33054
+arXiv URL: https://arxiv.org/abs/2609.33054
+Posted: 2026-09-29
+
+Summary: Researchers tested predictions about how signals flow through the fruit fly brain's 124 million synapses and found that information spreads much more slowly than theory predicted—by roughly tenfold. The culprit: a small cluster of eleven neurons in the fly's nerve cord that act as a nearly sealed-off compartment, trapping signals and slowing the brain's ability to integrate information across regions.
+
+Why it matters: Understanding how information actually moves through a brain—rather than how we thought it should—is essential for making sense of neural computation. These findings show that connectome data alone can be misleading: the brain's physical wiring creates bottlenecks that mathematics alone wouldn't predict, suggesting that biological nervous systems may rely on these slow-mixing regions for specific functions like motor control or sensory filtering.
+
+---
+Title: Memory- and Bandwidth-Efficient SPAD-LiDAR Ranging via Coarse-to-Fine Spline Sketching
+Subtitle: Shrinking the data flood from super-sensitive 3D cameras
+URL: https://paperplaine.com/papers/memory-and-bandwidth-efficient
+Category: Engineering
+Authors: Zhenya Zangy, Istvan Gyongy, Mike Davies
+arXiv ID: 2609.35126
+arXiv URL: https://arxiv.org/abs/2609.35126
+Posted: 2026-09-29
+
+Summary: Researchers developed a compression technique that lets ultra-sensitive light detectors (SPADs) send 3D distance measurements using a fraction of the usual memory and bandwidth. The method works by converting individual photon timestamps into compact numerical sketches on the fly, rather than building full histograms — achieving 100–1000× compression while actually improving accuracy. The approach even recovers hidden objects partially blocked by camouflage or semi-transparent materials.
+
+Why it matters: SPAD-LiDAR sensors can detect individual photons and measure distances with millimeter precision, but they generate overwhelming amounts of data that drains power and memory in mobile robots, autonomous vehicles, and 3D cameras. This compression cuts the data bottleneck while keeping or improving measurement quality, making the technology practical for real-world devices that can't afford to transmit or store gigabytes per second of sensor information.
 
 ---
 Title: Neural Harmonic Measure Operator
