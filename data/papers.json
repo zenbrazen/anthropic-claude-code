@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.38161",
+    "title": "A Spectral Theory of Distortion in LLM Graph Reconstruction: Sharp Bounds and Empirical Characterization",
+    "authors": "Jianru Shen",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-29T17:59:16Z",
+    "publishedFormatted": "Sep 29, 2026",
+    "subtitle": "Why a single distortion score hides what language models get wrong about graphs",
+    "summary": "When language models reconstruct graphs, researchers usually report one summary number measuring how wrong the reconstruction is. This paper proves that number conceals crucial details: two mathematical bounds reveal whether the model only added edges, only deleted them, or did both—and when it does both, that signals the model hallucinated connections while also losing real ones. Testing three AI models on 45 graphs, the researchers found that 29 reconstructions invented and deleted edges simultaneously, even in cases where the total edge count stayed the same.",
+    "whyItMatters": "Aggregate distortion scores mask whether a language model's errors come from conservative editing or aggressive hallucination mixed with forgetting. This matters because a model that adds fake edges while dropping real ones behaves very differently from one that just copies the input, yet a single summary number treats them the same. The new bounds let researchers diagnose a model's reconstruction strategy from standard metrics alone—critical information for deciding whether the output is trustworthy.",
+    "fetchedAt": "2026-09-30T22:45:34.220Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 214
+    },
+    "slug": "a-spectral-theory-of"
+  },
+  {
+    "id": "2609.38177",
+    "title": "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering",
+    "authors": "Jaewoo Jung, Hyeonseo Yu, Honggyu An et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-09-29T17:59:52Z",
+    "publishedFormatted": "Sep 29, 2026",
+    "subtitle": "Teaching AI to build mental 3D maps before answering visual questions",
+    "summary": "Researchers created Imagine3D-LLM, a visual AI system that builds a rough 3D mental model of a scene from multiple camera angles before answering questions about it — similar to how humans visualize spaces. This approach outperformed existing systems that try to track detailed geometric correspondences between views, suggesting that coarse 3D reasoning works better than pixel-level precision for spatial understanding tasks.",
+    "whyItMatters": "As AI systems take on tasks involving navigation, robotics, and 3D design, they need to understand spaces from multiple viewpoints the way humans do. This method shows that teaching AI to construct simplified internal 3D maps — rather than obsessing over exact geometric details — produces more reliable spatial reasoning. The approach could improve how robots interpret their surroundings and how AI systems answer questions about complex 3D environments.",
+    "fetchedAt": "2026-09-30T22:45:37.070Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 248
+    },
+    "slug": "imagine3d-llm-teaching-mllms"
+  },
+  {
+    "id": "2609.38058",
+    "title": "Latent Inference-Time Guidance of Time Series Foundation Models",
+    "authors": "Chloé Hashimoto-Cullen, Amaury Durand, Laurent Bozzi et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-09-29T17:25:58Z",
+    "publishedFormatted": "Sep 29, 2026",
+    "subtitle": "Smart blending of AI forecasts by learning what each does best",
+    "summary": "Time series foundation models—AI systems that predict future values in data streams—produce forecasts that vary in quality depending on how you set them up, but no single configuration works best for all situations. Researchers developed a method that automatically combines multiple forecasts from the same model by learning in latent space which configurations work well for different parts of the time series, achieving results competitive with traditional ensemble methods while keeping the models off-the-shelf.",
+    "whyItMatters": "Organizations using AI for forecasting—from energy demand prediction to stock prices—currently either gamble on a single configuration or manually try many combinations. This approach removes that guesswork by automatically learning which settings work best for different parts of your data, improving forecast accuracy without requiring custom retraining or proprietary tools.",
+    "fetchedAt": "2026-09-30T22:45:40.124Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 134
+    },
+    "slug": "latent-inference-time-guidance"
+  },
+  {
     "id": "2609.38140",
     "title": "Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE",
     "authors": "Yu Xu, Yuxin Zhang, Xiao Yang et al.",
