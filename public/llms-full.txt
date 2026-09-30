@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 884 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-29
+This file contains the complete plain-English text of all 887 papers currently in the Paper Plaine archive.
+Last updated: 2026-09-30
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE
+Subtitle: Why video AI models waste computing power trying to treat all scenes equally
+URL: https://paperplaine.com/papers/breaking-the-uniformity-trap
+Category: Computer Science · AI
+Authors: Yu Xu, Yuxin Zhang, Xiao Yang et al.
+arXiv ID: 2609.38140
+arXiv URL: https://arxiv.org/abs/2609.38140
+Posted: 2026-09-30
+
+Summary: Video generation models trained with Mixture-of-Experts—a technique that lets AI systems use different specialized components for different tasks—usually try to balance the workload evenly across all components. This backfires on video: because videos have repeated patterns and uneven semantic content, forcing uniform expert usage fractures related visual information across disconnected components. A new approach called SplitMoE splits experts into two roles—some specialized for high-level meaning, others for flexible visual details—letting the model naturally group similar content instead of scattering it arbitrarily.
+
+Why it matters: Video generation is computationally expensive, and most current approaches waste resources by preventing experts from specializing in what they're actually good at. SplitMoE generates higher-quality videos while using the same amount of computing power, and it learns faster during training. As video AI models grow larger and more capable, this rethink of how to organize expert systems could set the foundation for the next generation of video synthesis tools.
+
+---
+Title: Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data
+Subtitle: Reconstructing detailed networks from only blurry, big-picture information
+URL: https://paperplaine.com/papers/multiscale-reconstruction-of-weighted
+Category: Economics
+Authors: Mattia Marzi, Frank P. Pijpers, Diego Garlaschelli
+arXiv ID: 2609.37957
+arXiv URL: https://arxiv.org/abs/2609.37957
+Posted: 2026-09-30
+
+Summary: When researchers only have access to coarse data about a network—like trade flows between regions rather than between individual countries—they usually can't reliably figure out what the detailed network actually looks like. This paper shows a new method can reconstruct fine-scale networks from coarse information with high accuracy, even outperforming methods that have access to more detailed data during training.
+
+Why it matters: Most real-world networks are only observed at rough levels of detail: governments track trade between countries or regions, not every individual transaction; companies report industry-level output, not product-by-product flows. This method means economists and analysts can now infer the hidden fine-grained structure of these networks without collecting expensive new data, making it possible to spot bottlenecks, vulnerabilities, and inefficiencies that coarse-grained views would miss.
+
+---
+Title: The Principle of Minimum Justified Correlation
+Subtitle: Why nature favors the simplest explanations when information is limited
+URL: https://paperplaine.com/papers/the-principle-of-minimum
+Category: Physics
+Authors: John H Van Drie
+arXiv ID: 2609.38124
+arXiv URL: https://arxiv.org/abs/2609.38124
+Posted: 2026-09-30
+
+Summary: Three different ways of measuring disorder—Shannon entropy, Fisher information, and quantum kinetic energy—turn out to be the same thing: measures of correlation between variables. When you destroy correlations by treating variables as independent, all three measures decrease in predictable ways. This suggests a fundamental principle: given what we know about a physical system, the most justified description is the one with the least correlation among its parts.
+
+Why it matters: This work bridges information theory, statistics, and quantum mechanics under a single principle, potentially explaining why simple, uncorrelated models often work so well in physics and why quantum systems behave the way they do. If the principle holds up across different domains, it could provide a new foundation for choosing which mathematical descriptions best match physical reality—moving beyond intuition to a concrete rule for what makes an explanation 'good enough.'
 
 ---
 Title: A Unified Uncertainty Representation for Graph Neural Networks via Doubly-Spectral Stochastic Expansion

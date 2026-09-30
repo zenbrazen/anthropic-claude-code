@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 22:47:43 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 13:21:03 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE</title>
+      <link>https://paperplaine.com/papers/breaking-the-uniformity-trap</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/breaking-the-uniformity-trap</guid>
+      <pubDate>Tue, 29 Sep 2026 17:55:19 GMT</pubDate>
+      <author>Yu Xu, Yuxin Zhang, Xiao Yang et al.</author>
+      <category>AI</category>
+      <description>Why video AI models waste computing power trying to treat all scenes equally</description>
+      <content:encoded><![CDATA[<p><em>Why video AI models waste computing power trying to treat all scenes equally</em></p><p>Video generation models trained with Mixture-of-Experts—a technique that lets AI systems use different specialized components for different tasks—usually try to balance the workload evenly across all components. This backfires on video: because videos have repeated patterns and uneven semantic content, forcing uniform expert usage fractures related visual information across disconnected components. A new approach called SplitMoE splits experts into two roles—some specialized for high-level meaning, others for flexible visual details—letting the model naturally group similar content instead of scattering it arbitrarily.</p><p><strong>Why it matters:</strong> Video generation is computationally expensive, and most current approaches waste resources by preventing experts from specializing in what they're actually good at. SplitMoE generates higher-quality videos while using the same amount of computing power, and it learns faster during training. As video AI models grow larger and more capable, this rethink of how to organize expert systems could set the foundation for the next generation of video synthesis tools.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data</title>
+      <link>https://paperplaine.com/papers/multiscale-reconstruction-of-weighted</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multiscale-reconstruction-of-weighted</guid>
+      <pubDate>Tue, 29 Sep 2026 16:30:13 GMT</pubDate>
+      <author>Mattia Marzi, Frank P. Pijpers, Diego Garlaschelli</author>
+      <category>Economics</category>
+      <description>Reconstructing detailed networks from only blurry, big-picture information</description>
+      <content:encoded><![CDATA[<p><em>Reconstructing detailed networks from only blurry, big-picture information</em></p><p>When researchers only have access to coarse data about a network—like trade flows between regions rather than between individual countries—they usually can't reliably figure out what the detailed network actually looks like. This paper shows a new method can reconstruct fine-scale networks from coarse information with high accuracy, even outperforming methods that have access to more detailed data during training.</p><p><strong>Why it matters:</strong> Most real-world networks are only observed at rough levels of detail: governments track trade between countries or regions, not every individual transaction; companies report industry-level output, not product-by-product flows. This method means economists and analysts can now infer the hidden fine-grained structure of these networks without collecting expensive new data, making it possible to spot bottlenecks, vulnerabilities, and inefficiencies that coarse-grained views would miss.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Principle of Minimum Justified Correlation</title>
+      <link>https://paperplaine.com/papers/the-principle-of-minimum</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-principle-of-minimum</guid>
+      <pubDate>Tue, 29 Sep 2026 17:51:48 GMT</pubDate>
+      <author>John H Van Drie</author>
+      <category>Physics</category>
+      <description>Why nature favors the simplest explanations when information is limited</description>
+      <content:encoded><![CDATA[<p><em>Why nature favors the simplest explanations when information is limited</em></p><p>Three different ways of measuring disorder—Shannon entropy, Fisher information, and quantum kinetic energy—turn out to be the same thing: measures of correlation between variables. When you destroy correlations by treating variables as independent, all three measures decrease in predictable ways. This suggests a fundamental principle: given what we know about a physical system, the most justified description is the one with the least correlation among its parts.</p><p><strong>Why it matters:</strong> This work bridges information theory, statistics, and quantum mechanics under a single principle, potentially explaining why simple, uncorrelated models often work so well in physics and why quantum systems behave the way they do. If the principle holds up across different domains, it could provide a new foundation for choosing which mathematical descriptions best match physical reality—moving beyond intuition to a concrete rule for what makes an explanation 'good enough.'</p>]]></content:encoded>
+    </item>
     <item>
       <title>A Unified Uncertainty Representation for Graph Neural Networks via Doubly-Spectral Stochastic Expansion</title>
       <link>https://paperplaine.com/papers/a-unified-uncertainty-representation</link>

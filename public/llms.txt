@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 884 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 887 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 303 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 304 papers in archive.
+  - "Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE"
   - "A Unified Uncertainty Representation for Graph Neural Networks via Doubly-Spectral Stochastic Expansion"
-  - "Neural Harmonic Measure Operator"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 73 papers in archive.
   - "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
   - "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 73 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 74 papers in archive.
+  - "The Principle of Minimum Justified Correlation"
   - "Exact Characterization of the Holevo Bound by a Quantum Fisher Information Family"
-  - "Deep thermalization and Hilbert space ergodicity"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 74 papers in archive.
   - "Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport"
   - "High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 71 papers in archive.
   - "Memory- and Bandwidth-Efficient SPAD-LiDAR Ranging via Coarse-to-Fine Spline Sketching"
   - "Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 62 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 63 papers in archive.
+  - "Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data"
   - "Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X"
-  - "Multi-Dimensional Matching"
 
 ## 10 most recent papers
+
+### Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE
+- URL: https://paperplaine.com/papers/breaking-the-uniformity-trap
+- Category: Computer Science · AI
+- Authors: Yu Xu, Yuxin Zhang, Xiao Yang et al.
+- arXiv: 2609.38140
+- Plain-English subtitle: Why video AI models waste computing power trying to treat all scenes equally
+- Summary: Video generation models trained with Mixture-of-Experts—a technique that lets AI systems use different specialized components for different tasks—usually try to balance the workload evenly across all components. This backfires on video: because videos have repeated patterns and uneven semantic content, forcing uniform expert usage fractures related visual information across disconnected components. A new approach called SplitMoE splits experts into two roles—some specialized for high-level meaning, others for flexible visual details—letting the model naturally group similar content instead of scattering it arbitrarily.
+- Why it matters: Video generation is computationally expensive, and most current approaches waste resources by preventing experts from specializing in what they're actually good at. SplitMoE generates higher-quality videos while using the same amount of computing power, and it learns faster during training. As video AI models grow larger and more capable, this rethink of how to organize expert systems could set the foundation for the next generation of video synthesis tools.
+
+### Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data
+- URL: https://paperplaine.com/papers/multiscale-reconstruction-of-weighted
+- Category: Economics
+- Authors: Mattia Marzi, Frank P. Pijpers, Diego Garlaschelli
+- arXiv: 2609.37957
+- Plain-English subtitle: Reconstructing detailed networks from only blurry, big-picture information
+- Summary: When researchers only have access to coarse data about a network—like trade flows between regions rather than between individual countries—they usually can't reliably figure out what the detailed network actually looks like. This paper shows a new method can reconstruct fine-scale networks from coarse information with high accuracy, even outperforming methods that have access to more detailed data during training.
+- Why it matters: Most real-world networks are only observed at rough levels of detail: governments track trade between countries or regions, not every individual transaction; companies report industry-level output, not product-by-product flows. This method means economists and analysts can now infer the hidden fine-grained structure of these networks without collecting expensive new data, making it possible to spot bottlenecks, vulnerabilities, and inefficiencies that coarse-grained views would miss.
+
+### The Principle of Minimum Justified Correlation
+- URL: https://paperplaine.com/papers/the-principle-of-minimum
+- Category: Physics
+- Authors: John H Van Drie
+- arXiv: 2609.38124
+- Plain-English subtitle: Why nature favors the simplest explanations when information is limited
+- Summary: Three different ways of measuring disorder—Shannon entropy, Fisher information, and quantum kinetic energy—turn out to be the same thing: measures of correlation between variables. When you destroy correlations by treating variables as independent, all three measures decrease in predictable ways. This suggests a fundamental principle: given what we know about a physical system, the most justified description is the one with the least correlation among its parts.
+- Why it matters: This work bridges information theory, statistics, and quantum mechanics under a single principle, potentially explaining why simple, uncorrelated models often work so well in physics and why quantum systems behave the way they do. If the principle holds up across different domains, it could provide a new foundation for choosing which mathematical descriptions best match physical reality—moving beyond intuition to a concrete rule for what makes an explanation 'good enough.'
 
 ### A Unified Uncertainty Representation for Graph Neural Networks via Doubly-Spectral Stochastic Expansion
 - URL: https://paperplaine.com/papers/a-unified-uncertainty-representation
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Learning how to update AI models fast when conditions change
 - Summary: Most AI models freeze after training, but the real world constantly shifts. This paper shows how to let models adapt in real-time to new data by learning a low-dimensional "shortcut" space where Bayesian filtering (a statistical technique for updating beliefs) becomes computationally feasible. On wireless signal detection and image recognition tasks, the method adapts faster and more accurately than existing approaches while staying computationally efficient.
 - Why it matters: Real-world AI systems—from wireless receivers to medical imaging to autonomous vehicles—face constantly changing conditions. Current methods either don't adapt or are too slow and expensive to run on edge devices. This work makes fast, principled adaptation practical by learning the right geometric space for the problem, enabling models to stay accurate without retraining when conditions shift.
-
-### Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport
-- URL: https://paperplaine.com/papers/beyond-empirical-support-structured
-- Category: Mathematics
-- Authors: Haixiang Sun, Andrew L. Liu
-- arXiv: 2609.31470
-- Plain-English subtitle: Generating realistic worst-case scenarios to test AI system reliability
-- Summary: Machine learning systems often fail on unusual cases they've never seen before. This paper introduces a new method called Sinkhorn Boundary Outlier Generation (SBOG) that deliberately creates realistic extreme examples—anomalies in time series data, unusual images, and other edge cases—to stress-test AI systems before deployment. Unlike existing approaches that produce random oddities, SBOG creates outliers that stay semantically grounded while pushing into genuinely risky territory, helping developers spot vulnerabilities their training data couldn't reveal.
-- Why it matters: In high-stakes domains like healthcare, finance, and autonomous vehicles, AI failures on rare scenarios can be catastrophic. Current methods for finding weaknesses rely on finite historical data or crude perturbations, leaving dangerous blind spots. SBOG produces structured, informative test cases that expose real vulnerabilities—allowing engineers to patch systems before they encounter unexpected conditions in the real world, not after.
-
-### How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks
-- URL: https://paperplaine.com/papers/how-much-must-a
-- Category: Computer Science
-- Authors: Tingyi Lin, Jiazhuo Li, Ruoran Lai
-- arXiv: 2609.31379
-- Plain-English subtitle: How much information can secret transaction pools safely leak?
-- Summary: Researchers discovered exactly how much information about a pending trade can leak from a private transaction pool before attackers can profitably sandwich it. Even when a pool hides the full transaction size, knowing just the lower bound of that size—and the trade's direction—is enough for attackers to reliably profit, while the upper bound turns out to be irrelevant.
-- Why it matters: Private pools are sold as protection against sandwich attacks, but this work shows their privacy guarantees have hard limits. A pool operator now knows precisely what to hide and what can safely be revealed—information that could be baked into privacy layer designs to give traders genuine protection without making pools unnecessarily opaque.
-
-### PriceBench: A Diagnostic Benchmark for Price, Quality, and Brand Preferences in LLM Booking Agents
-- URL: https://paperplaine.com/papers/pricebench-a-diagnostic-benchmark
-- Category: Computer Science · AI
-- Authors: Pavel Kireyev
-- arXiv: 2609.31468
-- Plain-English subtitle: Why the AI booking your hotel reveals hidden preferences that change what you pay
-- Summary: When AI systems choose hotels for you, they have hidden preferences for price, quality, and brand that determine what you book and how much you spend. Researchers tested 28 AI systems from major providers on 3,600 real New York hotel options and found that stronger AI systems make more consistent choices, while weaker ones either lock onto whatever listing appears first or pick randomly—and price preferences vary wildly across providers, swinging booked prices from $247 to $393 per night on identical tasks.
-- Why it matters: As AI systems quietly make purchasing decisions on behalf of users, their hidden biases directly shape what people buy and what they pay. A hotel-booking AI favoring expensive properties or one manipulated by listing order could invisibly redirect billions in spending. This benchmark lets companies audit what their AI systems actually prefer rather than assume, and provides a method for measuring whether AI agents are making choices in users' interests or their own.
 
 ## About
 
