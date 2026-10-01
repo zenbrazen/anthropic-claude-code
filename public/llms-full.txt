@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 890 papers currently in the Paper Plaine archive.
-Last updated: 2026-09-30
+This file contains the complete plain-English text of all 893 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-01
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing
+Subtitle: How to change text in videos without breaking the scene
+URL: https://paperplaine.com/papers/vitex-bench-benchmarking-high
+Category: Computer Science · AI
+Authors: Xinghao Chen, Xiangbo Gao, Jiongze Yu et al.
+arXiv ID: 2609.40356
+arXiv URL: https://arxiv.org/abs/2609.40356
+Posted: 2026-10-01
+
+Summary: Researchers created the first major benchmark for editing text that appears on real-world surfaces in videos—like storefront signs or whiteboards—while keeping everything else unchanged. Testing eight existing video editors revealed a fundamental trade-off: systems can either get the text right, maintain smooth motion, or preserve the background, but not all three together.
+
+Why it matters: Video editing tools power everything from marketing content to accessibility fixes, but until now there was no standard way to measure whether text edits actually work across a full video. This benchmark gives engineers a shared target to build better editors and shows exactly where current technology falls short—information that companies developing video AI tools need to improve their products.
+
+---
+Title: EndoWake: Modeling Wind by Linear Programming for Wind Farm Layout Optimization
+Subtitle: A smarter math approach to placing wind turbines for maximum power
+URL: https://paperplaine.com/papers/endowake-modeling-wind-by
+Category: Mathematics
+Authors: Martina Fischetti, Matteo Fischetti
+arXiv ID: 2609.40157
+arXiv URL: https://arxiv.org/abs/2609.40157
+Posted: 2026-10-01
+
+Summary: Researchers developed a new mathematical method that treats wind speed as something to be optimized rather than simply calculated, allowing them to embed the complex physics of how turbines interfere with each other directly into a computer optimization program. This approach uses linear equations instead of the usual complicated nonlinear ones, making it possible to find genuinely optimal turbine layouts much faster than existing methods.
+
+Why it matters: Wind farms are expensive to build, and even small improvements in turbine placement translate directly to more electricity generated over decades of operation. This method solves a problem that has frustrated engineers for years — previous approaches either simplified the physics too much or were too computationally slow to handle real-world-sized farms. Faster, more accurate optimization means developers can test more layout possibilities and choose designs that produce measurably more power from the same land area.
+
+---
+Title: Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms
+Subtitle: Why smart AI traders still crash markets when they panic together
+URL: https://paperplaine.com/papers/financial-fragility-in-societies
+Category: Quantitative Finance
+Authors: Zhenhao Fu, Ruipeng Xu, Qibing Ren
+arXiv ID: 2609.30940
+arXiv URL: https://arxiv.org/abs/2609.30940
+Posted: 2026-10-01
+
+Summary: When LLM-powered AI agents make financial decisions, they often trigger collective failures even when no single agent is trying to break the system—bank runs failed 77% of the time and debt crises 83% of the time in controlled tests. Three structural fixes (advance commitments, centralized agreements, and agent-led coalitions) all reduced failures, but only if they locked in cooperation early, before panic spread.
+
+Why it matters: As AI systems take on real financial roles—from trading to lending decisions—this shows that individual safety isn't enough. A single well-behaved AI trader can still trigger a cascade that harms the whole market. Banks and regulators need to design the interactions between AI agents, not just audit individual ones, or they risk automating the same herd-behavior crashes that hurt human markets.
 
 ---
 Title: A Spectral Theory of Distortion in LLM Graph Reconstruction: Sharp Bounds and Empirical Characterization

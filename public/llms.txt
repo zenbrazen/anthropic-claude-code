@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 890 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 893 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 305 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 306 papers in archive.
+  - "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing"
   - "A Spectral Theory of Distortion in LLM Graph Reconstruction: Sharp Bounds and Empirical Characterization"
-  - "Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 74 papers in archive.
   - "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering"
   - "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 74 papers in archive.
   - "The Principle of Minimum Justified Correlation"
   - "Exact Characterization of the Holevo Bound by a Quantum Fisher Information Family"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 74 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 75 papers in archive.
+  - "EndoWake: Modeling Wind by Linear Programming for Wind Farm Layout Optimization"
   - "Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport"
-  - "High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 75 papers in archive.
   - "Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome"
   - "FlatClip: A Geometry-Aware Surface-Level Baseline for fMRI Representation Learning"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 77 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 78 papers in archive.
+  - "Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms"
   - "Evolution of Market Microstructure in the Age of AI"
-  - "Functional Architecture of European Electricity Trading Markets: Requirements for AI Supported Trading Systems under Regulatory Constraints"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 77 papers in archive.
   - "Latent Inference-Time Guidance of Time Series Foundation Models"
   - "Guided Uncertainty-Aware Robust Domain Transfer"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X"
 
 ## 10 most recent papers
+
+### ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing
+- URL: https://paperplaine.com/papers/vitex-bench-benchmarking-high
+- Category: Computer Science · AI
+- Authors: Xinghao Chen, Xiangbo Gao, Jiongze Yu et al.
+- arXiv: 2609.40356
+- Plain-English subtitle: How to change text in videos without breaking the scene
+- Summary: Researchers created the first major benchmark for editing text that appears on real-world surfaces in videos—like storefront signs or whiteboards—while keeping everything else unchanged. Testing eight existing video editors revealed a fundamental trade-off: systems can either get the text right, maintain smooth motion, or preserve the background, but not all three together.
+- Why it matters: Video editing tools power everything from marketing content to accessibility fixes, but until now there was no standard way to measure whether text edits actually work across a full video. This benchmark gives engineers a shared target to build better editors and shows exactly where current technology falls short—information that companies developing video AI tools need to improve their products.
+
+### EndoWake: Modeling Wind by Linear Programming for Wind Farm Layout Optimization
+- URL: https://paperplaine.com/papers/endowake-modeling-wind-by
+- Category: Mathematics
+- Authors: Martina Fischetti, Matteo Fischetti
+- arXiv: 2609.40157
+- Plain-English subtitle: A smarter math approach to placing wind turbines for maximum power
+- Summary: Researchers developed a new mathematical method that treats wind speed as something to be optimized rather than simply calculated, allowing them to embed the complex physics of how turbines interfere with each other directly into a computer optimization program. This approach uses linear equations instead of the usual complicated nonlinear ones, making it possible to find genuinely optimal turbine layouts much faster than existing methods.
+- Why it matters: Wind farms are expensive to build, and even small improvements in turbine placement translate directly to more electricity generated over decades of operation. This method solves a problem that has frustrated engineers for years — previous approaches either simplified the physics too much or were too computationally slow to handle real-world-sized farms. Faster, more accurate optimization means developers can test more layout possibilities and choose designs that produce measurably more power from the same land area.
+
+### Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms
+- URL: https://paperplaine.com/papers/financial-fragility-in-societies
+- Category: Quantitative Finance
+- Authors: Zhenhao Fu, Ruipeng Xu, Qibing Ren
+- arXiv: 2609.30940
+- Plain-English subtitle: Why smart AI traders still crash markets when they panic together
+- Summary: When LLM-powered AI agents make financial decisions, they often trigger collective failures even when no single agent is trying to break the system—bank runs failed 77% of the time and debt crises 83% of the time in controlled tests. Three structural fixes (advance commitments, centralized agreements, and agent-led coalitions) all reduced failures, but only if they locked in cooperation early, before panic spread.
+- Why it matters: As AI systems take on real financial roles—from trading to lending decisions—this shows that individual safety isn't enough. A single well-behaved AI trader can still trigger a cascade that harms the whole market. Banks and regulators need to design the interactions between AI agents, not just audit individual ones, or they risk automating the same herd-behavior crashes that hurt human markets.
 
 ### A Spectral Theory of Distortion in LLM Graph Reconstruction: Sharp Bounds and Empirical Characterization
 - URL: https://paperplaine.com/papers/a-spectral-theory-of
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: One model that catches when graph AI systems make unreliable predictions
 - Summary: Researchers built a single neural network representation that simultaneously detects when graph neural networks are unreliable, adjusts confidence scores appropriately, and maintains accuracy even when data shifts unexpectedly. In head-to-head tests on 14 benchmark datasets, it outperformed competing methods at measuring prediction confidence without needing extra correction steps, and showed the strongest performance when data characteristics changed.
 - Why it matters: Graph neural networks power recommendation systems, drug discovery, and fraud detection—domains where wrong answers carry real costs. Today, deploying them safely requires running multiple separate models to check reliability, increasing complexity and computational burden. This unified approach lets a single model handle all three critical checks at once, making it cheaper and faster to deploy trustworthy AI systems in production.
-
-### Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome
-- URL: https://paperplaine.com/papers/pre-registered-spectral-and
-- Category: Quantitative Biology
-- Authors: Eran Kopel
-- arXiv: 2609.33054
-- Plain-English subtitle: Why a fruit fly's brain network mixes information far slower than expected
-- Summary: Researchers tested predictions about how signals flow through the fruit fly brain's 124 million synapses and found that information spreads much more slowly than theory predicted—by roughly tenfold. The culprit: a small cluster of eleven neurons in the fly's nerve cord that act as a nearly sealed-off compartment, trapping signals and slowing the brain's ability to integrate information across regions.
-- Why it matters: Understanding how information actually moves through a brain—rather than how we thought it should—is essential for making sense of neural computation. These findings show that connectome data alone can be misleading: the brain's physical wiring creates bottlenecks that mathematics alone wouldn't predict, suggesting that biological nervous systems may rely on these slow-mixing regions for specific functions like motor control or sensory filtering.
-
-### Memory- and Bandwidth-Efficient SPAD-LiDAR Ranging via Coarse-to-Fine Spline Sketching
-- URL: https://paperplaine.com/papers/memory-and-bandwidth-efficient
-- Category: Engineering
-- Authors: Zhenya Zangy, Istvan Gyongy, Mike Davies
-- arXiv: 2609.35126
-- Plain-English subtitle: Shrinking the data flood from super-sensitive 3D cameras
-- Summary: Researchers developed a compression technique that lets ultra-sensitive light detectors (SPADs) send 3D distance measurements using a fraction of the usual memory and bandwidth. The method works by converting individual photon timestamps into compact numerical sketches on the fly, rather than building full histograms — achieving 100–1000× compression while actually improving accuracy. The approach even recovers hidden objects partially blocked by camouflage or semi-transparent materials.
-- Why it matters: SPAD-LiDAR sensors can detect individual photons and measure distances with millimeter precision, but they generate overwhelming amounts of data that drains power and memory in mobile robots, autonomous vehicles, and 3D cameras. This compression cuts the data bottleneck while keeping or improving measurement quality, making the technology practical for real-world devices that can't afford to transmit or store gigabytes per second of sensor information.
-
-### Neural Harmonic Measure Operator
-- URL: https://paperplaine.com/papers/neural-harmonic-measure-operator
-- Category: Computer Science · AI
-- Authors: Jinjin He, Sinan Wang, Yuchen Sun et al.
-- arXiv: 2609.35752
-- Plain-English subtitle: Training AI to solve complex math problems that shift shape without starting over
-- Summary: Researchers created a neural network that learns to solve a common family of mathematical problems (elliptic PDEs) on shapes that change size and form. Once trained on a single shape, the same network solves the same equation instantly on new shapes and with different boundary conditions, without retraining—a feat previous AI solvers couldn't achieve.
-- Why it matters: These equations describe heat flow, fluid dynamics, and stress in materials across engineering and physics. Current solvers either require expensive retraining for each new shape or sacrifice accuracy. This approach cuts computational cost while maintaining quality, making complex simulations faster for design, manufacturing, and scientific discovery.
 
 ## About
 
