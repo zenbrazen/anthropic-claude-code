@@ -1,5 +1,71 @@
 [
   {
+    "id": "2609.40322",
+    "title": "MatLoom: Layered Text-to-Material Generation in a Compact Program Space",
+    "authors": "Anson Y. Lam, Shuqing Li, Michael R. Lyu",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-09-30T17:55:06Z",
+    "publishedFormatted": "Sep 30, 2026",
+    "subtitle": "AI that writes recipes for textures, not just pictures of them",
+    "summary": "A new tool called MatLoom uses AI language models to generate material textures from text descriptions—but instead of producing just images, it outputs compact, readable code that explains how each texture layer is built. In human preference tests, materials created this way won 59% of votes against leading competitor methods, and the code stays short enough (around 21 lines) that artists can edit it by hand afterward.",
+    "whyItMatters": "Video game developers, architects, and 3D artists currently spend hours manually tweaking texture parameters or editing AI-generated images to get what they want. MatLoom's approach gives them editable source code instead—meaning they can ask an AI to \"generate a worn leather texture\" and then actually modify the underlying rules (layer opacity, color shifts, roughness patterns) rather than starting over from scratch. This cuts iteration time and gives creators real control over what the AI builds.",
+    "fetchedAt": "2026-10-01T22:57:49.816Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 202
+    },
+    "slug": "matloom-layered-text-to"
+  },
+  {
+    "id": "2609.40083",
+    "title": "Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection",
+    "authors": "Konstantinos Moutselos, Ilias Maglogiannis",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-09-30T16:29:04Z",
+    "publishedFormatted": "Sep 30, 2026",
+    "subtitle": "How microscope image preprocessing secretly shapes what counts as 'normal' tissue",
+    "summary": "A step in preparing medical images for quality control—identifying which parts are actual tissue versus background—quietly determines which real samples get flagged as defects. Researchers found that switching to a better tissue-detection method dropped false alarms from 10% to 1.6%, simply by changing what the system learned to recognize as normal.",
+    "whyItMatters": "Pathologists rely on automated quality control to spot damaged slides before analysis begins. High false-positive rates force manual review of good slides, wasting time and resources; low rates risk missing real damage. This work shows that a seemingly boring preprocessing choice directly controls this trade-off, meaning labs that upgrade their tissue detection could cut false alarms tenfold without missing actual problems.",
+    "fetchedAt": "2026-10-01T22:57:53.067Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 239
+    },
+    "slug": "tissue-detection-determines-false"
+  },
+  {
+    "id": "2609.38998",
+    "title": "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks",
+    "authors": "Lukas Braun, Erin Grant, Andrew M. Saxe",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-09-30T05:12:39Z",
+    "publishedFormatted": "Sep 30, 2026",
+    "subtitle": "Why two neural networks can work the same way but think differently",
+    "summary": "Two neural networks can solve the same task using completely different internal representations—or use similar representations while computing things in fundamentally different ways. The researchers found that representational similarity (shared internal codes) and functional similarity (solving the same problem) are independent properties, and that networks built to withstand weight changes are actually forced to use task-specific, less flexible representations.",
+    "whyItMatters": "When neuroscientists compare brain activity patterns across animals or people, they assume similar patterns mean similar computations. This work shows that assumption breaks down—networks can have aligned representations without aligned function. The findings change how researchers should interpret comparisons of neural codes in brains and artificial networks, suggesting they need to measure function directly rather than assuming it from representation alone.",
+    "fetchedAt": "2026-10-01T22:57:55.980Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 28,
+      "wordCount": 170
+    },
+    "slug": "not-all-solutions-are"
+  },
+  {
     "id": "2609.40356",
     "title": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
     "authors": "Xinghao Chen, Xiangbo Gao, Jiongze Yu et al.",

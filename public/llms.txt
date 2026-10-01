@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 893 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 896 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 306 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 307 papers in archive.
+  - "MatLoom: Layered Text-to-Material Generation in a Compact Program Space"
   - "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing"
-  - "A Spectral Theory of Distortion in LLM Graph Reconstruction: Sharp Bounds and Empirical Characterization"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 74 papers in archive.
   - "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering"
   - "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 75 papers in archive.
   - "EndoWake: Modeling Wind by Linear Programming for Wind Farm Layout Optimization"
   - "Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 75 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 76 papers in archive.
+  - "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks"
   - "Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome"
-  - "FlatClip: A Geometry-Aware Surface-Level Baseline for fMRI Representation Learning"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 78 papers in archive.
   - "Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms"
   - "Evolution of Market Microstructure in the Age of AI"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 77 papers in archive.
   - "Latent Inference-Time Guidance of Time Series Foundation Models"
   - "Guided Uncertainty-Aware Robust Domain Transfer"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 71 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 72 papers in archive.
+  - "Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection"
   - "Memory- and Bandwidth-Efficient SPAD-LiDAR Ranging via Coarse-to-Fine Spline Sketching"
-  - "Leveraging Movable-Element STARS for RSMA-SWIPT Under Practical System Imperfections"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 63 papers in archive.
   - "Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data"
   - "Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X"
 
 ## 10 most recent papers
+
+### MatLoom: Layered Text-to-Material Generation in a Compact Program Space
+- URL: https://paperplaine.com/papers/matloom-layered-text-to
+- Category: Computer Science · AI
+- Authors: Anson Y. Lam, Shuqing Li, Michael R. Lyu
+- arXiv: 2609.40322
+- Plain-English subtitle: AI that writes recipes for textures, not just pictures of them
+- Summary: A new tool called MatLoom uses AI language models to generate material textures from text descriptions—but instead of producing just images, it outputs compact, readable code that explains how each texture layer is built. In human preference tests, materials created this way won 59% of votes against leading competitor methods, and the code stays short enough (around 21 lines) that artists can edit it by hand afterward.
+- Why it matters: Video game developers, architects, and 3D artists currently spend hours manually tweaking texture parameters or editing AI-generated images to get what they want. MatLoom's approach gives them editable source code instead—meaning they can ask an AI to "generate a worn leather texture" and then actually modify the underlying rules (layer opacity, color shifts, roughness patterns) rather than starting over from scratch. This cuts iteration time and gives creators real control over what the AI builds.
+
+### Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection
+- URL: https://paperplaine.com/papers/tissue-detection-determines-false
+- Category: Engineering
+- Authors: Konstantinos Moutselos, Ilias Maglogiannis
+- arXiv: 2609.40083
+- Plain-English subtitle: How microscope image preprocessing secretly shapes what counts as 'normal' tissue
+- Summary: A step in preparing medical images for quality control—identifying which parts are actual tissue versus background—quietly determines which real samples get flagged as defects. Researchers found that switching to a better tissue-detection method dropped false alarms from 10% to 1.6%, simply by changing what the system learned to recognize as normal.
+- Why it matters: Pathologists rely on automated quality control to spot damaged slides before analysis begins. High false-positive rates force manual review of good slides, wasting time and resources; low rates risk missing real damage. This work shows that a seemingly boring preprocessing choice directly controls this trade-off, meaning labs that upgrade their tissue detection could cut false alarms tenfold without missing actual problems.
+
+### Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks
+- URL: https://paperplaine.com/papers/not-all-solutions-are
+- Category: Quantitative Biology
+- Authors: Lukas Braun, Erin Grant, Andrew M. Saxe
+- arXiv: 2609.38998
+- Plain-English subtitle: Why two neural networks can work the same way but think differently
+- Summary: Two neural networks can solve the same task using completely different internal representations—or use similar representations while computing things in fundamentally different ways. The researchers found that representational similarity (shared internal codes) and functional similarity (solving the same problem) are independent properties, and that networks built to withstand weight changes are actually forced to use task-specific, less flexible representations.
+- Why it matters: When neuroscientists compare brain activity patterns across animals or people, they assume similar patterns mean similar computations. This work shows that assumption breaks down—networks can have aligned representations without aligned function. The findings change how researchers should interpret comparisons of neural codes in brains and artificial networks, suggesting they need to measure function directly rather than assuming it from representation alone.
 
 ### ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing
 - URL: https://paperplaine.com/papers/vitex-bench-benchmarking-high
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why video AI models waste computing power trying to treat all scenes equally
 - Summary: Video generation models trained with Mixture-of-Experts—a technique that lets AI systems use different specialized components for different tasks—usually try to balance the workload evenly across all components. This backfires on video: because videos have repeated patterns and uneven semantic content, forcing uniform expert usage fractures related visual information across disconnected components. A new approach called SplitMoE splits experts into two roles—some specialized for high-level meaning, others for flexible visual details—letting the model naturally group similar content instead of scattering it arbitrarily.
 - Why it matters: Video generation is computationally expensive, and most current approaches waste resources by preventing experts from specializing in what they're actually good at. SplitMoE generates higher-quality videos while using the same amount of computing power, and it learns faster during training. As video AI models grow larger and more capable, this rethink of how to organize expert systems could set the foundation for the next generation of video synthesis tools.
-
-### Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data
-- URL: https://paperplaine.com/papers/multiscale-reconstruction-of-weighted
-- Category: Economics
-- Authors: Mattia Marzi, Frank P. Pijpers, Diego Garlaschelli
-- arXiv: 2609.37957
-- Plain-English subtitle: Reconstructing detailed networks from only blurry, big-picture information
-- Summary: When researchers only have access to coarse data about a network—like trade flows between regions rather than between individual countries—they usually can't reliably figure out what the detailed network actually looks like. This paper shows a new method can reconstruct fine-scale networks from coarse information with high accuracy, even outperforming methods that have access to more detailed data during training.
-- Why it matters: Most real-world networks are only observed at rough levels of detail: governments track trade between countries or regions, not every individual transaction; companies report industry-level output, not product-by-product flows. This method means economists and analysts can now infer the hidden fine-grained structure of these networks without collecting expensive new data, making it possible to spot bottlenecks, vulnerabilities, and inefficiencies that coarse-grained views would miss.
-
-### The Principle of Minimum Justified Correlation
-- URL: https://paperplaine.com/papers/the-principle-of-minimum
-- Category: Physics
-- Authors: John H Van Drie
-- arXiv: 2609.38124
-- Plain-English subtitle: Why nature favors the simplest explanations when information is limited
-- Summary: Three different ways of measuring disorder—Shannon entropy, Fisher information, and quantum kinetic energy—turn out to be the same thing: measures of correlation between variables. When you destroy correlations by treating variables as independent, all three measures decrease in predictable ways. This suggests a fundamental principle: given what we know about a physical system, the most justified description is the one with the least correlation among its parts.
-- Why it matters: This work bridges information theory, statistics, and quantum mechanics under a single principle, potentially explaining why simple, uncorrelated models often work so well in physics and why quantum systems behave the way they do. If the principle holds up across different domains, it could provide a new foundation for choosing which mathematical descriptions best match physical reality—moving beyond intuition to a concrete rule for what makes an explanation 'good enough.'
-
-### A Unified Uncertainty Representation for Graph Neural Networks via Doubly-Spectral Stochastic Expansion
-- URL: https://paperplaine.com/papers/a-unified-uncertainty-representation
-- Category: Computer Science · AI
-- Authors: Fred Xu, Thomas Markovich, Florence Regol et al.
-- arXiv: 2609.35703
-- Plain-English subtitle: One model that catches when graph AI systems make unreliable predictions
-- Summary: Researchers built a single neural network representation that simultaneously detects when graph neural networks are unreliable, adjusts confidence scores appropriately, and maintains accuracy even when data shifts unexpectedly. In head-to-head tests on 14 benchmark datasets, it outperformed competing methods at measuring prediction confidence without needing extra correction steps, and showed the strongest performance when data characteristics changed.
-- Why it matters: Graph neural networks power recommendation systems, drug discovery, and fraud detection—domains where wrong answers carry real costs. Today, deploying them safely requires running multiple separate models to check reliability, increasing complexity and computational burden. This unified approach lets a single model handle all three critical checks at once, making it cheaper and faster to deploy trustworthy AI systems in production.
 
 ## About
 
