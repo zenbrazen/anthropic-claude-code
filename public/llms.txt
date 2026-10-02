@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 896 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 899 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 307 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 308 papers in archive.
+  - "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards"
   - "MatLoom: Layered Text-to-Material Generation in a Compact Program Space"
-  - "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 74 papers in archive.
   - "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering"
   - "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 78 papers in archive.
   - "Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms"
   - "Evolution of Market Microstructure in the Age of AI"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 77 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 78 papers in archive.
+  - "Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling"
   - "Latent Inference-Time Guidance of Time Series Foundation Models"
-  - "Guided Uncertainty-Aware Robust Domain Transfer"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 72 papers in archive.
   - "Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection"
   - "Memory- and Bandwidth-Efficient SPAD-LiDAR Ranging via Coarse-to-Fine Spline Sketching"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 63 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 64 papers in archive.
+  - "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?"
   - "Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data"
-  - "Why Does Misinformation Propagate Faster? An Algorithmic Perspective on X"
 
 ## 10 most recent papers
+
+### KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards
+- URL: https://paperplaine.com/papers/kalibench-a-fine-grained
+- Category: Computer Science · AI
+- Authors: Pengfei Li, Naufal Suryanto, Sicheng Zhang et al.
+- arXiv: 2610.02206
+- Plain-English subtitle: Measuring whether AI can actually use real cybersecurity tools correctly
+- Summary: Current AI systems can answer cybersecurity questions but struggle to translate those answers into working commands for real tools—even tiny syntax errors cause failures. Researchers created KaliBench, a test set of 8,500 real commands across 1,600 cybersecurity tools, and found that no open-source AI model gets more than 42% of commands exactly right without help. Training models on these exact-command tests improved performance dramatically, bringing small models up to the level of much larger ones.
+- Why it matters: Cybersecurity analysts increasingly rely on AI to automate repetitive tool work, but a single misplaced flag or misspelled argument can break an investigation or miss a threat. This benchmark forces AI systems to prove they can generate working commands, not just sound knowledgeable—which is essential before deploying them in real security operations where mistakes have real consequences.
+
+### Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?
+- URL: https://paperplaine.com/papers/can-we-create-a
+- Category: Economics
+- Authors: Colin Aitken, Michael K. Tippett, Pedram Hassanzadeh et al.
+- arXiv: 2610.00782
+- Plain-English subtitle: How to stop cheap, bad weather forecasts from pushing out good ones for farmers
+- Summary: AI has made it cheap to produce customized weather forecasts that could help hundreds of millions of small farmers in poor countries. But without clear standards to measure forecast quality, low-cost but unreliable predictions could dominate the market, crowding out genuinely useful ones. The authors propose evaluation principles and protocols that would let farmers and others judge which forecasts are actually worth using.
+- Why it matters: Farmers make critical decisions about planting, irrigation, and harvest timing based on weather forecasts. Bad predictions lead to crop failures and financial ruin. Without standards, farmers in low-income countries will have no way to distinguish between a forecast that can genuinely help them and one that's just cheap noise—forcing them to either ignore forecasts entirely or gamble on unreliable ones.
+
+### Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling
+- URL: https://paperplaine.com/papers/wasserstein-gradient-flows-and
+- Category: Statistics
+- Authors: Daniel McBride, Pratik Khandagale, Cristina Garcia-Cardona et al.
+- arXiv: 2610.02081
+- Plain-English subtitle: Popular sampling algorithms struggle more with multiple peaks than their theory suggests
+- Summary: Two widely used sampling methods—Wasserstein gradient flows and forward-only diffusion processes—come with theoretical guarantees of fast convergence, but researchers show these promises don't hold for distributions with multiple distinct peaks. The problem is fundamental: moving probability mass between well-separated modes requires exponentially long times, no matter how you adjust the algorithm's schedule.
+- Why it matters: These methods are increasingly used in machine learning and statistics to sample from complex distributions, with researchers often citing convergence guarantees as evidence they work well. This paper reveals those guarantees can be misleading—the algorithms may get stuck slowly transitioning between different modes for impractically long periods. Practitioners relying on these methods for multimodal problems may need fundamentally different approaches, not just parameter tweaks.
 
 ### MatLoom: Layered Text-to-Material Generation in a Compact Program Space
 - URL: https://paperplaine.com/papers/matloom-layered-text-to
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why a single distortion score hides what language models get wrong about graphs
 - Summary: When language models reconstruct graphs, researchers usually report one summary number measuring how wrong the reconstruction is. This paper proves that number conceals crucial details: two mathematical bounds reveal whether the model only added edges, only deleted them, or did both—and when it does both, that signals the model hallucinated connections while also losing real ones. Testing three AI models on 45 graphs, the researchers found that 29 reconstructions invented and deleted edges simultaneously, even in cases where the total edge count stayed the same.
 - Why it matters: Aggregate distortion scores mask whether a language model's errors come from conservative editing or aggressive hallucination mixed with forgetting. This matters because a model that adds fake edges while dropping real ones behaves very differently from one that just copies the input, yet a single summary number treats them the same. The new bounds let researchers diagnose a model's reconstruction strategy from standard metrics alone—critical information for deciding whether the output is trustworthy.
-
-### Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering
-- URL: https://paperplaine.com/papers/imagine3d-llm-teaching-mllms
-- Category: Computer Science
-- Authors: Jaewoo Jung, Hyeonseo Yu, Honggyu An et al.
-- arXiv: 2609.38177
-- Plain-English subtitle: Teaching AI to build mental 3D maps before answering visual questions
-- Summary: Researchers created Imagine3D-LLM, a visual AI system that builds a rough 3D mental model of a scene from multiple camera angles before answering questions about it — similar to how humans visualize spaces. This approach outperformed existing systems that try to track detailed geometric correspondences between views, suggesting that coarse 3D reasoning works better than pixel-level precision for spatial understanding tasks.
-- Why it matters: As AI systems take on tasks involving navigation, robotics, and 3D design, they need to understand spaces from multiple viewpoints the way humans do. This method shows that teaching AI to construct simplified internal 3D maps — rather than obsessing over exact geometric details — produces more reliable spatial reasoning. The approach could improve how robots interpret their surroundings and how AI systems answer questions about complex 3D environments.
-
-### Latent Inference-Time Guidance of Time Series Foundation Models
-- URL: https://paperplaine.com/papers/latent-inference-time-guidance
-- Category: Statistics
-- Authors: Chloé Hashimoto-Cullen, Amaury Durand, Laurent Bozzi et al.
-- arXiv: 2609.38058
-- Plain-English subtitle: Smart blending of AI forecasts by learning what each does best
-- Summary: Time series foundation models—AI systems that predict future values in data streams—produce forecasts that vary in quality depending on how you set them up, but no single configuration works best for all situations. Researchers developed a method that automatically combines multiple forecasts from the same model by learning in latent space which configurations work well for different parts of the time series, achieving results competitive with traditional ensemble methods while keeping the models off-the-shelf.
-- Why it matters: Organizations using AI for forecasting—from energy demand prediction to stock prices—currently either gamble on a single configuration or manually try many combinations. This approach removes that guesswork by automatically learning which settings work best for different parts of your data, improving forecast accuracy without requiring custom retraining or proprietary tools.
-
-### Breaking the Uniformity Trap: Scaling Video Diffusion Model via SplitMoE
-- URL: https://paperplaine.com/papers/breaking-the-uniformity-trap
-- Category: Computer Science · AI
-- Authors: Yu Xu, Yuxin Zhang, Xiao Yang et al.
-- arXiv: 2609.38140
-- Plain-English subtitle: Why video AI models waste computing power trying to treat all scenes equally
-- Summary: Video generation models trained with Mixture-of-Experts—a technique that lets AI systems use different specialized components for different tasks—usually try to balance the workload evenly across all components. This backfires on video: because videos have repeated patterns and uneven semantic content, forcing uniform expert usage fractures related visual information across disconnected components. A new approach called SplitMoE splits experts into two roles—some specialized for high-level meaning, others for flexible visual details—letting the model naturally group similar content instead of scattering it arbitrarily.
-- Why it matters: Video generation is computationally expensive, and most current approaches waste resources by preventing experts from specializing in what they're actually good at. SplitMoE generates higher-quality videos while using the same amount of computing power, and it learns faster during training. As video AI models grow larger and more capable, this rethink of how to organize expert systems could set the foundation for the next generation of video synthesis tools.
 
 ## About
 

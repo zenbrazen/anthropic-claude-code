@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.02206",
+    "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+    "authors": "Pengfei Li, Naufal Suryanto, Sicheng Zhang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-01T17:59:55Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Measuring whether AI can actually use real cybersecurity tools correctly",
+    "summary": "Current AI systems can answer cybersecurity questions but struggle to translate those answers into working commands for real tools—even tiny syntax errors cause failures. Researchers created KaliBench, a test set of 8,500 real commands across 1,600 cybersecurity tools, and found that no open-source AI model gets more than 42% of commands exactly right without help. Training models on these exact-command tests improved performance dramatically, bringing small models up to the level of much larger ones.",
+    "whyItMatters": "Cybersecurity analysts increasingly rely on AI to automate repetitive tool work, but a single misplaced flag or misspelled argument can break an investigation or miss a threat. This benchmark forces AI systems to prove they can generate working commands, not just sound knowledgeable—which is essential before deploying them in real security operations where mistakes have real consequences.",
+    "fetchedAt": "2026-10-02T13:36:01.564Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 227
+    },
+    "slug": "kalibench-a-fine-grained"
+  },
+  {
+    "id": "2610.00782",
+    "title": "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?",
+    "authors": "Colin Aitken, Michael K. Tippett, Pedram Hassanzadeh et al.",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-09-30T22:19:36Z",
+    "publishedFormatted": "Sep 30, 2026",
+    "subtitle": "How to stop cheap, bad weather forecasts from pushing out good ones for farmers",
+    "summary": "AI has made it cheap to produce customized weather forecasts that could help hundreds of millions of small farmers in poor countries. But without clear standards to measure forecast quality, low-cost but unreliable predictions could dominate the market, crowding out genuinely useful ones. The authors propose evaluation principles and protocols that would let farmers and others judge which forecasts are actually worth using.",
+    "whyItMatters": "Farmers make critical decisions about planting, irrigation, and harvest timing based on weather forecasts. Bad predictions lead to crop failures and financial ruin. Without standards, farmers in low-income countries will have no way to distinguish between a forecast that can genuinely help them and one that's just cheap noise—forcing them to either ignore forecasts entirely or gamble on unreliable ones.",
+    "fetchedAt": "2026-10-02T13:36:05.868Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 101
+    },
+    "slug": "can-we-create-a"
+  },
+  {
+    "id": "2610.02081",
+    "title": "Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling",
+    "authors": "Daniel McBride, Pratik Khandagale, Cristina Garcia-Cardona et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-01T17:16:47Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Popular sampling algorithms struggle more with multiple peaks than their theory suggests",
+    "summary": "Two widely used sampling methods—Wasserstein gradient flows and forward-only diffusion processes—come with theoretical guarantees of fast convergence, but researchers show these promises don't hold for distributions with multiple distinct peaks. The problem is fundamental: moving probability mass between well-separated modes requires exponentially long times, no matter how you adjust the algorithm's schedule.",
+    "whyItMatters": "These methods are increasingly used in machine learning and statistics to sample from complex distributions, with researchers often citing convergence guarantees as evidence they work well. This paper reveals those guarantees can be misleading—the algorithms may get stuck slowly transitioning between different modes for impractically long periods. Practitioners relying on these methods for multimodal problems may need fundamentally different approaches, not just parameter tweaks.",
+    "fetchedAt": "2026-10-02T13:36:09.212Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 20,
+      "wordCount": 224
+    },
+    "slug": "wasserstein-gradient-flows-and"
+  },
+  {
     "id": "2609.40322",
     "title": "MatLoom: Layered Text-to-Material Generation in a Compact Program Space",
     "authors": "Anson Y. Lam, Shuqing Li, Michael R. Lyu",

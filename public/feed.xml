@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 22:57:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 13:36:09 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</title>
+      <link>https://paperplaine.com/papers/kalibench-a-fine-grained</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/kalibench-a-fine-grained</guid>
+      <pubDate>Thu, 01 Oct 2026 17:59:55 GMT</pubDate>
+      <author>Pengfei Li, Naufal Suryanto, Sicheng Zhang et al.</author>
+      <category>AI</category>
+      <description>Measuring whether AI can actually use real cybersecurity tools correctly</description>
+      <content:encoded><![CDATA[<p><em>Measuring whether AI can actually use real cybersecurity tools correctly</em></p><p>Current AI systems can answer cybersecurity questions but struggle to translate those answers into working commands for real tools—even tiny syntax errors cause failures. Researchers created KaliBench, a test set of 8,500 real commands across 1,600 cybersecurity tools, and found that no open-source AI model gets more than 42% of commands exactly right without help. Training models on these exact-command tests improved performance dramatically, bringing small models up to the level of much larger ones.</p><p><strong>Why it matters:</strong> Cybersecurity analysts increasingly rely on AI to automate repetitive tool work, but a single misplaced flag or misspelled argument can break an investigation or miss a threat. This benchmark forces AI systems to prove they can generate working commands, not just sound knowledgeable—which is essential before deploying them in real security operations where mistakes have real consequences.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Can we create a `race to the top&#39; for weather forecasts to inform smallholder farmer decisions?</title>
+      <link>https://paperplaine.com/papers/can-we-create-a</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/can-we-create-a</guid>
+      <pubDate>Wed, 30 Sep 2026 22:19:36 GMT</pubDate>
+      <author>Colin Aitken, Michael K. Tippett, Pedram Hassanzadeh et al.</author>
+      <category>Economics</category>
+      <description>How to stop cheap, bad weather forecasts from pushing out good ones for farmers</description>
+      <content:encoded><![CDATA[<p><em>How to stop cheap, bad weather forecasts from pushing out good ones for farmers</em></p><p>AI has made it cheap to produce customized weather forecasts that could help hundreds of millions of small farmers in poor countries. But without clear standards to measure forecast quality, low-cost but unreliable predictions could dominate the market, crowding out genuinely useful ones. The authors propose evaluation principles and protocols that would let farmers and others judge which forecasts are actually worth using.</p><p><strong>Why it matters:</strong> Farmers make critical decisions about planting, irrigation, and harvest timing based on weather forecasts. Bad predictions lead to crop failures and financial ruin. Without standards, farmers in low-income countries will have no way to distinguish between a forecast that can genuinely help them and one that's just cheap noise—forcing them to either ignore forecasts entirely or gamble on unreliable ones.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling</title>
+      <link>https://paperplaine.com/papers/wasserstein-gradient-flows-and</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/wasserstein-gradient-flows-and</guid>
+      <pubDate>Thu, 01 Oct 2026 17:16:47 GMT</pubDate>
+      <author>Daniel McBride, Pratik Khandagale, Cristina Garcia-Cardona et al.</author>
+      <category>Statistics</category>
+      <description>Popular sampling algorithms struggle more with multiple peaks than their theory suggests</description>
+      <content:encoded><![CDATA[<p><em>Popular sampling algorithms struggle more with multiple peaks than their theory suggests</em></p><p>Two widely used sampling methods—Wasserstein gradient flows and forward-only diffusion processes—come with theoretical guarantees of fast convergence, but researchers show these promises don't hold for distributions with multiple distinct peaks. The problem is fundamental: moving probability mass between well-separated modes requires exponentially long times, no matter how you adjust the algorithm's schedule.</p><p><strong>Why it matters:</strong> These methods are increasingly used in machine learning and statistics to sample from complex distributions, with researchers often citing convergence guarantees as evidence they work well. This paper reveals those guarantees can be misleading—the algorithms may get stuck slowly transitioning between different modes for impractically long periods. Practitioners relying on these methods for multimodal problems may need fundamentally different approaches, not just parameter tweaks.</p>]]></content:encoded>
+    </item>
     <item>
       <title>MatLoom: Layered Text-to-Material Generation in a Compact Program Space</title>
       <link>https://paperplaine.com/papers/matloom-layered-text-to</link>
