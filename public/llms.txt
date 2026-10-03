@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 905 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 908 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 310 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 311 papers in archive.
+  - "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents"
   - "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning"
-  - "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 75 papers in archive.
   - "Quantum Advantage for Two-Party Differential Privacy"
   - "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 76 papers in archive.
   - "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning"
   - "EndoWake: Modeling Wind by Linear Programming for Wind Farm Layout Optimization"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 76 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 77 papers in archive.
+  - "Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?"
   - "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks"
-  - "Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 79 papers in archive.
   - "PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading"
   - "Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 78 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 79 papers in archive.
+  - "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials"
   - "Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling"
-  - "Latent Inference-Time Guidance of Time Series Foundation Models"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 72 papers in archive.
   - "Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection"
   - "Memory- and Bandwidth-Efficient SPAD-LiDAR Ranging via Coarse-to-Fine Spline Sketching"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data"
 
 ## 10 most recent papers
+
+### Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents
+- URL: https://paperplaine.com/papers/reconstruct-practice-go-real
+- Category: Computer Science · AI
+- Authors: Yen-Jen Wang, Haozhe Jiang, Shuying Deng et al.
+- arXiv: 2610.02204
+- Plain-English subtitle: Teaching robots to improve themselves by practicing in simulation before real tasks
+- Summary: Researchers developed RPG, a system that lets robots autonomously improve their performance without retraining their AI models. The system identifies what skills a robot can already do, creates practice tasks in simulation to diagnose failures, develops new reusable skills to fix those failures, and then tests improvements before deploying them—boosting success rates from 29% to 95% over 15 rounds of practice, and achieving 100% success on physical robot trials.
+- Why it matters: Robots currently require constant human effort to fix failures and add new capabilities. RPG eliminates this bottleneck by letting robots diagnose and fix their own problems through simulation practice, then carry those improvements to physical tasks. This could dramatically reduce the engineering overhead needed to deploy robots in real-world settings like warehouses, manufacturing, and other manipulation-heavy environments.
+
+### Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials
+- URL: https://paperplaine.com/papers/muon-meets-tamed-langevin
+- Category: Statistics
+- Authors: Nikolaos Makras, Sotirios Sabanis
+- arXiv: 2610.02158
+- Plain-English subtitle: Making sampling algorithms work on harder, messier mathematical landscapes
+- Summary: Researchers developed a new sampling method that works reliably on mathematical functions that are far messier than those current algorithms assume — specifically those that aren't convex and don't have uniformly well-behaved gradients everywhere. The method uses a clever momentum control strategy that prevents the algorithm from becoming unstable, and mathematically guarantees it will converge to the right answer without needing to modify or simplify the original problem.
+- Why it matters: This extends sampling algorithms to realistic problems in physics, machine learning, and statistics where the mathematical landscape is irregular or extreme. The guarantee that the algorithm stays stable without rewriting the problem means practitioners can solve harder inference tasks — like simulating molecular systems or fitting complex models — that would otherwise require hand-crafted workarounds or approximations.
+
+### Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?
+- URL: https://paperplaine.com/papers/can-llms-reliably-annotate
+- Category: Quantitative Biology
+- Authors: Laura van Weesep, Riccardo Tedoldi, Jens Sjölund et al.
+- arXiv: 2610.01616
+- Plain-English subtitle: Using AI to fix millions of missing labels in drug-screening databases
+- Summary: Large language models can reliably fill in missing metadata for millions of bioassays in public databases, correctly identifying assay types and detection methods over 96% of the time. The researchers found that major repositories like PubChem are missing critical information on up to 89% of their assays—a gap that slows down AI drug discovery—and showed that LLMs can both complete these gaps and catch mislabeled entries that human curators might miss.
+- Why it matters: Drug discovery AI models depend on clean, complete data to work well, but the largest public bioassay databases have systematic gaps that currently require expensive manual labor to fix. This work shows LLMs can automate that curation at scale, potentially saving months of expert time while improving data quality. Better-labeled bioassay databases mean faster, more reliable computational drug screening and fewer dead-end experiments in the lab.
 
 ### Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning
 - URL: https://paperplaine.com/papers/trust-the-direction-search
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Measuring whether AI can actually use real cybersecurity tools correctly
 - Summary: Current AI systems can answer cybersecurity questions but struggle to translate those answers into working commands for real tools—even tiny syntax errors cause failures. Researchers created KaliBench, a test set of 8,500 real commands across 1,600 cybersecurity tools, and found that no open-source AI model gets more than 42% of commands exactly right without help. Training models on these exact-command tests improved performance dramatically, bringing small models up to the level of much larger ones.
 - Why it matters: Cybersecurity analysts increasingly rely on AI to automate repetitive tool work, but a single misplaced flag or misspelled argument can break an investigation or miss a threat. This benchmark forces AI systems to prove they can generate working commands, not just sound knowledgeable—which is essential before deploying them in real security operations where mistakes have real consequences.
-
-### Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?
-- URL: https://paperplaine.com/papers/can-we-create-a
-- Category: Economics
-- Authors: Colin Aitken, Michael K. Tippett, Pedram Hassanzadeh et al.
-- arXiv: 2610.00782
-- Plain-English subtitle: How to stop cheap, bad weather forecasts from pushing out good ones for farmers
-- Summary: AI has made it cheap to produce customized weather forecasts that could help hundreds of millions of small farmers in poor countries. But without clear standards to measure forecast quality, low-cost but unreliable predictions could dominate the market, crowding out genuinely useful ones. The authors propose evaluation principles and protocols that would let farmers and others judge which forecasts are actually worth using.
-- Why it matters: Farmers make critical decisions about planting, irrigation, and harvest timing based on weather forecasts. Bad predictions lead to crop failures and financial ruin. Without standards, farmers in low-income countries will have no way to distinguish between a forecast that can genuinely help them and one that's just cheap noise—forcing them to either ignore forecasts entirely or gamble on unreliable ones.
-
-### Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling
-- URL: https://paperplaine.com/papers/wasserstein-gradient-flows-and
-- Category: Statistics
-- Authors: Daniel McBride, Pratik Khandagale, Cristina Garcia-Cardona et al.
-- arXiv: 2610.02081
-- Plain-English subtitle: Popular sampling algorithms struggle more with multiple peaks than their theory suggests
-- Summary: Two widely used sampling methods—Wasserstein gradient flows and forward-only diffusion processes—come with theoretical guarantees of fast convergence, but researchers show these promises don't hold for distributions with multiple distinct peaks. The problem is fundamental: moving probability mass between well-separated modes requires exponentially long times, no matter how you adjust the algorithm's schedule.
-- Why it matters: These methods are increasingly used in machine learning and statistics to sample from complex distributions, with researchers often citing convergence guarantees as evidence they work well. This paper reveals those guarantees can be misleading—the algorithms may get stuck slowly transitioning between different modes for impractically long periods. Practitioners relying on these methods for multimodal problems may need fundamentally different approaches, not just parameter tweaks.
-
-### MatLoom: Layered Text-to-Material Generation in a Compact Program Space
-- URL: https://paperplaine.com/papers/matloom-layered-text-to
-- Category: Computer Science · AI
-- Authors: Anson Y. Lam, Shuqing Li, Michael R. Lyu
-- arXiv: 2609.40322
-- Plain-English subtitle: AI that writes recipes for textures, not just pictures of them
-- Summary: A new tool called MatLoom uses AI language models to generate material textures from text descriptions—but instead of producing just images, it outputs compact, readable code that explains how each texture layer is built. In human preference tests, materials created this way won 59% of votes against leading competitor methods, and the code stays short enough (around 21 lines) that artists can edit it by hand afterward.
-- Why it matters: Video game developers, architects, and 3D artists currently spend hours manually tweaking texture parameters or editing AI-generated images to get what they want. MatLoom's approach gives them editable source code instead—meaning they can ask an AI to "generate a worn leather texture" and then actually modify the underlying rules (layer opacity, color shifts, roughness patterns) rather than starting over from scratch. This cuts iteration time and gives creators real control over what the AI builds.
 
 ## About
 

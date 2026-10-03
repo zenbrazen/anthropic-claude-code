@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2026 12:14:58 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 21:56:30 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</title>
+      <link>https://paperplaine.com/papers/reconstruct-practice-go-real</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/reconstruct-practice-go-real</guid>
+      <pubDate>Thu, 01 Oct 2026 17:59:50 GMT</pubDate>
+      <author>Yen-Jen Wang, Haozhe Jiang, Shuying Deng et al.</author>
+      <category>AI</category>
+      <description>Teaching robots to improve themselves by practicing in simulation before real tasks</description>
+      <content:encoded><![CDATA[<p><em>Teaching robots to improve themselves by practicing in simulation before real tasks</em></p><p>Researchers developed RPG, a system that lets robots autonomously improve their performance without retraining their AI models. The system identifies what skills a robot can already do, creates practice tasks in simulation to diagnose failures, develops new reusable skills to fix those failures, and then tests improvements before deploying them—boosting success rates from 29% to 95% over 15 rounds of practice, and achieving 100% success on physical robot trials.</p><p><strong>Why it matters:</strong> Robots currently require constant human effort to fix failures and add new capabilities. RPG eliminates this bottleneck by letting robots diagnose and fix their own problems through simulation practice, then carry those improvements to physical tasks. This could dramatically reduce the engineering overhead needed to deploy robots in real-world settings like warehouses, manufacturing, and other manipulation-heavy environments.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials</title>
+      <link>https://paperplaine.com/papers/muon-meets-tamed-langevin</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/muon-meets-tamed-langevin</guid>
+      <pubDate>Thu, 01 Oct 2026 17:52:36 GMT</pubDate>
+      <author>Nikolaos Makras, Sotirios Sabanis</author>
+      <category>Statistics</category>
+      <description>Making sampling algorithms work on harder, messier mathematical landscapes</description>
+      <content:encoded><![CDATA[<p><em>Making sampling algorithms work on harder, messier mathematical landscapes</em></p><p>Researchers developed a new sampling method that works reliably on mathematical functions that are far messier than those current algorithms assume — specifically those that aren't convex and don't have uniformly well-behaved gradients everywhere. The method uses a clever momentum control strategy that prevents the algorithm from becoming unstable, and mathematically guarantees it will converge to the right answer without needing to modify or simplify the original problem.</p><p><strong>Why it matters:</strong> This extends sampling algorithms to realistic problems in physics, machine learning, and statistics where the mathematical landscape is irregular or extreme. The guarantee that the algorithm stays stable without rewriting the problem means practitioners can solve harder inference tasks — like simulating molecular systems or fitting complex models — that would otherwise require hand-crafted workarounds or approximations.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?</title>
+      <link>https://paperplaine.com/papers/can-llms-reliably-annotate</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/can-llms-reliably-annotate</guid>
+      <pubDate>Thu, 01 Oct 2026 12:54:29 GMT</pubDate>
+      <author>Laura van Weesep, Riccardo Tedoldi, Jens Sjölund et al.</author>
+      <category>Biology</category>
+      <description>Using AI to fix millions of missing labels in drug-screening databases</description>
+      <content:encoded><![CDATA[<p><em>Using AI to fix millions of missing labels in drug-screening databases</em></p><p>Large language models can reliably fill in missing metadata for millions of bioassays in public databases, correctly identifying assay types and detection methods over 96% of the time. The researchers found that major repositories like PubChem are missing critical information on up to 89% of their assays—a gap that slows down AI drug discovery—and showed that LLMs can both complete these gaps and catch mislabeled entries that human curators might miss.</p><p><strong>Why it matters:</strong> Drug discovery AI models depend on clean, complete data to work well, but the largest public bioassay databases have systematic gaps that currently require expensive manual labor to fix. This work shows LLMs can automate that curation at scale, potentially saving months of expert time while improving data quality. Better-labeled bioassay databases mean faster, more reliable computational drug screening and fewer dead-end experiments in the lab.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning</title>
       <link>https://paperplaine.com/papers/trust-the-direction-search</link>

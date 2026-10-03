@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.02204",
+    "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+    "authors": "Yen-Jen Wang, Haozhe Jiang, Shuying Deng et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-01T17:59:50Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Teaching robots to improve themselves by practicing in simulation before real tasks",
+    "summary": "Researchers developed RPG, a system that lets robots autonomously improve their performance without retraining their AI models. The system identifies what skills a robot can already do, creates practice tasks in simulation to diagnose failures, develops new reusable skills to fix those failures, and then tests improvements before deploying them—boosting success rates from 29% to 95% over 15 rounds of practice, and achieving 100% success on physical robot trials.",
+    "whyItMatters": "Robots currently require constant human effort to fix failures and add new capabilities. RPG eliminates this bottleneck by letting robots diagnose and fix their own problems through simulation practice, then carry those improvements to physical tasks. This could dramatically reduce the engineering overhead needed to deploy robots in real-world settings like warehouses, manufacturing, and other manipulation-heavy environments.",
+    "fetchedAt": "2026-10-03T21:56:23.926Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 17,
+      "wordCount": 192
+    },
+    "slug": "reconstruct-practice-go-real"
+  },
+  {
+    "id": "2610.02158",
+    "title": "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials",
+    "authors": "Nikolaos Makras, Sotirios Sabanis",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-01T17:52:36Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Making sampling algorithms work on harder, messier mathematical landscapes",
+    "summary": "Researchers developed a new sampling method that works reliably on mathematical functions that are far messier than those current algorithms assume — specifically those that aren't convex and don't have uniformly well-behaved gradients everywhere. The method uses a clever momentum control strategy that prevents the algorithm from becoming unstable, and mathematically guarantees it will converge to the right answer without needing to modify or simplify the original problem.",
+    "whyItMatters": "This extends sampling algorithms to realistic problems in physics, machine learning, and statistics where the mathematical landscape is irregular or extreme. The guarantee that the algorithm stays stable without rewriting the problem means practitioners can solve harder inference tasks — like simulating molecular systems or fitting complex models — that would otherwise require hand-crafted workarounds or approximations.",
+    "fetchedAt": "2026-10-03T21:56:26.812Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 26,
+      "wordCount": 121
+    },
+    "slug": "muon-meets-tamed-langevin"
+  },
+  {
+    "id": "2610.01616",
+    "title": "Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?",
+    "authors": "Laura van Weesep, Riccardo Tedoldi, Jens Sjölund et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-01T12:54:29Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Using AI to fix millions of missing labels in drug-screening databases",
+    "summary": "Large language models can reliably fill in missing metadata for millions of bioassays in public databases, correctly identifying assay types and detection methods over 96% of the time. The researchers found that major repositories like PubChem are missing critical information on up to 89% of their assays—a gap that slows down AI drug discovery—and showed that LLMs can both complete these gaps and catch mislabeled entries that human curators might miss.",
+    "whyItMatters": "Drug discovery AI models depend on clean, complete data to work well, but the largest public bioassay databases have systematic gaps that currently require expensive manual labor to fix. This work shows LLMs can automate that curation at scale, potentially saving months of expert time while improving data quality. Better-labeled bioassay databases mean faster, more reliable computational drug screening and fewer dead-end experiments in the lab.",
+    "fetchedAt": "2026-10-03T21:56:30.112Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 266
+    },
+    "slug": "can-llms-reliably-annotate"
+  },
+  {
     "id": "2610.02190",
     "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
     "authors": "Cristian McGee, El Houcine Bergou, Aritra Dutta",
