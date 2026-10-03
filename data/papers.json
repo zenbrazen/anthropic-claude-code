@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.02190",
+    "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+    "authors": "Cristian McGee, El Houcine Bergou, Aritra Dutta",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-01T17:59:28Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "A smarter way to adjust training speed for AI language models",
+    "summary": "Training large language models requires choosing how big each optimization step should be—too small and training crawls, too large and it breaks. This paper presents ZFO, a method that uses just two extra function evaluations to pick adaptive step sizes that beat fixed approaches across multiple models and datasets, without the computational cost of traditional line searches.",
+    "whyItMatters": "Language model training is expensive and slow; improving optimization efficiency directly cuts training time and computational cost. ZFO's lightweight step-size selection means researchers can train models faster and reach better performance without redesigning their existing optimization pipelines or running expensive searches at each iteration.",
+    "fetchedAt": "2026-10-03T12:14:52.251Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 186
+    },
+    "slug": "trust-the-direction-search"
+  },
+  {
+    "id": "2610.02113",
+    "title": "Quantum Advantage for Two-Party Differential Privacy",
+    "authors": "Daniel Alabi, Emil T. Khabiboulline",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-01T17:32:30Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Quantum computers can protect private data better than classical methods",
+    "summary": "Quantum computers can solve a specific privacy problem with near-perfect accuracy, while classical computers fundamentally cannot without compromising security or accepting significant errors. When two parties need to privately compare information, quantum protocols achieve constant error regardless of data size—a feat classical methods can only match by using unproven computational tricks rather than true mathematical guarantees.",
+    "whyItMatters": "This reveals quantum computers have a genuine advantage in privacy-preserving computation, not just speed. As organizations handle increasingly sensitive data and quantum computers mature, this work suggests quantum-based systems could offer stronger privacy guarantees for tasks like secure data comparison, voting, or collaborative analysis where neither party should learn the other's input.",
+    "fetchedAt": "2026-10-03T12:14:54.806Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 7,
+      "wordCount": 177
+    },
+    "slug": "quantum-advantage-for-two"
+  },
+  {
+    "id": "2610.02199",
+    "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+    "authors": "Jichao Jiang, Cristian McGee, El Houcine Bergou et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-01T17:59:42Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Shrinking the memory burden of tuning giant AI models by 174 times",
+    "summary": "A new optimization method called TACO cuts the memory needed to fine-tune large language models by 174 times compared to existing approaches, while maintaining the same accuracy and speed. The technique works by tracking only the largest gradient component in each column of weight matrices, allowing researchers to train massive 30–32 billion parameter models on a single GPU where it was previously impossible.",
+    "whyItMatters": "Fine-tuning LLMs on consumer-grade GPUs has been a bottleneck for researchers and companies without access to massive compute clusters. TACO removes this barrier: 30–32 billion parameter models now fit on a single $15,000 GPU instead of requiring multiple expensive units. This democratizes the ability to adapt state-of-the-art models to specific tasks, making advanced AI development accessible to smaller labs and organizations.",
+    "fetchedAt": "2026-10-03T12:14:57.675Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 212
+    },
+    "slug": "taco-ternary-absolute-max"
+  },
+  {
     "id": "2610.02201",
     "title": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
     "authors": "Tianjiao Yu, Xinzhuo Li, Yifan Shen et al.",

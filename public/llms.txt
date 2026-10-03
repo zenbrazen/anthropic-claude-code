@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 902 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 905 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 309 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 310 papers in archive.
+  - "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning"
   - "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation"
-  - "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 74 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 75 papers in archive.
+  - "Quantum Advantage for Two-Party Differential Privacy"
   - "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering"
-  - "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 75 papers in archive.
   - "The efficacy-competitiveness frontier in the Swiss system"
   - "The Principle of Minimum Justified Correlation"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 75 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 76 papers in archive.
+  - "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning"
   - "EndoWake: Modeling Wind by Linear Programming for Wind Farm Layout Optimization"
-  - "Beyond Empirical Support: Structured Outlier Generation via Sinkhorn Optimal Transport"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 76 papers in archive.
   - "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks"
   - "Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data"
 
 ## 10 most recent papers
+
+### Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning
+- URL: https://paperplaine.com/papers/trust-the-direction-search
+- Category: Computer Science · AI
+- Authors: Cristian McGee, El Houcine Bergou, Aritra Dutta
+- arXiv: 2610.02190
+- Plain-English subtitle: A smarter way to adjust training speed for AI language models
+- Summary: Training large language models requires choosing how big each optimization step should be—too small and training crawls, too large and it breaks. This paper presents ZFO, a method that uses just two extra function evaluations to pick adaptive step sizes that beat fixed approaches across multiple models and datasets, without the computational cost of traditional line searches.
+- Why it matters: Language model training is expensive and slow; improving optimization efficiency directly cuts training time and computational cost. ZFO's lightweight step-size selection means researchers can train models faster and reach better performance without redesigning their existing optimization pipelines or running expensive searches at each iteration.
+
+### Quantum Advantage for Two-Party Differential Privacy
+- URL: https://paperplaine.com/papers/quantum-advantage-for-two
+- Category: Computer Science
+- Authors: Daniel Alabi, Emil T. Khabiboulline
+- arXiv: 2610.02113
+- Plain-English subtitle: Quantum computers can protect private data better than classical methods
+- Summary: Quantum computers can solve a specific privacy problem with near-perfect accuracy, while classical computers fundamentally cannot without compromising security or accepting significant errors. When two parties need to privately compare information, quantum protocols achieve constant error regardless of data size—a feat classical methods can only match by using unproven computational tricks rather than true mathematical guarantees.
+- Why it matters: This reveals quantum computers have a genuine advantage in privacy-preserving computation, not just speed. As organizations handle increasingly sensitive data and quantum computers mature, this work suggests quantum-based systems could offer stronger privacy guarantees for tasks like secure data comparison, voting, or collaborative analysis where neither party should learn the other's input.
+
+### TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning
+- URL: https://paperplaine.com/papers/taco-ternary-absolute-max
+- Category: Mathematics
+- Authors: Jichao Jiang, Cristian McGee, El Houcine Bergou et al.
+- arXiv: 2610.02199
+- Plain-English subtitle: Shrinking the memory burden of tuning giant AI models by 174 times
+- Summary: A new optimization method called TACO cuts the memory needed to fine-tune large language models by 174 times compared to existing approaches, while maintaining the same accuracy and speed. The technique works by tracking only the largest gradient component in each column of weight matrices, allowing researchers to train massive 30–32 billion parameter models on a single GPU where it was previously impossible.
+- Why it matters: Fine-tuning LLMs on consumer-grade GPUs has been a bottleneck for researchers and companies without access to massive compute clusters. TACO removes this barrier: 30–32 billion parameter models now fit on a single $15,000 GPU instead of requiring multiple expensive units. This democratizes the ability to adapt state-of-the-art models to specific tasks, making advanced AI development accessible to smaller labs and organizations.
 
 ### SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation
 - URL: https://paperplaine.com/papers/silsa-sliding-window-slice
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: AI that writes recipes for textures, not just pictures of them
 - Summary: A new tool called MatLoom uses AI language models to generate material textures from text descriptions—but instead of producing just images, it outputs compact, readable code that explains how each texture layer is built. In human preference tests, materials created this way won 59% of votes against leading competitor methods, and the code stays short enough (around 21 lines) that artists can edit it by hand afterward.
 - Why it matters: Video game developers, architects, and 3D artists currently spend hours manually tweaking texture parameters or editing AI-generated images to get what they want. MatLoom's approach gives them editable source code instead—meaning they can ask an AI to "generate a worn leather texture" and then actually modify the underlying rules (layer opacity, color shifts, roughness patterns) rather than starting over from scratch. This cuts iteration time and gives creators real control over what the AI builds.
-
-### Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection
-- URL: https://paperplaine.com/papers/tissue-detection-determines-false
-- Category: Engineering
-- Authors: Konstantinos Moutselos, Ilias Maglogiannis
-- arXiv: 2609.40083
-- Plain-English subtitle: How microscope image preprocessing secretly shapes what counts as 'normal' tissue
-- Summary: A step in preparing medical images for quality control—identifying which parts are actual tissue versus background—quietly determines which real samples get flagged as defects. Researchers found that switching to a better tissue-detection method dropped false alarms from 10% to 1.6%, simply by changing what the system learned to recognize as normal.
-- Why it matters: Pathologists rely on automated quality control to spot damaged slides before analysis begins. High false-positive rates force manual review of good slides, wasting time and resources; low rates risk missing real damage. This work shows that a seemingly boring preprocessing choice directly controls this trade-off, meaning labs that upgrade their tissue detection could cut false alarms tenfold without missing actual problems.
-
-### Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks
-- URL: https://paperplaine.com/papers/not-all-solutions-are
-- Category: Quantitative Biology
-- Authors: Lukas Braun, Erin Grant, Andrew M. Saxe
-- arXiv: 2609.38998
-- Plain-English subtitle: Why two neural networks can work the same way but think differently
-- Summary: Two neural networks can solve the same task using completely different internal representations—or use similar representations while computing things in fundamentally different ways. The researchers found that representational similarity (shared internal codes) and functional similarity (solving the same problem) are independent properties, and that networks built to withstand weight changes are actually forced to use task-specific, less flexible representations.
-- Why it matters: When neuroscientists compare brain activity patterns across animals or people, they assume similar patterns mean similar computations. This work shows that assumption breaks down—networks can have aligned representations without aligned function. The findings change how researchers should interpret comparisons of neural codes in brains and artificial networks, suggesting they need to measure function directly rather than assuming it from representation alone.
-
-### ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing
-- URL: https://paperplaine.com/papers/vitex-bench-benchmarking-high
-- Category: Computer Science · AI
-- Authors: Xinghao Chen, Xiangbo Gao, Jiongze Yu et al.
-- arXiv: 2609.40356
-- Plain-English subtitle: How to change text in videos without breaking the scene
-- Summary: Researchers created the first major benchmark for editing text that appears on real-world surfaces in videos—like storefront signs or whiteboards—while keeping everything else unchanged. Testing eight existing video editors revealed a fundamental trade-off: systems can either get the text right, maintain smooth motion, or preserve the background, but not all three together.
-- Why it matters: Video editing tools power everything from marketing content to accessibility fixes, but until now there was no standard way to measure whether text edits actually work across a full video. This benchmark gives engineers a shared target to build better editors and shows exactly where current technology falls short—information that companies developing video AI tools need to improve their products.
 
 ## About
 

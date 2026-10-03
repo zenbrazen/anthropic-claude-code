@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 22:46:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 12:14:58 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning</title>
+      <link>https://paperplaine.com/papers/trust-the-direction-search</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/trust-the-direction-search</guid>
+      <pubDate>Thu, 01 Oct 2026 17:59:28 GMT</pubDate>
+      <author>Cristian McGee, El Houcine Bergou, Aritra Dutta</author>
+      <category>AI</category>
+      <description>A smarter way to adjust training speed for AI language models</description>
+      <content:encoded><![CDATA[<p><em>A smarter way to adjust training speed for AI language models</em></p><p>Training large language models requires choosing how big each optimization step should be—too small and training crawls, too large and it breaks. This paper presents ZFO, a method that uses just two extra function evaluations to pick adaptive step sizes that beat fixed approaches across multiple models and datasets, without the computational cost of traditional line searches.</p><p><strong>Why it matters:</strong> Language model training is expensive and slow; improving optimization efficiency directly cuts training time and computational cost. ZFO's lightweight step-size selection means researchers can train models faster and reach better performance without redesigning their existing optimization pipelines or running expensive searches at each iteration.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Quantum Advantage for Two-Party Differential Privacy</title>
+      <link>https://paperplaine.com/papers/quantum-advantage-for-two</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/quantum-advantage-for-two</guid>
+      <pubDate>Thu, 01 Oct 2026 17:32:30 GMT</pubDate>
+      <author>Daniel Alabi, Emil T. Khabiboulline</author>
+      <category>Comp Sci</category>
+      <description>Quantum computers can protect private data better than classical methods</description>
+      <content:encoded><![CDATA[<p><em>Quantum computers can protect private data better than classical methods</em></p><p>Quantum computers can solve a specific privacy problem with near-perfect accuracy, while classical computers fundamentally cannot without compromising security or accepting significant errors. When two parties need to privately compare information, quantum protocols achieve constant error regardless of data size—a feat classical methods can only match by using unproven computational tricks rather than true mathematical guarantees.</p><p><strong>Why it matters:</strong> This reveals quantum computers have a genuine advantage in privacy-preserving computation, not just speed. As organizations handle increasingly sensitive data and quantum computers mature, this work suggests quantum-based systems could offer stronger privacy guarantees for tasks like secure data comparison, voting, or collaborative analysis where neither party should learn the other's input.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning</title>
+      <link>https://paperplaine.com/papers/taco-ternary-absolute-max</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/taco-ternary-absolute-max</guid>
+      <pubDate>Thu, 01 Oct 2026 17:59:42 GMT</pubDate>
+      <author>Jichao Jiang, Cristian McGee, El Houcine Bergou et al.</author>
+      <category>Math</category>
+      <description>Shrinking the memory burden of tuning giant AI models by 174 times</description>
+      <content:encoded><![CDATA[<p><em>Shrinking the memory burden of tuning giant AI models by 174 times</em></p><p>A new optimization method called TACO cuts the memory needed to fine-tune large language models by 174 times compared to existing approaches, while maintaining the same accuracy and speed. The technique works by tracking only the largest gradient component in each column of weight matrices, allowing researchers to train massive 30–32 billion parameter models on a single GPU where it was previously impossible.</p><p><strong>Why it matters:</strong> Fine-tuning LLMs on consumer-grade GPUs has been a bottleneck for researchers and companies without access to massive compute clusters. TACO removes this barrier: 30–32 billion parameter models now fit on a single $15,000 GPU instead of requiring multiple expensive units. This democratizes the ability to adapt state-of-the-art models to specific tasks, making advanced AI development accessible to smaller labs and organizations.</p>]]></content:encoded>
+    </item>
     <item>
       <title>SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation</title>
       <link>https://paperplaine.com/papers/silsa-sliding-window-slice</link>
