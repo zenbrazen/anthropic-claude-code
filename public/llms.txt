@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 911 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 914 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 312 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 313 papers in archive.
+  - "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars"
   - "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation"
-  - "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 75 papers in archive.
   - "Quantum Advantage for Two-Party Differential Privacy"
   - "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 77 papers in archive.
   - "Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?"
   - "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 79 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 80 papers in archive.
+  - "Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities"
   - "PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading"
-  - "Financial Fragility in Societies of LLM Agents: Coordination Failures and Stabilizing Mechanisms"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 79 papers in archive.
   - "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials"
   - "Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 73 papers in archive.
   - "Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities"
   - "Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 64 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 65 papers in archive.
+  - "Shared Models, Selective Trading, and Order Flow"
   - "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?"
-  - "Multiscale Reconstruction of Weighted Networks from Coarse-Grained Data"
 
 ## 10 most recent papers
+
+### One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars
+- URL: https://paperplaine.com/papers/one-basis-to-animate
+- Category: Computer Science · AI
+- Authors: Ramazan Fazylov, Stamatis Lefkimmiatis, Ivan Laptev
+- arXiv: 2610.02207
+- Plain-English subtitle: Making 3D avatars animate faster by simplifying how they move
+- Summary: Researchers found that 3D avatars can be animated using simple math instead of heavy neural networks, cutting animation processing by up to 1,000 times. Their method, called GALA, replaces complex per-frame computations with a lightweight predictor and linear blending, achieving 60 frames per second on mobile phones while keeping visual quality nearly intact.
+- Why it matters: Real-time 3D avatars for video calls, games, and virtual meetings currently require significant computing power. This method brings high-quality avatar animation to mobile devices and low-end hardware, making lifelike digital representations accessible for everyday applications rather than just high-end workstations. The 1,000-fold speed improvement means smoother, faster interactions with minimal lag.
+
+### Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities
+- URL: https://paperplaine.com/papers/multi-jurisdictional-legal-identity
+- Category: Quantitative Finance
+- Authors: Walter Kurz
+- arXiv: 2610.00287
+- Plain-English subtitle: Asking for ID only when it actually matters, not from everyone upfront
+- Summary: Most digital systems demand the same level of identity verification from everyone before they can do anything—like requiring a passport check just to enter a store. This paper proposes a smarter approach: ask for more personal information only when the specific action warrants it, letting people participate with minimal disclosure at first and proving their identity gradually as needed. The model works across borders and different legal systems, matching how much verification is required to how risky the transaction actually is.
+- Why it matters: Current one-size-fits-all identity checks exclude people who can't meet a high bar they never needed to clear, slow down every interaction with unnecessary verification, and waste resources screening low-risk users like high-risk ones. A tiered system could let more people participate in financial services and digital platforms, speed up routine transactions, and reduce the personal data collected and stored by companies—while still catching genuinely risky behavior when it appears.
+
+### Shared Models, Selective Trading, and Order Flow
+- URL: https://paperplaine.com/papers/shared-models-selective-trading
+- Category: Economics
+- Authors: Victoria Ruojie Li, Arka Prava Bandyopadhyay
+- arXiv: 2610.01897
+- Plain-English subtitle: How AI traders respond to the same news differently based on how it's presented
+- Summary: When artificial intelligence language models are given identical news but presented in different formats, their trading decisions shift dramatically—sometimes swapping which model dominates the market by 40 to 48 percentage points. These shifts happened without any change in the actual number of buy or sell orders, meaning AI traders were simply switching strategies based on presentation alone. The finding reveals that even when markets contain diverse AI participants, how information is packaged can eliminate that diversity from actual trading decisions.
+- Why it matters: Financial markets rely on diverse viewpoints to set accurate prices and catch each other's mistakes. If the same news packaged different ways can erase that diversity—making all AI traders suddenly agree—prices could move for the wrong reasons and miss important signals. This matters for market regulators and firms building AI trading systems, since the format of market announcements might accidentally amplify volatility or enable coordinated mispricing.
 
 ### DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation
 - URL: https://paperplaine.com/papers/dmad-distribution-matching-as
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A smarter way to adjust training speed for AI language models
 - Summary: Training large language models requires choosing how big each optimization step should be—too small and training crawls, too large and it breaks. This paper presents ZFO, a method that uses just two extra function evaluations to pick adaptive step sizes that beat fixed approaches across multiple models and datasets, without the computational cost of traditional line searches.
 - Why it matters: Language model training is expensive and slow; improving optimization efficiency directly cuts training time and computational cost. ZFO's lightweight step-size selection means researchers can train models faster and reach better performance without redesigning their existing optimization pipelines or running expensive searches at each iteration.
-
-### Quantum Advantage for Two-Party Differential Privacy
-- URL: https://paperplaine.com/papers/quantum-advantage-for-two
-- Category: Computer Science
-- Authors: Daniel Alabi, Emil T. Khabiboulline
-- arXiv: 2610.02113
-- Plain-English subtitle: Quantum computers can protect private data better than classical methods
-- Summary: Quantum computers can solve a specific privacy problem with near-perfect accuracy, while classical computers fundamentally cannot without compromising security or accepting significant errors. When two parties need to privately compare information, quantum protocols achieve constant error regardless of data size—a feat classical methods can only match by using unproven computational tricks rather than true mathematical guarantees.
-- Why it matters: This reveals quantum computers have a genuine advantage in privacy-preserving computation, not just speed. As organizations handle increasingly sensitive data and quantum computers mature, this work suggests quantum-based systems could offer stronger privacy guarantees for tasks like secure data comparison, voting, or collaborative analysis where neither party should learn the other's input.
-
-### TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning
-- URL: https://paperplaine.com/papers/taco-ternary-absolute-max
-- Category: Mathematics
-- Authors: Jichao Jiang, Cristian McGee, El Houcine Bergou et al.
-- arXiv: 2610.02199
-- Plain-English subtitle: Shrinking the memory burden of tuning giant AI models by 174 times
-- Summary: A new optimization method called TACO cuts the memory needed to fine-tune large language models by 174 times compared to existing approaches, while maintaining the same accuracy and speed. The technique works by tracking only the largest gradient component in each column of weight matrices, allowing researchers to train massive 30–32 billion parameter models on a single GPU where it was previously impossible.
-- Why it matters: Fine-tuning LLMs on consumer-grade GPUs has been a bottleneck for researchers and companies without access to massive compute clusters. TACO removes this barrier: 30–32 billion parameter models now fit on a single $15,000 GPU instead of requiring multiple expensive units. This democratizes the ability to adapt state-of-the-art models to specific tasks, making advanced AI development accessible to smaller labs and organizations.
-
-### SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation
-- URL: https://paperplaine.com/papers/silsa-sliding-window-slice
-- Category: Computer Science · AI
-- Authors: Tianjiao Yu, Xinzhuo Li, Yifan Shen et al.
-- arXiv: 2610.02201
-- Plain-English subtitle: Making 3D shapes faster by tracking them slice by slice instead of piece by piece
-- Summary: A new method called SILSA generates high-resolution 3D objects more efficiently by representing shapes as overlapping cross-sectional slices rather than millions of tiny blocks. It uses 70% fewer computational tokens than competing approaches while actually improving quality—boosting structural accuracy by 9.2% and cutting inference time nearly in half.
-- Why it matters: Faster and cheaper 3D generation means companies can deploy these models in real-world applications like product design software, game engines, and augmented reality tools without requiring expensive hardware. The method also better preserves thin details and complex shapes that previously fell apart during generation, making the output more reliable for applications where structural integrity matters.
 
 ## About
 
