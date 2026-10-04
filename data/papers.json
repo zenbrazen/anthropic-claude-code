@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.02188",
+    "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+    "authors": "Zhengming Yu, Junkun Yuan, Haotian Yang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-01T17:59:01Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "Making AI image generators run ten times faster without losing quality",
+    "summary": "Researchers created DMAD, a new method that trains fast image-generation models by having two competing networks learn from each other instead of relying on slow auxiliary models. The approach cuts computational overhead while matching or beating the quality of existing faster methods—achieving top-tier image quality in just one or four steps instead of dozens.",
+    "whyItMatters": "AI image and video generation currently requires expensive computation that limits real-time applications. This method runs 10× faster on standard hardware while maintaining visual quality, making tools like SDXL and text-to-video models practical for phones, browsers, and resource-constrained devices where they're currently too slow to use.",
+    "fetchedAt": "2026-10-04T13:02:56.150Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 212
+    },
+    "slug": "dmad-distribution-matching-as"
+  },
+  {
+    "id": "2610.01826",
+    "title": "Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities",
+    "authors": "Peng Yi, Ying-Chang Liang",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-10-01T15:01:50Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "How robot teams can share essential information through compressed messages",
+    "summary": "Multiple robots working together need to exchange observations and decisions quickly, but wireless networks have limited bandwidth. This paper proposes a system where robots communicate through compact \"tokens\"—compressed packets of information that capture what matters for the task—rather than sending raw sensor data. In tests moving objects cooperatively, this approach cut data transmission by a significant margin while keeping the robots coordinated and performing well even on noisy connections.",
+    "whyItMatters": "Robot teams are moving from labs into factories, warehouses, and rescue operations, where they must coordinate in real time over imperfect wireless networks. Sending raw camera feeds and sensor streams burns bandwidth and power; compressed token-based communication means faster coordination, longer battery life, and reliability in environments where connectivity is spotty. This work offers a practical pathway to make multi-robot systems feasible at scale.",
+    "fetchedAt": "2026-10-04T13:03:00.214Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 10,
+      "wordCount": 169
+    },
+    "slug": "token-communication-assisted-collaborative"
+  },
+  {
+    "id": "2610.02167",
+    "title": "Polynomial-time classical and quantum simulation of quantum impurity models",
+    "authors": "Jiaqing Jiang, Nathan Ju, Ojas Parekh et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-10-01T17:55:25Z",
+    "publishedFormatted": "Oct 1, 2026",
+    "subtitle": "What quantum computers can and cannot do faster than classical ones",
+    "summary": "Classical computers can efficiently calculate the static properties of quantum impurity models—a fundamental building block in materials science—contrary to what researchers previously thought possible. However, quantum computers have a genuine advantage when it comes to simulating how these systems evolve over time, suggesting a clear dividing line between what each type of machine does best.",
+    "whyItMatters": "Quantum impurity models underpin how scientists predict the behavior of real materials and design new ones. Knowing that classical computers can handle the most common calculations—ground-state energies and thermal properties—means researchers can solve many practical problems without quantum hardware. But the finding that quantum computers excel at time-dependent simulations identifies where quantum machines will deliver real value, helping guide which quantum computers get built first and which problems are worth solving with them.",
+    "fetchedAt": "2026-10-04T13:03:03.226Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 73,
+      "wordCount": 226
+    },
+    "slug": "polynomial-time-classical-and"
+  },
+  {
     "id": "2610.02204",
     "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
     "authors": "Yen-Jen Wang, Haozhe Jiang, Shuying Deng et al.",

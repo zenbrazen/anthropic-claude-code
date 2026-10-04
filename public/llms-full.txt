@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 908 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-03
+This file contains the complete plain-English text of all 911 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-04
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation
+Subtitle: Making AI image generators run ten times faster without losing quality
+URL: https://paperplaine.com/papers/dmad-distribution-matching-as
+Category: Computer Science · AI
+Authors: Zhengming Yu, Junkun Yuan, Haotian Yang et al.
+arXiv ID: 2610.02188
+arXiv URL: https://arxiv.org/abs/2610.02188
+Posted: 2026-10-04
+
+Summary: Researchers created DMAD, a new method that trains fast image-generation models by having two competing networks learn from each other instead of relying on slow auxiliary models. The approach cuts computational overhead while matching or beating the quality of existing faster methods—achieving top-tier image quality in just one or four steps instead of dozens.
+
+Why it matters: AI image and video generation currently requires expensive computation that limits real-time applications. This method runs 10× faster on standard hardware while maintaining visual quality, making tools like SDXL and text-to-video models practical for phones, browsers, and resource-constrained devices where they're currently too slow to use.
+
+---
+Title: Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities
+Subtitle: How robot teams can share essential information through compressed messages
+URL: https://paperplaine.com/papers/token-communication-assisted-collaborative
+Category: Engineering
+Authors: Peng Yi, Ying-Chang Liang
+arXiv ID: 2610.01826
+arXiv URL: https://arxiv.org/abs/2610.01826
+Posted: 2026-10-04
+
+Summary: Multiple robots working together need to exchange observations and decisions quickly, but wireless networks have limited bandwidth. This paper proposes a system where robots communicate through compact "tokens"—compressed packets of information that capture what matters for the task—rather than sending raw sensor data. In tests moving objects cooperatively, this approach cut data transmission by a significant margin while keeping the robots coordinated and performing well even on noisy connections.
+
+Why it matters: Robot teams are moving from labs into factories, warehouses, and rescue operations, where they must coordinate in real time over imperfect wireless networks. Sending raw camera feeds and sensor streams burns bandwidth and power; compressed token-based communication means faster coordination, longer battery life, and reliability in environments where connectivity is spotty. This work offers a practical pathway to make multi-robot systems feasible at scale.
+
+---
+Title: Polynomial-time classical and quantum simulation of quantum impurity models
+Subtitle: What quantum computers can and cannot do faster than classical ones
+URL: https://paperplaine.com/papers/polynomial-time-classical-and
+Category: Physics
+Authors: Jiaqing Jiang, Nathan Ju, Ojas Parekh et al.
+arXiv ID: 2610.02167
+arXiv URL: https://arxiv.org/abs/2610.02167
+Posted: 2026-10-04
+
+Summary: Classical computers can efficiently calculate the static properties of quantum impurity models—a fundamental building block in materials science—contrary to what researchers previously thought possible. However, quantum computers have a genuine advantage when it comes to simulating how these systems evolve over time, suggesting a clear dividing line between what each type of machine does best.
+
+Why it matters: Quantum impurity models underpin how scientists predict the behavior of real materials and design new ones. Knowing that classical computers can handle the most common calculations—ground-state energies and thermal properties—means researchers can solve many practical problems without quantum hardware. But the finding that quantum computers excel at time-dependent simulations identifies where quantum machines will deliver real value, helping guide which quantum computers get built first and which problems are worth solving with them.
 
 ---
 Title: Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents
