@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 914 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-04
+This file contains the complete plain-English text of all 917 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-05
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity
+Subtitle: Deciding when an AI should forget its past to adapt to changing conditions
+URL: https://paperplaine.com/papers/when-may-a-bandit
+Category: Computer Science · AI
+Authors: Mayand Gulati, Kerong Wang, WeiChen Au
+arXiv ID: 2610.03646
+arXiv URL: https://arxiv.org/abs/2610.03646
+Posted: 2026-10-05
+
+Summary: Machine learning systems often learn from past experience, but when the world changes, old information can hurt rather than help. Researchers created a method that uses statistical evidence to decide when a system should start discounting its history and adapt to new conditions—and found that this evidence-based approach prevents premature switching about 38% of the time compared to systems that always adapt.
+
+Why it matters: Many real-world systems face changing conditions: recommendation algorithms deal with shifting user preferences, medical treatments must adapt as disease patterns evolve, and financial models confront market shifts. This work provides a principled way to know when to trust old data versus when to move on, without requiring manual tuning of when the switch should happen. That could reduce costly false alarms where systems abandon successful strategies too early.
+
+---
+Title: Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis
+Subtitle: Why simpler decoders help AI learn better 3D scene understanding
+URL: https://paperplaine.com/papers/less-decoder-is-more
+Category: Computer Science
+Authors: Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan et al.
+arXiv ID: 2610.03717
+arXiv URL: https://arxiv.org/abs/2610.03717
+Posted: 2026-10-05
+
+Summary: A new method called SNAP learns to understand 3D scenes by generating novel views of them — but it works better by using a simpler decoder and focusing on reconstructing features rather than raw pixels. The technique matches or beats specialized 3D-supervised methods while learning from unlabeled data, and its features surprisingly become viewpoint-invariant, meaning they work even when the camera moves.
+
+Why it matters: Better 3D understanding from unlabeled video could improve robot navigation, autonomous vehicles, and augmented reality systems without requiring expensive 3D annotations. The finding that less complex decoders actually help — not hurt — challenges how computer vision systems are typically designed and could shift how researchers build these models.
+
+---
+Title: From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing
+Subtitle: Breaking up network problems into smaller pieces to speed up distributed computing
+URL: https://paperplaine.com/papers/from-mixing-to-tearing
+Category: Mathematics
+Authors: Kuangyu Ding, Gesualdo Scutari
+arXiv ID: 2610.03709
+arXiv URL: https://arxiv.org/abs/2610.03709
+Posted: 2026-10-05
+
+Summary: Researchers created a new method for solving optimization problems across networks of computers by strategically breaking the network into smaller subgraphs, rather than treating it as one whole system. The approach, called GATE, assigns each computer a specific piece of the problem to solve and passes lightweight messages between neighbors, reducing both the computation and communication needed at each step while still guaranteeing the solution converges reliably.
+
+Why it matters: Distributed optimization powers everything from smart power grids that balance electricity across regions to machine learning systems training on data spread across multiple servers. By cutting the computational and communication burden per round, this method makes these systems faster and cheaper to run, especially as networks grow larger or operate under tight bandwidth constraints.
 
 ---
 Title: One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 914 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 917 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 313 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 314 papers in archive.
+  - "When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity"
   - "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars"
-  - "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 75 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 76 papers in archive.
+  - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
   - "Quantum Advantage for Two-Party Differential Privacy"
-  - "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 76 papers in archive.
   - "Polynomial-time classical and quantum simulation of quantum impurity models"
   - "The efficacy-competitiveness frontier in the Swiss system"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 76 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 77 papers in archive.
+  - "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing"
   - "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning"
-  - "EndoWake: Modeling Wind by Linear Programming for Wind Farm Layout Optimization"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 77 papers in archive.
   - "Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?"
   - "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?"
 
 ## 10 most recent papers
+
+### When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity
+- URL: https://paperplaine.com/papers/when-may-a-bandit
+- Category: Computer Science · AI
+- Authors: Mayand Gulati, Kerong Wang, WeiChen Au
+- arXiv: 2610.03646
+- Plain-English subtitle: Deciding when an AI should forget its past to adapt to changing conditions
+- Summary: Machine learning systems often learn from past experience, but when the world changes, old information can hurt rather than help. Researchers created a method that uses statistical evidence to decide when a system should start discounting its history and adapt to new conditions—and found that this evidence-based approach prevents premature switching about 38% of the time compared to systems that always adapt.
+- Why it matters: Many real-world systems face changing conditions: recommendation algorithms deal with shifting user preferences, medical treatments must adapt as disease patterns evolve, and financial models confront market shifts. This work provides a principled way to know when to trust old data versus when to move on, without requiring manual tuning of when the switch should happen. That could reduce costly false alarms where systems abandon successful strategies too early.
+
+### Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis
+- URL: https://paperplaine.com/papers/less-decoder-is-more
+- Category: Computer Science
+- Authors: Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan et al.
+- arXiv: 2610.03717
+- Plain-English subtitle: Why simpler decoders help AI learn better 3D scene understanding
+- Summary: A new method called SNAP learns to understand 3D scenes by generating novel views of them — but it works better by using a simpler decoder and focusing on reconstructing features rather than raw pixels. The technique matches or beats specialized 3D-supervised methods while learning from unlabeled data, and its features surprisingly become viewpoint-invariant, meaning they work even when the camera moves.
+- Why it matters: Better 3D understanding from unlabeled video could improve robot navigation, autonomous vehicles, and augmented reality systems without requiring expensive 3D annotations. The finding that less complex decoders actually help — not hurt — challenges how computer vision systems are typically designed and could shift how researchers build these models.
+
+### From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing
+- URL: https://paperplaine.com/papers/from-mixing-to-tearing
+- Category: Mathematics
+- Authors: Kuangyu Ding, Gesualdo Scutari
+- arXiv: 2610.03709
+- Plain-English subtitle: Breaking up network problems into smaller pieces to speed up distributed computing
+- Summary: Researchers created a new method for solving optimization problems across networks of computers by strategically breaking the network into smaller subgraphs, rather than treating it as one whole system. The approach, called GATE, assigns each computer a specific piece of the problem to solve and passes lightweight messages between neighbors, reducing both the computation and communication needed at each step while still guaranteeing the solution converges reliably.
+- Why it matters: Distributed optimization powers everything from smart power grids that balance electricity across regions to machine learning systems training on data spread across multiple servers. By cutting the computational and communication burden per round, this method makes these systems faster and cheaper to run, especially as networks grow larger or operate under tight bandwidth constraints.
 
 ### One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars
 - URL: https://paperplaine.com/papers/one-basis-to-animate
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching robots to improve themselves by practicing in simulation before real tasks
 - Summary: Researchers developed RPG, a system that lets robots autonomously improve their performance without retraining their AI models. The system identifies what skills a robot can already do, creates practice tasks in simulation to diagnose failures, develops new reusable skills to fix those failures, and then tests improvements before deploying them—boosting success rates from 29% to 95% over 15 rounds of practice, and achieving 100% success on physical robot trials.
 - Why it matters: Robots currently require constant human effort to fix failures and add new capabilities. RPG eliminates this bottleneck by letting robots diagnose and fix their own problems through simulation practice, then carry those improvements to physical tasks. This could dramatically reduce the engineering overhead needed to deploy robots in real-world settings like warehouses, manufacturing, and other manipulation-heavy environments.
-
-### Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials
-- URL: https://paperplaine.com/papers/muon-meets-tamed-langevin
-- Category: Statistics
-- Authors: Nikolaos Makras, Sotirios Sabanis
-- arXiv: 2610.02158
-- Plain-English subtitle: Making sampling algorithms work on harder, messier mathematical landscapes
-- Summary: Researchers developed a new sampling method that works reliably on mathematical functions that are far messier than those current algorithms assume — specifically those that aren't convex and don't have uniformly well-behaved gradients everywhere. The method uses a clever momentum control strategy that prevents the algorithm from becoming unstable, and mathematically guarantees it will converge to the right answer without needing to modify or simplify the original problem.
-- Why it matters: This extends sampling algorithms to realistic problems in physics, machine learning, and statistics where the mathematical landscape is irregular or extreme. The guarantee that the algorithm stays stable without rewriting the problem means practitioners can solve harder inference tasks — like simulating molecular systems or fitting complex models — that would otherwise require hand-crafted workarounds or approximations.
-
-### Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?
-- URL: https://paperplaine.com/papers/can-llms-reliably-annotate
-- Category: Quantitative Biology
-- Authors: Laura van Weesep, Riccardo Tedoldi, Jens Sjölund et al.
-- arXiv: 2610.01616
-- Plain-English subtitle: Using AI to fix millions of missing labels in drug-screening databases
-- Summary: Large language models can reliably fill in missing metadata for millions of bioassays in public databases, correctly identifying assay types and detection methods over 96% of the time. The researchers found that major repositories like PubChem are missing critical information on up to 89% of their assays—a gap that slows down AI drug discovery—and showed that LLMs can both complete these gaps and catch mislabeled entries that human curators might miss.
-- Why it matters: Drug discovery AI models depend on clean, complete data to work well, but the largest public bioassay databases have systematic gaps that currently require expensive manual labor to fix. This work shows LLMs can automate that curation at scale, potentially saving months of expert time while improving data quality. Better-labeled bioassay databases mean faster, more reliable computational drug screening and fewer dead-end experiments in the lab.
-
-### Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning
-- URL: https://paperplaine.com/papers/trust-the-direction-search
-- Category: Computer Science · AI
-- Authors: Cristian McGee, El Houcine Bergou, Aritra Dutta
-- arXiv: 2610.02190
-- Plain-English subtitle: A smarter way to adjust training speed for AI language models
-- Summary: Training large language models requires choosing how big each optimization step should be—too small and training crawls, too large and it breaks. This paper presents ZFO, a method that uses just two extra function evaluations to pick adaptive step sizes that beat fixed approaches across multiple models and datasets, without the computational cost of traditional line searches.
-- Why it matters: Language model training is expensive and slow; improving optimization efficiency directly cuts training time and computational cost. ZFO's lightweight step-size selection means researchers can train models faster and reach better performance without redesigning their existing optimization pipelines or running expensive searches at each iteration.
 
 ## About
 

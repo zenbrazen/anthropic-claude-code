@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2026 22:09:11 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 15:34:29 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity</title>
+      <link>https://paperplaine.com/papers/when-may-a-bandit</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/when-may-a-bandit</guid>
+      <pubDate>Fri, 02 Oct 2026 17:31:50 GMT</pubDate>
+      <author>Mayand Gulati, Kerong Wang, WeiChen Au</author>
+      <category>AI</category>
+      <description>Deciding when an AI should forget its past to adapt to changing conditions</description>
+      <content:encoded><![CDATA[<p><em>Deciding when an AI should forget its past to adapt to changing conditions</em></p><p>Machine learning systems often learn from past experience, but when the world changes, old information can hurt rather than help. Researchers created a method that uses statistical evidence to decide when a system should start discounting its history and adapt to new conditions—and found that this evidence-based approach prevents premature switching about 38% of the time compared to systems that always adapt.</p><p><strong>Why it matters:</strong> Many real-world systems face changing conditions: recommendation algorithms deal with shifting user preferences, medical treatments must adapt as disease patterns evolve, and financial models confront market shifts. This work provides a principled way to know when to trust old data versus when to move on, without requiring manual tuning of when the switch should happen. That could reduce costly false alarms where systems abandon successful strategies too early.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis</title>
+      <link>https://paperplaine.com/papers/less-decoder-is-more</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/less-decoder-is-more</guid>
+      <pubDate>Fri, 02 Oct 2026 17:59:14 GMT</pubDate>
+      <author>Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan et al.</author>
+      <category>Comp Sci</category>
+      <description>Why simpler decoders help AI learn better 3D scene understanding</description>
+      <content:encoded><![CDATA[<p><em>Why simpler decoders help AI learn better 3D scene understanding</em></p><p>A new method called SNAP learns to understand 3D scenes by generating novel views of them — but it works better by using a simpler decoder and focusing on reconstructing features rather than raw pixels. The technique matches or beats specialized 3D-supervised methods while learning from unlabeled data, and its features surprisingly become viewpoint-invariant, meaning they work even when the camera moves.</p><p><strong>Why it matters:</strong> Better 3D understanding from unlabeled video could improve robot navigation, autonomous vehicles, and augmented reality systems without requiring expensive 3D annotations. The finding that less complex decoders actually help — not hurt — challenges how computer vision systems are typically designed and could shift how researchers build these models.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing</title>
+      <link>https://paperplaine.com/papers/from-mixing-to-tearing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/from-mixing-to-tearing</guid>
+      <pubDate>Fri, 02 Oct 2026 17:57:50 GMT</pubDate>
+      <author>Kuangyu Ding, Gesualdo Scutari</author>
+      <category>Math</category>
+      <description>Breaking up network problems into smaller pieces to speed up distributed computing</description>
+      <content:encoded><![CDATA[<p><em>Breaking up network problems into smaller pieces to speed up distributed computing</em></p><p>Researchers created a new method for solving optimization problems across networks of computers by strategically breaking the network into smaller subgraphs, rather than treating it as one whole system. The approach, called GATE, assigns each computer a specific piece of the problem to solve and passes lightweight messages between neighbors, reducing both the computation and communication needed at each step while still guaranteeing the solution converges reliably.</p><p><strong>Why it matters:</strong> Distributed optimization powers everything from smart power grids that balance electricity across regions to machine learning systems training on data spread across multiple servers. By cutting the computational and communication burden per round, this method makes these systems faster and cheaper to run, especially as networks grow larger or operate under tight bandwidth constraints.</p>]]></content:encoded>
+    </item>
     <item>
       <title>One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars</title>
       <link>https://paperplaine.com/papers/one-basis-to-animate</link>
