@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 917 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-05
+This file contains the complete plain-English text of all 920 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-06
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: What Should World Models Forget? Stratified Retention for Continual Adaptation
+Subtitle: Teaching AI to forget outdated facts while keeping physics rules forever
+URL: https://paperplaine.com/papers/what-should-world-models
+Category: Computer Science · AI
+Authors: Nishit Anand, Ramani Duraiswami, Dinesh Manocha
+arXiv ID: 2610.03713
+arXiv URL: https://arxiv.org/abs/2610.03713
+Posted: 2026-10-06
+
+Summary: World models need to unlearn information that becomes false as environments change—unlike traditional AI that treats all forgetting as failure. This paper shows that current methods can't tell the difference between a model that correctly updated to new conditions and one that catastrophically forgot important rules, and proposes a new way to measure which knowledge should stick around forever and which should change.
+
+Why it matters: Robots and autonomous systems that operate in changing environments need to adapt continuously without losing core knowledge like how physics works or that objects don't vanish. Current evaluation methods reward models that never change, even when that's the wrong behavior, making it impossible to build systems that learn reliably over time.
+
+---
+Title: Peer Influence across Heterogeneous AI Models
+Subtitle: When AI models disagree, smaller ones can flip larger ones' minds
+URL: https://paperplaine.com/papers/peer-influence-across-heterogeneous
+Category: Physics
+Authors: Frida Nøhr Laustsen, Marie Haahr Petersen, Victoria Popa et al.
+arXiv ID: 2610.03095
+arXiv URL: https://arxiv.org/abs/2610.03095
+Posted: 2026-10-06
+
+Summary: When two different AI models encounter each other and disagree, the smaller or less confident one often persuades the larger one to change its answer—contrary to what you'd expect. Researchers tested seven open-weight language models on reasoning tasks and found that a model's size and certainty don't predict who wins an argument; instead, the result depends entirely on which specific pair of models is talking to each other.
+
+Why it matters: As companies and researchers build systems combining multiple AI models to work together, these findings reveal that you cannot predict how the system will behave by testing each model alone. A smaller or less capable model placed alongside a larger one could flip critical decisions—whether in medical diagnosis support, legal analysis, or other high-stakes domains. This means developers must test the specific combinations they intend to use, not just the individual models.
+
+---
+Title: Broken scale symmetries in undercomplete linear autoencoders
+Subtitle: How neural networks accidentally develop lopsided weight patterns during training
+URL: https://paperplaine.com/papers/broken-scale-symmetries-in
+Category: Quantitative Biology
+Authors: Farhad Pashakhanloo, Jacob A. Zavatone-Veth
+arXiv ID: 2610.03640
+arXiv URL: https://arxiv.org/abs/2610.03640
+Posted: 2026-10-06
+
+Summary: When neural networks train on simple tasks, they break a fundamental symmetry by preferring large weights in some layers over others — a biased drift that shouldn't matter mathematically but consistently happens anyway. This directed pattern emerges from random noise in training, follows predictable laws, and eventually hits a hard boundary where the network can no longer drift further.
+
+Why it matters: Understanding how and why neural networks develop asymmetric solutions helps explain why standard training produces sharp, efficient models that generalize well. Since this bias is driven by noise in the training process itself rather than by the data or loss function, it reveals a hidden mechanism that could explain patterns observed in real neural networks — and potentially be leveraged to improve how networks learn.
 
 ---
 Title: When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity

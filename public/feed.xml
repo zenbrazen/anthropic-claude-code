@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 15:34:29 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:31:58 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What Should World Models Forget? Stratified Retention for Continual Adaptation</title>
+      <link>https://paperplaine.com/papers/what-should-world-models</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/what-should-world-models</guid>
+      <pubDate>Fri, 02 Oct 2026 17:58:14 GMT</pubDate>
+      <author>Nishit Anand, Ramani Duraiswami, Dinesh Manocha</author>
+      <category>AI</category>
+      <description>Teaching AI to forget outdated facts while keeping physics rules forever</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to forget outdated facts while keeping physics rules forever</em></p><p>World models need to unlearn information that becomes false as environments change—unlike traditional AI that treats all forgetting as failure. This paper shows that current methods can't tell the difference between a model that correctly updated to new conditions and one that catastrophically forgot important rules, and proposes a new way to measure which knowledge should stick around forever and which should change.</p><p><strong>Why it matters:</strong> Robots and autonomous systems that operate in changing environments need to adapt continuously without losing core knowledge like how physics works or that objects don't vanish. Current evaluation methods reward models that never change, even when that's the wrong behavior, making it impossible to build systems that learn reliably over time.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Peer Influence across Heterogeneous AI Models</title>
+      <link>https://paperplaine.com/papers/peer-influence-across-heterogeneous</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/peer-influence-across-heterogeneous</guid>
+      <pubDate>Fri, 02 Oct 2026 10:17:08 GMT</pubDate>
+      <author>Frida Nøhr Laustsen, Marie Haahr Petersen, Victoria Popa et al.</author>
+      <category>Physics</category>
+      <description>When AI models disagree, smaller ones can flip larger ones&#39; minds</description>
+      <content:encoded><![CDATA[<p><em>When AI models disagree, smaller ones can flip larger ones' minds</em></p><p>When two different AI models encounter each other and disagree, the smaller or less confident one often persuades the larger one to change its answer—contrary to what you'd expect. Researchers tested seven open-weight language models on reasoning tasks and found that a model's size and certainty don't predict who wins an argument; instead, the result depends entirely on which specific pair of models is talking to each other.</p><p><strong>Why it matters:</strong> As companies and researchers build systems combining multiple AI models to work together, these findings reveal that you cannot predict how the system will behave by testing each model alone. A smaller or less capable model placed alongside a larger one could flip critical decisions—whether in medical diagnosis support, legal analysis, or other high-stakes domains. This means developers must test the specific combinations they intend to use, not just the individual models.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Broken scale symmetries in undercomplete linear autoencoders</title>
+      <link>https://paperplaine.com/papers/broken-scale-symmetries-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/broken-scale-symmetries-in</guid>
+      <pubDate>Fri, 02 Oct 2026 17:29:19 GMT</pubDate>
+      <author>Farhad Pashakhanloo, Jacob A. Zavatone-Veth</author>
+      <category>Biology</category>
+      <description>How neural networks accidentally develop lopsided weight patterns during training</description>
+      <content:encoded><![CDATA[<p><em>How neural networks accidentally develop lopsided weight patterns during training</em></p><p>When neural networks train on simple tasks, they break a fundamental symmetry by preferring large weights in some layers over others — a biased drift that shouldn't matter mathematically but consistently happens anyway. This directed pattern emerges from random noise in training, follows predictable laws, and eventually hits a hard boundary where the network can no longer drift further.</p><p><strong>Why it matters:</strong> Understanding how and why neural networks develop asymmetric solutions helps explain why standard training produces sharp, efficient models that generalize well. Since this bias is driven by noise in the training process itself rather than by the data or loss function, it reveals a hidden mechanism that could explain patterns observed in real neural networks — and potentially be leveraged to improve how networks learn.</p>]]></content:encoded>
+    </item>
     <item>
       <title>When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity</title>
       <link>https://paperplaine.com/papers/when-may-a-bandit</link>

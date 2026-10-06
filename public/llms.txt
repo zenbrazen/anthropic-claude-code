@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 917 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 920 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 314 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 315 papers in archive.
+  - "What Should World Models Forget? Stratified Retention for Continual Adaptation"
   - "When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity"
-  - "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 76 papers in archive.
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
   - "Quantum Advantage for Two-Party Differential Privacy"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 76 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 77 papers in archive.
+  - "Peer Influence across Heterogeneous AI Models"
   - "Polynomial-time classical and quantum simulation of quantum impurity models"
-  - "The efficacy-competitiveness frontier in the Swiss system"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 77 papers in archive.
   - "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing"
   - "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 77 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 78 papers in archive.
+  - "Broken scale symmetries in undercomplete linear autoencoders"
   - "Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?"
-  - "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 80 papers in archive.
   - "Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities"
   - "PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?"
 
 ## 10 most recent papers
+
+### What Should World Models Forget? Stratified Retention for Continual Adaptation
+- URL: https://paperplaine.com/papers/what-should-world-models
+- Category: Computer Science · AI
+- Authors: Nishit Anand, Ramani Duraiswami, Dinesh Manocha
+- arXiv: 2610.03713
+- Plain-English subtitle: Teaching AI to forget outdated facts while keeping physics rules forever
+- Summary: World models need to unlearn information that becomes false as environments change—unlike traditional AI that treats all forgetting as failure. This paper shows that current methods can't tell the difference between a model that correctly updated to new conditions and one that catastrophically forgot important rules, and proposes a new way to measure which knowledge should stick around forever and which should change.
+- Why it matters: Robots and autonomous systems that operate in changing environments need to adapt continuously without losing core knowledge like how physics works or that objects don't vanish. Current evaluation methods reward models that never change, even when that's the wrong behavior, making it impossible to build systems that learn reliably over time.
+
+### Peer Influence across Heterogeneous AI Models
+- URL: https://paperplaine.com/papers/peer-influence-across-heterogeneous
+- Category: Physics
+- Authors: Frida Nøhr Laustsen, Marie Haahr Petersen, Victoria Popa et al.
+- arXiv: 2610.03095
+- Plain-English subtitle: When AI models disagree, smaller ones can flip larger ones' minds
+- Summary: When two different AI models encounter each other and disagree, the smaller or less confident one often persuades the larger one to change its answer—contrary to what you'd expect. Researchers tested seven open-weight language models on reasoning tasks and found that a model's size and certainty don't predict who wins an argument; instead, the result depends entirely on which specific pair of models is talking to each other.
+- Why it matters: As companies and researchers build systems combining multiple AI models to work together, these findings reveal that you cannot predict how the system will behave by testing each model alone. A smaller or less capable model placed alongside a larger one could flip critical decisions—whether in medical diagnosis support, legal analysis, or other high-stakes domains. This means developers must test the specific combinations they intend to use, not just the individual models.
+
+### Broken scale symmetries in undercomplete linear autoencoders
+- URL: https://paperplaine.com/papers/broken-scale-symmetries-in
+- Category: Quantitative Biology
+- Authors: Farhad Pashakhanloo, Jacob A. Zavatone-Veth
+- arXiv: 2610.03640
+- Plain-English subtitle: How neural networks accidentally develop lopsided weight patterns during training
+- Summary: When neural networks train on simple tasks, they break a fundamental symmetry by preferring large weights in some layers over others — a biased drift that shouldn't matter mathematically but consistently happens anyway. This directed pattern emerges from random noise in training, follows predictable laws, and eventually hits a hard boundary where the network can no longer drift further.
+- Why it matters: Understanding how and why neural networks develop asymmetric solutions helps explain why standard training produces sharp, efficient models that generalize well. Since this bias is driven by noise in the training process itself rather than by the data or loss function, it reveals a hidden mechanism that could explain patterns observed in real neural networks — and potentially be leveraged to improve how networks learn.
 
 ### When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity
 - URL: https://paperplaine.com/papers/when-may-a-bandit
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI image generators run ten times faster without losing quality
 - Summary: Researchers created DMAD, a new method that trains fast image-generation models by having two competing networks learn from each other instead of relying on slow auxiliary models. The approach cuts computational overhead while matching or beating the quality of existing faster methods—achieving top-tier image quality in just one or four steps instead of dozens.
 - Why it matters: AI image and video generation currently requires expensive computation that limits real-time applications. This method runs 10× faster on standard hardware while maintaining visual quality, making tools like SDXL and text-to-video models practical for phones, browsers, and resource-constrained devices where they're currently too slow to use.
-
-### Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities
-- URL: https://paperplaine.com/papers/token-communication-assisted-collaborative
-- Category: Engineering
-- Authors: Peng Yi, Ying-Chang Liang
-- arXiv: 2610.01826
-- Plain-English subtitle: How robot teams can share essential information through compressed messages
-- Summary: Multiple robots working together need to exchange observations and decisions quickly, but wireless networks have limited bandwidth. This paper proposes a system where robots communicate through compact "tokens"—compressed packets of information that capture what matters for the task—rather than sending raw sensor data. In tests moving objects cooperatively, this approach cut data transmission by a significant margin while keeping the robots coordinated and performing well even on noisy connections.
-- Why it matters: Robot teams are moving from labs into factories, warehouses, and rescue operations, where they must coordinate in real time over imperfect wireless networks. Sending raw camera feeds and sensor streams burns bandwidth and power; compressed token-based communication means faster coordination, longer battery life, and reliability in environments where connectivity is spotty. This work offers a practical pathway to make multi-robot systems feasible at scale.
-
-### Polynomial-time classical and quantum simulation of quantum impurity models
-- URL: https://paperplaine.com/papers/polynomial-time-classical-and
-- Category: Physics
-- Authors: Jiaqing Jiang, Nathan Ju, Ojas Parekh et al.
-- arXiv: 2610.02167
-- Plain-English subtitle: What quantum computers can and cannot do faster than classical ones
-- Summary: Classical computers can efficiently calculate the static properties of quantum impurity models—a fundamental building block in materials science—contrary to what researchers previously thought possible. However, quantum computers have a genuine advantage when it comes to simulating how these systems evolve over time, suggesting a clear dividing line between what each type of machine does best.
-- Why it matters: Quantum impurity models underpin how scientists predict the behavior of real materials and design new ones. Knowing that classical computers can handle the most common calculations—ground-state energies and thermal properties—means researchers can solve many practical problems without quantum hardware. But the finding that quantum computers excel at time-dependent simulations identifies where quantum machines will deliver real value, helping guide which quantum computers get built first and which problems are worth solving with them.
-
-### Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents
-- URL: https://paperplaine.com/papers/reconstruct-practice-go-real
-- Category: Computer Science · AI
-- Authors: Yen-Jen Wang, Haozhe Jiang, Shuying Deng et al.
-- arXiv: 2610.02204
-- Plain-English subtitle: Teaching robots to improve themselves by practicing in simulation before real tasks
-- Summary: Researchers developed RPG, a system that lets robots autonomously improve their performance without retraining their AI models. The system identifies what skills a robot can already do, creates practice tasks in simulation to diagnose failures, develops new reusable skills to fix those failures, and then tests improvements before deploying them—boosting success rates from 29% to 95% over 15 rounds of practice, and achieving 100% success on physical robot trials.
-- Why it matters: Robots currently require constant human effort to fix failures and add new capabilities. RPG eliminates this bottleneck by letting robots diagnose and fix their own problems through simulation practice, then carry those improvements to physical tasks. This could dramatically reduce the engineering overhead needed to deploy robots in real-world settings like warehouses, manufacturing, and other manipulation-heavy environments.
 
 ## About
 
