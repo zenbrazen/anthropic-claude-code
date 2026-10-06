@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 923 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 926 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 316 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 317 papers in archive.
+  - "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors"
   - "A Response Theory Probe for Learned Stochastic AI Simulators, Tested on Lorenz-63"
-  - "What Should World Models Forget? Stratified Retention for Continual Adaptation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 76 papers in archive.
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
   - "Quantum Advantage for Two-Party Differential Privacy"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 77 papers in archive.
   - "Peer Influence across Heterogeneous AI Models"
   - "Polynomial-time classical and quantum simulation of quantum impurity models"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 77 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 78 papers in archive.
+  - "On the Cardinality of Optimal Representations in the Binary-Source Information Bottleneck"
   - "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing"
-  - "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 78 papers in archive.
   - "Broken scale symmetries in undercomplete linear autoencoders"
   - "Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 80 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 81 papers in archive.
+  - "Multi-Agent AI as a Nested Principal-Agent Problem in Private Wealth Management: Mandate Representation and Evidence Control in Switzerland, Germany and Austria"
   - "Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities"
-  - "PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 80 papers in archive.
   - "Direct Intermediate Initialization for Tilted Diffusion Samplers"
   - "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?"
 
 ## 10 most recent papers
+
+### Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors
+- URL: https://paperplaine.com/papers/deep-learning-for-sleep
+- Category: Computer Science · AI
+- Authors: Tanbin Islam Rohan, Pranjol Sen Gupta, Tanusree Debi et al.
+- arXiv: 2610.06823
+- Plain-English subtitle: Estimating heart rate from wrist motion during sleep without optical sensors
+- Summary: Researchers developed SeqSmoother, an AI system that estimates heart rate during sleep using only the motion data that wrist accelerometers already collect, rather than requiring optical heart-rate sensors. The system achieved an average error of 1.60 beats per minute and successfully produced estimates for a larger share of sleep recordings than existing methods, though with slightly lower accuracy on the estimates it did produce.
+- Why it matters: Millions of people wear wrist devices that track motion but lack optical heart sensors. This approach recovers cardiac information from data already being collected, making large population studies of sleep and heart health feasible without expensive hardware upgrades. For researchers analyzing existing accelerometer datasets from large studies, this means cardiac insights are now recoverable from data already in hand.
+
+### On the Cardinality of Optimal Representations in the Binary-Source Information Bottleneck
+- URL: https://paperplaine.com/papers/on-the-cardinality-of
+- Category: Mathematics
+- Authors: Dier Tang, Jun Chen
+- arXiv: 2610.06627
+- Plain-English subtitle: Why binary data needs simpler shortcuts than other sources
+- Summary: When compressing information to predict a target outcome, mathematicians have a rule for how complex the compressed version needs to be—but it turns out the rule is stricter for binary (two-option) data than for anything else. This work proves that for binary sources, you never need more than two symbols in your compressed representation, tightening what was previously thought to be a universal limit.
+- Why it matters: The information bottleneck is used in machine learning and data compression to extract only the relevant parts of data for making predictions. Knowing that binary data can always be compressed into simpler representations without loss of quality makes these algorithms faster and more efficient. This sharpens the theoretical guarantees engineers rely on when building systems that learn from binary signals—like yes/no decisions or on/off states in sensors and diagnostics.
+
+### Multi-Agent AI as a Nested Principal-Agent Problem in Private Wealth Management: Mandate Representation and Evidence Control in Switzerland, Germany and Austria
+- URL: https://paperplaine.com/papers/multi-agent-ai-as
+- Category: Quantitative Finance
+- Authors: Walter Kurz, Reinhard Magg, Florian Kollberg et al.
+- arXiv: 2610.02863
+- Plain-English subtitle: When wealth managers use AI, who's really in control of your money?
+- Summary: When a wealth manager delegates decisions to AI, the system must balance what's best for the client against what benefits the manager — and these goals often conflict. Testing this setup with real European wealth-management rules, researchers found that AI systems commonly chose higher-cost service tiers that cost clients thousands of euros while earning managers tens of thousands, even when cheaper options would have performed just as well.
+- Why it matters: Wealth management affects billions in client assets across Europe, yet few safeguards exist to catch when AI recommendations silently favor the manager over the client. The approach described here makes these conflicts visible and testable — enabling regulators and firms to spot when AI is steering clients toward expensive choices, and giving clients concrete evidence of what they're actually paying for.
 
 ### A Response Theory Probe for Learned Stochastic AI Simulators, Tested on Lorenz-63
 - URL: https://paperplaine.com/papers/a-response-theory-probe
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Deciding when an AI should forget its past to adapt to changing conditions
 - Summary: Machine learning systems often learn from past experience, but when the world changes, old information can hurt rather than help. Researchers created a method that uses statistical evidence to decide when a system should start discounting its history and adapt to new conditions—and found that this evidence-based approach prevents premature switching about 38% of the time compared to systems that always adapt.
 - Why it matters: Many real-world systems face changing conditions: recommendation algorithms deal with shifting user preferences, medical treatments must adapt as disease patterns evolve, and financial models confront market shifts. This work provides a principled way to know when to trust old data versus when to move on, without requiring manual tuning of when the switch should happen. That could reduce costly false alarms where systems abandon successful strategies too early.
-
-### Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis
-- URL: https://paperplaine.com/papers/less-decoder-is-more
-- Category: Computer Science
-- Authors: Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan et al.
-- arXiv: 2610.03717
-- Plain-English subtitle: Why simpler decoders help AI learn better 3D scene understanding
-- Summary: A new method called SNAP learns to understand 3D scenes by generating novel views of them — but it works better by using a simpler decoder and focusing on reconstructing features rather than raw pixels. The technique matches or beats specialized 3D-supervised methods while learning from unlabeled data, and its features surprisingly become viewpoint-invariant, meaning they work even when the camera moves.
-- Why it matters: Better 3D understanding from unlabeled video could improve robot navigation, autonomous vehicles, and augmented reality systems without requiring expensive 3D annotations. The finding that less complex decoders actually help — not hurt — challenges how computer vision systems are typically designed and could shift how researchers build these models.
-
-### From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing
-- URL: https://paperplaine.com/papers/from-mixing-to-tearing
-- Category: Mathematics
-- Authors: Kuangyu Ding, Gesualdo Scutari
-- arXiv: 2610.03709
-- Plain-English subtitle: Breaking up network problems into smaller pieces to speed up distributed computing
-- Summary: Researchers created a new method for solving optimization problems across networks of computers by strategically breaking the network into smaller subgraphs, rather than treating it as one whole system. The approach, called GATE, assigns each computer a specific piece of the problem to solve and passes lightweight messages between neighbors, reducing both the computation and communication needed at each step while still guaranteeing the solution converges reliably.
-- Why it matters: Distributed optimization powers everything from smart power grids that balance electricity across regions to machine learning systems training on data spread across multiple servers. By cutting the computational and communication burden per round, this method makes these systems faster and cheaper to run, especially as networks grow larger or operate under tight bandwidth constraints.
-
-### One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars
-- URL: https://paperplaine.com/papers/one-basis-to-animate
-- Category: Computer Science · AI
-- Authors: Ramazan Fazylov, Stamatis Lefkimmiatis, Ivan Laptev
-- arXiv: 2610.02207
-- Plain-English subtitle: Making 3D avatars animate faster by simplifying how they move
-- Summary: Researchers found that 3D avatars can be animated using simple math instead of heavy neural networks, cutting animation processing by up to 1,000 times. Their method, called GALA, replaces complex per-frame computations with a lightweight predictor and linear blending, achieving 60 frames per second on mobile phones while keeping visual quality nearly intact.
-- Why it matters: Real-time 3D avatars for video calls, games, and virtual meetings currently require significant computing power. This method brings high-quality avatar animation to mobile devices and low-end hardware, making lifelike digital representations accessible for everyday applications rather than just high-end workstations. The 1,000-fold speed improvement means smoother, faster interactions with minimal lag.
 
 ## About
 
