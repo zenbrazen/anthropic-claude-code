@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 920 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 923 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 315 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 316 papers in archive.
+  - "A Response Theory Probe for Learned Stochastic AI Simulators, Tested on Lorenz-63"
   - "What Should World Models Forget? Stratified Retention for Continual Adaptation"
-  - "When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 76 papers in archive.
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
   - "Quantum Advantage for Two-Party Differential Privacy"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 80 papers in archive.
   - "Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities"
   - "PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 79 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 80 papers in archive.
+  - "Direct Intermediate Initialization for Tilted Diffusion Samplers"
   - "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials"
-  - "Wasserstein Gradient Flows and Forward-Only Diffusion Are Not Enough for Multimodal Sampling"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 73 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 74 papers in archive.
+  - "Goal-Oriented Wave Computing for Direction-of-Arrival Estimation"
   - "Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities"
-  - "Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 65 papers in archive.
   - "Shared Models, Selective Trading, and Order Flow"
   - "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?"
 
 ## 10 most recent papers
+
+### A Response Theory Probe for Learned Stochastic AI Simulators, Tested on Lorenz-63
+- URL: https://paperplaine.com/papers/a-response-theory-probe
+- Category: Computer Science · AI
+- Authors: João Böger, Simon Driscoll, Niccolò Zagli et al.
+- arXiv: 2610.06798
+- Plain-English subtitle: Testing whether AI weather models actually respond correctly to forcings
+- Summary: Machine-learning models that mimic chaotic systems like weather often look good on standard tests but fail at something crucial: responding correctly when you nudge the system. Researchers developed a new test based on linear response theory that checks whether AI models respond the same way the real system does, finding that different AI architectures succeed and fail in completely different ways—some match long-term statistics perfectly while botching response properties, and others do the opposite.
+- Why it matters: Climate and weather attribution studies—figuring out whether human activity caused a particular heatwave or hurricane—depend entirely on models responding correctly to forcings. An AI model that passes current validation tests might still give wrong answers to these attribution questions. This test could prevent expensive mistakes in climate science by catching response problems before deployment.
+
+### Direct Intermediate Initialization for Tilted Diffusion Samplers
+- URL: https://paperplaine.com/papers/direct-intermediate-initialization-for
+- Category: Statistics
+- Authors: Gregory D. Bellchambers
+- arXiv: 2610.06834
+- Plain-English subtitle: A faster way to start sampling from complex probability distributions
+- Summary: Researchers discovered that diffusion-based samplers can be made faster by starting their computation partway through, rather than from the beginning. By pulling the problem back to a simpler form, then using a mathematical bridge to map samples forward, they cut the work by roughly half while improving accuracy—especially when trying to find rare outcomes that simple methods would miss.
+- Why it matters: Diffusion samplers are increasingly used to solve inverse problems in imaging, physics, and machine learning—reconstructing images from noisy data, or inferring missing measurements. Starting the sampler at an intermediate point reduces computation time substantially without sacrificing quality, making these methods practical for time-sensitive applications. The approach is particularly valuable when the answer you're looking for is inherently unlikely under standard assumptions, since conventional initialization often fails to find it.
+
+### Goal-Oriented Wave Computing for Direction-of-Arrival Estimation
+- URL: https://paperplaine.com/papers/goal-oriented-wave-computing
+- Category: Engineering
+- Authors: Mert Kalfa
+- arXiv: 2610.06839
+- Plain-English subtitle: Smart surfaces that find signal direction with simpler designs
+- Summary: Programmable metasurfaces—electronically tunable antenna arrays—can estimate where a radio signal is coming from by processing waves as they pass through them. By training these surfaces directly for the task rather than fitting them to a generic mathematical operation first, researchers showed that simpler, cheaper designs perform just as well, even when the control system uses only 1–3 bits of precision.
+- Why it matters: Metasurfaces are emerging components for next-generation wireless systems, radar, and sensing. Using fewer elements, shallower designs, and coarser control reduces manufacturing cost and power consumption while maintaining performance—making practical deployment of wave-based computing in phones, base stations, and autonomous systems more feasible.
 
 ### What Should World Models Forget? Stratified Retention for Continual Adaptation
 - URL: https://paperplaine.com/papers/what-should-world-models
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making 3D avatars animate faster by simplifying how they move
 - Summary: Researchers found that 3D avatars can be animated using simple math instead of heavy neural networks, cutting animation processing by up to 1,000 times. Their method, called GALA, replaces complex per-frame computations with a lightweight predictor and linear blending, achieving 60 frames per second on mobile phones while keeping visual quality nearly intact.
 - Why it matters: Real-time 3D avatars for video calls, games, and virtual meetings currently require significant computing power. This method brings high-quality avatar animation to mobile devices and low-end hardware, making lifelike digital representations accessible for everyday applications rather than just high-end workstations. The 1,000-fold speed improvement means smoother, faster interactions with minimal lag.
-
-### Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities
-- URL: https://paperplaine.com/papers/multi-jurisdictional-legal-identity
-- Category: Quantitative Finance
-- Authors: Walter Kurz
-- arXiv: 2610.00287
-- Plain-English subtitle: Asking for ID only when it actually matters, not from everyone upfront
-- Summary: Most digital systems demand the same level of identity verification from everyone before they can do anything—like requiring a passport check just to enter a store. This paper proposes a smarter approach: ask for more personal information only when the specific action warrants it, letting people participate with minimal disclosure at first and proving their identity gradually as needed. The model works across borders and different legal systems, matching how much verification is required to how risky the transaction actually is.
-- Why it matters: Current one-size-fits-all identity checks exclude people who can't meet a high bar they never needed to clear, slow down every interaction with unnecessary verification, and waste resources screening low-risk users like high-risk ones. A tiered system could let more people participate in financial services and digital platforms, speed up routine transactions, and reduce the personal data collected and stored by companies—while still catching genuinely risky behavior when it appears.
-
-### Shared Models, Selective Trading, and Order Flow
-- URL: https://paperplaine.com/papers/shared-models-selective-trading
-- Category: Economics
-- Authors: Victoria Ruojie Li, Arka Prava Bandyopadhyay
-- arXiv: 2610.01897
-- Plain-English subtitle: How AI traders respond to the same news differently based on how it's presented
-- Summary: When artificial intelligence language models are given identical news but presented in different formats, their trading decisions shift dramatically—sometimes swapping which model dominates the market by 40 to 48 percentage points. These shifts happened without any change in the actual number of buy or sell orders, meaning AI traders were simply switching strategies based on presentation alone. The finding reveals that even when markets contain diverse AI participants, how information is packaged can eliminate that diversity from actual trading decisions.
-- Why it matters: Financial markets rely on diverse viewpoints to set accurate prices and catch each other's mistakes. If the same news packaged different ways can erase that diversity—making all AI traders suddenly agree—prices could move for the wrong reasons and miss important signals. This matters for market regulators and firms building AI trading systems, since the format of market announcements might accidentally amplify volatility or enable coordinated mispricing.
-
-### DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation
-- URL: https://paperplaine.com/papers/dmad-distribution-matching-as
-- Category: Computer Science · AI
-- Authors: Zhengming Yu, Junkun Yuan, Haotian Yang et al.
-- arXiv: 2610.02188
-- Plain-English subtitle: Making AI image generators run ten times faster without losing quality
-- Summary: Researchers created DMAD, a new method that trains fast image-generation models by having two competing networks learn from each other instead of relying on slow auxiliary models. The approach cuts computational overhead while matching or beating the quality of existing faster methods—achieving top-tier image quality in just one or four steps instead of dozens.
-- Why it matters: AI image and video generation currently requires expensive computation that limits real-time applications. This method runs 10× faster on standard hardware while maintaining visual quality, making tools like SDXL and text-to-video models practical for phones, browsers, and resource-constrained devices where they're currently too slow to use.
 
 ## About
 
