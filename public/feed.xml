@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 22:51:27 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 14:13:24 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Does an Agent&#39;s History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus</title>
+      <link>https://paperplaine.com/papers/does-an-agent-s</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/does-an-agent-s</guid>
+      <pubDate>Tue, 06 Oct 2026 17:26:57 GMT</pubDate>
+      <author>Egor Pakhomov, Erik Nijkamp</author>
+      <category>AI</category>
+      <description>Can an AI&#39;s recent actions predict if forgetting will break it?</description>
+      <content:encoded><![CDATA[<p><em>Can an AI's recent actions predict if forgetting will break it?</em></p><p>When AI agents forget old context to stay within memory limits, does their recent behavior predict whether they'll fail afterward? Researchers tested this on 590 real cases where an agent had to summarize its past, and found the answer is mostly no—what the agent was doing beforehand only weakly predicted post-forgetting errors. The best predictor they built could avoid harmful forgetting in 21% of cases while preserving most opportunities to compact memory, but didn't clearly beat simple token-counting rules.</p><p><strong>Why it matters:</strong> Long-running AI systems need to forget old information to stay fast and cheap, but careless forgetting causes them to repeat actions or crash. If we could spot dangerous moments to compact memory before they happen, we could make agents more reliable without constantly expanding memory budgets. This work shows that moment-by-moment behavior alone isn't enough of a signal—smarter ways to predict memory-compaction risk will need additional information about what the agent is trying to do.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match</title>
+      <link>https://paperplaine.com/papers/personalized-recommendations-without-inducing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/personalized-recommendations-without-inducing</guid>
+      <pubDate>Tue, 06 Oct 2026 12:47:01 GMT</pubDate>
+      <author>Erica Chiang, Kenny Peng, Rebecca Lichtenstein et al.</author>
+      <category>Economics</category>
+      <description>How to recommend schools without overwhelming the best programs</description>
+      <content:encoded><![CDATA[<p><em>How to recommend schools without overwhelming the best programs</em></p><p>A new recommendation system for NYC's high school admissions increased the share of students ranking a recommended school from 10.5% to 16.4%, and increased matches to recommended schools by 71%. The key innovation: the algorithm accounts for congestion—the problem that recommending the same popular schools to too many students backfires, making those schools harder to get into for everyone. In a real deployment, no student was rejected from a school the algorithm recommended.</p><p><strong>Why it matters:</strong> NYC's high school match assigns roughly 65,000 students annually to programs. Without congestion-aware recommendations, students in underserved neighborhoods get steered toward the same few good schools, which then become so competitive that even strong applicants get rejected. This system increased matches for treatment students by 71% while keeping rejection rates unchanged, directly expanding college-track options for students with fewer nearby choices.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution</title>
+      <link>https://paperplaine.com/papers/linear-fitness-subspace-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/linear-fitness-subspace-in</guid>
+      <pubDate>Tue, 06 Oct 2026 01:50:13 GMT</pubDate>
+      <author>SiYuan Ma, Canran Xiao, Zikai Xiao et al.</author>
+      <category>Biology</category>
+      <description>Finding protein improvements faster by searching a smaller space of changes</description>
+      <content:encoded><![CDATA[<p><em>Finding protein improvements faster by searching a smaller space of changes</em></p><p>Researchers discovered that when proteins are mutated, only a small set of specific directions through the space of possible changes actually predicts fitness—allowing AI models to find better protein variants with far fewer experiments. Across 115 real protein optimization tasks, their method improved search efficiency by learning which dimensions of change matter for each specific goal, rather than trying to navigate the entire high-dimensional space.</p><p><strong>Why it matters:</strong> Directed protein evolution is expensive and time-consuming, requiring many rounds of costly laboratory testing. This approach cuts the number of experiments needed to find improved proteins by learning which changes actually drive fitness gains for a specific task, accelerating everything from enzyme design to therapeutic antibody development. The efficiency gains mean researchers can optimize proteins with limited budgets and timelines.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors</title>
       <link>https://paperplaine.com/papers/deep-learning-for-sleep</link>

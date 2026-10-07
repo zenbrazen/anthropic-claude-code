@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 926 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-06
+This file contains the complete plain-English text of all 929 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-07
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus
+Subtitle: Can an AI's recent actions predict if forgetting will break it?
+URL: https://paperplaine.com/papers/does-an-agent-s
+Category: Computer Science · AI
+Authors: Egor Pakhomov, Erik Nijkamp
+arXiv ID: 2610.08722
+arXiv URL: https://arxiv.org/abs/2610.08722
+Posted: 2026-10-07
+
+Summary: When AI agents forget old context to stay within memory limits, does their recent behavior predict whether they'll fail afterward? Researchers tested this on 590 real cases where an agent had to summarize its past, and found the answer is mostly no—what the agent was doing beforehand only weakly predicted post-forgetting errors. The best predictor they built could avoid harmful forgetting in 21% of cases while preserving most opportunities to compact memory, but didn't clearly beat simple token-counting rules.
+
+Why it matters: Long-running AI systems need to forget old information to stay fast and cheap, but careless forgetting causes them to repeat actions or crash. If we could spot dangerous moments to compact memory before they happen, we could make agents more reliable without constantly expanding memory budgets. This work shows that moment-by-moment behavior alone isn't enough of a signal—smarter ways to predict memory-compaction risk will need additional information about what the agent is trying to do.
+
+---
+Title: Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match
+Subtitle: How to recommend schools without overwhelming the best programs
+URL: https://paperplaine.com/papers/personalized-recommendations-without-inducing
+Category: Economics
+Authors: Erica Chiang, Kenny Peng, Rebecca Lichtenstein et al.
+arXiv ID: 2610.08275
+arXiv URL: https://arxiv.org/abs/2610.08275
+Posted: 2026-10-07
+
+Summary: A new recommendation system for NYC's high school admissions increased the share of students ranking a recommended school from 10.5% to 16.4%, and increased matches to recommended schools by 71%. The key innovation: the algorithm accounts for congestion—the problem that recommending the same popular schools to too many students backfires, making those schools harder to get into for everyone. In a real deployment, no student was rejected from a school the algorithm recommended.
+
+Why it matters: NYC's high school match assigns roughly 65,000 students annually to programs. Without congestion-aware recommendations, students in underserved neighborhoods get steered toward the same few good schools, which then become so competitive that even strong applicants get rejected. This system increased matches for treatment students by 71% while keeping rejection rates unchanged, directly expanding college-track options for students with fewer nearby choices.
+
+---
+Title: Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution
+Subtitle: Finding protein improvements faster by searching a smaller space of changes
+URL: https://paperplaine.com/papers/linear-fitness-subspace-in
+Category: Quantitative Biology
+Authors: SiYuan Ma, Canran Xiao, Zikai Xiao et al.
+arXiv ID: 2610.07607
+arXiv URL: https://arxiv.org/abs/2610.07607
+Posted: 2026-10-07
+
+Summary: Researchers discovered that when proteins are mutated, only a small set of specific directions through the space of possible changes actually predicts fitness—allowing AI models to find better protein variants with far fewer experiments. Across 115 real protein optimization tasks, their method improved search efficiency by learning which dimensions of change matter for each specific goal, rather than trying to navigate the entire high-dimensional space.
+
+Why it matters: Directed protein evolution is expensive and time-consuming, requiring many rounds of costly laboratory testing. This approach cuts the number of experiments needed to find improved proteins by learning which changes actually drive fitness gains for a specific task, accelerating everything from enzyme design to therapeutic antibody development. The efficiency gains mean researchers can optimize proteins with limited budgets and timelines.
 
 ---
 Title: Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors

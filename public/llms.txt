@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 926 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 929 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 317 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 318 papers in archive.
+  - "Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus"
   - "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors"
-  - "A Response Theory Probe for Learned Stochastic AI Simulators, Tested on Lorenz-63"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 76 papers in archive.
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
   - "Quantum Advantage for Two-Party Differential Privacy"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 78 papers in archive.
   - "On the Cardinality of Optimal Representations in the Binary-Source Information Bottleneck"
   - "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 78 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 79 papers in archive.
+  - "Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution"
   - "Broken scale symmetries in undercomplete linear autoencoders"
-  - "Can LLMs Reliably Annotate Bioassay Metadata to Improve Data Readiness?"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 81 papers in archive.
   - "Multi-Agent AI as a Nested Principal-Agent Problem in Private Wealth Management: Mandate Representation and Evidence Control in Switzerland, Germany and Austria"
   - "Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 74 papers in archive.
   - "Goal-Oriented Wave Computing for Direction-of-Arrival Estimation"
   - "Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 65 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 66 papers in archive.
+  - "Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match"
   - "Shared Models, Selective Trading, and Order Flow"
-  - "Can we create a `race to the top' for weather forecasts to inform smallholder farmer decisions?"
 
 ## 10 most recent papers
+
+### Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus
+- URL: https://paperplaine.com/papers/does-an-agent-s
+- Category: Computer Science · AI
+- Authors: Egor Pakhomov, Erik Nijkamp
+- arXiv: 2610.08722
+- Plain-English subtitle: Can an AI's recent actions predict if forgetting will break it?
+- Summary: When AI agents forget old context to stay within memory limits, does their recent behavior predict whether they'll fail afterward? Researchers tested this on 590 real cases where an agent had to summarize its past, and found the answer is mostly no—what the agent was doing beforehand only weakly predicted post-forgetting errors. The best predictor they built could avoid harmful forgetting in 21% of cases while preserving most opportunities to compact memory, but didn't clearly beat simple token-counting rules.
+- Why it matters: Long-running AI systems need to forget old information to stay fast and cheap, but careless forgetting causes them to repeat actions or crash. If we could spot dangerous moments to compact memory before they happen, we could make agents more reliable without constantly expanding memory budgets. This work shows that moment-by-moment behavior alone isn't enough of a signal—smarter ways to predict memory-compaction risk will need additional information about what the agent is trying to do.
+
+### Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match
+- URL: https://paperplaine.com/papers/personalized-recommendations-without-inducing
+- Category: Economics
+- Authors: Erica Chiang, Kenny Peng, Rebecca Lichtenstein et al.
+- arXiv: 2610.08275
+- Plain-English subtitle: How to recommend schools without overwhelming the best programs
+- Summary: A new recommendation system for NYC's high school admissions increased the share of students ranking a recommended school from 10.5% to 16.4%, and increased matches to recommended schools by 71%. The key innovation: the algorithm accounts for congestion—the problem that recommending the same popular schools to too many students backfires, making those schools harder to get into for everyone. In a real deployment, no student was rejected from a school the algorithm recommended.
+- Why it matters: NYC's high school match assigns roughly 65,000 students annually to programs. Without congestion-aware recommendations, students in underserved neighborhoods get steered toward the same few good schools, which then become so competitive that even strong applicants get rejected. This system increased matches for treatment students by 71% while keeping rejection rates unchanged, directly expanding college-track options for students with fewer nearby choices.
+
+### Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution
+- URL: https://paperplaine.com/papers/linear-fitness-subspace-in
+- Category: Quantitative Biology
+- Authors: SiYuan Ma, Canran Xiao, Zikai Xiao et al.
+- arXiv: 2610.07607
+- Plain-English subtitle: Finding protein improvements faster by searching a smaller space of changes
+- Summary: Researchers discovered that when proteins are mutated, only a small set of specific directions through the space of possible changes actually predicts fitness—allowing AI models to find better protein variants with far fewer experiments. Across 115 real protein optimization tasks, their method improved search efficiency by learning which dimensions of change matter for each specific goal, rather than trying to navigate the entire high-dimensional space.
+- Why it matters: Directed protein evolution is expensive and time-consuming, requiring many rounds of costly laboratory testing. This approach cuts the number of experiments needed to find improved proteins by learning which changes actually drive fitness gains for a specific task, accelerating everything from enzyme design to therapeutic antibody development. The efficiency gains mean researchers can optimize proteins with limited budgets and timelines.
 
 ### Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors
 - URL: https://paperplaine.com/papers/deep-learning-for-sleep
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to forget outdated facts while keeping physics rules forever
 - Summary: World models need to unlearn information that becomes false as environments change—unlike traditional AI that treats all forgetting as failure. This paper shows that current methods can't tell the difference between a model that correctly updated to new conditions and one that catastrophically forgot important rules, and proposes a new way to measure which knowledge should stick around forever and which should change.
 - Why it matters: Robots and autonomous systems that operate in changing environments need to adapt continuously without losing core knowledge like how physics works or that objects don't vanish. Current evaluation methods reward models that never change, even when that's the wrong behavior, making it impossible to build systems that learn reliably over time.
-
-### Peer Influence across Heterogeneous AI Models
-- URL: https://paperplaine.com/papers/peer-influence-across-heterogeneous
-- Category: Physics
-- Authors: Frida Nøhr Laustsen, Marie Haahr Petersen, Victoria Popa et al.
-- arXiv: 2610.03095
-- Plain-English subtitle: When AI models disagree, smaller ones can flip larger ones' minds
-- Summary: When two different AI models encounter each other and disagree, the smaller or less confident one often persuades the larger one to change its answer—contrary to what you'd expect. Researchers tested seven open-weight language models on reasoning tasks and found that a model's size and certainty don't predict who wins an argument; instead, the result depends entirely on which specific pair of models is talking to each other.
-- Why it matters: As companies and researchers build systems combining multiple AI models to work together, these findings reveal that you cannot predict how the system will behave by testing each model alone. A smaller or less capable model placed alongside a larger one could flip critical decisions—whether in medical diagnosis support, legal analysis, or other high-stakes domains. This means developers must test the specific combinations they intend to use, not just the individual models.
-
-### Broken scale symmetries in undercomplete linear autoencoders
-- URL: https://paperplaine.com/papers/broken-scale-symmetries-in
-- Category: Quantitative Biology
-- Authors: Farhad Pashakhanloo, Jacob A. Zavatone-Veth
-- arXiv: 2610.03640
-- Plain-English subtitle: How neural networks accidentally develop lopsided weight patterns during training
-- Summary: When neural networks train on simple tasks, they break a fundamental symmetry by preferring large weights in some layers over others — a biased drift that shouldn't matter mathematically but consistently happens anyway. This directed pattern emerges from random noise in training, follows predictable laws, and eventually hits a hard boundary where the network can no longer drift further.
-- Why it matters: Understanding how and why neural networks develop asymmetric solutions helps explain why standard training produces sharp, efficient models that generalize well. Since this bias is driven by noise in the training process itself rather than by the data or loss function, it reveals a hidden mechanism that could explain patterns observed in real neural networks — and potentially be leveraged to improve how networks learn.
-
-### When May a Bandit Leave Its Anchor? E-Process-Authorized Thompson Sampling under Non-stationarity
-- URL: https://paperplaine.com/papers/when-may-a-bandit
-- Category: Computer Science · AI
-- Authors: Mayand Gulati, Kerong Wang, WeiChen Au
-- arXiv: 2610.03646
-- Plain-English subtitle: Deciding when an AI should forget its past to adapt to changing conditions
-- Summary: Machine learning systems often learn from past experience, but when the world changes, old information can hurt rather than help. Researchers created a method that uses statistical evidence to decide when a system should start discounting its history and adapt to new conditions—and found that this evidence-based approach prevents premature switching about 38% of the time compared to systems that always adapt.
-- Why it matters: Many real-world systems face changing conditions: recommendation algorithms deal with shifting user preferences, medical treatments must adapt as disease patterns evolve, and financial models confront market shifts. This work provides a principled way to know when to trust old data versus when to move on, without requiring manual tuning of when the switch should happen. That could reduce costly false alarms where systems abandon successful strategies too early.
 
 ## About
 
