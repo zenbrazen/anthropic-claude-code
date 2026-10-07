@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2026 14:13:24 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 23:25:17 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Prediction-powered inference for time series across space</title>
+      <link>https://paperplaine.com/papers/prediction-powered-inference-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/prediction-powered-inference-for</guid>
+      <pubDate>Tue, 06 Oct 2026 17:22:39 GMT</pubDate>
+      <author>Shahzar Rizvi, David Burt, Vishwak Srinivasan et al.</author>
+      <category>AI</category>
+      <description>Using old data and imperfect predictions to forecast local trends reliably</description>
+      <content:encoded><![CDATA[<p><em>Using old data and imperfect predictions to forecast local trends reliably</em></p><p>When you have only a few years of actual measurements but decades of related data (like weather records), machine learning predictions can help fill gaps—but they introduce bias. Researchers adapted a statistical technique called prediction-powered inference to handle this problem across many locations, producing accurate forecasts and reliable confidence intervals even when time patterns and prediction errors vary by place.</p><p><strong>Why it matters:</strong> Agricultural agencies, climate researchers, and resource managers often face exactly this situation: recent crop or environmental measurements at many farms or regions, paired with longer historical records of weather or other predictors. This method lets them make better forecasts and trust their uncertainty estimates, which matters for decisions about resource allocation, risk planning, and climate adaptation where underestimating uncertainty can lead to costly surprises.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study</title>
+      <link>https://paperplaine.com/papers/mission-aware-attestation-envelopes</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/mission-aware-attestation-envelopes</guid>
+      <pubDate>Tue, 06 Oct 2026 17:55:18 GMT</pubDate>
+      <author>Dimitrios Nikou, Nikolaos Kekatos, Sophia Petridou et al.</author>
+      <category>Comp Sci</category>
+      <description>Checking if autonomous vehicles are trustworthy fast enough to act</description>
+      <content:encoded><![CDATA[<p><em>Checking if autonomous vehicles are trustworthy fast enough to act</em></p><p>Researchers developed a new way for self-driving cars to prove they're running safe software to roadside infrastructure — but with a critical twist: the proof must arrive before the car's deadline to make the next move. Unlike current systems that simply allow or deny access, their approach distinguishes between three different failure modes: compromised software, outdated proof, and slow decisions that arrive too late, testing the system on actual driving simulators and finding that hardware limitations force a choice between security margins and response speed.</p><p><strong>Why it matters:</strong> Autonomous vehicles coordinating with smart roadside infrastructure need to make split-second decisions while maintaining security. If a verification system is too slow, the car might not act in time to avoid danger—but if it skips safety checks to be faster, hackers could take control. This work shows that the timing budget set by real driving physics directly constrains how much security you can actually get, meaning deployment requires choosing attestation timing based on what the road demands, not just what cryptography requires.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Entanglement Sudden Death: Eberly&#39;s Work and the Limits of Local Dynamics</title>
+      <link>https://paperplaine.com/papers/entanglement-sudden-death-eberly</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/entanglement-sudden-death-eberly</guid>
+      <pubDate>Tue, 06 Oct 2026 17:18:07 GMT</pubDate>
+      <author>Abhaya S. Hegde, Songbo Xie</author>
+      <category>Physics</category>
+      <description>How quantum entanglement can vanish suddenly, even when nothing else changes</description>
+      <content:encoded><![CDATA[<p><em>How quantum entanglement can vanish suddenly, even when nothing else changes</em></p><p>Quantum entanglement between particles can disappear completely at a specific moment in time, even though the physical processes damaging it remain smooth and continuous. New calculations show this "sudden death" effect behaves differently depending on whether particles are affected individually or all together—a distinction that grows more dramatic as systems scale up, revealing that entanglement's lifespan depends on the whole system's behavior, not just what happens to individual particles.</p><p><strong>Why it matters:</strong> Understanding when and how entanglement abruptly fails matters for quantum technologies like quantum computing and quantum cryptography, which rely on entanglement staying intact. The finding that identical local damage can produce vastly different entanglement lifetimes—depending on hidden details of how that damage is applied—means engineers designing quantum systems need to pay careful attention not just to how robust individual components are, but to whether noise hits the system globally or piecemeal.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Does an Agent&#39;s History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus</title>
       <link>https://paperplaine.com/papers/does-an-agent-s</link>

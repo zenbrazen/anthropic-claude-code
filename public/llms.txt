@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 929 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 932 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 318 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 319 papers in archive.
+  - "Prediction-powered inference for time series across space"
   - "Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus"
-  - "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 76 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 77 papers in archive.
+  - "Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study"
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
-  - "Quantum Advantage for Two-Party Differential Privacy"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 77 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 78 papers in archive.
+  - "Entanglement Sudden Death: Eberly's Work and the Limits of Local Dynamics"
   - "Peer Influence across Heterogeneous AI Models"
-  - "Polynomial-time classical and quantum simulation of quantum impurity models"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 78 papers in archive.
   - "On the Cardinality of Optimal Representations in the Binary-Source Information Bottleneck"
   - "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Shared Models, Selective Trading, and Order Flow"
 
 ## 10 most recent papers
+
+### Prediction-powered inference for time series across space
+- URL: https://paperplaine.com/papers/prediction-powered-inference-for
+- Category: Computer Science · AI
+- Authors: Shahzar Rizvi, David Burt, Vishwak Srinivasan et al.
+- arXiv: 2610.08715
+- Plain-English subtitle: Using old data and imperfect predictions to forecast local trends reliably
+- Summary: When you have only a few years of actual measurements but decades of related data (like weather records), machine learning predictions can help fill gaps—but they introduce bias. Researchers adapted a statistical technique called prediction-powered inference to handle this problem across many locations, producing accurate forecasts and reliable confidence intervals even when time patterns and prediction errors vary by place.
+- Why it matters: Agricultural agencies, climate researchers, and resource managers often face exactly this situation: recent crop or environmental measurements at many farms or regions, paired with longer historical records of weather or other predictors. This method lets them make better forecasts and trust their uncertainty estimates, which matters for decisions about resource allocation, risk planning, and climate adaptation where underestimating uncertainty can lead to costly surprises.
+
+### Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study
+- URL: https://paperplaine.com/papers/mission-aware-attestation-envelopes
+- Category: Computer Science
+- Authors: Dimitrios Nikou, Nikolaos Kekatos, Sophia Petridou et al.
+- arXiv: 2610.08771
+- Plain-English subtitle: Checking if autonomous vehicles are trustworthy fast enough to act
+- Summary: Researchers developed a new way for self-driving cars to prove they're running safe software to roadside infrastructure — but with a critical twist: the proof must arrive before the car's deadline to make the next move. Unlike current systems that simply allow or deny access, their approach distinguishes between three different failure modes: compromised software, outdated proof, and slow decisions that arrive too late, testing the system on actual driving simulators and finding that hardware limitations force a choice between security margins and response speed.
+- Why it matters: Autonomous vehicles coordinating with smart roadside infrastructure need to make split-second decisions while maintaining security. If a verification system is too slow, the car might not act in time to avoid danger—but if it skips safety checks to be faster, hackers could take control. This work shows that the timing budget set by real driving physics directly constrains how much security you can actually get, meaning deployment requires choosing attestation timing based on what the road demands, not just what cryptography requires.
+
+### Entanglement Sudden Death: Eberly's Work and the Limits of Local Dynamics
+- URL: https://paperplaine.com/papers/entanglement-sudden-death-eberly
+- Category: Physics
+- Authors: Abhaya S. Hegde, Songbo Xie
+- arXiv: 2610.08710
+- Plain-English subtitle: How quantum entanglement can vanish suddenly, even when nothing else changes
+- Summary: Quantum entanglement between particles can disappear completely at a specific moment in time, even though the physical processes damaging it remain smooth and continuous. New calculations show this "sudden death" effect behaves differently depending on whether particles are affected individually or all together—a distinction that grows more dramatic as systems scale up, revealing that entanglement's lifespan depends on the whole system's behavior, not just what happens to individual particles.
+- Why it matters: Understanding when and how entanglement abruptly fails matters for quantum technologies like quantum computing and quantum cryptography, which rely on entanglement staying intact. The finding that identical local damage can produce vastly different entanglement lifetimes—depending on hidden details of how that damage is applied—means engineers designing quantum systems need to pay careful attention not just to how robust individual components are, but to whether noise hits the system globally or piecemeal.
 
 ### Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus
 - URL: https://paperplaine.com/papers/does-an-agent-s
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Testing whether AI weather models actually respond correctly to forcings
 - Summary: Machine-learning models that mimic chaotic systems like weather often look good on standard tests but fail at something crucial: responding correctly when you nudge the system. Researchers developed a new test based on linear response theory that checks whether AI models respond the same way the real system does, finding that different AI architectures succeed and fail in completely different ways—some match long-term statistics perfectly while botching response properties, and others do the opposite.
 - Why it matters: Climate and weather attribution studies—figuring out whether human activity caused a particular heatwave or hurricane—depend entirely on models responding correctly to forcings. An AI model that passes current validation tests might still give wrong answers to these attribution questions. This test could prevent expensive mistakes in climate science by catching response problems before deployment.
-
-### Direct Intermediate Initialization for Tilted Diffusion Samplers
-- URL: https://paperplaine.com/papers/direct-intermediate-initialization-for
-- Category: Statistics
-- Authors: Gregory D. Bellchambers
-- arXiv: 2610.06834
-- Plain-English subtitle: A faster way to start sampling from complex probability distributions
-- Summary: Researchers discovered that diffusion-based samplers can be made faster by starting their computation partway through, rather than from the beginning. By pulling the problem back to a simpler form, then using a mathematical bridge to map samples forward, they cut the work by roughly half while improving accuracy—especially when trying to find rare outcomes that simple methods would miss.
-- Why it matters: Diffusion samplers are increasingly used to solve inverse problems in imaging, physics, and machine learning—reconstructing images from noisy data, or inferring missing measurements. Starting the sampler at an intermediate point reduces computation time substantially without sacrificing quality, making these methods practical for time-sensitive applications. The approach is particularly valuable when the answer you're looking for is inherently unlikely under standard assumptions, since conventional initialization often fails to find it.
-
-### Goal-Oriented Wave Computing for Direction-of-Arrival Estimation
-- URL: https://paperplaine.com/papers/goal-oriented-wave-computing
-- Category: Engineering
-- Authors: Mert Kalfa
-- arXiv: 2610.06839
-- Plain-English subtitle: Smart surfaces that find signal direction with simpler designs
-- Summary: Programmable metasurfaces—electronically tunable antenna arrays—can estimate where a radio signal is coming from by processing waves as they pass through them. By training these surfaces directly for the task rather than fitting them to a generic mathematical operation first, researchers showed that simpler, cheaper designs perform just as well, even when the control system uses only 1–3 bits of precision.
-- Why it matters: Metasurfaces are emerging components for next-generation wireless systems, radar, and sensing. Using fewer elements, shallower designs, and coarser control reduces manufacturing cost and power consumption while maintaining performance—making practical deployment of wave-based computing in phones, base stations, and autonomous systems more feasible.
-
-### What Should World Models Forget? Stratified Retention for Continual Adaptation
-- URL: https://paperplaine.com/papers/what-should-world-models
-- Category: Computer Science · AI
-- Authors: Nishit Anand, Ramani Duraiswami, Dinesh Manocha
-- arXiv: 2610.03713
-- Plain-English subtitle: Teaching AI to forget outdated facts while keeping physics rules forever
-- Summary: World models need to unlearn information that becomes false as environments change—unlike traditional AI that treats all forgetting as failure. This paper shows that current methods can't tell the difference between a model that correctly updated to new conditions and one that catastrophically forgot important rules, and proposes a new way to measure which knowledge should stick around forever and which should change.
-- Why it matters: Robots and autonomous systems that operate in changing environments need to adapt continuously without losing core knowledge like how physics works or that objects don't vanish. Current evaluation methods reward models that never change, even when that's the wrong behavior, making it impossible to build systems that learn reliably over time.
 
 ## About
 
