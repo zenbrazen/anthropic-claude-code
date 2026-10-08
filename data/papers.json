@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.10536",
+    "title": "Decoupling Exploration from Optimization in RLVR",
+    "authors": "Saif Punjwani, Micah Goldblum",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-07T17:59:26Z",
+    "publishedFormatted": "Oct 7, 2026",
+    "subtitle": "Teaching AI to find new problem-solving paths without losing what it already knows",
+    "summary": "When AI systems learn to solve math problems through reinforcement learning, pushing them to find novel reasoning strategies often backfires and degrades their performance. Researchers developed a method called Exploration-Distillation that separates the discovery phase from the refinement phase: explorers generate new solution approaches with a novelty bonus, the best ones get filtered and transferred to a student model trained without the bonus, then the cycle repeats. Across seven math benchmarks and two model families, this approach outperformed existing methods and produced models that generate more diverse correct answers.",
+    "whyItMatters": "As language models become tools for mathematical reasoning and complex problem-solving, the ability to discover genuinely new strategies—rather than just rehashing training data—determines how far they can go. This decoupling method removes a fundamental barrier: you can now aggressively hunt for novel reasoning paths without the quality collapse that currently punishes exploration, making AI reasoning systems more capable and more creative at the same computational cost.",
+    "fetchedAt": "2026-10-08T23:36:44.866Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 192
+    },
+    "slug": "decoupling-exploration-from-optimization"
+  },
+  {
+    "id": "2610.09991",
+    "title": "Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming",
+    "authors": "Kohei Hatano",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-07T12:52:26Z",
+    "publishedFormatted": "Oct 7, 2026",
+    "subtitle": "Measuring how much you can tweak an optimization problem before it breaks",
+    "summary": "When engineers and mathematicians set up optimization problems, they often adjust constraints or rewrite equations—changes that might subtly alter whether a solution still works. This paper creates a ruler for measuring exactly how far you can push these changes before a problem loses key mathematical properties that guarantee solutions can actually be found. The researchers focus on one property called LICQ and derive exact formulas showing how much wiggle room different constraint tweaks allow.",
+    "whyItMatters": "In practice, optimization problems are never static—data gets updated, requirements shift, and formulas get simplified for computation. Knowing precisely how much a problem can be modified before it becomes unsolvable helps engineers catch risky changes before they deploy faulty systems, whether in supply chain planning, aircraft design, or financial portfolio management. The explicit formulas mean these robustness checks can be computed quickly and incorporated directly into modeling software.",
+    "fetchedAt": "2026-10-08T23:36:48.106Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 162
+    },
+    "slug": "distances-on-finite-constraint"
+  },
+  {
+    "id": "2610.10407",
+    "title": "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions",
+    "authors": "Yizhen Xie, Mengyang Liu",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-10-07T16:55:05Z",
+    "publishedFormatted": "Oct 7, 2026",
+    "subtitle": "Training AI to pick winning option trades from thousands of contracts",
+    "summary": "Researchers built an AI trading agent that learned to select and combine stock options strategies by reading financial news and market data. Over six months of live trading, the system returned 18.3% while beating simpler rule-based competitors—but only when news was used during training, not during actual trading; keeping news in the live trading phase actually flipped returns to negative.",
+    "whyItMatters": "Options markets are opaque and sprawling—a single stock can have thousands of active contracts at any moment, making manual strategy selection impractical for most traders. An AI that can navigate this complexity and outperform conventional approaches could democratize access to sophisticated trading strategies. However, the finding that news helps training but hurts live performance is a cautionary sign: the agent may be learning to chase news-driven patterns that don't repeat in the real market, a common pitfall in automated trading that developers will need to solve before deploying such systems with real money.",
+    "fetchedAt": "2026-10-08T23:36:51.731Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 201
+    },
+    "slug": "sota-stock-options-trading"
+  },
+  {
     "id": "2610.10488",
     "title": "Best Arm Identification for Bandits with Shifting Means",
     "authors": "Lukas Zierahn, Wouter M. Koolen, Shubhada Agrawal et al.",

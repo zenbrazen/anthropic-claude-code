@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 934 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 937 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 320 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 321 papers in archive.
+  - "Decoupling Exploration from Optimization in RLVR"
   - "Best Arm Identification for Bandits with Shifting Means"
-  - "Prediction-powered inference for time series across space"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 77 papers in archive.
   - "Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study"
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 78 papers in archive.
   - "Entanglement Sudden Death: Eberly's Work and the Limits of Local Dynamics"
   - "Peer Influence across Heterogeneous AI Models"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 78 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 79 papers in archive.
+  - "Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming"
   - "On the Cardinality of Optimal Representations in the Binary-Source Information Bottleneck"
-  - "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 79 papers in archive.
   - "Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution"
   - "Broken scale symmetries in undercomplete linear autoencoders"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 81 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 82 papers in archive.
+  - "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions"
   - "Multi-Agent AI as a Nested Principal-Agent Problem in Private Wealth Management: Mandate Representation and Evidence Control in Switzerland, Germany and Austria"
-  - "Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 81 papers in archive.
   - "Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion"
   - "Direct Intermediate Initialization for Tilted Diffusion Samplers"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Shared Models, Selective Trading, and Order Flow"
 
 ## 10 most recent papers
+
+### Decoupling Exploration from Optimization in RLVR
+- URL: https://paperplaine.com/papers/decoupling-exploration-from-optimization
+- Category: Computer Science · AI
+- Authors: Saif Punjwani, Micah Goldblum
+- arXiv: 2610.10536
+- Plain-English subtitle: Teaching AI to find new problem-solving paths without losing what it already knows
+- Summary: When AI systems learn to solve math problems through reinforcement learning, pushing them to find novel reasoning strategies often backfires and degrades their performance. Researchers developed a method called Exploration-Distillation that separates the discovery phase from the refinement phase: explorers generate new solution approaches with a novelty bonus, the best ones get filtered and transferred to a student model trained without the bonus, then the cycle repeats. Across seven math benchmarks and two model families, this approach outperformed existing methods and produced models that generate more diverse correct answers.
+- Why it matters: As language models become tools for mathematical reasoning and complex problem-solving, the ability to discover genuinely new strategies—rather than just rehashing training data—determines how far they can go. This decoupling method removes a fundamental barrier: you can now aggressively hunt for novel reasoning paths without the quality collapse that currently punishes exploration, making AI reasoning systems more capable and more creative at the same computational cost.
+
+### Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming
+- URL: https://paperplaine.com/papers/distances-on-finite-constraint
+- Category: Mathematics
+- Authors: Kohei Hatano
+- arXiv: 2610.09991
+- Plain-English subtitle: Measuring how much you can tweak an optimization problem before it breaks
+- Summary: When engineers and mathematicians set up optimization problems, they often adjust constraints or rewrite equations—changes that might subtly alter whether a solution still works. This paper creates a ruler for measuring exactly how far you can push these changes before a problem loses key mathematical properties that guarantee solutions can actually be found. The researchers focus on one property called LICQ and derive exact formulas showing how much wiggle room different constraint tweaks allow.
+- Why it matters: In practice, optimization problems are never static—data gets updated, requirements shift, and formulas get simplified for computation. Knowing precisely how much a problem can be modified before it becomes unsolvable helps engineers catch risky changes before they deploy faulty systems, whether in supply chain planning, aircraft design, or financial portfolio management. The explicit formulas mean these robustness checks can be computed quickly and incorporated directly into modeling software.
+
+### SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions
+- URL: https://paperplaine.com/papers/sota-stock-options-trading
+- Category: Quantitative Finance
+- Authors: Yizhen Xie, Mengyang Liu
+- arXiv: 2610.10407
+- Plain-English subtitle: Training AI to pick winning option trades from thousands of contracts
+- Summary: Researchers built an AI trading agent that learned to select and combine stock options strategies by reading financial news and market data. Over six months of live trading, the system returned 18.3% while beating simpler rule-based competitors—but only when news was used during training, not during actual trading; keeping news in the live trading phase actually flipped returns to negative.
+- Why it matters: Options markets are opaque and sprawling—a single stock can have thousands of active contracts at any moment, making manual strategy selection impractical for most traders. An AI that can navigate this complexity and outperform conventional approaches could democratize access to sophisticated trading strategies. However, the finding that news helps training but hurts live performance is a cautionary sign: the agent may be learning to chase news-driven patterns that don't repeat in the real market, a common pitfall in automated trading that developers will need to solve before deploying such systems with real money.
 
 ### Best Arm Identification for Bandits with Shifting Means
 - URL: https://paperplaine.com/papers/best-arm-identification-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How to recommend schools without overwhelming the best programs
 - Summary: A new recommendation system for NYC's high school admissions increased the share of students ranking a recommended school from 10.5% to 16.4%, and increased matches to recommended schools by 71%. The key innovation: the algorithm accounts for congestion—the problem that recommending the same popular schools to too many students backfires, making those schools harder to get into for everyone. In a real deployment, no student was rejected from a school the algorithm recommended.
 - Why it matters: NYC's high school match assigns roughly 65,000 students annually to programs. Without congestion-aware recommendations, students in underserved neighborhoods get steered toward the same few good schools, which then become so competitive that even strong applicants get rejected. This system increased matches for treatment students by 71% while keeping rejection rates unchanged, directly expanding college-track options for students with fewer nearby choices.
-
-### Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution
-- URL: https://paperplaine.com/papers/linear-fitness-subspace-in
-- Category: Quantitative Biology
-- Authors: SiYuan Ma, Canran Xiao, Zikai Xiao et al.
-- arXiv: 2610.07607
-- Plain-English subtitle: Finding protein improvements faster by searching a smaller space of changes
-- Summary: Researchers discovered that when proteins are mutated, only a small set of specific directions through the space of possible changes actually predicts fitness—allowing AI models to find better protein variants with far fewer experiments. Across 115 real protein optimization tasks, their method improved search efficiency by learning which dimensions of change matter for each specific goal, rather than trying to navigate the entire high-dimensional space.
-- Why it matters: Directed protein evolution is expensive and time-consuming, requiring many rounds of costly laboratory testing. This approach cuts the number of experiments needed to find improved proteins by learning which changes actually drive fitness gains for a specific task, accelerating everything from enzyme design to therapeutic antibody development. The efficiency gains mean researchers can optimize proteins with limited budgets and timelines.
-
-### Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors
-- URL: https://paperplaine.com/papers/deep-learning-for-sleep
-- Category: Computer Science · AI
-- Authors: Tanbin Islam Rohan, Pranjol Sen Gupta, Tanusree Debi et al.
-- arXiv: 2610.06823
-- Plain-English subtitle: Estimating heart rate from wrist motion during sleep without optical sensors
-- Summary: Researchers developed SeqSmoother, an AI system that estimates heart rate during sleep using only the motion data that wrist accelerometers already collect, rather than requiring optical heart-rate sensors. The system achieved an average error of 1.60 beats per minute and successfully produced estimates for a larger share of sleep recordings than existing methods, though with slightly lower accuracy on the estimates it did produce.
-- Why it matters: Millions of people wear wrist devices that track motion but lack optical heart sensors. This approach recovers cardiac information from data already being collected, making large population studies of sleep and heart health feasible without expensive hardware upgrades. For researchers analyzing existing accelerometer datasets from large studies, this means cardiac insights are now recoverable from data already in hand.
-
-### On the Cardinality of Optimal Representations in the Binary-Source Information Bottleneck
-- URL: https://paperplaine.com/papers/on-the-cardinality-of
-- Category: Mathematics
-- Authors: Dier Tang, Jun Chen
-- arXiv: 2610.06627
-- Plain-English subtitle: Why binary data needs simpler shortcuts than other sources
-- Summary: When compressing information to predict a target outcome, mathematicians have a rule for how complex the compressed version needs to be—but it turns out the rule is stricter for binary (two-option) data than for anything else. This work proves that for binary sources, you never need more than two symbols in your compressed representation, tightening what was previously thought to be a universal limit.
-- Why it matters: The information bottleneck is used in machine learning and data compression to extract only the relevant parts of data for making predictions. Knowing that binary data can always be compressed into simpler representations without loss of quality makes these algorithms faster and more efficient. This sharpens the theoretical guarantees engineers rely on when building systems that learn from binary signals—like yes/no decisions or on/off states in sensors and diagnostics.
 
 ## About
 

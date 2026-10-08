@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 14:22:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 23:36:52 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Decoupling Exploration from Optimization in RLVR</title>
+      <link>https://paperplaine.com/papers/decoupling-exploration-from-optimization</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/decoupling-exploration-from-optimization</guid>
+      <pubDate>Wed, 07 Oct 2026 17:59:26 GMT</pubDate>
+      <author>Saif Punjwani, Micah Goldblum</author>
+      <category>AI</category>
+      <description>Teaching AI to find new problem-solving paths without losing what it already knows</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to find new problem-solving paths without losing what it already knows</em></p><p>When AI systems learn to solve math problems through reinforcement learning, pushing them to find novel reasoning strategies often backfires and degrades their performance. Researchers developed a method called Exploration-Distillation that separates the discovery phase from the refinement phase: explorers generate new solution approaches with a novelty bonus, the best ones get filtered and transferred to a student model trained without the bonus, then the cycle repeats. Across seven math benchmarks and two model families, this approach outperformed existing methods and produced models that generate more diverse correct answers.</p><p><strong>Why it matters:</strong> As language models become tools for mathematical reasoning and complex problem-solving, the ability to discover genuinely new strategies—rather than just rehashing training data—determines how far they can go. This decoupling method removes a fundamental barrier: you can now aggressively hunt for novel reasoning paths without the quality collapse that currently punishes exploration, making AI reasoning systems more capable and more creative at the same computational cost.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming</title>
+      <link>https://paperplaine.com/papers/distances-on-finite-constraint</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/distances-on-finite-constraint</guid>
+      <pubDate>Wed, 07 Oct 2026 12:52:26 GMT</pubDate>
+      <author>Kohei Hatano</author>
+      <category>Math</category>
+      <description>Measuring how much you can tweak an optimization problem before it breaks</description>
+      <content:encoded><![CDATA[<p><em>Measuring how much you can tweak an optimization problem before it breaks</em></p><p>When engineers and mathematicians set up optimization problems, they often adjust constraints or rewrite equations—changes that might subtly alter whether a solution still works. This paper creates a ruler for measuring exactly how far you can push these changes before a problem loses key mathematical properties that guarantee solutions can actually be found. The researchers focus on one property called LICQ and derive exact formulas showing how much wiggle room different constraint tweaks allow.</p><p><strong>Why it matters:</strong> In practice, optimization problems are never static—data gets updated, requirements shift, and formulas get simplified for computation. Knowing precisely how much a problem can be modified before it becomes unsolvable helps engineers catch risky changes before they deploy faulty systems, whether in supply chain planning, aircraft design, or financial portfolio management. The explicit formulas mean these robustness checks can be computed quickly and incorporated directly into modeling software.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions</title>
+      <link>https://paperplaine.com/papers/sota-stock-options-trading</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/sota-stock-options-trading</guid>
+      <pubDate>Wed, 07 Oct 2026 16:55:05 GMT</pubDate>
+      <author>Yizhen Xie, Mengyang Liu</author>
+      <category>Finance</category>
+      <description>Training AI to pick winning option trades from thousands of contracts</description>
+      <content:encoded><![CDATA[<p><em>Training AI to pick winning option trades from thousands of contracts</em></p><p>Researchers built an AI trading agent that learned to select and combine stock options strategies by reading financial news and market data. Over six months of live trading, the system returned 18.3% while beating simpler rule-based competitors—but only when news was used during training, not during actual trading; keeping news in the live trading phase actually flipped returns to negative.</p><p><strong>Why it matters:</strong> Options markets are opaque and sprawling—a single stock can have thousands of active contracts at any moment, making manual strategy selection impractical for most traders. An AI that can navigate this complexity and outperform conventional approaches could democratize access to sophisticated trading strategies. However, the finding that news helps training but hurts live performance is a cautionary sign: the agent may be learning to chase news-driven patterns that don't repeat in the real market, a common pitfall in automated trading that developers will need to solve before deploying such systems with real money.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Best Arm Identification for Bandits with Shifting Means</title>
       <link>https://paperplaine.com/papers/best-arm-identification-for</link>

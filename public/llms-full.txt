@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 934 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 937 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Decoupling Exploration from Optimization in RLVR
+Subtitle: Teaching AI to find new problem-solving paths without losing what it already knows
+URL: https://paperplaine.com/papers/decoupling-exploration-from-optimization
+Category: Computer Science · AI
+Authors: Saif Punjwani, Micah Goldblum
+arXiv ID: 2610.10536
+arXiv URL: https://arxiv.org/abs/2610.10536
+Posted: 2026-10-08
+
+Summary: When AI systems learn to solve math problems through reinforcement learning, pushing them to find novel reasoning strategies often backfires and degrades their performance. Researchers developed a method called Exploration-Distillation that separates the discovery phase from the refinement phase: explorers generate new solution approaches with a novelty bonus, the best ones get filtered and transferred to a student model trained without the bonus, then the cycle repeats. Across seven math benchmarks and two model families, this approach outperformed existing methods and produced models that generate more diverse correct answers.
+
+Why it matters: As language models become tools for mathematical reasoning and complex problem-solving, the ability to discover genuinely new strategies—rather than just rehashing training data—determines how far they can go. This decoupling method removes a fundamental barrier: you can now aggressively hunt for novel reasoning paths without the quality collapse that currently punishes exploration, making AI reasoning systems more capable and more creative at the same computational cost.
+
+---
+Title: Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming
+Subtitle: Measuring how much you can tweak an optimization problem before it breaks
+URL: https://paperplaine.com/papers/distances-on-finite-constraint
+Category: Mathematics
+Authors: Kohei Hatano
+arXiv ID: 2610.09991
+arXiv URL: https://arxiv.org/abs/2610.09991
+Posted: 2026-10-08
+
+Summary: When engineers and mathematicians set up optimization problems, they often adjust constraints or rewrite equations—changes that might subtly alter whether a solution still works. This paper creates a ruler for measuring exactly how far you can push these changes before a problem loses key mathematical properties that guarantee solutions can actually be found. The researchers focus on one property called LICQ and derive exact formulas showing how much wiggle room different constraint tweaks allow.
+
+Why it matters: In practice, optimization problems are never static—data gets updated, requirements shift, and formulas get simplified for computation. Knowing precisely how much a problem can be modified before it becomes unsolvable helps engineers catch risky changes before they deploy faulty systems, whether in supply chain planning, aircraft design, or financial portfolio management. The explicit formulas mean these robustness checks can be computed quickly and incorporated directly into modeling software.
+
+---
+Title: SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions
+Subtitle: Training AI to pick winning option trades from thousands of contracts
+URL: https://paperplaine.com/papers/sota-stock-options-trading
+Category: Quantitative Finance
+Authors: Yizhen Xie, Mengyang Liu
+arXiv ID: 2610.10407
+arXiv URL: https://arxiv.org/abs/2610.10407
+Posted: 2026-10-08
+
+Summary: Researchers built an AI trading agent that learned to select and combine stock options strategies by reading financial news and market data. Over six months of live trading, the system returned 18.3% while beating simpler rule-based competitors—but only when news was used during training, not during actual trading; keeping news in the live trading phase actually flipped returns to negative.
+
+Why it matters: Options markets are opaque and sprawling—a single stock can have thousands of active contracts at any moment, making manual strategy selection impractical for most traders. An AI that can navigate this complexity and outperform conventional approaches could democratize access to sophisticated trading strategies. However, the finding that news helps training but hurts live performance is a cautionary sign: the agent may be learning to chase news-driven patterns that don't repeat in the real market, a common pitfall in automated trading that developers will need to solve before deploying such systems with real money.
 
 ---
 Title: Best Arm Identification for Bandits with Shifting Means
