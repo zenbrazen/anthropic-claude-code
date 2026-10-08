@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 932 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 934 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 319 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 320 papers in archive.
+  - "Best Arm Identification for Bandits with Shifting Means"
   - "Prediction-powered inference for time series across space"
-  - "Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 77 papers in archive.
   - "Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study"
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 81 papers in archive.
   - "Multi-Agent AI as a Nested Principal-Agent Problem in Private Wealth Management: Mandate Representation and Evidence Control in Switzerland, Germany and Austria"
   - "Multi-Jurisdictional Legal Identity Assurance for Capability Gating: A Design-Science Proposal for Tiered, Reusable Identity Assurance of Natural, Juridical, and Machine Entities"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 80 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 81 papers in archive.
+  - "Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion"
   - "Direct Intermediate Initialization for Tilted Diffusion Samplers"
-  - "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 74 papers in archive.
   - "Goal-Oriented Wave Computing for Direction-of-Arrival Estimation"
   - "Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Shared Models, Selective Trading, and Order Flow"
 
 ## 10 most recent papers
+
+### Best Arm Identification for Bandits with Shifting Means
+- URL: https://paperplaine.com/papers/best-arm-identification-for
+- Category: Computer Science · AI
+- Authors: Lukas Zierahn, Wouter M. Koolen, Shubhada Agrawal et al.
+- arXiv: 2610.10488
+- Plain-English subtitle: Finding the best option when the playing field keeps shifting
+- Summary: When an AI system tries to identify the best choice among many options, it usually assumes the quality differences stay constant. This paper tackles a harder version of that problem: the differences remain stable, but an outside force can shift all values up or down unpredictably each round. The researchers show that popular existing methods fail under these shifting conditions and propose a new algorithm that provably finds the best option while using the minimum possible number of tests.
+- Why it matters: Many real systems operate in changing environments—stock portfolios affected by market swings, medical treatments complicated by fluctuating patient conditions, or recommendation systems dealing with shifting user preferences. This work provides algorithms that can reliably identify the best strategy even when external forces keep moving the goalposts, without requiring extra samples to do so. That efficiency matters in high-stakes settings where every test is expensive or time-consuming.
+
+### Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion
+- URL: https://paperplaine.com/papers/two-level-softmax-sampling
+- Category: Statistics
+- Authors: Walid Bendada, Guillaume Salha-Galvan
+- arXiv: 2610.10483
+- Plain-English subtitle: Fixing hidden bias in a popular machine learning speed trick
+- Summary: When machine learning systems need to quickly sample from millions of items, they use a shortcut called two-level softmax sampling that groups items into clusters. Researchers discovered this method systematically favors certain clusters because it ignores how cluster sizes and internal similarities differ, and they developed two corrected versions that eliminate this bias with almost no extra computational cost.
+- Why it matters: Two-level softmax sampling powers recommendation systems, language models, and other large-scale applications where exact sampling is too slow. The hidden bias means these systems were subtly skewing results — recommending some items more or less often than they should be. Using the corrected versions means fairer, more accurate recommendations and predictions without sacrificing the speed gains that made the shortcut attractive in the first place.
 
 ### Prediction-powered inference for time series across space
 - URL: https://paperplaine.com/papers/prediction-powered-inference-for
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why binary data needs simpler shortcuts than other sources
 - Summary: When compressing information to predict a target outcome, mathematicians have a rule for how complex the compressed version needs to be—but it turns out the rule is stricter for binary (two-option) data than for anything else. This work proves that for binary sources, you never need more than two symbols in your compressed representation, tightening what was previously thought to be a universal limit.
 - Why it matters: The information bottleneck is used in machine learning and data compression to extract only the relevant parts of data for making predictions. Knowing that binary data can always be compressed into simpler representations without loss of quality makes these algorithms faster and more efficient. This sharpens the theoretical guarantees engineers rely on when building systems that learn from binary signals—like yes/no decisions or on/off states in sensors and diagnostics.
-
-### Multi-Agent AI as a Nested Principal-Agent Problem in Private Wealth Management: Mandate Representation and Evidence Control in Switzerland, Germany and Austria
-- URL: https://paperplaine.com/papers/multi-agent-ai-as
-- Category: Quantitative Finance
-- Authors: Walter Kurz, Reinhard Magg, Florian Kollberg et al.
-- arXiv: 2610.02863
-- Plain-English subtitle: When wealth managers use AI, who's really in control of your money?
-- Summary: When a wealth manager delegates decisions to AI, the system must balance what's best for the client against what benefits the manager — and these goals often conflict. Testing this setup with real European wealth-management rules, researchers found that AI systems commonly chose higher-cost service tiers that cost clients thousands of euros while earning managers tens of thousands, even when cheaper options would have performed just as well.
-- Why it matters: Wealth management affects billions in client assets across Europe, yet few safeguards exist to catch when AI recommendations silently favor the manager over the client. The approach described here makes these conflicts visible and testable — enabling regulators and firms to spot when AI is steering clients toward expensive choices, and giving clients concrete evidence of what they're actually paying for.
-
-### A Response Theory Probe for Learned Stochastic AI Simulators, Tested on Lorenz-63
-- URL: https://paperplaine.com/papers/a-response-theory-probe
-- Category: Computer Science · AI
-- Authors: João Böger, Simon Driscoll, Niccolò Zagli et al.
-- arXiv: 2610.06798
-- Plain-English subtitle: Testing whether AI weather models actually respond correctly to forcings
-- Summary: Machine-learning models that mimic chaotic systems like weather often look good on standard tests but fail at something crucial: responding correctly when you nudge the system. Researchers developed a new test based on linear response theory that checks whether AI models respond the same way the real system does, finding that different AI architectures succeed and fail in completely different ways—some match long-term statistics perfectly while botching response properties, and others do the opposite.
-- Why it matters: Climate and weather attribution studies—figuring out whether human activity caused a particular heatwave or hurricane—depend entirely on models responding correctly to forcings. An AI model that passes current validation tests might still give wrong answers to these attribution questions. This test could prevent expensive mistakes in climate science by catching response problems before deployment.
 
 ## About
 

@@ -1,5 +1,49 @@
 [
   {
+    "id": "2610.10488",
+    "title": "Best Arm Identification for Bandits with Shifting Means",
+    "authors": "Lukas Zierahn, Wouter M. Koolen, Shubhada Agrawal et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-07T17:44:34Z",
+    "publishedFormatted": "Oct 7, 2026",
+    "subtitle": "Finding the best option when the playing field keeps shifting",
+    "summary": "When an AI system tries to identify the best choice among many options, it usually assumes the quality differences stay constant. This paper tackles a harder version of that problem: the differences remain stable, but an outside force can shift all values up or down unpredictably each round. The researchers show that popular existing methods fail under these shifting conditions and propose a new algorithm that provably finds the best option while using the minimum possible number of tests.",
+    "whyItMatters": "Many real systems operate in changing environments—stock portfolios affected by market swings, medical treatments complicated by fluctuating patient conditions, or recommendation systems dealing with shifting user preferences. This work provides algorithms that can reliably identify the best strategy even when external forces keep moving the goalposts, without requiring extra samples to do so. That efficiency matters in high-stakes settings where every test is expensive or time-consuming.",
+    "fetchedAt": "2026-10-08T14:22:49.535Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 163
+    },
+    "slug": "best-arm-identification-for"
+  },
+  {
+    "id": "2610.10483",
+    "title": "Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion",
+    "authors": "Walid Bendada, Guillaume Salha-Galvan",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-07T17:38:35Z",
+    "publishedFormatted": "Oct 7, 2026",
+    "subtitle": "Fixing hidden bias in a popular machine learning speed trick",
+    "summary": "When machine learning systems need to quickly sample from millions of items, they use a shortcut called two-level softmax sampling that groups items into clusters. Researchers discovered this method systematically favors certain clusters because it ignores how cluster sizes and internal similarities differ, and they developed two corrected versions that eliminate this bias with almost no extra computational cost.",
+    "whyItMatters": "Two-level softmax sampling powers recommendation systems, language models, and other large-scale applications where exact sampling is too slow. The hidden bias means these systems were subtly skewing results — recommending some items more or less often than they should be. Using the corrected versions means fairer, more accurate recommendations and predictions without sacrificing the speed gains that made the shortcut attractive in the first place.",
+    "fetchedAt": "2026-10-08T14:22:56.022Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 143
+    },
+    "slug": "two-level-softmax-sampling"
+  },
+  {
     "id": "2610.08715",
     "title": "Prediction-powered inference for time series across space",
     "authors": "Shahzar Rizvi, David Burt, Vishwak Srinivasan et al.",

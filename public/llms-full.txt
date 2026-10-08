@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 932 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-07
+This file contains the complete plain-English text of all 934 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,34 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Best Arm Identification for Bandits with Shifting Means
+Subtitle: Finding the best option when the playing field keeps shifting
+URL: https://paperplaine.com/papers/best-arm-identification-for
+Category: Computer Science · AI
+Authors: Lukas Zierahn, Wouter M. Koolen, Shubhada Agrawal et al.
+arXiv ID: 2610.10488
+arXiv URL: https://arxiv.org/abs/2610.10488
+Posted: 2026-10-08
+
+Summary: When an AI system tries to identify the best choice among many options, it usually assumes the quality differences stay constant. This paper tackles a harder version of that problem: the differences remain stable, but an outside force can shift all values up or down unpredictably each round. The researchers show that popular existing methods fail under these shifting conditions and propose a new algorithm that provably finds the best option while using the minimum possible number of tests.
+
+Why it matters: Many real systems operate in changing environments—stock portfolios affected by market swings, medical treatments complicated by fluctuating patient conditions, or recommendation systems dealing with shifting user preferences. This work provides algorithms that can reliably identify the best strategy even when external forces keep moving the goalposts, without requiring extra samples to do so. That efficiency matters in high-stakes settings where every test is expensive or time-consuming.
+
+---
+Title: Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion
+Subtitle: Fixing hidden bias in a popular machine learning speed trick
+URL: https://paperplaine.com/papers/two-level-softmax-sampling
+Category: Statistics
+Authors: Walid Bendada, Guillaume Salha-Galvan
+arXiv ID: 2610.10483
+arXiv URL: https://arxiv.org/abs/2610.10483
+Posted: 2026-10-08
+
+Summary: When machine learning systems need to quickly sample from millions of items, they use a shortcut called two-level softmax sampling that groups items into clusters. Researchers discovered this method systematically favors certain clusters because it ignores how cluster sizes and internal similarities differ, and they developed two corrected versions that eliminate this bias with almost no extra computational cost.
+
+Why it matters: Two-level softmax sampling powers recommendation systems, language models, and other large-scale applications where exact sampling is too slow. The hidden bias means these systems were subtly skewing results — recommending some items more or less often than they should be. Using the corrected versions means fairer, more accurate recommendations and predictions without sacrificing the speed gains that made the shortcut attractive in the first place.
 
 ---
 Title: Prediction-powered inference for time series across space
