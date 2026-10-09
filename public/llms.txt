@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 937 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 940 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 321 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 322 papers in archive.
+  - "Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching"
   - "Decoupling Exploration from Optimization in RLVR"
-  - "Best Arm Identification for Bandits with Shifting Means"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 77 papers in archive.
   - "Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study"
   - "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 79 papers in archive.
   - "Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming"
   - "On the Cardinality of Optimal Representations in the Binary-Source Information Bottleneck"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 79 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 80 papers in archive.
+  - "Similar Predictive Fit but Different Latent Dynamics: Characterizing Learned Dynamical Structure in Personalized Models of Brain Disorders"
   - "Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution"
-  - "Broken scale symmetries in undercomplete linear autoencoders"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 82 papers in archive.
   - "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions"
   - "Multi-Agent AI as a Nested Principal-Agent Problem in Private Wealth Management: Mandate Representation and Evidence Control in Switzerland, Germany and Austria"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 81 papers in archive.
   - "Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion"
   - "Direct Intermediate Initialization for Tilted Diffusion Samplers"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 74 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 75 papers in archive.
+  - "Skeleton-Guided Progressive Test-Time Adaptation for Thin Curvilinear Structures"
   - "Goal-Oriented Wave Computing for Direction-of-Arrival Estimation"
-  - "Token Communication-Assisted Collaborative Embodied Artificial Intelligence: Concepts, Framework, and Opportunities"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 66 papers in archive.
   - "Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match"
   - "Shared Models, Selective Trading, and Order Flow"
 
 ## 10 most recent papers
+
+### Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching
+- URL: https://paperplaine.com/papers/beyond-spatio-temporal-priors
+- Category: Computer Science · AI
+- Authors: Luping Liu, Bingyi Kang, Yifan Wang et al.
+- arXiv: 2610.12421
+- Plain-English subtitle: Matching objects in images that change dramatically while staying recognizable
+- Summary: Researchers created FreeMatching, an AI system that tracks objects across heavily edited or transformed images—situations where traditional matching methods fail because they assume rigid, smooth motion. The system combines multiple types of training data and can work on image editing and AI-generated content where objects look different but are still recognizable as the same thing.
+- Why it matters: Image editing tools and AI generation systems need to understand when an object stays the same thing even after major visual changes—restyling, perspective shifts, or creative transformations. This work provides a practical way to measure whether edits actually preserve the identity of what they're changing, which helps creators and developers know when their tools are working correctly.
+
+### Similar Predictive Fit but Different Latent Dynamics: Characterizing Learned Dynamical Structure in Personalized Models of Brain Disorders
+- URL: https://paperplaine.com/papers/similar-predictive-fit-but
+- Category: Quantitative Biology
+- Authors: Rita Huan-Ting Peng, Nhat Bui
+- arXiv: 2610.10850
+- Plain-English subtitle: Why two brain patterns can predict equally well yet reveal hidden differences
+- Summary: AI models trained on brain activity from epilepsy patients and healthy people made equally accurate predictions about what brain patterns would come next — yet the two groups showed dramatically different internal structures in how the models organized brain data. People with epilepsy had much denser networks of brain state connections (nearly 50% more densely wired), even though the models' raw prediction scores were statistically identical.
+- Why it matters: As hospitals begin using AI to diagnose and treat brain disorders, this work shows that checking only whether a model predicts well enough is not enough. A model could be clinically misleading if it achieves good accuracy through the wrong internal logic. Examining both what a model predicts and how it thinks could catch these gaps before personalized brain treatments are deployed.
+
+### Skeleton-Guided Progressive Test-Time Adaptation for Thin Curvilinear Structures
+- URL: https://paperplaine.com/papers/skeleton-guided-progressive-test
+- Category: Engineering
+- Authors: Boa Jang, JunGyu Lee, Gwanho Lee et al.
+- arXiv: 2610.11104
+- Plain-English subtitle: Fixing AI's blind spot: keeping blood vessels and roads connected when images change
+- Summary: An AI system struggles when it encounters images from a different source than it was trained on — especially when the imaging technology itself is completely different, like switching from CT scans to ultrasound. Researchers developed a method called SGP-TTA that adapts the AI at test time by using the skeleton or centerline of predicted structures to guide the adaptation, preserving connectivity even under extreme visual shifts where existing methods fail.
+- Why it matters: Vessel segmentation errors that break connectivity can derail diagnosis or surgery planning, and road extraction mistakes corrupt navigation systems. This method lets hospitals and mapping services deploy existing AI models to new imaging types or regions without retraining, while keeping the structure intact — saving time and preventing the cascading failures that small pixel errors can cause in connected systems.
 
 ### Decoupling Exploration from Optimization in RLVR
 - URL: https://paperplaine.com/papers/decoupling-exploration-from-optimization
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Checking if autonomous vehicles are trustworthy fast enough to act
 - Summary: Researchers developed a new way for self-driving cars to prove they're running safe software to roadside infrastructure — but with a critical twist: the proof must arrive before the car's deadline to make the next move. Unlike current systems that simply allow or deny access, their approach distinguishes between three different failure modes: compromised software, outdated proof, and slow decisions that arrive too late, testing the system on actual driving simulators and finding that hardware limitations force a choice between security margins and response speed.
 - Why it matters: Autonomous vehicles coordinating with smart roadside infrastructure need to make split-second decisions while maintaining security. If a verification system is too slow, the car might not act in time to avoid danger—but if it skips safety checks to be faster, hackers could take control. This work shows that the timing budget set by real driving physics directly constrains how much security you can actually get, meaning deployment requires choosing attestation timing based on what the road demands, not just what cryptography requires.
-
-### Entanglement Sudden Death: Eberly's Work and the Limits of Local Dynamics
-- URL: https://paperplaine.com/papers/entanglement-sudden-death-eberly
-- Category: Physics
-- Authors: Abhaya S. Hegde, Songbo Xie
-- arXiv: 2610.08710
-- Plain-English subtitle: How quantum entanglement can vanish suddenly, even when nothing else changes
-- Summary: Quantum entanglement between particles can disappear completely at a specific moment in time, even though the physical processes damaging it remain smooth and continuous. New calculations show this "sudden death" effect behaves differently depending on whether particles are affected individually or all together—a distinction that grows more dramatic as systems scale up, revealing that entanglement's lifespan depends on the whole system's behavior, not just what happens to individual particles.
-- Why it matters: Understanding when and how entanglement abruptly fails matters for quantum technologies like quantum computing and quantum cryptography, which rely on entanglement staying intact. The finding that identical local damage can produce vastly different entanglement lifetimes—depending on hidden details of how that damage is applied—means engineers designing quantum systems need to pay careful attention not just to how robust individual components are, but to whether noise hits the system globally or piecemeal.
-
-### Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus
-- URL: https://paperplaine.com/papers/does-an-agent-s
-- Category: Computer Science · AI
-- Authors: Egor Pakhomov, Erik Nijkamp
-- arXiv: 2610.08722
-- Plain-English subtitle: Can an AI's recent actions predict if forgetting will break it?
-- Summary: When AI agents forget old context to stay within memory limits, does their recent behavior predict whether they'll fail afterward? Researchers tested this on 590 real cases where an agent had to summarize its past, and found the answer is mostly no—what the agent was doing beforehand only weakly predicted post-forgetting errors. The best predictor they built could avoid harmful forgetting in 21% of cases while preserving most opportunities to compact memory, but didn't clearly beat simple token-counting rules.
-- Why it matters: Long-running AI systems need to forget old information to stay fast and cheap, but careless forgetting causes them to repeat actions or crash. If we could spot dangerous moments to compact memory before they happen, we could make agents more reliable without constantly expanding memory budgets. This work shows that moment-by-moment behavior alone isn't enough of a signal—smarter ways to predict memory-compaction risk will need additional information about what the agent is trying to do.
-
-### Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match
-- URL: https://paperplaine.com/papers/personalized-recommendations-without-inducing
-- Category: Economics
-- Authors: Erica Chiang, Kenny Peng, Rebecca Lichtenstein et al.
-- arXiv: 2610.08275
-- Plain-English subtitle: How to recommend schools without overwhelming the best programs
-- Summary: A new recommendation system for NYC's high school admissions increased the share of students ranking a recommended school from 10.5% to 16.4%, and increased matches to recommended schools by 71%. The key innovation: the algorithm accounts for congestion—the problem that recommending the same popular schools to too many students backfires, making those schools harder to get into for everyone. In a real deployment, no student was rejected from a school the algorithm recommended.
-- Why it matters: NYC's high school match assigns roughly 65,000 students annually to programs. Without congestion-aware recommendations, students in underserved neighborhoods get steered toward the same few good schools, which then become so competitive that even strong applicants get rejected. This system increased matches for treatment students by 71% while keeping rejection rates unchanged, directly expanding college-track options for students with fewer nearby choices.
 
 ## About
 

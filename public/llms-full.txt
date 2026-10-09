@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 937 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-08
+This file contains the complete plain-English text of all 940 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-09
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching
+Subtitle: Matching objects in images that change dramatically while staying recognizable
+URL: https://paperplaine.com/papers/beyond-spatio-temporal-priors
+Category: Computer Science · AI
+Authors: Luping Liu, Bingyi Kang, Yifan Wang et al.
+arXiv ID: 2610.12421
+arXiv URL: https://arxiv.org/abs/2610.12421
+Posted: 2026-10-09
+
+Summary: Researchers created FreeMatching, an AI system that tracks objects across heavily edited or transformed images—situations where traditional matching methods fail because they assume rigid, smooth motion. The system combines multiple types of training data and can work on image editing and AI-generated content where objects look different but are still recognizable as the same thing.
+
+Why it matters: Image editing tools and AI generation systems need to understand when an object stays the same thing even after major visual changes—restyling, perspective shifts, or creative transformations. This work provides a practical way to measure whether edits actually preserve the identity of what they're changing, which helps creators and developers know when their tools are working correctly.
+
+---
+Title: Similar Predictive Fit but Different Latent Dynamics: Characterizing Learned Dynamical Structure in Personalized Models of Brain Disorders
+Subtitle: Why two brain patterns can predict equally well yet reveal hidden differences
+URL: https://paperplaine.com/papers/similar-predictive-fit-but
+Category: Quantitative Biology
+Authors: Rita Huan-Ting Peng, Nhat Bui
+arXiv ID: 2610.10850
+arXiv URL: https://arxiv.org/abs/2610.10850
+Posted: 2026-10-09
+
+Summary: AI models trained on brain activity from epilepsy patients and healthy people made equally accurate predictions about what brain patterns would come next — yet the two groups showed dramatically different internal structures in how the models organized brain data. People with epilepsy had much denser networks of brain state connections (nearly 50% more densely wired), even though the models' raw prediction scores were statistically identical.
+
+Why it matters: As hospitals begin using AI to diagnose and treat brain disorders, this work shows that checking only whether a model predicts well enough is not enough. A model could be clinically misleading if it achieves good accuracy through the wrong internal logic. Examining both what a model predicts and how it thinks could catch these gaps before personalized brain treatments are deployed.
+
+---
+Title: Skeleton-Guided Progressive Test-Time Adaptation for Thin Curvilinear Structures
+Subtitle: Fixing AI's blind spot: keeping blood vessels and roads connected when images change
+URL: https://paperplaine.com/papers/skeleton-guided-progressive-test
+Category: Engineering
+Authors: Boa Jang, JunGyu Lee, Gwanho Lee et al.
+arXiv ID: 2610.11104
+arXiv URL: https://arxiv.org/abs/2610.11104
+Posted: 2026-10-09
+
+Summary: An AI system struggles when it encounters images from a different source than it was trained on — especially when the imaging technology itself is completely different, like switching from CT scans to ultrasound. Researchers developed a method called SGP-TTA that adapts the AI at test time by using the skeleton or centerline of predicted structures to guide the adaptation, preserving connectivity even under extreme visual shifts where existing methods fail.
+
+Why it matters: Vessel segmentation errors that break connectivity can derail diagnosis or surgery planning, and road extraction mistakes corrupt navigation systems. This method lets hospitals and mapping services deploy existing AI models to new imaging types or regions without retraining, while keeping the structure intact — saving time and preventing the cascading failures that small pixel errors can cause in connected systems.
 
 ---
 Title: Decoupling Exploration from Optimization in RLVR
