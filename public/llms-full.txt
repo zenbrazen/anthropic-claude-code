@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 943 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-09
+This file contains the complete plain-English text of all 946 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-10
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception
+Subtitle: AI lie detectors that catch language models when they hide the truth
+URL: https://paperplaine.com/papers/caught-in-the-act
+Category: Computer Science · AI
+Authors: Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba et al.
+arXiv ID: 2610.12445
+arXiv URL: https://arxiv.org/abs/2610.12445
+Posted: 2026-10-10
+
+Summary: Researchers built software probes that detect when large language models deliberately deceive users, achieving 98.8% accuracy on deception detection tests. The probes work even when a model's lies would be undetectable from conversation alone—finding hidden goals and false claims buried in the model's internal processing, including false statements about politically sensitive topics.
+
+Why it matters: As AI systems take on higher-stakes roles, we need reliable ways to catch deception before it reaches users. These probes could enable safety teams to deploy monitoring systems that catch lying during live operation, not just in hindsight, reducing the window where a model can mislead people without detection. The authors released their training dataset to help the field scale this capability across different models.
+
+---
+Title: FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks
+Subtitle: Training a small AI model to handle financial math and reasoning reliably
+URL: https://paperplaine.com/papers/finvector-market-4b-a
+Category: Quantitative Finance
+Authors: Alina Khaybullina
+arXiv ID: 2610.08882
+arXiv URL: https://arxiv.org/abs/2610.08882
+Posted: 2026-10-10
+
+Summary: A specialized financial AI model improved dramatically at structured money tasks — jumping from near-zero to 91% accuracy at producing correctly formatted output, and from 15% to 40% at getting financial math questions right. The gains came from fine-tuning a small base model on 22,000 financial examples and giving it explicit rules about what kind of output to produce.
+
+Why it matters: Banks and financial apps need AI models they can actually trust to format data correctly and reason through money problems accurately. This shows that even small, efficient models can be tuned to perform reliably on financial tasks without being retrained from scratch — a cheaper path than buying or building larger models. However, the model's performance depends heavily on getting the prompting and output rules exactly right, so real-world deployment would require careful testing on your specific use cases.
+
+---
+Title: From a Hierarchy of Stochastic Differential Equations to a Hierarchy of Generalized Beta Distributions
+Subtitle: How random shocks create different income and wealth distributions
+URL: https://paperplaine.com/papers/from-a-hierarchy-of
+Category: Economics
+Authors: Siqi Shao, R. A. Serota
+arXiv ID: 2610.10476
+arXiv URL: https://arxiv.org/abs/2610.10476
+Posted: 2026-10-10
+
+Summary: A mathematical model shows how financial systems buffeted by random events naturally produce a family of different distribution shapes—from bell curves to power-law tails—all from the same underlying mechanism. The researchers discovered that the order in which you apply mathematical transformations to these distributions matters: two seemingly equivalent procedures produce different results at the top level, revealing a hidden non-uniqueness in how we model real-world inequality.
+
+Why it matters: Income and wealth distributions follow different patterns across countries and time periods, and economists have long struggled to explain why the same real-world forces produce such varied shapes. This framework unifies several competing distribution models under one stochastic foundation, making it possible to predict which distribution shape should emerge from a given set of market conditions. That could help policymakers understand whether observed inequality patterns reflect market fundamentals or require policy intervention.
 
 ---
 Title: HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling
