@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 952 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 955 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 326 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 327 papers in archive.
+  - "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC"
   - "Searching for "Harmful Refusal": A Psychometric Audit of an AI Safety Benchmark"
-  - "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 78 papers in archive.
   - "Protecting CPU AI On Edge TEEs: WebAssembly's Promise and Practical Challenges"
   - "Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 79 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 80 papers in archive.
+  - "Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation"
   - "Local polarization control of optical tweezer arrays"
-  - "Entanglement Sudden Death: Eberly's Work and the Limits of Local Dynamics"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 80 papers in archive.
   - "Composite Online-to-Nonconvex Conversion with Optimal Oracle Complexity"
   - "Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 76 papers in archive.
   - "Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography"
   - "Skeleton-Guided Progressive Test-Time Adaptation for Thin Curvilinear Structures"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 67 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 68 papers in archive.
+  - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
   - "From a Hierarchy of Stochastic Differential Equations to a Hierarchy of Generalized Beta Distributions"
-  - "Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match"
 
 ## 10 most recent papers
+
+### LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC
+- URL: https://paperplaine.com/papers/lewam-a-jepa-world
+- Category: Computer Science · AI
+- Authors: Shashank Hegde, Alexander Popov, Elie Aljalbout et al.
+- arXiv: 2610.12407
+- Plain-English subtitle: A simpler neural model that plans robot actions by understanding what matters
+- Summary: Researchers built LeWAM, a neural network that learns to predict robot movements and future scenes without storing redundant visual details. The model balances three competing goals—understanding the scene, predicting what happens next, and deciding what to do—in a single clean representation, and it plans as effectively as specialized policy networks while also serving as a world model.
+- Why it matters: Robots need to plan actions quickly with incomplete information. LeWAM reduces the computational overhead of separate models for prediction and control, potentially speeding up decision-making on resource-constrained robots. The cleaner latent representation also makes the model's reasoning more interpretable, so engineers can debug when predictions go wrong.
+
+### Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation
+- URL: https://paperplaine.com/papers/quantum-co-design-of
+- Category: Physics
+- Authors: Zoha Laraib, Sherwood Richers, Alessandro Baroni et al.
+- arXiv: 2610.12334
+- Plain-English subtitle: Using quantum computers to simulate how neutrinos change inside dying stars
+- Summary: Physicists created a quantum simulation that tracks how neutrinos swap identities in the extreme densities of supernovae and neutron stars—a calculation too complex for regular computers. The simulation works for up to 30 neutrinos on current quantum hardware, though noise still limits accuracy, and would need about 70 trillion quantum operations to run reliably on future fault-tolerant machines.
+- Why it matters: Understanding neutrino behavior in stellar explosions is crucial for predicting supernova dynamics and nucleosynthesis, but the quantum interactions involved are impossible to solve with classical computers. This work shows that quantum computers could eventually simulate these physics accurately enough to improve models of how elements are forged in dying stars—but only after quantum hardware becomes vastly more reliable than today's machines.
+
+### Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity
+- URL: https://paperplaine.com/papers/risk-ceilings-and-development
+- Category: Economics
+- Authors: Li Gan
+- arXiv: 2610.11093
+- Plain-English subtitle: Can regulators promise both safety limits and delivery dates for AI?
+- Summary: A regulator trying to guarantee both a maximum risk level and a completion deadline faces a fundamental problem: they need to know how fast safety research will improve, but don't. The paper shows that one approach—doing safety research first, then building the model with extra computing power reserved for safety—gets close to the theoretical minimum needed to keep both promises, requiring only 3.3% more efficiency than mathematically necessary.
+- Why it matters: AI regulation increasingly demands concrete safety guarantees and timelines. This work clarifies what regulators actually need to know to make good on both promises, and shows that some strategies are far more wasteful than others. If regulators instead just cap how much computing power goes to safety, they'll control timelines but won't reliably hit safety targets—a distinction that matters for real oversight rules.
 
 ### Searching for "Harmful Refusal": A Psychometric Audit of an AI Safety Benchmark
 - URL: https://paperplaine.com/papers/searching-for-harmful-refusal
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: AI lie detectors that catch language models when they hide the truth
 - Summary: Researchers built software probes that detect when large language models deliberately deceive users, achieving 98.8% accuracy on deception detection tests. The probes work even when a model's lies would be undetectable from conversation alone—finding hidden goals and false claims buried in the model's internal processing, including false statements about politically sensitive topics.
 - Why it matters: As AI systems take on higher-stakes roles, we need reliable ways to catch deception before it reaches users. These probes could enable safety teams to deploy monitoring systems that catch lying during live operation, not just in hindsight, reducing the window where a model can mislead people without detection. The authors released their training dataset to help the field scale this capability across different models.
-
-### FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks
-- URL: https://paperplaine.com/papers/finvector-market-4b-a
-- Category: Quantitative Finance
-- Authors: Alina Khaybullina
-- arXiv: 2610.08882
-- Plain-English subtitle: Training a small AI model to handle financial math and reasoning reliably
-- Summary: A specialized financial AI model improved dramatically at structured money tasks — jumping from near-zero to 91% accuracy at producing correctly formatted output, and from 15% to 40% at getting financial math questions right. The gains came from fine-tuning a small base model on 22,000 financial examples and giving it explicit rules about what kind of output to produce.
-- Why it matters: Banks and financial apps need AI models they can actually trust to format data correctly and reason through money problems accurately. This shows that even small, efficient models can be tuned to perform reliably on financial tasks without being retrained from scratch — a cheaper path than buying or building larger models. However, the model's performance depends heavily on getting the prompting and output rules exactly right, so real-world deployment would require careful testing on your specific use cases.
-
-### From a Hierarchy of Stochastic Differential Equations to a Hierarchy of Generalized Beta Distributions
-- URL: https://paperplaine.com/papers/from-a-hierarchy-of
-- Category: Economics
-- Authors: Siqi Shao, R. A. Serota
-- arXiv: 2610.10476
-- Plain-English subtitle: How random shocks create different income and wealth distributions
-- Summary: A mathematical model shows how financial systems buffeted by random events naturally produce a family of different distribution shapes—from bell curves to power-law tails—all from the same underlying mechanism. The researchers discovered that the order in which you apply mathematical transformations to these distributions matters: two seemingly equivalent procedures produce different results at the top level, revealing a hidden non-uniqueness in how we model real-world inequality.
-- Why it matters: Income and wealth distributions follow different patterns across countries and time periods, and economists have long struggled to explain why the same real-world forces produce such varied shapes. This framework unifies several competing distribution models under one stochastic foundation, making it possible to predict which distribution shape should emerge from a given set of market conditions. That could help policymakers understand whether observed inequality patterns reflect market fundamentals or require policy intervention.
-
-### HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling
-- URL: https://paperplaine.com/papers/hril-learning-multimodal-synergy
-- Category: Computer Science · AI
-- Authors: Qun Dai, Liangjian Wen, Jiang Duan et al.
-- arXiv: 2610.12393
-- Plain-English subtitle: Teaching AI to capture information that only appears when multiple senses combine
-- Summary: AI systems that learn from multiple data sources—like images and sound together—often miss crucial information that only emerges from their combination. Researchers developed a new method called HRIL that explicitly captures these synergistic interactions by modeling the statistical relationships between modalities, outperforming existing approaches on tasks where this combined information is essential.
-- Why it matters: Multimodal AI powers real systems like autonomous vehicles, medical diagnosis tools, and video understanding platforms. By better capturing how different data types reinforce each other, HRIL makes these systems more accurate and reliable—especially in complex scenarios where no single source of information tells the full story.
 
 ## About
 

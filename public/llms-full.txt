@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 952 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 955 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-11
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC
+Subtitle: A simpler neural model that plans robot actions by understanding what matters
+URL: https://paperplaine.com/papers/lewam-a-jepa-world
+Category: Computer Science · AI
+Authors: Shashank Hegde, Alexander Popov, Elie Aljalbout et al.
+arXiv ID: 2610.12407
+arXiv URL: https://arxiv.org/abs/2610.12407
+Posted: 2026-10-11
+
+Summary: Researchers built LeWAM, a neural network that learns to predict robot movements and future scenes without storing redundant visual details. The model balances three competing goals—understanding the scene, predicting what happens next, and deciding what to do—in a single clean representation, and it plans as effectively as specialized policy networks while also serving as a world model.
+
+Why it matters: Robots need to plan actions quickly with incomplete information. LeWAM reduces the computational overhead of separate models for prediction and control, potentially speeding up decision-making on resource-constrained robots. The cleaner latent representation also makes the model's reasoning more interpretable, so engineers can debug when predictions go wrong.
+
+---
+Title: Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation
+Subtitle: Using quantum computers to simulate how neutrinos change inside dying stars
+URL: https://paperplaine.com/papers/quantum-co-design-of
+Category: Physics
+Authors: Zoha Laraib, Sherwood Richers, Alessandro Baroni et al.
+arXiv ID: 2610.12334
+arXiv URL: https://arxiv.org/abs/2610.12334
+Posted: 2026-10-11
+
+Summary: Physicists created a quantum simulation that tracks how neutrinos swap identities in the extreme densities of supernovae and neutron stars—a calculation too complex for regular computers. The simulation works for up to 30 neutrinos on current quantum hardware, though noise still limits accuracy, and would need about 70 trillion quantum operations to run reliably on future fault-tolerant machines.
+
+Why it matters: Understanding neutrino behavior in stellar explosions is crucial for predicting supernova dynamics and nucleosynthesis, but the quantum interactions involved are impossible to solve with classical computers. This work shows that quantum computers could eventually simulate these physics accurately enough to improve models of how elements are forged in dying stars—but only after quantum hardware becomes vastly more reliable than today's machines.
+
+---
+Title: Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity
+Subtitle: Can regulators promise both safety limits and delivery dates for AI?
+URL: https://paperplaine.com/papers/risk-ceilings-and-development
+Category: Economics
+Authors: Li Gan
+arXiv ID: 2610.11093
+arXiv URL: https://arxiv.org/abs/2610.11093
+Posted: 2026-10-11
+
+Summary: A regulator trying to guarantee both a maximum risk level and a completion deadline faces a fundamental problem: they need to know how fast safety research will improve, but don't. The paper shows that one approach—doing safety research first, then building the model with extra computing power reserved for safety—gets close to the theoretical minimum needed to keep both promises, requiring only 3.3% more efficiency than mathematically necessary.
+
+Why it matters: AI regulation increasingly demands concrete safety guarantees and timelines. This work clarifies what regulators actually need to know to make good on both promises, and shows that some strategies are far more wasteful than others. If regulators instead just cap how much computing power goes to safety, they'll control timelines but won't reliably hit safety targets—a distinction that matters for real oversight rules.
 
 ---
 Title: Searching for "Harmful Refusal": A Psychometric Audit of an AI Safety Benchmark
