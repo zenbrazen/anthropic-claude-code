@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 949 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 952 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 325 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 326 papers in archive.
+  - "Searching for "Harmful Refusal": A Psychometric Audit of an AI Safety Benchmark"
   - "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff"
-  - "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 78 papers in archive.
   - "Protecting CPU AI On Edge TEEs: WebAssembly's Promise and Practical Challenges"
   - "Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 80 papers in archive.
   - "Composite Online-to-Nonconvex Conversion with Optimal Oracle Complexity"
   - "Distances on Finite Constraint Systems and LICQ Radii in Nonlinear Programming"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 80 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 81 papers in archive.
+  - "Learning infinite context windows in recurrent architectures via spatial neural computing"
   - "Similar Predictive Fit but Different Latent Dynamics: Characterizing Learned Dynamical Structure in Personalized Models of Brain Disorders"
-  - "Linear Fitness Subspace in Protein Language Models Enables Sample-Efficient Directed Evolution"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 83 papers in archive.
   - "FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks"
   - "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 82 papers in archive.
   - "Prediction-Powered Data Fusion for Treatment Effect Estimation"
   - "Two-Level Softmax Sampling Done Right: Correcting Bias from Size Imbalance and Dispersion"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 75 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 76 papers in archive.
+  - "Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography"
   - "Skeleton-Guided Progressive Test-Time Adaptation for Thin Curvilinear Structures"
-  - "Goal-Oriented Wave Computing for Direction-of-Arrival Estimation"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 67 papers in archive.
   - "From a Hierarchy of Stochastic Differential Equations to a Hierarchy of Generalized Beta Distributions"
   - "Personalized Recommendations Without Inducing Congestion: Mitigating Disparities in the NYC High School Match"
 
 ## 10 most recent papers
+
+### Searching for "Harmful Refusal": A Psychometric Audit of an AI Safety Benchmark
+- URL: https://paperplaine.com/papers/searching-for-harmful-refusal
+- Category: Computer Science · AI
+- Authors: Christopher M. Stewart, Preston Botter, Natalie Sarabosing et al.
+- arXiv: 2610.12409
+- Plain-English subtitle: Why a popular AI safety test might be measuring multiple things at once
+- Summary: Researchers examined whether a widely-used AI safety benchmark actually measures what it claims to measure: a model's ability to refuse harmful requests. They found that the benchmark's overall score hides the fact that different AI models are being tested on fundamentally different things, making it impossible to fairly compare them. The problem gets worse when results are combined into a single number that obscures these hidden differences.
+- Why it matters: AI safety benchmarks guide which models get deployed in the real world. If the benchmark score doesn't actually tell us whether a model will safely refuse dangerous requests—because it's secretly measuring multiple unrelated behaviors—then companies and regulators could confidently use models that fail at the specific safety property we thought we were checking. This research flags a systematic problem: collapsing diverse test results into one number can create an illusion of understanding when the underlying measurements are broken.
+
+### Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography
+- URL: https://paperplaine.com/papers/deep-preferential-evolution-guided
+- Category: Engineering
+- Authors: Karteekeya Sastry, Yousuf Aborahama, Junhao Zhu et al.
+- arXiv: 2610.12273
+- Plain-English subtitle: Teaching AI to fix blurry medical images by comparing which looks better
+- Summary: Researchers created a new method to fix motion blur in photoacoustic tomography—a medical imaging technique that maps tissue using sound waves and light. Instead of telling an algorithm what a perfect image should look like, they trained it to simply compare two images side-by-side and pick the better one, then used that judgment to guide a search algorithm toward clearer pictures. The approach worked on real human images even though it was mainly trained on simulations, and it corrected motion blur from natural, unpredictable body movement.
+- Why it matters: Photoacoustic tomography could enable cheaper, more portable medical imaging, but motion during scanning ruins the pictures. Current methods for fixing blur rely on mathematical rules that don't match how doctors actually judge image quality. This pairwise-comparison approach produces sharper, more useful images from motion-corrupted scans, and because it learns from comparisons rather than absolute scores, it transfers better to real patient data—meaning fewer perfectly labeled training images are needed to deploy it in clinics.
+
+### Learning infinite context windows in recurrent architectures via spatial neural computing
+- URL: https://paperplaine.com/papers/learning-infinite-context-windows
+- Category: Quantitative Biology
+- Authors: Aleix Salvador-Pomarol, Arthur N. Montanari, Earl K. Miller et al.
+- arXiv: 2610.10690
+- Plain-English subtitle: Teaching AI to remember everything with the brain's own wave patterns
+- Summary: Researchers built a new type of artificial neural network that can process extremely long sequences of information—potentially unlimited—while staying fast and memory-efficient. The trick: replacing standard neuron connections with spatial wave patterns inspired by how the brain's cortex actually works, which lets the network implicitly store its entire history without getting trapped by the mathematical problems that usually block long-term memory in AI.
+- Why it matters: Current AI systems struggle to keep track of context over long documents, conversations, or sequences—they either need massive memory or they forget what happened early on. This approach could let AI systems process much longer inputs (like entire books or long videos) without slowing down or ballooning in size, while staying as fast and practical as today's simpler models. That's crucial for everything from real-time translation to analyzing long medical records or financial histories.
 
 ### Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff
 - URL: https://paperplaine.com/papers/ecology-of-ai-agents
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to capture information that only appears when multiple senses combine
 - Summary: AI systems that learn from multiple data sources—like images and sound together—often miss crucial information that only emerges from their combination. Researchers developed a new method called HRIL that explicitly captures these synergistic interactions by modeling the statistical relationships between modalities, outperforming existing approaches on tasks where this combined information is essential.
 - Why it matters: Multimodal AI powers real systems like autonomous vehicles, medical diagnosis tools, and video understanding platforms. By better capturing how different data types reinforce each other, HRIL makes these systems more accurate and reliable—especially in complex scenarios where no single source of information tells the full story.
-
-### Local polarization control of optical tweezer arrays
-- URL: https://paperplaine.com/papers/local-polarization-control-of
-- Category: Physics
-- Authors: Xiangkai Sun, Richard Bing-Shiun Tsai, Andrew Winnicki et al.
-- arXiv: 2610.12406
-- Plain-English subtitle: Fine-tuning light's polarization to control individual atoms in quantum computers
-- Summary: Physicists can now rotate the polarization of laser light independently for each trapped atom in an optical tweezer array—a grid of microscopic laser traps used in quantum computing. The technique uses a special optical component to bend light differently at each location, allowing researchers to precisely control how atoms respond to the light and even move them between zones while keeping them stable.
-- Why it matters: Optical tweezers are a leading platform for building quantum computers and ultra-precise atomic clocks. This polarization control removes a major technical obstacle: previously, unwanted variations in how the laser light affected different atoms degraded performance. The method enables more reliable quantum operations and brings optical tweezer clocks closer to surpassing current atomic clock accuracy.
-
-### Protecting CPU AI On Edge TEEs: WebAssembly's Promise and Practical Challenges
-- URL: https://paperplaine.com/papers/protecting-cpu-ai-on
-- Category: Computer Science
-- Authors: Friedrich Vandenberghe, Lachlan Gunn, Bruno Volckaert et al.
-- arXiv: 2610.12050
-- Plain-English subtitle: Running AI models secretly on phones without rewriting code
-- Summary: Researchers developed a way to run AI models on edge devices—like smartphones—inside a secure vault that even someone with root access cannot break into. The approach uses WebAssembly and adds only 22% overhead compared to manual security coding, while keeping models encrypted and executable without modification.
-- Why it matters: Companies and researchers shipping AI to edge devices face a real threat: anyone who gains control of the device can steal the AI model itself, which may have taken years and millions to develop. This work makes it practical to protect that intellectual property without forcing engineers to completely rewrite their applications—a barrier that has kept most edge AI exposed.
-
-### Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching
-- URL: https://paperplaine.com/papers/beyond-spatio-temporal-priors
-- Category: Computer Science · AI
-- Authors: Luping Liu, Bingyi Kang, Yifan Wang et al.
-- arXiv: 2610.12421
-- Plain-English subtitle: Matching objects in images that change dramatically while staying recognizable
-- Summary: Researchers created FreeMatching, an AI system that tracks objects across heavily edited or transformed images—situations where traditional matching methods fail because they assume rigid, smooth motion. The system combines multiple types of training data and can work on image editing and AI-generated content where objects look different but are still recognizable as the same thing.
-- Why it matters: Image editing tools and AI generation systems need to understand when an object stays the same thing even after major visual changes—restyling, perspective shifts, or creative transformations. This work provides a practical way to measure whether edits actually preserve the identity of what they're changing, which helps creators and developers know when their tools are working correctly.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 22:09:22 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 13:46:46 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Searching for &quot;Harmful Refusal&quot;: A Psychometric Audit of an AI Safety Benchmark</title>
+      <link>https://paperplaine.com/papers/searching-for-harmful-refusal</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/searching-for-harmful-refusal</guid>
+      <pubDate>Thu, 08 Oct 2026 17:46:43 GMT</pubDate>
+      <author>Christopher M. Stewart, Preston Botter, Natalie Sarabosing et al.</author>
+      <category>AI</category>
+      <description>Why a popular AI safety test might be measuring multiple things at once</description>
+      <content:encoded><![CDATA[<p><em>Why a popular AI safety test might be measuring multiple things at once</em></p><p>Researchers examined whether a widely-used AI safety benchmark actually measures what it claims to measure: a model's ability to refuse harmful requests. They found that the benchmark's overall score hides the fact that different AI models are being tested on fundamentally different things, making it impossible to fairly compare them. The problem gets worse when results are combined into a single number that obscures these hidden differences.</p><p><strong>Why it matters:</strong> AI safety benchmarks guide which models get deployed in the real world. If the benchmark score doesn't actually tell us whether a model will safely refuse dangerous requests—because it's secretly measuring multiple unrelated behaviors—then companies and regulators could confidently use models that fail at the specific safety property we thought we were checking. This research flags a systematic problem: collapsing diverse test results into one number can create an illusion of understanding when the underlying measurements are broken.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography</title>
+      <link>https://paperplaine.com/papers/deep-preferential-evolution-guided</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/deep-preferential-evolution-guided</guid>
+      <pubDate>Thu, 08 Oct 2026 16:36:31 GMT</pubDate>
+      <author>Karteekeya Sastry, Yousuf Aborahama, Junhao Zhu et al.</author>
+      <category>Engineering</category>
+      <description>Teaching AI to fix blurry medical images by comparing which looks better</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to fix blurry medical images by comparing which looks better</em></p><p>Researchers created a new method to fix motion blur in photoacoustic tomography—a medical imaging technique that maps tissue using sound waves and light. Instead of telling an algorithm what a perfect image should look like, they trained it to simply compare two images side-by-side and pick the better one, then used that judgment to guide a search algorithm toward clearer pictures. The approach worked on real human images even though it was mainly trained on simulations, and it corrected motion blur from natural, unpredictable body movement.</p><p><strong>Why it matters:</strong> Photoacoustic tomography could enable cheaper, more portable medical imaging, but motion during scanning ruins the pictures. Current methods for fixing blur rely on mathematical rules that don't match how doctors actually judge image quality. This pairwise-comparison approach produces sharper, more useful images from motion-corrupted scans, and because it learns from comparisons rather than absolute scores, it transfers better to real patient data—meaning fewer perfectly labeled training images are needed to deploy it in clinics.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Learning infinite context windows in recurrent architectures via spatial neural computing</title>
+      <link>https://paperplaine.com/papers/learning-infinite-context-windows</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/learning-infinite-context-windows</guid>
+      <pubDate>Wed, 07 Oct 2026 18:00:02 GMT</pubDate>
+      <author>Aleix Salvador-Pomarol, Arthur N. Montanari, Earl K. Miller et al.</author>
+      <category>Biology</category>
+      <description>Teaching AI to remember everything with the brain&#39;s own wave patterns</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to remember everything with the brain's own wave patterns</em></p><p>Researchers built a new type of artificial neural network that can process extremely long sequences of information—potentially unlimited—while staying fast and memory-efficient. The trick: replacing standard neuron connections with spatial wave patterns inspired by how the brain's cortex actually works, which lets the network implicitly store its entire history without getting trapped by the mathematical problems that usually block long-term memory in AI.</p><p><strong>Why it matters:</strong> Current AI systems struggle to keep track of context over long documents, conversations, or sequences—they either need massive memory or they forget what happened early on. This approach could let AI systems process much longer inputs (like entire books or long videos) without slowing down or ballooning in size, while staying as fast and practical as today's simpler models. That's crucial for everything from real-time translation to analyzing long medical records or financial histories.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff</title>
       <link>https://paperplaine.com/papers/ecology-of-ai-agents</link>
