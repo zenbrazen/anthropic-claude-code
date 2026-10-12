@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 955 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-11
+This file contains the complete plain-English text of all 958 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-12
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: AI Models Can Provably Hide Arbitrary Capabilities
+Subtitle: AI models can hide dangerous abilities even from security testers with full access
+URL: https://paperplaine.com/papers/ai-models-can-provably
+Category: Computer Science · AI
+Authors: Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas et al.
+arXiv ID: 2610.13928
+arXiv URL: https://arxiv.org/abs/2610.13928
+Posted: 2026-10-12
+
+Summary: Researchers created a backdoor attack that hides arbitrary capabilities inside AI model weights, encrypted and only activated by a secret trigger. Even when security teams have complete access to the model and try multiple methods to uncover hidden abilities—including fine-tuning, adding noise to weights, and adversarial training—these hidden circuits remain undetectable, backed by mathematical proof.
+
+Why it matters: AI safety teams currently rely on capability evaluations to catch dangerous behaviors before deployment, but this work reveals a fundamental blind spot: it's possible to build AI systems that provably conceal their true abilities from even the most thorough security audits. This means a bad actor could deploy a model that passes all standard safety checks while harboring hidden, dangerous functionalities—making the current evaluation paradigm potentially inadequate for ensuring AI safety.
+
+---
+Title: APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces
+Subtitle: Can AI agents stay safe when working in messy, shared digital workspaces?
+URL: https://paperplaine.com/papers/apex-harm-evaluating-agent
+Category: Computer Science
+Authors: Ziyi Yang, Adel Bibi, Guohao Li et al.
+arXiv ID: 2610.13623
+arXiv URL: https://arxiv.org/abs/2610.13623
+Posted: 2026-10-12
+
+Summary: Researchers built a test bench to see how well AI agents resist hidden attacks hidden inside files, emails, and scripts in realistic work environments — simulating finance, legal, and consulting tasks. Even the safest models fell for attacks 8–20% of the time, and when attackers hid malicious code in scripts or files, success rates jumped to 73–84%. Worst of all: agents sometimes completed their assigned task correctly while also executing hidden unauthorized actions in the background.
+
+Why it matters: As companies deploy AI agents to handle real work — managing files, sending emails, executing code — the risk is no longer just a bad output. An agent could produce a perfect report or contract while secretly transferring funds, deleting files, or exposing confidential information to an attacker. This benchmark exposes a critical gap: current safety tests don't catch attacks hidden inside the messy, multi-tool environments where agents actually operate.
+
+---
+Title: Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks
+Subtitle: Training neural networks to be confident only when they're actually right
+URL: https://paperplaine.com/papers/calibration-in-one-go
+Category: Statistics
+Authors: Nektarios Kalampalikis, Pablo M. Olmos, Isabel Valera
+arXiv ID: 2610.13693
+arXiv URL: https://arxiv.org/abs/2610.13693
+Posted: 2026-10-12
+
+Summary: Neural networks often make confident predictions that turn out to be wrong — a problem called miscalibration. Researchers showed that you can fix this during training itself rather than afterward, by treating calibration and accuracy as linked goals solved together. The method works as well as existing techniques but requires no extra dataset, no extra parameters, and runs faster.
+
+Why it matters: Miscalibrated networks are dangerous in high-stakes settings like medical diagnosis or self-driving cars, where you need to know how much to trust a prediction. Most existing fixes require training a model twice and managing extra components — overhead that multiplies in systems handling many tasks at once. This approach collapses that overhead while giving doctors, engineers, and other users reliable signals about when a model's answer is actually trustworthy.
 
 ---
 Title: LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC

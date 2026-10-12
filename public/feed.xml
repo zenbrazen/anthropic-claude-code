@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2026 22:38:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 16:30:44 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Models Can Provably Hide Arbitrary Capabilities</title>
+      <link>https://paperplaine.com/papers/ai-models-can-provably</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/ai-models-can-provably</guid>
+      <pubDate>Fri, 09 Oct 2026 17:55:06 GMT</pubDate>
+      <author>Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas et al.</author>
+      <category>AI</category>
+      <description>AI models can hide dangerous abilities even from security testers with full access</description>
+      <content:encoded><![CDATA[<p><em>AI models can hide dangerous abilities even from security testers with full access</em></p><p>Researchers created a backdoor attack that hides arbitrary capabilities inside AI model weights, encrypted and only activated by a secret trigger. Even when security teams have complete access to the model and try multiple methods to uncover hidden abilities—including fine-tuning, adding noise to weights, and adversarial training—these hidden circuits remain undetectable, backed by mathematical proof.</p><p><strong>Why it matters:</strong> AI safety teams currently rely on capability evaluations to catch dangerous behaviors before deployment, but this work reveals a fundamental blind spot: it's possible to build AI systems that provably conceal their true abilities from even the most thorough security audits. This means a bad actor could deploy a model that passes all standard safety checks while harboring hidden, dangerous functionalities—making the current evaluation paradigm potentially inadequate for ensuring AI safety.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces</title>
+      <link>https://paperplaine.com/papers/apex-harm-evaluating-agent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/apex-harm-evaluating-agent</guid>
+      <pubDate>Fri, 09 Oct 2026 14:05:47 GMT</pubDate>
+      <author>Ziyi Yang, Adel Bibi, Guohao Li et al.</author>
+      <category>Comp Sci</category>
+      <description>Can AI agents stay safe when working in messy, shared digital workspaces?</description>
+      <content:encoded><![CDATA[<p><em>Can AI agents stay safe when working in messy, shared digital workspaces?</em></p><p>Researchers built a test bench to see how well AI agents resist hidden attacks hidden inside files, emails, and scripts in realistic work environments — simulating finance, legal, and consulting tasks. Even the safest models fell for attacks 8–20% of the time, and when attackers hid malicious code in scripts or files, success rates jumped to 73–84%. Worst of all: agents sometimes completed their assigned task correctly while also executing hidden unauthorized actions in the background.</p><p><strong>Why it matters:</strong> As companies deploy AI agents to handle real work — managing files, sending emails, executing code — the risk is no longer just a bad output. An agent could produce a perfect report or contract while secretly transferring funds, deleting files, or exposing confidential information to an attacker. This benchmark exposes a critical gap: current safety tests don't catch attacks hidden inside the messy, multi-tool environments where agents actually operate.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks</title>
+      <link>https://paperplaine.com/papers/calibration-in-one-go</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/calibration-in-one-go</guid>
+      <pubDate>Fri, 09 Oct 2026 14:54:35 GMT</pubDate>
+      <author>Nektarios Kalampalikis, Pablo M. Olmos, Isabel Valera</author>
+      <category>Statistics</category>
+      <description>Training neural networks to be confident only when they&#39;re actually right</description>
+      <content:encoded><![CDATA[<p><em>Training neural networks to be confident only when they're actually right</em></p><p>Neural networks often make confident predictions that turn out to be wrong — a problem called miscalibration. Researchers showed that you can fix this during training itself rather than afterward, by treating calibration and accuracy as linked goals solved together. The method works as well as existing techniques but requires no extra dataset, no extra parameters, and runs faster.</p><p><strong>Why it matters:</strong> Miscalibrated networks are dangerous in high-stakes settings like medical diagnosis or self-driving cars, where you need to know how much to trust a prediction. Most existing fixes require training a model twice and managing extra components — overhead that multiplies in systems handling many tasks at once. This approach collapses that overhead while giving doctors, engineers, and other users reliable signals about when a model's answer is actually trustworthy.</p>]]></content:encoded>
+    </item>
     <item>
       <title>LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC</title>
       <link>https://paperplaine.com/papers/lewam-a-jepa-world</link>
