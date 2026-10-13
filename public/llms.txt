@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 961 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 962 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 329 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 330 papers in archive.
+  - "Task Context Shapes Component Roles in Language Models"
   - "Your Discrete Graph Diffusion Model is Secretly Memorizing"
-  - "AI Models Can Provably Hide Arbitrary Capabilities"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 79 papers in archive.
   - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
   - "Protecting CPU AI On Edge TEEs: WebAssembly's Promise and Practical Challenges"
@@ -59,6 +59,15 @@ Each paper entry contains:
   - "From a Hierarchy of Stochastic Differential Equations to a Hierarchy of Generalized Beta Distributions"
 
 ## 10 most recent papers
+
+### Task Context Shapes Component Roles in Language Models
+- URL: https://paperplaine.com/papers/task-context-shapes-component
+- Category: Computer Science · AI
+- Authors: Sovesh Mohapatra, Dani S Bassett
+- arXiv: 2610.13895
+- Plain-English subtitle: How language models reuse the same parts for different tasks
+- Summary: Language models reuse the same internal components across different tasks, but researchers discovered these components don't just work the same way each time—they change how they process information depending on context. By editing internal activation states in five large language models, the team showed that the same attention heads can switch which facts they read and how they influence later processing, with prediction accuracy improving by up to 53.6% when accounting for these task-dependent shifts.
+- Why it matters: Understanding how shared components adapt to different tasks reveals how language models achieve efficiency by reusing parts rather than building separate circuits for each job. This insight could help AI researchers design better interventions to change unwanted behaviors—like reducing hallucinations or fixing reasoning errors—without accidentally breaking the model's ability to handle other tasks, making it possible to steer large language models more precisely and reliably.
 
 ### Your Discrete Graph Diffusion Model is Secretly Memorizing
 - URL: https://paperplaine.com/papers/your-discrete-graph-diffusion
@@ -140,15 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Can regulators promise both safety limits and delivery dates for AI?
 - Summary: A regulator trying to guarantee both a maximum risk level and a completion deadline faces a fundamental problem: they need to know how fast safety research will improve, but don't. The paper shows that one approach—doing safety research first, then building the model with extra computing power reserved for safety—gets close to the theoretical minimum needed to keep both promises, requiring only 3.3% more efficiency than mathematically necessary.
 - Why it matters: AI regulation increasingly demands concrete safety guarantees and timelines. This work clarifies what regulators actually need to know to make good on both promises, and shows that some strategies are far more wasteful than others. If regulators instead just cap how much computing power goes to safety, they'll control timelines but won't reliably hit safety targets—a distinction that matters for real oversight rules.
-
-### Searching for "Harmful Refusal": A Psychometric Audit of an AI Safety Benchmark
-- URL: https://paperplaine.com/papers/searching-for-harmful-refusal
-- Category: Computer Science · AI
-- Authors: Christopher M. Stewart, Preston Botter, Natalie Sarabosing et al.
-- arXiv: 2610.12409
-- Plain-English subtitle: Why a popular AI safety test might be measuring multiple things at once
-- Summary: Researchers examined whether a widely-used AI safety benchmark actually measures what it claims to measure: a model's ability to refuse harmful requests. They found that the benchmark's overall score hides the fact that different AI models are being tested on fundamentally different things, making it impossible to fairly compare them. The problem gets worse when results are combined into a single number that obscures these hidden differences.
-- Why it matters: AI safety benchmarks guide which models get deployed in the real world. If the benchmark score doesn't actually tell us whether a model will safely refuse dangerous requests—because it's secretly measuring multiple unrelated behaviors—then companies and regulators could confidently use models that fail at the specific safety property we thought we were checking. This research flags a systematic problem: collapsing diverse test results into one number can create an illusion of understanding when the underlying measurements are broken.
 
 ## About
 

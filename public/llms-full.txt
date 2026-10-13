@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 961 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 962 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-13
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,20 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Task Context Shapes Component Roles in Language Models
+Subtitle: How language models reuse the same parts for different tasks
+URL: https://paperplaine.com/papers/task-context-shapes-component
+Category: Computer Science · AI
+Authors: Sovesh Mohapatra, Dani S Bassett
+arXiv ID: 2610.13895
+arXiv URL: https://arxiv.org/abs/2610.13895
+Posted: 2026-10-13
+
+Summary: Language models reuse the same internal components across different tasks, but researchers discovered these components don't just work the same way each time—they change how they process information depending on context. By editing internal activation states in five large language models, the team showed that the same attention heads can switch which facts they read and how they influence later processing, with prediction accuracy improving by up to 53.6% when accounting for these task-dependent shifts.
+
+Why it matters: Understanding how shared components adapt to different tasks reveals how language models achieve efficiency by reusing parts rather than building separate circuits for each job. This insight could help AI researchers design better interventions to change unwanted behaviors—like reducing hallucinations or fixing reasoning errors—without accidentally breaking the model's ability to handle other tasks, making it possible to steer large language models more precisely and reliably.
 
 ---
 Title: Your Discrete Graph Diffusion Model is Secretly Memorizing
