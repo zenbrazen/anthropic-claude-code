@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 958 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-12
+This file contains the complete plain-English text of all 961 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-13
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Your Discrete Graph Diffusion Model is Secretly Memorizing
+Subtitle: Graph AI models learn to copy training data, hiding the problem until you look closely
+URL: https://paperplaine.com/papers/your-discrete-graph-diffusion
+Category: Computer Science · AI
+Authors: Adarsh Jamadandi, Nicolas Keriven
+arXiv ID: 2610.13786
+arXiv URL: https://arxiv.org/abs/2610.13786
+Posted: 2026-10-13
+
+Summary: Researchers discovered that graph diffusion models—AI systems designed to generate new networks—are secretly memorizing their training data. The memorization only becomes visible when you feed corrupted training graphs back into the model; standard tests miss it entirely. The model recovers training graphs nearly perfectly while performing much worse on new graphs it hasn't seen, and this problem worsens over training time regardless of when you stop.
+
+Why it matters: Graph diffusion models are used to generate synthetic networks in drug discovery, social networks, and recommendation systems. If they're memorizing training data without obvious signs, they could leak sensitive information from real networks (like patient relationships in medical data) while appearing to generate novel graphs. This finding means current checks for whether these models actually learn general patterns are insufficient, and developers need better ways to spot hidden memorization before deploying them on confidential data.
+
+---
+Title: Counting with Hiccup Sequences
+Subtitle: A simple counting rule reveals hidden patterns in sequences of numbers
+URL: https://paperplaine.com/papers/counting-with-hiccup-sequences
+Category: Mathematics
+Authors: Benoit Cloitre
+arXiv ID: 2610.13908
+arXiv URL: https://arxiv.org/abs/2610.13908
+Posted: 2026-10-13
+
+Summary: A hiccup sequence follows a straightforward rule: start at a number and keep adding 1 or 2 depending on whether you've seen your current position before. Mathematicians proved that this simple rule produces remarkably orderly patterns—the missing numbers always have gaps that follow a predictable sequence, and these gaps connect to well-studied shapes in mathematics like polygonal numbers.
+
+Why it matters: This work shows how simple iterative rules can generate hidden structure. The patterns discovered here appear across multiple areas of mathematics—from counting polyominoes (puzzle pieces) to Ramsey theory (how unavoidable patterns emerge in large systems)—suggesting that hiccup sequences may be a fundamental tool for understanding when and why order emerges from simple repetition.
+
+---
+Title: DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness
+Subtitle: Why feeling rested has little to do with how long you actually slept
+URL: https://paperplaine.com/papers/dyssomniann-multi-scale-spiking
+Category: Quantitative Biology
+Authors: Daniel Szelogowski
+arXiv ID: 2610.13918
+arXiv URL: https://arxiv.org/abs/2610.13918
+Posted: 2026-10-13
+
+Summary: A computer model of the sleeping brain reveals why some people sleep a normal amount but feel exhausted, while others with severe sleep fragmentation might feel better rested. The model mimics five different sleep conditions—from healthy sleep to narcolepsy and paradoxical insomnia—and shows that sleep quality depends on brain activity patterns, not duration alone: one patient slept over 21 hours but felt only 38% restored because of unwanted brain waves during sleep, while another had 13 hours of nighttime waking yet experienced different restoration patterns.
+
+Why it matters: Sleep doctors often can't explain why patients complain of exhaustion despite normal sleep duration on overnight tests. This model identifies the hidden brain mechanisms causing that mismatch, opening a path to diagnose sleep disorders more accurately and test new treatments in simulation before prescribing them to patients. It could help clinicians distinguish between disorders that look similar on standard sleep tests but require different treatments.
 
 ---
 Title: AI Models Can Provably Hide Arbitrary Capabilities

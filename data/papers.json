@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.13786",
+    "title": "Your Discrete Graph Diffusion Model is Secretly Memorizing",
+    "authors": "Adarsh Jamadandi, Nicolas Keriven",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-09T16:04:06Z",
+    "publishedFormatted": "Oct 9, 2026",
+    "subtitle": "Graph AI models learn to copy training data, hiding the problem until you look closely",
+    "summary": "Researchers discovered that graph diffusion models—AI systems designed to generate new networks—are secretly memorizing their training data. The memorization only becomes visible when you feed corrupted training graphs back into the model; standard tests miss it entirely. The model recovers training graphs nearly perfectly while performing much worse on new graphs it hasn't seen, and this problem worsens over training time regardless of when you stop.",
+    "whyItMatters": "Graph diffusion models are used to generate synthetic networks in drug discovery, social networks, and recommendation systems. If they're memorizing training data without obvious signs, they could leak sensitive information from real networks (like patient relationships in medical data) while appearing to generate novel graphs. This finding means current checks for whether these models actually learn general patterns are insufficient, and developers need better ways to spot hidden memorization before deploying them on confidential data.",
+    "fetchedAt": "2026-10-13T01:04:06.110Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 198
+    },
+    "slug": "your-discrete-graph-diffusion"
+  },
+  {
+    "id": "2610.13908",
+    "title": "Counting with Hiccup Sequences",
+    "authors": "Benoit Cloitre",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-09T17:47:29Z",
+    "publishedFormatted": "Oct 9, 2026",
+    "subtitle": "A simple counting rule reveals hidden patterns in sequences of numbers",
+    "summary": "A hiccup sequence follows a straightforward rule: start at a number and keep adding 1 or 2 depending on whether you've seen your current position before. Mathematicians proved that this simple rule produces remarkably orderly patterns—the missing numbers always have gaps that follow a predictable sequence, and these gaps connect to well-studied shapes in mathematics like polygonal numbers.",
+    "whyItMatters": "This work shows how simple iterative rules can generate hidden structure. The patterns discovered here appear across multiple areas of mathematics—from counting polyominoes (puzzle pieces) to Ramsey theory (how unavoidable patterns emerge in large systems)—suggesting that hiccup sequences may be a fundamental tool for understanding when and why order emerges from simple repetition.",
+    "fetchedAt": "2026-10-13T01:04:08.992Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 139
+    },
+    "slug": "counting-with-hiccup-sequences"
+  },
+  {
+    "id": "2610.13918",
+    "title": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
+    "authors": "Daniel Szelogowski",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-09T17:52:23Z",
+    "publishedFormatted": "Oct 9, 2026",
+    "subtitle": "Why feeling rested has little to do with how long you actually slept",
+    "summary": "A computer model of the sleeping brain reveals why some people sleep a normal amount but feel exhausted, while others with severe sleep fragmentation might feel better rested. The model mimics five different sleep conditions—from healthy sleep to narcolepsy and paradoxical insomnia—and shows that sleep quality depends on brain activity patterns, not duration alone: one patient slept over 21 hours but felt only 38% restored because of unwanted brain waves during sleep, while another had 13 hours of nighttime waking yet experienced different restoration patterns.",
+    "whyItMatters": "Sleep doctors often can't explain why patients complain of exhaustion despite normal sleep duration on overnight tests. This model identifies the hidden brain mechanisms causing that mismatch, opening a path to diagnose sleep disorders more accurately and test new treatments in simulation before prescribing them to patients. It could help clinicians distinguish between disorders that look similar on standard sleep tests but require different treatments.",
+    "fetchedAt": "2026-10-13T01:04:27.356Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 193
+    },
+    "slug": "dyssomniann-multi-scale-spiking"
+  },
+  {
     "id": "2610.13928",
     "title": "AI Models Can Provably Hide Arbitrary Capabilities",
     "authors": "Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas et al.",
