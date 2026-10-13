@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 14:49:09 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 23:10:13 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ReplaySSM: Cache SSM Inputs, Not State</title>
+      <link>https://paperplaine.com/papers/replayssm-cache-ssm-inputs</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/replayssm-cache-ssm-inputs</guid>
+      <pubDate>Fri, 09 Oct 2026 15:59:40 GMT</pubDate>
+      <author>Ze-Wei Liou, Harris Nover, Amey Naik et al.</author>
+      <category>AI</category>
+      <description>Making AI language models faster by storing inputs instead of state</description>
+      <content:encoded><![CDATA[<p><em>Making AI language models faster by storing inputs instead of state</em></p><p>State-space models slow down when they constantly read and write their internal memory during text generation. ReplaySSM speeds this up by storing recent inputs and updating memory less often, roughly halving the memory traffic that bottlenecks these systems. On real serving hardware, the method achieves 1.2–1.47× speedup and handles speculative decoding nearly twice as efficiently as current systems.</p><p><strong>Why it matters:</strong> Language model inference—the process of generating text—is expensive and speed-critical for real-time applications. A 1.2–1.47× speedup means AI services can serve more users with the same hardware, cutting compute costs and latency. The method also improves accuracy by using different precision levels for computation versus memory updates, reducing numerical errors that accumulate during generation.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization</title>
+      <link>https://paperplaine.com/papers/ai-mediation-in-retail</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/ai-mediation-in-retail</guid>
+      <pubDate>Fri, 09 Oct 2026 03:06:18 GMT</pubDate>
+      <author>Omar El Housni, Marouane Ibn Brahim</author>
+      <category>Economics</category>
+      <description>How AI shopping recommendations change which products stores should stock</description>
+      <content:encoded><![CDATA[<p><em>How AI shopping recommendations change which products stores should stock</em></p><p>When AI assistants filter product choices before customers see them, retailers need to rethink their entire product lineup. Stores that ignore this AI layer lose 2.5% to 11% in revenue, but a simpler strategy accounting for how AI ranks products cuts those losses to less than 0.5%.</p><p><strong>Why it matters:</strong> As AI increasingly controls what products appear in online shopping flows, retailers face a new decision problem: optimize for what customers would choose if they saw everything, or optimize for what they'll choose after AI filtering. Getting this wrong directly reduces profits. The research provides a practical framework for the second scenario, which is already the reality in most e-commerce today.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics</title>
+      <link>https://paperplaine.com/papers/desertification-forecasting-in-semi</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/desertification-forecasting-in-semi</guid>
+      <pubDate>Fri, 09 Oct 2026 11:20:07 GMT</pubDate>
+      <author>Filipe Moura Da Silva, Cláubio Landney Lima Bandeira</author>
+      <category>Engineering</category>
+      <description>Can satellite data predict where deserts will spread in the next few years?</description>
+      <content:encoded><![CDATA[<p><em>Can satellite data predict where deserts will spread in the next few years?</em></p><p>Using a deep learning system trained on 23 years of satellite imagery, researchers found they can predict large-scale desertification trends in Brazil's semi-arid northeast region up to six years ahead, but cannot reliably forecast degradation in specific locations. The model beats simple baseline predictions by 4.4% at the four-year mark, yet still captures only about half the regional drift, revealing hard limits on what satellite observations alone can tell us about land degradation.</p><p><strong>Why it matters:</strong> Desertification forecasts help governments plan water and agriculture policy years in advance. This work shows satellite data works for regional planning—telling officials the overall trend is worsening—but not for deciding which specific farms or villages will be hit hardest. Understanding this boundary lets policymakers use the tool appropriately rather than overestimating what it can predict.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Task Context Shapes Component Roles in Language Models</title>
       <link>https://paperplaine.com/papers/task-context-shapes-component</link>

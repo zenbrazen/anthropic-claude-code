@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 962 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 965 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-13
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: ReplaySSM: Cache SSM Inputs, Not State
+Subtitle: Making AI language models faster by storing inputs instead of state
+URL: https://paperplaine.com/papers/replayssm-cache-ssm-inputs
+Category: Computer Science · AI
+Authors: Ze-Wei Liou, Harris Nover, Amey Naik et al.
+arXiv ID: 2610.13778
+arXiv URL: https://arxiv.org/abs/2610.13778
+Posted: 2026-10-13
+
+Summary: State-space models slow down when they constantly read and write their internal memory during text generation. ReplaySSM speeds this up by storing recent inputs and updating memory less often, roughly halving the memory traffic that bottlenecks these systems. On real serving hardware, the method achieves 1.2–1.47× speedup and handles speculative decoding nearly twice as efficiently as current systems.
+
+Why it matters: Language model inference—the process of generating text—is expensive and speed-critical for real-time applications. A 1.2–1.47× speedup means AI services can serve more users with the same hardware, cutting compute costs and latency. The method also improves accuracy by using different precision levels for computation versus memory updates, reducing numerical errors that accumulate during generation.
+
+---
+Title: AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization
+Subtitle: How AI shopping recommendations change which products stores should stock
+URL: https://paperplaine.com/papers/ai-mediation-in-retail
+Category: Economics
+Authors: Omar El Housni, Marouane Ibn Brahim
+arXiv ID: 2610.12917
+arXiv URL: https://arxiv.org/abs/2610.12917
+Posted: 2026-10-13
+
+Summary: When AI assistants filter product choices before customers see them, retailers need to rethink their entire product lineup. Stores that ignore this AI layer lose 2.5% to 11% in revenue, but a simpler strategy accounting for how AI ranks products cuts those losses to less than 0.5%.
+
+Why it matters: As AI increasingly controls what products appear in online shopping flows, retailers face a new decision problem: optimize for what customers would choose if they saw everything, or optimize for what they'll choose after AI filtering. Getting this wrong directly reduces profits. The research provides a practical framework for the second scenario, which is already the reality in most e-commerce today.
+
+---
+Title: Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics
+Subtitle: Can satellite data predict where deserts will spread in the next few years?
+URL: https://paperplaine.com/papers/desertification-forecasting-in-semi
+Category: Engineering
+Authors: Filipe Moura Da Silva, Cláubio Landney Lima Bandeira
+arXiv ID: 2610.13406
+arXiv URL: https://arxiv.org/abs/2610.13406
+Posted: 2026-10-13
+
+Summary: Using a deep learning system trained on 23 years of satellite imagery, researchers found they can predict large-scale desertification trends in Brazil's semi-arid northeast region up to six years ahead, but cannot reliably forecast degradation in specific locations. The model beats simple baseline predictions by 4.4% at the four-year mark, yet still captures only about half the regional drift, revealing hard limits on what satellite observations alone can tell us about land degradation.
+
+Why it matters: Desertification forecasts help governments plan water and agriculture policy years in advance. This work shows satellite data works for regional planning—telling officials the overall trend is worsening—but not for deciding which specific farms or villages will be hit hardest. Understanding this boundary lets policymakers use the tool appropriately rather than overestimating what it can predict.
 
 ---
 Title: Task Context Shapes Component Roles in Language Models

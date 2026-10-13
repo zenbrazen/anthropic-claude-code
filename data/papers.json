@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.13778",
+    "title": "ReplaySSM: Cache SSM Inputs, Not State",
+    "authors": "Ze-Wei Liou, Harris Nover, Amey Naik et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-09T15:59:40Z",
+    "publishedFormatted": "Oct 9, 2026",
+    "subtitle": "Making AI language models faster by storing inputs instead of state",
+    "summary": "State-space models slow down when they constantly read and write their internal memory during text generation. ReplaySSM speeds this up by storing recent inputs and updating memory less often, roughly halving the memory traffic that bottlenecks these systems. On real serving hardware, the method achieves 1.2–1.47× speedup and handles speculative decoding nearly twice as efficiently as current systems.",
+    "whyItMatters": "Language model inference—the process of generating text—is expensive and speed-critical for real-time applications. A 1.2–1.47× speedup means AI services can serve more users with the same hardware, cutting compute costs and latency. The method also improves accuracy by using different precision levels for computation versus memory updates, reducing numerical errors that accumulate during generation.",
+    "fetchedAt": "2026-10-13T23:10:06.413Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 209
+    },
+    "slug": "replayssm-cache-ssm-inputs"
+  },
+  {
+    "id": "2610.12917",
+    "title": "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization",
+    "authors": "Omar El Housni, Marouane Ibn Brahim",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-10-09T03:06:18Z",
+    "publishedFormatted": "Oct 9, 2026",
+    "subtitle": "How AI shopping recommendations change which products stores should stock",
+    "summary": "When AI assistants filter product choices before customers see them, retailers need to rethink their entire product lineup. Stores that ignore this AI layer lose 2.5% to 11% in revenue, but a simpler strategy accounting for how AI ranks products cuts those losses to less than 0.5%.",
+    "whyItMatters": "As AI increasingly controls what products appear in online shopping flows, retailers face a new decision problem: optimize for what customers would choose if they saw everything, or optimize for what they'll choose after AI filtering. Getting this wrong directly reduces profits. The research provides a practical framework for the second scenario, which is already the reality in most e-commerce today.",
+    "fetchedAt": "2026-10-13T23:10:09.558Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 188
+    },
+    "slug": "ai-mediation-in-retail"
+  },
+  {
+    "id": "2610.13406",
+    "title": "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics",
+    "authors": "Filipe Moura Da Silva, Cláubio Landney Lima Bandeira",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-10-09T11:20:07Z",
+    "publishedFormatted": "Oct 9, 2026",
+    "subtitle": "Can satellite data predict where deserts will spread in the next few years?",
+    "summary": "Using a deep learning system trained on 23 years of satellite imagery, researchers found they can predict large-scale desertification trends in Brazil's semi-arid northeast region up to six years ahead, but cannot reliably forecast degradation in specific locations. The model beats simple baseline predictions by 4.4% at the four-year mark, yet still captures only about half the regional drift, revealing hard limits on what satellite observations alone can tell us about land degradation.",
+    "whyItMatters": "Desertification forecasts help governments plan water and agriculture policy years in advance. This work shows satellite data works for regional planning—telling officials the overall trend is worsening—but not for deciding which specific farms or villages will be hit hardest. Understanding this boundary lets policymakers use the tool appropriately rather than overestimating what it can predict.",
+    "fetchedAt": "2026-10-13T23:10:13.068Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 277
+    },
+    "slug": "desertification-forecasting-in-semi"
+  },
+  {
     "id": "2610.13895",
     "title": "Task Context Shapes Component Roles in Language Models",
     "authors": "Sovesh Mohapatra, Dani S Bassett",

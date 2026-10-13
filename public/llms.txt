@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 962 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 965 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 330 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 331 papers in archive.
+  - "ReplaySSM: Cache SSM Inputs, Not State"
   - "Task Context Shapes Component Roles in Language Models"
-  - "Your Discrete Graph Diffusion Model is Secretly Memorizing"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 79 papers in archive.
   - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
   - "Protecting CPU AI On Edge TEEs: WebAssembly's Promise and Practical Challenges"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 83 papers in archive.
   - "Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks"
   - "Prediction-Powered Data Fusion for Treatment Effect Estimation"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 76 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 77 papers in archive.
+  - "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics"
   - "Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography"
-  - "Skeleton-Guided Progressive Test-Time Adaptation for Thin Curvilinear Structures"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 68 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 69 papers in archive.
+  - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
   - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
-  - "From a Hierarchy of Stochastic Differential Equations to a Hierarchy of Generalized Beta Distributions"
 
 ## 10 most recent papers
+
+### ReplaySSM: Cache SSM Inputs, Not State
+- URL: https://paperplaine.com/papers/replayssm-cache-ssm-inputs
+- Category: Computer Science · AI
+- Authors: Ze-Wei Liou, Harris Nover, Amey Naik et al.
+- arXiv: 2610.13778
+- Plain-English subtitle: Making AI language models faster by storing inputs instead of state
+- Summary: State-space models slow down when they constantly read and write their internal memory during text generation. ReplaySSM speeds this up by storing recent inputs and updating memory less often, roughly halving the memory traffic that bottlenecks these systems. On real serving hardware, the method achieves 1.2–1.47× speedup and handles speculative decoding nearly twice as efficiently as current systems.
+- Why it matters: Language model inference—the process of generating text—is expensive and speed-critical for real-time applications. A 1.2–1.47× speedup means AI services can serve more users with the same hardware, cutting compute costs and latency. The method also improves accuracy by using different precision levels for computation versus memory updates, reducing numerical errors that accumulate during generation.
+
+### AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization
+- URL: https://paperplaine.com/papers/ai-mediation-in-retail
+- Category: Economics
+- Authors: Omar El Housni, Marouane Ibn Brahim
+- arXiv: 2610.12917
+- Plain-English subtitle: How AI shopping recommendations change which products stores should stock
+- Summary: When AI assistants filter product choices before customers see them, retailers need to rethink their entire product lineup. Stores that ignore this AI layer lose 2.5% to 11% in revenue, but a simpler strategy accounting for how AI ranks products cuts those losses to less than 0.5%.
+- Why it matters: As AI increasingly controls what products appear in online shopping flows, retailers face a new decision problem: optimize for what customers would choose if they saw everything, or optimize for what they'll choose after AI filtering. Getting this wrong directly reduces profits. The research provides a practical framework for the second scenario, which is already the reality in most e-commerce today.
+
+### Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics
+- URL: https://paperplaine.com/papers/desertification-forecasting-in-semi
+- Category: Engineering
+- Authors: Filipe Moura Da Silva, Cláubio Landney Lima Bandeira
+- arXiv: 2610.13406
+- Plain-English subtitle: Can satellite data predict where deserts will spread in the next few years?
+- Summary: Using a deep learning system trained on 23 years of satellite imagery, researchers found they can predict large-scale desertification trends in Brazil's semi-arid northeast region up to six years ahead, but cannot reliably forecast degradation in specific locations. The model beats simple baseline predictions by 4.4% at the four-year mark, yet still captures only about half the regional drift, revealing hard limits on what satellite observations alone can tell us about land degradation.
+- Why it matters: Desertification forecasts help governments plan water and agriculture policy years in advance. This work shows satellite data works for regional planning—telling officials the overall trend is worsening—but not for deciding which specific farms or villages will be hit hardest. Understanding this boundary lets policymakers use the tool appropriately rather than overestimating what it can predict.
 
 ### Task Context Shapes Component Roles in Language Models
 - URL: https://paperplaine.com/papers/task-context-shapes-component
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Training neural networks to be confident only when they're actually right
 - Summary: Neural networks often make confident predictions that turn out to be wrong — a problem called miscalibration. Researchers showed that you can fix this during training itself rather than afterward, by treating calibration and accuracy as linked goals solved together. The method works as well as existing techniques but requires no extra dataset, no extra parameters, and runs faster.
 - Why it matters: Miscalibrated networks are dangerous in high-stakes settings like medical diagnosis or self-driving cars, where you need to know how much to trust a prediction. Most existing fixes require training a model twice and managing extra components — overhead that multiplies in systems handling many tasks at once. This approach collapses that overhead while giving doctors, engineers, and other users reliable signals about when a model's answer is actually trustworthy.
-
-### LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC
-- URL: https://paperplaine.com/papers/lewam-a-jepa-world
-- Category: Computer Science · AI
-- Authors: Shashank Hegde, Alexander Popov, Elie Aljalbout et al.
-- arXiv: 2610.12407
-- Plain-English subtitle: A simpler neural model that plans robot actions by understanding what matters
-- Summary: Researchers built LeWAM, a neural network that learns to predict robot movements and future scenes without storing redundant visual details. The model balances three competing goals—understanding the scene, predicting what happens next, and deciding what to do—in a single clean representation, and it plans as effectively as specialized policy networks while also serving as a world model.
-- Why it matters: Robots need to plan actions quickly with incomplete information. LeWAM reduces the computational overhead of separate models for prediction and control, potentially speeding up decision-making on resource-constrained robots. The cleaner latent representation also makes the model's reasoning more interpretable, so engineers can debug when predictions go wrong.
-
-### Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation
-- URL: https://paperplaine.com/papers/quantum-co-design-of
-- Category: Physics
-- Authors: Zoha Laraib, Sherwood Richers, Alessandro Baroni et al.
-- arXiv: 2610.12334
-- Plain-English subtitle: Using quantum computers to simulate how neutrinos change inside dying stars
-- Summary: Physicists created a quantum simulation that tracks how neutrinos swap identities in the extreme densities of supernovae and neutron stars—a calculation too complex for regular computers. The simulation works for up to 30 neutrinos on current quantum hardware, though noise still limits accuracy, and would need about 70 trillion quantum operations to run reliably on future fault-tolerant machines.
-- Why it matters: Understanding neutrino behavior in stellar explosions is crucial for predicting supernova dynamics and nucleosynthesis, but the quantum interactions involved are impossible to solve with classical computers. This work shows that quantum computers could eventually simulate these physics accurately enough to improve models of how elements are forged in dying stars—but only after quantum hardware becomes vastly more reliable than today's machines.
-
-### Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity
-- URL: https://paperplaine.com/papers/risk-ceilings-and-development
-- Category: Economics
-- Authors: Li Gan
-- arXiv: 2610.11093
-- Plain-English subtitle: Can regulators promise both safety limits and delivery dates for AI?
-- Summary: A regulator trying to guarantee both a maximum risk level and a completion deadline faces a fundamental problem: they need to know how fast safety research will improve, but don't. The paper shows that one approach—doing safety research first, then building the model with extra computing power reserved for safety—gets close to the theoretical minimum needed to keep both promises, requiring only 3.3% more efficiency than mathematically necessary.
-- Why it matters: AI regulation increasingly demands concrete safety guarantees and timelines. This work clarifies what regulators actually need to know to make good on both promises, and shows that some strategies are far more wasteful than others. If regulators instead just cap how much computing power goes to safety, they'll control timelines but won't reliably hit safety targets—a distinction that matters for real oversight rules.
 
 ## About
 
