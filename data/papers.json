@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.18856",
+    "title": "Exact Topological Compliance: Generating Persistence-Equivalent Graphs",
+    "authors": "Mattie Ji, Indradyumna Roy, Vikas Garg",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-13T17:59:19Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "Building graphs that match a precise topological fingerprint exactly",
+    "summary": "Researchers developed methods to generate graphs whose topological structure matches a target specification perfectly, rather than approximately. Unlike existing approaches that use soft constraints and hope for close-enough results, these new methods guarantee an exact match by treating the problem as a constraint satisfaction puzzle that can be solved algorithmically.",
+    "whyItMatters": "Graph generation is central to drug discovery, materials science, and network design. Previous methods could only approximate the desired topological properties, which means researchers couldn't reliably control what structures emerge from their generative models. These exact-compliance methods let scientists specify a precise topological requirement and know that every graph produced will satisfy it—making generative models trustworthy for applications where topology matters.",
+    "fetchedAt": "2026-10-14T21:59:51.861Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 187
+    },
+    "slug": "exact-topological-compliance-generating"
+  },
+  {
+    "id": "2610.18585",
+    "title": "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities",
+    "authors": "José Afonso, João Madeira Pereira, Ronghao Ni et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-13T15:47:08Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "A constantly updated catalog of real JavaScript security flaws for testing defenses",
+    "summary": "Researchers created X.js, a live benchmark of 1,159 real vulnerabilities in Node.js packages collected through mid-2026, each paired with working exploits and patched versions. The dataset reveals that vulnerable packages have grown dramatically larger over time—from around 250 lines of code in 2021–2022 to 6,100 lines by 2026—making security problems harder to spot and fix.",
+    "whyItMatters": "Security researchers and tool developers need current, real-world vulnerabilities to test whether their detection and defense systems actually work. Previous datasets stopped in 2022, leaving a four-year gap; X.js stays current and includes automated infrastructure to add newly discovered flaws. Larger, more complex vulnerable packages mean attackers have more hiding places and defenders need better tools—having a constantly refreshed test suite lets the security community measure whether their solutions keep up.",
+    "fetchedAt": "2026-10-14T21:59:55.263Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 21,
+      "wordCount": 196
+    },
+    "slug": "x-js-a-live"
+  },
+  {
+    "id": "2610.18740",
+    "title": "Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons",
+    "authors": "Jonathan Cremer",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-13T17:09:57Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "Finding the exact minimum comparisons needed to sort small lists",
+    "summary": "Researchers determined that finding the 7th smallest element among 16 items requires exactly 28 comparisons in the worst case—better than the previous best-known result of 30. Using computer search and formal verification, they also improved bounds for related problems with 16 and 17 elements, pinpointing the precise efficiency limits of comparison-based selection algorithms.",
+    "whyItMatters": "Comparison counts determine how fast sorting and selection algorithms run on real data. These exact bounds provide a performance ceiling that algorithm designers and hardware engineers use as a benchmark; knowing the absolute minimum proves whether current methods are truly optimal or leave room for improvement. The formal verification methods developed here provide a template for settling other open questions in algorithm theory.",
+    "fetchedAt": "2026-10-14T21:59:58.114Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 185
+    },
+    "slug": "selecting-the-7th-smallest"
+  },
+  {
     "id": "2610.18820",
     "title": "Read the Room Before Your Model Generates",
     "authors": "Muyao Kong, Zhihao Lin",

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 968 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 971 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 332 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 333 papers in archive.
+  - "Exact Topological Compliance: Generating Persistence-Equivalent Graphs"
   - "Read the Room Before Your Model Generates"
-  - "ReplaySSM: Cache SSM Inputs, Not State"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 79 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 80 papers in archive.
+  - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
   - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
-  - "Protecting CPU AI On Edge TEEs: WebAssembly's Promise and Practical Challenges"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 81 papers in archive.
   - "Collective Benefits and Efficiency in Coupled Echo State Networks"
   - "Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 81 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 82 papers in archive.
+  - "Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons"
   - "Counting with Hiccup Sequences"
-  - "Composite Online-to-Nonconvex Conversion with Optimal Oracle Complexity"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 82 papers in archive.
   - "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness"
   - "Learning infinite context windows in recurrent architectures via spatial neural computing"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
 
 ## 10 most recent papers
+
+### Exact Topological Compliance: Generating Persistence-Equivalent Graphs
+- URL: https://paperplaine.com/papers/exact-topological-compliance-generating
+- Category: Computer Science · AI
+- Authors: Mattie Ji, Indradyumna Roy, Vikas Garg
+- arXiv: 2610.18856
+- Plain-English subtitle: Building graphs that match a precise topological fingerprint exactly
+- Summary: Researchers developed methods to generate graphs whose topological structure matches a target specification perfectly, rather than approximately. Unlike existing approaches that use soft constraints and hope for close-enough results, these new methods guarantee an exact match by treating the problem as a constraint satisfaction puzzle that can be solved algorithmically.
+- Why it matters: Graph generation is central to drug discovery, materials science, and network design. Previous methods could only approximate the desired topological properties, which means researchers couldn't reliably control what structures emerge from their generative models. These exact-compliance methods let scientists specify a precise topological requirement and know that every graph produced will satisfy it—making generative models trustworthy for applications where topology matters.
+
+### X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities
+- URL: https://paperplaine.com/papers/x-js-a-live
+- Category: Computer Science
+- Authors: José Afonso, João Madeira Pereira, Ronghao Ni et al.
+- arXiv: 2610.18585
+- Plain-English subtitle: A constantly updated catalog of real JavaScript security flaws for testing defenses
+- Summary: Researchers created X.js, a live benchmark of 1,159 real vulnerabilities in Node.js packages collected through mid-2026, each paired with working exploits and patched versions. The dataset reveals that vulnerable packages have grown dramatically larger over time—from around 250 lines of code in 2021–2022 to 6,100 lines by 2026—making security problems harder to spot and fix.
+- Why it matters: Security researchers and tool developers need current, real-world vulnerabilities to test whether their detection and defense systems actually work. Previous datasets stopped in 2022, leaving a four-year gap; X.js stays current and includes automated infrastructure to add newly discovered flaws. Larger, more complex vulnerable packages mean attackers have more hiding places and defenders need better tools—having a constantly refreshed test suite lets the security community measure whether their solutions keep up.
+
+### Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons
+- URL: https://paperplaine.com/papers/selecting-the-7th-smallest
+- Category: Mathematics
+- Authors: Jonathan Cremer
+- arXiv: 2610.18740
+- Plain-English subtitle: Finding the exact minimum comparisons needed to sort small lists
+- Summary: Researchers determined that finding the 7th smallest element among 16 items requires exactly 28 comparisons in the worst case—better than the previous best-known result of 30. Using computer search and formal verification, they also improved bounds for related problems with 16 and 17 elements, pinpointing the precise efficiency limits of comparison-based selection algorithms.
+- Why it matters: Comparison counts determine how fast sorting and selection algorithms run on real data. These exact bounds provide a performance ceiling that algorithm designers and hardware engineers use as a benchmark; knowing the absolute minimum proves whether current methods are truly optimal or leave room for improvement. The formal verification methods developed here provide a template for settling other open questions in algorithm theory.
 
 ### Read the Room Before Your Model Generates
 - URL: https://paperplaine.com/papers/read-the-room-before
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How language models reuse the same parts for different tasks
 - Summary: Language models reuse the same internal components across different tasks, but researchers discovered these components don't just work the same way each time—they change how they process information depending on context. By editing internal activation states in five large language models, the team showed that the same attention heads can switch which facts they read and how they influence later processing, with prediction accuracy improving by up to 53.6% when accounting for these task-dependent shifts.
 - Why it matters: Understanding how shared components adapt to different tasks reveals how language models achieve efficiency by reusing parts rather than building separate circuits for each job. This insight could help AI researchers design better interventions to change unwanted behaviors—like reducing hallucinations or fixing reasoning errors—without accidentally breaking the model's ability to handle other tasks, making it possible to steer large language models more precisely and reliably.
-
-### Your Discrete Graph Diffusion Model is Secretly Memorizing
-- URL: https://paperplaine.com/papers/your-discrete-graph-diffusion
-- Category: Computer Science · AI
-- Authors: Adarsh Jamadandi, Nicolas Keriven
-- arXiv: 2610.13786
-- Plain-English subtitle: Graph AI models learn to copy training data, hiding the problem until you look closely
-- Summary: Researchers discovered that graph diffusion models—AI systems designed to generate new networks—are secretly memorizing their training data. The memorization only becomes visible when you feed corrupted training graphs back into the model; standard tests miss it entirely. The model recovers training graphs nearly perfectly while performing much worse on new graphs it hasn't seen, and this problem worsens over training time regardless of when you stop.
-- Why it matters: Graph diffusion models are used to generate synthetic networks in drug discovery, social networks, and recommendation systems. If they're memorizing training data without obvious signs, they could leak sensitive information from real networks (like patient relationships in medical data) while appearing to generate novel graphs. This finding means current checks for whether these models actually learn general patterns are insufficient, and developers need better ways to spot hidden memorization before deploying them on confidential data.
-
-### Counting with Hiccup Sequences
-- URL: https://paperplaine.com/papers/counting-with-hiccup-sequences
-- Category: Mathematics
-- Authors: Benoit Cloitre
-- arXiv: 2610.13908
-- Plain-English subtitle: A simple counting rule reveals hidden patterns in sequences of numbers
-- Summary: A hiccup sequence follows a straightforward rule: start at a number and keep adding 1 or 2 depending on whether you've seen your current position before. Mathematicians proved that this simple rule produces remarkably orderly patterns—the missing numbers always have gaps that follow a predictable sequence, and these gaps connect to well-studied shapes in mathematics like polygonal numbers.
-- Why it matters: This work shows how simple iterative rules can generate hidden structure. The patterns discovered here appear across multiple areas of mathematics—from counting polyominoes (puzzle pieces) to Ramsey theory (how unavoidable patterns emerge in large systems)—suggesting that hiccup sequences may be a fundamental tool for understanding when and why order emerges from simple repetition.
-
-### DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness
-- URL: https://paperplaine.com/papers/dyssomniann-multi-scale-spiking
-- Category: Quantitative Biology
-- Authors: Daniel Szelogowski
-- arXiv: 2610.13918
-- Plain-English subtitle: Why feeling rested has little to do with how long you actually slept
-- Summary: A computer model of the sleeping brain reveals why some people sleep a normal amount but feel exhausted, while others with severe sleep fragmentation might feel better rested. The model mimics five different sleep conditions—from healthy sleep to narcolepsy and paradoxical insomnia—and shows that sleep quality depends on brain activity patterns, not duration alone: one patient slept over 21 hours but felt only 38% restored because of unwanted brain waves during sleep, while another had 13 hours of nighttime waking yet experienced different restoration patterns.
-- Why it matters: Sleep doctors often can't explain why patients complain of exhaustion despite normal sleep duration on overnight tests. This model identifies the hidden brain mechanisms causing that mismatch, opening a path to diagnose sleep disorders more accurately and test new treatments in simulation before prescribing them to patients. It could help clinicians distinguish between disorders that look similar on standard sleep tests but require different treatments.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 12:39:24 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 21:59:58 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Exact Topological Compliance: Generating Persistence-Equivalent Graphs</title>
+      <link>https://paperplaine.com/papers/exact-topological-compliance-generating</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/exact-topological-compliance-generating</guid>
+      <pubDate>Tue, 13 Oct 2026 17:59:19 GMT</pubDate>
+      <author>Mattie Ji, Indradyumna Roy, Vikas Garg</author>
+      <category>AI</category>
+      <description>Building graphs that match a precise topological fingerprint exactly</description>
+      <content:encoded><![CDATA[<p><em>Building graphs that match a precise topological fingerprint exactly</em></p><p>Researchers developed methods to generate graphs whose topological structure matches a target specification perfectly, rather than approximately. Unlike existing approaches that use soft constraints and hope for close-enough results, these new methods guarantee an exact match by treating the problem as a constraint satisfaction puzzle that can be solved algorithmically.</p><p><strong>Why it matters:</strong> Graph generation is central to drug discovery, materials science, and network design. Previous methods could only approximate the desired topological properties, which means researchers couldn't reliably control what structures emerge from their generative models. These exact-compliance methods let scientists specify a precise topological requirement and know that every graph produced will satisfy it—making generative models trustworthy for applications where topology matters.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities</title>
+      <link>https://paperplaine.com/papers/x-js-a-live</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/x-js-a-live</guid>
+      <pubDate>Tue, 13 Oct 2026 15:47:08 GMT</pubDate>
+      <author>José Afonso, João Madeira Pereira, Ronghao Ni et al.</author>
+      <category>Comp Sci</category>
+      <description>A constantly updated catalog of real JavaScript security flaws for testing defenses</description>
+      <content:encoded><![CDATA[<p><em>A constantly updated catalog of real JavaScript security flaws for testing defenses</em></p><p>Researchers created X.js, a live benchmark of 1,159 real vulnerabilities in Node.js packages collected through mid-2026, each paired with working exploits and patched versions. The dataset reveals that vulnerable packages have grown dramatically larger over time—from around 250 lines of code in 2021–2022 to 6,100 lines by 2026—making security problems harder to spot and fix.</p><p><strong>Why it matters:</strong> Security researchers and tool developers need current, real-world vulnerabilities to test whether their detection and defense systems actually work. Previous datasets stopped in 2022, leaving a four-year gap; X.js stays current and includes automated infrastructure to add newly discovered flaws. Larger, more complex vulnerable packages mean attackers have more hiding places and defenders need better tools—having a constantly refreshed test suite lets the security community measure whether their solutions keep up.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons</title>
+      <link>https://paperplaine.com/papers/selecting-the-7th-smallest</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/selecting-the-7th-smallest</guid>
+      <pubDate>Tue, 13 Oct 2026 17:09:57 GMT</pubDate>
+      <author>Jonathan Cremer</author>
+      <category>Math</category>
+      <description>Finding the exact minimum comparisons needed to sort small lists</description>
+      <content:encoded><![CDATA[<p><em>Finding the exact minimum comparisons needed to sort small lists</em></p><p>Researchers determined that finding the 7th smallest element among 16 items requires exactly 28 comparisons in the worst case—better than the previous best-known result of 30. Using computer search and formal verification, they also improved bounds for related problems with 16 and 17 elements, pinpointing the precise efficiency limits of comparison-based selection algorithms.</p><p><strong>Why it matters:</strong> Comparison counts determine how fast sorting and selection algorithms run on real data. These exact bounds provide a performance ceiling that algorithm designers and hardware engineers use as a benchmark; knowing the absolute minimum proves whether current methods are truly optimal or leave room for improvement. The formal verification methods developed here provide a template for settling other open questions in algorithm theory.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Read the Room Before Your Model Generates</title>
       <link>https://paperplaine.com/papers/read-the-room-before</link>
