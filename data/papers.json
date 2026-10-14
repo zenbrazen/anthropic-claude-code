@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.18820",
+    "title": "Read the Room Before Your Model Generates",
+    "authors": "Muyao Kong, Zhihao Lin",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-13T17:51:18Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "AI models that adjust their creativity based on what the conversation needs",
+    "summary": "Large language models typically use a single fixed setting to control how random or predictable their outputs are, but a new framework called Scenario-Actor instead reads the social context of a conversation and adjusts this setting accordingly. Tests on an 8-billion-parameter model show it performs better at completing goals in social interactions, following open-ended instructions, and maintaining multi-turn conversations compared to existing methods.",
+    "whyItMatters": "Current AI assistants often sound the same whether they're helping you brainstorm creative ideas or answering factual questions—both situations call for different levels of unpredictability. By tuning this setting to match what's actually happening in a conversation, AI responses could become more useful and natural without requiring users to manually fiddle with settings themselves.",
+    "fetchedAt": "2026-10-14T12:39:17.362Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 17,
+      "wordCount": 120
+    },
+    "slug": "read-the-room-before"
+  },
+  {
+    "id": "2610.18658",
+    "title": "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling",
+    "authors": "Mengyu Li, Qianqian Qu, Jun S. Liu",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-13T16:20:49Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "Reusing pretrained AI models to generate images that match specific conditions without retraining",
+    "summary": "Researchers developed BridgeTwist, a method that lets pretrained generative models solve new conditional tasks—like generating images from text or fixing blurry photos—without any retraining. The technique works by combining information already embedded in the model with a task-specific goal, then gradually refining samples through a statistically principled process that becomes exact as it runs longer.",
+    "whyItMatters": "Most generative models require expensive retraining for each new task. BridgeTwist eliminates that cost by reusing existing pretrained models, making conditional image generation faster and cheaper while matching or beating specialized methods built just for those tasks. This could let researchers and practitioners adapt AI models to new problems on demand without computational overhead.",
+    "fetchedAt": "2026-10-14T12:39:20.412Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 206
+    },
+    "slug": "bridgetwist-twisting-schrodinger-bridges"
+  },
+  {
+    "id": "2610.17506",
+    "title": "Collective Benefits and Efficiency in Coupled Echo State Networks",
+    "authors": "Polyphony Bruna, Rick Dale, Michael J. Spivey et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-10-13T00:07:23Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "How talking to each other makes groups smarter than working alone",
+    "summary": "Two artificial neural networks working together and sharing feedback outperformed the same networks operating independently or simply combining their answers—reproducing a known human advantage called the dyadic benefit. The interaction itself prevented the models from drifting into errors, while smaller interacting networks were more efficient than larger independent ones using the same total computing power.",
+    "whyItMatters": "This explains why teams that genuinely collaborate often beat collections of individuals with similar expertise, and shows that the benefit comes from real-time interaction, not just pooling opinions afterward. Understanding this mechanically could improve how we design group decision-making systems, from medical diagnostics to emergency response teams, by revealing when coordination tools will actually help rather than hurt.",
+    "fetchedAt": "2026-10-14T12:39:23.447Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 174
+    },
+    "slug": "collective-benefits-and-efficiency"
+  },
+  {
     "id": "2610.13778",
     "title": "ReplaySSM: Cache SSM Inputs, Not State",
     "authors": "Ze-Wei Liou, Harris Nover, Amey Naik et al.",

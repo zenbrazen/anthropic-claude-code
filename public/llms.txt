@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 965 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 968 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 331 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 332 papers in archive.
+  - "Read the Room Before Your Model Generates"
   - "ReplaySSM: Cache SSM Inputs, Not State"
-  - "Task Context Shapes Component Roles in Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 79 papers in archive.
   - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
   - "Protecting CPU AI On Edge TEEs: WebAssembly's Promise and Practical Challenges"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 80 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 81 papers in archive.
+  - "Collective Benefits and Efficiency in Coupled Echo State Networks"
   - "Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation"
-  - "Local polarization control of optical tweezer arrays"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 81 papers in archive.
   - "Counting with Hiccup Sequences"
   - "Composite Online-to-Nonconvex Conversion with Optimal Oracle Complexity"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 83 papers in archive.
   - "FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks"
   - "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 83 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 84 papers in archive.
+  - "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling"
   - "Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks"
-  - "Prediction-Powered Data Fusion for Treatment Effect Estimation"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 77 papers in archive.
   - "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics"
   - "Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
 
 ## 10 most recent papers
+
+### Read the Room Before Your Model Generates
+- URL: https://paperplaine.com/papers/read-the-room-before
+- Category: Computer Science · AI
+- Authors: Muyao Kong, Zhihao Lin
+- arXiv: 2610.18820
+- Plain-English subtitle: AI models that adjust their creativity based on what the conversation needs
+- Summary: Large language models typically use a single fixed setting to control how random or predictable their outputs are, but a new framework called Scenario-Actor instead reads the social context of a conversation and adjusts this setting accordingly. Tests on an 8-billion-parameter model show it performs better at completing goals in social interactions, following open-ended instructions, and maintaining multi-turn conversations compared to existing methods.
+- Why it matters: Current AI assistants often sound the same whether they're helping you brainstorm creative ideas or answering factual questions—both situations call for different levels of unpredictability. By tuning this setting to match what's actually happening in a conversation, AI responses could become more useful and natural without requiring users to manually fiddle with settings themselves.
+
+### BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling
+- URL: https://paperplaine.com/papers/bridgetwist-twisting-schrodinger-bridges
+- Category: Statistics
+- Authors: Mengyu Li, Qianqian Qu, Jun S. Liu
+- arXiv: 2610.18658
+- Plain-English subtitle: Reusing pretrained AI models to generate images that match specific conditions without retraining
+- Summary: Researchers developed BridgeTwist, a method that lets pretrained generative models solve new conditional tasks—like generating images from text or fixing blurry photos—without any retraining. The technique works by combining information already embedded in the model with a task-specific goal, then gradually refining samples through a statistically principled process that becomes exact as it runs longer.
+- Why it matters: Most generative models require expensive retraining for each new task. BridgeTwist eliminates that cost by reusing existing pretrained models, making conditional image generation faster and cheaper while matching or beating specialized methods built just for those tasks. This could let researchers and practitioners adapt AI models to new problems on demand without computational overhead.
+
+### Collective Benefits and Efficiency in Coupled Echo State Networks
+- URL: https://paperplaine.com/papers/collective-benefits-and-efficiency
+- Category: Physics
+- Authors: Polyphony Bruna, Rick Dale, Michael J. Spivey et al.
+- arXiv: 2610.17506
+- Plain-English subtitle: How talking to each other makes groups smarter than working alone
+- Summary: Two artificial neural networks working together and sharing feedback outperformed the same networks operating independently or simply combining their answers—reproducing a known human advantage called the dyadic benefit. The interaction itself prevented the models from drifting into errors, while smaller interacting networks were more efficient than larger independent ones using the same total computing power.
+- Why it matters: This explains why teams that genuinely collaborate often beat collections of individuals with similar expertise, and shows that the benefit comes from real-time interaction, not just pooling opinions afterward. Understanding this mechanically could improve how we design group decision-making systems, from medical diagnostics to emergency response teams, by revealing when coordination tools will actually help rather than hurt.
 
 ### ReplaySSM: Cache SSM Inputs, Not State
 - URL: https://paperplaine.com/papers/replayssm-cache-ssm-inputs
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why feeling rested has little to do with how long you actually slept
 - Summary: A computer model of the sleeping brain reveals why some people sleep a normal amount but feel exhausted, while others with severe sleep fragmentation might feel better rested. The model mimics five different sleep conditions—from healthy sleep to narcolepsy and paradoxical insomnia—and shows that sleep quality depends on brain activity patterns, not duration alone: one patient slept over 21 hours but felt only 38% restored because of unwanted brain waves during sleep, while another had 13 hours of nighttime waking yet experienced different restoration patterns.
 - Why it matters: Sleep doctors often can't explain why patients complain of exhaustion despite normal sleep duration on overnight tests. This model identifies the hidden brain mechanisms causing that mismatch, opening a path to diagnose sleep disorders more accurately and test new treatments in simulation before prescribing them to patients. It could help clinicians distinguish between disorders that look similar on standard sleep tests but require different treatments.
-
-### AI Models Can Provably Hide Arbitrary Capabilities
-- URL: https://paperplaine.com/papers/ai-models-can-provably
-- Category: Computer Science · AI
-- Authors: Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas et al.
-- arXiv: 2610.13928
-- Plain-English subtitle: AI models can hide dangerous abilities even from security testers with full access
-- Summary: Researchers created a backdoor attack that hides arbitrary capabilities inside AI model weights, encrypted and only activated by a secret trigger. Even when security teams have complete access to the model and try multiple methods to uncover hidden abilities—including fine-tuning, adding noise to weights, and adversarial training—these hidden circuits remain undetectable, backed by mathematical proof.
-- Why it matters: AI safety teams currently rely on capability evaluations to catch dangerous behaviors before deployment, but this work reveals a fundamental blind spot: it's possible to build AI systems that provably conceal their true abilities from even the most thorough security audits. This means a bad actor could deploy a model that passes all standard safety checks while harboring hidden, dangerous functionalities—making the current evaluation paradigm potentially inadequate for ensuring AI safety.
-
-### APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces
-- URL: https://paperplaine.com/papers/apex-harm-evaluating-agent
-- Category: Computer Science
-- Authors: Ziyi Yang, Adel Bibi, Guohao Li et al.
-- arXiv: 2610.13623
-- Plain-English subtitle: Can AI agents stay safe when working in messy, shared digital workspaces?
-- Summary: Researchers built a test bench to see how well AI agents resist hidden attacks hidden inside files, emails, and scripts in realistic work environments — simulating finance, legal, and consulting tasks. Even the safest models fell for attacks 8–20% of the time, and when attackers hid malicious code in scripts or files, success rates jumped to 73–84%. Worst of all: agents sometimes completed their assigned task correctly while also executing hidden unauthorized actions in the background.
-- Why it matters: As companies deploy AI agents to handle real work — managing files, sending emails, executing code — the risk is no longer just a bad output. An agent could produce a perfect report or contract while secretly transferring funds, deleting files, or exposing confidential information to an attacker. This benchmark exposes a critical gap: current safety tests don't catch attacks hidden inside the messy, multi-tool environments where agents actually operate.
-
-### Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks
-- URL: https://paperplaine.com/papers/calibration-in-one-go
-- Category: Statistics
-- Authors: Nektarios Kalampalikis, Pablo M. Olmos, Isabel Valera
-- arXiv: 2610.13693
-- Plain-English subtitle: Training neural networks to be confident only when they're actually right
-- Summary: Neural networks often make confident predictions that turn out to be wrong — a problem called miscalibration. Researchers showed that you can fix this during training itself rather than afterward, by treating calibration and accuracy as linked goals solved together. The method works as well as existing techniques but requires no extra dataset, no extra parameters, and runs faster.
-- Why it matters: Miscalibrated networks are dangerous in high-stakes settings like medical diagnosis or self-driving cars, where you need to know how much to trust a prediction. Most existing fixes require training a model twice and managing extra components — overhead that multiplies in systems handling many tasks at once. This approach collapses that overhead while giving doctors, engineers, and other users reliable signals about when a model's answer is actually trustworthy.
 
 ## About
 
