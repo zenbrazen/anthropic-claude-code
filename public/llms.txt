@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 971 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 974 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 333 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 334 papers in archive.
+  - "Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization"
   - "Exact Topological Compliance: Generating Persistence-Equivalent Graphs"
-  - "Read the Room Before Your Model Generates"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 80 papers in archive.
   - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
   - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 82 papers in archive.
   - "Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons"
   - "Counting with Hiccup Sequences"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 82 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 83 papers in archive.
+  - "Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects"
   - "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness"
-  - "Learning infinite context windows in recurrent architectures via spatial neural computing"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 83 papers in archive.
   - "FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks"
   - "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 84 papers in archive.
   - "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling"
   - "Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 77 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 78 papers in archive.
+  - "DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting"
   - "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics"
-  - "Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 69 papers in archive.
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
   - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
 
 ## 10 most recent papers
+
+### Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization
+- URL: https://paperplaine.com/papers/beyond-llm-judge-mechanical
+- Category: Computer Science · AI
+- Authors: Anna Mei, Michael R. Douglas
+- arXiv: 2610.20573
+- Plain-English subtitle: Catching mistakes in AI-written math proofs that AI judges miss
+- Summary: Researchers created a verification system that catches errors in mathematical proofs automatically translated into formal logic, outperforming methods that rely solely on AI judges. The system combines AI review with mechanical checks—like numerical validation and consistency testing—to identify mistranslations that language models alone overlook, and the team used it to formalize over 300 mathematical functions from the NIST reference library.
+- Why it matters: Automatically translating mathematics into formal logic could accelerate proof verification and reduce human labor, but only if the translations are correct. This method achieves lower error rates than existing approaches, making it possible to automate the creation of reliable mathematical reference libraries that researchers and engineers can trust without manual inspection of every entry.
+
+### DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting
+- URL: https://paperplaine.com/papers/doreme-dual-optimization-of
+- Category: Engineering
+- Authors: Majd Helo, Dominik Nickel, Thomas Kuestner
+- arXiv: 2610.19120
+- Plain-English subtitle: Fixing blurry MRI scans by tracking breath movement during imaging
+- Summary: Researchers developed a new method that reconstructs sharp abdominal MRI images while simultaneously figuring out how the patient's organs moved during breathing. Unlike older approaches that require guess-work about motion beforehand, this method learns the motion and the image together in about 90 seconds, producing clearer pictures—especially of the liver—even when the scan is shortened.
+- Why it matters: Breathing motion is the main reason abdominal MRI scans come out blurry and distorted, forcing radiologists to spend longer acquisition times and sometimes repeat scans. Faster, sharper images mean patients spend less time in the scanner, hospitals can scan more patients, and doctors get clearer pictures to spot disease. The method works without external motion sensors, making it easier to deploy in standard clinical settings.
+
+### Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects
+- URL: https://paperplaine.com/papers/predicting-unseen-scientific-interactions
+- Category: Quantitative Biology
+- Authors: Sam Gijsen, Moritz Seiler, Kerstin Ritter
+- arXiv: 2610.20288
+- Plain-English subtitle: Why AI models fool us by predicting accurate results while missing how drugs actually interact
+- Summary: Machine learning models trained to predict scientific outcomes often appear accurate overall but fail to capture how one intervention changes another's effect—a crucial scientific question. Researchers found that these models tend to invent fake interactions and struggle to predict real ones when moving beyond their training data, even when their overall predictions look correct.
+- Why it matters: This matters for drug development and biology research: a model that says two drugs work well together might be hallucinating that interaction rather than actually understanding it. If scientists rely on these predictions to test new drug combinations or cell treatments, they could waste resources pursuing effects that don't actually exist, or miss real interactions that traditional accuracy metrics hide.
 
 ### Exact Topological Compliance: Generating Persistence-Equivalent Graphs
 - URL: https://paperplaine.com/papers/exact-topological-compliance-generating
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI language models faster by storing inputs instead of state
 - Summary: State-space models slow down when they constantly read and write their internal memory during text generation. ReplaySSM speeds this up by storing recent inputs and updating memory less often, roughly halving the memory traffic that bottlenecks these systems. On real serving hardware, the method achieves 1.2–1.47× speedup and handles speculative decoding nearly twice as efficiently as current systems.
 - Why it matters: Language model inference—the process of generating text—is expensive and speed-critical for real-time applications. A 1.2–1.47× speedup means AI services can serve more users with the same hardware, cutting compute costs and latency. The method also improves accuracy by using different precision levels for computation versus memory updates, reducing numerical errors that accumulate during generation.
-
-### AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization
-- URL: https://paperplaine.com/papers/ai-mediation-in-retail
-- Category: Economics
-- Authors: Omar El Housni, Marouane Ibn Brahim
-- arXiv: 2610.12917
-- Plain-English subtitle: How AI shopping recommendations change which products stores should stock
-- Summary: When AI assistants filter product choices before customers see them, retailers need to rethink their entire product lineup. Stores that ignore this AI layer lose 2.5% to 11% in revenue, but a simpler strategy accounting for how AI ranks products cuts those losses to less than 0.5%.
-- Why it matters: As AI increasingly controls what products appear in online shopping flows, retailers face a new decision problem: optimize for what customers would choose if they saw everything, or optimize for what they'll choose after AI filtering. Getting this wrong directly reduces profits. The research provides a practical framework for the second scenario, which is already the reality in most e-commerce today.
-
-### Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics
-- URL: https://paperplaine.com/papers/desertification-forecasting-in-semi
-- Category: Engineering
-- Authors: Filipe Moura Da Silva, Cláubio Landney Lima Bandeira
-- arXiv: 2610.13406
-- Plain-English subtitle: Can satellite data predict where deserts will spread in the next few years?
-- Summary: Using a deep learning system trained on 23 years of satellite imagery, researchers found they can predict large-scale desertification trends in Brazil's semi-arid northeast region up to six years ahead, but cannot reliably forecast degradation in specific locations. The model beats simple baseline predictions by 4.4% at the four-year mark, yet still captures only about half the regional drift, revealing hard limits on what satellite observations alone can tell us about land degradation.
-- Why it matters: Desertification forecasts help governments plan water and agriculture policy years in advance. This work shows satellite data works for regional planning—telling officials the overall trend is worsening—but not for deciding which specific farms or villages will be hit hardest. Understanding this boundary lets policymakers use the tool appropriately rather than overestimating what it can predict.
-
-### Task Context Shapes Component Roles in Language Models
-- URL: https://paperplaine.com/papers/task-context-shapes-component
-- Category: Computer Science · AI
-- Authors: Sovesh Mohapatra, Dani S Bassett
-- arXiv: 2610.13895
-- Plain-English subtitle: How language models reuse the same parts for different tasks
-- Summary: Language models reuse the same internal components across different tasks, but researchers discovered these components don't just work the same way each time—they change how they process information depending on context. By editing internal activation states in five large language models, the team showed that the same attention heads can switch which facts they read and how they influence later processing, with prediction accuracy improving by up to 53.6% when accounting for these task-dependent shifts.
-- Why it matters: Understanding how shared components adapt to different tasks reveals how language models achieve efficiency by reusing parts rather than building separate circuits for each job. This insight could help AI researchers design better interventions to change unwanted behaviors—like reducing hallucinations or fixing reasoning errors—without accidentally breaking the model's ability to handle other tasks, making it possible to steer large language models more precisely and reliably.
 
 ## About
 

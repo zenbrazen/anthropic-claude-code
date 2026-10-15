@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 971 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-14
+This file contains the complete plain-English text of all 974 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-15
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization
+Subtitle: Catching mistakes in AI-written math proofs that AI judges miss
+URL: https://paperplaine.com/papers/beyond-llm-judge-mechanical
+Category: Computer Science · AI
+Authors: Anna Mei, Michael R. Douglas
+arXiv ID: 2610.20573
+arXiv URL: https://arxiv.org/abs/2610.20573
+Posted: 2026-10-15
+
+Summary: Researchers created a verification system that catches errors in mathematical proofs automatically translated into formal logic, outperforming methods that rely solely on AI judges. The system combines AI review with mechanical checks—like numerical validation and consistency testing—to identify mistranslations that language models alone overlook, and the team used it to formalize over 300 mathematical functions from the NIST reference library.
+
+Why it matters: Automatically translating mathematics into formal logic could accelerate proof verification and reduce human labor, but only if the translations are correct. This method achieves lower error rates than existing approaches, making it possible to automate the creation of reliable mathematical reference libraries that researchers and engineers can trust without manual inspection of every entry.
+
+---
+Title: DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting
+Subtitle: Fixing blurry MRI scans by tracking breath movement during imaging
+URL: https://paperplaine.com/papers/doreme-dual-optimization-of
+Category: Engineering
+Authors: Majd Helo, Dominik Nickel, Thomas Kuestner
+arXiv ID: 2610.19120
+arXiv URL: https://arxiv.org/abs/2610.19120
+Posted: 2026-10-15
+
+Summary: Researchers developed a new method that reconstructs sharp abdominal MRI images while simultaneously figuring out how the patient's organs moved during breathing. Unlike older approaches that require guess-work about motion beforehand, this method learns the motion and the image together in about 90 seconds, producing clearer pictures—especially of the liver—even when the scan is shortened.
+
+Why it matters: Breathing motion is the main reason abdominal MRI scans come out blurry and distorted, forcing radiologists to spend longer acquisition times and sometimes repeat scans. Faster, sharper images mean patients spend less time in the scanner, hospitals can scan more patients, and doctors get clearer pictures to spot disease. The method works without external motion sensors, making it easier to deploy in standard clinical settings.
+
+---
+Title: Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects
+Subtitle: Why AI models fool us by predicting accurate results while missing how drugs actually interact
+URL: https://paperplaine.com/papers/predicting-unseen-scientific-interactions
+Category: Quantitative Biology
+Authors: Sam Gijsen, Moritz Seiler, Kerstin Ritter
+arXiv ID: 2610.20288
+arXiv URL: https://arxiv.org/abs/2610.20288
+Posted: 2026-10-15
+
+Summary: Machine learning models trained to predict scientific outcomes often appear accurate overall but fail to capture how one intervention changes another's effect—a crucial scientific question. Researchers found that these models tend to invent fake interactions and struggle to predict real ones when moving beyond their training data, even when their overall predictions look correct.
+
+Why it matters: This matters for drug development and biology research: a model that says two drugs work well together might be hallucinating that interaction rather than actually understanding it. If scientists rely on these predictions to test new drug combinations or cell treatments, they could waste resources pursuing effects that don't actually exist, or miss real interactions that traditional accuracy metrics hide.
 
 ---
 Title: Exact Topological Compliance: Generating Persistence-Equivalent Graphs

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.20573",
+    "title": "Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization",
+    "authors": "Anna Mei, Michael R. Douglas",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-14T17:54:48Z",
+    "publishedFormatted": "Oct 14, 2026",
+    "subtitle": "Catching mistakes in AI-written math proofs that AI judges miss",
+    "summary": "Researchers created a verification system that catches errors in mathematical proofs automatically translated into formal logic, outperforming methods that rely solely on AI judges. The system combines AI review with mechanical checks—like numerical validation and consistency testing—to identify mistranslations that language models alone overlook, and the team used it to formalize over 300 mathematical functions from the NIST reference library.",
+    "whyItMatters": "Automatically translating mathematics into formal logic could accelerate proof verification and reduce human labor, but only if the translations are correct. This method achieves lower error rates than existing approaches, making it possible to automate the creation of reliable mathematical reference libraries that researchers and engineers can trust without manual inspection of every entry.",
+    "fetchedAt": "2026-10-15T12:27:48.913Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 123
+    },
+    "slug": "beyond-llm-judge-mechanical"
+  },
+  {
+    "id": "2610.19120",
+    "title": "DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting",
+    "authors": "Majd Helo, Dominik Nickel, Thomas Kuestner",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-10-13T19:54:43Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "Fixing blurry MRI scans by tracking breath movement during imaging",
+    "summary": "Researchers developed a new method that reconstructs sharp abdominal MRI images while simultaneously figuring out how the patient's organs moved during breathing. Unlike older approaches that require guess-work about motion beforehand, this method learns the motion and the image together in about 90 seconds, producing clearer pictures—especially of the liver—even when the scan is shortened.",
+    "whyItMatters": "Breathing motion is the main reason abdominal MRI scans come out blurry and distorted, forcing radiologists to spend longer acquisition times and sometimes repeat scans. Faster, sharper images mean patients spend less time in the scanner, hospitals can scan more patients, and doctors get clearer pictures to spot disease. The method works without external motion sensors, making it easier to deploy in standard clinical settings.",
+    "fetchedAt": "2026-10-15T12:27:55.171Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 204
+    },
+    "slug": "doreme-dual-optimization-of"
+  },
+  {
+    "id": "2610.20288",
+    "title": "Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects",
+    "authors": "Sam Gijsen, Moritz Seiler, Kerstin Ritter",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-14T14:42:12Z",
+    "publishedFormatted": "Oct 14, 2026",
+    "subtitle": "Why AI models fool us by predicting accurate results while missing how drugs actually interact",
+    "summary": "Machine learning models trained to predict scientific outcomes often appear accurate overall but fail to capture how one intervention changes another's effect—a crucial scientific question. Researchers found that these models tend to invent fake interactions and struggle to predict real ones when moving beyond their training data, even when their overall predictions look correct.",
+    "whyItMatters": "This matters for drug development and biology research: a model that says two drugs work well together might be hallucinating that interaction rather than actually understanding it. If scientists rely on these predictions to test new drug combinations or cell treatments, they could waste resources pursuing effects that don't actually exist, or miss real interactions that traditional accuracy metrics hide.",
+    "fetchedAt": "2026-10-15T12:27:59.534Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 197
+    },
+    "slug": "predicting-unseen-scientific-interactions"
+  },
+  {
     "id": "2610.18856",
     "title": "Exact Topological Compliance: Generating Persistence-Equivalent Graphs",
     "authors": "Mattie Ji, Indradyumna Roy, Vikas Garg",
