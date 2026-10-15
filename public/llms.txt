@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 974 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 977 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 334 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 335 papers in archive.
+  - "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation"
   - "Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization"
-  - "Exact Topological Compliance: Generating Persistence-Equivalent Graphs"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 80 papers in archive.
   - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
   - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 81 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 82 papers in archive.
+  - "Directed percolation in higher-order social dilemmas"
   - "Collective Benefits and Efficiency in Coupled Echo State Networks"
-  - "Quantum Co-Design of Inhomogeneous Many-Body Neutrino Fast Flavor Transformation"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 82 papers in archive.
   - "Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons"
   - "Counting with Hiccup Sequences"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 83 papers in archive.
   - "Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects"
   - "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 83 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 84 papers in archive.
+  - "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios"
   - "FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks"
-  - "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 84 papers in archive.
   - "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling"
   - "Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
 
 ## 10 most recent papers
+
+### Recovering Reliable Supervision via Critique-Guided On-Policy Distillation
+- URL: https://paperplaine.com/papers/recovering-reliable-supervision-via
+- Category: Computer Science · AI
+- Authors: Kaixiang Zhao, Tianrun Yu, Shangzhe Li et al.
+- arXiv: 2610.20572
+- Plain-English subtitle: Training AI to fix its mistakes by learning from its own corrections
+- Summary: When teaching an AI model to solve problems by learning from its own attempts, a major flaw emerges: the teacher model gets pulled along into the student's mistakes instead of correcting course. Researchers developed CriticOPD, which has the teacher identify where the student went wrong, then watches the student rewrite the solution correctly—and learning from that revision produces measurably better results, especially on hard competition math problems.
+- Why it matters: Most AI systems today struggle with complex reasoning because the feedback they receive during training can't reliably steer them back on track once they start down the wrong path. This method directly addresses that bottleneck by forcing a real correction cycle into the training loop. Better error recovery during training means these models could solve harder problems in the real world without requiring as much human oversight or external correction data.
+
+### MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios
+- URL: https://paperplaine.com/papers/mlp-initialized-reinforcement-learning
+- Category: Quantitative Finance
+- Authors: Jianning Wang, Robert Ślepaczuk, Paweł Sakowski
+- arXiv: 2610.13126
+- Plain-English subtitle: Teaching AI when to close risky stock-market bets for better profits
+- Summary: Researchers used historical trading data to train an artificial intelligence system that decides when to close short-straddle options positions—a bet that a stock index will stay within a narrow price range. The AI system achieved 37.5% returns with a Sharpe ratio of 1.705 over two years, beating simple hold-until-expiration strategies and fixed timing rules by consistently picking better exit moments.
+- Why it matters: Options traders make money or lose it based on split-second timing decisions, and current rules of thumb often leave money on the table. This approach shows that AI trained on historical patterns can systematically improve exit timing, potentially helping portfolio managers reduce losses during volatile markets and lock in gains earlier. For active traders, even small improvements in exit timing compound into substantial differences in annual returns.
+
+### Directed percolation in higher-order social dilemmas
+- URL: https://paperplaine.com/papers/directed-percolation-in-higher
+- Category: Physics
+- Authors: Pablo Villegas, Sandro Meloni
+- arXiv: 2610.18506
+- Plain-English subtitle: How group games create sudden tipping points through simple two-person interactions
+- Summary: Researchers discovered that dramatic phase shifts in multiplayer cooperation games don't actually require group interactions — the same explosive transitions appear in simpler two-person dynamics with short-term memory. By deriving the mathematical equations governing these systems, they showed that three-player games and their pairwise equivalents share identical tipping points, critical thresholds, and the minimum group size needed to trigger sudden behavioral collapse.
+- Why it matters: Understanding what truly drives sudden social tipping points—like rapid shifts in public opinion or cooperation breakdown—matters for predicting when societies are near the edge of major change. This finding simplifies the puzzle: planners and researchers don't need to model complex group interactions to capture these critical moments; tracking simple pairwise connections with memory is enough. That makes forecasting real-world cascades computationally feasible and helps identify which interventions might prevent unwanted social collapse.
 
 ### Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization
 - URL: https://paperplaine.com/papers/beyond-llm-judge-mechanical
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: AI models that adjust their creativity based on what the conversation needs
 - Summary: Large language models typically use a single fixed setting to control how random or predictable their outputs are, but a new framework called Scenario-Actor instead reads the social context of a conversation and adjusts this setting accordingly. Tests on an 8-billion-parameter model show it performs better at completing goals in social interactions, following open-ended instructions, and maintaining multi-turn conversations compared to existing methods.
 - Why it matters: Current AI assistants often sound the same whether they're helping you brainstorm creative ideas or answering factual questions—both situations call for different levels of unpredictability. By tuning this setting to match what's actually happening in a conversation, AI responses could become more useful and natural without requiring users to manually fiddle with settings themselves.
-
-### BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling
-- URL: https://paperplaine.com/papers/bridgetwist-twisting-schrodinger-bridges
-- Category: Statistics
-- Authors: Mengyu Li, Qianqian Qu, Jun S. Liu
-- arXiv: 2610.18658
-- Plain-English subtitle: Reusing pretrained AI models to generate images that match specific conditions without retraining
-- Summary: Researchers developed BridgeTwist, a method that lets pretrained generative models solve new conditional tasks—like generating images from text or fixing blurry photos—without any retraining. The technique works by combining information already embedded in the model with a task-specific goal, then gradually refining samples through a statistically principled process that becomes exact as it runs longer.
-- Why it matters: Most generative models require expensive retraining for each new task. BridgeTwist eliminates that cost by reusing existing pretrained models, making conditional image generation faster and cheaper while matching or beating specialized methods built just for those tasks. This could let researchers and practitioners adapt AI models to new problems on demand without computational overhead.
-
-### Collective Benefits and Efficiency in Coupled Echo State Networks
-- URL: https://paperplaine.com/papers/collective-benefits-and-efficiency
-- Category: Physics
-- Authors: Polyphony Bruna, Rick Dale, Michael J. Spivey et al.
-- arXiv: 2610.17506
-- Plain-English subtitle: How talking to each other makes groups smarter than working alone
-- Summary: Two artificial neural networks working together and sharing feedback outperformed the same networks operating independently or simply combining their answers—reproducing a known human advantage called the dyadic benefit. The interaction itself prevented the models from drifting into errors, while smaller interacting networks were more efficient than larger independent ones using the same total computing power.
-- Why it matters: This explains why teams that genuinely collaborate often beat collections of individuals with similar expertise, and shows that the benefit comes from real-time interaction, not just pooling opinions afterward. Understanding this mechanically could improve how we design group decision-making systems, from medical diagnostics to emergency response teams, by revealing when coordination tools will actually help rather than hurt.
-
-### ReplaySSM: Cache SSM Inputs, Not State
-- URL: https://paperplaine.com/papers/replayssm-cache-ssm-inputs
-- Category: Computer Science · AI
-- Authors: Ze-Wei Liou, Harris Nover, Amey Naik et al.
-- arXiv: 2610.13778
-- Plain-English subtitle: Making AI language models faster by storing inputs instead of state
-- Summary: State-space models slow down when they constantly read and write their internal memory during text generation. ReplaySSM speeds this up by storing recent inputs and updating memory less often, roughly halving the memory traffic that bottlenecks these systems. On real serving hardware, the method achieves 1.2–1.47× speedup and handles speculative decoding nearly twice as efficiently as current systems.
-- Why it matters: Language model inference—the process of generating text—is expensive and speed-critical for real-time applications. A 1.2–1.47× speedup means AI services can serve more users with the same hardware, cutting compute costs and latency. The method also improves accuracy by using different precision levels for computation versus memory updates, reducing numerical errors that accumulate during generation.
 
 ## About
 

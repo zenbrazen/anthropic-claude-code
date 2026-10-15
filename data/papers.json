@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.20572",
+    "title": "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation",
+    "authors": "Kaixiang Zhao, Tianrun Yu, Shangzhe Li et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-14T17:54:34Z",
+    "publishedFormatted": "Oct 14, 2026",
+    "subtitle": "Training AI to fix its mistakes by learning from its own corrections",
+    "summary": "When teaching an AI model to solve problems by learning from its own attempts, a major flaw emerges: the teacher model gets pulled along into the student's mistakes instead of correcting course. Researchers developed CriticOPD, which has the teacher identify where the student went wrong, then watches the student rewrite the solution correctly—and learning from that revision produces measurably better results, especially on hard competition math problems.",
+    "whyItMatters": "Most AI systems today struggle with complex reasoning because the feedback they receive during training can't reliably steer them back on track once they start down the wrong path. This method directly addresses that bottleneck by forcing a real correction cycle into the training loop. Better error recovery during training means these models could solve harder problems in the real world without requiring as much human oversight or external correction data.",
+    "fetchedAt": "2026-10-15T21:53:54.828Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 21,
+      "wordCount": 126
+    },
+    "slug": "recovering-reliable-supervision-via"
+  },
+  {
+    "id": "2610.13126",
+    "title": "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios",
+    "authors": "Jianning Wang, Robert Ślepaczuk, Paweł Sakowski",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-10-09T07:21:16Z",
+    "publishedFormatted": "Oct 9, 2026",
+    "subtitle": "Teaching AI when to close risky stock-market bets for better profits",
+    "summary": "Researchers used historical trading data to train an artificial intelligence system that decides when to close short-straddle options positions—a bet that a stock index will stay within a narrow price range. The AI system achieved 37.5% returns with a Sharpe ratio of 1.705 over two years, beating simple hold-until-expiration strategies and fixed timing rules by consistently picking better exit moments.",
+    "whyItMatters": "Options traders make money or lose it based on split-second timing decisions, and current rules of thumb often leave money on the table. This approach shows that AI trained on historical patterns can systematically improve exit timing, potentially helping portfolio managers reduce losses during volatile markets and lock in gains earlier. For active traders, even small improvements in exit timing compound into substantial differences in annual returns.",
+    "fetchedAt": "2026-10-15T21:53:59.443Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 3,
+      "pageCount": 13,
+      "wordCount": 128
+    },
+    "slug": "mlp-initialized-reinforcement-learning"
+  },
+  {
+    "id": "2610.18506",
+    "title": "Directed percolation in higher-order social dilemmas",
+    "authors": "Pablo Villegas, Sandro Meloni",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-10-13T15:00:41Z",
+    "publishedFormatted": "Oct 13, 2026",
+    "subtitle": "How group games create sudden tipping points through simple two-person interactions",
+    "summary": "Researchers discovered that dramatic phase shifts in multiplayer cooperation games don't actually require group interactions — the same explosive transitions appear in simpler two-person dynamics with short-term memory. By deriving the mathematical equations governing these systems, they showed that three-player games and their pairwise equivalents share identical tipping points, critical thresholds, and the minimum group size needed to trigger sudden behavioral collapse.",
+    "whyItMatters": "Understanding what truly drives sudden social tipping points—like rapid shifts in public opinion or cooperation breakdown—matters for predicting when societies are near the edge of major change. This finding simplifies the puzzle: planners and researchers don't need to model complex group interactions to capture these critical moments; tracking simple pairwise connections with memory is enough. That makes forecasting real-world cascades computationally feasible and helps identify which interventions might prevent unwanted social collapse.",
+    "fetchedAt": "2026-10-15T21:54:02.685Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 171
+    },
+    "slug": "directed-percolation-in-higher"
+  },
+  {
     "id": "2610.20573",
     "title": "Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization",
     "authors": "Anna Mei, Michael R. Douglas",
