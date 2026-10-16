@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.22372",
+    "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+    "authors": "Zhixu Li, Keqian Tang, Litian Gong et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-15T17:59:59Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Teaching robots to work the way individual people prefer, not just complete tasks",
+    "summary": "Researchers created the first standardized test for teaching robots to follow human preferences—like choosing a smooth motion over a fast one, or organizing items in a particular way. Current AI-powered robots fail at this when given no examples, but can learn preferences from a handful of demonstrations; however, they struggle to apply what they learned to new layouts or handle conflicting preferences.",
+    "whyItMatters": "Household robots need to adapt to how different people want tasks done, not just whether tasks get done. Without benchmarks and training data for preference learning, companies building these robots have no way to measure progress or know which approaches actually work. This benchmark gives the field a shared standard to build better robots that respect individual styles and habits.",
+    "fetchedAt": "2026-10-16T12:06:11.798Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 227
+    },
+    "slug": "libero-perm-benchmarking-personalized"
+  },
+  {
+    "id": "2610.22030",
+    "title": "Convergence Rates for Lasserre's Upper-Bound Hierarchy on \\mathbb{R}^d with Gaussian Measure",
+    "authors": "Sander Gribling, Igor Klep, Poornendu Kumar",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-15T15:07:10Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Finding the bottom of a mountain using progressively better mathematical approximations",
+    "summary": "Mathematicians proved how fast a computational tool called Lasserre's hierarchy can narrow in on the lowest point of any polynomial function—showing it gets closer by roughly a factor of 1/r with each step of refinement. This is the first explicit speed guarantee for this method when the search space is infinite, and the researchers proved this rate cannot be improved in general.",
+    "whyItMatters": "Optimization problems—finding the best solution to a constraint—appear constantly in engineering, finance, and machine learning. This result gives practitioners a concrete guarantee: if you apply this method 100 times, you'll be roughly 100 times closer to the true answer than after just one iteration. Knowing this rate helps decide when to stop computing and accept the current best answer.",
+    "fetchedAt": "2026-10-16T12:06:14.697Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 102
+    },
+    "slug": "convergence-rates-for-lasserre"
+  },
+  {
+    "id": "2610.22238",
+    "title": "Query-Efficient Rejection Sampling for Parallel Masked Diffusion",
+    "authors": "Shiyuan Zhang, Xuheng Li, Qiwei Di et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-15T17:15:52Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Speeding up AI text generation without sacrificing quality or needing excessive computations",
+    "summary": "When AI models generate multiple words at once to speed things up, they typically ignore how those words relate to each other, producing biased results. Researchers developed SIRS, a new method that corrects this bias while requiring dramatically fewer computational checks—just one query instead of one per token—by cleverly reusing information the model already computes.",
+    "whyItMatters": "Faster, more accurate text generation directly reduces computational costs and energy use in AI systems while improving output quality. This matters for large-scale applications like real-time translation, chatbots, and content generation, where speed and accuracy improvements compound across millions of queries.",
+    "fetchedAt": "2026-10-16T12:06:32.543Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 179
+    },
+    "slug": "query-efficient-rejection-sampling"
+  },
+  {
     "id": "2610.20572",
     "title": "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation",
     "authors": "Kaixiang Zhao, Tianrun Yu, Shangzhe Li et al.",

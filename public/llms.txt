@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 977 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 980 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,27 +30,27 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 335 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 336 papers in archive.
+  - "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation"
   - "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation"
-  - "Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 80 papers in archive.
   - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
   - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 82 papers in archive.
   - "Directed percolation in higher-order social dilemmas"
   - "Collective Benefits and Efficiency in Coupled Echo State Networks"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 82 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 83 papers in archive.
+  - "Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure"
   - "Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons"
-  - "Counting with Hiccup Sequences"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 83 papers in archive.
   - "Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects"
   - "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 84 papers in archive.
   - "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios"
   - "FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 84 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 85 papers in archive.
+  - "Query-Efficient Rejection Sampling for Parallel Masked Diffusion"
   - "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling"
-  - "Calibration in One Go: Jointly Learning Accurate and Calibrated Neural Networks"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 78 papers in archive.
   - "DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting"
   - "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
 
 ## 10 most recent papers
+
+### LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
+- URL: https://paperplaine.com/papers/libero-perm-benchmarking-personalized
+- Category: Computer Science · AI
+- Authors: Zhixu Li, Keqian Tang, Litian Gong et al.
+- arXiv: 2610.22372
+- Plain-English subtitle: Teaching robots to work the way individual people prefer, not just complete tasks
+- Summary: Researchers created the first standardized test for teaching robots to follow human preferences—like choosing a smooth motion over a fast one, or organizing items in a particular way. Current AI-powered robots fail at this when given no examples, but can learn preferences from a handful of demonstrations; however, they struggle to apply what they learned to new layouts or handle conflicting preferences.
+- Why it matters: Household robots need to adapt to how different people want tasks done, not just whether tasks get done. Without benchmarks and training data for preference learning, companies building these robots have no way to measure progress or know which approaches actually work. This benchmark gives the field a shared standard to build better robots that respect individual styles and habits.
+
+### Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure
+- URL: https://paperplaine.com/papers/convergence-rates-for-lasserre
+- Category: Mathematics
+- Authors: Sander Gribling, Igor Klep, Poornendu Kumar
+- arXiv: 2610.22030
+- Plain-English subtitle: Finding the bottom of a mountain using progressively better mathematical approximations
+- Summary: Mathematicians proved how fast a computational tool called Lasserre's hierarchy can narrow in on the lowest point of any polynomial function—showing it gets closer by roughly a factor of 1/r with each step of refinement. This is the first explicit speed guarantee for this method when the search space is infinite, and the researchers proved this rate cannot be improved in general.
+- Why it matters: Optimization problems—finding the best solution to a constraint—appear constantly in engineering, finance, and machine learning. This result gives practitioners a concrete guarantee: if you apply this method 100 times, you'll be roughly 100 times closer to the true answer than after just one iteration. Knowing this rate helps decide when to stop computing and accept the current best answer.
+
+### Query-Efficient Rejection Sampling for Parallel Masked Diffusion
+- URL: https://paperplaine.com/papers/query-efficient-rejection-sampling
+- Category: Statistics
+- Authors: Shiyuan Zhang, Xuheng Li, Qiwei Di et al.
+- arXiv: 2610.22238
+- Plain-English subtitle: Speeding up AI text generation without sacrificing quality or needing excessive computations
+- Summary: When AI models generate multiple words at once to speed things up, they typically ignore how those words relate to each other, producing biased results. Researchers developed SIRS, a new method that corrects this bias while requiring dramatically fewer computational checks—just one query instead of one per token—by cleverly reusing information the model already computes.
+- Why it matters: Faster, more accurate text generation directly reduces computational costs and energy use in AI systems while improving output quality. This matters for large-scale applications like real-time translation, chatbots, and content generation, where speed and accuracy improvements compound across millions of queries.
 
 ### Recovering Reliable Supervision via Critique-Guided On-Policy Distillation
 - URL: https://paperplaine.com/papers/recovering-reliable-supervision-via
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Building graphs that match a precise topological fingerprint exactly
 - Summary: Researchers developed methods to generate graphs whose topological structure matches a target specification perfectly, rather than approximately. Unlike existing approaches that use soft constraints and hope for close-enough results, these new methods guarantee an exact match by treating the problem as a constraint satisfaction puzzle that can be solved algorithmically.
 - Why it matters: Graph generation is central to drug discovery, materials science, and network design. Previous methods could only approximate the desired topological properties, which means researchers couldn't reliably control what structures emerge from their generative models. These exact-compliance methods let scientists specify a precise topological requirement and know that every graph produced will satisfy it—making generative models trustworthy for applications where topology matters.
-
-### X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities
-- URL: https://paperplaine.com/papers/x-js-a-live
-- Category: Computer Science
-- Authors: José Afonso, João Madeira Pereira, Ronghao Ni et al.
-- arXiv: 2610.18585
-- Plain-English subtitle: A constantly updated catalog of real JavaScript security flaws for testing defenses
-- Summary: Researchers created X.js, a live benchmark of 1,159 real vulnerabilities in Node.js packages collected through mid-2026, each paired with working exploits and patched versions. The dataset reveals that vulnerable packages have grown dramatically larger over time—from around 250 lines of code in 2021–2022 to 6,100 lines by 2026—making security problems harder to spot and fix.
-- Why it matters: Security researchers and tool developers need current, real-world vulnerabilities to test whether their detection and defense systems actually work. Previous datasets stopped in 2022, leaving a four-year gap; X.js stays current and includes automated infrastructure to add newly discovered flaws. Larger, more complex vulnerable packages mean attackers have more hiding places and defenders need better tools—having a constantly refreshed test suite lets the security community measure whether their solutions keep up.
-
-### Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons
-- URL: https://paperplaine.com/papers/selecting-the-7th-smallest
-- Category: Mathematics
-- Authors: Jonathan Cremer
-- arXiv: 2610.18740
-- Plain-English subtitle: Finding the exact minimum comparisons needed to sort small lists
-- Summary: Researchers determined that finding the 7th smallest element among 16 items requires exactly 28 comparisons in the worst case—better than the previous best-known result of 30. Using computer search and formal verification, they also improved bounds for related problems with 16 and 17 elements, pinpointing the precise efficiency limits of comparison-based selection algorithms.
-- Why it matters: Comparison counts determine how fast sorting and selection algorithms run on real data. These exact bounds provide a performance ceiling that algorithm designers and hardware engineers use as a benchmark; knowing the absolute minimum proves whether current methods are truly optimal or leave room for improvement. The formal verification methods developed here provide a template for settling other open questions in algorithm theory.
-
-### Read the Room Before Your Model Generates
-- URL: https://paperplaine.com/papers/read-the-room-before
-- Category: Computer Science · AI
-- Authors: Muyao Kong, Zhihao Lin
-- arXiv: 2610.18820
-- Plain-English subtitle: AI models that adjust their creativity based on what the conversation needs
-- Summary: Large language models typically use a single fixed setting to control how random or predictable their outputs are, but a new framework called Scenario-Actor instead reads the social context of a conversation and adjusts this setting accordingly. Tests on an 8-billion-parameter model show it performs better at completing goals in social interactions, following open-ended instructions, and maintaining multi-turn conversations compared to existing methods.
-- Why it matters: Current AI assistants often sound the same whether they're helping you brainstorm creative ideas or answering factual questions—both situations call for different levels of unpredictability. By tuning this setting to match what's actually happening in a conversation, AI responses could become more useful and natural without requiring users to manually fiddle with settings themselves.
 
 ## About
 

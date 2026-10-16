@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2026 21:54:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:06:33 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation</title>
+      <link>https://paperplaine.com/papers/libero-perm-benchmarking-personalized</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/libero-perm-benchmarking-personalized</guid>
+      <pubDate>Thu, 15 Oct 2026 17:59:59 GMT</pubDate>
+      <author>Zhixu Li, Keqian Tang, Litian Gong et al.</author>
+      <category>AI</category>
+      <description>Teaching robots to work the way individual people prefer, not just complete tasks</description>
+      <content:encoded><![CDATA[<p><em>Teaching robots to work the way individual people prefer, not just complete tasks</em></p><p>Researchers created the first standardized test for teaching robots to follow human preferences—like choosing a smooth motion over a fast one, or organizing items in a particular way. Current AI-powered robots fail at this when given no examples, but can learn preferences from a handful of demonstrations; however, they struggle to apply what they learned to new layouts or handle conflicting preferences.</p><p><strong>Why it matters:</strong> Household robots need to adapt to how different people want tasks done, not just whether tasks get done. Without benchmarks and training data for preference learning, companies building these robots have no way to measure progress or know which approaches actually work. This benchmark gives the field a shared standard to build better robots that respect individual styles and habits.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Convergence Rates for Lasserre&#39;s Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure</title>
+      <link>https://paperplaine.com/papers/convergence-rates-for-lasserre</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/convergence-rates-for-lasserre</guid>
+      <pubDate>Thu, 15 Oct 2026 15:07:10 GMT</pubDate>
+      <author>Sander Gribling, Igor Klep, Poornendu Kumar</author>
+      <category>Math</category>
+      <description>Finding the bottom of a mountain using progressively better mathematical approximations</description>
+      <content:encoded><![CDATA[<p><em>Finding the bottom of a mountain using progressively better mathematical approximations</em></p><p>Mathematicians proved how fast a computational tool called Lasserre's hierarchy can narrow in on the lowest point of any polynomial function—showing it gets closer by roughly a factor of 1/r with each step of refinement. This is the first explicit speed guarantee for this method when the search space is infinite, and the researchers proved this rate cannot be improved in general.</p><p><strong>Why it matters:</strong> Optimization problems—finding the best solution to a constraint—appear constantly in engineering, finance, and machine learning. This result gives practitioners a concrete guarantee: if you apply this method 100 times, you'll be roughly 100 times closer to the true answer than after just one iteration. Knowing this rate helps decide when to stop computing and accept the current best answer.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Query-Efficient Rejection Sampling for Parallel Masked Diffusion</title>
+      <link>https://paperplaine.com/papers/query-efficient-rejection-sampling</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/query-efficient-rejection-sampling</guid>
+      <pubDate>Thu, 15 Oct 2026 17:15:52 GMT</pubDate>
+      <author>Shiyuan Zhang, Xuheng Li, Qiwei Di et al.</author>
+      <category>Statistics</category>
+      <description>Speeding up AI text generation without sacrificing quality or needing excessive computations</description>
+      <content:encoded><![CDATA[<p><em>Speeding up AI text generation without sacrificing quality or needing excessive computations</em></p><p>When AI models generate multiple words at once to speed things up, they typically ignore how those words relate to each other, producing biased results. Researchers developed SIRS, a new method that corrects this bias while requiring dramatically fewer computational checks—just one query instead of one per token—by cleverly reusing information the model already computes.</p><p><strong>Why it matters:</strong> Faster, more accurate text generation directly reduces computational costs and energy use in AI systems while improving output quality. This matters for large-scale applications like real-time translation, chatbots, and content generation, where speed and accuracy improvements compound across millions of queries.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Recovering Reliable Supervision via Critique-Guided On-Policy Distillation</title>
       <link>https://paperplaine.com/papers/recovering-reliable-supervision-via</link>

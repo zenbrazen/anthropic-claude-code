@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 977 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-15
+This file contains the complete plain-English text of all 980 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
+Subtitle: Teaching robots to work the way individual people prefer, not just complete tasks
+URL: https://paperplaine.com/papers/libero-perm-benchmarking-personalized
+Category: Computer Science · AI
+Authors: Zhixu Li, Keqian Tang, Litian Gong et al.
+arXiv ID: 2610.22372
+arXiv URL: https://arxiv.org/abs/2610.22372
+Posted: 2026-10-16
+
+Summary: Researchers created the first standardized test for teaching robots to follow human preferences—like choosing a smooth motion over a fast one, or organizing items in a particular way. Current AI-powered robots fail at this when given no examples, but can learn preferences from a handful of demonstrations; however, they struggle to apply what they learned to new layouts or handle conflicting preferences.
+
+Why it matters: Household robots need to adapt to how different people want tasks done, not just whether tasks get done. Without benchmarks and training data for preference learning, companies building these robots have no way to measure progress or know which approaches actually work. This benchmark gives the field a shared standard to build better robots that respect individual styles and habits.
+
+---
+Title: Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure
+Subtitle: Finding the bottom of a mountain using progressively better mathematical approximations
+URL: https://paperplaine.com/papers/convergence-rates-for-lasserre
+Category: Mathematics
+Authors: Sander Gribling, Igor Klep, Poornendu Kumar
+arXiv ID: 2610.22030
+arXiv URL: https://arxiv.org/abs/2610.22030
+Posted: 2026-10-16
+
+Summary: Mathematicians proved how fast a computational tool called Lasserre's hierarchy can narrow in on the lowest point of any polynomial function—showing it gets closer by roughly a factor of 1/r with each step of refinement. This is the first explicit speed guarantee for this method when the search space is infinite, and the researchers proved this rate cannot be improved in general.
+
+Why it matters: Optimization problems—finding the best solution to a constraint—appear constantly in engineering, finance, and machine learning. This result gives practitioners a concrete guarantee: if you apply this method 100 times, you'll be roughly 100 times closer to the true answer than after just one iteration. Knowing this rate helps decide when to stop computing and accept the current best answer.
+
+---
+Title: Query-Efficient Rejection Sampling for Parallel Masked Diffusion
+Subtitle: Speeding up AI text generation without sacrificing quality or needing excessive computations
+URL: https://paperplaine.com/papers/query-efficient-rejection-sampling
+Category: Statistics
+Authors: Shiyuan Zhang, Xuheng Li, Qiwei Di et al.
+arXiv ID: 2610.22238
+arXiv URL: https://arxiv.org/abs/2610.22238
+Posted: 2026-10-16
+
+Summary: When AI models generate multiple words at once to speed things up, they typically ignore how those words relate to each other, producing biased results. Researchers developed SIRS, a new method that corrects this bias while requiring dramatically fewer computational checks—just one query instead of one per token—by cleverly reusing information the model already computes.
+
+Why it matters: Faster, more accurate text generation directly reduces computational costs and energy use in AI systems while improving output quality. This matters for large-scale applications like real-time translation, chatbots, and content generation, where speed and accuracy improvements compound across millions of queries.
 
 ---
 Title: Recovering Reliable Supervision via Critique-Guided On-Policy Distillation
