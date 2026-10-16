@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 980 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 983 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
+Subtitle: Teaching AI to autonomously design and improve machine learning systems
+URL: https://paperplaine.com/papers/mlexpert-towards-a-generalist
+Category: Computer Science · AI
+Authors: Shangheng Du, Jinxin Shi, Shuaiyu Zhang et al.
+arXiv ID: 2610.22344
+arXiv URL: https://arxiv.org/abs/2610.22344
+Posted: 2026-10-16
+
+Summary: Researchers trained MLExpert, a specialized AI model, to autonomously run machine learning experiments and improve its own optimization strategies based on what it learns. On a standard benchmark, MLExpert nearly doubled the success rate of its base model—from 38% to 73%—matching the performance of much larger frontier AI systems, and its learned skills transferred to other optimization tasks beyond its training domain.
+
+Why it matters: As AI systems increasingly optimize themselves rather than waiting for human engineers to improve them, this work demonstrates a practical path toward AI that can accelerate its own development cycles. This could compress months of experimentation into days, making advanced AI capabilities faster and cheaper to build—but also raising questions about oversight as these systems operate with less human intervention.
+
+---
+Title: Language Is a Security Surface for Agent Guards
+Subtitle: Why AI safety guards fail when users speak other languages
+URL: https://paperplaine.com/papers/language-is-a-security
+Category: Computer Science
+Authors: Hasan Demirkiran, Jens Ernstberger
+arXiv ID: 2610.22244
+arXiv URL: https://arxiv.org/abs/2610.22244
+Posted: 2026-10-16
+
+Summary: Security systems that guard AI agents from harmful actions change their safety decisions based on the language a user speaks — even when the actual request and actions remain identical. On rare languages like Amharic, smaller safety guards flip their verdicts up to 4.4 percentage points more often than expected by chance, while the most powerful frontier models like Gemini remain nearly unaffected.
+
+Why it matters: AI agents are increasingly deployed globally, but their safety mechanisms appear engineered and tested almost entirely in English. A user in a non-English-speaking country could ask the same question that would be blocked in English and have it approved in their own language, potentially exposing them to harmful outputs. This gap widens for smaller, open-source guards that organizations with fewer resources might deploy, creating a security risk that grows with linguistic distance from English.
+
+---
+Title: Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions
+Subtitle: How brains switch between steady and rhythmic firing modes
+URL: https://paperplaine.com/papers/statistical-mechanics-of-spike
+Category: Quantitative Biology
+Authors: Jan Pyrzowski, Laura Messio, Guillaume Marrelec et al.
+arXiv ID: 2610.20971
+arXiv URL: https://arxiv.org/abs/2610.20971
+Posted: 2026-10-16
+
+Summary: Researchers developed a physics-based framework for understanding when populations of neurons oscillate versus fire steadily, treating entire sequences of neural spikes as energy states similar to how physicists model physical matter. The model reveals that brain activity undergoes a phase transition—like water freezing into ice—where a competition between synaptic rules and random noise shifts neurons from one firing pattern to a completely different one.
+
+Why it matters: Understanding these transitions could explain abnormal brain rhythms in epilepsy, sleep disorders, and neuropsychiatric conditions, where the brain gets stuck in pathological oscillations or fails to generate normal rhythmic activity like sleep spindles. The framework provides a new mathematical language for predicting when and why these shifts happen, potentially guiding development of therapies that nudge neural activity out of harmful states.
 
 ---
 Title: LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation

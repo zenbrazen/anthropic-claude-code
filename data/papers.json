@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.22344",
+    "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+    "authors": "Shangheng Du, Jinxin Shi, Shuaiyu Zhang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-15T17:56:32Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Teaching AI to autonomously design and improve machine learning systems",
+    "summary": "Researchers trained MLExpert, a specialized AI model, to autonomously run machine learning experiments and improve its own optimization strategies based on what it learns. On a standard benchmark, MLExpert nearly doubled the success rate of its base model—from 38% to 73%—matching the performance of much larger frontier AI systems, and its learned skills transferred to other optimization tasks beyond its training domain.",
+    "whyItMatters": "As AI systems increasingly optimize themselves rather than waiting for human engineers to improve them, this work demonstrates a practical path toward AI that can accelerate its own development cycles. This could compress months of experimentation into days, making advanced AI capabilities faster and cheaper to build—but also raising questions about oversight as these systems operate with less human intervention.",
+    "fetchedAt": "2026-10-16T21:52:23.578Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 247
+    },
+    "slug": "mlexpert-towards-a-generalist"
+  },
+  {
+    "id": "2610.22244",
+    "title": "Language Is a Security Surface for Agent Guards",
+    "authors": "Hasan Demirkiran, Jens Ernstberger",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-15T17:19:40Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Why AI safety guards fail when users speak other languages",
+    "summary": "Security systems that guard AI agents from harmful actions change their safety decisions based on the language a user speaks — even when the actual request and actions remain identical. On rare languages like Amharic, smaller safety guards flip their verdicts up to 4.4 percentage points more often than expected by chance, while the most powerful frontier models like Gemini remain nearly unaffected.",
+    "whyItMatters": "AI agents are increasingly deployed globally, but their safety mechanisms appear engineered and tested almost entirely in English. A user in a non-English-speaking country could ask the same question that would be blocked in English and have it approved in their own language, potentially exposing them to harmful outputs. This gap widens for smaller, open-source guards that organizations with fewer resources might deploy, creating a security risk that grows with linguistic distance from English.",
+    "fetchedAt": "2026-10-16T21:52:27.039Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 9,
+      "wordCount": 305
+    },
+    "slug": "language-is-a-security"
+  },
+  {
+    "id": "2610.20971",
+    "title": "Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions",
+    "authors": "Jan Pyrzowski, Laura Messio, Guillaume Marrelec et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-14T21:45:41Z",
+    "publishedFormatted": "Oct 14, 2026",
+    "subtitle": "How brains switch between steady and rhythmic firing modes",
+    "summary": "Researchers developed a physics-based framework for understanding when populations of neurons oscillate versus fire steadily, treating entire sequences of neural spikes as energy states similar to how physicists model physical matter. The model reveals that brain activity undergoes a phase transition—like water freezing into ice—where a competition between synaptic rules and random noise shifts neurons from one firing pattern to a completely different one.",
+    "whyItMatters": "Understanding these transitions could explain abnormal brain rhythms in epilepsy, sleep disorders, and neuropsychiatric conditions, where the brain gets stuck in pathological oscillations or fails to generate normal rhythmic activity like sleep spindles. The framework provides a new mathematical language for predicting when and why these shifts happen, potentially guiding development of therapies that nudge neural activity out of harmful states.",
+    "fetchedAt": "2026-10-16T21:52:30.411Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 223
+    },
+    "slug": "statistical-mechanics-of-spike"
+  },
+  {
     "id": "2610.22372",
     "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
     "authors": "Zhixu Li, Keqian Tang, Litian Gong et al.",

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 980 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 983 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 336 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 337 papers in archive.
+  - "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering"
   - "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation"
-  - "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 80 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 81 papers in archive.
+  - "Language Is a Security Surface for Agent Guards"
   - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
-  - "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 82 papers in archive.
   - "Directed percolation in higher-order social dilemmas"
   - "Collective Benefits and Efficiency in Coupled Echo State Networks"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 83 papers in archive.
   - "Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure"
   - "Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 83 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 84 papers in archive.
+  - "Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions"
   - "Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects"
-  - "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 84 papers in archive.
   - "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios"
   - "FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
 
 ## 10 most recent papers
+
+### MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
+- URL: https://paperplaine.com/papers/mlexpert-towards-a-generalist
+- Category: Computer Science · AI
+- Authors: Shangheng Du, Jinxin Shi, Shuaiyu Zhang et al.
+- arXiv: 2610.22344
+- Plain-English subtitle: Teaching AI to autonomously design and improve machine learning systems
+- Summary: Researchers trained MLExpert, a specialized AI model, to autonomously run machine learning experiments and improve its own optimization strategies based on what it learns. On a standard benchmark, MLExpert nearly doubled the success rate of its base model—from 38% to 73%—matching the performance of much larger frontier AI systems, and its learned skills transferred to other optimization tasks beyond its training domain.
+- Why it matters: As AI systems increasingly optimize themselves rather than waiting for human engineers to improve them, this work demonstrates a practical path toward AI that can accelerate its own development cycles. This could compress months of experimentation into days, making advanced AI capabilities faster and cheaper to build—but also raising questions about oversight as these systems operate with less human intervention.
+
+### Language Is a Security Surface for Agent Guards
+- URL: https://paperplaine.com/papers/language-is-a-security
+- Category: Computer Science
+- Authors: Hasan Demirkiran, Jens Ernstberger
+- arXiv: 2610.22244
+- Plain-English subtitle: Why AI safety guards fail when users speak other languages
+- Summary: Security systems that guard AI agents from harmful actions change their safety decisions based on the language a user speaks — even when the actual request and actions remain identical. On rare languages like Amharic, smaller safety guards flip their verdicts up to 4.4 percentage points more often than expected by chance, while the most powerful frontier models like Gemini remain nearly unaffected.
+- Why it matters: AI agents are increasingly deployed globally, but their safety mechanisms appear engineered and tested almost entirely in English. A user in a non-English-speaking country could ask the same question that would be blocked in English and have it approved in their own language, potentially exposing them to harmful outputs. This gap widens for smaller, open-source guards that organizations with fewer resources might deploy, creating a security risk that grows with linguistic distance from English.
+
+### Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions
+- URL: https://paperplaine.com/papers/statistical-mechanics-of-spike
+- Category: Quantitative Biology
+- Authors: Jan Pyrzowski, Laura Messio, Guillaume Marrelec et al.
+- arXiv: 2610.20971
+- Plain-English subtitle: How brains switch between steady and rhythmic firing modes
+- Summary: Researchers developed a physics-based framework for understanding when populations of neurons oscillate versus fire steadily, treating entire sequences of neural spikes as energy states similar to how physicists model physical matter. The model reveals that brain activity undergoes a phase transition—like water freezing into ice—where a competition between synaptic rules and random noise shifts neurons from one firing pattern to a completely different one.
+- Why it matters: Understanding these transitions could explain abnormal brain rhythms in epilepsy, sleep disorders, and neuropsychiatric conditions, where the brain gets stuck in pathological oscillations or fails to generate normal rhythmic activity like sleep spindles. The framework provides a new mathematical language for predicting when and why these shifts happen, potentially guiding development of therapies that nudge neural activity out of harmful states.
 
 ### LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
 - URL: https://paperplaine.com/papers/libero-perm-benchmarking-personalized
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Catching mistakes in AI-written math proofs that AI judges miss
 - Summary: Researchers created a verification system that catches errors in mathematical proofs automatically translated into formal logic, outperforming methods that rely solely on AI judges. The system combines AI review with mechanical checks—like numerical validation and consistency testing—to identify mistranslations that language models alone overlook, and the team used it to formalize over 300 mathematical functions from the NIST reference library.
 - Why it matters: Automatically translating mathematics into formal logic could accelerate proof verification and reduce human labor, but only if the translations are correct. This method achieves lower error rates than existing approaches, making it possible to automate the creation of reliable mathematical reference libraries that researchers and engineers can trust without manual inspection of every entry.
-
-### DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting
-- URL: https://paperplaine.com/papers/doreme-dual-optimization-of
-- Category: Engineering
-- Authors: Majd Helo, Dominik Nickel, Thomas Kuestner
-- arXiv: 2610.19120
-- Plain-English subtitle: Fixing blurry MRI scans by tracking breath movement during imaging
-- Summary: Researchers developed a new method that reconstructs sharp abdominal MRI images while simultaneously figuring out how the patient's organs moved during breathing. Unlike older approaches that require guess-work about motion beforehand, this method learns the motion and the image together in about 90 seconds, producing clearer pictures—especially of the liver—even when the scan is shortened.
-- Why it matters: Breathing motion is the main reason abdominal MRI scans come out blurry and distorted, forcing radiologists to spend longer acquisition times and sometimes repeat scans. Faster, sharper images mean patients spend less time in the scanner, hospitals can scan more patients, and doctors get clearer pictures to spot disease. The method works without external motion sensors, making it easier to deploy in standard clinical settings.
-
-### Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects
-- URL: https://paperplaine.com/papers/predicting-unseen-scientific-interactions
-- Category: Quantitative Biology
-- Authors: Sam Gijsen, Moritz Seiler, Kerstin Ritter
-- arXiv: 2610.20288
-- Plain-English subtitle: Why AI models fool us by predicting accurate results while missing how drugs actually interact
-- Summary: Machine learning models trained to predict scientific outcomes often appear accurate overall but fail to capture how one intervention changes another's effect—a crucial scientific question. Researchers found that these models tend to invent fake interactions and struggle to predict real ones when moving beyond their training data, even when their overall predictions look correct.
-- Why it matters: This matters for drug development and biology research: a model that says two drugs work well together might be hallucinating that interaction rather than actually understanding it. If scientists rely on these predictions to test new drug combinations or cell treatments, they could waste resources pursuing effects that don't actually exist, or miss real interactions that traditional accuracy metrics hide.
-
-### Exact Topological Compliance: Generating Persistence-Equivalent Graphs
-- URL: https://paperplaine.com/papers/exact-topological-compliance-generating
-- Category: Computer Science · AI
-- Authors: Mattie Ji, Indradyumna Roy, Vikas Garg
-- arXiv: 2610.18856
-- Plain-English subtitle: Building graphs that match a precise topological fingerprint exactly
-- Summary: Researchers developed methods to generate graphs whose topological structure matches a target specification perfectly, rather than approximately. Unlike existing approaches that use soft constraints and hope for close-enough results, these new methods guarantee an exact match by treating the problem as a constraint satisfaction puzzle that can be solved algorithmically.
-- Why it matters: Graph generation is central to drug discovery, materials science, and network design. Previous methods could only approximate the desired topological properties, which means researchers couldn't reliably control what structures emerge from their generative models. These exact-compliance methods let scientists specify a precise topological requirement and know that every graph produced will satisfy it—making generative models trustworthy for applications where topology matters.
 
 ## About
 
