@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 986 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 989 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 338 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 339 papers in archive.
+  - "Learning to Steer LLM Agents and Multi-Agent Systems"
   - "FDE-Gym: The Last Mile of AI Delivery"
-  - "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 81 papers in archive.
   - "Language Is a Security Surface for Agent Guards"
   - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 84 papers in archive.
   - "Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions"
   - "Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 84 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 85 papers in archive.
+  - "Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols"
   - "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios"
-  - "FinVector-Market-4B: A Controlled Study of LoRA Adaptation for Structured Financial Tasks"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 85 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 86 papers in archive.
+  - "Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework"
   - "Query-Efficient Rejection Sampling for Parallel Masked Diffusion"
-  - "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 79 papers in archive.
   - "From Signals to Evidence: Interpretable Underwater Acoustic Target Sensing with Large Language Models - Part I: Framework and Recognition"
   - "DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
 
 ## 10 most recent papers
+
+### Learning to Steer LLM Agents and Multi-Agent Systems
+- URL: https://paperplaine.com/papers/learning-to-steer-llm
+- Category: Computer Science · AI
+- Authors: Leyang Shen, Yaxin Gong, Yang Zhang et al.
+- arXiv: 2610.22316
+- Plain-English subtitle: Teaching AI agents to recognize and correct their own mistakes mid-task
+- Summary: AI systems that use tools and work together often drift from their goals as tasks unfold, wasting time and producing wrong answers. Researchers built a "steering agent" that watches execution in real time, deciding when and how to intervene and redirect the system back on track — and showed it improves performance for both single and multi-agent systems while generalizing to new tasks and different executors.
+- Why it matters: As AI systems tackle longer and more complex tasks, goal drift wastes computational resources and produces unreliable results. A system that catches and corrects these errors on the fly could make AI agents far more efficient and trustworthy in real-world applications like research, planning, and decision-making — especially in multi-agent setups where errors compound across teams.
+
+### Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols
+- URL: https://paperplaine.com/papers/pricing-the-unprovable-ambiguity
+- Category: Quantitative Finance
+- Authors: Doohwi Cha, Hanhee Kim, Hyeonjun Yeo et al.
+- arXiv: 2610.21540
+- Plain-English subtitle: Why crypto users distrust privacy fixes when no one can prove what went wrong
+- Summary: When privacy-focused cryptocurrency systems discover and patch vulnerabilities, they often can't prove whether the flaw was actually exploited or how much value was lost. This creates a "verifiability discount"—a measurable drop in market value and user confidence that persists even when the total supply of coins checks out. Analysis of 40 security incidents in Zcash's Orchard system shows that market reactions were muted when developers could definitively rule out past abuse, but much more severe when they couldn't eliminate the possibility of undetected theft.
+- Why it matters: As cryptocurrency systems become more complex and privacy-focused, users face a genuine dilemma: they want privacy features that work, but also need confidence that they're not unknowingly holding stolen or counterfeit coins. When a patch closes a vulnerability but leaves open the question of whether it was already exploited, users rationally discount the value of their holdings by roughly 10–30%—essentially taking a financial penalty for uncertainty they can't resolve. This research shows that protocol designers can reduce this penalty by building in privacy-compatible ways to verify the past and by clearly disclosing what remains unknowable, which could strengthen both security and user trust in the systems that hold their money.
+
+### Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework
+- URL: https://paperplaine.com/papers/why-shallow-neural-networks
+- Category: Statistics
+- Authors: Yanyang Xiao
+- arXiv: 2610.21964
+- Plain-English subtitle: Why neural networks learn simple wave patterns before complex ones
+- Summary: Neural networks tend to learn low-frequency, wave-like patterns before picking up high-frequency details—a bias researchers have long observed but struggled to explain rigorously. This paper identifies the mathematical reason: when networks update their weights through gradient descent, the underlying dynamics naturally prioritize sinusoidal components across different activation functions, a behavior that can now be predicted using orthogonal polynomial theory.
+- Why it matters: Understanding what neural networks learn first has practical implications for training efficiency and interpretability. If you know a network will focus on broad patterns before fine details, you can design better initialization strategies, recognize when training is stalled, and predict whether a network will capture the features you actually care about. This framework also helps engineers choose activation functions and architectures based on what spectrum of patterns they need their model to learn.
 
 ### FDE-Gym: The Last Mile of AI Delivery
 - URL: https://paperplaine.com/papers/fde-gym-the-last
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching robots to work the way individual people prefer, not just complete tasks
 - Summary: Researchers created the first standardized test for teaching robots to follow human preferences—like choosing a smooth motion over a fast one, or organizing items in a particular way. Current AI-powered robots fail at this when given no examples, but can learn preferences from a handful of demonstrations; however, they struggle to apply what they learned to new layouts or handle conflicting preferences.
 - Why it matters: Household robots need to adapt to how different people want tasks done, not just whether tasks get done. Without benchmarks and training data for preference learning, companies building these robots have no way to measure progress or know which approaches actually work. This benchmark gives the field a shared standard to build better robots that respect individual styles and habits.
-
-### Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure
-- URL: https://paperplaine.com/papers/convergence-rates-for-lasserre
-- Category: Mathematics
-- Authors: Sander Gribling, Igor Klep, Poornendu Kumar
-- arXiv: 2610.22030
-- Plain-English subtitle: Finding the bottom of a mountain using progressively better mathematical approximations
-- Summary: Mathematicians proved how fast a computational tool called Lasserre's hierarchy can narrow in on the lowest point of any polynomial function—showing it gets closer by roughly a factor of 1/r with each step of refinement. This is the first explicit speed guarantee for this method when the search space is infinite, and the researchers proved this rate cannot be improved in general.
-- Why it matters: Optimization problems—finding the best solution to a constraint—appear constantly in engineering, finance, and machine learning. This result gives practitioners a concrete guarantee: if you apply this method 100 times, you'll be roughly 100 times closer to the true answer than after just one iteration. Knowing this rate helps decide when to stop computing and accept the current best answer.
-
-### Query-Efficient Rejection Sampling for Parallel Masked Diffusion
-- URL: https://paperplaine.com/papers/query-efficient-rejection-sampling
-- Category: Statistics
-- Authors: Shiyuan Zhang, Xuheng Li, Qiwei Di et al.
-- arXiv: 2610.22238
-- Plain-English subtitle: Speeding up AI text generation without sacrificing quality or needing excessive computations
-- Summary: When AI models generate multiple words at once to speed things up, they typically ignore how those words relate to each other, producing biased results. Researchers developed SIRS, a new method that corrects this bias while requiring dramatically fewer computational checks—just one query instead of one per token—by cleverly reusing information the model already computes.
-- Why it matters: Faster, more accurate text generation directly reduces computational costs and energy use in AI systems while improving output quality. This matters for large-scale applications like real-time translation, chatbots, and content generation, where speed and accuracy improvements compound across millions of queries.
-
-### Recovering Reliable Supervision via Critique-Guided On-Policy Distillation
-- URL: https://paperplaine.com/papers/recovering-reliable-supervision-via
-- Category: Computer Science · AI
-- Authors: Kaixiang Zhao, Tianrun Yu, Shangzhe Li et al.
-- arXiv: 2610.20572
-- Plain-English subtitle: Training AI to fix its mistakes by learning from its own corrections
-- Summary: When teaching an AI model to solve problems by learning from its own attempts, a major flaw emerges: the teacher model gets pulled along into the student's mistakes instead of correcting course. Researchers developed CriticOPD, which has the teacher identify where the student went wrong, then watches the student rewrite the solution correctly—and learning from that revision produces measurably better results, especially on hard competition math problems.
-- Why it matters: Most AI systems today struggle with complex reasoning because the feedback they receive during training can't reliably steer them back on track once they start down the wrong path. This method directly addresses that bottleneck by forcing a real correction cycle into the training loop. Better error recovery during training means these models could solve harder problems in the real world without requiring as much human oversight or external correction data.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 11:23:48 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 21:10:52 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Learning to Steer LLM Agents and Multi-Agent Systems</title>
+      <link>https://paperplaine.com/papers/learning-to-steer-llm</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/learning-to-steer-llm</guid>
+      <pubDate>Thu, 15 Oct 2026 17:51:17 GMT</pubDate>
+      <author>Leyang Shen, Yaxin Gong, Yang Zhang et al.</author>
+      <category>AI</category>
+      <description>Teaching AI agents to recognize and correct their own mistakes mid-task</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI agents to recognize and correct their own mistakes mid-task</em></p><p>AI systems that use tools and work together often drift from their goals as tasks unfold, wasting time and producing wrong answers. Researchers built a "steering agent" that watches execution in real time, deciding when and how to intervene and redirect the system back on track — and showed it improves performance for both single and multi-agent systems while generalizing to new tasks and different executors.</p><p><strong>Why it matters:</strong> As AI systems tackle longer and more complex tasks, goal drift wastes computational resources and produces unreliable results. A system that catches and corrects these errors on the fly could make AI agents far more efficient and trustworthy in real-world applications like research, planning, and decision-making — especially in multi-agent setups where errors compound across teams.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols</title>
+      <link>https://paperplaine.com/papers/pricing-the-unprovable-ambiguity</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/pricing-the-unprovable-ambiguity</guid>
+      <pubDate>Thu, 15 Oct 2026 09:06:12 GMT</pubDate>
+      <author>Doohwi Cha, Hanhee Kim, Hyeonjun Yeo et al.</author>
+      <category>Finance</category>
+      <description>Why crypto users distrust privacy fixes when no one can prove what went wrong</description>
+      <content:encoded><![CDATA[<p><em>Why crypto users distrust privacy fixes when no one can prove what went wrong</em></p><p>When privacy-focused cryptocurrency systems discover and patch vulnerabilities, they often can't prove whether the flaw was actually exploited or how much value was lost. This creates a "verifiability discount"—a measurable drop in market value and user confidence that persists even when the total supply of coins checks out. Analysis of 40 security incidents in Zcash's Orchard system shows that market reactions were muted when developers could definitively rule out past abuse, but much more severe when they couldn't eliminate the possibility of undetected theft.</p><p><strong>Why it matters:</strong> As cryptocurrency systems become more complex and privacy-focused, users face a genuine dilemma: they want privacy features that work, but also need confidence that they're not unknowingly holding stolen or counterfeit coins. When a patch closes a vulnerability but leaves open the question of whether it was already exploited, users rationally discount the value of their holdings by roughly 10–30%—essentially taking a financial penalty for uncertainty they can't resolve. This research shows that protocol designers can reduce this penalty by building in privacy-compatible ways to verify the past and by clearly disclosing what remains unknowable, which could strengthen both security and user trust in the systems that hold their money.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework</title>
+      <link>https://paperplaine.com/papers/why-shallow-neural-networks</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/why-shallow-neural-networks</guid>
+      <pubDate>Thu, 15 Oct 2026 14:23:15 GMT</pubDate>
+      <author>Yanyang Xiao</author>
+      <category>Statistics</category>
+      <description>Why neural networks learn simple wave patterns before complex ones</description>
+      <content:encoded><![CDATA[<p><em>Why neural networks learn simple wave patterns before complex ones</em></p><p>Neural networks tend to learn low-frequency, wave-like patterns before picking up high-frequency details—a bias researchers have long observed but struggled to explain rigorously. This paper identifies the mathematical reason: when networks update their weights through gradient descent, the underlying dynamics naturally prioritize sinusoidal components across different activation functions, a behavior that can now be predicted using orthogonal polynomial theory.</p><p><strong>Why it matters:</strong> Understanding what neural networks learn first has practical implications for training efficiency and interpretability. If you know a network will focus on broad patterns before fine details, you can design better initialization strategies, recognize when training is stalled, and predict whether a network will capture the features you actually care about. This framework also helps engineers choose activation functions and architectures based on what spectrum of patterns they need their model to learn.</p>]]></content:encoded>
+    </item>
     <item>
       <title>FDE-Gym: The Last Mile of AI Delivery</title>
       <link>https://paperplaine.com/papers/fde-gym-the-last</link>

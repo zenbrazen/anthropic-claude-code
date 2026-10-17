@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 986 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 989 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-17
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Learning to Steer LLM Agents and Multi-Agent Systems
+Subtitle: Teaching AI agents to recognize and correct their own mistakes mid-task
+URL: https://paperplaine.com/papers/learning-to-steer-llm
+Category: Computer Science · AI
+Authors: Leyang Shen, Yaxin Gong, Yang Zhang et al.
+arXiv ID: 2610.22316
+arXiv URL: https://arxiv.org/abs/2610.22316
+Posted: 2026-10-17
+
+Summary: AI systems that use tools and work together often drift from their goals as tasks unfold, wasting time and producing wrong answers. Researchers built a "steering agent" that watches execution in real time, deciding when and how to intervene and redirect the system back on track — and showed it improves performance for both single and multi-agent systems while generalizing to new tasks and different executors.
+
+Why it matters: As AI systems tackle longer and more complex tasks, goal drift wastes computational resources and produces unreliable results. A system that catches and corrects these errors on the fly could make AI agents far more efficient and trustworthy in real-world applications like research, planning, and decision-making — especially in multi-agent setups where errors compound across teams.
+
+---
+Title: Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols
+Subtitle: Why crypto users distrust privacy fixes when no one can prove what went wrong
+URL: https://paperplaine.com/papers/pricing-the-unprovable-ambiguity
+Category: Quantitative Finance
+Authors: Doohwi Cha, Hanhee Kim, Hyeonjun Yeo et al.
+arXiv ID: 2610.21540
+arXiv URL: https://arxiv.org/abs/2610.21540
+Posted: 2026-10-17
+
+Summary: When privacy-focused cryptocurrency systems discover and patch vulnerabilities, they often can't prove whether the flaw was actually exploited or how much value was lost. This creates a "verifiability discount"—a measurable drop in market value and user confidence that persists even when the total supply of coins checks out. Analysis of 40 security incidents in Zcash's Orchard system shows that market reactions were muted when developers could definitively rule out past abuse, but much more severe when they couldn't eliminate the possibility of undetected theft.
+
+Why it matters: As cryptocurrency systems become more complex and privacy-focused, users face a genuine dilemma: they want privacy features that work, but also need confidence that they're not unknowingly holding stolen or counterfeit coins. When a patch closes a vulnerability but leaves open the question of whether it was already exploited, users rationally discount the value of their holdings by roughly 10–30%—essentially taking a financial penalty for uncertainty they can't resolve. This research shows that protocol designers can reduce this penalty by building in privacy-compatible ways to verify the past and by clearly disclosing what remains unknowable, which could strengthen both security and user trust in the systems that hold their money.
+
+---
+Title: Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework
+Subtitle: Why neural networks learn simple wave patterns before complex ones
+URL: https://paperplaine.com/papers/why-shallow-neural-networks
+Category: Statistics
+Authors: Yanyang Xiao
+arXiv ID: 2610.21964
+arXiv URL: https://arxiv.org/abs/2610.21964
+Posted: 2026-10-17
+
+Summary: Neural networks tend to learn low-frequency, wave-like patterns before picking up high-frequency details—a bias researchers have long observed but struggled to explain rigorously. This paper identifies the mathematical reason: when networks update their weights through gradient descent, the underlying dynamics naturally prioritize sinusoidal components across different activation functions, a behavior that can now be predicted using orthogonal polynomial theory.
+
+Why it matters: Understanding what neural networks learn first has practical implications for training efficiency and interpretability. If you know a network will focus on broad patterns before fine details, you can design better initialization strategies, recognize when training is stalled, and predict whether a network will capture the features you actually care about. This framework also helps engineers choose activation functions and architectures based on what spectrum of patterns they need their model to learn.
 
 ---
 Title: FDE-Gym: The Last Mile of AI Delivery

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.22316",
+    "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+    "authors": "Leyang Shen, Yaxin Gong, Yang Zhang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-15T17:51:17Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Teaching AI agents to recognize and correct their own mistakes mid-task",
+    "summary": "AI systems that use tools and work together often drift from their goals as tasks unfold, wasting time and producing wrong answers. Researchers built a \"steering agent\" that watches execution in real time, deciding when and how to intervene and redirect the system back on track — and showed it improves performance for both single and multi-agent systems while generalizing to new tasks and different executors.",
+    "whyItMatters": "As AI systems tackle longer and more complex tasks, goal drift wastes computational resources and produces unreliable results. A system that catches and corrects these errors on the fly could make AI agents far more efficient and trustworthy in real-world applications like research, planning, and decision-making — especially in multi-agent setups where errors compound across teams.",
+    "fetchedAt": "2026-10-17T21:10:43.473Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 21,
+      "wordCount": 173
+    },
+    "slug": "learning-to-steer-llm"
+  },
+  {
+    "id": "2610.21540",
+    "title": "Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols",
+    "authors": "Doohwi Cha, Hanhee Kim, Hyeonjun Yeo et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-10-15T09:06:12Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Why crypto users distrust privacy fixes when no one can prove what went wrong",
+    "summary": "When privacy-focused cryptocurrency systems discover and patch vulnerabilities, they often can't prove whether the flaw was actually exploited or how much value was lost. This creates a \"verifiability discount\"—a measurable drop in market value and user confidence that persists even when the total supply of coins checks out. Analysis of 40 security incidents in Zcash's Orchard system shows that market reactions were muted when developers could definitively rule out past abuse, but much more severe when they couldn't eliminate the possibility of undetected theft.",
+    "whyItMatters": "As cryptocurrency systems become more complex and privacy-focused, users face a genuine dilemma: they want privacy features that work, but also need confidence that they're not unknowingly holding stolen or counterfeit coins. When a patch closes a vulnerability but leaves open the question of whether it was already exploited, users rationally discount the value of their holdings by roughly 10–30%—essentially taking a financial penalty for uncertainty they can't resolve. This research shows that protocol designers can reduce this penalty by building in privacy-compatible ways to verify the past and by clearly disclosing what remains unknowable, which could strengthen both security and user trust in the systems that hold their money.",
+    "fetchedAt": "2026-10-17T21:10:48.328Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 17,
+      "wordCount": 208
+    },
+    "slug": "pricing-the-unprovable-ambiguity"
+  },
+  {
+    "id": "2610.21964",
+    "title": "Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework",
+    "authors": "Yanyang Xiao",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-15T14:23:15Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Why neural networks learn simple wave patterns before complex ones",
+    "summary": "Neural networks tend to learn low-frequency, wave-like patterns before picking up high-frequency details—a bias researchers have long observed but struggled to explain rigorously. This paper identifies the mathematical reason: when networks update their weights through gradient descent, the underlying dynamics naturally prioritize sinusoidal components across different activation functions, a behavior that can now be predicted using orthogonal polynomial theory.",
+    "whyItMatters": "Understanding what neural networks learn first has practical implications for training efficiency and interpretability. If you know a network will focus on broad patterns before fine details, you can design better initialization strategies, recognize when training is stalled, and predict whether a network will capture the features you actually care about. This framework also helps engineers choose activation functions and architectures based on what spectrum of patterns they need their model to learn.",
+    "fetchedAt": "2026-10-17T21:10:51.872Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 15,
+      "wordCount": 180
+    },
+    "slug": "why-shallow-neural-networks"
+  },
+  {
     "id": "2610.22350",
     "title": "FDE-Gym: The Last Mile of AI Delivery",
     "authors": "Dongxu Yang, Hongda Yan, Renxin Wang et al.",
