@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 983 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 986 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 337 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 338 papers in archive.
+  - "FDE-Gym: The Last Mile of AI Delivery"
   - "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering"
-  - "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 81 papers in archive.
   - "Language Is a Security Surface for Agent Guards"
   - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 85 papers in archive.
   - "Query-Efficient Rejection Sampling for Parallel Masked Diffusion"
   - "BridgeTwist: Twisting Schrödinger Bridges for Training-Free Conditional Sampling"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 78 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 79 papers in archive.
+  - "From Signals to Evidence: Interpretable Underwater Acoustic Target Sensing with Large Language Models - Part I: Framework and Recognition"
   - "DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting"
-  - "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 69 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 70 papers in archive.
+  - "On the fairness of single round-robin tournaments: Evidence from European football"
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
-  - "Risk Ceilings and Development Deadlines: Pacing AI under Uncertain Safety Productivity"
 
 ## 10 most recent papers
+
+### FDE-Gym: The Last Mile of AI Delivery
+- URL: https://paperplaine.com/papers/fde-gym-the-last
+- Category: Computer Science · AI
+- Authors: Dongxu Yang, Hongda Yan, Renxin Wang et al.
+- arXiv: 2610.22350
+- Plain-English subtitle: Why AI agents struggle when customers don't know what they actually need
+- Summary: AI agents that excel at well-defined lab tasks fail dramatically in real customer work, solving only 14 percent of realistic delivery problems. The main culprit is uncovering hidden constraints — what customers didn't mention because they didn't know to mention it — but even when agents gather all the facts, most still can't turn that knowledge into working solutions.
+- Why it matters: As companies deploy AI to solve actual business problems, this gap between benchmark performance and real-world delivery directly impacts whether customers get value or disappointment. The benchmark shows that today's best AI agents reach only 56 percent effectiveness on realistic tasks, meaning organizations betting on AI for complex customer work are likely to see failed projects and wasted investment until these systems learn to ask better questions and reason through messy, incomplete information.
+
+### On the fairness of single round-robin tournaments: Evidence from European football
+- URL: https://paperplaine.com/papers/on-the-fairness-of
+- Category: Economics
+- Authors: László Csató, Diána Ivett Fűrész, Zsolt Havran
+- arXiv: 2610.21296
+- Plain-English subtitle: Why football's uneven home-away schedules don't unfairly tilt league outcomes
+- Summary: Single round-robin football tournaments give some teams more home games than others, which theory suggests is unfair. But analysis of European leagues shows this scheduling imbalance has no meaningful effect on final points, despite team strength being the dominant factor—suggesting either the problem is overblown or how experts measure home-field advantage needs rethinking.
+- Why it matters: Most sports leagues spend resources and complexity adopting double round-robin formats to eliminate this perceived unfairness. If the problem doesn't actually matter on the field, leagues could simplify their schedules and cut administrative costs without affecting competitive integrity. This also suggests the football analytics community should reconsider how they model home advantage in rating systems.
+
+### From Signals to Evidence: Interpretable Underwater Acoustic Target Sensing with Large Language Models - Part I: Framework and Recognition
+- URL: https://paperplaine.com/papers/from-signals-to-evidence
+- Category: Engineering
+- Authors: Yuge Zhang, Jie Chen, Zhengqiao Zhao et al.
+- arXiv: 2610.22064
+- Plain-English subtitle: Teaching AI to explain what it hears underwater, not just guess
+- Summary: Researchers combined underwater sound analysis with large language models to build a system that doesn't just identify ships—it explains what physical evidence led to that identification. The system can accurately recognize vessels and estimate specific acoustic signatures like shaft frequency and blade-passing frequency, grounded in actual physics rather than black-box pattern matching.
+- Why it matters: Navy and coast guard systems currently flag acoustic targets without explaining why, making it hard for operators to trust alerts or learn from mistakes. This framework could turn sonar into a tool that shows its reasoning—identifying a specific ship class while pointing to the exact acoustic features that clinched the call. That transparency matters for training personnel, catching false alarms, and building confidence in automated ocean surveillance.
 
 ### MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
 - URL: https://paperplaine.com/papers/mlexpert-towards-a-generalist
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Training AI to fix its mistakes by learning from its own corrections
 - Summary: When teaching an AI model to solve problems by learning from its own attempts, a major flaw emerges: the teacher model gets pulled along into the student's mistakes instead of correcting course. Researchers developed CriticOPD, which has the teacher identify where the student went wrong, then watches the student rewrite the solution correctly—and learning from that revision produces measurably better results, especially on hard competition math problems.
 - Why it matters: Most AI systems today struggle with complex reasoning because the feedback they receive during training can't reliably steer them back on track once they start down the wrong path. This method directly addresses that bottleneck by forcing a real correction cycle into the training loop. Better error recovery during training means these models could solve harder problems in the real world without requiring as much human oversight or external correction data.
-
-### MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios
-- URL: https://paperplaine.com/papers/mlp-initialized-reinforcement-learning
-- Category: Quantitative Finance
-- Authors: Jianning Wang, Robert Ślepaczuk, Paweł Sakowski
-- arXiv: 2610.13126
-- Plain-English subtitle: Teaching AI when to close risky stock-market bets for better profits
-- Summary: Researchers used historical trading data to train an artificial intelligence system that decides when to close short-straddle options positions—a bet that a stock index will stay within a narrow price range. The AI system achieved 37.5% returns with a Sharpe ratio of 1.705 over two years, beating simple hold-until-expiration strategies and fixed timing rules by consistently picking better exit moments.
-- Why it matters: Options traders make money or lose it based on split-second timing decisions, and current rules of thumb often leave money on the table. This approach shows that AI trained on historical patterns can systematically improve exit timing, potentially helping portfolio managers reduce losses during volatile markets and lock in gains earlier. For active traders, even small improvements in exit timing compound into substantial differences in annual returns.
-
-### Directed percolation in higher-order social dilemmas
-- URL: https://paperplaine.com/papers/directed-percolation-in-higher
-- Category: Physics
-- Authors: Pablo Villegas, Sandro Meloni
-- arXiv: 2610.18506
-- Plain-English subtitle: How group games create sudden tipping points through simple two-person interactions
-- Summary: Researchers discovered that dramatic phase shifts in multiplayer cooperation games don't actually require group interactions — the same explosive transitions appear in simpler two-person dynamics with short-term memory. By deriving the mathematical equations governing these systems, they showed that three-player games and their pairwise equivalents share identical tipping points, critical thresholds, and the minimum group size needed to trigger sudden behavioral collapse.
-- Why it matters: Understanding what truly drives sudden social tipping points—like rapid shifts in public opinion or cooperation breakdown—matters for predicting when societies are near the edge of major change. This finding simplifies the puzzle: planners and researchers don't need to model complex group interactions to capture these critical moments; tracking simple pairwise connections with memory is enough. That makes forecasting real-world cascades computationally feasible and helps identify which interventions might prevent unwanted social collapse.
-
-### Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization
-- URL: https://paperplaine.com/papers/beyond-llm-judge-mechanical
-- Category: Computer Science · AI
-- Authors: Anna Mei, Michael R. Douglas
-- arXiv: 2610.20573
-- Plain-English subtitle: Catching mistakes in AI-written math proofs that AI judges miss
-- Summary: Researchers created a verification system that catches errors in mathematical proofs automatically translated into formal logic, outperforming methods that rely solely on AI judges. The system combines AI review with mechanical checks—like numerical validation and consistency testing—to identify mistranslations that language models alone overlook, and the team used it to formalize over 300 mathematical functions from the NIST reference library.
-- Why it matters: Automatically translating mathematics into formal logic could accelerate proof verification and reduce human labor, but only if the translations are correct. This method achieves lower error rates than existing approaches, making it possible to automate the creation of reliable mathematical reference libraries that researchers and engineers can trust without manual inspection of every entry.
 
 ## About
 
