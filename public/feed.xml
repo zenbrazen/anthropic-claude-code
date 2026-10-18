@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 11:56:41 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 21:12:41 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty</title>
+      <link>https://paperplaine.com/papers/cat-alyzing-honesty-continuous</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cat-alyzing-honesty-continuous</guid>
+      <pubDate>Thu, 15 Oct 2026 17:43:47 GMT</pubDate>
+      <author>Yuan-Chen Chang, Niklas Herbster, Gauthier Gidel et al.</author>
+      <category>AI</category>
+      <description>Training AI chatbots to admit what they don&#39;t actually know</description>
+      <content:encoded><![CDATA[<p><em>Training AI chatbots to admit what they don't actually know</em></p><p>Large language models often make confident-sounding claims about things they don't actually know or can't verify from the information given to them. Researchers developed CATCH, a training method that teaches AI models to be honest about the limits of their knowledge by pushing them toward admitting uncertainty while keeping their useful abilities intact. The approach worked across multiple AI systems and outperformed other honesty-focused training methods.</p><p><strong>Why it matters:</strong> AI systems are increasingly used in high-stakes situations—medical diagnosis, legal advice, financial decisions—where false confidence can cause real harm. A chatbot that admits "I don't know" or "I can't verify that" is far safer than one that fabricates plausible-sounding answers. CATCH shows this kind of honesty can be reliably built in without sacrificing the model's ability to actually help people solve problems.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Shortcut Sensitivity in Agent-Safety Evaluations</title>
+      <link>https://paperplaine.com/papers/shortcut-sensitivity-in-agent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/shortcut-sensitivity-in-agent</guid>
+      <pubDate>Thu, 15 Oct 2026 17:18:05 GMT</pubDate>
+      <author>Hasan Demirkiran, Jens Ernstberger</author>
+      <category>Comp Sci</category>
+      <description>How hidden patterns in test data fool AI safety guards</description>
+      <content:encoded><![CDATA[<p><em>How hidden patterns in test data fool AI safety guards</em></p><p>When evaluating whether AI safety guards work properly, researchers discovered that the test data itself contains predictable shortcuts that make guards appear safer than they actually are. Testing two benchmark datasets, the team found that simple surface-level patterns—like command length or repeated phrases—let evaluators score guards as successful without truly measuring whether they stop harmful actions. Changing minor details in test cases caused safety scores to swing by up to 11 percentage points, proving the guards were responding to the wrong signals.</p><p><strong>Why it matters:</strong> AI safety guards protect systems from taking dangerous actions, so we need honest evaluation methods to know if they work. When benchmarks contain hidden shortcuts, companies and researchers get false confidence that their safety systems are effective, when those systems might fail on real-world variations. This work provides a concrete testing framework to catch these blind spots before flawed safety guards get deployed.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Classical Capacity of Single-Mode Bosonic Gaussian Channels</title>
+      <link>https://paperplaine.com/papers/classical-capacity-of-single</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/classical-capacity-of-single</guid>
+      <pubDate>Thu, 15 Oct 2026 17:49:43 GMT</pubDate>
+      <author>Gerardo Adesso, Ludovico Lami, Vittorio Giovannetti</author>
+      <category>Physics</category>
+      <description>Finding the speed limit for sending messages through noisy fiber-optic cables</description>
+      <content:encoded><![CDATA[<p><em>Finding the speed limit for sending messages through noisy fiber-optic cables</em></p><p>Researchers have solved a decades-old question about the maximum rate at which information can travel through noisy optical channels—the kind used in real fiber-optic and wireless communications. They proved that simple, standard signal encodings are enough to hit this theoretical limit, without needing exotic quantum tricks like entanglement. They also derived the exact trade-off between how fast you can send data and how many errors you'll encounter.</p><p><strong>Why it matters:</strong> Optical networks carry most of the world's internet traffic, and this work establishes the hard ceiling on how much information those channels can handle. Engineers now know exactly what performance to expect from current fiber systems and where real bottlenecks lie—information that shapes decisions about infrastructure upgrades and communication standards.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Knowledge That Is Linear Before Fine-Tuning Generalizes After It</title>
       <link>https://paperplaine.com/papers/knowledge-that-is-linear</link>

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 992 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 995 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-18
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty
+Subtitle: Training AI chatbots to admit what they don't actually know
+URL: https://paperplaine.com/papers/cat-alyzing-honesty-continuous
+Category: Computer Science · AI
+Authors: Yuan-Chen Chang, Niklas Herbster, Gauthier Gidel et al.
+arXiv ID: 2610.22292
+arXiv URL: https://arxiv.org/abs/2610.22292
+Posted: 2026-10-18
+
+Summary: Large language models often make confident-sounding claims about things they don't actually know or can't verify from the information given to them. Researchers developed CATCH, a training method that teaches AI models to be honest about the limits of their knowledge by pushing them toward admitting uncertainty while keeping their useful abilities intact. The approach worked across multiple AI systems and outperformed other honesty-focused training methods.
+
+Why it matters: AI systems are increasingly used in high-stakes situations—medical diagnosis, legal advice, financial decisions—where false confidence can cause real harm. A chatbot that admits "I don't know" or "I can't verify that" is far safer than one that fabricates plausible-sounding answers. CATCH shows this kind of honesty can be reliably built in without sacrificing the model's ability to actually help people solve problems.
+
+---
+Title: Shortcut Sensitivity in Agent-Safety Evaluations
+Subtitle: How hidden patterns in test data fool AI safety guards
+URL: https://paperplaine.com/papers/shortcut-sensitivity-in-agent
+Category: Computer Science
+Authors: Hasan Demirkiran, Jens Ernstberger
+arXiv ID: 2610.22243
+arXiv URL: https://arxiv.org/abs/2610.22243
+Posted: 2026-10-18
+
+Summary: When evaluating whether AI safety guards work properly, researchers discovered that the test data itself contains predictable shortcuts that make guards appear safer than they actually are. Testing two benchmark datasets, the team found that simple surface-level patterns—like command length or repeated phrases—let evaluators score guards as successful without truly measuring whether they stop harmful actions. Changing minor details in test cases caused safety scores to swing by up to 11 percentage points, proving the guards were responding to the wrong signals.
+
+Why it matters: AI safety guards protect systems from taking dangerous actions, so we need honest evaluation methods to know if they work. When benchmarks contain hidden shortcuts, companies and researchers get false confidence that their safety systems are effective, when those systems might fail on real-world variations. This work provides a concrete testing framework to catch these blind spots before flawed safety guards get deployed.
+
+---
+Title: Classical Capacity of Single-Mode Bosonic Gaussian Channels
+Subtitle: Finding the speed limit for sending messages through noisy fiber-optic cables
+URL: https://paperplaine.com/papers/classical-capacity-of-single
+Category: Physics
+Authors: Gerardo Adesso, Ludovico Lami, Vittorio Giovannetti
+arXiv ID: 2610.22308
+arXiv URL: https://arxiv.org/abs/2610.22308
+Posted: 2026-10-18
+
+Summary: Researchers have solved a decades-old question about the maximum rate at which information can travel through noisy optical channels—the kind used in real fiber-optic and wireless communications. They proved that simple, standard signal encodings are enough to hit this theoretical limit, without needing exotic quantum tricks like entanglement. They also derived the exact trade-off between how fast you can send data and how many errors you'll encounter.
+
+Why it matters: Optical networks carry most of the world's internet traffic, and this work establishes the hard ceiling on how much information those channels can handle. Engineers now know exactly what performance to expect from current fiber systems and where real bottlenecks lie—information that shapes decisions about infrastructure upgrades and communication standards.
 
 ---
 Title: Knowledge That Is Linear Before Fine-Tuning Generalizes After It

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.22292",
+    "title": "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty",
+    "authors": "Yuan-Chen Chang, Niklas Herbster, Gauthier Gidel et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-15T17:43:47Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Training AI chatbots to admit what they don't actually know",
+    "summary": "Large language models often make confident-sounding claims about things they don't actually know or can't verify from the information given to them. Researchers developed CATCH, a training method that teaches AI models to be honest about the limits of their knowledge by pushing them toward admitting uncertainty while keeping their useful abilities intact. The approach worked across multiple AI systems and outperformed other honesty-focused training methods.",
+    "whyItMatters": "AI systems are increasingly used in high-stakes situations—medical diagnosis, legal advice, financial decisions—where false confidence can cause real harm. A chatbot that admits \"I don't know\" or \"I can't verify that\" is far safer than one that fabricates plausible-sounding answers. CATCH shows this kind of honesty can be reliably built in without sacrificing the model's ability to actually help people solve problems.",
+    "fetchedAt": "2026-10-18T21:12:34.783Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 180
+    },
+    "slug": "cat-alyzing-honesty-continuous"
+  },
+  {
+    "id": "2610.22243",
+    "title": "Shortcut Sensitivity in Agent-Safety Evaluations",
+    "authors": "Hasan Demirkiran, Jens Ernstberger",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-15T17:18:05Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "How hidden patterns in test data fool AI safety guards",
+    "summary": "When evaluating whether AI safety guards work properly, researchers discovered that the test data itself contains predictable shortcuts that make guards appear safer than they actually are. Testing two benchmark datasets, the team found that simple surface-level patterns—like command length or repeated phrases—let evaluators score guards as successful without truly measuring whether they stop harmful actions. Changing minor details in test cases caused safety scores to swing by up to 11 percentage points, proving the guards were responding to the wrong signals.",
+    "whyItMatters": "AI safety guards protect systems from taking dangerous actions, so we need honest evaluation methods to know if they work. When benchmarks contain hidden shortcuts, companies and researchers get false confidence that their safety systems are effective, when those systems might fail on real-world variations. This work provides a concrete testing framework to catch these blind spots before flawed safety guards get deployed.",
+    "fetchedAt": "2026-10-18T21:12:38.096Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 242
+    },
+    "slug": "shortcut-sensitivity-in-agent"
+  },
+  {
+    "id": "2610.22308",
+    "title": "Classical Capacity of Single-Mode Bosonic Gaussian Channels",
+    "authors": "Gerardo Adesso, Ludovico Lami, Vittorio Giovannetti",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-10-15T17:49:43Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Finding the speed limit for sending messages through noisy fiber-optic cables",
+    "summary": "Researchers have solved a decades-old question about the maximum rate at which information can travel through noisy optical channels—the kind used in real fiber-optic and wireless communications. They proved that simple, standard signal encodings are enough to hit this theoretical limit, without needing exotic quantum tricks like entanglement. They also derived the exact trade-off between how fast you can send data and how many errors you'll encounter.",
+    "whyItMatters": "Optical networks carry most of the world's internet traffic, and this work establishes the hard ceiling on how much information those channels can handle. Engineers now know exactly what performance to expect from current fiber systems and where real bottlenecks lie—information that shapes decisions about infrastructure upgrades and communication standards.",
+    "fetchedAt": "2026-10-18T21:12:41.027Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 246
+    },
+    "slug": "classical-capacity-of-single"
+  },
+  {
     "id": "2610.22300",
     "title": "Knowledge That Is Linear Before Fine-Tuning Generalizes After It",
     "authors": "Faridoun Mehri, Hinrich Schütze",

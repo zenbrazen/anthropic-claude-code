@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 992 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 995 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 340 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 341 papers in archive.
+  - "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty"
   - "Knowledge That Is Linear Before Fine-Tuning Generalizes After It"
-  - "Learning to Steer LLM Agents and Multi-Agent Systems"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 81 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 82 papers in archive.
+  - "Shortcut Sensitivity in Agent-Safety Evaluations"
   - "Language Is a Security Surface for Agent Guards"
-  - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 82 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 83 papers in archive.
+  - "Classical Capacity of Single-Mode Bosonic Gaussian Channels"
   - "Directed percolation in higher-order social dilemmas"
-  - "Collective Benefits and Efficiency in Coupled Echo State Networks"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 84 papers in archive.
   - "Defense Filters for Robust Learning of Partially Observed Dynamical Systems"
   - "Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
 
 ## 10 most recent papers
+
+### CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty
+- URL: https://paperplaine.com/papers/cat-alyzing-honesty-continuous
+- Category: Computer Science · AI
+- Authors: Yuan-Chen Chang, Niklas Herbster, Gauthier Gidel et al.
+- arXiv: 2610.22292
+- Plain-English subtitle: Training AI chatbots to admit what they don't actually know
+- Summary: Large language models often make confident-sounding claims about things they don't actually know or can't verify from the information given to them. Researchers developed CATCH, a training method that teaches AI models to be honest about the limits of their knowledge by pushing them toward admitting uncertainty while keeping their useful abilities intact. The approach worked across multiple AI systems and outperformed other honesty-focused training methods.
+- Why it matters: AI systems are increasingly used in high-stakes situations—medical diagnosis, legal advice, financial decisions—where false confidence can cause real harm. A chatbot that admits "I don't know" or "I can't verify that" is far safer than one that fabricates plausible-sounding answers. CATCH shows this kind of honesty can be reliably built in without sacrificing the model's ability to actually help people solve problems.
+
+### Shortcut Sensitivity in Agent-Safety Evaluations
+- URL: https://paperplaine.com/papers/shortcut-sensitivity-in-agent
+- Category: Computer Science
+- Authors: Hasan Demirkiran, Jens Ernstberger
+- arXiv: 2610.22243
+- Plain-English subtitle: How hidden patterns in test data fool AI safety guards
+- Summary: When evaluating whether AI safety guards work properly, researchers discovered that the test data itself contains predictable shortcuts that make guards appear safer than they actually are. Testing two benchmark datasets, the team found that simple surface-level patterns—like command length or repeated phrases—let evaluators score guards as successful without truly measuring whether they stop harmful actions. Changing minor details in test cases caused safety scores to swing by up to 11 percentage points, proving the guards were responding to the wrong signals.
+- Why it matters: AI safety guards protect systems from taking dangerous actions, so we need honest evaluation methods to know if they work. When benchmarks contain hidden shortcuts, companies and researchers get false confidence that their safety systems are effective, when those systems might fail on real-world variations. This work provides a concrete testing framework to catch these blind spots before flawed safety guards get deployed.
+
+### Classical Capacity of Single-Mode Bosonic Gaussian Channels
+- URL: https://paperplaine.com/papers/classical-capacity-of-single
+- Category: Physics
+- Authors: Gerardo Adesso, Ludovico Lami, Vittorio Giovannetti
+- arXiv: 2610.22308
+- Plain-English subtitle: Finding the speed limit for sending messages through noisy fiber-optic cables
+- Summary: Researchers have solved a decades-old question about the maximum rate at which information can travel through noisy optical channels—the kind used in real fiber-optic and wireless communications. They proved that simple, standard signal encodings are enough to hit this theoretical limit, without needing exotic quantum tricks like entanglement. They also derived the exact trade-off between how fast you can send data and how many errors you'll encounter.
+- Why it matters: Optical networks carry most of the world's internet traffic, and this work establishes the hard ceiling on how much information those channels can handle. Engineers now know exactly what performance to expect from current fiber systems and where real bottlenecks lie—information that shapes decisions about infrastructure upgrades and communication standards.
 
 ### Knowledge That Is Linear Before Fine-Tuning Generalizes After It
 - URL: https://paperplaine.com/papers/knowledge-that-is-linear
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why AI agents struggle when customers don't know what they actually need
 - Summary: AI agents that excel at well-defined lab tasks fail dramatically in real customer work, solving only 14 percent of realistic delivery problems. The main culprit is uncovering hidden constraints — what customers didn't mention because they didn't know to mention it — but even when agents gather all the facts, most still can't turn that knowledge into working solutions.
 - Why it matters: As companies deploy AI to solve actual business problems, this gap between benchmark performance and real-world delivery directly impacts whether customers get value or disappointment. The benchmark shows that today's best AI agents reach only 56 percent effectiveness on realistic tasks, meaning organizations betting on AI for complex customer work are likely to see failed projects and wasted investment until these systems learn to ask better questions and reason through messy, incomplete information.
-
-### On the fairness of single round-robin tournaments: Evidence from European football
-- URL: https://paperplaine.com/papers/on-the-fairness-of
-- Category: Economics
-- Authors: László Csató, Diána Ivett Fűrész, Zsolt Havran
-- arXiv: 2610.21296
-- Plain-English subtitle: Why football's uneven home-away schedules don't unfairly tilt league outcomes
-- Summary: Single round-robin football tournaments give some teams more home games than others, which theory suggests is unfair. But analysis of European leagues shows this scheduling imbalance has no meaningful effect on final points, despite team strength being the dominant factor—suggesting either the problem is overblown or how experts measure home-field advantage needs rethinking.
-- Why it matters: Most sports leagues spend resources and complexity adopting double round-robin formats to eliminate this perceived unfairness. If the problem doesn't actually matter on the field, leagues could simplify their schedules and cut administrative costs without affecting competitive integrity. This also suggests the football analytics community should reconsider how they model home advantage in rating systems.
-
-### From Signals to Evidence: Interpretable Underwater Acoustic Target Sensing with Large Language Models - Part I: Framework and Recognition
-- URL: https://paperplaine.com/papers/from-signals-to-evidence
-- Category: Engineering
-- Authors: Yuge Zhang, Jie Chen, Zhengqiao Zhao et al.
-- arXiv: 2610.22064
-- Plain-English subtitle: Teaching AI to explain what it hears underwater, not just guess
-- Summary: Researchers combined underwater sound analysis with large language models to build a system that doesn't just identify ships—it explains what physical evidence led to that identification. The system can accurately recognize vessels and estimate specific acoustic signatures like shaft frequency and blade-passing frequency, grounded in actual physics rather than black-box pattern matching.
-- Why it matters: Navy and coast guard systems currently flag acoustic targets without explaining why, making it hard for operators to trust alerts or learn from mistakes. This framework could turn sonar into a tool that shows its reasoning—identifying a specific ship class while pointing to the exact acoustic features that clinched the call. That transparency matters for training personnel, catching false alarms, and building confidence in automated ocean surveillance.
-
-### MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
-- URL: https://paperplaine.com/papers/mlexpert-towards-a-generalist
-- Category: Computer Science · AI
-- Authors: Shangheng Du, Jinxin Shi, Shuaiyu Zhang et al.
-- arXiv: 2610.22344
-- Plain-English subtitle: Teaching AI to autonomously design and improve machine learning systems
-- Summary: Researchers trained MLExpert, a specialized AI model, to autonomously run machine learning experiments and improve its own optimization strategies based on what it learns. On a standard benchmark, MLExpert nearly doubled the success rate of its base model—from 38% to 73%—matching the performance of much larger frontier AI systems, and its learned skills transferred to other optimization tasks beyond its training domain.
-- Why it matters: As AI systems increasingly optimize themselves rather than waiting for human engineers to improve them, this work demonstrates a practical path toward AI that can accelerate its own development cycles. This could compress months of experimentation into days, making advanced AI capabilities faster and cheaper to build—but also raising questions about oversight as these systems operate with less human intervention.
 
 ## About
 
