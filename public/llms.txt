@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 989 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 992 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 339 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 340 papers in archive.
+  - "Knowledge That Is Linear Before Fine-Tuning Generalizes After It"
   - "Learning to Steer LLM Agents and Multi-Agent Systems"
-  - "FDE-Gym: The Last Mile of AI Delivery"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 81 papers in archive.
   - "Language Is a Security Surface for Agent Guards"
   - "X.js: A Live Benchmark for Node.js Taint-Style Vulnerabilities"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 82 papers in archive.
   - "Directed percolation in higher-order social dilemmas"
   - "Collective Benefits and Efficiency in Coupled Echo State Networks"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 83 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 84 papers in archive.
+  - "Defense Filters for Robust Learning of Partially Observed Dynamical Systems"
   - "Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure"
-  - "Selecting the 7th Smallest of 16 Elements Takes Exactly 28 Comparisons"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 84 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 85 papers in archive.
+  - "Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora"
   - "Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions"
-  - "Predicting Unseen Scientific Interactions: Conditional Flow Models Hallucinate Non-Additive Effects"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 85 papers in archive.
   - "Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols"
   - "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
 
 ## 10 most recent papers
+
+### Knowledge That Is Linear Before Fine-Tuning Generalizes After It
+- URL: https://paperplaine.com/papers/knowledge-that-is-linear
+- Category: Computer Science · AI
+- Authors: Faridoun Mehri, Hinrich Schütze
+- arXiv: 2610.22300
+- Plain-English subtitle: Why some facts help AI learn broadly, while others remain stuck in isolation
+- Summary: Language models contain two kinds of facts: some that support learning new related tasks, and others that can be recalled perfectly but don't help at all. By teaching models to map cities to made-up animal names instead of continents, researchers found that a fact's usefulness for learning depends almost entirely on how cleanly its underlying structure can be extracted from the model's internal representations—not on whether the model already knew it.
+- Why it matters: When companies fine-tune language models on new tasks, they currently can't predict which learned facts will help the model generalize and which will leave it struggling with unseen examples. This research provides a measurable signal—linear readability in pretrained representations—that could guide which facts to teach during training, potentially making fine-tuned models more reliable and reducing costly trial-and-error experimentation.
+
+### Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora
+- URL: https://paperplaine.com/papers/cross-subject-decoding-of
+- Category: Quantitative Biology
+- Authors: Blessing Isoyiza Adeika, Onyema Osuagwu
+- arXiv: 2610.20954
+- Plain-English subtitle: Why brain signals for imagined speech don't work across different people
+- Summary: Researchers tested whether brain signals from imagined speech could be decoded in one person after training on another person's signals — a requirement for practical brain-computer interfaces that need no calibration. Across three public datasets and 482 pairs of participants, no cross-person transfer survived statistical correction, and what appeared to work within single subjects turned out to reflect brain activity after speech imagery ended, not the imagery itself.
+- Why it matters: Brain-computer interfaces for speech would be far more practical if they could work on a new user without lengthy calibration. This work shows that imagined speech produces signals too unique to each person to enable that, and reveals that apparent within-subject successes were measuring artifacts rather than true speech imagery — a critical correction that will redirect future research toward either improving signal quality or accepting that personalized calibration is necessary.
+
+### Defense Filters for Robust Learning of Partially Observed Dynamical Systems
+- URL: https://paperplaine.com/papers/defense-filters-for-robust
+- Category: Mathematics
+- Authors: Jihun Kim, Javad Lavaei
+- arXiv: 2610.21935
+- Plain-English subtitle: Spotting lies in sensor data when someone's attacking half the time
+- Summary: Researchers developed a defense filter that can reliably identify how a system works even when an adversary is poisoning up to 50% of the incoming sensor data. The method works by using knowledge of which sensors you have to construct a mathematical filter that separates legitimate signals from attacks, then recovering the system's behavior with proven accuracy guarantees — a first for systems operating under this level of attack.
+- Why it matters: Power grids, autonomous vehicles, and industrial control systems all rely on learning accurate models from sensor data. When adversaries can corrupt half the measurements, traditional estimation fails. This work enables critical infrastructure to maintain reliable operations even under coordinated cyberattacks where attackers compromise many data points, making real-world deployments far safer.
 
 ### Learning to Steer LLM Agents and Multi-Agent Systems
 - URL: https://paperplaine.com/papers/learning-to-steer-llm
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to autonomously design and improve machine learning systems
 - Summary: Researchers trained MLExpert, a specialized AI model, to autonomously run machine learning experiments and improve its own optimization strategies based on what it learns. On a standard benchmark, MLExpert nearly doubled the success rate of its base model—from 38% to 73%—matching the performance of much larger frontier AI systems, and its learned skills transferred to other optimization tasks beyond its training domain.
 - Why it matters: As AI systems increasingly optimize themselves rather than waiting for human engineers to improve them, this work demonstrates a practical path toward AI that can accelerate its own development cycles. This could compress months of experimentation into days, making advanced AI capabilities faster and cheaper to build—but also raising questions about oversight as these systems operate with less human intervention.
-
-### Language Is a Security Surface for Agent Guards
-- URL: https://paperplaine.com/papers/language-is-a-security
-- Category: Computer Science
-- Authors: Hasan Demirkiran, Jens Ernstberger
-- arXiv: 2610.22244
-- Plain-English subtitle: Why AI safety guards fail when users speak other languages
-- Summary: Security systems that guard AI agents from harmful actions change their safety decisions based on the language a user speaks — even when the actual request and actions remain identical. On rare languages like Amharic, smaller safety guards flip their verdicts up to 4.4 percentage points more often than expected by chance, while the most powerful frontier models like Gemini remain nearly unaffected.
-- Why it matters: AI agents are increasingly deployed globally, but their safety mechanisms appear engineered and tested almost entirely in English. A user in a non-English-speaking country could ask the same question that would be blocked in English and have it approved in their own language, potentially exposing them to harmful outputs. This gap widens for smaller, open-source guards that organizations with fewer resources might deploy, creating a security risk that grows with linguistic distance from English.
-
-### Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions
-- URL: https://paperplaine.com/papers/statistical-mechanics-of-spike
-- Category: Quantitative Biology
-- Authors: Jan Pyrzowski, Laura Messio, Guillaume Marrelec et al.
-- arXiv: 2610.20971
-- Plain-English subtitle: How brains switch between steady and rhythmic firing modes
-- Summary: Researchers developed a physics-based framework for understanding when populations of neurons oscillate versus fire steadily, treating entire sequences of neural spikes as energy states similar to how physicists model physical matter. The model reveals that brain activity undergoes a phase transition—like water freezing into ice—where a competition between synaptic rules and random noise shifts neurons from one firing pattern to a completely different one.
-- Why it matters: Understanding these transitions could explain abnormal brain rhythms in epilepsy, sleep disorders, and neuropsychiatric conditions, where the brain gets stuck in pathological oscillations or fails to generate normal rhythmic activity like sleep spindles. The framework provides a new mathematical language for predicting when and why these shifts happen, potentially guiding development of therapies that nudge neural activity out of harmful states.
-
-### LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
-- URL: https://paperplaine.com/papers/libero-perm-benchmarking-personalized
-- Category: Computer Science · AI
-- Authors: Zhixu Li, Keqian Tang, Litian Gong et al.
-- arXiv: 2610.22372
-- Plain-English subtitle: Teaching robots to work the way individual people prefer, not just complete tasks
-- Summary: Researchers created the first standardized test for teaching robots to follow human preferences—like choosing a smooth motion over a fast one, or organizing items in a particular way. Current AI-powered robots fail at this when given no examples, but can learn preferences from a handful of demonstrations; however, they struggle to apply what they learned to new layouts or handle conflicting preferences.
-- Why it matters: Household robots need to adapt to how different people want tasks done, not just whether tasks get done. Without benchmarks and training data for preference learning, companies building these robots have no way to measure progress or know which approaches actually work. This benchmark gives the field a shared standard to build better robots that respect individual styles and habits.
 
 ## About
 

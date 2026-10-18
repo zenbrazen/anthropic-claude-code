@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.22300",
+    "title": "Knowledge That Is Linear Before Fine-Tuning Generalizes After It",
+    "authors": "Faridoun Mehri, Hinrich Schütze",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-15T17:47:52Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Why some facts help AI learn broadly, while others remain stuck in isolation",
+    "summary": "Language models contain two kinds of facts: some that support learning new related tasks, and others that can be recalled perfectly but don't help at all. By teaching models to map cities to made-up animal names instead of continents, researchers found that a fact's usefulness for learning depends almost entirely on how cleanly its underlying structure can be extracted from the model's internal representations—not on whether the model already knew it.",
+    "whyItMatters": "When companies fine-tune language models on new tasks, they currently can't predict which learned facts will help the model generalize and which will leave it struggling with unseen examples. This research provides a measurable signal—linear readability in pretrained representations—that could guide which facts to teach during training, potentially making fine-tuned models more reliable and reducing costly trial-and-error experimentation.",
+    "fetchedAt": "2026-10-18T11:56:34.945Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 307
+    },
+    "slug": "knowledge-that-is-linear"
+  },
+  {
+    "id": "2610.20954",
+    "title": "Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora",
+    "authors": "Blessing Isoyiza Adeika, Onyema Osuagwu",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-14T21:25:50Z",
+    "publishedFormatted": "Oct 14, 2026",
+    "subtitle": "Why brain signals for imagined speech don't work across different people",
+    "summary": "Researchers tested whether brain signals from imagined speech could be decoded in one person after training on another person's signals — a requirement for practical brain-computer interfaces that need no calibration. Across three public datasets and 482 pairs of participants, no cross-person transfer survived statistical correction, and what appeared to work within single subjects turned out to reflect brain activity after speech imagery ended, not the imagery itself.",
+    "whyItMatters": "Brain-computer interfaces for speech would be far more practical if they could work on a new user without lengthy calibration. This work shows that imagined speech produces signals too unique to each person to enable that, and reveals that apparent within-subject successes were measuring artifacts rather than true speech imagery — a critical correction that will redirect future research toward either improving signal quality or accepting that personalized calibration is necessary.",
+    "fetchedAt": "2026-10-18T11:56:38.043Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 249
+    },
+    "slug": "cross-subject-decoding-of"
+  },
+  {
+    "id": "2610.21935",
+    "title": "Defense Filters for Robust Learning of Partially Observed Dynamical Systems",
+    "authors": "Jihun Kim, Javad Lavaei",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-15T14:11:55Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "Spotting lies in sensor data when someone's attacking half the time",
+    "summary": "Researchers developed a defense filter that can reliably identify how a system works even when an adversary is poisoning up to 50% of the incoming sensor data. The method works by using knowledge of which sensors you have to construct a mathematical filter that separates legitimate signals from attacks, then recovering the system's behavior with proven accuracy guarantees — a first for systems operating under this level of attack.",
+    "whyItMatters": "Power grids, autonomous vehicles, and industrial control systems all rely on learning accurate models from sensor data. When adversaries can corrupt half the measurements, traditional estimation fails. This work enables critical infrastructure to maintain reliable operations even under coordinated cyberattacks where attackers compromise many data points, making real-world deployments far safer.",
+    "fetchedAt": "2026-10-18T11:56:40.686Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 160
+    },
+    "slug": "defense-filters-for-robust"
+  },
+  {
     "id": "2610.22316",
     "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
     "authors": "Leyang Shen, Yaxin Gong, Yang Zhang et al.",

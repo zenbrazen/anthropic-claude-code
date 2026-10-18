@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2026 21:10:52 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 11:56:41 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Knowledge That Is Linear Before Fine-Tuning Generalizes After It</title>
+      <link>https://paperplaine.com/papers/knowledge-that-is-linear</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/knowledge-that-is-linear</guid>
+      <pubDate>Thu, 15 Oct 2026 17:47:52 GMT</pubDate>
+      <author>Faridoun Mehri, Hinrich Schütze</author>
+      <category>AI</category>
+      <description>Why some facts help AI learn broadly, while others remain stuck in isolation</description>
+      <content:encoded><![CDATA[<p><em>Why some facts help AI learn broadly, while others remain stuck in isolation</em></p><p>Language models contain two kinds of facts: some that support learning new related tasks, and others that can be recalled perfectly but don't help at all. By teaching models to map cities to made-up animal names instead of continents, researchers found that a fact's usefulness for learning depends almost entirely on how cleanly its underlying structure can be extracted from the model's internal representations—not on whether the model already knew it.</p><p><strong>Why it matters:</strong> When companies fine-tune language models on new tasks, they currently can't predict which learned facts will help the model generalize and which will leave it struggling with unseen examples. This research provides a measurable signal—linear readability in pretrained representations—that could guide which facts to teach during training, potentially making fine-tuned models more reliable and reducing costly trial-and-error experimentation.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora</title>
+      <link>https://paperplaine.com/papers/cross-subject-decoding-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cross-subject-decoding-of</guid>
+      <pubDate>Wed, 14 Oct 2026 21:25:50 GMT</pubDate>
+      <author>Blessing Isoyiza Adeika, Onyema Osuagwu</author>
+      <category>Biology</category>
+      <description>Why brain signals for imagined speech don&#39;t work across different people</description>
+      <content:encoded><![CDATA[<p><em>Why brain signals for imagined speech don't work across different people</em></p><p>Researchers tested whether brain signals from imagined speech could be decoded in one person after training on another person's signals — a requirement for practical brain-computer interfaces that need no calibration. Across three public datasets and 482 pairs of participants, no cross-person transfer survived statistical correction, and what appeared to work within single subjects turned out to reflect brain activity after speech imagery ended, not the imagery itself.</p><p><strong>Why it matters:</strong> Brain-computer interfaces for speech would be far more practical if they could work on a new user without lengthy calibration. This work shows that imagined speech produces signals too unique to each person to enable that, and reveals that apparent within-subject successes were measuring artifacts rather than true speech imagery — a critical correction that will redirect future research toward either improving signal quality or accepting that personalized calibration is necessary.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Defense Filters for Robust Learning of Partially Observed Dynamical Systems</title>
+      <link>https://paperplaine.com/papers/defense-filters-for-robust</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/defense-filters-for-robust</guid>
+      <pubDate>Thu, 15 Oct 2026 14:11:55 GMT</pubDate>
+      <author>Jihun Kim, Javad Lavaei</author>
+      <category>Math</category>
+      <description>Spotting lies in sensor data when someone&#39;s attacking half the time</description>
+      <content:encoded><![CDATA[<p><em>Spotting lies in sensor data when someone's attacking half the time</em></p><p>Researchers developed a defense filter that can reliably identify how a system works even when an adversary is poisoning up to 50% of the incoming sensor data. The method works by using knowledge of which sensors you have to construct a mathematical filter that separates legitimate signals from attacks, then recovering the system's behavior with proven accuracy guarantees — a first for systems operating under this level of attack.</p><p><strong>Why it matters:</strong> Power grids, autonomous vehicles, and industrial control systems all rely on learning accurate models from sensor data. When adversaries can corrupt half the measurements, traditional estimation fails. This work enables critical infrastructure to maintain reliable operations even under coordinated cyberattacks where attackers compromise many data points, making real-world deployments far safer.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Learning to Steer LLM Agents and Multi-Agent Systems</title>
       <link>https://paperplaine.com/papers/learning-to-steer-llm</link>
