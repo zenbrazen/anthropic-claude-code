@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 998 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1001 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-19
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search
+Subtitle: Teaching AI to remember what works when rewriting product listings
+URL: https://paperplaine.com/papers/globe-evolving-structured-agentic
+Category: Computer Science · AI
+Authors: Hyunseo Kim, Suil Choe, Sukkyoung So et al.
+arXiv ID: 2610.23709
+arXiv URL: https://arxiv.org/abs/2610.23709
+Posted: 2026-10-19
+
+Summary: A new system called GLOBE lets AI agents improve their own strategies for rewriting product listings in search results by storing what works in a reusable memory bank. Rather than starting from scratch each time, the system learns effective techniques for different product categories and builds them into an evolving handbook—kind of like an agent writing down its own playbook. Testing showed this approach outperforms traditional methods, and the strategies learned on one product type transfer well to entirely new categories.
+
+Why it matters: Online retailers rely on product listings to appear in generative search results where customers browse. By letting AI systems learn and remember optimization strategies across thousands of products, this approach could significantly improve which listings show up for customer searches and boost sales. The fact that learned strategies transfer across product categories means companies won't need to rebuild optimization systems from scratch for every new product type they sell.
+
+---
+Title: From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling
+Subtitle: How to sell large stock positions without crashing the price yourself
+URL: https://paperplaine.com/papers/from-alpha-to-execution
+Category: Mathematics
+Authors: Dnyanesh Kulkarni, Revant Nayar
+arXiv ID: 2610.23749
+arXiv URL: https://arxiv.org/abs/2610.23749
+Posted: 2026-10-19
+
+Summary: When traders need to sell large blocks of stock, slowing down the sale usually reduces price damage—but how slow is actually optimal? This paper shows the answer depends on two competing forces: how much the sale itself moves the market (which gets cheaper per share when spread over time), and how fast the trader's original profit opportunity is decaying. The researchers found that for realistic market conditions, the optimal time window can span a range more than ten times wider than typical trading models suggest, and they derived the precise schedule for releasing shares that saves 10-17% on execution costs compared to uniform, constant-rate sales.
+
+Why it matters: Large institutional trades are a daily fact of markets—pension funds, mutual funds, and hedge funds regularly need to exit or enter positions worth millions. Poorly timed execution costs them real money; even small percentage improvements compound across thousands of trades. This framework gives traders a concrete way to decide not just *how* to sell, but *when to start and stop*, accounting for real market behavior where impact follows a power law rather than a simple linear formula. The 10-17% savings in costs translates directly to higher returns for investors and lower slippage in markets.
+
+---
+Title: Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals
+Subtitle: Why crypto exchanges shortchange traders who hold stock futures through dividends
+URL: https://paperplaine.com/papers/basis-only-funding-is
+Category: Quantitative Finance
+Authors: Donghwa Seo, Doohwi Cha, Seunghan Son et al.
+arXiv ID: 2610.22839
+arXiv URL: https://arxiv.org/abs/2610.22839
+Posted: 2026-10-19
+
+Summary: When crypto exchanges offer perpetual futures contracts on dividend-paying stocks, they use a funding mechanism based on price differences that fails to account for dividends. Traders who hold these contracts through a dividend payment get shortchanged — they bear the stock's price drop on the ex-dividend date but never receive the cash dividend itself. The paper shows this happens because the standard funding system treats crypto assets and real-world assets identically, missing a crucial distinction: for stocks, fairness requires a discrete payment (an "event credit") at dividend time, not just a continuous funding stream.
+
+Why it matters: Traders using these perpetual futures effectively lose money compared to owning actual stock. One exchange tested in the study does post the required dividend credit, while standard ones don't — meaning the same trade produces different outcomes across venues. As crypto exchanges expand into offering contracts on dividend-paying assets, this funding design flaw creates real financial harm, incentivizing traders to either avoid these contracts or migrate to venues that properly handle dividends.
 
 ---
 Title: Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize

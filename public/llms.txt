@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 998 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1001 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 342 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 343 papers in archive.
+  - "GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search"
   - "Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize"
-  - "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 82 papers in archive.
   - "Shortcut Sensitivity in Agent-Safety Evaluations"
   - "Language Is a Security Surface for Agent Guards"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 83 papers in archive.
   - "Classical Capacity of Single-Mode Bosonic Gaussian Channels"
   - "Directed percolation in higher-order social dilemmas"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 84 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 85 papers in archive.
+  - "From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling"
   - "Defense Filters for Robust Learning of Partially Observed Dynamical Systems"
-  - "Convergence Rates for Lasserre's Upper-Bound Hierarchy on \mathbb{R}^d with Gaussian Measure"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 85 papers in archive.
   - "Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora"
   - "Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 85 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 86 papers in archive.
+  - "Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals"
   - "Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols"
-  - "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 87 papers in archive.
   - "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference"
   - "Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
 
 ## 10 most recent papers
+
+### GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search
+- URL: https://paperplaine.com/papers/globe-evolving-structured-agentic
+- Category: Computer Science · AI
+- Authors: Hyunseo Kim, Suil Choe, Sukkyoung So et al.
+- arXiv: 2610.23709
+- Plain-English subtitle: Teaching AI to remember what works when rewriting product listings
+- Summary: A new system called GLOBE lets AI agents improve their own strategies for rewriting product listings in search results by storing what works in a reusable memory bank. Rather than starting from scratch each time, the system learns effective techniques for different product categories and builds them into an evolving handbook—kind of like an agent writing down its own playbook. Testing showed this approach outperforms traditional methods, and the strategies learned on one product type transfer well to entirely new categories.
+- Why it matters: Online retailers rely on product listings to appear in generative search results where customers browse. By letting AI systems learn and remember optimization strategies across thousands of products, this approach could significantly improve which listings show up for customer searches and boost sales. The fact that learned strategies transfer across product categories means companies won't need to rebuild optimization systems from scratch for every new product type they sell.
+
+### From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling
+- URL: https://paperplaine.com/papers/from-alpha-to-execution
+- Category: Mathematics
+- Authors: Dnyanesh Kulkarni, Revant Nayar
+- arXiv: 2610.23749
+- Plain-English subtitle: How to sell large stock positions without crashing the price yourself
+- Summary: When traders need to sell large blocks of stock, slowing down the sale usually reduces price damage—but how slow is actually optimal? This paper shows the answer depends on two competing forces: how much the sale itself moves the market (which gets cheaper per share when spread over time), and how fast the trader's original profit opportunity is decaying. The researchers found that for realistic market conditions, the optimal time window can span a range more than ten times wider than typical trading models suggest, and they derived the precise schedule for releasing shares that saves 10-17% on execution costs compared to uniform, constant-rate sales.
+- Why it matters: Large institutional trades are a daily fact of markets—pension funds, mutual funds, and hedge funds regularly need to exit or enter positions worth millions. Poorly timed execution costs them real money; even small percentage improvements compound across thousands of trades. This framework gives traders a concrete way to decide not just *how* to sell, but *when to start and stop*, accounting for real market behavior where impact follows a power law rather than a simple linear formula. The 10-17% savings in costs translates directly to higher returns for investors and lower slippage in markets.
+
+### Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals
+- URL: https://paperplaine.com/papers/basis-only-funding-is
+- Category: Quantitative Finance
+- Authors: Donghwa Seo, Doohwi Cha, Seunghan Son et al.
+- arXiv: 2610.22839
+- Plain-English subtitle: Why crypto exchanges shortchange traders who hold stock futures through dividends
+- Summary: When crypto exchanges offer perpetual futures contracts on dividend-paying stocks, they use a funding mechanism based on price differences that fails to account for dividends. Traders who hold these contracts through a dividend payment get shortchanged — they bear the stock's price drop on the ex-dividend date but never receive the cash dividend itself. The paper shows this happens because the standard funding system treats crypto assets and real-world assets identically, missing a crucial distinction: for stocks, fairness requires a discrete payment (an "event credit") at dividend time, not just a continuous funding stream.
+- Why it matters: Traders using these perpetual futures effectively lose money compared to owning actual stock. One exchange tested in the study does post the required dividend credit, while standard ones don't — meaning the same trade produces different outcomes across venues. As crypto exchanges expand into offering contracts on dividend-paying assets, this funding design flaw creates real financial harm, incentivizing traders to either avoid these contracts or migrate to venues that properly handle dividends.
 
 ### Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize
 - URL: https://paperplaine.com/papers/neural-expansion-a-unified
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why some facts help AI learn broadly, while others remain stuck in isolation
 - Summary: Language models contain two kinds of facts: some that support learning new related tasks, and others that can be recalled perfectly but don't help at all. By teaching models to map cities to made-up animal names instead of continents, researchers found that a fact's usefulness for learning depends almost entirely on how cleanly its underlying structure can be extracted from the model's internal representations—not on whether the model already knew it.
 - Why it matters: When companies fine-tune language models on new tasks, they currently can't predict which learned facts will help the model generalize and which will leave it struggling with unseen examples. This research provides a measurable signal—linear readability in pretrained representations—that could guide which facts to teach during training, potentially making fine-tuned models more reliable and reducing costly trial-and-error experimentation.
-
-### Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora
-- URL: https://paperplaine.com/papers/cross-subject-decoding-of
-- Category: Quantitative Biology
-- Authors: Blessing Isoyiza Adeika, Onyema Osuagwu
-- arXiv: 2610.20954
-- Plain-English subtitle: Why brain signals for imagined speech don't work across different people
-- Summary: Researchers tested whether brain signals from imagined speech could be decoded in one person after training on another person's signals — a requirement for practical brain-computer interfaces that need no calibration. Across three public datasets and 482 pairs of participants, no cross-person transfer survived statistical correction, and what appeared to work within single subjects turned out to reflect brain activity after speech imagery ended, not the imagery itself.
-- Why it matters: Brain-computer interfaces for speech would be far more practical if they could work on a new user without lengthy calibration. This work shows that imagined speech produces signals too unique to each person to enable that, and reveals that apparent within-subject successes were measuring artifacts rather than true speech imagery — a critical correction that will redirect future research toward either improving signal quality or accepting that personalized calibration is necessary.
-
-### Defense Filters for Robust Learning of Partially Observed Dynamical Systems
-- URL: https://paperplaine.com/papers/defense-filters-for-robust
-- Category: Mathematics
-- Authors: Jihun Kim, Javad Lavaei
-- arXiv: 2610.21935
-- Plain-English subtitle: Spotting lies in sensor data when someone's attacking half the time
-- Summary: Researchers developed a defense filter that can reliably identify how a system works even when an adversary is poisoning up to 50% of the incoming sensor data. The method works by using knowledge of which sensors you have to construct a mathematical filter that separates legitimate signals from attacks, then recovering the system's behavior with proven accuracy guarantees — a first for systems operating under this level of attack.
-- Why it matters: Power grids, autonomous vehicles, and industrial control systems all rely on learning accurate models from sensor data. When adversaries can corrupt half the measurements, traditional estimation fails. This work enables critical infrastructure to maintain reliable operations even under coordinated cyberattacks where attackers compromise many data points, making real-world deployments far safer.
-
-### Learning to Steer LLM Agents and Multi-Agent Systems
-- URL: https://paperplaine.com/papers/learning-to-steer-llm
-- Category: Computer Science · AI
-- Authors: Leyang Shen, Yaxin Gong, Yang Zhang et al.
-- arXiv: 2610.22316
-- Plain-English subtitle: Teaching AI agents to recognize and correct their own mistakes mid-task
-- Summary: AI systems that use tools and work together often drift from their goals as tasks unfold, wasting time and producing wrong answers. Researchers built a "steering agent" that watches execution in real time, deciding when and how to intervene and redirect the system back on track — and showed it improves performance for both single and multi-agent systems while generalizing to new tasks and different executors.
-- Why it matters: As AI systems tackle longer and more complex tasks, goal drift wastes computational resources and produces unreliable results. A system that catches and corrects these errors on the fly could make AI agents far more efficient and trustworthy in real-world applications like research, planning, and decision-making — especially in multi-agent setups where errors compound across teams.
 
 ## About
 
