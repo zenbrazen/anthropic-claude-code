@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 995 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 998 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 341 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 342 papers in archive.
+  - "Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize"
   - "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty"
-  - "Knowledge That Is Linear Before Fine-Tuning Generalizes After It"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 82 papers in archive.
   - "Shortcut Sensitivity in Agent-Safety Evaluations"
   - "Language Is a Security Surface for Agent Guards"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 85 papers in archive.
   - "Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols"
   - "MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 86 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 87 papers in archive.
+  - "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference"
   - "Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework"
-  - "Query-Efficient Rejection Sampling for Parallel Masked Diffusion"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 79 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 80 papers in archive.
+  - "GRAFT-EEG: Gauge-Aware Physical Field Transport for Cross-Dataset Motor-Imagery EEG"
   - "From Signals to Evidence: Interpretable Underwater Acoustic Target Sensing with Large Language Models - Part I: Framework and Recognition"
-  - "DoReMe: Dual optimization of Reconstruction and Motion estimation for self-navigated free-breathing abdominal MRI using Gaussian Splatting"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 70 papers in archive.
   - "On the fairness of single round-robin tournaments: Evidence from European football"
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
 
 ## 10 most recent papers
+
+### Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize
+- URL: https://paperplaine.com/papers/neural-expansion-a-unified
+- Category: Computer Science · AI
+- Authors: Chashi Mahiul Islam, Samuel Jacob Chacko, Mao Nishino et al.
+- arXiv: 2610.23716
+- Plain-English subtitle: How neural networks learn to recognize patterns across new examples
+- Summary: Researchers discovered that deep neural networks generalize to new data by progressively expanding coverage of directions in input space during training — a geometric pattern that explains how they classify both correct examples and mistakes. This 'Neural Expansion' framework unifies several disconnected theories of how neural networks work and reveals that generalization emerges not from memorization, but from spreading predictive stability across input space in specific directions.
+- Why it matters: Understanding how neural networks generalize is crucial for predicting when they'll fail in real-world applications — from medical diagnosis to autonomous vehicles. This mechanistic explanation could help engineers design more reliable networks and identify which inputs a model is genuinely confident about versus which ones it might handle poorly, making AI systems safer to deploy in high-stakes domains.
+
+### ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference
+- URL: https://paperplaine.com/papers/enfr-evidence-networks-with
+- Category: Statistics
+- Authors: Kai Lehman, Jameson Dong, Carolina Cuesta-Lazaro et al.
+- arXiv: 2610.23825
+- Plain-English subtitle: A faster way to test whether scientific models actually fit real data
+- Summary: Researchers developed a machine learning method that quickly computes a key statistical measure called evidence, which tells you how well a scientific model explains observed data. Their approach, called ENFR, outperforms existing methods at this calculation and can be reused across many datasets without retraining, making it practical for real-world model testing.
+- Why it matters: Scientists often build complex simulation models but lack reliable ways to check if they actually match reality—leading to false confidence in flawed predictions. This method enables fast, trustworthy goodness-of-fit tests that work even when likelihood calculations are intractable, letting researchers catch model problems before using them to make decisions. In fields from cosmology to drug modeling, better model validation directly improves the reliability of scientific conclusions.
+
+### GRAFT-EEG: Gauge-Aware Physical Field Transport for Cross-Dataset Motor-Imagery EEG
+- URL: https://paperplaine.com/papers/graft-eeg-gauge-aware
+- Category: Engineering
+- Authors: Ying Zhou, Mengting Liu
+- arXiv: 2610.23620
+- Plain-English subtitle: Making brain-computer interfaces work across different electrode setups
+- Summary: Brain-computer interfaces that read motor intentions from EEG often fail when tested on data from different labs using different electrode configurations. Researchers developed a method that accounts for these physical differences without needing access to target data, improving accuracy by 8 percentage points across five independent datasets—suggesting the approach captures real physical principles rather than just overfitting.
+- Why it matters: EEG brain-computer interfaces are closer to clinical use, but they're fragile: moving to a new hospital or lab with different equipment typically tanks performance. This method could let existing interfaces work reliably across sites without retraining, which matters for stroke patients, paralyzed users, and anyone depending on these devices for communication or control.
 
 ### CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty
 - URL: https://paperplaine.com/papers/cat-alyzing-honesty-continuous
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI agents to recognize and correct their own mistakes mid-task
 - Summary: AI systems that use tools and work together often drift from their goals as tasks unfold, wasting time and producing wrong answers. Researchers built a "steering agent" that watches execution in real time, deciding when and how to intervene and redirect the system back on track — and showed it improves performance for both single and multi-agent systems while generalizing to new tasks and different executors.
 - Why it matters: As AI systems tackle longer and more complex tasks, goal drift wastes computational resources and produces unreliable results. A system that catches and corrects these errors on the fly could make AI agents far more efficient and trustworthy in real-world applications like research, planning, and decision-making — especially in multi-agent setups where errors compound across teams.
-
-### Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols
-- URL: https://paperplaine.com/papers/pricing-the-unprovable-ambiguity
-- Category: Quantitative Finance
-- Authors: Doohwi Cha, Hanhee Kim, Hyeonjun Yeo et al.
-- arXiv: 2610.21540
-- Plain-English subtitle: Why crypto users distrust privacy fixes when no one can prove what went wrong
-- Summary: When privacy-focused cryptocurrency systems discover and patch vulnerabilities, they often can't prove whether the flaw was actually exploited or how much value was lost. This creates a "verifiability discount"—a measurable drop in market value and user confidence that persists even when the total supply of coins checks out. Analysis of 40 security incidents in Zcash's Orchard system shows that market reactions were muted when developers could definitively rule out past abuse, but much more severe when they couldn't eliminate the possibility of undetected theft.
-- Why it matters: As cryptocurrency systems become more complex and privacy-focused, users face a genuine dilemma: they want privacy features that work, but also need confidence that they're not unknowingly holding stolen or counterfeit coins. When a patch closes a vulnerability but leaves open the question of whether it was already exploited, users rationally discount the value of their holdings by roughly 10–30%—essentially taking a financial penalty for uncertainty they can't resolve. This research shows that protocol designers can reduce this penalty by building in privacy-compatible ways to verify the past and by clearly disclosing what remains unknowable, which could strengthen both security and user trust in the systems that hold their money.
-
-### Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework
-- URL: https://paperplaine.com/papers/why-shallow-neural-networks
-- Category: Statistics
-- Authors: Yanyang Xiao
-- arXiv: 2610.21964
-- Plain-English subtitle: Why neural networks learn simple wave patterns before complex ones
-- Summary: Neural networks tend to learn low-frequency, wave-like patterns before picking up high-frequency details—a bias researchers have long observed but struggled to explain rigorously. This paper identifies the mathematical reason: when networks update their weights through gradient descent, the underlying dynamics naturally prioritize sinusoidal components across different activation functions, a behavior that can now be predicted using orthogonal polynomial theory.
-- Why it matters: Understanding what neural networks learn first has practical implications for training efficiency and interpretability. If you know a network will focus on broad patterns before fine details, you can design better initialization strategies, recognize when training is stalled, and predict whether a network will capture the features you actually care about. This framework also helps engineers choose activation functions and architectures based on what spectrum of patterns they need their model to learn.
-
-### FDE-Gym: The Last Mile of AI Delivery
-- URL: https://paperplaine.com/papers/fde-gym-the-last
-- Category: Computer Science · AI
-- Authors: Dongxu Yang, Hongda Yan, Renxin Wang et al.
-- arXiv: 2610.22350
-- Plain-English subtitle: Why AI agents struggle when customers don't know what they actually need
-- Summary: AI agents that excel at well-defined lab tasks fail dramatically in real customer work, solving only 14 percent of realistic delivery problems. The main culprit is uncovering hidden constraints — what customers didn't mention because they didn't know to mention it — but even when agents gather all the facts, most still can't turn that knowledge into working solutions.
-- Why it matters: As companies deploy AI to solve actual business problems, this gap between benchmark performance and real-world delivery directly impacts whether customers get value or disappointment. The benchmark shows that today's best AI agents reach only 56 percent effectiveness on realistic tasks, meaning organizations betting on AI for complex customer work are likely to see failed projects and wasted investment until these systems learn to ask better questions and reason through messy, incomplete information.
 
 ## About
 

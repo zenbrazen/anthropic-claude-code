@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 995 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-18
+This file contains the complete plain-English text of all 998 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-19
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize
+Subtitle: How neural networks learn to recognize patterns across new examples
+URL: https://paperplaine.com/papers/neural-expansion-a-unified
+Category: Computer Science · AI
+Authors: Chashi Mahiul Islam, Samuel Jacob Chacko, Mao Nishino et al.
+arXiv ID: 2610.23716
+arXiv URL: https://arxiv.org/abs/2610.23716
+Posted: 2026-10-19
+
+Summary: Researchers discovered that deep neural networks generalize to new data by progressively expanding coverage of directions in input space during training — a geometric pattern that explains how they classify both correct examples and mistakes. This 'Neural Expansion' framework unifies several disconnected theories of how neural networks work and reveals that generalization emerges not from memorization, but from spreading predictive stability across input space in specific directions.
+
+Why it matters: Understanding how neural networks generalize is crucial for predicting when they'll fail in real-world applications — from medical diagnosis to autonomous vehicles. This mechanistic explanation could help engineers design more reliable networks and identify which inputs a model is genuinely confident about versus which ones it might handle poorly, making AI systems safer to deploy in high-stakes domains.
+
+---
+Title: ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference
+Subtitle: A faster way to test whether scientific models actually fit real data
+URL: https://paperplaine.com/papers/enfr-evidence-networks-with
+Category: Statistics
+Authors: Kai Lehman, Jameson Dong, Carolina Cuesta-Lazaro et al.
+arXiv ID: 2610.23825
+arXiv URL: https://arxiv.org/abs/2610.23825
+Posted: 2026-10-19
+
+Summary: Researchers developed a machine learning method that quickly computes a key statistical measure called evidence, which tells you how well a scientific model explains observed data. Their approach, called ENFR, outperforms existing methods at this calculation and can be reused across many datasets without retraining, making it practical for real-world model testing.
+
+Why it matters: Scientists often build complex simulation models but lack reliable ways to check if they actually match reality—leading to false confidence in flawed predictions. This method enables fast, trustworthy goodness-of-fit tests that work even when likelihood calculations are intractable, letting researchers catch model problems before using them to make decisions. In fields from cosmology to drug modeling, better model validation directly improves the reliability of scientific conclusions.
+
+---
+Title: GRAFT-EEG: Gauge-Aware Physical Field Transport for Cross-Dataset Motor-Imagery EEG
+Subtitle: Making brain-computer interfaces work across different electrode setups
+URL: https://paperplaine.com/papers/graft-eeg-gauge-aware
+Category: Engineering
+Authors: Ying Zhou, Mengting Liu
+arXiv ID: 2610.23620
+arXiv URL: https://arxiv.org/abs/2610.23620
+Posted: 2026-10-19
+
+Summary: Brain-computer interfaces that read motor intentions from EEG often fail when tested on data from different labs using different electrode configurations. Researchers developed a method that accounts for these physical differences without needing access to target data, improving accuracy by 8 percentage points across five independent datasets—suggesting the approach captures real physical principles rather than just overfitting.
+
+Why it matters: EEG brain-computer interfaces are closer to clinical use, but they're fragile: moving to a new hospital or lab with different equipment typically tanks performance. This method could let existing interfaces work reliably across sites without retraining, which matters for stroke patients, paralyzed users, and anyone depending on these devices for communication or control.
 
 ---
 Title: CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty
