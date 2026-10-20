@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1001 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1004 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 343 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 344 papers in archive.
+  - "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages"
   - "GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search"
-  - "Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 82 papers in archive.
   - "Shortcut Sensitivity in Agent-Safety Evaluations"
   - "Language Is a Security Surface for Agent Guards"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 83 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 84 papers in archive.
+  - "Boundary-Sensitive Quantum Order on Non-Amenable Lattices"
   - "Classical Capacity of Single-Mode Bosonic Gaussian Channels"
-  - "Directed percolation in higher-order social dilemmas"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 85 papers in archive.
   - "From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling"
   - "Defense Filters for Robust Learning of Partially Observed Dynamical Systems"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 85 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 86 papers in archive.
+  - "PyGPLA: A Python Package for Generalized Phase Locking Analysis"
   - "Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora"
-  - "Statistical Mechanics of Spike Trains: Self-Consistent Activity Ensembles and Phase Transitions"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 86 papers in archive.
   - "Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals"
   - "Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "AI-Mediation in Retail Markets: Revenue Effects and Assortment Optimization"
 
 ## 10 most recent papers
+
+### AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages
+- URL: https://paperplaine.com/papers/afribed-a-speech-recognition
+- Category: Computer Science · AI
+- Authors: Claytone Sikasote, Hussein Suleman, Jan Buys
+- arXiv: 2610.26821
+- Plain-English subtitle: Testing whether speech recognition systems treat African language speakers fairly
+- Summary: Speech recognition systems work worse for some speakers than others based on gender and accent, but testing for this bias in African languages has been nearly impossible due to lack of data. Researchers created AfriBED, a dataset of 9 to 18 hours of recorded speech in Bemba and Nyanja from 80 to 127 speakers, specifically designed to measure gender and speaker-type bias in these low-resource languages.
+- Why it matters: As speech technology spreads to African languages and regions, biased systems could systematically exclude women or certain speaker types from accessing voice-controlled services, information, and opportunities. This dataset gives researchers and companies a concrete way to detect and fix these problems before deployment, ensuring technology works equally well regardless of who's speaking.
+
+### Boundary-Sensitive Quantum Order on Non-Amenable Lattices
+- URL: https://paperplaine.com/papers/boundary-sensitive-quantum-order
+- Category: Physics
+- Authors: Xingzhi Wang, Zohar Nussinov, Gerardo Ortiz
+- arXiv: 2610.26859
+- Plain-English subtitle: How quantum systems defy classic physics rules on unusual geometries
+- Summary: Quantum systems built on tree-like lattices can develop ordered states triggered by weak boundary conditions rather than traditional symmetry-breaking — a mechanism that has no equivalent in standard three-dimensional physics. The researchers confirmed this using precise mathematical models of simple quantum systems, finding an intermediate phase where the unpolarized edges of the system actually determine how the bulk interior arranges itself.
+- Why it matters: This challenges a foundational principle in physics (Landau's symmetry-breaking theory) that has governed our understanding of phase transitions for decades. Recognizing new ordering mechanisms could reshape how physicists design quantum materials and devices, especially in engineered structures where boundaries intentionally play active roles.
+
+### PyGPLA: A Python Package for Generalized Phase Locking Analysis
+- URL: https://paperplaine.com/papers/pygpla-a-python-package
+- Category: Quantitative Biology
+- Authors: Amir Khani, Christian Beste, Shervin Safavi
+- arXiv: 2610.26304
+- Plain-English subtitle: Finding hidden patterns in how millions of brain signals coordinate together
+- Summary: Neuroscientists have created PyGPLA, a tool that untangles the coordination between individual neuron spikes and the electrical hum of brain tissue. Instead of checking every possible neuron-to-signal pair individually—a task that becomes computationally overwhelming with modern brain recordings—the tool extracts the core patterns that reveal how entire populations of neurons synchronize their activity.
+- Why it matters: Modern brain recording devices can capture signals from thousands of neurons and sensors simultaneously, but existing analysis methods choke on the volume. PyGPLA makes it practical for neuroscientists to identify how distributed brain regions coordinate activity, which is essential for understanding everything from attention and decision-making to how brain dysfunction emerges in neurological disease. By making the analysis faster and more interpretable, it removes a major technical barrier to studying how the brain actually works at scale.
 
 ### GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search
 - URL: https://paperplaine.com/papers/globe-evolving-structured-agentic
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Training AI chatbots to admit what they don't actually know
 - Summary: Large language models often make confident-sounding claims about things they don't actually know or can't verify from the information given to them. Researchers developed CATCH, a training method that teaches AI models to be honest about the limits of their knowledge by pushing them toward admitting uncertainty while keeping their useful abilities intact. The approach worked across multiple AI systems and outperformed other honesty-focused training methods.
 - Why it matters: AI systems are increasingly used in high-stakes situations—medical diagnosis, legal advice, financial decisions—where false confidence can cause real harm. A chatbot that admits "I don't know" or "I can't verify that" is far safer than one that fabricates plausible-sounding answers. CATCH shows this kind of honesty can be reliably built in without sacrificing the model's ability to actually help people solve problems.
-
-### Shortcut Sensitivity in Agent-Safety Evaluations
-- URL: https://paperplaine.com/papers/shortcut-sensitivity-in-agent
-- Category: Computer Science
-- Authors: Hasan Demirkiran, Jens Ernstberger
-- arXiv: 2610.22243
-- Plain-English subtitle: How hidden patterns in test data fool AI safety guards
-- Summary: When evaluating whether AI safety guards work properly, researchers discovered that the test data itself contains predictable shortcuts that make guards appear safer than they actually are. Testing two benchmark datasets, the team found that simple surface-level patterns—like command length or repeated phrases—let evaluators score guards as successful without truly measuring whether they stop harmful actions. Changing minor details in test cases caused safety scores to swing by up to 11 percentage points, proving the guards were responding to the wrong signals.
-- Why it matters: AI safety guards protect systems from taking dangerous actions, so we need honest evaluation methods to know if they work. When benchmarks contain hidden shortcuts, companies and researchers get false confidence that their safety systems are effective, when those systems might fail on real-world variations. This work provides a concrete testing framework to catch these blind spots before flawed safety guards get deployed.
-
-### Classical Capacity of Single-Mode Bosonic Gaussian Channels
-- URL: https://paperplaine.com/papers/classical-capacity-of-single
-- Category: Physics
-- Authors: Gerardo Adesso, Ludovico Lami, Vittorio Giovannetti
-- arXiv: 2610.22308
-- Plain-English subtitle: Finding the speed limit for sending messages through noisy fiber-optic cables
-- Summary: Researchers have solved a decades-old question about the maximum rate at which information can travel through noisy optical channels—the kind used in real fiber-optic and wireless communications. They proved that simple, standard signal encodings are enough to hit this theoretical limit, without needing exotic quantum tricks like entanglement. They also derived the exact trade-off between how fast you can send data and how many errors you'll encounter.
-- Why it matters: Optical networks carry most of the world's internet traffic, and this work establishes the hard ceiling on how much information those channels can handle. Engineers now know exactly what performance to expect from current fiber systems and where real bottlenecks lie—information that shapes decisions about infrastructure upgrades and communication standards.
-
-### Knowledge That Is Linear Before Fine-Tuning Generalizes After It
-- URL: https://paperplaine.com/papers/knowledge-that-is-linear
-- Category: Computer Science · AI
-- Authors: Faridoun Mehri, Hinrich Schütze
-- arXiv: 2610.22300
-- Plain-English subtitle: Why some facts help AI learn broadly, while others remain stuck in isolation
-- Summary: Language models contain two kinds of facts: some that support learning new related tasks, and others that can be recalled perfectly but don't help at all. By teaching models to map cities to made-up animal names instead of continents, researchers found that a fact's usefulness for learning depends almost entirely on how cleanly its underlying structure can be extracted from the model's internal representations—not on whether the model already knew it.
-- Why it matters: When companies fine-tune language models on new tasks, they currently can't predict which learned facts will help the model generalize and which will leave it struggling with unseen examples. This research provides a measurable signal—linear readability in pretrained representations—that could guide which facts to teach during training, potentially making fine-tuned models more reliable and reducing costly trial-and-error experimentation.
 
 ## About
 
