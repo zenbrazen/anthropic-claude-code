@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 22:00:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 12:43:32 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models</title>
+      <link>https://paperplaine.com/papers/bitmtp-when-multi-token</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bitmtp-when-multi-token</guid>
+      <pubDate>Tue, 20 Oct 2026 16:42:17 GMT</pubDate>
+      <author>Ning Zhang, Shihao Wang, Jinrui Zhang et al.</author>
+      <category>AI</category>
+      <description>Making tiny AI models twice as fast without losing quality</description>
+      <content:encoded><![CDATA[<p><em>Making tiny AI models twice as fast without losing quality</em></p><p>Researchers combined two techniques for speeding up large language models—extreme compression and predicting multiple words at once—which hadn't worked well together before. Their method, BitMTP, achieves 2–3x faster text generation across different GPU types while maintaining the same output quality, solving practical engineering problems that prevented these speedups from working in practice.</p><p><strong>Why it matters:</strong> Faster AI models mean lower electricity costs, cheaper cloud inference, and the ability to run capable language models on consumer hardware like gaming GPUs or embedded devices. A 2–3x speedup cuts energy use proportionally, which matters for data centers running millions of inferences daily and for users deploying AI on phones and edge devices.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents</title>
+      <link>https://paperplaine.com/papers/after-the-attacker-leaves</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/after-the-attacker-leaves</guid>
+      <pubDate>Tue, 20 Oct 2026 15:55:05 GMT</pubDate>
+      <author>Zhiyue Xu, Xukai Wang, Zhiyuan Huang et al.</author>
+      <category>Comp Sci</category>
+      <description>How hackers can hijack AI assistants long after they leave</description>
+      <content:encoded><![CDATA[<p><em>How hackers can hijack AI assistants long after they leave</em></p><p>Researchers discovered that a single malicious prompt injection can trick AI assistants into repeating harmful instructions across multiple sessions—sometimes dozens of times—long after an attacker has gone. Testing five major AI models, they found that once malicious code gets planted in an agent's persistent memory or scheduled tasks, it re-fires reliably across follow-up sessions with almost no degradation, and defenses at the prompt level alone don't stop it.</p><p><strong>Why it matters:</strong> AI assistants increasingly manage real tasks—sending emails, accessing files, scheduling actions—across multiple conversations without human oversight between sessions. A carryover attack means a hacker could plant one malicious instruction that executes automatically hours or days later without the user knowing, potentially stealing data, modifying files, or taking unwanted actions. Fixing this requires changes at the system level, not just in how prompts are written.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books</title>
+      <link>https://paperplaine.com/papers/cooperative-multi-agent-reinforcement</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cooperative-multi-agent-reinforcement</guid>
+      <pubDate>Mon, 19 Oct 2026 17:38:36 GMT</pubDate>
+      <author>Skander Lejmi</author>
+      <category>Finance</category>
+      <description>Teaching AI to make money by quoting prices in betting markets</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to make money by quoting prices in betting markets</em></p><p>Researchers trained artificial intelligence agents to act as market makers on prediction markets like Polymarket, where they quote buy and sell prices to earn the spread between them. The key innovation was splitting the problem into two cooperating agents—one deciding what prices to quote and another managing the risk of holding too much inventory—using a technique called cooperative multi-agent reinforcement learning. The redesigned system quoted prices more often and lost less money than baseline approaches, though none yet achieved consistent profitability on held-out test markets.</p><p><strong>Why it matters:</strong> Prediction markets need market makers to function smoothly, but manually operating one is complex and risky. If AI can learn to do this profitably, it could automate liquidity provision in betting markets, making them cheaper and faster for regular users. The research also demonstrates a template for training AI agents to handle real financial data and extended time horizons, which could apply to other markets where thin trading or sparse data makes human operation difficult.</p>]]></content:encoded>
+    </item>
     <item>
       <title>WeAct: Dynamic Weight Switching as Agent Actions</title>
       <link>https://paperplaine.com/papers/weact-dynamic-weight-switching</link>

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1007 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1010 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 345 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 346 papers in archive.
+  - "BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models"
   - "WeAct: Dynamic Weight Switching as Agent Actions"
-  - "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 82 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 83 papers in archive.
+  - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
   - "Shortcut Sensitivity in Agent-Safety Evaluations"
-  - "Language Is a Security Surface for Agent Guards"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 84 papers in archive.
   - "Boundary-Sensitive Quantum Order on Non-Amenable Lattices"
   - "Classical Capacity of Single-Mode Bosonic Gaussian Channels"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 86 papers in archive.
   - "PyGPLA: A Python Package for Generalized Phase Locking Analysis"
   - "Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 86 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 87 papers in archive.
+  - "Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books"
   - "Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals"
-  - "Pricing the Unprovable: Ambiguity, Turnstile Runs, and the Verifiability Discount in Crypto Protocols"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 87 papers in archive.
   - "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference"
   - "Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "On the fairness of single round-robin tournaments: Evidence from European football"
 
 ## 10 most recent papers
+
+### BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models
+- URL: https://paperplaine.com/papers/bitmtp-when-multi-token
+- Category: Computer Science · AI
+- Authors: Ning Zhang, Shihao Wang, Jinrui Zhang et al.
+- arXiv: 2610.28500
+- Plain-English subtitle: Making tiny AI models twice as fast without losing quality
+- Summary: Researchers combined two techniques for speeding up large language models—extreme compression and predicting multiple words at once—which hadn't worked well together before. Their method, BitMTP, achieves 2–3x faster text generation across different GPU types while maintaining the same output quality, solving practical engineering problems that prevented these speedups from working in practice.
+- Why it matters: Faster AI models mean lower electricity costs, cheaper cloud inference, and the ability to run capable language models on consumer hardware like gaming GPUs or embedded devices. A 2–3x speedup cuts energy use proportionally, which matters for data centers running millions of inferences daily and for users deploying AI on phones and edge devices.
+
+### After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents
+- URL: https://paperplaine.com/papers/after-the-attacker-leaves
+- Category: Computer Science
+- Authors: Zhiyue Xu, Xukai Wang, Zhiyuan Huang et al.
+- arXiv: 2610.28425
+- Plain-English subtitle: How hackers can hijack AI assistants long after they leave
+- Summary: Researchers discovered that a single malicious prompt injection can trick AI assistants into repeating harmful instructions across multiple sessions—sometimes dozens of times—long after an attacker has gone. Testing five major AI models, they found that once malicious code gets planted in an agent's persistent memory or scheduled tasks, it re-fires reliably across follow-up sessions with almost no degradation, and defenses at the prompt level alone don't stop it.
+- Why it matters: AI assistants increasingly manage real tasks—sending emails, accessing files, scheduling actions—across multiple conversations without human oversight between sessions. A carryover attack means a hacker could plant one malicious instruction that executes automatically hours or days later without the user knowing, potentially stealing data, modifying files, or taking unwanted actions. Fixing this requires changes at the system level, not just in how prompts are written.
+
+### Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books
+- URL: https://paperplaine.com/papers/cooperative-multi-agent-reinforcement
+- Category: Quantitative Finance
+- Authors: Skander Lejmi
+- arXiv: 2610.26789
+- Plain-English subtitle: Teaching AI to make money by quoting prices in betting markets
+- Summary: Researchers trained artificial intelligence agents to act as market makers on prediction markets like Polymarket, where they quote buy and sell prices to earn the spread between them. The key innovation was splitting the problem into two cooperating agents—one deciding what prices to quote and another managing the risk of holding too much inventory—using a technique called cooperative multi-agent reinforcement learning. The redesigned system quoted prices more often and lost less money than baseline approaches, though none yet achieved consistent profitability on held-out test markets.
+- Why it matters: Prediction markets need market makers to function smoothly, but manually operating one is complex and risky. If AI can learn to do this profitably, it could automate liquidity provision in betting markets, making them cheaper and faster for regular users. The research also demonstrates a template for training AI agents to handle real financial data and extended time horizons, which could apply to other markets where thin trading or sparse data makes human operation difficult.
 
 ### WeAct: Dynamic Weight Switching as Agent Actions
 - URL: https://paperplaine.com/papers/weact-dynamic-weight-switching
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to remember what works when rewriting product listings
 - Summary: A new system called GLOBE lets AI agents improve their own strategies for rewriting product listings in search results by storing what works in a reusable memory bank. Rather than starting from scratch each time, the system learns effective techniques for different product categories and builds them into an evolving handbook—kind of like an agent writing down its own playbook. Testing showed this approach outperforms traditional methods, and the strategies learned on one product type transfer well to entirely new categories.
 - Why it matters: Online retailers rely on product listings to appear in generative search results where customers browse. By letting AI systems learn and remember optimization strategies across thousands of products, this approach could significantly improve which listings show up for customer searches and boost sales. The fact that learned strategies transfer across product categories means companies won't need to rebuild optimization systems from scratch for every new product type they sell.
-
-### From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling
-- URL: https://paperplaine.com/papers/from-alpha-to-execution
-- Category: Mathematics
-- Authors: Dnyanesh Kulkarni, Revant Nayar
-- arXiv: 2610.23749
-- Plain-English subtitle: How to sell large stock positions without crashing the price yourself
-- Summary: When traders need to sell large blocks of stock, slowing down the sale usually reduces price damage—but how slow is actually optimal? This paper shows the answer depends on two competing forces: how much the sale itself moves the market (which gets cheaper per share when spread over time), and how fast the trader's original profit opportunity is decaying. The researchers found that for realistic market conditions, the optimal time window can span a range more than ten times wider than typical trading models suggest, and they derived the precise schedule for releasing shares that saves 10-17% on execution costs compared to uniform, constant-rate sales.
-- Why it matters: Large institutional trades are a daily fact of markets—pension funds, mutual funds, and hedge funds regularly need to exit or enter positions worth millions. Poorly timed execution costs them real money; even small percentage improvements compound across thousands of trades. This framework gives traders a concrete way to decide not just *how* to sell, but *when to start and stop*, accounting for real market behavior where impact follows a power law rather than a simple linear formula. The 10-17% savings in costs translates directly to higher returns for investors and lower slippage in markets.
-
-### Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals
-- URL: https://paperplaine.com/papers/basis-only-funding-is
-- Category: Quantitative Finance
-- Authors: Donghwa Seo, Doohwi Cha, Seunghan Son et al.
-- arXiv: 2610.22839
-- Plain-English subtitle: Why crypto exchanges shortchange traders who hold stock futures through dividends
-- Summary: When crypto exchanges offer perpetual futures contracts on dividend-paying stocks, they use a funding mechanism based on price differences that fails to account for dividends. Traders who hold these contracts through a dividend payment get shortchanged — they bear the stock's price drop on the ex-dividend date but never receive the cash dividend itself. The paper shows this happens because the standard funding system treats crypto assets and real-world assets identically, missing a crucial distinction: for stocks, fairness requires a discrete payment (an "event credit") at dividend time, not just a continuous funding stream.
-- Why it matters: Traders using these perpetual futures effectively lose money compared to owning actual stock. One exchange tested in the study does post the required dividend credit, while standard ones don't — meaning the same trade produces different outcomes across venues. As crypto exchanges expand into offering contracts on dividend-paying assets, this funding design flaw creates real financial harm, incentivizing traders to either avoid these contracts or migrate to venues that properly handle dividends.
-
-### Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize
-- URL: https://paperplaine.com/papers/neural-expansion-a-unified
-- Category: Computer Science · AI
-- Authors: Chashi Mahiul Islam, Samuel Jacob Chacko, Mao Nishino et al.
-- arXiv: 2610.23716
-- Plain-English subtitle: How neural networks learn to recognize patterns across new examples
-- Summary: Researchers discovered that deep neural networks generalize to new data by progressively expanding coverage of directions in input space during training — a geometric pattern that explains how they classify both correct examples and mistakes. This 'Neural Expansion' framework unifies several disconnected theories of how neural networks work and reveals that generalization emerges not from memorization, but from spreading predictive stability across input space in specific directions.
-- Why it matters: Understanding how neural networks generalize is crucial for predicting when they'll fail in real-world applications — from medical diagnosis to autonomous vehicles. This mechanistic explanation could help engineers design more reliable networks and identify which inputs a model is genuinely confident about versus which ones it might handle poorly, making AI systems safer to deploy in high-stakes domains.
 
 ## About
 
