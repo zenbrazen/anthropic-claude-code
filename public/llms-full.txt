@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1010 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1013 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-21
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: UniWALM: Unified World Action Language Model for Embodied Robot Control
+Subtitle: Teaching robots to think and talk while they work, using one shared brain
+URL: https://paperplaine.com/papers/uniwalm-unified-world-action
+Category: Computer Science · AI
+Authors: Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.
+arXiv ID: 2610.28626
+arXiv URL: https://arxiv.org/abs/2610.28626
+Posted: 2026-10-21
+
+Summary: A new AI system called UniWALM teaches robots to manipulate objects by learning video, actions, and language all at once in a single model, rather than bolting separate reasoning systems together. The robot generates text descriptions of what it's doing and remembers them for the next step—no external memory bank needed. On a real-world task of finding and fetching items, adding this self-generated memory boosted success from 11% to 61%, far outpacing existing robot control systems.
+
+Why it matters: Robots that can talk through their own reasoning while acting become easier to debug, monitor, and redirect mid-task—you can see what the robot thinks it's doing. This unified approach also cuts the engineering complexity of strapping multiple separate AI systems together. The 50-percentage-point jump on a real-world task suggests this design could make practical household or warehouse robots more reliable.
+
+---
+Title: Convergence of stochastic gradient descent for learning linear neural networks
+Subtitle: Why the algorithm behind AI training actually works mathematically
+URL: https://paperplaine.com/papers/convergence-of-stochastic-gradient
+Category: Mathematics
+Authors: Gabin Maxime Nguegnang, Bubacarr Bah, Holger Rauhut et al.
+arXiv ID: 2610.28561
+arXiv URL: https://arxiv.org/abs/2610.28561
+Posted: 2026-10-21
+
+Summary: Researchers proved that stochastic gradient descent—the algorithm used to train virtually all modern neural networks—reliably converges to good solutions, even in simplified deep learning models. The proof works without requiring unrealistic assumptions like perfectly clean data, and holds for both fixed and adaptive learning rates.
+
+Why it matters: SGD is used billions of times daily to train everything from language models to image recognition systems, yet engineers have lacked mathematical proof it actually works. This result provides that foundation, validating the theoretical soundness of a procedure that already works in practice and potentially guiding how to set learning rates and other training parameters more reliably.
+
+---
+Title: Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics
+Subtitle: Teaching AI to read gene activity by understanding where cells sit in tissue
+URL: https://paperplaine.com/papers/spatially-informed-and-direction
+Category: Quantitative Biology
+Authors: Azim Dehghani Amirabad, Ali Khodabandeh Yalabadi, Artem Moskalev et al.
+arXiv ID: 2610.28579
+arXiv URL: https://arxiv.org/abs/2610.28579
+Posted: 2026-10-21
+
+Summary: Cells behave differently depending on their neighbors and position in tissue, but existing methods for analyzing this spatial context miss important details or rely on arbitrary coordinates. A new framework called Tessera captures both which genes are active and how cells are organized relative to each other—encoding direction and local relationships rather than just distance—and outperforms current methods even when applied to tissues it has never seen before.
+
+Why it matters: Spatial transcriptomics is becoming routine in medical research, but current tools lose information about tissue organization that shapes whether cells become healthy or diseased. Better representation learning means researchers can more accurately predict cell behavior, identify disease mechanisms tied to tissue structure, and potentially design better treatments. Tessera also generalizes to much larger tissue samples than it was trained on, making it practical for real research workflows without constant retraining.
 
 ---
 Title: BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1010 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1013 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 346 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 347 papers in archive.
+  - "UniWALM: Unified World Action Language Model for Embodied Robot Control"
   - "BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models"
-  - "WeAct: Dynamic Weight Switching as Agent Actions"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 83 papers in archive.
   - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
   - "Shortcut Sensitivity in Agent-Safety Evaluations"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 84 papers in archive.
   - "Boundary-Sensitive Quantum Order on Non-Amenable Lattices"
   - "Classical Capacity of Single-Mode Bosonic Gaussian Channels"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 85 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 86 papers in archive.
+  - "Convergence of stochastic gradient descent for learning linear neural networks"
   - "From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling"
-  - "Defense Filters for Robust Learning of Partially Observed Dynamical Systems"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 86 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 87 papers in archive.
+  - "Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics"
   - "PyGPLA: A Python Package for Generalized Phase Locking Analysis"
-  - "Cross-subject decoding of imagined speech from scalp EEG: a leakage-controlled evaluation on three public corpora"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 87 papers in archive.
   - "Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books"
   - "Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "On the fairness of single round-robin tournaments: Evidence from European football"
 
 ## 10 most recent papers
+
+### UniWALM: Unified World Action Language Model for Embodied Robot Control
+- URL: https://paperplaine.com/papers/uniwalm-unified-world-action
+- Category: Computer Science · AI
+- Authors: Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.
+- arXiv: 2610.28626
+- Plain-English subtitle: Teaching robots to think and talk while they work, using one shared brain
+- Summary: A new AI system called UniWALM teaches robots to manipulate objects by learning video, actions, and language all at once in a single model, rather than bolting separate reasoning systems together. The robot generates text descriptions of what it's doing and remembers them for the next step—no external memory bank needed. On a real-world task of finding and fetching items, adding this self-generated memory boosted success from 11% to 61%, far outpacing existing robot control systems.
+- Why it matters: Robots that can talk through their own reasoning while acting become easier to debug, monitor, and redirect mid-task—you can see what the robot thinks it's doing. This unified approach also cuts the engineering complexity of strapping multiple separate AI systems together. The 50-percentage-point jump on a real-world task suggests this design could make practical household or warehouse robots more reliable.
+
+### Convergence of stochastic gradient descent for learning linear neural networks
+- URL: https://paperplaine.com/papers/convergence-of-stochastic-gradient
+- Category: Mathematics
+- Authors: Gabin Maxime Nguegnang, Bubacarr Bah, Holger Rauhut et al.
+- arXiv: 2610.28561
+- Plain-English subtitle: Why the algorithm behind AI training actually works mathematically
+- Summary: Researchers proved that stochastic gradient descent—the algorithm used to train virtually all modern neural networks—reliably converges to good solutions, even in simplified deep learning models. The proof works without requiring unrealistic assumptions like perfectly clean data, and holds for both fixed and adaptive learning rates.
+- Why it matters: SGD is used billions of times daily to train everything from language models to image recognition systems, yet engineers have lacked mathematical proof it actually works. This result provides that foundation, validating the theoretical soundness of a procedure that already works in practice and potentially guiding how to set learning rates and other training parameters more reliably.
+
+### Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics
+- URL: https://paperplaine.com/papers/spatially-informed-and-direction
+- Category: Quantitative Biology
+- Authors: Azim Dehghani Amirabad, Ali Khodabandeh Yalabadi, Artem Moskalev et al.
+- arXiv: 2610.28579
+- Plain-English subtitle: Teaching AI to read gene activity by understanding where cells sit in tissue
+- Summary: Cells behave differently depending on their neighbors and position in tissue, but existing methods for analyzing this spatial context miss important details or rely on arbitrary coordinates. A new framework called Tessera captures both which genes are active and how cells are organized relative to each other—encoding direction and local relationships rather than just distance—and outperforms current methods even when applied to tissues it has never seen before.
+- Why it matters: Spatial transcriptomics is becoming routine in medical research, but current tools lose information about tissue organization that shapes whether cells become healthy or diseased. Better representation learning means researchers can more accurately predict cell behavior, identify disease mechanisms tied to tissue structure, and potentially design better treatments. Tessera also generalizes to much larger tissue samples than it was trained on, making it practical for real research workflows without constant retraining.
 
 ### BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models
 - URL: https://paperplaine.com/papers/bitmtp-when-multi-token
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Testing whether speech recognition systems treat African language speakers fairly
 - Summary: Speech recognition systems work worse for some speakers than others based on gender and accent, but testing for this bias in African languages has been nearly impossible due to lack of data. Researchers created AfriBED, a dataset of 9 to 18 hours of recorded speech in Bemba and Nyanja from 80 to 127 speakers, specifically designed to measure gender and speaker-type bias in these low-resource languages.
 - Why it matters: As speech technology spreads to African languages and regions, biased systems could systematically exclude women or certain speaker types from accessing voice-controlled services, information, and opportunities. This dataset gives researchers and companies a concrete way to detect and fix these problems before deployment, ensuring technology works equally well regardless of who's speaking.
-
-### Boundary-Sensitive Quantum Order on Non-Amenable Lattices
-- URL: https://paperplaine.com/papers/boundary-sensitive-quantum-order
-- Category: Physics
-- Authors: Xingzhi Wang, Zohar Nussinov, Gerardo Ortiz
-- arXiv: 2610.26859
-- Plain-English subtitle: How quantum systems defy classic physics rules on unusual geometries
-- Summary: Quantum systems built on tree-like lattices can develop ordered states triggered by weak boundary conditions rather than traditional symmetry-breaking — a mechanism that has no equivalent in standard three-dimensional physics. The researchers confirmed this using precise mathematical models of simple quantum systems, finding an intermediate phase where the unpolarized edges of the system actually determine how the bulk interior arranges itself.
-- Why it matters: This challenges a foundational principle in physics (Landau's symmetry-breaking theory) that has governed our understanding of phase transitions for decades. Recognizing new ordering mechanisms could reshape how physicists design quantum materials and devices, especially in engineered structures where boundaries intentionally play active roles.
-
-### PyGPLA: A Python Package for Generalized Phase Locking Analysis
-- URL: https://paperplaine.com/papers/pygpla-a-python-package
-- Category: Quantitative Biology
-- Authors: Amir Khani, Christian Beste, Shervin Safavi
-- arXiv: 2610.26304
-- Plain-English subtitle: Finding hidden patterns in how millions of brain signals coordinate together
-- Summary: Neuroscientists have created PyGPLA, a tool that untangles the coordination between individual neuron spikes and the electrical hum of brain tissue. Instead of checking every possible neuron-to-signal pair individually—a task that becomes computationally overwhelming with modern brain recordings—the tool extracts the core patterns that reveal how entire populations of neurons synchronize their activity.
-- Why it matters: Modern brain recording devices can capture signals from thousands of neurons and sensors simultaneously, but existing analysis methods choke on the volume. PyGPLA makes it practical for neuroscientists to identify how distributed brain regions coordinate activity, which is essential for understanding everything from attention and decision-making to how brain dysfunction emerges in neurological disease. By making the analysis faster and more interpretable, it removes a major technical barrier to studying how the brain actually works at scale.
-
-### GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search
-- URL: https://paperplaine.com/papers/globe-evolving-structured-agentic
-- Category: Computer Science · AI
-- Authors: Hyunseo Kim, Suil Choe, Sukkyoung So et al.
-- arXiv: 2610.23709
-- Plain-English subtitle: Teaching AI to remember what works when rewriting product listings
-- Summary: A new system called GLOBE lets AI agents improve their own strategies for rewriting product listings in search results by storing what works in a reusable memory bank. Rather than starting from scratch each time, the system learns effective techniques for different product categories and builds them into an evolving handbook—kind of like an agent writing down its own playbook. Testing showed this approach outperforms traditional methods, and the strategies learned on one product type transfer well to entirely new categories.
-- Why it matters: Online retailers rely on product listings to appear in generative search results where customers browse. By letting AI systems learn and remember optimization strategies across thousands of products, this approach could significantly improve which listings show up for customer searches and boost sales. The fact that learned strategies transfer across product categories means companies won't need to rebuild optimization systems from scratch for every new product type they sell.
 
 ## About
 

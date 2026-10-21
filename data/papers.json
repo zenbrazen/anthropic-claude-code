@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.28626",
+    "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+    "authors": "Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-20T17:59:04Z",
+    "publishedFormatted": "Oct 20, 2026",
+    "subtitle": "Teaching robots to think and talk while they work, using one shared brain",
+    "summary": "A new AI system called UniWALM teaches robots to manipulate objects by learning video, actions, and language all at once in a single model, rather than bolting separate reasoning systems together. The robot generates text descriptions of what it's doing and remembers them for the next step—no external memory bank needed. On a real-world task of finding and fetching items, adding this self-generated memory boosted success from 11% to 61%, far outpacing existing robot control systems.",
+    "whyItMatters": "Robots that can talk through their own reasoning while acting become easier to debug, monitor, and redirect mid-task—you can see what the robot thinks it's doing. This unified approach also cuts the engineering complexity of strapping multiple separate AI systems together. The 50-percentage-point jump on a real-world task suggests this design could make practical household or warehouse robots more reliable.",
+    "fetchedAt": "2026-10-21T22:03:00.541Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 228
+    },
+    "slug": "uniwalm-unified-world-action"
+  },
+  {
+    "id": "2610.28561",
+    "title": "Convergence of stochastic gradient descent for learning linear neural networks",
+    "authors": "Gabin Maxime Nguegnang, Bubacarr Bah, Holger Rauhut et al.",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-20T17:23:16Z",
+    "publishedFormatted": "Oct 20, 2026",
+    "subtitle": "Why the algorithm behind AI training actually works mathematically",
+    "summary": "Researchers proved that stochastic gradient descent—the algorithm used to train virtually all modern neural networks—reliably converges to good solutions, even in simplified deep learning models. The proof works without requiring unrealistic assumptions like perfectly clean data, and holds for both fixed and adaptive learning rates.",
+    "whyItMatters": "SGD is used billions of times daily to train everything from language models to image recognition systems, yet engineers have lacked mathematical proof it actually works. This result provides that foundation, validating the theoretical soundness of a procedure that already works in practice and potentially guiding how to set learning rates and other training parameters more reliably.",
+    "fetchedAt": "2026-10-21T22:03:03.137Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 30,
+      "wordCount": 142
+    },
+    "slug": "convergence-of-stochastic-gradient"
+  },
+  {
+    "id": "2610.28579",
+    "title": "Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics",
+    "authors": "Azim Dehghani Amirabad, Ali Khodabandeh Yalabadi, Artem Moskalev et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-20T17:32:57Z",
+    "publishedFormatted": "Oct 20, 2026",
+    "subtitle": "Teaching AI to read gene activity by understanding where cells sit in tissue",
+    "summary": "Cells behave differently depending on their neighbors and position in tissue, but existing methods for analyzing this spatial context miss important details or rely on arbitrary coordinates. A new framework called Tessera captures both which genes are active and how cells are organized relative to each other—encoding direction and local relationships rather than just distance—and outperforms current methods even when applied to tissues it has never seen before.",
+    "whyItMatters": "Spatial transcriptomics is becoming routine in medical research, but current tools lose information about tissue organization that shapes whether cells become healthy or diseased. Better representation learning means researchers can more accurately predict cell behavior, identify disease mechanisms tied to tissue structure, and potentially design better treatments. Tessera also generalizes to much larger tissue samples than it was trained on, making it practical for real research workflows without constant retraining.",
+    "fetchedAt": "2026-10-21T22:03:06.451Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 195
+    },
+    "slug": "spatially-informed-and-direction"
+  },
+  {
     "id": "2610.28500",
     "title": "BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models",
     "authors": "Ning Zhang, Shihao Wang, Jinrui Zhang et al.",

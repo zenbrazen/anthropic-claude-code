@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2026 12:43:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 22:03:07 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>UniWALM: Unified World Action Language Model for Embodied Robot Control</title>
+      <link>https://paperplaine.com/papers/uniwalm-unified-world-action</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/uniwalm-unified-world-action</guid>
+      <pubDate>Tue, 20 Oct 2026 17:59:04 GMT</pubDate>
+      <author>Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.</author>
+      <category>AI</category>
+      <description>Teaching robots to think and talk while they work, using one shared brain</description>
+      <content:encoded><![CDATA[<p><em>Teaching robots to think and talk while they work, using one shared brain</em></p><p>A new AI system called UniWALM teaches robots to manipulate objects by learning video, actions, and language all at once in a single model, rather than bolting separate reasoning systems together. The robot generates text descriptions of what it's doing and remembers them for the next step—no external memory bank needed. On a real-world task of finding and fetching items, adding this self-generated memory boosted success from 11% to 61%, far outpacing existing robot control systems.</p><p><strong>Why it matters:</strong> Robots that can talk through their own reasoning while acting become easier to debug, monitor, and redirect mid-task—you can see what the robot thinks it's doing. This unified approach also cuts the engineering complexity of strapping multiple separate AI systems together. The 50-percentage-point jump on a real-world task suggests this design could make practical household or warehouse robots more reliable.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Convergence of stochastic gradient descent for learning linear neural networks</title>
+      <link>https://paperplaine.com/papers/convergence-of-stochastic-gradient</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/convergence-of-stochastic-gradient</guid>
+      <pubDate>Tue, 20 Oct 2026 17:23:16 GMT</pubDate>
+      <author>Gabin Maxime Nguegnang, Bubacarr Bah, Holger Rauhut et al.</author>
+      <category>Math</category>
+      <description>Why the algorithm behind AI training actually works mathematically</description>
+      <content:encoded><![CDATA[<p><em>Why the algorithm behind AI training actually works mathematically</em></p><p>Researchers proved that stochastic gradient descent—the algorithm used to train virtually all modern neural networks—reliably converges to good solutions, even in simplified deep learning models. The proof works without requiring unrealistic assumptions like perfectly clean data, and holds for both fixed and adaptive learning rates.</p><p><strong>Why it matters:</strong> SGD is used billions of times daily to train everything from language models to image recognition systems, yet engineers have lacked mathematical proof it actually works. This result provides that foundation, validating the theoretical soundness of a procedure that already works in practice and potentially guiding how to set learning rates and other training parameters more reliably.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics</title>
+      <link>https://paperplaine.com/papers/spatially-informed-and-direction</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/spatially-informed-and-direction</guid>
+      <pubDate>Tue, 20 Oct 2026 17:32:57 GMT</pubDate>
+      <author>Azim Dehghani Amirabad, Ali Khodabandeh Yalabadi, Artem Moskalev et al.</author>
+      <category>Biology</category>
+      <description>Teaching AI to read gene activity by understanding where cells sit in tissue</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to read gene activity by understanding where cells sit in tissue</em></p><p>Cells behave differently depending on their neighbors and position in tissue, but existing methods for analyzing this spatial context miss important details or rely on arbitrary coordinates. A new framework called Tessera captures both which genes are active and how cells are organized relative to each other—encoding direction and local relationships rather than just distance—and outperforms current methods even when applied to tissues it has never seen before.</p><p><strong>Why it matters:</strong> Spatial transcriptomics is becoming routine in medical research, but current tools lose information about tissue organization that shapes whether cells become healthy or diseased. Better representation learning means researchers can more accurately predict cell behavior, identify disease mechanisms tied to tissue structure, and potentially design better treatments. Tessera also generalizes to much larger tissue samples than it was trained on, making it practical for real research workflows without constant retraining.</p>]]></content:encoded>
+    </item>
     <item>
       <title>BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models</title>
       <link>https://paperplaine.com/papers/bitmtp-when-multi-token</link>
