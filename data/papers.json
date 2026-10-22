@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.30074",
+    "title": "Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization",
+    "authors": "Hanmin Li, Yury Demidovich, Peter Richtárik",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-21T17:27:17Z",
+    "publishedFormatted": "Oct 21, 2026",
+    "subtitle": "How to merge AI agents' work without losing their improvements",
+    "summary": "When multiple AI agents work on the same problem in parallel, combining their edits often destroys the improvements each one made individually. Researchers developed a method that selects which edits to merge based on graph theory, guaranteeing that at least a provable fraction of all verified improvements survive the combination. Experiments on code repair and route optimization show the approach keeps 15% more of the value that independent agents produce, compared to naive merging.",
+    "whyItMatters": "As companies deploy multiple AI systems to solve complex problems—from code generation to logistics—losses from conflicting edits waste compute and slow down real work. This method ensures parallel agents actually speed up solutions instead of canceling each other out, with measurable time savings on practical tasks like route planning. For large-scale automation, that efficiency gap directly reduces wall-clock time and computational cost.",
+    "fetchedAt": "2026-10-22T22:01:55.135Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 232
+    },
+    "slug": "parallel-ai-agent-collaboration"
+  },
+  {
+    "id": "2610.29398",
+    "title": "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion",
+    "authors": "Srivishnu Ethirajulu Krishnaraj, Rishikesh R. Chopade",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-10-21T08:29:12Z",
+    "publishedFormatted": "Oct 21, 2026",
+    "subtitle": "Using AI to catch tiny defects without rejecting good parts",
+    "summary": "A new system inspects precision components by combining two types of AI models—one that spots defects in specific regions and another that flags overall anomalies—then filters their results through manufacturing rules to make final accept/reject decisions. On fuel injector needles, this approach caught all defective parts while cutting false rejections from 57.6% down to 10.9%.",
+    "whyItMatters": "Manufacturing facilities waste money and time scrapping good parts when inspection systems are too sensitive. This framework maintains safety (catching all true defects) while making inspection practical by eliminating most false alarms, directly reducing waste in automotive production and similar precision manufacturing.",
+    "fetchedAt": "2026-10-22T22:01:58.120Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 10,
+      "wordCount": 214
+    },
+    "slug": "region-aware-multi-view"
+  },
+  {
+    "id": "2610.27100",
+    "title": "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models",
+    "authors": "George Nigmatulin, Valentin Mohl, Sascha Frey et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-10-19T18:01:00Z",
+    "publishedFormatted": "Oct 19, 2026",
+    "subtitle": "Do AI-generated stock market simulations get trading costs right?",
+    "summary": "Researchers tested whether AI models trained to predict stock market order flows also learn realistic market impact—the price movement caused by large trades. They found that impact does emerge naturally in these models, but with slightly stronger effects than observed in real markets, and the models failed to capture how markets recover after large trades, likely because they don't remember enough context.",
+    "whyItMatters": "Trading firms use AI simulations to test strategies before risking real money. If a simulator underestimates how much your trade will move the market, you'll deploy strategies that look profitable in testing but lose money in reality. This benchmark provides the first rigorous way to catch that error before it costs traders millions.",
+    "fetchedAt": "2026-10-22T22:02:00.979Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 263
+    },
+    "slug": "lob-impact-benchmark-emergent"
+  },
+  {
     "id": "2610.30047",
     "title": "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation",
     "authors": "Lorenz Brehme, Benjamin Steenhoek, Ruth Breu",

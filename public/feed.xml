@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 12:47:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 22:02:01 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization</title>
+      <link>https://paperplaine.com/papers/parallel-ai-agent-collaboration</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/parallel-ai-agent-collaboration</guid>
+      <pubDate>Wed, 21 Oct 2026 17:27:17 GMT</pubDate>
+      <author>Hanmin Li, Yury Demidovich, Peter Richtárik</author>
+      <category>AI</category>
+      <description>How to merge AI agents&#39; work without losing their improvements</description>
+      <content:encoded><![CDATA[<p><em>How to merge AI agents' work without losing their improvements</em></p><p>When multiple AI agents work on the same problem in parallel, combining their edits often destroys the improvements each one made individually. Researchers developed a method that selects which edits to merge based on graph theory, guaranteeing that at least a provable fraction of all verified improvements survive the combination. Experiments on code repair and route optimization show the approach keeps 15% more of the value that independent agents produce, compared to naive merging.</p><p><strong>Why it matters:</strong> As companies deploy multiple AI systems to solve complex problems—from code generation to logistics—losses from conflicting edits waste compute and slow down real work. This method ensures parallel agents actually speed up solutions instead of canceling each other out, with measurable time savings on practical tasks like route planning. For large-scale automation, that efficiency gap directly reduces wall-clock time and computational cost.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion</title>
+      <link>https://paperplaine.com/papers/region-aware-multi-view</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/region-aware-multi-view</guid>
+      <pubDate>Wed, 21 Oct 2026 08:29:12 GMT</pubDate>
+      <author>Srivishnu Ethirajulu Krishnaraj, Rishikesh R. Chopade</author>
+      <category>Engineering</category>
+      <description>Using AI to catch tiny defects without rejecting good parts</description>
+      <content:encoded><![CDATA[<p><em>Using AI to catch tiny defects without rejecting good parts</em></p><p>A new system inspects precision components by combining two types of AI models—one that spots defects in specific regions and another that flags overall anomalies—then filters their results through manufacturing rules to make final accept/reject decisions. On fuel injector needles, this approach caught all defective parts while cutting false rejections from 57.6% down to 10.9%.</p><p><strong>Why it matters:</strong> Manufacturing facilities waste money and time scrapping good parts when inspection systems are too sensitive. This framework maintains safety (catching all true defects) while making inspection practical by eliminating most false alarms, directly reducing waste in automotive production and similar precision manufacturing.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models</title>
+      <link>https://paperplaine.com/papers/lob-impact-benchmark-emergent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/lob-impact-benchmark-emergent</guid>
+      <pubDate>Mon, 19 Oct 2026 18:01:00 GMT</pubDate>
+      <author>George Nigmatulin, Valentin Mohl, Sascha Frey et al.</author>
+      <category>Finance</category>
+      <description>Do AI-generated stock market simulations get trading costs right?</description>
+      <content:encoded><![CDATA[<p><em>Do AI-generated stock market simulations get trading costs right?</em></p><p>Researchers tested whether AI models trained to predict stock market order flows also learn realistic market impact—the price movement caused by large trades. They found that impact does emerge naturally in these models, but with slightly stronger effects than observed in real markets, and the models failed to capture how markets recover after large trades, likely because they don't remember enough context.</p><p><strong>Why it matters:</strong> Trading firms use AI simulations to test strategies before risking real money. If a simulator underestimates how much your trade will move the market, you'll deploy strategies that look profitable in testing but lose money in reality. This benchmark provides the first rigorous way to catch that error before it costs traders millions.</p>]]></content:encoded>
+    </item>
     <item>
       <title>SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation</title>
       <link>https://paperplaine.com/papers/swe-dive-multi-turn</link>

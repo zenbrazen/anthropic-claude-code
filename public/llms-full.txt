@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1016 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1019 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-22
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization
+Subtitle: How to merge AI agents' work without losing their improvements
+URL: https://paperplaine.com/papers/parallel-ai-agent-collaboration
+Category: Computer Science · AI
+Authors: Hanmin Li, Yury Demidovich, Peter Richtárik
+arXiv ID: 2610.30074
+arXiv URL: https://arxiv.org/abs/2610.30074
+Posted: 2026-10-22
+
+Summary: When multiple AI agents work on the same problem in parallel, combining their edits often destroys the improvements each one made individually. Researchers developed a method that selects which edits to merge based on graph theory, guaranteeing that at least a provable fraction of all verified improvements survive the combination. Experiments on code repair and route optimization show the approach keeps 15% more of the value that independent agents produce, compared to naive merging.
+
+Why it matters: As companies deploy multiple AI systems to solve complex problems—from code generation to logistics—losses from conflicting edits waste compute and slow down real work. This method ensures parallel agents actually speed up solutions instead of canceling each other out, with measurable time savings on practical tasks like route planning. For large-scale automation, that efficiency gap directly reduces wall-clock time and computational cost.
+
+---
+Title: Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion
+Subtitle: Using AI to catch tiny defects without rejecting good parts
+URL: https://paperplaine.com/papers/region-aware-multi-view
+Category: Engineering
+Authors: Srivishnu Ethirajulu Krishnaraj, Rishikesh R. Chopade
+arXiv ID: 2610.29398
+arXiv URL: https://arxiv.org/abs/2610.29398
+Posted: 2026-10-22
+
+Summary: A new system inspects precision components by combining two types of AI models—one that spots defects in specific regions and another that flags overall anomalies—then filters their results through manufacturing rules to make final accept/reject decisions. On fuel injector needles, this approach caught all defective parts while cutting false rejections from 57.6% down to 10.9%.
+
+Why it matters: Manufacturing facilities waste money and time scrapping good parts when inspection systems are too sensitive. This framework maintains safety (catching all true defects) while making inspection practical by eliminating most false alarms, directly reducing waste in automotive production and similar precision manufacturing.
+
+---
+Title: LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models
+Subtitle: Do AI-generated stock market simulations get trading costs right?
+URL: https://paperplaine.com/papers/lob-impact-benchmark-emergent
+Category: Quantitative Finance
+Authors: George Nigmatulin, Valentin Mohl, Sascha Frey et al.
+arXiv ID: 2610.27100
+arXiv URL: https://arxiv.org/abs/2610.27100
+Posted: 2026-10-22
+
+Summary: Researchers tested whether AI models trained to predict stock market order flows also learn realistic market impact—the price movement caused by large trades. They found that impact does emerge naturally in these models, but with slightly stronger effects than observed in real markets, and the models failed to capture how markets recover after large trades, likely because they don't remember enough context.
+
+Why it matters: Trading firms use AI simulations to test strategies before risking real money. If a simulator underestimates how much your trade will move the market, you'll deploy strategies that look profitable in testing but lose money in reality. This benchmark provides the first rigorous way to catch that error before it costs traders millions.
 
 ---
 Title: SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation
