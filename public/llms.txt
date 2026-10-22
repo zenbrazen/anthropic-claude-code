@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1013 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1016 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 347 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 348 papers in archive.
+  - "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation"
   - "UniWALM: Unified World Action Language Model for Embodied Robot Control"
-  - "BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 83 papers in archive.
   - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
   - "Shortcut Sensitivity in Agent-Safety Evaluations"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 84 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 85 papers in archive.
+  - "Phonon-assisted free-electron recoil control and mechanical sensing"
   - "Boundary-Sensitive Quantum Order on Non-Amenable Lattices"
-  - "Classical Capacity of Single-Mode Bosonic Gaussian Channels"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 86 papers in archive.
   - "Convergence of stochastic gradient descent for learning linear neural networks"
   - "From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling"
@@ -48,9 +48,9 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 87 papers in archive.
   - "Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books"
   - "Basis-Only Funding Is Not Dividend Fair: Settlement Design in Crypto Equity Perpetuals"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 87 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 88 papers in archive.
+  - "Mitigating Model Collapse through Dreaming Learning"
   - "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference"
-  - "Why Shallow Neural Networks Learn Sinusoidal Components First: An Orthogonal Polynomial Dynamics Framework"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 81 papers in archive.
   - "Bombadil: A Foundation Model for Plant Electrophysiology"
   - "GRAFT-EEG: Gauge-Aware Physical Field Transport for Cross-Dataset Motor-Imagery EEG"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "On the fairness of single round-robin tournaments: Evidence from European football"
 
 ## 10 most recent papers
+
+### SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation
+- URL: https://paperplaine.com/papers/swe-dive-multi-turn
+- Category: Computer Science · AI
+- Authors: Lorenz Brehme, Benjamin Steenhoek, Ruth Breu
+- arXiv: 2610.30047
+- Plain-English subtitle: Testing AI coding assistants as they handle messy, changing requests from real users
+- Summary: Most coding agents are tested with single, polished requests—but real users change their minds and add requirements as they go. Researchers built SWE-DIVE, a testing system that simulates realistic multi-turn conversations between a user and a coding agent, complete with a "user simulator" that behaves like actual people do and a validator that checks whether the agent actually solved what was asked. The framework reveals how well agents handle the messiness of actual development work, not just textbook problems.
+- Why it matters: Coding assistants are moving into production where developers work iteratively, asking for changes and new features mid-session. Current benchmarks miss these real patterns entirely—an agent might pass a GitHub-issue test but fail when a user says "actually, make it faster" or "ignore what I said before." This framework closes that gap, letting companies test whether their tools will actually work for how people really code.
+
+### Phonon-assisted free-electron recoil control and mechanical sensing
+- URL: https://paperplaine.com/papers/phonon-assisted-free-electron
+- Category: Physics
+- Authors: Sunjun Hwang, Lee Wei Wesley Wong, Liang Jie Wong et al.
+- arXiv: 2610.30124
+- Plain-English subtitle: Using vibrating membranes to steer and sense with electron beams
+- Summary: Researchers showed theoretically that a vibrating membrane can control how free electrons scatter light and absorb momentum—and in the process, detect tiny external forces better than conventional optical methods. The membrane's motion creates special light patterns that electrons can interact with, encoding force information directly into how the electrons recoil.
+- Why it matters: This opens a new way to build ultra-sensitive force detectors and reconfigurable electron optics without moving mechanical parts in the electron path itself. Because the approach could outperform existing optical sensing methods, it might enable more precise measurement tools for nanotechnology, quantum systems, or fundamental physics experiments.
+
+### Mitigating Model Collapse through Dreaming Learning
+- URL: https://paperplaine.com/papers/mitigating-model-collapse-through
+- Category: Statistics
+- Authors: Matteo Benati, Alessandro Londei, Denise Lanzieri et al.
+- arXiv: 2610.30009
+- Plain-English subtitle: How to stop AI models from forgetting diversity when trained on their own outputs
+- Summary: When generative models like GPT train on synthetic data they've created themselves, they gradually lose diversity and performance in a process called model collapse. Researchers found that this collapse appears as a mathematical narrowing in the model's internal structure—subdominant eigenvalues approaching one—which they can see directly by analyzing the model's spectral properties. A simple fix called Dreaming Learning, which trains the model alongside its own high-temperature samples, keeps this mathematical collapse from happening by preventing the model's internal values from becoming vanishingly small.
+- Why it matters: Model collapse is a practical threat to systems that continuously improve themselves using their own generated data—a pattern increasingly common in AI deployment. This research identifies exactly where the problem occurs mathematically and offers a concrete solution that works across different model types, from small Markov systems to GPT-2. The fix is computationally simple enough to implement in production, making it possible to train models on synthetic data without accepting inevitable performance degradation.
 
 ### UniWALM: Unified World Action Language Model for Embodied Robot Control
 - URL: https://paperplaine.com/papers/uniwalm-unified-world-action
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI agents to switch skills on the fly without forgetting what they already knew
 - Summary: AI agents that need to handle many different tasks often run into a problem: learning new skills erases old ones. Researchers created WeAct, a system that lets agents dynamically switch between specialized skill modules during a task rather than using one fixed set of abilities. On eight research benchmarks, this approach improved accuracy by 6.2% over standard methods while using less computing power, and by 27.5% over other switching approaches.
 - Why it matters: As AI agents take on increasingly complex multi-step tasks—from research to coding to writing reports—they need to master many skills without losing competence in earlier ones. WeAct solves this by letting agents pick the right tool for each moment of a task, and new skills can be added later without retraining the entire system. This makes it practical to deploy and improve long-running AI agents in real applications.
-
-### The wealth-to-salary ratio: a simple indicator of inequality
-- URL: https://paperplaine.com/papers/the-wealth-to-salary
-- Category: Economics
-- Authors: Jhordan Silveira de Borba, Sebastian Gonçalves, Celia Anteneodo
-- arXiv: 2610.24192
-- Plain-English subtitle: One number that predicts how unequal a country's wealth really is
-- Summary: A simple ratio—total wealth divided by average salary—strongly predicts inequality across real economies, just as economic models predicted. The finding holds most clearly in wealthy, developed nations, suggesting this single measure captures something fundamental about how wealth concentrates when investment income matters more than wages.
-- Why it matters: Policymakers and economists now have a straightforward diagnostic tool: if a country's wealth-to-salary ratio is rising, inequality is likely rising too. This could help governments spot growing inequality problems early and target interventions at the underlying imbalance between accumulated assets and labor income, rather than treating symptoms alone.
-
-### Bombadil: A Foundation Model for Plant Electrophysiology
-- URL: https://paperplaine.com/papers/bombadil-a-foundation-model
-- Category: Engineering
-- Authors: James Kirk, Piotr Bednarski, Filip Twardy et al.
-- arXiv: 2610.26597
-- Plain-English subtitle: Training one AI to read electrical stress signals from any plant, anywhere
-- Summary: Researchers built Bombadil, a machine-learning model that learns to recognize electrical patterns common to all plants by analyzing 4 million hours of signals from 100 species across labs, greenhouses, orchards, and forests. Once trained this way, the model can detect seven different stress indicators in any plant—even species it never encountered during training—using just a pair of electrodes.
-- Why it matters: Farmers, orchardists, and plant breeders could diagnose crop stress—drought, disease, nutrient deficiency, heat—days before visible wilting appears, enabling faster intervention. A single standardized tool that works across species eliminates the need to develop separate detection systems for each plant type, making early-warning systems practical and affordable at commercial scale.
-
-### AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages
-- URL: https://paperplaine.com/papers/afribed-a-speech-recognition
-- Category: Computer Science · AI
-- Authors: Claytone Sikasote, Hussein Suleman, Jan Buys
-- arXiv: 2610.26821
-- Plain-English subtitle: Testing whether speech recognition systems treat African language speakers fairly
-- Summary: Speech recognition systems work worse for some speakers than others based on gender and accent, but testing for this bias in African languages has been nearly impossible due to lack of data. Researchers created AfriBED, a dataset of 9 to 18 hours of recorded speech in Bemba and Nyanja from 80 to 127 speakers, specifically designed to measure gender and speaker-type bias in these low-resource languages.
-- Why it matters: As speech technology spreads to African languages and regions, biased systems could systematically exclude women or certain speaker types from accessing voice-controlled services, information, and opportunities. This dataset gives researchers and companies a concrete way to detect and fix these problems before deployment, ensuring technology works equally well regardless of who's speaking.
 
 ## About
 

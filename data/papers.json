@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.30047",
+    "title": "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation",
+    "authors": "Lorenz Brehme, Benjamin Steenhoek, Ruth Breu",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-21T17:06:34Z",
+    "publishedFormatted": "Oct 21, 2026",
+    "subtitle": "Testing AI coding assistants as they handle messy, changing requests from real users",
+    "summary": "Most coding agents are tested with single, polished requests—but real users change their minds and add requirements as they go. Researchers built SWE-DIVE, a testing system that simulates realistic multi-turn conversations between a user and a coding agent, complete with a \"user simulator\" that behaves like actual people do and a validator that checks whether the agent actually solved what was asked. The framework reveals how well agents handle the messiness of actual development work, not just textbook problems.",
+    "whyItMatters": "Coding assistants are moving into production where developers work iteratively, asking for changes and new features mid-session. Current benchmarks miss these real patterns entirely—an agent might pass a GitHub-issue test but fail when a user says \"actually, make it faster\" or \"ignore what I said before.\" This framework closes that gap, letting companies test whether their tools will actually work for how people really code.",
+    "fetchedAt": "2026-10-22T12:47:09.210Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 198
+    },
+    "slug": "swe-dive-multi-turn"
+  },
+  {
+    "id": "2610.30124",
+    "title": "Phonon-assisted free-electron recoil control and mechanical sensing",
+    "authors": "Sunjun Hwang, Lee Wei Wesley Wong, Liang Jie Wong et al.",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-10-21T17:57:51Z",
+    "publishedFormatted": "Oct 21, 2026",
+    "subtitle": "Using vibrating membranes to steer and sense with electron beams",
+    "summary": "Researchers showed theoretically that a vibrating membrane can control how free electrons scatter light and absorb momentum—and in the process, detect tiny external forces better than conventional optical methods. The membrane's motion creates special light patterns that electrons can interact with, encoding force information directly into how the electrons recoil.",
+    "whyItMatters": "This opens a new way to build ultra-sensitive force detectors and reconfigurable electron optics without moving mechanical parts in the electron path itself. Because the approach could outperform existing optical sensing methods, it might enable more precise measurement tools for nanotechnology, quantum systems, or fundamental physics experiments.",
+    "fetchedAt": "2026-10-22T12:47:12.037Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 141
+    },
+    "slug": "phonon-assisted-free-electron"
+  },
+  {
+    "id": "2610.30009",
+    "title": "Mitigating Model Collapse through Dreaming Learning",
+    "authors": "Matteo Benati, Alessandro Londei, Denise Lanzieri et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-21T16:41:53Z",
+    "publishedFormatted": "Oct 21, 2026",
+    "subtitle": "How to stop AI models from forgetting diversity when trained on their own outputs",
+    "summary": "When generative models like GPT train on synthetic data they've created themselves, they gradually lose diversity and performance in a process called model collapse. Researchers found that this collapse appears as a mathematical narrowing in the model's internal structure—subdominant eigenvalues approaching one—which they can see directly by analyzing the model's spectral properties. A simple fix called Dreaming Learning, which trains the model alongside its own high-temperature samples, keeps this mathematical collapse from happening by preventing the model's internal values from becoming vanishingly small.",
+    "whyItMatters": "Model collapse is a practical threat to systems that continuously improve themselves using their own generated data—a pattern increasingly common in AI deployment. This research identifies exactly where the problem occurs mathematically and offers a concrete solution that works across different model types, from small Markov systems to GPT-2. The fix is computationally simple enough to implement in production, making it possible to train models on synthetic data without accepting inevitable performance degradation.",
+    "fetchedAt": "2026-10-22T12:47:15.676Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 8,
+      "wordCount": 209
+    },
+    "slug": "mitigating-model-collapse-through"
+  },
+  {
     "id": "2610.28626",
     "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
     "authors": "Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.",

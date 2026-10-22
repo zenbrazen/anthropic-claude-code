@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1013 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-21
+This file contains the complete plain-English text of all 1016 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-22
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation
+Subtitle: Testing AI coding assistants as they handle messy, changing requests from real users
+URL: https://paperplaine.com/papers/swe-dive-multi-turn
+Category: Computer Science · AI
+Authors: Lorenz Brehme, Benjamin Steenhoek, Ruth Breu
+arXiv ID: 2610.30047
+arXiv URL: https://arxiv.org/abs/2610.30047
+Posted: 2026-10-22
+
+Summary: Most coding agents are tested with single, polished requests—but real users change their minds and add requirements as they go. Researchers built SWE-DIVE, a testing system that simulates realistic multi-turn conversations between a user and a coding agent, complete with a "user simulator" that behaves like actual people do and a validator that checks whether the agent actually solved what was asked. The framework reveals how well agents handle the messiness of actual development work, not just textbook problems.
+
+Why it matters: Coding assistants are moving into production where developers work iteratively, asking for changes and new features mid-session. Current benchmarks miss these real patterns entirely—an agent might pass a GitHub-issue test but fail when a user says "actually, make it faster" or "ignore what I said before." This framework closes that gap, letting companies test whether their tools will actually work for how people really code.
+
+---
+Title: Phonon-assisted free-electron recoil control and mechanical sensing
+Subtitle: Using vibrating membranes to steer and sense with electron beams
+URL: https://paperplaine.com/papers/phonon-assisted-free-electron
+Category: Physics
+Authors: Sunjun Hwang, Lee Wei Wesley Wong, Liang Jie Wong et al.
+arXiv ID: 2610.30124
+arXiv URL: https://arxiv.org/abs/2610.30124
+Posted: 2026-10-22
+
+Summary: Researchers showed theoretically that a vibrating membrane can control how free electrons scatter light and absorb momentum—and in the process, detect tiny external forces better than conventional optical methods. The membrane's motion creates special light patterns that electrons can interact with, encoding force information directly into how the electrons recoil.
+
+Why it matters: This opens a new way to build ultra-sensitive force detectors and reconfigurable electron optics without moving mechanical parts in the electron path itself. Because the approach could outperform existing optical sensing methods, it might enable more precise measurement tools for nanotechnology, quantum systems, or fundamental physics experiments.
+
+---
+Title: Mitigating Model Collapse through Dreaming Learning
+Subtitle: How to stop AI models from forgetting diversity when trained on their own outputs
+URL: https://paperplaine.com/papers/mitigating-model-collapse-through
+Category: Statistics
+Authors: Matteo Benati, Alessandro Londei, Denise Lanzieri et al.
+arXiv ID: 2610.30009
+arXiv URL: https://arxiv.org/abs/2610.30009
+Posted: 2026-10-22
+
+Summary: When generative models like GPT train on synthetic data they've created themselves, they gradually lose diversity and performance in a process called model collapse. Researchers found that this collapse appears as a mathematical narrowing in the model's internal structure—subdominant eigenvalues approaching one—which they can see directly by analyzing the model's spectral properties. A simple fix called Dreaming Learning, which trains the model alongside its own high-temperature samples, keeps this mathematical collapse from happening by preventing the model's internal values from becoming vanishingly small.
+
+Why it matters: Model collapse is a practical threat to systems that continuously improve themselves using their own generated data—a pattern increasingly common in AI deployment. This research identifies exactly where the problem occurs mathematically and offers a concrete solution that works across different model types, from small Markov systems to GPT-2. The fix is computationally simple enough to implement in production, making it possible to train models on synthetic data without accepting inevitable performance degradation.
 
 ---
 Title: UniWALM: Unified World Action Language Model for Embodied Robot Control
