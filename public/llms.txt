@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1019 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1022 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 349 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 350 papers in archive.
+  - "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing"
   - "Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization"
-  - "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 83 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 84 papers in archive.
+  - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
   - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
-  - "Shortcut Sensitivity in Agent-Safety Evaluations"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 85 papers in archive.
   - "Phonon-assisted free-electron recoil control and mechanical sensing"
   - "Boundary-Sensitive Quantum Order on Non-Amenable Lattices"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 82 papers in archive.
   - "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion"
   - "Bombadil: A Foundation Model for Plant Electrophysiology"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 71 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 72 papers in archive.
+  - "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?"
   - "The wealth-to-salary ratio: a simple indicator of inequality"
-  - "On the fairness of single round-robin tournaments: Evidence from European football"
 
 ## 10 most recent papers
+
+### SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing
+- URL: https://paperplaine.com/papers/spectralcanary-embarrassingly-simple-low
+- Category: Computer Science · AI
+- Authors: Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe et al.
+- arXiv: 2610.31659
+- Plain-English subtitle: A simple watermark trick to catch unauthorized AI model training
+- Summary: Researchers created SpectralCanary, a method that secretly embeds a barely-visible signal into every image in a dataset before it's released, then detects whether an AI model was trained on that dataset by checking if the signal appears in the model's outputs. The technique works 91% of the time per generated image and 95% of the time when checking 30 generated samples, outperforming existing detection methods while keeping the original images virtually unchanged.
+- Why it matters: As text-to-image AI models become more valuable and more likely to be trained on proprietary datasets, creators need reliable ways to prove when their work has been used without permission. SpectralCanary provides a practical, hard-to-remove audit trail that doesn't require complex setup or degrade image quality, making it feasible for artists, photographers, and organizations to protect their datasets before they're distributed.
+
+### Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?
+- URL: https://paperplaine.com/papers/joules-to-gdp-how
+- Category: Economics
+- Authors: Amirreza Zeinali, Jon Saad-Falcon, Avanika Narayan et al.
+- arXiv: 2610.30858
+- Plain-English subtitle: Which AI tasks deliver the most economic bang for each watt consumed
+- Summary: AI systems that do the most total work or earn the most money aren't necessarily the most efficient at converting energy into economic value. Researchers tested 220 real-world tasks across 44 occupations and found that software development delivers 27% more economic value per joule than engineering work, even though engineering produces more dollar value per task. A smaller, less powerful model (Gemma 4 31B) delivered 2.5 times more net economic value per joule than a larger one (GLM 5.2), despite producing only 56% of the absolute profit.
+- Why it matters: As AI systems consume enormous amounts of electricity, companies face pressure to maximize returns on energy spending, not just total output. This framework gives organizations a concrete way to choose which models and hardware setups actually make financial sense for different types of work. For occupations ranging from software development to legal analysis, picking the wrong model-to-hardware pairing could waste millions in energy costs while producing identical results.
+
+### AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack
+- URL: https://paperplaine.com/papers/agentphishing-a-benchmark-of
+- Category: Computer Science
+- Authors: Justin Tan, Miao Li, Ding Zhao
+- arXiv: 2610.31404
+- Plain-English subtitle: Testing whether AI email assistants fall for customized phishing attacks
+- Summary: AI agents that handle email can be tricked by phishing attacks specifically tailored to their behavior, even when they safely ignore generic phishing emails. Researchers found that four out of nine tested agents failed to detect over 90% of these personalized attacks and complied with malicious requests more than 45% of the time, showing that standard phishing datasets don't adequately test how agents actually respond to persuasive manipulation.
+- Why it matters: As AI systems increasingly access email, calendars, and financial accounts on our behalf, phishing becomes a direct attack on our digital lives—not just on our judgment. These results show that existing safety tests are insufficient: an agent might pass conventional security checks but still fall for a customized scam designed to exploit how it specifically reasons and makes decisions. Companies deploying email agents need to evaluate them against adaptive attacks, not just old phishing collections.
 
 ### Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization
 - URL: https://paperplaine.com/papers/parallel-ai-agent-collaboration
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching robots to think and talk while they work, using one shared brain
 - Summary: A new AI system called UniWALM teaches robots to manipulate objects by learning video, actions, and language all at once in a single model, rather than bolting separate reasoning systems together. The robot generates text descriptions of what it's doing and remembers them for the next step—no external memory bank needed. On a real-world task of finding and fetching items, adding this self-generated memory boosted success from 11% to 61%, far outpacing existing robot control systems.
 - Why it matters: Robots that can talk through their own reasoning while acting become easier to debug, monitor, and redirect mid-task—you can see what the robot thinks it's doing. This unified approach also cuts the engineering complexity of strapping multiple separate AI systems together. The 50-percentage-point jump on a real-world task suggests this design could make practical household or warehouse robots more reliable.
-
-### Convergence of stochastic gradient descent for learning linear neural networks
-- URL: https://paperplaine.com/papers/convergence-of-stochastic-gradient
-- Category: Mathematics
-- Authors: Gabin Maxime Nguegnang, Bubacarr Bah, Holger Rauhut et al.
-- arXiv: 2610.28561
-- Plain-English subtitle: Why the algorithm behind AI training actually works mathematically
-- Summary: Researchers proved that stochastic gradient descent—the algorithm used to train virtually all modern neural networks—reliably converges to good solutions, even in simplified deep learning models. The proof works without requiring unrealistic assumptions like perfectly clean data, and holds for both fixed and adaptive learning rates.
-- Why it matters: SGD is used billions of times daily to train everything from language models to image recognition systems, yet engineers have lacked mathematical proof it actually works. This result provides that foundation, validating the theoretical soundness of a procedure that already works in practice and potentially guiding how to set learning rates and other training parameters more reliably.
-
-### Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics
-- URL: https://paperplaine.com/papers/spatially-informed-and-direction
-- Category: Quantitative Biology
-- Authors: Azim Dehghani Amirabad, Ali Khodabandeh Yalabadi, Artem Moskalev et al.
-- arXiv: 2610.28579
-- Plain-English subtitle: Teaching AI to read gene activity by understanding where cells sit in tissue
-- Summary: Cells behave differently depending on their neighbors and position in tissue, but existing methods for analyzing this spatial context miss important details or rely on arbitrary coordinates. A new framework called Tessera captures both which genes are active and how cells are organized relative to each other—encoding direction and local relationships rather than just distance—and outperforms current methods even when applied to tissues it has never seen before.
-- Why it matters: Spatial transcriptomics is becoming routine in medical research, but current tools lose information about tissue organization that shapes whether cells become healthy or diseased. Better representation learning means researchers can more accurately predict cell behavior, identify disease mechanisms tied to tissue structure, and potentially design better treatments. Tessera also generalizes to much larger tissue samples than it was trained on, making it practical for real research workflows without constant retraining.
-
-### BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models
-- URL: https://paperplaine.com/papers/bitmtp-when-multi-token
-- Category: Computer Science · AI
-- Authors: Ning Zhang, Shihao Wang, Jinrui Zhang et al.
-- arXiv: 2610.28500
-- Plain-English subtitle: Making tiny AI models twice as fast without losing quality
-- Summary: Researchers combined two techniques for speeding up large language models—extreme compression and predicting multiple words at once—which hadn't worked well together before. Their method, BitMTP, achieves 2–3x faster text generation across different GPU types while maintaining the same output quality, solving practical engineering problems that prevented these speedups from working in practice.
-- Why it matters: Faster AI models mean lower electricity costs, cheaper cloud inference, and the ability to run capable language models on consumer hardware like gaming GPUs or embedded devices. A 2–3x speedup cuts energy use proportionally, which matters for data centers running millions of inferences daily and for users deploying AI on phones and edge devices.
 
 ## About
 

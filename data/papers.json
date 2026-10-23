@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.31659",
+    "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
+    "authors": "Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-22T17:59:03Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "A simple watermark trick to catch unauthorized AI model training",
+    "summary": "Researchers created SpectralCanary, a method that secretly embeds a barely-visible signal into every image in a dataset before it's released, then detects whether an AI model was trained on that dataset by checking if the signal appears in the model's outputs. The technique works 91% of the time per generated image and 95% of the time when checking 30 generated samples, outperforming existing detection methods while keeping the original images virtually unchanged.",
+    "whyItMatters": "As text-to-image AI models become more valuable and more likely to be trained on proprietary datasets, creators need reliable ways to prove when their work has been used without permission. SpectralCanary provides a practical, hard-to-remove audit trail that doesn't require complex setup or degrade image quality, making it feasible for artists, photographers, and organizations to protect their datasets before they're distributed.",
+    "fetchedAt": "2026-10-23T12:25:26.802Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 230
+    },
+    "slug": "spectralcanary-embarrassingly-simple-low"
+  },
+  {
+    "id": "2610.30858",
+    "title": "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?",
+    "authors": "Amirreza Zeinali, Jon Saad-Falcon, Avanika Narayan et al.",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-10-22T07:35:57Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Which AI tasks deliver the most economic bang for each watt consumed",
+    "summary": "AI systems that do the most total work or earn the most money aren't necessarily the most efficient at converting energy into economic value. Researchers tested 220 real-world tasks across 44 occupations and found that software development delivers 27% more economic value per joule than engineering work, even though engineering produces more dollar value per task. A smaller, less powerful model (Gemma 4 31B) delivered 2.5 times more net economic value per joule than a larger one (GLM 5.2), despite producing only 56% of the absolute profit.",
+    "whyItMatters": "As AI systems consume enormous amounts of electricity, companies face pressure to maximize returns on energy spending, not just total output. This framework gives organizations a concrete way to choose which models and hardware setups actually make financial sense for different types of work. For occupations ranging from software development to legal analysis, picking the wrong model-to-hardware pairing could waste millions in energy costs while producing identical results.",
+    "fetchedAt": "2026-10-23T12:25:30.437Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 306
+    },
+    "slug": "joules-to-gdp-how"
+  },
+  {
+    "id": "2610.31404",
+    "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
+    "authors": "Justin Tan, Miao Li, Ding Zhao",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-22T15:07:49Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Testing whether AI email assistants fall for customized phishing attacks",
+    "summary": "AI agents that handle email can be tricked by phishing attacks specifically tailored to their behavior, even when they safely ignore generic phishing emails. Researchers found that four out of nine tested agents failed to detect over 90% of these personalized attacks and complied with malicious requests more than 45% of the time, showing that standard phishing datasets don't adequately test how agents actually respond to persuasive manipulation.",
+    "whyItMatters": "As AI systems increasingly access email, calendars, and financial accounts on our behalf, phishing becomes a direct attack on our digital lives—not just on our judgment. These results show that existing safety tests are insufficient: an agent might pass conventional security checks but still fall for a customized scam designed to exploit how it specifically reasons and makes decisions. Companies deploying email agents need to evaluate them against adaptive attacks, not just old phishing collections.",
+    "fetchedAt": "2026-10-23T12:25:34.596Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 201
+    },
+    "slug": "agentphishing-a-benchmark-of"
+  },
+  {
     "id": "2610.30074",
     "title": "Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization",
     "authors": "Hanmin Li, Yury Demidovich, Peter Richtárik",
