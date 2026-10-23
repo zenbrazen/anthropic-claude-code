@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1022 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1025 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 350 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 351 papers in archive.
+  - "Cost-Aware Abstention for LLM-Based IT Ticket Classification"
   - "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing"
-  - "Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 84 papers in archive.
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
   - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 85 papers in archive.
   - "Phonon-assisted free-electron recoil control and mechanical sensing"
   - "Boundary-Sensitive Quantum Order on Non-Amenable Lattices"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 86 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 87 papers in archive.
+  - "Dispersive Tree Agreements for Multi-Robot Coordination"
   - "Convergence of stochastic gradient descent for learning linear neural networks"
-  - "From Alpha to Execution: Trading Horizons, Regimes, and Schedules under Concave Impact and Hurst Scaling"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 87 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 88 papers in archive.
+  - "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale"
   - "Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics"
-  - "PyGPLA: A Python Package for Generalized Phase Locking Analysis"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 88 papers in archive.
   - "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models"
   - "Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "The wealth-to-salary ratio: a simple indicator of inequality"
 
 ## 10 most recent papers
+
+### Cost-Aware Abstention for LLM-Based IT Ticket Classification
+- URL: https://paperplaine.com/papers/cost-aware-abstention-for
+- Category: Computer Science · AI
+- Authors: Sachin Gupta
+- arXiv: 2610.31657
+- Plain-English subtitle: When to let humans handle IT tickets instead of risking expensive routing mistakes
+- Summary: Routing IT support tickets automatically often costs more money when wrong than letting humans do the sorting instead. Researchers tested whether machine-learning systems could learn to refuse uncertain cases and send those to people—finding that a simple statistical model cut overall costs by 38% and slashed wrong routing from 15% down to 3.5%, while large language models struggled even with extra training examples.
+- Why it matters: IT departments waste real money every time an automated system sends a ticket to the wrong team, multiplying the time needed to fix the problem. This work shows that knowing when *not* to automate—by flagging difficult cases for human judgment—saves significant operational cost. The approach is practical enough to deploy immediately on existing tickets and datasets, letting any company measure whether their current routing system is actually worth the automation versus selective human triage.
+
+### Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale
+- URL: https://paperplaine.com/papers/gate-based-feature-importance
+- Category: Quantitative Biology
+- Authors: Shrivatsa Deshmukh, Sasha Brenner, Thomas R. Knösche et al.
+- arXiv: 2610.30364
+- Plain-English subtitle: Why machine learning's shortcuts mislead scientists about what matters
+- Summary: Researchers testing a popular method for understanding which data shapes a model's predictions found it gets the answer backwards. When fitting brain-wave models, learned weighting mechanisms consistently identified the least important features as most important—and vice versa—even though this caused almost no drop in accuracy. The finding warns that these cheap interpretability shortcuts, widely adopted in neuroscience and other fields, can confidently lie about what's actually driving a model's decisions.
+- Why it matters: Scientists use these weighting methods to figure out which measurements matter for understanding brain activity, disease mechanisms, and other complex systems. If the weights point to the wrong features—which this work shows they reliably do—researchers could waste time chasing irrelevant signals and miss the real drivers of the phenomena they're studying. This means interpretability tools widely trusted in simulation-based research may need rethinking before they're used to guide scientific conclusions.
+
+### Dispersive Tree Agreements for Multi-Robot Coordination
+- URL: https://paperplaine.com/papers/dispersive-tree-agreements-for
+- Category: Mathematics
+- Authors: Shashank A. Deshpande, Blake T. Edwards, Jonathan P. How
+- arXiv: 2610.31540
+- Plain-English subtitle: How robots negotiate real-time paths without slowing each other down
+- Summary: Researchers developed a method called WarpWeaver that lets multiple robots plan their movements together in real time without needing a central coordinator. Each robot independently searches for good paths while negotiating over shared space with its neighbors, and the system finds near-optimal agreements even when computation time runs out. In tests, the approach reduced travel time by up to 22% compared to traditional centralized planning and nearly doubled success rates on complex coordination tasks.
+- Why it matters: Current multi-robot systems either rely on one central planner (slow and inflexible) or let robots act independently (wasteful and collision-prone). WarpWeaver splits the difference, letting robots coordinate efficiently while each makes decisions locally—a capability critical for warehouse automation, search-and-rescue teams, and autonomous vehicle fleets that can't wait for a central server to compute every move.
 
 ### SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing
 - URL: https://paperplaine.com/papers/spectralcanary-embarrassingly-simple-low
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Testing AI coding assistants as they handle messy, changing requests from real users
 - Summary: Most coding agents are tested with single, polished requests—but real users change their minds and add requirements as they go. Researchers built SWE-DIVE, a testing system that simulates realistic multi-turn conversations between a user and a coding agent, complete with a "user simulator" that behaves like actual people do and a validator that checks whether the agent actually solved what was asked. The framework reveals how well agents handle the messiness of actual development work, not just textbook problems.
 - Why it matters: Coding assistants are moving into production where developers work iteratively, asking for changes and new features mid-session. Current benchmarks miss these real patterns entirely—an agent might pass a GitHub-issue test but fail when a user says "actually, make it faster" or "ignore what I said before." This framework closes that gap, letting companies test whether their tools will actually work for how people really code.
-
-### Phonon-assisted free-electron recoil control and mechanical sensing
-- URL: https://paperplaine.com/papers/phonon-assisted-free-electron
-- Category: Physics
-- Authors: Sunjun Hwang, Lee Wei Wesley Wong, Liang Jie Wong et al.
-- arXiv: 2610.30124
-- Plain-English subtitle: Using vibrating membranes to steer and sense with electron beams
-- Summary: Researchers showed theoretically that a vibrating membrane can control how free electrons scatter light and absorb momentum—and in the process, detect tiny external forces better than conventional optical methods. The membrane's motion creates special light patterns that electrons can interact with, encoding force information directly into how the electrons recoil.
-- Why it matters: This opens a new way to build ultra-sensitive force detectors and reconfigurable electron optics without moving mechanical parts in the electron path itself. Because the approach could outperform existing optical sensing methods, it might enable more precise measurement tools for nanotechnology, quantum systems, or fundamental physics experiments.
-
-### Mitigating Model Collapse through Dreaming Learning
-- URL: https://paperplaine.com/papers/mitigating-model-collapse-through
-- Category: Statistics
-- Authors: Matteo Benati, Alessandro Londei, Denise Lanzieri et al.
-- arXiv: 2610.30009
-- Plain-English subtitle: How to stop AI models from forgetting diversity when trained on their own outputs
-- Summary: When generative models like GPT train on synthetic data they've created themselves, they gradually lose diversity and performance in a process called model collapse. Researchers found that this collapse appears as a mathematical narrowing in the model's internal structure—subdominant eigenvalues approaching one—which they can see directly by analyzing the model's spectral properties. A simple fix called Dreaming Learning, which trains the model alongside its own high-temperature samples, keeps this mathematical collapse from happening by preventing the model's internal values from becoming vanishingly small.
-- Why it matters: Model collapse is a practical threat to systems that continuously improve themselves using their own generated data—a pattern increasingly common in AI deployment. This research identifies exactly where the problem occurs mathematically and offers a concrete solution that works across different model types, from small Markov systems to GPT-2. The fix is computationally simple enough to implement in production, making it possible to train models on synthetic data without accepting inevitable performance degradation.
-
-### UniWALM: Unified World Action Language Model for Embodied Robot Control
-- URL: https://paperplaine.com/papers/uniwalm-unified-world-action
-- Category: Computer Science · AI
-- Authors: Rahul Sajnani, Diego Romeres, Mingyuan Zhang et al.
-- arXiv: 2610.28626
-- Plain-English subtitle: Teaching robots to think and talk while they work, using one shared brain
-- Summary: A new AI system called UniWALM teaches robots to manipulate objects by learning video, actions, and language all at once in a single model, rather than bolting separate reasoning systems together. The robot generates text descriptions of what it's doing and remembers them for the next step—no external memory bank needed. On a real-world task of finding and fetching items, adding this self-generated memory boosted success from 11% to 61%, far outpacing existing robot control systems.
-- Why it matters: Robots that can talk through their own reasoning while acting become easier to debug, monitor, and redirect mid-task—you can see what the robot thinks it's doing. This unified approach also cuts the engineering complexity of strapping multiple separate AI systems together. The 50-percentage-point jump on a real-world task suggests this design could make practical household or warehouse robots more reliable.
 
 ## About
 

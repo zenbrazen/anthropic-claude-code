@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.31657",
+    "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+    "authors": "Sachin Gupta",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-22T17:58:52Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "When to let humans handle IT tickets instead of risking expensive routing mistakes",
+    "summary": "Routing IT support tickets automatically often costs more money when wrong than letting humans do the sorting instead. Researchers tested whether machine-learning systems could learn to refuse uncertain cases and send those to people—finding that a simple statistical model cut overall costs by 38% and slashed wrong routing from 15% down to 3.5%, while large language models struggled even with extra training examples.",
+    "whyItMatters": "IT departments waste real money every time an automated system sends a ticket to the wrong team, multiplying the time needed to fix the problem. This work shows that knowing when *not* to automate—by flagging difficult cases for human judgment—saves significant operational cost. The approach is practical enough to deploy immediately on existing tickets and datasets, letting any company measure whether their current routing system is actually worth the automation versus selective human triage.",
+    "fetchedAt": "2026-10-23T21:47:23.584Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 254
+    },
+    "slug": "cost-aware-abstention-for"
+  },
+  {
+    "id": "2610.30364",
+    "title": "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale",
+    "authors": "Shrivatsa Deshmukh, Sasha Brenner, Thomas R. Knösche et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-21T19:28:20Z",
+    "publishedFormatted": "Oct 21, 2026",
+    "subtitle": "Why machine learning's shortcuts mislead scientists about what matters",
+    "summary": "Researchers testing a popular method for understanding which data shapes a model's predictions found it gets the answer backwards. When fitting brain-wave models, learned weighting mechanisms consistently identified the least important features as most important—and vice versa—even though this caused almost no drop in accuracy. The finding warns that these cheap interpretability shortcuts, widely adopted in neuroscience and other fields, can confidently lie about what's actually driving a model's decisions.",
+    "whyItMatters": "Scientists use these weighting methods to figure out which measurements matter for understanding brain activity, disease mechanisms, and other complex systems. If the weights point to the wrong features—which this work shows they reliably do—researchers could waste time chasing irrelevant signals and miss the real drivers of the phenomena they're studying. This means interpretability tools widely trusted in simulation-based research may need rethinking before they're used to guide scientific conclusions.",
+    "fetchedAt": "2026-10-23T21:47:27.294Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 246
+    },
+    "slug": "gate-based-feature-importance"
+  },
+  {
+    "id": "2610.31540",
+    "title": "Dispersive Tree Agreements for Multi-Robot Coordination",
+    "authors": "Shashank A. Deshpande, Blake T. Edwards, Jonathan P. How",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-22T16:48:09Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "How robots negotiate real-time paths without slowing each other down",
+    "summary": "Researchers developed a method called WarpWeaver that lets multiple robots plan their movements together in real time without needing a central coordinator. Each robot independently searches for good paths while negotiating over shared space with its neighbors, and the system finds near-optimal agreements even when computation time runs out. In tests, the approach reduced travel time by up to 22% compared to traditional centralized planning and nearly doubled success rates on complex coordination tasks.",
+    "whyItMatters": "Current multi-robot systems either rely on one central planner (slow and inflexible) or let robots act independently (wasteful and collision-prone). WarpWeaver splits the difference, letting robots coordinate efficiently while each makes decisions locally—a capability critical for warehouse automation, search-and-rescue teams, and autonomous vehicle fleets that can't wait for a central server to compute every move.",
+    "fetchedAt": "2026-10-23T21:47:30.295Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 231
+    },
+    "slug": "dispersive-tree-agreements-for"
+  },
+  {
     "id": "2610.31659",
     "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
     "authors": "Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe et al.",

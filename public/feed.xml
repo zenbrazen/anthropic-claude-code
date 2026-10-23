@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 12:25:35 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 21:47:31 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cost-Aware Abstention for LLM-Based IT Ticket Classification</title>
+      <link>https://paperplaine.com/papers/cost-aware-abstention-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cost-aware-abstention-for</guid>
+      <pubDate>Thu, 22 Oct 2026 17:58:52 GMT</pubDate>
+      <author>Sachin Gupta</author>
+      <category>AI</category>
+      <description>When to let humans handle IT tickets instead of risking expensive routing mistakes</description>
+      <content:encoded><![CDATA[<p><em>When to let humans handle IT tickets instead of risking expensive routing mistakes</em></p><p>Routing IT support tickets automatically often costs more money when wrong than letting humans do the sorting instead. Researchers tested whether machine-learning systems could learn to refuse uncertain cases and send those to people—finding that a simple statistical model cut overall costs by 38% and slashed wrong routing from 15% down to 3.5%, while large language models struggled even with extra training examples.</p><p><strong>Why it matters:</strong> IT departments waste real money every time an automated system sends a ticket to the wrong team, multiplying the time needed to fix the problem. This work shows that knowing when *not* to automate—by flagging difficult cases for human judgment—saves significant operational cost. The approach is practical enough to deploy immediately on existing tickets and datasets, letting any company measure whether their current routing system is actually worth the automation versus selective human triage.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale</title>
+      <link>https://paperplaine.com/papers/gate-based-feature-importance</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/gate-based-feature-importance</guid>
+      <pubDate>Wed, 21 Oct 2026 19:28:20 GMT</pubDate>
+      <author>Shrivatsa Deshmukh, Sasha Brenner, Thomas R. Knösche et al.</author>
+      <category>Biology</category>
+      <description>Why machine learning&#39;s shortcuts mislead scientists about what matters</description>
+      <content:encoded><![CDATA[<p><em>Why machine learning's shortcuts mislead scientists about what matters</em></p><p>Researchers testing a popular method for understanding which data shapes a model's predictions found it gets the answer backwards. When fitting brain-wave models, learned weighting mechanisms consistently identified the least important features as most important—and vice versa—even though this caused almost no drop in accuracy. The finding warns that these cheap interpretability shortcuts, widely adopted in neuroscience and other fields, can confidently lie about what's actually driving a model's decisions.</p><p><strong>Why it matters:</strong> Scientists use these weighting methods to figure out which measurements matter for understanding brain activity, disease mechanisms, and other complex systems. If the weights point to the wrong features—which this work shows they reliably do—researchers could waste time chasing irrelevant signals and miss the real drivers of the phenomena they're studying. This means interpretability tools widely trusted in simulation-based research may need rethinking before they're used to guide scientific conclusions.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Dispersive Tree Agreements for Multi-Robot Coordination</title>
+      <link>https://paperplaine.com/papers/dispersive-tree-agreements-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/dispersive-tree-agreements-for</guid>
+      <pubDate>Thu, 22 Oct 2026 16:48:09 GMT</pubDate>
+      <author>Shashank A. Deshpande, Blake T. Edwards, Jonathan P. How</author>
+      <category>Math</category>
+      <description>How robots negotiate real-time paths without slowing each other down</description>
+      <content:encoded><![CDATA[<p><em>How robots negotiate real-time paths without slowing each other down</em></p><p>Researchers developed a method called WarpWeaver that lets multiple robots plan their movements together in real time without needing a central coordinator. Each robot independently searches for good paths while negotiating over shared space with its neighbors, and the system finds near-optimal agreements even when computation time runs out. In tests, the approach reduced travel time by up to 22% compared to traditional centralized planning and nearly doubled success rates on complex coordination tasks.</p><p><strong>Why it matters:</strong> Current multi-robot systems either rely on one central planner (slow and inflexible) or let robots act independently (wasteful and collision-prone). WarpWeaver splits the difference, letting robots coordinate efficiently while each makes decisions locally—a capability critical for warehouse automation, search-and-rescue teams, and autonomous vehicle fleets that can't wait for a central server to compute every move.</p>]]></content:encoded>
+    </item>
     <item>
       <title>SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing</title>
       <link>https://paperplaine.com/papers/spectralcanary-embarrassingly-simple-low</link>

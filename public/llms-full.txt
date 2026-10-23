@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1022 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1025 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-23
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Cost-Aware Abstention for LLM-Based IT Ticket Classification
+Subtitle: When to let humans handle IT tickets instead of risking expensive routing mistakes
+URL: https://paperplaine.com/papers/cost-aware-abstention-for
+Category: Computer Science · AI
+Authors: Sachin Gupta
+arXiv ID: 2610.31657
+arXiv URL: https://arxiv.org/abs/2610.31657
+Posted: 2026-10-23
+
+Summary: Routing IT support tickets automatically often costs more money when wrong than letting humans do the sorting instead. Researchers tested whether machine-learning systems could learn to refuse uncertain cases and send those to people—finding that a simple statistical model cut overall costs by 38% and slashed wrong routing from 15% down to 3.5%, while large language models struggled even with extra training examples.
+
+Why it matters: IT departments waste real money every time an automated system sends a ticket to the wrong team, multiplying the time needed to fix the problem. This work shows that knowing when *not* to automate—by flagging difficult cases for human judgment—saves significant operational cost. The approach is practical enough to deploy immediately on existing tickets and datasets, letting any company measure whether their current routing system is actually worth the automation versus selective human triage.
+
+---
+Title: Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale
+Subtitle: Why machine learning's shortcuts mislead scientists about what matters
+URL: https://paperplaine.com/papers/gate-based-feature-importance
+Category: Quantitative Biology
+Authors: Shrivatsa Deshmukh, Sasha Brenner, Thomas R. Knösche et al.
+arXiv ID: 2610.30364
+arXiv URL: https://arxiv.org/abs/2610.30364
+Posted: 2026-10-23
+
+Summary: Researchers testing a popular method for understanding which data shapes a model's predictions found it gets the answer backwards. When fitting brain-wave models, learned weighting mechanisms consistently identified the least important features as most important—and vice versa—even though this caused almost no drop in accuracy. The finding warns that these cheap interpretability shortcuts, widely adopted in neuroscience and other fields, can confidently lie about what's actually driving a model's decisions.
+
+Why it matters: Scientists use these weighting methods to figure out which measurements matter for understanding brain activity, disease mechanisms, and other complex systems. If the weights point to the wrong features—which this work shows they reliably do—researchers could waste time chasing irrelevant signals and miss the real drivers of the phenomena they're studying. This means interpretability tools widely trusted in simulation-based research may need rethinking before they're used to guide scientific conclusions.
+
+---
+Title: Dispersive Tree Agreements for Multi-Robot Coordination
+Subtitle: How robots negotiate real-time paths without slowing each other down
+URL: https://paperplaine.com/papers/dispersive-tree-agreements-for
+Category: Mathematics
+Authors: Shashank A. Deshpande, Blake T. Edwards, Jonathan P. How
+arXiv ID: 2610.31540
+arXiv URL: https://arxiv.org/abs/2610.31540
+Posted: 2026-10-23
+
+Summary: Researchers developed a method called WarpWeaver that lets multiple robots plan their movements together in real time without needing a central coordinator. Each robot independently searches for good paths while negotiating over shared space with its neighbors, and the system finds near-optimal agreements even when computation time runs out. In tests, the approach reduced travel time by up to 22% compared to traditional centralized planning and nearly doubled success rates on complex coordination tasks.
+
+Why it matters: Current multi-robot systems either rely on one central planner (slow and inflexible) or let robots act independently (wasteful and collision-prone). WarpWeaver splits the difference, letting robots coordinate efficiently while each makes decisions locally—a capability critical for warehouse automation, search-and-rescue teams, and autonomous vehicle fleets that can't wait for a central server to compute every move.
 
 ---
 Title: SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing
