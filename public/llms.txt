@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1025 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1028 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 351 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 352 papers in archive.
+  - "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning"
   - "Cost-Aware Abstention for LLM-Based IT Ticket Classification"
-  - "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 84 papers in archive.
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
   - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 85 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 86 papers in archive.
+  - "Mixed State Deep Thermalization under Generic Quantum Errors"
   - "Phonon-assisted free-electron recoil control and mechanical sensing"
-  - "Boundary-Sensitive Quantum Order on Non-Amenable Lattices"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 87 papers in archive.
   - "Dispersive Tree Agreements for Multi-Robot Coordination"
   - "Convergence of stochastic gradient descent for learning linear neural networks"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 88 papers in archive.
   - "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale"
   - "Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 88 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 89 papers in archive.
+  - "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders"
   - "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models"
-  - "Cooperative Multi-Agent Reinforcement Learning for Market Making on Prediction-Market Order Books"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 88 papers in archive.
   - "Mitigating Model Collapse through Dreaming Learning"
   - "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "The wealth-to-salary ratio: a simple indicator of inequality"
 
 ## 10 most recent papers
+
+### METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning
+- URL: https://paperplaine.com/papers/metta-memory-enhanced-test
+- Category: Computer Science · AI
+- Authors: Ali Najar, Hosein Hasani, Amir Kooshan Fattah et al.
+- arXiv: 2610.31656
+- Plain-English subtitle: Teaching AI agents to learn new tasks faster using smarter memory
+- Summary: Robots and AI agents often need to quickly master new tasks after seeing just a few examples. This paper introduces METTA, a system that splits learning into two memory layers—one for moment-to-moment adaptation and another for remembering patterns across entire episodes—letting agents figure out new tasks 50% faster than before while using far less computing power than existing methods.
+- Why it matters: AI systems that adapt quickly to new situations are closer to real-world usefulness, whether that's robots learning to manipulate new objects or software agents handling unexpected environments. By cutting computational costs dramatically while improving success rates, METTA makes the difference between a system that works in labs and one that could actually run on physical robots or deployed agents with limited computing budgets.
+
+### Mixed State Deep Thermalization under Generic Quantum Errors
+- URL: https://paperplaine.com/papers/mixed-state-deep-thermalization
+- Category: Physics
+- Authors: Xie-Hang Yu, Pavel Kos
+- arXiv: 2610.31580
+- Plain-English subtitle: How quantum noise creates predictable patterns in scrambled information
+- Summary: When quantum systems get noisy—as all real systems do—they still follow universal patterns after enough scrambling, but based entirely on the noise's properties rather than the specific system details. Researchers proved this for several types of quantum circuits and found the connection runs deep: any quantum error channel produces a specific random mixed state that systems converge to, regardless of what's happening under the hood.
+- Why it matters: Quantum computers and sensors are plagued by errors that seem random and unpredictable. This work reveals that noise actually imposes order—identifying the error's mathematical signature tells you exactly what the quantum system will look like in the long run. That predictability could help engineers design better error-correction schemes or understand when noisy quantum devices will fail in consistent ways.
+
+### Intraday Forecasting Ability and Liquidity Provision of Institutional Traders
+- URL: https://paperplaine.com/papers/intraday-forecasting-ability-and
+- Category: Quantitative Finance
+- Authors: Xinlei Hao, Jiajun Guo, Jussi Keppo et al.
+- arXiv: 2610.31141
+- Plain-English subtitle: How institutional traders profit by predicting prices and waiting for other traders to buy
+- Summary: Institutional traders who can accurately predict short-term price movements earn significantly higher profits from their trades. The study found that traders with the best forecasting ability make 1–1.2 extra currency units per trade, while those who provide liquidity by waiting for other traders to come to them make 1.3–3.8 extra currency units—showing that patience and prediction together drive profitability.
+- Why it matters: Understanding how institutional traders actually make money reveals that skill in reading market signals and a willingness to hold positions longer than others are the real drivers of edge in financial markets. This matters to regular investors because it shows the sophistication of the traders they're competing against and explains why consistently beating the market is so difficult for those without specialized data and execution capabilities.
 
 ### Cost-Aware Abstention for LLM-Based IT Ticket Classification
 - URL: https://paperplaine.com/papers/cost-aware-abstention-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How to merge AI agents' work without losing their improvements
 - Summary: When multiple AI agents work on the same problem in parallel, combining their edits often destroys the improvements each one made individually. Researchers developed a method that selects which edits to merge based on graph theory, guaranteeing that at least a provable fraction of all verified improvements survive the combination. Experiments on code repair and route optimization show the approach keeps 15% more of the value that independent agents produce, compared to naive merging.
 - Why it matters: As companies deploy multiple AI systems to solve complex problems—from code generation to logistics—losses from conflicting edits waste compute and slow down real work. This method ensures parallel agents actually speed up solutions instead of canceling each other out, with measurable time savings on practical tasks like route planning. For large-scale automation, that efficiency gap directly reduces wall-clock time and computational cost.
-
-### Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion
-- URL: https://paperplaine.com/papers/region-aware-multi-view
-- Category: Engineering
-- Authors: Srivishnu Ethirajulu Krishnaraj, Rishikesh R. Chopade
-- arXiv: 2610.29398
-- Plain-English subtitle: Using AI to catch tiny defects without rejecting good parts
-- Summary: A new system inspects precision components by combining two types of AI models—one that spots defects in specific regions and another that flags overall anomalies—then filters their results through manufacturing rules to make final accept/reject decisions. On fuel injector needles, this approach caught all defective parts while cutting false rejections from 57.6% down to 10.9%.
-- Why it matters: Manufacturing facilities waste money and time scrapping good parts when inspection systems are too sensitive. This framework maintains safety (catching all true defects) while making inspection practical by eliminating most false alarms, directly reducing waste in automotive production and similar precision manufacturing.
-
-### LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models
-- URL: https://paperplaine.com/papers/lob-impact-benchmark-emergent
-- Category: Quantitative Finance
-- Authors: George Nigmatulin, Valentin Mohl, Sascha Frey et al.
-- arXiv: 2610.27100
-- Plain-English subtitle: Do AI-generated stock market simulations get trading costs right?
-- Summary: Researchers tested whether AI models trained to predict stock market order flows also learn realistic market impact—the price movement caused by large trades. They found that impact does emerge naturally in these models, but with slightly stronger effects than observed in real markets, and the models failed to capture how markets recover after large trades, likely because they don't remember enough context.
-- Why it matters: Trading firms use AI simulations to test strategies before risking real money. If a simulator underestimates how much your trade will move the market, you'll deploy strategies that look profitable in testing but lose money in reality. This benchmark provides the first rigorous way to catch that error before it costs traders millions.
-
-### SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation
-- URL: https://paperplaine.com/papers/swe-dive-multi-turn
-- Category: Computer Science · AI
-- Authors: Lorenz Brehme, Benjamin Steenhoek, Ruth Breu
-- arXiv: 2610.30047
-- Plain-English subtitle: Testing AI coding assistants as they handle messy, changing requests from real users
-- Summary: Most coding agents are tested with single, polished requests—but real users change their minds and add requirements as they go. Researchers built SWE-DIVE, a testing system that simulates realistic multi-turn conversations between a user and a coding agent, complete with a "user simulator" that behaves like actual people do and a validator that checks whether the agent actually solved what was asked. The framework reveals how well agents handle the messiness of actual development work, not just textbook problems.
-- Why it matters: Coding assistants are moving into production where developers work iteratively, asking for changes and new features mid-session. Current benchmarks miss these real patterns entirely—an agent might pass a GitHub-issue test but fail when a user says "actually, make it faster" or "ignore what I said before." This framework closes that gap, letting companies test whether their tools will actually work for how people really code.
 
 ## About
 
