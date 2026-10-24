@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.31646",
+    "title": "Low-Bit N-Gram Embeddings for Language Models",
+    "authors": "Stephen Chung, Wenyu Du",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-22T17:56:13Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Shrinking the memory hog inside modern AI language models by 75%",
+    "summary": "Language models increasingly use lookup tables to store short token sequences, but these tables consume enormous amounts of memory—196 billion parameters in one recent model. Researchers found that storing these tables at lower precision (4 bits instead of full precision) cuts their memory use by roughly 75% while keeping nearly all of the performance benefit, and that the saved memory can be reinvested to actually improve the model beyond its original version.",
+    "whyItMatters": "Language models are getting larger and harder to run on real hardware. Cutting n-gram table memory by three-quarters makes these models cheaper to deploy and faster to run, with little to no loss in quality—and the researchers showed the trick works on already-released commercial models like DeepSeek and Qwen. This could make cutting-edge AI more accessible to smaller companies and researchers who can't afford massive computing budgets.",
+    "fetchedAt": "2026-10-24T21:22:48.910Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 230
+    },
+    "slug": "low-bit-n-gram"
+  },
+  {
+    "id": "2610.30966",
+    "title": "Bound-Conditioned Latent Inference for Progressive Image Compression",
+    "authors": "Jaeseok Jang, Seungmin Jeon, Kwang Pyo Choi et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-10-22T09:12:11Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Making image files download faster by smartly guessing missing details",
+    "summary": "Researchers developed a new way to compress images so they load progressively—showing a rough version first, then sharpening details as more data arrives. By treating each decoded piece of information as a constraint that narrows the possibilities for hidden image features, their method reduces file sizes by 18% compared to the previous best progressive compression approach, while using five times fewer parameters.",
+    "whyItMatters": "Progressive image compression matters for slow internet connections and mobile devices, where users see a usable image quickly rather than waiting for the full file. This advance makes that tradeoff sharper: images load faster at early stages while still reaching better quality with the same total data, reducing bandwidth costs for services that serve billions of images daily.",
+    "fetchedAt": "2026-10-24T21:22:51.964Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 196
+    },
+    "slug": "bound-conditioned-latent-inference"
+  },
+  {
+    "id": "2610.31237",
+    "title": "Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings",
+    "authors": "Tobias Biegert, Sam Allen, Zhongwei Zhang et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-22T13:19:16Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "How we measure AI weather forecasts changes which model wins",
+    "summary": "When researchers compare AI weather models to traditional physics-based models for predicting extreme events, the winner depends almost entirely on how they measure success. AI models tend to underpredict how often extremes occur, while physics-based models overpredict them—and different scoring methods penalize these opposite mistakes in different ways, making it impossible to draw firm conclusions from conflicting studies.",
+    "whyItMatters": "AI weather models are already being used operationally because they're faster and cheaper than traditional models, but we still don't reliably know if they're better at forecasting dangerous extreme weather. Without agreeing on standard evaluation methods, operational forecasters and emergency planners can't confidently compare models or know which one to trust when lives depend on the forecast.",
+    "fetchedAt": "2026-10-24T21:22:54.969Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 193
+    },
+    "slug": "can-we-trust-evaluations"
+  },
+  {
     "id": "2610.31656",
     "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
     "authors": "Ali Najar, Hosein Hasani, Amir Kooshan Fattah et al.",

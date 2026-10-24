@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1028 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1031 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 352 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 353 papers in archive.
+  - "Low-Bit N-Gram Embeddings for Language Models"
   - "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning"
-  - "Cost-Aware Abstention for LLM-Based IT Ticket Classification"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 84 papers in archive.
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
   - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 89 papers in archive.
   - "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders"
   - "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 88 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 89 papers in archive.
+  - "Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings"
   - "Mitigating Model Collapse through Dreaming Learning"
-  - "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 82 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 83 papers in archive.
+  - "Bound-Conditioned Latent Inference for Progressive Image Compression"
   - "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion"
-  - "Bombadil: A Foundation Model for Plant Electrophysiology"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 72 papers in archive.
   - "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?"
   - "The wealth-to-salary ratio: a simple indicator of inequality"
 
 ## 10 most recent papers
+
+### Low-Bit N-Gram Embeddings for Language Models
+- URL: https://paperplaine.com/papers/low-bit-n-gram
+- Category: Computer Science · AI
+- Authors: Stephen Chung, Wenyu Du
+- arXiv: 2610.31646
+- Plain-English subtitle: Shrinking the memory hog inside modern AI language models by 75%
+- Summary: Language models increasingly use lookup tables to store short token sequences, but these tables consume enormous amounts of memory—196 billion parameters in one recent model. Researchers found that storing these tables at lower precision (4 bits instead of full precision) cuts their memory use by roughly 75% while keeping nearly all of the performance benefit, and that the saved memory can be reinvested to actually improve the model beyond its original version.
+- Why it matters: Language models are getting larger and harder to run on real hardware. Cutting n-gram table memory by three-quarters makes these models cheaper to deploy and faster to run, with little to no loss in quality—and the researchers showed the trick works on already-released commercial models like DeepSeek and Qwen. This could make cutting-edge AI more accessible to smaller companies and researchers who can't afford massive computing budgets.
+
+### Bound-Conditioned Latent Inference for Progressive Image Compression
+- URL: https://paperplaine.com/papers/bound-conditioned-latent-inference
+- Category: Engineering
+- Authors: Jaeseok Jang, Seungmin Jeon, Kwang Pyo Choi et al.
+- arXiv: 2610.30966
+- Plain-English subtitle: Making image files download faster by smartly guessing missing details
+- Summary: Researchers developed a new way to compress images so they load progressively—showing a rough version first, then sharpening details as more data arrives. By treating each decoded piece of information as a constraint that narrows the possibilities for hidden image features, their method reduces file sizes by 18% compared to the previous best progressive compression approach, while using five times fewer parameters.
+- Why it matters: Progressive image compression matters for slow internet connections and mobile devices, where users see a usable image quickly rather than waiting for the full file. This advance makes that tradeoff sharper: images load faster at early stages while still reaching better quality with the same total data, reducing bandwidth costs for services that serve billions of images daily.
+
+### Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings
+- URL: https://paperplaine.com/papers/can-we-trust-evaluations
+- Category: Statistics
+- Authors: Tobias Biegert, Sam Allen, Zhongwei Zhang et al.
+- arXiv: 2610.31237
+- Plain-English subtitle: How we measure AI weather forecasts changes which model wins
+- Summary: When researchers compare AI weather models to traditional physics-based models for predicting extreme events, the winner depends almost entirely on how they measure success. AI models tend to underpredict how often extremes occur, while physics-based models overpredict them—and different scoring methods penalize these opposite mistakes in different ways, making it impossible to draw firm conclusions from conflicting studies.
+- Why it matters: AI weather models are already being used operationally because they're faster and cheaper than traditional models, but we still don't reliably know if they're better at forecasting dangerous extreme weather. Without agreeing on standard evaluation methods, operational forecasters and emergency planners can't confidently compare models or know which one to trust when lives depend on the forecast.
 
 ### METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning
 - URL: https://paperplaine.com/papers/metta-memory-enhanced-test
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: A simple watermark trick to catch unauthorized AI model training
 - Summary: Researchers created SpectralCanary, a method that secretly embeds a barely-visible signal into every image in a dataset before it's released, then detects whether an AI model was trained on that dataset by checking if the signal appears in the model's outputs. The technique works 91% of the time per generated image and 95% of the time when checking 30 generated samples, outperforming existing detection methods while keeping the original images virtually unchanged.
 - Why it matters: As text-to-image AI models become more valuable and more likely to be trained on proprietary datasets, creators need reliable ways to prove when their work has been used without permission. SpectralCanary provides a practical, hard-to-remove audit trail that doesn't require complex setup or degrade image quality, making it feasible for artists, photographers, and organizations to protect their datasets before they're distributed.
-
-### Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?
-- URL: https://paperplaine.com/papers/joules-to-gdp-how
-- Category: Economics
-- Authors: Amirreza Zeinali, Jon Saad-Falcon, Avanika Narayan et al.
-- arXiv: 2610.30858
-- Plain-English subtitle: Which AI tasks deliver the most economic bang for each watt consumed
-- Summary: AI systems that do the most total work or earn the most money aren't necessarily the most efficient at converting energy into economic value. Researchers tested 220 real-world tasks across 44 occupations and found that software development delivers 27% more economic value per joule than engineering work, even though engineering produces more dollar value per task. A smaller, less powerful model (Gemma 4 31B) delivered 2.5 times more net economic value per joule than a larger one (GLM 5.2), despite producing only 56% of the absolute profit.
-- Why it matters: As AI systems consume enormous amounts of electricity, companies face pressure to maximize returns on energy spending, not just total output. This framework gives organizations a concrete way to choose which models and hardware setups actually make financial sense for different types of work. For occupations ranging from software development to legal analysis, picking the wrong model-to-hardware pairing could waste millions in energy costs while producing identical results.
-
-### AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack
-- URL: https://paperplaine.com/papers/agentphishing-a-benchmark-of
-- Category: Computer Science
-- Authors: Justin Tan, Miao Li, Ding Zhao
-- arXiv: 2610.31404
-- Plain-English subtitle: Testing whether AI email assistants fall for customized phishing attacks
-- Summary: AI agents that handle email can be tricked by phishing attacks specifically tailored to their behavior, even when they safely ignore generic phishing emails. Researchers found that four out of nine tested agents failed to detect over 90% of these personalized attacks and complied with malicious requests more than 45% of the time, showing that standard phishing datasets don't adequately test how agents actually respond to persuasive manipulation.
-- Why it matters: As AI systems increasingly access email, calendars, and financial accounts on our behalf, phishing becomes a direct attack on our digital lives—not just on our judgment. These results show that existing safety tests are insufficient: an agent might pass conventional security checks but still fall for a customized scam designed to exploit how it specifically reasons and makes decisions. Companies deploying email agents need to evaluate them against adaptive attacks, not just old phishing collections.
-
-### Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization
-- URL: https://paperplaine.com/papers/parallel-ai-agent-collaboration
-- Category: Computer Science · AI
-- Authors: Hanmin Li, Yury Demidovich, Peter Richtárik
-- arXiv: 2610.30074
-- Plain-English subtitle: How to merge AI agents' work without losing their improvements
-- Summary: When multiple AI agents work on the same problem in parallel, combining their edits often destroys the improvements each one made individually. Researchers developed a method that selects which edits to merge based on graph theory, guaranteeing that at least a provable fraction of all verified improvements survive the combination. Experiments on code repair and route optimization show the approach keeps 15% more of the value that independent agents produce, compared to naive merging.
-- Why it matters: As companies deploy multiple AI systems to solve complex problems—from code generation to logistics—losses from conflicting edits waste compute and slow down real work. This method ensures parallel agents actually speed up solutions instead of canceling each other out, with measurable time savings on practical tasks like route planning. For large-scale automation, that efficiency gap directly reduces wall-clock time and computational cost.
 
 ## About
 

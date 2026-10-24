@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 11:51:12 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 21:22:55 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Low-Bit N-Gram Embeddings for Language Models</title>
+      <link>https://paperplaine.com/papers/low-bit-n-gram</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/low-bit-n-gram</guid>
+      <pubDate>Thu, 22 Oct 2026 17:56:13 GMT</pubDate>
+      <author>Stephen Chung, Wenyu Du</author>
+      <category>AI</category>
+      <description>Shrinking the memory hog inside modern AI language models by 75%</description>
+      <content:encoded><![CDATA[<p><em>Shrinking the memory hog inside modern AI language models by 75%</em></p><p>Language models increasingly use lookup tables to store short token sequences, but these tables consume enormous amounts of memory—196 billion parameters in one recent model. Researchers found that storing these tables at lower precision (4 bits instead of full precision) cuts their memory use by roughly 75% while keeping nearly all of the performance benefit, and that the saved memory can be reinvested to actually improve the model beyond its original version.</p><p><strong>Why it matters:</strong> Language models are getting larger and harder to run on real hardware. Cutting n-gram table memory by three-quarters makes these models cheaper to deploy and faster to run, with little to no loss in quality—and the researchers showed the trick works on already-released commercial models like DeepSeek and Qwen. This could make cutting-edge AI more accessible to smaller companies and researchers who can't afford massive computing budgets.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Bound-Conditioned Latent Inference for Progressive Image Compression</title>
+      <link>https://paperplaine.com/papers/bound-conditioned-latent-inference</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bound-conditioned-latent-inference</guid>
+      <pubDate>Thu, 22 Oct 2026 09:12:11 GMT</pubDate>
+      <author>Jaeseok Jang, Seungmin Jeon, Kwang Pyo Choi et al.</author>
+      <category>Engineering</category>
+      <description>Making image files download faster by smartly guessing missing details</description>
+      <content:encoded><![CDATA[<p><em>Making image files download faster by smartly guessing missing details</em></p><p>Researchers developed a new way to compress images so they load progressively—showing a rough version first, then sharpening details as more data arrives. By treating each decoded piece of information as a constraint that narrows the possibilities for hidden image features, their method reduces file sizes by 18% compared to the previous best progressive compression approach, while using five times fewer parameters.</p><p><strong>Why it matters:</strong> Progressive image compression matters for slow internet connections and mobile devices, where users see a usable image quickly rather than waiting for the full file. This advance makes that tradeoff sharper: images load faster at early stages while still reaching better quality with the same total data, reducing bandwidth costs for services that serve billions of images daily.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings</title>
+      <link>https://paperplaine.com/papers/can-we-trust-evaluations</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/can-we-trust-evaluations</guid>
+      <pubDate>Thu, 22 Oct 2026 13:19:16 GMT</pubDate>
+      <author>Tobias Biegert, Sam Allen, Zhongwei Zhang et al.</author>
+      <category>Statistics</category>
+      <description>How we measure AI weather forecasts changes which model wins</description>
+      <content:encoded><![CDATA[<p><em>How we measure AI weather forecasts changes which model wins</em></p><p>When researchers compare AI weather models to traditional physics-based models for predicting extreme events, the winner depends almost entirely on how they measure success. AI models tend to underpredict how often extremes occur, while physics-based models overpredict them—and different scoring methods penalize these opposite mistakes in different ways, making it impossible to draw firm conclusions from conflicting studies.</p><p><strong>Why it matters:</strong> AI weather models are already being used operationally because they're faster and cheaper than traditional models, but we still don't reliably know if they're better at forecasting dangerous extreme weather. Without agreeing on standard evaluation methods, operational forecasters and emergency planners can't confidently compare models or know which one to trust when lives depend on the forecast.</p>]]></content:encoded>
+    </item>
     <item>
       <title>METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning</title>
       <link>https://paperplaine.com/papers/metta-memory-enhanced-test</link>
