@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1034 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1037 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 354 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 355 papers in archive.
+  - "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act"
   - "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions"
-  - "Low-Bit N-Gram Embeddings for Language Models"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 84 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 85 papers in archive.
+  - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
-  - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 86 papers in archive.
   - "Mixed State Deep Thermalization under Generic Quantum Errors"
   - "Phonon-assisted free-electron recoil control and mechanical sensing"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 88 papers in archive.
   - "Direct Inference on Admissible Sets (Diona)"
   - "Dispersive Tree Agreements for Multi-Robot Coordination"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 88 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 89 papers in archive.
+  - "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition"
   - "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale"
-  - "Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 89 papers in archive.
   - "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders"
   - "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?"
 
 ## 10 most recent papers
+
+### VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act
+- URL: https://paperplaine.com/papers/vera-a-responsible-ai
+- Category: Computer Science · AI
+- Authors: Robin Quériaux, Solveig Bachellery, Léa Déléris et al.
+- arXiv: 2610.31588
+- Plain-English subtitle: Making AI safety checks understandable for bank staff, not just engineers
+- Summary: A new dashboard called VERA helps non-technical staff at banks assess whether AI language models meet EU regulations before use. In a study with real employees, the dashboard cut the time needed to review safety evidence in half—from 56 seconds to 30 seconds—and scored 4.36 out of 5 for usefulness.
+- Why it matters: As regulators worldwide tighten AI rules, financial institutions need practical tools to prove their AI systems are responsible before deployment. VERA bridges the gap between technical benchmarks that engineers run and the business decision-makers who approve new AI tools, making compliance faster and more accessible. The team released the software publicly so other organizations can adopt it, potentially speeding up responsible AI practices across industries.
+
+### AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents
+- URL: https://paperplaine.com/papers/afterdeletebench-auditing-post-deletion
+- Category: Computer Science
+- Authors: Ehsan Saleh, Roozbeh Nahavandi, Sama Salarian et al.
+- arXiv: 2610.31366
+- Plain-English subtitle: Why deleting secrets from AI agents' memory doesn't actually make them disappear
+- Summary: When AI agents delete information from memory, the secrets often survive in hidden forms scattered across the system. Researchers tested this with Qwen2.5 and other models, finding that a single question recovered deleted secrets about two-thirds of the time—even when no complete copy remained, just pieces stored separately that the AI could reconstruct perfectly.
+- Why it matters: As AI agents handle sensitive data—medical records, passwords, personal information—deletion must actually work. This research shows current safeguards are incomplete: wiping one record doesn't prevent the AI from piecing together the same secret from fragments stored elsewhere. Organizations deploying AI systems need to understand this gap before entrusting them with data that must truly disappear.
+
+### Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition
+- URL: https://paperplaine.com/papers/bio-inspired-auditory-processing
+- Category: Quantitative Biology
+- Authors: Pavlos Poulos, Katelyn Sadorf, Themos Stafylakis et al.
+- arXiv: 2610.29720
+- Plain-English subtitle: Brain-inspired AI that recognizes speech while using far less power
+- Summary: Researchers built a speech recognition system modeled after how the brain processes sound, achieving near-human accuracy while cutting energy consumption by using sparse, event-driven computation instead of traditional dense neural networks. The system reached 6.44% error rate on standard speech tests—competitive with conventional AI—while eliminating the floating-point math that typically drains battery and compute resources.
+- Why it matters: Speech recognition on phones, hearing aids, and edge devices typically requires constant power-hungry processing. This approach could let these devices run speech AI for hours longer on a single charge, or enable real-time speech processing on tiny, battery-constrained devices like hearing aids and IoT sensors. The biological design also reveals how natural brains might solve the same problem—potentially opening new paths for neuroscience research.
 
 ### How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions
 - URL: https://paperplaine.com/papers/how-ground-truth-shapes
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI agents to learn new tasks faster using smarter memory
 - Summary: Robots and AI agents often need to quickly master new tasks after seeing just a few examples. This paper introduces METTA, a system that splits learning into two memory layers—one for moment-to-moment adaptation and another for remembering patterns across entire episodes—letting agents figure out new tasks 50% faster than before while using far less computing power than existing methods.
 - Why it matters: AI systems that adapt quickly to new situations are closer to real-world usefulness, whether that's robots learning to manipulate new objects or software agents handling unexpected environments. By cutting computational costs dramatically while improving success rates, METTA makes the difference between a system that works in labs and one that could actually run on physical robots or deployed agents with limited computing budgets.
-
-### Mixed State Deep Thermalization under Generic Quantum Errors
-- URL: https://paperplaine.com/papers/mixed-state-deep-thermalization
-- Category: Physics
-- Authors: Xie-Hang Yu, Pavel Kos
-- arXiv: 2610.31580
-- Plain-English subtitle: How quantum noise creates predictable patterns in scrambled information
-- Summary: When quantum systems get noisy—as all real systems do—they still follow universal patterns after enough scrambling, but based entirely on the noise's properties rather than the specific system details. Researchers proved this for several types of quantum circuits and found the connection runs deep: any quantum error channel produces a specific random mixed state that systems converge to, regardless of what's happening under the hood.
-- Why it matters: Quantum computers and sensors are plagued by errors that seem random and unpredictable. This work reveals that noise actually imposes order—identifying the error's mathematical signature tells you exactly what the quantum system will look like in the long run. That predictability could help engineers design better error-correction schemes or understand when noisy quantum devices will fail in consistent ways.
-
-### Intraday Forecasting Ability and Liquidity Provision of Institutional Traders
-- URL: https://paperplaine.com/papers/intraday-forecasting-ability-and
-- Category: Quantitative Finance
-- Authors: Xinlei Hao, Jiajun Guo, Jussi Keppo et al.
-- arXiv: 2610.31141
-- Plain-English subtitle: How institutional traders profit by predicting prices and waiting for other traders to buy
-- Summary: Institutional traders who can accurately predict short-term price movements earn significantly higher profits from their trades. The study found that traders with the best forecasting ability make 1–1.2 extra currency units per trade, while those who provide liquidity by waiting for other traders to come to them make 1.3–3.8 extra currency units—showing that patience and prediction together drive profitability.
-- Why it matters: Understanding how institutional traders actually make money reveals that skill in reading market signals and a willingness to hold positions longer than others are the real drivers of edge in financial markets. This matters to regular investors because it shows the sophistication of the traders they're competing against and explains why consistently beating the market is so difficult for those without specialized data and execution capabilities.
-
-### Cost-Aware Abstention for LLM-Based IT Ticket Classification
-- URL: https://paperplaine.com/papers/cost-aware-abstention-for
-- Category: Computer Science · AI
-- Authors: Sachin Gupta
-- arXiv: 2610.31657
-- Plain-English subtitle: When to let humans handle IT tickets instead of risking expensive routing mistakes
-- Summary: Routing IT support tickets automatically often costs more money when wrong than letting humans do the sorting instead. Researchers tested whether machine-learning systems could learn to refuse uncertain cases and send those to people—finding that a simple statistical model cut overall costs by 38% and slashed wrong routing from 15% down to 3.5%, while large language models struggled even with extra training examples.
-- Why it matters: IT departments waste real money every time an automated system sends a ticket to the wrong team, multiplying the time needed to fix the problem. This work shows that knowing when *not* to automate—by flagging difficult cases for human judgment—saves significant operational cost. The approach is practical enough to deploy immediately on existing tickets and datasets, letting any company measure whether their current routing system is actually worth the automation versus selective human triage.
 
 ## About
 

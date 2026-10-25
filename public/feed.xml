@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2026 12:21:09 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 21:20:09 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act</title>
+      <link>https://paperplaine.com/papers/vera-a-responsible-ai</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/vera-a-responsible-ai</guid>
+      <pubDate>Thu, 22 Oct 2026 17:23:39 GMT</pubDate>
+      <author>Robin Quériaux, Solveig Bachellery, Léa Déléris et al.</author>
+      <category>AI</category>
+      <description>Making AI safety checks understandable for bank staff, not just engineers</description>
+      <content:encoded><![CDATA[<p><em>Making AI safety checks understandable for bank staff, not just engineers</em></p><p>A new dashboard called VERA helps non-technical staff at banks assess whether AI language models meet EU regulations before use. In a study with real employees, the dashboard cut the time needed to review safety evidence in half—from 56 seconds to 30 seconds—and scored 4.36 out of 5 for usefulness.</p><p><strong>Why it matters:</strong> As regulators worldwide tighten AI rules, financial institutions need practical tools to prove their AI systems are responsible before deployment. VERA bridges the gap between technical benchmarks that engineers run and the business decision-makers who approve new AI tools, making compliance faster and more accessible. The team released the software publicly so other organizations can adopt it, potentially speeding up responsible AI practices across industries.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents</title>
+      <link>https://paperplaine.com/papers/afterdeletebench-auditing-post-deletion</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/afterdeletebench-auditing-post-deletion</guid>
+      <pubDate>Thu, 22 Oct 2026 14:41:36 GMT</pubDate>
+      <author>Ehsan Saleh, Roozbeh Nahavandi, Sama Salarian et al.</author>
+      <category>Comp Sci</category>
+      <description>Why deleting secrets from AI agents&#39; memory doesn&#39;t actually make them disappear</description>
+      <content:encoded><![CDATA[<p><em>Why deleting secrets from AI agents' memory doesn't actually make them disappear</em></p><p>When AI agents delete information from memory, the secrets often survive in hidden forms scattered across the system. Researchers tested this with Qwen2.5 and other models, finding that a single question recovered deleted secrets about two-thirds of the time—even when no complete copy remained, just pieces stored separately that the AI could reconstruct perfectly.</p><p><strong>Why it matters:</strong> As AI agents handle sensitive data—medical records, passwords, personal information—deletion must actually work. This research shows current safeguards are incomplete: wiping one record doesn't prevent the AI from piecing together the same secret from fragments stored elsewhere. Organizations deploying AI systems need to understand this gap before entrusting them with data that must truly disappear.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition</title>
+      <link>https://paperplaine.com/papers/bio-inspired-auditory-processing</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bio-inspired-auditory-processing</guid>
+      <pubDate>Wed, 21 Oct 2026 13:29:46 GMT</pubDate>
+      <author>Pavlos Poulos, Katelyn Sadorf, Themos Stafylakis et al.</author>
+      <category>Biology</category>
+      <description>Brain-inspired AI that recognizes speech while using far less power</description>
+      <content:encoded><![CDATA[<p><em>Brain-inspired AI that recognizes speech while using far less power</em></p><p>Researchers built a speech recognition system modeled after how the brain processes sound, achieving near-human accuracy while cutting energy consumption by using sparse, event-driven computation instead of traditional dense neural networks. The system reached 6.44% error rate on standard speech tests—competitive with conventional AI—while eliminating the floating-point math that typically drains battery and compute resources.</p><p><strong>Why it matters:</strong> Speech recognition on phones, hearing aids, and edge devices typically requires constant power-hungry processing. This approach could let these devices run speech AI for hours longer on a single charge, or enable real-time speech processing on tiny, battery-constrained devices like hearing aids and IoT sensors. The biological design also reveals how natural brains might solve the same problem—potentially opening new paths for neuroscience research.</p>]]></content:encoded>
+    </item>
     <item>
       <title>How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions</title>
       <link>https://paperplaine.com/papers/how-ground-truth-shapes</link>

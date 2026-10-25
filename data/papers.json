@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.31588",
+    "title": "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act",
+    "authors": "Robin Quériaux, Solveig Bachellery, Léa Déléris et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-22T17:23:39Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Making AI safety checks understandable for bank staff, not just engineers",
+    "summary": "A new dashboard called VERA helps non-technical staff at banks assess whether AI language models meet EU regulations before use. In a study with real employees, the dashboard cut the time needed to review safety evidence in half—from 56 seconds to 30 seconds—and scored 4.36 out of 5 for usefulness.",
+    "whyItMatters": "As regulators worldwide tighten AI rules, financial institutions need practical tools to prove their AI systems are responsible before deployment. VERA bridges the gap between technical benchmarks that engineers run and the business decision-makers who approve new AI tools, making compliance faster and more accessible. The team released the software publicly so other organizations can adopt it, potentially speeding up responsible AI practices across industries.",
+    "fetchedAt": "2026-10-25T21:20:02.890Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 237
+    },
+    "slug": "vera-a-responsible-ai"
+  },
+  {
+    "id": "2610.31366",
+    "title": "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents",
+    "authors": "Ehsan Saleh, Roozbeh Nahavandi, Sama Salarian et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-22T14:41:36Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Why deleting secrets from AI agents' memory doesn't actually make them disappear",
+    "summary": "When AI agents delete information from memory, the secrets often survive in hidden forms scattered across the system. Researchers tested this with Qwen2.5 and other models, finding that a single question recovered deleted secrets about two-thirds of the time—even when no complete copy remained, just pieces stored separately that the AI could reconstruct perfectly.",
+    "whyItMatters": "As AI agents handle sensitive data—medical records, passwords, personal information—deletion must actually work. This research shows current safeguards are incomplete: wiping one record doesn't prevent the AI from piecing together the same secret from fragments stored elsewhere. Organizations deploying AI systems need to understand this gap before entrusting them with data that must truly disappear.",
+    "fetchedAt": "2026-10-25T21:20:05.761Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 229
+    },
+    "slug": "afterdeletebench-auditing-post-deletion"
+  },
+  {
+    "id": "2610.29720",
+    "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
+    "authors": "Pavlos Poulos, Katelyn Sadorf, Themos Stafylakis et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-21T13:29:46Z",
+    "publishedFormatted": "Oct 21, 2026",
+    "subtitle": "Brain-inspired AI that recognizes speech while using far less power",
+    "summary": "Researchers built a speech recognition system modeled after how the brain processes sound, achieving near-human accuracy while cutting energy consumption by using sparse, event-driven computation instead of traditional dense neural networks. The system reached 6.44% error rate on standard speech tests—competitive with conventional AI—while eliminating the floating-point math that typically drains battery and compute resources.",
+    "whyItMatters": "Speech recognition on phones, hearing aids, and edge devices typically requires constant power-hungry processing. This approach could let these devices run speech AI for hours longer on a single charge, or enable real-time speech processing on tiny, battery-constrained devices like hearing aids and IoT sensors. The biological design also reveals how natural brains might solve the same problem—potentially opening new paths for neuroscience research.",
+    "fetchedAt": "2026-10-25T21:20:08.832Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 22,
+      "wordCount": 249
+    },
+    "slug": "bio-inspired-auditory-processing"
+  },
+  {
     "id": "2610.31606",
     "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
     "authors": "Miguel Mochizuki Silva, Samuel Ismael, Mateus C. Dias et al.",

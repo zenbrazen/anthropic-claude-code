@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1034 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1037 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-25
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act
+Subtitle: Making AI safety checks understandable for bank staff, not just engineers
+URL: https://paperplaine.com/papers/vera-a-responsible-ai
+Category: Computer Science · AI
+Authors: Robin Quériaux, Solveig Bachellery, Léa Déléris et al.
+arXiv ID: 2610.31588
+arXiv URL: https://arxiv.org/abs/2610.31588
+Posted: 2026-10-25
+
+Summary: A new dashboard called VERA helps non-technical staff at banks assess whether AI language models meet EU regulations before use. In a study with real employees, the dashboard cut the time needed to review safety evidence in half—from 56 seconds to 30 seconds—and scored 4.36 out of 5 for usefulness.
+
+Why it matters: As regulators worldwide tighten AI rules, financial institutions need practical tools to prove their AI systems are responsible before deployment. VERA bridges the gap between technical benchmarks that engineers run and the business decision-makers who approve new AI tools, making compliance faster and more accessible. The team released the software publicly so other organizations can adopt it, potentially speeding up responsible AI practices across industries.
+
+---
+Title: AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents
+Subtitle: Why deleting secrets from AI agents' memory doesn't actually make them disappear
+URL: https://paperplaine.com/papers/afterdeletebench-auditing-post-deletion
+Category: Computer Science
+Authors: Ehsan Saleh, Roozbeh Nahavandi, Sama Salarian et al.
+arXiv ID: 2610.31366
+arXiv URL: https://arxiv.org/abs/2610.31366
+Posted: 2026-10-25
+
+Summary: When AI agents delete information from memory, the secrets often survive in hidden forms scattered across the system. Researchers tested this with Qwen2.5 and other models, finding that a single question recovered deleted secrets about two-thirds of the time—even when no complete copy remained, just pieces stored separately that the AI could reconstruct perfectly.
+
+Why it matters: As AI agents handle sensitive data—medical records, passwords, personal information—deletion must actually work. This research shows current safeguards are incomplete: wiping one record doesn't prevent the AI from piecing together the same secret from fragments stored elsewhere. Organizations deploying AI systems need to understand this gap before entrusting them with data that must truly disappear.
+
+---
+Title: Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition
+Subtitle: Brain-inspired AI that recognizes speech while using far less power
+URL: https://paperplaine.com/papers/bio-inspired-auditory-processing
+Category: Quantitative Biology
+Authors: Pavlos Poulos, Katelyn Sadorf, Themos Stafylakis et al.
+arXiv ID: 2610.29720
+arXiv URL: https://arxiv.org/abs/2610.29720
+Posted: 2026-10-25
+
+Summary: Researchers built a speech recognition system modeled after how the brain processes sound, achieving near-human accuracy while cutting energy consumption by using sparse, event-driven computation instead of traditional dense neural networks. The system reached 6.44% error rate on standard speech tests—competitive with conventional AI—while eliminating the floating-point math that typically drains battery and compute resources.
+
+Why it matters: Speech recognition on phones, hearing aids, and edge devices typically requires constant power-hungry processing. This approach could let these devices run speech AI for hours longer on a single charge, or enable real-time speech processing on tiny, battery-constrained devices like hearing aids and IoT sensors. The biological design also reveals how natural brains might solve the same problem—potentially opening new paths for neuroscience research.
 
 ---
 Title: How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions
