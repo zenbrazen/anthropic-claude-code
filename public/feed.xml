@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 21:22:55 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 12:21:09 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions</title>
+      <link>https://paperplaine.com/papers/how-ground-truth-shapes</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/how-ground-truth-shapes</guid>
+      <pubDate>Thu, 22 Oct 2026 17:36:14 GMT</pubDate>
+      <author>Miguel Mochizuki Silva, Samuel Ismael, Mateus C. Dias et al.</author>
+      <category>AI</category>
+      <description>Why finding the right medical evidence depends on how thoroughly you label it</description>
+      <content:encoded><![CDATA[<p><em>Why finding the right medical evidence depends on how thoroughly you label it</em></p><p>Researchers tested a system designed to retrieve relevant medical evidence about breast lesions from documents, then pass that evidence to an AI to answer clinical questions. They discovered that the system's retrieval scores depend heavily on how comprehensively human experts mark up the source material—more thorough annotation revealed evidence that was already being retrieved correctly but wasn't being credited as such, without changing which documents the system actually found.</p><p><strong>Why it matters:</strong> When AI systems retrieve medical evidence, hospitals and clinicians need reliable scores to know whether the system is trustworthy. This work shows that published retrieval scores can be misleading if the labeled training data is incomplete, potentially causing clinicians to underestimate or overestimate a system's actual performance. The findings mean medical institutions should validate AI retrieval systems with independent expert review rather than relying on benchmark scores alone.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries</title>
+      <link>https://paperplaine.com/papers/the-delegation-divide-an</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-delegation-divide-an</guid>
+      <pubDate>Thu, 22 Oct 2026 05:22:09 GMT</pubDate>
+      <author>Cristian Espinal Maya, Santiago Jiménez Londoño</author>
+      <category>Economics</category>
+      <description>Which jobs can AI actually do alone, and who gets affected first</description>
+      <content:encoded><![CDATA[<p><em>Which jobs can AI actually do alone, and who gets affected first</em></p><p>Only 2.5% of global job tasks can be fully handed to AI agents, though 35.2% can be partly automated. The researchers built a detailed map rating 18,796 work tasks across 146 countries by how much AI could handle them, and discovered a stark divide: workers in rich countries face 48.7% delegable tasks versus 22.5% in poor countries—a gap driven by the fact that poorer economies employ more people in physical jobs that machines can't yet do.</p><p><strong>Why it matters:</strong> This reveals who is and isn't at risk as AI spreads unevenly across the global economy. Countries already facing job transitions will experience them faster and harder, while those relying on physical labor have a longer runway—but only until robotics catches up. The index is now public, so policymakers can see exactly which occupations and countries need retraining investments first.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Direct Inference on Admissible Sets (Diona)</title>
+      <link>https://paperplaine.com/papers/direct-inference-on-admissible</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/direct-inference-on-admissible</guid>
+      <pubDate>Thu, 22 Oct 2026 16:35:47 GMT</pubDate>
+      <author>Lorenzo Sabug, Eric Kerrigan</author>
+      <category>Math</category>
+      <description>Fast predictions with built-in confidence bounds, no lengthy retraining required</description>
+      <content:encoded><![CDATA[<p><em>Fast predictions with built-in confidence bounds, no lengthy retraining required</em></p><p>A new method called Diona estimates values and their uncertainty ranges from data samples almost instantly—without the slow training loops that neural networks and other methods require. On noiseless datasets, it outperformed Gaussian processes (a standard tool for uncertainty quantification) and produced reliable confidence bounds, while being thousands of times faster to deliver a first prediction after new data arrives.</p><p><strong>Why it matters:</strong> Real-time systems that need both speed and confidence intervals—like robotics, control systems, or sensor networks—face a hard choice between accurate methods that require expensive retraining and fast methods that don't quantify uncertainty. Diona removes this tradeoff when predictions are needed sporadically: it delivers answers in milliseconds rather than minutes or hours, making it practical for applications where data updates happen frequently but predictions happen rarely.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Low-Bit N-Gram Embeddings for Language Models</title>
       <link>https://paperplaine.com/papers/low-bit-n-gram</link>

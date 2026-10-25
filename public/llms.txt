@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1031 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1034 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 353 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 354 papers in archive.
+  - "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions"
   - "Low-Bit N-Gram Embeddings for Language Models"
-  - "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 84 papers in archive.
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
   - "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 86 papers in archive.
   - "Mixed State Deep Thermalization under Generic Quantum Errors"
   - "Phonon-assisted free-electron recoil control and mechanical sensing"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 87 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 88 papers in archive.
+  - "Direct Inference on Admissible Sets (Diona)"
   - "Dispersive Tree Agreements for Multi-Robot Coordination"
-  - "Convergence of stochastic gradient descent for learning linear neural networks"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 88 papers in archive.
   - "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale"
   - "Spatially Informed and Direction Sensitive Representation Learning for Spatial Transcriptomics"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 83 papers in archive.
   - "Bound-Conditioned Latent Inference for Progressive Image Compression"
   - "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 72 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 73 papers in archive.
+  - "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries"
   - "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?"
-  - "The wealth-to-salary ratio: a simple indicator of inequality"
 
 ## 10 most recent papers
+
+### How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions
+- URL: https://paperplaine.com/papers/how-ground-truth-shapes
+- Category: Computer Science · AI
+- Authors: Miguel Mochizuki Silva, Samuel Ismael, Mateus C. Dias et al.
+- arXiv: 2610.31606
+- Plain-English subtitle: Why finding the right medical evidence depends on how thoroughly you label it
+- Summary: Researchers tested a system designed to retrieve relevant medical evidence about breast lesions from documents, then pass that evidence to an AI to answer clinical questions. They discovered that the system's retrieval scores depend heavily on how comprehensively human experts mark up the source material—more thorough annotation revealed evidence that was already being retrieved correctly but wasn't being credited as such, without changing which documents the system actually found.
+- Why it matters: When AI systems retrieve medical evidence, hospitals and clinicians need reliable scores to know whether the system is trustworthy. This work shows that published retrieval scores can be misleading if the labeled training data is incomplete, potentially causing clinicians to underestimate or overestimate a system's actual performance. The findings mean medical institutions should validate AI retrieval systems with independent expert review rather than relying on benchmark scores alone.
+
+### The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries
+- URL: https://paperplaine.com/papers/the-delegation-divide-an
+- Category: Economics
+- Authors: Cristian Espinal Maya, Santiago Jiménez Londoño
+- arXiv: 2610.30752
+- Plain-English subtitle: Which jobs can AI actually do alone, and who gets affected first
+- Summary: Only 2.5% of global job tasks can be fully handed to AI agents, though 35.2% can be partly automated. The researchers built a detailed map rating 18,796 work tasks across 146 countries by how much AI could handle them, and discovered a stark divide: workers in rich countries face 48.7% delegable tasks versus 22.5% in poor countries—a gap driven by the fact that poorer economies employ more people in physical jobs that machines can't yet do.
+- Why it matters: This reveals who is and isn't at risk as AI spreads unevenly across the global economy. Countries already facing job transitions will experience them faster and harder, while those relying on physical labor have a longer runway—but only until robotics catches up. The index is now public, so policymakers can see exactly which occupations and countries need retraining investments first.
+
+### Direct Inference on Admissible Sets (Diona)
+- URL: https://paperplaine.com/papers/direct-inference-on-admissible
+- Category: Mathematics
+- Authors: Lorenzo Sabug, Eric Kerrigan
+- arXiv: 2610.31526
+- Plain-English subtitle: Fast predictions with built-in confidence bounds, no lengthy retraining required
+- Summary: A new method called Diona estimates values and their uncertainty ranges from data samples almost instantly—without the slow training loops that neural networks and other methods require. On noiseless datasets, it outperformed Gaussian processes (a standard tool for uncertainty quantification) and produced reliable confidence bounds, while being thousands of times faster to deliver a first prediction after new data arrives.
+- Why it matters: Real-time systems that need both speed and confidence intervals—like robotics, control systems, or sensor networks—face a hard choice between accurate methods that require expensive retraining and fast methods that don't quantify uncertainty. Diona removes this tradeoff when predictions are needed sporadically: it delivers answers in milliseconds rather than minutes or hours, making it practical for applications where data updates happen frequently but predictions happen rarely.
 
 ### Low-Bit N-Gram Embeddings for Language Models
 - URL: https://paperplaine.com/papers/low-bit-n-gram
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When to let humans handle IT tickets instead of risking expensive routing mistakes
 - Summary: Routing IT support tickets automatically often costs more money when wrong than letting humans do the sorting instead. Researchers tested whether machine-learning systems could learn to refuse uncertain cases and send those to people—finding that a simple statistical model cut overall costs by 38% and slashed wrong routing from 15% down to 3.5%, while large language models struggled even with extra training examples.
 - Why it matters: IT departments waste real money every time an automated system sends a ticket to the wrong team, multiplying the time needed to fix the problem. This work shows that knowing when *not* to automate—by flagging difficult cases for human judgment—saves significant operational cost. The approach is practical enough to deploy immediately on existing tickets and datasets, letting any company measure whether their current routing system is actually worth the automation versus selective human triage.
-
-### Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale
-- URL: https://paperplaine.com/papers/gate-based-feature-importance
-- Category: Quantitative Biology
-- Authors: Shrivatsa Deshmukh, Sasha Brenner, Thomas R. Knösche et al.
-- arXiv: 2610.30364
-- Plain-English subtitle: Why machine learning's shortcuts mislead scientists about what matters
-- Summary: Researchers testing a popular method for understanding which data shapes a model's predictions found it gets the answer backwards. When fitting brain-wave models, learned weighting mechanisms consistently identified the least important features as most important—and vice versa—even though this caused almost no drop in accuracy. The finding warns that these cheap interpretability shortcuts, widely adopted in neuroscience and other fields, can confidently lie about what's actually driving a model's decisions.
-- Why it matters: Scientists use these weighting methods to figure out which measurements matter for understanding brain activity, disease mechanisms, and other complex systems. If the weights point to the wrong features—which this work shows they reliably do—researchers could waste time chasing irrelevant signals and miss the real drivers of the phenomena they're studying. This means interpretability tools widely trusted in simulation-based research may need rethinking before they're used to guide scientific conclusions.
-
-### Dispersive Tree Agreements for Multi-Robot Coordination
-- URL: https://paperplaine.com/papers/dispersive-tree-agreements-for
-- Category: Mathematics
-- Authors: Shashank A. Deshpande, Blake T. Edwards, Jonathan P. How
-- arXiv: 2610.31540
-- Plain-English subtitle: How robots negotiate real-time paths without slowing each other down
-- Summary: Researchers developed a method called WarpWeaver that lets multiple robots plan their movements together in real time without needing a central coordinator. Each robot independently searches for good paths while negotiating over shared space with its neighbors, and the system finds near-optimal agreements even when computation time runs out. In tests, the approach reduced travel time by up to 22% compared to traditional centralized planning and nearly doubled success rates on complex coordination tasks.
-- Why it matters: Current multi-robot systems either rely on one central planner (slow and inflexible) or let robots act independently (wasteful and collision-prone). WarpWeaver splits the difference, letting robots coordinate efficiently while each makes decisions locally—a capability critical for warehouse automation, search-and-rescue teams, and autonomous vehicle fleets that can't wait for a central server to compute every move.
-
-### SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing
-- URL: https://paperplaine.com/papers/spectralcanary-embarrassingly-simple-low
-- Category: Computer Science · AI
-- Authors: Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe et al.
-- arXiv: 2610.31659
-- Plain-English subtitle: A simple watermark trick to catch unauthorized AI model training
-- Summary: Researchers created SpectralCanary, a method that secretly embeds a barely-visible signal into every image in a dataset before it's released, then detects whether an AI model was trained on that dataset by checking if the signal appears in the model's outputs. The technique works 91% of the time per generated image and 95% of the time when checking 30 generated samples, outperforming existing detection methods while keeping the original images virtually unchanged.
-- Why it matters: As text-to-image AI models become more valuable and more likely to be trained on proprietary datasets, creators need reliable ways to prove when their work has been used without permission. SpectralCanary provides a practical, hard-to-remove audit trail that doesn't require complex setup or degrade image quality, making it feasible for artists, photographers, and organizations to protect their datasets before they're distributed.
 
 ## About
 

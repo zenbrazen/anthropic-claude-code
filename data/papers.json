@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.31606",
+    "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
+    "authors": "Miguel Mochizuki Silva, Samuel Ismael, Mateus C. Dias et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-22T17:36:14Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Why finding the right medical evidence depends on how thoroughly you label it",
+    "summary": "Researchers tested a system designed to retrieve relevant medical evidence about breast lesions from documents, then pass that evidence to an AI to answer clinical questions. They discovered that the system's retrieval scores depend heavily on how comprehensively human experts mark up the source material—more thorough annotation revealed evidence that was already being retrieved correctly but wasn't being credited as such, without changing which documents the system actually found.",
+    "whyItMatters": "When AI systems retrieve medical evidence, hospitals and clinicians need reliable scores to know whether the system is trustworthy. This work shows that published retrieval scores can be misleading if the labeled training data is incomplete, potentially causing clinicians to underestimate or overestimate a system's actual performance. The findings mean medical institutions should validate AI retrieval systems with independent expert review rather than relying on benchmark scores alone.",
+    "fetchedAt": "2026-10-25T12:21:01.824Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 215
+    },
+    "slug": "how-ground-truth-shapes"
+  },
+  {
+    "id": "2610.30752",
+    "title": "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries",
+    "authors": "Cristian Espinal Maya, Santiago Jiménez Londoño",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-10-22T05:22:09Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Which jobs can AI actually do alone, and who gets affected first",
+    "summary": "Only 2.5% of global job tasks can be fully handed to AI agents, though 35.2% can be partly automated. The researchers built a detailed map rating 18,796 work tasks across 146 countries by how much AI could handle them, and discovered a stark divide: workers in rich countries face 48.7% delegable tasks versus 22.5% in poor countries—a gap driven by the fact that poorer economies employ more people in physical jobs that machines can't yet do.",
+    "whyItMatters": "This reveals who is and isn't at risk as AI spreads unevenly across the global economy. Countries already facing job transitions will experience them faster and harder, while those relying on physical labor have a longer runway—but only until robotics catches up. The index is now public, so policymakers can see exactly which occupations and countries need retraining investments first.",
+    "fetchedAt": "2026-10-25T12:21:05.513Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 32,
+      "wordCount": 273
+    },
+    "slug": "the-delegation-divide-an"
+  },
+  {
+    "id": "2610.31526",
+    "title": "Direct Inference on Admissible Sets (Diona)",
+    "authors": "Lorenzo Sabug, Eric Kerrigan",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-22T16:35:47Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "Fast predictions with built-in confidence bounds, no lengthy retraining required",
+    "summary": "A new method called Diona estimates values and their uncertainty ranges from data samples almost instantly—without the slow training loops that neural networks and other methods require. On noiseless datasets, it outperformed Gaussian processes (a standard tool for uncertainty quantification) and produced reliable confidence bounds, while being thousands of times faster to deliver a first prediction after new data arrives.",
+    "whyItMatters": "Real-time systems that need both speed and confidence intervals—like robotics, control systems, or sensor networks—face a hard choice between accurate methods that require expensive retraining and fast methods that don't quantify uncertainty. Diona removes this tradeoff when predictions are needed sporadically: it delivers answers in milliseconds rather than minutes or hours, making it practical for applications where data updates happen frequently but predictions happen rarely.",
+    "fetchedAt": "2026-10-25T12:21:08.579Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 213
+    },
+    "slug": "direct-inference-on-admissible"
+  },
+  {
     "id": "2610.31646",
     "title": "Low-Bit N-Gram Embeddings for Language Models",
     "authors": "Stephen Chung, Wenyu Du",
