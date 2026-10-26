@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1040 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1043 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery
+Subtitle: Finding and removing hidden sabotage planted in AI models through fine-tuning
+URL: https://paperplaine.com/papers/interpretable-sparse-fine-tuning
+Category: Computer Science · AI
+Authors: Marek Masiak, Andrzej Szablewski, Nicola Cancedda et al.
+arXiv ID: 2610.32866
+arXiv URL: https://arxiv.org/abs/2610.32866
+Posted: 2026-10-26
+
+Summary: Researchers developed TopKLoRA, a method to identify exactly which parts of an AI model implement hidden backdoors inserted during fine-tuning on poisoned data. They successfully located and removed these sabotage circuits from three different models while keeping the models' normal abilities intact — with backdoor circuits being up to 10 times smaller and more interpretable than previous methods.
+
+Why it matters: AI systems trained on data from untrusted sources can be secretly weaponized through backdoors that persist even after safety retraining. This method lets developers actually find and surgically remove the malicious code rather than hoping it's gone, making it possible to safely use third-party datasets and validate that trained models don't contain hidden threats.
+
+---
+Title: Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting
+Subtitle: Moving quantum calculations to classical computers to save precious quantum hardware
+URL: https://paperplaine.com/papers/hardware-friendly-estimation-of
+Category: Physics
+Authors: Hari Hara Suthan Chittoor, Thirumalai Manimaran
+arXiv ID: 2610.32841
+arXiv URL: https://arxiv.org/abs/2610.32841
+Posted: 2026-10-26
+
+Summary: Researchers developed a new method called HERMES that shifts most of the computational work from quantum computers to classical computers when calculating quantum properties. The approach avoids needing extra quantum bits and complex quantum gates while producing results just as accurate as existing methods — a significant advantage for today's limited quantum hardware.
+
+Why it matters: Current quantum computers have too few reliable qubits to run the most useful quantum calculations. By moving expensive quantum operations to classical computers, HERMES lets researchers run simulations like calculating molecular energies on smaller, cheaper quantum devices. The method could speed up quantum chemistry and drug discovery by making quantum computers practical for real work years sooner than existing approaches allow.
+
+---
+Title: Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes
+Subtitle: How recycling old calculation directions speeds up optimization algorithms
+URL: https://paperplaine.com/papers/superlinear-convergence-of-cyclic
+Category: Mathematics
+Authors: Ran Gu
+arXiv ID: 2610.32705
+arXiv URL: https://arxiv.org/abs/2610.32705
+Posted: 2026-10-26
+
+Summary: Mathematicians proved that a specific technique for reusing previous calculation directions can make optimization algorithms converge extremely fast—doubling the number of correct digits roughly every few steps. The trick works by strategically reusing a small set of historical step sizes in cycles, creating an exponential speedup that was theoretically predicted but had never been rigorously demonstrated for practical algorithms that keep only limited memory.
+
+Why it matters: Optimization algorithms solve real problems in machine learning, engineering, and finance—training neural networks, designing systems, and analyzing data. Faster convergence means reaching accurate answers with fewer computer calculations, saving time and energy. This work explains exactly when and why reusing old information actually accelerates these algorithms, helping practitioners know which techniques to trust and how to tune them for their specific problems.
 
 ---
 Title: Advancing SVD-based LLM Compression via Layer-Wise Error Model Search

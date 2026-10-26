@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1040 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1043 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 356 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 357 papers in archive.
+  - "Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery"
   - "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search"
-  - "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 85 papers in archive.
   - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 86 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 87 papers in archive.
+  - "Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting"
   - "Mixed State Deep Thermalization under Generic Quantum Errors"
-  - "Phonon-assisted free-electron recoil control and mechanical sensing"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 88 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 89 papers in archive.
+  - "Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes"
   - "Direct Inference on Admissible Sets (Diona)"
-  - "Dispersive Tree Agreements for Multi-Robot Coordination"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 89 papers in archive.
   - "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition"
   - "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?"
 
 ## 10 most recent papers
+
+### Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery
+- URL: https://paperplaine.com/papers/interpretable-sparse-fine-tuning
+- Category: Computer Science · AI
+- Authors: Marek Masiak, Andrzej Szablewski, Nicola Cancedda et al.
+- arXiv: 2610.32866
+- Plain-English subtitle: Finding and removing hidden sabotage planted in AI models through fine-tuning
+- Summary: Researchers developed TopKLoRA, a method to identify exactly which parts of an AI model implement hidden backdoors inserted during fine-tuning on poisoned data. They successfully located and removed these sabotage circuits from three different models while keeping the models' normal abilities intact — with backdoor circuits being up to 10 times smaller and more interpretable than previous methods.
+- Why it matters: AI systems trained on data from untrusted sources can be secretly weaponized through backdoors that persist even after safety retraining. This method lets developers actually find and surgically remove the malicious code rather than hoping it's gone, making it possible to safely use third-party datasets and validate that trained models don't contain hidden threats.
+
+### Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting
+- URL: https://paperplaine.com/papers/hardware-friendly-estimation-of
+- Category: Physics
+- Authors: Hari Hara Suthan Chittoor, Thirumalai Manimaran
+- arXiv: 2610.32841
+- Plain-English subtitle: Moving quantum calculations to classical computers to save precious quantum hardware
+- Summary: Researchers developed a new method called HERMES that shifts most of the computational work from quantum computers to classical computers when calculating quantum properties. The approach avoids needing extra quantum bits and complex quantum gates while producing results just as accurate as existing methods — a significant advantage for today's limited quantum hardware.
+- Why it matters: Current quantum computers have too few reliable qubits to run the most useful quantum calculations. By moving expensive quantum operations to classical computers, HERMES lets researchers run simulations like calculating molecular energies on smaller, cheaper quantum devices. The method could speed up quantum chemistry and drug discovery by making quantum computers practical for real work years sooner than existing approaches allow.
+
+### Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes
+- URL: https://paperplaine.com/papers/superlinear-convergence-of-cyclic
+- Category: Mathematics
+- Authors: Ran Gu
+- arXiv: 2610.32705
+- Plain-English subtitle: How recycling old calculation directions speeds up optimization algorithms
+- Summary: Mathematicians proved that a specific technique for reusing previous calculation directions can make optimization algorithms converge extremely fast—doubling the number of correct digits roughly every few steps. The trick works by strategically reusing a small set of historical step sizes in cycles, creating an exponential speedup that was theoretically predicted but had never been rigorously demonstrated for practical algorithms that keep only limited memory.
+- Why it matters: Optimization algorithms solve real problems in machine learning, engineering, and finance—training neural networks, designing systems, and analyzing data. Faster convergence means reaching accurate answers with fewer computer calculations, saving time and energy. This work explains exactly when and why reusing old information actually accelerates these algorithms, helping practitioners know which techniques to trust and how to tune them for their specific problems.
 
 ### Advancing SVD-based LLM Compression via Layer-Wise Error Model Search
 - URL: https://paperplaine.com/papers/advancing-svd-based-llm
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why finding the right medical evidence depends on how thoroughly you label it
 - Summary: Researchers tested a system designed to retrieve relevant medical evidence about breast lesions from documents, then pass that evidence to an AI to answer clinical questions. They discovered that the system's retrieval scores depend heavily on how comprehensively human experts mark up the source material—more thorough annotation revealed evidence that was already being retrieved correctly but wasn't being credited as such, without changing which documents the system actually found.
 - Why it matters: When AI systems retrieve medical evidence, hospitals and clinicians need reliable scores to know whether the system is trustworthy. This work shows that published retrieval scores can be misleading if the labeled training data is incomplete, potentially causing clinicians to underestimate or overestimate a system's actual performance. The findings mean medical institutions should validate AI retrieval systems with independent expert review rather than relying on benchmark scores alone.
-
-### The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries
-- URL: https://paperplaine.com/papers/the-delegation-divide-an
-- Category: Economics
-- Authors: Cristian Espinal Maya, Santiago Jiménez Londoño
-- arXiv: 2610.30752
-- Plain-English subtitle: Which jobs can AI actually do alone, and who gets affected first
-- Summary: Only 2.5% of global job tasks can be fully handed to AI agents, though 35.2% can be partly automated. The researchers built a detailed map rating 18,796 work tasks across 146 countries by how much AI could handle them, and discovered a stark divide: workers in rich countries face 48.7% delegable tasks versus 22.5% in poor countries—a gap driven by the fact that poorer economies employ more people in physical jobs that machines can't yet do.
-- Why it matters: This reveals who is and isn't at risk as AI spreads unevenly across the global economy. Countries already facing job transitions will experience them faster and harder, while those relying on physical labor have a longer runway—but only until robotics catches up. The index is now public, so policymakers can see exactly which occupations and countries need retraining investments first.
-
-### Direct Inference on Admissible Sets (Diona)
-- URL: https://paperplaine.com/papers/direct-inference-on-admissible
-- Category: Mathematics
-- Authors: Lorenzo Sabug, Eric Kerrigan
-- arXiv: 2610.31526
-- Plain-English subtitle: Fast predictions with built-in confidence bounds, no lengthy retraining required
-- Summary: A new method called Diona estimates values and their uncertainty ranges from data samples almost instantly—without the slow training loops that neural networks and other methods require. On noiseless datasets, it outperformed Gaussian processes (a standard tool for uncertainty quantification) and produced reliable confidence bounds, while being thousands of times faster to deliver a first prediction after new data arrives.
-- Why it matters: Real-time systems that need both speed and confidence intervals—like robotics, control systems, or sensor networks—face a hard choice between accurate methods that require expensive retraining and fast methods that don't quantify uncertainty. Diona removes this tradeoff when predictions are needed sporadically: it delivers answers in milliseconds rather than minutes or hours, making it practical for applications where data updates happen frequently but predictions happen rarely.
-
-### Low-Bit N-Gram Embeddings for Language Models
-- URL: https://paperplaine.com/papers/low-bit-n-gram
-- Category: Computer Science · AI
-- Authors: Stephen Chung, Wenyu Du
-- arXiv: 2610.31646
-- Plain-English subtitle: Shrinking the memory hog inside modern AI language models by 75%
-- Summary: Language models increasingly use lookup tables to store short token sequences, but these tables consume enormous amounts of memory—196 billion parameters in one recent model. Researchers found that storing these tables at lower precision (4 bits instead of full precision) cuts their memory use by roughly 75% while keeping nearly all of the performance benefit, and that the saved memory can be reinvested to actually improve the model beyond its original version.
-- Why it matters: Language models are getting larger and harder to run on real hardware. Cutting n-gram table memory by three-quarters makes these models cheaper to deploy and faster to run, with little to no loss in quality—and the researchers showed the trick works on already-released commercial models like DeepSeek and Qwen. This could make cutting-edge AI more accessible to smaller companies and researchers who can't afford massive computing budgets.
 
 ## About
 

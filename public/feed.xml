@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 13:54:30 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 22:58:55 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery</title>
+      <link>https://paperplaine.com/papers/interpretable-sparse-fine-tuning</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/interpretable-sparse-fine-tuning</guid>
+      <pubDate>Fri, 23 Oct 2026 16:37:29 GMT</pubDate>
+      <author>Marek Masiak, Andrzej Szablewski, Nicola Cancedda et al.</author>
+      <category>AI</category>
+      <description>Finding and removing hidden sabotage planted in AI models through fine-tuning</description>
+      <content:encoded><![CDATA[<p><em>Finding and removing hidden sabotage planted in AI models through fine-tuning</em></p><p>Researchers developed TopKLoRA, a method to identify exactly which parts of an AI model implement hidden backdoors inserted during fine-tuning on poisoned data. They successfully located and removed these sabotage circuits from three different models while keeping the models' normal abilities intact — with backdoor circuits being up to 10 times smaller and more interpretable than previous methods.</p><p><strong>Why it matters:</strong> AI systems trained on data from untrusted sources can be secretly weaponized through backdoors that persist even after safety retraining. This method lets developers actually find and surgically remove the malicious code rather than hoping it's gone, making it possible to safely use third-party datasets and validate that trained models don't contain hidden threats.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting</title>
+      <link>https://paperplaine.com/papers/hardware-friendly-estimation-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/hardware-friendly-estimation-of</guid>
+      <pubDate>Fri, 23 Oct 2026 16:17:17 GMT</pubDate>
+      <author>Hari Hara Suthan Chittoor, Thirumalai Manimaran</author>
+      <category>Physics</category>
+      <description>Moving quantum calculations to classical computers to save precious quantum hardware</description>
+      <content:encoded><![CDATA[<p><em>Moving quantum calculations to classical computers to save precious quantum hardware</em></p><p>Researchers developed a new method called HERMES that shifts most of the computational work from quantum computers to classical computers when calculating quantum properties. The approach avoids needing extra quantum bits and complex quantum gates while producing results just as accurate as existing methods — a significant advantage for today's limited quantum hardware.</p><p><strong>Why it matters:</strong> Current quantum computers have too few reliable qubits to run the most useful quantum calculations. By moving expensive quantum operations to classical computers, HERMES lets researchers run simulations like calculating molecular energies on smaller, cheaper quantum devices. The method could speed up quantum chemistry and drug discovery by making quantum computers practical for real work years sooner than existing approaches allow.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes</title>
+      <link>https://paperplaine.com/papers/superlinear-convergence-of-cyclic</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/superlinear-convergence-of-cyclic</guid>
+      <pubDate>Fri, 23 Oct 2026 14:28:46 GMT</pubDate>
+      <author>Ran Gu</author>
+      <category>Math</category>
+      <description>How recycling old calculation directions speeds up optimization algorithms</description>
+      <content:encoded><![CDATA[<p><em>How recycling old calculation directions speeds up optimization algorithms</em></p><p>Mathematicians proved that a specific technique for reusing previous calculation directions can make optimization algorithms converge extremely fast—doubling the number of correct digits roughly every few steps. The trick works by strategically reusing a small set of historical step sizes in cycles, creating an exponential speedup that was theoretically predicted but had never been rigorously demonstrated for practical algorithms that keep only limited memory.</p><p><strong>Why it matters:</strong> Optimization algorithms solve real problems in machine learning, engineering, and finance—training neural networks, designing systems, and analyzing data. Faster convergence means reaching accurate answers with fewer computer calculations, saving time and energy. This work explains exactly when and why reusing old information actually accelerates these algorithms, helping practitioners know which techniques to trust and how to tune them for their specific problems.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Advancing SVD-based LLM Compression via Layer-Wise Error Model Search</title>
       <link>https://paperplaine.com/papers/advancing-svd-based-llm</link>
