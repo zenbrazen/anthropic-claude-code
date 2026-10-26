@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1037 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-25
+This file contains the complete plain-English text of all 1040 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Advancing SVD-based LLM Compression via Layer-Wise Error Model Search
+Subtitle: Smarter ways to shrink AI language models without losing accuracy
+URL: https://paperplaine.com/papers/advancing-svd-based-llm
+Category: Computer Science · AI
+Authors: Moritz Thoma, Maximilian Groezinger, Maximilian Forstenhäusler et al.
+arXiv ID: 2610.32878
+arXiv URL: https://arxiv.org/abs/2610.32878
+Posted: 2026-10-26
+
+Summary: Researchers improved a method for compressing large language models by fixing two fundamental problems: how to decide which parts of the model need the most precision, and how to split complex neural network layers into simpler pieces. Their approach, called LEMS, increased accuracy by up to 4.8 percentage points across Mistral, Qwen3, and Llama 3 models while also shrinking them substantially.
+
+Why it matters: Large AI language models cost millions of dollars to run. Better compression means deploying these models on smaller computers, phones, and edge devices without hiring expensive hardware—or running existing models at a fraction of the current cost. The improvements held up across different model sizes, suggesting the method could work in real-world deployment scenarios.
+
+---
+Title: Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts
+Subtitle: What makes AI language models change their financial predictions
+URL: https://paperplaine.com/papers/momentum-commentary-tone-and
+Category: Quantitative Finance
+Authors: Alina Khaybullina
+arXiv ID: 2610.22043
+arXiv URL: https://arxiv.org/abs/2610.22043
+Posted: 2026-10-26
+
+Summary: When researchers fed large language models synthetic earnings announcements with deliberately altered stock momentum, commentary tone, and earnings surprises, the models' forecasts shifted—but not always in ways that matched reality. The tone of non-factual commentary changed the models' answers more often than the actual earnings data did, suggesting these AI systems may be picking up on linguistic cues rather than financial fundamentals.
+
+Why it matters: Financial institutions increasingly rely on AI to help forecast stock movements and earnings. If these models respond more strongly to how something is written than to what the numbers actually say, their predictions could systematically mislead investors or traders. This research exposes a blind spot: we need to know what language models are actually using to make financial decisions before we trust them with real money.
+
+---
+Title: Singular Geometry of Low-Rank Adaptation
+Subtitle: Why fine-tuning AI models with shortcuts creates hidden statistical blind spots
+URL: https://paperplaine.com/papers/singular-geometry-of-low
+Category: Statistics
+Authors: Kamillo Ferry, Anthea Monod, Keisuke Yano
+arXiv ID: 2610.32854
+arXiv URL: https://arxiv.org/abs/2610.32854
+Posted: 2026-10-26
+
+Summary: Low-rank adaptation (LoRA) is a popular shortcut for fine-tuning large neural networks that uses far fewer parameters than full retraining. But researchers found that this efficiency comes with a hidden cost: the mathematical structure of LoRA creates statistical "dead zones" where multiple different model settings produce identical outputs, making it impossible to know which one is actually best. The team mapped exactly where these blind spots occur and showed they depend on the specific layer being adapted and how information flows through the network.
+
+Why it matters: As LoRA becomes standard for adapting models like large language models to new tasks, understanding these blind spots is critical for predicting when the technique will work reliably and when it might fail silently. The research provides tools to identify which layers and network configurations will have clear, measurable learning dynamics versus those where the model might get stuck in indistinguishable states—information that could help practitioners choose better adaptation strategies or diagnose why a fine-tuning attempt isn't learning as expected.
 
 ---
 Title: VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act

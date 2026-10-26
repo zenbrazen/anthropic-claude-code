@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.32878",
+    "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+    "authors": "Moritz Thoma, Maximilian Groezinger, Maximilian Forstenhäusler et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-23T16:46:00Z",
+    "publishedFormatted": "Oct 23, 2026",
+    "subtitle": "Smarter ways to shrink AI language models without losing accuracy",
+    "summary": "Researchers improved a method for compressing large language models by fixing two fundamental problems: how to decide which parts of the model need the most precision, and how to split complex neural network layers into simpler pieces. Their approach, called LEMS, increased accuracy by up to 4.8 percentage points across Mistral, Qwen3, and Llama 3 models while also shrinking them substantially.",
+    "whyItMatters": "Large AI language models cost millions of dollars to run. Better compression means deploying these models on smaller computers, phones, and edge devices without hiring expensive hardware—or running existing models at a fraction of the current cost. The improvements held up across different model sizes, suggesting the method could work in real-world deployment scenarios.",
+    "fetchedAt": "2026-10-26T13:54:23.116Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 160
+    },
+    "slug": "advancing-svd-based-llm"
+  },
+  {
+    "id": "2610.22043",
+    "title": "Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts",
+    "authors": "Alina Khaybullina",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-10-15T15:14:20Z",
+    "publishedFormatted": "Oct 15, 2026",
+    "subtitle": "What makes AI language models change their financial predictions",
+    "summary": "When researchers fed large language models synthetic earnings announcements with deliberately altered stock momentum, commentary tone, and earnings surprises, the models' forecasts shifted—but not always in ways that matched reality. The tone of non-factual commentary changed the models' answers more often than the actual earnings data did, suggesting these AI systems may be picking up on linguistic cues rather than financial fundamentals.",
+    "whyItMatters": "Financial institutions increasingly rely on AI to help forecast stock movements and earnings. If these models respond more strongly to how something is written than to what the numbers actually say, their predictions could systematically mislead investors or traders. This research exposes a blind spot: we need to know what language models are actually using to make financial decisions before we trust them with real money.",
+    "fetchedAt": "2026-10-26T13:54:26.166Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 184
+    },
+    "slug": "momentum-commentary-tone-and"
+  },
+  {
+    "id": "2610.32854",
+    "title": "Singular Geometry of Low-Rank Adaptation",
+    "authors": "Kamillo Ferry, Anthea Monod, Keisuke Yano",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-23T16:27:30Z",
+    "publishedFormatted": "Oct 23, 2026",
+    "subtitle": "Why fine-tuning AI models with shortcuts creates hidden statistical blind spots",
+    "summary": "Low-rank adaptation (LoRA) is a popular shortcut for fine-tuning large neural networks that uses far fewer parameters than full retraining. But researchers found that this efficiency comes with a hidden cost: the mathematical structure of LoRA creates statistical \"dead zones\" where multiple different model settings produce identical outputs, making it impossible to know which one is actually best. The team mapped exactly where these blind spots occur and showed they depend on the specific layer being adapted and how information flows through the network.",
+    "whyItMatters": "As LoRA becomes standard for adapting models like large language models to new tasks, understanding these blind spots is critical for predicting when the technique will work reliably and when it might fail silently. The research provides tools to identify which layers and network configurations will have clear, measurable learning dynamics versus those where the model might get stuck in indistinguishable states—information that could help practitioners choose better adaptation strategies or diagnose why a fine-tuning attempt isn't learning as expected.",
+    "fetchedAt": "2026-10-26T13:54:29.613Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 40,
+      "wordCount": 217
+    },
+    "slug": "singular-geometry-of-low"
+  },
+  {
     "id": "2610.31588",
     "title": "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act",
     "authors": "Robin Quériaux, Solveig Bachellery, Léa Déléris et al.",

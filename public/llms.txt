@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1037 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1040 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 355 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 356 papers in archive.
+  - "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search"
   - "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act"
-  - "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 85 papers in archive.
   - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 89 papers in archive.
   - "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition"
   - "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 89 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 90 papers in archive.
+  - "Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts"
   - "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders"
-  - "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 89 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 90 papers in archive.
+  - "Singular Geometry of Low-Rank Adaptation"
   - "Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings"
-  - "Mitigating Model Collapse through Dreaming Learning"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 83 papers in archive.
   - "Bound-Conditioned Latent Inference for Progressive Image Compression"
   - "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?"
 
 ## 10 most recent papers
+
+### Advancing SVD-based LLM Compression via Layer-Wise Error Model Search
+- URL: https://paperplaine.com/papers/advancing-svd-based-llm
+- Category: Computer Science · AI
+- Authors: Moritz Thoma, Maximilian Groezinger, Maximilian Forstenhäusler et al.
+- arXiv: 2610.32878
+- Plain-English subtitle: Smarter ways to shrink AI language models without losing accuracy
+- Summary: Researchers improved a method for compressing large language models by fixing two fundamental problems: how to decide which parts of the model need the most precision, and how to split complex neural network layers into simpler pieces. Their approach, called LEMS, increased accuracy by up to 4.8 percentage points across Mistral, Qwen3, and Llama 3 models while also shrinking them substantially.
+- Why it matters: Large AI language models cost millions of dollars to run. Better compression means deploying these models on smaller computers, phones, and edge devices without hiring expensive hardware—or running existing models at a fraction of the current cost. The improvements held up across different model sizes, suggesting the method could work in real-world deployment scenarios.
+
+### Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts
+- URL: https://paperplaine.com/papers/momentum-commentary-tone-and
+- Category: Quantitative Finance
+- Authors: Alina Khaybullina
+- arXiv: 2610.22043
+- Plain-English subtitle: What makes AI language models change their financial predictions
+- Summary: When researchers fed large language models synthetic earnings announcements with deliberately altered stock momentum, commentary tone, and earnings surprises, the models' forecasts shifted—but not always in ways that matched reality. The tone of non-factual commentary changed the models' answers more often than the actual earnings data did, suggesting these AI systems may be picking up on linguistic cues rather than financial fundamentals.
+- Why it matters: Financial institutions increasingly rely on AI to help forecast stock movements and earnings. If these models respond more strongly to how something is written than to what the numbers actually say, their predictions could systematically mislead investors or traders. This research exposes a blind spot: we need to know what language models are actually using to make financial decisions before we trust them with real money.
+
+### Singular Geometry of Low-Rank Adaptation
+- URL: https://paperplaine.com/papers/singular-geometry-of-low
+- Category: Statistics
+- Authors: Kamillo Ferry, Anthea Monod, Keisuke Yano
+- arXiv: 2610.32854
+- Plain-English subtitle: Why fine-tuning AI models with shortcuts creates hidden statistical blind spots
+- Summary: Low-rank adaptation (LoRA) is a popular shortcut for fine-tuning large neural networks that uses far fewer parameters than full retraining. But researchers found that this efficiency comes with a hidden cost: the mathematical structure of LoRA creates statistical "dead zones" where multiple different model settings produce identical outputs, making it impossible to know which one is actually best. The team mapped exactly where these blind spots occur and showed they depend on the specific layer being adapted and how information flows through the network.
+- Why it matters: As LoRA becomes standard for adapting models like large language models to new tasks, understanding these blind spots is critical for predicting when the technique will work reliably and when it might fail silently. The research provides tools to identify which layers and network configurations will have clear, measurable learning dynamics versus those where the model might get stuck in indistinguishable states—information that could help practitioners choose better adaptation strategies or diagnose why a fine-tuning attempt isn't learning as expected.
 
 ### VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act
 - URL: https://paperplaine.com/papers/vera-a-responsible-ai
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Shrinking the memory hog inside modern AI language models by 75%
 - Summary: Language models increasingly use lookup tables to store short token sequences, but these tables consume enormous amounts of memory—196 billion parameters in one recent model. Researchers found that storing these tables at lower precision (4 bits instead of full precision) cuts their memory use by roughly 75% while keeping nearly all of the performance benefit, and that the saved memory can be reinvested to actually improve the model beyond its original version.
 - Why it matters: Language models are getting larger and harder to run on real hardware. Cutting n-gram table memory by three-quarters makes these models cheaper to deploy and faster to run, with little to no loss in quality—and the researchers showed the trick works on already-released commercial models like DeepSeek and Qwen. This could make cutting-edge AI more accessible to smaller companies and researchers who can't afford massive computing budgets.
-
-### Bound-Conditioned Latent Inference for Progressive Image Compression
-- URL: https://paperplaine.com/papers/bound-conditioned-latent-inference
-- Category: Engineering
-- Authors: Jaeseok Jang, Seungmin Jeon, Kwang Pyo Choi et al.
-- arXiv: 2610.30966
-- Plain-English subtitle: Making image files download faster by smartly guessing missing details
-- Summary: Researchers developed a new way to compress images so they load progressively—showing a rough version first, then sharpening details as more data arrives. By treating each decoded piece of information as a constraint that narrows the possibilities for hidden image features, their method reduces file sizes by 18% compared to the previous best progressive compression approach, while using five times fewer parameters.
-- Why it matters: Progressive image compression matters for slow internet connections and mobile devices, where users see a usable image quickly rather than waiting for the full file. This advance makes that tradeoff sharper: images load faster at early stages while still reaching better quality with the same total data, reducing bandwidth costs for services that serve billions of images daily.
-
-### Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings
-- URL: https://paperplaine.com/papers/can-we-trust-evaluations
-- Category: Statistics
-- Authors: Tobias Biegert, Sam Allen, Zhongwei Zhang et al.
-- arXiv: 2610.31237
-- Plain-English subtitle: How we measure AI weather forecasts changes which model wins
-- Summary: When researchers compare AI weather models to traditional physics-based models for predicting extreme events, the winner depends almost entirely on how they measure success. AI models tend to underpredict how often extremes occur, while physics-based models overpredict them—and different scoring methods penalize these opposite mistakes in different ways, making it impossible to draw firm conclusions from conflicting studies.
-- Why it matters: AI weather models are already being used operationally because they're faster and cheaper than traditional models, but we still don't reliably know if they're better at forecasting dangerous extreme weather. Without agreeing on standard evaluation methods, operational forecasters and emergency planners can't confidently compare models or know which one to trust when lives depend on the forecast.
-
-### METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning
-- URL: https://paperplaine.com/papers/metta-memory-enhanced-test
-- Category: Computer Science · AI
-- Authors: Ali Najar, Hosein Hasani, Amir Kooshan Fattah et al.
-- arXiv: 2610.31656
-- Plain-English subtitle: Teaching AI agents to learn new tasks faster using smarter memory
-- Summary: Robots and AI agents often need to quickly master new tasks after seeing just a few examples. This paper introduces METTA, a system that splits learning into two memory layers—one for moment-to-moment adaptation and another for remembering patterns across entire episodes—letting agents figure out new tasks 50% faster than before while using far less computing power than existing methods.
-- Why it matters: AI systems that adapt quickly to new situations are closer to real-world usefulness, whether that's robots learning to manipulate new objects or software agents handling unexpected environments. By cutting computational costs dramatically while improving success rates, METTA makes the difference between a system that works in labs and one that could actually run on physical robots or deployed agents with limited computing budgets.
 
 ## About
 
