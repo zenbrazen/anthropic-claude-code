@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.35862",
+    "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
+    "authors": "Sihang Li, Xiaofeng Guo, Jinkun Cao et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-26T17:59:11Z",
+    "publishedFormatted": "Oct 26, 2026",
+    "subtitle": "Teaching robots to push, pull, and manipulate objects while staying balanced",
+    "summary": "Researchers created a system that lets humanoid robots learn to control force and motion simultaneously—essential for tasks like opening doors or moving objects that require precise pushing or pulling. The robot learned from human demonstrations captured with force sensors and motion trackers, then used an AI model to predict both movement and hand forces. On real robots performing contact-heavy tasks, this force-aware approach succeeded 80% of the time, compared to just 27% for a system that only focused on motion.",
+    "whyItMatters": "Most robot tasks today rely on position control alone, which fails when objects resist or require careful handling. This framework lets humanoid robots tackle real-world manipulation tasks—assembly work, caregiving, disaster response—where they must sense and respond to physical resistance. The 3x improvement in success rate suggests robots could soon perform delicate or forceful tasks reliably enough for deployment in homes and factories.",
+    "fetchedAt": "2026-10-27T12:58:49.281Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 9,
+      "wordCount": 190
+    },
+    "slug": "learning-force-reactive-humanoid"
+  },
+  {
+    "id": "2610.35738",
+    "title": "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain",
+    "authors": "Pranay Anchuri",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-10-26T16:55:17Z",
+    "publishedFormatted": "Oct 26, 2026",
+    "subtitle": "What happens when everyone trades at once on blockchain markets",
+    "summary": "Demand on blockchain trading platforms arrives in sudden, intense bursts that are 2.5 times normal traffic at their peak. By analyzing three months of trading data on Robinhood Chain, researchers found that during these bursts, traders hit about 40% more trades across roughly the same pools, with each surge following a predictable two-part pattern: a slow buildup over hours followed by a sharp drop over minutes.",
+    "whyItMatters": "Blockchain platforms sell access to their network through \"gas\" fees that fluctuate with demand. Understanding what drives these traffic spikes—whether traders are copying each other or responding to the same news—could help platforms better predict congestion, set fairer prices, and prevent the bottlenecks that currently freeze trading during busy periods. Currently, platforms focus on pricing gas during peaks without understanding what's actually causing the demand itself.",
+    "fetchedAt": "2026-10-27T12:58:52.865Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 277
+    },
+    "slug": "fuji-the-shape-composition"
+  },
+  {
+    "id": "2610.35842",
+    "title": "MedVTok: A General-Purpose Medical Visual Tokenizer",
+    "authors": "Chenglong Ma, Yuanfeng Ji, Junzhi Ning et al.",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-10-26T17:54:40Z",
+    "publishedFormatted": "Oct 26, 2026",
+    "subtitle": "One visual language for all medical scans, regardless of type or dimension",
+    "summary": "Researchers created MedVTok, a single system that converts medical images—from X-rays and ultrasounds to 3D CT scans—into a unified format that AI systems can understand. Trained on 28 million images across nine different imaging types, the system outperformed existing methods on 24 different medical tasks, from diagnosis to report writing, all using the same underlying representation.",
+    "whyItMatters": "Hospitals use dozens of incompatible imaging systems (MRI, CT, ultrasound, X-ray), forcing doctors and AI systems to translate between formats and forcing developers to build separate tools for each. A unified medical image language cuts development time and makes AI tools portable across hospitals—one trained model works on any scan type, reducing both costs and the time needed to deploy AI diagnostics in new settings.",
+    "fetchedAt": "2026-10-27T12:58:56.255Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 172
+    },
+    "slug": "medvtok-a-general-purpose"
+  },
+  {
     "id": "2610.32866",
     "title": "Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery",
     "authors": "Marek Masiak, Andrzej Szablewski, Nicola Cancedda et al.",

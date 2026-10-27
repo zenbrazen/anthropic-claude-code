@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1043 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1046 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 357 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 358 papers in archive.
+  - "Learning Force-Reactive Humanoid Loco-Manipulation"
   - "Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery"
-  - "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 85 papers in archive.
   - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 90 papers in archive.
   - "Singular Geometry of Low-Rank Adaptation"
   - "Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 83 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 84 papers in archive.
+  - "MedVTok: A General-Purpose Medical Visual Tokenizer"
   - "Bound-Conditioned Latent Inference for Progressive Image Compression"
-  - "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 73 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 74 papers in archive.
+  - "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain"
   - "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries"
-  - "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?"
 
 ## 10 most recent papers
+
+### Learning Force-Reactive Humanoid Loco-Manipulation
+- URL: https://paperplaine.com/papers/learning-force-reactive-humanoid
+- Category: Computer Science · AI
+- Authors: Sihang Li, Xiaofeng Guo, Jinkun Cao et al.
+- arXiv: 2610.35862
+- Plain-English subtitle: Teaching robots to push, pull, and manipulate objects while staying balanced
+- Summary: Researchers created a system that lets humanoid robots learn to control force and motion simultaneously—essential for tasks like opening doors or moving objects that require precise pushing or pulling. The robot learned from human demonstrations captured with force sensors and motion trackers, then used an AI model to predict both movement and hand forces. On real robots performing contact-heavy tasks, this force-aware approach succeeded 80% of the time, compared to just 27% for a system that only focused on motion.
+- Why it matters: Most robot tasks today rely on position control alone, which fails when objects resist or require careful handling. This framework lets humanoid robots tackle real-world manipulation tasks—assembly work, caregiving, disaster response—where they must sense and respond to physical resistance. The 3x improvement in success rate suggests robots could soon perform delicate or forceful tasks reliably enough for deployment in homes and factories.
+
+### Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain
+- URL: https://paperplaine.com/papers/fuji-the-shape-composition
+- Category: Economics
+- Authors: Pranay Anchuri
+- arXiv: 2610.35738
+- Plain-English subtitle: What happens when everyone trades at once on blockchain markets
+- Summary: Demand on blockchain trading platforms arrives in sudden, intense bursts that are 2.5 times normal traffic at their peak. By analyzing three months of trading data on Robinhood Chain, researchers found that during these bursts, traders hit about 40% more trades across roughly the same pools, with each surge following a predictable two-part pattern: a slow buildup over hours followed by a sharp drop over minutes.
+- Why it matters: Blockchain platforms sell access to their network through "gas" fees that fluctuate with demand. Understanding what drives these traffic spikes—whether traders are copying each other or responding to the same news—could help platforms better predict congestion, set fairer prices, and prevent the bottlenecks that currently freeze trading during busy periods. Currently, platforms focus on pricing gas during peaks without understanding what's actually causing the demand itself.
+
+### MedVTok: A General-Purpose Medical Visual Tokenizer
+- URL: https://paperplaine.com/papers/medvtok-a-general-purpose
+- Category: Engineering
+- Authors: Chenglong Ma, Yuanfeng Ji, Junzhi Ning et al.
+- arXiv: 2610.35842
+- Plain-English subtitle: One visual language for all medical scans, regardless of type or dimension
+- Summary: Researchers created MedVTok, a single system that converts medical images—from X-rays and ultrasounds to 3D CT scans—into a unified format that AI systems can understand. Trained on 28 million images across nine different imaging types, the system outperformed existing methods on 24 different medical tasks, from diagnosis to report writing, all using the same underlying representation.
+- Why it matters: Hospitals use dozens of incompatible imaging systems (MRI, CT, ultrasound, X-ray), forcing doctors and AI systems to translate between formats and forcing developers to build separate tools for each. A unified medical image language cuts development time and makes AI tools portable across hospitals—one trained model works on any scan type, reducing both costs and the time needed to deploy AI diagnostics in new settings.
 
 ### Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery
 - URL: https://paperplaine.com/papers/interpretable-sparse-fine-tuning
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI safety checks understandable for bank staff, not just engineers
 - Summary: A new dashboard called VERA helps non-technical staff at banks assess whether AI language models meet EU regulations before use. In a study with real employees, the dashboard cut the time needed to review safety evidence in half—from 56 seconds to 30 seconds—and scored 4.36 out of 5 for usefulness.
 - Why it matters: As regulators worldwide tighten AI rules, financial institutions need practical tools to prove their AI systems are responsible before deployment. VERA bridges the gap between technical benchmarks that engineers run and the business decision-makers who approve new AI tools, making compliance faster and more accessible. The team released the software publicly so other organizations can adopt it, potentially speeding up responsible AI practices across industries.
-
-### AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents
-- URL: https://paperplaine.com/papers/afterdeletebench-auditing-post-deletion
-- Category: Computer Science
-- Authors: Ehsan Saleh, Roozbeh Nahavandi, Sama Salarian et al.
-- arXiv: 2610.31366
-- Plain-English subtitle: Why deleting secrets from AI agents' memory doesn't actually make them disappear
-- Summary: When AI agents delete information from memory, the secrets often survive in hidden forms scattered across the system. Researchers tested this with Qwen2.5 and other models, finding that a single question recovered deleted secrets about two-thirds of the time—even when no complete copy remained, just pieces stored separately that the AI could reconstruct perfectly.
-- Why it matters: As AI agents handle sensitive data—medical records, passwords, personal information—deletion must actually work. This research shows current safeguards are incomplete: wiping one record doesn't prevent the AI from piecing together the same secret from fragments stored elsewhere. Organizations deploying AI systems need to understand this gap before entrusting them with data that must truly disappear.
-
-### Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition
-- URL: https://paperplaine.com/papers/bio-inspired-auditory-processing
-- Category: Quantitative Biology
-- Authors: Pavlos Poulos, Katelyn Sadorf, Themos Stafylakis et al.
-- arXiv: 2610.29720
-- Plain-English subtitle: Brain-inspired AI that recognizes speech while using far less power
-- Summary: Researchers built a speech recognition system modeled after how the brain processes sound, achieving near-human accuracy while cutting energy consumption by using sparse, event-driven computation instead of traditional dense neural networks. The system reached 6.44% error rate on standard speech tests—competitive with conventional AI—while eliminating the floating-point math that typically drains battery and compute resources.
-- Why it matters: Speech recognition on phones, hearing aids, and edge devices typically requires constant power-hungry processing. This approach could let these devices run speech AI for hours longer on a single charge, or enable real-time speech processing on tiny, battery-constrained devices like hearing aids and IoT sensors. The biological design also reveals how natural brains might solve the same problem—potentially opening new paths for neuroscience research.
-
-### How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions
-- URL: https://paperplaine.com/papers/how-ground-truth-shapes
-- Category: Computer Science · AI
-- Authors: Miguel Mochizuki Silva, Samuel Ismael, Mateus C. Dias et al.
-- arXiv: 2610.31606
-- Plain-English subtitle: Why finding the right medical evidence depends on how thoroughly you label it
-- Summary: Researchers tested a system designed to retrieve relevant medical evidence about breast lesions from documents, then pass that evidence to an AI to answer clinical questions. They discovered that the system's retrieval scores depend heavily on how comprehensively human experts mark up the source material—more thorough annotation revealed evidence that was already being retrieved correctly but wasn't being credited as such, without changing which documents the system actually found.
-- Why it matters: When AI systems retrieve medical evidence, hospitals and clinicians need reliable scores to know whether the system is trustworthy. This work shows that published retrieval scores can be misleading if the labeled training data is incomplete, potentially causing clinicians to underestimate or overestimate a system's actual performance. The findings mean medical institutions should validate AI retrieval systems with independent expert review rather than relying on benchmark scores alone.
 
 ## About
 

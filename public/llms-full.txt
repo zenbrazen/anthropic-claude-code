@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1043 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-26
+This file contains the complete plain-English text of all 1046 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-27
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Learning Force-Reactive Humanoid Loco-Manipulation
+Subtitle: Teaching robots to push, pull, and manipulate objects while staying balanced
+URL: https://paperplaine.com/papers/learning-force-reactive-humanoid
+Category: Computer Science · AI
+Authors: Sihang Li, Xiaofeng Guo, Jinkun Cao et al.
+arXiv ID: 2610.35862
+arXiv URL: https://arxiv.org/abs/2610.35862
+Posted: 2026-10-27
+
+Summary: Researchers created a system that lets humanoid robots learn to control force and motion simultaneously—essential for tasks like opening doors or moving objects that require precise pushing or pulling. The robot learned from human demonstrations captured with force sensors and motion trackers, then used an AI model to predict both movement and hand forces. On real robots performing contact-heavy tasks, this force-aware approach succeeded 80% of the time, compared to just 27% for a system that only focused on motion.
+
+Why it matters: Most robot tasks today rely on position control alone, which fails when objects resist or require careful handling. This framework lets humanoid robots tackle real-world manipulation tasks—assembly work, caregiving, disaster response—where they must sense and respond to physical resistance. The 3x improvement in success rate suggests robots could soon perform delicate or forceful tasks reliably enough for deployment in homes and factories.
+
+---
+Title: Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain
+Subtitle: What happens when everyone trades at once on blockchain markets
+URL: https://paperplaine.com/papers/fuji-the-shape-composition
+Category: Economics
+Authors: Pranay Anchuri
+arXiv ID: 2610.35738
+arXiv URL: https://arxiv.org/abs/2610.35738
+Posted: 2026-10-27
+
+Summary: Demand on blockchain trading platforms arrives in sudden, intense bursts that are 2.5 times normal traffic at their peak. By analyzing three months of trading data on Robinhood Chain, researchers found that during these bursts, traders hit about 40% more trades across roughly the same pools, with each surge following a predictable two-part pattern: a slow buildup over hours followed by a sharp drop over minutes.
+
+Why it matters: Blockchain platforms sell access to their network through "gas" fees that fluctuate with demand. Understanding what drives these traffic spikes—whether traders are copying each other or responding to the same news—could help platforms better predict congestion, set fairer prices, and prevent the bottlenecks that currently freeze trading during busy periods. Currently, platforms focus on pricing gas during peaks without understanding what's actually causing the demand itself.
+
+---
+Title: MedVTok: A General-Purpose Medical Visual Tokenizer
+Subtitle: One visual language for all medical scans, regardless of type or dimension
+URL: https://paperplaine.com/papers/medvtok-a-general-purpose
+Category: Engineering
+Authors: Chenglong Ma, Yuanfeng Ji, Junzhi Ning et al.
+arXiv ID: 2610.35842
+arXiv URL: https://arxiv.org/abs/2610.35842
+Posted: 2026-10-27
+
+Summary: Researchers created MedVTok, a single system that converts medical images—from X-rays and ultrasounds to 3D CT scans—into a unified format that AI systems can understand. Trained on 28 million images across nine different imaging types, the system outperformed existing methods on 24 different medical tasks, from diagnosis to report writing, all using the same underlying representation.
+
+Why it matters: Hospitals use dozens of incompatible imaging systems (MRI, CT, ultrasound, X-ray), forcing doctors and AI systems to translate between formats and forcing developers to build separate tools for each. A unified medical image language cuts development time and makes AI tools portable across hospitals—one trained model works on any scan type, reducing both costs and the time needed to deploy AI diagnostics in new settings.
 
 ---
 Title: Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery
