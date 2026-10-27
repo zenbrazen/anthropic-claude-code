@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1046 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1049 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 358 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 359 papers in archive.
+  - "Game theory of academic effort and hiring in the age of AI"
   - "Learning Force-Reactive Humanoid Loco-Manipulation"
-  - "Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 85 papers in archive.
   - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 89 papers in archive.
   - "Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes"
   - "Direct Inference on Admissible Sets (Diona)"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 89 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 90 papers in archive.
+  - "On the stability of learning"
   - "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition"
-  - "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 90 papers in archive.
   - "Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts"
   - "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 90 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 91 papers in archive.
+  - "Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution"
   - "Singular Geometry of Low-Rank Adaptation"
-  - "Can We Trust Evaluations of AI Weather Forecasts for Extremes? How Evaluation Protocols Shape Model Rankings"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 84 papers in archive.
   - "MedVTok: A General-Purpose Medical Visual Tokenizer"
   - "Bound-Conditioned Latent Inference for Progressive Image Compression"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries"
 
 ## 10 most recent papers
+
+### Game theory of academic effort and hiring in the age of AI
+- URL: https://paperplaine.com/papers/game-theory-of-academic
+- Category: Computer Science · AI
+- Authors: Saptarshi Pal, Peter S. Park
+- arXiv: 2610.35802
+- Plain-English subtitle: Will AI make academic papers worthless as proof of real expertise?
+- Summary: AI has made it cheap and easy to write impressive-looking research papers, which threatens to break down a system where publications signal genuine expertise. The authors built a mathematical model showing how this creates a dilemma for both job seekers (should you go deep or publish broadly?) and hiring committees (should you trust papers or push for interviews?), and they identified several possible new equilibria that academic communities might settle into.
+- Why it matters: Universities are already struggling with hiring decisions as AI-generated research becomes indistinguishable from human work. This model shows that without deliberate change, academia could shift toward rewarding publication volume over understanding—potentially weakening the caliber of researchers hired and the quality of research produced. The framework also shows what interview and hiring practices might actually preserve deep expertise as a valued signal.
+
+### On the stability of learning
+- URL: https://paperplaine.com/papers/on-the-stability-of
+- Category: Quantitative Biology
+- Authors: John J. Vastola
+- arXiv: 2610.35856
+- Plain-English subtitle: Why sparse feedback breaks learning even when the math says it should work
+- Summary: Learning becomes unstable when feedback signals are sparse and noisy—even if the algorithm theoretically learns the right answer on average. Researchers found that variance in learning can grow without bound in these conditions, showing that unbiased learning signals alone aren't enough; they also need to arrive frequently and clearly enough.
+- Why it matters: This explains a real constraint on how biological brains can learn. Neurons receive feedback only occasionally and imperfectly, not constantly, which means evolution must have built in mechanisms to keep learning stable under these conditions. Understanding these limits helps neuroscientists explain why biological learning rules look different from the algorithms we use in AI, and could guide better models of how brains actually work.
+
+### Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution
+- URL: https://paperplaine.com/papers/multi-objective-reinforcement-learning
+- Category: Statistics
+- Authors: Zhenshuo Zhang, Ruoxuan Xiong, Hongyang R. Zhang
+- arXiv: 2610.35733
+- Plain-English subtitle: Training AI systems that juggle multiple competing goals efficiently
+- Summary: When AI systems must balance conflicting objectives—like being both helpful and honest, or fast and energy-efficient—training becomes inefficient because the best policy changes dramatically depending on how much you weight each goal. This paper measures how much objectives actually conflict and introduces two techniques to learn faster: maintaining a small team of specialist policies that each excel at different goal combinations, and identifying which training examples help or hurt learning on new goals. The methods improved performance by 4–27% across robotic control and other benchmarks.
+- Why it matters: Most real AI systems serve multiple purposes that pull in opposite directions. These techniques could let engineers train aligned AI systems and robots more efficiently, reducing computational cost and time—critical as AI systems grow larger and more complex.
 
 ### Learning Force-Reactive Humanoid Loco-Manipulation
 - URL: https://paperplaine.com/papers/learning-force-reactive-humanoid
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Smarter ways to shrink AI language models without losing accuracy
 - Summary: Researchers improved a method for compressing large language models by fixing two fundamental problems: how to decide which parts of the model need the most precision, and how to split complex neural network layers into simpler pieces. Their approach, called LEMS, increased accuracy by up to 4.8 percentage points across Mistral, Qwen3, and Llama 3 models while also shrinking them substantially.
 - Why it matters: Large AI language models cost millions of dollars to run. Better compression means deploying these models on smaller computers, phones, and edge devices without hiring expensive hardware—or running existing models at a fraction of the current cost. The improvements held up across different model sizes, suggesting the method could work in real-world deployment scenarios.
-
-### Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts
-- URL: https://paperplaine.com/papers/momentum-commentary-tone-and
-- Category: Quantitative Finance
-- Authors: Alina Khaybullina
-- arXiv: 2610.22043
-- Plain-English subtitle: What makes AI language models change their financial predictions
-- Summary: When researchers fed large language models synthetic earnings announcements with deliberately altered stock momentum, commentary tone, and earnings surprises, the models' forecasts shifted—but not always in ways that matched reality. The tone of non-factual commentary changed the models' answers more often than the actual earnings data did, suggesting these AI systems may be picking up on linguistic cues rather than financial fundamentals.
-- Why it matters: Financial institutions increasingly rely on AI to help forecast stock movements and earnings. If these models respond more strongly to how something is written than to what the numbers actually say, their predictions could systematically mislead investors or traders. This research exposes a blind spot: we need to know what language models are actually using to make financial decisions before we trust them with real money.
-
-### Singular Geometry of Low-Rank Adaptation
-- URL: https://paperplaine.com/papers/singular-geometry-of-low
-- Category: Statistics
-- Authors: Kamillo Ferry, Anthea Monod, Keisuke Yano
-- arXiv: 2610.32854
-- Plain-English subtitle: Why fine-tuning AI models with shortcuts creates hidden statistical blind spots
-- Summary: Low-rank adaptation (LoRA) is a popular shortcut for fine-tuning large neural networks that uses far fewer parameters than full retraining. But researchers found that this efficiency comes with a hidden cost: the mathematical structure of LoRA creates statistical "dead zones" where multiple different model settings produce identical outputs, making it impossible to know which one is actually best. The team mapped exactly where these blind spots occur and showed they depend on the specific layer being adapted and how information flows through the network.
-- Why it matters: As LoRA becomes standard for adapting models like large language models to new tasks, understanding these blind spots is critical for predicting when the technique will work reliably and when it might fail silently. The research provides tools to identify which layers and network configurations will have clear, measurable learning dynamics versus those where the model might get stuck in indistinguishable states—information that could help practitioners choose better adaptation strategies or diagnose why a fine-tuning attempt isn't learning as expected.
-
-### VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act
-- URL: https://paperplaine.com/papers/vera-a-responsible-ai
-- Category: Computer Science · AI
-- Authors: Robin Quériaux, Solveig Bachellery, Léa Déléris et al.
-- arXiv: 2610.31588
-- Plain-English subtitle: Making AI safety checks understandable for bank staff, not just engineers
-- Summary: A new dashboard called VERA helps non-technical staff at banks assess whether AI language models meet EU regulations before use. In a study with real employees, the dashboard cut the time needed to review safety evidence in half—from 56 seconds to 30 seconds—and scored 4.36 out of 5 for usefulness.
-- Why it matters: As regulators worldwide tighten AI rules, financial institutions need practical tools to prove their AI systems are responsible before deployment. VERA bridges the gap between technical benchmarks that engineers run and the business decision-makers who approve new AI tools, making compliance faster and more accessible. The team released the software publicly so other organizations can adopt it, potentially speeding up responsible AI practices across industries.
 
 ## About
 
