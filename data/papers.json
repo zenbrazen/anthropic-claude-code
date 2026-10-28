@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.37656",
+    "title": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
+    "authors": "Aakash Sarkar, Ananya Mukherjee, Motoshige Sato",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-27T17:58:48Z",
+    "publishedFormatted": "Oct 27, 2026",
+    "subtitle": "Why AI systems should think about relationships like physicists think about gauge fields",
+    "summary": "Researchers discovered that the mathematical structure underlying how AI systems should reason about relationships between entities—like \"Alice is Carol's grandmother\"—is uniquely determined by a principle from physics called gauge symmetry. When you allow each entity its own independent coordinate frame, only one form of attention mechanism emerges as mathematically valid: one that checks relationships by completing triangles and computing what physicists call Wilson loops. The finding connects three separate AI approaches (knowledge graphs, AlphaFold, and transformer models) that were already using this structure without realizing it was the only option allowed by symmetry.",
+    "whyItMatters": "This could reshape how AI systems are designed to reason about relationships. Instead of trying many different attention mechanisms and picking the best one empirically, developers can derive the correct form directly from mathematical principles—the way physicists derive equations from symmetry. In tests on incomplete relational data, this principled approach achieved 88% accuracy at inferring missing relationships even with corrupted information, while older commutative approaches maxed out at 8.3%. It also identified corrupted data with 99% reliability where existing methods topped out at 76%.",
+    "fetchedAt": "2026-10-28T13:50:20.155Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 7,
+      "wordCount": 258
+    },
+    "slug": "attention-as-lattice-gauge"
+  },
+  {
+    "id": "2610.33109",
+    "title": "Uncertainty Quantification for Financial Foundation Models: A Survey",
+    "authors": "Zijie Zhao, Mingjun Sun, Shenbo Xu",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-10-22T21:17:25Z",
+    "publishedFormatted": "Oct 22, 2026",
+    "subtitle": "How AI models should track and explain their uncertainty about financial decisions",
+    "summary": "Financial AI systems now handle everything from answering questions to making investment recommendations, but they rarely track where their uncertainty actually comes from. This survey identifies six distinct sources of uncertainty—from dodgy input data to flawed reasoning to unpredictable market outcomes—and shows that most current systems only measure one piece of the puzzle rather than following uncertainty through an entire financial workflow.",
+    "whyItMatters": "When an AI recommends a trade or interprets a company's financial report, you need to know not just whether it's confident, but why—and whether that confidence is justified. Right now, most financial AI systems behave like a doctor who tells you their diagnosis is 95% certain without explaining whether that certainty comes from clear test results, ambiguous symptoms, or just pattern-matching. This framework could help banks, investors, and regulators actually understand when to trust an AI's output and when to demand human review.",
+    "fetchedAt": "2026-10-28T13:50:23.651Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 8,
+      "wordCount": 215
+    },
+    "slug": "uncertainty-quantification-for-financial"
+  },
+  {
+    "id": "2610.37647",
+    "title": "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control",
+    "authors": "Athanasios Glentis, Dawei Li, Mingyi Hong",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-27T17:56:40Z",
+    "publishedFormatted": "Oct 27, 2026",
+    "subtitle": "A smarter way to train giant language models faster and more efficiently",
+    "summary": "Researchers discovered that a key bottleneck in how language models learn comes from how much their internal weights can shift during training. They developed MuonGS, a new optimizer that allows weights to grow gradually instead of staying fixed, which lets the model explore more effectively and learn 15% faster than existing methods while reaching the same quality.",
+    "whyItMatters": "Language model pretraining is expensive—running for weeks on powerful computers. A 15% speedup means real savings in computing costs and energy use. The insight about controlled weight growth could apply to training many other types of neural networks, making AI development faster and cheaper across the board.",
+    "fetchedAt": "2026-10-28T13:50:26.213Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 21,
+      "wordCount": 263
+    },
+    "slug": "muongs-pretraining-llms-with"
+  },
+  {
     "id": "2610.35802",
     "title": "Game theory of academic effort and hiring in the age of AI",
     "authors": "Saptarshi Pal, Peter S. Park",

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1049 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1052 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 359 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 360 papers in archive.
+  - "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops"
   - "Game theory of academic effort and hiring in the age of AI"
-  - "Learning Force-Reactive Humanoid Loco-Manipulation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 85 papers in archive.
   - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
   - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 87 papers in archive.
   - "Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting"
   - "Mixed State Deep Thermalization under Generic Quantum Errors"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 89 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 90 papers in archive.
+  - "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control"
   - "Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes"
-  - "Direct Inference on Admissible Sets (Diona)"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 90 papers in archive.
   - "On the stability of learning"
   - "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 90 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 91 papers in archive.
+  - "Uncertainty Quantification for Financial Foundation Models: A Survey"
   - "Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts"
-  - "Intraday Forecasting Ability and Liquidity Provision of Institutional Traders"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 91 papers in archive.
   - "Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution"
   - "Singular Geometry of Low-Rank Adaptation"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries"
 
 ## 10 most recent papers
+
+### Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops
+- URL: https://paperplaine.com/papers/attention-as-lattice-gauge
+- Category: Computer Science · AI
+- Authors: Aakash Sarkar, Ananya Mukherjee, Motoshige Sato
+- arXiv: 2610.37656
+- Plain-English subtitle: Why AI systems should think about relationships like physicists think about gauge fields
+- Summary: Researchers discovered that the mathematical structure underlying how AI systems should reason about relationships between entities—like "Alice is Carol's grandmother"—is uniquely determined by a principle from physics called gauge symmetry. When you allow each entity its own independent coordinate frame, only one form of attention mechanism emerges as mathematically valid: one that checks relationships by completing triangles and computing what physicists call Wilson loops. The finding connects three separate AI approaches (knowledge graphs, AlphaFold, and transformer models) that were already using this structure without realizing it was the only option allowed by symmetry.
+- Why it matters: This could reshape how AI systems are designed to reason about relationships. Instead of trying many different attention mechanisms and picking the best one empirically, developers can derive the correct form directly from mathematical principles—the way physicists derive equations from symmetry. In tests on incomplete relational data, this principled approach achieved 88% accuracy at inferring missing relationships even with corrupted information, while older commutative approaches maxed out at 8.3%. It also identified corrupted data with 99% reliability where existing methods topped out at 76%.
+
+### Uncertainty Quantification for Financial Foundation Models: A Survey
+- URL: https://paperplaine.com/papers/uncertainty-quantification-for-financial
+- Category: Quantitative Finance
+- Authors: Zijie Zhao, Mingjun Sun, Shenbo Xu
+- arXiv: 2610.33109
+- Plain-English subtitle: How AI models should track and explain their uncertainty about financial decisions
+- Summary: Financial AI systems now handle everything from answering questions to making investment recommendations, but they rarely track where their uncertainty actually comes from. This survey identifies six distinct sources of uncertainty—from dodgy input data to flawed reasoning to unpredictable market outcomes—and shows that most current systems only measure one piece of the puzzle rather than following uncertainty through an entire financial workflow.
+- Why it matters: When an AI recommends a trade or interprets a company's financial report, you need to know not just whether it's confident, but why—and whether that confidence is justified. Right now, most financial AI systems behave like a doctor who tells you their diagnosis is 95% certain without explaining whether that certainty comes from clear test results, ambiguous symptoms, or just pattern-matching. This framework could help banks, investors, and regulators actually understand when to trust an AI's output and when to demand human review.
+
+### MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control
+- URL: https://paperplaine.com/papers/muongs-pretraining-llms-with
+- Category: Mathematics
+- Authors: Athanasios Glentis, Dawei Li, Mingyi Hong
+- arXiv: 2610.37647
+- Plain-English subtitle: A smarter way to train giant language models faster and more efficiently
+- Summary: Researchers discovered that a key bottleneck in how language models learn comes from how much their internal weights can shift during training. They developed MuonGS, a new optimizer that allows weights to grow gradually instead of staying fixed, which lets the model explore more effectively and learn 15% faster than existing methods while reaching the same quality.
+- Why it matters: Language model pretraining is expensive—running for weeks on powerful computers. A 15% speedup means real savings in computing costs and energy use. The insight about controlled weight growth could apply to training many other types of neural networks, making AI development faster and cheaper across the board.
 
 ### Game theory of academic effort and hiring in the age of AI
 - URL: https://paperplaine.com/papers/game-theory-of-academic
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Finding and removing hidden sabotage planted in AI models through fine-tuning
 - Summary: Researchers developed TopKLoRA, a method to identify exactly which parts of an AI model implement hidden backdoors inserted during fine-tuning on poisoned data. They successfully located and removed these sabotage circuits from three different models while keeping the models' normal abilities intact — with backdoor circuits being up to 10 times smaller and more interpretable than previous methods.
 - Why it matters: AI systems trained on data from untrusted sources can be secretly weaponized through backdoors that persist even after safety retraining. This method lets developers actually find and surgically remove the malicious code rather than hoping it's gone, making it possible to safely use third-party datasets and validate that trained models don't contain hidden threats.
-
-### Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting
-- URL: https://paperplaine.com/papers/hardware-friendly-estimation-of
-- Category: Physics
-- Authors: Hari Hara Suthan Chittoor, Thirumalai Manimaran
-- arXiv: 2610.32841
-- Plain-English subtitle: Moving quantum calculations to classical computers to save precious quantum hardware
-- Summary: Researchers developed a new method called HERMES that shifts most of the computational work from quantum computers to classical computers when calculating quantum properties. The approach avoids needing extra quantum bits and complex quantum gates while producing results just as accurate as existing methods — a significant advantage for today's limited quantum hardware.
-- Why it matters: Current quantum computers have too few reliable qubits to run the most useful quantum calculations. By moving expensive quantum operations to classical computers, HERMES lets researchers run simulations like calculating molecular energies on smaller, cheaper quantum devices. The method could speed up quantum chemistry and drug discovery by making quantum computers practical for real work years sooner than existing approaches allow.
-
-### Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes
-- URL: https://paperplaine.com/papers/superlinear-convergence-of-cyclic
-- Category: Mathematics
-- Authors: Ran Gu
-- arXiv: 2610.32705
-- Plain-English subtitle: How recycling old calculation directions speeds up optimization algorithms
-- Summary: Mathematicians proved that a specific technique for reusing previous calculation directions can make optimization algorithms converge extremely fast—doubling the number of correct digits roughly every few steps. The trick works by strategically reusing a small set of historical step sizes in cycles, creating an exponential speedup that was theoretically predicted but had never been rigorously demonstrated for practical algorithms that keep only limited memory.
-- Why it matters: Optimization algorithms solve real problems in machine learning, engineering, and finance—training neural networks, designing systems, and analyzing data. Faster convergence means reaching accurate answers with fewer computer calculations, saving time and energy. This work explains exactly when and why reusing old information actually accelerates these algorithms, helping practitioners know which techniques to trust and how to tune them for their specific problems.
-
-### Advancing SVD-based LLM Compression via Layer-Wise Error Model Search
-- URL: https://paperplaine.com/papers/advancing-svd-based-llm
-- Category: Computer Science · AI
-- Authors: Moritz Thoma, Maximilian Groezinger, Maximilian Forstenhäusler et al.
-- arXiv: 2610.32878
-- Plain-English subtitle: Smarter ways to shrink AI language models without losing accuracy
-- Summary: Researchers improved a method for compressing large language models by fixing two fundamental problems: how to decide which parts of the model need the most precision, and how to split complex neural network layers into simpler pieces. Their approach, called LEMS, increased accuracy by up to 4.8 percentage points across Mistral, Qwen3, and Llama 3 models while also shrinking them substantially.
-- Why it matters: Large AI language models cost millions of dollars to run. Better compression means deploying these models on smaller computers, phones, and edge devices without hiring expensive hardware—or running existing models at a fraction of the current cost. The improvements held up across different model sizes, suggesting the method could work in real-world deployment scenarios.
 
 ## About
 
