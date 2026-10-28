@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1052 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1055 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-28
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models
+Subtitle: How AI models learn rare versus common knowledge during training
+URL: https://paperplaine.com/papers/what-improves-during-pretraining
+Category: Computer Science · AI
+Authors: Chang Su, Bin Wu, Emine Yilmaz et al.
+arXiv ID: 2610.37631
+arXiv URL: https://arxiv.org/abs/2610.37631
+Posted: 2026-10-28
+
+Summary: Language models learn knowledge differently depending on how consistently it appears across years of internet data. Knowledge that shows up sporadically across different time periods improves faster during later training stages and ends up performing 7.3 percentage points better than consistently-appearing knowledge, especially for factual tasks.
+
+Why it matters: Understanding what AI models actually learn during training helps researchers design better pretraining methods and predict which types of knowledge will be reliable versus unreliable in deployed systems. This is particularly important for knowledge-intensive applications like question-answering and fact-checking, where knowing which facts a model learned well versus poorly affects whether you can trust its answers.
+
+---
+Title: Coordinated and Uncoordinated Channel Tracking for High-Rate IoT in Distributed Massive MIMO With Low-Resolution ADCs
+Subtitle: Tracking moving wireless devices when base stations use cheap, low-power sensors
+URL: https://paperplaine.com/papers/coordinated-and-uncoordinated-channel
+Category: Engineering
+Authors: Hediyeh Soltanizadeh, Ardavan Rahimian
+arXiv ID: 2610.37508
+arXiv URL: https://arxiv.org/abs/2610.37508
+Posted: 2026-10-28
+
+Summary: As IoT devices move through wireless networks, base stations need to track their changing signal paths in real time. This paper shows how to do that accurately even when using cheap, low-resolution analog-to-digital converters (ADCs) instead of expensive high-precision ones. The researchers developed two methods—one for coordinated networks where devices announce themselves, and another for uncoordinated networks where devices share access randomly—and proved both work well with only 4-bit ADCs while cutting computing power and memory use substantially.
+
+Why it matters: IoT base stations currently use expensive high-resolution ADCs to track moving devices. Switching to low-resolution versions could cut hardware costs and power consumption significantly without sacrificing accuracy. This matters for deploying massive wireless networks in remote or power-limited areas, where cost and energy efficiency determine whether coverage is economically feasible at all.
+
+---
+Title: Dynamical quantum simulations as laboratories for quantum information
+Subtitle: Squeezing hidden quantum information from simulations built for other purposes
+URL: https://paperplaine.com/papers/dynamical-quantum-simulations-as
+Category: Physics
+Authors: Su Yeon Chang, Hailey S. Murray, Brian Barch et al.
+arXiv ID: 2610.37589
+arXiv URL: https://arxiv.org/abs/2610.37589
+Posted: 2026-10-28
+
+Summary: Physicists discovered that quantum simulations designed to measure one specific property of a system actually contain far more information than originally intended. By reinterpreting the internal states these simulations create, researchers showed they can extract data about how information spreads through quantum systems, how entangled particles become, and how well quantum messages could be sent — all from experiments already built to answer different questions.
+
+Why it matters: Quantum computers and simulators are expensive and difficult to build. This work shows that existing quantum experiments can be repurposed to answer multiple scientific questions simultaneously, getting more value from the same hardware. It's like discovering that a microscope designed to measure one thing can also be used to measure something completely different without modification — you don't need to build a separate instrument.
 
 ---
 Title: Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops
