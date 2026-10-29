@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1055 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1058 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 361 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 362 papers in archive.
+  - "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence"
   - "What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models"
-  - "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 85 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 86 papers in archive.
+  - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
   - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
-  - "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 88 papers in archive.
   - "Dynamical quantum simulations as laboratories for quantum information"
   - "Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 85 papers in archive.
   - "Coordinated and Uncoordinated Channel Tracking for High-Rate IoT in Distributed Massive MIMO With Low-Resolution ADCs"
   - "MedVTok: A General-Purpose Medical Visual Tokenizer"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 74 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 75 papers in archive.
+  - "Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience"
   - "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain"
-  - "The Delegation Divide: An Open Index of AI-Agent Delegability across Occupations and Countries"
 
 ## 10 most recent papers
+
+### VideoLVR: Latent Visual Reasoning over Grounded Video Evidence
+- URL: https://paperplaine.com/papers/videolvr-latent-visual-reasoning
+- Category: Computer Science · AI
+- Authors: Shilong Li, Xingyuan Bu, Hao Shi et al.
+- arXiv: 2610.37613
+- Plain-English subtitle: Teaching AI to remember and reuse video details while reasoning through tasks
+- Summary: AI systems that reason through videos often forget visual details as they generate explanations, leading to weaker answers on complex questions. Researchers developed VideoLVR, which lets these systems store and retrieve relevant visual information at each step of reasoning without bloating the model with extra data. The method works by treating visual reconstruction like text prediction, allowing AI to seamlessly mix visual evidence with language as it thinks through a problem.
+- Why it matters: Video understanding powers everything from autonomous vehicles to medical diagnosis to content moderation. AI systems that can reliably reference what they actually see—rather than just describing locations in text—should perform better on tasks requiring precise visual details, like identifying objects in cluttered scenes or tracking events across scenes. VideoLVR achieves this without making the model's working memory explode, making it practical to deploy on real systems.
+
+### Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience
+- URL: https://paperplaine.com/papers/practice-makes-perfect-tacit
+- Category: Economics
+- Authors: Eduardo Levy Yeyati, Darío Judzik, Juan Ignacio Barbiero
+- arXiv: 2610.36008
+- Plain-English subtitle: Why AI makes experience matter more than diplomas in some jobs
+- Summary: When ChatGPT became public, wages in AI-exposed occupations stopped rewarding formal education and started rewarding hands-on experience instead. Workers with 3 years of experience saw their advantage grow by 0.26 log points, while an extra year of schooling suddenly cost workers 0.55 log points in earnings — a reversal that disappeared when researchers tested it against pandemic-era data, confirming AI drove the shift.
+- Why it matters: As AI handles routine knowledge work, employers are reshuffling which skills they'll pay for. College degrees matter less for jobs AI can assist with; the ability to actually use AI tools and adapt existing skills to new platforms matters more. This could reshape education decisions for millions of workers and the return on investment for a four-year degree in fields like software development, data analysis, and writing.
+
+### SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)
+- URL: https://paperplaine.com/papers/secdmp-provably-secure-data
+- Category: Computer Science
+- Authors: Jens Sprengers, Marton Bognar, Lesly-Ann Daniel et al.
+- arXiv: 2610.37454
+- Plain-English subtitle: Blocking a hidden security flaw in modern computer chips without slowing them down
+- Summary: Modern CPUs include a performance feature called data memory-dependent prefetching that inadvertently leaks secret information, even from code designed to resist similar attacks. Researchers created SecDMP, a hardware defense that stops this leakage entirely while keeping computer speed nearly unchanged—and proved mathematically that it works.
+- Why it matters: Passwords, encryption keys, and other sensitive data can currently be stolen from supposedly secure code through this chip feature, affecting billions of desktop and server computers worldwide. SecDMP closes this gap without the severe speed penalties that plagued earlier fixes, making it practical for manufacturers to protect users without sacrificing performance.
 
 ### What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models
 - URL: https://paperplaine.com/papers/what-improves-during-pretraining
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Will AI make academic papers worthless as proof of real expertise?
 - Summary: AI has made it cheap and easy to write impressive-looking research papers, which threatens to break down a system where publications signal genuine expertise. The authors built a mathematical model showing how this creates a dilemma for both job seekers (should you go deep or publish broadly?) and hiring committees (should you trust papers or push for interviews?), and they identified several possible new equilibria that academic communities might settle into.
 - Why it matters: Universities are already struggling with hiring decisions as AI-generated research becomes indistinguishable from human work. This model shows that without deliberate change, academia could shift toward rewarding publication volume over understanding—potentially weakening the caliber of researchers hired and the quality of research produced. The framework also shows what interview and hiring practices might actually preserve deep expertise as a valued signal.
-
-### On the stability of learning
-- URL: https://paperplaine.com/papers/on-the-stability-of
-- Category: Quantitative Biology
-- Authors: John J. Vastola
-- arXiv: 2610.35856
-- Plain-English subtitle: Why sparse feedback breaks learning even when the math says it should work
-- Summary: Learning becomes unstable when feedback signals are sparse and noisy—even if the algorithm theoretically learns the right answer on average. Researchers found that variance in learning can grow without bound in these conditions, showing that unbiased learning signals alone aren't enough; they also need to arrive frequently and clearly enough.
-- Why it matters: This explains a real constraint on how biological brains can learn. Neurons receive feedback only occasionally and imperfectly, not constantly, which means evolution must have built in mechanisms to keep learning stable under these conditions. Understanding these limits helps neuroscientists explain why biological learning rules look different from the algorithms we use in AI, and could guide better models of how brains actually work.
-
-### Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution
-- URL: https://paperplaine.com/papers/multi-objective-reinforcement-learning
-- Category: Statistics
-- Authors: Zhenshuo Zhang, Ruoxuan Xiong, Hongyang R. Zhang
-- arXiv: 2610.35733
-- Plain-English subtitle: Training AI systems that juggle multiple competing goals efficiently
-- Summary: When AI systems must balance conflicting objectives—like being both helpful and honest, or fast and energy-efficient—training becomes inefficient because the best policy changes dramatically depending on how much you weight each goal. This paper measures how much objectives actually conflict and introduces two techniques to learn faster: maintaining a small team of specialist policies that each excel at different goal combinations, and identifying which training examples help or hurt learning on new goals. The methods improved performance by 4–27% across robotic control and other benchmarks.
-- Why it matters: Most real AI systems serve multiple purposes that pull in opposite directions. These techniques could let engineers train aligned AI systems and robots more efficiently, reducing computational cost and time—critical as AI systems grow larger and more complex.
-
-### Learning Force-Reactive Humanoid Loco-Manipulation
-- URL: https://paperplaine.com/papers/learning-force-reactive-humanoid
-- Category: Computer Science · AI
-- Authors: Sihang Li, Xiaofeng Guo, Jinkun Cao et al.
-- arXiv: 2610.35862
-- Plain-English subtitle: Teaching robots to push, pull, and manipulate objects while staying balanced
-- Summary: Researchers created a system that lets humanoid robots learn to control force and motion simultaneously—essential for tasks like opening doors or moving objects that require precise pushing or pulling. The robot learned from human demonstrations captured with force sensors and motion trackers, then used an AI model to predict both movement and hand forces. On real robots performing contact-heavy tasks, this force-aware approach succeeded 80% of the time, compared to just 27% for a system that only focused on motion.
-- Why it matters: Most robot tasks today rely on position control alone, which fails when objects resist or require careful handling. This framework lets humanoid robots tackle real-world manipulation tasks—assembly work, caregiving, disaster response—where they must sense and respond to physical resistance. The 3x improvement in success rate suggests robots could soon perform delicate or forceful tasks reliably enough for deployment in homes and factories.
 
 ## About
 

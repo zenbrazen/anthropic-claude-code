@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1055 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-28
+This file contains the complete plain-English text of all 1058 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-29
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: VideoLVR: Latent Visual Reasoning over Grounded Video Evidence
+Subtitle: Teaching AI to remember and reuse video details while reasoning through tasks
+URL: https://paperplaine.com/papers/videolvr-latent-visual-reasoning
+Category: Computer Science · AI
+Authors: Shilong Li, Xingyuan Bu, Hao Shi et al.
+arXiv ID: 2610.37613
+arXiv URL: https://arxiv.org/abs/2610.37613
+Posted: 2026-10-29
+
+Summary: AI systems that reason through videos often forget visual details as they generate explanations, leading to weaker answers on complex questions. Researchers developed VideoLVR, which lets these systems store and retrieve relevant visual information at each step of reasoning without bloating the model with extra data. The method works by treating visual reconstruction like text prediction, allowing AI to seamlessly mix visual evidence with language as it thinks through a problem.
+
+Why it matters: Video understanding powers everything from autonomous vehicles to medical diagnosis to content moderation. AI systems that can reliably reference what they actually see—rather than just describing locations in text—should perform better on tasks requiring precise visual details, like identifying objects in cluttered scenes or tracking events across scenes. VideoLVR achieves this without making the model's working memory explode, making it practical to deploy on real systems.
+
+---
+Title: Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience
+Subtitle: Why AI makes experience matter more than diplomas in some jobs
+URL: https://paperplaine.com/papers/practice-makes-perfect-tacit
+Category: Economics
+Authors: Eduardo Levy Yeyati, Darío Judzik, Juan Ignacio Barbiero
+arXiv ID: 2610.36008
+arXiv URL: https://arxiv.org/abs/2610.36008
+Posted: 2026-10-29
+
+Summary: When ChatGPT became public, wages in AI-exposed occupations stopped rewarding formal education and started rewarding hands-on experience instead. Workers with 3 years of experience saw their advantage grow by 0.26 log points, while an extra year of schooling suddenly cost workers 0.55 log points in earnings — a reversal that disappeared when researchers tested it against pandemic-era data, confirming AI drove the shift.
+
+Why it matters: As AI handles routine knowledge work, employers are reshuffling which skills they'll pay for. College degrees matter less for jobs AI can assist with; the ability to actually use AI tools and adapt existing skills to new platforms matters more. This could reshape education decisions for millions of workers and the return on investment for a four-year degree in fields like software development, data analysis, and writing.
+
+---
+Title: SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)
+Subtitle: Blocking a hidden security flaw in modern computer chips without slowing them down
+URL: https://paperplaine.com/papers/secdmp-provably-secure-data
+Category: Computer Science
+Authors: Jens Sprengers, Marton Bognar, Lesly-Ann Daniel et al.
+arXiv ID: 2610.37454
+arXiv URL: https://arxiv.org/abs/2610.37454
+Posted: 2026-10-29
+
+Summary: Modern CPUs include a performance feature called data memory-dependent prefetching that inadvertently leaks secret information, even from code designed to resist similar attacks. Researchers created SecDMP, a hardware defense that stops this leakage entirely while keeping computer speed nearly unchanged—and proved mathematically that it works.
+
+Why it matters: Passwords, encryption keys, and other sensitive data can currently be stolen from supposedly secure code through this chip feature, affecting billions of desktop and server computers worldwide. SecDMP closes this gap without the severe speed penalties that plagued earlier fixes, making it practical for manufacturers to protect users without sacrificing performance.
 
 ---
 Title: What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models
