@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.37584",
+    "title": "REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation",
+    "authors": "Yuxi Huang, Silin Zhou, Chenhao Wang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-27T17:25:12Z",
+    "publishedFormatted": "Oct 27, 2026",
+    "subtitle": "Teaching recommendation systems to understand which products naturally belong together",
+    "summary": "A new recommendation system called REGER learns which items are related to each other before trying to predict what users want next. By first training on how items connect semantically—teaching the system that winter coats and snow boots go together—the model makes better predictions about what each person will like, outperforming existing recommendation systems on real-world datasets.",
+    "whyItMatters": "Better recommendations mean people spend less time searching and find products they actually want, while stores increase sales by showing relevant items. This approach could particularly help online platforms with massive catalogs—where helping users navigate millions of options has a direct impact on engagement and revenue. The framework also provides a mathematical foundation for how these systems should decompose user preferences, potentially making recommendation AI more transparent and reliable.",
+    "fetchedAt": "2026-10-29T23:03:24.327Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 223
+    },
+    "slug": "reger-modeling-inter-item"
+  },
+  {
+    "id": "2610.37456",
+    "title": "An Input Skip Can Reparameterize a VAE Without Improving the Generator",
+    "authors": "Kevin Lee",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-27T15:57:37Z",
+    "publishedFormatted": "Oct 27, 2026",
+    "subtitle": "Why a model that fits data better might not actually generate better samples",
+    "summary": "A small mathematical trick can make a neural network reconstruct training data more accurately without actually improving how well it generates new samples. Researchers found that adding an \"input skip\" to a type of AI model called a VAE reduces reconstruction error by a factor that can be precisely calculated—but the model's actual ability to generate new data stays identical. This reveals a critical blind spot: using reconstruction error alone to evaluate these models leads to wrong conclusions about which version is genuinely better.",
+    "whyItMatters": "Machine learning teams often pick models based on how well they reconstruct training data, assuming better reconstruction means better generation. This work shows that assumption breaks down—two mathematically equivalent models can have wildly different reconstruction scores while producing identical new samples. When the researchers tested this on real ocean tsunami data, the model with lower reconstruction error actually performed worse on standard generation quality metrics, suggesting that current evaluation practices are misleading developers about which models to deploy.",
+    "fetchedAt": "2026-10-29T23:03:27.800Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 195
+    },
+    "slug": "an-input-skip-can"
+  },
+  {
+    "id": "2610.36484",
+    "title": "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments",
+    "authors": "Kianté Fernandez, Caitlin Chen, Jialu Zhou et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-10-27T01:42:35Z",
+    "publishedFormatted": "Oct 27, 2026",
+    "subtitle": "Testing whether AI agents think like humans in real behavioral experiments",
+    "summary": "Researchers created CogArena, a benchmark of ten psychology experiments that AI agents must complete through a standard web browser using the same visual interfaces and time pressures that human participants face. The agents could often finish the experiments, but successfully reproducing the specific behavioral patterns that reliably show up in human data proved much harder—some signatures appeared consistently, others not at all.",
+    "whyItMatters": "As AI agents increasingly take online studies and generate data alongside human participants, contamination of scientific datasets has become a real risk. CogArena provides behavioral scientists with a concrete way to detect whether their online research has been infiltrated by AI, and it reveals that passing a behavioral task and thinking like a human are not the same thing.",
+    "fetchedAt": "2026-10-29T23:03:30.790Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 28,
+      "wordCount": 187
+    },
+    "slug": "cogarena-benchmarking-multimodal-agents"
+  },
+  {
     "id": "2610.37613",
     "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
     "authors": "Shilong Li, Xingyuan Bu, Hao Shi et al.",

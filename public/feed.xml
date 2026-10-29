@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 13:56:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 23:03:31 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation</title>
+      <link>https://paperplaine.com/papers/reger-modeling-inter-item</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/reger-modeling-inter-item</guid>
+      <pubDate>Tue, 27 Oct 2026 17:25:12 GMT</pubDate>
+      <author>Yuxi Huang, Silin Zhou, Chenhao Wang et al.</author>
+      <category>AI</category>
+      <description>Teaching recommendation systems to understand which products naturally belong together</description>
+      <content:encoded><![CDATA[<p><em>Teaching recommendation systems to understand which products naturally belong together</em></p><p>A new recommendation system called REGER learns which items are related to each other before trying to predict what users want next. By first training on how items connect semantically—teaching the system that winter coats and snow boots go together—the model makes better predictions about what each person will like, outperforming existing recommendation systems on real-world datasets.</p><p><strong>Why it matters:</strong> Better recommendations mean people spend less time searching and find products they actually want, while stores increase sales by showing relevant items. This approach could particularly help online platforms with massive catalogs—where helping users navigate millions of options has a direct impact on engagement and revenue. The framework also provides a mathematical foundation for how these systems should decompose user preferences, potentially making recommendation AI more transparent and reliable.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>An Input Skip Can Reparameterize a VAE Without Improving the Generator</title>
+      <link>https://paperplaine.com/papers/an-input-skip-can</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/an-input-skip-can</guid>
+      <pubDate>Tue, 27 Oct 2026 15:57:37 GMT</pubDate>
+      <author>Kevin Lee</author>
+      <category>Statistics</category>
+      <description>Why a model that fits data better might not actually generate better samples</description>
+      <content:encoded><![CDATA[<p><em>Why a model that fits data better might not actually generate better samples</em></p><p>A small mathematical trick can make a neural network reconstruct training data more accurately without actually improving how well it generates new samples. Researchers found that adding an "input skip" to a type of AI model called a VAE reduces reconstruction error by a factor that can be precisely calculated—but the model's actual ability to generate new data stays identical. This reveals a critical blind spot: using reconstruction error alone to evaluate these models leads to wrong conclusions about which version is genuinely better.</p><p><strong>Why it matters:</strong> Machine learning teams often pick models based on how well they reconstruct training data, assuming better reconstruction means better generation. This work shows that assumption breaks down—two mathematically equivalent models can have wildly different reconstruction scores while producing identical new samples. When the researchers tested this on real ocean tsunami data, the model with lower reconstruction error actually performed worse on standard generation quality metrics, suggesting that current evaluation practices are misleading developers about which models to deploy.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments</title>
+      <link>https://paperplaine.com/papers/cogarena-benchmarking-multimodal-agents</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cogarena-benchmarking-multimodal-agents</guid>
+      <pubDate>Tue, 27 Oct 2026 01:42:35 GMT</pubDate>
+      <author>Kianté Fernandez, Caitlin Chen, Jialu Zhou et al.</author>
+      <category>Biology</category>
+      <description>Testing whether AI agents think like humans in real behavioral experiments</description>
+      <content:encoded><![CDATA[<p><em>Testing whether AI agents think like humans in real behavioral experiments</em></p><p>Researchers created CogArena, a benchmark of ten psychology experiments that AI agents must complete through a standard web browser using the same visual interfaces and time pressures that human participants face. The agents could often finish the experiments, but successfully reproducing the specific behavioral patterns that reliably show up in human data proved much harder—some signatures appeared consistently, others not at all.</p><p><strong>Why it matters:</strong> As AI agents increasingly take online studies and generate data alongside human participants, contamination of scientific datasets has become a real risk. CogArena provides behavioral scientists with a concrete way to detect whether their online research has been infiltrated by AI, and it reveals that passing a behavioral task and thinking like a human are not the same thing.</p>]]></content:encoded>
+    </item>
     <item>
       <title>VideoLVR: Latent Visual Reasoning over Grounded Video Evidence</title>
       <link>https://paperplaine.com/papers/videolvr-latent-visual-reasoning</link>
