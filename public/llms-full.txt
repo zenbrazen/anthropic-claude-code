@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1061 papers currently in the Paper Plaine archive.
-Last updated: 2026-10-29
+This file contains the complete plain-English text of all 1064 papers currently in the Paper Plaine archive.
+Last updated: 2026-10-30
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers
+Subtitle: Making AI image generation faster by splitting what details need global thinking
+URL: https://paperplaine.com/papers/read-allocate-route-role
+Category: Computer Science · AI
+Authors: Jiongfan Yang, Weichen Fan, Haiwen Diao et al.
+arXiv ID: 2610.40647
+arXiv URL: https://arxiv.org/abs/2610.40647
+Posted: 2026-10-30
+
+Summary: A new AI image generation system separates coarse image structure from fine detail, forcing only the basic structure to be processed through expensive global attention while detail gets handled locally. The result: sharper images at 38% lower computational cost compared to leading systems, and faster training.
+
+Why it matters: Image generation AI is computationally expensive, raising costs for companies building these systems and limiting access for smaller labs. This technique cuts that cost significantly while improving quality, making high-resolution image generation more feasible to run and deploy at scale.
+
+---
+Title: Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori
+Subtitle: A faster way to solve fiendishly hard optimization puzzles on grid patterns
+URL: https://paperplaine.com/papers/single-temperature-ranked-greedy
+Category: Mathematics
+Authors: Hao Geng, Nan Su, Gabriele Cavallaro
+arXiv ID: 2610.40515
+arXiv URL: https://arxiv.org/abs/2610.40515
+Posted: 2026-10-30
+
+Summary: Researchers developed a new algorithm that solves a notoriously difficult optimization problem on two-dimensional grids much faster than existing methods. On a standard large benchmark problem, the approach found the proven best answer in about 12 seconds on a desktop computer, and successfully solved all tested grid-based instances, including 9 previously hard cases.
+
+Why it matters: These grid optimization problems appear in real applications like circuit design and materials science, where finding the best solution can save computational resources and money. Faster algorithms mean companies can solve larger, more practical problems in reasonable timeframes instead of waiting hours or days for answers.
+
+---
+Title: Renormalization for Robust Memory without Synchronization
+Subtitle: How quantum memories can survive without a master clock
+URL: https://paperplaine.com/papers/renormalization-for-robust-memory
+Category: Physics
+Authors: Shashwat Chakraborty, Jong Yeon Lee
+arXiv ID: 2610.40651
+arXiv URL: https://arxiv.org/abs/2610.40651
+Posted: 2026-10-30
+
+Summary: Physical systems can protect information against errors even when different parts update at random, unpredictable times instead of in lockstep. Researchers proved this works by developing a mathematical framework that shows how independent local actions can collectively stabilize stored data—and they demonstrated it works in multiple dimensions, including real three-dimensional systems.
+
+Why it matters: Most quantum computers and memory devices rely on synchronized updates across all components, which is expensive and difficult to maintain. If information can be reliably stored without this synchronization requirement, it would simplify the engineering of quantum systems and make them more practical for real-world use by reducing the overhead needed to coordinate billions of parts.
 
 ---
 Title: REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation

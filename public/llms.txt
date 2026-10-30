@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1061 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1064 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 363 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 364 papers in archive.
+  - "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers"
   - "REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation"
-  - "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 86 papers in archive.
   - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
   - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 88 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 89 papers in archive.
+  - "Renormalization for Robust Memory without Synchronization"
   - "Dynamical quantum simulations as laboratories for quantum information"
-  - "Hardware-Friendly Estimation of LCU-Based Expectation Values via Quantum-to-Classical Workload Shifting"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 90 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 91 papers in archive.
+  - "Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori"
   - "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control"
-  - "Superlinear Convergence of Cyclic Gradient Methods with Historical Ritz Step Sizes"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 91 papers in archive.
   - "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments"
   - "On the stability of learning"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain"
 
 ## 10 most recent papers
+
+### Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers
+- URL: https://paperplaine.com/papers/read-allocate-route-role
+- Category: Computer Science · AI
+- Authors: Jiongfan Yang, Weichen Fan, Haiwen Diao et al.
+- arXiv: 2610.40647
+- Plain-English subtitle: Making AI image generation faster by splitting what details need global thinking
+- Summary: A new AI image generation system separates coarse image structure from fine detail, forcing only the basic structure to be processed through expensive global attention while detail gets handled locally. The result: sharper images at 38% lower computational cost compared to leading systems, and faster training.
+- Why it matters: Image generation AI is computationally expensive, raising costs for companies building these systems and limiting access for smaller labs. This technique cuts that cost significantly while improving quality, making high-resolution image generation more feasible to run and deploy at scale.
+
+### Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori
+- URL: https://paperplaine.com/papers/single-temperature-ranked-greedy
+- Category: Mathematics
+- Authors: Hao Geng, Nan Su, Gabriele Cavallaro
+- arXiv: 2610.40515
+- Plain-English subtitle: A faster way to solve fiendishly hard optimization puzzles on grid patterns
+- Summary: Researchers developed a new algorithm that solves a notoriously difficult optimization problem on two-dimensional grids much faster than existing methods. On a standard large benchmark problem, the approach found the proven best answer in about 12 seconds on a desktop computer, and successfully solved all tested grid-based instances, including 9 previously hard cases.
+- Why it matters: These grid optimization problems appear in real applications like circuit design and materials science, where finding the best solution can save computational resources and money. Faster algorithms mean companies can solve larger, more practical problems in reasonable timeframes instead of waiting hours or days for answers.
+
+### Renormalization for Robust Memory without Synchronization
+- URL: https://paperplaine.com/papers/renormalization-for-robust-memory
+- Category: Physics
+- Authors: Shashwat Chakraborty, Jong Yeon Lee
+- arXiv: 2610.40651
+- Plain-English subtitle: How quantum memories can survive without a master clock
+- Summary: Physical systems can protect information against errors even when different parts update at random, unpredictable times instead of in lockstep. Researchers proved this works by developing a mathematical framework that shows how independent local actions can collectively stabilize stored data—and they demonstrated it works in multiple dimensions, including real three-dimensional systems.
+- Why it matters: Most quantum computers and memory devices rely on synchronized updates across all components, which is expensive and difficult to maintain. If information can be reliably stored without this synchronization requirement, it would simplify the engineering of quantum systems and make them more practical for real-world use by reducing the overhead needed to coordinate billions of parts.
 
 ### REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation
 - URL: https://paperplaine.com/papers/reger-modeling-inter-item
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI models learn rare versus common knowledge during training
 - Summary: Language models learn knowledge differently depending on how consistently it appears across years of internet data. Knowledge that shows up sporadically across different time periods improves faster during later training stages and ends up performing 7.3 percentage points better than consistently-appearing knowledge, especially for factual tasks.
 - Why it matters: Understanding what AI models actually learn during training helps researchers design better pretraining methods and predict which types of knowledge will be reliable versus unreliable in deployed systems. This is particularly important for knowledge-intensive applications like question-answering and fact-checking, where knowing which facts a model learned well versus poorly affects whether you can trust its answers.
-
-### Coordinated and Uncoordinated Channel Tracking for High-Rate IoT in Distributed Massive MIMO With Low-Resolution ADCs
-- URL: https://paperplaine.com/papers/coordinated-and-uncoordinated-channel
-- Category: Engineering
-- Authors: Hediyeh Soltanizadeh, Ardavan Rahimian
-- arXiv: 2610.37508
-- Plain-English subtitle: Tracking moving wireless devices when base stations use cheap, low-power sensors
-- Summary: As IoT devices move through wireless networks, base stations need to track their changing signal paths in real time. This paper shows how to do that accurately even when using cheap, low-resolution analog-to-digital converters (ADCs) instead of expensive high-precision ones. The researchers developed two methods—one for coordinated networks where devices announce themselves, and another for uncoordinated networks where devices share access randomly—and proved both work well with only 4-bit ADCs while cutting computing power and memory use substantially.
-- Why it matters: IoT base stations currently use expensive high-resolution ADCs to track moving devices. Switching to low-resolution versions could cut hardware costs and power consumption significantly without sacrificing accuracy. This matters for deploying massive wireless networks in remote or power-limited areas, where cost and energy efficiency determine whether coverage is economically feasible at all.
-
-### Dynamical quantum simulations as laboratories for quantum information
-- URL: https://paperplaine.com/papers/dynamical-quantum-simulations-as
-- Category: Physics
-- Authors: Su Yeon Chang, Hailey S. Murray, Brian Barch et al.
-- arXiv: 2610.37589
-- Plain-English subtitle: Squeezing hidden quantum information from simulations built for other purposes
-- Summary: Physicists discovered that quantum simulations designed to measure one specific property of a system actually contain far more information than originally intended. By reinterpreting the internal states these simulations create, researchers showed they can extract data about how information spreads through quantum systems, how entangled particles become, and how well quantum messages could be sent — all from experiments already built to answer different questions.
-- Why it matters: Quantum computers and simulators are expensive and difficult to build. This work shows that existing quantum experiments can be repurposed to answer multiple scientific questions simultaneously, getting more value from the same hardware. It's like discovering that a microscope designed to measure one thing can also be used to measure something completely different without modification — you don't need to build a separate instrument.
-
-### Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops
-- URL: https://paperplaine.com/papers/attention-as-lattice-gauge
-- Category: Computer Science · AI
-- Authors: Aakash Sarkar, Ananya Mukherjee, Motoshige Sato
-- arXiv: 2610.37656
-- Plain-English subtitle: Why AI systems should think about relationships like physicists think about gauge fields
-- Summary: Researchers discovered that the mathematical structure underlying how AI systems should reason about relationships between entities—like "Alice is Carol's grandmother"—is uniquely determined by a principle from physics called gauge symmetry. When you allow each entity its own independent coordinate frame, only one form of attention mechanism emerges as mathematically valid: one that checks relationships by completing triangles and computing what physicists call Wilson loops. The finding connects three separate AI approaches (knowledge graphs, AlphaFold, and transformer models) that were already using this structure without realizing it was the only option allowed by symmetry.
-- Why it matters: This could reshape how AI systems are designed to reason about relationships. Instead of trying many different attention mechanisms and picking the best one empirically, developers can derive the correct form directly from mathematical principles—the way physicists derive equations from symmetry. In tests on incomplete relational data, this principled approach achieved 88% accuracy at inferring missing relationships even with corrupted information, while older commutative approaches maxed out at 8.3%. It also identified corrupted data with 99% reliability where existing methods topped out at 76%.
 
 ## About
 
