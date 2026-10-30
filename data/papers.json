@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.40611",
+    "title": "When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder",
+    "authors": "A. J. A. Jubayer Talukder, Mohammad Ariful Haque",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-29T17:54:07Z",
+    "publishedFormatted": "Oct 29, 2026",
+    "subtitle": "Building smarter assistants that know when and what to suggest",
+    "summary": "A single AI model can decide when to offer help and generate useful suggestions during conversation by combining two tasks in one pass. The system relies heavily on memory of past conversation to pick good hints—removing that context cuts quality in half—but adding a separate retriever or larger generator doesn't help.",
+    "whyItMatters": "Assistants built this way run 1.3 to 1.8 times faster than traditional two-model systems while maintaining quality, which matters for real-time applications like customer support or coding tools. The finding that memory—not model size—drives hint quality suggests companies can shrink their AI systems while keeping them effective, cutting both computational cost and latency.",
+    "fetchedAt": "2026-10-30T22:44:46.637Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 217
+    },
+    "slug": "when-to-assist-and"
+  },
+  {
+    "id": "2610.40616",
+    "title": "Difficulty Calibration Across Time for Membership Inference in Diffusion Models",
+    "authors": "Michael Joseph, Yedid Hoshen",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-29T17:54:54Z",
+    "publishedFormatted": "Oct 29, 2026",
+    "subtitle": "Finding what diffusion models actually memorized, not just what's easy to recreate",
+    "summary": "Researchers developed two new techniques to detect when diffusion models have memorized images from their training data, solving a critical flaw in existing methods: most images are simply easier or harder to reconstruct regardless of whether the model saw them before. The new approach compares reconstruction difficulty across different training stages or noise levels to isolate true memorization, achieving near-perfect accuracy in identifying training data.",
+    "whyItMatters": "As AI companies train models on billions of images scraped from the internet, auditing what the model actually memorized matters for enforcing copyright and privacy law. These techniques let regulators and researchers definitively test whether a model illegally retained specific copyrighted or private images—without needing the original training data or image captions.",
+    "fetchedAt": "2026-10-30T22:44:49.608Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 238
+    },
+    "slug": "difficulty-calibration-across-time"
+  },
+  {
+    "id": "2610.38631",
+    "title": "Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries",
+    "authors": "Radha Yadav, Prasanna Devadiga, Peeyush Mishra et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-10-28T10:48:32Z",
+    "publishedFormatted": "Oct 28, 2026",
+    "subtitle": "When financial AI gives you the right number to the wrong question",
+    "summary": "Large language models answering financial questions often retrieve accurate numbers from their training data but apply them to questions the user never asked — a problem the researchers call \"frame collapse.\" Testing Indian mutual funds, where tax rules and product variants are precisely defined, the team found that AI assistants ignore crucial unstated details, pick arbitrary defaults when facts are missing, and produce answers that look correct because the numbers are real, even though they answer a different question entirely.",
+    "whyItMatters": "Financial advice given with real numbers but wrong interpretations can steer investors toward incorrect decisions — buying the wrong fund variant, miscalculating tax obligations, or choosing products unsuited to their situation. Because standard fact-checking against data sources passes these answers, the errors hide. The researchers propose specific controls that financial AI systems need to flag ambiguities and require missing context before answering, preventing confidently stated wrong answers from reaching real investors.",
+    "fetchedAt": "2026-10-30T22:44:53.253Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 192
+    },
+    "slug": "right-numbers-wrong-questions"
+  },
+  {
     "id": "2610.40647",
     "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
     "authors": "Jiongfan Yang, Weichen Fan, Haiwen Diao et al.",

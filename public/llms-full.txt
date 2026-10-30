@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1064 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1067 papers currently in the Paper Plaine archive.
 Last updated: 2026-10-30
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder
+Subtitle: Building smarter assistants that know when and what to suggest
+URL: https://paperplaine.com/papers/when-to-assist-and
+Category: Computer Science · AI
+Authors: A. J. A. Jubayer Talukder, Mohammad Ariful Haque
+arXiv ID: 2610.40611
+arXiv URL: https://arxiv.org/abs/2610.40611
+Posted: 2026-10-30
+
+Summary: A single AI model can decide when to offer help and generate useful suggestions during conversation by combining two tasks in one pass. The system relies heavily on memory of past conversation to pick good hints—removing that context cuts quality in half—but adding a separate retriever or larger generator doesn't help.
+
+Why it matters: Assistants built this way run 1.3 to 1.8 times faster than traditional two-model systems while maintaining quality, which matters for real-time applications like customer support or coding tools. The finding that memory—not model size—drives hint quality suggests companies can shrink their AI systems while keeping them effective, cutting both computational cost and latency.
+
+---
+Title: Difficulty Calibration Across Time for Membership Inference in Diffusion Models
+Subtitle: Finding what diffusion models actually memorized, not just what's easy to recreate
+URL: https://paperplaine.com/papers/difficulty-calibration-across-time
+Category: Computer Science
+Authors: Michael Joseph, Yedid Hoshen
+arXiv ID: 2610.40616
+arXiv URL: https://arxiv.org/abs/2610.40616
+Posted: 2026-10-30
+
+Summary: Researchers developed two new techniques to detect when diffusion models have memorized images from their training data, solving a critical flaw in existing methods: most images are simply easier or harder to reconstruct regardless of whether the model saw them before. The new approach compares reconstruction difficulty across different training stages or noise levels to isolate true memorization, achieving near-perfect accuracy in identifying training data.
+
+Why it matters: As AI companies train models on billions of images scraped from the internet, auditing what the model actually memorized matters for enforcing copyright and privacy law. These techniques let regulators and researchers definitively test whether a model illegally retained specific copyrighted or private images—without needing the original training data or image captions.
+
+---
+Title: Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries
+Subtitle: When financial AI gives you the right number to the wrong question
+URL: https://paperplaine.com/papers/right-numbers-wrong-questions
+Category: Quantitative Finance
+Authors: Radha Yadav, Prasanna Devadiga, Peeyush Mishra et al.
+arXiv ID: 2610.38631
+arXiv URL: https://arxiv.org/abs/2610.38631
+Posted: 2026-10-30
+
+Summary: Large language models answering financial questions often retrieve accurate numbers from their training data but apply them to questions the user never asked — a problem the researchers call "frame collapse." Testing Indian mutual funds, where tax rules and product variants are precisely defined, the team found that AI assistants ignore crucial unstated details, pick arbitrary defaults when facts are missing, and produce answers that look correct because the numbers are real, even though they answer a different question entirely.
+
+Why it matters: Financial advice given with real numbers but wrong interpretations can steer investors toward incorrect decisions — buying the wrong fund variant, miscalculating tax obligations, or choosing products unsuited to their situation. Because standard fact-checking against data sources passes these answers, the errors hide. The researchers propose specific controls that financial AI systems need to flag ambiguities and require missing context before answering, preventing confidently stated wrong answers from reaching real investors.
 
 ---
 Title: Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers

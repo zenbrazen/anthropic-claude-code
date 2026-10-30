@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1064 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1067 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 364 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 365 papers in archive.
+  - "When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder"
   - "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers"
-  - "REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 86 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 87 papers in archive.
+  - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
   - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
-  - "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 89 papers in archive.
   - "Renormalization for Robust Memory without Synchronization"
   - "Dynamical quantum simulations as laboratories for quantum information"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 91 papers in archive.
   - "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments"
   - "On the stability of learning"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 91 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 92 papers in archive.
+  - "Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries"
   - "Uncertainty Quantification for Financial Foundation Models: A Survey"
-  - "Momentum, Commentary Tone, and Earnings Surprise in LLM Financial Forecasts"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 92 papers in archive.
   - "An Input Skip Can Reparameterize a VAE Without Improving the Generator"
   - "Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain"
 
 ## 10 most recent papers
+
+### When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder
+- URL: https://paperplaine.com/papers/when-to-assist-and
+- Category: Computer Science · AI
+- Authors: A. J. A. Jubayer Talukder, Mohammad Ariful Haque
+- arXiv: 2610.40611
+- Plain-English subtitle: Building smarter assistants that know when and what to suggest
+- Summary: A single AI model can decide when to offer help and generate useful suggestions during conversation by combining two tasks in one pass. The system relies heavily on memory of past conversation to pick good hints—removing that context cuts quality in half—but adding a separate retriever or larger generator doesn't help.
+- Why it matters: Assistants built this way run 1.3 to 1.8 times faster than traditional two-model systems while maintaining quality, which matters for real-time applications like customer support or coding tools. The finding that memory—not model size—drives hint quality suggests companies can shrink their AI systems while keeping them effective, cutting both computational cost and latency.
+
+### Difficulty Calibration Across Time for Membership Inference in Diffusion Models
+- URL: https://paperplaine.com/papers/difficulty-calibration-across-time
+- Category: Computer Science
+- Authors: Michael Joseph, Yedid Hoshen
+- arXiv: 2610.40616
+- Plain-English subtitle: Finding what diffusion models actually memorized, not just what's easy to recreate
+- Summary: Researchers developed two new techniques to detect when diffusion models have memorized images from their training data, solving a critical flaw in existing methods: most images are simply easier or harder to reconstruct regardless of whether the model saw them before. The new approach compares reconstruction difficulty across different training stages or noise levels to isolate true memorization, achieving near-perfect accuracy in identifying training data.
+- Why it matters: As AI companies train models on billions of images scraped from the internet, auditing what the model actually memorized matters for enforcing copyright and privacy law. These techniques let regulators and researchers definitively test whether a model illegally retained specific copyrighted or private images—without needing the original training data or image captions.
+
+### Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries
+- URL: https://paperplaine.com/papers/right-numbers-wrong-questions
+- Category: Quantitative Finance
+- Authors: Radha Yadav, Prasanna Devadiga, Peeyush Mishra et al.
+- arXiv: 2610.38631
+- Plain-English subtitle: When financial AI gives you the right number to the wrong question
+- Summary: Large language models answering financial questions often retrieve accurate numbers from their training data but apply them to questions the user never asked — a problem the researchers call "frame collapse." Testing Indian mutual funds, where tax rules and product variants are precisely defined, the team found that AI assistants ignore crucial unstated details, pick arbitrary defaults when facts are missing, and produce answers that look correct because the numbers are real, even though they answer a different question entirely.
+- Why it matters: Financial advice given with real numbers but wrong interpretations can steer investors toward incorrect decisions — buying the wrong fund variant, miscalculating tax obligations, or choosing products unsuited to their situation. Because standard fact-checking against data sources passes these answers, the errors hide. The researchers propose specific controls that financial AI systems need to flag ambiguities and require missing context before answering, preventing confidently stated wrong answers from reaching real investors.
 
 ### Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers
 - URL: https://paperplaine.com/papers/read-allocate-route-role
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to remember and reuse video details while reasoning through tasks
 - Summary: AI systems that reason through videos often forget visual details as they generate explanations, leading to weaker answers on complex questions. Researchers developed VideoLVR, which lets these systems store and retrieve relevant visual information at each step of reasoning without bloating the model with extra data. The method works by treating visual reconstruction like text prediction, allowing AI to seamlessly mix visual evidence with language as it thinks through a problem.
 - Why it matters: Video understanding powers everything from autonomous vehicles to medical diagnosis to content moderation. AI systems that can reliably reference what they actually see—rather than just describing locations in text—should perform better on tasks requiring precise visual details, like identifying objects in cluttered scenes or tracking events across scenes. VideoLVR achieves this without making the model's working memory explode, making it practical to deploy on real systems.
-
-### Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience
-- URL: https://paperplaine.com/papers/practice-makes-perfect-tacit
-- Category: Economics
-- Authors: Eduardo Levy Yeyati, Darío Judzik, Juan Ignacio Barbiero
-- arXiv: 2610.36008
-- Plain-English subtitle: Why AI makes experience matter more than diplomas in some jobs
-- Summary: When ChatGPT became public, wages in AI-exposed occupations stopped rewarding formal education and started rewarding hands-on experience instead. Workers with 3 years of experience saw their advantage grow by 0.26 log points, while an extra year of schooling suddenly cost workers 0.55 log points in earnings — a reversal that disappeared when researchers tested it against pandemic-era data, confirming AI drove the shift.
-- Why it matters: As AI handles routine knowledge work, employers are reshuffling which skills they'll pay for. College degrees matter less for jobs AI can assist with; the ability to actually use AI tools and adapt existing skills to new platforms matters more. This could reshape education decisions for millions of workers and the return on investment for a four-year degree in fields like software development, data analysis, and writing.
-
-### SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)
-- URL: https://paperplaine.com/papers/secdmp-provably-secure-data
-- Category: Computer Science
-- Authors: Jens Sprengers, Marton Bognar, Lesly-Ann Daniel et al.
-- arXiv: 2610.37454
-- Plain-English subtitle: Blocking a hidden security flaw in modern computer chips without slowing them down
-- Summary: Modern CPUs include a performance feature called data memory-dependent prefetching that inadvertently leaks secret information, even from code designed to resist similar attacks. Researchers created SecDMP, a hardware defense that stops this leakage entirely while keeping computer speed nearly unchanged—and proved mathematically that it works.
-- Why it matters: Passwords, encryption keys, and other sensitive data can currently be stolen from supposedly secure code through this chip feature, affecting billions of desktop and server computers worldwide. SecDMP closes this gap without the severe speed penalties that plagued earlier fixes, making it practical for manufacturers to protect users without sacrificing performance.
-
-### What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models
-- URL: https://paperplaine.com/papers/what-improves-during-pretraining
-- Category: Computer Science · AI
-- Authors: Chang Su, Bin Wu, Emine Yilmaz et al.
-- arXiv: 2610.37631
-- Plain-English subtitle: How AI models learn rare versus common knowledge during training
-- Summary: Language models learn knowledge differently depending on how consistently it appears across years of internet data. Knowledge that shows up sporadically across different time periods improves faster during later training stages and ends up performing 7.3 percentage points better than consistently-appearing knowledge, especially for factual tasks.
-- Why it matters: Understanding what AI models actually learn during training helps researchers design better pretraining methods and predict which types of knowledge will be reliable versus unreliable in deployed systems. This is particularly important for knowledge-intensive applications like question-answering and fact-checking, where knowing which facts a model learned well versus poorly affects whether you can trust its answers.
 
 ## About
 
