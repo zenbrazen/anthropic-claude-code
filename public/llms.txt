@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1067 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1070 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 365 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 366 papers in archive.
+  - "Collaborative AI agents for autonomous experimental research with solid-state quantum spins"
   - "When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder"
-  - "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 87 papers in archive.
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
   - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 91 papers in archive.
   - "Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori"
   - "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 91 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 92 papers in archive.
+  - "The Verification Wall in Microbial Metabolomics"
   - "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments"
-  - "On the stability of learning"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 92 papers in archive.
   - "Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries"
   - "Uncertainty Quantification for Financial Foundation Models: A Survey"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 92 papers in archive.
   - "An Input Skip Can Reparameterize a VAE Without Improving the Generator"
   - "Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 85 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 86 papers in archive.
+  - "MRUD: Maximally Redundant Unsigned Digit Number Systems for High-Performance Arithmetic Units"
   - "Coordinated and Uncoordinated Channel Tracking for High-Rate IoT in Distributed Massive MIMO With Low-Resolution ADCs"
-  - "MedVTok: A General-Purpose Medical Visual Tokenizer"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 75 papers in archive.
   - "Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience"
   - "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain"
 
 ## 10 most recent papers
+
+### Collaborative AI agents for autonomous experimental research with solid-state quantum spins
+- URL: https://paperplaine.com/papers/collaborative-ai-agents-for
+- Category: Computer Science · AI
+- Authors: El Mustapha Mansouri, Eikichi Kimura, Masato Koga et al.
+- arXiv: 2610.40589
+- Plain-English subtitle: AI agents that check each other's work while running quantum experiments
+- Summary: Researchers built a team of AI agents that can design experiments, make predictions, and hold each other accountable for their conclusions—then tested it on quantum systems. When the team's first result seemed to confirm their theory, the agents caught that their measurement was drifting and reran the experiment with a stricter protocol before accepting the finding.
+- Why it matters: Most AI systems generate plausible-sounding claims without questioning themselves, but scientific research requires catching errors before they spread. This work shows AI can be designed to self-correct and demand real evidence, which could accelerate physics and materials research by automating the laborious cycle of measurement, checking, and redesign that normally takes human scientists months.
+
+### The Verification Wall in Microbial Metabolomics
+- URL: https://paperplaine.com/papers/the-verification-wall-in
+- Category: Quantitative Biology
+- Authors: Takahiko Koyama
+- arXiv: 2610.39914
+- Plain-English subtitle: Why we can't keep up with bacteria's hidden chemistry
+- Summary: Scientists can now computationally predict the structures of gut bacteria metabolites faster than any lab can verify they're correct. The bottleneck is not coming up with new structures—it's confirming them, and even the best spectral prediction methods only identify the right molecule about one-third of the time. Of 10,645 computationally predicted metabolites analyzed, between 5% and 37% have no clear path to verification at all.
+- Why it matters: Without confirmed structures, researchers cannot safely draw conclusions about how gut bacteria influence human health—they're essentially looking at a list of chemical candidates rather than known facts. The verification bottleneck will only worsen as computational methods generate more and more predictions, and no existing shortcut (like spectral matching or crystal diffraction) can confirm structures at the speed they're now being proposed. This means critical questions about the microbiome may remain unanswerable unless labs develop faster ways to verify which molecules are actually there.
+
+### MRUD: Maximally Redundant Unsigned Digit Number Systems for High-Performance Arithmetic Units
+- URL: https://paperplaine.com/papers/mrud-maximally-redundant-unsigned
+- Category: Engineering
+- Authors: Samaneh Rahimi, Ali Azarpeyvand
+- arXiv: 2610.39638
+- Plain-English subtitle: A faster way to do math inside computer chips without carrying
+- Summary: Computer scientists have developed a new numbering system called MRUD that lets processors perform multiplication 43% faster and use 26% less area than current methods. Unlike earlier redundant systems that struggled with multiplication, MRUD works at higher speeds while keeping the advantage of carry-free addition—a fundamental operation that normally creates delays inside chips.
+- Why it matters: Faster arithmetic units directly speed up everything from smartphone processors to data center servers. A 43% improvement in multiplication performance translates to real gains in processing speed, power consumption, and chip size—especially for tasks like machine learning that repeat these operations millions of times per second.
 
 ### When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder
 - URL: https://paperplaine.com/papers/when-to-assist-and
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching recommendation systems to understand which products naturally belong together
 - Summary: A new recommendation system called REGER learns which items are related to each other before trying to predict what users want next. By first training on how items connect semantically—teaching the system that winter coats and snow boots go together—the model makes better predictions about what each person will like, outperforming existing recommendation systems on real-world datasets.
 - Why it matters: Better recommendations mean people spend less time searching and find products they actually want, while stores increase sales by showing relevant items. This approach could particularly help online platforms with massive catalogs—where helping users navigate millions of options has a direct impact on engagement and revenue. The framework also provides a mathematical foundation for how these systems should decompose user preferences, potentially making recommendation AI more transparent and reliable.
-
-### An Input Skip Can Reparameterize a VAE Without Improving the Generator
-- URL: https://paperplaine.com/papers/an-input-skip-can
-- Category: Statistics
-- Authors: Kevin Lee
-- arXiv: 2610.37456
-- Plain-English subtitle: Why a model that fits data better might not actually generate better samples
-- Summary: A small mathematical trick can make a neural network reconstruct training data more accurately without actually improving how well it generates new samples. Researchers found that adding an "input skip" to a type of AI model called a VAE reduces reconstruction error by a factor that can be precisely calculated—but the model's actual ability to generate new data stays identical. This reveals a critical blind spot: using reconstruction error alone to evaluate these models leads to wrong conclusions about which version is genuinely better.
-- Why it matters: Machine learning teams often pick models based on how well they reconstruct training data, assuming better reconstruction means better generation. This work shows that assumption breaks down—two mathematically equivalent models can have wildly different reconstruction scores while producing identical new samples. When the researchers tested this on real ocean tsunami data, the model with lower reconstruction error actually performed worse on standard generation quality metrics, suggesting that current evaluation practices are misleading developers about which models to deploy.
-
-### CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments
-- URL: https://paperplaine.com/papers/cogarena-benchmarking-multimodal-agents
-- Category: Quantitative Biology
-- Authors: Kianté Fernandez, Caitlin Chen, Jialu Zhou et al.
-- arXiv: 2610.36484
-- Plain-English subtitle: Testing whether AI agents think like humans in real behavioral experiments
-- Summary: Researchers created CogArena, a benchmark of ten psychology experiments that AI agents must complete through a standard web browser using the same visual interfaces and time pressures that human participants face. The agents could often finish the experiments, but successfully reproducing the specific behavioral patterns that reliably show up in human data proved much harder—some signatures appeared consistently, others not at all.
-- Why it matters: As AI agents increasingly take online studies and generate data alongside human participants, contamination of scientific datasets has become a real risk. CogArena provides behavioral scientists with a concrete way to detect whether their online research has been infiltrated by AI, and it reveals that passing a behavioral task and thinking like a human are not the same thing.
-
-### VideoLVR: Latent Visual Reasoning over Grounded Video Evidence
-- URL: https://paperplaine.com/papers/videolvr-latent-visual-reasoning
-- Category: Computer Science · AI
-- Authors: Shilong Li, Xingyuan Bu, Hao Shi et al.
-- arXiv: 2610.37613
-- Plain-English subtitle: Teaching AI to remember and reuse video details while reasoning through tasks
-- Summary: AI systems that reason through videos often forget visual details as they generate explanations, leading to weaker answers on complex questions. Researchers developed VideoLVR, which lets these systems store and retrieve relevant visual information at each step of reasoning without bloating the model with extra data. The method works by treating visual reconstruction like text prediction, allowing AI to seamlessly mix visual evidence with language as it thinks through a problem.
-- Why it matters: Video understanding powers everything from autonomous vehicles to medical diagnosis to content moderation. AI systems that can reliably reference what they actually see—rather than just describing locations in text—should perform better on tasks requiring precise visual details, like identifying objects in cluttered scenes or tracking events across scenes. VideoLVR achieves this without making the model's working memory explode, making it practical to deploy on real systems.
 
 ## About
 
