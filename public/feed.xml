@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 13:19:43 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 22:07:10 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rethinking Neural Thickets Without Weight Perturbations</title>
+      <link>https://paperplaine.com/papers/rethinking-neural-thickets-without</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/rethinking-neural-thickets-without</guid>
+      <pubDate>Thu, 29 Oct 2026 17:59:29 GMT</pubDate>
+      <author>Nicolas Dufour, Elouan Gardès, Amil Dravid et al.</author>
+      <category>AI</category>
+      <description>Why shaking up a neural network&#39;s final answers works better than tweaking its weights</description>
+      <content:encoded><![CDATA[<p><em>Why shaking up a neural network's final answers works better than tweaking its weights</em></p><p>Researchers tested a popular theory about how language models find multiple expert solutions by randomly jiggling their internal weights. They found the gains were real, but the explanation was wrong—you don't need to perturb weights at all. Simply adding random noise to the model's final output predictions, then picking the best ones and combining them, matched or beat the original method on reasoning tasks. This simpler approach works by creating diverse predictions and selecting strong ones, a principle that also boosts vision models under new visual conditions.</p><p><strong>Why it matters:</strong> Current methods for improving language and vision models often require expensive retraining or weight manipulation. This finding offers a faster, cheaper alternative: frozen models can improve dramatically just by adding noise to their outputs and voting among the results. Since the method requires no training and runs at inference time, it could be deployed immediately to existing models without modification, making better AI accessible without computational overhead.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Numerical Integration on Bounded Domains via Learned Reflected Diffusions</title>
+      <link>https://paperplaine.com/papers/numerical-integration-on-bounded</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/numerical-integration-on-bounded</guid>
+      <pubDate>Thu, 29 Oct 2026 17:20:02 GMT</pubDate>
+      <author>Kirill Korolev, Artur Goldman, Timofei Gritsaev et al.</author>
+      <category>Statistics</category>
+      <description>Teaching AI to compute integrals inside boxes more efficiently</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to compute integrals inside boxes more efficiently</em></p><p>Researchers developed a new method for calculating complex integrals in high-dimensional spaces—a fundamental task in science and engineering—by training a neural network to learn where to sample points most strategically. The key innovation is keeping all sample points inside bounded regions (like boxes) where they're supposed to be, while still adapting intelligently to the shape of the function being integrated. The method scales well even in very high dimensions and outperforms standard approaches on both test problems and real-world applications.</p><p><strong>Why it matters:</strong> High-dimensional integration appears constantly in physics simulations, machine learning, and statistics—anywhere scientists need to sum up contributions across enormous spaces of possibilities. Existing methods either ignore where the function is most interesting (wasting computation) or require custom proposal distributions that are hard to build. This approach automates that process and works reliably even when the function is jagged or poorly behaved, making expensive simulations faster and more accurate.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals</title>
+      <link>https://paperplaine.com/papers/crowds-believe-in-you</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/crowds-believe-in-you</guid>
+      <pubDate>Thu, 29 Oct 2026 15:55:24 GMT</pubDate>
+      <author>Zihan Chen, Lei Nico Zheng, Di Zhu</author>
+      <category>Economics</category>
+      <description>Why crowds are too optimistic about people&#39;s personal goals</description>
+      <content:encoded><![CDATA[<p><em>Why crowds are too optimistic about people's personal goals</em></p><p>When people post their own goals on prediction markets, crowds bet on success about 4 percentage points more often than those goals actually get achieved. This optimism bias emerges within a day of trading and peaks just before the deadline, even when the person making the goal doesn't trade at all. The person themselves ends up supplying most of the correction, suggesting the crowd's rosy outlook isn't based on better information — it's just belief.</p><p><strong>Why it matters:</strong> As more people crowdsource forecasts about their lives — from fitness goals to career milestones — this systematic overconfidence could lead them to overestimate their odds of success and plan poorly. The finding also reveals a gap in how crowds work: they're good at aggregating information about external events, but when it comes to personal futures, the person with the goal holds information the market never taps into. Trying to improve forecasts by learning from past markets barely helps, since the real knowledge lives with the goal-setter.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Collaborative AI agents for autonomous experimental research with solid-state quantum spins</title>
       <link>https://paperplaine.com/papers/collaborative-ai-agents-for</link>

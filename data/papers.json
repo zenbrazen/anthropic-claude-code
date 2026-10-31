@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.40649",
+    "title": "Rethinking Neural Thickets Without Weight Perturbations",
+    "authors": "Nicolas Dufour, Elouan Gardès, Amil Dravid et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-29T17:59:29Z",
+    "publishedFormatted": "Oct 29, 2026",
+    "subtitle": "Why shaking up a neural network's final answers works better than tweaking its weights",
+    "summary": "Researchers tested a popular theory about how language models find multiple expert solutions by randomly jiggling their internal weights. They found the gains were real, but the explanation was wrong—you don't need to perturb weights at all. Simply adding random noise to the model's final output predictions, then picking the best ones and combining them, matched or beat the original method on reasoning tasks. This simpler approach works by creating diverse predictions and selecting strong ones, a principle that also boosts vision models under new visual conditions.",
+    "whyItMatters": "Current methods for improving language and vision models often require expensive retraining or weight manipulation. This finding offers a faster, cheaper alternative: frozen models can improve dramatically just by adding noise to their outputs and voting among the results. Since the method requires no training and runs at inference time, it could be deployed immediately to existing models without modification, making better AI accessible without computational overhead.",
+    "fetchedAt": "2026-10-31T22:07:03.033Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 216
+    },
+    "slug": "rethinking-neural-thickets-without"
+  },
+  {
+    "id": "2610.40499",
+    "title": "Numerical Integration on Bounded Domains via Learned Reflected Diffusions",
+    "authors": "Kirill Korolev, Artur Goldman, Timofei Gritsaev et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-10-29T17:20:02Z",
+    "publishedFormatted": "Oct 29, 2026",
+    "subtitle": "Teaching AI to compute integrals inside boxes more efficiently",
+    "summary": "Researchers developed a new method for calculating complex integrals in high-dimensional spaces—a fundamental task in science and engineering—by training a neural network to learn where to sample points most strategically. The key innovation is keeping all sample points inside bounded regions (like boxes) where they're supposed to be, while still adapting intelligently to the shape of the function being integrated. The method scales well even in very high dimensions and outperforms standard approaches on both test problems and real-world applications.",
+    "whyItMatters": "High-dimensional integration appears constantly in physics simulations, machine learning, and statistics—anywhere scientists need to sum up contributions across enormous spaces of possibilities. Existing methods either ignore where the function is most interesting (wasting computation) or require custom proposal distributions that are hard to build. This approach automates that process and works reliably even when the function is jagged or poorly behaved, making expensive simulations faster and more accurate.",
+    "fetchedAt": "2026-10-31T22:07:06.354Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 203
+    },
+    "slug": "numerical-integration-on-bounded"
+  },
+  {
+    "id": "2610.40324",
+    "title": "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals",
+    "authors": "Zihan Chen, Lei Nico Zheng, Di Zhu",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-10-29T15:55:24Z",
+    "publishedFormatted": "Oct 29, 2026",
+    "subtitle": "Why crowds are too optimistic about people's personal goals",
+    "summary": "When people post their own goals on prediction markets, crowds bet on success about 4 percentage points more often than those goals actually get achieved. This optimism bias emerges within a day of trading and peaks just before the deadline, even when the person making the goal doesn't trade at all. The person themselves ends up supplying most of the correction, suggesting the crowd's rosy outlook isn't based on better information — it's just belief.",
+    "whyItMatters": "As more people crowdsource forecasts about their lives — from fitness goals to career milestones — this systematic overconfidence could lead them to overestimate their odds of success and plan poorly. The finding also reveals a gap in how crowds work: they're good at aggregating information about external events, but when it comes to personal futures, the person with the goal holds information the market never taps into. Trying to improve forecasts by learning from past markets barely helps, since the real knowledge lives with the goal-setter.",
+    "fetchedAt": "2026-10-31T22:07:09.720Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 248
+    },
+    "slug": "crowds-believe-in-you"
+  },
+  {
     "id": "2610.40589",
     "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
     "authors": "El Mustapha Mansouri, Eikichi Kimura, Masato Koga et al.",

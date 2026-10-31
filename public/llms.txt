@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1070 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1073 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 366 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 367 papers in archive.
+  - "Rethinking Neural Thickets Without Weight Perturbations"
   - "Collaborative AI agents for autonomous experimental research with solid-state quantum spins"
-  - "When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 87 papers in archive.
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
   - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 92 papers in archive.
   - "Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries"
   - "Uncertainty Quantification for Financial Foundation Models: A Survey"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 92 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 93 papers in archive.
+  - "Numerical Integration on Bounded Domains via Learned Reflected Diffusions"
   - "An Input Skip Can Reparameterize a VAE Without Improving the Generator"
-  - "Multi-Objective Reinforcement Learning Using Routed Ensembles and Trajectory Attribution"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 86 papers in archive.
   - "MRUD: Maximally Redundant Unsigned Digit Number Systems for High-Performance Arithmetic Units"
   - "Coordinated and Uncoordinated Channel Tracking for High-Rate IoT in Distributed Massive MIMO With Low-Resolution ADCs"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 75 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 76 papers in archive.
+  - "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
   - "Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience"
-  - "Fuji: The Shape, Composition, and Spread of Demand Bursts on Robinhood Chain"
 
 ## 10 most recent papers
+
+### Rethinking Neural Thickets Without Weight Perturbations
+- URL: https://paperplaine.com/papers/rethinking-neural-thickets-without
+- Category: Computer Science · AI
+- Authors: Nicolas Dufour, Elouan Gardès, Amil Dravid et al.
+- arXiv: 2610.40649
+- Plain-English subtitle: Why shaking up a neural network's final answers works better than tweaking its weights
+- Summary: Researchers tested a popular theory about how language models find multiple expert solutions by randomly jiggling their internal weights. They found the gains were real, but the explanation was wrong—you don't need to perturb weights at all. Simply adding random noise to the model's final output predictions, then picking the best ones and combining them, matched or beat the original method on reasoning tasks. This simpler approach works by creating diverse predictions and selecting strong ones, a principle that also boosts vision models under new visual conditions.
+- Why it matters: Current methods for improving language and vision models often require expensive retraining or weight manipulation. This finding offers a faster, cheaper alternative: frozen models can improve dramatically just by adding noise to their outputs and voting among the results. Since the method requires no training and runs at inference time, it could be deployed immediately to existing models without modification, making better AI accessible without computational overhead.
+
+### Numerical Integration on Bounded Domains via Learned Reflected Diffusions
+- URL: https://paperplaine.com/papers/numerical-integration-on-bounded
+- Category: Statistics
+- Authors: Kirill Korolev, Artur Goldman, Timofei Gritsaev et al.
+- arXiv: 2610.40499
+- Plain-English subtitle: Teaching AI to compute integrals inside boxes more efficiently
+- Summary: Researchers developed a new method for calculating complex integrals in high-dimensional spaces—a fundamental task in science and engineering—by training a neural network to learn where to sample points most strategically. The key innovation is keeping all sample points inside bounded regions (like boxes) where they're supposed to be, while still adapting intelligently to the shape of the function being integrated. The method scales well even in very high dimensions and outperforms standard approaches on both test problems and real-world applications.
+- Why it matters: High-dimensional integration appears constantly in physics simulations, machine learning, and statistics—anywhere scientists need to sum up contributions across enormous spaces of possibilities. Existing methods either ignore where the function is most interesting (wasting computation) or require custom proposal distributions that are hard to build. This approach automates that process and works reliably even when the function is jagged or poorly behaved, making expensive simulations faster and more accurate.
+
+### Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals
+- URL: https://paperplaine.com/papers/crowds-believe-in-you
+- Category: Economics
+- Authors: Zihan Chen, Lei Nico Zheng, Di Zhu
+- arXiv: 2610.40324
+- Plain-English subtitle: Why crowds are too optimistic about people's personal goals
+- Summary: When people post their own goals on prediction markets, crowds bet on success about 4 percentage points more often than those goals actually get achieved. This optimism bias emerges within a day of trading and peaks just before the deadline, even when the person making the goal doesn't trade at all. The person themselves ends up supplying most of the correction, suggesting the crowd's rosy outlook isn't based on better information — it's just belief.
+- Why it matters: As more people crowdsource forecasts about their lives — from fitness goals to career milestones — this systematic overconfidence could lead them to overestimate their odds of success and plan poorly. The finding also reveals a gap in how crowds work: they're good at aggregating information about external events, but when it comes to personal futures, the person with the goal holds information the market never taps into. Trying to improve forecasts by learning from past markets barely helps, since the real knowledge lives with the goal-setter.
 
 ### Collaborative AI agents for autonomous experimental research with solid-state quantum spins
 - URL: https://paperplaine.com/papers/collaborative-ai-agents-for
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI image generation faster by splitting what details need global thinking
 - Summary: A new AI image generation system separates coarse image structure from fine detail, forcing only the basic structure to be processed through expensive global attention while detail gets handled locally. The result: sharper images at 38% lower computational cost compared to leading systems, and faster training.
 - Why it matters: Image generation AI is computationally expensive, raising costs for companies building these systems and limiting access for smaller labs. This technique cuts that cost significantly while improving quality, making high-resolution image generation more feasible to run and deploy at scale.
-
-### Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori
-- URL: https://paperplaine.com/papers/single-temperature-ranked-greedy
-- Category: Mathematics
-- Authors: Hao Geng, Nan Su, Gabriele Cavallaro
-- arXiv: 2610.40515
-- Plain-English subtitle: A faster way to solve fiendishly hard optimization puzzles on grid patterns
-- Summary: Researchers developed a new algorithm that solves a notoriously difficult optimization problem on two-dimensional grids much faster than existing methods. On a standard large benchmark problem, the approach found the proven best answer in about 12 seconds on a desktop computer, and successfully solved all tested grid-based instances, including 9 previously hard cases.
-- Why it matters: These grid optimization problems appear in real applications like circuit design and materials science, where finding the best solution can save computational resources and money. Faster algorithms mean companies can solve larger, more practical problems in reasonable timeframes instead of waiting hours or days for answers.
-
-### Renormalization for Robust Memory without Synchronization
-- URL: https://paperplaine.com/papers/renormalization-for-robust-memory
-- Category: Physics
-- Authors: Shashwat Chakraborty, Jong Yeon Lee
-- arXiv: 2610.40651
-- Plain-English subtitle: How quantum memories can survive without a master clock
-- Summary: Physical systems can protect information against errors even when different parts update at random, unpredictable times instead of in lockstep. Researchers proved this works by developing a mathematical framework that shows how independent local actions can collectively stabilize stored data—and they demonstrated it works in multiple dimensions, including real three-dimensional systems.
-- Why it matters: Most quantum computers and memory devices rely on synchronized updates across all components, which is expensive and difficult to maintain. If information can be reliably stored without this synchronization requirement, it would simplify the engineering of quantum systems and make them more practical for real-world use by reducing the overhead needed to coordinate billions of parts.
-
-### REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation
-- URL: https://paperplaine.com/papers/reger-modeling-inter-item
-- Category: Computer Science · AI
-- Authors: Yuxi Huang, Silin Zhou, Chenhao Wang et al.
-- arXiv: 2610.37584
-- Plain-English subtitle: Teaching recommendation systems to understand which products naturally belong together
-- Summary: A new recommendation system called REGER learns which items are related to each other before trying to predict what users want next. By first training on how items connect semantically—teaching the system that winter coats and snow boots go together—the model makes better predictions about what each person will like, outperforming existing recommendation systems on real-world datasets.
-- Why it matters: Better recommendations mean people spend less time searching and find products they actually want, while stores increase sales by showing relevant items. This approach could particularly help online platforms with massive catalogs—where helping users navigate millions of options has a direct impact on engagement and revenue. The framework also provides a mathematical foundation for how these systems should decompose user preferences, potentially making recommendation AI more transparent and reliable.
 
 ## About
 
