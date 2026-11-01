@@ -502,6 +502,8 @@ function buildPage({ title, description, canonical, prevUrl = null, nextUrl = nu
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
 <link rel="canonical" href="${escapeHtml(canonical)}">
 ${prevUrl ? `<link rel="prev" href="${escapeHtml(DOMAIN + prevUrl)}">` : ''}
 ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
