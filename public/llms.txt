@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1076 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1079 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 368 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 369 papers in archive.
+  - "From extreme weather to agricultural consequences with agentic AI"
   - "Luggage re-identification: A study of strategies towards a real-world application"
-  - "Rethinking Neural Thickets Without Weight Perturbations"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 87 papers in archive.
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
   - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
@@ -45,20 +45,47 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 92 papers in archive.
   - "The Verification Wall in Microbial Metabolomics"
   - "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 92 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 93 papers in archive.
+  - "What FLARE's Published Numbers Actually Measure"
   - "Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries"
-  - "Uncertainty Quantification for Financial Foundation Models: A Survey"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 93 papers in archive.
   - "Numerical Integration on Bounded Domains via Learned Reflected Diffusions"
   - "An Input Skip Can Reparameterize a VAE Without Improving the Generator"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 86 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 87 papers in archive.
+  - "Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond"
   - "MRUD: Maximally Redundant Unsigned Digit Number Systems for High-Performance Arithmetic Units"
-  - "Coordinated and Uncoordinated Channel Tracking for High-Rate IoT in Distributed Massive MIMO With Low-Resolution ADCs"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 76 papers in archive.
   - "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
   - "Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience"
 
 ## 10 most recent papers
+
+### From extreme weather to agricultural consequences with agentic AI
+- URL: https://paperplaine.com/papers/from-extreme-weather-to
+- Category: Computer Science · AI
+- Authors: Minghan Yu, Mengyu Dai, Yixin Wen et al.
+- arXiv: 2610.40641
+- Plain-English subtitle: AI that predicts which crops will be destroyed before storms arrive
+- Summary: Researchers built an AI agent called WxCrop that predicts which crops will be damaged by extreme weather—hurricanes, freezes, and droughts—days before they hit. Unlike existing weather forecasts that only predict where a storm will strike, WxCrop combines weather data with agricultural information to estimate actual crop losses, tested successfully on Florida hurricanes with 98% accuracy at detecting storm impact and losses reproduced to within 2% in held-out years.
+- Why it matters: Farmers and governments currently can't estimate crop damage until after a disaster strikes, making it impossible to prepare. WxCrop lets them know in advance which crops in which areas are at risk and by how much, so insurance companies can mobilize resources, growers can protect or relocate livestock and equipment, and governments can arrange emergency aid before losses occur. The same method works for other hazards and regions, turning vague weather warnings into actionable crop-specific damage estimates.
+
+### Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond
+- URL: https://paperplaine.com/papers/multistatic-isac-with-deep
+- Category: Engineering
+- Authors: Yalin E. Sagduyu, Tugba Erpek, Sastry Kompella
+- arXiv: 2610.40586
+- Plain-English subtitle: Using AI to spot moving objects hidden in 5G radio clutter
+- Summary: Researchers developed a method to detect and track objects using 5G wireless signals bounced between multiple receivers, even when dense environmental clutter scrambles the signal. Deep learning models outperformed traditional techniques at filtering out noise and pinpointing a target's exact position and speed, especially in challenging conditions.
+- Why it matters: 5G networks could serve double duty as both communication and radar systems without extra hardware, lowering infrastructure costs. Better clutter filtering means more reliable object tracking for autonomous vehicles, drones, and industrial monitoring — applications that currently demand dedicated radar equipment. This approach works with signals already traveling through the air, making it practical to deploy quickly.
+
+### What FLARE's Published Numbers Actually Measure
+- URL: https://paperplaine.com/papers/what-flare-s-published
+- Category: Quantitative Finance
+- Authors: Dung Cao, Palaash Gang, Arjun Veluri
+- arXiv: 2610.33604
+- Plain-English subtitle: How a popular finance AI benchmark hides what it's actually measuring
+- Summary: Researchers auditing FLARE, a widely-used benchmark for testing AI on financial tasks, found that many published scores reflect the arbitrary rules used to extract answers from models rather than actual model performance. On some tasks, switching between two different answer-extraction rules — both used in the benchmark — changed reported accuracy by up to 42 percentage points, yet the leaderboard never states which rule produced each score.
+- Why it matters: Researchers, companies, and AI labs rely on these benchmark scores to decide which models to deploy for real financial decisions. A score that's partially determined by a hidden extraction rule rather than model capability can make a weaker model appear stronger than it is, or vice versa. This audit reveals that many published FLARE results are not directly comparable, and that readers cannot trust rankings without knowing three unreported quantities: how often the extraction rule failed to work, which models' outputs it could handle, and what the floor score would be by chance alone.
 
 ### Luggage re-identification: A study of strategies towards a real-world application
 - URL: https://paperplaine.com/papers/luggage-re-identification-a
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: AI agents that check each other's work while running quantum experiments
 - Summary: Researchers built a team of AI agents that can design experiments, make predictions, and hold each other accountable for their conclusions—then tested it on quantum systems. When the team's first result seemed to confirm their theory, the agents caught that their measurement was drifting and reran the experiment with a stricter protocol before accepting the finding.
 - Why it matters: Most AI systems generate plausible-sounding claims without questioning themselves, but scientific research requires catching errors before they spread. This work shows AI can be designed to self-correct and demand real evidence, which could accelerate physics and materials research by automating the laborious cycle of measurement, checking, and redesign that normally takes human scientists months.
-
-### The Verification Wall in Microbial Metabolomics
-- URL: https://paperplaine.com/papers/the-verification-wall-in
-- Category: Quantitative Biology
-- Authors: Takahiko Koyama
-- arXiv: 2610.39914
-- Plain-English subtitle: Why we can't keep up with bacteria's hidden chemistry
-- Summary: Scientists can now computationally predict the structures of gut bacteria metabolites faster than any lab can verify they're correct. The bottleneck is not coming up with new structures—it's confirming them, and even the best spectral prediction methods only identify the right molecule about one-third of the time. Of 10,645 computationally predicted metabolites analyzed, between 5% and 37% have no clear path to verification at all.
-- Why it matters: Without confirmed structures, researchers cannot safely draw conclusions about how gut bacteria influence human health—they're essentially looking at a list of chemical candidates rather than known facts. The verification bottleneck will only worsen as computational methods generate more and more predictions, and no existing shortcut (like spectral matching or crystal diffraction) can confirm structures at the speed they're now being proposed. This means critical questions about the microbiome may remain unanswerable unless labs develop faster ways to verify which molecules are actually there.
-
-### MRUD: Maximally Redundant Unsigned Digit Number Systems for High-Performance Arithmetic Units
-- URL: https://paperplaine.com/papers/mrud-maximally-redundant-unsigned
-- Category: Engineering
-- Authors: Samaneh Rahimi, Ali Azarpeyvand
-- arXiv: 2610.39638
-- Plain-English subtitle: A faster way to do math inside computer chips without carrying
-- Summary: Computer scientists have developed a new numbering system called MRUD that lets processors perform multiplication 43% faster and use 26% less area than current methods. Unlike earlier redundant systems that struggled with multiplication, MRUD works at higher speeds while keeping the advantage of carry-free addition—a fundamental operation that normally creates delays inside chips.
-- Why it matters: Faster arithmetic units directly speed up everything from smartphone processors to data center servers. A 43% improvement in multiplication performance translates to real gains in processing speed, power consumption, and chip size—especially for tasks like machine learning that repeat these operations millions of times per second.
-
-### When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder
-- URL: https://paperplaine.com/papers/when-to-assist-and
-- Category: Computer Science · AI
-- Authors: A. J. A. Jubayer Talukder, Mohammad Ariful Haque
-- arXiv: 2610.40611
-- Plain-English subtitle: Building smarter assistants that know when and what to suggest
-- Summary: A single AI model can decide when to offer help and generate useful suggestions during conversation by combining two tasks in one pass. The system relies heavily on memory of past conversation to pick good hints—removing that context cuts quality in half—but adding a separate retriever or larger generator doesn't help.
-- Why it matters: Assistants built this way run 1.3 to 1.8 times faster than traditional two-model systems while maintaining quality, which matters for real-time applications like customer support or coding tools. The finding that memory—not model size—drives hint quality suggests companies can shrink their AI systems while keeping them effective, cutting both computational cost and latency.
 
 ## About
 
