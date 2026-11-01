@@ -530,6 +530,8 @@ ${nextUrl ? `<link rel="next" href="${escapeHtml(DOMAIN + nextUrl)}">` : ''}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>${CSS}</style>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <svg class="plane-symbol" xmlns="http://www.w3.org/2000/svg">
@@ -988,10 +990,13 @@ function generatePrivacyHTML(sidebarHTML = '', mobileStatsHTML = '') {
       <h3 class="about-subheading">Cookies</h3>
       <p>Paper Plaine does not set any cookies of its own. Vercel may set a cookie for performance and security purposes. This site loads fonts from Google Fonts; Google may collect data in connection with that request, subject to <a href="https://policies.google.com/privacy" class="about-link">Google&rsquo;s Privacy Policy</a>.</p>
 
+      <h3 class="about-subheading">Analytics</h3>
+      <p>This site uses Vercel Web Analytics to count visits and see which pages are viewed. It does not use cookies or follow you across other websites.</p>
+
       <h3 class="about-subheading">Third-party services</h3>
       <p>Paper Plaine uses the following third-party services to operate:</p>
       <ul class="about-list">
-        <li><strong>Vercel</strong> &mdash; hosting and content delivery</li>
+        <li><strong>Vercel</strong> &mdash; hosting, content delivery and anonymous visit counts</li>
         <li><strong>Anthropic (Claude)</strong> &mdash; AI-generated summaries and subtitles for each paper</li>
         <li><strong>arXiv / Cornell University</strong> &mdash; source of all research papers</li>
         <li><strong>Google Fonts</strong> &mdash; web font delivery</li>
