@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1079 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1082 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 369 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 370 papers in archive.
+  - "Latent Reasoning in Continuous Space for Unified Multimodal Models"
   - "From extreme weather to agricultural consequences with agentic AI"
-  - "Luggage re-identification: A study of strategies towards a real-world application"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 87 papers in archive.
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
   - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 92 papers in archive.
   - "Numerical Investigation of Soft-to-Hard Convergence: Discretization, Admissibility, and Spectral Regularity"
   - "Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 92 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 93 papers in archive.
+  - "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening"
   - "The Verification Wall in Microbial Metabolomics"
-  - "CogArena: Benchmarking Multimodal Agents on Interactive Behavioral Experiments"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 93 papers in archive.
   - "What FLARE's Published Numbers Actually Measure"
   - "Right Numbers, Wrong Questions: Evaluating LLMs on Underspecified Financial Queries"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 87 papers in archive.
   - "Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond"
   - "MRUD: Maximally Redundant Unsigned Digit Number Systems for High-Performance Arithmetic Units"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 76 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 77 papers in archive.
+  - "Why delivered costs understate prices in an integrated global hydrogen market"
   - "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
-  - "Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience"
 
 ## 10 most recent papers
+
+### Latent Reasoning in Continuous Space for Unified Multimodal Models
+- URL: https://paperplaine.com/papers/latent-reasoning-in-continuous
+- Category: Computer Science · AI
+- Authors: Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al.
+- arXiv: 2610.42149
+- Plain-English subtitle: Making AI image generators smarter by letting them reason like language models do
+- Summary: A new system called LARC lets AI models that generate images from text use step-by-step reasoning the same way large language models do, fixing a fundamental mismatch between how reasoning works and how image generation works. The result: images that follow complex prompts more accurately and improve dramatically when given more computing time at test time, just like ChatGPT does.
+- Why it matters: Image generation AI has lagged behind language models in reasoning capability and controllability — users couldn't get detailed, compositionally accurate results for complex requests. LARC closes that gap, meaning designers, artists, and everyday users can now generate images with the same level of instruction-following precision they've come to expect from text AI. It also means image generators will get better when companies invest in more compute, opening a path to continuous improvement rather than hitting a performance ceiling.
+
+### Why delivered costs understate prices in an integrated global hydrogen market
+- URL: https://paperplaine.com/papers/why-delivered-costs-understate
+- Category: Economics
+- Authors: Bastian Weißenburger, Martin Wietschel, Patrick Plötz et al.
+- arXiv: 2610.41447
+- Plain-English subtitle: Why cheap hydrogen to import doesn't mean cheap hydrogen to buy
+- Summary: When many countries compete for hydrogen on a global market, the price each region pays can be much higher than the cost to deliver it there—a gap researchers quantified at an average of 63 euros per megawatt-hour by 2045, or about half the delivery cost. Surprisingly, competition between buyers, not just higher shipping costs, drives this gap: in some regions, wholesale prices actually rise while the average cost of delivered supplies falls.
+- Why it matters: Governments and industries planning hydrogen imports often assume they'll pay the cost to produce and ship it. This research shows they may actually pay 50% more due to market competition alone. Countries building hydrogen strategies based on delivery costs alone risk underestimating the true expense and making poor investment decisions about where to source hydrogen or how much to develop domestic production.
+
+### A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening
+- URL: https://paperplaine.com/papers/a-low-rank-space
+- Category: Quantitative Biology
+- Authors: Zach Paris, Emily Finn
+- arXiv: 2610.40511
+- Plain-English subtitle: Why only a tiny slice of AI language models predicts brain activity
+- Summary: A new analysis shows that large language models align with human brain activity during listening through just 1-3% of their representational dimensions—far fewer than the models' full complexity would suggest. These minimal "brain-predictive subspaces" generalize across different people and brain-imaging methods, revealing that neural alignment depends on a compact, structured subset of the model's learned features rather than its overall variation.
+- Why it matters: Understanding which parts of AI language models actually match brain function could accelerate neuroscience research and improve how we use these models to study human cognition. It also suggests that much of an LLM's learned complexity is irrelevant to language processing in the brain—a finding that could inform more efficient model design and help researchers identify which model features are genuinely cognitive versus merely statistical artifacts.
 
 ### From extreme weather to agricultural consequences with agentic AI
 - URL: https://paperplaine.com/papers/from-extreme-weather-to
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why shaking up a neural network's final answers works better than tweaking its weights
 - Summary: Researchers tested a popular theory about how language models find multiple expert solutions by randomly jiggling their internal weights. They found the gains were real, but the explanation was wrong—you don't need to perturb weights at all. Simply adding random noise to the model's final output predictions, then picking the best ones and combining them, matched or beat the original method on reasoning tasks. This simpler approach works by creating diverse predictions and selecting strong ones, a principle that also boosts vision models under new visual conditions.
 - Why it matters: Current methods for improving language and vision models often require expensive retraining or weight manipulation. This finding offers a faster, cheaper alternative: frozen models can improve dramatically just by adding noise to their outputs and voting among the results. Since the method requires no training and runs at inference time, it could be deployed immediately to existing models without modification, making better AI accessible without computational overhead.
-
-### Numerical Integration on Bounded Domains via Learned Reflected Diffusions
-- URL: https://paperplaine.com/papers/numerical-integration-on-bounded
-- Category: Statistics
-- Authors: Kirill Korolev, Artur Goldman, Timofei Gritsaev et al.
-- arXiv: 2610.40499
-- Plain-English subtitle: Teaching AI to compute integrals inside boxes more efficiently
-- Summary: Researchers developed a new method for calculating complex integrals in high-dimensional spaces—a fundamental task in science and engineering—by training a neural network to learn where to sample points most strategically. The key innovation is keeping all sample points inside bounded regions (like boxes) where they're supposed to be, while still adapting intelligently to the shape of the function being integrated. The method scales well even in very high dimensions and outperforms standard approaches on both test problems and real-world applications.
-- Why it matters: High-dimensional integration appears constantly in physics simulations, machine learning, and statistics—anywhere scientists need to sum up contributions across enormous spaces of possibilities. Existing methods either ignore where the function is most interesting (wasting computation) or require custom proposal distributions that are hard to build. This approach automates that process and works reliably even when the function is jagged or poorly behaved, making expensive simulations faster and more accurate.
-
-### Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals
-- URL: https://paperplaine.com/papers/crowds-believe-in-you
-- Category: Economics
-- Authors: Zihan Chen, Lei Nico Zheng, Di Zhu
-- arXiv: 2610.40324
-- Plain-English subtitle: Why crowds are too optimistic about people's personal goals
-- Summary: When people post their own goals on prediction markets, crowds bet on success about 4 percentage points more often than those goals actually get achieved. This optimism bias emerges within a day of trading and peaks just before the deadline, even when the person making the goal doesn't trade at all. The person themselves ends up supplying most of the correction, suggesting the crowd's rosy outlook isn't based on better information — it's just belief.
-- Why it matters: As more people crowdsource forecasts about their lives — from fitness goals to career milestones — this systematic overconfidence could lead them to overestimate their odds of success and plan poorly. The finding also reveals a gap in how crowds work: they're good at aggregating information about external events, but when it comes to personal futures, the person with the goal holds information the market never taps into. Trying to improve forecasts by learning from past markets barely helps, since the real knowledge lives with the goal-setter.
-
-### Collaborative AI agents for autonomous experimental research with solid-state quantum spins
-- URL: https://paperplaine.com/papers/collaborative-ai-agents-for
-- Category: Computer Science · AI
-- Authors: El Mustapha Mansouri, Eikichi Kimura, Masato Koga et al.
-- arXiv: 2610.40589
-- Plain-English subtitle: AI agents that check each other's work while running quantum experiments
-- Summary: Researchers built a team of AI agents that can design experiments, make predictions, and hold each other accountable for their conclusions—then tested it on quantum systems. When the team's first result seemed to confirm their theory, the agents caught that their measurement was drifting and reran the experiment with a stricter protocol before accepting the finding.
-- Why it matters: Most AI systems generate plausible-sounding claims without questioning themselves, but scientific research requires catching errors before they spread. This work shows AI can be designed to self-correct and demand real evidence, which could accelerate physics and materials research by automating the laborious cycle of measurement, checking, and redesign that normally takes human scientists months.
 
 ## About
 
