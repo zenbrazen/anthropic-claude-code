@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.03592",
+    "title": "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models",
+    "authors": "Thomas Decker, Volker Tresp",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-02T18:34:50Z",
+    "publishedFormatted": "Nov 2, 2026",
+    "subtitle": "Why AI forecasting models often get their confidence levels wrong",
+    "summary": "Popular AI models trained to predict future time series data often express false confidence in their forecasts, even when their predictions are uncertain. Researchers created a detailed testing framework that exposed systematic errors in how these models calibrate their confidence levels across different prediction distances, and found that common fixes fail to address many of these errors.",
+    "whyItMatters": "When a weather model says it's 80% confident in tomorrow's forecast but is actually right only 60% of the time, people make worse decisions—from flight bookings to supply chain planning. This work reveals which popular forecasting models have these trust problems and which fix-it techniques actually work, helping engineers build systems people can genuinely rely on.",
+    "fetchedAt": "2026-11-03T23:50:11.397Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 145
+    },
+    "slug": "evaluating-uncertainty-calibration-in"
+  },
+  {
+    "id": "2611.02593",
+    "title": "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding",
+    "authors": "Shiqi Shen, Shurui Li, Xilin Zhang et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-11-02T06:17:53Z",
+    "publishedFormatted": "Nov 2, 2026",
+    "subtitle": "Brain scans that decode what you imagine from hearing words alone",
+    "summary": "Researchers created AVID, a dataset of 67 hours of high-resolution brain scans from nine people imagining visual scenes while listening to spoken descriptions in Mandarin. Unlike previous datasets that mixed real visual input with imagination, AVID isolates the brain signals that generate mental imagery from scratch, offering a cleaner foundation for building computer systems that can reconstruct what someone is picturing based on their brain activity alone.",
+    "whyItMatters": "Mental imagery decoding could eventually restore visual communication for people with paralysis or locked-in syndrome, allowing them to project their thoughts onto a screen. The dataset's cleaner design—separating pure imagination from visual memory—should accelerate progress on these brain-computer interfaces. It also provides researchers their first large, high-quality benchmark for testing imagery reconstruction algorithms fairly.",
+    "fetchedAt": "2026-11-03T23:50:14.396Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 242
+    },
+    "slug": "avid-a-5t-fmri"
+  },
+  {
+    "id": "2611.03512",
+    "title": "ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction",
+    "authors": "Aashish Bohra, Vivek Vijay",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-11-02T17:47:20Z",
+    "publishedFormatted": "Nov 2, 2026",
+    "subtitle": "Predicting traffic flow when sensor networks change between training and real use",
+    "summary": "Traffic prediction models trained on one city's sensor network often fail when deployed elsewhere, because both the sensors themselves and the patterns they measure shift. Researchers built ST-GFM, a model that tracks these two types of change separately and proved mathematically how much prediction errors can grow when sensors drift. On two major traffic datasets, it outperformed competing models by 3–13%, and its self-supervised training method recovers 90% of the performance lost when that step is skipped.",
+    "whyItMatters": "Transportation agencies deploy traffic forecasting across dozens of cities with different road layouts and sensor configurations. A model that remains accurate as real-world conditions shift reduces the need to retrain from scratch each time a network changes, cutting deployment costs and keeping predictions reliable. The mathematical bounds also let engineers know in advance how much they can trust the model when sensors degrade or fail.",
+    "fetchedAt": "2026-11-03T23:50:18.005Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 21,
+      "wordCount": 238
+    },
+    "slug": "st-gfm-spectral-temporal"
+  },
+  {
     "id": "2611.03618",
     "title": "Strategist: Evolving Reasoning with Agents",
     "authors": "Taiming Lu, Qi Xu, Zhigang Hua et al.",

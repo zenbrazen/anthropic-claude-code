@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1088 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1091 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-03
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models
+Subtitle: Why AI forecasting models often get their confidence levels wrong
+URL: https://paperplaine.com/papers/evaluating-uncertainty-calibration-in
+Category: Computer Science · AI
+Authors: Thomas Decker, Volker Tresp
+arXiv ID: 2611.03592
+arXiv URL: https://arxiv.org/abs/2611.03592
+Posted: 2026-11-03
+
+Summary: Popular AI models trained to predict future time series data often express false confidence in their forecasts, even when their predictions are uncertain. Researchers created a detailed testing framework that exposed systematic errors in how these models calibrate their confidence levels across different prediction distances, and found that common fixes fail to address many of these errors.
+
+Why it matters: When a weather model says it's 80% confident in tomorrow's forecast but is actually right only 60% of the time, people make worse decisions—from flight bookings to supply chain planning. This work reveals which popular forecasting models have these trust problems and which fix-it techniques actually work, helping engineers build systems people can genuinely rely on.
+
+---
+Title: AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding
+Subtitle: Brain scans that decode what you imagine from hearing words alone
+URL: https://paperplaine.com/papers/avid-a-5t-fmri
+Category: Quantitative Biology
+Authors: Shiqi Shen, Shurui Li, Xilin Zhang et al.
+arXiv ID: 2611.02593
+arXiv URL: https://arxiv.org/abs/2611.02593
+Posted: 2026-11-03
+
+Summary: Researchers created AVID, a dataset of 67 hours of high-resolution brain scans from nine people imagining visual scenes while listening to spoken descriptions in Mandarin. Unlike previous datasets that mixed real visual input with imagination, AVID isolates the brain signals that generate mental imagery from scratch, offering a cleaner foundation for building computer systems that can reconstruct what someone is picturing based on their brain activity alone.
+
+Why it matters: Mental imagery decoding could eventually restore visual communication for people with paralysis or locked-in syndrome, allowing them to project their thoughts onto a screen. The dataset's cleaner design—separating pure imagination from visual memory—should accelerate progress on these brain-computer interfaces. It also provides researchers their first large, high-quality benchmark for testing imagery reconstruction algorithms fairly.
+
+---
+Title: ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction
+Subtitle: Predicting traffic flow when sensor networks change between training and real use
+URL: https://paperplaine.com/papers/st-gfm-spectral-temporal
+Category: Engineering
+Authors: Aashish Bohra, Vivek Vijay
+arXiv ID: 2611.03512
+arXiv URL: https://arxiv.org/abs/2611.03512
+Posted: 2026-11-03
+
+Summary: Traffic prediction models trained on one city's sensor network often fail when deployed elsewhere, because both the sensors themselves and the patterns they measure shift. Researchers built ST-GFM, a model that tracks these two types of change separately and proved mathematically how much prediction errors can grow when sensors drift. On two major traffic datasets, it outperformed competing models by 3–13%, and its self-supervised training method recovers 90% of the performance lost when that step is skipped.
+
+Why it matters: Transportation agencies deploy traffic forecasting across dozens of cities with different road layouts and sensor configurations. A model that remains accurate as real-world conditions shift reduces the need to retrain from scratch each time a network changes, cutting deployment costs and keeping predictions reliable. The mathematical bounds also let engineers know in advance how much they can trust the model when sensors degrade or fail.
 
 ---
 Title: Strategist: Evolving Reasoning with Agents

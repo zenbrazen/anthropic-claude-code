@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1088 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1091 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 372 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 373 papers in archive.
+  - "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models"
   - "Strategist: Evolving Reasoning with Agents"
-  - "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 88 papers in archive.
   - "Simple Features Beat Most AI Control Monitors"
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
@@ -42,23 +42,50 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 93 papers in archive.
   - "Regret-Optimal Wasserstein-Robust Linear Regression"
   - "Numerical Investigation of Soft-to-Hard Convergence: Discretization, Admissibility, and Spectral Regularity"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 93 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 94 papers in archive.
+  - "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding"
   - "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening"
-  - "The Verification Wall in Microbial Metabolomics"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 94 papers in archive.
   - "Learning AI Agents, Market Makers, and Stress in Automated Markets"
   - "What FLARE's Published Numbers Actually Measure"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 93 papers in archive.
   - "Numerical Integration on Bounded Domains via Learned Reflected Diffusions"
   - "An Input Skip Can Reparameterize a VAE Without Improving the Generator"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 87 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 88 papers in archive.
+  - "ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction"
   - "Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond"
-  - "MRUD: Maximally Redundant Unsigned Digit Number Systems for High-Performance Arithmetic Units"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 77 papers in archive.
   - "Why delivered costs understate prices in an integrated global hydrogen market"
   - "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
 
 ## 10 most recent papers
+
+### Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models
+- URL: https://paperplaine.com/papers/evaluating-uncertainty-calibration-in
+- Category: Computer Science · AI
+- Authors: Thomas Decker, Volker Tresp
+- arXiv: 2611.03592
+- Plain-English subtitle: Why AI forecasting models often get their confidence levels wrong
+- Summary: Popular AI models trained to predict future time series data often express false confidence in their forecasts, even when their predictions are uncertain. Researchers created a detailed testing framework that exposed systematic errors in how these models calibrate their confidence levels across different prediction distances, and found that common fixes fail to address many of these errors.
+- Why it matters: When a weather model says it's 80% confident in tomorrow's forecast but is actually right only 60% of the time, people make worse decisions—from flight bookings to supply chain planning. This work reveals which popular forecasting models have these trust problems and which fix-it techniques actually work, helping engineers build systems people can genuinely rely on.
+
+### AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding
+- URL: https://paperplaine.com/papers/avid-a-5t-fmri
+- Category: Quantitative Biology
+- Authors: Shiqi Shen, Shurui Li, Xilin Zhang et al.
+- arXiv: 2611.02593
+- Plain-English subtitle: Brain scans that decode what you imagine from hearing words alone
+- Summary: Researchers created AVID, a dataset of 67 hours of high-resolution brain scans from nine people imagining visual scenes while listening to spoken descriptions in Mandarin. Unlike previous datasets that mixed real visual input with imagination, AVID isolates the brain signals that generate mental imagery from scratch, offering a cleaner foundation for building computer systems that can reconstruct what someone is picturing based on their brain activity alone.
+- Why it matters: Mental imagery decoding could eventually restore visual communication for people with paralysis or locked-in syndrome, allowing them to project their thoughts onto a screen. The dataset's cleaner design—separating pure imagination from visual memory—should accelerate progress on these brain-computer interfaces. It also provides researchers their first large, high-quality benchmark for testing imagery reconstruction algorithms fairly.
+
+### ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction
+- URL: https://paperplaine.com/papers/st-gfm-spectral-temporal
+- Category: Engineering
+- Authors: Aashish Bohra, Vivek Vijay
+- arXiv: 2611.03512
+- Plain-English subtitle: Predicting traffic flow when sensor networks change between training and real use
+- Summary: Traffic prediction models trained on one city's sensor network often fail when deployed elsewhere, because both the sensors themselves and the patterns they measure shift. Researchers built ST-GFM, a model that tracks these two types of change separately and proved mathematically how much prediction errors can grow when sensors drift. On two major traffic datasets, it outperformed competing models by 3–13%, and its self-supervised training method recovers 90% of the performance lost when that step is skipped.
+- Why it matters: Transportation agencies deploy traffic forecasting across dozens of cities with different road layouts and sensor configurations. A model that remains accurate as real-world conditions shift reduces the need to retrain from scratch each time a network changes, cutting deployment costs and keeping predictions reliable. The mathematical bounds also let engineers know in advance how much they can trust the model when sensors degrade or fail.
 
 ### Strategist: Evolving Reasoning with Agents
 - URL: https://paperplaine.com/papers/strategist-evolving-reasoning-with
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI image generators smarter by letting them reason like language models do
 - Summary: A new system called LARC lets AI models that generate images from text use step-by-step reasoning the same way large language models do, fixing a fundamental mismatch between how reasoning works and how image generation works. The result: images that follow complex prompts more accurately and improve dramatically when given more computing time at test time, just like ChatGPT does.
 - Why it matters: Image generation AI has lagged behind language models in reasoning capability and controllability — users couldn't get detailed, compositionally accurate results for complex requests. LARC closes that gap, meaning designers, artists, and everyday users can now generate images with the same level of instruction-following precision they've come to expect from text AI. It also means image generators will get better when companies invest in more compute, opening a path to continuous improvement rather than hitting a performance ceiling.
-
-### Why delivered costs understate prices in an integrated global hydrogen market
-- URL: https://paperplaine.com/papers/why-delivered-costs-understate
-- Category: Economics
-- Authors: Bastian Weißenburger, Martin Wietschel, Patrick Plötz et al.
-- arXiv: 2610.41447
-- Plain-English subtitle: Why cheap hydrogen to import doesn't mean cheap hydrogen to buy
-- Summary: When many countries compete for hydrogen on a global market, the price each region pays can be much higher than the cost to deliver it there—a gap researchers quantified at an average of 63 euros per megawatt-hour by 2045, or about half the delivery cost. Surprisingly, competition between buyers, not just higher shipping costs, drives this gap: in some regions, wholesale prices actually rise while the average cost of delivered supplies falls.
-- Why it matters: Governments and industries planning hydrogen imports often assume they'll pay the cost to produce and ship it. This research shows they may actually pay 50% more due to market competition alone. Countries building hydrogen strategies based on delivery costs alone risk underestimating the true expense and making poor investment decisions about where to source hydrogen or how much to develop domestic production.
-
-### A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening
-- URL: https://paperplaine.com/papers/a-low-rank-space
-- Category: Quantitative Biology
-- Authors: Zach Paris, Emily Finn
-- arXiv: 2610.40511
-- Plain-English subtitle: Why only a tiny slice of AI language models predicts brain activity
-- Summary: A new analysis shows that large language models align with human brain activity during listening through just 1-3% of their representational dimensions—far fewer than the models' full complexity would suggest. These minimal "brain-predictive subspaces" generalize across different people and brain-imaging methods, revealing that neural alignment depends on a compact, structured subset of the model's learned features rather than its overall variation.
-- Why it matters: Understanding which parts of AI language models actually match brain function could accelerate neuroscience research and improve how we use these models to study human cognition. It also suggests that much of an LLM's learned complexity is irrelevant to language processing in the brain—a finding that could inform more efficient model design and help researchers identify which model features are genuinely cognitive versus merely statistical artifacts.
-
-### From extreme weather to agricultural consequences with agentic AI
-- URL: https://paperplaine.com/papers/from-extreme-weather-to
-- Category: Computer Science · AI
-- Authors: Minghan Yu, Mengyu Dai, Yixin Wen et al.
-- arXiv: 2610.40641
-- Plain-English subtitle: AI that predicts which crops will be destroyed before storms arrive
-- Summary: Researchers built an AI agent called WxCrop that predicts which crops will be damaged by extreme weather—hurricanes, freezes, and droughts—days before they hit. Unlike existing weather forecasts that only predict where a storm will strike, WxCrop combines weather data with agricultural information to estimate actual crop losses, tested successfully on Florida hurricanes with 98% accuracy at detecting storm impact and losses reproduced to within 2% in held-out years.
-- Why it matters: Farmers and governments currently can't estimate crop damage until after a disaster strikes, making it impossible to prepare. WxCrop lets them know in advance which crops in which areas are at risk and by how much, so insurance companies can mobilize resources, growers can protect or relocate livestock and equipment, and governments can arrange emergency aid before losses occur. The same method works for other hazards and regions, turning vague weather warnings into actionable crop-specific damage estimates.
 
 ## About
 

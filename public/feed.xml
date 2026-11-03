@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 14:51:37 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 23:50:18 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models</title>
+      <link>https://paperplaine.com/papers/evaluating-uncertainty-calibration-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/evaluating-uncertainty-calibration-in</guid>
+      <pubDate>Mon, 02 Nov 2026 18:34:50 GMT</pubDate>
+      <author>Thomas Decker, Volker Tresp</author>
+      <category>AI</category>
+      <description>Why AI forecasting models often get their confidence levels wrong</description>
+      <content:encoded><![CDATA[<p><em>Why AI forecasting models often get their confidence levels wrong</em></p><p>Popular AI models trained to predict future time series data often express false confidence in their forecasts, even when their predictions are uncertain. Researchers created a detailed testing framework that exposed systematic errors in how these models calibrate their confidence levels across different prediction distances, and found that common fixes fail to address many of these errors.</p><p><strong>Why it matters:</strong> When a weather model says it's 80% confident in tomorrow's forecast but is actually right only 60% of the time, people make worse decisions—from flight bookings to supply chain planning. This work reveals which popular forecasting models have these trust problems and which fix-it techniques actually work, helping engineers build systems people can genuinely rely on.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding</title>
+      <link>https://paperplaine.com/papers/avid-a-5t-fmri</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/avid-a-5t-fmri</guid>
+      <pubDate>Mon, 02 Nov 2026 06:17:53 GMT</pubDate>
+      <author>Shiqi Shen, Shurui Li, Xilin Zhang et al.</author>
+      <category>Biology</category>
+      <description>Brain scans that decode what you imagine from hearing words alone</description>
+      <content:encoded><![CDATA[<p><em>Brain scans that decode what you imagine from hearing words alone</em></p><p>Researchers created AVID, a dataset of 67 hours of high-resolution brain scans from nine people imagining visual scenes while listening to spoken descriptions in Mandarin. Unlike previous datasets that mixed real visual input with imagination, AVID isolates the brain signals that generate mental imagery from scratch, offering a cleaner foundation for building computer systems that can reconstruct what someone is picturing based on their brain activity alone.</p><p><strong>Why it matters:</strong> Mental imagery decoding could eventually restore visual communication for people with paralysis or locked-in syndrome, allowing them to project their thoughts onto a screen. The dataset's cleaner design—separating pure imagination from visual memory—should accelerate progress on these brain-computer interfaces. It also provides researchers their first large, high-quality benchmark for testing imagery reconstruction algorithms fairly.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction</title>
+      <link>https://paperplaine.com/papers/st-gfm-spectral-temporal</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/st-gfm-spectral-temporal</guid>
+      <pubDate>Mon, 02 Nov 2026 17:47:20 GMT</pubDate>
+      <author>Aashish Bohra, Vivek Vijay</author>
+      <category>Engineering</category>
+      <description>Predicting traffic flow when sensor networks change between training and real use</description>
+      <content:encoded><![CDATA[<p><em>Predicting traffic flow when sensor networks change between training and real use</em></p><p>Traffic prediction models trained on one city's sensor network often fail when deployed elsewhere, because both the sensors themselves and the patterns they measure shift. Researchers built ST-GFM, a model that tracks these two types of change separately and proved mathematically how much prediction errors can grow when sensors drift. On two major traffic datasets, it outperformed competing models by 3–13%, and its self-supervised training method recovers 90% of the performance lost when that step is skipped.</p><p><strong>Why it matters:</strong> Transportation agencies deploy traffic forecasting across dozens of cities with different road layouts and sensor configurations. A model that remains accurate as real-world conditions shift reduces the need to retrain from scratch each time a network changes, cutting deployment costs and keeping predictions reliable. The mathematical bounds also let engineers know in advance how much they can trust the model when sensors degrade or fail.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Strategist: Evolving Reasoning with Agents</title>
       <link>https://paperplaine.com/papers/strategist-evolving-reasoning-with</link>
