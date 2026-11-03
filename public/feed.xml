@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 16:50:17 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 01:25:39 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics</title>
+      <link>https://paperplaine.com/papers/gradient-descent-on-two</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/gradient-descent-on-two</guid>
+      <pubDate>Fri, 30 Oct 2026 17:51:35 GMT</pubDate>
+      <author>Binghua Li, Mengzhe Li, Denny Wu et al.</author>
+      <category>AI</category>
+      <description>How neural networks learn to split tasks between two neurons</description>
+      <content:encoded><![CDATA[<p><em>How neural networks learn to split tasks between two neurons</em></p><p>Researchers tracked how a simple two-neuron network learns to recognize patterns, finding that learning happens in two distinct phases. First, both neurons move toward the same solution, then they suddenly diverge and specialize—like two workers initially copying each other before dividing up their responsibilities. The team mapped out the mathematical landscape of this learning process and proved that the network reliably reaches the best possible solution.</p><p><strong>Why it matters:</strong> This work cracks open how neural networks learn features from scratch, a question that has stumped researchers for decades. By understanding these dynamics in a minimal setting, scientists gain tools to predict how larger, more complex networks will behave during training—potentially leading to better network designs and faster, more reliable training methods.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Regret-Optimal Wasserstein-Robust Linear Regression</title>
+      <link>https://paperplaine.com/papers/regret-optimal-wasserstein-robust</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/regret-optimal-wasserstein-robust</guid>
+      <pubDate>Fri, 30 Oct 2026 17:47:58 GMT</pubDate>
+      <author>Sloan Nietert, Daniel Kuhn</author>
+      <category>Math</category>
+      <description>When predictions trained on one dataset fail on another</description>
+      <content:encoded><![CDATA[<p><em>When predictions trained on one dataset fail on another</em></p><p>When a machine-learning model trained on one set of data is applied to a different real-world situation, standard robust methods can perform far worse than necessary. This paper identifies when that happens and proves that two alternative approaches—minimax regret optimization and spectral-norm regularization—consistently find better solutions, sometimes improving performance by factors that grow with problem size.</p><p><strong>Why it matters:</strong> Machine-learning models routinely train on historical data but deploy on shifted or different populations: weather models trained in one region used elsewhere, credit models built on past applicants applied to new cohorts, medical algorithms developed in one hospital used in another. This work provides both theory and practical algorithms to ensure predictions remain reliable across these real-world shifts, with concrete performance guarantees.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Simple Features Beat Most AI Control Monitors</title>
+      <link>https://paperplaine.com/papers/simple-features-beat-most</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/simple-features-beat-most</guid>
+      <pubDate>Fri, 30 Oct 2026 13:21:03 GMT</pubDate>
+      <author>Shubhrangshu Debsarkar, Valmik Nahata</author>
+      <category>Comp Sci</category>
+      <description>Why simple tricks fool most AI safety monitors in standard tests</description>
+      <content:encoded><![CDATA[<p><em>Why simple tricks fool most AI safety monitors in standard tests</em></p><p>Researchers testing AI safety monitors discovered that basic statistical patterns in code—like writing style and problem type—beat 20 of 24 AI monitors designed to catch sabotaged code, without even running it. The standard evaluation dataset accidentally leaks these patterns because human-written honest code looks different from code sabotaged by older AI systems. When tested against code from Claude Sonnet 5 instead, monitors perform worse (37% vs 77% accuracy), suggesting they've been inadvertently graded on shortcuts rather than genuine sabotage detection.</p><p><strong>Why it matters:</strong> AI safety researchers rely on these evaluation benchmarks to verify that monitors can actually catch dangerous model behavior. If the monitors score well only by exploiting dataset artifacts rather than learning real detection skills, they provide false confidence that AI systems are actually being caught when they go wrong. The authors' findings mean current published scores on these benchmarks may overstate how well monitors work in real deployment, where attackers won't follow the same patterns.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Latent Reasoning in Continuous Space for Unified Multimodal Models</title>
       <link>https://paperplaine.com/papers/latent-reasoning-in-continuous</link>

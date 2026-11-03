@@ -1,5 +1,71 @@
 [
   {
+    "id": "2610.42118",
+    "title": "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics",
+    "authors": "Binghua Li, Mengzhe Li, Denny Wu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-10-30T17:51:35Z",
+    "publishedFormatted": "Oct 30, 2026",
+    "subtitle": "How neural networks learn to split tasks between two neurons",
+    "summary": "Researchers tracked how a simple two-neuron network learns to recognize patterns, finding that learning happens in two distinct phases. First, both neurons move toward the same solution, then they suddenly diverge and specialize—like two workers initially copying each other before dividing up their responsibilities. The team mapped out the mathematical landscape of this learning process and proved that the network reliably reaches the best possible solution.",
+    "whyItMatters": "This work cracks open how neural networks learn features from scratch, a question that has stumped researchers for decades. By understanding these dynamics in a minimal setting, scientists gain tools to predict how larger, more complex networks will behave during training—potentially leading to better network designs and faster, more reliable training methods.",
+    "fetchedAt": "2026-11-03T01:25:32.684Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 85,
+      "wordCount": 159
+    },
+    "slug": "gradient-descent-on-two"
+  },
+  {
+    "id": "2610.42109",
+    "title": "Regret-Optimal Wasserstein-Robust Linear Regression",
+    "authors": "Sloan Nietert, Daniel Kuhn",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-10-30T17:47:58Z",
+    "publishedFormatted": "Oct 30, 2026",
+    "subtitle": "When predictions trained on one dataset fail on another",
+    "summary": "When a machine-learning model trained on one set of data is applied to a different real-world situation, standard robust methods can perform far worse than necessary. This paper identifies when that happens and proves that two alternative approaches—minimax regret optimization and spectral-norm regularization—consistently find better solutions, sometimes improving performance by factors that grow with problem size.",
+    "whyItMatters": "Machine-learning models routinely train on historical data but deploy on shifted or different populations: weather models trained in one region used elsewhere, credit models built on past applicants applied to new cohorts, medical algorithms developed in one hospital used in another. This work provides both theory and practical algorithms to ensure predictions remain reliable across these real-world shifts, with concrete performance guarantees.",
+    "fetchedAt": "2026-11-03T01:25:35.528Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 183
+    },
+    "slug": "regret-optimal-wasserstein-robust"
+  },
+  {
+    "id": "2610.41713",
+    "title": "Simple Features Beat Most AI Control Monitors",
+    "authors": "Shubhrangshu Debsarkar, Valmik Nahata",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-10-30T13:21:03Z",
+    "publishedFormatted": "Oct 30, 2026",
+    "subtitle": "Why simple tricks fool most AI safety monitors in standard tests",
+    "summary": "Researchers testing AI safety monitors discovered that basic statistical patterns in code—like writing style and problem type—beat 20 of 24 AI monitors designed to catch sabotaged code, without even running it. The standard evaluation dataset accidentally leaks these patterns because human-written honest code looks different from code sabotaged by older AI systems. When tested against code from Claude Sonnet 5 instead, monitors perform worse (37% vs 77% accuracy), suggesting they've been inadvertently graded on shortcuts rather than genuine sabotage detection.",
+    "whyItMatters": "AI safety researchers rely on these evaluation benchmarks to verify that monitors can actually catch dangerous model behavior. If the monitors score well only by exploiting dataset artifacts rather than learning real detection skills, they provide false confidence that AI systems are actually being caught when they go wrong. The authors' findings mean current published scores on these benchmarks may overstate how well monitors work in real deployment, where attackers won't follow the same patterns.",
+    "fetchedAt": "2026-11-03T01:25:38.964Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 19,
+      "wordCount": 222
+    },
+    "slug": "simple-features-beat-most"
+  },
+  {
     "id": "2610.42149",
     "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
     "authors": "Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al.",

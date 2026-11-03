@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1082 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1085 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 370 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 371 papers in archive.
+  - "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics"
   - "Latent Reasoning in Continuous Space for Unified Multimodal Models"
-  - "From extreme weather to agricultural consequences with agentic AI"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 87 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 88 papers in archive.
+  - "Simple Features Beat Most AI Control Monitors"
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
-  - "SecDMP: Provably Secure Data Memory-Dependent Prefetching (Extended Version)"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 90 papers in archive.
   - "Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits"
   - "Renormalization for Robust Memory without Synchronization"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 92 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 93 papers in archive.
+  - "Regret-Optimal Wasserstein-Robust Linear Regression"
   - "Numerical Investigation of Soft-to-Hard Convergence: Discretization, Admissibility, and Spectral Regularity"
-  - "Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 93 papers in archive.
   - "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening"
   - "The Verification Wall in Microbial Metabolomics"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
 
 ## 10 most recent papers
+
+### Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics
+- URL: https://paperplaine.com/papers/gradient-descent-on-two
+- Category: Computer Science · AI
+- Authors: Binghua Li, Mengzhe Li, Denny Wu et al.
+- arXiv: 2610.42118
+- Plain-English subtitle: How neural networks learn to split tasks between two neurons
+- Summary: Researchers tracked how a simple two-neuron network learns to recognize patterns, finding that learning happens in two distinct phases. First, both neurons move toward the same solution, then they suddenly diverge and specialize—like two workers initially copying each other before dividing up their responsibilities. The team mapped out the mathematical landscape of this learning process and proved that the network reliably reaches the best possible solution.
+- Why it matters: This work cracks open how neural networks learn features from scratch, a question that has stumped researchers for decades. By understanding these dynamics in a minimal setting, scientists gain tools to predict how larger, more complex networks will behave during training—potentially leading to better network designs and faster, more reliable training methods.
+
+### Regret-Optimal Wasserstein-Robust Linear Regression
+- URL: https://paperplaine.com/papers/regret-optimal-wasserstein-robust
+- Category: Mathematics
+- Authors: Sloan Nietert, Daniel Kuhn
+- arXiv: 2610.42109
+- Plain-English subtitle: When predictions trained on one dataset fail on another
+- Summary: When a machine-learning model trained on one set of data is applied to a different real-world situation, standard robust methods can perform far worse than necessary. This paper identifies when that happens and proves that two alternative approaches—minimax regret optimization and spectral-norm regularization—consistently find better solutions, sometimes improving performance by factors that grow with problem size.
+- Why it matters: Machine-learning models routinely train on historical data but deploy on shifted or different populations: weather models trained in one region used elsewhere, credit models built on past applicants applied to new cohorts, medical algorithms developed in one hospital used in another. This work provides both theory and practical algorithms to ensure predictions remain reliable across these real-world shifts, with concrete performance guarantees.
+
+### Simple Features Beat Most AI Control Monitors
+- URL: https://paperplaine.com/papers/simple-features-beat-most
+- Category: Computer Science
+- Authors: Shubhrangshu Debsarkar, Valmik Nahata
+- arXiv: 2610.41713
+- Plain-English subtitle: Why simple tricks fool most AI safety monitors in standard tests
+- Summary: Researchers testing AI safety monitors discovered that basic statistical patterns in code—like writing style and problem type—beat 20 of 24 AI monitors designed to catch sabotaged code, without even running it. The standard evaluation dataset accidentally leaks these patterns because human-written honest code looks different from code sabotaged by older AI systems. When tested against code from Claude Sonnet 5 instead, monitors perform worse (37% vs 77% accuracy), suggesting they've been inadvertently graded on shortcuts rather than genuine sabotage detection.
+- Why it matters: AI safety researchers rely on these evaluation benchmarks to verify that monitors can actually catch dangerous model behavior. If the monitors score well only by exploiting dataset artifacts rather than learning real detection skills, they provide false confidence that AI systems are actually being caught when they go wrong. The authors' findings mean current published scores on these benchmarks may overstate how well monitors work in real deployment, where attackers won't follow the same patterns.
 
 ### Latent Reasoning in Continuous Space for Unified Multimodal Models
 - URL: https://paperplaine.com/papers/latent-reasoning-in-continuous
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Spotting the same suitcase across airport cameras in crowded, messy real life
 - Summary: Airports and border crossings need to track luggage across multiple security cameras to find lost bags and spot suspicious items—but existing AI systems fail when bags are partially hidden, backgrounds are cluttered, or crowds block the view. This study tested strategies for combining information from multiple camera angles and video clips to reliably identify the same bag across different shots, and found that carefully choosing which views to merge significantly improved performance in real-world conditions.
 - Why it matters: Lost luggage costs airlines and travelers millions annually, and security teams waste hours manually searching footage for abandoned or suspicious bags. An AI system that can automatically track bags across a busy airport or train station could cut recovery time from days to minutes and flag potential threats faster, while reducing the manual video review that currently requires human attention at every checkpoint.
-
-### Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits
-- URL: https://paperplaine.com/papers/entanglement-diagnostics-of-stochastic
-- Category: Physics
-- Authors: Jakob Murauer, Sabine Tornow, Manas Kulkarni et al.
-- arXiv: 2610.40638
-- Plain-English subtitle: How quantum computers can measure entanglement when systems are repeatedly reset
-- Summary: Researchers used IBM's superconducting quantum computers to measure how entanglement behaves in quantum systems that are periodically reset to a starting state. They found that two different measurement methods — entropy and concurrence — gave different results, with entropy matching theory predictions closely but concurrence falling below them, because the two methods detect different aspects of the same quantum state.
-- Why it matters: Quantum computers are plagued by noise and decoherence, and resetting systems is a practical strategy for managing these errors. Understanding how entanglement behaves during and after resets is crucial for designing better error-correction schemes and improving the reliability of future quantum computers. This work bridges theory and real hardware measurements, showing that simple mathematical models can predict behavior even when real devices fall short of perfection.
-
-### Numerical Investigation of Soft-to-Hard Convergence: Discretization, Admissibility, and Spectral Regularity
-- URL: https://paperplaine.com/papers/numerical-investigation-of-soft
-- Category: Mathematics
-- Authors: Sung-Sik Kwon, Marcus Nunda
-- arXiv: 2610.40461
-- Plain-English subtitle: When mathematical approximations converge to exact solutions for control problems
-- Summary: When engineers use computers to solve optimal control problems, they must approximate the underlying mathematics. This paper tests how well a popular numerical method recovers the exact solution as the computational mesh gets finer, showing that the method achieves the theoretically predicted convergence rates for both a simple mechanical system and the heat equation.
-- Why it matters: Engineers designing spacecraft trajectories, heat management systems, or industrial processes rely on numerical methods to find optimal control solutions. Confirming that these computational approximations actually converge to correct answers at predictable rates gives practitioners confidence in their designs and helps them know how fine their computational mesh needs to be to achieve a target accuracy.
-
-### Rethinking Neural Thickets Without Weight Perturbations
-- URL: https://paperplaine.com/papers/rethinking-neural-thickets-without
-- Category: Computer Science · AI
-- Authors: Nicolas Dufour, Elouan Gardès, Amil Dravid et al.
-- arXiv: 2610.40649
-- Plain-English subtitle: Why shaking up a neural network's final answers works better than tweaking its weights
-- Summary: Researchers tested a popular theory about how language models find multiple expert solutions by randomly jiggling their internal weights. They found the gains were real, but the explanation was wrong—you don't need to perturb weights at all. Simply adding random noise to the model's final output predictions, then picking the best ones and combining them, matched or beat the original method on reasoning tasks. This simpler approach works by creating diverse predictions and selecting strong ones, a principle that also boosts vision models under new visual conditions.
-- Why it matters: Current methods for improving language and vision models often require expensive retraining or weight manipulation. This finding offers a faster, cheaper alternative: frozen models can improve dramatically just by adding noise to their outputs and voting among the results. Since the method requires no training and runs at inference time, it could be deployed immediately to existing models without modification, making better AI accessible without computational overhead.
 
 ## About
 
