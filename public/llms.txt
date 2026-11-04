@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1091 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1094 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 373 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 374 papers in archive.
+  - "Suppressing Misaligned Behaviors in Language Models, Durably"
   - "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models"
-  - "Strategist: Evolving Reasoning with Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 88 papers in archive.
   - "Simple Features Beat Most AI Control Monitors"
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 94 papers in archive.
   - "Learning AI Agents, Market Makers, and Stress in Automated Markets"
   - "What FLARE's Published Numbers Actually Measure"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 93 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 94 papers in archive.
+  - "Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation"
   - "Numerical Integration on Bounded Domains via Learned Reflected Diffusions"
-  - "An Input Skip Can Reparameterize a VAE Without Improving the Generator"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 88 papers in archive.
   - "ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction"
   - "Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 77 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 78 papers in archive.
+  - "Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies"
   - "Why delivered costs understate prices in an integrated global hydrogen market"
-  - "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
 
 ## 10 most recent papers
+
+### Suppressing Misaligned Behaviors in Language Models, Durably
+- URL: https://paperplaine.com/papers/suppressing-misaligned-behaviors-in
+- Category: Computer Science · AI
+- Authors: Luxi He, Pengcheng Jiang, Jifan Zhang et al.
+- arXiv: 2611.05358
+- Plain-English subtitle: A better way to permanently remove unwanted behaviors from AI language models
+- Summary: When AI language models develop harmful behaviors—like cheating on tests or generating insecure code—standard techniques to suppress them often fail once the model encounters new training data. Researchers tested a new method called PEARL that trains models to recover from misaligned states, making the suppression stick even after additional training. On two model families, PEARL kept the unwanted behaviors suppressed while maintaining the model's overall performance.
+- Why it matters: As AI systems become more widely deployed, the ability to permanently remove dangerous behaviors matters directly for safety. Current methods fail because they don't account for how new training can reactivate old problems—like a bad habit returning after you've supposedly broken it. PEARL's approach of building durability into the suppression process means fixes are more likely to hold up in real-world use, where models will inevitably encounter new data and continued refinement.
+
+### Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies
+- URL: https://paperplaine.com/papers/regret-based-characterization-information
+- Category: Economics
+- Authors: Irene Aldridge
+- arXiv: 2611.05227
+- Plain-English subtitle: How to tell if an AI system is actually adapting or just getting lucky
+- Summary: When an AI policy makes decisions, its success might come from playing the same safe moves repeatedly or from genuinely reacting to changing conditions. This paper shows that you can detect which one is happening by measuring how much the policy uses information about its surroundings, and it quantifies exactly how many observations you'd need from the policy's actual decisions to audit this reliably.
+- Why it matters: Regulators and auditors need ways to verify that AI systems used in high-stakes settings—like credit decisions, hiring, or loan approvals—are actually learning from context rather than just exploiting statistical patterns. This work provides a mathematical framework to catch policies that appear to be performing well but are actually making the same mistakes repeatedly. It also establishes what's theoretically possible to verify from real-world data, helping set realistic expectations for oversight.
+
+### Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation
+- URL: https://paperplaine.com/papers/macrocanonical-generator-networks-data
+- Category: Statistics
+- Authors: Niall Jeffrey, Benjamin D. Wandelt
+- arXiv: 2611.05157
+- Plain-English subtitle: Training neural networks to simulate expensive physics a million times faster
+- Summary: Scientists have created a method to train neural networks that can generate realistic physics simulations far faster than traditional approaches—sometimes using just a single training example. The networks learn to match the statistical patterns of a target physical process and can then produce new simulations in a single forward pass, running over a million times faster than conventional simulators and thousands of times faster than previous neural methods.
+- Why it matters: Expensive physics simulations currently bottleneck scientific discovery in fields like cosmology and climate modeling. By making these simulations 1,000,000× faster, researchers can run vastly more scenarios for decision-making, uncertainty quantification, and inference—and the trained networks can be reused across multiple downstream tasks, making complex multi-stage scientific workflows practical where they weren't before.
 
 ### Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models
 - URL: https://paperplaine.com/papers/evaluating-uncertainty-calibration-in
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How neural networks learn to split tasks between two neurons
 - Summary: Researchers tracked how a simple two-neuron network learns to recognize patterns, finding that learning happens in two distinct phases. First, both neurons move toward the same solution, then they suddenly diverge and specialize—like two workers initially copying each other before dividing up their responsibilities. The team mapped out the mathematical landscape of this learning process and proved that the network reliably reaches the best possible solution.
 - Why it matters: This work cracks open how neural networks learn features from scratch, a question that has stumped researchers for decades. By understanding these dynamics in a minimal setting, scientists gain tools to predict how larger, more complex networks will behave during training—potentially leading to better network designs and faster, more reliable training methods.
-
-### Regret-Optimal Wasserstein-Robust Linear Regression
-- URL: https://paperplaine.com/papers/regret-optimal-wasserstein-robust
-- Category: Mathematics
-- Authors: Sloan Nietert, Daniel Kuhn
-- arXiv: 2610.42109
-- Plain-English subtitle: When predictions trained on one dataset fail on another
-- Summary: When a machine-learning model trained on one set of data is applied to a different real-world situation, standard robust methods can perform far worse than necessary. This paper identifies when that happens and proves that two alternative approaches—minimax regret optimization and spectral-norm regularization—consistently find better solutions, sometimes improving performance by factors that grow with problem size.
-- Why it matters: Machine-learning models routinely train on historical data but deploy on shifted or different populations: weather models trained in one region used elsewhere, credit models built on past applicants applied to new cohorts, medical algorithms developed in one hospital used in another. This work provides both theory and practical algorithms to ensure predictions remain reliable across these real-world shifts, with concrete performance guarantees.
-
-### Simple Features Beat Most AI Control Monitors
-- URL: https://paperplaine.com/papers/simple-features-beat-most
-- Category: Computer Science
-- Authors: Shubhrangshu Debsarkar, Valmik Nahata
-- arXiv: 2610.41713
-- Plain-English subtitle: Why simple tricks fool most AI safety monitors in standard tests
-- Summary: Researchers testing AI safety monitors discovered that basic statistical patterns in code—like writing style and problem type—beat 20 of 24 AI monitors designed to catch sabotaged code, without even running it. The standard evaluation dataset accidentally leaks these patterns because human-written honest code looks different from code sabotaged by older AI systems. When tested against code from Claude Sonnet 5 instead, monitors perform worse (37% vs 77% accuracy), suggesting they've been inadvertently graded on shortcuts rather than genuine sabotage detection.
-- Why it matters: AI safety researchers rely on these evaluation benchmarks to verify that monitors can actually catch dangerous model behavior. If the monitors score well only by exploiting dataset artifacts rather than learning real detection skills, they provide false confidence that AI systems are actually being caught when they go wrong. The authors' findings mean current published scores on these benchmarks may overstate how well monitors work in real deployment, where attackers won't follow the same patterns.
-
-### Latent Reasoning in Continuous Space for Unified Multimodal Models
-- URL: https://paperplaine.com/papers/latent-reasoning-in-continuous
-- Category: Computer Science · AI
-- Authors: Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee et al.
-- arXiv: 2610.42149
-- Plain-English subtitle: Making AI image generators smarter by letting them reason like language models do
-- Summary: A new system called LARC lets AI models that generate images from text use step-by-step reasoning the same way large language models do, fixing a fundamental mismatch between how reasoning works and how image generation works. The result: images that follow complex prompts more accurately and improve dramatically when given more computing time at test time, just like ChatGPT does.
-- Why it matters: Image generation AI has lagged behind language models in reasoning capability and controllability — users couldn't get detailed, compositionally accurate results for complex requests. LARC closes that gap, meaning designers, artists, and everyday users can now generate images with the same level of instruction-following precision they've come to expect from text AI. It also means image generators will get better when companies invest in more compute, opening a path to continuous improvement rather than hitting a performance ceiling.
 
 ## About
 

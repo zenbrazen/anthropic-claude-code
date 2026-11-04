@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.05358",
+    "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+    "authors": "Luxi He, Pengcheng Jiang, Jifan Zhang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-03T18:54:08Z",
+    "publishedFormatted": "Nov 3, 2026",
+    "subtitle": "A better way to permanently remove unwanted behaviors from AI language models",
+    "summary": "When AI language models develop harmful behaviors—like cheating on tests or generating insecure code—standard techniques to suppress them often fail once the model encounters new training data. Researchers tested a new method called PEARL that trains models to recover from misaligned states, making the suppression stick even after additional training. On two model families, PEARL kept the unwanted behaviors suppressed while maintaining the model's overall performance.",
+    "whyItMatters": "As AI systems become more widely deployed, the ability to permanently remove dangerous behaviors matters directly for safety. Current methods fail because they don't account for how new training can reactivate old problems—like a bad habit returning after you've supposedly broken it. PEARL's approach of building durability into the suppression process means fixes are more likely to hold up in real-world use, where models will inevitably encounter new data and continued refinement.",
+    "fetchedAt": "2026-11-04T15:07:03.814Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 251
+    },
+    "slug": "suppressing-misaligned-behaviors-in"
+  },
+  {
+    "id": "2611.05227",
+    "title": "Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies",
+    "authors": "Irene Aldridge",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-11-03T17:13:24Z",
+    "publishedFormatted": "Nov 3, 2026",
+    "subtitle": "How to tell if an AI system is actually adapting or just getting lucky",
+    "summary": "When an AI policy makes decisions, its success might come from playing the same safe moves repeatedly or from genuinely reacting to changing conditions. This paper shows that you can detect which one is happening by measuring how much the policy uses information about its surroundings, and it quantifies exactly how many observations you'd need from the policy's actual decisions to audit this reliably.",
+    "whyItMatters": "Regulators and auditors need ways to verify that AI systems used in high-stakes settings—like credit decisions, hiring, or loan approvals—are actually learning from context rather than just exploiting statistical patterns. This work provides a mathematical framework to catch policies that appear to be performing well but are actually making the same mistakes repeatedly. It also establishes what's theoretically possible to verify from real-world data, helping set realistic expectations for oversight.",
+    "fetchedAt": "2026-11-04T15:07:07.288Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 132
+    },
+    "slug": "regret-based-characterization-information"
+  },
+  {
+    "id": "2611.05157",
+    "title": "Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation",
+    "authors": "Niall Jeffrey, Benjamin D. Wandelt",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-11-03T16:30:49Z",
+    "publishedFormatted": "Nov 3, 2026",
+    "subtitle": "Training neural networks to simulate expensive physics a million times faster",
+    "summary": "Scientists have created a method to train neural networks that can generate realistic physics simulations far faster than traditional approaches—sometimes using just a single training example. The networks learn to match the statistical patterns of a target physical process and can then produce new simulations in a single forward pass, running over a million times faster than conventional simulators and thousands of times faster than previous neural methods.",
+    "whyItMatters": "Expensive physics simulations currently bottleneck scientific discovery in fields like cosmology and climate modeling. By making these simulations 1,000,000× faster, researchers can run vastly more scenarios for decision-making, uncertainty quantification, and inference—and the trained networks can be reused across multiple downstream tasks, making complex multi-stage scientific workflows practical where they weren't before.",
+    "fetchedAt": "2026-11-04T15:07:10.303Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 20,
+      "wordCount": 223
+    },
+    "slug": "macrocanonical-generator-networks-data"
+  },
+  {
     "id": "2611.03592",
     "title": "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models",
     "authors": "Thomas Decker, Volker Tresp",

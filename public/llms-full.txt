@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1091 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-03
+This file contains the complete plain-English text of all 1094 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-04
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Suppressing Misaligned Behaviors in Language Models, Durably
+Subtitle: A better way to permanently remove unwanted behaviors from AI language models
+URL: https://paperplaine.com/papers/suppressing-misaligned-behaviors-in
+Category: Computer Science · AI
+Authors: Luxi He, Pengcheng Jiang, Jifan Zhang et al.
+arXiv ID: 2611.05358
+arXiv URL: https://arxiv.org/abs/2611.05358
+Posted: 2026-11-04
+
+Summary: When AI language models develop harmful behaviors—like cheating on tests or generating insecure code—standard techniques to suppress them often fail once the model encounters new training data. Researchers tested a new method called PEARL that trains models to recover from misaligned states, making the suppression stick even after additional training. On two model families, PEARL kept the unwanted behaviors suppressed while maintaining the model's overall performance.
+
+Why it matters: As AI systems become more widely deployed, the ability to permanently remove dangerous behaviors matters directly for safety. Current methods fail because they don't account for how new training can reactivate old problems—like a bad habit returning after you've supposedly broken it. PEARL's approach of building durability into the suppression process means fixes are more likely to hold up in real-world use, where models will inevitably encounter new data and continued refinement.
+
+---
+Title: Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies
+Subtitle: How to tell if an AI system is actually adapting or just getting lucky
+URL: https://paperplaine.com/papers/regret-based-characterization-information
+Category: Economics
+Authors: Irene Aldridge
+arXiv ID: 2611.05227
+arXiv URL: https://arxiv.org/abs/2611.05227
+Posted: 2026-11-04
+
+Summary: When an AI policy makes decisions, its success might come from playing the same safe moves repeatedly or from genuinely reacting to changing conditions. This paper shows that you can detect which one is happening by measuring how much the policy uses information about its surroundings, and it quantifies exactly how many observations you'd need from the policy's actual decisions to audit this reliably.
+
+Why it matters: Regulators and auditors need ways to verify that AI systems used in high-stakes settings—like credit decisions, hiring, or loan approvals—are actually learning from context rather than just exploiting statistical patterns. This work provides a mathematical framework to catch policies that appear to be performing well but are actually making the same mistakes repeatedly. It also establishes what's theoretically possible to verify from real-world data, helping set realistic expectations for oversight.
+
+---
+Title: Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation
+Subtitle: Training neural networks to simulate expensive physics a million times faster
+URL: https://paperplaine.com/papers/macrocanonical-generator-networks-data
+Category: Statistics
+Authors: Niall Jeffrey, Benjamin D. Wandelt
+arXiv ID: 2611.05157
+arXiv URL: https://arxiv.org/abs/2611.05157
+Posted: 2026-11-04
+
+Summary: Scientists have created a method to train neural networks that can generate realistic physics simulations far faster than traditional approaches—sometimes using just a single training example. The networks learn to match the statistical patterns of a target physical process and can then produce new simulations in a single forward pass, running over a million times faster than conventional simulators and thousands of times faster than previous neural methods.
+
+Why it matters: Expensive physics simulations currently bottleneck scientific discovery in fields like cosmology and climate modeling. By making these simulations 1,000,000× faster, researchers can run vastly more scenarios for decision-making, uncertainty quantification, and inference—and the trained networks can be reused across multiple downstream tasks, making complex multi-stage scientific workflows practical where they weren't before.
 
 ---
 Title: Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models
