@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1099 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1102 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 376 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 377 papers in archive.
+  - "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents"
   - "CounterFactual Retrieval for Evidence-Aware Individual Animal Identification"
-  - "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 89 papers in archive.
   - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
   - "Simple Features Beat Most AI Control Monitors"
@@ -42,12 +42,12 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 94 papers in archive.
   - "Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees"
   - "Regret-Optimal Wasserstein-Robust Linear Regression"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 94 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 95 papers in archive.
+  - "Learning Time-Varying Connectomes for Stable Behavior Across Development"
   - "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding"
-  - "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 94 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 95 papers in archive.
+  - "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found"
   - "Learning AI Agents, Market Makers, and Stress in Automated Markets"
-  - "What FLARE's Published Numbers Actually Measure"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 94 papers in archive.
   - "Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation"
   - "Numerical Integration on Bounded Domains via Learned Reflected Diffusions"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
+- URL: https://paperplaine.com/papers/a-framework-for-context
+- Category: Computer Science · AI
+- Authors: Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel
+- arXiv: 2611.06914
+- Plain-English subtitle: Making AI social agents more reliable by grounding them in richer context
+- Summary: When researchers use large language models to simulate human behavior in social scenarios, small rewording changes can dramatically flip how the AI acts — a major problem for trusting the results. Adding specific types of background information to the AI's prompts — like clear rules, realistic scenarios, or explanations of what matters in a decision — reduced this flip-flopping and made behavior more predictable, though different types of context worked better for different AI models.
+- Why it matters: Social simulations using AI are increasingly used to forecast human behavior, test policy ideas, and design systems. If these simulations give wildly different results from trivial prompt changes, they're unreliable for real-world decisions. This framework provides a concrete way to test and improve whether AI agents are stable enough to trust, which is essential before using them to guide anything from public health to economics.
+
+### Learning Time-Varying Connectomes for Stable Behavior Across Development
+- URL: https://paperplaine.com/papers/learning-time-varying-connectomes
+- Category: Quantitative Biology
+- Authors: Christof Fehrman, Jacob J. Morra, Eva A. Naumann
+- arXiv: 2611.06895
+- Plain-English subtitle: How brains rewire themselves while keeping behavior on track
+- Summary: A brain doesn't stay the same as it grows—neurons are born, move around, and change their connections. Researchers built a computational model showing that a single genetic program can generate different neural wiring patterns at different ages, allowing an animal to maintain stable behavior (like tracking moving lights or swimming toward light) throughout development. Simply training the model at three key ages was enough to keep performance consistent across the entire developmental window, even at ages never explicitly trained.
+- Why it matters: Young animals must behave correctly—hunt, navigate, escape threats—even as their brains are still under construction. This work reveals a principle that could explain how real nervous systems stay functional during dramatic physical changes. It also provides a testable framework for neuroscientists studying which genes control not just when neurons are born, but how their connections change over time to preserve behavior.
+
+### Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found
+- URL: https://paperplaine.com/papers/hard-to-fool-a
+- Category: Quantitative Finance
+- Authors: Henry Zhang
+- arXiv: 2611.06607
+- Plain-English subtitle: Why AI research loops designed to catch false discoveries beat traditional backtesting in finance
+- Summary: A new system for using AI to discover trading strategies adds so many safeguards against overfitting that it catches the mistakes human traders usually miss. Across 24 campaigns testing everything from options strategies to crypto predictions, most hypotheses failed — including one that looked perfect in testing but collapsed completely when evaluated on fresh data, revealing exactly why the system works.
+- Why it matters: Traders lose billions annually to strategies that worked in hindsight but fail in real markets. This system makes it exponentially harder to mistake luck for skill by splitting data so results can't be gamed, requiring strategies to pass multiple independent tests, and locking in decisions before results are known. The real payoff isn't finding winners — it's making sure reported winners are actually real.
 
 ### CounterFactual Retrieval for Evidence-Aware Individual Animal Identification
 - URL: https://paperplaine.com/papers/counterfactual-retrieval-for-evidence
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How to tell if an AI system is actually adapting or just getting lucky
 - Summary: When an AI policy makes decisions, its success might come from playing the same safe moves repeatedly or from genuinely reacting to changing conditions. This paper shows that you can detect which one is happening by measuring how much the policy uses information about its surroundings, and it quantifies exactly how many observations you'd need from the policy's actual decisions to audit this reliably.
 - Why it matters: Regulators and auditors need ways to verify that AI systems used in high-stakes settings—like credit decisions, hiring, or loan approvals—are actually learning from context rather than just exploiting statistical patterns. This work provides a mathematical framework to catch policies that appear to be performing well but are actually making the same mistakes repeatedly. It also establishes what's theoretically possible to verify from real-world data, helping set realistic expectations for oversight.
-
-### Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation
-- URL: https://paperplaine.com/papers/macrocanonical-generator-networks-data
-- Category: Statistics
-- Authors: Niall Jeffrey, Benjamin D. Wandelt
-- arXiv: 2611.05157
-- Plain-English subtitle: Training neural networks to simulate expensive physics a million times faster
-- Summary: Scientists have created a method to train neural networks that can generate realistic physics simulations far faster than traditional approaches—sometimes using just a single training example. The networks learn to match the statistical patterns of a target physical process and can then produce new simulations in a single forward pass, running over a million times faster than conventional simulators and thousands of times faster than previous neural methods.
-- Why it matters: Expensive physics simulations currently bottleneck scientific discovery in fields like cosmology and climate modeling. By making these simulations 1,000,000× faster, researchers can run vastly more scenarios for decision-making, uncertainty quantification, and inference—and the trained networks can be reused across multiple downstream tasks, making complex multi-stage scientific workflows practical where they weren't before.
-
-### Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models
-- URL: https://paperplaine.com/papers/evaluating-uncertainty-calibration-in
-- Category: Computer Science · AI
-- Authors: Thomas Decker, Volker Tresp
-- arXiv: 2611.03592
-- Plain-English subtitle: Why AI forecasting models often get their confidence levels wrong
-- Summary: Popular AI models trained to predict future time series data often express false confidence in their forecasts, even when their predictions are uncertain. Researchers created a detailed testing framework that exposed systematic errors in how these models calibrate their confidence levels across different prediction distances, and found that common fixes fail to address many of these errors.
-- Why it matters: When a weather model says it's 80% confident in tomorrow's forecast but is actually right only 60% of the time, people make worse decisions—from flight bookings to supply chain planning. This work reveals which popular forecasting models have these trust problems and which fix-it techniques actually work, helping engineers build systems people can genuinely rely on.
-
-### AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding
-- URL: https://paperplaine.com/papers/avid-a-5t-fmri
-- Category: Quantitative Biology
-- Authors: Shiqi Shen, Shurui Li, Xilin Zhang et al.
-- arXiv: 2611.02593
-- Plain-English subtitle: Brain scans that decode what you imagine from hearing words alone
-- Summary: Researchers created AVID, a dataset of 67 hours of high-resolution brain scans from nine people imagining visual scenes while listening to spoken descriptions in Mandarin. Unlike previous datasets that mixed real visual input with imagination, AVID isolates the brain signals that generate mental imagery from scratch, offering a cleaner foundation for building computer systems that can reconstruct what someone is picturing based on their brain activity alone.
-- Why it matters: Mental imagery decoding could eventually restore visual communication for people with paralysis or locked-in syndrome, allowing them to project their thoughts onto a screen. The dataset's cleaner design—separating pure imagination from visual memory—should accelerate progress on these brain-computer interfaces. It also provides researchers their first large, high-quality benchmark for testing imagery reconstruction algorithms fairly.
 
 ## About
 
