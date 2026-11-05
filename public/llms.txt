@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1094 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1096 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 374 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 375 papers in archive.
+  - "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation"
   - "Suppressing Misaligned Behaviors in Language Models, Durably"
-  - "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 88 papers in archive.
   - "Simple Features Beat Most AI Control Monitors"
   - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 91 papers in archive.
   - "Spacetime Emergence in the Memory of a Learning Agent"
   - "Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 93 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 94 papers in archive.
+  - "Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees"
   - "Regret-Optimal Wasserstein-Robust Linear Regression"
-  - "Numerical Investigation of Soft-to-Hard Convergence: Discretization, Admissibility, and Spectral Regularity"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 94 papers in archive.
   - "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding"
   - "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation
+- URL: https://paperplaine.com/papers/harp-training-free-dual
+- Category: Computer Science · AI
+- Authors: Zhen Tao, Xun Zhou, Xuhui Chen et al.
+- arXiv: 2611.05319
+- Plain-English subtitle: Giving AI recommendation systems a two-way conversation instead of one-sided orders
+- Summary: Large language model recommendation systems treat users and items asymmetrically—only users get proper descriptions, while items remain nameless. Researchers created HARP, a training-free method that gives items their own profiles and lets both sides communicate, boosting the accuracy of top recommendations by 7–24% across major datasets without retraining the underlying AI model.
+- Why it matters: Recommendation systems power shopping, streaming, and social media. A 7–24% accuracy gain means users see relevant suggestions faster, reducing time spent scrolling. Because HARP requires no retraining, platforms can deploy it immediately on existing AI systems without computational overhead or data collection delays.
+
+### Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees
+- URL: https://paperplaine.com/papers/counterexamples-to-the-happy
+- Category: Mathematics
+- Authors: Oswin Aichholzer, Joseph Dorfer, Peter Kramer et al.
+- arXiv: 2611.05300
+- Plain-English subtitle: A 50-year-old math conjecture about rearranging tree diagrams is finally proven wrong
+- Summary: Mathematicians have disproven the "happy edge conjecture," a decades-old principle suggesting that shared connections between two tree diagrams never need to be broken when transforming one into the other. The researchers found counterexamples with 16 and 30 points that violate this rule, overturning what computer checks had verified for all smaller cases up to 10 points.
+- Why it matters: This conjecture has influenced how computer scientists think about reconfiguring networks and geometric structures. Disproving it forces researchers to rethink algorithms for moving between different valid configurations of spanning trees — a problem that appears in circuit design, network optimization, and computational geometry. The finding also demonstrates that some patterns verified by computers on small examples can catastrophically fail at larger scales.
 
 ### Suppressing Misaligned Behaviors in Language Models, Durably
 - URL: https://paperplaine.com/papers/suppressing-misaligned-behaviors-in
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How an AI agent learns to predict the fabric of spacetime itself
 - Summary: An AI trained to gather quantum information without being told anything about spacetime geometry spontaneously developed an internal model containing spacetime's fundamental structure—the causal relationships that determine what can influence what. The agent reconstructed the key features of Minkowski spacetime (the four-dimensional model underlying special relativity) simply by learning to make better predictions and decisions in a quantum task.
 - Why it matters: This suggests spacetime might not be fundamental to the universe, but rather something that emerges when intelligent systems interact with quantum reality. If spacetime is a learned construct rather than a built-in feature of physics, it reframes how physicists think about the deepest layers of reality and could reshape the search for a theory unifying quantum mechanics and gravity.
-
-### Learning AI Agents, Market Makers, and Stress in Automated Markets
-- URL: https://paperplaine.com/papers/learning-ai-agents-market
-- Category: Quantitative Finance
-- Authors: Irene Aldridge
-- arXiv: 2611.01799
-- Plain-English subtitle: Why copying traders and profit-seeking AI agents destabilize automated markets
-- Summary: When AI trading agents learn from each other's behavior in automated markets, they tend to follow the herd rather than trade against it—amplifying price swings and creating sudden collapses. Markets dominated by copycat traders versus profit-seekers look identical on standard risk measures like volatility, but their stress episodes differ dramatically in length, and this difference can only be detected through statistical analysis of trading patterns.
-- Why it matters: As more trading moves to automated systems powered by learning AI agents, these herding instabilities could trigger sudden market freezes that traditional monitoring tools won't catch before they happen. Market makers can restore stability by charging different fees to buyers and sellers rather than uniform rates, but this creates a new fragility where liquidity can vanish abruptly if conditions shift.
-
-### Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics
-- URL: https://paperplaine.com/papers/gradient-descent-on-two
-- Category: Computer Science · AI
-- Authors: Binghua Li, Mengzhe Li, Denny Wu et al.
-- arXiv: 2610.42118
-- Plain-English subtitle: How neural networks learn to split tasks between two neurons
-- Summary: Researchers tracked how a simple two-neuron network learns to recognize patterns, finding that learning happens in two distinct phases. First, both neurons move toward the same solution, then they suddenly diverge and specialize—like two workers initially copying each other before dividing up their responsibilities. The team mapped out the mathematical landscape of this learning process and proved that the network reliably reaches the best possible solution.
-- Why it matters: This work cracks open how neural networks learn features from scratch, a question that has stumped researchers for decades. By understanding these dynamics in a minimal setting, scientists gain tools to predict how larger, more complex networks will behave during training—potentially leading to better network designs and faster, more reliable training methods.
 
 ## About
 
