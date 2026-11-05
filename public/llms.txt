@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1096 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1099 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 375 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 376 papers in archive.
+  - "CounterFactual Retrieval for Evidence-Aware Individual Animal Identification"
   - "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation"
-  - "Suppressing Misaligned Behaviors in Language Models, Durably"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 88 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 89 papers in archive.
+  - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
   - "Simple Features Beat Most AI Control Monitors"
-  - "Difficulty Calibration Across Time for Membership Inference in Diffusion Models"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 91 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 92 papers in archive.
+  - "3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer"
   - "Spacetime Emergence in the Memory of a Learning Agent"
-  - "Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 94 papers in archive.
   - "Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees"
   - "Regret-Optimal Wasserstein-Robust Linear Regression"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### CounterFactual Retrieval for Evidence-Aware Individual Animal Identification
+- URL: https://paperplaine.com/papers/counterfactual-retrieval-for-evidence
+- Category: Computer Science · AI
+- Authors: Ankit K. Upadhyay, Aleksandr Algasov, Ekaterina Nepovinnykh et al.
+- arXiv: 2611.06864
+- Plain-English subtitle: Checking whether animal ID systems actually recognize the animal itself
+- Summary: When computer systems identify individual animals from photos, they often get the right answer — but researchers didn't know if the system was actually looking at the animal or just memorizing background clues. A new evaluation method called Counterfactual Foreground Retrieval reveals what the system is really using by testing it three ways: with the full photo, with only the animal visible, and with only the background. This turns a simple accuracy score into an evidence profile showing whether the model genuinely recognizes the animal or is taking shortcuts.
+- Why it matters: Wildlife researchers, conservation programs, and veterinarians increasingly rely on automated systems to track individual animals across photos and video. If these systems are secretly relying on background scenery or body silhouettes instead of actual animal features, they'll fail when conditions change — different locations, seasons, or camera angles — undermining years of monitoring work. This evaluation method lets researchers catch those failures before deployment and build systems that actually work in the field.
+
+### Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues
+- URL: https://paperplaine.com/papers/occlusion-for-free-detecting
+- Category: Computer Science
+- Authors: Chibueze Praise Onyenweaku, Toyibat Adele, Sikirulahi Opeyemi Abdulkareem et al.
+- arXiv: 2611.06899
+- Plain-English subtitle: Spotting when people are hidden in camera images without special training
+- Summary: Self-driving cars and robots can detect when pedestrians are partially hidden by comparing two measurements their cameras already make: how tall the person appears and how far away the depth sensor says they are. When someone is occluded, these two measurements disagree in a predictable way, creating a free signal that requires no labeled training data and works across different camera types and locations.
+- Why it matters: Robots and autonomous vehicles need to know when a pedestrian is hidden behind a car or pole—not to reconstruct the hidden part, but to adjust their safety assumptions. Current occlusion detectors require expensive hand-labeled training data that doesn't exist in many real-world deployment locations. This method works anywhere without retraining, which matters especially for deployment in cities and countries where labeled datasets haven't been collected.
+
+### 3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer
+- URL: https://paperplaine.com/papers/3d-printed-monolithic-optomechanical
+- Category: Physics
+- Authors: Ramy Tannous, Dogan Sinar, Sagar Patel et al.
+- arXiv: 2611.06898
+- Plain-English subtitle: 3D printing precision instruments that don't shift when temperature changes
+- Summary: Researchers used 3D printing to build a complete optical instrument as a single piece from a specially chosen metal alloy. The integrated design eliminates hundreds of tiny alignment problems that plague traditional hand-assembled optical systems, making the device smaller and more stable when temperatures fluctuate.
+- Why it matters: Quantum sensors and other cutting-edge optical tools have historically been fragile and difficult to miniaturize because assembling them requires dozens of precisely calibrated parts. This approach could let engineers print entire custom optical systems as one solid object, dramatically reducing the cost and complexity of building the next generation of sensors for medical imaging, navigation, and physics research.
 
 ### HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation
 - URL: https://paperplaine.com/papers/harp-training-free-dual
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Brain scans that decode what you imagine from hearing words alone
 - Summary: Researchers created AVID, a dataset of 67 hours of high-resolution brain scans from nine people imagining visual scenes while listening to spoken descriptions in Mandarin. Unlike previous datasets that mixed real visual input with imagination, AVID isolates the brain signals that generate mental imagery from scratch, offering a cleaner foundation for building computer systems that can reconstruct what someone is picturing based on their brain activity alone.
 - Why it matters: Mental imagery decoding could eventually restore visual communication for people with paralysis or locked-in syndrome, allowing them to project their thoughts onto a screen. The dataset's cleaner design—separating pure imagination from visual memory—should accelerate progress on these brain-computer interfaces. It also provides researchers their first large, high-quality benchmark for testing imagery reconstruction algorithms fairly.
-
-### ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction
-- URL: https://paperplaine.com/papers/st-gfm-spectral-temporal
-- Category: Engineering
-- Authors: Aashish Bohra, Vivek Vijay
-- arXiv: 2611.03512
-- Plain-English subtitle: Predicting traffic flow when sensor networks change between training and real use
-- Summary: Traffic prediction models trained on one city's sensor network often fail when deployed elsewhere, because both the sensors themselves and the patterns they measure shift. Researchers built ST-GFM, a model that tracks these two types of change separately and proved mathematically how much prediction errors can grow when sensors drift. On two major traffic datasets, it outperformed competing models by 3–13%, and its self-supervised training method recovers 90% of the performance lost when that step is skipped.
-- Why it matters: Transportation agencies deploy traffic forecasting across dozens of cities with different road layouts and sensor configurations. A model that remains accurate as real-world conditions shift reduces the need to retrain from scratch each time a network changes, cutting deployment costs and keeping predictions reliable. The mathematical bounds also let engineers know in advance how much they can trust the model when sensors degrade or fail.
-
-### Strategist: Evolving Reasoning with Agents
-- URL: https://paperplaine.com/papers/strategist-evolving-reasoning-with
-- Category: Computer Science · AI
-- Authors: Taiming Lu, Qi Xu, Zhigang Hua et al.
-- arXiv: 2611.03618
-- Plain-English subtitle: Teaching AI to write its own reasoning blueprints and reuse them across tasks
-- Summary: Researchers created Strategist, a system that automatically designs and improves the reasoning procedures AI models use to solve tasks—the half of AI systems typically built by hand. On 30 benchmarks, Strategist matched the best existing reasoning strategies while cutting inference costs by 39%, and its blueprints transferred to new tasks and different models without additional tuning.
-- Why it matters: Building inference strategies currently demands expert engineering from scratch for each new task, slowing AI deployment. Strategist eliminates this bottleneck by automating strategy design and creating a reusable library that makes each new task faster to deploy. This could substantially reduce both the time and expertise required to put AI systems into production.
-
-### Spacetime Emergence in the Memory of a Learning Agent
-- URL: https://paperplaine.com/papers/spacetime-emergence-in-the
-- Category: Physics
-- Authors: Philip A. LeMaitre, T. Rick Perche
-- arXiv: 2611.03596
-- Plain-English subtitle: How an AI agent learns to predict the fabric of spacetime itself
-- Summary: An AI trained to gather quantum information without being told anything about spacetime geometry spontaneously developed an internal model containing spacetime's fundamental structure—the causal relationships that determine what can influence what. The agent reconstructed the key features of Minkowski spacetime (the four-dimensional model underlying special relativity) simply by learning to make better predictions and decisions in a quantum task.
-- Why it matters: This suggests spacetime might not be fundamental to the universe, but rather something that emerges when intelligent systems interact with quantum reality. If spacetime is a learned construct rather than a built-in feature of physics, it reframes how physicists think about the deepest layers of reality and could reshape the search for a theory unifying quantum mechanics and gravity.
 
 ## About
 

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1096 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1099 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-05
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: CounterFactual Retrieval for Evidence-Aware Individual Animal Identification
+Subtitle: Checking whether animal ID systems actually recognize the animal itself
+URL: https://paperplaine.com/papers/counterfactual-retrieval-for-evidence
+Category: Computer Science · AI
+Authors: Ankit K. Upadhyay, Aleksandr Algasov, Ekaterina Nepovinnykh et al.
+arXiv ID: 2611.06864
+arXiv URL: https://arxiv.org/abs/2611.06864
+Posted: 2026-11-05
+
+Summary: When computer systems identify individual animals from photos, they often get the right answer — but researchers didn't know if the system was actually looking at the animal or just memorizing background clues. A new evaluation method called Counterfactual Foreground Retrieval reveals what the system is really using by testing it three ways: with the full photo, with only the animal visible, and with only the background. This turns a simple accuracy score into an evidence profile showing whether the model genuinely recognizes the animal or is taking shortcuts.
+
+Why it matters: Wildlife researchers, conservation programs, and veterinarians increasingly rely on automated systems to track individual animals across photos and video. If these systems are secretly relying on background scenery or body silhouettes instead of actual animal features, they'll fail when conditions change — different locations, seasons, or camera angles — undermining years of monitoring work. This evaluation method lets researchers catch those failures before deployment and build systems that actually work in the field.
+
+---
+Title: Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues
+Subtitle: Spotting when people are hidden in camera images without special training
+URL: https://paperplaine.com/papers/occlusion-for-free-detecting
+Category: Computer Science
+Authors: Chibueze Praise Onyenweaku, Toyibat Adele, Sikirulahi Opeyemi Abdulkareem et al.
+arXiv ID: 2611.06899
+arXiv URL: https://arxiv.org/abs/2611.06899
+Posted: 2026-11-05
+
+Summary: Self-driving cars and robots can detect when pedestrians are partially hidden by comparing two measurements their cameras already make: how tall the person appears and how far away the depth sensor says they are. When someone is occluded, these two measurements disagree in a predictable way, creating a free signal that requires no labeled training data and works across different camera types and locations.
+
+Why it matters: Robots and autonomous vehicles need to know when a pedestrian is hidden behind a car or pole—not to reconstruct the hidden part, but to adjust their safety assumptions. Current occlusion detectors require expensive hand-labeled training data that doesn't exist in many real-world deployment locations. This method works anywhere without retraining, which matters especially for deployment in cities and countries where labeled datasets haven't been collected.
+
+---
+Title: 3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer
+Subtitle: 3D printing precision instruments that don't shift when temperature changes
+URL: https://paperplaine.com/papers/3d-printed-monolithic-optomechanical
+Category: Physics
+Authors: Ramy Tannous, Dogan Sinar, Sagar Patel et al.
+arXiv ID: 2611.06898
+arXiv URL: https://arxiv.org/abs/2611.06898
+Posted: 2026-11-05
+
+Summary: Researchers used 3D printing to build a complete optical instrument as a single piece from a specially chosen metal alloy. The integrated design eliminates hundreds of tiny alignment problems that plague traditional hand-assembled optical systems, making the device smaller and more stable when temperatures fluctuate.
+
+Why it matters: Quantum sensors and other cutting-edge optical tools have historically been fragile and difficult to miniaturize because assembling them requires dozens of precisely calibrated parts. This approach could let engineers print entire custom optical systems as one solid object, dramatically reducing the cost and complexity of building the next generation of sensors for medical imaging, navigation, and physics research.
 
 ---
 Title: HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation
