@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1105 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1108 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 378 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 379 papers in archive.
+  - "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information"
   - "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning"
-  - "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 89 papers in archive.
   - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
   - "Simple Features Beat Most AI Control Monitors"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 92 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 93 papers in archive.
+  - "Dynamical effects induced by synthetic SU(1,1) gauge fields"
   - "3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer"
-  - "Spacetime Emergence in the Memory of a Learning Agent"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 94 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 95 papers in archive.
+  - "Dynamic Optimistic Constrained OCO with Memory via Delay Equivalence"
   - "Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees"
-  - "Regret-Optimal Wasserstein-Robust Linear Regression"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 95 papers in archive.
   - "Learning Time-Varying Connectomes for Stable Behavior Across Development"
   - "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information
+- URL: https://paperplaine.com/papers/same-behavior-different-mechanism
+- Category: Computer Science · AI
+- Authors: Linqian Wu, Diaoxuan He
+- arXiv: 2611.08469
+- Plain-English subtitle: Can we measure how a machine thinks by watching what it does?
+- Summary: Two AI systems can behave identically to an outside observer yet process information completely differently inside. Researchers show that detecting these hidden differences requires careful internal recordings—and that some internal structures simply cannot be reliably measured from outside, no matter how much data you collect. The study reveals fundamental limits on what we can certify about how AI systems actually work.
+- Why it matters: As AI systems take on higher-stakes roles, auditors and regulators need ways to verify that a system's internal reasoning is sound, not just that it produces correct outputs. This work establishes which internal properties are measurable at all and which are structurally invisible from external observation—directly shaping what claims about AI safety and consciousness we can actually prove.
+
+### Dynamical effects induced by synthetic SU(1,1) gauge fields
+- URL: https://paperplaine.com/papers/dynamical-effects-induced-by
+- Category: Physics
+- Authors: Chenwei Lv
+- arXiv: 2611.08447
+- Plain-English subtitle: How artificial force fields amplify and entangle quantum particles
+- Summary: Physicists discovered that specially designed gauge fields can make quantum particles oscillate in unstable ways that amplify their behavior, rather than keeping them stable. The amplification follows geometric rules in curved spacetime, and threading this field through a system of atoms creates a model where entanglement—the quantum connection between particles—scales in unexpected ways that depends on whether the field is stable or unstable.
+- Why it matters: The findings offer a new way to control how quantum information spreads and entangles in systems that lose energy to their surroundings. Because the framework applies to different types of force fields and higher dimensions, it could guide the design of quantum computers and simulators that deliberately use instability to amplify signals or engineer how particles transfer energy—turning what is usually a problem into a useful feature.
+
+### Dynamic Optimistic Constrained OCO with Memory via Delay Equivalence
+- URL: https://paperplaine.com/papers/dynamic-optimistic-constrained-oco
+- Category: Mathematics
+- Authors: Mohammed Abdullah, George Iosifidis, Salah Eddine Elayoubi et al.
+- arXiv: 2611.08302
+- Plain-English subtitle: Making learning systems smarter when they remember and face shifting rules
+- Summary: Researchers created an algorithm that helps learning systems make better decisions when they must remember past states and adapt to changing constraints—like a robot managing energy budgets while learning from experience. The system improves dramatically when it can use predictions, reaching near-perfect performance with accurate forecasts, and works without requiring unrealistic assumptions about how constraints behave.
+- Why it matters: Many real systems—from power grids balancing supply with shifting demand to autonomous vehicles managing fuel while adapting to traffic—must learn and adapt while respecting hard constraints. This work provides the first practical guarantees that such systems won't accumulate large budget violations over time, and shows how good predictions can nearly eliminate the performance cost of having to remember past decisions. This makes it possible to prove these systems will behave safely even in unpredictable environments.
 
 ### StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning
 - URL: https://paperplaine.com/papers/stepback-step-level-error
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Checking whether animal ID systems actually recognize the animal itself
 - Summary: When computer systems identify individual animals from photos, they often get the right answer — but researchers didn't know if the system was actually looking at the animal or just memorizing background clues. A new evaluation method called Counterfactual Foreground Retrieval reveals what the system is really using by testing it three ways: with the full photo, with only the animal visible, and with only the background. This turns a simple accuracy score into an evidence profile showing whether the model genuinely recognizes the animal or is taking shortcuts.
 - Why it matters: Wildlife researchers, conservation programs, and veterinarians increasingly rely on automated systems to track individual animals across photos and video. If these systems are secretly relying on background scenery or body silhouettes instead of actual animal features, they'll fail when conditions change — different locations, seasons, or camera angles — undermining years of monitoring work. This evaluation method lets researchers catch those failures before deployment and build systems that actually work in the field.
-
-### Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues
-- URL: https://paperplaine.com/papers/occlusion-for-free-detecting
-- Category: Computer Science
-- Authors: Chibueze Praise Onyenweaku, Toyibat Adele, Sikirulahi Opeyemi Abdulkareem et al.
-- arXiv: 2611.06899
-- Plain-English subtitle: Spotting when people are hidden in camera images without special training
-- Summary: Self-driving cars and robots can detect when pedestrians are partially hidden by comparing two measurements their cameras already make: how tall the person appears and how far away the depth sensor says they are. When someone is occluded, these two measurements disagree in a predictable way, creating a free signal that requires no labeled training data and works across different camera types and locations.
-- Why it matters: Robots and autonomous vehicles need to know when a pedestrian is hidden behind a car or pole—not to reconstruct the hidden part, but to adjust their safety assumptions. Current occlusion detectors require expensive hand-labeled training data that doesn't exist in many real-world deployment locations. This method works anywhere without retraining, which matters especially for deployment in cities and countries where labeled datasets haven't been collected.
-
-### 3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer
-- URL: https://paperplaine.com/papers/3d-printed-monolithic-optomechanical
-- Category: Physics
-- Authors: Ramy Tannous, Dogan Sinar, Sagar Patel et al.
-- arXiv: 2611.06898
-- Plain-English subtitle: 3D printing precision instruments that don't shift when temperature changes
-- Summary: Researchers used 3D printing to build a complete optical instrument as a single piece from a specially chosen metal alloy. The integrated design eliminates hundreds of tiny alignment problems that plague traditional hand-assembled optical systems, making the device smaller and more stable when temperatures fluctuate.
-- Why it matters: Quantum sensors and other cutting-edge optical tools have historically been fragile and difficult to miniaturize because assembling them requires dozens of precisely calibrated parts. This approach could let engineers print entire custom optical systems as one solid object, dramatically reducing the cost and complexity of building the next generation of sensors for medical imaging, navigation, and physics research.
-
-### HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation
-- URL: https://paperplaine.com/papers/harp-training-free-dual
-- Category: Computer Science · AI
-- Authors: Zhen Tao, Xun Zhou, Xuhui Chen et al.
-- arXiv: 2611.05319
-- Plain-English subtitle: Giving AI recommendation systems a two-way conversation instead of one-sided orders
-- Summary: Large language model recommendation systems treat users and items asymmetrically—only users get proper descriptions, while items remain nameless. Researchers created HARP, a training-free method that gives items their own profiles and lets both sides communicate, boosting the accuracy of top recommendations by 7–24% across major datasets without retraining the underlying AI model.
-- Why it matters: Recommendation systems power shopping, streaming, and social media. A 7–24% accuracy gain means users see relevant suggestions faster, reducing time spent scrolling. Because HARP requires no retraining, platforms can deploy it immediately on existing AI systems without computational overhead or data collection delays.
 
 ## About
 
