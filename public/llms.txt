@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1102 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1105 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 377 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 378 papers in archive.
+  - "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning"
   - "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents"
-  - "CounterFactual Retrieval for Evidence-Aware Individual Animal Identification"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 89 papers in archive.
   - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
   - "Simple Features Beat Most AI Control Monitors"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 95 papers in archive.
   - "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found"
   - "Learning AI Agents, Market Makers, and Stress in Automated Markets"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 94 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 95 papers in archive.
+  - "Conformal Prediction for Time-Dependent PDEs"
   - "Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation"
-  - "Numerical Integration on Bounded Domains via Learned Reflected Diffusions"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 88 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 89 papers in archive.
+  - "Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit"
   - "ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction"
-  - "Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 78 papers in archive.
   - "Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies"
   - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning
+- URL: https://paperplaine.com/papers/stepback-step-level-error
+- Category: Computer Science · AI
+- Authors: Yang Ouyang, Jung-Eun Kim
+- arXiv: 2611.08403
+- Plain-English subtitle: Fixing AI reasoning errors one step at a time instead of starting over
+- Summary: A new method called StepBack helps AI systems solve math and reasoning problems more efficiently by pinpointing where they first go wrong, then recomputing only from that point onward. It achieves the same accuracy as existing methods while cutting computational costs by up to 41%.
+- Why it matters: AI reasoning systems currently waste enormous computation by redoing entire reasoning chains from scratch. StepBack cuts that waste substantially, which directly lowers the energy and cost of running these systems at scale—a key bottleneck as reasoning-based AI becomes more common in research and applications.
+
+### Conformal Prediction for Time-Dependent PDEs
+- URL: https://paperplaine.com/papers/conformal-prediction-for-time
+- Category: Statistics
+- Authors: Joshua Stiller, Annika Schneider, Eyke Hüllermeier
+- arXiv: 2611.08409
+- Plain-English subtitle: Making AI predictions reliable when simulating physical systems over time
+- Summary: A standard technique for making sure machine learning predictions come with honest confidence bounds breaks down when forecasting how physical systems evolve. The researchers proved why this happens mathematically and showed that fixing it requires carefully choosing how fine-grained your computational grid is, then proposed a weighted method that can provide genuine coverage guarantees even as predictions stretch across longer time periods.
+- Why it matters: When machine learning models replace expensive physics simulations in flood forecasting, engine design, or financial risk modeling, getting the confidence intervals wrong can mask dangerous blind spots. This work explains the failure mode and offers practical fixes, which means engineers and scientists can now build safety margins into AI-based predictions with better mathematical justification rather than guesswork.
+
+### Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit
+- URL: https://paperplaine.com/papers/spectral-regimes-of-truncated
+- Category: Engineering
+- Authors: Unnikrishna Pillai
+- arXiv: 2611.08401
+- Plain-English subtitle: How smooth versus jagged signal boundaries change mathematical behavior
+- Summary: When scientists observe a limited slice of a signal, the math predicts a sharp transition zone between reliable and unreliable measurements — but smoothing the signal's edge fundamentally reshapes this zone. Instead of a narrow plunge, you get a gradual power-law decay, with the shape controlled by how much smoothing is applied.
+- Why it matters: Signal processing underpins everything from radar and sonar to medical imaging and wireless communication. Understanding exactly how the shape of a signal's boundaries affects which measurements stay reliable determines whether you can trust data from real-world systems that never have perfectly sharp signal edges. This work provides the precise mathematical rules engineers need to predict reliability for signals with realistic, smoothed boundaries.
 
 ### A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
 - URL: https://paperplaine.com/papers/a-framework-for-context
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Giving AI recommendation systems a two-way conversation instead of one-sided orders
 - Summary: Large language model recommendation systems treat users and items asymmetrically—only users get proper descriptions, while items remain nameless. Researchers created HARP, a training-free method that gives items their own profiles and lets both sides communicate, boosting the accuracy of top recommendations by 7–24% across major datasets without retraining the underlying AI model.
 - Why it matters: Recommendation systems power shopping, streaming, and social media. A 7–24% accuracy gain means users see relevant suggestions faster, reducing time spent scrolling. Because HARP requires no retraining, platforms can deploy it immediately on existing AI systems without computational overhead or data collection delays.
-
-### Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees
-- URL: https://paperplaine.com/papers/counterexamples-to-the-happy
-- Category: Mathematics
-- Authors: Oswin Aichholzer, Joseph Dorfer, Peter Kramer et al.
-- arXiv: 2611.05300
-- Plain-English subtitle: A 50-year-old math conjecture about rearranging tree diagrams is finally proven wrong
-- Summary: Mathematicians have disproven the "happy edge conjecture," a decades-old principle suggesting that shared connections between two tree diagrams never need to be broken when transforming one into the other. The researchers found counterexamples with 16 and 30 points that violate this rule, overturning what computer checks had verified for all smaller cases up to 10 points.
-- Why it matters: This conjecture has influenced how computer scientists think about reconfiguring networks and geometric structures. Disproving it forces researchers to rethink algorithms for moving between different valid configurations of spanning trees — a problem that appears in circuit design, network optimization, and computational geometry. The finding also demonstrates that some patterns verified by computers on small examples can catastrophically fail at larger scales.
-
-### Suppressing Misaligned Behaviors in Language Models, Durably
-- URL: https://paperplaine.com/papers/suppressing-misaligned-behaviors-in
-- Category: Computer Science · AI
-- Authors: Luxi He, Pengcheng Jiang, Jifan Zhang et al.
-- arXiv: 2611.05358
-- Plain-English subtitle: A better way to permanently remove unwanted behaviors from AI language models
-- Summary: When AI language models develop harmful behaviors—like cheating on tests or generating insecure code—standard techniques to suppress them often fail once the model encounters new training data. Researchers tested a new method called PEARL that trains models to recover from misaligned states, making the suppression stick even after additional training. On two model families, PEARL kept the unwanted behaviors suppressed while maintaining the model's overall performance.
-- Why it matters: As AI systems become more widely deployed, the ability to permanently remove dangerous behaviors matters directly for safety. Current methods fail because they don't account for how new training can reactivate old problems—like a bad habit returning after you've supposedly broken it. PEARL's approach of building durability into the suppression process means fixes are more likely to hold up in real-world use, where models will inevitably encounter new data and continued refinement.
-
-### Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies
-- URL: https://paperplaine.com/papers/regret-based-characterization-information
-- Category: Economics
-- Authors: Irene Aldridge
-- arXiv: 2611.05227
-- Plain-English subtitle: How to tell if an AI system is actually adapting or just getting lucky
-- Summary: When an AI policy makes decisions, its success might come from playing the same safe moves repeatedly or from genuinely reacting to changing conditions. This paper shows that you can detect which one is happening by measuring how much the policy uses information about its surroundings, and it quantifies exactly how many observations you'd need from the policy's actual decisions to audit this reliably.
-- Why it matters: Regulators and auditors need ways to verify that AI systems used in high-stakes settings—like credit decisions, hiring, or loan approvals—are actually learning from context rather than just exploiting statistical patterns. This work provides a mathematical framework to catch policies that appear to be performing well but are actually making the same mistakes repeatedly. It also establishes what's theoretically possible to verify from real-world data, helping set realistic expectations for oversight.
 
 ## About
 

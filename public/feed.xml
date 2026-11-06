@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 23:55:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 14:47:52 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning</title>
+      <link>https://paperplaine.com/papers/stepback-step-level-error</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/stepback-step-level-error</guid>
+      <pubDate>Thu, 05 Nov 2026 18:12:49 GMT</pubDate>
+      <author>Yang Ouyang, Jung-Eun Kim</author>
+      <category>AI</category>
+      <description>Fixing AI reasoning errors one step at a time instead of starting over</description>
+      <content:encoded><![CDATA[<p><em>Fixing AI reasoning errors one step at a time instead of starting over</em></p><p>A new method called StepBack helps AI systems solve math and reasoning problems more efficiently by pinpointing where they first go wrong, then recomputing only from that point onward. It achieves the same accuracy as existing methods while cutting computational costs by up to 41%.</p><p><strong>Why it matters:</strong> AI reasoning systems currently waste enormous computation by redoing entire reasoning chains from scratch. StepBack cuts that waste substantially, which directly lowers the energy and cost of running these systems at scale—a key bottleneck as reasoning-based AI becomes more common in research and applications.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Conformal Prediction for Time-Dependent PDEs</title>
+      <link>https://paperplaine.com/papers/conformal-prediction-for-time</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/conformal-prediction-for-time</guid>
+      <pubDate>Thu, 05 Nov 2026 18:15:42 GMT</pubDate>
+      <author>Joshua Stiller, Annika Schneider, Eyke Hüllermeier</author>
+      <category>Statistics</category>
+      <description>Making AI predictions reliable when simulating physical systems over time</description>
+      <content:encoded><![CDATA[<p><em>Making AI predictions reliable when simulating physical systems over time</em></p><p>A standard technique for making sure machine learning predictions come with honest confidence bounds breaks down when forecasting how physical systems evolve. The researchers proved why this happens mathematically and showed that fixing it requires carefully choosing how fine-grained your computational grid is, then proposed a weighted method that can provide genuine coverage guarantees even as predictions stretch across longer time periods.</p><p><strong>Why it matters:</strong> When machine learning models replace expensive physics simulations in flood forecasting, engine design, or financial risk modeling, getting the confidence intervals wrong can mask dangerous blind spots. This work explains the failure mode and offers practical fixes, which means engineers and scientists can now build safety margins into AI-based predictions with better mathematical justification rather than guesswork.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit</title>
+      <link>https://paperplaine.com/papers/spectral-regimes-of-truncated</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/spectral-regimes-of-truncated</guid>
+      <pubDate>Thu, 05 Nov 2026 18:11:38 GMT</pubDate>
+      <author>Unnikrishna Pillai</author>
+      <category>Engineering</category>
+      <description>How smooth versus jagged signal boundaries change mathematical behavior</description>
+      <content:encoded><![CDATA[<p><em>How smooth versus jagged signal boundaries change mathematical behavior</em></p><p>When scientists observe a limited slice of a signal, the math predicts a sharp transition zone between reliable and unreliable measurements — but smoothing the signal's edge fundamentally reshapes this zone. Instead of a narrow plunge, you get a gradual power-law decay, with the shape controlled by how much smoothing is applied.</p><p><strong>Why it matters:</strong> Signal processing underpins everything from radar and sonar to medical imaging and wireless communication. Understanding exactly how the shape of a signal's boundaries affects which measurements stay reliable determines whether you can trust data from real-world systems that never have perfectly sharp signal edges. This work provides the precise mathematical rules engineers need to predict reliability for signals with realistic, smoothed boundaries.</p>]]></content:encoded>
+    </item>
     <item>
       <title>A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</title>
       <link>https://paperplaine.com/papers/a-framework-for-context</link>

@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1102 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-05
+This file contains the complete plain-English text of all 1105 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-06
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning
+Subtitle: Fixing AI reasoning errors one step at a time instead of starting over
+URL: https://paperplaine.com/papers/stepback-step-level-error
+Category: Computer Science · AI
+Authors: Yang Ouyang, Jung-Eun Kim
+arXiv ID: 2611.08403
+arXiv URL: https://arxiv.org/abs/2611.08403
+Posted: 2026-11-06
+
+Summary: A new method called StepBack helps AI systems solve math and reasoning problems more efficiently by pinpointing where they first go wrong, then recomputing only from that point onward. It achieves the same accuracy as existing methods while cutting computational costs by up to 41%.
+
+Why it matters: AI reasoning systems currently waste enormous computation by redoing entire reasoning chains from scratch. StepBack cuts that waste substantially, which directly lowers the energy and cost of running these systems at scale—a key bottleneck as reasoning-based AI becomes more common in research and applications.
+
+---
+Title: Conformal Prediction for Time-Dependent PDEs
+Subtitle: Making AI predictions reliable when simulating physical systems over time
+URL: https://paperplaine.com/papers/conformal-prediction-for-time
+Category: Statistics
+Authors: Joshua Stiller, Annika Schneider, Eyke Hüllermeier
+arXiv ID: 2611.08409
+arXiv URL: https://arxiv.org/abs/2611.08409
+Posted: 2026-11-06
+
+Summary: A standard technique for making sure machine learning predictions come with honest confidence bounds breaks down when forecasting how physical systems evolve. The researchers proved why this happens mathematically and showed that fixing it requires carefully choosing how fine-grained your computational grid is, then proposed a weighted method that can provide genuine coverage guarantees even as predictions stretch across longer time periods.
+
+Why it matters: When machine learning models replace expensive physics simulations in flood forecasting, engine design, or financial risk modeling, getting the confidence intervals wrong can mask dangerous blind spots. This work explains the failure mode and offers practical fixes, which means engineers and scientists can now build safety margins into AI-based predictions with better mathematical justification rather than guesswork.
+
+---
+Title: Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit
+Subtitle: How smooth versus jagged signal boundaries change mathematical behavior
+URL: https://paperplaine.com/papers/spectral-regimes-of-truncated
+Category: Engineering
+Authors: Unnikrishna Pillai
+arXiv ID: 2611.08401
+arXiv URL: https://arxiv.org/abs/2611.08401
+Posted: 2026-11-06
+
+Summary: When scientists observe a limited slice of a signal, the math predicts a sharp transition zone between reliable and unreliable measurements — but smoothing the signal's edge fundamentally reshapes this zone. Instead of a narrow plunge, you get a gradual power-law decay, with the shape controlled by how much smoothing is applied.
+
+Why it matters: Signal processing underpins everything from radar and sonar to medical imaging and wireless communication. Understanding exactly how the shape of a signal's boundaries affects which measurements stay reliable determines whether you can trust data from real-world systems that never have perfectly sharp signal edges. This work provides the precise mathematical rules engineers need to predict reliability for signals with realistic, smoothed boundaries.
 
 ---
 Title: A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
