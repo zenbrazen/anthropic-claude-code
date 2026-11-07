@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1108 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-06
+This file contains the complete plain-English text of all 1110 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-07
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,34 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes
+Subtitle: How rewording routing options helps AI understand real workplace language
+URL: https://paperplaine.com/papers/label-wording-augmentation-in
+Category: Computer Science · AI
+Authors: Vladimir Beskorovainyi
+arXiv ID: 2611.08439
+arXiv URL: https://arxiv.org/abs/2611.08439
+Posted: 2026-11-07
+
+Summary: When AI systems must choose from options that users supply in varying ways, rewording those options during training helps the model handle unfamiliar words and slang—but not abbreviations or coded labels. Testing two versions of a Russian language model on routing tasks showed the reworded version improved accuracy by up to 24 percentage points on everyday language, though gains disappeared entirely when labels were opaque codes or abbreviations.
+
+Why it matters: Chatbots and AI assistants often route requests to the right department or service based on labels they see at request time—labels the AI builders didn't create and can't control. This work shows that training on multiple phrasings of those labels makes the system more robust to how humans actually word things in offices and customer service, though it won't help when labels are meaningless codes. That means AI systems deployed in real workplaces can become more reliable without needing to standardize how people label their options.
+
+---
+Title: Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction
+Subtitle: Using trader identities to predict cryptocurrency price movements seconds ahead
+URL: https://paperplaine.com/papers/beyond-anonymous-order-flow
+Category: Quantitative Finance
+Authors: Jingqiu Ding, Daojing Zhai
+arXiv ID: 2611.05218
+arXiv URL: https://arxiv.org/abs/2611.05218
+Posted: 2026-11-07
+
+Summary: Researchers analyzed 17.1 billion trades on Hyperliquid and found that tracking individual wallet addresses — rather than just treating all trades anonymously — improves short-term price predictions. In their best model, identifying the top 10% of traders by past performance and monitoring their activity raised prediction accuracy by 1.12 percentage points and generated profits of 3.11 basis points per trade over ten seconds.
+
+Why it matters: This shows that in crypto markets, individual trader identity matters for predicting price moves in the next few seconds to minutes. Since cryptocurrency exchanges now expose wallet addresses while traditional stock markets keep trader identity hidden, crypto traders have access to information that stock traders don't — creating a meaningful edge for those who know how to use it. This could widen the gap between sophisticated algorithmic traders and ordinary investors in crypto markets.
 
 ---
 Title: Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information

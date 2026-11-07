@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1108 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1110 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 379 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 380 papers in archive.
+  - "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes"
   - "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information"
-  - "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 89 papers in archive.
   - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
   - "Simple Features Beat Most AI Control Monitors"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 95 papers in archive.
   - "Learning Time-Varying Connectomes for Stable Behavior Across Development"
   - "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 95 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 96 papers in archive.
+  - "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction"
   - "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found"
-  - "Learning AI Agents, Market Makers, and Stress in Automated Markets"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 95 papers in archive.
   - "Conformal Prediction for Time-Dependent PDEs"
   - "Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes
+- URL: https://paperplaine.com/papers/label-wording-augmentation-in
+- Category: Computer Science · AI
+- Authors: Vladimir Beskorovainyi
+- arXiv: 2611.08439
+- Plain-English subtitle: How rewording routing options helps AI understand real workplace language
+- Summary: When AI systems must choose from options that users supply in varying ways, rewording those options during training helps the model handle unfamiliar words and slang—but not abbreviations or coded labels. Testing two versions of a Russian language model on routing tasks showed the reworded version improved accuracy by up to 24 percentage points on everyday language, though gains disappeared entirely when labels were opaque codes or abbreviations.
+- Why it matters: Chatbots and AI assistants often route requests to the right department or service based on labels they see at request time—labels the AI builders didn't create and can't control. This work shows that training on multiple phrasings of those labels makes the system more robust to how humans actually word things in offices and customer service, though it won't help when labels are meaningless codes. That means AI systems deployed in real workplaces can become more reliable without needing to standardize how people label their options.
+
+### Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction
+- URL: https://paperplaine.com/papers/beyond-anonymous-order-flow
+- Category: Quantitative Finance
+- Authors: Jingqiu Ding, Daojing Zhai
+- arXiv: 2611.05218
+- Plain-English subtitle: Using trader identities to predict cryptocurrency price movements seconds ahead
+- Summary: Researchers analyzed 17.1 billion trades on Hyperliquid and found that tracking individual wallet addresses — rather than just treating all trades anonymously — improves short-term price predictions. In their best model, identifying the top 10% of traders by past performance and monitoring their activity raised prediction accuracy by 1.12 percentage points and generated profits of 3.11 basis points per trade over ten seconds.
+- Why it matters: This shows that in crypto markets, individual trader identity matters for predicting price moves in the next few seconds to minutes. Since cryptocurrency exchanges now expose wallet addresses while traditional stock markets keep trader identity hidden, crypto traders have access to information that stock traders don't — creating a meaningful edge for those who know how to use it. This could widen the gap between sophisticated algorithmic traders and ordinary investors in crypto markets.
 
 ### Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information
 - URL: https://paperplaine.com/papers/same-behavior-different-mechanism
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How brains rewire themselves while keeping behavior on track
 - Summary: A brain doesn't stay the same as it grows—neurons are born, move around, and change their connections. Researchers built a computational model showing that a single genetic program can generate different neural wiring patterns at different ages, allowing an animal to maintain stable behavior (like tracking moving lights or swimming toward light) throughout development. Simply training the model at three key ages was enough to keep performance consistent across the entire developmental window, even at ages never explicitly trained.
 - Why it matters: Young animals must behave correctly—hunt, navigate, escape threats—even as their brains are still under construction. This work reveals a principle that could explain how real nervous systems stay functional during dramatic physical changes. It also provides a testable framework for neuroscientists studying which genes control not just when neurons are born, but how their connections change over time to preserve behavior.
-
-### Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found
-- URL: https://paperplaine.com/papers/hard-to-fool-a
-- Category: Quantitative Finance
-- Authors: Henry Zhang
-- arXiv: 2611.06607
-- Plain-English subtitle: Why AI research loops designed to catch false discoveries beat traditional backtesting in finance
-- Summary: A new system for using AI to discover trading strategies adds so many safeguards against overfitting that it catches the mistakes human traders usually miss. Across 24 campaigns testing everything from options strategies to crypto predictions, most hypotheses failed — including one that looked perfect in testing but collapsed completely when evaluated on fresh data, revealing exactly why the system works.
-- Why it matters: Traders lose billions annually to strategies that worked in hindsight but fail in real markets. This system makes it exponentially harder to mistake luck for skill by splitting data so results can't be gamed, requiring strategies to pass multiple independent tests, and locking in decisions before results are known. The real payoff isn't finding winners — it's making sure reported winners are actually real.
-
-### CounterFactual Retrieval for Evidence-Aware Individual Animal Identification
-- URL: https://paperplaine.com/papers/counterfactual-retrieval-for-evidence
-- Category: Computer Science · AI
-- Authors: Ankit K. Upadhyay, Aleksandr Algasov, Ekaterina Nepovinnykh et al.
-- arXiv: 2611.06864
-- Plain-English subtitle: Checking whether animal ID systems actually recognize the animal itself
-- Summary: When computer systems identify individual animals from photos, they often get the right answer — but researchers didn't know if the system was actually looking at the animal or just memorizing background clues. A new evaluation method called Counterfactual Foreground Retrieval reveals what the system is really using by testing it three ways: with the full photo, with only the animal visible, and with only the background. This turns a simple accuracy score into an evidence profile showing whether the model genuinely recognizes the animal or is taking shortcuts.
-- Why it matters: Wildlife researchers, conservation programs, and veterinarians increasingly rely on automated systems to track individual animals across photos and video. If these systems are secretly relying on background scenery or body silhouettes instead of actual animal features, they'll fail when conditions change — different locations, seasons, or camera angles — undermining years of monitoring work. This evaluation method lets researchers catch those failures before deployment and build systems that actually work in the field.
 
 ## About
 
