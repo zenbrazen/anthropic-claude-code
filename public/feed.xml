@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 13:44:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 22:27:37 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue</title>
+      <link>https://paperplaine.com/papers/medgraph-maintaining-patient-state</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/medgraph-maintaining-patient-state</guid>
+      <pubDate>Thu, 05 Nov 2026 18:27:20 GMT</pubDate>
+      <author>Donghua Zhang, Zizheng Wang, Ze Dong et al.</author>
+      <category>AI</category>
+      <description>Keeping medical AI from forgetting or mixing up patient histories</description>
+      <content:encoded><![CDATA[<p><em>Keeping medical AI from forgetting or mixing up patient histories</em></p><p>Medical AI assistants often botch patient histories by retrieving outdated information, confusing one patient's facts with another's, or missing critical safety details. Researchers built MedGraph, a memory system that stores patient facts with dates, ties them to the right person, and links related health records into chains—letting AI answer questions about what was true at a specific point in time. On a benchmark of longitudinal medical conversations, MedGraph outperformed five other memory systems by 10+ points.</p><p><strong>Why it matters:</strong> Medical AI that misremembers patient histories can lead to dangerous errors—prescribing medications to the wrong person or acting on outdated diagnoses. Better memory means AI assistants can reliably track patients across multiple visits without requiring doctors to re-enter information or second-guess the AI's recollection. This directly reduces the friction and risk that currently limits AI use in routine clinical care.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise</title>
+      <link>https://paperplaine.com/papers/zirah-a-post-quantum</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/zirah-a-post-quantum</guid>
+      <pubDate>Thu, 05 Nov 2026 15:54:05 GMT</pubDate>
+      <author>Muhammad Shaheer Bin Junaid</author>
+      <category>Comp Sci</category>
+      <description>Building a cheap hardware signer that reveals where quantum-resistant keys leak</description>
+      <content:encoded><![CDATA[<p><em>Building a cheap hardware signer that reveals where quantum-resistant keys leak</em></p><p>Researchers built a $50-class device that signs documents using quantum-resistant cryptography while deliberately exposing its vulnerabilities. They found that the post-quantum signing key, stored in the device's ordinary memory, could be extracted by a debugger before protections were fully enabled—demonstrating that even when the random number generator works perfectly, the key itself remains exposed on inexpensive hardware.</p><p><strong>Why it matters:</strong> As quantum computers threaten current encryption, organizations are switching to post-quantum algorithms. This work shows that the algorithm's strength doesn't matter if the hardware storing the signing key is cheap and has debug ports left accessible. It reveals a concrete attack path that manufacturers and users need to defend against, not as a theoretical concern but as something an attacker with physical access can actually execute.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Invariance before structure: two modes of emergent compression in representation learning</title>
+      <link>https://paperplaine.com/papers/invariance-before-structure-two</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/invariance-before-structure-two</guid>
+      <pubDate>Thu, 05 Nov 2026 12:49:05 GMT</pubDate>
+      <author>Hardik Rajpal, Dan Goodman</author>
+      <category>Biology</category>
+      <description>Why different brains learn the same patterns, in two separate stages</description>
+      <content:encoded><![CDATA[<p><em>Why different brains learn the same patterns, in two separate stages</em></p><p>Neural networks—both biological and artificial—develop strikingly similar internal representations despite having completely different hardware and random starting points. Researchers identified two distinct phases: first, networks compress information in ways independent of any task (parameter-space compression), then 30 epochs later, they reorganize to capture the actual structure of what they're learning (state-space compression). This explains why brains and machines converge on the same solutions even when built from entirely different parts.</p><p><strong>Why it matters:</strong> Understanding how invariance emerges helps explain why evolution and deep learning produce similar neural solutions—and why that similarity appears on a predictable timeline. This could improve how we design artificial neural networks by revealing which structures form automatically versus which require task-specific learning, making it easier to predict and control what representations will emerge in new systems.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes</title>
       <link>https://paperplaine.com/papers/label-wording-augmentation-in</link>

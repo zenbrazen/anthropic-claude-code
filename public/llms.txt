@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1110 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1113 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 380 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 381 papers in archive.
+  - "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue"
   - "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes"
-  - "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 89 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 90 papers in archive.
+  - "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise"
   - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
-  - "Simple Features Beat Most AI Control Monitors"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 93 papers in archive.
   - "Dynamical effects induced by synthetic SU(1,1) gauge fields"
   - "3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 95 papers in archive.
   - "Dynamic Optimistic Constrained OCO with Memory via Delay Equivalence"
   - "Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 95 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 96 papers in archive.
+  - "Invariance before structure: two modes of emergent compression in representation learning"
   - "Learning Time-Varying Connectomes for Stable Behavior Across Development"
-  - "AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 96 papers in archive.
   - "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction"
   - "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue
+- URL: https://paperplaine.com/papers/medgraph-maintaining-patient-state
+- Category: Computer Science · AI
+- Authors: Donghua Zhang, Zizheng Wang, Ze Dong et al.
+- arXiv: 2611.08433
+- Plain-English subtitle: Keeping medical AI from forgetting or mixing up patient histories
+- Summary: Medical AI assistants often botch patient histories by retrieving outdated information, confusing one patient's facts with another's, or missing critical safety details. Researchers built MedGraph, a memory system that stores patient facts with dates, ties them to the right person, and links related health records into chains—letting AI answer questions about what was true at a specific point in time. On a benchmark of longitudinal medical conversations, MedGraph outperformed five other memory systems by 10+ points.
+- Why it matters: Medical AI that misremembers patient histories can lead to dangerous errors—prescribing medications to the wrong person or acting on outdated diagnoses. Better memory means AI assistants can reliably track patients across multiple visits without requiring doctors to re-enter information or second-guess the AI's recollection. This directly reduces the friction and risk that currently limits AI use in routine clinical care.
+
+### Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise
+- URL: https://paperplaine.com/papers/zirah-a-post-quantum
+- Category: Computer Science
+- Authors: Muhammad Shaheer Bin Junaid
+- arXiv: 2611.08200
+- Plain-English subtitle: Building a cheap hardware signer that reveals where quantum-resistant keys leak
+- Summary: Researchers built a $50-class device that signs documents using quantum-resistant cryptography while deliberately exposing its vulnerabilities. They found that the post-quantum signing key, stored in the device's ordinary memory, could be extracted by a debugger before protections were fully enabled—demonstrating that even when the random number generator works perfectly, the key itself remains exposed on inexpensive hardware.
+- Why it matters: As quantum computers threaten current encryption, organizations are switching to post-quantum algorithms. This work shows that the algorithm's strength doesn't matter if the hardware storing the signing key is cheap and has debug ports left accessible. It reveals a concrete attack path that manufacturers and users need to defend against, not as a theoretical concern but as something an attacker with physical access can actually execute.
+
+### Invariance before structure: two modes of emergent compression in representation learning
+- URL: https://paperplaine.com/papers/invariance-before-structure-two
+- Category: Quantitative Biology
+- Authors: Hardik Rajpal, Dan Goodman
+- arXiv: 2611.07952
+- Plain-English subtitle: Why different brains learn the same patterns, in two separate stages
+- Summary: Neural networks—both biological and artificial—develop strikingly similar internal representations despite having completely different hardware and random starting points. Researchers identified two distinct phases: first, networks compress information in ways independent of any task (parameter-space compression), then 30 epochs later, they reorganize to capture the actual structure of what they're learning (state-space compression). This explains why brains and machines converge on the same solutions even when built from entirely different parts.
+- Why it matters: Understanding how invariance emerges helps explain why evolution and deep learning produce similar neural solutions—and why that similarity appears on a predictable timeline. This could improve how we design artificial neural networks by revealing which structures form automatically versus which require task-specific learning, making it easier to predict and control what representations will emerge in new systems.
 
 ### Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes
 - URL: https://paperplaine.com/papers/label-wording-augmentation-in
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI predictions reliable when simulating physical systems over time
 - Summary: A standard technique for making sure machine learning predictions come with honest confidence bounds breaks down when forecasting how physical systems evolve. The researchers proved why this happens mathematically and showed that fixing it requires carefully choosing how fine-grained your computational grid is, then proposed a weighted method that can provide genuine coverage guarantees even as predictions stretch across longer time periods.
 - Why it matters: When machine learning models replace expensive physics simulations in flood forecasting, engine design, or financial risk modeling, getting the confidence intervals wrong can mask dangerous blind spots. This work explains the failure mode and offers practical fixes, which means engineers and scientists can now build safety margins into AI-based predictions with better mathematical justification rather than guesswork.
-
-### Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit
-- URL: https://paperplaine.com/papers/spectral-regimes-of-truncated
-- Category: Engineering
-- Authors: Unnikrishna Pillai
-- arXiv: 2611.08401
-- Plain-English subtitle: How smooth versus jagged signal boundaries change mathematical behavior
-- Summary: When scientists observe a limited slice of a signal, the math predicts a sharp transition zone between reliable and unreliable measurements — but smoothing the signal's edge fundamentally reshapes this zone. Instead of a narrow plunge, you get a gradual power-law decay, with the shape controlled by how much smoothing is applied.
-- Why it matters: Signal processing underpins everything from radar and sonar to medical imaging and wireless communication. Understanding exactly how the shape of a signal's boundaries affects which measurements stay reliable determines whether you can trust data from real-world systems that never have perfectly sharp signal edges. This work provides the precise mathematical rules engineers need to predict reliability for signals with realistic, smoothed boundaries.
-
-### A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
-- URL: https://paperplaine.com/papers/a-framework-for-context
-- Category: Computer Science · AI
-- Authors: Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel
-- arXiv: 2611.06914
-- Plain-English subtitle: Making AI social agents more reliable by grounding them in richer context
-- Summary: When researchers use large language models to simulate human behavior in social scenarios, small rewording changes can dramatically flip how the AI acts — a major problem for trusting the results. Adding specific types of background information to the AI's prompts — like clear rules, realistic scenarios, or explanations of what matters in a decision — reduced this flip-flopping and made behavior more predictable, though different types of context worked better for different AI models.
-- Why it matters: Social simulations using AI are increasingly used to forecast human behavior, test policy ideas, and design systems. If these simulations give wildly different results from trivial prompt changes, they're unreliable for real-world decisions. This framework provides a concrete way to test and improve whether AI agents are stable enough to trust, which is essential before using them to guide anything from public health to economics.
-
-### Learning Time-Varying Connectomes for Stable Behavior Across Development
-- URL: https://paperplaine.com/papers/learning-time-varying-connectomes
-- Category: Quantitative Biology
-- Authors: Christof Fehrman, Jacob J. Morra, Eva A. Naumann
-- arXiv: 2611.06895
-- Plain-English subtitle: How brains rewire themselves while keeping behavior on track
-- Summary: A brain doesn't stay the same as it grows—neurons are born, move around, and change their connections. Researchers built a computational model showing that a single genetic program can generate different neural wiring patterns at different ages, allowing an animal to maintain stable behavior (like tracking moving lights or swimming toward light) throughout development. Simply training the model at three key ages was enough to keep performance consistent across the entire developmental window, even at ages never explicitly trained.
-- Why it matters: Young animals must behave correctly—hunt, navigate, escape threats—even as their brains are still under construction. This work reveals a principle that could explain how real nervous systems stay functional during dramatic physical changes. It also provides a testable framework for neuroscientists studying which genes control not just when neurons are born, but how their connections change over time to preserve behavior.
 
 ## About
 

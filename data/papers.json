@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.08433",
+    "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
+    "authors": "Donghua Zhang, Zizheng Wang, Ze Dong et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-05T18:27:20Z",
+    "publishedFormatted": "Nov 5, 2026",
+    "subtitle": "Keeping medical AI from forgetting or mixing up patient histories",
+    "summary": "Medical AI assistants often botch patient histories by retrieving outdated information, confusing one patient's facts with another's, or missing critical safety details. Researchers built MedGraph, a memory system that stores patient facts with dates, ties them to the right person, and links related health records into chains—letting AI answer questions about what was true at a specific point in time. On a benchmark of longitudinal medical conversations, MedGraph outperformed five other memory systems by 10+ points.",
+    "whyItMatters": "Medical AI that misremembers patient histories can lead to dangerous errors—prescribing medications to the wrong person or acting on outdated diagnoses. Better memory means AI assistants can reliably track patients across multiple visits without requiring doctors to re-enter information or second-guess the AI's recollection. This directly reduces the friction and risk that currently limits AI use in routine clinical care.",
+    "fetchedAt": "2026-11-07T22:27:30.997Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 169
+    },
+    "slug": "medgraph-maintaining-patient-state"
+  },
+  {
+    "id": "2611.08200",
+    "title": "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise",
+    "authors": "Muhammad Shaheer Bin Junaid",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-11-05T15:54:05Z",
+    "publishedFormatted": "Nov 5, 2026",
+    "subtitle": "Building a cheap hardware signer that reveals where quantum-resistant keys leak",
+    "summary": "Researchers built a $50-class device that signs documents using quantum-resistant cryptography while deliberately exposing its vulnerabilities. They found that the post-quantum signing key, stored in the device's ordinary memory, could be extracted by a debugger before protections were fully enabled—demonstrating that even when the random number generator works perfectly, the key itself remains exposed on inexpensive hardware.",
+    "whyItMatters": "As quantum computers threaten current encryption, organizations are switching to post-quantum algorithms. This work shows that the algorithm's strength doesn't matter if the hardware storing the signing key is cheap and has debug ports left accessible. It reveals a concrete attack path that manufacturers and users need to defend against, not as a theoretical concern but as something an attacker with physical access can actually execute.",
+    "fetchedAt": "2026-11-07T22:27:33.967Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 306
+    },
+    "slug": "zirah-a-post-quantum"
+  },
+  {
+    "id": "2611.07952",
+    "title": "Invariance before structure: two modes of emergent compression in representation learning",
+    "authors": "Hardik Rajpal, Dan Goodman",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-11-05T12:49:05Z",
+    "publishedFormatted": "Nov 5, 2026",
+    "subtitle": "Why different brains learn the same patterns, in two separate stages",
+    "summary": "Neural networks—both biological and artificial—develop strikingly similar internal representations despite having completely different hardware and random starting points. Researchers identified two distinct phases: first, networks compress information in ways independent of any task (parameter-space compression), then 30 epochs later, they reorganize to capture the actual structure of what they're learning (state-space compression). This explains why brains and machines converge on the same solutions even when built from entirely different parts.",
+    "whyItMatters": "Understanding how invariance emerges helps explain why evolution and deep learning produce similar neural solutions—and why that similarity appears on a predictable timeline. This could improve how we design artificial neural networks by revealing which structures form automatically versus which require task-specific learning, making it easier to predict and control what representations will emerge in new systems.",
+    "fetchedAt": "2026-11-07T22:27:37.077Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 157
+    },
+    "slug": "invariance-before-structure-two"
+  },
+  {
     "id": "2611.08439",
     "title": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes",
     "authors": "Vladimir Beskorovainyi",

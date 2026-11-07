@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1110 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1113 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-07
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue
+Subtitle: Keeping medical AI from forgetting or mixing up patient histories
+URL: https://paperplaine.com/papers/medgraph-maintaining-patient-state
+Category: Computer Science · AI
+Authors: Donghua Zhang, Zizheng Wang, Ze Dong et al.
+arXiv ID: 2611.08433
+arXiv URL: https://arxiv.org/abs/2611.08433
+Posted: 2026-11-07
+
+Summary: Medical AI assistants often botch patient histories by retrieving outdated information, confusing one patient's facts with another's, or missing critical safety details. Researchers built MedGraph, a memory system that stores patient facts with dates, ties them to the right person, and links related health records into chains—letting AI answer questions about what was true at a specific point in time. On a benchmark of longitudinal medical conversations, MedGraph outperformed five other memory systems by 10+ points.
+
+Why it matters: Medical AI that misremembers patient histories can lead to dangerous errors—prescribing medications to the wrong person or acting on outdated diagnoses. Better memory means AI assistants can reliably track patients across multiple visits without requiring doctors to re-enter information or second-guess the AI's recollection. This directly reduces the friction and risk that currently limits AI use in routine clinical care.
+
+---
+Title: Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise
+Subtitle: Building a cheap hardware signer that reveals where quantum-resistant keys leak
+URL: https://paperplaine.com/papers/zirah-a-post-quantum
+Category: Computer Science
+Authors: Muhammad Shaheer Bin Junaid
+arXiv ID: 2611.08200
+arXiv URL: https://arxiv.org/abs/2611.08200
+Posted: 2026-11-07
+
+Summary: Researchers built a $50-class device that signs documents using quantum-resistant cryptography while deliberately exposing its vulnerabilities. They found that the post-quantum signing key, stored in the device's ordinary memory, could be extracted by a debugger before protections were fully enabled—demonstrating that even when the random number generator works perfectly, the key itself remains exposed on inexpensive hardware.
+
+Why it matters: As quantum computers threaten current encryption, organizations are switching to post-quantum algorithms. This work shows that the algorithm's strength doesn't matter if the hardware storing the signing key is cheap and has debug ports left accessible. It reveals a concrete attack path that manufacturers and users need to defend against, not as a theoretical concern but as something an attacker with physical access can actually execute.
+
+---
+Title: Invariance before structure: two modes of emergent compression in representation learning
+Subtitle: Why different brains learn the same patterns, in two separate stages
+URL: https://paperplaine.com/papers/invariance-before-structure-two
+Category: Quantitative Biology
+Authors: Hardik Rajpal, Dan Goodman
+arXiv ID: 2611.07952
+arXiv URL: https://arxiv.org/abs/2611.07952
+Posted: 2026-11-07
+
+Summary: Neural networks—both biological and artificial—develop strikingly similar internal representations despite having completely different hardware and random starting points. Researchers identified two distinct phases: first, networks compress information in ways independent of any task (parameter-space compression), then 30 epochs later, they reorganize to capture the actual structure of what they're learning (state-space compression). This explains why brains and machines converge on the same solutions even when built from entirely different parts.
+
+Why it matters: Understanding how invariance emerges helps explain why evolution and deep learning produce similar neural solutions—and why that similarity appears on a predictable timeline. This could improve how we design artificial neural networks by revealing which structures form automatically versus which require task-specific learning, making it easier to predict and control what representations will emerge in new systems.
 
 ---
 Title: Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes
