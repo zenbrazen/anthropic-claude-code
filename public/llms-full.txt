@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1116 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1119 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
+Subtitle: How AI swarms working silently solve math problems 10 times faster
+URL: https://paperplaine.com/papers/swarmevolve-latent-agent-swarms
+Category: Computer Science · AI
+Authors: Qile Jiang, George Em Karniadakis
+arXiv ID: 2611.08483
+arXiv URL: https://arxiv.org/abs/2611.08483
+Posted: 2026-11-08
+
+Summary: A new system called SwarmEvolve uses hundreds of AI agents that work together to improve solutions to math and scientific computing problems—but instead of thinking out loud like traditional AI, they reason silently and share ideas through a shorthand format. The approach solves problems 8 to 20 times faster than existing methods, and sometimes finds better solutions than systems using much larger AI models.
+
+Why it matters: Speeding up scientific problem-solving by an order of magnitude cuts research time and computational costs dramatically. This approach also works well with smaller, cheaper AI models, making advanced computational discovery accessible to researchers with limited resources rather than only those who can afford the most powerful systems.
+
+---
+Title: BUMP: Brief Unexpected Mid-Interpolation Peak
+Subtitle: Why AI models perform better at the edges of a blend than in the middle
+URL: https://paperplaine.com/papers/bump-brief-unexpected-mid
+Category: Statistics
+Authors: Melinda Flóra Kiss, Márton Muntag, Adrián Csiszárik et al.
+arXiv ID: 2611.08182
+arXiv URL: https://arxiv.org/abs/2611.08182
+Posted: 2026-11-08
+
+Summary: When researchers blend two trained neural networks by smoothly mixing their weights, test accuracy unexpectedly improves near either endpoint before dropping toward the midpoint—a phenomenon they call BUMP. This pattern holds across different datasets, network types, and training methods, and the researchers show it's not simply a side effect of regularization. They then use this finding to create a better ensemble method that combines weight mixing and prediction mixing, outperforming standard approaches.
+
+Why it matters: Understanding how and why blended networks behave this way reveals new structure in how AI models work and offers a practical way to build better ensembles. The new ensembling method consistently improves test accuracy and produces better-calibrated predictions, which matters for applications where you need both accuracy and reliable confidence estimates—like medical diagnosis or risk assessment systems.
+
+---
+Title: Disorder-blind Mpemba acceleration of quantum state preparation
+Subtitle: Speeding up quantum computers without knowing what noise will hit them
+URL: https://paperplaine.com/papers/disorder-blind-mpemba-acceleration
+Category: Physics
+Authors: M Nishanth, Shreyas Sadugol, Payman Mahmoudi et al.
+arXiv ID: 2611.08424
+arXiv URL: https://arxiv.org/abs/2611.08424
+Posted: 2026-11-08
+
+Summary: Quantum computers need to prepare their qubits in specific states, but noise and disorder slow this down — and the slowest delays depend on details researchers don't always know in advance. This paper shows that a single preparation strategy, designed without knowledge of the specific noise pattern, can actually beat the standard approach in most real systems, while needing only basic information about the hardware.
+
+Why it matters: Quantum computers today waste time and energy fighting noise when preparing states for calculations. This method cuts through that bottleneck by replacing complex system-specific tuning with a simpler, generic approach that works reliably across different noise conditions. For near-term quantum devices that need every edge in speed, this could measurably reduce the overhead cost of state preparation.
 
 ---
 Title: User Embeddings are Superpositions of Interpretable Behavioral Modes
