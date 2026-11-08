@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.08487",
+    "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+    "authors": "Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-05T18:59:42Z",
+    "publishedFormatted": "Nov 5, 2026",
+    "subtitle": "Translating opaque user profiles into understandable behavioral patterns",
+    "summary": "User embeddings—the digital profiles that power recommendations and personalization—are typically black boxes that even their creators can't interpret. Researchers found these embeddings actually consist of layered, identifiable behavioral patterns that can be extracted and automatically labeled in plain language using a technique called sparse dictionary learning. This approach works across different types of models and datasets without requiring changes to existing systems.",
+    "whyItMatters": "Companies and platforms can now understand *why* their recommendation systems categorize users the way they do, making it easier to audit for bias, explain decisions to users, and catch unintended behavior patterns before they affect millions of people. The method also enables finding specific user groups by natural-language description—like \"office workers interested in fitness\"—without needing new training data, potentially cutting deployment time for targeted features or ads.",
+    "fetchedAt": "2026-11-08T14:04:45.473Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": false,
+      "goodPageCount": false,
+      "score": 2,
+      "pageCount": null,
+      "wordCount": 174
+    },
+    "slug": "user-embeddings-are-superpositions"
+  },
+  {
+    "id": "2611.06696",
+    "title": "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems",
+    "authors": "Zihan Chen, Lei Nico Zheng, Di Zhu",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-11-04T16:00:47Z",
+    "publishedFormatted": "Nov 4, 2026",
+    "subtitle": "People know their own taste better than algorithms that watch what they do",
+    "summary": "When asked directly how they'll rate a movie they haven't seen, people predicted their own ratings far more accurately than either the streaming platform's algorithm or machine-learning models trained on millions of other viewers' choices—achieving 0.69 correlation versus 0.34 for the platform. Adding people's own predictions to the best algorithms cut prediction error by 26%, suggesting that personal knowledge about taste fills gaps that behavioral data alone cannot reach, even when that data comes from crowds.",
+    "whyItMatters": "Streaming platforms spend heavily on recommendation algorithms, but this work shows that asking users directly about their preferences—despite low response rates—generates information no amount of watching their past behavior can replace. Services could improve recommendations by combining algorithms with simple preference prompts, though doing so means solving the practical problem of getting people to answer in the first place.",
+    "fetchedAt": "2026-11-08T14:04:53.023Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 283
+    },
+    "slug": "you-know-what-you"
+  },
+  {
+    "id": "2611.07690",
+    "title": "Simulation of Refraction Through Voxel Volumes",
+    "authors": "Rainier Mobley, Jean Michel Létang, Max Langer",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-11-05T09:15:53Z",
+    "publishedFormatted": "Nov 5, 2026",
+    "subtitle": "How to make X-ray simulations account for bending light inside materials",
+    "summary": "X-ray simulations have traditionally ignored how light bends as it travels through the interior of materials like bone, only accounting for bending at surfaces. Researchers developed a method to simulate X-rays using curved paths through three-dimensional grids of material data, tested it against known solutions, and identified the settings that produce the most accurate results.",
+    "whyItMatters": "Medical X-ray imaging and materials inspection rely on accurate predictions of how radiation travels through samples. This method could improve the realism of simulations used to design better imaging systems, train AI algorithms to interpret X-ray images, or predict how radiation behaves in complex biological and industrial materials where interior refraction currently goes unaccounted for.",
+    "fetchedAt": "2026-11-08T14:05:10.799Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 106
+    },
+    "slug": "simulation-of-refraction-through"
+  },
+  {
     "id": "2611.08433",
     "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
     "authors": "Donghua Zhang, Zizheng Wang, Ze Dong et al.",

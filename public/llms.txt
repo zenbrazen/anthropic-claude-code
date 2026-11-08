@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1113 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1116 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 381 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 382 papers in archive.
+  - "User Embeddings are Superpositions of Interpretable Behavioral Modes"
   - "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue"
-  - "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 90 papers in archive.
   - "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise"
   - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 95 papers in archive.
   - "Conformal Prediction for Time-Dependent PDEs"
   - "Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 89 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 90 papers in archive.
+  - "Simulation of Refraction Through Voxel Volumes"
   - "Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit"
-  - "ST-GFM: Spectral-Temporal Graph Forecasting with Measured Perturbation Bounds and Masked Spectral Reconstruction"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 78 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 79 papers in archive.
+  - "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems"
   - "Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies"
-  - "Why delivered costs understate prices in an integrated global hydrogen market"
 
 ## 10 most recent papers
+
+### User Embeddings are Superpositions of Interpretable Behavioral Modes
+- URL: https://paperplaine.com/papers/user-embeddings-are-superpositions
+- Category: Computer Science · AI
+- Authors: Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen et al.
+- arXiv: 2611.08487
+- Plain-English subtitle: Translating opaque user profiles into understandable behavioral patterns
+- Summary: User embeddings—the digital profiles that power recommendations and personalization—are typically black boxes that even their creators can't interpret. Researchers found these embeddings actually consist of layered, identifiable behavioral patterns that can be extracted and automatically labeled in plain language using a technique called sparse dictionary learning. This approach works across different types of models and datasets without requiring changes to existing systems.
+- Why it matters: Companies and platforms can now understand *why* their recommendation systems categorize users the way they do, making it easier to audit for bias, explain decisions to users, and catch unintended behavior patterns before they affect millions of people. The method also enables finding specific user groups by natural-language description—like "office workers interested in fitness"—without needing new training data, potentially cutting deployment time for targeted features or ads.
+
+### You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems
+- URL: https://paperplaine.com/papers/you-know-what-you
+- Category: Economics
+- Authors: Zihan Chen, Lei Nico Zheng, Di Zhu
+- arXiv: 2611.06696
+- Plain-English subtitle: People know their own taste better than algorithms that watch what they do
+- Summary: When asked directly how they'll rate a movie they haven't seen, people predicted their own ratings far more accurately than either the streaming platform's algorithm or machine-learning models trained on millions of other viewers' choices—achieving 0.69 correlation versus 0.34 for the platform. Adding people's own predictions to the best algorithms cut prediction error by 26%, suggesting that personal knowledge about taste fills gaps that behavioral data alone cannot reach, even when that data comes from crowds.
+- Why it matters: Streaming platforms spend heavily on recommendation algorithms, but this work shows that asking users directly about their preferences—despite low response rates—generates information no amount of watching their past behavior can replace. Services could improve recommendations by combining algorithms with simple preference prompts, though doing so means solving the practical problem of getting people to answer in the first place.
+
+### Simulation of Refraction Through Voxel Volumes
+- URL: https://paperplaine.com/papers/simulation-of-refraction-through
+- Category: Engineering
+- Authors: Rainier Mobley, Jean Michel Létang, Max Langer
+- arXiv: 2611.07690
+- Plain-English subtitle: How to make X-ray simulations account for bending light inside materials
+- Summary: X-ray simulations have traditionally ignored how light bends as it travels through the interior of materials like bone, only accounting for bending at surfaces. Researchers developed a method to simulate X-rays using curved paths through three-dimensional grids of material data, tested it against known solutions, and identified the settings that produce the most accurate results.
+- Why it matters: Medical X-ray imaging and materials inspection rely on accurate predictions of how radiation travels through samples. This method could improve the realism of simulations used to design better imaging systems, train AI algorithms to interpret X-ray images, or predict how radiation behaves in complex biological and industrial materials where interior refraction currently goes unaccounted for.
 
 ### MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue
 - URL: https://paperplaine.com/papers/medgraph-maintaining-patient-state
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How artificial force fields amplify and entangle quantum particles
 - Summary: Physicists discovered that specially designed gauge fields can make quantum particles oscillate in unstable ways that amplify their behavior, rather than keeping them stable. The amplification follows geometric rules in curved spacetime, and threading this field through a system of atoms creates a model where entanglement—the quantum connection between particles—scales in unexpected ways that depends on whether the field is stable or unstable.
 - Why it matters: The findings offer a new way to control how quantum information spreads and entangles in systems that lose energy to their surroundings. Because the framework applies to different types of force fields and higher dimensions, it could guide the design of quantum computers and simulators that deliberately use instability to amplify signals or engineer how particles transfer energy—turning what is usually a problem into a useful feature.
-
-### Dynamic Optimistic Constrained OCO with Memory via Delay Equivalence
-- URL: https://paperplaine.com/papers/dynamic-optimistic-constrained-oco
-- Category: Mathematics
-- Authors: Mohammed Abdullah, George Iosifidis, Salah Eddine Elayoubi et al.
-- arXiv: 2611.08302
-- Plain-English subtitle: Making learning systems smarter when they remember and face shifting rules
-- Summary: Researchers created an algorithm that helps learning systems make better decisions when they must remember past states and adapt to changing constraints—like a robot managing energy budgets while learning from experience. The system improves dramatically when it can use predictions, reaching near-perfect performance with accurate forecasts, and works without requiring unrealistic assumptions about how constraints behave.
-- Why it matters: Many real systems—from power grids balancing supply with shifting demand to autonomous vehicles managing fuel while adapting to traffic—must learn and adapt while respecting hard constraints. This work provides the first practical guarantees that such systems won't accumulate large budget violations over time, and shows how good predictions can nearly eliminate the performance cost of having to remember past decisions. This makes it possible to prove these systems will behave safely even in unpredictable environments.
-
-### StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning
-- URL: https://paperplaine.com/papers/stepback-step-level-error
-- Category: Computer Science · AI
-- Authors: Yang Ouyang, Jung-Eun Kim
-- arXiv: 2611.08403
-- Plain-English subtitle: Fixing AI reasoning errors one step at a time instead of starting over
-- Summary: A new method called StepBack helps AI systems solve math and reasoning problems more efficiently by pinpointing where they first go wrong, then recomputing only from that point onward. It achieves the same accuracy as existing methods while cutting computational costs by up to 41%.
-- Why it matters: AI reasoning systems currently waste enormous computation by redoing entire reasoning chains from scratch. StepBack cuts that waste substantially, which directly lowers the energy and cost of running these systems at scale—a key bottleneck as reasoning-based AI becomes more common in research and applications.
-
-### Conformal Prediction for Time-Dependent PDEs
-- URL: https://paperplaine.com/papers/conformal-prediction-for-time
-- Category: Statistics
-- Authors: Joshua Stiller, Annika Schneider, Eyke Hüllermeier
-- arXiv: 2611.08409
-- Plain-English subtitle: Making AI predictions reliable when simulating physical systems over time
-- Summary: A standard technique for making sure machine learning predictions come with honest confidence bounds breaks down when forecasting how physical systems evolve. The researchers proved why this happens mathematically and showed that fixing it requires carefully choosing how fine-grained your computational grid is, then proposed a weighted method that can provide genuine coverage guarantees even as predictions stretch across longer time periods.
-- Why it matters: When machine learning models replace expensive physics simulations in flood forecasting, engine design, or financial risk modeling, getting the confidence intervals wrong can mask dangerous blind spots. This work explains the failure mode and offers practical fixes, which means engineers and scientists can now build safety margins into AI-based predictions with better mathematical justification rather than guesswork.
 
 ## About
 

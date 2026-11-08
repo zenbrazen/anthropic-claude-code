@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1113 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-07
+This file contains the complete plain-English text of all 1116 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-08
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: User Embeddings are Superpositions of Interpretable Behavioral Modes
+Subtitle: Translating opaque user profiles into understandable behavioral patterns
+URL: https://paperplaine.com/papers/user-embeddings-are-superpositions
+Category: Computer Science · AI
+Authors: Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen et al.
+arXiv ID: 2611.08487
+arXiv URL: https://arxiv.org/abs/2611.08487
+Posted: 2026-11-08
+
+Summary: User embeddings—the digital profiles that power recommendations and personalization—are typically black boxes that even their creators can't interpret. Researchers found these embeddings actually consist of layered, identifiable behavioral patterns that can be extracted and automatically labeled in plain language using a technique called sparse dictionary learning. This approach works across different types of models and datasets without requiring changes to existing systems.
+
+Why it matters: Companies and platforms can now understand *why* their recommendation systems categorize users the way they do, making it easier to audit for bias, explain decisions to users, and catch unintended behavior patterns before they affect millions of people. The method also enables finding specific user groups by natural-language description—like "office workers interested in fitness"—without needing new training data, potentially cutting deployment time for targeted features or ads.
+
+---
+Title: You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems
+Subtitle: People know their own taste better than algorithms that watch what they do
+URL: https://paperplaine.com/papers/you-know-what-you
+Category: Economics
+Authors: Zihan Chen, Lei Nico Zheng, Di Zhu
+arXiv ID: 2611.06696
+arXiv URL: https://arxiv.org/abs/2611.06696
+Posted: 2026-11-08
+
+Summary: When asked directly how they'll rate a movie they haven't seen, people predicted their own ratings far more accurately than either the streaming platform's algorithm or machine-learning models trained on millions of other viewers' choices—achieving 0.69 correlation versus 0.34 for the platform. Adding people's own predictions to the best algorithms cut prediction error by 26%, suggesting that personal knowledge about taste fills gaps that behavioral data alone cannot reach, even when that data comes from crowds.
+
+Why it matters: Streaming platforms spend heavily on recommendation algorithms, but this work shows that asking users directly about their preferences—despite low response rates—generates information no amount of watching their past behavior can replace. Services could improve recommendations by combining algorithms with simple preference prompts, though doing so means solving the practical problem of getting people to answer in the first place.
+
+---
+Title: Simulation of Refraction Through Voxel Volumes
+Subtitle: How to make X-ray simulations account for bending light inside materials
+URL: https://paperplaine.com/papers/simulation-of-refraction-through
+Category: Engineering
+Authors: Rainier Mobley, Jean Michel Létang, Max Langer
+arXiv ID: 2611.07690
+arXiv URL: https://arxiv.org/abs/2611.07690
+Posted: 2026-11-08
+
+Summary: X-ray simulations have traditionally ignored how light bends as it travels through the interior of materials like bone, only accounting for bending at surfaces. Researchers developed a method to simulate X-rays using curved paths through three-dimensional grids of material data, tested it against known solutions, and identified the settings that produce the most accurate results.
+
+Why it matters: Medical X-ray imaging and materials inspection rely on accurate predictions of how radiation travels through samples. This method could improve the realism of simulations used to design better imaging systems, train AI algorithms to interpret X-ray images, or predict how radiation behaves in complex biological and industrial materials where interior refraction currently goes unaccounted for.
 
 ---
 Title: MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue
