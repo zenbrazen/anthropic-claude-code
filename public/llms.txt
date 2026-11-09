@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1119 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1122 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 383 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 384 papers in archive.
+  - "FlowMoP: Stochastic Multi-Person Motion Prediction"
   - "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization"
-  - "User Embeddings are Superpositions of Interpretable Behavioral Modes"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 90 papers in archive.
   - "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise"
   - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 94 papers in archive.
   - "Disorder-blind Mpemba acceleration of quantum state preparation"
   - "Dynamical effects induced by synthetic SU(1,1) gauge fields"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 95 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 96 papers in archive.
+  - "On the (non-)closedness of the set of ReLU networks"
   - "Dynamic Optimistic Constrained OCO with Memory via Delay Equivalence"
-  - "Counterexamples to the Happy Edge Conjecture in Plane Spanning Trees"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 96 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 97 papers in archive.
+  - "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction"
   - "Invariance before structure: two modes of emergent compression in representation learning"
-  - "Learning Time-Varying Connectomes for Stable Behavior Across Development"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 96 papers in archive.
   - "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction"
   - "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies"
 
 ## 10 most recent papers
+
+### FlowMoP: Stochastic Multi-Person Motion Prediction
+- URL: https://paperplaine.com/papers/flowmop-stochastic-multi-person
+- Category: Computer Science · AI
+- Authors: Aadya Agrawal, Ho Kei Cheng, Alexander Schwing
+- arXiv: 2611.09882
+- Plain-English subtitle: How AI predicts multiple people's movements when many futures are possible
+- Summary: Most systems that predict how people will move predict just one fixed future per person, but human motion is genuinely uncertain—the same starting position can lead to many different plausible movements depending on what people intend and how they interact. Researchers built a new system that generates entire ranges of possible futures for multiple people at once, accounting for how they influence each other's movements, and showed it outperforms fixed-prediction methods on standard tests and on professional soccer footage.
+- Why it matters: Predicting human motion accurately matters for robots and autonomous systems that share spaces with people—from warehouse robots working alongside humans to self-driving cars navigating crowds. By generating multiple possible futures rather than guessing one, these systems can plan safer interactions and better prepare for what people might actually do. The method also shows that accounting for how people influence each other produces predictions concentrated in realistic directions, which could make human-robot collaboration genuinely safer.
+
+### On the (non-)closedness of the set of ReLU networks
+- URL: https://paperplaine.com/papers/on-the-non-closedness
+- Category: Mathematics
+- Authors: Eloi Martinet, Leon Bungert
+- arXiv: 2611.09887
+- Plain-English subtitle: Why neural networks sometimes get stuck—and when they actually escape
+- Summary: A mathematical proof shows that shallow neural networks with one hidden layer can reliably find optimal solutions to optimization problems, but deeper networks with two hidden layers cannot. The finding resolves a decade-old conjecture and explains why certain training methods work while others may fail unexpectedly.
+- Why it matters: Neural networks power everything from medical imaging to language models, but training them is mathematically messy—optimizers can get trapped or solutions can slip away at the last moment. This work provides rigorous guarantees that shallow networks will find good solutions when solving physics-based problems (a technique called the Deep Ritz method), while showing that deeper architectures lose this safety net. Engineers can now choose network depth more deliberately based on whether they need mathematical guarantees or representational power.
+
+### Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction
+- URL: https://paperplaine.com/papers/decoding-spatial-and-semantic
+- Category: Quantitative Biology
+- Authors: Yukai Huang, Haoyu Albert Wang, Jiawei Zhang et al.
+- arXiv: 2611.08887
+- Plain-English subtitle: Reconstructing what a mouse sees directly from its brain activity
+- Summary: Researchers decoded what a mouse was watching by analyzing activity from thousands of brain cells and feeding that information into an AI video generator. The system successfully reconstructed natural movie clips with 81% accuracy, correctly identifying which held-out video had been shown based solely on the brain signals. The breakthrough shows that a mouse's visual cortex contains enough information to rebuild the actual spatial layout and visual details of scenes.
+- Why it matters: This is the first time researchers have reconstructed dynamic video scenes from actual brain recordings at this level of detail and accuracy. Understanding how the visual cortex encodes what we see could eventually help decode visual experiences in humans, with applications ranging from diagnosing vision problems to potentially restoring sight in people with certain types of blindness. The method also reveals how the brain organizes spatial and semantic information in parallel, offering clues to how animal brains actually construct visual reality.
 
 ### SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
 - URL: https://paperplaine.com/papers/swarmevolve-latent-agent-swarms
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Keeping medical AI from forgetting or mixing up patient histories
 - Summary: Medical AI assistants often botch patient histories by retrieving outdated information, confusing one patient's facts with another's, or missing critical safety details. Researchers built MedGraph, a memory system that stores patient facts with dates, ties them to the right person, and links related health records into chains—letting AI answer questions about what was true at a specific point in time. On a benchmark of longitudinal medical conversations, MedGraph outperformed five other memory systems by 10+ points.
 - Why it matters: Medical AI that misremembers patient histories can lead to dangerous errors—prescribing medications to the wrong person or acting on outdated diagnoses. Better memory means AI assistants can reliably track patients across multiple visits without requiring doctors to re-enter information or second-guess the AI's recollection. This directly reduces the friction and risk that currently limits AI use in routine clinical care.
-
-### Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise
-- URL: https://paperplaine.com/papers/zirah-a-post-quantum
-- Category: Computer Science
-- Authors: Muhammad Shaheer Bin Junaid
-- arXiv: 2611.08200
-- Plain-English subtitle: Building a cheap hardware signer that reveals where quantum-resistant keys leak
-- Summary: Researchers built a $50-class device that signs documents using quantum-resistant cryptography while deliberately exposing its vulnerabilities. They found that the post-quantum signing key, stored in the device's ordinary memory, could be extracted by a debugger before protections were fully enabled—demonstrating that even when the random number generator works perfectly, the key itself remains exposed on inexpensive hardware.
-- Why it matters: As quantum computers threaten current encryption, organizations are switching to post-quantum algorithms. This work shows that the algorithm's strength doesn't matter if the hardware storing the signing key is cheap and has debug ports left accessible. It reveals a concrete attack path that manufacturers and users need to defend against, not as a theoretical concern but as something an attacker with physical access can actually execute.
-
-### Invariance before structure: two modes of emergent compression in representation learning
-- URL: https://paperplaine.com/papers/invariance-before-structure-two
-- Category: Quantitative Biology
-- Authors: Hardik Rajpal, Dan Goodman
-- arXiv: 2611.07952
-- Plain-English subtitle: Why different brains learn the same patterns, in two separate stages
-- Summary: Neural networks—both biological and artificial—develop strikingly similar internal representations despite having completely different hardware and random starting points. Researchers identified two distinct phases: first, networks compress information in ways independent of any task (parameter-space compression), then 30 epochs later, they reorganize to capture the actual structure of what they're learning (state-space compression). This explains why brains and machines converge on the same solutions even when built from entirely different parts.
-- Why it matters: Understanding how invariance emerges helps explain why evolution and deep learning produce similar neural solutions—and why that similarity appears on a predictable timeline. This could improve how we design artificial neural networks by revealing which structures form automatically versus which require task-specific learning, making it easier to predict and control what representations will emerge in new systems.
-
-### Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes
-- URL: https://paperplaine.com/papers/label-wording-augmentation-in
-- Category: Computer Science · AI
-- Authors: Vladimir Beskorovainyi
-- arXiv: 2611.08439
-- Plain-English subtitle: How rewording routing options helps AI understand real workplace language
-- Summary: When AI systems must choose from options that users supply in varying ways, rewording those options during training helps the model handle unfamiliar words and slang—but not abbreviations or coded labels. Testing two versions of a Russian language model on routing tasks showed the reworded version improved accuracy by up to 24 percentage points on everyday language, though gains disappeared entirely when labels were opaque codes or abbreviations.
-- Why it matters: Chatbots and AI assistants often route requests to the right department or service based on labels they see at request time—labels the AI builders didn't create and can't control. This work shows that training on multiple phrasings of those labels makes the system more robust to how humans actually word things in offices and customer service, though it won't help when labels are meaningless codes. That means AI systems deployed in real workplaces can become more reliable without needing to standardize how people label their options.
 
 ## About
 

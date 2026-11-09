@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 22:37:27 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 17:10:40 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FlowMoP: Stochastic Multi-Person Motion Prediction</title>
+      <link>https://paperplaine.com/papers/flowmop-stochastic-multi-person</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/flowmop-stochastic-multi-person</guid>
+      <pubDate>Fri, 06 Nov 2026 18:56:41 GMT</pubDate>
+      <author>Aadya Agrawal, Ho Kei Cheng, Alexander Schwing</author>
+      <category>AI</category>
+      <description>How AI predicts multiple people&#39;s movements when many futures are possible</description>
+      <content:encoded><![CDATA[<p><em>How AI predicts multiple people's movements when many futures are possible</em></p><p>Most systems that predict how people will move predict just one fixed future per person, but human motion is genuinely uncertain—the same starting position can lead to many different plausible movements depending on what people intend and how they interact. Researchers built a new system that generates entire ranges of possible futures for multiple people at once, accounting for how they influence each other's movements, and showed it outperforms fixed-prediction methods on standard tests and on professional soccer footage.</p><p><strong>Why it matters:</strong> Predicting human motion accurately matters for robots and autonomous systems that share spaces with people—from warehouse robots working alongside humans to self-driving cars navigating crowds. By generating multiple possible futures rather than guessing one, these systems can plan safer interactions and better prepare for what people might actually do. The method also shows that accounting for how people influence each other produces predictions concentrated in realistic directions, which could make human-robot collaboration genuinely safer.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>On the (non-)closedness of the set of ReLU networks</title>
+      <link>https://paperplaine.com/papers/on-the-non-closedness</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/on-the-non-closedness</guid>
+      <pubDate>Fri, 06 Nov 2026 18:58:06 GMT</pubDate>
+      <author>Eloi Martinet, Leon Bungert</author>
+      <category>Math</category>
+      <description>Why neural networks sometimes get stuck—and when they actually escape</description>
+      <content:encoded><![CDATA[<p><em>Why neural networks sometimes get stuck—and when they actually escape</em></p><p>A mathematical proof shows that shallow neural networks with one hidden layer can reliably find optimal solutions to optimization problems, but deeper networks with two hidden layers cannot. The finding resolves a decade-old conjecture and explains why certain training methods work while others may fail unexpectedly.</p><p><strong>Why it matters:</strong> Neural networks power everything from medical imaging to language models, but training them is mathematically messy—optimizers can get trapped or solutions can slip away at the last moment. This work provides rigorous guarantees that shallow networks will find good solutions when solving physics-based problems (a technique called the Deep Ritz method), while showing that deeper architectures lose this safety net. Engineers can now choose network depth more deliberately based on whether they need mathematical guarantees or representational power.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction</title>
+      <link>https://paperplaine.com/papers/decoding-spatial-and-semantic</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/decoding-spatial-and-semantic</guid>
+      <pubDate>Fri, 06 Nov 2026 02:23:18 GMT</pubDate>
+      <author>Yukai Huang, Haoyu Albert Wang, Jiawei Zhang et al.</author>
+      <category>Biology</category>
+      <description>Reconstructing what a mouse sees directly from its brain activity</description>
+      <content:encoded><![CDATA[<p><em>Reconstructing what a mouse sees directly from its brain activity</em></p><p>Researchers decoded what a mouse was watching by analyzing activity from thousands of brain cells and feeding that information into an AI video generator. The system successfully reconstructed natural movie clips with 81% accuracy, correctly identifying which held-out video had been shown based solely on the brain signals. The breakthrough shows that a mouse's visual cortex contains enough information to rebuild the actual spatial layout and visual details of scenes.</p><p><strong>Why it matters:</strong> This is the first time researchers have reconstructed dynamic video scenes from actual brain recordings at this level of detail and accuracy. Understanding how the visual cortex encodes what we see could eventually help decode visual experiences in humans, with applications ranging from diagnosing vision problems to potentially restoring sight in people with certain types of blindness. The method also reveals how the brain organizes spatial and semantic information in parallel, offering clues to how animal brains actually construct visual reality.</p>]]></content:encoded>
+    </item>
     <item>
       <title>SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</title>
       <link>https://paperplaine.com/papers/swarmevolve-latent-agent-swarms</link>

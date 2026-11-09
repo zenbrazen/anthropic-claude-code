@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.09882",
+    "title": "FlowMoP: Stochastic Multi-Person Motion Prediction",
+    "authors": "Aadya Agrawal, Ho Kei Cheng, Alexander Schwing",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-06T18:56:41Z",
+    "publishedFormatted": "Nov 6, 2026",
+    "subtitle": "How AI predicts multiple people's movements when many futures are possible",
+    "summary": "Most systems that predict how people will move predict just one fixed future per person, but human motion is genuinely uncertain—the same starting position can lead to many different plausible movements depending on what people intend and how they interact. Researchers built a new system that generates entire ranges of possible futures for multiple people at once, accounting for how they influence each other's movements, and showed it outperforms fixed-prediction methods on standard tests and on professional soccer footage.",
+    "whyItMatters": "Predicting human motion accurately matters for robots and autonomous systems that share spaces with people—from warehouse robots working alongside humans to self-driving cars navigating crowds. By generating multiple possible futures rather than guessing one, these systems can plan safer interactions and better prepare for what people might actually do. The method also shows that accounting for how people influence each other produces predictions concentrated in realistic directions, which could make human-robot collaboration genuinely safer.",
+    "fetchedAt": "2026-11-09T17:10:33.345Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 22,
+      "wordCount": 153
+    },
+    "slug": "flowmop-stochastic-multi-person"
+  },
+  {
+    "id": "2611.09887",
+    "title": "On the (non-)closedness of the set of ReLU networks",
+    "authors": "Eloi Martinet, Leon Bungert",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-11-06T18:58:06Z",
+    "publishedFormatted": "Nov 6, 2026",
+    "subtitle": "Why neural networks sometimes get stuck—and when they actually escape",
+    "summary": "A mathematical proof shows that shallow neural networks with one hidden layer can reliably find optimal solutions to optimization problems, but deeper networks with two hidden layers cannot. The finding resolves a decade-old conjecture and explains why certain training methods work while others may fail unexpectedly.",
+    "whyItMatters": "Neural networks power everything from medical imaging to language models, but training them is mathematically messy—optimizers can get trapped or solutions can slip away at the last moment. This work provides rigorous guarantees that shallow networks will find good solutions when solving physics-based problems (a technique called the Deep Ritz method), while showing that deeper architectures lose this safety net. Engineers can now choose network depth more deliberately based on whether they need mathematical guarantees or representational power.",
+    "fetchedAt": "2026-11-09T17:10:36.213Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 118
+    },
+    "slug": "on-the-non-closedness"
+  },
+  {
+    "id": "2611.08887",
+    "title": "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction",
+    "authors": "Yukai Huang, Haoyu Albert Wang, Jiawei Zhang et al.",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-11-06T02:23:18Z",
+    "publishedFormatted": "Nov 6, 2026",
+    "subtitle": "Reconstructing what a mouse sees directly from its brain activity",
+    "summary": "Researchers decoded what a mouse was watching by analyzing activity from thousands of brain cells and feeding that information into an AI video generator. The system successfully reconstructed natural movie clips with 81% accuracy, correctly identifying which held-out video had been shown based solely on the brain signals. The breakthrough shows that a mouse's visual cortex contains enough information to rebuild the actual spatial layout and visual details of scenes.",
+    "whyItMatters": "This is the first time researchers have reconstructed dynamic video scenes from actual brain recordings at this level of detail and accuracy. Understanding how the visual cortex encodes what we see could eventually help decode visual experiences in humans, with applications ranging from diagnosing vision problems to potentially restoring sight in people with certain types of blindness. The method also reveals how the brain organizes spatial and semantic information in parallel, offering clues to how animal brains actually construct visual reality.",
+    "fetchedAt": "2026-11-09T17:10:39.307Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 24,
+      "wordCount": 184
+    },
+    "slug": "decoding-spatial-and-semantic"
+  },
+  {
     "id": "2611.08483",
     "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
     "authors": "Qile Jiang, George Em Karniadakis",

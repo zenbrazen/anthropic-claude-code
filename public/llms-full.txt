@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1119 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-08
+This file contains the complete plain-English text of all 1122 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-09
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: FlowMoP: Stochastic Multi-Person Motion Prediction
+Subtitle: How AI predicts multiple people's movements when many futures are possible
+URL: https://paperplaine.com/papers/flowmop-stochastic-multi-person
+Category: Computer Science · AI
+Authors: Aadya Agrawal, Ho Kei Cheng, Alexander Schwing
+arXiv ID: 2611.09882
+arXiv URL: https://arxiv.org/abs/2611.09882
+Posted: 2026-11-09
+
+Summary: Most systems that predict how people will move predict just one fixed future per person, but human motion is genuinely uncertain—the same starting position can lead to many different plausible movements depending on what people intend and how they interact. Researchers built a new system that generates entire ranges of possible futures for multiple people at once, accounting for how they influence each other's movements, and showed it outperforms fixed-prediction methods on standard tests and on professional soccer footage.
+
+Why it matters: Predicting human motion accurately matters for robots and autonomous systems that share spaces with people—from warehouse robots working alongside humans to self-driving cars navigating crowds. By generating multiple possible futures rather than guessing one, these systems can plan safer interactions and better prepare for what people might actually do. The method also shows that accounting for how people influence each other produces predictions concentrated in realistic directions, which could make human-robot collaboration genuinely safer.
+
+---
+Title: On the (non-)closedness of the set of ReLU networks
+Subtitle: Why neural networks sometimes get stuck—and when they actually escape
+URL: https://paperplaine.com/papers/on-the-non-closedness
+Category: Mathematics
+Authors: Eloi Martinet, Leon Bungert
+arXiv ID: 2611.09887
+arXiv URL: https://arxiv.org/abs/2611.09887
+Posted: 2026-11-09
+
+Summary: A mathematical proof shows that shallow neural networks with one hidden layer can reliably find optimal solutions to optimization problems, but deeper networks with two hidden layers cannot. The finding resolves a decade-old conjecture and explains why certain training methods work while others may fail unexpectedly.
+
+Why it matters: Neural networks power everything from medical imaging to language models, but training them is mathematically messy—optimizers can get trapped or solutions can slip away at the last moment. This work provides rigorous guarantees that shallow networks will find good solutions when solving physics-based problems (a technique called the Deep Ritz method), while showing that deeper architectures lose this safety net. Engineers can now choose network depth more deliberately based on whether they need mathematical guarantees or representational power.
+
+---
+Title: Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction
+Subtitle: Reconstructing what a mouse sees directly from its brain activity
+URL: https://paperplaine.com/papers/decoding-spatial-and-semantic
+Category: Quantitative Biology
+Authors: Yukai Huang, Haoyu Albert Wang, Jiawei Zhang et al.
+arXiv ID: 2611.08887
+arXiv URL: https://arxiv.org/abs/2611.08887
+Posted: 2026-11-09
+
+Summary: Researchers decoded what a mouse was watching by analyzing activity from thousands of brain cells and feeding that information into an AI video generator. The system successfully reconstructed natural movie clips with 81% accuracy, correctly identifying which held-out video had been shown based solely on the brain signals. The breakthrough shows that a mouse's visual cortex contains enough information to rebuild the actual spatial layout and visual details of scenes.
+
+Why it matters: This is the first time researchers have reconstructed dynamic video scenes from actual brain recordings at this level of detail and accuracy. Understanding how the visual cortex encodes what we see could eventually help decode visual experiences in humans, with applications ranging from diagnosing vision problems to potentially restoring sight in people with certain types of blindness. The method also reveals how the brain organizes spatial and semantic information in parallel, offering clues to how animal brains actually construct visual reality.
 
 ---
 Title: SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
