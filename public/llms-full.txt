@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1125 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1128 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-10
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: 2D Gum-Net: Unsupervised Dense Elastic Image Registration via Symmetric Correlation and Spectral Pooling
+Subtitle: Teaching AI to align warped images without needing labeled training data
+URL: https://paperplaine.com/papers/2d-gum-net-unsupervised
+Category: Computer Science · AI
+Authors: Aarya Bhave, Anushka Ajay Bhave
+arXiv ID: 2611.12805
+arXiv URL: https://arxiv.org/abs/2611.12805
+Posted: 2026-11-10
+
+Summary: Researchers created 2D Gum-Net, an AI system that can figure out how to warp and align distorted images into perfect geometric agreement without any labeled examples to learn from—a major limitation of previous methods. Tested on fingerprint images, the system improved alignment accuracy by up to 15.7% compared to existing approaches and correctly verified fingerprint matches without creating false correspondences.
+
+Why it matters: Medical imaging, fingerprint matching, and biological research all depend on aligning images precisely, but collecting ground-truth training data is expensive and time-consuming. This unsupervised method works straight out of the box on real-world data after training only on synthetic examples, potentially cutting the data-collection bottleneck that has slowed down deployment of alignment AI in hospitals and forensics labs.
+
+---
+Title: Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks
+Subtitle: How to measure treatment effects when people influence each other's outcomes
+URL: https://paperplaine.com/papers/average-versus-expected-causal
+Category: Economics
+Authors: Vishesh Karwa, Edoardo M. Airoldi, Donald B. Rubin
+arXiv ID: 2611.12690
+arXiv URL: https://arxiv.org/abs/2611.12690
+Posted: 2026-11-10
+
+Summary: When one person's treatment affects another person's outcomes—like how a vaccine in one community protects neighboring communities—measuring the true effect becomes mathematically complex. Researchers developed a framework that breaks these tangled effects into three measurable pieces: direct effects on the treated person, spillover effects on others, and interactions between them. They also showed that some experimental designs require impossibly large sample sizes to estimate these effects accurately, while others can do it with reasonable numbers.
+
+Why it matters: Interference between individuals is common in real-world programs: vaccination campaigns, job training subsidies, and water-system improvements all affect people beyond the immediate recipients. Without the right statistical approach, researchers have been drawing conclusions from experiments that were never large enough to support them. This framework tells policymakers which study designs will actually work and which ones are mathematically doomed to fail, preventing wasted resources on experiments that can't answer their own questions.
+
+---
+Title: Enhancing valley splitting in Si/SiGe Wiggle Well quantum dots through integrated stressor-gate architectures
+Subtitle: Making silicon quantum computers more reliable by controlling a stubborn physics quirk
+URL: https://paperplaine.com/papers/enhancing-valley-splitting-in
+Category: Physics
+Authors: E. S. Joseph, Talise Oh, D. E. Savage et al.
+arXiv ID: 2611.12850
+arXiv URL: https://arxiv.org/abs/2611.12850
+Posted: 2026-11-10
+
+Summary: Researchers found a way to reliably control valley splitting—a quantum property that causes errors in silicon-based quantum computers. By placing a thin stressed film on top of the quantum dots, they can generate precise strain that produces consistent valley splitting across multiple qubits, solving a major obstacle to scaling up these machines.
+
+Why it matters: Silicon quantum computers promise to be cheaper and easier to manufacture than other approaches, but random variations in valley splitting have made them unreliable. This technique could enable manufacturers to build larger arrays of working qubits without redesigning the entire device each time, bringing practical quantum computers closer to reality.
 
 ---
 Title: Flow-Guided Target-Space Alignment via Path Consistency
