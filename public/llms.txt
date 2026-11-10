@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1128 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1131 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 386 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 387 papers in archive.
+  - "MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning"
   - "2D Gum-Net: Unsupervised Dense Elastic Image Registration via Symmetric Correlation and Spectral Pooling"
-  - "Flow-Guided Target-Space Alignment via Path Consistency"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 91 papers in archive.
   - "A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems"
   - "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise"
@@ -42,15 +42,15 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 96 papers in archive.
   - "On the (non-)closedness of the set of ReLU networks"
   - "Dynamic Optimistic Constrained OCO with Memory via Delay Equivalence"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 97 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 98 papers in archive.
+  - "Spike-to-Field Mechanisms of Turbulence-Like Dynamics in Spatial Spiking Neural Networks"
   - "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction"
-  - "Invariance before structure: two modes of emergent compression in representation learning"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 97 papers in archive.
   - "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names"
   - "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 96 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 97 papers in archive.
+  - "Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery"
   - "BUMP: Brief Unexpected Mid-Interpolation Peak"
-  - "Conformal Prediction for Time-Dependent PDEs"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 90 papers in archive.
   - "Simulation of Refraction Through Voxel Volumes"
   - "Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems"
 
 ## 10 most recent papers
+
+### MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning
+- URL: https://paperplaine.com/papers/maxim-maximally-informative-incremental
+- Category: Computer Science · AI
+- Authors: Jihwan Jeong, Guy Tennenholtz, Yinlam Chow et al.
+- arXiv: 2611.12825
+- Plain-English subtitle: Teaching AI to remember what matters most when memory runs out
+- Summary: AI systems that must remember key facts from long conversations or documents while working within strict memory limits now have a better way to decide what to keep. Researchers developed MaxIM, a framework that uses information theory to guide an AI in creating compact summaries that preserve task-relevant details. In tests on scientific reading and multi-turn dialogue, MaxIM outperformed standard approaches without requiring human preference labels.
+- Why it matters: AI assistants today struggle to maintain useful context when conversations grow long or documents are massive—forcing them to either run out of memory or forget important details. MaxIM makes these systems more reliable by automatically prioritizing information that actually matters for answering questions or completing tasks, not just information that sounds important. This could improve chatbots, research assistants, and any AI system that needs to understand and act on large volumes of text within practical memory constraints.
+
+### Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery
+- URL: https://paperplaine.com/papers/out-of-the-box
+- Category: Statistics
+- Authors: Klemens Flöge, Simon Bing, Leo Grinsztajn et al.
+- arXiv: 2611.12491
+- Plain-English subtitle: Using AI models built for spreadsheets to discover new materials faster
+- Summary: Researchers tested whether tabular foundation models—AI systems trained on structured data like spreadsheets—could replace traditional statistical methods in materials discovery. The models performed competitively without needing custom tuning, suggesting they could streamline the trial-and-error process of finding new materials.
+- Why it matters: Materials discovery is slow because scientists must test countless compounds to find promising candidates. Faster prediction models mean researchers can narrow down possibilities before entering the lab, accelerating everything from battery development to semiconductors. These foundation models work out-of-the-box without specialized setup, making them accessible to labs that lack machine learning expertise.
+
+### Spike-to-Field Mechanisms of Turbulence-Like Dynamics in Spatial Spiking Neural Networks
+- URL: https://paperplaine.com/papers/spike-to-field-mechanisms
+- Category: Quantitative Biology
+- Authors: Zequan Liu
+- arXiv: 2611.12627
+- Plain-English subtitle: How individual neuron spikes create wave-like patterns across the brain
+- Summary: Neurons firing in a coordinated spatial pattern—with delayed connections and filtered signals—naturally produce large-scale turbulent dynamics that look like rolling waves and power-law avalanches across the brain. The effect requires all three ingredients: timing delays, dendritic filtering, and proper spike propagation; remove any one, and the wave-like patterns collapse, even if the raw math still permits some defect-like structures.
+- Why it matters: Brain imaging routinely detects turbulent waves and avalanche-like cascades of activity, but it has been unclear whether these patterns actually require special brain design or simply emerge from noise. This work shows they emerge only under specific circuit conditions—delayed transmission, filtered signals, and particular types of inhibition—which suggests the brain may use these spatial dynamics for computation or information flow. Understanding this link also means researchers can now test theories of brain function by checking whether spike-level mechanisms match the wave patterns they observe in experiments.
 
 ### 2D Gum-Net: Unsupervised Dense Elastic Image Registration via Symmetric Correlation and Spectral Pooling
 - URL: https://paperplaine.com/papers/2d-gum-net-unsupervised
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI predicts multiple people's movements when many futures are possible
 - Summary: Most systems that predict how people will move predict just one fixed future per person, but human motion is genuinely uncertain—the same starting position can lead to many different plausible movements depending on what people intend and how they interact. Researchers built a new system that generates entire ranges of possible futures for multiple people at once, accounting for how they influence each other's movements, and showed it outperforms fixed-prediction methods on standard tests and on professional soccer footage.
 - Why it matters: Predicting human motion accurately matters for robots and autonomous systems that share spaces with people—from warehouse robots working alongside humans to self-driving cars navigating crowds. By generating multiple possible futures rather than guessing one, these systems can plan safer interactions and better prepare for what people might actually do. The method also shows that accounting for how people influence each other produces predictions concentrated in realistic directions, which could make human-robot collaboration genuinely safer.
-
-### On the (non-)closedness of the set of ReLU networks
-- URL: https://paperplaine.com/papers/on-the-non-closedness
-- Category: Mathematics
-- Authors: Eloi Martinet, Leon Bungert
-- arXiv: 2611.09887
-- Plain-English subtitle: Why neural networks sometimes get stuck—and when they actually escape
-- Summary: A mathematical proof shows that shallow neural networks with one hidden layer can reliably find optimal solutions to optimization problems, but deeper networks with two hidden layers cannot. The finding resolves a decade-old conjecture and explains why certain training methods work while others may fail unexpectedly.
-- Why it matters: Neural networks power everything from medical imaging to language models, but training them is mathematically messy—optimizers can get trapped or solutions can slip away at the last moment. This work provides rigorous guarantees that shallow networks will find good solutions when solving physics-based problems (a technique called the Deep Ritz method), while showing that deeper architectures lose this safety net. Engineers can now choose network depth more deliberately based on whether they need mathematical guarantees or representational power.
-
-### Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction
-- URL: https://paperplaine.com/papers/decoding-spatial-and-semantic
-- Category: Quantitative Biology
-- Authors: Yukai Huang, Haoyu Albert Wang, Jiawei Zhang et al.
-- arXiv: 2611.08887
-- Plain-English subtitle: Reconstructing what a mouse sees directly from its brain activity
-- Summary: Researchers decoded what a mouse was watching by analyzing activity from thousands of brain cells and feeding that information into an AI video generator. The system successfully reconstructed natural movie clips with 81% accuracy, correctly identifying which held-out video had been shown based solely on the brain signals. The breakthrough shows that a mouse's visual cortex contains enough information to rebuild the actual spatial layout and visual details of scenes.
-- Why it matters: This is the first time researchers have reconstructed dynamic video scenes from actual brain recordings at this level of detail and accuracy. Understanding how the visual cortex encodes what we see could eventually help decode visual experiences in humans, with applications ranging from diagnosing vision problems to potentially restoring sight in people with certain types of blindness. The method also reveals how the brain organizes spatial and semantic information in parallel, offering clues to how animal brains actually construct visual reality.
-
-### SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
-- URL: https://paperplaine.com/papers/swarmevolve-latent-agent-swarms
-- Category: Computer Science · AI
-- Authors: Qile Jiang, George Em Karniadakis
-- arXiv: 2611.08483
-- Plain-English subtitle: How AI swarms working silently solve math problems 10 times faster
-- Summary: A new system called SwarmEvolve uses hundreds of AI agents that work together to improve solutions to math and scientific computing problems—but instead of thinking out loud like traditional AI, they reason silently and share ideas through a shorthand format. The approach solves problems 8 to 20 times faster than existing methods, and sometimes finds better solutions than systems using much larger AI models.
-- Why it matters: Speeding up scientific problem-solving by an order of magnitude cuts research time and computational costs dramatically. This approach also works well with smaller, cheaper AI models, making advanced computational discovery accessible to researchers with limited resources rather than only those who can afford the most powerful systems.
 
 ## About
 

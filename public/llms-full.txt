@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1128 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1131 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-10
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning
+Subtitle: Teaching AI to remember what matters most when memory runs out
+URL: https://paperplaine.com/papers/maxim-maximally-informative-incremental
+Category: Computer Science · AI
+Authors: Jihwan Jeong, Guy Tennenholtz, Yinlam Chow et al.
+arXiv ID: 2611.12825
+arXiv URL: https://arxiv.org/abs/2611.12825
+Posted: 2026-11-10
+
+Summary: AI systems that must remember key facts from long conversations or documents while working within strict memory limits now have a better way to decide what to keep. Researchers developed MaxIM, a framework that uses information theory to guide an AI in creating compact summaries that preserve task-relevant details. In tests on scientific reading and multi-turn dialogue, MaxIM outperformed standard approaches without requiring human preference labels.
+
+Why it matters: AI assistants today struggle to maintain useful context when conversations grow long or documents are massive—forcing them to either run out of memory or forget important details. MaxIM makes these systems more reliable by automatically prioritizing information that actually matters for answering questions or completing tasks, not just information that sounds important. This could improve chatbots, research assistants, and any AI system that needs to understand and act on large volumes of text within practical memory constraints.
+
+---
+Title: Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery
+Subtitle: Using AI models built for spreadsheets to discover new materials faster
+URL: https://paperplaine.com/papers/out-of-the-box
+Category: Statistics
+Authors: Klemens Flöge, Simon Bing, Leo Grinsztajn et al.
+arXiv ID: 2611.12491
+arXiv URL: https://arxiv.org/abs/2611.12491
+Posted: 2026-11-10
+
+Summary: Researchers tested whether tabular foundation models—AI systems trained on structured data like spreadsheets—could replace traditional statistical methods in materials discovery. The models performed competitively without needing custom tuning, suggesting they could streamline the trial-and-error process of finding new materials.
+
+Why it matters: Materials discovery is slow because scientists must test countless compounds to find promising candidates. Faster prediction models mean researchers can narrow down possibilities before entering the lab, accelerating everything from battery development to semiconductors. These foundation models work out-of-the-box without specialized setup, making them accessible to labs that lack machine learning expertise.
+
+---
+Title: Spike-to-Field Mechanisms of Turbulence-Like Dynamics in Spatial Spiking Neural Networks
+Subtitle: How individual neuron spikes create wave-like patterns across the brain
+URL: https://paperplaine.com/papers/spike-to-field-mechanisms
+Category: Quantitative Biology
+Authors: Zequan Liu
+arXiv ID: 2611.12627
+arXiv URL: https://arxiv.org/abs/2611.12627
+Posted: 2026-11-10
+
+Summary: Neurons firing in a coordinated spatial pattern—with delayed connections and filtered signals—naturally produce large-scale turbulent dynamics that look like rolling waves and power-law avalanches across the brain. The effect requires all three ingredients: timing delays, dendritic filtering, and proper spike propagation; remove any one, and the wave-like patterns collapse, even if the raw math still permits some defect-like structures.
+
+Why it matters: Brain imaging routinely detects turbulent waves and avalanche-like cascades of activity, but it has been unclear whether these patterns actually require special brain design or simply emerge from noise. This work shows they emerge only under specific circuit conditions—delayed transmission, filtered signals, and particular types of inhibition—which suggests the brain may use these spatial dynamics for computation or information flow. Understanding this link also means researchers can now test theories of brain function by checking whether spike-level mechanisms match the wave patterns they observe in experiments.
 
 ---
 Title: 2D Gum-Net: Unsupervised Dense Elastic Image Registration via Symmetric Correlation and Spectral Pooling
