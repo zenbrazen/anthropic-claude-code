@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1122 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1125 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 384 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 385 papers in archive.
+  - "Flow-Guided Target-Space Alignment via Path Consistency"
   - "FlowMoP: Stochastic Multi-Person Motion Prediction"
-  - "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 90 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 91 papers in archive.
+  - "A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems"
   - "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise"
-  - "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 94 papers in archive.
   - "Disorder-blind Mpemba acceleration of quantum state preparation"
   - "Dynamical effects induced by synthetic SU(1,1) gauge fields"
@@ -45,9 +45,9 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 97 papers in archive.
   - "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction"
   - "Invariance before structure: two modes of emergent compression in representation learning"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 96 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 97 papers in archive.
+  - "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names"
   - "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction"
-  - "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 96 papers in archive.
   - "BUMP: Brief Unexpected Mid-Interpolation Peak"
   - "Conformal Prediction for Time-Dependent PDEs"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Regret-based Characterization, Information Limits, and the Sample Complexity of Auditing Adaptive Policies"
 
 ## 10 most recent papers
+
+### Flow-Guided Target-Space Alignment via Path Consistency
+- URL: https://paperplaine.com/papers/flow-guided-target-space
+- Category: Computer Science · AI
+- Authors: Ruizhi Yuan, Zeqiu Yu, Wei Gao et al.
+- arXiv: 2611.09863
+- Plain-English subtitle: Aligning different data types while preserving the shape of the target space
+- Summary: Researchers developed FlowAlign, a method that maps one type of data (like images) into a space defined by another type (like text) while keeping both the paired relationships intact and the overall structure of the target space unchanged. Tests on genetic data, cells, and image-text pairs show it outperforms existing approaches at matching individual pairs without distorting the target space's geometry.
+- Why it matters: Many real applications need to translate between different data types—from matching genetic measurements to patient outcomes, to aligning images with text descriptions—while ensuring the result can be used directly for downstream analysis. Current methods force a choice between preserving individual matches or maintaining the target space's structure; FlowAlign does both, which means more reliable predictions and analyses when working with multimodal data in medicine, biology, and machine learning.
+
+### The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names
+- URL: https://paperplaine.com/papers/the-end-of-day
+- Category: Quantitative Finance
+- Authors: Alex Vidovich, Zivana Zerjal
+- arXiv: 2611.09286
+- Plain-English subtitle: Does a stock market anomaly hold up under careful re-testing?
+- Summary: A previously documented pattern — where stocks that lose value during the day tend to bounce back in the final half hour of trading — does persist in newer data, but only partially and with important caveats. The effect weakens significantly when including the most heavily traded stocks, and it vanishes entirely during 2020–2022, suggesting the pattern may be fragile or fading.
+- Why it matters: If traders rely on this end-of-day reversal as a predictable profit opportunity, knowing it doesn't hold consistently — especially in the largest, most liquid stocks — prevents them from losing money on a false strategy. The findings also highlight how even peer-reviewed financial discoveries need re-testing on new data; a pattern that worked through 2019 shouldn't be trusted for future trading without evidence it still works today.
+
+### A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems
+- URL: https://paperplaine.com/papers/a-cross-domain-tara
+- Category: Computer Science
+- Authors: Krishna Teja Medam, Thiago Quinelato
+- arXiv: 2611.09771
+- Plain-English subtitle: Converting cybersecurity threats into network rules that actually work
+- Summary: When companies assess cybersecurity risks, they often get stuck: they identify what threats look like and what needs protecting, but then struggle to write the actual network access control rules that enforce those protections. This paper presents a six-step method that bridges that gap, converting threat assessments into specific, traceable network rules. The authors tested their approach on both an automotive plant network and a battery energy storage facility, showing how one underlying method could work across different industries and their distinct regulations.
+- Why it matters: Companies managing critical infrastructure—from car factories to power grids—spend money on security assessments but often fail to turn those assessments into concrete, enforceable rules. This creates gaps where threats slip through. A standardized translation method could cut the time and guesswork involved in moving from "we know what could go wrong" to "our network blocks it." The approach also lets different industries reuse the same underlying framework while swapping in their own specific regulations, reducing wasted effort.
 
 ### FlowMoP: Stochastic Multi-Person Motion Prediction
 - URL: https://paperplaine.com/papers/flowmop-stochastic-multi-person
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Translating opaque user profiles into understandable behavioral patterns
 - Summary: User embeddings—the digital profiles that power recommendations and personalization—are typically black boxes that even their creators can't interpret. Researchers found these embeddings actually consist of layered, identifiable behavioral patterns that can be extracted and automatically labeled in plain language using a technique called sparse dictionary learning. This approach works across different types of models and datasets without requiring changes to existing systems.
 - Why it matters: Companies and platforms can now understand *why* their recommendation systems categorize users the way they do, making it easier to audit for bias, explain decisions to users, and catch unintended behavior patterns before they affect millions of people. The method also enables finding specific user groups by natural-language description—like "office workers interested in fitness"—without needing new training data, potentially cutting deployment time for targeted features or ads.
-
-### You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems
-- URL: https://paperplaine.com/papers/you-know-what-you
-- Category: Economics
-- Authors: Zihan Chen, Lei Nico Zheng, Di Zhu
-- arXiv: 2611.06696
-- Plain-English subtitle: People know their own taste better than algorithms that watch what they do
-- Summary: When asked directly how they'll rate a movie they haven't seen, people predicted their own ratings far more accurately than either the streaming platform's algorithm or machine-learning models trained on millions of other viewers' choices—achieving 0.69 correlation versus 0.34 for the platform. Adding people's own predictions to the best algorithms cut prediction error by 26%, suggesting that personal knowledge about taste fills gaps that behavioral data alone cannot reach, even when that data comes from crowds.
-- Why it matters: Streaming platforms spend heavily on recommendation algorithms, but this work shows that asking users directly about their preferences—despite low response rates—generates information no amount of watching their past behavior can replace. Services could improve recommendations by combining algorithms with simple preference prompts, though doing so means solving the practical problem of getting people to answer in the first place.
-
-### Simulation of Refraction Through Voxel Volumes
-- URL: https://paperplaine.com/papers/simulation-of-refraction-through
-- Category: Engineering
-- Authors: Rainier Mobley, Jean Michel Létang, Max Langer
-- arXiv: 2611.07690
-- Plain-English subtitle: How to make X-ray simulations account for bending light inside materials
-- Summary: X-ray simulations have traditionally ignored how light bends as it travels through the interior of materials like bone, only accounting for bending at surfaces. Researchers developed a method to simulate X-rays using curved paths through three-dimensional grids of material data, tested it against known solutions, and identified the settings that produce the most accurate results.
-- Why it matters: Medical X-ray imaging and materials inspection rely on accurate predictions of how radiation travels through samples. This method could improve the realism of simulations used to design better imaging systems, train AI algorithms to interpret X-ray images, or predict how radiation behaves in complex biological and industrial materials where interior refraction currently goes unaccounted for.
-
-### MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue
-- URL: https://paperplaine.com/papers/medgraph-maintaining-patient-state
-- Category: Computer Science · AI
-- Authors: Donghua Zhang, Zizheng Wang, Ze Dong et al.
-- arXiv: 2611.08433
-- Plain-English subtitle: Keeping medical AI from forgetting or mixing up patient histories
-- Summary: Medical AI assistants often botch patient histories by retrieving outdated information, confusing one patient's facts with another's, or missing critical safety details. Researchers built MedGraph, a memory system that stores patient facts with dates, ties them to the right person, and links related health records into chains—letting AI answer questions about what was true at a specific point in time. On a benchmark of longitudinal medical conversations, MedGraph outperformed five other memory systems by 10+ points.
-- Why it matters: Medical AI that misremembers patient histories can lead to dangerous errors—prescribing medications to the wrong person or acting on outdated diagnoses. Better memory means AI assistants can reliably track patients across multiple visits without requiring doctors to re-enter information or second-guess the AI's recollection. This directly reduces the friction and risk that currently limits AI use in routine clinical care.
 
 ## About
 
