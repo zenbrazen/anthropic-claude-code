@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 23:51:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 14:55:27 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Causal Concept Explanations for Deep Neural Models</title>
+      <link>https://paperplaine.com/papers/causal-concept-explanations-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/causal-concept-explanations-for</guid>
+      <pubDate>Tue, 10 Nov 2026 17:50:15 GMT</pubDate>
+      <author>Josh Rountree, Pulkit Verma, Oswin So et al.</author>
+      <category>AI</category>
+      <description>Making AI explanations actually prove why decisions happen</description>
+      <content:encoded><![CDATA[<p><em>Making AI explanations actually prove why decisions happen</em></p><p>Most AI explanations only show what matters, not whether they truly caused a decision. Researchers built CCW-Net, a new method that forces neural networks to learn concept-based explanations that are provably necessary and sufficient for their outputs—meaning a concept only gets credit for influencing a result if removing it actually changes that result. The method measures exactly how much each concept causally contributes to each decision, eliminating explanations that look right but mislead.</p><p><strong>Why it matters:</strong> When autonomous systems make critical decisions—like controlling aircraft or self-driving cars—we need to trust that their explanations reflect real causal chains, not coincidences. A model might output "plane safe to fly" while a dashboard shows "fuel level normal," but if that fuel reading doesn't actually drive the decision, the explanation creates dangerous false confidence. CCW-Net fills this gap by certifying that explanations are genuinely causal, making it possible for regulators and operators to confidently evaluate whether a system is truly reasoning safely or just appearing to.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion</title>
+      <link>https://paperplaine.com/papers/measuring-robustness-and-efficiency</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/measuring-robustness-and-efficiency</guid>
+      <pubDate>Tue, 10 Nov 2026 18:51:31 GMT</pubDate>
+      <author>Alexandre Garcia-Duran, Alejandro Rodriguez-Garcia, Manuel Molano-Mazón et al.</author>
+      <category>Comp Sci</category>
+      <description>Why fruit fly brains are efficient but fall for the same visual tricks we do</description>
+      <content:encoded><![CDATA[<p><em>Why fruit fly brains are efficient but fall for the same visual tricks we do</em></p><p>A neural network modeled on the fruit fly's visual circuitry processes motion detection using 100,000 times fewer computations than standard artificial systems, yet it fails in predictable ways—stumbling over the same optical illusions that fool biological vision. The network's vulnerabilities trace back to a single low-level motion computation that both adversarial attacks and the classic reverse-phi illusion exploit identically.</p><p><strong>Why it matters:</strong> Brains solve the efficiency problem that plagues AI: they do complex visual work on a tiny energy budget. By identifying exactly where the fly brain's design trades robustness for efficiency, researchers can now test whether real flies share the same perceptual blind spots, turning artificial failures into predictions about biology. This also suggests that building AI systems around biological wiring constraints might help us understand *why* both natural and artificial vision systems fail in similar ways.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework</title>
+      <link>https://paperplaine.com/papers/cascading-contingency-analysis-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/cascading-contingency-analysis-of</guid>
+      <pubDate>Tue, 10 Nov 2026 18:11:28 GMT</pubDate>
+      <author>Masoud H. Nazari, Hamid Varmazyari</author>
+      <category>Engineering</category>
+      <description>Predicting how one power grid failure can trigger a dangerous chain reaction</description>
+      <content:encoded><![CDATA[<p><em>Predicting how one power grid failure can trigger a dangerous chain reaction</em></p><p>Engineers developed a new method to predict how a single power outage can cascade into multiple failures across the electrical grid. Unlike traditional tests that only check what happens when one or two lines go down, this framework reveals hidden domino-effect patterns that could leave millions without power—and it works by modeling how real stresses spread through the system after each failure.</p><p><strong>Why it matters:</strong> Power grid operators use outdated methods that miss the biggest threats. This framework identifies which component failures are most dangerous before they happen, allowing utilities to reinforce vulnerable spots in the network. Better predictions mean fewer blackouts, faster restoration, and lower costs from unexpected outages.</p>]]></content:encoded>
+    </item>
     <item>
       <title>MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning</title>
       <link>https://paperplaine.com/papers/maxim-maximally-informative-incremental</link>

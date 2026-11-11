@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1131 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1134 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 387 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 388 papers in archive.
+  - "Causal Concept Explanations for Deep Neural Models"
   - "MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning"
-  - "2D Gum-Net: Unsupervised Dense Elastic Image Registration via Symmetric Correlation and Spectral Pooling"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 91 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 92 papers in archive.
+  - "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion"
   - "A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems"
-  - "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 95 papers in archive.
   - "Enhancing valley splitting in Si/SiGe Wiggle Well quantum dots through integrated stressor-gate architectures"
   - "Disorder-blind Mpemba acceleration of quantum state preparation"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 97 papers in archive.
   - "Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery"
   - "BUMP: Brief Unexpected Mid-Interpolation Peak"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 90 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 91 papers in archive.
+  - "Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework"
   - "Simulation of Refraction Through Voxel Volumes"
-  - "Spectral Regimes of Truncated sinc-Power and Pulse-Train Kernels: Edge Exponents, Per-Edge Plunges, and the Landau-Widom Limit"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 80 papers in archive.
   - "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks"
   - "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems"
 
 ## 10 most recent papers
+
+### Causal Concept Explanations for Deep Neural Models
+- URL: https://paperplaine.com/papers/causal-concept-explanations-for
+- Category: Computer Science · AI
+- Authors: Josh Rountree, Pulkit Verma, Oswin So et al.
+- arXiv: 2611.14407
+- Plain-English subtitle: Making AI explanations actually prove why decisions happen
+- Summary: Most AI explanations only show what matters, not whether they truly caused a decision. Researchers built CCW-Net, a new method that forces neural networks to learn concept-based explanations that are provably necessary and sufficient for their outputs—meaning a concept only gets credit for influencing a result if removing it actually changes that result. The method measures exactly how much each concept causally contributes to each decision, eliminating explanations that look right but mislead.
+- Why it matters: When autonomous systems make critical decisions—like controlling aircraft or self-driving cars—we need to trust that their explanations reflect real causal chains, not coincidences. A model might output "plane safe to fly" while a dashboard shows "fuel level normal," but if that fuel reading doesn't actually drive the decision, the explanation creates dangerous false confidence. CCW-Net fills this gap by certifying that explanations are genuinely causal, making it possible for regulators and operators to confidently evaluate whether a system is truly reasoning safely or just appearing to.
+
+### Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion
+- URL: https://paperplaine.com/papers/measuring-robustness-and-efficiency
+- Category: Computer Science
+- Authors: Alexandre Garcia-Duran, Alejandro Rodriguez-Garcia, Manuel Molano-Mazón et al.
+- arXiv: 2611.14498
+- Plain-English subtitle: Why fruit fly brains are efficient but fall for the same visual tricks we do
+- Summary: A neural network modeled on the fruit fly's visual circuitry processes motion detection using 100,000 times fewer computations than standard artificial systems, yet it fails in predictable ways—stumbling over the same optical illusions that fool biological vision. The network's vulnerabilities trace back to a single low-level motion computation that both adversarial attacks and the classic reverse-phi illusion exploit identically.
+- Why it matters: Brains solve the efficiency problem that plagues AI: they do complex visual work on a tiny energy budget. By identifying exactly where the fly brain's design trades robustness for efficiency, researchers can now test whether real flies share the same perceptual blind spots, turning artificial failures into predictions about biology. This also suggests that building AI systems around biological wiring constraints might help us understand *why* both natural and artificial vision systems fail in similar ways.
+
+### Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework
+- URL: https://paperplaine.com/papers/cascading-contingency-analysis-of
+- Category: Engineering
+- Authors: Masoud H. Nazari, Hamid Varmazyari
+- arXiv: 2611.14439
+- Plain-English subtitle: Predicting how one power grid failure can trigger a dangerous chain reaction
+- Summary: Engineers developed a new method to predict how a single power outage can cascade into multiple failures across the electrical grid. Unlike traditional tests that only check what happens when one or two lines go down, this framework reveals hidden domino-effect patterns that could leave millions without power—and it works by modeling how real stresses spread through the system after each failure.
+- Why it matters: Power grid operators use outdated methods that miss the biggest threats. This framework identifies which component failures are most dangerous before they happen, allowing utilities to reinforce vulnerable spots in the network. Better predictions mean fewer blackouts, faster restoration, and lower costs from unexpected outages.
 
 ### MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning
 - URL: https://paperplaine.com/papers/maxim-maximally-informative-incremental
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Aligning different data types while preserving the shape of the target space
 - Summary: Researchers developed FlowAlign, a method that maps one type of data (like images) into a space defined by another type (like text) while keeping both the paired relationships intact and the overall structure of the target space unchanged. Tests on genetic data, cells, and image-text pairs show it outperforms existing approaches at matching individual pairs without distorting the target space's geometry.
 - Why it matters: Many real applications need to translate between different data types—from matching genetic measurements to patient outcomes, to aligning images with text descriptions—while ensuring the result can be used directly for downstream analysis. Current methods force a choice between preserving individual matches or maintaining the target space's structure; FlowAlign does both, which means more reliable predictions and analyses when working with multimodal data in medicine, biology, and machine learning.
-
-### The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names
-- URL: https://paperplaine.com/papers/the-end-of-day
-- Category: Quantitative Finance
-- Authors: Alex Vidovich, Zivana Zerjal
-- arXiv: 2611.09286
-- Plain-English subtitle: Does a stock market anomaly hold up under careful re-testing?
-- Summary: A previously documented pattern — where stocks that lose value during the day tend to bounce back in the final half hour of trading — does persist in newer data, but only partially and with important caveats. The effect weakens significantly when including the most heavily traded stocks, and it vanishes entirely during 2020–2022, suggesting the pattern may be fragile or fading.
-- Why it matters: If traders rely on this end-of-day reversal as a predictable profit opportunity, knowing it doesn't hold consistently — especially in the largest, most liquid stocks — prevents them from losing money on a false strategy. The findings also highlight how even peer-reviewed financial discoveries need re-testing on new data; a pattern that worked through 2019 shouldn't be trusted for future trading without evidence it still works today.
-
-### A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems
-- URL: https://paperplaine.com/papers/a-cross-domain-tara
-- Category: Computer Science
-- Authors: Krishna Teja Medam, Thiago Quinelato
-- arXiv: 2611.09771
-- Plain-English subtitle: Converting cybersecurity threats into network rules that actually work
-- Summary: When companies assess cybersecurity risks, they often get stuck: they identify what threats look like and what needs protecting, but then struggle to write the actual network access control rules that enforce those protections. This paper presents a six-step method that bridges that gap, converting threat assessments into specific, traceable network rules. The authors tested their approach on both an automotive plant network and a battery energy storage facility, showing how one underlying method could work across different industries and their distinct regulations.
-- Why it matters: Companies managing critical infrastructure—from car factories to power grids—spend money on security assessments but often fail to turn those assessments into concrete, enforceable rules. This creates gaps where threats slip through. A standardized translation method could cut the time and guesswork involved in moving from "we know what could go wrong" to "our network blocks it." The approach also lets different industries reuse the same underlying framework while swapping in their own specific regulations, reducing wasted effort.
-
-### FlowMoP: Stochastic Multi-Person Motion Prediction
-- URL: https://paperplaine.com/papers/flowmop-stochastic-multi-person
-- Category: Computer Science · AI
-- Authors: Aadya Agrawal, Ho Kei Cheng, Alexander Schwing
-- arXiv: 2611.09882
-- Plain-English subtitle: How AI predicts multiple people's movements when many futures are possible
-- Summary: Most systems that predict how people will move predict just one fixed future per person, but human motion is genuinely uncertain—the same starting position can lead to many different plausible movements depending on what people intend and how they interact. Researchers built a new system that generates entire ranges of possible futures for multiple people at once, accounting for how they influence each other's movements, and showed it outperforms fixed-prediction methods on standard tests and on professional soccer footage.
-- Why it matters: Predicting human motion accurately matters for robots and autonomous systems that share spaces with people—from warehouse robots working alongside humans to self-driving cars navigating crowds. By generating multiple possible futures rather than guessing one, these systems can plan safer interactions and better prepare for what people might actually do. The method also shows that accounting for how people influence each other produces predictions concentrated in realistic directions, which could make human-robot collaboration genuinely safer.
 
 ## About
 

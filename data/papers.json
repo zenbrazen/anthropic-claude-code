@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.14407",
+    "title": "Causal Concept Explanations for Deep Neural Models",
+    "authors": "Josh Rountree, Pulkit Verma, Oswin So et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-10T17:50:15Z",
+    "publishedFormatted": "Nov 10, 2026",
+    "subtitle": "Making AI explanations actually prove why decisions happen",
+    "summary": "Most AI explanations only show what matters, not whether they truly caused a decision. Researchers built CCW-Net, a new method that forces neural networks to learn concept-based explanations that are provably necessary and sufficient for their outputs—meaning a concept only gets credit for influencing a result if removing it actually changes that result. The method measures exactly how much each concept causally contributes to each decision, eliminating explanations that look right but mislead.",
+    "whyItMatters": "When autonomous systems make critical decisions—like controlling aircraft or self-driving cars—we need to trust that their explanations reflect real causal chains, not coincidences. A model might output \"plane safe to fly\" while a dashboard shows \"fuel level normal,\" but if that fuel reading doesn't actually drive the decision, the explanation creates dangerous false confidence. CCW-Net fills this gap by certifying that explanations are genuinely causal, making it possible for regulators and operators to confidently evaluate whether a system is truly reasoning safely or just appearing to.",
+    "fetchedAt": "2026-11-11T14:55:20.480Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 28,
+      "wordCount": 224
+    },
+    "slug": "causal-concept-explanations-for"
+  },
+  {
+    "id": "2611.14498",
+    "title": "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion",
+    "authors": "Alexandre Garcia-Duran, Alejandro Rodriguez-Garcia, Manuel Molano-Mazón et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-11-10T18:51:31Z",
+    "publishedFormatted": "Nov 10, 2026",
+    "subtitle": "Why fruit fly brains are efficient but fall for the same visual tricks we do",
+    "summary": "A neural network modeled on the fruit fly's visual circuitry processes motion detection using 100,000 times fewer computations than standard artificial systems, yet it fails in predictable ways—stumbling over the same optical illusions that fool biological vision. The network's vulnerabilities trace back to a single low-level motion computation that both adversarial attacks and the classic reverse-phi illusion exploit identically.",
+    "whyItMatters": "Brains solve the efficiency problem that plagues AI: they do complex visual work on a tiny energy budget. By identifying exactly where the fly brain's design trades robustness for efficiency, researchers can now test whether real flies share the same perceptual blind spots, turning artificial failures into predictions about biology. This also suggests that building AI systems around biological wiring constraints might help us understand *why* both natural and artificial vision systems fail in similar ways.",
+    "fetchedAt": "2026-11-11T14:55:24.010Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 39,
+      "wordCount": 250
+    },
+    "slug": "measuring-robustness-and-efficiency"
+  },
+  {
+    "id": "2611.14439",
+    "title": "Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework",
+    "authors": "Masoud H. Nazari, Hamid Varmazyari",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-11-10T18:11:28Z",
+    "publishedFormatted": "Nov 10, 2026",
+    "subtitle": "Predicting how one power grid failure can trigger a dangerous chain reaction",
+    "summary": "Engineers developed a new method to predict how a single power outage can cascade into multiple failures across the electrical grid. Unlike traditional tests that only check what happens when one or two lines go down, this framework reveals hidden domino-effect patterns that could leave millions without power—and it works by modeling how real stresses spread through the system after each failure.",
+    "whyItMatters": "Power grid operators use outdated methods that miss the biggest threats. This framework identifies which component failures are most dangerous before they happen, allowing utilities to reinforce vulnerable spots in the network. Better predictions mean fewer blackouts, faster restoration, and lower costs from unexpected outages.",
+    "fetchedAt": "2026-11-11T14:55:26.681Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 151
+    },
+    "slug": "cascading-contingency-analysis-of"
+  },
+  {
     "id": "2611.12825",
     "title": "MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning",
     "authors": "Jihwan Jeong, Guy Tennenholtz, Yinlam Chow et al.",
