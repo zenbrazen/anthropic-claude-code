@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 15:46:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 23:56:30 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Emergent Biological Capabilities in a Foundation Model for Molecular Interactions</title>
+      <link>https://paperplaine.com/papers/emergent-biological-capabilities-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/emergent-biological-capabilities-in</guid>
+      <pubDate>Tue, 10 Nov 2026 18:53:01 GMT</pubDate>
+      <author>Adi Mashiach</author>
+      <category>AI</category>
+      <description>AI model learns to predict how drugs bind to proteins without being taught</description>
+      <content:encoded><![CDATA[<p><em>AI model learns to predict how drugs bind to proteins without being taught</em></p><p>Researchers trained a massive AI model called Bonbon on 3.2 trillion molecular sequences and found it spontaneously developed three new abilities it was never explicitly trained for: predicting how drugs work, pinpointing where they bind on proteins, and determining the type of chemical bonds involved. When tested in the lab on nine diseases, the model identified entirely new drug candidates that actually worked, including compounds that inhibited proteins researchers hadn't specifically trained it on.</p><p><strong>Why it matters:</strong> Drug discovery today is slow and expensive—identifying promising candidates can take years. Bonbon ran at five thousand times faster than current best methods while discovering genuinely novel compounds in real wet-lab experiments. If the 61.5% hit rate holds across more targets, this could dramatically accelerate the identification of new treatments for diseases where current options are limited or failing.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>DeepFinance: Can AI Diligence a $100MM Deal?</title>
+      <link>https://paperplaine.com/papers/deepfinance-can-ai-diligence</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/deepfinance-can-ai-diligence</guid>
+      <pubDate>Sat, 07 Nov 2026 19:31:09 GMT</pubDate>
+      <author>Drew Hahn, Tyler Shibata, Jackson Grove et al.</author>
+      <category>Finance</category>
+      <description>Can AI handle the judgment calls that make or break hundred-million-dollar deals?</description>
+      <content:encoded><![CDATA[<p><em>Can AI handle the judgment calls that make or break hundred-million-dollar deals?</em></p><p>Researchers created a realistic test of whether AI can do the complex thinking required in private equity and investment banking deals worth over $100 million. The best AI model passed only 57.6% of the criteria, and it frequently made the right calculations from the wrong data or found important information without acting on it—suggesting that AI still struggles with the judgment calls that matter most in high-stakes finance.</p><p><strong>Why it matters:</strong> Banks and investment firms are already using AI to speed up due diligence on major deals, but this research shows these systems can confidently produce wrong answers by pulling from bad sources or ignoring critical evidence. Until AI closes this gap, dealmakers need to treat AI outputs as a starting point requiring human oversight, not as a shortcut to faster decision-making on deals where errors can cost millions.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>One Curve, Different Weights: AUC, the Brier Score, Decision-Weighted AUC, and the Policy Youden Index</title>
+      <link>https://paperplaine.com/papers/one-curve-different-weights</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/one-curve-different-weights</guid>
+      <pubDate>Tue, 10 Nov 2026 18:29:50 GMT</pubDate>
+      <author>Yegor Baranovski</author>
+      <category>Statistics</category>
+      <description>Why different ways of measuring model performance rank them differently</description>
+      <content:encoded><![CDATA[<p><em>Why different ways of measuring model performance rank them differently</em></p><p>Two standard measures for evaluating risk prediction models—AUC and the Brier score—often disagree about which model performs better. Researchers discovered that both metrics, along with a new weighted variant, are actually different ways of averaging the same underlying curve, but they put emphasis on different parts of it depending on what matters to the person using the model.</p><p><strong>Why it matters:</strong> When hospitals, lenders, or other organizations choose prediction models to guide high-stakes decisions, they need metrics that reflect what actually matters to them—not generic measures that treat all situations equally. This work shows that existing metrics can hide these differences in priorities, potentially leading organizations to pick models that optimize for the wrong things. The new weighted metric lets decision-makers explicitly state what they care about and choose models accordingly.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents</title>
       <link>https://paperplaine.com/papers/pyrite-building-and-benchmarking</link>

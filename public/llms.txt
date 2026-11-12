@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1140 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1143 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 390 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 391 papers in archive.
+  - "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions"
   - "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents"
-  - "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 92 papers in archive.
   - "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion"
   - "A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 99 papers in archive.
   - "The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design"
   - "Spike-to-Field Mechanisms of Turbulence-Like Dynamics in Spatial Spiking Neural Networks"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 97 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 98 papers in archive.
+  - "DeepFinance: Can AI Diligence a $100MM Deal?"
   - "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names"
-  - "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 97 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 98 papers in archive.
+  - "One Curve, Different Weights: AUC, the Brier Score, Decision-Weighted AUC, and the Policy Youden Index"
   - "Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery"
-  - "BUMP: Brief Unexpected Mid-Interpolation Peak"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 91 papers in archive.
   - "Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework"
   - "Simulation of Refraction Through Voxel Volumes"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks"
 
 ## 10 most recent papers
+
+### Emergent Biological Capabilities in a Foundation Model for Molecular Interactions
+- URL: https://paperplaine.com/papers/emergent-biological-capabilities-in
+- Category: Computer Science · AI
+- Authors: Adi Mashiach
+- arXiv: 2611.14504
+- Plain-English subtitle: AI model learns to predict how drugs bind to proteins without being taught
+- Summary: Researchers trained a massive AI model called Bonbon on 3.2 trillion molecular sequences and found it spontaneously developed three new abilities it was never explicitly trained for: predicting how drugs work, pinpointing where they bind on proteins, and determining the type of chemical bonds involved. When tested in the lab on nine diseases, the model identified entirely new drug candidates that actually worked, including compounds that inhibited proteins researchers hadn't specifically trained it on.
+- Why it matters: Drug discovery today is slow and expensive—identifying promising candidates can take years. Bonbon ran at five thousand times faster than current best methods while discovering genuinely novel compounds in real wet-lab experiments. If the 61.5% hit rate holds across more targets, this could dramatically accelerate the identification of new treatments for diseases where current options are limited or failing.
+
+### DeepFinance: Can AI Diligence a $100MM Deal?
+- URL: https://paperplaine.com/papers/deepfinance-can-ai-diligence
+- Category: Quantitative Finance
+- Authors: Drew Hahn, Tyler Shibata, Jackson Grove et al.
+- arXiv: 2611.10926
+- Plain-English subtitle: Can AI handle the judgment calls that make or break hundred-million-dollar deals?
+- Summary: Researchers created a realistic test of whether AI can do the complex thinking required in private equity and investment banking deals worth over $100 million. The best AI model passed only 57.6% of the criteria, and it frequently made the right calculations from the wrong data or found important information without acting on it—suggesting that AI still struggles with the judgment calls that matter most in high-stakes finance.
+- Why it matters: Banks and investment firms are already using AI to speed up due diligence on major deals, but this research shows these systems can confidently produce wrong answers by pulling from bad sources or ignoring critical evidence. Until AI closes this gap, dealmakers need to treat AI outputs as a starting point requiring human oversight, not as a shortcut to faster decision-making on deals where errors can cost millions.
+
+### One Curve, Different Weights: AUC, the Brier Score, Decision-Weighted AUC, and the Policy Youden Index
+- URL: https://paperplaine.com/papers/one-curve-different-weights
+- Category: Statistics
+- Authors: Yegor Baranovski
+- arXiv: 2611.14465
+- Plain-English subtitle: Why different ways of measuring model performance rank them differently
+- Summary: Two standard measures for evaluating risk prediction models—AUC and the Brier score—often disagree about which model performs better. Researchers discovered that both metrics, along with a new weighted variant, are actually different ways of averaging the same underlying curve, but they put emphasis on different parts of it depending on what matters to the person using the model.
+- Why it matters: When hospitals, lenders, or other organizations choose prediction models to guide high-stakes decisions, they need metrics that reflect what actually matters to them—not generic measures that treat all situations equally. This work shows that existing metrics can hide these differences in priorities, potentially leading organizations to pick models that optimize for the wrong things. The new weighted metric lets decision-makers explicitly state what they care about and choose models accordingly.
 
 ### Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents
 - URL: https://paperplaine.com/papers/pyrite-building-and-benchmarking
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI explanations actually prove why decisions happen
 - Summary: Most AI explanations only show what matters, not whether they truly caused a decision. Researchers built CCW-Net, a new method that forces neural networks to learn concept-based explanations that are provably necessary and sufficient for their outputs—meaning a concept only gets credit for influencing a result if removing it actually changes that result. The method measures exactly how much each concept causally contributes to each decision, eliminating explanations that look right but mislead.
 - Why it matters: When autonomous systems make critical decisions—like controlling aircraft or self-driving cars—we need to trust that their explanations reflect real causal chains, not coincidences. A model might output "plane safe to fly" while a dashboard shows "fuel level normal," but if that fuel reading doesn't actually drive the decision, the explanation creates dangerous false confidence. CCW-Net fills this gap by certifying that explanations are genuinely causal, making it possible for regulators and operators to confidently evaluate whether a system is truly reasoning safely or just appearing to.
-
-### Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion
-- URL: https://paperplaine.com/papers/measuring-robustness-and-efficiency
-- Category: Computer Science
-- Authors: Alexandre Garcia-Duran, Alejandro Rodriguez-Garcia, Manuel Molano-Mazón et al.
-- arXiv: 2611.14498
-- Plain-English subtitle: Why fruit fly brains are efficient but fall for the same visual tricks we do
-- Summary: A neural network modeled on the fruit fly's visual circuitry processes motion detection using 100,000 times fewer computations than standard artificial systems, yet it fails in predictable ways—stumbling over the same optical illusions that fool biological vision. The network's vulnerabilities trace back to a single low-level motion computation that both adversarial attacks and the classic reverse-phi illusion exploit identically.
-- Why it matters: Brains solve the efficiency problem that plagues AI: they do complex visual work on a tiny energy budget. By identifying exactly where the fly brain's design trades robustness for efficiency, researchers can now test whether real flies share the same perceptual blind spots, turning artificial failures into predictions about biology. This also suggests that building AI systems around biological wiring constraints might help us understand *why* both natural and artificial vision systems fail in similar ways.
-
-### Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework
-- URL: https://paperplaine.com/papers/cascading-contingency-analysis-of
-- Category: Engineering
-- Authors: Masoud H. Nazari, Hamid Varmazyari
-- arXiv: 2611.14439
-- Plain-English subtitle: Predicting how one power grid failure can trigger a dangerous chain reaction
-- Summary: Engineers developed a new method to predict how a single power outage can cascade into multiple failures across the electrical grid. Unlike traditional tests that only check what happens when one or two lines go down, this framework reveals hidden domino-effect patterns that could leave millions without power—and it works by modeling how real stresses spread through the system after each failure.
-- Why it matters: Power grid operators use outdated methods that miss the biggest threats. This framework identifies which component failures are most dangerous before they happen, allowing utilities to reinforce vulnerable spots in the network. Better predictions mean fewer blackouts, faster restoration, and lower costs from unexpected outages.
-
-### MaxIM: Maximally Informative Incremental Summarization via Reinforcement Learning
-- URL: https://paperplaine.com/papers/maxim-maximally-informative-incremental
-- Category: Computer Science · AI
-- Authors: Jihwan Jeong, Guy Tennenholtz, Yinlam Chow et al.
-- arXiv: 2611.12825
-- Plain-English subtitle: Teaching AI to remember what matters most when memory runs out
-- Summary: AI systems that must remember key facts from long conversations or documents while working within strict memory limits now have a better way to decide what to keep. Researchers developed MaxIM, a framework that uses information theory to guide an AI in creating compact summaries that preserve task-relevant details. In tests on scientific reading and multi-turn dialogue, MaxIM outperformed standard approaches without requiring human preference labels.
-- Why it matters: AI assistants today struggle to maintain useful context when conversations grow long or documents are massive—forcing them to either run out of memory or forget important details. MaxIM makes these systems more reliable by automatically prioritizing information that actually matters for answering questions or completing tasks, not just information that sounds important. This could improve chatbots, research assistants, and any AI system that needs to understand and act on large volumes of text within practical memory constraints.
 
 ## About
 

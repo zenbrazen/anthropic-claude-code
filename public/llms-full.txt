@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1140 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1143 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-12
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Emergent Biological Capabilities in a Foundation Model for Molecular Interactions
+Subtitle: AI model learns to predict how drugs bind to proteins without being taught
+URL: https://paperplaine.com/papers/emergent-biological-capabilities-in
+Category: Computer Science · AI
+Authors: Adi Mashiach
+arXiv ID: 2611.14504
+arXiv URL: https://arxiv.org/abs/2611.14504
+Posted: 2026-11-12
+
+Summary: Researchers trained a massive AI model called Bonbon on 3.2 trillion molecular sequences and found it spontaneously developed three new abilities it was never explicitly trained for: predicting how drugs work, pinpointing where they bind on proteins, and determining the type of chemical bonds involved. When tested in the lab on nine diseases, the model identified entirely new drug candidates that actually worked, including compounds that inhibited proteins researchers hadn't specifically trained it on.
+
+Why it matters: Drug discovery today is slow and expensive—identifying promising candidates can take years. Bonbon ran at five thousand times faster than current best methods while discovering genuinely novel compounds in real wet-lab experiments. If the 61.5% hit rate holds across more targets, this could dramatically accelerate the identification of new treatments for diseases where current options are limited or failing.
+
+---
+Title: DeepFinance: Can AI Diligence a $100MM Deal?
+Subtitle: Can AI handle the judgment calls that make or break hundred-million-dollar deals?
+URL: https://paperplaine.com/papers/deepfinance-can-ai-diligence
+Category: Quantitative Finance
+Authors: Drew Hahn, Tyler Shibata, Jackson Grove et al.
+arXiv ID: 2611.10926
+arXiv URL: https://arxiv.org/abs/2611.10926
+Posted: 2026-11-12
+
+Summary: Researchers created a realistic test of whether AI can do the complex thinking required in private equity and investment banking deals worth over $100 million. The best AI model passed only 57.6% of the criteria, and it frequently made the right calculations from the wrong data or found important information without acting on it—suggesting that AI still struggles with the judgment calls that matter most in high-stakes finance.
+
+Why it matters: Banks and investment firms are already using AI to speed up due diligence on major deals, but this research shows these systems can confidently produce wrong answers by pulling from bad sources or ignoring critical evidence. Until AI closes this gap, dealmakers need to treat AI outputs as a starting point requiring human oversight, not as a shortcut to faster decision-making on deals where errors can cost millions.
+
+---
+Title: One Curve, Different Weights: AUC, the Brier Score, Decision-Weighted AUC, and the Policy Youden Index
+Subtitle: Why different ways of measuring model performance rank them differently
+URL: https://paperplaine.com/papers/one-curve-different-weights
+Category: Statistics
+Authors: Yegor Baranovski
+arXiv ID: 2611.14465
+arXiv URL: https://arxiv.org/abs/2611.14465
+Posted: 2026-11-12
+
+Summary: Two standard measures for evaluating risk prediction models—AUC and the Brier score—often disagree about which model performs better. Researchers discovered that both metrics, along with a new weighted variant, are actually different ways of averaging the same underlying curve, but they put emphasis on different parts of it depending on what matters to the person using the model.
+
+Why it matters: When hospitals, lenders, or other organizations choose prediction models to guide high-stakes decisions, they need metrics that reflect what actually matters to them—not generic measures that treat all situations equally. This work shows that existing metrics can hide these differences in priorities, potentially leading organizations to pick models that optimize for the wrong things. The new weighted metric lets decision-makers explicitly state what they care about and choose models accordingly.
 
 ---
 Title: Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents
