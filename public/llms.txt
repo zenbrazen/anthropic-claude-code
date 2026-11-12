@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1137 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1140 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 389 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 390 papers in archive.
+  - "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents"
   - "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations"
-  - "Causal Concept Explanations for Deep Neural Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 92 papers in archive.
   - "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion"
   - "A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 97 papers in archive.
   - "Cotangent-lift inference of stochastic microbial dynamics"
   - "On the (non-)closedness of the set of ReLU networks"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 98 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 99 papers in archive.
+  - "The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design"
   - "Spike-to-Field Mechanisms of Turbulence-Like Dynamics in Spatial Spiking Neural Networks"
-  - "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 97 papers in archive.
   - "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names"
   - "Beyond Anonymous Order Flow: Wallet Identity as a Feature for Short-Horizon Return Prediction"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 91 papers in archive.
   - "Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework"
   - "Simulation of Refraction Through Voxel Volumes"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 80 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 81 papers in archive.
+  - "Prediction Inference for Hybrid Models on Realized Volatility Forecasting"
   - "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks"
-  - "You Know What You Will Like: People Predict Their Own Ratings Better Than Recommender Systems"
 
 ## 10 most recent papers
+
+### Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents
+- URL: https://paperplaine.com/papers/pyrite-building-and-benchmarking
+- Category: Computer Science · AI
+- Authors: Megha Srivastava, Michael H. Lim, Allison M. Keys et al.
+- arXiv: 2611.14511
+- Plain-English subtitle: Training AI to pick the right molecular shapes for drug design
+- Summary: Predicting which way a drug molecule will bind to its target protein is surprisingly hard—even expert chemists with visualization tools perform barely better than guessing. Researchers created Pyrite, a benchmark of 1,500 test cases, and built two AI agents that solve this problem by reasoning about molecular geometry and learning which chemical features matter most, achieving up to 74% accuracy and outperforming human experts.
+- Why it matters: Drug discovery currently wastes time and money evaluating binding poses that won't work. An AI system that reliably ranks these candidates could accelerate early-stage drug screening and reduce failed experiments, potentially shortening the timeline from molecular design to testable compounds.
+
+### The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design
+- URL: https://paperplaine.com/papers/the-dose-makes-the
+- Category: Quantitative Biology
+- Authors: Maria Franz, N. Benjamin Erichson
+- arXiv: 2611.13398
+- Plain-English subtitle: Why promising drug candidates fail when you ignore how much patients must take
+- Summary: Computational models that design new drug molecules often overlook a critical real-world factor: the dose patients would actually need to take. Researchers re-evaluated 60 drug candidates using realistic pharmacokinetic simulations and found that 7 couldn't deliver enough drug to the target, while 28% posed safety risks at their required dose. Most strikingly, 85% of the candidates deemed viable turned out to be worse than molecules the initial screening had dismissed.
+- Why it matters: Drug companies rely on AI to narrow down millions of generated molecules into a manageable list for expensive lab testing. If the screening process ignores dose and exposure, researchers waste time and money pursuing dead ends—or worse, advance candidates that would require impractical pill sizes or dangerous safety margins. Incorporating dose-aware evaluation could redirect resources toward molecules that actually work in living bodies, not just on paper.
+
+### Prediction Inference for Hybrid Models on Realized Volatility Forecasting
+- URL: https://paperplaine.com/papers/prediction-inference-for-hybrid
+- Category: Economics
+- Authors: Kyle Parrella, Kejin Wu
+- arXiv: 2611.13212
+- Plain-English subtitle: Measuring uncertainty in stock volatility predictions, not just point forecasts
+- Summary: Researchers upgraded hybrid machine-learning models for predicting stock market volatility by adding a measure of uncertainty around each forecast—something prior work had ignored. The new approach combines ARMA statistical modeling with LSTM neural networks and uses bootstrap resampling to build prediction intervals that capture fat tails in financial data. Testing on U.S. stock indices from 2020 to 2025 shows the method produces intervals closer to their intended coverage levels than competing approaches.
+- Why it matters: Traders and risk managers rely on volatility forecasts to price options, set position limits, and hedge portfolios. A point estimate without a confidence band is incomplete—you need to know how wrong you might be. This work delivers prediction intervals with reliable coverage, so investors can size positions appropriately rather than making decisions based on false precision.
 
 ### Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations
 - URL: https://paperplaine.com/papers/contrastive-discovery-open-ended
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to remember what matters most when memory runs out
 - Summary: AI systems that must remember key facts from long conversations or documents while working within strict memory limits now have a better way to decide what to keep. Researchers developed MaxIM, a framework that uses information theory to guide an AI in creating compact summaries that preserve task-relevant details. In tests on scientific reading and multi-turn dialogue, MaxIM outperformed standard approaches without requiring human preference labels.
 - Why it matters: AI assistants today struggle to maintain useful context when conversations grow long or documents are massive—forcing them to either run out of memory or forget important details. MaxIM makes these systems more reliable by automatically prioritizing information that actually matters for answering questions or completing tasks, not just information that sounds important. This could improve chatbots, research assistants, and any AI system that needs to understand and act on large volumes of text within practical memory constraints.
-
-### Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery
-- URL: https://paperplaine.com/papers/out-of-the-box
-- Category: Statistics
-- Authors: Klemens Flöge, Simon Bing, Leo Grinsztajn et al.
-- arXiv: 2611.12491
-- Plain-English subtitle: Using AI models built for spreadsheets to discover new materials faster
-- Summary: Researchers tested whether tabular foundation models—AI systems trained on structured data like spreadsheets—could replace traditional statistical methods in materials discovery. The models performed competitively without needing custom tuning, suggesting they could streamline the trial-and-error process of finding new materials.
-- Why it matters: Materials discovery is slow because scientists must test countless compounds to find promising candidates. Faster prediction models mean researchers can narrow down possibilities before entering the lab, accelerating everything from battery development to semiconductors. These foundation models work out-of-the-box without specialized setup, making them accessible to labs that lack machine learning expertise.
-
-### Spike-to-Field Mechanisms of Turbulence-Like Dynamics in Spatial Spiking Neural Networks
-- URL: https://paperplaine.com/papers/spike-to-field-mechanisms
-- Category: Quantitative Biology
-- Authors: Zequan Liu
-- arXiv: 2611.12627
-- Plain-English subtitle: How individual neuron spikes create wave-like patterns across the brain
-- Summary: Neurons firing in a coordinated spatial pattern—with delayed connections and filtered signals—naturally produce large-scale turbulent dynamics that look like rolling waves and power-law avalanches across the brain. The effect requires all three ingredients: timing delays, dendritic filtering, and proper spike propagation; remove any one, and the wave-like patterns collapse, even if the raw math still permits some defect-like structures.
-- Why it matters: Brain imaging routinely detects turbulent waves and avalanche-like cascades of activity, but it has been unclear whether these patterns actually require special brain design or simply emerge from noise. This work shows they emerge only under specific circuit conditions—delayed transmission, filtered signals, and particular types of inhibition—which suggests the brain may use these spatial dynamics for computation or information flow. Understanding this link also means researchers can now test theories of brain function by checking whether spike-level mechanisms match the wave patterns they observe in experiments.
-
-### 2D Gum-Net: Unsupervised Dense Elastic Image Registration via Symmetric Correlation and Spectral Pooling
-- URL: https://paperplaine.com/papers/2d-gum-net-unsupervised
-- Category: Computer Science · AI
-- Authors: Aarya Bhave, Anushka Ajay Bhave
-- arXiv: 2611.12805
-- Plain-English subtitle: Teaching AI to align warped images without needing labeled training data
-- Summary: Researchers created 2D Gum-Net, an AI system that can figure out how to warp and align distorted images into perfect geometric agreement without any labeled examples to learn from—a major limitation of previous methods. Tested on fingerprint images, the system improved alignment accuracy by up to 15.7% compared to existing approaches and correctly verified fingerprint matches without creating false correspondences.
-- Why it matters: Medical imaging, fingerprint matching, and biological research all depend on aligning images precisely, but collecting ground-truth training data is expensive and time-consuming. This unsupervised method works straight out of the box on real-world data after training only on synthetic examples, potentially cutting the data-collection bottleneck that has slowed down deployment of alignment AI in hospitals and forensics labs.
 
 ## About
 

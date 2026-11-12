@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1137 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1140 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-12
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents
+Subtitle: Training AI to pick the right molecular shapes for drug design
+URL: https://paperplaine.com/papers/pyrite-building-and-benchmarking
+Category: Computer Science · AI
+Authors: Megha Srivastava, Michael H. Lim, Allison M. Keys et al.
+arXiv ID: 2611.14511
+arXiv URL: https://arxiv.org/abs/2611.14511
+Posted: 2026-11-12
+
+Summary: Predicting which way a drug molecule will bind to its target protein is surprisingly hard—even expert chemists with visualization tools perform barely better than guessing. Researchers created Pyrite, a benchmark of 1,500 test cases, and built two AI agents that solve this problem by reasoning about molecular geometry and learning which chemical features matter most, achieving up to 74% accuracy and outperforming human experts.
+
+Why it matters: Drug discovery currently wastes time and money evaluating binding poses that won't work. An AI system that reliably ranks these candidates could accelerate early-stage drug screening and reduce failed experiments, potentially shortening the timeline from molecular design to testable compounds.
+
+---
+Title: The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design
+Subtitle: Why promising drug candidates fail when you ignore how much patients must take
+URL: https://paperplaine.com/papers/the-dose-makes-the
+Category: Quantitative Biology
+Authors: Maria Franz, N. Benjamin Erichson
+arXiv ID: 2611.13398
+arXiv URL: https://arxiv.org/abs/2611.13398
+Posted: 2026-11-12
+
+Summary: Computational models that design new drug molecules often overlook a critical real-world factor: the dose patients would actually need to take. Researchers re-evaluated 60 drug candidates using realistic pharmacokinetic simulations and found that 7 couldn't deliver enough drug to the target, while 28% posed safety risks at their required dose. Most strikingly, 85% of the candidates deemed viable turned out to be worse than molecules the initial screening had dismissed.
+
+Why it matters: Drug companies rely on AI to narrow down millions of generated molecules into a manageable list for expensive lab testing. If the screening process ignores dose and exposure, researchers waste time and money pursuing dead ends—or worse, advance candidates that would require impractical pill sizes or dangerous safety margins. Incorporating dose-aware evaluation could redirect resources toward molecules that actually work in living bodies, not just on paper.
+
+---
+Title: Prediction Inference for Hybrid Models on Realized Volatility Forecasting
+Subtitle: Measuring uncertainty in stock volatility predictions, not just point forecasts
+URL: https://paperplaine.com/papers/prediction-inference-for-hybrid
+Category: Economics
+Authors: Kyle Parrella, Kejin Wu
+arXiv ID: 2611.13212
+arXiv URL: https://arxiv.org/abs/2611.13212
+Posted: 2026-11-12
+
+Summary: Researchers upgraded hybrid machine-learning models for predicting stock market volatility by adding a measure of uncertainty around each forecast—something prior work had ignored. The new approach combines ARMA statistical modeling with LSTM neural networks and uses bootstrap resampling to build prediction intervals that capture fat tails in financial data. Testing on U.S. stock indices from 2020 to 2025 shows the method produces intervals closer to their intended coverage levels than competing approaches.
+
+Why it matters: Traders and risk managers rely on volatility forecasts to price options, set position limits, and hedge portfolios. A point estimate without a confidence band is incomplete—you need to know how wrong you might be. This work delivers prediction intervals with reliable coverage, so investors can size positions appropriately rather than making decisions based on false precision.
 
 ---
 Title: Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations
