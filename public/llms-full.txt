@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1143 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-12
+This file contains the complete plain-English text of all 1146 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-13
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: AgentSSL: Can MLE Agents Leverage Unlabeled Data?
+Subtitle: Can AI agents find better ways to learn from mostly unlabeled data?
+URL: https://paperplaine.com/papers/agentssl-can-mle-agents
+Category: Computer Science · AI
+Authors: Ethan Lin, Akanksha Sarkar, Ziang Liu et al.
+arXiv ID: 2611.17323
+arXiv URL: https://arxiv.org/abs/2611.17323
+Posted: 2026-11-13
+
+Summary: Researchers tested whether AI agents could automatically design machine learning systems that work well with very little labeled data—a common real-world problem. The agents discovered novel combinations of existing techniques that beat human-designed approaches in two-thirds of test cases, improving performance by up to 22%, but struggled significantly when deciding which solutions to keep.
+
+Why it matters: Most machine learning advances assume plentiful labeled data, but companies and researchers often have vast amounts of unlabeled information they cannot use. If AI agents can reliably automate the discovery of semi-supervised learning strategies, teams could unlock value from data sitting unused today—saving both the months spent manually engineering solutions and the expense of hiring people to label data. The bottleneck the researchers identified (selecting which agent-designed approach actually works best) is now a clear target for improvement.
+
+---
+Title: Data Archive for 2D and 3D Electrical Impedance Tomography with moderate conductivity contrast phantoms
+Subtitle: Public measurements to test imaging technology that sees inside the human body
+URL: https://paperplaine.com/papers/data-archive-for-2d
+Category: Engineering
+Authors: S. J. Hamilton, A. Hauptmann, A. Hänninen et al.
+arXiv ID: 2611.17225
+arXiv URL: https://arxiv.org/abs/2611.17225
+Posted: 2026-11-13
+
+Summary: Researchers released a collection of real measurement data from electrical impedance tomography (EIT), a technique that reconstructs images of what's inside the body by sending electrical currents through the skin. The dataset includes measurements from realistic phantom models simulating the chest and head, along with the computational tools needed to develop and test new image-reconstruction algorithms.
+
+Why it matters: EIT could diagnose conditions like internal bleeding or pneumonia without radiation or expensive equipment, but the technology needs better algorithms to produce clear images. By releasing standardized test data and example code, researchers give algorithm developers a common benchmark to improve on—similar to how public datasets accelerated progress in medical AI. This removes barriers for teams worldwide to build better versions of the technology.
+
+---
+Title: Ensemble phase transitions in measurement-unitary hybrid quantum circuits
+Subtitle: How measuring quantum systems reveals hidden transitions in information chaos
+URL: https://paperplaine.com/papers/ensemble-phase-transitions-in
+Category: Physics
+Authors: Saptarshi Mandal, Sthitadhi Roy
+arXiv ID: 2611.17322
+arXiv URL: https://arxiv.org/abs/2611.17322
+Posted: 2026-11-13
+
+Summary: When physicists measure qubits in hybrid quantum circuits—systems that mix normal quantum evolution with measurement—the statistical properties of the resulting quantum states shift dramatically at a critical point, even though the states themselves appear unchanged by standard measures. The researchers found that two different ways of collecting quantum states both undergo sharp transitions at precisely the measurement-induced purification threshold, offering a concrete physical explanation for why quantum information suddenly becomes orderly or scrambled depending on how often measurements occur.
+
+Why it matters: Understanding these measurement-driven phase transitions helps explain how quantum information becomes ordered or disordered in real quantum computers and simulators. Since most practical quantum devices involve frequent measurements, identifying the exact mechanisms and critical points where quantum behavior shifts could guide the design of better quantum error correction and help predict when a quantum system will maintain or lose information coherence.
 
 ---
 Title: Emergent Biological Capabilities in a Foundation Model for Molecular Interactions
