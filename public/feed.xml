@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 13:57:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 22:50:15 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models</title>
+      <link>https://paperplaine.com/papers/al-ghasali-a-computational</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/al-ghasali-a-computational</guid>
+      <pubDate>Thu, 12 Nov 2026 18:23:56 GMT</pubDate>
+      <author>Elnaserledinellah Mahmoud Abdelwahab</author>
+      <category>AI</category>
+      <description>Using AI to automate Islamic legal rulings without letting the AI make things up</description>
+      <content:encoded><![CDATA[<p><em>Using AI to automate Islamic legal rulings without letting the AI make things up</em></p><p>Researchers created a computational system that formalizes Islamic jurisprudential reasoning as simple decision trees (called finite state automata), then uses AI language models to explain those decisions in human-readable language. The key innovation: the decision tree controls the AI and prevents it from generating false information, reducing what's known as 'hallucination' to zero by forcing the AI to only paraphrase facts the formal system has already determined.</p><p><strong>Why it matters:</strong> Islamic legal scholars currently spend years mastering jurisprudential reasoning to issue rulings on complex questions. This system could automate much of that process while keeping the logic transparent and verifiable—important when people rely on legal rulings for real decisions. It also demonstrates a broader principle: AI language models can explain formal decisions reliably when constrained by a formal system that checks every word against predetermined rules, which could apply to other high-stakes fields like medical or legal advice.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Disentangling Spurious Correlations: How IRM Handles Diverse Shortcuts in Text Classification</title>
+      <link>https://paperplaine.com/papers/disentangling-spurious-correlations-how</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/disentangling-spurious-correlations-how</guid>
+      <pubDate>Thu, 12 Nov 2026 17:03:05 GMT</pubDate>
+      <author>Paul Grunenwald, Benoît Crabbé, Guillaume Wisniewski et al.</author>
+      <category>Statistics</category>
+      <description>Teaching AI text classifiers to ignore misleading patterns and learn what actually matters</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI text classifiers to ignore misleading patterns and learn what actually matters</em></p><p>Text classifiers often latch onto lazy shortcuts—like dialect or actor names—instead of learning genuine linguistic patterns, causing them to fail on new data. A technique called Invariant Risk Minimization (IRM) can suppress these spurious correlations by identifying patterns that stay stable across different datasets, and new experiments show it works across realistic scenarios like gender-profession bias and name-based shortcuts.</p><p><strong>Why it matters:</strong> Text classifiers deployed in the real world encounter data different from their training set, and exploiting spurious patterns causes them to fail. If IRM can reliably steer models toward robust features instead of shortcuts, it could improve how well language systems generalize—from content moderation to bias detection—without requiring hand-labeled corrections for every new problem.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs</title>
+      <link>https://paperplaine.com/papers/the-logic-of-factor</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/the-logic-of-factor</guid>
+      <pubDate>Fri, 06 Nov 2026 18:17:58 GMT</pubDate>
+      <author>Ziyao Wang, Svetlozar T. Rachev, Frank J. Fabozzi</author>
+      <category>Finance</category>
+      <description>Why complex trading rules cost more than they&#39;re worth</description>
+      <content:encoded><![CDATA[<p><em>Why complex trading rules cost more than they're worth</em></p><p>A mathematical framework shows that stock-picking rules combining multiple signals trade much more frequently and eat up their profits in trading costs. When investors blend two or more signals together—say, buying stocks that are both cheap and have strong momentum—they trigger trades roughly 4 to 16 times more often than single-signal rules, and the added profits almost never justify the expense. Over the past 30 years, 58% of simple single-signal strategies beat their trading costs, but only 6% of strategies combining three signals do.</p><p><strong>Why it matters:</strong> This finding challenges a widespread belief among fund managers that combining multiple signals into a single decision rule improves returns. The research shows that blending signals creates hidden drag: the more sophisticated the rule, the more often it trades, and each trade silently erodes gains. For practical investors, this means a simple rule—buy the cheapest stocks, or the strongest momentum—often outperforms elaborate multi-factor combinations after costs are paid, even though those combinations look smarter on paper.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon</title>
       <link>https://paperplaine.com/papers/metal-sandbox-isolated-execution</link>

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1151 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1154 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-14
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models
+Subtitle: Using AI to automate Islamic legal rulings without letting the AI make things up
+URL: https://paperplaine.com/papers/al-ghasali-a-computational
+Category: Computer Science · AI
+Authors: Elnaserledinellah Mahmoud Abdelwahab
+arXiv ID: 2611.17235
+arXiv URL: https://arxiv.org/abs/2611.17235
+Posted: 2026-11-14
+
+Summary: Researchers created a computational system that formalizes Islamic jurisprudential reasoning as simple decision trees (called finite state automata), then uses AI language models to explain those decisions in human-readable language. The key innovation: the decision tree controls the AI and prevents it from generating false information, reducing what's known as 'hallucination' to zero by forcing the AI to only paraphrase facts the formal system has already determined.
+
+Why it matters: Islamic legal scholars currently spend years mastering jurisprudential reasoning to issue rulings on complex questions. This system could automate much of that process while keeping the logic transparent and verifiable—important when people rely on legal rulings for real decisions. It also demonstrates a broader principle: AI language models can explain formal decisions reliably when constrained by a formal system that checks every word against predetermined rules, which could apply to other high-stakes fields like medical or legal advice.
+
+---
+Title: Disentangling Spurious Correlations: How IRM Handles Diverse Shortcuts in Text Classification
+Subtitle: Teaching AI text classifiers to ignore misleading patterns and learn what actually matters
+URL: https://paperplaine.com/papers/disentangling-spurious-correlations-how
+Category: Statistics
+Authors: Paul Grunenwald, Benoît Crabbé, Guillaume Wisniewski et al.
+arXiv ID: 2611.17107
+arXiv URL: https://arxiv.org/abs/2611.17107
+Posted: 2026-11-14
+
+Summary: Text classifiers often latch onto lazy shortcuts—like dialect or actor names—instead of learning genuine linguistic patterns, causing them to fail on new data. A technique called Invariant Risk Minimization (IRM) can suppress these spurious correlations by identifying patterns that stay stable across different datasets, and new experiments show it works across realistic scenarios like gender-profession bias and name-based shortcuts.
+
+Why it matters: Text classifiers deployed in the real world encounter data different from their training set, and exploiting spurious patterns causes them to fail. If IRM can reliably steer models toward robust features instead of shortcuts, it could improve how well language systems generalize—from content moderation to bias detection—without requiring hand-labeled corrections for every new problem.
+
+---
+Title: The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs
+Subtitle: Why complex trading rules cost more than they're worth
+URL: https://paperplaine.com/papers/the-logic-of-factor
+Category: Quantitative Finance
+Authors: Ziyao Wang, Svetlozar T. Rachev, Frank J. Fabozzi
+arXiv ID: 2611.09834
+arXiv URL: https://arxiv.org/abs/2611.09834
+Posted: 2026-11-14
+
+Summary: A mathematical framework shows that stock-picking rules combining multiple signals trade much more frequently and eat up their profits in trading costs. When investors blend two or more signals together—say, buying stocks that are both cheap and have strong momentum—they trigger trades roughly 4 to 16 times more often than single-signal rules, and the added profits almost never justify the expense. Over the past 30 years, 58% of simple single-signal strategies beat their trading costs, but only 6% of strategies combining three signals do.
+
+Why it matters: This finding challenges a widespread belief among fund managers that combining multiple signals into a single decision rule improves returns. The research shows that blending signals creates hidden drag: the more sophisticated the rule, the more often it trades, and each trade silently erodes gains. For practical investors, this means a simple rule—buy the cheapest stocks, or the strongest momentum—often outperforms elaborate multi-factor combinations after costs are paid, even though those combinations look smarter on paper.
 
 ---
 Title: Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon

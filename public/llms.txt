@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1151 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1154 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 394 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 395 papers in archive.
+  - "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models"
   - "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon"
-  - "Negative-Only Policy Optimization for One-Sided Verifiable Rewards"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 93 papers in archive.
   - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
   - "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 100 papers in archive.
   - "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling"
   - "The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 98 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 99 papers in archive.
+  - "The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs"
   - "DeepFinance: Can AI Diligence a $100MM Deal?"
-  - "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 98 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 99 papers in archive.
+  - "Disentangling Spurious Correlations: How IRM Handles Diverse Shortcuts in Text Classification"
   - "One Curve, Different Weights: AUC, the Brier Score, Decision-Weighted AUC, and the Policy Youden Index"
-  - "Out-of-the-Box Tabular Foundation Models for Bayesian Optimization in Materials Discovery"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 92 papers in archive.
   - "Data Archive for 2D and 3D Electrical Impedance Tomography with moderate conductivity contrast phantoms"
   - "Cascading Contingency Analysis of Modern Power Systems Using a Stochastic Hybrid Systems Framework"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks"
 
 ## 10 most recent papers
+
+### Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models
+- URL: https://paperplaine.com/papers/al-ghasali-a-computational
+- Category: Computer Science · AI
+- Authors: Elnaserledinellah Mahmoud Abdelwahab
+- arXiv: 2611.17235
+- Plain-English subtitle: Using AI to automate Islamic legal rulings without letting the AI make things up
+- Summary: Researchers created a computational system that formalizes Islamic jurisprudential reasoning as simple decision trees (called finite state automata), then uses AI language models to explain those decisions in human-readable language. The key innovation: the decision tree controls the AI and prevents it from generating false information, reducing what's known as 'hallucination' to zero by forcing the AI to only paraphrase facts the formal system has already determined.
+- Why it matters: Islamic legal scholars currently spend years mastering jurisprudential reasoning to issue rulings on complex questions. This system could automate much of that process while keeping the logic transparent and verifiable—important when people rely on legal rulings for real decisions. It also demonstrates a broader principle: AI language models can explain formal decisions reliably when constrained by a formal system that checks every word against predetermined rules, which could apply to other high-stakes fields like medical or legal advice.
+
+### Disentangling Spurious Correlations: How IRM Handles Diverse Shortcuts in Text Classification
+- URL: https://paperplaine.com/papers/disentangling-spurious-correlations-how
+- Category: Statistics
+- Authors: Paul Grunenwald, Benoît Crabbé, Guillaume Wisniewski et al.
+- arXiv: 2611.17107
+- Plain-English subtitle: Teaching AI text classifiers to ignore misleading patterns and learn what actually matters
+- Summary: Text classifiers often latch onto lazy shortcuts—like dialect or actor names—instead of learning genuine linguistic patterns, causing them to fail on new data. A technique called Invariant Risk Minimization (IRM) can suppress these spurious correlations by identifying patterns that stay stable across different datasets, and new experiments show it works across realistic scenarios like gender-profession bias and name-based shortcuts.
+- Why it matters: Text classifiers deployed in the real world encounter data different from their training set, and exploiting spurious patterns causes them to fail. If IRM can reliably steer models toward robust features instead of shortcuts, it could improve how well language systems generalize—from content moderation to bias detection—without requiring hand-labeled corrections for every new problem.
+
+### The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs
+- URL: https://paperplaine.com/papers/the-logic-of-factor
+- Category: Quantitative Finance
+- Authors: Ziyao Wang, Svetlozar T. Rachev, Frank J. Fabozzi
+- arXiv: 2611.09834
+- Plain-English subtitle: Why complex trading rules cost more than they're worth
+- Summary: A mathematical framework shows that stock-picking rules combining multiple signals trade much more frequently and eat up their profits in trading costs. When investors blend two or more signals together—say, buying stocks that are both cheap and have strong momentum—they trigger trades roughly 4 to 16 times more often than single-signal rules, and the added profits almost never justify the expense. Over the past 30 years, 58% of simple single-signal strategies beat their trading costs, but only 6% of strategies combining three signals do.
+- Why it matters: This finding challenges a widespread belief among fund managers that combining multiple signals into a single decision rule improves returns. The research shows that blending signals creates hidden drag: the more sophisticated the rule, the more often it trades, and each trade silently erodes gains. For practical investors, this means a simple rule—buy the cheapest stocks, or the strongest momentum—often outperforms elaborate multi-factor combinations after costs are paid, even though those combinations look smarter on paper.
 
 ### Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon
 - URL: https://paperplaine.com/papers/metal-sandbox-isolated-execution
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Public measurements to test imaging technology that sees inside the human body
 - Summary: Researchers released a collection of real measurement data from electrical impedance tomography (EIT), a technique that reconstructs images of what's inside the body by sending electrical currents through the skin. The dataset includes measurements from realistic phantom models simulating the chest and head, along with the computational tools needed to develop and test new image-reconstruction algorithms.
 - Why it matters: EIT could diagnose conditions like internal bleeding or pneumonia without radiation or expensive equipment, but the technology needs better algorithms to produce clear images. By releasing standardized test data and example code, researchers give algorithm developers a common benchmark to improve on—similar to how public datasets accelerated progress in medical AI. This removes barriers for teams worldwide to build better versions of the technology.
-
-### Ensemble phase transitions in measurement-unitary hybrid quantum circuits
-- URL: https://paperplaine.com/papers/ensemble-phase-transitions-in
-- Category: Physics
-- Authors: Saptarshi Mandal, Sthitadhi Roy
-- arXiv: 2611.17322
-- Plain-English subtitle: How measuring quantum systems reveals hidden transitions in information chaos
-- Summary: When physicists measure qubits in hybrid quantum circuits—systems that mix normal quantum evolution with measurement—the statistical properties of the resulting quantum states shift dramatically at a critical point, even though the states themselves appear unchanged by standard measures. The researchers found that two different ways of collecting quantum states both undergo sharp transitions at precisely the measurement-induced purification threshold, offering a concrete physical explanation for why quantum information suddenly becomes orderly or scrambled depending on how often measurements occur.
-- Why it matters: Understanding these measurement-driven phase transitions helps explain how quantum information becomes ordered or disordered in real quantum computers and simulators. Since most practical quantum devices involve frequent measurements, identifying the exact mechanisms and critical points where quantum behavior shifts could guide the design of better quantum error correction and help predict when a quantum system will maintain or lose information coherence.
-
-### Emergent Biological Capabilities in a Foundation Model for Molecular Interactions
-- URL: https://paperplaine.com/papers/emergent-biological-capabilities-in
-- Category: Computer Science · AI
-- Authors: Adi Mashiach
-- arXiv: 2611.14504
-- Plain-English subtitle: AI model learns to predict how drugs bind to proteins without being taught
-- Summary: Researchers trained a massive AI model called Bonbon on 3.2 trillion molecular sequences and found it spontaneously developed three new abilities it was never explicitly trained for: predicting how drugs work, pinpointing where they bind on proteins, and determining the type of chemical bonds involved. When tested in the lab on nine diseases, the model identified entirely new drug candidates that actually worked, including compounds that inhibited proteins researchers hadn't specifically trained it on.
-- Why it matters: Drug discovery today is slow and expensive—identifying promising candidates can take years. Bonbon ran at five thousand times faster than current best methods while discovering genuinely novel compounds in real wet-lab experiments. If the 61.5% hit rate holds across more targets, this could dramatically accelerate the identification of new treatments for diseases where current options are limited or failing.
-
-### DeepFinance: Can AI Diligence a $100MM Deal?
-- URL: https://paperplaine.com/papers/deepfinance-can-ai-diligence
-- Category: Quantitative Finance
-- Authors: Drew Hahn, Tyler Shibata, Jackson Grove et al.
-- arXiv: 2611.10926
-- Plain-English subtitle: Can AI handle the judgment calls that make or break hundred-million-dollar deals?
-- Summary: Researchers created a realistic test of whether AI can do the complex thinking required in private equity and investment banking deals worth over $100 million. The best AI model passed only 57.6% of the criteria, and it frequently made the right calculations from the wrong data or found important information without acting on it—suggesting that AI still struggles with the judgment calls that matter most in high-stakes finance.
-- Why it matters: Banks and investment firms are already using AI to speed up due diligence on major deals, but this research shows these systems can confidently produce wrong answers by pulling from bad sources or ignoring critical evidence. Until AI closes this gap, dealmakers need to treat AI outputs as a starting point requiring human oversight, not as a shortcut to faster decision-making on deals where errors can cost millions.
 
 ## About
 
