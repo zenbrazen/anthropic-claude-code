@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1146 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-13
+This file contains the complete plain-English text of all 1148 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-14
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,34 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Negative-Only Policy Optimization for One-Sided Verifiable Rewards
+Subtitle: Teaching AI to learn from what it gets wrong, not what it fakes getting right
+URL: https://paperplaine.com/papers/negative-only-policy-optimization
+Category: Computer Science · AI
+Authors: Jiacheng Xu, Shuo He, Fuxiang Zhang et al.
+arXiv ID: 2611.17287
+arXiv URL: https://arxiv.org/abs/2611.17287
+Posted: 2026-11-14
+
+Summary: Most AI systems learn by being rewarded for correct answers, but in the real world, we often can't verify correctness—we can only spot when something is obviously broken. Researchers developed a new training method called NOPO that flips this around: instead of rewarding unproven "correct" answers, the AI learns by specifically avoiding the mistakes it knows are wrong. On tasks involving code, math, and logic, this approach outperformed standard methods even when perfect verification was impossible.
+
+Why it matters: AI systems used for coding, math, and scientific tasks currently struggle when there's no reliable way to check if answers are truly right. NOPO makes these systems more trustworthy by preventing them from gaming partial checks—a common failure mode where AI learns to fool weak verification rather than solve problems correctly. This could make AI code assistants and math solvers safer to deploy in real systems where complete verification isn't available.
+
+---
+Title: Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites
+Subtitle: When code changes hide bugs from security scanners
+URL: https://paperplaine.com/papers/preserve-the-vulnerability-break
+Category: Computer Science
+Authors: Zhezhen Cao, Weiyuan Ding, Bowen Xu
+arXiv ID: 2611.17123
+arXiv URL: https://arxiv.org/abs/2611.17123
+Posted: 2026-11-14
+
+Summary: Security tools like CodeQL can be tricked into missing vulnerabilities through simple, realistic code rewrites. Researchers used AI to rewrite functions in ways that preserve actual security flaws while making the tools stop reporting them—silencing 26% of real vulnerabilities in tested code with just three rewrites each. The same AI, asked only to refactor code without targeting the alerts, silenced none, showing these gaps aren't accidents but predictable weaknesses in how the tools model code.
+
+Why it matters: Developers often assume a vulnerability is fixed when an alert disappears after code changes—but this research shows that assumption is dangerous. If a tool can be silently bypassed by ordinary refactoring, security teams lose trust in their gates, and real flaws slip into production. The study maps seven specific gaps in CodeQL's design and shows the same weaknesses affect other analyzers too, giving security tool builders concrete targets to fix.
 
 ---
 Title: AgentSSL: Can MLE Agents Leverage Unlabeled Data?

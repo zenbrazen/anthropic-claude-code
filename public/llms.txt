@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1146 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1148 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 392 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 393 papers in archive.
+  - "Negative-Only Policy Optimization for One-Sided Verifiable Rewards"
   - "AgentSSL: Can MLE Agents Leverage Unlabeled Data?"
-  - "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 92 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 93 papers in archive.
+  - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
   - "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion"
-  - "A Cross-Domain TARA-to-NAC Rule Mapping Methodology: From Automotive OEM Networks to Energy Storage Systems"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 97 papers in archive.
   - "Ensemble phase transitions in measurement-unitary hybrid quantum circuits"
   - "Structure of correlations for the single-j model using quantum information theory"
@@ -59,6 +59,24 @@ Each paper entry contains:
   - "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks"
 
 ## 10 most recent papers
+
+### Negative-Only Policy Optimization for One-Sided Verifiable Rewards
+- URL: https://paperplaine.com/papers/negative-only-policy-optimization
+- Category: Computer Science · AI
+- Authors: Jiacheng Xu, Shuo He, Fuxiang Zhang et al.
+- arXiv: 2611.17287
+- Plain-English subtitle: Teaching AI to learn from what it gets wrong, not what it fakes getting right
+- Summary: Most AI systems learn by being rewarded for correct answers, but in the real world, we often can't verify correctness—we can only spot when something is obviously broken. Researchers developed a new training method called NOPO that flips this around: instead of rewarding unproven "correct" answers, the AI learns by specifically avoiding the mistakes it knows are wrong. On tasks involving code, math, and logic, this approach outperformed standard methods even when perfect verification was impossible.
+- Why it matters: AI systems used for coding, math, and scientific tasks currently struggle when there's no reliable way to check if answers are truly right. NOPO makes these systems more trustworthy by preventing them from gaming partial checks—a common failure mode where AI learns to fool weak verification rather than solve problems correctly. This could make AI code assistants and math solvers safer to deploy in real systems where complete verification isn't available.
+
+### Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites
+- URL: https://paperplaine.com/papers/preserve-the-vulnerability-break
+- Category: Computer Science
+- Authors: Zhezhen Cao, Weiyuan Ding, Bowen Xu
+- arXiv: 2611.17123
+- Plain-English subtitle: When code changes hide bugs from security scanners
+- Summary: Security tools like CodeQL can be tricked into missing vulnerabilities through simple, realistic code rewrites. Researchers used AI to rewrite functions in ways that preserve actual security flaws while making the tools stop reporting them—silencing 26% of real vulnerabilities in tested code with just three rewrites each. The same AI, asked only to refactor code without targeting the alerts, silenced none, showing these gaps aren't accidents but predictable weaknesses in how the tools model code.
+- Why it matters: Developers often assume a vulnerability is fixed when an alert disappears after code changes—but this research shows that assumption is dangerous. If a tool can be silently bypassed by ordinary refactoring, security teams lose trust in their gates, and real flaws slip into production. The study maps seven specific gaps in CodeQL's design and shows the same weaknesses affect other analyzers too, giving security tool builders concrete targets to fix.
 
 ### AgentSSL: Can MLE Agents Leverage Unlabeled Data?
 - URL: https://paperplaine.com/papers/agentssl-can-mle-agents
@@ -131,24 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why promising drug candidates fail when you ignore how much patients must take
 - Summary: Computational models that design new drug molecules often overlook a critical real-world factor: the dose patients would actually need to take. Researchers re-evaluated 60 drug candidates using realistic pharmacokinetic simulations and found that 7 couldn't deliver enough drug to the target, while 28% posed safety risks at their required dose. Most strikingly, 85% of the candidates deemed viable turned out to be worse than molecules the initial screening had dismissed.
 - Why it matters: Drug companies rely on AI to narrow down millions of generated molecules into a manageable list for expensive lab testing. If the screening process ignores dose and exposure, researchers waste time and money pursuing dead ends—or worse, advance candidates that would require impractical pill sizes or dangerous safety margins. Incorporating dose-aware evaluation could redirect resources toward molecules that actually work in living bodies, not just on paper.
-
-### Prediction Inference for Hybrid Models on Realized Volatility Forecasting
-- URL: https://paperplaine.com/papers/prediction-inference-for-hybrid
-- Category: Economics
-- Authors: Kyle Parrella, Kejin Wu
-- arXiv: 2611.13212
-- Plain-English subtitle: Measuring uncertainty in stock volatility predictions, not just point forecasts
-- Summary: Researchers upgraded hybrid machine-learning models for predicting stock market volatility by adding a measure of uncertainty around each forecast—something prior work had ignored. The new approach combines ARMA statistical modeling with LSTM neural networks and uses bootstrap resampling to build prediction intervals that capture fat tails in financial data. Testing on U.S. stock indices from 2020 to 2025 shows the method produces intervals closer to their intended coverage levels than competing approaches.
-- Why it matters: Traders and risk managers rely on volatility forecasts to price options, set position limits, and hedge portfolios. A point estimate without a confidence band is incomplete—you need to know how wrong you might be. This work delivers prediction intervals with reliable coverage, so investors can size positions appropriately rather than making decisions based on false precision.
-
-### Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations
-- URL: https://paperplaine.com/papers/contrastive-discovery-open-ended
-- Category: Computer Science · AI
-- Authors: Ziang Liu, James J. Kim, Yijia Dai et al.
-- arXiv: 2611.14514
-- Plain-English subtitle: How AI scientists can find the right answer, not just rule one out
-- Summary: When AI systems test scientific ideas, they typically check whether a hypothesis is true or false—but rejection only rules out one option, leaving many alternatives possible. Researchers show that testing against multiple competing explanations instead resolves 73% of rejected hypotheses to a specific alternative, and guides AI to answer 67% more scientific questions with the same experimental budget.
-- Why it matters: As AI takes on more autonomous scientific work, moving from yes-or-no testing to hypothesis comparison could dramatically accelerate discovery by eliminating wasted experiments on dead ends. In validation tests with human experts, this approach achieved 78–82% agreement, suggesting AI systems using this method could propose ideas that real scientists would independently verify as correct.
 
 ## About
 

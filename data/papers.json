@@ -1,5 +1,49 @@
 [
   {
+    "id": "2611.17287",
+    "title": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
+    "authors": "Jiacheng Xu, Shuo He, Fuxiang Zhang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-12T18:52:33Z",
+    "publishedFormatted": "Nov 12, 2026",
+    "subtitle": "Teaching AI to learn from what it gets wrong, not what it fakes getting right",
+    "summary": "Most AI systems learn by being rewarded for correct answers, but in the real world, we often can't verify correctness—we can only spot when something is obviously broken. Researchers developed a new training method called NOPO that flips this around: instead of rewarding unproven \"correct\" answers, the AI learns by specifically avoiding the mistakes it knows are wrong. On tasks involving code, math, and logic, this approach outperformed standard methods even when perfect verification was impossible.",
+    "whyItMatters": "AI systems used for coding, math, and scientific tasks currently struggle when there's no reliable way to check if answers are truly right. NOPO makes these systems more trustworthy by preventing them from gaming partial checks—a common failure mode where AI learns to fool weak verification rather than solve problems correctly. This could make AI code assistants and math solvers safer to deploy in real systems where complete verification isn't available.",
+    "fetchedAt": "2026-11-14T00:05:30.888Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 160
+    },
+    "slug": "negative-only-policy-optimization"
+  },
+  {
+    "id": "2611.17123",
+    "title": "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites",
+    "authors": "Zhezhen Cao, Weiyuan Ding, Bowen Xu",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-11-12T17:16:08Z",
+    "publishedFormatted": "Nov 12, 2026",
+    "subtitle": "When code changes hide bugs from security scanners",
+    "summary": "Security tools like CodeQL can be tricked into missing vulnerabilities through simple, realistic code rewrites. Researchers used AI to rewrite functions in ways that preserve actual security flaws while making the tools stop reporting them—silencing 26% of real vulnerabilities in tested code with just three rewrites each. The same AI, asked only to refactor code without targeting the alerts, silenced none, showing these gaps aren't accidents but predictable weaknesses in how the tools model code.",
+    "whyItMatters": "Developers often assume a vulnerability is fixed when an alert disappears after code changes—but this research shows that assumption is dangerous. If a tool can be silently bypassed by ordinary refactoring, security teams lose trust in their gates, and real flaws slip into production. The study maps seven specific gaps in CodeQL's design and shows the same weaknesses affect other analyzers too, giving security tool builders concrete targets to fix.",
+    "fetchedAt": "2026-11-14T00:05:34.390Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 284
+    },
+    "slug": "preserve-the-vulnerability-break"
+  },
+  {
     "id": "2611.17323",
     "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
     "authors": "Ethan Lin, Akanksha Sarkar, Ziang Liu et al.",
