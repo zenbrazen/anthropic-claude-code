@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 00:05:35 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:57:17 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon</title>
+      <link>https://paperplaine.com/papers/metal-sandbox-isolated-execution</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/metal-sandbox-isolated-execution</guid>
+      <pubDate>Thu, 12 Nov 2026 18:54:42 GMT</pubDate>
+      <author>Haozhe Wang, Lina Chen, Fanqi Wan et al.</author>
+      <category>AI</category>
+      <description>Running AI coding assistants faster on Mac computers by sharing GPU time smartly</description>
+      <content:encoded><![CDATA[<p><em>Running AI coding assistants faster on Mac computers by sharing GPU time smartly</em></p><p>Researchers built Metal Sandbox, a system that lets multiple AI agents write GPU code on Mac computers simultaneously by sharing processing power and moving tasks between machines when GPUs sit idle. Testing on four Mac mini computers showed the system completed tasks 1.7 to 2 times faster than before, and simulations suggest it could cut waiting time by nearly a fifth when running multiple agents at once.</p><p><strong>Why it matters:</strong> Apple silicon Macs are increasingly used for AI development, but current setups waste GPU computing power because coding agents sit around waiting for results. Metal Sandbox lets developers train and test AI models that generate efficient GPU code much faster without buying additional hardware. Since the system is open-source, teams can immediately use it to reduce development time and cut costs.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem</title>
+      <link>https://paperplaine.com/papers/forbidden-subset-sums-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/forbidden-subset-sums-in</guid>
+      <pubDate>Thu, 12 Nov 2026 18:05:45 GMT</pubDate>
+      <author>Mateo Matijasevick</author>
+      <category>Math</category>
+      <description>How many numbers can you pick before they&#39;re forced to sum to your target</description>
+      <content:encoded><![CDATA[<p><em>How many numbers can you pick before they're forced to sum to your target</em></p><p>Mathematicians solved a 50-year-old puzzle about which numbers can be left out of subset sums. When you pick numbers from a limited range, there's a predictable maximum size of set that *won't* sum to a target number — and this size follows a clean formula when the range is at least half the target, but jumps around unpredictably for smaller ranges.</p><p><strong>Why it matters:</strong> This settles a famous open problem in combinatorics, but also reveals something deeper: subset sum behavior isn't random or chaotic—it's governed by hidden structures in how numbers divide. The inverse theorem at the core could help computer scientists understand when and why certain packing and selection problems become computationally hard.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling</title>
+      <link>https://paperplaine.com/papers/protein-language-models-fail</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/protein-language-models-fail</guid>
+      <pubDate>Thu, 12 Nov 2026 14:45:07 GMT</pubDate>
+      <author>Paarth Batra, Aryan Keluskar</author>
+      <category>Biology</category>
+      <description>Why AI protein models aren&#39;t learning what scientists think they are</description>
+      <content:encoded><![CDATA[<p><em>Why AI protein models aren't learning what scientists think they are</em></p><p>Protein language models produce accurate predictions of which amino acids touch each other in 3D space, leading researchers to assume these AI systems have learned the same evolutionary patterns as classical statistical methods. But when scientists randomly relabeled the amino acid letters while keeping all the underlying information intact, the AI models' predictions fell apart—while classical methods remained unaffected. This reveals that the neural networks are relying on memorized amino acid identities rather than genuinely understanding the coevolutionary logic beneath them.</p><p><strong>Why it matters:</strong> Protein structure prediction underpins drug discovery and synthetic biology. If these widely-used AI models are succeeding for the wrong reasons—pattern-matching familiar letters rather than learning true biological principles—they may fail on novel proteins or rare amino acid patterns in ways researchers won't anticipate. The diagnostic approach introduced here provides a way to catch these hidden blindspots in other neural models before deploying them in high-stakes biological applications.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Negative-Only Policy Optimization for One-Sided Verifiable Rewards</title>
       <link>https://paperplaine.com/papers/negative-only-policy-optimization</link>

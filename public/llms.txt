@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1148 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1151 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 393 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 394 papers in archive.
+  - "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon"
   - "Negative-Only Policy Optimization for One-Sided Verifiable Rewards"
-  - "AgentSSL: Can MLE Agents Leverage Unlabeled Data?"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 93 papers in archive.
   - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
   - "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 97 papers in archive.
   - "Ensemble phase transitions in measurement-unitary hybrid quantum circuits"
   - "Structure of correlations for the single-j model using quantum information theory"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 97 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 98 papers in archive.
+  - "Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem"
   - "Cotangent-lift inference of stochastic microbial dynamics"
-  - "On the (non-)closedness of the set of ReLU networks"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 99 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 100 papers in archive.
+  - "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling"
   - "The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design"
-  - "Spike-to-Field Mechanisms of Turbulence-Like Dynamics in Spatial Spiking Neural Networks"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 98 papers in archive.
   - "DeepFinance: Can AI Diligence a $100MM Deal?"
   - "The End-of-Day Reversal After 2019: A Pre-Registered Test on S&amp;P 500 Stocks Excluding Heavily Traded Names"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks"
 
 ## 10 most recent papers
+
+### Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon
+- URL: https://paperplaine.com/papers/metal-sandbox-isolated-execution
+- Category: Computer Science · AI
+- Authors: Haozhe Wang, Lina Chen, Fanqi Wan et al.
+- arXiv: 2611.17294
+- Plain-English subtitle: Running AI coding assistants faster on Mac computers by sharing GPU time smartly
+- Summary: Researchers built Metal Sandbox, a system that lets multiple AI agents write GPU code on Mac computers simultaneously by sharing processing power and moving tasks between machines when GPUs sit idle. Testing on four Mac mini computers showed the system completed tasks 1.7 to 2 times faster than before, and simulations suggest it could cut waiting time by nearly a fifth when running multiple agents at once.
+- Why it matters: Apple silicon Macs are increasingly used for AI development, but current setups waste GPU computing power because coding agents sit around waiting for results. Metal Sandbox lets developers train and test AI models that generate efficient GPU code much faster without buying additional hardware. Since the system is open-source, teams can immediately use it to reduce development time and cut costs.
+
+### Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem
+- URL: https://paperplaine.com/papers/forbidden-subset-sums-in
+- Category: Mathematics
+- Authors: Mateo Matijasevick
+- arXiv: 2611.17205
+- Plain-English subtitle: How many numbers can you pick before they're forced to sum to your target
+- Summary: Mathematicians solved a 50-year-old puzzle about which numbers can be left out of subset sums. When you pick numbers from a limited range, there's a predictable maximum size of set that *won't* sum to a target number — and this size follows a clean formula when the range is at least half the target, but jumps around unpredictably for smaller ranges.
+- Why it matters: This settles a famous open problem in combinatorics, but also reveals something deeper: subset sum behavior isn't random or chaotic—it's governed by hidden structures in how numbers divide. The inverse theorem at the core could help computer scientists understand when and why certain packing and selection problems become computationally hard.
+
+### Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling
+- URL: https://paperplaine.com/papers/protein-language-models-fail
+- Category: Quantitative Biology
+- Authors: Paarth Batra, Aryan Keluskar
+- arXiv: 2611.16881
+- Plain-English subtitle: Why AI protein models aren't learning what scientists think they are
+- Summary: Protein language models produce accurate predictions of which amino acids touch each other in 3D space, leading researchers to assume these AI systems have learned the same evolutionary patterns as classical statistical methods. But when scientists randomly relabeled the amino acid letters while keeping all the underlying information intact, the AI models' predictions fell apart—while classical methods remained unaffected. This reveals that the neural networks are relying on memorized amino acid identities rather than genuinely understanding the coevolutionary logic beneath them.
+- Why it matters: Protein structure prediction underpins drug discovery and synthetic biology. If these widely-used AI models are succeeding for the wrong reasons—pattern-matching familiar letters rather than learning true biological principles—they may fail on novel proteins or rare amino acid patterns in ways researchers won't anticipate. The diagnostic approach introduced here provides a way to catch these hidden blindspots in other neural models before deploying them in high-stakes biological applications.
 
 ### Negative-Only Policy Optimization for One-Sided Verifiable Rewards
 - URL: https://paperplaine.com/papers/negative-only-policy-optimization
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Can AI handle the judgment calls that make or break hundred-million-dollar deals?
 - Summary: Researchers created a realistic test of whether AI can do the complex thinking required in private equity and investment banking deals worth over $100 million. The best AI model passed only 57.6% of the criteria, and it frequently made the right calculations from the wrong data or found important information without acting on it—suggesting that AI still struggles with the judgment calls that matter most in high-stakes finance.
 - Why it matters: Banks and investment firms are already using AI to speed up due diligence on major deals, but this research shows these systems can confidently produce wrong answers by pulling from bad sources or ignoring critical evidence. Until AI closes this gap, dealmakers need to treat AI outputs as a starting point requiring human oversight, not as a shortcut to faster decision-making on deals where errors can cost millions.
-
-### One Curve, Different Weights: AUC, the Brier Score, Decision-Weighted AUC, and the Policy Youden Index
-- URL: https://paperplaine.com/papers/one-curve-different-weights
-- Category: Statistics
-- Authors: Yegor Baranovski
-- arXiv: 2611.14465
-- Plain-English subtitle: Why different ways of measuring model performance rank them differently
-- Summary: Two standard measures for evaluating risk prediction models—AUC and the Brier score—often disagree about which model performs better. Researchers discovered that both metrics, along with a new weighted variant, are actually different ways of averaging the same underlying curve, but they put emphasis on different parts of it depending on what matters to the person using the model.
-- Why it matters: When hospitals, lenders, or other organizations choose prediction models to guide high-stakes decisions, they need metrics that reflect what actually matters to them—not generic measures that treat all situations equally. This work shows that existing metrics can hide these differences in priorities, potentially leading organizations to pick models that optimize for the wrong things. The new weighted metric lets decision-makers explicitly state what they care about and choose models accordingly.
-
-### Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents
-- URL: https://paperplaine.com/papers/pyrite-building-and-benchmarking
-- Category: Computer Science · AI
-- Authors: Megha Srivastava, Michael H. Lim, Allison M. Keys et al.
-- arXiv: 2611.14511
-- Plain-English subtitle: Training AI to pick the right molecular shapes for drug design
-- Summary: Predicting which way a drug molecule will bind to its target protein is surprisingly hard—even expert chemists with visualization tools perform barely better than guessing. Researchers created Pyrite, a benchmark of 1,500 test cases, and built two AI agents that solve this problem by reasoning about molecular geometry and learning which chemical features matter most, achieving up to 74% accuracy and outperforming human experts.
-- Why it matters: Drug discovery currently wastes time and money evaluating binding poses that won't work. An AI system that reliably ranks these candidates could accelerate early-stage drug screening and reduce failed experiments, potentially shortening the timeline from molecular design to testable compounds.
-
-### The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design
-- URL: https://paperplaine.com/papers/the-dose-makes-the
-- Category: Quantitative Biology
-- Authors: Maria Franz, N. Benjamin Erichson
-- arXiv: 2611.13398
-- Plain-English subtitle: Why promising drug candidates fail when you ignore how much patients must take
-- Summary: Computational models that design new drug molecules often overlook a critical real-world factor: the dose patients would actually need to take. Researchers re-evaluated 60 drug candidates using realistic pharmacokinetic simulations and found that 7 couldn't deliver enough drug to the target, while 28% posed safety risks at their required dose. Most strikingly, 85% of the candidates deemed viable turned out to be worse than molecules the initial screening had dismissed.
-- Why it matters: Drug companies rely on AI to narrow down millions of generated molecules into a manageable list for expensive lab testing. If the screening process ignores dose and exposure, researchers waste time and money pursuing dead ends—or worse, advance candidates that would require impractical pill sizes or dangerous safety margins. Incorporating dose-aware evaluation could redirect resources toward molecules that actually work in living bodies, not just on paper.
 
 ## About
 

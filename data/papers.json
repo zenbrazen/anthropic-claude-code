@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.17294",
+    "title": "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon",
+    "authors": "Haozhe Wang, Lina Chen, Fanqi Wan et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-12T18:54:42Z",
+    "publishedFormatted": "Nov 12, 2026",
+    "subtitle": "Running AI coding assistants faster on Mac computers by sharing GPU time smartly",
+    "summary": "Researchers built Metal Sandbox, a system that lets multiple AI agents write GPU code on Mac computers simultaneously by sharing processing power and moving tasks between machines when GPUs sit idle. Testing on four Mac mini computers showed the system completed tasks 1.7 to 2 times faster than before, and simulations suggest it could cut waiting time by nearly a fifth when running multiple agents at once.",
+    "whyItMatters": "Apple silicon Macs are increasingly used for AI development, but current setups waste GPU computing power because coding agents sit around waiting for results. Metal Sandbox lets developers train and test AI models that generate efficient GPU code much faster without buying additional hardware. Since the system is open-source, teams can immediately use it to reduce development time and cut costs.",
+    "fetchedAt": "2026-11-14T13:57:10.350Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 199
+    },
+    "slug": "metal-sandbox-isolated-execution"
+  },
+  {
+    "id": "2611.17205",
+    "title": "Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem",
+    "authors": "Mateo Matijasevick",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-11-12T18:05:45Z",
+    "publishedFormatted": "Nov 12, 2026",
+    "subtitle": "How many numbers can you pick before they're forced to sum to your target",
+    "summary": "Mathematicians solved a 50-year-old puzzle about which numbers can be left out of subset sums. When you pick numbers from a limited range, there's a predictable maximum size of set that *won't* sum to a target number — and this size follows a clean formula when the range is at least half the target, but jumps around unpredictably for smaller ranges.",
+    "whyItMatters": "This settles a famous open problem in combinatorics, but also reveals something deeper: subset sum behavior isn't random or chaotic—it's governed by hidden structures in how numbers divide. The inverse theorem at the core could help computer scientists understand when and why certain packing and selection problems become computationally hard.",
+    "fetchedAt": "2026-11-14T13:57:13.478Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 216
+    },
+    "slug": "forbidden-subset-sums-in"
+  },
+  {
+    "id": "2611.16881",
+    "title": "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling",
+    "authors": "Paarth Batra, Aryan Keluskar",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-11-12T14:45:07Z",
+    "publishedFormatted": "Nov 12, 2026",
+    "subtitle": "Why AI protein models aren't learning what scientists think they are",
+    "summary": "Protein language models produce accurate predictions of which amino acids touch each other in 3D space, leading researchers to assume these AI systems have learned the same evolutionary patterns as classical statistical methods. But when scientists randomly relabeled the amino acid letters while keeping all the underlying information intact, the AI models' predictions fell apart—while classical methods remained unaffected. This reveals that the neural networks are relying on memorized amino acid identities rather than genuinely understanding the coevolutionary logic beneath them.",
+    "whyItMatters": "Protein structure prediction underpins drug discovery and synthetic biology. If these widely-used AI models are succeeding for the wrong reasons—pattern-matching familiar letters rather than learning true biological principles—they may fail on novel proteins or rare amino acid patterns in ways researchers won't anticipate. The diagnostic approach introduced here provides a way to catch these hidden blindspots in other neural models before deploying them in high-stakes biological applications.",
+    "fetchedAt": "2026-11-14T13:57:17.038Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 15,
+      "wordCount": 202
+    },
+    "slug": "protein-language-models-fail"
+  },
+  {
     "id": "2611.17287",
     "title": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
     "authors": "Jiacheng Xu, Shuo He, Fuxiang Zhang et al.",

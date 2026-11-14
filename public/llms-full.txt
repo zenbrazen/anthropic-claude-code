@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1148 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1151 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-14
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon
+Subtitle: Running AI coding assistants faster on Mac computers by sharing GPU time smartly
+URL: https://paperplaine.com/papers/metal-sandbox-isolated-execution
+Category: Computer Science · AI
+Authors: Haozhe Wang, Lina Chen, Fanqi Wan et al.
+arXiv ID: 2611.17294
+arXiv URL: https://arxiv.org/abs/2611.17294
+Posted: 2026-11-14
+
+Summary: Researchers built Metal Sandbox, a system that lets multiple AI agents write GPU code on Mac computers simultaneously by sharing processing power and moving tasks between machines when GPUs sit idle. Testing on four Mac mini computers showed the system completed tasks 1.7 to 2 times faster than before, and simulations suggest it could cut waiting time by nearly a fifth when running multiple agents at once.
+
+Why it matters: Apple silicon Macs are increasingly used for AI development, but current setups waste GPU computing power because coding agents sit around waiting for results. Metal Sandbox lets developers train and test AI models that generate efficient GPU code much faster without buying additional hardware. Since the system is open-source, teams can immediately use it to reduce development time and cut costs.
+
+---
+Title: Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem
+Subtitle: How many numbers can you pick before they're forced to sum to your target
+URL: https://paperplaine.com/papers/forbidden-subset-sums-in
+Category: Mathematics
+Authors: Mateo Matijasevick
+arXiv ID: 2611.17205
+arXiv URL: https://arxiv.org/abs/2611.17205
+Posted: 2026-11-14
+
+Summary: Mathematicians solved a 50-year-old puzzle about which numbers can be left out of subset sums. When you pick numbers from a limited range, there's a predictable maximum size of set that *won't* sum to a target number — and this size follows a clean formula when the range is at least half the target, but jumps around unpredictably for smaller ranges.
+
+Why it matters: This settles a famous open problem in combinatorics, but also reveals something deeper: subset sum behavior isn't random or chaotic—it's governed by hidden structures in how numbers divide. The inverse theorem at the core could help computer scientists understand when and why certain packing and selection problems become computationally hard.
+
+---
+Title: Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling
+Subtitle: Why AI protein models aren't learning what scientists think they are
+URL: https://paperplaine.com/papers/protein-language-models-fail
+Category: Quantitative Biology
+Authors: Paarth Batra, Aryan Keluskar
+arXiv ID: 2611.16881
+arXiv URL: https://arxiv.org/abs/2611.16881
+Posted: 2026-11-14
+
+Summary: Protein language models produce accurate predictions of which amino acids touch each other in 3D space, leading researchers to assume these AI systems have learned the same evolutionary patterns as classical statistical methods. But when scientists randomly relabeled the amino acid letters while keeping all the underlying information intact, the AI models' predictions fell apart—while classical methods remained unaffected. This reveals that the neural networks are relying on memorized amino acid identities rather than genuinely understanding the coevolutionary logic beneath them.
+
+Why it matters: Protein structure prediction underpins drug discovery and synthetic biology. If these widely-used AI models are succeeding for the wrong reasons—pattern-matching familiar letters rather than learning true biological principles—they may fail on novel proteins or rare amino acid patterns in ways researchers won't anticipate. The diagnostic approach introduced here provides a way to catch these hidden blindspots in other neural models before deploying them in high-stakes biological applications.
 
 ---
 Title: Negative-Only Policy Optimization for One-Sided Verifiable Rewards
