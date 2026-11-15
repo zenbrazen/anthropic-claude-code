@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1156 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1159 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,12 +30,12 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 395 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 396 papers in archive.
+  - "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces"
   - "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models"
-  - "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 93 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 94 papers in archive.
+  - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
   - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
-  - "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 98 papers in archive.
   - "Quantum Metrology and Quantum Battery in a Hyperfine-Coupled Spin System"
   - "Ensemble phase transitions in measurement-unitary hybrid quantum circuits"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 93 papers in archive.
   - "Transmission-Mode Multispectral Imaging for Estimation of Microcystis spp. Cell Concentration and ELISA-Equivalent Microcystin Concentration in Water"
   - "Data Archive for 2D and 3D Electrical Impedance Tomography with moderate conductivity contrast phantoms"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 81 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 82 papers in archive.
+  - "Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement"
   - "Prediction Inference for Hybrid Models on Realized Volatility Forecasting"
-  - "Average versus expected causal effects under interference: Modeling assumptions and estimation bottlenecks"
 
 ## 10 most recent papers
+
+### Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces
+- URL: https://paperplaine.com/papers/linking-rapid-learning-to
+- Category: Computer Science · AI
+- Authors: Abigail L. Tenenbaum, R. Thomas McCoy
+- arXiv: 2611.17314
+- Plain-English subtitle: How neural networks learn to learn by organizing knowledge like algebra
+- Summary: Meta-learned neural networks can learn new tasks from very few examples because their internal structure follows clean mathematical rules—similar to how word vectors work, parameter vectors for different functions can be added and subtracted to create new functions the network has never seen. When researchers artificially recombined these vectors using symbolic relationships, the resulting networks performed their new assigned tasks without any direct training, suggesting meta-learning builds a geometric scaffold that guides rapid learning along predictable paths.
+- Why it matters: Current AI systems waste computation by learning from scratch each time. If researchers can reliably predict and construct neural networks through vector arithmetic, they could design more sample-efficient learning algorithms that require far less data and training time—a direct path toward AI systems that learn more like humans do.
+
+### Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement
+- URL: https://paperplaine.com/papers/data-center-growth-impacts
+- Category: Economics
+- Authors: Lingdong Zhou, Wenjia Xia, Jiyu Wang et al.
+- arXiv: 2611.16095
+- Plain-English subtitle: How data centers driving up your electricity bill—and it's not the power lines
+- Summary: Nearly 39 gigawatts of new data centers planned for Texas by 2030 will raise residential electricity costs by 1.64 cents per kilowatt-hour on average. Surprisingly, two-thirds of this increase comes from higher wholesale electricity prices across the grid, not from the cost of upgrading transmission infrastructure itself.
+- Why it matters: As data-center demand surges nationwide, understanding where cost increases actually come from matters for policy decisions. This research shows that simply building more transmission lines won't solve affordability—the real problem is that data centers compete with homes and businesses for limited generation capacity, driving up wholesale prices. Where utilities place new power plants and how they split infrastructure costs between data centers and households will determine whether your next electricity bill rises modestly or sharply.
+
+### CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts
+- URL: https://paperplaine.com/papers/caplite-prompt-injection-defense
+- Category: Computer Science
+- Authors: Zimo Xu, Wenzhuo Liu, Hideki Nakayama
+- arXiv: 2611.17115
+- Plain-English subtitle: Protecting AI assistants from prompt injection without trusting the AI itself
+- Summary: Small language models cannot reliably write their own security defenses against prompt injection attacks — safeguards created by the models themselves fail to stop attackers on most systems. CapLite instead derives security rules directly from the tools available to the AI, blocking injected commands from reaching unintended targets or affecting unmentioned recipients, and successfully stopped all 13,935 attack attempts in testing while using 82% fewer computational tokens than competing defenses.
+- Why it matters: As AI assistants gain access to real tools—bank accounts, databases, email systems—they become targets for prompt injection attacks that manipulate them into performing unintended actions. CapLite provides a practical defense that works even for small, resource-constrained models deployed on phones or edge devices, and does so without requiring the model to be clever enough to defend itself, which current models fundamentally cannot do reliably.
 
 ### Quantum Metrology and Quantum Battery in a Hyperfine-Coupled Spin System
 - URL: https://paperplaine.com/papers/quantum-metrology-and-quantum
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How many numbers can you pick before they're forced to sum to your target
 - Summary: Mathematicians solved a 50-year-old puzzle about which numbers can be left out of subset sums. When you pick numbers from a limited range, there's a predictable maximum size of set that *won't* sum to a target number — and this size follows a clean formula when the range is at least half the target, but jumps around unpredictably for smaller ranges.
 - Why it matters: This settles a famous open problem in combinatorics, but also reveals something deeper: subset sum behavior isn't random or chaotic—it's governed by hidden structures in how numbers divide. The inverse theorem at the core could help computer scientists understand when and why certain packing and selection problems become computationally hard.
-
-### Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling
-- URL: https://paperplaine.com/papers/protein-language-models-fail
-- Category: Quantitative Biology
-- Authors: Paarth Batra, Aryan Keluskar
-- arXiv: 2611.16881
-- Plain-English subtitle: Why AI protein models aren't learning what scientists think they are
-- Summary: Protein language models produce accurate predictions of which amino acids touch each other in 3D space, leading researchers to assume these AI systems have learned the same evolutionary patterns as classical statistical methods. But when scientists randomly relabeled the amino acid letters while keeping all the underlying information intact, the AI models' predictions fell apart—while classical methods remained unaffected. This reveals that the neural networks are relying on memorized amino acid identities rather than genuinely understanding the coevolutionary logic beneath them.
-- Why it matters: Protein structure prediction underpins drug discovery and synthetic biology. If these widely-used AI models are succeeding for the wrong reasons—pattern-matching familiar letters rather than learning true biological principles—they may fail on novel proteins or rare amino acid patterns in ways researchers won't anticipate. The diagnostic approach introduced here provides a way to catch these hidden blindspots in other neural models before deploying them in high-stakes biological applications.
-
-### Negative-Only Policy Optimization for One-Sided Verifiable Rewards
-- URL: https://paperplaine.com/papers/negative-only-policy-optimization
-- Category: Computer Science · AI
-- Authors: Jiacheng Xu, Shuo He, Fuxiang Zhang et al.
-- arXiv: 2611.17287
-- Plain-English subtitle: Teaching AI to learn from what it gets wrong, not what it fakes getting right
-- Summary: Most AI systems learn by being rewarded for correct answers, but in the real world, we often can't verify correctness—we can only spot when something is obviously broken. Researchers developed a new training method called NOPO that flips this around: instead of rewarding unproven "correct" answers, the AI learns by specifically avoiding the mistakes it knows are wrong. On tasks involving code, math, and logic, this approach outperformed standard methods even when perfect verification was impossible.
-- Why it matters: AI systems used for coding, math, and scientific tasks currently struggle when there's no reliable way to check if answers are truly right. NOPO makes these systems more trustworthy by preventing them from gaming partial checks—a common failure mode where AI learns to fool weak verification rather than solve problems correctly. This could make AI code assistants and math solvers safer to deploy in real systems where complete verification isn't available.
-
-### Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites
-- URL: https://paperplaine.com/papers/preserve-the-vulnerability-break
-- Category: Computer Science
-- Authors: Zhezhen Cao, Weiyuan Ding, Bowen Xu
-- arXiv: 2611.17123
-- Plain-English subtitle: When code changes hide bugs from security scanners
-- Summary: Security tools like CodeQL can be tricked into missing vulnerabilities through simple, realistic code rewrites. Researchers used AI to rewrite functions in ways that preserve actual security flaws while making the tools stop reporting them—silencing 26% of real vulnerabilities in tested code with just three rewrites each. The same AI, asked only to refactor code without targeting the alerts, silenced none, showing these gaps aren't accidents but predictable weaknesses in how the tools model code.
-- Why it matters: Developers often assume a vulnerability is fixed when an alert disappears after code changes—but this research shows that assumption is dangerous. If a tool can be silently bypassed by ordinary refactoring, security teams lose trust in their gates, and real flaws slip into production. The study maps seven specific gaps in CodeQL's design and shows the same weaknesses affect other analyzers too, giving security tool builders concrete targets to fix.
 
 ## About
 

@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1156 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1159 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-15
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces
+Subtitle: How neural networks learn to learn by organizing knowledge like algebra
+URL: https://paperplaine.com/papers/linking-rapid-learning-to
+Category: Computer Science · AI
+Authors: Abigail L. Tenenbaum, R. Thomas McCoy
+arXiv ID: 2611.17314
+arXiv URL: https://arxiv.org/abs/2611.17314
+Posted: 2026-11-15
+
+Summary: Meta-learned neural networks can learn new tasks from very few examples because their internal structure follows clean mathematical rules—similar to how word vectors work, parameter vectors for different functions can be added and subtracted to create new functions the network has never seen. When researchers artificially recombined these vectors using symbolic relationships, the resulting networks performed their new assigned tasks without any direct training, suggesting meta-learning builds a geometric scaffold that guides rapid learning along predictable paths.
+
+Why it matters: Current AI systems waste computation by learning from scratch each time. If researchers can reliably predict and construct neural networks through vector arithmetic, they could design more sample-efficient learning algorithms that require far less data and training time—a direct path toward AI systems that learn more like humans do.
+
+---
+Title: Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement
+Subtitle: How data centers driving up your electricity bill—and it's not the power lines
+URL: https://paperplaine.com/papers/data-center-growth-impacts
+Category: Economics
+Authors: Lingdong Zhou, Wenjia Xia, Jiyu Wang et al.
+arXiv ID: 2611.16095
+arXiv URL: https://arxiv.org/abs/2611.16095
+Posted: 2026-11-15
+
+Summary: Nearly 39 gigawatts of new data centers planned for Texas by 2030 will raise residential electricity costs by 1.64 cents per kilowatt-hour on average. Surprisingly, two-thirds of this increase comes from higher wholesale electricity prices across the grid, not from the cost of upgrading transmission infrastructure itself.
+
+Why it matters: As data-center demand surges nationwide, understanding where cost increases actually come from matters for policy decisions. This research shows that simply building more transmission lines won't solve affordability—the real problem is that data centers compete with homes and businesses for limited generation capacity, driving up wholesale prices. Where utilities place new power plants and how they split infrastructure costs between data centers and households will determine whether your next electricity bill rises modestly or sharply.
+
+---
+Title: CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts
+Subtitle: Protecting AI assistants from prompt injection without trusting the AI itself
+URL: https://paperplaine.com/papers/caplite-prompt-injection-defense
+Category: Computer Science
+Authors: Zimo Xu, Wenzhuo Liu, Hideki Nakayama
+arXiv ID: 2611.17115
+arXiv URL: https://arxiv.org/abs/2611.17115
+Posted: 2026-11-15
+
+Summary: Small language models cannot reliably write their own security defenses against prompt injection attacks — safeguards created by the models themselves fail to stop attackers on most systems. CapLite instead derives security rules directly from the tools available to the AI, blocking injected commands from reaching unintended targets or affecting unmentioned recipients, and successfully stopped all 13,935 attack attempts in testing while using 82% fewer computational tokens than competing defenses.
+
+Why it matters: As AI assistants gain access to real tools—bank accounts, databases, email systems—they become targets for prompt injection attacks that manipulate them into performing unintended actions. CapLite provides a practical defense that works even for small, resource-constrained models deployed on phones or edge devices, and does so without requiring the model to be clever enough to defend itself, which current models fundamentally cannot do reliably.
 
 ---
 Title: Quantum Metrology and Quantum Battery in a Hyperfine-Coupled Spin System
