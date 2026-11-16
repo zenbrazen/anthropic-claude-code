@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1159 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-15
+This file contains the complete plain-English text of all 1162 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-16
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion
+Subtitle: Matching invisible ships to radar blips using AI
+URL: https://paperplaine.com/papers/pairing-ais-with-rf
+Category: Computer Science · AI
+Authors: Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira et al.
+arXiv ID: 2611.18563
+arXiv URL: https://arxiv.org/abs/2611.18563
+Posted: 2026-11-16
+
+Summary: Researchers developed an AI system that links radio frequency detections of ships to their AIS (identification) records, even when vessels turn off their tracking systems. The approach achieved 85.8% precision in matching individual radar observations to the right ship, outperforming simpler methods for some tasks but not quite beating a hand-tuned baseline approach.
+
+Why it matters: Ships can disable their tracking systems to hide illegal activities like smuggling or unreported fishing. This work offers a way to spot those dark vessels by cross-referencing independent radar data with legitimate ship records—giving coast guards and maritime authorities a tool to detect deception they currently struggle to catch. Even a partial improvement matters when safety and security depend on closing detection gaps.
+
+---
+Title: EPIGRIDS: Documentation and Validation of Seven Open Synthetic Transmission Grid Cases
+Subtitle: Seven realistic electric grid models released for testing and research
+URL: https://paperplaine.com/papers/epigrids-documentation-and-validation
+Category: Mathematics
+Authors: Jonathan M. Snodgrass, Scott Greene, Thomas J. Overbye et al.
+arXiv ID: 2611.18502
+arXiv URL: https://arxiv.org/abs/2611.18502
+Posted: 2026-11-16
+
+Summary: Researchers released EPIGRIDS, a collection of seven synthetic electric grid models ranging from 250 to nearly 80,000 connection points, built using optimization methods rather than statistical shortcuts. All models include real conductor specifications, geographic locations, and hourly load data for a full year, and they're freely available in three standard formats that have been validated to solve correctly.
+
+Why it matters: Power grid researchers need realistic test cases to design and evaluate new protection systems, outage responses, and planning tools without experimenting on actual infrastructure. These openly licensed models let researchers run identical tests across different algorithms and institutions, speeding up development of tools to prevent blackouts and handle extreme weather. The models' realistic density and parameters mean findings from simulations transfer more reliably to real grids.
+
+---
+Title: FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices
+Subtitle: Brain-to-text technology that runs on a smartphone instead of a server
+URL: https://paperplaine.com/papers/fettuccine-fast-and-efficient
+Category: Quantitative Biology
+Authors: Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou et al.
+arXiv ID: 2611.18561
+arXiv URL: https://arxiv.org/abs/2611.18561
+Posted: 2026-11-16
+
+Summary: Researchers created FETTUCCINE, a system that translates brain signals directly into text on a mobile phone, achieving accuracy rates as low as 4.39% word errors. The system runs 370 times faster than real-time speech, making natural conversation possible for the first time on a portable device rather than requiring a heavy computing setup.
+
+Why it matters: People with paralysis or speech loss from stroke, ALS, or spinal injury could carry a smartphone-sized device that lets them communicate in real time without being tethered to a lab or large computer. The system also works reliably day after day as neural signals shift, and runs fast enough that conversations won't lag—closing the gap between lab demonstrations and tools people can actually use in daily life.
 
 ---
 Title: Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1159 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1162 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 396 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 397 papers in archive.
+  - "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion"
   - "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces"
-  - "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 94 papers in archive.
   - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
   - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 98 papers in archive.
   - "Quantum Metrology and Quantum Battery in a Hyperfine-Coupled Spin System"
   - "Ensemble phase transitions in measurement-unitary hybrid quantum circuits"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 98 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 99 papers in archive.
+  - "EPIGRIDS: Documentation and Validation of Seven Open Synthetic Transmission Grid Cases"
   - "Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem"
-  - "Cotangent-lift inference of stochastic microbial dynamics"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 100 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 101 papers in archive.
+  - "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices"
   - "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling"
-  - "The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 99 papers in archive.
   - "The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs"
   - "DeepFinance: Can AI Diligence a $100MM Deal?"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Prediction Inference for Hybrid Models on Realized Volatility Forecasting"
 
 ## 10 most recent papers
+
+### Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion
+- URL: https://paperplaine.com/papers/pairing-ais-with-rf
+- Category: Computer Science · AI
+- Authors: Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira et al.
+- arXiv: 2611.18563
+- Plain-English subtitle: Matching invisible ships to radar blips using AI
+- Summary: Researchers developed an AI system that links radio frequency detections of ships to their AIS (identification) records, even when vessels turn off their tracking systems. The approach achieved 85.8% precision in matching individual radar observations to the right ship, outperforming simpler methods for some tasks but not quite beating a hand-tuned baseline approach.
+- Why it matters: Ships can disable their tracking systems to hide illegal activities like smuggling or unreported fishing. This work offers a way to spot those dark vessels by cross-referencing independent radar data with legitimate ship records—giving coast guards and maritime authorities a tool to detect deception they currently struggle to catch. Even a partial improvement matters when safety and security depend on closing detection gaps.
+
+### EPIGRIDS: Documentation and Validation of Seven Open Synthetic Transmission Grid Cases
+- URL: https://paperplaine.com/papers/epigrids-documentation-and-validation
+- Category: Mathematics
+- Authors: Jonathan M. Snodgrass, Scott Greene, Thomas J. Overbye et al.
+- arXiv: 2611.18502
+- Plain-English subtitle: Seven realistic electric grid models released for testing and research
+- Summary: Researchers released EPIGRIDS, a collection of seven synthetic electric grid models ranging from 250 to nearly 80,000 connection points, built using optimization methods rather than statistical shortcuts. All models include real conductor specifications, geographic locations, and hourly load data for a full year, and they're freely available in three standard formats that have been validated to solve correctly.
+- Why it matters: Power grid researchers need realistic test cases to design and evaluate new protection systems, outage responses, and planning tools without experimenting on actual infrastructure. These openly licensed models let researchers run identical tests across different algorithms and institutions, speeding up development of tools to prevent blackouts and handle extreme weather. The models' realistic density and parameters mean findings from simulations transfer more reliably to real grids.
+
+### FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices
+- URL: https://paperplaine.com/papers/fettuccine-fast-and-efficient
+- Category: Quantitative Biology
+- Authors: Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou et al.
+- arXiv: 2611.18561
+- Plain-English subtitle: Brain-to-text technology that runs on a smartphone instead of a server
+- Summary: Researchers created FETTUCCINE, a system that translates brain signals directly into text on a mobile phone, achieving accuracy rates as low as 4.39% word errors. The system runs 370 times faster than real-time speech, making natural conversation possible for the first time on a portable device rather than requiring a heavy computing setup.
+- Why it matters: People with paralysis or speech loss from stroke, ALS, or spinal injury could carry a smartphone-sized device that lets them communicate in real time without being tethered to a lab or large computer. The system also works reliably day after day as neural signals shift, and runs fast enough that conversations won't lag—closing the gap between lab demonstrations and tools people can actually use in daily life.
 
 ### Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces
 - URL: https://paperplaine.com/papers/linking-rapid-learning-to
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI text classifiers to ignore misleading patterns and learn what actually matters
 - Summary: Text classifiers often latch onto lazy shortcuts—like dialect or actor names—instead of learning genuine linguistic patterns, causing them to fail on new data. A technique called Invariant Risk Minimization (IRM) can suppress these spurious correlations by identifying patterns that stay stable across different datasets, and new experiments show it works across realistic scenarios like gender-profession bias and name-based shortcuts.
 - Why it matters: Text classifiers deployed in the real world encounter data different from their training set, and exploiting spurious patterns causes them to fail. If IRM can reliably steer models toward robust features instead of shortcuts, it could improve how well language systems generalize—from content moderation to bias detection—without requiring hand-labeled corrections for every new problem.
-
-### The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs
-- URL: https://paperplaine.com/papers/the-logic-of-factor
-- Category: Quantitative Finance
-- Authors: Ziyao Wang, Svetlozar T. Rachev, Frank J. Fabozzi
-- arXiv: 2611.09834
-- Plain-English subtitle: Why complex trading rules cost more than they're worth
-- Summary: A mathematical framework shows that stock-picking rules combining multiple signals trade much more frequently and eat up their profits in trading costs. When investors blend two or more signals together—say, buying stocks that are both cheap and have strong momentum—they trigger trades roughly 4 to 16 times more often than single-signal rules, and the added profits almost never justify the expense. Over the past 30 years, 58% of simple single-signal strategies beat their trading costs, but only 6% of strategies combining three signals do.
-- Why it matters: This finding challenges a widespread belief among fund managers that combining multiple signals into a single decision rule improves returns. The research shows that blending signals creates hidden drag: the more sophisticated the rule, the more often it trades, and each trade silently erodes gains. For practical investors, this means a simple rule—buy the cheapest stocks, or the strongest momentum—often outperforms elaborate multi-factor combinations after costs are paid, even though those combinations look smarter on paper.
-
-### Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon
-- URL: https://paperplaine.com/papers/metal-sandbox-isolated-execution
-- Category: Computer Science · AI
-- Authors: Haozhe Wang, Lina Chen, Fanqi Wan et al.
-- arXiv: 2611.17294
-- Plain-English subtitle: Running AI coding assistants faster on Mac computers by sharing GPU time smartly
-- Summary: Researchers built Metal Sandbox, a system that lets multiple AI agents write GPU code on Mac computers simultaneously by sharing processing power and moving tasks between machines when GPUs sit idle. Testing on four Mac mini computers showed the system completed tasks 1.7 to 2 times faster than before, and simulations suggest it could cut waiting time by nearly a fifth when running multiple agents at once.
-- Why it matters: Apple silicon Macs are increasingly used for AI development, but current setups waste GPU computing power because coding agents sit around waiting for results. Metal Sandbox lets developers train and test AI models that generate efficient GPU code much faster without buying additional hardware. Since the system is open-source, teams can immediately use it to reduce development time and cut costs.
-
-### Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem
-- URL: https://paperplaine.com/papers/forbidden-subset-sums-in
-- Category: Mathematics
-- Authors: Mateo Matijasevick
-- arXiv: 2611.17205
-- Plain-English subtitle: How many numbers can you pick before they're forced to sum to your target
-- Summary: Mathematicians solved a 50-year-old puzzle about which numbers can be left out of subset sums. When you pick numbers from a limited range, there's a predictable maximum size of set that *won't* sum to a target number — and this size follows a clean formula when the range is at least half the target, but jumps around unpredictably for smaller ranges.
-- Why it matters: This settles a famous open problem in combinatorics, but also reveals something deeper: subset sum behavior isn't random or chaotic—it's governed by hidden structures in how numbers divide. The inverse theorem at the core could help computer scientists understand when and why certain packing and selection problems become computationally hard.
 
 ## About
 
