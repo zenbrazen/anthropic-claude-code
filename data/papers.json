@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.18471",
+    "title": "Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation",
+    "authors": "Disha Sheshanarayana, Sai Linisha Reddy Goli",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-13T17:44:01Z",
+    "publishedFormatted": "Nov 13, 2026",
+    "subtitle": "When AI judges see less evidence, do they still reach the right verdict?",
+    "summary": "When AI systems evaluate whether other AI agents completed tasks correctly, their judgments often change depending on how much execution detail they can see. Researchers tested this across multiple evaluation systems and found that about 31% of correct verdicts became wrong when evidence was hidden or compressed—but restoring access to the original execution details recovered 85% of those lost judgments.",
+    "whyItMatters": "As AI agents become more complex and modular, their executions get passed through multiple systems that may not preserve all details. If the AI judges evaluating these agents give different answers based on what information happens to be visible, we can't trust their assessments in real deployments. This research shows the gap between lab testing and real-world reliability, and identifies a concrete fix: maintaining complete execution records so verifiers see the full picture.",
+    "fetchedAt": "2026-11-17T02:14:30.672Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 210
+    },
+    "slug": "do-verifier-judgments-survive"
+  },
+  {
+    "id": "2611.19068",
+    "title": "Corporate Stances on Societal Issues in the US",
+    "authors": "Jacob Conway, Andrew Hall, Magdalena Larreboure et al.",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-11-14T01:21:27Z",
+    "publishedFormatted": "Nov 14, 2026",
+    "subtitle": "Why big companies suddenly started taking sides on politics",
+    "summary": "Large US corporations have dramatically increased their public statements on divisive issues like abortion, climate change, and racial justice—quadrupling since 2008 and peaking in 2021. These stances are overwhelmingly liberal, concentrated among the biggest firms, and driven more by when issues dominate media headlines than by companies' business interests or lobbying strategies. The composition of a company's leadership—particularly the share of Democratic employees and executives—strongly predicts which positions it will take.",
+    "whyItMatters": "Corporate political speech now rivals traditional lobbying as a way companies shape public debate, yet operates on a completely different logic. Because stance-taking follows media cycles rather than electoral ones, it reaches voters during moments of peak public attention. Understanding what drives these statements—internal workforce ideology rather than business impact—reveals how corporate leaders' personal political beliefs now translate directly into mass messaging that shapes national conversations on contentious issues.",
+    "fetchedAt": "2026-11-17T02:14:34.208Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": null,
+      "wordCount": 232
+    },
+    "slug": "corporate-stances-on-societal"
+  },
+  {
+    "id": "2611.18469",
+    "title": "Contrastive latent representation learning with denoising score matching",
+    "authors": "Christopher Marouani, Grigory Bartosh, Christian A. Naesseth",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-11-13T17:42:55Z",
+    "publishedFormatted": "Nov 13, 2026",
+    "subtitle": "A smarter way to teach AI systems to learn useful patterns from images",
+    "summary": "Contrastive learning teaches AI to recognize which images are similar by pushing apart views of different pictures while pulling together different views of the same picture. This new method, called ScoreCLR, replaces the computationally expensive process of comparing images against hundreds of negative examples with a lightweight neural network that learns to estimate what makes images dissimilar—cutting the computational cost from quadratic to linear with batch size while maintaining accuracy on standard image benchmarks.",
+    "whyItMatters": "Training large AI vision models currently requires enormous batches of data and significant computational resources. By cutting the cost of calculating repulsive forces in half (from quadratic to linear scaling), ScoreCLR makes contrastive learning more practical and efficient, potentially lowering the computational barrier for researchers and organizations to build and improve image recognition systems.",
+    "fetchedAt": "2026-11-17T02:14:37.154Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 20,
+      "wordCount": 214
+    },
+    "slug": "contrastive-latent-representation-learning"
+  },
+  {
     "id": "2611.18563",
     "title": "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
     "authors": "Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira et al.",

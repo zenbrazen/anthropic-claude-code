@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1162 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1165 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 397 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 398 papers in archive.
+  - "Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation"
   - "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion"
-  - "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 94 papers in archive.
   - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
   - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 101 papers in archive.
   - "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices"
   - "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 99 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 100 papers in archive.
+  - "Corporate Stances on Societal Issues in the US"
   - "The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs"
-  - "DeepFinance: Can AI Diligence a $100MM Deal?"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 99 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 100 papers in archive.
+  - "Contrastive latent representation learning with denoising score matching"
   - "Disentangling Spurious Correlations: How IRM Handles Diverse Shortcuts in Text Classification"
-  - "One Curve, Different Weights: AUC, the Brier Score, Decision-Weighted AUC, and the Policy Youden Index"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 93 papers in archive.
   - "Transmission-Mode Multispectral Imaging for Estimation of Microcystis spp. Cell Concentration and ELISA-Equivalent Microcystin Concentration in Water"
   - "Data Archive for 2D and 3D Electrical Impedance Tomography with moderate conductivity contrast phantoms"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Prediction Inference for Hybrid Models on Realized Volatility Forecasting"
 
 ## 10 most recent papers
+
+### Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation
+- URL: https://paperplaine.com/papers/do-verifier-judgments-survive
+- Category: Computer Science · AI
+- Authors: Disha Sheshanarayana, Sai Linisha Reddy Goli
+- arXiv: 2611.18471
+- Plain-English subtitle: When AI judges see less evidence, do they still reach the right verdict?
+- Summary: When AI systems evaluate whether other AI agents completed tasks correctly, their judgments often change depending on how much execution detail they can see. Researchers tested this across multiple evaluation systems and found that about 31% of correct verdicts became wrong when evidence was hidden or compressed—but restoring access to the original execution details recovered 85% of those lost judgments.
+- Why it matters: As AI agents become more complex and modular, their executions get passed through multiple systems that may not preserve all details. If the AI judges evaluating these agents give different answers based on what information happens to be visible, we can't trust their assessments in real deployments. This research shows the gap between lab testing and real-world reliability, and identifies a concrete fix: maintaining complete execution records so verifiers see the full picture.
+
+### Corporate Stances on Societal Issues in the US
+- URL: https://paperplaine.com/papers/corporate-stances-on-societal
+- Category: Quantitative Finance
+- Authors: Jacob Conway, Andrew Hall, Magdalena Larreboure et al.
+- arXiv: 2611.19068
+- Plain-English subtitle: Why big companies suddenly started taking sides on politics
+- Summary: Large US corporations have dramatically increased their public statements on divisive issues like abortion, climate change, and racial justice—quadrupling since 2008 and peaking in 2021. These stances are overwhelmingly liberal, concentrated among the biggest firms, and driven more by when issues dominate media headlines than by companies' business interests or lobbying strategies. The composition of a company's leadership—particularly the share of Democratic employees and executives—strongly predicts which positions it will take.
+- Why it matters: Corporate political speech now rivals traditional lobbying as a way companies shape public debate, yet operates on a completely different logic. Because stance-taking follows media cycles rather than electoral ones, it reaches voters during moments of peak public attention. Understanding what drives these statements—internal workforce ideology rather than business impact—reveals how corporate leaders' personal political beliefs now translate directly into mass messaging that shapes national conversations on contentious issues.
+
+### Contrastive latent representation learning with denoising score matching
+- URL: https://paperplaine.com/papers/contrastive-latent-representation-learning
+- Category: Statistics
+- Authors: Christopher Marouani, Grigory Bartosh, Christian A. Naesseth
+- arXiv: 2611.18469
+- Plain-English subtitle: A smarter way to teach AI systems to learn useful patterns from images
+- Summary: Contrastive learning teaches AI to recognize which images are similar by pushing apart views of different pictures while pulling together different views of the same picture. This new method, called ScoreCLR, replaces the computationally expensive process of comparing images against hundreds of negative examples with a lightweight neural network that learns to estimate what makes images dissimilar—cutting the computational cost from quadratic to linear with batch size while maintaining accuracy on standard image benchmarks.
+- Why it matters: Training large AI vision models currently requires enormous batches of data and significant computational resources. By cutting the cost of calculating repulsive forces in half (from quadratic to linear scaling), ScoreCLR makes contrastive learning more practical and efficient, potentially lowering the computational barrier for researchers and organizations to build and improve image recognition systems.
 
 ### Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion
 - URL: https://paperplaine.com/papers/pairing-ais-with-rf
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Using hydrogen's atomic structure to measure invisible forces and store quantum energy
 - Summary: Researchers analyzed a quantum system based on hydrogen's internal structure to determine how precisely two unknown properties — a magnetic field and atomic coupling strength — can be measured simultaneously. The system satisfies a key theoretical condition for reliable measurement even though the quantum properties don't commute mathematically, and separately performs well as a quantum battery, storing and releasing energy efficiently across different temperatures and charging times.
 - Why it matters: Quantum sensors must measure multiple properties at once while maintaining precision; this work shows that hydrogen-like systems can do both reliably. The same system doubles as a quantum battery, suggesting a single device could serve dual purposes in quantum technologies — taking precise measurements while also storing energy for quantum computers and other devices that operate at extreme scales.
-
-### Transmission-Mode Multispectral Imaging for Estimation of Microcystis spp. Cell Concentration and ELISA-Equivalent Microcystin Concentration in Water
-- URL: https://paperplaine.com/papers/transmission-mode-multispectral-imaging
-- Category: Engineering
-- Authors: J. A. S. T. Jayakody, G. Thilakarathne, G. A. S. L. Ranasinghe et al.
-- arXiv: 2611.16859
-- Plain-English subtitle: A camera that spots toxic algae blooms and their poison in minutes
-- Summary: A new imaging system using multiple light wavelengths can measure both the number of harmful algae cells and their toxin levels in water with 97-98% accuracy. The method works on water samples directly without requiring laboratory chemicals or specialized assays, potentially turning what normally takes hours in a lab into a quick on-site test.
-- Why it matters: Harmful algal blooms poison drinking water supplies and kill fish across the world. Right now, detecting them and measuring their toxins requires shipping samples to labs and waiting days for results—too slow to warn communities of a threat. A fast, portable imaging system could let water managers test lakes and reservoirs in real time, catching dangerous blooms before they affect people.
-
-### Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models
-- URL: https://paperplaine.com/papers/al-ghasali-a-computational
-- Category: Computer Science · AI
-- Authors: Elnaserledinellah Mahmoud Abdelwahab
-- arXiv: 2611.17235
-- Plain-English subtitle: Using AI to automate Islamic legal rulings without letting the AI make things up
-- Summary: Researchers created a computational system that formalizes Islamic jurisprudential reasoning as simple decision trees (called finite state automata), then uses AI language models to explain those decisions in human-readable language. The key innovation: the decision tree controls the AI and prevents it from generating false information, reducing what's known as 'hallucination' to zero by forcing the AI to only paraphrase facts the formal system has already determined.
-- Why it matters: Islamic legal scholars currently spend years mastering jurisprudential reasoning to issue rulings on complex questions. This system could automate much of that process while keeping the logic transparent and verifiable—important when people rely on legal rulings for real decisions. It also demonstrates a broader principle: AI language models can explain formal decisions reliably when constrained by a formal system that checks every word against predetermined rules, which could apply to other high-stakes fields like medical or legal advice.
-
-### Disentangling Spurious Correlations: How IRM Handles Diverse Shortcuts in Text Classification
-- URL: https://paperplaine.com/papers/disentangling-spurious-correlations-how
-- Category: Statistics
-- Authors: Paul Grunenwald, Benoît Crabbé, Guillaume Wisniewski et al.
-- arXiv: 2611.17107
-- Plain-English subtitle: Teaching AI text classifiers to ignore misleading patterns and learn what actually matters
-- Summary: Text classifiers often latch onto lazy shortcuts—like dialect or actor names—instead of learning genuine linguistic patterns, causing them to fail on new data. A technique called Invariant Risk Minimization (IRM) can suppress these spurious correlations by identifying patterns that stay stable across different datasets, and new experiments show it works across realistic scenarios like gender-profession bias and name-based shortcuts.
-- Why it matters: Text classifiers deployed in the real world encounter data different from their training set, and exploiting spurious patterns causes them to fail. If IRM can reliably steer models toward robust features instead of shortcuts, it could improve how well language systems generalize—from content moderation to bias detection—without requiring hand-labeled corrections for every new problem.
 
 ## About
 

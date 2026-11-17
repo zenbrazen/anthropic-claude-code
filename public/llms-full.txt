@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1162 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-16
+This file contains the complete plain-English text of all 1165 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-17
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation
+Subtitle: When AI judges see less evidence, do they still reach the right verdict?
+URL: https://paperplaine.com/papers/do-verifier-judgments-survive
+Category: Computer Science · AI
+Authors: Disha Sheshanarayana, Sai Linisha Reddy Goli
+arXiv ID: 2611.18471
+arXiv URL: https://arxiv.org/abs/2611.18471
+Posted: 2026-11-17
+
+Summary: When AI systems evaluate whether other AI agents completed tasks correctly, their judgments often change depending on how much execution detail they can see. Researchers tested this across multiple evaluation systems and found that about 31% of correct verdicts became wrong when evidence was hidden or compressed—but restoring access to the original execution details recovered 85% of those lost judgments.
+
+Why it matters: As AI agents become more complex and modular, their executions get passed through multiple systems that may not preserve all details. If the AI judges evaluating these agents give different answers based on what information happens to be visible, we can't trust their assessments in real deployments. This research shows the gap between lab testing and real-world reliability, and identifies a concrete fix: maintaining complete execution records so verifiers see the full picture.
+
+---
+Title: Corporate Stances on Societal Issues in the US
+Subtitle: Why big companies suddenly started taking sides on politics
+URL: https://paperplaine.com/papers/corporate-stances-on-societal
+Category: Quantitative Finance
+Authors: Jacob Conway, Andrew Hall, Magdalena Larreboure et al.
+arXiv ID: 2611.19068
+arXiv URL: https://arxiv.org/abs/2611.19068
+Posted: 2026-11-17
+
+Summary: Large US corporations have dramatically increased their public statements on divisive issues like abortion, climate change, and racial justice—quadrupling since 2008 and peaking in 2021. These stances are overwhelmingly liberal, concentrated among the biggest firms, and driven more by when issues dominate media headlines than by companies' business interests or lobbying strategies. The composition of a company's leadership—particularly the share of Democratic employees and executives—strongly predicts which positions it will take.
+
+Why it matters: Corporate political speech now rivals traditional lobbying as a way companies shape public debate, yet operates on a completely different logic. Because stance-taking follows media cycles rather than electoral ones, it reaches voters during moments of peak public attention. Understanding what drives these statements—internal workforce ideology rather than business impact—reveals how corporate leaders' personal political beliefs now translate directly into mass messaging that shapes national conversations on contentious issues.
+
+---
+Title: Contrastive latent representation learning with denoising score matching
+Subtitle: A smarter way to teach AI systems to learn useful patterns from images
+URL: https://paperplaine.com/papers/contrastive-latent-representation-learning
+Category: Statistics
+Authors: Christopher Marouani, Grigory Bartosh, Christian A. Naesseth
+arXiv ID: 2611.18469
+arXiv URL: https://arxiv.org/abs/2611.18469
+Posted: 2026-11-17
+
+Summary: Contrastive learning teaches AI to recognize which images are similar by pushing apart views of different pictures while pulling together different views of the same picture. This new method, called ScoreCLR, replaces the computationally expensive process of comparing images against hundreds of negative examples with a lightweight neural network that learns to estimate what makes images dissimilar—cutting the computational cost from quadratic to linear with batch size while maintaining accuracy on standard image benchmarks.
+
+Why it matters: Training large AI vision models currently requires enormous batches of data and significant computational resources. By cutting the cost of calculating repulsive forces in half (from quadratic to linear scaling), ScoreCLR makes contrastive learning more practical and efficient, potentially lowering the computational barrier for researchers and organizations to build and improve image recognition systems.
 
 ---
 Title: Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion
