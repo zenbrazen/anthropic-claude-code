@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1171 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1174 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 400 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 401 papers in archive.
+  - "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution"
   - "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent"
-  - "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 94 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 95 papers in archive.
+  - "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving"
   - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
-  - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 99 papers in archive.
   - "Same Papers, Different Verdicts: Tracing Version Drift in LLM Peer Review"
   - "Quantum Metrology and Quantum Battery in a Hyperfine-Coupled Spin System"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 99 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 100 papers in archive.
+  - "Binary Affine Optimization with Nearly-Graphic Constraint Matrices"
   - "EPIGRIDS: Documentation and Validation of Seven Open Synthetic Transmission Grid Cases"
-  - "Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 102 papers in archive.
   - "Connectivity from activity in spiking neural networks"
   - "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement"
 
 ## 10 most recent papers
+
+### What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution
+- URL: https://paperplaine.com/papers/what-does-a-bias
+- Category: Computer Science · AI
+- Authors: S. M Seefat Alam
+- arXiv: 2611.23218
+- Plain-English subtitle: Why popular methods for removing bias from AI might be measuring the wrong thing
+- Summary: Researchers examined a popular technique for finding and removing social bias from large language models by targeting specific neural network components called attention heads. They discovered that the statistical measure used to identify biased heads correlates far more strongly with how long the model's responses are than with actual bias—and when they controlled for response length, the measure was driven primarily by which prompt was used, not bias at all. The method failed to actually reduce unfairness when researchers removed the identified heads.
+- Why it matters: Teams developing safer AI systems are using these head-removal techniques in production, believing they've found and eliminated bias. This work shows those teams may be deleting components for the wrong reasons, potentially wasting effort or even degrading other important model behaviors—the researchers found that removing these heads reliably breaks the model's ability to refuse harmful requests. Without knowing what a measurement actually captures, it's impossible to trust that bias-removal efforts are working as intended.
+
+### Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving
+- URL: https://paperplaine.com/papers/multimodal-masked-diffusion-autoencoder
+- Category: Computer Science
+- Authors: John Gideon, Anshul Gupta, Megan Applegate-Kenton et al.
+- arXiv: 2611.23211
+- Plain-English subtitle: AI that learns to spot impaired drivers without needing labeled training data
+- Summary: Researchers built an AI system that detects when drivers are distracted, stressed, or visually impaired by learning to reconstruct their gaze patterns and vehicle movements alongside identifying the impairment itself. Testing on 103 hours of simulator driving data with 109 participants, the system achieved 70% accuracy at flagging impaired driving—compared to 59% with traditional methods—and also learned to predict where drivers would look and steer next.
+- Why it matters: Police and insurance companies rely on expensive human observation or costly legal testing to prove impaired driving; this AI could automate detection in vehicles, potentially flagging dangerous cognitive states (like fatigue or distraction) before crashes happen. The method works without requiring researchers to manually label thousands of hours of footage, making it faster and cheaper to train on real-world driving data.
+
+### Binary Affine Optimization with Nearly-Graphic Constraint Matrices
+- URL: https://paperplaine.com/papers/binary-affine-optimization-with
+- Category: Mathematics
+- Authors: Qiming Fang, Sihong Shao, Yuxuan Wu
+- arXiv: 2611.22944
+- Plain-English subtitle: Finding fast solutions to complex optimization puzzles with sparse constraints
+- Summary: Researchers developed a fast algorithm that solves a certain class of optimization problems—where you're trying to find the best yes-or-no assignment subject to constraints—when those constraints have a special structure. They also proved that the problem becomes computationally hard when the constraints are slightly more complex, and created a workaround algorithm that can still solve the harder version if given a certificate measuring how close the problem is to the easier case.
+- Why it matters: Optimization problems like these appear in machine learning, circuit design, and logistics. The algorithm handles cases that were previously unsolvable in reasonable time, while the hardness proof tells companies and researchers when to expect computational difficulty—helping them decide whether to invest in specialized algorithms or approximation methods instead of waiting for a solution that may never arrive.
 
 ### Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent
 - URL: https://paperplaine.com/papers/mitigating-catastrophic-forgetting-with
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: When AI judges see less evidence, do they still reach the right verdict?
 - Summary: When AI systems evaluate whether other AI agents completed tasks correctly, their judgments often change depending on how much execution detail they can see. Researchers tested this across multiple evaluation systems and found that about 31% of correct verdicts became wrong when evidence was hidden or compressed—but restoring access to the original execution details recovered 85% of those lost judgments.
 - Why it matters: As AI agents become more complex and modular, their executions get passed through multiple systems that may not preserve all details. If the AI judges evaluating these agents give different answers based on what information happens to be visible, we can't trust their assessments in real deployments. This research shows the gap between lab testing and real-world reliability, and identifies a concrete fix: maintaining complete execution records so verifiers see the full picture.
-
-### Corporate Stances on Societal Issues in the US
-- URL: https://paperplaine.com/papers/corporate-stances-on-societal
-- Category: Quantitative Finance
-- Authors: Jacob Conway, Andrew Hall, Magdalena Larreboure et al.
-- arXiv: 2611.19068
-- Plain-English subtitle: Why big companies suddenly started taking sides on politics
-- Summary: Large US corporations have dramatically increased their public statements on divisive issues like abortion, climate change, and racial justice—quadrupling since 2008 and peaking in 2021. These stances are overwhelmingly liberal, concentrated among the biggest firms, and driven more by when issues dominate media headlines than by companies' business interests or lobbying strategies. The composition of a company's leadership—particularly the share of Democratic employees and executives—strongly predicts which positions it will take.
-- Why it matters: Corporate political speech now rivals traditional lobbying as a way companies shape public debate, yet operates on a completely different logic. Because stance-taking follows media cycles rather than electoral ones, it reaches voters during moments of peak public attention. Understanding what drives these statements—internal workforce ideology rather than business impact—reveals how corporate leaders' personal political beliefs now translate directly into mass messaging that shapes national conversations on contentious issues.
-
-### Contrastive latent representation learning with denoising score matching
-- URL: https://paperplaine.com/papers/contrastive-latent-representation-learning
-- Category: Statistics
-- Authors: Christopher Marouani, Grigory Bartosh, Christian A. Naesseth
-- arXiv: 2611.18469
-- Plain-English subtitle: A smarter way to teach AI systems to learn useful patterns from images
-- Summary: Contrastive learning teaches AI to recognize which images are similar by pushing apart views of different pictures while pulling together different views of the same picture. This new method, called ScoreCLR, replaces the computationally expensive process of comparing images against hundreds of negative examples with a lightweight neural network that learns to estimate what makes images dissimilar—cutting the computational cost from quadratic to linear with batch size while maintaining accuracy on standard image benchmarks.
-- Why it matters: Training large AI vision models currently requires enormous batches of data and significant computational resources. By cutting the cost of calculating repulsive forces in half (from quadratic to linear scaling), ScoreCLR makes contrastive learning more practical and efficient, potentially lowering the computational barrier for researchers and organizations to build and improve image recognition systems.
-
-### Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion
-- URL: https://paperplaine.com/papers/pairing-ais-with-rf
-- Category: Computer Science · AI
-- Authors: Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira et al.
-- arXiv: 2611.18563
-- Plain-English subtitle: Matching invisible ships to radar blips using AI
-- Summary: Researchers developed an AI system that links radio frequency detections of ships to their AIS (identification) records, even when vessels turn off their tracking systems. The approach achieved 85.8% precision in matching individual radar observations to the right ship, outperforming simpler methods for some tasks but not quite beating a hand-tuned baseline approach.
-- Why it matters: Ships can disable their tracking systems to hide illegal activities like smuggling or unreported fishing. This work offers a way to spot those dark vessels by cross-referencing independent radar data with legitimate ship records—giving coast guards and maritime authorities a tool to detect deception they currently struggle to catch. Even a partial improvement matters when safety and security depend on closing detection gaps.
 
 ## About
 

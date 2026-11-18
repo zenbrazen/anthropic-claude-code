@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1171 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1174 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-18
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution
+Subtitle: Why popular methods for removing bias from AI might be measuring the wrong thing
+URL: https://paperplaine.com/papers/what-does-a-bias
+Category: Computer Science · AI
+Authors: S. M Seefat Alam
+arXiv ID: 2611.23218
+arXiv URL: https://arxiv.org/abs/2611.23218
+Posted: 2026-11-18
+
+Summary: Researchers examined a popular technique for finding and removing social bias from large language models by targeting specific neural network components called attention heads. They discovered that the statistical measure used to identify biased heads correlates far more strongly with how long the model's responses are than with actual bias—and when they controlled for response length, the measure was driven primarily by which prompt was used, not bias at all. The method failed to actually reduce unfairness when researchers removed the identified heads.
+
+Why it matters: Teams developing safer AI systems are using these head-removal techniques in production, believing they've found and eliminated bias. This work shows those teams may be deleting components for the wrong reasons, potentially wasting effort or even degrading other important model behaviors—the researchers found that removing these heads reliably breaks the model's ability to refuse harmful requests. Without knowing what a measurement actually captures, it's impossible to trust that bias-removal efforts are working as intended.
+
+---
+Title: Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving
+Subtitle: AI that learns to spot impaired drivers without needing labeled training data
+URL: https://paperplaine.com/papers/multimodal-masked-diffusion-autoencoder
+Category: Computer Science
+Authors: John Gideon, Anshul Gupta, Megan Applegate-Kenton et al.
+arXiv ID: 2611.23211
+arXiv URL: https://arxiv.org/abs/2611.23211
+Posted: 2026-11-18
+
+Summary: Researchers built an AI system that detects when drivers are distracted, stressed, or visually impaired by learning to reconstruct their gaze patterns and vehicle movements alongside identifying the impairment itself. Testing on 103 hours of simulator driving data with 109 participants, the system achieved 70% accuracy at flagging impaired driving—compared to 59% with traditional methods—and also learned to predict where drivers would look and steer next.
+
+Why it matters: Police and insurance companies rely on expensive human observation or costly legal testing to prove impaired driving; this AI could automate detection in vehicles, potentially flagging dangerous cognitive states (like fatigue or distraction) before crashes happen. The method works without requiring researchers to manually label thousands of hours of footage, making it faster and cheaper to train on real-world driving data.
+
+---
+Title: Binary Affine Optimization with Nearly-Graphic Constraint Matrices
+Subtitle: Finding fast solutions to complex optimization puzzles with sparse constraints
+URL: https://paperplaine.com/papers/binary-affine-optimization-with
+Category: Mathematics
+Authors: Qiming Fang, Sihong Shao, Yuxuan Wu
+arXiv ID: 2611.22944
+arXiv URL: https://arxiv.org/abs/2611.22944
+Posted: 2026-11-18
+
+Summary: Researchers developed a fast algorithm that solves a certain class of optimization problems—where you're trying to find the best yes-or-no assignment subject to constraints—when those constraints have a special structure. They also proved that the problem becomes computationally hard when the constraints are slightly more complex, and created a workaround algorithm that can still solve the harder version if given a certificate measuring how close the problem is to the easier case.
+
+Why it matters: Optimization problems like these appear in machine learning, circuit design, and logistics. The algorithm handles cases that were previously unsolvable in reasonable time, while the hardness proof tells companies and researchers when to expect computational difficulty—helping them decide whether to invest in specialized algorithms or approximation methods instead of waiting for a solution that may never arrive.
 
 ---
 Title: Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent

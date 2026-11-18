@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 01:27:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 16:11:59 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution</title>
+      <link>https://paperplaine.com/papers/what-does-a-bias</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/what-does-a-bias</guid>
+      <pubDate>Tue, 17 Nov 2026 18:57:08 GMT</pubDate>
+      <author>S. M Seefat Alam</author>
+      <category>AI</category>
+      <description>Why popular methods for removing bias from AI might be measuring the wrong thing</description>
+      <content:encoded><![CDATA[<p><em>Why popular methods for removing bias from AI might be measuring the wrong thing</em></p><p>Researchers examined a popular technique for finding and removing social bias from large language models by targeting specific neural network components called attention heads. They discovered that the statistical measure used to identify biased heads correlates far more strongly with how long the model's responses are than with actual bias—and when they controlled for response length, the measure was driven primarily by which prompt was used, not bias at all. The method failed to actually reduce unfairness when researchers removed the identified heads.</p><p><strong>Why it matters:</strong> Teams developing safer AI systems are using these head-removal techniques in production, believing they've found and eliminated bias. This work shows those teams may be deleting components for the wrong reasons, potentially wasting effort or even degrading other important model behaviors—the researchers found that removing these heads reliably breaks the model's ability to refuse harmful requests. Without knowing what a measurement actually captures, it's impossible to trust that bias-removal efforts are working as intended.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving</title>
+      <link>https://paperplaine.com/papers/multimodal-masked-diffusion-autoencoder</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/multimodal-masked-diffusion-autoencoder</guid>
+      <pubDate>Tue, 17 Nov 2026 18:50:22 GMT</pubDate>
+      <author>John Gideon, Anshul Gupta, Megan Applegate-Kenton et al.</author>
+      <category>Comp Sci</category>
+      <description>AI that learns to spot impaired drivers without needing labeled training data</description>
+      <content:encoded><![CDATA[<p><em>AI that learns to spot impaired drivers without needing labeled training data</em></p><p>Researchers built an AI system that detects when drivers are distracted, stressed, or visually impaired by learning to reconstruct their gaze patterns and vehicle movements alongside identifying the impairment itself. Testing on 103 hours of simulator driving data with 109 participants, the system achieved 70% accuracy at flagging impaired driving—compared to 59% with traditional methods—and also learned to predict where drivers would look and steer next.</p><p><strong>Why it matters:</strong> Police and insurance companies rely on expensive human observation or costly legal testing to prove impaired driving; this AI could automate detection in vehicles, potentially flagging dangerous cognitive states (like fatigue or distraction) before crashes happen. The method works without requiring researchers to manually label thousands of hours of footage, making it faster and cheaper to train on real-world driving data.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Binary Affine Optimization with Nearly-Graphic Constraint Matrices</title>
+      <link>https://paperplaine.com/papers/binary-affine-optimization-with</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/binary-affine-optimization-with</guid>
+      <pubDate>Tue, 17 Nov 2026 15:36:50 GMT</pubDate>
+      <author>Qiming Fang, Sihong Shao, Yuxuan Wu</author>
+      <category>Math</category>
+      <description>Finding fast solutions to complex optimization puzzles with sparse constraints</description>
+      <content:encoded><![CDATA[<p><em>Finding fast solutions to complex optimization puzzles with sparse constraints</em></p><p>Researchers developed a fast algorithm that solves a certain class of optimization problems—where you're trying to find the best yes-or-no assignment subject to constraints—when those constraints have a special structure. They also proved that the problem becomes computationally hard when the constraints are slightly more complex, and created a workaround algorithm that can still solve the harder version if given a certificate measuring how close the problem is to the easier case.</p><p><strong>Why it matters:</strong> Optimization problems like these appear in machine learning, circuit design, and logistics. The algorithm handles cases that were previously unsolvable in reasonable time, while the hardness proof tells companies and researchers when to expect computational difficulty—helping them decide whether to invest in specialized algorithms or approximation methods instead of waiting for a solution that may never arrive.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent</title>
       <link>https://paperplaine.com/papers/mitigating-catastrophic-forgetting-with</link>

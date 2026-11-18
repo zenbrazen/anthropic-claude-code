@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.23218",
+    "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+    "authors": "S. M Seefat Alam",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-17T18:57:08Z",
+    "publishedFormatted": "Nov 17, 2026",
+    "subtitle": "Why popular methods for removing bias from AI might be measuring the wrong thing",
+    "summary": "Researchers examined a popular technique for finding and removing social bias from large language models by targeting specific neural network components called attention heads. They discovered that the statistical measure used to identify biased heads correlates far more strongly with how long the model's responses are than with actual bias—and when they controlled for response length, the measure was driven primarily by which prompt was used, not bias at all. The method failed to actually reduce unfairness when researchers removed the identified heads.",
+    "whyItMatters": "Teams developing safer AI systems are using these head-removal techniques in production, believing they've found and eliminated bias. This work shows those teams may be deleting components for the wrong reasons, potentially wasting effort or even degrading other important model behaviors—the researchers found that removing these heads reliably breaks the model's ability to refuse harmful requests. Without knowing what a measurement actually captures, it's impossible to trust that bias-removal efforts are working as intended.",
+    "fetchedAt": "2026-11-18T16:11:39.072Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 18,
+      "wordCount": 210
+    },
+    "slug": "what-does-a-bias"
+  },
+  {
+    "id": "2611.23211",
+    "title": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
+    "authors": "John Gideon, Anshul Gupta, Megan Applegate-Kenton et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-11-17T18:50:22Z",
+    "publishedFormatted": "Nov 17, 2026",
+    "subtitle": "AI that learns to spot impaired drivers without needing labeled training data",
+    "summary": "Researchers built an AI system that detects when drivers are distracted, stressed, or visually impaired by learning to reconstruct their gaze patterns and vehicle movements alongside identifying the impairment itself. Testing on 103 hours of simulator driving data with 109 participants, the system achieved 70% accuracy at flagging impaired driving—compared to 59% with traditional methods—and also learned to predict where drivers would look and steer next.",
+    "whyItMatters": "Police and insurance companies rely on expensive human observation or costly legal testing to prove impaired driving; this AI could automate detection in vehicles, potentially flagging dangerous cognitive states (like fatigue or distraction) before crashes happen. The method works without requiring researchers to manually label thousands of hours of footage, making it faster and cheaper to train on real-world driving data.",
+    "fetchedAt": "2026-11-18T16:11:41.980Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 8,
+      "wordCount": 221
+    },
+    "slug": "multimodal-masked-diffusion-autoencoder"
+  },
+  {
+    "id": "2611.22944",
+    "title": "Binary Affine Optimization with Nearly-Graphic Constraint Matrices",
+    "authors": "Qiming Fang, Sihong Shao, Yuxuan Wu",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-11-17T15:36:50Z",
+    "publishedFormatted": "Nov 17, 2026",
+    "subtitle": "Finding fast solutions to complex optimization puzzles with sparse constraints",
+    "summary": "Researchers developed a fast algorithm that solves a certain class of optimization problems—where you're trying to find the best yes-or-no assignment subject to constraints—when those constraints have a special structure. They also proved that the problem becomes computationally hard when the constraints are slightly more complex, and created a workaround algorithm that can still solve the harder version if given a certificate measuring how close the problem is to the easier case.",
+    "whyItMatters": "Optimization problems like these appear in machine learning, circuit design, and logistics. The algorithm handles cases that were previously unsolvable in reasonable time, while the hardness proof tells companies and researchers when to expect computational difficulty—helping them decide whether to invest in specialized algorithms or approximation methods instead of waiting for a solution that may never arrive.",
+    "fetchedAt": "2026-11-18T16:11:59.361Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 145
+    },
+    "slug": "binary-affine-optimization-with"
+  },
+  {
     "id": "2611.21598",
     "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
     "authors": "Blas Eugenio Vicco Zarate, Miguel Hernán Vicco",
