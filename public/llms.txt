@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1168 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1171 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 399 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 400 papers in archive.
+  - "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent"
   - "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle"
-  - "Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 94 papers in archive.
   - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
   - "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites"
@@ -42,9 +42,9 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 99 papers in archive.
   - "EPIGRIDS: Documentation and Validation of Seven Open Synthetic Transmission Grid Cases"
   - "Forbidden subset sums in a linear range: an inverse theorem and the Erdős-Graham irregularity problem"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 101 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 102 papers in archive.
+  - "Connectivity from activity in spiking neural networks"
   - "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices"
-  - "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 100 papers in archive.
   - "Corporate Stances on Societal Issues in the US"
   - "The Logic of Factor Portfolios: Boolean Rules, Interactions, and Trading Costs"
@@ -54,11 +54,38 @@ Each paper entry contains:
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 94 papers in archive.
   - "Exponential Quantum Memory Advantage for Late-Graph Smoothness and Spectral Estimation"
   - "Transmission-Mode Multispectral Imaging for Estimation of Microcystis spp. Cell Concentration and ELISA-Equivalent Microcystin Concentration in Water"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 82 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 83 papers in archive.
+  - "Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan"
   - "Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement"
-  - "Prediction Inference for Hybrid Models on Realized Volatility Forecasting"
 
 ## 10 most recent papers
+
+### Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent
+- URL: https://paperplaine.com/papers/mitigating-catastrophic-forgetting-with
+- Category: Computer Science · AI
+- Authors: Blas Eugenio Vicco Zarate, Miguel Hernán Vicco
+- arXiv: 2611.21598
+- Plain-English subtitle: Teaching AI agents to remember old skills while learning new ones
+- Summary: An AI system called the Evolutionary Neuroplastic Agent learns to handle changing environments by keeping a library of specialized skills and retrieving the right one when conditions shift. When tested on classic control tasks, it retained past knowledge better than simpler alternatives, though it adapted more slowly than some competing methods.
+- Why it matters: Real-world robots and AI systems face environments that change over time—a delivery robot might encounter different weather, terrain, or traffic patterns. If they forget how to handle previous conditions while learning new ones, they become unreliable. This approach offers a path toward AI that can accumulate useful skills and reuse them without losing old abilities, which is essential for systems that need to operate reliably across shifting real-world conditions.
+
+### Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan
+- URL: https://paperplaine.com/papers/trade-tensions-meet-the
+- Category: Economics
+- Authors: Suguru Otani, Chang Yang
+- arXiv: 2611.21070
+- Plain-English subtitle: How a China travel ban instantly cut gig workers' hourly wages in Japan
+- Summary: When China halved its travel to Japan in November 2025, hourly wages for gig workers in Japanese prefectures that depend heavily on Chinese tourists dropped immediately and stayed down—even though the total number of available jobs barely changed. The wage cuts were sharpest during daytime and early morning hours, when hotels and shops do most of their hiring, suggesting that gig platforms adjust wages to match sudden shifts in real-time demand.
+- Why it matters: This shows how geopolitical shocks ripple through local labor markets far faster than traditional employment data would reveal. Workers on gig platforms feel wage pressure within days of a trade disruption, not months later—a reality that matters for anyone relying on spot work to cover basic living costs. It also reveals how platforms' ability to reprice labor hour-by-hour gives them power to shift risk directly onto workers rather than absorb it through reduced hiring.
+
+### Connectivity from activity in spiking neural networks
+- URL: https://paperplaine.com/papers/connectivity-from-activity-in
+- Category: Quantitative Biology
+- Authors: Albert J. Wakhloo, Sebastian Mizera
+- arXiv: 2611.21592
+- Plain-English subtitle: How to map brain circuits by watching neurons fire together
+- Summary: Researchers developed a mathematical framework that reveals the actual wiring of neural networks just by analyzing patterns in how neurons spike. The method works by focusing on fast, high-frequency correlations between neurons—the brief moments when they fire nearly in sync—which directly reflect direct connections between them, while filtering out indirect effects from multi-step paths through the network.
+- Why it matters: Brain researchers currently struggle to map neural circuits because they can only record from a small fraction of neurons at once, making direct measurement of connections nearly impossible. This approach lets them infer the underlying wiring diagram from activity alone, potentially revealing circuit structure from existing recordings without new experiments. It could accelerate efforts to understand how neural circuits compute, learn, and malfunction in disease.
 
 ### Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle
 - URL: https://paperplaine.com/papers/optimistic-verifiers-get-hacked
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Matching invisible ships to radar blips using AI
 - Summary: Researchers developed an AI system that links radio frequency detections of ships to their AIS (identification) records, even when vessels turn off their tracking systems. The approach achieved 85.8% precision in matching individual radar observations to the right ship, outperforming simpler methods for some tasks but not quite beating a hand-tuned baseline approach.
 - Why it matters: Ships can disable their tracking systems to hide illegal activities like smuggling or unreported fishing. This work offers a way to spot those dark vessels by cross-referencing independent radar data with legitimate ship records—giving coast guards and maritime authorities a tool to detect deception they currently struggle to catch. Even a partial improvement matters when safety and security depend on closing detection gaps.
-
-### EPIGRIDS: Documentation and Validation of Seven Open Synthetic Transmission Grid Cases
-- URL: https://paperplaine.com/papers/epigrids-documentation-and-validation
-- Category: Mathematics
-- Authors: Jonathan M. Snodgrass, Scott Greene, Thomas J. Overbye et al.
-- arXiv: 2611.18502
-- Plain-English subtitle: Seven realistic electric grid models released for testing and research
-- Summary: Researchers released EPIGRIDS, a collection of seven synthetic electric grid models ranging from 250 to nearly 80,000 connection points, built using optimization methods rather than statistical shortcuts. All models include real conductor specifications, geographic locations, and hourly load data for a full year, and they're freely available in three standard formats that have been validated to solve correctly.
-- Why it matters: Power grid researchers need realistic test cases to design and evaluate new protection systems, outage responses, and planning tools without experimenting on actual infrastructure. These openly licensed models let researchers run identical tests across different algorithms and institutions, speeding up development of tools to prevent blackouts and handle extreme weather. The models' realistic density and parameters mean findings from simulations transfer more reliably to real grids.
-
-### FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices
-- URL: https://paperplaine.com/papers/fettuccine-fast-and-efficient
-- Category: Quantitative Biology
-- Authors: Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou et al.
-- arXiv: 2611.18561
-- Plain-English subtitle: Brain-to-text technology that runs on a smartphone instead of a server
-- Summary: Researchers created FETTUCCINE, a system that translates brain signals directly into text on a mobile phone, achieving accuracy rates as low as 4.39% word errors. The system runs 370 times faster than real-time speech, making natural conversation possible for the first time on a portable device rather than requiring a heavy computing setup.
-- Why it matters: People with paralysis or speech loss from stroke, ALS, or spinal injury could carry a smartphone-sized device that lets them communicate in real time without being tethered to a lab or large computer. The system also works reliably day after day as neural signals shift, and runs fast enough that conversations won't lag—closing the gap between lab demonstrations and tools people can actually use in daily life.
-
-### Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces
-- URL: https://paperplaine.com/papers/linking-rapid-learning-to
-- Category: Computer Science · AI
-- Authors: Abigail L. Tenenbaum, R. Thomas McCoy
-- arXiv: 2611.17314
-- Plain-English subtitle: How neural networks learn to learn by organizing knowledge like algebra
-- Summary: Meta-learned neural networks can learn new tasks from very few examples because their internal structure follows clean mathematical rules—similar to how word vectors work, parameter vectors for different functions can be added and subtracted to create new functions the network has never seen. When researchers artificially recombined these vectors using symbolic relationships, the resulting networks performed their new assigned tasks without any direct training, suggesting meta-learning builds a geometric scaffold that guides rapid learning along predictable paths.
-- Why it matters: Current AI systems waste computation by learning from scratch each time. If researchers can reliably predict and construct neural networks through vector arithmetic, they could design more sample-efficient learning algorithms that require far less data and training time—a direct path toward AI systems that learn more like humans do.
 
 ## About
 
