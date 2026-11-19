@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 16:11:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:54:28 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition</title>
+      <link>https://paperplaine.com/papers/word-diffusion-based-posterior</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/word-diffusion-based-posterior</guid>
+      <pubDate>Tue, 17 Nov 2026 18:35:53 GMT</pubDate>
+      <author>Almog Anschel, Sarah Keren</author>
+      <category>AI</category>
+      <description>Figuring out what someone&#39;s trying to do by watching them move</description>
+      <content:encoded><![CDATA[<p><em>Figuring out what someone's trying to do by watching them move</em></p><p>When you watch someone move, you can usually guess where they're heading—but early on, their path might look like several different destinations. WoRD is an AI method that uses a learned model of how people typically move to figure out someone's goal from partial observations, staying uncertain about multiple possibilities rather than guessing too early. It outperforms existing methods on robots, pedestrians, and vehicles by maintaining realistic confidence levels even when the path is ambiguous.</p><p><strong>Why it matters:</strong> Robots and autonomous systems need to predict what humans or other agents intend to do—whether a pedestrian is crossing the street or just walking along it. Current methods either oversimplify the problem or require hard-to-build motion models. WoRD's approach works across different real-world scenarios without custom engineering, making it more practical for self-driving cars, collaborative robots, and security systems that need to understand human intent early and accurately.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Fold Weighting for Cross-Validation Under Continuous Distributional Drift</title>
+      <link>https://paperplaine.com/papers/fold-weighting-for-cross</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/fold-weighting-for-cross</guid>
+      <pubDate>Tue, 17 Nov 2026 18:28:52 GMT</pubDate>
+      <author>Yegor Baranovski</author>
+      <category>Statistics</category>
+      <description>Should newer data count more when predicting a changing world?</description>
+      <content:encoded><![CDATA[<p><em>Should newer data count more when predicting a changing world?</em></p><p>When you're training a machine-learning model on data that keeps changing over time, the standard approach treats old and new data equally—which turns out to be a mistake. This paper shows how to weight different chunks of historical data so your model better predicts the future, and proves mathematically that you should trust recent data more when the world is shifting in ways that last, but fall back on equal weighting when changes are temporary.</p><p><strong>Why it matters:</strong> Real-world data drifts constantly: earnings patterns shift with recessions, flight delays change with infrastructure. Using the wrong weights means your deployed model will perform worse than it could. The paper gives you a concrete way to test different weighting schemes and pick the best one for your specific problem—with guarantees on how much risk you're taking. This directly improves forecast accuracy in fields from finance to logistics.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Integrating market sentiments for stock price prediction: A comparative study of Bi-LSTM and multilayer perceptions</title>
+      <link>https://paperplaine.com/papers/integrating-market-sentiments-for</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/integrating-market-sentiments-for</guid>
+      <pubDate>Tue, 17 Nov 2026 16:51:24 GMT</pubDate>
+      <author>Ahmet Akusta</author>
+      <category>Finance</category>
+      <description>When news sentiment helps predict stock prices—and when it doesn&#39;t</description>
+      <content:encoded><![CDATA[<p><em>When news sentiment helps predict stock prices—and when it doesn't</em></p><p>Adding sentiment analysis from financial news headlines to machine learning models improved stock price predictions for Nvidia, but only during certain market conditions. The improvement was strongest when markets were stagnant or sideways; during strong upward trends, the news sentiment added little value, suggesting that raw momentum overwhelms what people are saying.</p><p><strong>Why it matters:</strong> Stock traders and investment firms spend millions on data to squeeze out predictive edges. This research shows that sentiment analysis isn't a universal fix—it works best when markets are uncertain, but becomes noise during strong trending periods. Understanding when to use these tools and when to ignore them could help investors avoid overconfidence in their models and make better decisions about where to allocate their forecasting resources.</p>]]></content:encoded>
+    </item>
     <item>
       <title>What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution</title>
       <link>https://paperplaine.com/papers/what-does-a-bias</link>
