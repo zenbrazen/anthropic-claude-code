@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.24908",
+    "title": "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation",
+    "authors": "Samet Demir, Zafer Dogan",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-18T18:43:40Z",
+    "publishedFormatted": "Nov 18, 2026",
+    "subtitle": "Why neural networks learn useless features that make them worse at generalizing",
+    "summary": "Neural networks trained with a standard algorithm learn features that go beyond what they actually need to solve a task, and this extra learning consistently harms their ability to perform well on new data. The researchers traced this problem to a specific mechanism: the network's internal structure develops unexpected patterns in directions unrelated to the task, amplifying noise and degrading accuracy.",
+    "whyItMatters": "Understanding what makes neural networks overfit is essential for building more reliable AI systems. These findings suggest that simply preventing networks from learning irrelevant features—a tactic the team tested—could improve real-world performance. As neural networks become central to high-stakes decisions in medicine, finance, and autonomous systems, reducing unnecessary learning is a concrete lever for making them more trustworthy.",
+    "fetchedAt": "2026-11-19T16:18:51.296Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": 36,
+      "wordCount": 179
+    },
+    "slug": "decomposing-sgd-dynamics-in"
+  },
+  {
+    "id": "2611.24928",
+    "title": "Residual Allan Stability under Periodic Auxiliary Ramsey Sampling",
+    "authors": "Zhiqian Su",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-11-18T18:54:18Z",
+    "publishedFormatted": "Nov 18, 2026",
+    "subtitle": "How measuring atomic clocks at intervals affects their accuracy",
+    "summary": "When you measure an atomic clock's frequency at regular intervals instead of continuously, the measurement pattern itself changes how stable the clock appears—especially at different timescales. Researchers worked out the exact mathematics for this effect, showing that periodic checks improve stability over very short periods but make it worse over longer ones, compared to measuring continuously at the same rate.",
+    "whyItMatters": "Atomic clocks are the foundation of GPS, telecommunications, and fundamental physics experiments. Understanding how the timing and spacing of measurements affects reported stability helps engineers design better clock systems and interpret their performance correctly. For technologies like quantum sensors that rely on periodic checks rather than continuous monitoring, this work provides the precise tradeoffs needed to optimize measurement schedules.",
+    "fetchedAt": "2026-11-19T16:19:09.610Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 188
+    },
+    "slug": "residual-allan-stability-under"
+  },
+  {
+    "id": "2611.23795",
+    "title": "A Dual-SOM Learner Model of Instructional Efficiency within Cognitive Load Theory",
+    "authors": "Spyridon Revithis",
+    "categoryLabel": "Biology",
+    "categoryDisplay": "Quantitative Biology",
+    "published": "2026-11-18T04:00:21Z",
+    "publishedFormatted": "Nov 18, 2026",
+    "subtitle": "Finding hidden problems in course design by mapping how students learn and struggle",
+    "summary": "A new tool combines neural networks with cognitive science to help instructors spot hidden flaws in how courses are structured. By tracking both student performance and mental effort across a class, the system reveals missing prerequisites and imbalanced workloads that traditional course review misses.",
+    "whyItMatters": "Teachers spend enormous time redesigning courses based on intuition or complaints. This system gives them concrete maps of where students consistently hit walls—whether because a topic isn't explained in the right order or because a lesson demands too much mental focus at once. Better course design means less student frustration and more people actually learning the material.",
+    "fetchedAt": "2026-11-19T16:19:13.670Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 22,
+      "wordCount": 179
+    },
+    "slug": "a-dual-som-learner"
+  },
+  {
     "id": "2611.23192",
     "title": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
     "authors": "Almog Anschel, Sarah Keren",
