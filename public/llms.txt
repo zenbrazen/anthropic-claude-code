@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1180 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1183 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 403 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 404 papers in archive.
+  - "Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI"
   - "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation"
-  - "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 95 papers in archive.
   - "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving"
   - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 100 papers in archive.
   - "Residual Allan Stability under Periodic Auxiliary Ramsey Sampling"
   - "Same Papers, Different Verdicts: Tracing Version Drift in LLM Peer Review"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 100 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 101 papers in archive.
+  - "Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case"
   - "Binary Affine Optimization with Nearly-Graphic Constraint Matrices"
-  - "EPIGRIDS: Documentation and Validation of Seven Open Synthetic Transmission Grid Cases"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 103 papers in archive.
   - "A Dual-SOM Learner Model of Instructional Efficiency within Cognitive Load Theory"
   - "Connectivity from activity in spiking neural networks"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 101 papers in archive.
   - "Fold Weighting for Cross-Validation Under Continuous Distributional Drift"
   - "Contrastive latent representation learning with denoising score matching"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 94 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 95 papers in archive.
+  - "Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping"
   - "Exponential Quantum Memory Advantage for Late-Graph Smoothness and Spectral Estimation"
-  - "Transmission-Mode Multispectral Imaging for Estimation of Microcystis spp. Cell Concentration and ELISA-Equivalent Microcystin Concentration in Water"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 83 papers in archive.
   - "Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan"
   - "Data-center growth impacts household electricity costs more through wholesale prices than through grid reinforcement"
 
 ## 10 most recent papers
+
+### Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI
+- URL: https://paperplaine.com/papers/overlooked-and-underutilized-prototypes
+- Category: Computer Science · AI
+- Authors: Jacek Karolczak, Jerzy Stefanowski
+- arXiv: 2611.24831
+- Plain-English subtitle: Why showing real examples beats listing dozens of confusing features
+- Summary: Machine learning experts explain complex decisions by listing dozens of individual features—a strategy that exhausts non-experts trying to understand the system. This paper argues that showing actual examples (prototypes), especially grouped into meaningful clusters, makes AI decisions far easier to grasp. The researchers ground this in cognitive science and propose a new framework for validating whether these examples truly represent the underlying data.
+- Why it matters: High-stakes decisions in healthcare, lending, and hiring increasingly rely on machine learning models that must pass human audit and regulatory scrutiny. If auditors can't understand how a model works without spending hours parsing feature lists, flawed or biased systems slip through unchecked. Switching to example-based explanations could make accountability real rather than theoretical, letting non-technical stakeholders actually verify whether a model's reasoning is sound.
+
+### Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case
+- URL: https://paperplaine.com/papers/exponential-boundary-stabilization-of
+- Category: Mathematics
+- Authors: Roberto de A. Capistrano Filho, Boumedìne Chentouf, Victor Hugo Gonzalez Martinez et al.
+- arXiv: 2611.24756
+- Plain-English subtitle: Keeping ocean wave models stable despite delayed feedback and nonlinear effects
+- Summary: Mathematicians proved that a complex model of coupled ocean waves can be controlled to calm down exponentially using imperfect, time-delayed feedback—even when the waves are large enough that nonlinear physics kicks in. The key was showing that solutions exist globally and decay at a predictable rate, provided the initial disturbance is sufficiently small and the system fits within a bounded region.
+- Why it matters: Mathematical control of wave systems underpins real applications like coastal engineering and energy harvesting, where actuators always respond with some delay. This work removes a theoretical gap: previous results only worked for simplified linear versions. By proving the nonlinear system actually works, researchers can be more confident designing physical systems that use delayed feedback to dampen dangerous waves or oscillations.
+
+### Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping
+- URL: https://paperplaine.com/papers/synthesizing-hyperspectral-data-using
+- Category: Engineering
+- Authors: Ege Artan, Shuo Chen, Andrew Peng et al.
+- arXiv: 2611.24827
+- Plain-English subtitle: Creating fake satellite data to map crop residue from limited real samples
+- Summary: Researchers developed a system to generate synthetic hyperspectral satellite images that help train models to identify crop residue coverage from space—solving a critical shortage of real training data. The approach decouples data generation from analysis, allowing physical knowledge about light reflection to be incorporated, but the team found that without careful safeguards, the artificial data can become unrealistic and mislead the final predictions.
+- Why it matters: Mapping crop residue cover across farmland is essential for understanding soil health, erosion risk, and carbon storage, but current satellite imagery lacks the right wavelengths to do this reliably at low cost. This work points toward a scalable solution: by smartly generating training data, researchers can build better crop-monitoring tools that farmers and land managers could deploy globally. The findings also expose a real risk in machine learning—synthetic data can look convincing while actually pushing models into false confidence—a lesson relevant wherever AI is trained on artificially expanded datasets.
 
 ### Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation
 - URL: https://paperplaine.com/papers/decomposing-sgd-dynamics-in
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why popular methods for removing bias from AI might be measuring the wrong thing
 - Summary: Researchers examined a popular technique for finding and removing social bias from large language models by targeting specific neural network components called attention heads. They discovered that the statistical measure used to identify biased heads correlates far more strongly with how long the model's responses are than with actual bias—and when they controlled for response length, the measure was driven primarily by which prompt was used, not bias at all. The method failed to actually reduce unfairness when researchers removed the identified heads.
 - Why it matters: Teams developing safer AI systems are using these head-removal techniques in production, believing they've found and eliminated bias. This work shows those teams may be deleting components for the wrong reasons, potentially wasting effort or even degrading other important model behaviors—the researchers found that removing these heads reliably breaks the model's ability to refuse harmful requests. Without knowing what a measurement actually captures, it's impossible to trust that bias-removal efforts are working as intended.
-
-### Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving
-- URL: https://paperplaine.com/papers/multimodal-masked-diffusion-autoencoder
-- Category: Computer Science
-- Authors: John Gideon, Anshul Gupta, Megan Applegate-Kenton et al.
-- arXiv: 2611.23211
-- Plain-English subtitle: AI that learns to spot impaired drivers without needing labeled training data
-- Summary: Researchers built an AI system that detects when drivers are distracted, stressed, or visually impaired by learning to reconstruct their gaze patterns and vehicle movements alongside identifying the impairment itself. Testing on 103 hours of simulator driving data with 109 participants, the system achieved 70% accuracy at flagging impaired driving—compared to 59% with traditional methods—and also learned to predict where drivers would look and steer next.
-- Why it matters: Police and insurance companies rely on expensive human observation or costly legal testing to prove impaired driving; this AI could automate detection in vehicles, potentially flagging dangerous cognitive states (like fatigue or distraction) before crashes happen. The method works without requiring researchers to manually label thousands of hours of footage, making it faster and cheaper to train on real-world driving data.
-
-### Binary Affine Optimization with Nearly-Graphic Constraint Matrices
-- URL: https://paperplaine.com/papers/binary-affine-optimization-with
-- Category: Mathematics
-- Authors: Qiming Fang, Sihong Shao, Yuxuan Wu
-- arXiv: 2611.22944
-- Plain-English subtitle: Finding fast solutions to complex optimization puzzles with sparse constraints
-- Summary: Researchers developed a fast algorithm that solves a certain class of optimization problems—where you're trying to find the best yes-or-no assignment subject to constraints—when those constraints have a special structure. They also proved that the problem becomes computationally hard when the constraints are slightly more complex, and created a workaround algorithm that can still solve the harder version if given a certificate measuring how close the problem is to the easier case.
-- Why it matters: Optimization problems like these appear in machine learning, circuit design, and logistics. The algorithm handles cases that were previously unsolvable in reasonable time, while the hardness proof tells companies and researchers when to expect computational difficulty—helping them decide whether to invest in specialized algorithms or approximation methods instead of waiting for a solution that may never arrive.
-
-### Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent
-- URL: https://paperplaine.com/papers/mitigating-catastrophic-forgetting-with
-- Category: Computer Science · AI
-- Authors: Blas Eugenio Vicco Zarate, Miguel Hernán Vicco
-- arXiv: 2611.21598
-- Plain-English subtitle: Teaching AI agents to remember old skills while learning new ones
-- Summary: An AI system called the Evolutionary Neuroplastic Agent learns to handle changing environments by keeping a library of specialized skills and retrieving the right one when conditions shift. When tested on classic control tasks, it retained past knowledge better than simpler alternatives, though it adapted more slowly than some competing methods.
-- Why it matters: Real-world robots and AI systems face environments that change over time—a delivery robot might encounter different weather, terrain, or traffic patterns. If they forget how to handle previous conditions while learning new ones, they become unreliable. This approach offers a path toward AI that can accumulate useful skills and reuse them without losing old abilities, which is essential for systems that need to operate reliably across shifting real-world conditions.
 
 ## About
 

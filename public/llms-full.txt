@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1180 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-19
+This file contains the complete plain-English text of all 1183 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-20
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI
+Subtitle: Why showing real examples beats listing dozens of confusing features
+URL: https://paperplaine.com/papers/overlooked-and-underutilized-prototypes
+Category: Computer Science · AI
+Authors: Jacek Karolczak, Jerzy Stefanowski
+arXiv ID: 2611.24831
+arXiv URL: https://arxiv.org/abs/2611.24831
+Posted: 2026-11-20
+
+Summary: Machine learning experts explain complex decisions by listing dozens of individual features—a strategy that exhausts non-experts trying to understand the system. This paper argues that showing actual examples (prototypes), especially grouped into meaningful clusters, makes AI decisions far easier to grasp. The researchers ground this in cognitive science and propose a new framework for validating whether these examples truly represent the underlying data.
+
+Why it matters: High-stakes decisions in healthcare, lending, and hiring increasingly rely on machine learning models that must pass human audit and regulatory scrutiny. If auditors can't understand how a model works without spending hours parsing feature lists, flawed or biased systems slip through unchecked. Switching to example-based explanations could make accountability real rather than theoretical, letting non-technical stakeholders actually verify whether a model's reasoning is sound.
+
+---
+Title: Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case
+Subtitle: Keeping ocean wave models stable despite delayed feedback and nonlinear effects
+URL: https://paperplaine.com/papers/exponential-boundary-stabilization-of
+Category: Mathematics
+Authors: Roberto de A. Capistrano Filho, Boumedìne Chentouf, Victor Hugo Gonzalez Martinez et al.
+arXiv ID: 2611.24756
+arXiv URL: https://arxiv.org/abs/2611.24756
+Posted: 2026-11-20
+
+Summary: Mathematicians proved that a complex model of coupled ocean waves can be controlled to calm down exponentially using imperfect, time-delayed feedback—even when the waves are large enough that nonlinear physics kicks in. The key was showing that solutions exist globally and decay at a predictable rate, provided the initial disturbance is sufficiently small and the system fits within a bounded region.
+
+Why it matters: Mathematical control of wave systems underpins real applications like coastal engineering and energy harvesting, where actuators always respond with some delay. This work removes a theoretical gap: previous results only worked for simplified linear versions. By proving the nonlinear system actually works, researchers can be more confident designing physical systems that use delayed feedback to dampen dangerous waves or oscillations.
+
+---
+Title: Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping
+Subtitle: Creating fake satellite data to map crop residue from limited real samples
+URL: https://paperplaine.com/papers/synthesizing-hyperspectral-data-using
+Category: Engineering
+Authors: Ege Artan, Shuo Chen, Andrew Peng et al.
+arXiv ID: 2611.24827
+arXiv URL: https://arxiv.org/abs/2611.24827
+Posted: 2026-11-20
+
+Summary: Researchers developed a system to generate synthetic hyperspectral satellite images that help train models to identify crop residue coverage from space—solving a critical shortage of real training data. The approach decouples data generation from analysis, allowing physical knowledge about light reflection to be incorporated, but the team found that without careful safeguards, the artificial data can become unrealistic and mislead the final predictions.
+
+Why it matters: Mapping crop residue cover across farmland is essential for understanding soil health, erosion risk, and carbon storage, but current satellite imagery lacks the right wavelengths to do this reliably at low cost. This work points toward a scalable solution: by smartly generating training data, researchers can build better crop-monitoring tools that farmers and land managers could deploy globally. The findings also expose a real risk in machine learning—synthetic data can look convincing while actually pushing models into false confidence—a lesson relevant wherever AI is trained on artificially expanded datasets.
 
 ---
 Title: Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation

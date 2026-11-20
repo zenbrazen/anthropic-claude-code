@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 16:19:14 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:58:52 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI</title>
+      <link>https://paperplaine.com/papers/overlooked-and-underutilized-prototypes</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/overlooked-and-underutilized-prototypes</guid>
+      <pubDate>Wed, 18 Nov 2026 18:00:55 GMT</pubDate>
+      <author>Jacek Karolczak, Jerzy Stefanowski</author>
+      <category>AI</category>
+      <description>Why showing real examples beats listing dozens of confusing features</description>
+      <content:encoded><![CDATA[<p><em>Why showing real examples beats listing dozens of confusing features</em></p><p>Machine learning experts explain complex decisions by listing dozens of individual features—a strategy that exhausts non-experts trying to understand the system. This paper argues that showing actual examples (prototypes), especially grouped into meaningful clusters, makes AI decisions far easier to grasp. The researchers ground this in cognitive science and propose a new framework for validating whether these examples truly represent the underlying data.</p><p><strong>Why it matters:</strong> High-stakes decisions in healthcare, lending, and hiring increasingly rely on machine learning models that must pass human audit and regulatory scrutiny. If auditors can't understand how a model works without spending hours parsing feature lists, flawed or biased systems slip through unchecked. Switching to example-based explanations could make accountability real rather than theoretical, letting non-technical stakeholders actually verify whether a model's reasoning is sound.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case</title>
+      <link>https://paperplaine.com/papers/exponential-boundary-stabilization-of</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/exponential-boundary-stabilization-of</guid>
+      <pubDate>Wed, 18 Nov 2026 17:11:45 GMT</pubDate>
+      <author>Roberto de A. Capistrano Filho, Boumedìne Chentouf, Victor Hugo Gonzalez Martinez et al.</author>
+      <category>Math</category>
+      <description>Keeping ocean wave models stable despite delayed feedback and nonlinear effects</description>
+      <content:encoded><![CDATA[<p><em>Keeping ocean wave models stable despite delayed feedback and nonlinear effects</em></p><p>Mathematicians proved that a complex model of coupled ocean waves can be controlled to calm down exponentially using imperfect, time-delayed feedback—even when the waves are large enough that nonlinear physics kicks in. The key was showing that solutions exist globally and decay at a predictable rate, provided the initial disturbance is sufficiently small and the system fits within a bounded region.</p><p><strong>Why it matters:</strong> Mathematical control of wave systems underpins real applications like coastal engineering and energy harvesting, where actuators always respond with some delay. This work removes a theoretical gap: previous results only worked for simplified linear versions. By proving the nonlinear system actually works, researchers can be more confident designing physical systems that use delayed feedback to dampen dangerous waves or oscillations.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping</title>
+      <link>https://paperplaine.com/papers/synthesizing-hyperspectral-data-using</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/synthesizing-hyperspectral-data-using</guid>
+      <pubDate>Wed, 18 Nov 2026 17:58:21 GMT</pubDate>
+      <author>Ege Artan, Shuo Chen, Andrew Peng et al.</author>
+      <category>Engineering</category>
+      <description>Creating fake satellite data to map crop residue from limited real samples</description>
+      <content:encoded><![CDATA[<p><em>Creating fake satellite data to map crop residue from limited real samples</em></p><p>Researchers developed a system to generate synthetic hyperspectral satellite images that help train models to identify crop residue coverage from space—solving a critical shortage of real training data. The approach decouples data generation from analysis, allowing physical knowledge about light reflection to be incorporated, but the team found that without careful safeguards, the artificial data can become unrealistic and mislead the final predictions.</p><p><strong>Why it matters:</strong> Mapping crop residue cover across farmland is essential for understanding soil health, erosion risk, and carbon storage, but current satellite imagery lacks the right wavelengths to do this reliably at low cost. This work points toward a scalable solution: by smartly generating training data, researchers can build better crop-monitoring tools that farmers and land managers could deploy globally. The findings also expose a real risk in machine learning—synthetic data can look convincing while actually pushing models into false confidence—a lesson relevant wherever AI is trained on artificially expanded datasets.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation</title>
       <link>https://paperplaine.com/papers/decomposing-sgd-dynamics-in</link>
