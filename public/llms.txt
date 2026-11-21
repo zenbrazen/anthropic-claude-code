@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1189 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1192 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 406 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 407 papers in archive.
+  - "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming"
   - "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)"
-  - "Active Feature Acquisition by Distilling an Oracle Teacher"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 95 papers in archive.
   - "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving"
   - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 100 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 101 papers in archive.
+  - "How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics"
   - "Residual Allan Stability under Periodic Auxiliary Ramsey Sampling"
-  - "Same Papers, Different Verdicts: Tracing Version Drift in LLM Peer Review"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 101 papers in archive.
   - "Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case"
   - "Binary Affine Optimization with Nearly-Graphic Constraint Matrices"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 102 papers in archive.
   - "Conformal Selection for Hierarchical Streaming Data"
   - "Fold Weighting for Cross-Validation Under Continuous Distributional Drift"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 95 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 96 papers in archive.
+  - "From power to spectrum: an off-the-shelf photodiode turned into a spectrometer by its bias alone"
   - "Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping"
-  - "Exponential Quantum Memory Advantage for Late-Graph Smoothness and Spectral Estimation"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 84 papers in archive.
   - "Interpreting the Morbidity Gap"
   - "Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan"
 
 ## 10 most recent papers
+
+### TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming
+- URL: https://paperplaine.com/papers/tidecache-efficient-hybrid-llm
+- Category: Computer Science · AI
+- Authors: Jinbin Luo, Xiaozhe Yao, Shang Yang et al.
+- arXiv: 2611.26619
+- Plain-English subtitle: Making AI language models faster by smartly sharing memory between chips
+- Summary: TideCache is a system that lets AI language models run faster on specialized hardware by automatically managing where to store the data they need—whether that's on the fast GPU chip or slower main memory. The system completes up to twice as many conversation turns per session and cuts response time delays by 20–59%, while speeding up initial response time by up to 3x compared with existing approaches.
+- Why it matters: As AI models get bigger and more complex, the bottleneck isn't computing speed—it's managing memory efficiently. TideCache lets companies run these models on existing hardware without buying expensive upgrades, cutting costs while handling more simultaneous users. For applications like customer service agents or coding assistants, faster response times and higher throughput mean better user experience and lower infrastructure spend.
+
+### From power to spectrum: an off-the-shelf photodiode turned into a spectrometer by its bias alone
+- URL: https://paperplaine.com/papers/from-power-to-spectrum
+- Category: Engineering
+- Authors: Roi Yozevitch, Shmuel Sternklar, Ziv Glasser
+- arXiv: 2611.26532
+- Plain-English subtitle: A regular light detector becomes a color analyzer just by changing voltage
+- Summary: Researchers turned an ordinary commercial photodiode into a spectrometer—a device that identifies different colors of light—without any physical modifications, filters, or special fabrication. By applying a carefully timed electrical signal to the detector, they encoded color information into the shape of the electrical output, which a neural network then decoded to identify laser wavelengths with precision down to 0.3 nanometers and track their power levels.
+- Why it matters: Spectrometers are expensive and bulky, limiting where they can be used. This technique transforms cheap, mass-produced photodiodes already installed in countless devices into functional spectrometers—meaning any existing power monitor could gain color-sensing capabilities with just a software update. That could make spectral analysis available for applications from telecommunications to environmental monitoring at a fraction of today's cost.
+
+### How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics
+- URL: https://paperplaine.com/papers/how-should-candidates-be
+- Category: Physics
+- Authors: Daria Boratyn, Dariusz Stolicki
+- arXiv: 2611.26337
+- Plain-English subtitle: How to fairly rank political candidates on proportional representation ballots
+- Summary: When elections use open-list proportional representation, candidates at different positions on the ballot receive different numbers of votes, so researchers need a principled way to weight them in statistical analyses. The authors derive that harmonic weights—a mathematical pattern where the k-th candidate gets weight 1/k—emerge naturally from probabilistic models of how votes distribute across candidates, without requiring assumptions about vote concentration that vary unpredictably across countries and elections.
+- Why it matters: Electoral systems in many democracies require aggregating candidate-level data to measure party performance or electoral fairness, but weighting candidates incorrectly can bias conclusions about how proportional the system actually is. Harmonic weights offer a theoretically justified, universally applicable approach that works across different countries, parties, and election contexts without requiring researchers to guess at invisible parameters.
 
 ### Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)
 - URL: https://paperplaine.com/papers/replication-of-agentic-security
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Why showing real examples beats listing dozens of confusing features
 - Summary: Machine learning experts explain complex decisions by listing dozens of individual features—a strategy that exhausts non-experts trying to understand the system. This paper argues that showing actual examples (prototypes), especially grouped into meaningful clusters, makes AI decisions far easier to grasp. The researchers ground this in cognitive science and propose a new framework for validating whether these examples truly represent the underlying data.
 - Why it matters: High-stakes decisions in healthcare, lending, and hiring increasingly rely on machine learning models that must pass human audit and regulatory scrutiny. If auditors can't understand how a model works without spending hours parsing feature lists, flawed or biased systems slip through unchecked. Switching to example-based explanations could make accountability real rather than theoretical, letting non-technical stakeholders actually verify whether a model's reasoning is sound.
-
-### Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case
-- URL: https://paperplaine.com/papers/exponential-boundary-stabilization-of
-- Category: Mathematics
-- Authors: Roberto de A. Capistrano Filho, Boumedìne Chentouf, Victor Hugo Gonzalez Martinez et al.
-- arXiv: 2611.24756
-- Plain-English subtitle: Keeping ocean wave models stable despite delayed feedback and nonlinear effects
-- Summary: Mathematicians proved that a complex model of coupled ocean waves can be controlled to calm down exponentially using imperfect, time-delayed feedback—even when the waves are large enough that nonlinear physics kicks in. The key was showing that solutions exist globally and decay at a predictable rate, provided the initial disturbance is sufficiently small and the system fits within a bounded region.
-- Why it matters: Mathematical control of wave systems underpins real applications like coastal engineering and energy harvesting, where actuators always respond with some delay. This work removes a theoretical gap: previous results only worked for simplified linear versions. By proving the nonlinear system actually works, researchers can be more confident designing physical systems that use delayed feedback to dampen dangerous waves or oscillations.
-
-### Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping
-- URL: https://paperplaine.com/papers/synthesizing-hyperspectral-data-using
-- Category: Engineering
-- Authors: Ege Artan, Shuo Chen, Andrew Peng et al.
-- arXiv: 2611.24827
-- Plain-English subtitle: Creating fake satellite data to map crop residue from limited real samples
-- Summary: Researchers developed a system to generate synthetic hyperspectral satellite images that help train models to identify crop residue coverage from space—solving a critical shortage of real training data. The approach decouples data generation from analysis, allowing physical knowledge about light reflection to be incorporated, but the team found that without careful safeguards, the artificial data can become unrealistic and mislead the final predictions.
-- Why it matters: Mapping crop residue cover across farmland is essential for understanding soil health, erosion risk, and carbon storage, but current satellite imagery lacks the right wavelengths to do this reliably at low cost. This work points toward a scalable solution: by smartly generating training data, researchers can build better crop-monitoring tools that farmers and land managers could deploy globally. The findings also expose a real risk in machine learning—synthetic data can look convincing while actually pushing models into false confidence—a lesson relevant wherever AI is trained on artificially expanded datasets.
-
-### Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation
-- URL: https://paperplaine.com/papers/decomposing-sgd-dynamics-in
-- Category: Computer Science · AI
-- Authors: Samet Demir, Zafer Dogan
-- arXiv: 2611.24908
-- Plain-English subtitle: Why neural networks learn useless features that make them worse at generalizing
-- Summary: Neural networks trained with a standard algorithm learn features that go beyond what they actually need to solve a task, and this extra learning consistently harms their ability to perform well on new data. The researchers traced this problem to a specific mechanism: the network's internal structure develops unexpected patterns in directions unrelated to the task, amplifying noise and degrading accuracy.
-- Why it matters: Understanding what makes neural networks overfit is essential for building more reliable AI systems. These findings suggest that simply preventing networks from learning irrelevant features—a tactic the team tested—could improve real-world performance. As neural networks become central to high-stakes decisions in medicine, finance, and autonomous systems, reducing unnecessary learning is a concrete lever for making them more trustworthy.
 
 ## About
 

@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 00:33:07 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 15:06:28 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming</title>
+      <link>https://paperplaine.com/papers/tidecache-efficient-hybrid-llm</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/tidecache-efficient-hybrid-llm</guid>
+      <pubDate>Thu, 19 Nov 2026 18:58:31 GMT</pubDate>
+      <author>Jinbin Luo, Xiaozhe Yao, Shang Yang et al.</author>
+      <category>AI</category>
+      <description>Making AI language models faster by smartly sharing memory between chips</description>
+      <content:encoded><![CDATA[<p><em>Making AI language models faster by smartly sharing memory between chips</em></p><p>TideCache is a system that lets AI language models run faster on specialized hardware by automatically managing where to store the data they need—whether that's on the fast GPU chip or slower main memory. The system completes up to twice as many conversation turns per session and cuts response time delays by 20–59%, while speeding up initial response time by up to 3x compared with existing approaches.</p><p><strong>Why it matters:</strong> As AI models get bigger and more complex, the bottleneck isn't computing speed—it's managing memory efficiently. TideCache lets companies run these models on existing hardware without buying expensive upgrades, cutting costs while handling more simultaneous users. For applications like customer service agents or coding assistants, faster response times and higher throughput mean better user experience and lower infrastructure spend.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>From power to spectrum: an off-the-shelf photodiode turned into a spectrometer by its bias alone</title>
+      <link>https://paperplaine.com/papers/from-power-to-spectrum</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/from-power-to-spectrum</guid>
+      <pubDate>Thu, 19 Nov 2026 18:12:13 GMT</pubDate>
+      <author>Roi Yozevitch, Shmuel Sternklar, Ziv Glasser</author>
+      <category>Engineering</category>
+      <description>A regular light detector becomes a color analyzer just by changing voltage</description>
+      <content:encoded><![CDATA[<p><em>A regular light detector becomes a color analyzer just by changing voltage</em></p><p>Researchers turned an ordinary commercial photodiode into a spectrometer—a device that identifies different colors of light—without any physical modifications, filters, or special fabrication. By applying a carefully timed electrical signal to the detector, they encoded color information into the shape of the electrical output, which a neural network then decoded to identify laser wavelengths with precision down to 0.3 nanometers and track their power levels.</p><p><strong>Why it matters:</strong> Spectrometers are expensive and bulky, limiting where they can be used. This technique transforms cheap, mass-produced photodiodes already installed in countless devices into functional spectrometers—meaning any existing power monitor could gain color-sensing capabilities with just a software update. That could make spectral analysis available for applications from telecommunications to environmental monitoring at a fraction of today's cost.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics</title>
+      <link>https://paperplaine.com/papers/how-should-candidates-be</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/how-should-candidates-be</guid>
+      <pubDate>Thu, 19 Nov 2026 16:15:53 GMT</pubDate>
+      <author>Daria Boratyn, Dariusz Stolicki</author>
+      <category>Physics</category>
+      <description>How to fairly rank political candidates on proportional representation ballots</description>
+      <content:encoded><![CDATA[<p><em>How to fairly rank political candidates on proportional representation ballots</em></p><p>When elections use open-list proportional representation, candidates at different positions on the ballot receive different numbers of votes, so researchers need a principled way to weight them in statistical analyses. The authors derive that harmonic weights—a mathematical pattern where the k-th candidate gets weight 1/k—emerge naturally from probabilistic models of how votes distribute across candidates, without requiring assumptions about vote concentration that vary unpredictably across countries and elections.</p><p><strong>Why it matters:</strong> Electoral systems in many democracies require aggregating candidate-level data to measure party performance or electoral fairness, but weighting candidates incorrectly can bias conclusions about how proportional the system actually is. Harmonic weights offer a theoretically justified, universally applicable approach that works across different countries, parties, and election contexts without requiring researchers to guess at invisible parameters.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)</title>
       <link>https://paperplaine.com/papers/replication-of-agentic-security</link>

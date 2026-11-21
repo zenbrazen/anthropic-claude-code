@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1189 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1192 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-21
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming
+Subtitle: Making AI language models faster by smartly sharing memory between chips
+URL: https://paperplaine.com/papers/tidecache-efficient-hybrid-llm
+Category: Computer Science · AI
+Authors: Jinbin Luo, Xiaozhe Yao, Shang Yang et al.
+arXiv ID: 2611.26619
+arXiv URL: https://arxiv.org/abs/2611.26619
+Posted: 2026-11-21
+
+Summary: TideCache is a system that lets AI language models run faster on specialized hardware by automatically managing where to store the data they need—whether that's on the fast GPU chip or slower main memory. The system completes up to twice as many conversation turns per session and cuts response time delays by 20–59%, while speeding up initial response time by up to 3x compared with existing approaches.
+
+Why it matters: As AI models get bigger and more complex, the bottleneck isn't computing speed—it's managing memory efficiently. TideCache lets companies run these models on existing hardware without buying expensive upgrades, cutting costs while handling more simultaneous users. For applications like customer service agents or coding assistants, faster response times and higher throughput mean better user experience and lower infrastructure spend.
+
+---
+Title: From power to spectrum: an off-the-shelf photodiode turned into a spectrometer by its bias alone
+Subtitle: A regular light detector becomes a color analyzer just by changing voltage
+URL: https://paperplaine.com/papers/from-power-to-spectrum
+Category: Engineering
+Authors: Roi Yozevitch, Shmuel Sternklar, Ziv Glasser
+arXiv ID: 2611.26532
+arXiv URL: https://arxiv.org/abs/2611.26532
+Posted: 2026-11-21
+
+Summary: Researchers turned an ordinary commercial photodiode into a spectrometer—a device that identifies different colors of light—without any physical modifications, filters, or special fabrication. By applying a carefully timed electrical signal to the detector, they encoded color information into the shape of the electrical output, which a neural network then decoded to identify laser wavelengths with precision down to 0.3 nanometers and track their power levels.
+
+Why it matters: Spectrometers are expensive and bulky, limiting where they can be used. This technique transforms cheap, mass-produced photodiodes already installed in countless devices into functional spectrometers—meaning any existing power monitor could gain color-sensing capabilities with just a software update. That could make spectral analysis available for applications from telecommunications to environmental monitoring at a fraction of today's cost.
+
+---
+Title: How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics
+Subtitle: How to fairly rank political candidates on proportional representation ballots
+URL: https://paperplaine.com/papers/how-should-candidates-be
+Category: Physics
+Authors: Daria Boratyn, Dariusz Stolicki
+arXiv ID: 2611.26337
+arXiv URL: https://arxiv.org/abs/2611.26337
+Posted: 2026-11-21
+
+Summary: When elections use open-list proportional representation, candidates at different positions on the ballot receive different numbers of votes, so researchers need a principled way to weight them in statistical analyses. The authors derive that harmonic weights—a mathematical pattern where the k-th candidate gets weight 1/k—emerge naturally from probabilistic models of how votes distribute across candidates, without requiring assumptions about vote concentration that vary unpredictably across countries and elections.
+
+Why it matters: Electoral systems in many democracies require aggregating candidate-level data to measure party performance or electoral fairness, but weighting candidates incorrectly can bias conclusions about how proportional the system actually is. Harmonic weights offer a theoretically justified, universally applicable approach that works across different countries, parties, and election contexts without requiring researchers to guess at invisible parameters.
 
 ---
 Title: Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)
