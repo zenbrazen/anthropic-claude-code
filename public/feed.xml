@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 15:06:28 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 23:40:58 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control</title>
+      <link>https://paperplaine.com/papers/agentrobocritic-understanding-the-capability</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/agentrobocritic-understanding-the-capability</guid>
+      <pubDate>Thu, 19 Nov 2026 18:57:25 GMT</pubDate>
+      <author>Yiyang Du, Yuxuan Kuang, Qitao Zhao et al.</author>
+      <category>AI</category>
+      <description>What makes advanced AI robots succeed or fail at manipulation tasks</description>
+      <content:encoded><![CDATA[<p><em>What makes advanced AI robots succeed or fail at manipulation tasks</em></p><p>Researchers used a new technique called AgentRoboCritic to analyze how frontier AI agents like GPT-6 Astra control robots at the action level, rather than just measuring whether entire tasks succeed or fail. The analysis revealed these agents can recover from mistakes, understand objects correctly across different scenes, and perform complex manipulation without task-specific training—but still struggle with specific physical challenges like grasping and precise alignment.</p><p><strong>Why it matters:</strong> As AI systems take on more physical robot tasks, understanding exactly where and why they fail becomes critical for safe deployment. This framework and dataset enable researchers to spot systematic weaknesses—like consistent failures at grasping—rather than just seeing that "60% of tasks succeeded," making it possible to target improvements where they matter most.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs</title>
+      <link>https://paperplaine.com/papers/visual-attribution-limits-and</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/visual-attribution-limits-and</guid>
+      <pubDate>Thu, 19 Nov 2026 17:56:06 GMT</pubDate>
+      <author>Haocheng Mei, Yuchuan Tian, Yingte Shu et al.</author>
+      <category>Comp Sci</category>
+      <description>Can you trust which AI model actually made your video?</description>
+      <content:encoded><![CDATA[<p><em>Can you trust which AI model actually made your video?</em></p><p>Researchers tested whether you can verify which video-generation service actually created a file you received, rather than a cheaper substitute. They found that only cryptographic signatures from one provider (BytePlus) reliably proved what was promised, while visual fingerprints fail once videos are re-encoded or compressed—dropping from 84% accuracy to 45% after basic processing.</p><p><strong>Why it matters:</strong> Video-generation APIs charge different prices for different models and quality tiers, but intermediaries could pocket the difference by substituting cheaper services without detection. This work shows what auditing can and cannot prove, helping customers and regulators distinguish real fraud from legitimate processing, and revealing that most providers lack the authentication needed to catch deliberate substitution.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Optimal Control in Pairs Trading with Negative-Power Utility</title>
+      <link>https://paperplaine.com/papers/optimal-control-in-pairs</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/optimal-control-in-pairs</guid>
+      <pubDate>Thu, 19 Nov 2026 18:35:56 GMT</pubDate>
+      <author>Aleksei Kozhevnikov</author>
+      <category>Math</category>
+      <description>How to bet on market mispricings without losing everything</description>
+      <content:encoded><![CDATA[<p><em>How to bet on market mispricings without losing everything</em></p><p>Mathematicians solved the problem of how to best invest money in pairs trading—a strategy where you bet that two related stock prices will move back together. Using a new approach to a classic optimization equation, they found explicit formulas for how much to invest and when, and proved these strategies never let your account go negative. The results show that when interest rates are low enough, your wealth stays bounded and predictable; when rates are higher, wealth can spike unpredictably, and there's a point in time beyond which expected returns become infinite even though the optimal strategy itself remains sensible.</p><p><strong>Why it matters:</strong> Pairs trading is a real strategy used by hedge funds and algorithmic traders to profit from temporary price misalignments. This paper gives traders the first explicit, proven-optimal playbook for sizing positions and deciding when to buy or sell, without relying on approximations or simulations. The sharp prediction about when expected wealth explodes—even as the strategy stays rational—explains a real practical danger: at certain market conditions and time horizons, the math says your best move is still a risky one.</p>]]></content:encoded>
+    </item>
     <item>
       <title>TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming</title>
       <link>https://paperplaine.com/papers/tidecache-efficient-hybrid-llm</link>

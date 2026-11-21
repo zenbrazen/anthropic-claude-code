@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1192 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1195 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 407 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 408 papers in archive.
+  - "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control"
   - "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming"
-  - "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 95 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 96 papers in archive.
+  - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
   - "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving"
-  - "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 101 papers in archive.
   - "How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics"
   - "Residual Allan Stability under Periodic Auxiliary Ramsey Sampling"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 101 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 102 papers in archive.
+  - "Optimal Control in Pairs Trading with Negative-Power Utility"
   - "Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case"
-  - "Binary Affine Optimization with Nearly-Graphic Constraint Matrices"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 104 papers in archive.
   - "A Control-Theoretic Approximation to Predictive Coding Dynamics"
   - "A Dual-SOM Learner Model of Instructional Efficiency within Cognitive Load Theory"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan"
 
 ## 10 most recent papers
+
+### AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control
+- URL: https://paperplaine.com/papers/agentrobocritic-understanding-the-capability
+- Category: Computer Science · AI
+- Authors: Yiyang Du, Yuxuan Kuang, Qitao Zhao et al.
+- arXiv: 2611.26613
+- Plain-English subtitle: What makes advanced AI robots succeed or fail at manipulation tasks
+- Summary: Researchers used a new technique called AgentRoboCritic to analyze how frontier AI agents like GPT-6 Astra control robots at the action level, rather than just measuring whether entire tasks succeed or fail. The analysis revealed these agents can recover from mistakes, understand objects correctly across different scenes, and perform complex manipulation without task-specific training—but still struggle with specific physical challenges like grasping and precise alignment.
+- Why it matters: As AI systems take on more physical robot tasks, understanding exactly where and why they fail becomes critical for safe deployment. This framework and dataset enable researchers to spot systematic weaknesses—like consistent failures at grasping—rather than just seeing that "60% of tasks succeeded," making it possible to target improvements where they matter most.
+
+### Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs
+- URL: https://paperplaine.com/papers/visual-attribution-limits-and
+- Category: Computer Science
+- Authors: Haocheng Mei, Yuchuan Tian, Yingte Shu et al.
+- arXiv: 2611.26508
+- Plain-English subtitle: Can you trust which AI model actually made your video?
+- Summary: Researchers tested whether you can verify which video-generation service actually created a file you received, rather than a cheaper substitute. They found that only cryptographic signatures from one provider (BytePlus) reliably proved what was promised, while visual fingerprints fail once videos are re-encoded or compressed—dropping from 84% accuracy to 45% after basic processing.
+- Why it matters: Video-generation APIs charge different prices for different models and quality tiers, but intermediaries could pocket the difference by substituting cheaper services without detection. This work shows what auditing can and cannot prove, helping customers and regulators distinguish real fraud from legitimate processing, and revealing that most providers lack the authentication needed to catch deliberate substitution.
+
+### Optimal Control in Pairs Trading with Negative-Power Utility
+- URL: https://paperplaine.com/papers/optimal-control-in-pairs
+- Category: Mathematics
+- Authors: Aleksei Kozhevnikov
+- arXiv: 2611.26568
+- Plain-English subtitle: How to bet on market mispricings without losing everything
+- Summary: Mathematicians solved the problem of how to best invest money in pairs trading—a strategy where you bet that two related stock prices will move back together. Using a new approach to a classic optimization equation, they found explicit formulas for how much to invest and when, and proved these strategies never let your account go negative. The results show that when interest rates are low enough, your wealth stays bounded and predictable; when rates are higher, wealth can spike unpredictably, and there's a point in time beyond which expected returns become infinite even though the optimal strategy itself remains sensible.
+- Why it matters: Pairs trading is a real strategy used by hedge funds and algorithmic traders to profit from temporary price misalignments. This paper gives traders the first explicit, proven-optimal playbook for sizing positions and deciding when to buy or sell, without relying on approximations or simulations. The sharp prediction about when expected wealth explodes—even as the strategy stays rational—explains a real practical danger: at certain market conditions and time horizons, the math says your best move is still a risky one.
 
 ### TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming
 - URL: https://paperplaine.com/papers/tidecache-efficient-hybrid-llm
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI which medical tests to order first to save time and money
 - Summary: Doctors often order more medical tests than necessary, wasting money and patient time. This paper presents a method that learns which features or test results matter most for diagnosis, ranked by an ideal teacher trained on complete patient data. The system recovers 90% of the diagnostic accuracy using less than a quarter of the typical test costs.
 - Why it matters: Healthcare systems spend billions on redundant tests and measurements. This approach could reduce unnecessary lab work and imaging while maintaining diagnostic accuracy—cutting costs directly while keeping patients out of medical facilities longer. The method works across different types of medical data and generalizes to other expensive measurements beyond medicine.
-
-### ChainIT Transaction Truth: Stablecoins, Web3 Wallets, and Multi-Rail Commerce. A Zero-Trust Control Plane for Verified Identity, Organizational Authority, Runtime Compliance, Secure Wallet Execution, and Immutable Settlement Evidence
-- URL: https://paperplaine.com/papers/chainit-transaction-truth-stablecoins
-- Category: Quantitative Finance
-- Authors: Eric Tacl, Matthew Koepp, Tim Hines et al.
-- arXiv: 2611.24659
-- Plain-English subtitle: Who actually authorized that crypto payment? A system to prove it.
-- Summary: Moving money on blockchains requires more than a valid digital signature — it requires proof of who initiated the transaction, which organization authorized it, whether it complies with current rules, and that the payment actually settled. This paper describes ChainIT, a system that places identity verification and compliance checks before a transaction executes, then records complete evidence afterward, treating a blockchain confirmation as only one step in a commercial transaction, not the final word.
-- Why it matters: Stablecoins and blockchain wallets are already moving real money across companies and borders, but today no one can definitively prove who authorized a payment or whether it violated compliance rules at the moment of transfer. This creates liability gaps for banks and enterprises processing high-value transactions. ChainIT's approach — separating wallet control from organizational authority from compliance from final settlement — could let financial institutions and regulators trace the full chain of responsibility for every transaction, turning a cryptographic proof into genuine commercial certainty.
-
-### Interpreting the Morbidity Gap
-- URL: https://paperplaine.com/papers/interpreting-the-morbidity-gap
-- Category: Economics
-- Authors: Alec Morton
-- arXiv: 2611.26365
-- Plain-English subtitle: Why living longer doesn't always mean living healthier
-- Summary: A new health metric called the morbidity gap—the difference between how long people live and how long they live in good health—is widening as countries get better at preventing death. The research reveals a counterintuitive truth: when mortality rates fall, the morbidity gap actually grows, meaning people spend more years living with disability even though they're living longer overall. Singapore's morbidity gap expanded from 8.9 to 11.2 years between 1990 and 2023, illustrating this trend across a real population.
-- Why it matters: Health systems currently celebrate increases in life expectancy as an unambiguous win, but this analysis shows the full picture is more complicated. If preventing early deaths means more people survive into years plagued by chronic illness or disability, societies need to adjust their health priorities—investing not just in keeping people alive longer, but in keeping them healthy during those extra years. This gap measurement forces governments and health agencies to confront whether their investments in disease control are actually improving quality of life or just delaying suffering.
-
-### Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI
-- URL: https://paperplaine.com/papers/overlooked-and-underutilized-prototypes
-- Category: Computer Science · AI
-- Authors: Jacek Karolczak, Jerzy Stefanowski
-- arXiv: 2611.24831
-- Plain-English subtitle: Why showing real examples beats listing dozens of confusing features
-- Summary: Machine learning experts explain complex decisions by listing dozens of individual features—a strategy that exhausts non-experts trying to understand the system. This paper argues that showing actual examples (prototypes), especially grouped into meaningful clusters, makes AI decisions far easier to grasp. The researchers ground this in cognitive science and propose a new framework for validating whether these examples truly represent the underlying data.
-- Why it matters: High-stakes decisions in healthcare, lending, and hiring increasingly rely on machine learning models that must pass human audit and regulatory scrutiny. If auditors can't understand how a model works without spending hours parsing feature lists, flawed or biased systems slip through unchecked. Switching to example-based explanations could make accountability real rather than theoretical, letting non-technical stakeholders actually verify whether a model's reasoning is sound.
 
 ## About
 

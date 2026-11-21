@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.26613",
+    "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+    "authors": "Yiyang Du, Yuxuan Kuang, Qitao Zhao et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-19T18:57:25Z",
+    "publishedFormatted": "Nov 19, 2026",
+    "subtitle": "What makes advanced AI robots succeed or fail at manipulation tasks",
+    "summary": "Researchers used a new technique called AgentRoboCritic to analyze how frontier AI agents like GPT-6 Astra control robots at the action level, rather than just measuring whether entire tasks succeed or fail. The analysis revealed these agents can recover from mistakes, understand objects correctly across different scenes, and perform complex manipulation without task-specific training—but still struggle with specific physical challenges like grasping and precise alignment.",
+    "whyItMatters": "As AI systems take on more physical robot tasks, understanding exactly where and why they fail becomes critical for safe deployment. This framework and dataset enable researchers to spot systematic weaknesses—like consistent failures at grasping—rather than just seeing that \"60% of tasks succeeded,\" making it possible to target improvements where they matter most.",
+    "fetchedAt": "2026-11-21T23:40:50.353Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 186
+    },
+    "slug": "agentrobocritic-understanding-the-capability"
+  },
+  {
+    "id": "2611.26508",
+    "title": "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs",
+    "authors": "Haocheng Mei, Yuchuan Tian, Yingte Shu et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-11-19T17:56:06Z",
+    "publishedFormatted": "Nov 19, 2026",
+    "subtitle": "Can you trust which AI model actually made your video?",
+    "summary": "Researchers tested whether you can verify which video-generation service actually created a file you received, rather than a cheaper substitute. They found that only cryptographic signatures from one provider (BytePlus) reliably proved what was promised, while visual fingerprints fail once videos are re-encoded or compressed—dropping from 84% accuracy to 45% after basic processing.",
+    "whyItMatters": "Video-generation APIs charge different prices for different models and quality tiers, but intermediaries could pocket the difference by substituting cheaper services without detection. This work shows what auditing can and cannot prove, helping customers and regulators distinguish real fraud from legitimate processing, and revealing that most providers lack the authentication needed to catch deliberate substitution.",
+    "fetchedAt": "2026-11-21T23:40:53.483Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 23,
+      "wordCount": 184
+    },
+    "slug": "visual-attribution-limits-and"
+  },
+  {
+    "id": "2611.26568",
+    "title": "Optimal Control in Pairs Trading with Negative-Power Utility",
+    "authors": "Aleksei Kozhevnikov",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-11-19T18:35:56Z",
+    "publishedFormatted": "Nov 19, 2026",
+    "subtitle": "How to bet on market mispricings without losing everything",
+    "summary": "Mathematicians solved the problem of how to best invest money in pairs trading—a strategy where you bet that two related stock prices will move back together. Using a new approach to a classic optimization equation, they found explicit formulas for how much to invest and when, and proved these strategies never let your account go negative. The results show that when interest rates are low enough, your wealth stays bounded and predictable; when rates are higher, wealth can spike unpredictably, and there's a point in time beyond which expected returns become infinite even though the optimal strategy itself remains sensible.",
+    "whyItMatters": "Pairs trading is a real strategy used by hedge funds and algorithmic traders to profit from temporary price misalignments. This paper gives traders the first explicit, proven-optimal playbook for sizing positions and deciding when to buy or sell, without relying on approximations or simulations. The sharp prediction about when expected wealth explodes—even as the strategy stays rational—explains a real practical danger: at certain market conditions and time horizons, the math says your best move is still a risky one.",
+    "fetchedAt": "2026-11-21T23:40:57.641Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 14,
+      "wordCount": 168
+    },
+    "slug": "optimal-control-in-pairs"
+  },
+  {
     "id": "2611.26619",
     "title": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
     "authors": "Jinbin Luo, Xiaozhe Yao, Shang Yang et al.",
