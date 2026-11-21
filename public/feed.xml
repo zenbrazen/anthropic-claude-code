@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 15:55:28 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 00:33:07 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)</title>
+      <link>https://paperplaine.com/papers/replication-of-agentic-security</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/replication-of-agentic-security</guid>
+      <pubDate>Thu, 19 Nov 2026 18:23:35 GMT</pubDate>
+      <author>Mengxiao Wang, Mahbub Alam, Kalyan Nakka et al.</author>
+      <category>AI</category>
+      <description>Testing whether AI agents really cause the disasters reported in the news</description>
+      <content:encoded><![CDATA[<p><em>Testing whether AI agents really cause the disasters reported in the news</em></p><p>Researchers built a system that recreates 108 real-world incidents where AI agents (powered by ChatGPT, Claude, Gemini, and others) went wrong—deleting databases, sending unauthorized payments, or making costly mistakes. They successfully reproduced the reported harm in 89% of cases. The surprising finding: most incidents weren't caused by attackers tricking the AI, but by agents simply missing obvious hazards like a production database sitting next to a test one.</p><p><strong>Why it matters:</strong> As AI agents gain access to delete files, transfer money, and run code for us, knowing what actually goes wrong matters for safety. Right now, incident reports tell us *what* happened but rarely *why*, leaving companies unable to fix root causes. This framework lets vendors test whether new versions of their AI systems repeat old mistakes before deploying them—and shows that simple warnings naming the specific hazard cut mistakes substantially, offering a practical first line of defense.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A Control-Theoretic Approximation to Predictive Coding Dynamics</title>
+      <link>https://paperplaine.com/papers/a-control-theoretic-approximation</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/a-control-theoretic-approximation</guid>
+      <pubDate>Thu, 19 Nov 2026 16:04:50 GMT</pubDate>
+      <author>Ryan Fayyazi, Kyle Daruwalla, Mitra Javadzadeh</author>
+      <category>Biology</category>
+      <description>How brain-inspired learning algorithms relate to control theory</description>
+      <content:encoded><![CDATA[<p><em>How brain-inspired learning algorithms relate to control theory</em></p><p>Researchers discovered that a brain-plausible learning method called deep feedback control is actually a simplified version of predictive coding—a competing approach to training neural networks without backpropagation. The two methods produce nearly identical results on image recognition tasks, and networks trained with one method can directly use weights learned by the other, suggesting they tap into the same underlying principles.</p><p><strong>Why it matters:</strong> Understanding how different biologically plausible learning algorithms connect could accelerate development of AI systems that work more like brains. If control theory tools can be applied to predictive coding, researchers gain powerful mathematical methods from engineering to design and analyze these brain-inspired networks, potentially leading to more efficient training methods that require less compute.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Conformal Selection for Hierarchical Streaming Data</title>
+      <link>https://paperplaine.com/papers/conformal-selection-for-hierarchical</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/conformal-selection-for-hierarchical</guid>
+      <pubDate>Thu, 19 Nov 2026 16:10:32 GMT</pubDate>
+      <author>Zhenyuan Sun, Chengyao Yu, Ruixing Ming et al.</author>
+      <category>Statistics</category>
+      <description>Deciding which candidates to pick before knowing their results</description>
+      <content:encoded><![CDATA[<p><em>Deciding which candidates to pick before knowing their results</em></p><p>Researchers developed a statistical method for making real-time selection decisions about candidates arriving from different groups, without knowing their eventual outcomes. The approach works even when data comes from hierarchical structures—such as students from different schools or patients from different hospitals—and maintains a controlled false discovery rate, meaning it reliably avoids selecting too many wrong candidates by chance.</p><p><strong>Why it matters:</strong> Real organizations constantly make time-sensitive selections: hiring committees screening applicants before seeing job performance, loan officers approving borrowers before knowing repayment outcomes, or clinical trials enrolling patients before observing treatment effects. This method lets decision-makers maintain statistical rigor and fairness across different groups while making these choices on a rolling basis, rather than having to wait until all data arrives.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Active Feature Acquisition by Distilling an Oracle Teacher</title>
       <link>https://paperplaine.com/papers/active-feature-acquisition-by</link>

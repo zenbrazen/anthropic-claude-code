@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1186 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-20
+This file contains the complete plain-English text of all 1189 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-21
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)
+Subtitle: Testing whether AI agents really cause the disasters reported in the news
+URL: https://paperplaine.com/papers/replication-of-agentic-security
+Category: Computer Science · AI
+Authors: Mengxiao Wang, Mahbub Alam, Kalyan Nakka et al.
+arXiv ID: 2611.26553
+arXiv URL: https://arxiv.org/abs/2611.26553
+Posted: 2026-11-21
+
+Summary: Researchers built a system that recreates 108 real-world incidents where AI agents (powered by ChatGPT, Claude, Gemini, and others) went wrong—deleting databases, sending unauthorized payments, or making costly mistakes. They successfully reproduced the reported harm in 89% of cases. The surprising finding: most incidents weren't caused by attackers tricking the AI, but by agents simply missing obvious hazards like a production database sitting next to a test one.
+
+Why it matters: As AI agents gain access to delete files, transfer money, and run code for us, knowing what actually goes wrong matters for safety. Right now, incident reports tell us *what* happened but rarely *why*, leaving companies unable to fix root causes. This framework lets vendors test whether new versions of their AI systems repeat old mistakes before deploying them—and shows that simple warnings naming the specific hazard cut mistakes substantially, offering a practical first line of defense.
+
+---
+Title: A Control-Theoretic Approximation to Predictive Coding Dynamics
+Subtitle: How brain-inspired learning algorithms relate to control theory
+URL: https://paperplaine.com/papers/a-control-theoretic-approximation
+Category: Quantitative Biology
+Authors: Ryan Fayyazi, Kyle Daruwalla, Mitra Javadzadeh
+arXiv ID: 2611.26319
+arXiv URL: https://arxiv.org/abs/2611.26319
+Posted: 2026-11-21
+
+Summary: Researchers discovered that a brain-plausible learning method called deep feedback control is actually a simplified version of predictive coding—a competing approach to training neural networks without backpropagation. The two methods produce nearly identical results on image recognition tasks, and networks trained with one method can directly use weights learned by the other, suggesting they tap into the same underlying principles.
+
+Why it matters: Understanding how different biologically plausible learning algorithms connect could accelerate development of AI systems that work more like brains. If control theory tools can be applied to predictive coding, researchers gain powerful mathematical methods from engineering to design and analyze these brain-inspired networks, potentially leading to more efficient training methods that require less compute.
+
+---
+Title: Conformal Selection for Hierarchical Streaming Data
+Subtitle: Deciding which candidates to pick before knowing their results
+URL: https://paperplaine.com/papers/conformal-selection-for-hierarchical
+Category: Statistics
+Authors: Zhenyuan Sun, Chengyao Yu, Ruixing Ming et al.
+arXiv ID: 2611.26328
+arXiv URL: https://arxiv.org/abs/2611.26328
+Posted: 2026-11-21
+
+Summary: Researchers developed a statistical method for making real-time selection decisions about candidates arriving from different groups, without knowing their eventual outcomes. The approach works even when data comes from hierarchical structures—such as students from different schools or patients from different hospitals—and maintains a controlled false discovery rate, meaning it reliably avoids selecting too many wrong candidates by chance.
+
+Why it matters: Real organizations constantly make time-sensitive selections: hiring committees screening applicants before seeing job performance, loan officers approving borrowers before knowing repayment outcomes, or clinical trials enrolling patients before observing treatment effects. This method lets decision-makers maintain statistical rigor and fairness across different groups while making these choices on a rolling basis, rather than having to wait until all data arrives.
 
 ---
 Title: Active Feature Acquisition by Distilling an Oracle Teacher
