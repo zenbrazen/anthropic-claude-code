@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1198 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1201 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 409 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 410 papers in archive.
+  - "Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem"
   - "GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers"
-  - "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 96 papers in archive.
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
   - "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 101 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 102 papers in archive.
+  - "Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225"
   - "How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics"
-  - "Residual Allan Stability under Periodic Auxiliary Ramsey Sampling"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 102 papers in archive.
   - "Optimal Control in Pairs Trading with Negative-Power Utility"
   - "Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 104 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 105 papers in archive.
+  - "When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks"
   - "A Control-Theoretic Approximation to Predictive Coding Dynamics"
-  - "A Dual-SOM Learner Model of Instructional Efficiency within Cognitive Load Theory"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 103 papers in archive.
   - "Vibe-Trading: Towards Agent-Native Trading"
   - "ChainIT Transaction Truth: Stablecoins, Web3 Wallets, and Multi-Rail Commerce. A Zero-Trust Control Plane for Verified Identity, Organizational Authority, Runtime Compliance, Secure Wallet Execution, and Immutable Settlement Evidence"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan"
 
 ## 10 most recent papers
+
+### Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem
+- URL: https://paperplaine.com/papers/democratizing-cross-project-knowledge
+- Category: Computer Science · AI
+- Authors: Oriol Alàs, Ian Palacín, Iván Cester et al.
+- arXiv: 2611.26398
+- Plain-English subtitle: AI that finds buried climate knowledge across European research projects
+- Summary: Researchers built an AI system that searches through thousands of scattered research documents from EU water and climate projects, finding relevant information 26.7% more reliably than conventional search methods. The system uses specialized AI models trained on climate and water data, plus a smart controller that decides where to look next based on what it has already found.
+- Why it matters: Water managers and climate planners often make decisions without knowing what other projects have already learned — not because the knowledge doesn't exist, but because it's buried in hundreds of unconnected reports. This system lets them ask questions and get targeted answers from across multiple projects at once, reducing duplicated work and helping cities and regions respond faster to water scarcity and climate threats.
+
+### Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225
+- URL: https://paperplaine.com/papers/neckpinches-in-a-positively
+- Category: Physics
+- Authors: Siddharta Laloux, Bhargavi Srinivasan
+- arXiv: 2611.25860
+- Plain-English subtitle: Finding hidden groups of stocks by measuring how curved their relationships are
+- Summary: Researchers used a mathematical technique called Ricci flow to map the hidden geometry of relationships between 226 stocks in Japan's Nikkei-225 index. The method automatically discovered 29 natural groups of stocks that almost perfectly align with industry sectors—banks clustered with banks, insurers with insurers, shipping companies together—without being told what industries existed.
+- Why it matters: Stock traders and portfolio managers typically group companies by hand-labeled industry categories, but this method finds real clusters from the actual data, which could reveal overlooked relationships between stocks. Because each cluster turned out to be internally more correlated than with the rest of the market, investors could use this to build more effective diversified portfolios or spot when stocks are behaving unexpectedly.
+
+### When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks
+- URL: https://paperplaine.com/papers/when-should-deployed-bci
+- Category: Quantitative Biology
+- Authors: Sergey Musienko
+- arXiv: 2611.25315
+- Plain-English subtitle: Should brain implants automatically retune themselves, or stay put?
+- Summary: Brain-computer interfaces that read brain signals often need to adjust as the user's brain patterns drift over time—but constantly retuning wastes resources and can backfire on clean data. This study shows that adaptation should be selective and capped: a lightweight decision layer picks when to retune and how much, cutting unnecessary adjustments by 87% on stable sessions while matching accuracy of full retraining at 23 times faster speed.
+- Why it matters: Brain implants currently either retune blindly (wasting power and time) or never adjust (losing accuracy). A smarter control system that decides *when* to adapt means implanted decoders can run longer on battery, respond faster to real drift, and avoid false corrections when nothing has changed—all without harming accuracy.
 
 ### GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers
 - URL: https://paperplaine.com/papers/glide-a-fast-calibrated
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Making AI language models faster by smartly sharing memory between chips
 - Summary: TideCache is a system that lets AI language models run faster on specialized hardware by automatically managing where to store the data they need—whether that's on the fast GPU chip or slower main memory. The system completes up to twice as many conversation turns per session and cuts response time delays by 20–59%, while speeding up initial response time by up to 3x compared with existing approaches.
 - Why it matters: As AI models get bigger and more complex, the bottleneck isn't computing speed—it's managing memory efficiently. TideCache lets companies run these models on existing hardware without buying expensive upgrades, cutting costs while handling more simultaneous users. For applications like customer service agents or coding assistants, faster response times and higher throughput mean better user experience and lower infrastructure spend.
-
-### From power to spectrum: an off-the-shelf photodiode turned into a spectrometer by its bias alone
-- URL: https://paperplaine.com/papers/from-power-to-spectrum
-- Category: Engineering
-- Authors: Roi Yozevitch, Shmuel Sternklar, Ziv Glasser
-- arXiv: 2611.26532
-- Plain-English subtitle: A regular light detector becomes a color analyzer just by changing voltage
-- Summary: Researchers turned an ordinary commercial photodiode into a spectrometer—a device that identifies different colors of light—without any physical modifications, filters, or special fabrication. By applying a carefully timed electrical signal to the detector, they encoded color information into the shape of the electrical output, which a neural network then decoded to identify laser wavelengths with precision down to 0.3 nanometers and track their power levels.
-- Why it matters: Spectrometers are expensive and bulky, limiting where they can be used. This technique transforms cheap, mass-produced photodiodes already installed in countless devices into functional spectrometers—meaning any existing power monitor could gain color-sensing capabilities with just a software update. That could make spectral analysis available for applications from telecommunications to environmental monitoring at a fraction of today's cost.
-
-### How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics
-- URL: https://paperplaine.com/papers/how-should-candidates-be
-- Category: Physics
-- Authors: Daria Boratyn, Dariusz Stolicki
-- arXiv: 2611.26337
-- Plain-English subtitle: How to fairly rank political candidates on proportional representation ballots
-- Summary: When elections use open-list proportional representation, candidates at different positions on the ballot receive different numbers of votes, so researchers need a principled way to weight them in statistical analyses. The authors derive that harmonic weights—a mathematical pattern where the k-th candidate gets weight 1/k—emerge naturally from probabilistic models of how votes distribute across candidates, without requiring assumptions about vote concentration that vary unpredictably across countries and elections.
-- Why it matters: Electoral systems in many democracies require aggregating candidate-level data to measure party performance or electoral fairness, but weighting candidates incorrectly can bias conclusions about how proportional the system actually is. Harmonic weights offer a theoretically justified, universally applicable approach that works across different countries, parties, and election contexts without requiring researchers to guess at invisible parameters.
-
-### Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)
-- URL: https://paperplaine.com/papers/replication-of-agentic-security
-- Category: Computer Science · AI
-- Authors: Mengxiao Wang, Mahbub Alam, Kalyan Nakka et al.
-- arXiv: 2611.26553
-- Plain-English subtitle: Testing whether AI agents really cause the disasters reported in the news
-- Summary: Researchers built a system that recreates 108 real-world incidents where AI agents (powered by ChatGPT, Claude, Gemini, and others) went wrong—deleting databases, sending unauthorized payments, or making costly mistakes. They successfully reproduced the reported harm in 89% of cases. The surprising finding: most incidents weren't caused by attackers tricking the AI, but by agents simply missing obvious hazards like a production database sitting next to a test one.
-- Why it matters: As AI agents gain access to delete files, transfer money, and run code for us, knowing what actually goes wrong matters for safety. Right now, incident reports tell us *what* happened but rarely *why*, leaving companies unable to fix root causes. This framework lets vendors test whether new versions of their AI systems repeat old mistakes before deploying them—and shows that simple warnings naming the specific hazard cut mistakes substantially, offering a practical first line of defense.
 
 ## About
 
