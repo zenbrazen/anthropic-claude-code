@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 23:40:58 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 15:03:28 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers</title>
+      <link>https://paperplaine.com/papers/glide-a-fast-calibrated</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/glide-a-fast-calibrated</guid>
+      <pubDate>Thu, 19 Nov 2026 17:56:44 GMT</pubDate>
+      <author>Sahibzada Allahyar, Julia White, Dhruv Atreja et al.</author>
+      <category>AI</category>
+      <description>Teaching AI to make fast, confident choices without explaining its reasoning</description>
+      <content:encoded><![CDATA[<p><em>Teaching AI to make fast, confident choices without explaining its reasoning</em></p><p>Researchers created GLiDE, a family of AI models that can score and pick between answers in a single pass—without generating text or step-by-step reasoning. By learning from reasoning models through a technique called distillation, GLiDE kept much of the accuracy boost that comes from reasoning while staying 10 to 100 times faster, with the largest version reaching 73.37% accuracy on a standard benchmark while maintaining reliable confidence calibration.</p><p><strong>Why it matters:</strong> Real-time decision-making systems like search results, recommendations, or customer service chatbots currently face a hard trade-off: reason carefully and be slow, or answer fast and risk mistakes. GLiDE collapses that trade-off, making it possible to deploy high-accuracy, confidence-aware decisions in latency-critical settings like mobile apps or live services where waiting 5+ seconds for an answer isn't an option.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Vibe-Trading: Towards Agent-Native Trading</title>
+      <link>https://paperplaine.com/papers/vibe-trading-towards-agent</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/vibe-trading-towards-agent</guid>
+      <pubDate>Wed, 18 Nov 2026 18:07:57 GMT</pubDate>
+      <author>Haozhe Wu, Zhonghang Li, Chao Huang</author>
+      <category>Finance</category>
+      <description>Building AI traders that remember why they made each decision</description>
+      <content:encoded><![CDATA[<p><em>Building AI traders that remember why they made each decision</em></p><p>Financial markets move too fast for AI agents to work reliably if they lose track of which data fed which decision. Vibe-Trading is a system that keeps trading agents anchored to the specific time, information, and reasoning behind each recommendation—so when prices change, traders know exactly what's become stale and what still holds. It chains together market research, strategy testing, and execution while maintaining an audit trail that lets humans verify and approve trades before they happen.</p><p><strong>Why it matters:</strong> AI-powered trading is already happening, but most systems treat each decision as disconnected from its context—risking costly mistakes when conditions shift. Vibe-Trading's traceability and verification layer gives traders and regulators a way to understand why an agent acted, replay its logic, and catch dangerous reasoning before money moves. This matters especially for high-frequency decisions where a stale signal or misaligned authority can wipe out capital in seconds.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity</title>
+      <link>https://paperplaine.com/papers/simple-private-noisy-sgd</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/simple-private-noisy-sgd</guid>
+      <pubDate>Thu, 19 Nov 2026 17:58:51 GMT</pubDate>
+      <author>Valentin Roth, Marco Avella Medina</author>
+      <category>Statistics</category>
+      <description>When privacy protections don&#39;t slow down machine learning as much as we thought</description>
+      <content:encoded><![CDATA[<p><em>When privacy protections don't slow down machine learning as much as we thought</em></p><p>Adding noise to protect privacy in machine learning doesn't have to make models less accurate than the best possible performance. Researchers proved that a simple noise-injection technique called Noisy SGD can achieve optimal accuracy rates even when privacy is required, matching what the best non-private algorithms achieve. For logistic regression—a workhorse method in statistics—this eliminates gaps in earlier analyses.</p><p><strong>Why it matters:</strong> Machine learning systems increasingly handle sensitive data like medical records and financial information. If privacy safeguards forced companies to accept significantly lower accuracy, the tradeoff might be too steep to use them. This result shows the safeguards don't come with the efficiency penalty researchers feared, making it practical to train accurate models on private data without sacrificing statistical performance.</p>]]></content:encoded>
+    </item>
     <item>
       <title>AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control</title>
       <link>https://paperplaine.com/papers/agentrobocritic-understanding-the-capability</link>

@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1195 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1198 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 408 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 409 papers in archive.
+  - "GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers"
   - "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control"
-  - "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 96 papers in archive.
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
   - "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving"
@@ -45,12 +45,12 @@ Each paper entry contains:
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 104 papers in archive.
   - "A Control-Theoretic Approximation to Predictive Coding Dynamics"
   - "A Dual-SOM Learner Model of Instructional Efficiency within Cognitive Load Theory"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 102 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 103 papers in archive.
+  - "Vibe-Trading: Towards Agent-Native Trading"
   - "ChainIT Transaction Truth: Stablecoins, Web3 Wallets, and Multi-Rail Commerce. A Zero-Trust Control Plane for Verified Identity, Organizational Authority, Runtime Compliance, Secure Wallet Execution, and Immutable Settlement Evidence"
-  - "Integrating market sentiments for stock price prediction: A comparative study of Bi-LSTM and multilayer perceptions"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 102 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 103 papers in archive.
+  - "Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity"
   - "Conformal Selection for Hierarchical Streaming Data"
-  - "Fold Weighting for Cross-Validation Under Continuous Distributional Drift"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 96 papers in archive.
   - "From power to spectrum: an off-the-shelf photodiode turned into a spectrometer by its bias alone"
   - "Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Trade Tensions Meet the Gig Economy: Evidence from the 2025 Halving of Chinese Travel to Japan"
 
 ## 10 most recent papers
+
+### GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers
+- URL: https://paperplaine.com/papers/glide-a-fast-calibrated
+- Category: Computer Science · AI
+- Authors: Sahibzada Allahyar, Julia White, Dhruv Atreja et al.
+- arXiv: 2611.26509
+- Plain-English subtitle: Teaching AI to make fast, confident choices without explaining its reasoning
+- Summary: Researchers created GLiDE, a family of AI models that can score and pick between answers in a single pass—without generating text or step-by-step reasoning. By learning from reasoning models through a technique called distillation, GLiDE kept much of the accuracy boost that comes from reasoning while staying 10 to 100 times faster, with the largest version reaching 73.37% accuracy on a standard benchmark while maintaining reliable confidence calibration.
+- Why it matters: Real-time decision-making systems like search results, recommendations, or customer service chatbots currently face a hard trade-off: reason carefully and be slow, or answer fast and risk mistakes. GLiDE collapses that trade-off, making it possible to deploy high-accuracy, confidence-aware decisions in latency-critical settings like mobile apps or live services where waiting 5+ seconds for an answer isn't an option.
+
+### Vibe-Trading: Towards Agent-Native Trading
+- URL: https://paperplaine.com/papers/vibe-trading-towards-agent
+- Category: Quantitative Finance
+- Authors: Haozhe Wu, Zhonghang Li, Chao Huang
+- arXiv: 2611.24845
+- Plain-English subtitle: Building AI traders that remember why they made each decision
+- Summary: Financial markets move too fast for AI agents to work reliably if they lose track of which data fed which decision. Vibe-Trading is a system that keeps trading agents anchored to the specific time, information, and reasoning behind each recommendation—so when prices change, traders know exactly what's become stale and what still holds. It chains together market research, strategy testing, and execution while maintaining an audit trail that lets humans verify and approve trades before they happen.
+- Why it matters: AI-powered trading is already happening, but most systems treat each decision as disconnected from its context—risking costly mistakes when conditions shift. Vibe-Trading's traceability and verification layer gives traders and regulators a way to understand why an agent acted, replay its logic, and catch dangerous reasoning before money moves. This matters especially for high-frequency decisions where a stale signal or misaligned authority can wipe out capital in seconds.
+
+### Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity
+- URL: https://paperplaine.com/papers/simple-private-noisy-sgd
+- Category: Statistics
+- Authors: Valentin Roth, Marco Avella Medina
+- arXiv: 2611.26515
+- Plain-English subtitle: When privacy protections don't slow down machine learning as much as we thought
+- Summary: Adding noise to protect privacy in machine learning doesn't have to make models less accurate than the best possible performance. Researchers proved that a simple noise-injection technique called Noisy SGD can achieve optimal accuracy rates even when privacy is required, matching what the best non-private algorithms achieve. For logistic regression—a workhorse method in statistics—this eliminates gaps in earlier analyses.
+- Why it matters: Machine learning systems increasingly handle sensitive data like medical records and financial information. If privacy safeguards forced companies to accept significantly lower accuracy, the tradeoff might be too steep to use them. This result shows the safeguards don't come with the efficiency penalty researchers feared, making it practical to train accurate models on private data without sacrificing statistical performance.
 
 ### AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control
 - URL: https://paperplaine.com/papers/agentrobocritic-understanding-the-capability
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Testing whether AI agents really cause the disasters reported in the news
 - Summary: Researchers built a system that recreates 108 real-world incidents where AI agents (powered by ChatGPT, Claude, Gemini, and others) went wrong—deleting databases, sending unauthorized payments, or making costly mistakes. They successfully reproduced the reported harm in 89% of cases. The surprising finding: most incidents weren't caused by attackers tricking the AI, but by agents simply missing obvious hazards like a production database sitting next to a test one.
 - Why it matters: As AI agents gain access to delete files, transfer money, and run code for us, knowing what actually goes wrong matters for safety. Right now, incident reports tell us *what* happened but rarely *why*, leaving companies unable to fix root causes. This framework lets vendors test whether new versions of their AI systems repeat old mistakes before deploying them—and shows that simple warnings naming the specific hazard cut mistakes substantially, offering a practical first line of defense.
-
-### A Control-Theoretic Approximation to Predictive Coding Dynamics
-- URL: https://paperplaine.com/papers/a-control-theoretic-approximation
-- Category: Quantitative Biology
-- Authors: Ryan Fayyazi, Kyle Daruwalla, Mitra Javadzadeh
-- arXiv: 2611.26319
-- Plain-English subtitle: How brain-inspired learning algorithms relate to control theory
-- Summary: Researchers discovered that a brain-plausible learning method called deep feedback control is actually a simplified version of predictive coding—a competing approach to training neural networks without backpropagation. The two methods produce nearly identical results on image recognition tasks, and networks trained with one method can directly use weights learned by the other, suggesting they tap into the same underlying principles.
-- Why it matters: Understanding how different biologically plausible learning algorithms connect could accelerate development of AI systems that work more like brains. If control theory tools can be applied to predictive coding, researchers gain powerful mathematical methods from engineering to design and analyze these brain-inspired networks, potentially leading to more efficient training methods that require less compute.
-
-### Conformal Selection for Hierarchical Streaming Data
-- URL: https://paperplaine.com/papers/conformal-selection-for-hierarchical
-- Category: Statistics
-- Authors: Zhenyuan Sun, Chengyao Yu, Ruixing Ming et al.
-- arXiv: 2611.26328
-- Plain-English subtitle: Deciding which candidates to pick before knowing their results
-- Summary: Researchers developed a statistical method for making real-time selection decisions about candidates arriving from different groups, without knowing their eventual outcomes. The approach works even when data comes from hierarchical structures—such as students from different schools or patients from different hospitals—and maintains a controlled false discovery rate, meaning it reliably avoids selecting too many wrong candidates by chance.
-- Why it matters: Real organizations constantly make time-sensitive selections: hiring committees screening applicants before seeing job performance, loan officers approving borrowers before knowing repayment outcomes, or clinical trials enrolling patients before observing treatment effects. This method lets decision-makers maintain statistical rigor and fairness across different groups while making these choices on a rolling basis, rather than having to wait until all data arrives.
-
-### Active Feature Acquisition by Distilling an Oracle Teacher
-- URL: https://paperplaine.com/papers/active-feature-acquisition-by
-- Category: Computer Science · AI
-- Authors: Yang Meng, Zixin Ding, Robert L. Grossman et al.
-- arXiv: 2611.26598
-- Plain-English subtitle: Teaching AI which medical tests to order first to save time and money
-- Summary: Doctors often order more medical tests than necessary, wasting money and patient time. This paper presents a method that learns which features or test results matter most for diagnosis, ranked by an ideal teacher trained on complete patient data. The system recovers 90% of the diagnostic accuracy using less than a quarter of the typical test costs.
-- Why it matters: Healthcare systems spend billions on redundant tests and measurements. This approach could reduce unnecessary lab work and imaging while maintaining diagnostic accuracy—cutting costs directly while keeping patients out of medical facilities longer. The method works across different types of medical data and generalizes to other expensive measurements beyond medicine.
 
 ## About
 

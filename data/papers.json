@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.26509",
+    "title": "GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers",
+    "authors": "Sahibzada Allahyar, Julia White, Dhruv Atreja et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-19T17:56:44Z",
+    "publishedFormatted": "Nov 19, 2026",
+    "subtitle": "Teaching AI to make fast, confident choices without explaining its reasoning",
+    "summary": "Researchers created GLiDE, a family of AI models that can score and pick between answers in a single pass—without generating text or step-by-step reasoning. By learning from reasoning models through a technique called distillation, GLiDE kept much of the accuracy boost that comes from reasoning while staying 10 to 100 times faster, with the largest version reaching 73.37% accuracy on a standard benchmark while maintaining reliable confidence calibration.",
+    "whyItMatters": "Real-time decision-making systems like search results, recommendations, or customer service chatbots currently face a hard trade-off: reason carefully and be slow, or answer fast and risk mistakes. GLiDE collapses that trade-off, making it possible to deploy high-accuracy, confidence-aware decisions in latency-critical settings like mobile apps or live services where waiting 5+ seconds for an answer isn't an option.",
+    "fetchedAt": "2026-11-22T15:03:21.121Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 18,
+      "wordCount": 193
+    },
+    "slug": "glide-a-fast-calibrated"
+  },
+  {
+    "id": "2611.24845",
+    "title": "Vibe-Trading: Towards Agent-Native Trading",
+    "authors": "Haozhe Wu, Zhonghang Li, Chao Huang",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-11-18T18:07:57Z",
+    "publishedFormatted": "Nov 18, 2026",
+    "subtitle": "Building AI traders that remember why they made each decision",
+    "summary": "Financial markets move too fast for AI agents to work reliably if they lose track of which data fed which decision. Vibe-Trading is a system that keeps trading agents anchored to the specific time, information, and reasoning behind each recommendation—so when prices change, traders know exactly what's become stale and what still holds. It chains together market research, strategy testing, and execution while maintaining an audit trail that lets humans verify and approve trades before they happen.",
+    "whyItMatters": "AI-powered trading is already happening, but most systems treat each decision as disconnected from its context—risking costly mistakes when conditions shift. Vibe-Trading's traceability and verification layer gives traders and regulators a way to understand why an agent acted, replay its logic, and catch dangerous reasoning before money moves. This matters especially for high-frequency decisions where a stale signal or misaligned authority can wipe out capital in seconds.",
+    "fetchedAt": "2026-11-22T15:03:24.843Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 16,
+      "wordCount": 183
+    },
+    "slug": "vibe-trading-towards-agent"
+  },
+  {
+    "id": "2611.26515",
+    "title": "Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity",
+    "authors": "Valentin Roth, Marco Avella Medina",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-11-19T17:58:51Z",
+    "publishedFormatted": "Nov 19, 2026",
+    "subtitle": "When privacy protections don't slow down machine learning as much as we thought",
+    "summary": "Adding noise to protect privacy in machine learning doesn't have to make models less accurate than the best possible performance. Researchers proved that a simple noise-injection technique called Noisy SGD can achieve optimal accuracy rates even when privacy is required, matching what the best non-private algorithms achieve. For logistic regression—a workhorse method in statistics—this eliminates gaps in earlier analyses.",
+    "whyItMatters": "Machine learning systems increasingly handle sensitive data like medical records and financial information. If privacy safeguards forced companies to accept significantly lower accuracy, the tradeoff might be too steep to use them. This result shows the safeguards don't come with the efficiency penalty researchers feared, making it practical to train accurate models on private data without sacrificing statistical performance.",
+    "fetchedAt": "2026-11-22T15:03:27.845Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 1,
+      "pageCount": 34,
+      "wordCount": 158
+    },
+    "slug": "simple-private-noisy-sgd"
+  },
+  {
     "id": "2611.26613",
     "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
     "authors": "Yiyang Du, Yuxuan Kuang, Qitao Zhao et al.",
