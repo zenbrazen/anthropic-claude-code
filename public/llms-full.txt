@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1201 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-22
+This file contains the complete plain-English text of all 1204 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-23
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs
+Subtitle: Learning patient patterns from multiple hospitals without sharing sensitive records
+URL: https://paperplaine.com/papers/communication-efficient-federated-learning
+Category: Computer Science · AI
+Authors: Zhiyu Yan, Shiao Liu, Rahul Mahajan et al.
+arXiv ID: 2611.27900
+arXiv URL: https://arxiv.org/abs/2611.27900
+Posted: 2026-11-23
+
+Summary: Researchers developed a method that lets hospitals collaborate on identifying patient subgroups from electronic health records while keeping individual patient data private and minimizing data transfer between sites. Applied to stroke patients across multiple facilities, the approach recovered the same patient patterns that would emerge from pooling all records directly, while each hospital shared only aggregate statistics and mathematical summaries instead of raw patient information.
+
+Why it matters: Hospitals often can't combine patient records due to privacy rules and technical barriers, which means insights are trapped in silos and patterns learned at one hospital may not apply elsewhere. This method lets institutions participate in collaborative research without breaking privacy agreements or overwhelming networks with massive file transfers—making it practical for hospitals to build better diagnostic tools and treatment strategies that work across diverse patient populations.
+
+---
+Title: The Rise of Agents and the Human Labor Market
+Subtitle: AI agents are already shrinking job openings, especially entry-level roles
+URL: https://paperplaine.com/papers/the-rise-of-agents
+Category: Economics
+Authors: Nicola Borri, Anton Cheremukhin, Yukun Liu et al.
+arXiv ID: 2611.27210
+arXiv URL: https://arxiv.org/abs/2611.27210
+Posted: 2026-11-23
+
+Summary: Firms most exposed to agentic AI—the kind that can autonomously complete tasks—posted 2 to 3 percent fewer job openings over the following six to nine months. The effect was sharper after Claude Code 2.0's release, when affected firms cut job postings by nearly 5 percent. Crucially, the decline hit non-senior positions hardest; senior roles showed no significant decline, suggesting AI agents are replacing routine work rather than eliminating jobs wholesale.
+
+Why it matters: This is the first large-scale evidence that AI agents, not just AI tools, are already affecting real hiring decisions at American companies. If the trend continues and spreads, entry-level and junior positions—traditionally the pipeline for career advancement—could become scarcer, potentially widening opportunity gaps. The finding also suggests that mid-career and senior workers may be insulated, at least for now, reshaping which workers face the most immediate pressure to adapt.
+
+---
+Title: On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals
+Subtitle: A standardized brain-wave dataset to test ADHD detection methods fairly
+URL: https://paperplaine.com/papers/on-the-complete-feature
+Category: Engineering
+Authors: Javier Sanchis, Álvaro Navarro, Jorge García-Carrasco et al.
+arXiv ID: 2611.27970
+arXiv URL: https://arxiv.org/abs/2611.27970
+Posted: 2026-11-23
+
+Summary: Researchers created the first large, carefully curated dataset of brain recordings from 156 children and adolescents performing different tasks, with 115 different measurements of electrical brain activity already calculated and ready to use. This allows scientists to fairly compare different methods for detecting ADHD from brain waves using the same data, rather than each team processing recordings differently and making results impossible to compare.
+
+Why it matters: ADHD diagnosis currently relies on behavioral observation and questionnaires, which are subjective and often inconsistent. This standardized dataset removes hidden choices in how brain recordings are prepared and analyzed, letting researchers build and test ADHD detection tools on level ground. It means future studies can focus on what actually works instead of spending months re-processing the same raw data different ways.
 
 ---
 Title: Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem
