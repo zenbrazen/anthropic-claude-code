@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 18:59:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 04:09:07 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model</title>
+      <link>https://paperplaine.com/papers/ego-hmb-human-motion</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/ego-hmb-human-motion</guid>
+      <pubDate>Sun, 22 Nov 2026 04:34:37 GMT</pubDate>
+      <author>Gaoge Han, Yongkang Cheng, Shaoli Huang et al.</author>
+      <category>AI</category>
+      <description>Filling in the motion gap between two first-person video frames</description>
+      <content:encoded><![CDATA[<p><em>Filling in the motion gap between two first-person video frames</em></p><p>Researchers created an AI system that generates realistic human motion sequences from two first-person camera images taken seconds apart—the kind of footage from VR headsets or body cameras. The system outperforms simpler methods by learning endpoint poses and smooth motion together in a single unified model, rather than solving each problem separately.</p><p><strong>Why it matters:</strong> VR/AR systems and robots need to understand and predict human movement from first-person camera feeds, but existing methods require clean 3D pose data that wearables can't provide. This approach works directly from raw video frames, making motion prediction practical for devices people actually wear, which could improve everything from gesture recognition in VR to robots that work safely alongside humans.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference</title>
+      <link>https://paperplaine.com/papers/ziv-meets-sumcheck-zero</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/ziv-meets-sumcheck-zero</guid>
+      <pubDate>Sun, 22 Nov 2026 03:29:13 GMT</pubDate>
+      <author>Hassan Khodaiemehr, Khadijeh Bagheri, Chen Feng</author>
+      <category>Comp Sci</category>
+      <description>Proving AI models work correctly without revealing their secrets</description>
+      <content:encoded><![CDATA[<p><em>Proving AI models work correctly without revealing their secrets</em></p><p>Researchers created a system to mathematically prove that a language model like GPT-2 produced a specific output without exposing the model itself — and crucially, they did it using the actual floating-point arithmetic that runs on real computers, not simplified approximations. They proved GPT-2 small's entire forward pass in 19 minutes, with verification taking just 21 seconds, and the system rejected all 236 attempted attacks.</p><p><strong>Why it matters:</strong> Organizations could verify that an AI system is working correctly and hasn't been tampered with, without having to trust the company running it or give away proprietary model details. This matters for high-stakes applications like medical diagnosis or financial decisions, where you need proof a model isn't lying or manipulating outputs — and it now works on the actual arithmetic these systems use in production, not just theoretical toy versions.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures</title>
+      <link>https://paperplaine.com/papers/optimal-isotropic-three-material</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/optimal-isotropic-three-material</guid>
+      <pubDate>Sun, 22 Nov 2026 05:12:43 GMT</pubDate>
+      <author>Andrej Cherkaev, Leonid Gibiansky</author>
+      <category>Math</category>
+      <description>Finding the perfect blend of three materials to block heat as much as possible</description>
+      <content:encoded><![CDATA[<p><em>Finding the perfect blend of three materials to block heat as much as possible</em></p><p>Researchers solved a century-old puzzle in materials science: what arrangement of three conducting materials—including one that conducts perfectly—minimizes heat flow through a composite? They proved that the optimal structure consists of nested spheres with wrapped layers, and derived mathematical formulas predicting exactly how well any such arrangement can perform based on material properties and how much of each material you use.</p><p><strong>Why it matters:</strong> This framework helps engineers design better insulators and thermal barriers for everything from aerospace to electronics. The mathematical bounds reveal fundamental limits on what any three-material system can achieve, so manufacturers know whether they're building something close to ideal or whether a different material combination might work better. The constructive proof also provides a practical recipe for arranging materials to reach those theoretical limits.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs</title>
       <link>https://paperplaine.com/papers/communication-efficient-federated-learning</link>

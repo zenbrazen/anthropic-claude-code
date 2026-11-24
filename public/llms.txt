@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1204 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1207 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 411 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 412 papers in archive.
+  - "Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model"
   - "Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs"
-  - "Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem"
-- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 96 papers in archive.
+- [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 97 papers in archive.
+  - "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference"
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
-  - "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 102 papers in archive.
   - "Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225"
   - "How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 102 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 103 papers in archive.
+  - "Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures"
   - "Optimal Control in Pairs Trading with Negative-Power Utility"
-  - "Exponential boundary stabilization of the KdV--KdV system with time-varying delay: the nonlinear case"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 105 papers in archive.
   - "When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks"
   - "A Control-Theoretic Approximation to Predictive Coding Dynamics"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Interpreting the Morbidity Gap"
 
 ## 10 most recent papers
+
+### Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model
+- URL: https://paperplaine.com/papers/ego-hmb-human-motion
+- Category: Computer Science · AI
+- Authors: Gaoge Han, Yongkang Cheng, Shaoli Huang et al.
+- arXiv: 2611.29218
+- Plain-English subtitle: Filling in the motion gap between two first-person video frames
+- Summary: Researchers created an AI system that generates realistic human motion sequences from two first-person camera images taken seconds apart—the kind of footage from VR headsets or body cameras. The system outperforms simpler methods by learning endpoint poses and smooth motion together in a single unified model, rather than solving each problem separately.
+- Why it matters: VR/AR systems and robots need to understand and predict human movement from first-person camera feeds, but existing methods require clean 3D pose data that wearables can't provide. This approach works directly from raw video frames, making motion prediction practical for devices people actually wear, which could improve everything from gesture recognition in VR to robots that work safely alongside humans.
+
+### Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference
+- URL: https://paperplaine.com/papers/ziv-meets-sumcheck-zero
+- Category: Computer Science
+- Authors: Hassan Khodaiemehr, Khadijeh Bagheri, Chen Feng
+- arXiv: 2611.29188
+- Plain-English subtitle: Proving AI models work correctly without revealing their secrets
+- Summary: Researchers created a system to mathematically prove that a language model like GPT-2 produced a specific output without exposing the model itself — and crucially, they did it using the actual floating-point arithmetic that runs on real computers, not simplified approximations. They proved GPT-2 small's entire forward pass in 19 minutes, with verification taking just 21 seconds, and the system rejected all 236 attempted attacks.
+- Why it matters: Organizations could verify that an AI system is working correctly and hasn't been tampered with, without having to trust the company running it or give away proprietary model details. This matters for high-stakes applications like medical diagnosis or financial decisions, where you need proof a model isn't lying or manipulating outputs — and it now works on the actual arithmetic these systems use in production, not just theoretical toy versions.
+
+### Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures
+- URL: https://paperplaine.com/papers/optimal-isotropic-three-material
+- Category: Mathematics
+- Authors: Andrej Cherkaev, Leonid Gibiansky
+- arXiv: 2611.29235
+- Plain-English subtitle: Finding the perfect blend of three materials to block heat as much as possible
+- Summary: Researchers solved a century-old puzzle in materials science: what arrangement of three conducting materials—including one that conducts perfectly—minimizes heat flow through a composite? They proved that the optimal structure consists of nested spheres with wrapped layers, and derived mathematical formulas predicting exactly how well any such arrangement can perform based on material properties and how much of each material you use.
+- Why it matters: This framework helps engineers design better insulators and thermal barriers for everything from aerospace to electronics. The mathematical bounds reveal fundamental limits on what any three-material system can achieve, so manufacturers know whether they're building something close to ideal or whether a different material combination might work better. The constructive proof also provides a practical recipe for arranging materials to reach those theoretical limits.
 
 ### Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs
 - URL: https://paperplaine.com/papers/communication-efficient-federated-learning
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to make fast, confident choices without explaining its reasoning
 - Summary: Researchers created GLiDE, a family of AI models that can score and pick between answers in a single pass—without generating text or step-by-step reasoning. By learning from reasoning models through a technique called distillation, GLiDE kept much of the accuracy boost that comes from reasoning while staying 10 to 100 times faster, with the largest version reaching 73.37% accuracy on a standard benchmark while maintaining reliable confidence calibration.
 - Why it matters: Real-time decision-making systems like search results, recommendations, or customer service chatbots currently face a hard trade-off: reason carefully and be slow, or answer fast and risk mistakes. GLiDE collapses that trade-off, making it possible to deploy high-accuracy, confidence-aware decisions in latency-critical settings like mobile apps or live services where waiting 5+ seconds for an answer isn't an option.
-
-### Vibe-Trading: Towards Agent-Native Trading
-- URL: https://paperplaine.com/papers/vibe-trading-towards-agent
-- Category: Quantitative Finance
-- Authors: Haozhe Wu, Zhonghang Li, Chao Huang
-- arXiv: 2611.24845
-- Plain-English subtitle: Building AI traders that remember why they made each decision
-- Summary: Financial markets move too fast for AI agents to work reliably if they lose track of which data fed which decision. Vibe-Trading is a system that keeps trading agents anchored to the specific time, information, and reasoning behind each recommendation—so when prices change, traders know exactly what's become stale and what still holds. It chains together market research, strategy testing, and execution while maintaining an audit trail that lets humans verify and approve trades before they happen.
-- Why it matters: AI-powered trading is already happening, but most systems treat each decision as disconnected from its context—risking costly mistakes when conditions shift. Vibe-Trading's traceability and verification layer gives traders and regulators a way to understand why an agent acted, replay its logic, and catch dangerous reasoning before money moves. This matters especially for high-frequency decisions where a stale signal or misaligned authority can wipe out capital in seconds.
-
-### Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity
-- URL: https://paperplaine.com/papers/simple-private-noisy-sgd
-- Category: Statistics
-- Authors: Valentin Roth, Marco Avella Medina
-- arXiv: 2611.26515
-- Plain-English subtitle: When privacy protections don't slow down machine learning as much as we thought
-- Summary: Adding noise to protect privacy in machine learning doesn't have to make models less accurate than the best possible performance. Researchers proved that a simple noise-injection technique called Noisy SGD can achieve optimal accuracy rates even when privacy is required, matching what the best non-private algorithms achieve. For logistic regression—a workhorse method in statistics—this eliminates gaps in earlier analyses.
-- Why it matters: Machine learning systems increasingly handle sensitive data like medical records and financial information. If privacy safeguards forced companies to accept significantly lower accuracy, the tradeoff might be too steep to use them. This result shows the safeguards don't come with the efficiency penalty researchers feared, making it practical to train accurate models on private data without sacrificing statistical performance.
-
-### AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control
-- URL: https://paperplaine.com/papers/agentrobocritic-understanding-the-capability
-- Category: Computer Science · AI
-- Authors: Yiyang Du, Yuxuan Kuang, Qitao Zhao et al.
-- arXiv: 2611.26613
-- Plain-English subtitle: What makes advanced AI robots succeed or fail at manipulation tasks
-- Summary: Researchers used a new technique called AgentRoboCritic to analyze how frontier AI agents like GPT-6 Astra control robots at the action level, rather than just measuring whether entire tasks succeed or fail. The analysis revealed these agents can recover from mistakes, understand objects correctly across different scenes, and perform complex manipulation without task-specific training—but still struggle with specific physical challenges like grasping and precise alignment.
-- Why it matters: As AI systems take on more physical robot tasks, understanding exactly where and why they fail becomes critical for safe deployment. This framework and dataset enable researchers to spot systematic weaknesses—like consistent failures at grasping—rather than just seeing that "60% of tasks succeeded," making it possible to target improvements where they matter most.
 
 ## About
 

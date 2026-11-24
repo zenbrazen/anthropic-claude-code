@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.29218",
+    "title": "Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model",
+    "authors": "Gaoge Han, Yongkang Cheng, Shaoli Huang et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-22T04:34:37Z",
+    "publishedFormatted": "Nov 22, 2026",
+    "subtitle": "Filling in the motion gap between two first-person video frames",
+    "summary": "Researchers created an AI system that generates realistic human motion sequences from two first-person camera images taken seconds apart—the kind of footage from VR headsets or body cameras. The system outperforms simpler methods by learning endpoint poses and smooth motion together in a single unified model, rather than solving each problem separately.",
+    "whyItMatters": "VR/AR systems and robots need to understand and predict human movement from first-person camera feeds, but existing methods require clean 3D pose data that wearables can't provide. This approach works directly from raw video frames, making motion prediction practical for devices people actually wear, which could improve everything from gesture recognition in VR to robots that work safely alongside humans.",
+    "fetchedAt": "2026-11-24T04:09:01.156Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 175
+    },
+    "slug": "ego-hmb-human-motion"
+  },
+  {
+    "id": "2611.29188",
+    "title": "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference",
+    "authors": "Hassan Khodaiemehr, Khadijeh Bagheri, Chen Feng",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-11-22T03:29:13Z",
+    "publishedFormatted": "Nov 22, 2026",
+    "subtitle": "Proving AI models work correctly without revealing their secrets",
+    "summary": "Researchers created a system to mathematically prove that a language model like GPT-2 produced a specific output without exposing the model itself — and crucially, they did it using the actual floating-point arithmetic that runs on real computers, not simplified approximations. They proved GPT-2 small's entire forward pass in 19 minutes, with verification taking just 21 seconds, and the system rejected all 236 attempted attacks.",
+    "whyItMatters": "Organizations could verify that an AI system is working correctly and hasn't been tampered with, without having to trust the company running it or give away proprietary model details. This matters for high-stakes applications like medical diagnosis or financial decisions, where you need proof a model isn't lying or manipulating outputs — and it now works on the actual arithmetic these systems use in production, not just theoretical toy versions.",
+    "fetchedAt": "2026-11-24T04:09:04.107Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 214
+    },
+    "slug": "ziv-meets-sumcheck-zero"
+  },
+  {
+    "id": "2611.29235",
+    "title": "Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures",
+    "authors": "Andrej Cherkaev, Leonid Gibiansky",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-11-22T05:12:43Z",
+    "publishedFormatted": "Nov 22, 2026",
+    "subtitle": "Finding the perfect blend of three materials to block heat as much as possible",
+    "summary": "Researchers solved a century-old puzzle in materials science: what arrangement of three conducting materials—including one that conducts perfectly—minimizes heat flow through a composite? They proved that the optimal structure consists of nested spheres with wrapped layers, and derived mathematical formulas predicting exactly how well any such arrangement can perform based on material properties and how much of each material you use.",
+    "whyItMatters": "This framework helps engineers design better insulators and thermal barriers for everything from aerospace to electronics. The mathematical bounds reveal fundamental limits on what any three-material system can achieve, so manufacturers know whether they're building something close to ideal or whether a different material combination might work better. The constructive proof also provides a practical recipe for arranging materials to reach those theoretical limits.",
+    "fetchedAt": "2026-11-24T04:09:06.801Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 30,
+      "wordCount": 186
+    },
+    "slug": "optimal-isotropic-three-material"
+  },
+  {
     "id": "2611.27900",
     "title": "Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs",
     "authors": "Zhiyu Yan, Shiao Liu, Rahul Mahajan et al.",
