@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1207 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1210 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 412 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 413 papers in archive.
+  - "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans"
   - "Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model"
-  - "Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 97 papers in archive.
   - "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference"
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
@@ -42,12 +42,12 @@ Each paper entry contains:
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 103 papers in archive.
   - "Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures"
   - "Optimal Control in Pairs Trading with Negative-Power Utility"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 105 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 106 papers in archive.
+  - "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis"
   - "When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks"
-  - "A Control-Theoretic Approximation to Predictive Coding Dynamics"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 103 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 104 papers in archive.
+  - "Marked INAR model and the rough Hawkes--Heston limit"
   - "Vibe-Trading: Towards Agent-Native Trading"
-  - "ChainIT Transaction Truth: Stablecoins, Web3 Wallets, and Multi-Rail Commerce. A Zero-Trust Control Plane for Verified Identity, Organizational Authority, Runtime Compliance, Secure Wallet Execution, and Immutable Settlement Evidence"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 103 papers in archive.
   - "Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity"
   - "Conformal Selection for Hierarchical Streaming Data"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "Interpreting the Morbidity Gap"
 
 ## 10 most recent papers
+
+### CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans
+- URL: https://paperplaine.com/papers/ctlink-a-text-prompted
+- Category: Computer Science · AI
+- Authors: Mohammed Baharoon, Sung Eun Kim, Mahmoud Hussain Alabbad et al.
+- arXiv: 2611.31222
+- Plain-English subtitle: Teaching AI to highlight what radiologists describe in chest scan reports
+- Summary: A new AI system called CTLink can pinpoint abnormalities in chest CT scans by reading the radiologist's written report—automatically drawing boxes around the exact locations of findings like nodules or fluid that doctors mention only in text. On a major benchmark, CTLink outperformed existing tools by a large margin, achieving 81.6% accuracy at locating reported findings and matching the consistency of two independent radiologists reviewing the same scans.
+- Why it matters: Radiologists currently must manually review both the written report and the scan to verify findings match up, which is time-consuming and error-prone. CTLink automates that linking process, letting radiologists instantly see visual confirmation of each finding they report—catching mismatches, reducing re-reading time, and making it harder for important abnormalities to slip through unnoticed. The system is accurate enough to match inter-radiologist agreement, suggesting it could be deployed in routine clinical workflows without sacrificing reliability.
+
+### Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis
+- URL: https://paperplaine.com/papers/towards-edge-artificial-intelligence
+- Category: Quantitative Biology
+- Authors: Nishat Tasnim, Faisal Ahmed, Rokan Uddin Faruqui
+- arXiv: 2611.29143
+- Plain-English subtitle: Running TB drug-resistance tests on hospital computers in poor countries
+- Summary: Researchers developed a lightweight machine learning system that predicts whether tuberculosis bacteria are resistant to antibiotics by analyzing their genetic code—and it runs on basic hospital computers rather than requiring expensive supercomputers. The system correctly identified drug resistance patterns about 82% of the time across 20 different antibiotics, making it practical for clinics in low-income countries where advanced computing infrastructure doesn't exist.
+- Why it matters: Doctors in hospitals across Africa and Asia could get same-day answers about which drugs will actually work against a patient's TB infection, instead of waiting days or weeks for results from distant labs—or guessing and prescribing ineffective treatments that worsen drug resistance. This speed matters enormously: resistant TB already kills hundreds of thousands yearly, and faster diagnosis directly shortens treatment delays and reduces the spread of untreatable strains.
+
+### Marked INAR model and the rough Hawkes--Heston limit
+- URL: https://paperplaine.com/papers/marked-inar-model-and
+- Category: Quantitative Finance
+- Authors: Xiaoyu Wang, Yingli Wang, Lingjiong Zhu
+- arXiv: 2611.29565
+- Plain-English subtitle: A faster way to price options in markets with sudden jumps
+- Summary: Researchers developed a computational method that can price financial options in markets where volatility and price jumps happen together—a scenario that's mathematically complex but realistic. The algorithm runs roughly 100 times faster than naive approaches while still converging to theoretically correct values, with tests showing implied volatility curves matching established benchmarks across different market conditions.
+- Why it matters: Options traders and risk managers need to price derivatives quickly and accurately, especially in turbulent markets where traditional models break down. This algorithm cuts computation time dramatically without sacrificing precision, making real-time pricing feasible for institutions that currently rely on slower approximations or less realistic market models.
 
 ### Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model
 - URL: https://paperplaine.com/papers/ego-hmb-human-motion
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: AI that finds buried climate knowledge across European research projects
 - Summary: Researchers built an AI system that searches through thousands of scattered research documents from EU water and climate projects, finding relevant information 26.7% more reliably than conventional search methods. The system uses specialized AI models trained on climate and water data, plus a smart controller that decides where to look next based on what it has already found.
 - Why it matters: Water managers and climate planners often make decisions without knowing what other projects have already learned — not because the knowledge doesn't exist, but because it's buried in hundreds of unconnected reports. This system lets them ask questions and get targeted answers from across multiple projects at once, reducing duplicated work and helping cities and regions respond faster to water scarcity and climate threats.
-
-### Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225
-- URL: https://paperplaine.com/papers/neckpinches-in-a-positively
-- Category: Physics
-- Authors: Siddharta Laloux, Bhargavi Srinivasan
-- arXiv: 2611.25860
-- Plain-English subtitle: Finding hidden groups of stocks by measuring how curved their relationships are
-- Summary: Researchers used a mathematical technique called Ricci flow to map the hidden geometry of relationships between 226 stocks in Japan's Nikkei-225 index. The method automatically discovered 29 natural groups of stocks that almost perfectly align with industry sectors—banks clustered with banks, insurers with insurers, shipping companies together—without being told what industries existed.
-- Why it matters: Stock traders and portfolio managers typically group companies by hand-labeled industry categories, but this method finds real clusters from the actual data, which could reveal overlooked relationships between stocks. Because each cluster turned out to be internally more correlated than with the rest of the market, investors could use this to build more effective diversified portfolios or spot when stocks are behaving unexpectedly.
-
-### When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks
-- URL: https://paperplaine.com/papers/when-should-deployed-bci
-- Category: Quantitative Biology
-- Authors: Sergey Musienko
-- arXiv: 2611.25315
-- Plain-English subtitle: Should brain implants automatically retune themselves, or stay put?
-- Summary: Brain-computer interfaces that read brain signals often need to adjust as the user's brain patterns drift over time—but constantly retuning wastes resources and can backfire on clean data. This study shows that adaptation should be selective and capped: a lightweight decision layer picks when to retune and how much, cutting unnecessary adjustments by 87% on stable sessions while matching accuracy of full retraining at 23 times faster speed.
-- Why it matters: Brain implants currently either retune blindly (wasting power and time) or never adjust (losing accuracy). A smarter control system that decides *when* to adapt means implanted decoders can run longer on battery, respond faster to real drift, and avoid false corrections when nothing has changed—all without harming accuracy.
-
-### GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers
-- URL: https://paperplaine.com/papers/glide-a-fast-calibrated
-- Category: Computer Science · AI
-- Authors: Sahibzada Allahyar, Julia White, Dhruv Atreja et al.
-- arXiv: 2611.26509
-- Plain-English subtitle: Teaching AI to make fast, confident choices without explaining its reasoning
-- Summary: Researchers created GLiDE, a family of AI models that can score and pick between answers in a single pass—without generating text or step-by-step reasoning. By learning from reasoning models through a technique called distillation, GLiDE kept much of the accuracy boost that comes from reasoning while staying 10 to 100 times faster, with the largest version reaching 73.37% accuracy on a standard benchmark while maintaining reliable confidence calibration.
-- Why it matters: Real-time decision-making systems like search results, recommendations, or customer service chatbots currently face a hard trade-off: reason carefully and be slow, or answer fast and risk mistakes. GLiDE collapses that trade-off, making it possible to deploy high-accuracy, confidence-aware decisions in latency-critical settings like mobile apps or live services where waiting 5+ seconds for an answer isn't an option.
 
 ## About
 

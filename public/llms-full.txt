@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1207 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1210 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-24
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans
+Subtitle: Teaching AI to highlight what radiologists describe in chest scan reports
+URL: https://paperplaine.com/papers/ctlink-a-text-prompted
+Category: Computer Science · AI
+Authors: Mohammed Baharoon, Sung Eun Kim, Mahmoud Hussain Alabbad et al.
+arXiv ID: 2611.31222
+arXiv URL: https://arxiv.org/abs/2611.31222
+Posted: 2026-11-24
+
+Summary: A new AI system called CTLink can pinpoint abnormalities in chest CT scans by reading the radiologist's written report—automatically drawing boxes around the exact locations of findings like nodules or fluid that doctors mention only in text. On a major benchmark, CTLink outperformed existing tools by a large margin, achieving 81.6% accuracy at locating reported findings and matching the consistency of two independent radiologists reviewing the same scans.
+
+Why it matters: Radiologists currently must manually review both the written report and the scan to verify findings match up, which is time-consuming and error-prone. CTLink automates that linking process, letting radiologists instantly see visual confirmation of each finding they report—catching mismatches, reducing re-reading time, and making it harder for important abnormalities to slip through unnoticed. The system is accurate enough to match inter-radiologist agreement, suggesting it could be deployed in routine clinical workflows without sacrificing reliability.
+
+---
+Title: Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis
+Subtitle: Running TB drug-resistance tests on hospital computers in poor countries
+URL: https://paperplaine.com/papers/towards-edge-artificial-intelligence
+Category: Quantitative Biology
+Authors: Nishat Tasnim, Faisal Ahmed, Rokan Uddin Faruqui
+arXiv ID: 2611.29143
+arXiv URL: https://arxiv.org/abs/2611.29143
+Posted: 2026-11-24
+
+Summary: Researchers developed a lightweight machine learning system that predicts whether tuberculosis bacteria are resistant to antibiotics by analyzing their genetic code—and it runs on basic hospital computers rather than requiring expensive supercomputers. The system correctly identified drug resistance patterns about 82% of the time across 20 different antibiotics, making it practical for clinics in low-income countries where advanced computing infrastructure doesn't exist.
+
+Why it matters: Doctors in hospitals across Africa and Asia could get same-day answers about which drugs will actually work against a patient's TB infection, instead of waiting days or weeks for results from distant labs—or guessing and prescribing ineffective treatments that worsen drug resistance. This speed matters enormously: resistant TB already kills hundreds of thousands yearly, and faster diagnosis directly shortens treatment delays and reduces the spread of untreatable strains.
+
+---
+Title: Marked INAR model and the rough Hawkes--Heston limit
+Subtitle: A faster way to price options in markets with sudden jumps
+URL: https://paperplaine.com/papers/marked-inar-model-and
+Category: Quantitative Finance
+Authors: Xiaoyu Wang, Yingli Wang, Lingjiong Zhu
+arXiv ID: 2611.29565
+arXiv URL: https://arxiv.org/abs/2611.29565
+Posted: 2026-11-24
+
+Summary: Researchers developed a computational method that can price financial options in markets where volatility and price jumps happen together—a scenario that's mathematically complex but realistic. The algorithm runs roughly 100 times faster than naive approaches while still converging to theoretically correct values, with tests showing implied volatility curves matching established benchmarks across different market conditions.
+
+Why it matters: Options traders and risk managers need to price derivatives quickly and accurately, especially in turbulent markets where traditional models break down. This algorithm cuts computation time dramatically without sacrificing precision, making real-time pricing feasible for institutions that currently rely on slower approximations or less realistic market models.
 
 ---
 Title: Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model
