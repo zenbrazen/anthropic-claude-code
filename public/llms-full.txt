@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1210 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-24
+This file contains the complete plain-English text of all 1213 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-25
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention
+Subtitle: How AI models choose answers by name rather than meaning
+URL: https://paperplaine.com/papers/deneb-vritra-descriptions-edges
+Category: Computer Science · AI
+Authors: Mohammed Nayeem Khan, Akhil P, Shahina Shaik
+arXiv ID: 2611.31139
+arXiv URL: https://arxiv.org/abs/2611.31139
+Posted: 2026-11-25
+
+Summary: Researchers found that a 421-million-parameter AI model often picks the wrong answer when the correct option's name is swapped onto another option's description—choosing based on the name alone 53–67% of the time. By blocking specific neural pathways in layers 14–17, they cut this "name shortcut" down to 11–16% while keeping overall accuracy at 90%, pinpointing exactly where the model abandons semantic reasoning for label matching.
+
+Why it matters: AI systems deployed for high-stakes tasks like medical diagnosis or legal review need to actually reason about content, not just match labels. This work reveals a blind spot in current models: they can be tricked into ignoring meaning entirely, and shows engineers exactly which neural circuits to audit and retrain to close the gap. Understanding these shortcuts is essential before trusting AI with decisions that require real comprehension.
+
+---
+Title: Exact Volume-Preserving Diffeomorphic Shear Splitting: Continuous-Discrete Geometric Bounds, Reversible Memory Backpropagation, and Expressivity Frontiers in Volumetric Mapping
+Subtitle: A new way to map organs while perfectly preserving their volume
+URL: https://paperplaine.com/papers/exact-volume-preserving-diffeomorphic
+Category: Engineering
+Authors: Alvaro Garcia-Casas
+arXiv ID: 2611.31343
+arXiv URL: https://arxiv.org/abs/2611.31343
+Posted: 2026-11-25
+
+Summary: Researchers developed a method for registering medical images—aligning one scan to another—that maintains exact volume preservation at machine precision while running 2–4 times faster than standard approaches. By decomposing the deformation into simple shear operations that have known mathematical solutions, the method eliminates numerical errors that plague existing techniques and reduces GPU memory use by 78%.
+
+Why it matters: Medical imaging relies on comparing scans across time or between patients, and errors in that comparison can compound during diagnosis or surgery planning. This method guarantees that tissue volumes stay exactly correct—no artificial shrinkage or expansion—while consuming far less computing power. For cardiac and brain imaging, this means faster, more reliable registration without the numerical artifacts that can mask real disease or create false positives.
+
+---
+Title: A colored look at anyons and parastatistics
+Subtitle: A new mathematical lens for understanding exotic particle behavior
+URL: https://paperplaine.com/papers/a-colored-look-at
+Category: Physics
+Authors: Francesco Toppan
+arXiv ID: 2611.31841
+arXiv URL: https://arxiv.org/abs/2611.31841
+Posted: 2026-11-25
+
+Summary: Physicists have shown that a 40-year-old generalization of algebra called color Lie algebras naturally describes two types of unusual particles: paraparticles (which can exist anywhere in space) and anyons (which can only exist in two dimensions). This framework doesn't just fit these particles into existing theory—it reveals new physical signatures that distinguish different kinds of parastatistics.
+
+Why it matters: Anyons and paraparticles are more than theoretical curiosities; they appear in exotic materials and quantum systems that physicists are actively trying to engineer for quantum computers and advanced electronics. Having the right mathematical language makes it clearer which exotic particles can actually exist in a given physical system, and what measurable differences to look for when searching for them in experiments.
 
 ---
 Title: CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans

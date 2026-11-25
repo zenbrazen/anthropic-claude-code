@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1210 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1213 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,15 +30,15 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 413 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 414 papers in archive.
+  - "Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention"
   - "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans"
-  - "Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 97 papers in archive.
   - "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference"
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 102 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 103 papers in archive.
+  - "A colored look at anyons and parastatistics"
   - "Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225"
-  - "How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 103 papers in archive.
   - "Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures"
   - "Optimal Control in Pairs Trading with Negative-Power Utility"
@@ -51,14 +51,41 @@ Each paper entry contains:
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 103 papers in archive.
   - "Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity"
   - "Conformal Selection for Hierarchical Streaming Data"
-- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 97 papers in archive.
+- [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 98 papers in archive.
+  - "Exact Volume-Preserving Diffeomorphic Shear Splitting: Continuous-Discrete Geometric Bounds, Reversible Memory Backpropagation, and Expressivity Frontiers in Volumetric Mapping"
   - "On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals"
-  - "From power to spectrum: an off-the-shelf photodiode turned into a spectrometer by its bias alone"
 - [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 85 papers in archive.
   - "The Rise of Agents and the Human Labor Market"
   - "Interpreting the Morbidity Gap"
 
 ## 10 most recent papers
+
+### Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention
+- URL: https://paperplaine.com/papers/deneb-vritra-descriptions-edges
+- Category: Computer Science · AI
+- Authors: Mohammed Nayeem Khan, Akhil P, Shahina Shaik
+- arXiv: 2611.31139
+- Plain-English subtitle: How AI models choose answers by name rather than meaning
+- Summary: Researchers found that a 421-million-parameter AI model often picks the wrong answer when the correct option's name is swapped onto another option's description—choosing based on the name alone 53–67% of the time. By blocking specific neural pathways in layers 14–17, they cut this "name shortcut" down to 11–16% while keeping overall accuracy at 90%, pinpointing exactly where the model abandons semantic reasoning for label matching.
+- Why it matters: AI systems deployed for high-stakes tasks like medical diagnosis or legal review need to actually reason about content, not just match labels. This work reveals a blind spot in current models: they can be tricked into ignoring meaning entirely, and shows engineers exactly which neural circuits to audit and retrain to close the gap. Understanding these shortcuts is essential before trusting AI with decisions that require real comprehension.
+
+### Exact Volume-Preserving Diffeomorphic Shear Splitting: Continuous-Discrete Geometric Bounds, Reversible Memory Backpropagation, and Expressivity Frontiers in Volumetric Mapping
+- URL: https://paperplaine.com/papers/exact-volume-preserving-diffeomorphic
+- Category: Engineering
+- Authors: Alvaro Garcia-Casas
+- arXiv: 2611.31343
+- Plain-English subtitle: A new way to map organs while perfectly preserving their volume
+- Summary: Researchers developed a method for registering medical images—aligning one scan to another—that maintains exact volume preservation at machine precision while running 2–4 times faster than standard approaches. By decomposing the deformation into simple shear operations that have known mathematical solutions, the method eliminates numerical errors that plague existing techniques and reduces GPU memory use by 78%.
+- Why it matters: Medical imaging relies on comparing scans across time or between patients, and errors in that comparison can compound during diagnosis or surgery planning. This method guarantees that tissue volumes stay exactly correct—no artificial shrinkage or expansion—while consuming far less computing power. For cardiac and brain imaging, this means faster, more reliable registration without the numerical artifacts that can mask real disease or create false positives.
+
+### A colored look at anyons and parastatistics
+- URL: https://paperplaine.com/papers/a-colored-look-at
+- Category: Physics
+- Authors: Francesco Toppan
+- arXiv: 2611.31841
+- Plain-English subtitle: A new mathematical lens for understanding exotic particle behavior
+- Summary: Physicists have shown that a 40-year-old generalization of algebra called color Lie algebras naturally describes two types of unusual particles: paraparticles (which can exist anywhere in space) and anyons (which can only exist in two dimensions). This framework doesn't just fit these particles into existing theory—it reveals new physical signatures that distinguish different kinds of parastatistics.
+- Why it matters: Anyons and paraparticles are more than theoretical curiosities; they appear in exotic materials and quantum systems that physicists are actively trying to engineer for quantum computers and advanced electronics. Having the right mathematical language makes it clearer which exotic particles can actually exist in a given physical system, and what measurable differences to look for when searching for them in experiments.
 
 ### CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans
 - URL: https://paperplaine.com/papers/ctlink-a-text-prompted
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Learning patient patterns from multiple hospitals without sharing sensitive records
 - Summary: Researchers developed a method that lets hospitals collaborate on identifying patient subgroups from electronic health records while keeping individual patient data private and minimizing data transfer between sites. Applied to stroke patients across multiple facilities, the approach recovered the same patient patterns that would emerge from pooling all records directly, while each hospital shared only aggregate statistics and mathematical summaries instead of raw patient information.
 - Why it matters: Hospitals often can't combine patient records due to privacy rules and technical barriers, which means insights are trapped in silos and patterns learned at one hospital may not apply elsewhere. This method lets institutions participate in collaborative research without breaking privacy agreements or overwhelming networks with massive file transfers—making it practical for hospitals to build better diagnostic tools and treatment strategies that work across diverse patient populations.
-
-### The Rise of Agents and the Human Labor Market
-- URL: https://paperplaine.com/papers/the-rise-of-agents
-- Category: Economics
-- Authors: Nicola Borri, Anton Cheremukhin, Yukun Liu et al.
-- arXiv: 2611.27210
-- Plain-English subtitle: AI agents are already shrinking job openings, especially entry-level roles
-- Summary: Firms most exposed to agentic AI—the kind that can autonomously complete tasks—posted 2 to 3 percent fewer job openings over the following six to nine months. The effect was sharper after Claude Code 2.0's release, when affected firms cut job postings by nearly 5 percent. Crucially, the decline hit non-senior positions hardest; senior roles showed no significant decline, suggesting AI agents are replacing routine work rather than eliminating jobs wholesale.
-- Why it matters: This is the first large-scale evidence that AI agents, not just AI tools, are already affecting real hiring decisions at American companies. If the trend continues and spreads, entry-level and junior positions—traditionally the pipeline for career advancement—could become scarcer, potentially widening opportunity gaps. The finding also suggests that mid-career and senior workers may be insulated, at least for now, reshaping which workers face the most immediate pressure to adapt.
-
-### On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals
-- URL: https://paperplaine.com/papers/on-the-complete-feature
-- Category: Engineering
-- Authors: Javier Sanchis, Álvaro Navarro, Jorge García-Carrasco et al.
-- arXiv: 2611.27970
-- Plain-English subtitle: A standardized brain-wave dataset to test ADHD detection methods fairly
-- Summary: Researchers created the first large, carefully curated dataset of brain recordings from 156 children and adolescents performing different tasks, with 115 different measurements of electrical brain activity already calculated and ready to use. This allows scientists to fairly compare different methods for detecting ADHD from brain waves using the same data, rather than each team processing recordings differently and making results impossible to compare.
-- Why it matters: ADHD diagnosis currently relies on behavioral observation and questionnaires, which are subjective and often inconsistent. This standardized dataset removes hidden choices in how brain recordings are prepared and analyzed, letting researchers build and test ADHD detection tools on level ground. It means future studies can focus on what actually works instead of spending months re-processing the same raw data different ways.
-
-### Democratizing Cross-Project Knowledge for Transforming Water Governance and Climate Resilience: an Agentic AI Ecosystem
-- URL: https://paperplaine.com/papers/democratizing-cross-project-knowledge
-- Category: Computer Science · AI
-- Authors: Oriol Alàs, Ian Palacín, Iván Cester et al.
-- arXiv: 2611.26398
-- Plain-English subtitle: AI that finds buried climate knowledge across European research projects
-- Summary: Researchers built an AI system that searches through thousands of scattered research documents from EU water and climate projects, finding relevant information 26.7% more reliably than conventional search methods. The system uses specialized AI models trained on climate and water data, plus a smart controller that decides where to look next based on what it has already found.
-- Why it matters: Water managers and climate planners often make decisions without knowing what other projects have already learned — not because the knowledge doesn't exist, but because it's buried in hundreds of unconnected reports. This system lets them ask questions and get targeted answers from across multiple projects at once, reducing duplicated work and helping cities and regions respond faster to water scarcity and climate threats.
 
 ## About
 
