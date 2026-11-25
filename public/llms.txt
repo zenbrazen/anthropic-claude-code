@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1213 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1216 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,9 +30,9 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 414 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 415 papers in archive.
+  - "Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges"
   - "Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention"
-  - "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 97 papers in archive.
   - "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference"
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
@@ -48,17 +48,44 @@ Each paper entry contains:
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 104 papers in archive.
   - "Marked INAR model and the rough Hawkes--Heston limit"
   - "Vibe-Trading: Towards Agent-Native Trading"
-- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 103 papers in archive.
+- [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 104 papers in archive.
+  - "Towards Realistic Evaluation of Uncertainty Quantification for LLM-Based Recommender Systems"
   - "Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity"
-  - "Conformal Selection for Hierarchical Streaming Data"
 - [Engineering](https://paperplaine.com/engineering): Recent engineering papers from arXiv, explained in plain English. 98 papers in archive.
   - "Exact Volume-Preserving Diffeomorphic Shear Splitting: Continuous-Discrete Geometric Bounds, Reversible Memory Backpropagation, and Expressivity Frontiers in Volumetric Mapping"
   - "On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals"
-- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 85 papers in archive.
+- [Economics](https://paperplaine.com/economics): Recent economics papers from arXiv, explained in plain English. 86 papers in archive.
+  - "Worth the Wait? How Response Time and Streaming Shape Judgments of Generative AI Answers and Chatbot Engagement"
   - "The Rise of Agents and the Human Labor Market"
-  - "Interpreting the Morbidity Gap"
 
 ## 10 most recent papers
+
+### Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges
+- URL: https://paperplaine.com/papers/auditing-the-judge-human
+- Category: Computer Science · AI
+- Authors: Hamin Koo, Chanjoo Jung, Fangzhao Wu et al.
+- arXiv: 2611.33065
+- Plain-English subtitle: Finding and fixing hidden prejudices in AI systems that judge text quality
+- Summary: Researchers developed a system to discover, measure, and correct biases in AI models that are used to automatically evaluate writing and other text. By comparing cases where humans and AI disagree, the method identified both known and previously unknown biases—like favoring certain writing styles or topics—then reduced these biases without requiring costly retraining of the models.
+- Why it matters: AI judges are increasingly used to rank student essays, filter job applications, and evaluate research proposals. If these systems have hidden biases, they can systematically disadvantage certain groups or perspectives. This work provides a practical, low-cost way to detect and correct those biases before they affect real decisions.
+
+### Worth the Wait? How Response Time and Streaming Shape Judgments of Generative AI Answers and Chatbot Engagement
+- URL: https://paperplaine.com/papers/worth-the-wait-how
+- Category: Economics
+- Authors: Zihan Chen, Di Zhu, Lei Nico Zheng
+- arXiv: 2611.33050
+- Plain-English subtitle: Why AI answers that slowly appear on screen seem better than instant ones
+- Summary: People consistently prefer AI answers that stream and unfold word-by-word over identical text that appears instantly—a 26 percentage-point boost in blind preference votes. The finding flips what chatbot designers expected: faster delivery doesn't win; watching text appear as if the AI is thinking does. But slower answers from server congestion offer no such boost and actually discourage follow-up questions, suggesting the visual unfolding matters more than raw speed.
+- Why it matters: AI companies optimize for fast response times, but this research shows they may be sacrificing user satisfaction by doing so. Streamed answers that mimic live composition could improve perceived quality and engagement without changing the underlying model, while slow answers from server strain do genuine damage to conversation flow. The findings also suggest that blind preference votes—widely used to rank AI models—are measuring user perception of delivery, not just answer quality, which could mislead companies choosing which models to deploy.
+
+### Towards Realistic Evaluation of Uncertainty Quantification for LLM-Based Recommender Systems
+- URL: https://paperplaine.com/papers/towards-realistic-evaluation-of
+- Category: Statistics
+- Authors: Hao Wu, Sipeng Chen, Weikai Li et al.
+- arXiv: 2611.33036
+- Plain-English subtitle: How to know when AI recommendation rankings might be wrong
+- Summary: When AI language models rank items for recommendations, they need built-in warning systems to flag unreliable rankings. This paper tested eight different uncertainty signals across multiple datasets to see which ones actually catch bad recommendations—and found that the best method depends on which AI model you're using and what you're trying to recommend. Some signals excel at spotting overall errors, while others better detect when recommendations might fail on niche items.
+- Why it matters: Recommendation systems influence what products users see and what content gets promoted online. If a system confidently suggests irrelevant items without signaling doubt, users waste time and trust erodes. This work provides a concrete framework for testing which warning signals actually work, helping companies deploy safer AI recommenders and knowing which uncertainty methods to rely on before problems reach real users.
 
 ### Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention
 - URL: https://paperplaine.com/papers/deneb-vritra-descriptions-edges
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Filling in the motion gap between two first-person video frames
 - Summary: Researchers created an AI system that generates realistic human motion sequences from two first-person camera images taken seconds apart—the kind of footage from VR headsets or body cameras. The system outperforms simpler methods by learning endpoint poses and smooth motion together in a single unified model, rather than solving each problem separately.
 - Why it matters: VR/AR systems and robots need to understand and predict human movement from first-person camera feeds, but existing methods require clean 3D pose data that wearables can't provide. This approach works directly from raw video frames, making motion prediction practical for devices people actually wear, which could improve everything from gesture recognition in VR to robots that work safely alongside humans.
-
-### Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference
-- URL: https://paperplaine.com/papers/ziv-meets-sumcheck-zero
-- Category: Computer Science
-- Authors: Hassan Khodaiemehr, Khadijeh Bagheri, Chen Feng
-- arXiv: 2611.29188
-- Plain-English subtitle: Proving AI models work correctly without revealing their secrets
-- Summary: Researchers created a system to mathematically prove that a language model like GPT-2 produced a specific output without exposing the model itself — and crucially, they did it using the actual floating-point arithmetic that runs on real computers, not simplified approximations. They proved GPT-2 small's entire forward pass in 19 minutes, with verification taking just 21 seconds, and the system rejected all 236 attempted attacks.
-- Why it matters: Organizations could verify that an AI system is working correctly and hasn't been tampered with, without having to trust the company running it or give away proprietary model details. This matters for high-stakes applications like medical diagnosis or financial decisions, where you need proof a model isn't lying or manipulating outputs — and it now works on the actual arithmetic these systems use in production, not just theoretical toy versions.
-
-### Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures
-- URL: https://paperplaine.com/papers/optimal-isotropic-three-material
-- Category: Mathematics
-- Authors: Andrej Cherkaev, Leonid Gibiansky
-- arXiv: 2611.29235
-- Plain-English subtitle: Finding the perfect blend of three materials to block heat as much as possible
-- Summary: Researchers solved a century-old puzzle in materials science: what arrangement of three conducting materials—including one that conducts perfectly—minimizes heat flow through a composite? They proved that the optimal structure consists of nested spheres with wrapped layers, and derived mathematical formulas predicting exactly how well any such arrangement can perform based on material properties and how much of each material you use.
-- Why it matters: This framework helps engineers design better insulators and thermal barriers for everything from aerospace to electronics. The mathematical bounds reveal fundamental limits on what any three-material system can achieve, so manufacturers know whether they're building something close to ideal or whether a different material combination might work better. The constructive proof also provides a practical recipe for arranging materials to reach those theoretical limits.
-
-### Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs
-- URL: https://paperplaine.com/papers/communication-efficient-federated-learning
-- Category: Computer Science · AI
-- Authors: Zhiyu Yan, Shiao Liu, Rahul Mahajan et al.
-- arXiv: 2611.27900
-- Plain-English subtitle: Learning patient patterns from multiple hospitals without sharing sensitive records
-- Summary: Researchers developed a method that lets hospitals collaborate on identifying patient subgroups from electronic health records while keeping individual patient data private and minimizing data transfer between sites. Applied to stroke patients across multiple facilities, the approach recovered the same patient patterns that would emerge from pooling all records directly, while each hospital shared only aggregate statistics and mathematical summaries instead of raw patient information.
-- Why it matters: Hospitals often can't combine patient records due to privacy rules and technical barriers, which means insights are trapped in silos and patterns learned at one hospital may not apply elsewhere. This method lets institutions participate in collaborative research without breaking privacy agreements or overwhelming networks with massive file transfers—making it practical for hospitals to build better diagnostic tools and treatment strategies that work across diverse patient populations.
 
 ## About
 

@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.33065",
+    "title": "Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges",
+    "authors": "Hamin Koo, Chanjoo Jung, Fangzhao Wu et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-24T18:05:47Z",
+    "publishedFormatted": "Nov 24, 2026",
+    "subtitle": "Finding and fixing hidden prejudices in AI systems that judge text quality",
+    "summary": "Researchers developed a system to discover, measure, and correct biases in AI models that are used to automatically evaluate writing and other text. By comparing cases where humans and AI disagree, the method identified both known and previously unknown biases—like favoring certain writing styles or topics—then reduced these biases without requiring costly retraining of the models.",
+    "whyItMatters": "AI judges are increasingly used to rank student essays, filter job applications, and evaluate research proposals. If these systems have hidden biases, they can systematically disadvantage certain groups or perspectives. This work provides a practical, low-cost way to detect and correct those biases before they affect real decisions.",
+    "fetchedAt": "2026-11-25T17:48:46.626Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 192
+    },
+    "slug": "auditing-the-judge-human"
+  },
+  {
+    "id": "2611.33050",
+    "title": "Worth the Wait? How Response Time and Streaming Shape Judgments of Generative AI Answers and Chatbot Engagement",
+    "authors": "Zihan Chen, Di Zhu, Lei Nico Zheng",
+    "categoryLabel": "Economics",
+    "categoryDisplay": "Economics",
+    "published": "2026-11-24T17:57:00Z",
+    "publishedFormatted": "Nov 24, 2026",
+    "subtitle": "Why AI answers that slowly appear on screen seem better than instant ones",
+    "summary": "People consistently prefer AI answers that stream and unfold word-by-word over identical text that appears instantly—a 26 percentage-point boost in blind preference votes. The finding flips what chatbot designers expected: faster delivery doesn't win; watching text appear as if the AI is thinking does. But slower answers from server congestion offer no such boost and actually discourage follow-up questions, suggesting the visual unfolding matters more than raw speed.",
+    "whyItMatters": "AI companies optimize for fast response times, but this research shows they may be sacrificing user satisfaction by doing so. Streamed answers that mimic live composition could improve perceived quality and engagement without changing the underlying model, while slow answers from server strain do genuine damage to conversation flow. The findings also suggest that blind preference votes—widely used to rank AI models—are measuring user perception of delivery, not just answer quality, which could mislead companies choosing which models to deploy.",
+    "fetchedAt": "2026-11-25T17:48:50.532Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 25,
+      "wordCount": 292
+    },
+    "slug": "worth-the-wait-how"
+  },
+  {
+    "id": "2611.33036",
+    "title": "Towards Realistic Evaluation of Uncertainty Quantification for LLM-Based Recommender Systems",
+    "authors": "Hao Wu, Sipeng Chen, Weikai Li et al.",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-11-24T17:48:54Z",
+    "publishedFormatted": "Nov 24, 2026",
+    "subtitle": "How to know when AI recommendation rankings might be wrong",
+    "summary": "When AI language models rank items for recommendations, they need built-in warning systems to flag unreliable rankings. This paper tested eight different uncertainty signals across multiple datasets to see which ones actually catch bad recommendations—and found that the best method depends on which AI model you're using and what you're trying to recommend. Some signals excel at spotting overall errors, while others better detect when recommendations might fail on niche items.",
+    "whyItMatters": "Recommendation systems influence what products users see and what content gets promoted online. If a system confidently suggests irrelevant items without signaling doubt, users waste time and trust erodes. This work provides a concrete framework for testing which warning signals actually work, helping companies deploy safer AI recommenders and knowing which uncertainty methods to rely on before problems reach real users.",
+    "fetchedAt": "2026-11-25T17:48:53.785Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 236
+    },
+    "slug": "towards-realistic-evaluation-of"
+  },
+  {
     "id": "2611.31139",
     "title": "Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention",
     "authors": "Mohammed Nayeem Khan, Akhil P, Shahina Shaik",
