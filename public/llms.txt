@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1219 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1222 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,21 +30,21 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 416 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 417 papers in archive.
+  - "Diverse Alternative Reasoning Traces for Hard Math Problems"
   - "Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs"
-  - "Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 97 papers in archive.
   - "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference"
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 103 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 104 papers in archive.
+  - "The thermodynamic budget of objectivity"
   - "A colored look at anyons and parastatistics"
-  - "Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225"
 - [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 104 papers in archive.
   - "An exponential-rate consensus-based algorithms for estimation from relative measurements: implementation and performance analysis"
   - "Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures"
-- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 106 papers in archive.
+- [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 107 papers in archive.
+  - "The Marauder's Map: Bézier Manifolds Reveal Hidden Surfaces for Model Merging and Ensembling"
   - "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis"
-  - "When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks"
 - [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 105 papers in archive.
   - "AgentBank: Banking on Blockchain Agentic Payments"
   - "Marked INAR model and the rough Hawkes--Heston limit"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "The Rise of Agents and the Human Labor Market"
 
 ## 10 most recent papers
+
+### Diverse Alternative Reasoning Traces for Hard Math Problems
+- URL: https://paperplaine.com/papers/diverse-alternative-reasoning-traces
+- Category: Computer Science · AI
+- Authors: Lukas Aichberger, Adam Golinski, Arno Blaas et al.
+- arXiv: 2611.34928
+- Plain-English subtitle: Teaching AI to learn from its wrong math attempts, not just right ones
+- Summary: When large language models fail at hard math problems, researchers typically discard those failed attempts and try again from scratch. A new method called DART instead dissects failed solutions, identifies the weakest reasoning steps, and generates better alternatives for those specific steps. On difficult math problems, this approach recovers 37% more correct solutions than standard methods while costing roughly the same to run.
+- Why it matters: Training AI systems on math typically requires lots of correct solutions, which are expensive to find for genuinely hard problems. By mining failed attempts for salvageable ideas, DART cuts the cost of obtaining useful training data by 30% per successful solution. This could make it faster and cheaper to build better AI math tutors and problem-solving systems.
+
+### The Marauder's Map: Bézier Manifolds Reveal Hidden Surfaces for Model Merging and Ensembling
+- URL: https://paperplaine.com/papers/the-marauder-s-map
+- Category: Quantitative Biology
+- Authors: Abhiram Iyer, Mark T. Harnett, Sarthak Chandra
+- arXiv: 2611.33353
+- Plain-English subtitle: How AI models hide shared solutions in high-dimensional space
+- Summary: Researchers discovered that multiple AI models trained on different tasks can be connected through a high-dimensional region of solutions that work well for all of them simultaneously—like a navigable map through competent middle ground. Using a technique called Nimbus, they showed this connecting surface is simpler than expected and allows AI systems to blend multiple specialized models while gracefully handling errors, outperforming traditional ensemble methods.
+- Why it matters: This approach lets engineers combine multiple AI models more effectively without retraining them from scratch, reducing computational costs and improving robustness when systems encounter unexpected inputs or corrupted data. The method mirrors how biological brains maintain flexibility and resilience—insights that could guide more efficient and reliable AI deployment in real-world applications where systems must handle varied tasks without breaking down.
+
+### The thermodynamic budget of objectivity
+- URL: https://paperplaine.com/papers/the-thermodynamic-budget-of
+- Category: Physics
+- Authors: Wonyong Chung
+- arXiv: 2611.34909
+- Plain-English subtitle: What it costs in energy to make events become permanently real
+- Summary: Facts aren't free — they require physical records, and creating those records always costs energy. This paper calculates exactly how much work is needed to make an event become objective fact (witnessed by enough independent observers that no one can erase it), showing the cost scales linearly with how many copies of the record exist and how complete the information is.
+- Why it matters: Understanding the thermodynamic price of objectivity connects fundamental physics to how reality becomes fixed and knowable. In quantum systems, where information can be manipulated, this reveals hard physical limits: past a certain angle of misalignment, no amount of energy can establish objectivity at all, and an adversary who controls most records can keep facts from becoming real regardless of your resources.
 
 ### Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs
 - URL: https://paperplaine.com/papers/latent-merger-latent-space
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: How AI models choose answers by name rather than meaning
 - Summary: Researchers found that a 421-million-parameter AI model often picks the wrong answer when the correct option's name is swapped onto another option's description—choosing based on the name alone 53–67% of the time. By blocking specific neural pathways in layers 14–17, they cut this "name shortcut" down to 11–16% while keeping overall accuracy at 90%, pinpointing exactly where the model abandons semantic reasoning for label matching.
 - Why it matters: AI systems deployed for high-stakes tasks like medical diagnosis or legal review need to actually reason about content, not just match labels. This work reveals a blind spot in current models: they can be tricked into ignoring meaning entirely, and shows engineers exactly which neural circuits to audit and retrain to close the gap. Understanding these shortcuts is essential before trusting AI with decisions that require real comprehension.
-
-### Exact Volume-Preserving Diffeomorphic Shear Splitting: Continuous-Discrete Geometric Bounds, Reversible Memory Backpropagation, and Expressivity Frontiers in Volumetric Mapping
-- URL: https://paperplaine.com/papers/exact-volume-preserving-diffeomorphic
-- Category: Engineering
-- Authors: Alvaro Garcia-Casas
-- arXiv: 2611.31343
-- Plain-English subtitle: A new way to map organs while perfectly preserving their volume
-- Summary: Researchers developed a method for registering medical images—aligning one scan to another—that maintains exact volume preservation at machine precision while running 2–4 times faster than standard approaches. By decomposing the deformation into simple shear operations that have known mathematical solutions, the method eliminates numerical errors that plague existing techniques and reduces GPU memory use by 78%.
-- Why it matters: Medical imaging relies on comparing scans across time or between patients, and errors in that comparison can compound during diagnosis or surgery planning. This method guarantees that tissue volumes stay exactly correct—no artificial shrinkage or expansion—while consuming far less computing power. For cardiac and brain imaging, this means faster, more reliable registration without the numerical artifacts that can mask real disease or create false positives.
-
-### A colored look at anyons and parastatistics
-- URL: https://paperplaine.com/papers/a-colored-look-at
-- Category: Physics
-- Authors: Francesco Toppan
-- arXiv: 2611.31841
-- Plain-English subtitle: A new mathematical lens for understanding exotic particle behavior
-- Summary: Physicists have shown that a 40-year-old generalization of algebra called color Lie algebras naturally describes two types of unusual particles: paraparticles (which can exist anywhere in space) and anyons (which can only exist in two dimensions). This framework doesn't just fit these particles into existing theory—it reveals new physical signatures that distinguish different kinds of parastatistics.
-- Why it matters: Anyons and paraparticles are more than theoretical curiosities; they appear in exotic materials and quantum systems that physicists are actively trying to engineer for quantum computers and advanced electronics. Having the right mathematical language makes it clearer which exotic particles can actually exist in a given physical system, and what measurable differences to look for when searching for them in experiments.
-
-### CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans
-- URL: https://paperplaine.com/papers/ctlink-a-text-prompted
-- Category: Computer Science · AI
-- Authors: Mohammed Baharoon, Sung Eun Kim, Mahmoud Hussain Alabbad et al.
-- arXiv: 2611.31222
-- Plain-English subtitle: Teaching AI to highlight what radiologists describe in chest scan reports
-- Summary: A new AI system called CTLink can pinpoint abnormalities in chest CT scans by reading the radiologist's written report—automatically drawing boxes around the exact locations of findings like nodules or fluid that doctors mention only in text. On a major benchmark, CTLink outperformed existing tools by a large margin, achieving 81.6% accuracy at locating reported findings and matching the consistency of two independent radiologists reviewing the same scans.
-- Why it matters: Radiologists currently must manually review both the written report and the scan to verify findings match up, which is time-consuming and error-prone. CTLink automates that linking process, letting radiologists instantly see visual confirmation of each finding they report—catching mismatches, reducing re-reading time, and making it harder for important abnormalities to slip through unnoticed. The system is accurate enough to match inter-radiologist agreement, suggesting it could be deployed in routine clinical workflows without sacrificing reliability.
 
 ## About
 

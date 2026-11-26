@@ -1,7 +1,7 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1219 papers currently in the Paper Plaine archive.
+This file contains the complete plain-English text of all 1222 papers currently in the Paper Plaine archive.
 Last updated: 2026-11-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Diverse Alternative Reasoning Traces for Hard Math Problems
+Subtitle: Teaching AI to learn from its wrong math attempts, not just right ones
+URL: https://paperplaine.com/papers/diverse-alternative-reasoning-traces
+Category: Computer Science · AI
+Authors: Lukas Aichberger, Adam Golinski, Arno Blaas et al.
+arXiv ID: 2611.34928
+arXiv URL: https://arxiv.org/abs/2611.34928
+Posted: 2026-11-26
+
+Summary: When large language models fail at hard math problems, researchers typically discard those failed attempts and try again from scratch. A new method called DART instead dissects failed solutions, identifies the weakest reasoning steps, and generates better alternatives for those specific steps. On difficult math problems, this approach recovers 37% more correct solutions than standard methods while costing roughly the same to run.
+
+Why it matters: Training AI systems on math typically requires lots of correct solutions, which are expensive to find for genuinely hard problems. By mining failed attempts for salvageable ideas, DART cuts the cost of obtaining useful training data by 30% per successful solution. This could make it faster and cheaper to build better AI math tutors and problem-solving systems.
+
+---
+Title: The Marauder's Map: Bézier Manifolds Reveal Hidden Surfaces for Model Merging and Ensembling
+Subtitle: How AI models hide shared solutions in high-dimensional space
+URL: https://paperplaine.com/papers/the-marauder-s-map
+Category: Quantitative Biology
+Authors: Abhiram Iyer, Mark T. Harnett, Sarthak Chandra
+arXiv ID: 2611.33353
+arXiv URL: https://arxiv.org/abs/2611.33353
+Posted: 2026-11-26
+
+Summary: Researchers discovered that multiple AI models trained on different tasks can be connected through a high-dimensional region of solutions that work well for all of them simultaneously—like a navigable map through competent middle ground. Using a technique called Nimbus, they showed this connecting surface is simpler than expected and allows AI systems to blend multiple specialized models while gracefully handling errors, outperforming traditional ensemble methods.
+
+Why it matters: This approach lets engineers combine multiple AI models more effectively without retraining them from scratch, reducing computational costs and improving robustness when systems encounter unexpected inputs or corrupted data. The method mirrors how biological brains maintain flexibility and resilience—insights that could guide more efficient and reliable AI deployment in real-world applications where systems must handle varied tasks without breaking down.
+
+---
+Title: The thermodynamic budget of objectivity
+Subtitle: What it costs in energy to make events become permanently real
+URL: https://paperplaine.com/papers/the-thermodynamic-budget-of
+Category: Physics
+Authors: Wonyong Chung
+arXiv ID: 2611.34909
+arXiv URL: https://arxiv.org/abs/2611.34909
+Posted: 2026-11-26
+
+Summary: Facts aren't free — they require physical records, and creating those records always costs energy. This paper calculates exactly how much work is needed to make an event become objective fact (witnessed by enough independent observers that no one can erase it), showing the cost scales linearly with how many copies of the record exist and how complete the information is.
+
+Why it matters: Understanding the thermodynamic price of objectivity connects fundamental physics to how reality becomes fixed and knowable. In quantum systems, where information can be manipulated, this reveals hard physical limits: past a certain angle of misalignment, no amount of energy can establish objectivity at all, and an adversary who controls most records can keep facts from becoming real regardless of your resources.
 
 ---
 Title: Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs
