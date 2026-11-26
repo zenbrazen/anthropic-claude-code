@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1216 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1219 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,24 +30,24 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 415 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 416 papers in archive.
+  - "Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs"
   - "Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges"
-  - "Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 97 papers in archive.
   - "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference"
   - "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs"
 - [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 103 papers in archive.
   - "A colored look at anyons and parastatistics"
   - "Neckpinches in a Positively Curved Market: Ricci Flow with Surgery on the Nikkei-225"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 103 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 104 papers in archive.
+  - "An exponential-rate consensus-based algorithms for estimation from relative measurements: implementation and performance analysis"
   - "Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures"
-  - "Optimal Control in Pairs Trading with Negative-Power Utility"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 106 papers in archive.
   - "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis"
   - "When Should Deployed BCI Decoders Adapt? A Resource-Priced Ladder for Frozen EEG Trunks"
-- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 104 papers in archive.
+- [Finance](https://paperplaine.com/finance): Recent finance papers from arXiv, explained in plain English. 105 papers in archive.
+  - "AgentBank: Banking on Blockchain Agentic Payments"
   - "Marked INAR model and the rough Hawkes--Heston limit"
-  - "Vibe-Trading: Towards Agent-Native Trading"
 - [Statistics](https://paperplaine.com/statistics): Recent statistics papers from arXiv, explained in plain English. 104 papers in archive.
   - "Towards Realistic Evaluation of Uncertainty Quantification for LLM-Based Recommender Systems"
   - "Simple Private Noisy SGD is Minimax-Optimal under Population Strong Convexity"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "The Rise of Agents and the Human Labor Market"
 
 ## 10 most recent papers
+
+### Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs
+- URL: https://paperplaine.com/papers/latent-merger-latent-space
+- Category: Computer Science · AI
+- Authors: Yanlai Yang, Minki Kang, Divyam Madaan et al.
+- arXiv: 2611.33048
+- Plain-English subtitle: Combining multiple document updates without multiplying model storage needs
+- Summary: When AI systems create specialized updates for different documents, they normally need separate storage for each one. Researchers discovered that merging these updates in an intermediate mathematical space — before converting them back to usable form — works better than existing methods, letting systems combine multiple documents' knowledge while keeping storage fixed.
+- Why it matters: As language models ingest streaming data from many sources, storage costs explode if you save a separate update for each document. This technique collapses multiple updates into a single efficient package, making it practical to continuously feed new information into frozen models without constantly expanding memory demands.
+
+### An exponential-rate consensus-based algorithms for estimation from relative measurements: implementation and performance analysis
+- URL: https://paperplaine.com/papers/an-exponential-rate-consensus
+- Category: Mathematics
+- Authors: Ruggero Carli, Andrea Carron, Luca Schenato et al.
+- arXiv: 2611.32928
+- Plain-English subtitle: How networks of agents can pinpoint their exact locations using only neighbors' messages
+- Summary: Researchers developed an algorithm that lets each agent in a network figure out its own position by exchanging distance measurements only with nearby neighbors, without needing a central coordinator. The method converges to the optimal solution exponentially fast—meaning it reaches accuracy quickly—even when agents update asynchronously and communication is imperfect or random.
+- Why it matters: This solves a fundamental problem in autonomous systems like drone swarms, sensor networks, and robotic teams that need to know where they are without relying on GPS or a central server. The algorithm's ability to work with only local communication and limited computing power per agent makes it practical for large groups operating in GPS-denied environments like underwater or indoor settings, where agents must coordinate using only signals from their immediate neighbors.
+
+### AgentBank: Banking on Blockchain Agentic Payments
+- URL: https://paperplaine.com/papers/agentbank-banking-on-blockchain
+- Category: Quantitative Finance
+- Authors: Yuexin Xiang, Martin Perešíni, Yuchen Lei et al.
+- arXiv: 2611.32389
+- Plain-English subtitle: A shared bank account system that lets AI agents pay each other efficiently
+- Summary: AI agents that autonomously buy data and computing power waste money keeping individual wallets funded and constantly moving assets around. AgentBank pools these funds into a shared banking layer where agents can spend up to preset limits, cutting idle money sitting unused by 52–77% and dramatically reducing transaction fees. The system automatically protects against theft and market crashes by holding enough reserves to cover payments even when demand spikes.
+- Why it matters: As AI systems increasingly operate autonomously and pay for services on their own, inefficient payment methods drain budgets and slow down operations. AgentBank lets agents spend faster and cheaper while protecting fund owners from both hacks and sudden market swings—making autonomous AI systems cheaper to run and safer to deploy at scale.
 
 ### Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges
 - URL: https://paperplaine.com/papers/auditing-the-judge-human
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to highlight what radiologists describe in chest scan reports
 - Summary: A new AI system called CTLink can pinpoint abnormalities in chest CT scans by reading the radiologist's written report—automatically drawing boxes around the exact locations of findings like nodules or fluid that doctors mention only in text. On a major benchmark, CTLink outperformed existing tools by a large margin, achieving 81.6% accuracy at locating reported findings and matching the consistency of two independent radiologists reviewing the same scans.
 - Why it matters: Radiologists currently must manually review both the written report and the scan to verify findings match up, which is time-consuming and error-prone. CTLink automates that linking process, letting radiologists instantly see visual confirmation of each finding they report—catching mismatches, reducing re-reading time, and making it harder for important abnormalities to slip through unnoticed. The system is accurate enough to match inter-radiologist agreement, suggesting it could be deployed in routine clinical workflows without sacrificing reliability.
-
-### Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis
-- URL: https://paperplaine.com/papers/towards-edge-artificial-intelligence
-- Category: Quantitative Biology
-- Authors: Nishat Tasnim, Faisal Ahmed, Rokan Uddin Faruqui
-- arXiv: 2611.29143
-- Plain-English subtitle: Running TB drug-resistance tests on hospital computers in poor countries
-- Summary: Researchers developed a lightweight machine learning system that predicts whether tuberculosis bacteria are resistant to antibiotics by analyzing their genetic code—and it runs on basic hospital computers rather than requiring expensive supercomputers. The system correctly identified drug resistance patterns about 82% of the time across 20 different antibiotics, making it practical for clinics in low-income countries where advanced computing infrastructure doesn't exist.
-- Why it matters: Doctors in hospitals across Africa and Asia could get same-day answers about which drugs will actually work against a patient's TB infection, instead of waiting days or weeks for results from distant labs—or guessing and prescribing ineffective treatments that worsen drug resistance. This speed matters enormously: resistant TB already kills hundreds of thousands yearly, and faster diagnosis directly shortens treatment delays and reduces the spread of untreatable strains.
-
-### Marked INAR model and the rough Hawkes--Heston limit
-- URL: https://paperplaine.com/papers/marked-inar-model-and
-- Category: Quantitative Finance
-- Authors: Xiaoyu Wang, Yingli Wang, Lingjiong Zhu
-- arXiv: 2611.29565
-- Plain-English subtitle: A faster way to price options in markets with sudden jumps
-- Summary: Researchers developed a computational method that can price financial options in markets where volatility and price jumps happen together—a scenario that's mathematically complex but realistic. The algorithm runs roughly 100 times faster than naive approaches while still converging to theoretically correct values, with tests showing implied volatility curves matching established benchmarks across different market conditions.
-- Why it matters: Options traders and risk managers need to price derivatives quickly and accurately, especially in turbulent markets where traditional models break down. This algorithm cuts computation time dramatically without sacrificing precision, making real-time pricing feasible for institutions that currently rely on slower approximations or less realistic market models.
-
-### Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model
-- URL: https://paperplaine.com/papers/ego-hmb-human-motion
-- Category: Computer Science · AI
-- Authors: Gaoge Han, Yongkang Cheng, Shaoli Huang et al.
-- arXiv: 2611.29218
-- Plain-English subtitle: Filling in the motion gap between two first-person video frames
-- Summary: Researchers created an AI system that generates realistic human motion sequences from two first-person camera images taken seconds apart—the kind of footage from VR headsets or body cameras. The system outperforms simpler methods by learning endpoint poses and smooth motion together in a single unified model, rather than solving each problem separately.
-- Why it matters: VR/AR systems and robots need to understand and predict human movement from first-person camera feeds, but existing methods require clean 3D pose data that wearables can't provide. This approach works directly from raw video frames, making motion prediction practical for devices people actually wear, which could improve everything from gesture recognition in VR to robots that work safely alongside humans.
 
 ## About
 

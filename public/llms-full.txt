@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1216 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-25
+This file contains the complete plain-English text of all 1219 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-26
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs
+Subtitle: Combining multiple document updates without multiplying model storage needs
+URL: https://paperplaine.com/papers/latent-merger-latent-space
+Category: Computer Science · AI
+Authors: Yanlai Yang, Minki Kang, Divyam Madaan et al.
+arXiv ID: 2611.33048
+arXiv URL: https://arxiv.org/abs/2611.33048
+Posted: 2026-11-26
+
+Summary: When AI systems create specialized updates for different documents, they normally need separate storage for each one. Researchers discovered that merging these updates in an intermediate mathematical space — before converting them back to usable form — works better than existing methods, letting systems combine multiple documents' knowledge while keeping storage fixed.
+
+Why it matters: As language models ingest streaming data from many sources, storage costs explode if you save a separate update for each document. This technique collapses multiple updates into a single efficient package, making it practical to continuously feed new information into frozen models without constantly expanding memory demands.
+
+---
+Title: An exponential-rate consensus-based algorithms for estimation from relative measurements: implementation and performance analysis
+Subtitle: How networks of agents can pinpoint their exact locations using only neighbors' messages
+URL: https://paperplaine.com/papers/an-exponential-rate-consensus
+Category: Mathematics
+Authors: Ruggero Carli, Andrea Carron, Luca Schenato et al.
+arXiv ID: 2611.32928
+arXiv URL: https://arxiv.org/abs/2611.32928
+Posted: 2026-11-26
+
+Summary: Researchers developed an algorithm that lets each agent in a network figure out its own position by exchanging distance measurements only with nearby neighbors, without needing a central coordinator. The method converges to the optimal solution exponentially fast—meaning it reaches accuracy quickly—even when agents update asynchronously and communication is imperfect or random.
+
+Why it matters: This solves a fundamental problem in autonomous systems like drone swarms, sensor networks, and robotic teams that need to know where they are without relying on GPS or a central server. The algorithm's ability to work with only local communication and limited computing power per agent makes it practical for large groups operating in GPS-denied environments like underwater or indoor settings, where agents must coordinate using only signals from their immediate neighbors.
+
+---
+Title: AgentBank: Banking on Blockchain Agentic Payments
+Subtitle: A shared bank account system that lets AI agents pay each other efficiently
+URL: https://paperplaine.com/papers/agentbank-banking-on-blockchain
+Category: Quantitative Finance
+Authors: Yuexin Xiang, Martin Perešíni, Yuchen Lei et al.
+arXiv ID: 2611.32389
+arXiv URL: https://arxiv.org/abs/2611.32389
+Posted: 2026-11-26
+
+Summary: AI agents that autonomously buy data and computing power waste money keeping individual wallets funded and constantly moving assets around. AgentBank pools these funds into a shared banking layer where agents can spend up to preset limits, cutting idle money sitting unused by 52–77% and dramatically reducing transaction fees. The system automatically protects against theft and market crashes by holding enough reserves to cover payments even when demand spikes.
+
+Why it matters: As AI systems increasingly operate autonomously and pay for services on their own, inefficient payment methods drain budgets and slow down operations. AgentBank lets agents spend faster and cheaper while protecting fund owners from both hacks and sudden market swings—making autonomous AI systems cheaper to run and safer to deploy at scale.
 
 ---
 Title: Auditing the Judge: Human-Derived Bias Discovery, Quantification, and Mitigation in LLM Judges
