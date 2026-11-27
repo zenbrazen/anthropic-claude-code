@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.34881",
+    "title": "Stranger Things: When Objects Appear Without Their Typical Neighbors",
+    "authors": "Siddhartha Gairola, Jiahao Xie, Anna Kukleva et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-25T18:39:28Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "Why AI vision systems fail when objects appear in unusual contexts",
+    "summary": "Modern AI vision systems recognize objects worse when they appear alongside unexpected neighbors—a problem called typicality bias that persists even in the latest, largest models. Researchers measured this bias across five types of vision AI and found performance gaps of 5–11 percentage points when objects appeared outside their typical company, then showed that a targeted data augmentation technique called Anchor-Atypicality Sampling could cut those gaps by up to 23 percentage points without hurting overall accuracy.",
+    "whyItMatters": "Vision systems deployed in real-world settings—autonomous vehicles, medical imaging, surveillance—encounter unusual object combinations that training data rarely prepared them for. A car detector that only works reliably when cars are near roads, or a person detector that fails when someone stands alone in a field, creates genuine safety and reliability risks. This work provides both a way to measure and diagnose the problem and a practical fix that doesn't require expensive retraining from scratch.",
+    "fetchedAt": "2026-11-27T02:00:03.163Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": false,
+      "score": 3,
+      "pageCount": null,
+      "wordCount": 255
+    },
+    "slug": "stranger-things-when-objects"
+  },
+  {
+    "id": "2611.34770",
+    "title": "Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense",
+    "authors": "Alessandro Cantelli-Forti, Isabella Marasco, Hosam Alamleh et al.",
+    "categoryLabel": "Comp Sci",
+    "categoryDisplay": "Computer Science",
+    "published": "2026-11-25T17:35:27Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "Making hackers waste time and money through smarter AI-powered fake systems",
+    "summary": "Researchers designed a new approach to cyber defense that judges deception not by how convincing it is, but by how much time and resources it wastes for attackers. By giving each hacker their own consistent fake environment that remembers their previous actions, the system forces them to spend significantly more effort — cutting the defender's computing costs by about 63% while making attacks more expensive for adversaries.",
+    "whyItMatters": "As AI tools make hacking faster and cheaper, defenders are under pressure to match that speed with expensive computing power. This approach flips the economics by making attackers do the expensive work instead — forcing them to spend more time and resources probing fake systems that feel real to them. That shifts the advantage back to defenders, especially smaller organizations that can't outspend sophisticated attackers.",
+    "fetchedAt": "2026-11-27T02:00:06.187Z",
+    "signals": {
+      "venueMatch": true,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 4,
+      "pageCount": 20,
+      "wordCount": 185
+    },
+    "slug": "make-the-adversary-spend"
+  },
+  {
+    "id": "2611.34905",
+    "title": "Sliding-Window Detection of Hidden Regimes under Stochastic Switching",
+    "authors": "Arina Pambukyan, Hayk Nersisyan",
+    "categoryLabel": "Statistics",
+    "categoryDisplay": "Statistics",
+    "published": "2026-11-25T18:53:46Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "Finding the right window size to spot hidden changes in noisy data",
+    "summary": "When you're trying to detect sudden shifts in data that's hidden by noise—like a stock market regime change or a system malfunction—you face a tradeoff: longer observation windows filter out noise but risk averaging over a regime switch. This paper shows exactly what that averaging costs, proving that when a switch happens inside your window, it causes an error with probability 1/2, and deriving the optimal window length to minimize total mistakes.",
+    "whyItMatters": "Real-time detection systems—from financial trading algorithms to industrial fault monitoring—must choose how much data to average over. Picking the wrong window means either missing real changes buried in noise or falsely alarming when you've accidentally averaged across a regime boundary. This paper gives practitioners an explicit formula for the optimal window size based only on how often switches actually occur and the noise level, eliminating guesswork from a decision that directly affects system accuracy.",
+    "fetchedAt": "2026-11-27T02:00:10.558Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 29,
+      "wordCount": 287
+    },
+    "slug": "sliding-window-detection-of"
+  },
+  {
     "id": "2611.34928",
     "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
     "authors": "Lukas Aichberger, Adam Golinski, Arno Blaas et al.",

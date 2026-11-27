@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1222 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-26
+This file contains the complete plain-English text of all 1225 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-27
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Stranger Things: When Objects Appear Without Their Typical Neighbors
+Subtitle: Why AI vision systems fail when objects appear in unusual contexts
+URL: https://paperplaine.com/papers/stranger-things-when-objects
+Category: Computer Science · AI
+Authors: Siddhartha Gairola, Jiahao Xie, Anna Kukleva et al.
+arXiv ID: 2611.34881
+arXiv URL: https://arxiv.org/abs/2611.34881
+Posted: 2026-11-27
+
+Summary: Modern AI vision systems recognize objects worse when they appear alongside unexpected neighbors—a problem called typicality bias that persists even in the latest, largest models. Researchers measured this bias across five types of vision AI and found performance gaps of 5–11 percentage points when objects appeared outside their typical company, then showed that a targeted data augmentation technique called Anchor-Atypicality Sampling could cut those gaps by up to 23 percentage points without hurting overall accuracy.
+
+Why it matters: Vision systems deployed in real-world settings—autonomous vehicles, medical imaging, surveillance—encounter unusual object combinations that training data rarely prepared them for. A car detector that only works reliably when cars are near roads, or a person detector that fails when someone stands alone in a field, creates genuine safety and reliability risks. This work provides both a way to measure and diagnose the problem and a practical fix that doesn't require expensive retraining from scratch.
+
+---
+Title: Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense
+Subtitle: Making hackers waste time and money through smarter AI-powered fake systems
+URL: https://paperplaine.com/papers/make-the-adversary-spend
+Category: Computer Science
+Authors: Alessandro Cantelli-Forti, Isabella Marasco, Hosam Alamleh et al.
+arXiv ID: 2611.34770
+arXiv URL: https://arxiv.org/abs/2611.34770
+Posted: 2026-11-27
+
+Summary: Researchers designed a new approach to cyber defense that judges deception not by how convincing it is, but by how much time and resources it wastes for attackers. By giving each hacker their own consistent fake environment that remembers their previous actions, the system forces them to spend significantly more effort — cutting the defender's computing costs by about 63% while making attacks more expensive for adversaries.
+
+Why it matters: As AI tools make hacking faster and cheaper, defenders are under pressure to match that speed with expensive computing power. This approach flips the economics by making attackers do the expensive work instead — forcing them to spend more time and resources probing fake systems that feel real to them. That shifts the advantage back to defenders, especially smaller organizations that can't outspend sophisticated attackers.
+
+---
+Title: Sliding-Window Detection of Hidden Regimes under Stochastic Switching
+Subtitle: Finding the right window size to spot hidden changes in noisy data
+URL: https://paperplaine.com/papers/sliding-window-detection-of
+Category: Statistics
+Authors: Arina Pambukyan, Hayk Nersisyan
+arXiv ID: 2611.34905
+arXiv URL: https://arxiv.org/abs/2611.34905
+Posted: 2026-11-27
+
+Summary: When you're trying to detect sudden shifts in data that's hidden by noise—like a stock market regime change or a system malfunction—you face a tradeoff: longer observation windows filter out noise but risk averaging over a regime switch. This paper shows exactly what that averaging costs, proving that when a switch happens inside your window, it causes an error with probability 1/2, and deriving the optimal window length to minimize total mistakes.
+
+Why it matters: Real-time detection systems—from financial trading algorithms to industrial fault monitoring—must choose how much data to average over. Picking the wrong window means either missing real changes buried in noise or falsely alarming when you've accidentally averaged across a regime boundary. This paper gives practitioners an explicit formula for the optimal window size based only on how often switches actually occur and the noise level, eliminating guesswork from a decision that directly affects system accuracy.
 
 ---
 Title: Diverse Alternative Reasoning Traces for Hard Math Problems
