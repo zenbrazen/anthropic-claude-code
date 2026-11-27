@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.34920",
+    "title": "μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+    "authors": "Qihao Lin, Guanxu Chen, Shuhang Zheng et al.",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-25T18:58:42Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "Testing voice assistants that juggle multiple people's requests at once",
+    "summary": "Researchers created a benchmark to test how well voice assistants handle requests from multiple people talking simultaneously—a challenge existing tests don't measure well. Across 800 test scenarios, the best commercial systems succeeded at completing all users' tasks together only 62–65% of the time, while open-source models fell below 20%, often failing to track who said what or keep conversations organized.",
+    "whyItMatters": "As voice assistants move into shared spaces like homes and offices, they need to juggle conflicting requests, respect privacy rules for different users, and prevent one person from triggering actions another person didn't authorize. This benchmark exposes where current systems break down—especially in understanding who's talking and following multi-turn conversations—so developers can fix these problems before deploying shared voice agents in real environments.",
+    "fetchedAt": "2026-11-27T17:14:38.062Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 28,
+      "wordCount": 181
+    },
+    "slug": "bench-benchmarking-multi-user"
+  },
+  {
+    "id": "2611.34677",
+    "title": "First Order Real Resonant Digital Filters and A Novel Orthogonal State Generator",
+    "authors": "Edward J. Daw",
+    "categoryLabel": "Engineering",
+    "categoryDisplay": "Engineering",
+    "published": "2026-11-25T16:40:32Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "Building resonant filters that work with real numbers, not imaginary math",
+    "summary": "Engineers typically use imaginary numbers to design resonant filters—the kind that pick out specific frequencies in electrical signals. This paper shows how to build a real, working resonant filter using only real numbers and simple first-order math, then proves it works by testing it on actual digital signal processing hardware. The filter, called FOREST, performs as theory predicts despite the mathematical sleight of hand required to make it real.",
+    "whyItMatters": "Resonant filters are everywhere: power grids use them to monitor electricity, motors need them for control, and many physics experiments rely on high-quality resonators. A simpler, real-coefficient design means engineers can implement these filters more directly in existing digital hardware, reducing computational overhead and making real-time signal processing faster and cheaper across power systems, industrial controls, and scientific instruments.",
+    "fetchedAt": "2026-11-27T17:14:41.646Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 11,
+      "wordCount": 110
+    },
+    "slug": "first-order-real-resonant"
+  },
+  {
+    "id": "2611.27505",
+    "title": "Accountable AI Delegation in Banking: Identity, Commitment Controls, Decision Evidence and Recovery",
+    "authors": "Walter Kurz, Besnik Alidemi, Marco Schmidt",
+    "categoryLabel": "Finance",
+    "categoryDisplay": "Quantitative Finance",
+    "published": "2026-11-20T11:54:56Z",
+    "publishedFormatted": "Nov 20, 2026",
+    "subtitle": "How banks can prove AI payment decisions are safe and reversible",
+    "summary": "Banks using AI to approve payments face a hidden risk: an AI can pass its safety checks but lose authority to actually process the payment before committing it. This paper describes a contract system that prevents that failure by checking authority, spending limits, and recovery options all at once—and recording everything atomically so nothing can slip through the cracks. Testing shows the system blocks 23 risky payment releases that current banking systems would allow.",
+    "whyItMatters": "As banks automate more payment decisions with AI, regulators demand proof that systems can't lose money or dodge accountability. A payment that gets approved but can't be reversed, or that exceeds a customer's limit without being caught, can expose a bank to fraud losses and regulatory penalties. This framework lets banks demonstrate that their AI systems maintain control over money every step of the way—and can always recover from mistakes.",
+    "fetchedAt": "2026-11-27T17:14:45.160Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": false,
+      "goodPageCount": true,
+      "score": 1,
+      "pageCount": 13,
+      "wordCount": 210
+    },
+    "slug": "accountable-ai-delegation-in"
+  },
+  {
     "id": "2611.34881",
     "title": "Stranger Things: When Objects Appear Without Their Typical Neighbors",
     "authors": "Siddhartha Gairola, Jiahao Xie, Anna Kukleva et al.",

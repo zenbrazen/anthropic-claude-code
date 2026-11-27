@@ -5,8 +5,38 @@
     <link>https://paperplaine.com</link>
     <description>Fresh research from arXiv explained in plain English, updated twice daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 02:00:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 17:14:45 GMT</lastBuildDate>
     <atom:link href="https://paperplaine.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents</title>
+      <link>https://paperplaine.com/papers/bench-benchmarking-multi-user</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/bench-benchmarking-multi-user</guid>
+      <pubDate>Wed, 25 Nov 2026 18:58:42 GMT</pubDate>
+      <author>Qihao Lin, Guanxu Chen, Shuhang Zheng et al.</author>
+      <category>AI</category>
+      <description>Testing voice assistants that juggle multiple people&#39;s requests at once</description>
+      <content:encoded><![CDATA[<p><em>Testing voice assistants that juggle multiple people's requests at once</em></p><p>Researchers created a benchmark to test how well voice assistants handle requests from multiple people talking simultaneously—a challenge existing tests don't measure well. Across 800 test scenarios, the best commercial systems succeeded at completing all users' tasks together only 62–65% of the time, while open-source models fell below 20%, often failing to track who said what or keep conversations organized.</p><p><strong>Why it matters:</strong> As voice assistants move into shared spaces like homes and offices, they need to juggle conflicting requests, respect privacy rules for different users, and prevent one person from triggering actions another person didn't authorize. This benchmark exposes where current systems break down—especially in understanding who's talking and following multi-turn conversations—so developers can fix these problems before deploying shared voice agents in real environments.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>First Order Real Resonant Digital Filters and A Novel Orthogonal State Generator</title>
+      <link>https://paperplaine.com/papers/first-order-real-resonant</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/first-order-real-resonant</guid>
+      <pubDate>Wed, 25 Nov 2026 16:40:32 GMT</pubDate>
+      <author>Edward J. Daw</author>
+      <category>Engineering</category>
+      <description>Building resonant filters that work with real numbers, not imaginary math</description>
+      <content:encoded><![CDATA[<p><em>Building resonant filters that work with real numbers, not imaginary math</em></p><p>Engineers typically use imaginary numbers to design resonant filters—the kind that pick out specific frequencies in electrical signals. This paper shows how to build a real, working resonant filter using only real numbers and simple first-order math, then proves it works by testing it on actual digital signal processing hardware. The filter, called FOREST, performs as theory predicts despite the mathematical sleight of hand required to make it real.</p><p><strong>Why it matters:</strong> Resonant filters are everywhere: power grids use them to monitor electricity, motors need them for control, and many physics experiments rely on high-quality resonators. A simpler, real-coefficient design means engineers can implement these filters more directly in existing digital hardware, reducing computational overhead and making real-time signal processing faster and cheaper across power systems, industrial controls, and scientific instruments.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Accountable AI Delegation in Banking: Identity, Commitment Controls, Decision Evidence and Recovery</title>
+      <link>https://paperplaine.com/papers/accountable-ai-delegation-in</link>
+      <guid isPermaLink="true">https://paperplaine.com/papers/accountable-ai-delegation-in</guid>
+      <pubDate>Fri, 20 Nov 2026 11:54:56 GMT</pubDate>
+      <author>Walter Kurz, Besnik Alidemi, Marco Schmidt</author>
+      <category>Finance</category>
+      <description>How banks can prove AI payment decisions are safe and reversible</description>
+      <content:encoded><![CDATA[<p><em>How banks can prove AI payment decisions are safe and reversible</em></p><p>Banks using AI to approve payments face a hidden risk: an AI can pass its safety checks but lose authority to actually process the payment before committing it. This paper describes a contract system that prevents that failure by checking authority, spending limits, and recovery options all at once—and recording everything atomically so nothing can slip through the cracks. Testing shows the system blocks 23 risky payment releases that current banking systems would allow.</p><p><strong>Why it matters:</strong> As banks automate more payment decisions with AI, regulators demand proof that systems can't lose money or dodge accountability. A payment that gets approved but can't be reversed, or that exceeds a customer's limit without being caught, can expose a bank to fraud losses and regulatory penalties. This framework lets banks demonstrate that their AI systems maintain control over money every step of the way—and can always recover from mistakes.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Stranger Things: When Objects Appear Without Their Typical Neighbors</title>
       <link>https://paperplaine.com/papers/stranger-things-when-objects</link>
