@@ -1,5 +1,71 @@
 [
   {
+    "id": "2611.34870",
+    "title": "Shape-Aware Three-Way Merge for RDF Knowledge Graphs: The schema defines the conflict: an implementation and evaluation",
+    "authors": "Steve Brown",
+    "categoryLabel": "AI",
+    "categoryDisplay": "Computer Science · AI",
+    "published": "2026-11-25T18:34:46Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "Using database rules to automatically resolve conflicts when merging knowledge graphs",
+    "summary": "Researchers built a system that merges conflicting versions of RDF knowledge graphs by using the database's own schema rules to decide which conflicts are actually real. The system correctly identified 33 genuine conflicts across test cases while asking humans far fewer questions than existing methods — and crucially, it never silently lost or invented data.",
+    "whyItMatters": "Knowledge graphs are merged constantly in multi-agent systems where different sources update the same information. Current merging methods either lose track of real conflicts or overwhelm users with questions (the existing baseline asked 845 questions versus 33 actual conflicts). This approach cuts unnecessary human decisions while preventing silent data loss, reducing both the burden on people maintaining these systems and the risk of corrupted or missing information.",
+    "fetchedAt": "2026-11-28T01:44:54.842Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 19,
+      "wordCount": 291
+    },
+    "slug": "shape-aware-three-way"
+  },
+  {
+    "id": "2611.34895",
+    "title": "Schrödinger's Legacy: The Wave Function and Quantum Reality",
+    "authors": "Davide Romano, Massimiliano Badino",
+    "categoryLabel": "Physics",
+    "categoryDisplay": "Physics",
+    "published": "2026-11-25T18:48:14Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "How Schrödinger's rejected idea about electrons still shapes quantum science today",
+    "summary": "Schrödinger's original interpretation of the wave function—treating it as the actual physical density of electrons rather than a tool for prediction—was abandoned by mainstream physics nearly a century ago. But his core idea survived and evolved into modern approaches that physicists still use to understand atoms, molecules, and the fundamental nature of reality itself.",
+    "whyItMatters": "Quantum mechanics remains philosophically contentious because physicists disagree on what the wave function actually represents. Schrödinger's realist approach—the idea that the math describes something objectively real, not just what we can predict—underpins practical quantum chemistry tools used to design drugs, materials, and semiconductors. Understanding this intellectual lineage clarifies why some of today's most promising interpretations of quantum mechanics trace directly back to ideas physicists thought they'd discarded.",
+    "fetchedAt": "2026-11-28T01:44:57.438Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 27,
+      "wordCount": 162
+    },
+    "slug": "schrodinger-s-legacy-the"
+  },
+  {
+    "id": "2611.34866",
+    "title": "Adaptive Control Barrier Functions for Nonlinear Singularly Perturbed Systems",
+    "authors": "Prashanth Krishnamurthy, Farshad Khorrami",
+    "categoryLabel": "Math",
+    "categoryDisplay": "Mathematics",
+    "published": "2026-11-25T18:31:54Z",
+    "publishedFormatted": "Nov 25, 2026",
+    "subtitle": "Keeping fast and slow systems safe when they have unknown parameters",
+    "summary": "Engineers have developed a new method to guarantee that complex systems with multiple speeds of operation stay within safe boundaries, even when their internal parameters are unknown or uncertain. The approach works by monitoring both the slow changes (like a vehicle's position) and fast changes (like motor response times) simultaneously, and uses real-time estimates of unknown parameters to adjust safety guardrails automatically.",
+    "whyItMatters": "Many real systems—from autonomous vehicles to aircraft and industrial robots—operate at different speeds and have uncertain properties that engineers can't measure precisely. This method guarantees these systems won't violate safety constraints like collision boundaries, even when the system behaves slightly differently than expected. Without it, controllers either keep systems artificially restricted to stay safe (reducing efficiency) or risk unsafe behavior when reality doesn't match the model.",
+    "fetchedAt": "2026-11-28T01:45:00.334Z",
+    "signals": {
+      "venueMatch": false,
+      "crossListed": true,
+      "goodPageCount": true,
+      "score": 2,
+      "pageCount": 13,
+      "wordCount": 215
+    },
+    "slug": "adaptive-control-barrier-functions"
+  },
+  {
     "id": "2611.34920",
     "title": "μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
     "authors": "Qihao Lin, Guanxu Chen, Shuhang Zheng et al.",

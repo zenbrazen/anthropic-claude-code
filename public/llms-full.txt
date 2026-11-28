@@ -1,8 +1,8 @@
 # Paper Plaine — Full Text Archive
 # https://paperplaine.com/llms-full.txt
 
-This file contains the complete plain-English text of all 1228 papers currently in the Paper Plaine archive.
-Last updated: 2026-11-27
+This file contains the complete plain-English text of all 1231 papers currently in the Paper Plaine archive.
+Last updated: 2026-11-28
 
 Paper Plaine takes recent academic preprints from arXiv (Cornell University) and translates them into plain English.
 Each entry includes a plain-language subtitle, a 2–3 sentence summary leading with the finding, and a "why it matters" explanation.
@@ -12,6 +12,48 @@ For site structure and metadata see: https://paperplaine.com/llms.txt
 For the RSS feed see: https://paperplaine.com/feed.xml
 
 ================================================================================
+
+---
+Title: Shape-Aware Three-Way Merge for RDF Knowledge Graphs: The schema defines the conflict: an implementation and evaluation
+Subtitle: Using database rules to automatically resolve conflicts when merging knowledge graphs
+URL: https://paperplaine.com/papers/shape-aware-three-way
+Category: Computer Science · AI
+Authors: Steve Brown
+arXiv ID: 2611.34870
+arXiv URL: https://arxiv.org/abs/2611.34870
+Posted: 2026-11-28
+
+Summary: Researchers built a system that merges conflicting versions of RDF knowledge graphs by using the database's own schema rules to decide which conflicts are actually real. The system correctly identified 33 genuine conflicts across test cases while asking humans far fewer questions than existing methods — and crucially, it never silently lost or invented data.
+
+Why it matters: Knowledge graphs are merged constantly in multi-agent systems where different sources update the same information. Current merging methods either lose track of real conflicts or overwhelm users with questions (the existing baseline asked 845 questions versus 33 actual conflicts). This approach cuts unnecessary human decisions while preventing silent data loss, reducing both the burden on people maintaining these systems and the risk of corrupted or missing information.
+
+---
+Title: Schrödinger's Legacy: The Wave Function and Quantum Reality
+Subtitle: How Schrödinger's rejected idea about electrons still shapes quantum science today
+URL: https://paperplaine.com/papers/schrodinger-s-legacy-the
+Category: Physics
+Authors: Davide Romano, Massimiliano Badino
+arXiv ID: 2611.34895
+arXiv URL: https://arxiv.org/abs/2611.34895
+Posted: 2026-11-28
+
+Summary: Schrödinger's original interpretation of the wave function—treating it as the actual physical density of electrons rather than a tool for prediction—was abandoned by mainstream physics nearly a century ago. But his core idea survived and evolved into modern approaches that physicists still use to understand atoms, molecules, and the fundamental nature of reality itself.
+
+Why it matters: Quantum mechanics remains philosophically contentious because physicists disagree on what the wave function actually represents. Schrödinger's realist approach—the idea that the math describes something objectively real, not just what we can predict—underpins practical quantum chemistry tools used to design drugs, materials, and semiconductors. Understanding this intellectual lineage clarifies why some of today's most promising interpretations of quantum mechanics trace directly back to ideas physicists thought they'd discarded.
+
+---
+Title: Adaptive Control Barrier Functions for Nonlinear Singularly Perturbed Systems
+Subtitle: Keeping fast and slow systems safe when they have unknown parameters
+URL: https://paperplaine.com/papers/adaptive-control-barrier-functions
+Category: Mathematics
+Authors: Prashanth Krishnamurthy, Farshad Khorrami
+arXiv ID: 2611.34866
+arXiv URL: https://arxiv.org/abs/2611.34866
+Posted: 2026-11-28
+
+Summary: Engineers have developed a new method to guarantee that complex systems with multiple speeds of operation stay within safe boundaries, even when their internal parameters are unknown or uncertain. The approach works by monitoring both the slow changes (like a vehicle's position) and fast changes (like motor response times) simultaneously, and uses real-time estimates of unknown parameters to adjust safety guardrails automatically.
+
+Why it matters: Many real systems—from autonomous vehicles to aircraft and industrial robots—operate at different speeds and have uncertain properties that engineers can't measure precisely. This method guarantees these systems won't violate safety constraints like collision boundaries, even when the system behaves slightly differently than expected. Without it, controllers either keep systems artificially restricted to stay safe (reducing efficiency) or risk unsafe behavior when reality doesn't match the model.
 
 ---
 Title: μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents

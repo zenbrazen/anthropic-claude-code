@@ -6,7 +6,7 @@
 
 Paper Plaine surfaces fresh academic research from Cornell University's arXiv preprint database and translates it into plain English for general audiences. Every paper gets three things: a plain-language subtitle (8–12 words capturing the core idea), a 2–3 sentence summary leading with what was found, and a "why it matters" explanation focused on real-world consequences.
 
-The site currently has 1228 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
+The site currently has 1231 papers in its archive across 9 subject areas: AI, Computer Science, Physics, Mathematics, Biology, Finance, Statistics, Engineering, Economics. New papers are added automatically twice daily (7 AM and 7 PM UTC). Only first-version arXiv submissions from the past 30 days are considered. Papers are scored for quality signals: venue acceptance (NeurIPS, ICML, Nature, PNAS, etc.), cross-disciplinary listings, and appropriate length.
 
 ## How content is structured
 
@@ -30,18 +30,18 @@ Each paper entry contains:
 
 ## Categories
 
-- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 419 papers in archive.
+- [AI](https://paperplaine.com/ai): Recent ai papers from arXiv, explained in plain English. 420 papers in archive.
+  - "Shape-Aware Three-Way Merge for RDF Knowledge Graphs: The schema defines the conflict: an implementation and evaluation"
   - "μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents"
-  - "Stranger Things: When Objects Appear Without Their Typical Neighbors"
 - [Computer Science](https://paperplaine.com/comp-sci): Recent computer science papers from arXiv, explained in plain English. 98 papers in archive.
   - "Make the Adversary Spend More: Stateful Deception as a Cost-Exchange Primitive for AI-Era Cyber Defense"
   - "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference"
-- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 104 papers in archive.
+- [Physics](https://paperplaine.com/physics): Recent physics papers from arXiv, explained in plain English. 105 papers in archive.
+  - "Schrödinger's Legacy: The Wave Function and Quantum Reality"
   - "The thermodynamic budget of objectivity"
-  - "A colored look at anyons and parastatistics"
-- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 104 papers in archive.
+- [Mathematics](https://paperplaine.com/math): Recent mathematics papers from arXiv, explained in plain English. 105 papers in archive.
+  - "Adaptive Control Barrier Functions for Nonlinear Singularly Perturbed Systems"
   - "An exponential-rate consensus-based algorithms for estimation from relative measurements: implementation and performance analysis"
-  - "Optimal isotropic three-material conducting composites with an ideal conductor, in the plane and in space.Bounds and optimal structures"
 - [Biology](https://paperplaine.com/biology): Recent biology papers from arXiv, explained in plain English. 107 papers in archive.
   - "The Marauder's Map: Bézier Manifolds Reveal Hidden Surfaces for Model Merging and Ensembling"
   - "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis"
@@ -59,6 +59,33 @@ Each paper entry contains:
   - "The Rise of Agents and the Human Labor Market"
 
 ## 10 most recent papers
+
+### Shape-Aware Three-Way Merge for RDF Knowledge Graphs: The schema defines the conflict: an implementation and evaluation
+- URL: https://paperplaine.com/papers/shape-aware-three-way
+- Category: Computer Science · AI
+- Authors: Steve Brown
+- arXiv: 2611.34870
+- Plain-English subtitle: Using database rules to automatically resolve conflicts when merging knowledge graphs
+- Summary: Researchers built a system that merges conflicting versions of RDF knowledge graphs by using the database's own schema rules to decide which conflicts are actually real. The system correctly identified 33 genuine conflicts across test cases while asking humans far fewer questions than existing methods — and crucially, it never silently lost or invented data.
+- Why it matters: Knowledge graphs are merged constantly in multi-agent systems where different sources update the same information. Current merging methods either lose track of real conflicts or overwhelm users with questions (the existing baseline asked 845 questions versus 33 actual conflicts). This approach cuts unnecessary human decisions while preventing silent data loss, reducing both the burden on people maintaining these systems and the risk of corrupted or missing information.
+
+### Schrödinger's Legacy: The Wave Function and Quantum Reality
+- URL: https://paperplaine.com/papers/schrodinger-s-legacy-the
+- Category: Physics
+- Authors: Davide Romano, Massimiliano Badino
+- arXiv: 2611.34895
+- Plain-English subtitle: How Schrödinger's rejected idea about electrons still shapes quantum science today
+- Summary: Schrödinger's original interpretation of the wave function—treating it as the actual physical density of electrons rather than a tool for prediction—was abandoned by mainstream physics nearly a century ago. But his core idea survived and evolved into modern approaches that physicists still use to understand atoms, molecules, and the fundamental nature of reality itself.
+- Why it matters: Quantum mechanics remains philosophically contentious because physicists disagree on what the wave function actually represents. Schrödinger's realist approach—the idea that the math describes something objectively real, not just what we can predict—underpins practical quantum chemistry tools used to design drugs, materials, and semiconductors. Understanding this intellectual lineage clarifies why some of today's most promising interpretations of quantum mechanics trace directly back to ideas physicists thought they'd discarded.
+
+### Adaptive Control Barrier Functions for Nonlinear Singularly Perturbed Systems
+- URL: https://paperplaine.com/papers/adaptive-control-barrier-functions
+- Category: Mathematics
+- Authors: Prashanth Krishnamurthy, Farshad Khorrami
+- arXiv: 2611.34866
+- Plain-English subtitle: Keeping fast and slow systems safe when they have unknown parameters
+- Summary: Engineers have developed a new method to guarantee that complex systems with multiple speeds of operation stay within safe boundaries, even when their internal parameters are unknown or uncertain. The approach works by monitoring both the slow changes (like a vehicle's position) and fast changes (like motor response times) simultaneously, and uses real-time estimates of unknown parameters to adjust safety guardrails automatically.
+- Why it matters: Many real systems—from autonomous vehicles to aircraft and industrial robots—operate at different speeds and have uncertain properties that engineers can't measure precisely. This method guarantees these systems won't violate safety constraints like collision boundaries, even when the system behaves slightly differently than expected. Without it, controllers either keep systems artificially restricted to stay safe (reducing efficiency) or risk unsafe behavior when reality doesn't match the model.
 
 ### μ-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents
 - URL: https://paperplaine.com/papers/bench-benchmarking-multi-user
@@ -122,33 +149,6 @@ Each paper entry contains:
 - Plain-English subtitle: Teaching AI to learn from its wrong math attempts, not just right ones
 - Summary: When large language models fail at hard math problems, researchers typically discard those failed attempts and try again from scratch. A new method called DART instead dissects failed solutions, identifies the weakest reasoning steps, and generates better alternatives for those specific steps. On difficult math problems, this approach recovers 37% more correct solutions than standard methods while costing roughly the same to run.
 - Why it matters: Training AI systems on math typically requires lots of correct solutions, which are expensive to find for genuinely hard problems. By mining failed attempts for salvageable ideas, DART cuts the cost of obtaining useful training data by 30% per successful solution. This could make it faster and cheaper to build better AI math tutors and problem-solving systems.
-
-### The Marauder's Map: Bézier Manifolds Reveal Hidden Surfaces for Model Merging and Ensembling
-- URL: https://paperplaine.com/papers/the-marauder-s-map
-- Category: Quantitative Biology
-- Authors: Abhiram Iyer, Mark T. Harnett, Sarthak Chandra
-- arXiv: 2611.33353
-- Plain-English subtitle: How AI models hide shared solutions in high-dimensional space
-- Summary: Researchers discovered that multiple AI models trained on different tasks can be connected through a high-dimensional region of solutions that work well for all of them simultaneously—like a navigable map through competent middle ground. Using a technique called Nimbus, they showed this connecting surface is simpler than expected and allows AI systems to blend multiple specialized models while gracefully handling errors, outperforming traditional ensemble methods.
-- Why it matters: This approach lets engineers combine multiple AI models more effectively without retraining them from scratch, reducing computational costs and improving robustness when systems encounter unexpected inputs or corrupted data. The method mirrors how biological brains maintain flexibility and resilience—insights that could guide more efficient and reliable AI deployment in real-world applications where systems must handle varied tasks without breaking down.
-
-### The thermodynamic budget of objectivity
-- URL: https://paperplaine.com/papers/the-thermodynamic-budget-of
-- Category: Physics
-- Authors: Wonyong Chung
-- arXiv: 2611.34909
-- Plain-English subtitle: What it costs in energy to make events become permanently real
-- Summary: Facts aren't free — they require physical records, and creating those records always costs energy. This paper calculates exactly how much work is needed to make an event become objective fact (witnessed by enough independent observers that no one can erase it), showing the cost scales linearly with how many copies of the record exist and how complete the information is.
-- Why it matters: Understanding the thermodynamic price of objectivity connects fundamental physics to how reality becomes fixed and knowable. In quantum systems, where information can be manipulated, this reveals hard physical limits: past a certain angle of misalignment, no amount of energy can establish objectivity at all, and an adversary who controls most records can keep facts from becoming real regardless of your resources.
-
-### Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs
-- URL: https://paperplaine.com/papers/latent-merger-latent-space
-- Category: Computer Science · AI
-- Authors: Yanlai Yang, Minki Kang, Divyam Madaan et al.
-- arXiv: 2611.33048
-- Plain-English subtitle: Combining multiple document updates without multiplying model storage needs
-- Summary: When AI systems create specialized updates for different documents, they normally need separate storage for each one. Researchers discovered that merging these updates in an intermediate mathematical space — before converting them back to usable form — works better than existing methods, letting systems combine multiple documents' knowledge while keeping storage fixed.
-- Why it matters: As language models ingest streaming data from many sources, storage costs explode if you save a separate update for each document. This technique collapses multiple updates into a single efficient package, making it practical to continuously feed new information into frozen models without constantly expanding memory demands.
 
 ## About
 
